@@ -1,5 +1,6 @@
 """Chapter 1: mechanical foundations; source and review owned by this worker."""
 from coursekit import P, H, E, T, cite, defense, note
+from symbol_tables import glossary
 
 
 def eq(identifier, tex, en, zh, kind, typ, labels, notes, cap_en, cap_zh):
@@ -30,16 +31,7 @@ body += H("1.2 Define the spherical control and its symbols", "1.2 定义球形�
 body += P(
     "The first model is one spherical cavity in an infinite, incompressible Newtonian carrier. The center is fixed; the radial coordinate increases from the center into the liquid. Positive wall velocity means expansion. Density, viscosity and effective surface tension are constant. Gravity, bulk liquid vorticity, phase-transfer velocity slip and gas-side viscous stress are omitted. The bubble pressure is uniform in space but may depend on time. This is a single transient model; no periodic acoustic forcing is assumed.",
     "第一个模型为无限、不可压缩牛顿载液中的单个球形空腔。中心固定；径向坐标从中心向液体外侧增加。壁面速度为正表示膨胀。密度、黏度和有效表面张力为常数。忽略重力、液体体内涡量、相变造成的速度滑移及气相黏性应力。气泡压力空间均匀，但可随时间变化。本模型描述单次瞬态，不假设周期声驱动。")
-body += T(
-    [("Symbols and roles", "符号及作用"), ("Definition and units", "定义与单位")],
-    [
-        [(r"$t,r,R,\dot R,\ddot R$", r"$t,r,R,\dot R,\ddot R$"), ("Time (s), liquid radial coordinate (m), cavity radius (m), wall speed (m s⁻¹), wall acceleration (m s⁻²). Dots denote time derivatives.", "时间（s）、液体径向坐标（m）、空腔半径（m）、壁面速度（m s⁻¹）与壁面加速度（m s⁻²）。上方圆点表示时间导数。")],
-        [(r"$\rho,\mu,\sigma$", r"$\rho,\mu,\sigma$"), ("Carrier density (kg m⁻³), carrier dynamic viscosity (Pa s), effective bubble–carrier surface tension (N m⁻¹).", "载液密度（kg m⁻³）、载液动力黏度（Pa s）与有效气泡—载液表面张力（N m⁻¹）。")],
-        [(r"$p_b,p_l,p_\infty$", r"$p_b,p_l,p_\infty$"), ("Bubble, adjacent liquid and far-field absolute pressures (Pa). Only explicitly subtracted differences drive mechanics.", "气泡、邻近液体与远场的绝对压力（Pa）。力学驱动力来自明确写出的压力差。")],
-        [(r"$u,\phi,V_b,K_l,E_\sigma$", r"$u,\phi,V_b,K_l,E_\sigma$"), ("Radial velocity (m s⁻¹), velocity potential (m² s⁻¹), cavity volume (m³), carrier kinetic energy (J), interface energy (J).", "径向速度（m s⁻¹）、速度势（m² s⁻¹）、空腔体积（m³）、载液动能（J）与界面能（J）。")],
-        [(r"$R_{\max},p_v,\Delta p_c,t_c,E_B$", r"$R_{\max},p_v,\Delta p_c,t_c,E_B$"), ("Maximum radius (m), stipulated constant vapor pressure (Pa), positive collapse pressure difference (Pa), collapse time (s), pressure-work scale (J). Subscripts identify physical roles.", "最大半径（m）、假设为常数的蒸气压（Pa）、正的塌缩压差（Pa）、塌缩时间（s）与压力功尺度（J）。下标表示物理作用。")],
-        [(r"$\boldsymbol x,\boldsymbol u,\Pi,\Gamma,\boldsymbol n,\kappa$", r"$\boldsymbol x,\boldsymbol u,\Pi,\Gamma,\boldsymbol n,\kappa$"), ("Spatial position (m), velocity vector (m s⁻¹), pressure impulse (Pa s), liquid–gas interface, unit normal from liquid into gas, signed sum of principal curvatures (m⁻¹).", "空间位置（m）、速度矢量（m s⁻¹）、压力冲量（Pa s）、液—气界面、由液体指向气体的单位法向，以及带符号的两主曲率之和（m⁻¹）。")],
-    ])
+body += glossary(1)
 body += P(
     "Ordinary superscripts are powers, bold symbols are vectors or tensors, and π is the dimensionless circle constant. Spatial gradient, divergence and Laplacian have their usual Cartesian meanings; partial time derivatives hold position fixed. Every display repeats its local definitions, including any new integration variables. The supplied initial radius is positive, which permits division by radius until the model reaches its excluded zero-radius limit.",
     "通常的上标表示幂；粗体符号表示矢量或张量；π 是无量纲圆周率。空间梯度、散度与拉普拉斯算子采用通常的笛卡尔定义；时间偏导保持空间位置固定。每个公式前重复其局部符号定义，包括新引入的积分变量。给定初始半径为正，因此在到达模型所排除的零半径极限之前，可以除以半径。")

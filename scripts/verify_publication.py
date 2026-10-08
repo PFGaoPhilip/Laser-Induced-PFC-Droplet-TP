@@ -29,11 +29,11 @@ def main():
             'assets/bilingual-terms.css','assets/vendor/katex/katex.min.css',
             'assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2',
             'assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2'}
-    wanted.update(ch['file'] for ch in settings['chapters'])
+    wanted.update(ch['file'] for ch in settings['chapters']+settings.get('appendices',[])+settings.get('legacy_routes',[]))
     for kind in {eq['diagram']['type'] for eq in registry}:
         eq=next(eq for eq in registry if eq['diagram']['type']==kind)
         wanted.add('assets/figures/'+eq['id'].lower()+'.svg')
-    for identifier in ['C1-E28','C2-E09','C3-E22','C4-E07','C4-E13','C4-E40','C4-E41','C5-E18','C5-E20']:
+    for identifier in ['C1-E28','C2-E09','C3-E22','C4-E07','C4-E13','C4-E40','C4-E41','A-E18','A-E20']:
         wanted.add('assets/figures/'+identifier.lower()+'.svg')
     def verify(relative):
         expected=(dest/relative).read_bytes()
@@ -52,7 +52,7 @@ def main():
     report={'status':'passed' if passed else 'failed','repository':repo,'url':base,
             'expected_commit':args.commit,'remote_main_commit':remote_sha,
             'verified_at_unix':int(time.time()),'files_checked':len(rows),'files':rows,
-            'scope':'All nine HTML pages, settings, manifest, runtime/style assets, two math fonts and representative physical-variable SVGs match the curated export. Full ZIP contents have separate manifest/CRC checks. This verifies deployment, not physical material validation.'}
+            'scope':'All nine canonical HTML pages and the legacy hydrogel route, settings, manifest, runtime/style assets, two math fonts and representative physical-variable SVGs match the curated export. Full ZIP contents have separate manifest/CRC checks. This verifies deployment, not physical material validation.'}
     (ROOT/'verification/publication-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:report[k] for k in ['status','repository','url','remote_main_commit','files_checked']}))
     if not passed:print(json.dumps([r for r in rows if not r['matches_local_export']],ensure_ascii=False))

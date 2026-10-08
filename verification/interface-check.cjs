@@ -19,14 +19,15 @@ function theme(query='',saved=null,denied=false){
  vm.runInNewContext(fs.readFileSync(path.join(root,'assets/course-theme.js'),'utf8'),context);ready.DOMContentLoaded();
  return {attrs,store,a,external,button:registry['theme-toggle']};
 }
-function progress(saved={},denied=false,clipboardDenied=false){
+function progress(saved={},denied=false,clipboardDenied=false,appendix=false){
  const store={...saved},status=el(),fallback=el(),copy=el(),download=el(),copied=[];
- const boxes=[1,2,3].map(i=>{const x=el();x.dataset={response:'C1-Q'+i};x.closest=()=>({dataset:{defense:'C1-Q'+i},querySelector:()=>({textContent:'Defense '+i})});return x;});
+ const questionPrefix=appendix?'A-Q':'C1-Q';
+ const boxes=[1,2,3].map(i=>{const x=el();x.dataset={response:questionPrefix+i};x.closest=()=>({dataset:{defense:questionPrefix+i},querySelector:()=>({textContent:'Defense '+i})});return x;});
  const registry={'save-status':status,'submission-fallback':fallback,'copy-responses':copy,'download-responses':download};
  const context={Blob,URL:{createObjectURL:()=> 'blob:response-check',revokeObjectURL(){}},
   localStorage:{getItem(k){if(denied)throw Error('denied');return store[k];},setItem(k,v){if(denied)throw Error('denied');store[k]=v;}},
   navigator:{clipboard:{async writeText(x){if(clipboardDenied)throw Error('denied');copied.push(x);}}},
-  document:{querySelector(q){if(q==='[data-chapter]')return {dataset:{chapter:'C01'}};return {textContent:'Cavity pressure'};},
+  document:{querySelector(q){if(q==='[data-chapter]'||q==='[data-unit]')return {dataset:{chapter:appendix?'A':'C01',unitKind:appendix?'appendix':'chapter'}};return {textContent:appendix?'Hydrogel versus liquid':'Cavity pressure'};},
    querySelectorAll:()=>boxes,getElementById:k=>registry[k],createElement(){const a=el();a.click=()=>{context.lastDownload=a;};return a;}}};
  vm.runInNewContext(fs.readFileSync(path.join(root,'assets/course-progress.js'),'utf8'),context);
  return {store,status,fallback,copy,download,boxes,copied,context};
@@ -53,6 +54,15 @@ function progress(saved={},denied=false,clipboardDenied=false){
  check('Storage failure tells learner to export',()=>assert(pd.status.textContent.includes('storage unavailable')));
  await pd.copy.handlers.click();check('Clipboard failure reveals selectable full text',()=>{assert.equal(pd.fallback.hidden,false);assert(pd.fallback.selected);assert(pd.fallback.value.includes('C1-Q3'));});
  pd.download.handlers.click();check('Download available without clipboard or storage',()=>assert.equal(pd.context.lastDownload.download,'Laser-PFC-TP-C01-responses.txt'));
+ const pa=progress({'laser-pfc-tp-v1:C5-Q1':'A previous hydrogel draft.'},false,false,true);
+ check('Old hydrogel draft migrated into Appendix A',()=>{assert.equal(pa.boxes[0].value,'A previous hydrogel draft.');assert.equal(pa.store['laser-pfc-tp-v1:A-Q1'],'A previous hydrogel draft.');});
+ const current=progress({'laser-pfc-tp-v1:C5-Q1':'Older draft.','laser-pfc-tp-v1:A-Q1':'Newer appendix draft.'},false,false,true);
+ check('Existing appendix draft takes precedence',()=>assert.equal(current.boxes[0].value,'Newer appendix draft.'));
+ const cleared=progress({'laser-pfc-tp-v1:C5-Q1':'Older draft.','laser-pfc-tp-v1:A-Q1':''},false,false,true);
+ check('Cleared appendix draft is not resurrected',()=>assert.equal(cleared.boxes[0].value,''));
+ pa.boxes[1].value='Network work is finite.';pa.boxes[2].value='Transfer requires useful load.';
+ await pa.copy.handlers.click();check('Appendix export requests appendix review',()=>{assert(pa.copied[0].includes('mark this appendix mastered'));assert(pa.copied[0].includes('A-Q1'));assert(!pa.copied[0].includes('C5-Q1'));});
+ pa.download.handlers.click();check('Appendix download is labeled A',()=>assert.equal(pa.context.lastDownload.download,'Laser-PFC-TP-A-responses.txt'));
  const result={status:'passed',checks_count:checks.length,checks,scope:'Executable DOM-adapter checks for shipped theme and response scripts; not a visual-browser audit or learner-mastery decision.'};
  fs.writeFileSync(path.join(root,'verification/interface-audit.json'),JSON.stringify(result,null,2)+'\n');
  process.stdout.write(JSON.stringify({status:result.status,checks_count:checks.length}));

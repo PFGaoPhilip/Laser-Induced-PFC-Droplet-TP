@@ -1,15 +1,20 @@
 {
   "status": "passed",
-  "check_count": 2897,
+  "check_count": 3456,
   "failures": [],
   "checks": [
     {
-      "name": "Five chapters",
+      "name": "Four main chapters",
       "passed": true,
       "detail": null
     },
     {
-      "name": "Exactly fifteen chapter-defense questions",
+      "name": "Appendix A is separate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exactly fifteen unit-defense questions",
       "passed": true,
       "detail": null
     },
@@ -319,17 +324,17 @@
       "detail": null
     },
     {
-      "name": "index.html: local dependency chapters/05-hydrogel-versus-liquid.html",
+      "name": "index.html: local dependency appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "index.html: local dependency chapters/05-hydrogel-versus-liquid.html#C5-Q1",
+      "name": "index.html: local dependency appendices/a-hydrogel-versus-liquid.html#A-Q1",
       "passed": true,
       "detail": null
     },
     {
-      "name": "index.html: anchor chapters/05-hydrogel-versus-liquid.html#C5-Q1",
+      "name": "index.html: anchor appendices/a-hydrogel-versus-liquid.html#A-Q1",
       "passed": true,
       "detail": null
     },
@@ -345,6 +350,266 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: unique DOM anchors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
@@ -1764,27 +2029,27 @@
       "detail": null
     },
     {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency 01-cavity-pressure-inertia-and-directional-jets.html",
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency 04-fracture-and-transfer.html",
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../chapters/04-fracture-and-transfer.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency 05-hydrogel-versus-liquid.html",
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
@@ -2244,7 +2509,7 @@
       "detail": null
     },
     {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
@@ -2260,6 +2525,176 @@
     },
     {
       "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: unique DOM anchors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
@@ -3749,27 +4184,27 @@
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 01-cavity-pressure-inertia-and-directional-jets.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 04-fracture-and-transfer.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../chapters/04-fracture-and-transfer.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 05-hydrogel-versus-liquid.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
@@ -4164,12 +4599,12 @@
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 01-cavity-pressure-inertia-and-directional-jets.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
@@ -4185,6 +4620,346 @@
     },
     {
       "name": "chapters/03-arrays-finite-jets-and-impact.html: unique DOM anchors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
@@ -5774,27 +6549,27 @@
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 01-cavity-pressure-inertia-and-directional-jets.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 04-fracture-and-transfer.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../chapters/04-fracture-and-transfer.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 05-hydrogel-versus-liquid.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
@@ -6124,12 +6899,12 @@
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency 04-fracture-and-transfer.html",
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../chapters/04-fracture-and-transfer.html",
       "passed": true,
       "detail": null
     },
@@ -6145,6 +6920,166 @@
     },
     {
       "name": "chapters/04-fracture-and-transfer.html: unique DOM anchors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
@@ -7654,27 +8589,27 @@
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 01-cavity-pressure-inertia-and-directional-jets.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 04-fracture-and-transfer.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../chapters/04-fracture-and-transfer.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 05-hydrogel-versus-liquid.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
@@ -7994,1512 +8929,1802 @@
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/04-fracture-and-transfer.html: local dependency 05-hydrogel-versus-liquid.html",
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: day/night component",
+      "name": "appendices/a-hydrogel-versus-liquid.html: day/night component",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: no rendering errors",
+      "name": "appendices/a-hydrogel-versus-liquid.html: no rendering errors",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: unique DOM anchors",
+      "name": "appendices/a-hydrogel-versus-liquid.html: unique DOM anchors",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: bilingual paragraph pair",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E01: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E01: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E01: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: immediate physical-variable figure",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: static readable math and MathML",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: local bilingual symbols before math",
+      "name": "appendices/a-hydrogel-versus-liquid.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: immediate physical-variable figure",
+      "name": "A-E01: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: static readable math and MathML",
+      "name": "A-E01: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: local bilingual symbols before math",
+      "name": "A-E01: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: immediate physical-variable figure",
+      "name": "A-E02: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: static readable math and MathML",
+      "name": "A-E02: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: local bilingual symbols before math",
+      "name": "A-E02: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: immediate physical-variable figure",
+      "name": "A-E03: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: static readable math and MathML",
+      "name": "A-E03: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: local bilingual symbols before math",
+      "name": "A-E03: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: immediate physical-variable figure",
+      "name": "A-E04: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: static readable math and MathML",
+      "name": "A-E04: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: local bilingual symbols before math",
+      "name": "A-E04: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: immediate physical-variable figure",
+      "name": "A-E05: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: static readable math and MathML",
+      "name": "A-E05: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/vendor/katex/katex.min.css",
+      "name": "A-E05: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/course.css",
+      "name": "A-E06: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/course-theme.js",
+      "name": "A-E06: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/course-progress.js",
+      "name": "A-E06: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/bilingual-terms.css",
+      "name": "A-E07: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../index.html",
+      "name": "A-E07: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/defense.html",
+      "name": "A-E07: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/notation.html",
+      "name": "A-E08: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html",
+      "name": "A-E08: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency 01-cavity-pressure-inertia-and-directional-jets.html",
+      "name": "A-E08: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency 02-optical-heating-and-finite-pfc-inventory.html",
+      "name": "A-E09: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency 03-arrays-finite-jets-and-impact.html",
+      "name": "A-E09: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency 04-fracture-and-transfer.html",
+      "name": "A-E09: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency 05-hydrogel-versus-liquid.html",
+      "name": "A-E10: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-objective",
+      "name": "A-E10: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-objective",
+      "name": "A-E10: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-assumptions",
+      "name": "A-E11: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-assumptions",
+      "name": "A-E11: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-pressure",
+      "name": "A-E11: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-pressure",
+      "name": "A-E12: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-work",
+      "name": "A-E12: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-work",
+      "name": "A-E12: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-dynamics",
+      "name": "A-E13: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-dynamics",
+      "name": "A-E13: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-example",
+      "name": "A-E13: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-example",
+      "name": "A-E14: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-times",
+      "name": "A-E14: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-times",
+      "name": "A-E14: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-tests",
+      "name": "A-E15: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-tests",
+      "name": "A-E15: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency #gel-defense",
+      "name": "A-E15: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor #gel-defense",
+      "name": "A-E16: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r11",
+      "name": "A-E16: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r11",
+      "name": "A-E16: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r11",
+      "name": "A-E17: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r11",
+      "name": "A-E17: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "name": "A-E17: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "name": "A-E18: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "name": "A-E18: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "name": "A-E18: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e01.svg",
+      "name": "A-E19: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e02.svg",
+      "name": "A-E19: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e03.svg",
+      "name": "A-E19: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e04.svg",
+      "name": "A-E20: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e05.svg",
+      "name": "A-E20: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "name": "A-E20: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "name": "A-E21: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "name": "A-E21: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "name": "A-E21: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e06.svg",
+      "name": "A-E22: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e07.svg",
+      "name": "A-E22: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e08.svg",
+      "name": "A-E22: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e09.svg",
+      "name": "A-E23: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e10.svg",
+      "name": "A-E23: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e11.svg",
+      "name": "A-E23: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e12.svg",
+      "name": "A-E24: local bilingual symbols before math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e13.svg",
+      "name": "A-E24: immediate physical-variable figure",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e14.svg",
+      "name": "A-E24: static readable math and MathML",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e15.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/vendor/katex/katex.min.css",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e16.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/course.css",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e17.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/course-theme.js",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e18.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/course-progress.js",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e19.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e20.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../index.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r12",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/defense.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r12",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/notation.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r12",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r12",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e21.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e22.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../chapters/03-arrays-finite-jets-and-impact.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e23.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../chapters/04-fracture-and-transfer.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../assets/figures/c5-e24.svg",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../appendices/a-hydrogel-versus-liquid.html",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency 04-fracture-and-transfer.html",
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-objective",
       "passed": true,
       "detail": null
     },
     {
-      "name": "chapters/05-hydrogel-versus-liquid.html: local dependency ../reference/defense.html",
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-objective",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-assumptions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-assumptions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-pressure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-pressure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-dynamics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-dynamics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-example",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-example",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-times",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-times",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-tests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-tests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency #gel-defense",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-defense",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e01.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e02.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e03.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e04.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e05.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e06.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e07.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e08.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e09.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e10.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e11.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e12.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e13.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e14.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e15.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e16.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e17.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e18.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e19.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e20.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: anchor ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e21.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e22.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e23.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/figures/a-e24.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../chapters/04-fracture-and-transfer.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/defense.html",
       "passed": true,
       "detail": null
     },
@@ -9904,62 +11129,62 @@
       "detail": null
     },
     {
-      "name": "reference/defense.html: local dependency ../chapters/05-hydrogel-versus-liquid.html#C5-Q1",
+      "name": "reference/defense.html: local dependency ../appendices/a-hydrogel-versus-liquid.html#A-Q1",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: anchor ../chapters/05-hydrogel-versus-liquid.html#C5-Q1",
+      "name": "reference/defense.html: anchor ../appendices/a-hydrogel-versus-liquid.html#A-Q1",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: local dependency ../chapters/05-hydrogel-versus-liquid.html#C5-Q1",
+      "name": "reference/defense.html: local dependency ../appendices/a-hydrogel-versus-liquid.html#A-Q1",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: anchor ../chapters/05-hydrogel-versus-liquid.html#C5-Q1",
+      "name": "reference/defense.html: anchor ../appendices/a-hydrogel-versus-liquid.html#A-Q1",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: local dependency ../chapters/05-hydrogel-versus-liquid.html#C5-Q2",
+      "name": "reference/defense.html: local dependency ../appendices/a-hydrogel-versus-liquid.html#A-Q2",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: anchor ../chapters/05-hydrogel-versus-liquid.html#C5-Q2",
+      "name": "reference/defense.html: anchor ../appendices/a-hydrogel-versus-liquid.html#A-Q2",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: local dependency ../chapters/05-hydrogel-versus-liquid.html#C5-Q2",
+      "name": "reference/defense.html: local dependency ../appendices/a-hydrogel-versus-liquid.html#A-Q2",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: anchor ../chapters/05-hydrogel-versus-liquid.html#C5-Q2",
+      "name": "reference/defense.html: anchor ../appendices/a-hydrogel-versus-liquid.html#A-Q2",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: local dependency ../chapters/05-hydrogel-versus-liquid.html#C5-Q3",
+      "name": "reference/defense.html: local dependency ../appendices/a-hydrogel-versus-liquid.html#A-Q3",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: anchor ../chapters/05-hydrogel-versus-liquid.html#C5-Q3",
+      "name": "reference/defense.html: anchor ../appendices/a-hydrogel-versus-liquid.html#A-Q3",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: local dependency ../chapters/05-hydrogel-versus-liquid.html#C5-Q3",
+      "name": "reference/defense.html: local dependency ../appendices/a-hydrogel-versus-liquid.html#A-Q3",
       "passed": true,
       "detail": null
     },
     {
-      "name": "reference/defense.html: anchor ../chapters/05-hydrogel-versus-liquid.html#C5-Q3",
+      "name": "reference/defense.html: anchor ../appendices/a-hydrogel-versus-liquid.html#A-Q3",
       "passed": true,
       "detail": null
     },
@@ -10392,6 +11617,326 @@
       }
     },
     {
+      "name": "C01: one detailed symbol glossary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C01: no Chapter 5 label",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "C01: exactly three questions",
       "passed": true,
       "detail": null
@@ -10428,6 +11973,236 @@
     },
     {
       "name": "C1-Q3: semantic rubric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one detailed symbol glossary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C02: no Chapter 5 label",
       "passed": true,
       "detail": null
     },
@@ -10472,6 +12247,456 @@
       "detail": null
     },
     {
+      "name": "C03: one detailed symbol glossary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C03: no Chapter 5 label",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "C03: exactly three questions",
       "passed": true,
       "detail": null
@@ -10508,6 +12733,206 @@
     },
     {
       "name": "C3-Q3: semantic rubric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one detailed symbol glossary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C04: no Chapter 5 label",
       "passed": true,
       "detail": null
     },
@@ -10552,42 +12977,412 @@
       "detail": null
     },
     {
-      "name": "C05: exactly three questions",
+      "name": "A: one detailed symbol glossary",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C05: expected IDs",
+      "name": "A: one variable per glossary row",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-Q1: formula-first reference",
+      "name": "A: individual bilingual meaning and role",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-Q1: semantic rubric",
+      "name": "A: one variable per glossary row",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-Q2: formula-first reference",
+      "name": "A: individual bilingual meaning and role",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-Q2: semantic rubric",
+      "name": "A: one variable per glossary row",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-Q3: formula-first reference",
+      "name": "A: individual bilingual meaning and role",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-Q3: semantic rubric",
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: one variable per glossary row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: individual bilingual meaning and role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: no Chapter 5 label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: exactly three questions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A: expected IDs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A-Q1: formula-first reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A-Q1: semantic rubric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A-Q2: formula-first reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A-Q2: semantic rubric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A-Q3: formula-first reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A-Q3: semantic rubric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Legacy hydrogel link shows updated Appendix A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Legacy question and equation bookmarks preserved",
       "passed": true,
       "detail": null
     },
@@ -11040,12 +13835,12 @@
       "detail": "Film/PVC loading, transient structural response, interface separation, and transfer criteria. 薄膜／PVC受载、瞬态结构响应、界面分离与转印判据。"
     },
     {
-      "name": "C05: correspondence row count",
+      "name": "A: correspondence row count",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C05: map row 5 column 1",
+      "name": "A: map row 5 column 1",
       "passed": true,
       "detail": {
         "actual": [
@@ -11059,7 +13854,7 @@
       }
     },
     {
-      "name": "C05: map row 5 column 2",
+      "name": "A: map row 5 column 2",
       "passed": true,
       "detail": {
         "actual": [
@@ -11073,7 +13868,7 @@
       }
     },
     {
-      "name": "C05: map row 5 column 3",
+      "name": "A: map row 5 column 3",
       "passed": true,
       "detail": {
         "actual": [
@@ -11087,7 +13882,7 @@
       }
     },
     {
-      "name": "C05: main-material column has no old course identifiers",
+      "name": "A: main-material column has no old course identifiers",
       "passed": true,
       "detail": "Hydrogel confinement , constitutive resistance, response times, and architecture comparison. 水凝胶 约束 、本构阻力、响应时间与结构方案比较。"
     },
@@ -13972,482 +16767,482 @@
       "detail": null
     },
     {
-      "name": "C5-E01: SVG text within vertical bounds",
+      "name": "A-E01: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E01: figure labels retained",
+      "name": "A-E01: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E01: no control characters in math",
+      "name": "A-E01: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E01: Newton radius notation",
+      "name": "A-E01: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: SVG text within vertical bounds",
+      "name": "A-E02: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: figure labels retained",
+      "name": "A-E02: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: no control characters in math",
+      "name": "A-E02: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E02: Newton radius notation",
+      "name": "A-E02: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: SVG text within vertical bounds",
+      "name": "A-E03: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: figure labels retained",
+      "name": "A-E03: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: no control characters in math",
+      "name": "A-E03: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E03: Newton radius notation",
+      "name": "A-E03: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: SVG text within vertical bounds",
+      "name": "A-E04: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: figure labels retained",
+      "name": "A-E04: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: no control characters in math",
+      "name": "A-E04: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E04: Newton radius notation",
+      "name": "A-E04: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: SVG text within vertical bounds",
+      "name": "A-E05: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: figure labels retained",
+      "name": "A-E05: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: no control characters in math",
+      "name": "A-E05: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E05: Newton radius notation",
+      "name": "A-E05: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: SVG text within vertical bounds",
+      "name": "A-E06: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: figure labels retained",
+      "name": "A-E06: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: no control characters in math",
+      "name": "A-E06: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E06: Newton radius notation",
+      "name": "A-E06: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: SVG text within vertical bounds",
+      "name": "A-E07: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: figure labels retained",
+      "name": "A-E07: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: no control characters in math",
+      "name": "A-E07: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E07: Newton radius notation",
+      "name": "A-E07: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: SVG text within vertical bounds",
+      "name": "A-E08: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: figure labels retained",
+      "name": "A-E08: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: no control characters in math",
+      "name": "A-E08: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E08: Newton radius notation",
+      "name": "A-E08: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: SVG text within vertical bounds",
+      "name": "A-E09: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: figure labels retained",
+      "name": "A-E09: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: no control characters in math",
+      "name": "A-E09: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E09: Newton radius notation",
+      "name": "A-E09: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: SVG text within vertical bounds",
+      "name": "A-E10: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: figure labels retained",
+      "name": "A-E10: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: no control characters in math",
+      "name": "A-E10: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E10: Newton radius notation",
+      "name": "A-E10: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: SVG text within vertical bounds",
+      "name": "A-E11: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: figure labels retained",
+      "name": "A-E11: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: no control characters in math",
+      "name": "A-E11: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E11: Newton radius notation",
+      "name": "A-E11: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: SVG text within vertical bounds",
+      "name": "A-E12: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: figure labels retained",
+      "name": "A-E12: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: no control characters in math",
+      "name": "A-E12: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E12: Newton radius notation",
+      "name": "A-E12: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: SVG text within vertical bounds",
+      "name": "A-E13: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: figure labels retained",
+      "name": "A-E13: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: no control characters in math",
+      "name": "A-E13: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E13: Newton radius notation",
+      "name": "A-E13: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: SVG text within vertical bounds",
+      "name": "A-E14: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: figure labels retained",
+      "name": "A-E14: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: no control characters in math",
+      "name": "A-E14: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E14: Newton radius notation",
+      "name": "A-E14: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: SVG text within vertical bounds",
+      "name": "A-E15: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: figure labels retained",
+      "name": "A-E15: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: no control characters in math",
+      "name": "A-E15: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E15: Newton radius notation",
+      "name": "A-E15: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: SVG text within vertical bounds",
+      "name": "A-E16: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: figure labels retained",
+      "name": "A-E16: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: no control characters in math",
+      "name": "A-E16: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E16: Newton radius notation",
+      "name": "A-E16: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: SVG text within vertical bounds",
+      "name": "A-E17: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: figure labels retained",
+      "name": "A-E17: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: no control characters in math",
+      "name": "A-E17: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E17: Newton radius notation",
+      "name": "A-E17: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: SVG text within vertical bounds",
+      "name": "A-E18: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: figure labels retained",
+      "name": "A-E18: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: no control characters in math",
+      "name": "A-E18: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E18: Newton radius notation",
+      "name": "A-E18: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: SVG text within vertical bounds",
+      "name": "A-E19: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: figure labels retained",
+      "name": "A-E19: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: no control characters in math",
+      "name": "A-E19: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E19: Newton radius notation",
+      "name": "A-E19: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: SVG text within vertical bounds",
+      "name": "A-E20: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: figure labels retained",
+      "name": "A-E20: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: no control characters in math",
+      "name": "A-E20: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E20: Newton radius notation",
+      "name": "A-E20: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: SVG text within vertical bounds",
+      "name": "A-E21: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: figure labels retained",
+      "name": "A-E21: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: no control characters in math",
+      "name": "A-E21: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E21: Newton radius notation",
+      "name": "A-E21: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: SVG text within vertical bounds",
+      "name": "A-E22: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: figure labels retained",
+      "name": "A-E22: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: no control characters in math",
+      "name": "A-E22: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E22: Newton radius notation",
+      "name": "A-E22: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: SVG text within vertical bounds",
+      "name": "A-E23: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: figure labels retained",
+      "name": "A-E23: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: no control characters in math",
+      "name": "A-E23: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E23: Newton radius notation",
+      "name": "A-E23: Newton radius notation",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: SVG text within vertical bounds",
+      "name": "A-E24: SVG text within vertical bounds",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: figure labels retained",
+      "name": "A-E24: figure labels retained",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: no control characters in math",
+      "name": "A-E24: no control characters in math",
       "passed": true,
       "detail": null
     },
     {
-      "name": "C5-E24: Newton radius notation",
+      "name": "A-E24: Newton radius notation",
       "passed": true,
       "detail": null
     },
@@ -14762,52 +17557,53 @@
       "detail": null
     }
   ],
-  "chapters": 5,
+  "chapters": 4,
+  "appendices": 1,
   "chapter_questions": 15,
   "displayed_equations": 168,
-  "bilingual_paragraph_pairs": 983,
+  "bilingual_paragraph_pairs": 1227,
   "local_dependencies": 428,
   "local_math_fonts": 60,
   "pages": [
     {
       "file": "index.html",
-      "bytes": 20148,
+      "bytes": 20026,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1219990,
+      "bytes": 1227484,
       "equations": 34,
       "defenses": 3
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1461163,
+      "bytes": 1467820,
       "equations": 36,
       "defenses": 3
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 1826355,
+      "bytes": 1825691,
       "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1758265,
+      "bytes": 1757344,
       "equations": 41,
       "defenses": 3
     },
     {
-      "file": "chapters/05-hydrogel-versus-liquid.html",
-      "bytes": 1184644,
+      "file": "appendices/a-hydrogel-versus-liquid.html",
+      "bytes": 1181167,
       "equations": 24,
       "defenses": 3
     },
     {
       "file": "reference/defense.html",
-      "bytes": 17678,
+      "bytes": 17793,
       "equations": 0,
       "defenses": 0
     },
@@ -14819,7 +17615,7 @@
     },
     {
       "file": "reference/sources.html",
-      "bytes": 24198,
+      "bytes": 24236,
       "equations": 0,
       "defenses": 0
     }
@@ -15690,145 +18486,145 @@
       "height": 569.0
     },
     {
-      "id": "C5-E01",
+      "id": "A-E01",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E02",
+      "id": "A-E02",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E03",
+      "id": "A-E03",
       "kind": "gel",
       "labels": 6,
       "height": 640.0
     },
     {
-      "id": "C5-E04",
+      "id": "A-E04",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E05",
+      "id": "A-E05",
       "kind": "gel",
       "labels": 4,
       "height": 592.0
     },
     {
-      "id": "C5-E06",
+      "id": "A-E06",
       "kind": "gel",
       "labels": 4,
       "height": 592.0
     },
     {
-      "id": "C5-E07",
+      "id": "A-E07",
       "kind": "energy",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E08",
+      "id": "A-E08",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E09",
+      "id": "A-E09",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E10",
+      "id": "A-E10",
       "kind": "gel",
       "labels": 6,
       "height": 640.0
     },
     {
-      "id": "C5-E11",
+      "id": "A-E11",
       "kind": "gel",
       "labels": 6,
       "height": 640.0
     },
     {
-      "id": "C5-E12",
+      "id": "A-E12",
       "kind": "energy",
       "labels": 6,
       "height": 640.0
     },
     {
-      "id": "C5-E13",
+      "id": "A-E13",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E14",
+      "id": "A-E14",
       "kind": "energy",
       "labels": 6,
       "height": 640.0
     },
     {
-      "id": "C5-E15",
+      "id": "A-E15",
       "kind": "gel",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E16",
+      "id": "A-E16",
       "kind": "timescale",
       "labels": 3,
       "height": 568.0
     },
     {
-      "id": "C5-E17",
+      "id": "A-E17",
       "kind": "timescale",
       "labels": 5,
       "height": 616.0
     },
     {
-      "id": "C5-E18",
+      "id": "A-E18",
       "kind": "timescale",
       "labels": 7,
       "height": 664.0
     },
     {
-      "id": "C5-E19",
+      "id": "A-E19",
       "kind": "timescale",
       "labels": 4,
       "height": 592.0
     },
     {
-      "id": "C5-E20",
+      "id": "A-E20",
       "kind": "gel",
       "labels": 6,
       "height": 640.0
     },
     {
-      "id": "C5-E21",
+      "id": "A-E21",
       "kind": "gel",
       "labels": 3,
       "height": 568.0
     },
     {
-      "id": "C5-E22",
+      "id": "A-E22",
       "kind": "energy",
       "labels": 4,
       "height": 592.0
     },
     {
-      "id": "C5-E23",
+      "id": "A-E23",
       "kind": "timescale",
       "labels": 3,
       "height": 568.0
     },
     {
-      "id": "C5-E24",
+      "id": "A-E24",
       "kind": "film",
       "labels": 6,
       "height": 640.0

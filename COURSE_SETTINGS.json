@@ -25,6 +25,9 @@
   "chapters": [
     {
       "id": "C01",
+      "kind": "chapter",
+      "label": "Chapter 1",
+      "label_zh": "第 1 章",
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "title": "Cavity pressure, carrier inertia and directional jets",
       "title_zh": "空腔压力、载液惯性与定向射流",
@@ -50,6 +53,9 @@
     },
     {
       "id": "C02",
+      "kind": "chapter",
+      "label": "Chapter 2",
+      "label_zh": "第 2 章",
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
       "title": "From laser absorption to a finite PFC bubble",
       "title_zh": "从激光吸收到有限 PFC 气泡",
@@ -75,6 +81,9 @@
     },
     {
       "id": "C03",
+      "kind": "chapter",
+      "label": "Chapter 3",
+      "label_zh": "第 3 章",
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
       "title": "Arrays, finite jets and measurable impact",
       "title_zh": "阵列、有限射流与可测冲击",
@@ -100,6 +109,9 @@
     },
     {
       "id": "C04",
+      "kind": "chapter",
+      "label": "Chapter 4",
+      "label_zh": "第 4 章",
       "file": "chapters/04-fracture-and-transfer.html",
       "title": "Fracture and transfer",
       "title_zh": "断裂与转印",
@@ -122,16 +134,21 @@
           "实际传递的载荷能否释放目标界面，同时不损坏被转印对象？"
         ]
       ]
-    },
+    }
+  ],
+  "appendices": [
     {
-      "id": "C05",
-      "file": "chapters/05-hydrogel-versus-liquid.html",
+      "id": "A",
+      "kind": "appendix",
+      "label": "Appendix A",
+      "label_zh": "附录 A",
+      "file": "appendices/a-hydrogel-versus-liquid.html",
       "title": "Hydrogel versus liquid platforms",
       "title_zh": "水凝胶与液体平台",
       "defense_ids": [
-        "C5-Q1",
-        "C5-Q2",
-        "C5-Q3"
+        "A-Q1",
+        "A-Q2",
+        "A-Q3"
       ],
       "unit_map_row": [
         [
@@ -149,6 +166,24 @@
       ]
     }
   ],
+  "unit_order": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "A"
+  ],
+  "legacy_routes": [
+    {
+      "file": "chapters/05-hydrogel-versus-liquid.html",
+      "canonical": "appendices/a-hydrogel-versus-liquid.html"
+    }
+  ],
+  "legacy_response_ids": {
+    "C5-Q1": "A-Q1",
+    "C5-Q2": "A-Q2",
+    "C5-Q3": "A-Q3"
+  },
   "causal_chain": [
     "absorption",
     "heat transport",

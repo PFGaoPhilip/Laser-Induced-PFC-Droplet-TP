@@ -1,4 +1,4 @@
-"""Independent analytical/numerical controls for the Chapter 5 teaching model.
+"""Independent analytical/numerical controls for the Appendix A teaching model.
 
 No target PFC hydrogel is simulated and no experimental validation is claimed.
 """
@@ -20,7 +20,7 @@ spec = importlib.util.spec_from_file_location("chapter05_check_content", ROOT / 
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 chapter = module.CHAPTER
-eqs = [e for e in coursekit.EQUATIONS if e["id"].startswith("C5-")]
+eqs = [e for e in coursekit.EQUATIONS if e["id"].startswith("A-")]
 checks = []
 
 
@@ -131,7 +131,7 @@ near("illustrative drainage time", L**2 / D, 1.5)
 
 html = chapter["body"]
 soup = BeautifulSoup(html, "html.parser")
-check("exactly three defense questions", chapter["question_ids"] == ["C5-Q1", "C5-Q2", "C5-Q3"]
+check("exactly three defense questions", chapter["question_ids"] == ["A-Q1", "A-Q2", "A-Q3"]
       and len(soup.select("article.defense")) == 3, chapter["question_ids"])
 check("unique equation identifiers", len(set(e["id"] for e in eqs)) == len(eqs), len(eqs))
 check("every formula has local definitions and a meaningful figure",
@@ -139,7 +139,7 @@ check("every formula has local definitions and a meaningful figure",
 check("every reference answer begins with a quoted equation",
       all(x.select_one("details.answer").find("section", recursive=False) is not None
           and x.select_one("details.answer").find("section", recursive=False).get("class") == ["equation-unit"]
-          for x in soup.select("article.defense")), "C5-E21, C5-E22, C5-E23 precede answer prose")
+          for x in soup.select("article.defense")), "A-E21, A-E22, A-E23 precede answer prose")
 check("no escaped-LaTeX control characters in prose", not any(c in html for c in "\t\r\b\f"), "Raw authoring literals preserve LaTeX")
 check("no private local computer paths in course prose", re.search(r'file:/{3}|(?<![A-Za-z0-9])[A-Z]:[\\/]', html, re.I) is None, "Content only")
 
@@ -147,10 +147,11 @@ en_words = sum(len(x.get_text(" ", strip=True).split()) for x in soup.select('[l
 en_prose_words = sum(len(x.get_text(" ", strip=True).split()) for x in soup.select('[lang="en"]')
                      if not x.find_parent(class_="symbols"))
 review = {
-    "chapter": 5,
+    "unit": "Appendix A",
+    "legacy_source_number": 5,
     "date": "2026-10-09",
     "status": "authored_and_self_audited_not_learner_mastered",
-    "scope": "Promoted source Appendix A; four retained platform mechanisms; no COMSOL model or target pressure maximum claimed",
+    "scope": "Source Appendix A retained as Appendix A; four retained platform mechanisms; no COMSOL model or target pressure maximum claimed",
     "equations": len(eqs),
     "defense_questions": 3,
     "english_words_including_local_definitions": en_words,

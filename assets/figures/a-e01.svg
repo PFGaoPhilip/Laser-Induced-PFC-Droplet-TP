@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
+<title id="title">A-E01 — The same network shell moves outward while thinning radially and stretching tangentially.</title>
+<desc id="desc">Rref: reference wall; R: current wall; r₀ → r: material shell; λr = r₀²/r²; λθ = λφ = r/r₀; Network material volume is unchanged; Radial direction points outward</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="616" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">A-E01 · Physical variable map / 物理变量图</text>
+<circle cx="196" cy="180" r="80" class="thin"/>
+<circle cx="196" cy="180" r="36" class="area"/>
+<path d="M196 180 H232" class="arrow"/>
+<text x="190" y="160" class="">Rref</text>
+<path d="M196 180 L259 231" class="arrow"/>
+<text x="254" y="240" class="">r₀</text>
+<circle cx="610" cy="180" r="116" class="thin"/>
+<circle cx="610" cy="180" r="78" class="area"/>
+<path d="M610 180 H688" class="arrow"/>
+<text x="650" y="162" class="">R</text>
+<path d="M610 180 L700 253" class="arrow"/>
+<text x="699" y="261" class="">r</text>
+<path d="M298 180 H472" class="arrow"/>
+<text x="307" y="146" class="">Material map / 材料映射</text>
+<text x="82" y="302" class="">Reference / 参考状态</text>
+<text x="513" y="322" class="">Deformed / 变形状态: λr , λθ</text>
+<text x="757" y="106" class="">Gg , ηg</text>
+<text x="753" y="153" class="">σrr , σθθ</text>
+<text x="753" y="201" class="">p∞</text>
+<text x="583" y="187" class="">pb</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Rref: reference wall</text>
+<text x="30" y="433" class="muted">• R: current wall</text>
+<text x="30" y="457" class="muted">• r₀ → r: material shell</text>
+<text x="30" y="481" class="muted">• λr = r₀²/r²</text>
+<text x="30" y="505" class="muted">• λθ = λφ = r/r₀</text>
+<text x="30" y="547" class="muted">Network material volume is unchanged</text>
+<text x="30" y="570" class="muted">Radial direction points outward</text>
+</svg>

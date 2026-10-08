@@ -3,6 +3,7 @@
 Owned chapter content only. All material values are declared teaching inputs.
 """
 from coursekit import P, H, E, T, cite, defense, note
+from symbol_tables import glossary
 
 
 def eq(identifier, tex, en, zh, kind, diagram_type, labels, notes, caption_en, caption_zh):
@@ -34,21 +35,10 @@ add(T(
          ('Coupled cavity thermodynamics, bulging and fracture; an outgoing jet need not exist.', '耦合腔体热力学、鼓起与断裂；不一定存在出射射流。')],
     ]))
 add(note(
-    'An intact PVC sheet blocks liquid passage. A jet incident on PVC cannot also be assigned directly to the film behind it without an actual opening or rupture. A sealed cavity and an open liquid pocket are also different actuators. Chapter 5 compares those hydrogel architectures; the same load-path discipline applies here.',
-    '完整PVC片层阻挡液体穿过。射流冲击PVC后，若没有真实开口或破裂，就不能同时假设它直接冲击后方薄膜。封闭腔体与开放液体口袋也是不同致动器。第5章比较这些水凝胶结构；本章同样必须明确传力路径。'))
+    'An intact PVC sheet blocks liquid passage. A jet incident on PVC cannot also be assigned directly to the film behind it without an actual opening or rupture. A sealed cavity and an open liquid pocket are also different actuators. Appendix A compares those hydrogel architectures; the same load-path discipline applies here.',
+    '完整PVC片层阻挡液体穿过。射流冲击PVC后，若没有真实开口或破裂，就不能同时假设它直接冲击后方薄膜。封闭腔体与开放液体口袋也是不同致动器。附录 A 比较这些水凝胶结构；本章同样必须明确传力路径。'))
 add(H('Working glossary and restrictions', '基本符号与限制', 'glossary', 3))
-add(T(
-    [('Group', '类别'), ('Convention', '约定')],
-    [
-        [('Liquid', '液体'),
-         (r'$p$ is local pressure in Pa; $\mu$ is dynamic viscosity in Pa s; $\boldsymbol u$ is liquid velocity in m s⁻¹. The identity tensor $\boldsymbol I$ is dimensionless.', r'$p$为局部压力，单位Pa；$\mu$为动力黏度，单位Pa s；$\boldsymbol u$为液体速度，单位m s⁻¹。单位张量$\boldsymbol I$无量纲。')],
-        [('Film', '薄膜'),
-         (r'$w$ is vertical displacement in m; $h_f$ is thickness in m; $\rho_f$ is density in kg m⁻³; $E_f$ is Young’s modulus in Pa; $\nu_f$ is Poisson’s ratio. Subscript f labels the film.', r'$w$为竖直位移，单位m；$h_f$为厚度，单位m；$\rho_f$为密度，单位kg m⁻³；$E_f$为杨氏模量，单位Pa；$\nu_f$为泊松比。下标f表示薄膜。')],
-        [('Interface', '界面'),
-         (r'$\Gamma$ is practical fracture energy in J m⁻²; $G$ is energy-release rate in J m⁻²; $T_{\max}$ is peak tensile cohesive traction in Pa. They are different properties.', r'$\Gamma$为实际断裂能，单位J m⁻²；$G$为能量释放率，单位J m⁻²；$T_{\max}$为峰值拉伸内聚牵引，单位Pa。三者并非同一性质。')],
-        [('Time and operators', '时间与算子'),
-         (r'$t$ denotes time in s; dots are time derivatives, so $\dot w$ and $\ddot w$ are velocity and acceleration. $\nabla_\parallel$ differentiates in the film plane. Vector dot products denote work projections, never a separator between unrelated equations.', r'$t$表示时间，单位s；上点为时间导数，因此$\dot w$和$\ddot w$分别是速度与加速度。$\nabla_\parallel$在薄膜平面内求导。向量点乘表示功的投影，绝不用于分隔不相关的方程。')],
-    ]))
+add(glossary(4))
 
 add(H('2 · Derive the solid load from fluid stress', '2 · 从流体应力得到固体载荷', 'traction'))
 add(P(

@@ -18,13 +18,14 @@ def main():
     audit=json.loads((ROOT/'verification/course-audit.json').read_text(encoding='utf-8'))
     assert audit['status']=='passed','Course gate failed'
     settings=json.loads((ROOT/'COURSE_SETTINGS.json').read_text(encoding='utf-8'))
+    units=settings['chapters']+settings.get('appendices',[])
     selected={Path('index.html'),Path('.nojekyll'),Path('.gitignore'),Path('README.md'),Path('MISSION.md'),Path('NOTES.md'),Path('RESOURCES.md'),Path('COURSE_SETTINGS.json')}
-    selected.update(Path(c['file']) for c in settings['chapters'])
+    selected.update(Path(c['file']) for c in units+settings.get('legacy_routes',[]))
     selected.update(p.relative_to(ROOT) for folder in ['assets','reference'] for p in (ROOT/folder).rglob('*') if p.is_file())
     selected.add(Path('text/course.md'))
-    selected.update(Path('text')/Path(c['file']).with_suffix('.md').name for c in settings['chapters'])
+    selected.update(Path('text')/Path(c['file']).with_suffix('.md').name for c in units)
     selected.update(Path('sources')/name for name in ['Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md','Cavitation_Course_Before_After_Comparison_EN_ZH.md'])
-    selected.update(p.relative_to(ROOT) for p in (ROOT/'content').glob('chapter*.py'))
+    selected.update(p.relative_to(ROOT) for p in (ROOT/'content').glob('*.py'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'scripts').glob('*') if p.is_file() and p.suffix in ['.py','.cjs'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if not any(tag in p.name for tag in ['publication','cleanup','package-audit']))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('chapter*-check.py'))

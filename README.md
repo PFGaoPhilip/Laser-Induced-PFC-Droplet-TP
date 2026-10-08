@@ -1,9 +1,9 @@
 # Laser Induced PFC Droplet TP
 # 激光诱导 PFC 液滴转印
 
-A bilingual, project-centered theory course: five substantial chapters connect laser absorption, finite PFC phase change, cavitation jets, array interactions, actual load transmission, fracture and intact transfer.
+A bilingual, project-centered theory course: four main chapters and Appendix A connect laser absorption, finite PFC phase change, cavitation jets, array interactions, actual load transmission, fracture and intact transfer.
 
-本双语项目导向理论课程以五个实质性章节贯通激光吸收、有限 PFC 相变、空化射流、阵列相互作用、实际载荷传递、断裂与完整转印。
+本双语项目导向理论课程以四个主体章节及附录 A 贯通激光吸收、有限 PFC 相变、空化射流、阵列相互作用、实际载荷传递、断裂与完整转印。
 
 [Read the website](https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/) or open `index.html` from the complete downloaded folder. All essential mathematical rendering, fonts, figures and scripts are bundled locally. Scholarly sources are optional external reading; original PDFs are excluded.
 
@@ -16,20 +16,20 @@ A bilingual, project-centered theory course: five substantial chapters connect l
 2. Laser heating, matched PFC comparisons and finite phase inventory.
 3. Bubble arrays, finite emitted jets, transport and defined impact loads.
 4. Direct/PVC force paths, transient film mechanics and selective fracture.
-5. Conventional liquid, gel-supported pockets, embedded PFC and sealed-cavity platforms.
+5. **Appendix A:** Conventional liquid, gel-supported pockets, embedded PFC and sealed-cavity platforms.
 
 1. 腔体压力、载液惯性与定向射流。
 2. 激光加热、匹配条件的 PFC 对照与有限相存量。
 3. 气泡阵列、有限喷出射流、输运与明确冲击载荷。
 4. 直接／PVC 受力路径、瞬态薄膜力学与选择性断裂。
-5. 常规液体、凝胶支撑液体口袋、嵌入 PFC 与密闭腔体平台。
+5. **附录 A：**常规液体、凝胶支撑液体口袋、嵌入 PFC 与密闭腔体平台。
 
 ## Defense and mastery
 ## 答辩与掌握
 
-Each chapter ends with exactly three questions, detailed formula-first reference answers, and a semantic rubric. Save your own-word responses, then copy or download them into the teaching chat for feedback. The teacher marks a chapter mastered only after all three explanations demonstrate understanding. Reading, browsing and form completion do not automatically mark mastery.
+Each chapter and Appendix A ends with exactly three questions, detailed formula-first reference answers, and a semantic rubric. Save your own-word responses, then copy or download them into the teaching chat for feedback. The teacher marks a unit mastered only after all three explanations demonstrate understanding. Reading, browsing and form completion do not automatically mark mastery.
 
-每章末尾恰好三个问题，附先引原公式的详细参考答案及理解评估标准。保存自己的解释后，复制或下载至教学对话获得反馈。只有三个解释均展示理解后，教师才将本章标记为已掌握。阅读、浏览及填写表单不会自动标记掌握。
+每章及附录 A 的末尾均有恰好三个问题，附先引原公式的详细参考答案及理解评估标准。保存自己的解释后，复制或下载至教学对话获得反馈。只有三个解释均展示理解后，教师才将该单元标记为已掌握。阅读、浏览及填写表单不会自动标记掌握。
 
 ## Editable source and checks
 ## 可编辑来源与核验

@@ -48,7 +48,7 @@ def svg_for(eq):
     initial_core=(kind=='sphere' and (eq['id'].startswith('C2-') or 'PFC-core' in combined or 'a₀' in combined))
     nucleus=kind=='nucleation'
     if kind=='gel':
-        if eq['id']=='C5-E20':
+        if eq['id']=='A-E20':
             for x in range(105,625,45):path(f'M{x} 112 V266','thin')
             for y in range(116,269,38):path(f'M96 {y} H622','thin')
             for y in [140,193,244]:path(f'M118 {y} H710','arrow')
@@ -127,7 +127,7 @@ def svg_for(eq):
             text(567,162,'H');text(551,261,'tflight = H / Uj')
             text(113,314,'Growth / 增长: δarr = δ₀ exp(gmax tflight)')
             text(551,311,'δcrit ; tlin ; tσ','muted')
-        elif eq['id']=='C5-E18':
+        elif eq['id']=='A-E18':
             text(97,90,'Two declared models / 两个声明的模型')
             rect(109,119,610,40);text(130,146,'ts = 6.70820 µs — shear transit / 剪切传播')
             rect(109,207,250,40);text(130,232,'tc,liq = 2.74404 µs')
@@ -174,7 +174,7 @@ def svg_for(eq):
             path('M482 236 V285','arrow');text(521,287,'Dissipation / 耗散 ≥ 0','muted')
             text(75,91,'Load control matters / 必须声明载荷控制')
             text(90,324,'Energy and impulse are separate budgets / 能量与冲量分别核算','muted')
-        elif eq['id'].startswith('C5-'):
+        elif eq['id'].startswith('A-'):
             circle(180,179,77,'line');circle(180,179,29);path('M180 179 H257','arrow');text(220,158,'R')
             text(126,285,'Rref → R');text(98,98,'Cavity / 腔体: pb dV')
             rect(436,125,410,123);text(459,164,'Elastic storage / 弹性储能: Wg')

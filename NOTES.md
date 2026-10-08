@@ -13,6 +13,6 @@ Use Newton dots for radius time derivatives. Show every displayed formula with p
 
 半径时间导数使用牛顿点号。每个独立公式前定义符号，公式后附相应物理变量图。参考答案先引用原公式，再说明推理。
 
-Exactly three chapter-defense questions. Correct own-word explanations can demonstrate mastery; worked calculations are teaching examples, not an extra homework requirement.
+Exactly three defense questions per chapter and in Appendix A. Correct own-word explanations can demonstrate mastery; worked calculations are teaching examples, not an extra homework requirement. Every glossary row defines one variable with its own meaning, units and role.
 
-每章恰好三个答辩问题。正确的自主解释可展示掌握；已解计算是教学例题，不是额外作业要求。
+每章及附录 A 各有恰好三个答辩问题。正确的自主解释可展示掌握；已解计算是教学例题，不是额外作业要求。每个符号表行仅定义一个变量，并单独注明意义、单位及作用。

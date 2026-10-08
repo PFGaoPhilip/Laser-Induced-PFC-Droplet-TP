@@ -1,6 +1,6 @@
-# Arrays, finite jets and measurable impact
+# Chapter 3: Arrays, finite jets and measurable impact
 
-# 阵列、有限射流与可测冲击
+# 第 3 章：阵列、有限射流与可测冲击
 
 ## 1. Define the array, its energy constraint, and the desired output
 
@@ -14,31 +14,68 @@ Use fixed Cartesian bubble centers for the first interaction model; neglect cent
 
 第一种相互作用模型采用固定 Cartesian 气泡中心，忽略中心平移、重力、壁面、合并及形状模态。要求气泡接近球形、半径远小于间距、壁面 Mach 数小，且压力传播快于径向事件。理想塌缩对照在零时刻从最大半径及零壁速开始，环境压力减去泡内压力为恒定正值。实际 PFC 压力则必须与第二章耦合。后续空间发射问题采用实际壁面、出口及运动界面。液体指向气体的法向，使外部圆柱射流曲率为正、内部球腔曲率为负。
 
-| Symbol family  符号组 | Meaning and units  含义与单位 |
-| --- | --- |
-| $i,j=1,\ldots,N\_b$; $N\_d,N\_b$  $i,j=1,\ldots,N\_b$；$N\_d,N\_b$ | Bubble indices; fabricated-site count and activated-bubble count (dimensionless).  气泡编号；制造位点数及已激活气泡数（无量纲）。 |
-| $R\_i,d\_{ij},s,R\_{\max}$  $R\_i,d\_{ij},s,R\_{\max}$ | Radius, center distance, nearest-vertex pitch and maximum radius (m). Newton dots denote time derivatives.  半径、中心距离、相邻顶点间距及最大半径（m）；Newton 点表示时间导数。 |
-| $\rho,\mu,\sigma\_b,\sigma\_j,c$  $\rho,\mu,\sigma\_b,\sigma\_j,c$ | Carrier density (kg m⁻³), viscosity (Pa s), bubble and jet surface tensions (N m⁻¹), sound speed (m s⁻¹).  载液密度（kg m⁻³）、黏度（Pa s）、气泡及射流表面张力（N m⁻¹）、声速（m s⁻¹）。 |
-| $\phi,\Pi,\boldsymbol u$  $\phi,\Pi,\boldsymbol u$ | Velocity potential (m² s⁻¹), pressure impulse per area (Pa s), velocity field (m s⁻¹).  速度势（m² s⁻¹）、单位面积压力冲量（Pa s）、速度场（m s⁻¹）。 |
-| $E,m,P,\mathcal J$  $E,m,P,\mathcal J$ | Energy (J), liquid mass (kg), directional momentum (N s), delivered force impulse (N s). Labels identify the particular system.  能量（J）、液体质量（kg）、方向动量（N s）、传递的力冲量（N s）；下标区分具体系统。 |
-| $a\_j,d\_j,L\_j,H,z$  $a\_j,d\_j,L\_j,H,z$ | Jet radius, diameter, emitted length, flight gap and axial coordinate (m).  射流半径、直径、喷出长度、飞行间隙及轴向坐标（m）。 |
-| $S,\chi,C(\chi),b\_i$  $S,\chi,C(\chi),b\_i$ | Neighbor reciprocal-distance sum (m⁻¹), interaction parameter, collapse-time coefficient (dimensionless), and source strength (m³ s⁻¹).  邻距倒数和（m⁻¹）、相互作用参数、塌缩时间系数（无量纲）及源强度（m³ s⁻¹）。 |
-| $\Gamma,\Omega,\boldsymbol n,\kappa$  $\Gamma,\Omega,\boldsymbol n,\kappa$ | Moving interface, liquid domain, unit normal pointing out of liquid, and signed curvature (m⁻¹).  运动界面、液体域、指向液体外部的单位法向及带符号曲率（m⁻¹）。 |
-| $g,\delta,k,q,I\_0,I\_1$  $g,\delta,k,q,I\_0,I\_1$ | Disturbance growth rate (s⁻¹; not gravity), amplitude (m), wavenumber (m⁻¹), dimensionless wavenumber and modified Bessel functions. The pitch remains the distinct symbol s.  扰动增长率（s⁻¹；并非重力）、振幅（m）、波数（m⁻¹）、无量纲波数及修正 Bessel 函数；间距保留为另一符号 s。 |
-| $Z\_l,Z\_r,A\_o,\tau\_o,p\_{\mathrm{obs}}$  $Z\_l,Z\_r,A\_o,\tau\_o,p\_{\mathrm{obs}}$ | Liquid/receiver impedance (Pa s m⁻¹), observer area (m²), averaging time (s) and observed mean excess pressure (Pa).  液体／接收体阻抗（Pa s m⁻¹）、观察面积（m²）、平均时间（s）及观察平均超压（Pa）。 |
-| $\partial\_t,\nabla,\nabla^2,\int,\sum$  $\partial\_t,\nabla,\nabla^2,\int,\sum$ | Fixed-position time derivative, spatial gradient/Laplacian, integral and finite sum. Powers are arithmetic powers; subscripts label sites or physical roles.  固定位置时间导数、空间梯度／Laplace 算子、积分及有限求和。上标幂为算术幂；下标表示位点或物理作用。 |
+| Symbol<br>符号 | Physical meaning<br>物理意义 | SI units<br>SI 单位 | Role and convention<br>作用与约定 |
+| --- | --- | --- | --- |
+| $i$ | Index of the bubble being evaluated<br>当前评估气泡的编号 | 1 | Integer from 1 to the activated-bubble count; selects the local radial equation.<br>从 1 到已激活气泡数的整数；选择局部径向方程。 |
+| $j$ | Index of a neighboring bubble<br>相邻气泡的编号 | 1 | In an interaction sum the evaluated site is excluded: j ≠ i.<br>相互作用求和中排除当前位点：j ≠ i。 |
+| $N_d$ | Fabricated droplet-site count<br>制造的液滴位点数 | 1 | Counts available sites; it does not imply every site activates.<br>计数可用位点；不意味着每个位点都激活。 |
+| $N_b$ | Activated-bubble count<br>已激活气泡数 | 1 | Counts actual bubble sources used in the interaction equations.<br>计数相互作用方程中实际使用的气泡源。 |
+| $R_i$ | Radius of bubble i<br>气泡 i 的半径 | m | Moving radial coordinate of the selected bubble; Newton dots denote its time derivatives.<br>选定气泡的运动径向坐标；牛顿点号表示其时间导数。 |
+| $d_{ij}$ | Bubble-center separation<br>气泡中心间距 | m | Distance between centers i and j; reciprocal distance weights dilute interactions.<br>中心 i 与 j 的距离；距离倒数加权稀疏相互作用。 |
+| $s$ | Nearest-vertex array pitch<br>阵列相邻顶点间距 | m | Defined nearest-neighbor spacing in the regular-polygon control.<br>正多边形对照中定义的最近邻间距。 |
+| $R_{\max}$ | Maximum bubble radius<br>最大气泡半径 | m | Reference radius for the specified collapse control and geometric interaction parameter.<br>指定塌缩对照与几何相互作用参数采用的参考半径。 |
+| $\rho$ | Carrier-liquid density<br>载液密度 | kg m⁻³ | Sets bubble-exterior inertia and emitted liquid mass; not PFC-vapor density.<br>决定泡外惯性与喷出液体质量；不是 PFC 蒸气密度。 |
+| $\mu$ | Carrier dynamic viscosity<br>载液动力黏度 | Pa s | Controls viscous stresses and jet dissipation in the stated liquid model.<br>在指定液体模型中控制黏性应力及射流耗散。 |
+| $\sigma_b$ | Bubble-interface surface tension<br>气泡界面表面张力 | N m⁻¹ | Bubble capillary coefficient; need not equal the jet-interface coefficient.<br>气泡毛细系数；不必等于射流界面系数。 |
+| $\sigma_j$ | Jet-interface surface tension<br>射流界面表面张力 | N m⁻¹ | Coefficient for the emitted jet and its capillary disturbance growth.<br>喷出射流及其毛细扰动增长使用的系数。 |
+| $c$ | Liquid sound speed<br>液体声速 | m s⁻¹ | Sets acoustic transit and ideal early-contact impedance, not a universal jet-speed ceiling.<br>决定声传播时间及理想早期接触阻抗，并非通用射流速度上限。 |
+| $\phi$ | Velocity potential<br>速度势 | m² s⁻¹ | Its spatial gradient gives the adopted potential-flow velocity.<br>其空间梯度给出所采用的势流速度。 |
+| $\Pi$ | Pressure impulse per unit area<br>单位面积压力冲量 | Pa s | Pressure integrated over a stated time interval; distinct from total force impulse.<br>指定时间区间内的压力积分；与总力冲量不同。 |
+| $\boldsymbol u$ | Liquid velocity field<br>液体速度场 | m s⁻¹ | Vector field needed to distinguish focusing, jet formation and transport.<br>用于区分聚焦、射流形成与输运的矢量场。 |
+| $E$ | Specified mechanical energy<br>指定力学能量 | J | The subscript identifies its budget; optical, bubble and jet energies are not interchangeable.<br>下标标识预算对象；光能、气泡能与射流能不能混同。 |
+| $m$ | Finite moving-liquid mass<br>有限运动液体质量 | kg | Mass of the declared jet or control volume used in energy and momentum bounds.<br>能量与动量界限中所声明射流或控制体的质量。 |
+| $P$ | Directional liquid momentum<br>液体方向动量 | N s | Projection of moving-liquid momentum along the selected transfer direction.<br>运动液体动量沿选定转印方向的投影。 |
+| $\mathcal J$ | Delivered force impulse<br>传递的力冲量 | N s | Time integral of force at the specified target; not pressure impulse per area.<br>指定目标处的力对时间的积分；不是单位面积压力冲量。 |
+| $a_j$ | Jet radius<br>射流半径 | m | Half the declared circular jet diameter; sets lateral-release and capillary scales.<br>所声明圆形射流直径的一半；决定侧向释放与毛细尺度。 |
+| $d_j$ | Jet diameter<br>射流直径 | m | Transverse size used with emitted length to determine finite jet volume.<br>与喷出长度共同确定有限射流体积的横向尺寸。 |
+| $L_j$ | Finite emitted-jet length<br>有限喷出射流长度 | m | Longitudinal liquid inventory; must not be replaced by an unlimited steady stream.<br>液体纵向存量；不能替换为无限稳态液流。 |
+| $H$ | Flight gap<br>飞行间隙 | m | Distance traveled by the emitted liquid before reaching the specified target.<br>喷出液体到达指定目标之前经过的距离。 |
+| $z$ | Jet axial coordinate<br>射流轴向坐标 | m | Coordinate along the transport direction used for slice conservation.<br>用于切片守恒的输运方向坐标。 |
+| $S$ | Neighbor reciprocal-distance sum<br>邻距倒数和 | m⁻¹ | Finite sum of the inverse center separations in the regular-array control.<br>规则阵列对照中中心间距倒数的有限和。 |
+| $\chi$ | Dimensionless interaction parameter<br>无量纲相互作用参数 | 1 | Maximum radius multiplied by S; quantifies interaction within the adopted dilute model.<br>最大半径乘以 S；量化所采用稀疏模型中的相互作用。 |
+| $C(\chi)$ | Formal collapse-time coefficient<br>形式塌缩时间系数 | 1 | Result of the stated array-control integral; not a pressure amplification factor.<br>指定阵列对照积分的结果；不是压力放大系数。 |
+| $b_i$ | Radial source strength of bubble i<br>气泡 i 的径向源强度 | m³ s⁻¹ | Defined by radius squared times wall velocity in the monopole-flow control.<br>在单极流动对照中定义为半径平方乘壁面速度。 |
+| $\Gamma$ | Moving liquid interface<br>运动液体界面 | — | Geometric surface carrying kinematic and traction conditions; not fracture energy.<br>承载运动学及牵引条件的几何曲面；不是断裂能。 |
+| $\Omega$ | Liquid spatial domain<br>液体空间域 | — | Region occupied by liquid in the spatial-flow problem.<br>空间流动问题中液体占据的区域。 |
+| $\boldsymbol n$ | Outward liquid unit normal<br>液体外向单位法向 | 1 | Points out of liquid; fixes traction and signed curvature.<br>指向液体外部；确定牵引及带符号曲率。 |
+| $\kappa$ | Signed interfacial curvature<br>带符号界面曲率 | m⁻¹ | Sum of principal curvatures for the stated normal convention.<br>在指定法向约定下的两主曲率之和。 |
+| $g$ | Disturbance growth rate<br>扰动增长率 | s⁻¹ | Exponential capillary growth coefficient; this symbol is not gravitational acceleration.<br>指数毛细增长系数；该符号不是重力加速度。 |
+| $\delta$ | Jet-radius disturbance amplitude<br>射流半径扰动振幅 | m | Small deviation from the undeformed jet; linear growth ceases to apply at large amplitude.<br>相对未变形射流的小偏差；大振幅时线性增长不再适用。 |
+| $k$ | Axial disturbance wavenumber<br>轴向扰动波数 | m⁻¹ | Spatial oscillation frequency along the jet; not thermal conductivity.<br>沿射流的空间振荡频率；不是导热系数。 |
+| $q$ | Dimensionless disturbance wavenumber<br>无量纲扰动波数 | 1 | Defined as axial wavenumber multiplied by jet radius.<br>定义为轴向波数乘射流半径。 |
+| $I_0$ | Modified Bessel function of order zero<br>零阶修正 Bessel 函数 | 1 | Dimensionless radial eigenfunction in the cylindrical capillary control.<br>圆柱毛细对照中的无量纲径向特征函数。 |
+| $I_1$ | Modified Bessel function of order one<br>一阶修正 Bessel 函数 | 1 | Used with I₀ in the stated disturbance dispersion relation.<br>在指定扰动色散关系中与 I₀ 共同使用。 |
+| $Z_l$ | Liquid acoustic impedance<br>液体声阻抗 | Pa s m⁻¹ | Density times sound speed in the adopted one-dimensional early-contact model.<br>在所采用的一维早期接触模型中为密度乘声速。 |
+| $Z_r$ | Receiver acoustic impedance<br>接收体声阻抗 | Pa s m⁻¹ | Determines early wave matching; finite thickness and motion can invalidate the half-space control.<br>决定早期波匹配；有限厚度与运动可能使半空间对照失效。 |
+| $A_o$ | Pressure observation area<br>压力观测面积 | m² | Fixed footprint over which the reported load is spatially averaged.<br>用于对报告载荷进行空间平均的固定范围。 |
+| $\tau_o$ | Pressure averaging interval<br>压力平均时间区间 | s | Specified time window; changing it changes the observable pressure.<br>指定时间窗口；改变它会改变可观测压力。 |
+| $p_{\mathrm{obs}}$ | Observed mean excess pressure<br>观测平均超压 | Pa | Area/time average on the defined target; differs from a brief local pressure spike.<br>指定目标上的面积／时间平均；不同于短暂局部压力尖峰。 |
 
 Step 1 — distinguish five uniformities: core inventory, carrier volume, pitch, optical fluence and activation time. Separate liquid cells can be summed only after their finite outputs and arrival times are known. Bubbles sharing a liquid domain move common liquid and modify one another's ambient pressure. A regular pattern therefore supplies geometry, not a count-proportional pressure law.
 
 步骤 1——区分五种均匀性：芯部储量、载液体积、间距、光学通量及激活时间。分隔液体单元只能在有限输出及到达时间已知后求和。共享液体域的气泡推动共同液体，并改变彼此的周围压力。因此规则排列只提供几何，并不提供压力正比于数量的定律。
 
-**Symbols before Eq. (C3-E01).** $N\_d$ is positive integer site count; $N\_b$ is the random activated count; $p\_a\in(0,1]$ is identical independent activation probability. $\mathbb E$, $\operatorname{Var}$ and $\Pr$ denote expectation, variance and probability; $\mathrm{CV}$ is standard deviation divided by nonzero mean. All are dimensionless.
+**Symbols before Eq. (C3-E01).** $N_d$ is positive integer site count; $N_b$ is the random activated count; $p_a\in(0,1]$ is identical independent activation probability. $\mathbb E$, $\operatorname{Var}$ and $\Pr$ denote expectation, variance and probability; $\mathrm{CV}$ is standard deviation divided by nonzero mean. All are dimensionless.
 
-**式（C3-E01）前的符号定义。** $N\_d$ 是正整数位点数；$N\_b$ 为随机已激活数量；$p\_a\in(0,1]$ 为相同且相互独立的激活概率。$\mathbb E$、$\operatorname{Var}$、$\Pr$ 分别表示期望、方差、概率；$\mathrm{CV}$ 是标准差除以非零均值。所有量均无量纲。
+**式（C3-E01）前的符号定义。** $N_d$ 是正整数位点数；$N_b$ 为随机已激活数量；$p_a\in(0,1]$ 为相同且相互独立的激活概率。$\mathbb E$、$\operatorname{Var}$、$\Pr$ 分别表示期望、方差、概率；$\mathrm{CV}$ 是标准差除以非零均值。所有量均无量纲。
 
-(C3-E01) · Independent-event statistical model$$
-\begin{aligned}\mathbb E[N\_b]&=N\_dp\_a,\quad \operatorname{Var}(N\_b)=N\_dp\_a(1-p\_a),\\ \mathrm{CV}(N\_b)&=\frac{\sqrt{N\_dp\_a(1-p\_a)}}{N\_dp\_a}=\sqrt{\frac{1-p\_a}{N\_dp\_a}},\quad \Pr(N\_b=N\_d)=p\_a^{N\_d}.\end{aligned}
+(C3-E01) · Independent-event statistical model
+
 $$
+\begin{aligned}\mathbb E[N_b]&=N_dp_a,\quad \operatorname{Var}(N_b)=N_dp_a(1-p_a),\\ \mathrm{CV}(N_b)&=\frac{\sqrt{N_dp_a(1-p_a)}}{N_dp_a}=\sqrt{\frac{1-p_a}{N_dp_a}},\quad \Pr(N_b=N_d)=p_a^{N_d}.\end{aligned}
+$$
+
+
 ![Count reproducibility and complete activation are different tests.](../assets/figures/c3-e01.svg)
 
 Count reproducibility and complete activation are different tests.
@@ -49,13 +86,17 @@ For 25 sites and activation probability 0.95, the mean count is 23.75 and relati
 
 25 个位点、激活概率 0.95 时，平均数量为 23.75，相对标准差为 4.588%。然而全部激活概率仅为 0.27739。该计算假设独立 Bernoulli 试验；共同加热及力学反馈可破坏这一假设。仅统计气泡数量不能核验完全激活的对称载荷。
 
-**Symbols before Eq. (C3-E02).** $F(r)$ is Gaussian pulse fluence at radial distance $r$ (J m⁻²); $F\_0>0$ is central fluence. $R\_A>0$ encloses the array and $w>0$ is the Gaussian 1/e² radius (m). $\epsilon\in(0,1)$ is allowed fractional edge decrease. $\exp$ and $\ln$ are exponential and natural logarithm of dimensionless arguments.
+**Symbols before Eq. (C3-E02).** $F(r)$ is Gaussian pulse fluence at radial distance $r$ (J m⁻²); $F_0>0$ is central fluence. $R_A>0$ encloses the array and $w>0$ is the Gaussian 1/e² radius (m). $\epsilon\in(0,1)$ is allowed fractional edge decrease. $\exp$ and $\ln$ are exponential and natural logarithm of dimensionless arguments.
 
-**式（C3-E02）前的符号定义。** $F(r)$ 是径向距离 $r$ 处的 Gaussian 脉冲通量（J m⁻²）；$F\_0>0$ 为中心通量。$R\_A>0$ 包围阵列，$w>0$ 为 Gaussian 的 1/e² 半径（m）。$\epsilon\in(0,1)$ 是允许的边缘相对降低量。$\exp$、$\ln$ 分别为无量纲自变量的指数及自然对数。
+**式（C3-E02）前的符号定义。** $F(r)$ 是径向距离 $r$ 处的 Gaussian 脉冲通量（J m⁻²）；$F_0>0$ 为中心通量。$R_A>0$ 包围阵列，$w>0$ 为 Gaussian 的 1/e² 半径（m）。$\epsilon\in(0,1)$ 是允许的边缘相对降低量。$\exp$、$\ln$ 分别为无量纲自变量的指数及自然对数。
 
-(C3-E02) · Derived optical-uniformity condition$$
-\frac{F(R\_A)}{F\_0}=\exp(-2R\_A^2/w^2)\ge1-\epsilon\ \Longrightarrow\ w^2\ge\frac{2R\_A^2}{-\ln(1-\epsilon)}\ \Longrightarrow\ w\ge R\_A\sqrt{\frac{2}{-\ln(1-\epsilon)}}.
+(C3-E02) · Derived optical-uniformity condition
+
 $$
+\frac{F(R_A)}{F_0}=\exp(-2R_A^2/w^2)\ge1-\epsilon\ \Longrightarrow\ w^2\ge\frac{2R_A^2}{-\ln(1-\epsilon)}\ \Longrightarrow\ w\ge R_A\sqrt{\frac{2}{-\ln(1-\epsilon)}}.
+$$
+
+
 ![An optical condition can be checked before solving cavity mechanics.](../assets/figures/c3-e02.svg)
 
 An optical condition can be checked before solving cavity mechanics.
@@ -74,26 +115,34 @@ Step 2 — use incompressibility to obtain one source. At a distance from a fixe
 
 步骤 2——利用不可压缩性得到单个源。在距固定球形中心的不同位置，同心球面上的径向体积流率相同。对速度作径向积分，并取无穷远速度势为零。对另一个充分分离的中心，该源势在目标气泡表面近乎空间均匀。通过非定常 Bernoulli，其固定位置时间导数提供首阶周围压力修正。
 
-**Symbols before Eq. (C3-E03).** $j$ labels the emitting bubble and $i\ne j$ a receiving center. $R\_j(t)>0$, $r\_j\ge R\_j$, dummy radius $\xi$ and fixed $d\_{ij}>0$ are lengths (m); $t$ is time (s). $\dot R\_j,\ddot R\_j$ are radius derivatives (m s⁻¹, m s⁻²). $u\_j$ is radial velocity (m s⁻¹); $\phi\_j$ is velocity potential (m² s⁻¹). $\partial\_t$ holds position fixed; $\int$ is radial integration, $\infty$ the zero-potential far field; $\pi$ is dimensionless.
+**Symbols before Eq. (C3-E03).** $j$ labels the emitting bubble and $i\ne j$ a receiving center. $R_j(t)>0$, $r_j\ge R_j$, dummy radius $\xi$ and fixed $d_{ij}>0$ are lengths (m); $t$ is time (s). $\dot R_j,\ddot R_j$ are radius derivatives (m s⁻¹, m s⁻²). $u_j$ is radial velocity (m s⁻¹); $\phi_j$ is velocity potential (m² s⁻¹). $\partial_t$ holds position fixed; $\int$ is radial integration, $\infty$ the zero-potential far field; $\pi$ is dimensionless.
 
-**式（C3-E03）前的符号定义。** $j$ 标记发射气泡，$i\ne j$ 标记接收中心。$R\_j(t)>0$、$r\_j\ge R\_j$、积分半径 $\xi$ 及固定 $d\_{ij}>0$ 均为长度（m）；$t$ 为时间（s）。$\dot R\_j$、$\ddot R\_j$ 为半径时间导数（m s⁻¹、m s⁻²）。$u\_j$ 为径向速度（m s⁻¹）；$\phi\_j$ 为速度势（m² s⁻¹）。$\partial\_t$ 保持位置固定；$\int$ 为径向积分，$\infty$ 为速度势为零的远场；$\pi$ 无量纲。
+**式（C3-E03）前的符号定义。** $j$ 标记发射气泡，$i\ne j$ 标记接收中心。$R_j(t)>0$、$r_j\ge R_j$、积分半径 $\xi$ 及固定 $d_{ij}>0$ 均为长度（m）；$t$ 为时间（s）。$\dot R_j$、$\ddot R_j$ 为半径时间导数（m s⁻¹、m s⁻²）。$u_j$ 为径向速度（m s⁻¹）；$\phi_j$ 为速度势（m² s⁻¹）。$\partial_t$ 保持位置固定；$\int$ 为径向积分，$\infty$ 为速度势为零的远场；$\pi$ 无量纲。
 
-(C3-E03) · Continuity and potential integration$$
-\begin{aligned}4\pi r\_j^2u\_j(r\_j,t)&=4\pi R\_j^2\dot R\_j,\\ \phi\_j(r\_j,t)&=\int\_{\infty}^{r\_j}\frac{R\_j^2\dot R\_j}{\xi^2}\,d\xi=-\frac{R\_j^2\dot R\_j}{r\_j},\\ \partial\_t\phi\_j\big|\_{r\_j=d\_{ij}}&=-\frac{2R\_j\dot R\_j^2+R\_j^2\ddot R\_j}{d\_{ij}}.\end{aligned}
+(C3-E03) · Continuity and potential integration
+
 $$
+\begin{aligned}4\pi r_j^2u_j(r_j,t)&=4\pi R_j^2\dot R_j,\\ \phi_j(r_j,t)&=\int_{\infty}^{r_j}\frac{R_j^2\dot R_j}{\xi^2}\,d\xi=-\frac{R_j^2\dot R_j}{r_j},\\ \partial_t\phi_j\big|_{r_j=d_{ij}}&=-\frac{2R_j\dot R_j^2+R_j^2\ddot R_j}{d_{ij}}.\end{aligned}
+$$
+
+
 ![A moving spherical volume produces a monopole potential.](../assets/figures/c3-e03.svg)
 
 A moving spherical volume produces a monopole potential.
 
 运动球体体积产生单极子速度势。
 
-**Symbols before Eq. (C3-E04).** $i,j=1,\ldots,N\_b$ are distinct bubble indices; $p'\_{j\to i}$ is source $j$'s pressure disturbance at $i$, $p\_{\mathrm{ext},i}$ external pressure and $p\_\infty$ remote pressure (Pa). $\rho$ is constant carrier density (kg m⁻³); $\phi\_j$ is potential (m² s⁻¹); $t$ is time (s), $\partial\_t$ its fixed-position derivative. $R\_j,d\_{ij}$ are positive lengths (m), dots time derivatives. $\sum\_{j\ne i}$ adds all other sources; $\simeq$ marks the leading far-separated approximation.
+**Symbols before Eq. (C3-E04).** $i,j=1,\ldots,N_b$ are distinct bubble indices; $p'_{j\to i}$ is source $j$'s pressure disturbance at $i$, $p_{\mathrm{ext},i}$ external pressure and $p_\infty$ remote pressure (Pa). $\rho$ is constant carrier density (kg m⁻³); $\phi_j$ is potential (m² s⁻¹); $t$ is time (s), $\partial_t$ its fixed-position derivative. $R_j,d_{ij}$ are positive lengths (m), dots time derivatives. $\sum_{j\ne i}$ adds all other sources; $\simeq$ marks the leading far-separated approximation.
 
-**式（C3-E04）前的符号定义。** $i,j=1,\ldots,N\_b$ 为不同气泡编号；$p'\_{j\to i}$ 是源 $j$ 在 $i$ 处的压力扰动，$p\_{\mathrm{ext},i}$ 为外压，$p\_\infty$ 为远场压力（Pa）。$\rho$ 为恒定载液密度（kg m⁻³）；$\phi\_j$ 为速度势（m² s⁻¹）；$t$ 为时间（s），$\partial\_t$ 为固定位置导数。$R\_j$、$d\_{ij}$ 为正长度（m），点表示时间导数。$\sum\_{j\ne i}$ 对其他源求和；$\simeq$ 表示充分分离时的首阶近似。
+**式（C3-E04）前的符号定义。** $i,j=1,\ldots,N_b$ 为不同气泡编号；$p'_{j\to i}$ 是源 $j$ 在 $i$ 处的压力扰动，$p_{\mathrm{ext},i}$ 为外压，$p_\infty$ 为远场压力（Pa）。$\rho$ 为恒定载液密度（kg m⁻³）；$\phi_j$ 为速度势（m² s⁻¹）；$t$ 为时间（s），$\partial_t$ 为固定位置导数。$R_j$、$d_{ij}$ 为正长度（m），点表示时间导数。$\sum_{j\ne i}$ 对其他源求和；$\simeq$ 表示充分分离时的首阶近似。
 
-(C3-E04) · Leading unsteady-Bernoulli approximation$$
-p'\_{j\to i}\simeq-\rho\partial\_t\phi\_j(d\_{ij},t)=\frac{\rho}{d\_{ij}}(R\_j^2\ddot R\_j+2R\_j\dot R\_j^2),\qquad p\_{\mathrm{ext},i}\simeq p\_\infty+\sum\_{j\ne i}p'\_{j\to i}.
+(C3-E04) · Leading unsteady-Bernoulli approximation
+
 $$
+p'_{j\to i}\simeq-\rho\partial_t\phi_j(d_{ij},t)=\frac{\rho}{d_{ij}}(R_j^2\ddot R_j+2R_j\dot R_j^2),\qquad p_{\mathrm{ext},i}\simeq p_\infty+\sum_{j\ne i}p'_{j\to i}.
+$$
+
+
 ![The correction changes surrounding pressure; it is not a new energy reservoir.](../assets/figures/c3-e04.svg)
 
 The correction changes surrounding pressure; it is not a new energy reservoir.
@@ -104,13 +153,17 @@ The product rule supplies both terms in the numerator; keeping only the radius a
 
 分子两项均由乘积法则产生；仅保留半径加速度项不自洽。各项除以间距后单位为 m² s⁻²，再乘密度即为压力。被忽略的 Bernoulli 速度平方项、接收泡上的非均匀压力、平移及反射场必须足够小。体积正加速度升高周围压力；完整事件中修正可以取两种符号。降压表面空化实验显示内部气泡受到屏蔽并延迟塌缩，最终射流阶段球形模型失效。它是相关相互作用对照，而非激光 PFC 标定。[Bremond 等（2006）](https://doi.org/10.1103/PhysRevLett.96.224501)
 
-**Symbols before Eq. (C3-E05).** $i,j$ index activated bubbles; $R\_i,R\_j,d\_{ij}>0$ are lengths (m), dots are time derivatives. $p\_{b,i}$ is bubble $i$'s internal pressure and $p\_\infty$ remote pressure (Pa). $\sigma\_b$ is bubble–carrier tension (N m⁻¹), $\mu$ carrier dynamic viscosity (Pa s), $\rho$ carrier density (kg m⁻³). $B\_i$ is the isolated radial driving expression (m² s⁻²); $\sum\_{j\ne i}$ sums other sources. Every term has unit m² s⁻².
+**Symbols before Eq. (C3-E05).** $i,j$ index activated bubbles; $R_i,R_j,d_{ij}>0$ are lengths (m), dots are time derivatives. $p_{b,i}$ is bubble $i$'s internal pressure and $p_\infty$ remote pressure (Pa). $\sigma_b$ is bubble–carrier tension (N m⁻¹), $\mu$ carrier dynamic viscosity (Pa s), $\rho$ carrier density (kg m⁻³). $B_i$ is the isolated radial driving expression (m² s⁻²); $\sum_{j\ne i}$ sums other sources. Every term has unit m² s⁻².
 
-**式（C3-E05）前的符号定义。** $i,j$ 标记已激活气泡；$R\_i,R\_j,d\_{ij}>0$ 为长度（m），点为时间导数。$p\_{b,i}$ 为第 $i$ 个气泡内压，$p\_\infty$ 为远场压力（Pa）。$\sigma\_b$ 为泡—载液张力（N m⁻¹），$\mu$ 为载液动力黏度（Pa s），$\rho$ 为载液密度（kg m⁻³）。$B\_i$ 为孤立泡径向驱动表达式（m² s⁻²）；$\sum\_{j\ne i}$ 对其他源求和。各项单位均为 m² s⁻²。
+**式（C3-E05）前的符号定义。** $i,j$ 标记已激活气泡；$R_i,R_j,d_{ij}>0$ 为长度（m），点为时间导数。$p_{b,i}$ 为第 $i$ 个气泡内压，$p_\infty$ 为远场压力（Pa）。$\sigma_b$ 为泡—载液张力（N m⁻¹），$\mu$ 为载液动力黏度（Pa s），$\rho$ 为载液密度（kg m⁻³）。$B_i$ 为孤立泡径向驱动表达式（m² s⁻²）；$\sum_{j\ne i}$ 对其他源求和。各项单位均为 m² s⁻²。
 
-(C3-E05) · Coupled spherical approximation$$
-\begin{aligned}R\_i\ddot R\_i+\frac32\dot R\_i^2+\sum\_{j\ne i}\frac{R\_j^2\ddot R\_j+2R\_j\dot R\_j^2}{d\_{ij}}&=B\_i,\\ B\_i&=\frac{p\_{b,i}-p\_\infty-2\sigma\_b/R\_i-4\mu\dot R\_i/R\_i}{\rho}.\end{aligned}
+(C3-E05) · Coupled spherical approximation
+
 $$
+\begin{aligned}R_i\ddot R_i+\frac32\dot R_i^2+\sum_{j\ne i}\frac{R_j^2\ddot R_j+2R_j\dot R_j^2}{d_{ij}}&=B_i,\\ B_i&=\frac{p_{b,i}-p_\infty-2\sigma_b/R_i-4\mu\dot R_i/R_i}{\rho}.\end{aligned}
+$$
+
+
 ![Substitute the corrected external pressure into each radial balance.](../assets/figures/c3-e05.svg)
 
 Substitute the corrected external pressure into each radial balance.
@@ -129,26 +182,34 @@ Step 4 — constrain identical cavities to a regular polygon, with identical ini
 
 步骤 4——将相同腔体约束在正多边形顶点，采用相同初值与压力历程。循环对称使各点邻距和相等，从而允许统一半径。下式推导距离和，而不是把气泡数量当作系数。此处间距指相邻顶点距离，并非外接圆半径。
 
-**Symbols before Eq. (C3-E06).** $N\in\{3,4,5\}$ is regular-polygon bubble count; $k=1,\ldots,N-1$ counts steps from one vertex. $s>0$ and $d\_k>0$ are neighboring-vertex and $k$-step center distances (m). $S\_N$ is the reciprocal-distance sum (m⁻¹). $\varphi\_g$ is the dimensionless golden ratio; $\sin$ takes angles in radians, $\pi$ is dimensionless, and $\sum$ sums the stated steps.
+**Symbols before Eq. (C3-E06).** $N\in\{3,4,5\}$ is regular-polygon bubble count; $k=1,\ldots,N-1$ counts steps from one vertex. $s>0$ and $d_k>0$ are neighboring-vertex and $k$-step center distances (m). $S_N$ is the reciprocal-distance sum (m⁻¹). $\varphi_g$ is the dimensionless golden ratio; $\sin$ takes angles in radians, $\pi$ is dimensionless, and $\sum$ sums the stated steps.
 
-**式（C3-E06）前的符号定义。** $N\in\{3,4,5\}$ 为正多边形气泡数；$k=1,\ldots,N-1$ 为从一个顶点出发的步数。$s>0$、$d\_k>0$ 为相邻及相隔 $k$ 步的中心距离（m）。$S\_N$ 为距离倒数和（m⁻¹）。$\varphi\_g$ 为无量纲黄金比；$\sin$ 的角度采用弧度，$\pi$ 无量纲；$\sum$ 对规定步数求和。
+**式（C3-E06）前的符号定义。** $N\in\{3,4,5\}$ 为正多边形气泡数；$k=1,\ldots,N-1$ 为从一个顶点出发的步数。$s>0$、$d_k>0$ 为相邻及相隔 $k$ 步的中心距离（m）。$S_N$ 为距离倒数和（m⁻¹）。$\varphi_g$ 为无量纲黄金比；$\sin$ 的角度采用弧度，$\pi$ 无量纲；$\sum$ 对规定步数求和。
 
-(C3-E06) · Exact polygon geometry$$
-\begin{aligned}d\_k&=s\frac{\sin(k\pi/N)}{\sin(\pi/N)},\qquad S\_N=\sum\_{k=1}^{N-1}\frac1{d\_k},\\ S\_3&=\frac2s,\qquad S\_4=\frac{2+1/\sqrt2}{s},\qquad S\_5=\frac{2+2/\varphi\_g}{s},\quad\varphi\_g=\frac{1+\sqrt5}{2}.\end{aligned}
+(C3-E06) · Exact polygon geometry
+
 $$
+\begin{aligned}d_k&=s\frac{\sin(k\pi/N)}{\sin(\pi/N)},\qquad S_N=\sum_{k=1}^{N-1}\frac1{d_k},\\ S_3&=\frac2s,\qquad S_4=\frac{2+1/\sqrt2}{s},\qquad S_5=\frac{2+2/\varphi_g}{s},\quad\varphi_g=\frac{1+\sqrt5}{2}.\end{aligned}
+$$
+
+
 ![Equal geometric sums justify a shared radial trajectory in this constrained control.](../assets/figures/c3-e06.svg)
 
 Equal geometric sums justify a shared radial trajectory in this constrained control.
 
 相同几何和使这一约束对照可采用共同径向轨迹。
 
-**Symbols before Eq. (C3-E07).** $p\_\infty,p\_b$ are constant ambient and internal pressure (Pa), $\Delta p\_c>0$ their collapse-driving difference. $S=S\_N\ge0$ is the fixed reciprocal-distance sum (m⁻¹); $R(t)>0$ and $R\_{\max}>0$ are shared and initial maximum radius (m). Dots are time derivatives, $t=0$ the initial time (s); $\rho>0$ is carrier density (kg m⁻³). Surface tension and viscosity are omitted in this ideal control; $SR$ is dimensionless.
+**Symbols before Eq. (C3-E07).** $p_\infty,p_b$ are constant ambient and internal pressure (Pa), $\Delta p_c>0$ their collapse-driving difference. $S=S_N\ge0$ is the fixed reciprocal-distance sum (m⁻¹); $R(t)>0$ and $R_{\max}>0$ are shared and initial maximum radius (m). Dots are time derivatives, $t=0$ the initial time (s); $\rho>0$ is carrier density (kg m⁻³). Surface tension and viscosity are omitted in this ideal control; $SR$ is dimensionless.
 
-**式（C3-E07）前的符号定义。** $p\_\infty$、$p\_b$ 为恒定环境及泡内压力（Pa），$\Delta p\_c>0$ 为其塌缩驱动压差。$S=S\_N\ge0$ 为固定距离倒数和（m⁻¹）；$R(t)>0$、$R\_{\max}>0$ 为共同及初始最大半径（m）。点为时间导数，$t=0$ 为初始时刻（s）；$\rho>0$ 为载液密度（kg m⁻³）。本理想对照忽略表面张力及黏度；$SR$ 无量纲。
+**式（C3-E07）前的符号定义。** $p_\infty$、$p_b$ 为恒定环境及泡内压力（Pa），$\Delta p_c>0$ 为其塌缩驱动压差。$S=S_N\ge0$ 为固定距离倒数和（m⁻¹）；$R(t)>0$、$R_{\max}>0$ 为共同及初始最大半径（m）。点为时间导数，$t=0$ 为初始时刻（s）；$\rho>0$ 为载液密度（kg m⁻³）。本理想对照忽略表面张力及黏度；$SR$ 无量纲。
 
-(C3-E07) · Symmetric constant-pressure collapse control$$
-\begin{aligned}\Delta p\_c&=p\_\infty-p\_b>0,\qquad S=S\_N,\\ (1+SR)R\ddot R+\left(\frac32+2SR\right)\dot R^2&=-\frac{\Delta p\_c}{\rho},\qquad R(0)=R\_{\max},\quad\dot R(0)=0.\end{aligned}
+(C3-E07) · Symmetric constant-pressure collapse control
+
 $$
+\begin{aligned}\Delta p_c&=p_\infty-p_b>0,\qquad S=S_N,\\ (1+SR)R\ddot R+\left(\frac32+2SR\right)\dot R^2&=-\frac{\Delta p_c}{\rho},\qquad R(0)=R_{\max},\quad\dot R(0)=0.\end{aligned}
+$$
+
+
 ![Substitution of the common radius collects the two interaction contributions.](../assets/figures/c3-e07.svg)
 
 Substitution of the common radius collects the two interaction contributions.
@@ -159,39 +220,51 @@ Step 5 — solve the reduced equation on the inward branch. Away from the initia
 
 步骤 5——求解缩小分支。离开初始转折点后，将壁速平方视为半径的函数。链式法则使其半径导数等于两倍壁加速度。所得线性方程的积分因子正比于半径三次方乘相互作用因子；下示对数导数证明这一选择。解连续延伸至初始零速度点。
 
-**Symbols before Eq. (C3-E08).** $y(R)\ge0$ is squared wall speed (m² s⁻²), $y'=dy/dR$ (m s⁻²); $R>0$ is radius (m) and dots its time derivatives. $S\ge0$ is neighbor sum (m⁻¹), $\rho>0$ density (kg m⁻³), $\Delta p\_c>0$ pressure difference (Pa). $\ell\_\*>0$ is an arbitrary constant reference length (m), inserted solely to make the logarithm dimensionless; it cancels from the integrating factor. $\ln$ is natural logarithm; $d/dR$ differentiates in radius. Division by $\dot R$ is used only on the moving branch.
+**Symbols before Eq. (C3-E08).** $y(R)\ge0$ is squared wall speed (m² s⁻²), $y'=dy/dR$ (m s⁻²); $R>0$ is radius (m) and dots its time derivatives. $S\ge0$ is neighbor sum (m⁻¹), $\rho>0$ density (kg m⁻³), $\Delta p_c>0$ pressure difference (Pa). $\ell_*>0$ is an arbitrary constant reference length (m), inserted solely to make the logarithm dimensionless; it cancels from the integrating factor. $\ln$ is natural logarithm; $d/dR$ differentiates in radius. Division by $\dot R$ is used only on the moving branch.
 
-**式（C3-E08）前的符号定义。** $y(R)\ge0$ 为壁速平方（m² s⁻²），$y'=dy/dR$（m s⁻²）；$R>0$ 为半径（m），点表示其时间导数。$S\ge0$ 为邻距和（m⁻¹），$\rho>0$ 为密度（kg m⁻³），$\Delta p\_c>0$ 为压差（Pa）。$\ell\_\*>0$ 为任意恒定参考长度（m），仅用来使对数无量纲，并在积分因子中抵消。$\ln$ 为自然对数；$d/dR$ 对半径求导。仅在运动分支除以 $\dot R$。
+**式（C3-E08）前的符号定义。** $y(R)\ge0$ 为壁速平方（m² s⁻²），$y'=dy/dR$（m s⁻²）；$R>0$ 为半径（m），点表示其时间导数。$S\ge0$ 为邻距和（m⁻¹），$\rho>0$ 为密度（kg m⁻³），$\Delta p_c>0$ 为压差（Pa）。$\ell_*>0$ 为任意恒定参考长度（m），仅用来使对数无量纲，并在积分因子中抵消。$\ln$ 为自然对数；$d/dR$ 对半径求导。仅在运动分支除以 $\dot R$。
 
-(C3-E08) · Chain rule and integrating-factor derivation$$
-\begin{aligned}y(R)&=\dot R^2,\quad \frac{dy}{dR}=\frac{2\dot R\ddot R}{\dot R}=2\ddot R\quad(\dot R\ne0),\\ y'+\frac{3+4SR}{R(1+SR)}y&=-\frac{2\Delta p\_c}{\rho R(1+SR)},\\ \frac{3+4SR}{R(1+SR)}&=\frac3R+\frac S{1+SR}=\frac{d}{dR}\ln[R^3(1+SR)/\ell\_\*^3],\\ \frac{d}{dR}\left[R^3(1+SR)y\right]&=-\frac{2\Delta p\_c}{\rho}R^2.\end{aligned}
+(C3-E08) · Chain rule and integrating-factor derivation
+
 $$
+\begin{aligned}y(R)&=\dot R^2,\quad \frac{dy}{dR}=\frac{2\dot R\ddot R}{\dot R}=2\ddot R\quad(\dot R\ne0),\\ y'+\frac{3+4SR}{R(1+SR)}y&=-\frac{2\Delta p_c}{\rho R(1+SR)},\\ \frac{3+4SR}{R(1+SR)}&=\frac3R+\frac S{1+SR}=\frac{d}{dR}\ln[R^3(1+SR)/\ell_*^3],\\ \frac{d}{dR}\left[R^3(1+SR)y\right]&=-\frac{2\Delta p_c}{\rho}R^2.\end{aligned}
+$$
+
+
 ![Every term of the integrating factor can be reconstructed from the radial equation.](../assets/figures/c3-e08.svg)
 
 Every term of the integrating factor can be reconstructed from the radial equation.
 
 积分因子的每一项均可从径向方程重构。
 
-**Symbols before Eq. (C3-E09).** $R\in(0,R\_{\max}]$ and $R\_{\max}$ are current/maximum radius (m); $\xi$ is dummy radius (m), dots radius time derivatives. $y=\dot R^2$ (m² s⁻²), $S\ge0$ neighbor sum (m⁻¹), $\rho>0$ density (kg m⁻³), $\Delta p\_c>0$ pressure difference (Pa). Brackets mean upper minus lower endpoint, $\int$ definite integration and $\sqrt{\ }$ the nonnegative root; the explicit minus sign selects collapse.
+**Symbols before Eq. (C3-E09).** $R\in(0,R_{\max}]$ and $R_{\max}$ are current/maximum radius (m); $\xi$ is dummy radius (m), dots radius time derivatives. $y=\dot R^2$ (m² s⁻²), $S\ge0$ neighbor sum (m⁻¹), $\rho>0$ density (kg m⁻³), $\Delta p_c>0$ pressure difference (Pa). Brackets mean upper minus lower endpoint, $\int$ definite integration and $\sqrt{\ }$ the nonnegative root; the explicit minus sign selects collapse.
 
-**式（C3-E09）前的符号定义。** $R\in(0,R\_{\max}]$、$R\_{\max}$ 为当前／最大半径（m）；$\xi$ 为积分半径（m），点为半径时间导数。$y=\dot R^2$（m² s⁻²），$S\ge0$ 为邻距和（m⁻¹），$\rho>0$ 为密度（kg m⁻³），$\Delta p\_c>0$ 为压差（Pa）。方括号表示上端减下端，$\int$ 为定积分，$\sqrt{\ }$ 取非负根；显式负号选择塌缩。
+**式（C3-E09）前的符号定义。** $R\in(0,R_{\max}]$、$R_{\max}$ 为当前／最大半径（m）；$\xi$ 为积分半径（m），点为半径时间导数。$y=\dot R^2$（m² s⁻²），$S\ge0$ 为邻距和（m⁻¹），$\rho>0$ 为密度（kg m⁻³），$\Delta p_c>0$ 为压差（Pa）。方括号表示上端减下端，$\int$ 为定积分，$\sqrt{\ }$ 取非负根；显式负号选择塌缩。
 
-(C3-E09) · Integrated solution on the inward branch$$
-\begin{aligned}[R^3(1+SR)y]\_{R\_{\max}}^R&=-\frac{2\Delta p\_c}{\rho}\int\_{R\_{\max}}^R\xi^2d\xi=\frac{2\Delta p\_c}{3\rho}(R\_{\max}^3-R^3),\\ \dot R^2&=\frac{2\Delta p\_c}{3\rho}\frac{R\_{\max}^3-R^3}{R^3(1+SR)},\qquad \dot R=-\sqrt{\frac{2\Delta p\_c}{3\rho}\frac{R\_{\max}^3-R^3}{R^3(1+SR)}}.\end{aligned}
+(C3-E09) · Integrated solution on the inward branch
+
 $$
+\begin{aligned}[R^3(1+SR)y]_{R_{\max}}^R&=-\frac{2\Delta p_c}{\rho}\int_{R_{\max}}^R\xi^2d\xi=\frac{2\Delta p_c}{3\rho}(R_{\max}^3-R^3),\\ \dot R^2&=\frac{2\Delta p_c}{3\rho}\frac{R_{\max}^3-R^3}{R^3(1+SR)},\qquad \dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\frac{R_{\max}^3-R^3}{R^3(1+SR)}}.\end{aligned}
+$$
+
+
 ![The initial condition removes the integration constant and the physical branch fixes the sign.](../assets/figures/c3-e09.svg)
 
 The initial condition removes the integration constant and the physical branch fixes the sign.
 
 初值消去积分常数，物理分支固定符号。
 
-**Symbols before Eq. (C3-E10).** $t\_c$ is formal collapse time (s); $R,R\_{\max}>0$ are radii (m), $\dot R$ wall velocity (m s⁻¹), $|\ |$ absolute value. $\rho$ is density (kg m⁻³), $\Delta p\_c>0$ pressure difference (Pa), $S\ge0$ neighbor sum (m⁻¹). $x\in[0,1]$ is dimensionless integration radius and $\chi\ge0$ interaction strength. $C$ and $C'=dC/d\chi$ are dimensionless; integrals are convergent improper integrals at $x=1$.
+**Symbols before Eq. (C3-E10).** $t_c$ is formal collapse time (s); $R,R_{\max}>0$ are radii (m), $\dot R$ wall velocity (m s⁻¹), $|\ |$ absolute value. $\rho$ is density (kg m⁻³), $\Delta p_c>0$ pressure difference (Pa), $S\ge0$ neighbor sum (m⁻¹). $x\in[0,1]$ is dimensionless integration radius and $\chi\ge0$ interaction strength. $C$ and $C'=dC/d\chi$ are dimensionless; integrals are convergent improper integrals at $x=1$.
 
-**式（C3-E10）前的符号定义。** $t\_c$ 为形式塌缩时间（s）；$R,R\_{\max}>0$ 为半径（m），$\dot R$ 为壁速（m s⁻¹），$|\ |$ 为绝对值。$\rho$ 为密度（kg m⁻³），$\Delta p\_c>0$ 为压差（Pa），$S\ge0$ 为邻距和（m⁻¹）。$x\in[0,1]$ 为无量纲积分半径，$\chi\ge0$ 为相互作用强度。$C$ 及 $C'=dC/d\chi$ 无量纲；积分在 $x=1$ 处为收敛广义积分。
+**式（C3-E10）前的符号定义。** $t_c$ 为形式塌缩时间（s）；$R,R_{\max}>0$ 为半径（m），$\dot R$ 为壁速（m s⁻¹），$|\ |$ 为绝对值。$\rho$ 为密度（kg m⁻³），$\Delta p_c>0$ 为压差（Pa），$S\ge0$ 为邻距和（m⁻¹）。$x\in[0,1]$ 为无量纲积分半径，$\chi\ge0$ 为相互作用强度。$C$ 及 $C'=dC/d\chi$ 无量纲；积分在 $x=1$ 处为收敛广义积分。
 
-(C3-E10) · Collapse-time quadrature and sign check$$
-\begin{aligned}t\_c&=\int\_0^{R\_{\max}}\frac{dR}{|\dot R|}=R\_{\max}\sqrt{\frac{\rho}{\Delta p\_c}}\,C(\chi),\quad x=R/R\_{\max},\quad\chi=SR\_{\max},\\ C(\chi)&=\sqrt{\frac32}\int\_0^1\sqrt{\frac{x^3(1+\chi x)}{1-x^3}}\,dx,\\ C'(\chi)&=\frac12\sqrt{\frac32}\int\_0^1\frac{x^{5/2}}{\sqrt{(1-x^3)(1+\chi x)}}\,dx>0\quad(\chi\ge0).\end{aligned}
+(C3-E10) · Collapse-time quadrature and sign check
+
 $$
+\begin{aligned}t_c&=\int_0^{R_{\max}}\frac{dR}{|\dot R|}=R_{\max}\sqrt{\frac{\rho}{\Delta p_c}}\,C(\chi),\quad x=R/R_{\max},\quad\chi=SR_{\max},\\ C(\chi)&=\sqrt{\frac32}\int_0^1\sqrt{\frac{x^3(1+\chi x)}{1-x^3}}\,dx,\\ C'(\chi)&=\frac12\sqrt{\frac32}\int_0^1\frac{x^{5/2}}{\sqrt{(1-x^3)(1+\chi x)}}\,dx>0\quad(\chi\ge0).\end{aligned}
+$$
+
+
 ![Shared-liquid interaction increases this constrained collapse time.](../assets/figures/c3-e10.svg)
 
 Shared-liquid interaction increases this constrained collapse time.
@@ -202,24 +275,28 @@ At the upper endpoint the integrand is proportional to the inverse square root o
 
 上端积分函数正比于距端点距离的负二分之一次方，因此可积。求导后积分函数为正，并保持同一可积端点形式，从而支持交换求导与积分及单调性。零相互作用时，以半径三次方作变量代换，还原第一章 Rayleigh 系数 0.9146813565。对半径 30 μm、间距 200 μm、密度 1000 kg m⁻³、压差 100 kPa 作数值积分，得到下列对照。最大半径与最近距离之比为 0.15：属于首阶近似，并非有误差保证的精确预测。
 
-| Configuration  构型 | $\chi$  $\chi$ | $C(\chi)$  $C(\chi)$ | Formal time (μs)  形式时间（μs） |
+| Configuration<br>构型 | $\chi$<br>$\chi$ | $C(\chi)$<br>$C(\chi)$ | Formal time (μs)<br>形式时间（μs） |
 | --- | --- | --- | --- |
-| Isolated  孤立 | 0  0 | 0.914681  0.914681 | 2.744044  2.744044 |
-| Triangle  正三角形 | 0.300000  0.300000 | 1.019836  1.019836 | 3.059509  3.059509 |
-| Square  正方形 | 0.406066  0.406066 | 1.054396  1.054396 | 3.163188  3.163188 |
-| Pentagon  正五边形 | 0.485410  0.485410 | 1.079497  1.079497 | 3.238492  3.238492 |
+| Isolated<br>孤立 | 0<br>0 | 0.914681<br>0.914681 | 2.744044<br>2.744044 |
+| Triangle<br>正三角形 | 0.300000<br>0.300000 | 1.019836<br>1.019836 | 3.059509<br>3.059509 |
+| Square<br>正方形 | 0.406066<br>0.406066 | 1.054396<br>1.054396 | 3.163188<br>3.163188 |
+| Pentagon<br>正五边形 | 0.485410<br>0.485410 | 1.079497<br>1.079497 | 3.238492<br>3.238492 |
 
 Step 6 — verify the shared-liquid kinetic energy, including the pair cross terms. Green's identity converts an interaction integral to the emitting bubble boundary; the outward normal of the liquid points into the cavity. A positive outward bubble velocity therefore gives a negative liquid-normal derivative. Multiplying two negative boundary factors makes the cross contribution positive for synchronized motion.
 
 步骤 6——核验包含两泡交叉项的共享液体动能。Green 恒等式将相互作用积分转换至发射泡边界；液体外法向指入腔体。因此向外的正泡壁速度对应负的液体法向导数。两个负的边界因子相乘，使同步运动的交叉贡献为正。
 
-**Symbols before Eq. (C3-E11).** $K\_N$ is leading cluster liquid kinetic energy (J); $N$ count and $i,j$ site indices. $R\_i,R\_j$ are site radii, $r\_i$ radial distance from $i$, $d\_{ij}$ center separation, $R$ common radius, $R\_{\max}$ its initial maximum, $R\_{\max,N}$ fixed-total-work maximum and $R\_\*$ isolated reference radius (all m); dots are time derivatives. $b\_i,b\_j$ are source strengths $R\_i^2\dot R\_i,R\_j^2\dot R\_j$ (m³ s⁻¹); $\phi\_i,\phi\_j$ source potentials (m² s⁻¹), $\Omega$ liquid domain and $\Gamma\_j$ bubble boundary. $\nabla$ gradient, $\partial\_n$ liquid-outward normal derivative, $dV,dA,dr\_i$ volume/area/radial elements (m³, m², m), $\int$ volume/surface/radial integral and $\sum$ finite sum; $i<j$ counts each unordered pair once; $|\ |$ is vector norm and $\infty$ the far radial endpoint. $S$ equal reciprocal-distance sum (m⁻¹), $\rho$ density (kg m⁻³), $\Delta p\_c$ pressure difference (Pa), $E\_{B,\mathrm{tot}}$ fixed initial work (J), $\pi$ dimensionless. Far separation justifies retaining self and leading pair integrals; $\*$ labels a reference.
+**Symbols before Eq. (C3-E11).** $K_N$ is leading cluster liquid kinetic energy (J); $N$ count and $i,j$ site indices. $R_i,R_j$ are site radii, $r_i$ radial distance from $i$, $d_{ij}$ center separation, $R$ common radius, $R_{\max}$ its initial maximum, $R_{\max,N}$ fixed-total-work maximum and $R_*$ isolated reference radius (all m); dots are time derivatives. $b_i,b_j$ are source strengths $R_i^2\dot R_i,R_j^2\dot R_j$ (m³ s⁻¹); $\phi_i,\phi_j$ source potentials (m² s⁻¹), $\Omega$ liquid domain and $\Gamma_j$ bubble boundary. $\nabla$ gradient, $\partial_n$ liquid-outward normal derivative, $dV,dA,dr_i$ volume/area/radial elements (m³, m², m), $\int$ volume/surface/radial integral and $\sum$ finite sum; $i<j$ counts each unordered pair once; $|\ |$ is vector norm and $\infty$ the far radial endpoint. $S$ equal reciprocal-distance sum (m⁻¹), $\rho$ density (kg m⁻³), $\Delta p_c$ pressure difference (Pa), $E_{B,\mathrm{tot}}$ fixed initial work (J), $\pi$ dimensionless. Far separation justifies retaining self and leading pair integrals; $*$ labels a reference.
 
-**式（C3-E11）前的符号定义。** $K\_N$ 为首阶气泡群液体动能（J）；$N$ 为数量，$i,j$ 为位点编号。$R\_i,R\_j$ 为位点半径，$r\_i$ 为至 $i$ 的径距，$d\_{ij}$ 为中心间距，$R$ 为共同半径，$R\_{\max}$ 为其初始最大值，$R\_{\max,N}$ 为固定总做功最大半径，$R\_\*$ 为孤立参考半径（均为 m）；点为时间导数。$b\_i,b\_j$ 为源强度 $R\_i^2\dot R\_i,R\_j^2\dot R\_j$（m³ s⁻¹）；$\phi\_i,\phi\_j$ 为源势（m² s⁻¹），$\Omega$ 为液体域，$\Gamma\_j$ 为泡边界。$\nabla$ 为梯度，$\partial\_n$ 为液体外法向导数，$dV,dA,dr\_i$ 为体积／面积／径向微元（m³、m²、m），$\int$ 为体积／表面／径向积分，$\sum$ 为有限求和；$i<j$ 将各无序对计一次；$|\ |$ 为向量范数，$\infty$ 为径向远端。$S$ 为相同距离倒数和（m⁻¹），$\rho$ 为密度（kg m⁻³），$\Delta p\_c$ 为压差（Pa），$E\_{B,\mathrm{tot}}$ 为固定初始做功（J），$\pi$ 无量纲。充分分离使保留自身及首阶两泡积分成立；$\*$ 标记参考。
+**式（C3-E11）前的符号定义。** $K_N$ 为首阶气泡群液体动能（J）；$N$ 为数量，$i,j$ 为位点编号。$R_i,R_j$ 为位点半径，$r_i$ 为至 $i$ 的径距，$d_{ij}$ 为中心间距，$R$ 为共同半径，$R_{\max}$ 为其初始最大值，$R_{\max,N}$ 为固定总做功最大半径，$R_*$ 为孤立参考半径（均为 m）；点为时间导数。$b_i,b_j$ 为源强度 $R_i^2\dot R_i,R_j^2\dot R_j$（m³ s⁻¹）；$\phi_i,\phi_j$ 为源势（m² s⁻¹），$\Omega$ 为液体域，$\Gamma_j$ 为泡边界。$\nabla$ 为梯度，$\partial_n$ 为液体外法向导数，$dV,dA,dr_i$ 为体积／面积／径向微元（m³、m²、m），$\int$ 为体积／表面／径向积分，$\sum$ 为有限求和；$i<j$ 将各无序对计一次；$|\ |$ 为向量范数，$\infty$ 为径向远端。$S$ 为相同距离倒数和（m⁻¹），$\rho$ 为密度（kg m⁻³），$\Delta p_c$ 为压差（Pa），$E_{B,\mathrm{tot}}$ 为固定初始做功（J），$\pi$ 无量纲。充分分离使保留自身及首阶两泡积分成立；$*$ 标记参考。
 
-(C3-E11) · Leading-model energy check and fixed-total-work comparison$$
-\begin{aligned}b\_i&=R\_i^2\dot R\_i,\quad \phi\_i=-b\_i/r\_i,\quad K\_N\simeq\frac{\rho}{2}\sum\_{i,j=1}^{N}\int\_\Omega\nabla\phi\_i\cdot\nabla\phi\_j\,dV,\\ \int\_\Omega|\nabla\phi\_i|^2\,dV&\simeq4\pi b\_i^2\int\_{R\_i}^\infty r\_i^{-2}\,dr\_i=4\pi R\_i^3\dot R\_i^2,\\ \int\_\Omega\nabla\phi\_i\cdot\nabla\phi\_j\,dV&\simeq\int\_{\Gamma\_j}\phi\_i\partial\_n\phi\_j\,dA\simeq(-b\_i/d\_{ij})(-\dot R\_j)4\pi R\_j^2=\frac{4\pi b\_ib\_j}{d\_{ij}}\quad(i\ne j),\\ K\_N&\simeq2\pi\rho\sum\_i R\_i^3\dot R\_i^2+4\pi\rho\sum\_{i<j}\frac{b\_ib\_j}{d\_{ij}}=2\pi\rho NR^3(1+SR)\dot R^2,\\ K\_N&=\frac{4\pi N}{3}\Delta p\_c(R\_{\max}^3-R^3)\quad\text{in the leading symmetric model},\\ E\_{B,\mathrm{tot}}&=N\frac{4\pi}{3}\Delta p\_c R\_{\max,N}^3=\frac{4\pi}{3}\Delta p\_c R\_\*^3,\quad R\_{\max,N}=R\_\*N^{-1/3}.\end{aligned}
+(C3-E11) · Leading-model energy check and fixed-total-work comparison
+
 $$
+\begin{aligned}b_i&=R_i^2\dot R_i,\quad \phi_i=-b_i/r_i,\quad K_N\simeq\frac{\rho}{2}\sum_{i,j=1}^{N}\int_\Omega\nabla\phi_i\cdot\nabla\phi_j\,dV,\\ \int_\Omega|\nabla\phi_i|^2\,dV&\simeq4\pi b_i^2\int_{R_i}^\infty r_i^{-2}\,dr_i=4\pi R_i^3\dot R_i^2,\\ \int_\Omega\nabla\phi_i\cdot\nabla\phi_j\,dV&\simeq\int_{\Gamma_j}\phi_i\partial_n\phi_j\,dA\simeq(-b_i/d_{ij})(-\dot R_j)4\pi R_j^2=\frac{4\pi b_ib_j}{d_{ij}}\quad(i\ne j),\\ K_N&\simeq2\pi\rho\sum_i R_i^3\dot R_i^2+4\pi\rho\sum_{i<j}\frac{b_ib_j}{d_{ij}}=2\pi\rho NR^3(1+SR)\dot R^2,\\ K_N&=\frac{4\pi N}{3}\Delta p_c(R_{\max}^3-R^3)\quad\text{in the leading symmetric model},\\ E_{B,\mathrm{tot}}&=N\frac{4\pi}{3}\Delta p_c R_{\max,N}^3=\frac{4\pi}{3}\Delta p_c R_*^3,\quad R_{\max,N}=R_*N^{-1/3}.\end{aligned}
+$$
+
+
 ![The integrated trajectory conserves the leading energy budget.](../assets/figures/c3-e11.svg)
 
 The integrated trajectory conserves the leading energy budget.
@@ -234,13 +311,17 @@ A center-and-four-arm cross is not a pentagon. If the arm length is the pitch, t
 
 中心加四臂的十字并非正五边形。若臂长为间距，中心倒距和为四除以间距；外点倒距和为一、二分之一及根号二之和除以间距。不同距离和使相同共同半径历程无法维持。同理，大阵列需平均尺度远大于间距、远小于宏观变化尺度，才能支持均匀化；仅凭体积分数不能提供这种尺度分离。
 
-**Symbols before Eq. (C3-E12).** $\phi\_b$ is dimensionless instantaneous bubble-volume fraction; $V\_i$ bubble volume and $V\_\Omega>0$ representative-region volume (m³), $N\_b$ bubble count, $R\_i,R,s$ radius/common cubic-lattice radius/pitch (m), $\pi$ dimensionless. $\phi(\boldsymbol x,t)$ is weak far-field potential (m² s⁻¹), $p'$ pressure disturbance (Pa), $\boldsymbol x$ observation position (m), $t$ time (s), $r\_i>0$ distance to source $i$ (m), $c$ sound speed (m s⁻¹), $\rho$ density (kg m⁻³). Dots on $V\_i$ are volume time derivatives (m³ s⁻¹, m³ s⁻²); $t-r\_i/c$ is retarded time. $\sum$ sums sources; $\simeq$ is a distant, compact, weak-source approximation.
+**Symbols before Eq. (C3-E12).** $\phi_b$ is dimensionless instantaneous bubble-volume fraction; $V_i$ bubble volume and $V_\Omega>0$ representative-region volume (m³), $N_b$ bubble count, $R_i,R,s$ radius/common cubic-lattice radius/pitch (m), $\pi$ dimensionless. $\phi(\boldsymbol x,t)$ is weak far-field potential (m² s⁻¹), $p'$ pressure disturbance (Pa), $\boldsymbol x$ observation position (m), $t$ time (s), $r_i>0$ distance to source $i$ (m), $c$ sound speed (m s⁻¹), $\rho$ density (kg m⁻³). Dots on $V_i$ are volume time derivatives (m³ s⁻¹, m³ s⁻²); $t-r_i/c$ is retarded time. $\sum$ sums sources; $\simeq$ is a distant, compact, weak-source approximation.
 
-**式（C3-E12）前的符号定义。** $\phi\_b$ 为无量纲瞬时气泡体积分数；$V\_i$ 为泡体积、$V\_\Omega>0$ 为代表区体积（m³），$N\_b$ 为泡数，$R\_i,R,s$ 为半径／立方晶格共同半径／间距（m），$\pi$ 无量纲。$\phi(\boldsymbol x,t)$ 为弱扰动远场势（m² s⁻¹），$p'$ 为压力扰动（Pa），$\boldsymbol x$ 为观察位置（m），$t$ 为时间（s），$r\_i>0$ 为至源 $i$ 的距离（m），$c$ 为声速（m s⁻¹），$\rho$ 为密度（kg m⁻³）。$V\_i$ 上的点为体积时间导数（m³ s⁻¹、m³ s⁻²）；$t-r\_i/c$ 为延迟时间。$\sum$ 对源求和；$\simeq$ 为远距、紧致、弱源近似。
+**式（C3-E12）前的符号定义。** $\phi_b$ 为无量纲瞬时气泡体积分数；$V_i$ 为泡体积、$V_\Omega>0$ 为代表区体积（m³），$N_b$ 为泡数，$R_i,R,s$ 为半径／立方晶格共同半径／间距（m），$\pi$ 无量纲。$\phi(\boldsymbol x,t)$ 为弱扰动远场势（m² s⁻¹），$p'$ 为压力扰动（Pa），$\boldsymbol x$ 为观察位置（m），$t$ 为时间（s），$r_i>0$ 为至源 $i$ 的距离（m），$c$ 为声速（m s⁻¹），$\rho$ 为密度（kg m⁻³）。$V_i$ 上的点为体积时间导数（m³ s⁻¹、m³ s⁻²）；$t-r_i/c$ 为延迟时间。$\sum$ 对源求和；$\simeq$ 为远距、紧致、弱源近似。
 
-(C3-E12) · Volume-fraction definition and retarded monopole approximation$$
-\begin{aligned}\phi\_b&=\frac{\sum\_{i=1}^{N\_b}V\_i}{V\_\Omega},\quad V\_i=\frac{4\pi}{3}R\_i^3,\quad\phi\_b\big|\_{\mathrm{cubic}}=\frac{4\pi R^3}{3s^3},\\ \phi(\boldsymbol x,t)&\simeq-\sum\_i\frac{\dot V\_i(t-r\_i/c)}{4\pi r\_i},\qquad p'(\boldsymbol x,t)\simeq\sum\_i\frac{\rho}{4\pi r\_i}\ddot V\_i(t-r\_i/c).\end{aligned}
+(C3-E12) · Volume-fraction definition and retarded monopole approximation
+
 $$
+\begin{aligned}\phi_b&=\frac{\sum_{i=1}^{N_b}V_i}{V_\Omega},\quad V_i=\frac{4\pi}{3}R_i^3,\quad\phi_b\big|_{\mathrm{cubic}}=\frac{4\pi R^3}{3s^3},\\ \phi(\boldsymbol x,t)&\simeq-\sum_i\frac{\dot V_i(t-r_i/c)}{4\pi r_i},\qquad p'(\boldsymbol x,t)\simeq\sum_i\frac{\rho}{4\pi r_i}\ddot V_i(t-r_i/c).\end{aligned}
+$$
+
+
 ![A spatial sum needs source histories and travel times, not only site count.](../assets/figures/c3-e12.svg)
 
 A spatial sum needs source histories and travel times, not only site count.
@@ -263,35 +344,47 @@ Step 8 — replace spherical radii by a resolved liquid domain when an outlet me
 
 **式（C3-E13）前的符号定义。** $\boldsymbol u(\boldsymbol x,t)$ 为速度（m s⁻¹），$\phi(\boldsymbol x,t)$ 为势（m² s⁻¹），$\boldsymbol x$ 为空间位置（m），$t$ 为时间（s），$\Omega(t)$ 为运动液体域。$\nabla$、$\nabla\cdot$、$\nabla^2$ 为空间梯度、散度、Laplace 算子；中心点是真正缩并，并非方程分隔符。
 
-(C3-E13) · Potential-flow reduction$$
+(C3-E13) · Potential-flow reduction
+
+$$
 \boldsymbol u=\nabla\phi,\qquad \nabla\cdot\boldsymbol u=0\ \Longrightarrow\ \nabla^2\phi=0\quad\text{in }\Omega(t).
 $$
+
+
 ![Geometry enters through the domain and its boundary conditions.](../assets/figures/c3-e13.svg)
 
 Geometry enters through the domain and its boundary conditions.
 
 几何通过区域及边界条件进入。
 
-**Symbols before Eq. (C3-E14).** $\boldsymbol X$ is a material interface point (m); $t$ is time (s), $d/dt$ its trajectory derivative. $\boldsymbol u$ is liquid velocity and $\boldsymbol V\_w$ prescribed wall velocity (m s⁻¹). $\boldsymbol n$ is outward from liquid toward gas or solid, unitless; $V\_n$ normal interface speed (m s⁻¹), $\partial\_n\phi=\nabla\phi\cdot\boldsymbol n$, and $\phi$ potential (m² s⁻¹). $\Gamma$ is the complete moving interface; $\phi\_\Gamma$ its potential; $\Gamma\_0,\phi\_0$ are initial data. Arrows indicate the stated far-field limit.
+**Symbols before Eq. (C3-E14).** $\boldsymbol X$ is a material interface point (m); $t$ is time (s), $d/dt$ its trajectory derivative. $\boldsymbol u$ is liquid velocity and $\boldsymbol V_w$ prescribed wall velocity (m s⁻¹). $\boldsymbol n$ is outward from liquid toward gas or solid, unitless; $V_n$ normal interface speed (m s⁻¹), $\partial_n\phi=\nabla\phi\cdot\boldsymbol n$, and $\phi$ potential (m² s⁻¹). $\Gamma$ is the complete moving interface; $\phi_\Gamma$ its potential; $\Gamma_0,\phi_0$ are initial data. Arrows indicate the stated far-field limit.
 
-**式（C3-E14）前的符号定义。** $\boldsymbol X$ 为材料界面点（m）；$t$ 为时间（s），$d/dt$ 为轨迹导数。$\boldsymbol u$ 为液速，$\boldsymbol V\_w$ 为规定壁速（m s⁻¹）。$\boldsymbol n$ 从液体指向气体或固体，是无量纲单位法向；$V\_n$ 为界面法向速度（m s⁻¹），$\partial\_n\phi=\nabla\phi\cdot\boldsymbol n$，$\phi$ 为势（m² s⁻¹）。$\Gamma$ 为完整运动界面；$\phi\_\Gamma$ 为其势；$\Gamma\_0,\phi\_0$ 为初值。箭头表示规定远场极限。
+**式（C3-E14）前的符号定义。** $\boldsymbol X$ 为材料界面点（m）；$t$ 为时间（s），$d/dt$ 为轨迹导数。$\boldsymbol u$ 为液速，$\boldsymbol V_w$ 为规定壁速（m s⁻¹）。$\boldsymbol n$ 从液体指向气体或固体，是无量纲单位法向；$V_n$ 为界面法向速度（m s⁻¹），$\partial_n\phi=\nabla\phi\cdot\boldsymbol n$，$\phi$ 为势（m² s⁻¹）。$\Gamma$ 为完整运动界面；$\phi_\Gamma$ 为其势；$\Gamma_0,\phi_0$ 为初值。箭头表示规定远场极限。
 
-(C3-E14) · Kinematic, initial and wall conditions$$
-\begin{aligned}\frac{d\boldsymbol X}{dt}&=\boldsymbol u(\boldsymbol X,t),\quad V\_n=\partial\_n\phi,\quad \partial\_n\phi=\boldsymbol V\_w\cdot\boldsymbol n\quad\text{on walls},\\ (\Gamma,\phi\_\Gamma)\_{t=0}&=(\Gamma\_0,\phi\_0),\qquad \phi\to0\quad\text{in a quiescent far field}.\end{aligned}
+(C3-E14) · Kinematic, initial and wall conditions
+
 $$
+\begin{aligned}\frac{d\boldsymbol X}{dt}&=\boldsymbol u(\boldsymbol X,t),\quad V_n=\partial_n\phi,\quad \partial_n\phi=\boldsymbol V_w\cdot\boldsymbol n\quad\text{on walls},\\ (\Gamma,\phi_\Gamma)_{t=0}&=(\Gamma_0,\phi_0),\qquad \phi\to0\quad\text{in a quiescent far field}.\end{aligned}
+$$
+
+
 ![A potential equation without initial shape and wall data cannot predict a jet.](../assets/figures/c3-e14.svg)
 
 A potential equation without initial shape and wall data cannot predict a jet.
 
 无初始形状及壁面数据的势方程无法预测射流。
 
-**Symbols before Eq. (C3-E15).** $p\_l,p\_g,p\_\infty$ are interface-liquid, gas and remote pressures (Pa); $\sigma$ is the tension appropriate to that interface (N m⁻¹). $\kappa$ is signed total curvature (m⁻¹), $\nabla\_s\cdot$ surface divergence, $\boldsymbol n$ the liquid-to-gas unit normal, $R$ inner-cavity radius and $a\_j$ exterior-cylinder radius (m). $\phi\_\Gamma$ and $\phi$ are surface/bulk potential (m² s⁻¹); $\boldsymbol u$ velocity (m s⁻¹), $\rho$ density (kg m⁻³), $t$ time (s). $D/Dt$ is the material derivative, $\partial\_t$ fixed-position derivative, $\nabla$ spatial gradient, $|\ |$ Euclidean norm; labels cavity and jet select geometries.
+**Symbols before Eq. (C3-E15).** $p_l,p_g,p_\infty$ are interface-liquid, gas and remote pressures (Pa); $\sigma$ is the tension appropriate to that interface (N m⁻¹). $\kappa$ is signed total curvature (m⁻¹), $\nabla_s\cdot$ surface divergence, $\boldsymbol n$ the liquid-to-gas unit normal, $R$ inner-cavity radius and $a_j$ exterior-cylinder radius (m). $\phi_\Gamma$ and $\phi$ are surface/bulk potential (m² s⁻¹); $\boldsymbol u$ velocity (m s⁻¹), $\rho$ density (kg m⁻³), $t$ time (s). $D/Dt$ is the material derivative, $\partial_t$ fixed-position derivative, $\nabla$ spatial gradient, $|\ |$ Euclidean norm; labels cavity and jet select geometries.
 
-**式（C3-E15）前的符号定义。** $p\_l,p\_g,p\_\infty$ 为界面液压、气压、远压（Pa）；$\sigma$ 为对应界面张力（N m⁻¹）。$\kappa$ 为带符号总曲率（m⁻¹），$\nabla\_s\cdot$ 为表面散度，$\boldsymbol n$ 为液体指向气体的单位法向，$R$ 为内部腔体半径、$a\_j$ 为外部圆柱半径（m）。$\phi\_\Gamma$、$\phi$ 为表面／体内势（m² s⁻¹）；$\boldsymbol u$ 为速度（m s⁻¹），$\rho$ 为密度（kg m⁻³），$t$ 为时间（s）。$D/Dt$ 为材料导数，$\partial\_t$ 为固定位置导数，$\nabla$ 为空间梯度，$|\ |$ 为 Euclidean 范数；cavity、jet 标签选择几何。
+**式（C3-E15）前的符号定义。** $p_l,p_g,p_\infty$ 为界面液压、气压、远压（Pa）；$\sigma$ 为对应界面张力（N m⁻¹）。$\kappa$ 为带符号总曲率（m⁻¹），$\nabla_s\cdot$ 为表面散度，$\boldsymbol n$ 为液体指向气体的单位法向，$R$ 为内部腔体半径、$a_j$ 为外部圆柱半径（m）。$\phi_\Gamma$、$\phi$ 为表面／体内势（m² s⁻¹）；$\boldsymbol u$ 为速度（m s⁻¹），$\rho$ 为密度（kg m⁻³），$t$ 为时间（s）。$D/Dt$ 为材料导数，$\partial_t$ 为固定位置导数，$\nabla$ 为空间梯度，$|\ |$ 为 Euclidean 范数；cavity、jet 标签选择几何。
 
-(C3-E15) · Normal stress and material Bernoulli condition$$
-\begin{aligned}p\_l&=p\_g+\sigma\kappa,\quad\kappa=\nabla\_s\cdot\boldsymbol n,\quad\kappa\_{\mathrm{cavity}}=-2/R,\quad\kappa\_{\mathrm{jet}}=1/a\_j,\\ \frac{D\phi\_\Gamma}{Dt}&=\frac12|\nabla\phi|^2+\frac{p\_\infty-p\_g-\sigma\kappa}{\rho},\qquad \frac D{Dt}=\partial\_t+\boldsymbol u\cdot\nabla.\end{aligned}
+(C3-E15) · Normal stress and material Bernoulli condition
+
 $$
+\begin{aligned}p_l&=p_g+\sigma\kappa,\quad\kappa=\nabla_s\cdot\boldsymbol n,\quad\kappa_{\mathrm{cavity}}=-2/R,\quad\kappa_{\mathrm{jet}}=1/a_j,\\ \frac{D\phi_\Gamma}{Dt}&=\frac12|\nabla\phi|^2+\frac{p_\infty-p_g-\sigma\kappa}{\rho},\qquad \frac D{Dt}=\partial_t+\boldsymbol u\cdot\nabla.\end{aligned}
+$$
+
+
 ![Signed curvature and the material derivative keep the dynamic condition consistent.](../assets/figures/c3-e15.svg)
 
 Signed curvature and the material derivative keep the dynamic condition consistent.
@@ -302,13 +395,17 @@ Step 9 — normal stress supplies the first row of Eq. (C3-E15). Eulerian Bernou
 
 步骤 9——法向应力给出式（C3-E15）第一行。将 Euler 型 Bernoulli 解为固定位置势导数时含负的二分之一速度平方；加入速度与势梯度的点积后，材料导数中变为正号。球形表面势为负的半径乘壁速，材料导数为负壁速平方减半径乘加速度，因此界面条件还原带抵抗表面张力的球形平衡。所示参考使用静止储液域；有限封闭单元需采用实际压力／体积边界及势的规范条件，而不能假造远场。应求解调和边值问题、推进形状／势，直到拓扑或可压缩性使该阶段失效。内部再入射流及外部弯液面射流是不同事件；出现一者并不能证明另一者。Peters 等的计算说明解析自由表面的必要性。[[R4]](../reference/sources.html#r4)
 
-**Symbols before Eq. (C3-E16).** $\Pi(\boldsymbol x),\Pi\_0$ are pressure impulse per area (Pa s), $p,p\_{\mathrm{ref}}$ total and reference pressure (Pa), $\boldsymbol x$ position (m), $t,t\_0,\tau\_p>0$ time/start/pulse duration (s). $\Delta\boldsymbol u$ velocity increment and $U$ column speed (m s⁻¹), $\rho>0$ density (kg m⁻³), $z\in[0,L]$ axial coordinate, $L>0$ length (m), $A>0$ area (m²), $m>0$ liquid mass (kg). $\mathcal J$ is total directional force impulse (N s), $E$ kinetic energy (J). $\nabla,\nabla^2$ are gradient/Laplacian; $\int$ time integration and vertical bars denote a stated fixed-budget branch. The pulse approximation freezes geometry and neglects integrated convection and viscosity.
+**Symbols before Eq. (C3-E16).** $\Pi(\boldsymbol x),\Pi_0$ are pressure impulse per area (Pa s), $p,p_{\mathrm{ref}}$ total and reference pressure (Pa), $\boldsymbol x$ position (m), $t,t_0,\tau_p>0$ time/start/pulse duration (s). $\Delta\boldsymbol u$ velocity increment and $U$ column speed (m s⁻¹), $\rho>0$ density (kg m⁻³), $z\in[0,L]$ axial coordinate, $L>0$ length (m), $A>0$ area (m²), $m>0$ liquid mass (kg). $\mathcal J$ is total directional force impulse (N s), $E$ kinetic energy (J). $\nabla,\nabla^2$ are gradient/Laplacian; $\int$ time integration and vertical bars denote a stated fixed-budget branch. The pulse approximation freezes geometry and neglects integrated convection and viscosity.
 
-**式（C3-E16）前的符号定义。** $\Pi(\boldsymbol x),\Pi\_0$ 为单位面积压力冲量（Pa s），$p,p\_{\mathrm{ref}}$ 为总／参考压力（Pa），$\boldsymbol x$ 为位置（m），$t,t\_0,\tau\_p>0$ 为时间／开始时刻／脉冲时长（s）。$\Delta\boldsymbol u$ 为速度增量，$U$ 为液柱速度（m s⁻¹），$\rho>0$ 为密度（kg m⁻³），$z\in[0,L]$ 为轴坐标，$L>0$ 为长度（m），$A>0$ 为面积（m²），$m>0$ 为液体质量（kg）。$\mathcal J$ 为总方向力冲量（N s），$E$ 为动能（J）。$\nabla,\nabla^2$ 为梯度／Laplace 算子；$\int$ 为时间积分，竖线表示指定固定预算分支。脉冲近似冻结几何并忽略积分后的对流及黏性。
+**式（C3-E16）前的符号定义。** $\Pi(\boldsymbol x),\Pi_0$ 为单位面积压力冲量（Pa s），$p,p_{\mathrm{ref}}$ 为总／参考压力（Pa），$\boldsymbol x$ 为位置（m），$t,t_0,\tau_p>0$ 为时间／开始时刻／脉冲时长（s）。$\Delta\boldsymbol u$ 为速度增量，$U$ 为液柱速度（m s⁻¹），$\rho>0$ 为密度（kg m⁻³），$z\in[0,L]$ 为轴坐标，$L>0$ 为长度（m），$A>0$ 为面积（m²），$m>0$ 为液体质量（kg）。$\mathcal J$ 为总方向力冲量（N s），$E$ 为动能（J）。$\nabla,\nabla^2$ 为梯度／Laplace 算子；$\int$ 为时间积分，竖线表示指定固定预算分支。脉冲近似冻结几何并忽略积分后的对流及黏性。
 
-(C3-E16) · Pressure-impulse control and distinct focusing budgets$$
-\begin{aligned}\Pi(\boldsymbol x)&=\int\_{t\_0}^{t\_0+\tau\_p}(p-p\_{\mathrm{ref}})\,dt,\quad \Delta\boldsymbol u\simeq-\nabla\Pi/\rho,\quad\nabla^2\Pi=0,\\ \Pi(z)&=\Pi\_0(1-z/L),\quad U=\frac{\Pi\_0}{\rho L},\quad m=\rho AL,\quad\mathcal J=\Pi\_0A=mU,\\ U\big|\_{\mathcal J\ \mathrm{fixed}}&=\frac{\mathcal J}{m},\quad E=\frac{\mathcal J^2}{2m},\qquad U\big|\_{E\ \mathrm{fixed}}=\sqrt{\frac{2E}{m}}.\end{aligned}
+(C3-E16) · Pressure-impulse control and distinct focusing budgets
+
 $$
+\begin{aligned}\Pi(\boldsymbol x)&=\int_{t_0}^{t_0+\tau_p}(p-p_{\mathrm{ref}})\,dt,\quad \Delta\boldsymbol u\simeq-\nabla\Pi/\rho,\quad\nabla^2\Pi=0,\\ \Pi(z)&=\Pi_0(1-z/L),\quad U=\frac{\Pi_0}{\rho L},\quad m=\rho AL,\quad\mathcal J=\Pi_0A=mU,\\ U\big|_{\mathcal J\ \mathrm{fixed}}&=\frac{\mathcal J}{m},\quad E=\frac{\mathcal J^2}{2m},\qquad U\big|_{E\ \mathrm{fixed}}=\sqrt{\frac{2E}{m}}.\end{aligned}
+$$
+
+
 ![The pressure-impulse field and the total energy constraint must be compatible.](../assets/figures/c3-e16.svg)
 
 The pressure-impulse field and the total energy constraint must be compatible.
@@ -319,13 +416,17 @@ Step 10 — integrate momentum over a short pulse and then take divergence using
 
 步骤 10——在短脉冲内积分动量，再利用不可压缩性取散度。直液柱解满足两端冲量值及侧壁无通量条件。其压力冲量梯度给出均匀初速度；固定单位面积冲量时仅减面积并不提高速度。固定总冲量时，液体质量降至四分之一，会使速度及所需动能均增大四倍。固定能量时均匀速度只增大两倍，而动量降为一半。这是不同实验。凹形运动弯液面会集中已求解的空间速度场，但仅凭质量守恒并不能支付聚焦代价。冻结几何还要求脉冲位移及黏性作用小；经历若干声传播周期本身不足以确立近似。[[R2]](../reference/sources.html#r2)
 
-**Symbols before Eq. (C3-E17).** $Q$ is steady volume flow (m³ s⁻¹), $a\_{\mathrm{in}}>a\_j>0$ solid-tube inlet and free cylindrical-jet radii (m); $U\_{\mathrm{in}},U\_j$ are uniform speeds (m s⁻¹), $\alpha$ dimensionless area ratio. $p\_{\mathrm{in}},p\_g$ inlet and gas pressures, $\Delta p\_{\mathrm{loss}}\ge0$ prescribed loss (Pa); $\rho>0$ density (kg m⁻³), $\sigma\_j$ jet–gas tension (N m⁻¹), $\pi$ dimensionless. The square root requires nonnegative numerator. This is a steady inviscid-core nozzle control with optional loss, not a transient cavity solution.
+**Symbols before Eq. (C3-E17).** $Q$ is steady volume flow (m³ s⁻¹), $a_{\mathrm{in}}>a_j>0$ solid-tube inlet and free cylindrical-jet radii (m); $U_{\mathrm{in}},U_j$ are uniform speeds (m s⁻¹), $\alpha$ dimensionless area ratio. $p_{\mathrm{in}},p_g$ inlet and gas pressures, $\Delta p_{\mathrm{loss}}\ge0$ prescribed loss (Pa); $\rho>0$ density (kg m⁻³), $\sigma_j$ jet–gas tension (N m⁻¹), $\pi$ dimensionless. The square root requires nonnegative numerator. This is a steady inviscid-core nozzle control with optional loss, not a transient cavity solution.
 
-**式（C3-E17）前的符号定义。** $Q$ 为稳态体积流量（m³ s⁻¹），$a\_{\mathrm{in}}>a\_j>0$ 为固体管入口及自由圆柱射流半径（m）；$U\_{\mathrm{in}},U\_j$ 为均匀速度（m s⁻¹），$\alpha$ 为无量纲面积比。$p\_{\mathrm{in}},p\_g$ 为入口及气压，$\Delta p\_{\mathrm{loss}}\ge0$ 为给定损失（Pa）；$\rho>0$ 为密度（kg m⁻³），$\sigma\_j$ 为射流—气体张力（N m⁻¹），$\pi$ 无量纲。平方根要求分子非负。它是允许损失的稳态无黏核心喷嘴对照，并非瞬态腔体解。
+**式（C3-E17）前的符号定义。** $Q$ 为稳态体积流量（m³ s⁻¹），$a_{\mathrm{in}}>a_j>0$ 为固体管入口及自由圆柱射流半径（m）；$U_{\mathrm{in}},U_j$ 为均匀速度（m s⁻¹），$\alpha$ 为无量纲面积比。$p_{\mathrm{in}},p_g$ 为入口及气压，$\Delta p_{\mathrm{loss}}\ge0$ 为给定损失（Pa）；$\rho>0$ 为密度（kg m⁻³），$\sigma_j$ 为射流—气体张力（N m⁻¹），$\pi$ 无量纲。平方根要求分子非负。它是允许损失的稳态无黏核心喷嘴对照，并非瞬态腔体解。
 
-(C3-E17) · Continuity plus Bernoulli focusing benchmark$$
-\begin{aligned}Q&=\pi a\_{\mathrm{in}}^2U\_{\mathrm{in}}=\pi a\_j^2U\_j,\qquad \alpha=(a\_j/a\_{\mathrm{in}})^2,\quad U\_{\mathrm{in}}=\alpha U\_j,\\ p\_{\mathrm{in}}-p\_g&=\frac12\rho(U\_j^2-U\_{\mathrm{in}}^2)+\frac{\sigma\_j}{a\_j}+\Delta p\_{\mathrm{loss}},\\ U\_j&=\sqrt{\frac{2[p\_{\mathrm{in}}-p\_g-\sigma\_j/a\_j-\Delta p\_{\mathrm{loss}}]}{\rho(1-\alpha^2)}}\quad(0<\alpha<1).\end{aligned}
+(C3-E17) · Continuity plus Bernoulli focusing benchmark
+
 $$
+\begin{aligned}Q&=\pi a_{\mathrm{in}}^2U_{\mathrm{in}}=\pi a_j^2U_j,\qquad \alpha=(a_j/a_{\mathrm{in}})^2,\quad U_{\mathrm{in}}=\alpha U_j,\\ p_{\mathrm{in}}-p_g&=\frac12\rho(U_j^2-U_{\mathrm{in}}^2)+\frac{\sigma_j}{a_j}+\Delta p_{\mathrm{loss}},\\ U_j&=\sqrt{\frac{2[p_{\mathrm{in}}-p_g-\sigma_j/a_j-\Delta p_{\mathrm{loss}}]}{\rho(1-\alpha^2)}}\quad(0<\alpha<1).\end{aligned}
+$$
+
+
 ![Specify either source pressure or flow and solve the compatible remaining quantity.](../assets/figures/c3-e17.svg)
 
 Specify either source pressure or flow and solve the compatible remaining quantity.
@@ -336,13 +437,17 @@ For a 40-μm inlet radius, 10-μm outlet radius and 3 m s⁻¹ inlet speed, cont
 
 入口半径 40 μm、出口半径 10 μm、入口速度 3 m s⁻¹ 时，连续性给出出口速度 48 m s⁻¹。密度 1000 kg m⁻³、张力 0.072 N m⁻¹、零损失时，所需入口超压为 1.1547 MPa：动能增量对应 1.1475 MPa，毛细压力为 7.2 kPa。若超压改为固定 0.20 MPa，式（C3-E17）给出出口速度 19.6752 m s⁻¹、入口速度 1.22970 m s⁻¹。同时保持原入口速度及较小压力会违反能量守恒。这个已解对照揭示预算错误；实际演化弯液面仍需式（C3-E13—15）。
 
-**Symbols before Eq. (C3-E18).** $A\_j$ is area (m²), $d\_j,L\_j>0$ diameter/emitted length (m), $\rho$ carrier density (kg m⁻³), $m\_j>0$ emitted mass (kg); the cylinder expression assumes uniform area/density. $\mathcal M\_j$ is the emitted material collection, $dm$ mass element (kg), $\boldsymbol u$ velocity field, $U\_{\mathrm{rms}}$ mass-weighted root-mean-square speed (m s⁻¹). $\boldsymbol e\_z$ is a unit vector along intended transfer; $P\_j$ its signed momentum (N s), $E\_j$ kinetic energy and $E\_{\mathrm{avail}}\ge E\_j$ available mechanical energy (J). $\int$ integrates over emitted mass; $|\ |$ denotes vector norm or scalar magnitude; $\pi$ is dimensionless.
+**Symbols before Eq. (C3-E18).** $A_j$ is area (m²), $d_j,L_j>0$ diameter/emitted length (m), $\rho$ carrier density (kg m⁻³), $m_j>0$ emitted mass (kg); the cylinder expression assumes uniform area/density. $\mathcal M_j$ is the emitted material collection, $dm$ mass element (kg), $\boldsymbol u$ velocity field, $U_{\mathrm{rms}}$ mass-weighted root-mean-square speed (m s⁻¹). $\boldsymbol e_z$ is a unit vector along intended transfer; $P_j$ its signed momentum (N s), $E_j$ kinetic energy and $E_{\mathrm{avail}}\ge E_j$ available mechanical energy (J). $\int$ integrates over emitted mass; $|\ |$ denotes vector norm or scalar magnitude; $\pi$ is dimensionless.
 
-**式（C3-E18）前的符号定义。** $A\_j$ 为面积（m²），$d\_j,L\_j>0$ 为直径／喷出长度（m），$\rho$ 为载液密度（kg m⁻³），$m\_j>0$ 为喷出质量（kg）；圆柱式假设面积及密度均匀。$\mathcal M\_j$ 为喷出材料集合，$dm$ 为质量微元（kg），$\boldsymbol u$ 为速度场，$U\_{\mathrm{rms}}$ 为质量加权均方根速度（m s⁻¹）。$\boldsymbol e\_z$ 为期望转印方向的单位向量；$P\_j$ 为该方向带符号动量（N s），$E\_j$ 为动能、$E\_{\mathrm{avail}}\ge E\_j$ 为可用机械能（J）。$\int$ 对喷出质量积分；$|\ |$ 为向量范数或标量大小；$\pi$ 无量纲。
+**式（C3-E18）前的符号定义。** $A_j$ 为面积（m²），$d_j,L_j>0$ 为直径／喷出长度（m），$\rho$ 为载液密度（kg m⁻³），$m_j>0$ 为喷出质量（kg）；圆柱式假设面积及密度均匀。$\mathcal M_j$ 为喷出材料集合，$dm$ 为质量微元（kg），$\boldsymbol u$ 为速度场，$U_{\mathrm{rms}}$ 为质量加权均方根速度（m s⁻¹）。$\boldsymbol e_z$ 为期望转印方向的单位向量；$P_j$ 为该方向带符号动量（N s），$E_j$ 为动能、$E_{\mathrm{avail}}\ge E_j$ 为可用机械能（J）。$\int$ 对喷出质量积分；$|\ |$ 为向量范数或标量大小；$\pi$ 无量纲。
 
-(C3-E18) · Finite-mass definitions and Cauchy–Schwarz bound$$
-\begin{aligned}A\_j&=\pi d\_j^2/4,\qquad m\_j=\rho A\_jL\_j,\qquad E\_j=\frac12\int\_{\mathcal M\_j}|\boldsymbol u|^2dm=\frac12m\_jU\_{\mathrm{rms}}^2,\\ P\_j&=\int\_{\mathcal M\_j}(\boldsymbol u\cdot\boldsymbol e\_z)\,dm,\\ |P\_j|^2&\le\left(\int\_{\mathcal M\_j}1\,dm\right)\left(\int\_{\mathcal M\_j}|\boldsymbol u\cdot\boldsymbol e\_z|^2dm\right)\le2m\_jE\_j,\qquad U\_{\mathrm{rms}}\le\sqrt{2E\_{\mathrm{avail}}/m\_j}.\end{aligned}
+(C3-E18) · Finite-mass definitions and Cauchy–Schwarz bound
+
 $$
+\begin{aligned}A_j&=\pi d_j^2/4,\qquad m_j=\rho A_jL_j,\qquad E_j=\frac12\int_{\mathcal M_j}|\boldsymbol u|^2dm=\frac12m_jU_{\mathrm{rms}}^2,\\ P_j&=\int_{\mathcal M_j}(\boldsymbol u\cdot\boldsymbol e_z)\,dm,\\ |P_j|^2&\le\left(\int_{\mathcal M_j}1\,dm\right)\left(\int_{\mathcal M_j}|\boldsymbol u\cdot\boldsymbol e_z|^2dm\right)\le2m_jE_j,\qquad U_{\mathrm{rms}}\le\sqrt{2E_{\mathrm{avail}}/m_j}.\end{aligned}
+$$
+
+
 ![Finite jet mass converts an energy budget into a meaningful speed and momentum bound.](../assets/figures/c3-e18.svg)
 
 Finite jet mass converts an energy budget into a meaningful speed and momentum bound.
@@ -361,26 +466,34 @@ Step 12 — take an axisymmetric Newtonian jet in dynamically negligible gas, co
 
 步骤 12——采用动力学作用可忽略气体中的轴对称 Newton 流体射流，密度及表面张力恒定，忽略重力及质量交换。其局部半径、轴向速度沿飞行方向变化。固定有限切片的精确守恒使用面积积分，不能用某端面积直接乘切片长度。将平衡除以正切片长度，并对可微场取长度趋零极限，得到微分连续性。代入面积等于圆周率乘半径平方，再除以正的两倍圆周率乘半径。此描述从发射之后开始，初始形状、速度、流入历程及端部条件由空间计算或测量提供。它不适用于射流初生时强二维颈部的转向。
 
-**Symbols before Eq. (C3-E19).** $z$ is axial position (m), $t$ time (s), $\Delta z>0$ fixed finite slice length (m), and $\xi$ its dummy axial coordinate with element $d\xi$ (m). $a(z,t)>0$ is local jet radius (m), $A(z,t)$ area (m²), $v(z,t)$ cross-sectional average axial velocity (m s⁻¹), and $\pi$ dimensionless. $\partial\_t,\partial\_z$ are fixed-coordinate derivatives; $[Av]$ denotes the volume flux (m³ s⁻¹) evaluated at the stated end. $\int$ integrates over the slice; the differential limit requires differentiable fields. The last step divides by positive $2\pi a$.
+**Symbols before Eq. (C3-E19).** $z$ is axial position (m), $t$ time (s), $\Delta z>0$ fixed finite slice length (m), and $\xi$ its dummy axial coordinate with element $d\xi$ (m). $a(z,t)>0$ is local jet radius (m), $A(z,t)$ area (m²), $v(z,t)$ cross-sectional average axial velocity (m s⁻¹), and $\pi$ dimensionless. $\partial_t,\partial_z$ are fixed-coordinate derivatives; $[Av]$ denotes the volume flux (m³ s⁻¹) evaluated at the stated end. $\int$ integrates over the slice; the differential limit requires differentiable fields. The last step divides by positive $2\pi a$.
 
-**式（C3-E19）前的符号定义。** $z$ 为轴向位置（m），$t$ 为时间（s），$\Delta z>0$ 为固定有限切片长度（m），$\xi$ 为轴向积分坐标，$d\xi$ 为其微元（m）。$a(z,t)>0$ 为局部射流半径（m），$A(z,t)$ 为面积（m²），$v(z,t)$ 为截面平均轴速（m s⁻¹），$\pi$ 无量纲。$\partial\_t,\partial\_z$ 为固定坐标导数；$[Av]$ 表示在指定端点评价的体积流率（m³ s⁻¹）。$\int$ 为切片积分；微分极限要求场可微。最后一步除以正的 $2\pi a$。
+**式（C3-E19）前的符号定义。** $z$ 为轴向位置（m），$t$ 为时间（s），$\Delta z>0$ 为固定有限切片长度（m），$\xi$ 为轴向积分坐标，$d\xi$ 为其微元（m）。$a(z,t)>0$ 为局部射流半径（m），$A(z,t)$ 为面积（m²），$v(z,t)$ 为截面平均轴速（m s⁻¹），$\pi$ 无量纲。$\partial_t,\partial_z$ 为固定坐标导数；$[Av]$ 表示在指定端点评价的体积流率（m³ s⁻¹）。$\int$ 为切片积分；微分极限要求场可微。最后一步除以正的 $2\pi a$。
 
-(C3-E19) · Slender-jet volume conservation$$
-\begin{aligned}A(z,t)&=\pi a(z,t)^2,\\ \partial\_t\int\_z^{z+\Delta z}A(\xi,t)\,d\xi&=[Av](z,t)-[Av](z+\Delta z,t),\\ \partial\_t\frac{1}{\Delta z}\int\_z^{z+\Delta z}A\,d\xi+\frac{[Av](z+\Delta z,t)-[Av](z,t)}{\Delta z}&=0,\\ \Delta z\to0:\quad \partial\_tA+\partial\_z(Av)&=0\ \Longrightarrow\ \partial\_ta+v\partial\_za=-\frac a2\partial\_zv.\end{aligned}
+(C3-E19) · Slender-jet volume conservation
+
 $$
+\begin{aligned}A(z,t)&=\pi a(z,t)^2,\\ \partial_t\int_z^{z+\Delta z}A(\xi,t)\,d\xi&=[Av](z,t)-[Av](z+\Delta z,t),\\ \partial_t\frac{1}{\Delta z}\int_z^{z+\Delta z}A\,d\xi+\frac{[Av](z+\Delta z,t)-[Av](z,t)}{\Delta z}&=0,\\ \Delta z\to0:\quad \partial_tA+\partial_z(Av)&=0\ \Longrightarrow\ \partial_ta+v\partial_za=-\frac a2\partial_zv.\end{aligned}
+$$
+
+
 ![Axial stretching changes radius even before capillary necking grows.](../assets/figures/c3-e19.svg)
 
 Axial stretching changes radius even before capillary necking grows.
 
 在毛细颈缩增长前，轴向拉伸即会改变半径。
 
-**Symbols before Eq. (C3-E20).** $r\in[0,a]$ and $z$ are radial/axial coordinates (m), $t$ time (s); $u\_r$ is radial and $v$ axial velocity (m s⁻¹), $a>0$ radius (m), $A=\pi a^2$ area (m²). $\rho$ is density (kg m⁻³), $\mu$ Newtonian viscosity (Pa s), $\sigma\_j$ jet–gas tension (N m⁻¹); $\tau\_{zz},\tau\_{rr}$ are viscous normal stresses (Pa), subscripts coordinate components. $\kappa$ is outward liquid-to-gas curvature (m⁻¹). $\partial\_r,\partial\_z,\partial\_t$ are partial derivatives; $\partial\_{zz}$ is a second axial derivative. The axial momentum law is a slender approximation although the geometric curvature is retained in full.
+**Symbols before Eq. (C3-E20).** $r\in[0,a]$ and $z$ are radial/axial coordinates (m), $t$ time (s); $u_r$ is radial and $v$ axial velocity (m s⁻¹), $a>0$ radius (m), $A=\pi a^2$ area (m²). $\rho$ is density (kg m⁻³), $\mu$ Newtonian viscosity (Pa s), $\sigma_j$ jet–gas tension (N m⁻¹); $\tau_{zz},\tau_{rr}$ are viscous normal stresses (Pa), subscripts coordinate components. $\kappa$ is outward liquid-to-gas curvature (m⁻¹). $\partial_r,\partial_z,\partial_t$ are partial derivatives; $\partial_{zz}$ is a second axial derivative. The axial momentum law is a slender approximation although the geometric curvature is retained in full.
 
-**式（C3-E20）前的符号定义。** $r\in[0,a]$、$z$ 为径向／轴向坐标（m），$t$ 为时间（s）；$u\_r$ 为径向、$v$ 为轴向速度（m s⁻¹），$a>0$ 为半径（m），$A=\pi a^2$ 为面积（m²）。$\rho$ 为密度（kg m⁻³），$\mu$ 为 Newton 黏度（Pa s），$\sigma\_j$ 为射流—气体张力（N m⁻¹）；$\tau\_{zz},\tau\_{rr}$ 为黏性法向应力（Pa），下标为坐标分量。$\kappa$ 为液体朝气体外法向曲率（m⁻¹）。$\partial\_r,\partial\_z,\partial\_t$ 为偏导数；$\partial\_{zz}$ 为轴向二阶导数。虽然保留完整几何曲率，轴向动量规律仍为细长近似。
+**式（C3-E20）前的符号定义。** $r\in[0,a]$、$z$ 为径向／轴向坐标（m），$t$ 为时间（s）；$u_r$ 为径向、$v$ 为轴向速度（m s⁻¹），$a>0$ 为半径（m），$A=\pi a^2$ 为面积（m²）。$\rho$ 为密度（kg m⁻³），$\mu$ 为 Newton 黏度（Pa s），$\sigma_j$ 为射流—气体张力（N m⁻¹）；$\tau_{zz},\tau_{rr}$ 为黏性法向应力（Pa），下标为坐标分量。$\kappa$ 为液体朝气体外法向曲率（m⁻¹）。$\partial_r,\partial_z,\partial_t$ 为偏导数；$\partial_{zz}$ 为轴向二阶导数。虽然保留完整几何曲率，轴向动量规律仍为细长近似。
 
-(C3-E20) · Newtonian stress and slender axial momentum$$
-\begin{aligned}\partial\_r u\_r+u\_r/r+\partial\_zv&=0\ \Longrightarrow\ u\_r=-\frac r2\partial\_zv,\\ \tau\_{zz}&=2\mu\partial\_zv,\quad\tau\_{rr}=2\mu\partial\_ru\_r=-\mu\partial\_zv,\quad\tau\_{zz}-\tau\_{rr}=3\mu\partial\_zv,\\ \partial\_tv+v\partial\_zv&=-\frac{\sigma\_j}{\rho}\partial\_z\kappa+\frac{3\mu}{\rho A}\partial\_z(A\partial\_zv),\\ \kappa&=\frac1{a\sqrt{1+(\partial\_za)^2}}-\frac{\partial\_{zz}a}{[1+(\partial\_za)^2]^{3/2}}.\end{aligned}
+(C3-E20) · Newtonian stress and slender axial momentum
+
 $$
+\begin{aligned}\partial_r u_r+u_r/r+\partial_zv&=0\ \Longrightarrow\ u_r=-\frac r2\partial_zv,\\ \tau_{zz}&=2\mu\partial_zv,\quad\tau_{rr}=2\mu\partial_ru_r=-\mu\partial_zv,\quad\tau_{zz}-\tau_{rr}=3\mu\partial_zv,\\ \partial_tv+v\partial_zv&=-\frac{\sigma_j}{\rho}\partial_z\kappa+\frac{3\mu}{\rho A}\partial_z(A\partial_zv),\\ \kappa&=\frac1{a\sqrt{1+(\partial_za)^2}}-\frac{\partial_{zz}a}{[1+(\partial_za)^2]^{3/2}}.\end{aligned}
+$$
+
+
 ![The factor three follows from extensional stress, rather than ordinary shear drag.](../assets/figures/c3-e20.svg)
 
 The factor three follows from extensional stress, rather than ordinary shear drag.
@@ -391,13 +504,17 @@ Step 13 — integrate radial continuity from the axis and impose regularity to o
 
 步骤 13——从轴线积分径向连续性并施加正则性，得到径向速度。将其导数代入 Newton 应力，以轴向减径向应力，得到拉伸因子三。自由表面法向应力从液压中消去径向应力，留下轴向应力差及毛细压力梯度。轴向受力平衡除以单位长度质量，得到式（C3-E20）第三行。各加速度项单位为 m s⁻²。恒定半径及恒定速度使右侧为零，而轴向应变通过式（C3-E19）改变半径。Eggers 与 Dupont 建立了这些约化方程及其能量耗散；保留精确曲率并不使约化动量方程成为精确三维理论。[[R14]](../reference/sources.html#r14)
 
-**Symbols before Eq. (C3-E21).** $a$ is perturbed radius and $a\_0>0$ base-cylinder radius (m); $0<\delta\_0\le\delta(t)\ll a\_0$ are initial/small disturbance amplitudes (m), $z,r$ axial/radial positions (m), $t$ time (s), $U\_j$ base axial speed (m s⁻¹), $k>0$ wavenumber (m⁻¹). $\kappa$ is curvature (m⁻¹); $\psi$ perturbation potential and $B\ne0$ its amplitude (m² s⁻¹), $g>0$ temporal growth rate (s⁻¹); $g$ does not denote gravity in this chapter. $I\_0,I\_1$ are dimensionless modified Bessel functions, orders zero/one; $q$ dimensionless wavenumber. $\rho$ density (kg m⁻³), $\sigma\_j$ tension (N m⁻¹); cosine and exponential have dimensionless arguments. This inviscid infinite-cylinder linear control neglects surrounding-gas dynamics.
+**Symbols before Eq. (C3-E21).** $a$ is perturbed radius and $a_0>0$ base-cylinder radius (m); $0<\delta_0\le\delta(t)\ll a_0$ are initial/small disturbance amplitudes (m), $z,r$ axial/radial positions (m), $t$ time (s), $U_j$ base axial speed (m s⁻¹), $k>0$ wavenumber (m⁻¹). $\kappa$ is curvature (m⁻¹); $\psi$ perturbation potential and $B\ne0$ its amplitude (m² s⁻¹), $g>0$ temporal growth rate (s⁻¹); $g$ does not denote gravity in this chapter. $I_0,I_1$ are dimensionless modified Bessel functions, orders zero/one; $q$ dimensionless wavenumber. $\rho$ density (kg m⁻³), $\sigma_j$ tension (N m⁻¹); cosine and exponential have dimensionless arguments. This inviscid infinite-cylinder linear control neglects surrounding-gas dynamics.
 
-**式（C3-E21）前的符号定义。** $a$ 为扰动半径，$a\_0>0$ 为基态圆柱半径（m）；$0<\delta\_0\le\delta(t)\ll a\_0$ 为初始／小扰动振幅（m），$z,r$ 为轴向／径向位置（m），$t$ 为时间（s），$U\_j$ 为基态轴速（m s⁻¹），$k>0$ 为波数（m⁻¹）。$\kappa$ 为曲率（m⁻¹）；$\psi$ 为扰动势，$B\ne0$ 为其振幅（m² s⁻¹），$g>0$ 为时间增长率（s⁻¹）；本章 $g$ 不表示重力。$I\_0,I\_1$ 为零／一阶无量纲修正 Bessel 函数；$q$ 为无量纲波数。$\rho$ 为密度（kg m⁻³），$\sigma\_j$ 为张力（N m⁻¹）；余弦及指数自变量无量纲。该无黏无限圆柱线性对照忽略周围气体动力学。
+**式（C3-E21）前的符号定义。** $a$ 为扰动半径，$a_0>0$ 为基态圆柱半径（m）；$0<\delta_0\le\delta(t)\ll a_0$ 为初始／小扰动振幅（m），$z,r$ 为轴向／径向位置（m），$t$ 为时间（s），$U_j$ 为基态轴速（m s⁻¹），$k>0$ 为波数（m⁻¹）。$\kappa$ 为曲率（m⁻¹）；$\psi$ 为扰动势，$B\ne0$ 为其振幅（m² s⁻¹），$g>0$ 为时间增长率（s⁻¹）；本章 $g$ 不表示重力。$I_0,I_1$ 为零／一阶无量纲修正 Bessel 函数；$q$ 为无量纲波数。$\rho$ 为密度（kg m⁻³），$\sigma_j$ 为张力（N m⁻¹）；余弦及指数自变量无量纲。该无黏无限圆柱线性对照忽略周围气体动力学。
 
-(C3-E21) · Inviscid-cylinder instability derivation$$
-\begin{aligned}a&=a\_0+\delta(t)\cos[k(z-U\_jt)],\quad \kappa\simeq a\_0^{-1}+(k^2-a\_0^{-2})\delta\cos[k(z-U\_jt)],\\ \psi&=B I\_0(kr)e^{gt}\cos[k(z-U\_jt)],\quad\delta=\delta\_0e^{gt},\\ g\delta\_0&=BkI\_1(ka\_0),\quad \rho gB I\_0(ka\_0)=\sigma\_j(a\_0^{-2}-k^2)\delta\_0,\\ g^2&=\frac{\sigma\_j}{\rho a\_0^3}\,q(1-q^2)\frac{I\_1(q)}{I\_0(q)},\quad q=ka\_0\in(0,1).\end{aligned}
+(C3-E21) · Inviscid-cylinder instability derivation
+
 $$
+\begin{aligned}a&=a_0+\delta(t)\cos[k(z-U_jt)],\quad \kappa\simeq a_0^{-1}+(k^2-a_0^{-2})\delta\cos[k(z-U_jt)],\\ \psi&=B I_0(kr)e^{gt}\cos[k(z-U_jt)],\quad\delta=\delta_0e^{gt},\\ g\delta_0&=BkI_1(ka_0),\quad \rho gB I_0(ka_0)=\sigma_j(a_0^{-2}-k^2)\delta_0,\\ g^2&=\frac{\sigma_j}{\rho a_0^3}\,q(1-q^2)\frac{I_1(q)}{I_0(q)},\quad q=ka_0\in(0,1).\end{aligned}
+$$
+
+
 ![Kinematic and pressure conditions eliminate the potential amplitude and determine growth.](../assets/figures/c3-e21.svg)
 
 Kinematic and pressure conditions eliminate the potential amplitude and determine growth.
@@ -408,13 +525,17 @@ Step 14 — expand curvature to first order: the reciprocal radius contributes m
 
 步骤 14——将曲率展开至一阶：半径倒数贡献负的振幅除以基态半径平方，轴向曲率贡献波数平方乘振幅。采用轴线上正则的径向修正 Bessel 函数求解 Laplace 方程；其径向导数为波数乘一阶函数。运动学条件及线性 Bernoulli 压力给出式（C3-E21）中间行。消去非零势振幅得到最后一行；仅当无量纲波数小于一时为正。独立求最大值给出最快无量纲波数 0.697019，增长率乘毛细时间为 0.343339，与经典圆柱对照一致。[MIT 界面现象推导，第 11 讲](https://ocw.mit.edu/courses/18-357-interfacial-phenomena-fall-2010/d77da8d5f1bb8b69a62682bc0dbc5845_MIT18_357F10_Lecture11.pdf)
 
-**Symbols before Eq. (C3-E22).** $t\_\sigma,t\_{\mathrm{lin}},t\_{\mathrm{flight}}$ are capillary, linear-threshold and flight times (s); $\rho$ density (kg m⁻³), $a\_0,d\_j,H$ base radius/diameter/gap (m), $\sigma\_j$ tension (N m⁻¹), $\mu$ viscosity (Pa s), $U\_j>0$ uniform speed (m s⁻¹). $g\_{\max}>0$ fastest inviscid growth rate (s⁻¹), $\lambda\_{\max}$ its wavelength (m), $\delta\_0<\delta\_{\mathrm{crit}}\ll a\_0$ initial/chosen small threshold and $\delta\_{\mathrm{arr}}$ arrival amplitude (m). $\ln,\exp$ are natural logarithm/exponential, $\pi$ dimensionless; $\mathrm{Re}\_j,\mathrm{We}\_j,\mathrm{Oh}\_j$ are dimensionless diameter-based Reynolds, Weber and Ohnesorge numbers. Constant base state and a sufficiently long cylinder are assumed for growth.
+**Symbols before Eq. (C3-E22).** $t_\sigma,t_{\mathrm{lin}},t_{\mathrm{flight}}$ are capillary, linear-threshold and flight times (s); $\rho$ density (kg m⁻³), $a_0,d_j,H$ base radius/diameter/gap (m), $\sigma_j$ tension (N m⁻¹), $\mu$ viscosity (Pa s), $U_j>0$ uniform speed (m s⁻¹). $g_{\max}>0$ fastest inviscid growth rate (s⁻¹), $\lambda_{\max}$ its wavelength (m), $\delta_0<\delta_{\mathrm{crit}}\ll a_0$ initial/chosen small threshold and $\delta_{\mathrm{arr}}$ arrival amplitude (m). $\ln,\exp$ are natural logarithm/exponential, $\pi$ dimensionless; $\mathrm{Re}_j,\mathrm{We}_j,\mathrm{Oh}_j$ are dimensionless diameter-based Reynolds, Weber and Ohnesorge numbers. Constant base state and a sufficiently long cylinder are assumed for growth.
 
-**式（C3-E22）前的符号定义。** $t\_\sigma,t\_{\mathrm{lin}},t\_{\mathrm{flight}}$ 为毛细／线性阈值／飞行时间（s）；$\rho$ 为密度（kg m⁻³），$a\_0,d\_j,H$ 为基态半径／直径／间隙（m），$\sigma\_j$ 为张力（N m⁻¹），$\mu$ 为黏度（Pa s），$U\_j>0$ 为均匀速度（m s⁻¹）。$g\_{\max}>0$ 为最快无黏增长率（s⁻¹），$\lambda\_{\max}$ 为其波长（m），$\delta\_0<\delta\_{\mathrm{crit}}\ll a\_0$ 为初始／选定小阈值振幅，$\delta\_{\mathrm{arr}}$ 为到达振幅（m）。$\ln,\exp$ 为自然对数／指数，$\pi$ 无量纲；$\mathrm{Re}\_j,\mathrm{We}\_j,\mathrm{Oh}\_j$ 为以直径定义的无量纲 Reynolds、Weber、Ohnesorge 数。增长计算假设基态恒定且圆柱足够长。
+**式（C3-E22）前的符号定义。** $t_\sigma,t_{\mathrm{lin}},t_{\mathrm{flight}}$ 为毛细／线性阈值／飞行时间（s）；$\rho$ 为密度（kg m⁻³），$a_0,d_j,H$ 为基态半径／直径／间隙（m），$\sigma_j$ 为张力（N m⁻¹），$\mu$ 为黏度（Pa s），$U_j>0$ 为均匀速度（m s⁻¹）。$g_{\max}>0$ 为最快无黏增长率（s⁻¹），$\lambda_{\max}$ 为其波长（m），$\delta_0<\delta_{\mathrm{crit}}\ll a_0$ 为初始／选定小阈值振幅，$\delta_{\mathrm{arr}}$ 为到达振幅（m）。$\ln,\exp$ 为自然对数／指数，$\pi$ 无量纲；$\mathrm{Re}_j,\mathrm{We}_j,\mathrm{Oh}_j$ 为以直径定义的无量纲 Reynolds、Weber、Ohnesorge 数。增长计算假设基态恒定且圆柱足够长。
 
-(C3-E22) · Finite-flight growth and regime diagnostics$$
-\begin{aligned}t\_\sigma&=\sqrt{\rho a\_0^3/\sigma\_j},\quad g\_{\max}=0.343339/t\_\sigma,\quad\lambda\_{\max}=2\pi a\_0/0.697019,\\ t\_{\mathrm{lin}}&=\frac1{g\_{\max}}\ln\left(\frac{\delta\_{\mathrm{crit}}}{\delta\_0}\right),\qquad\frac{\delta\_{\mathrm{arr}}}{a\_0}=\frac{\delta\_0}{a\_0}\exp\left(g\_{\max}\frac H{U\_j}\right),\quad t\_{\mathrm{flight}}=H/U\_j,\\ \mathrm{Re}\_j&=\frac{\rho U\_jd\_j}{\mu},\quad\mathrm{We}\_j=\frac{\rho U\_j^2d\_j}{\sigma\_j},\quad\mathrm{Oh}\_j=\frac{\mu}{\sqrt{\rho\sigma\_jd\_j}},\qquad d\_j=2a\_0.\end{aligned}
+(C3-E22) · Finite-flight growth and regime diagnostics
+
 $$
+\begin{aligned}t_\sigma&=\sqrt{\rho a_0^3/\sigma_j},\quad g_{\max}=0.343339/t_\sigma,\quad\lambda_{\max}=2\pi a_0/0.697019,\\ t_{\mathrm{lin}}&=\frac1{g_{\max}}\ln\left(\frac{\delta_{\mathrm{crit}}}{\delta_0}\right),\qquad\frac{\delta_{\mathrm{arr}}}{a_0}=\frac{\delta_0}{a_0}\exp\left(g_{\max}\frac H{U_j}\right),\quad t_{\mathrm{flight}}=H/U_j,\\ \mathrm{Re}_j&=\frac{\rho U_jd_j}{\mu},\quad\mathrm{We}_j=\frac{\rho U_j^2d_j}{\sigma_j},\quad\mathrm{Oh}_j=\frac{\mu}{\sqrt{\rho\sigma_jd_j}},\qquad d_j=2a_0.\end{aligned}
+$$
+
+
 ![Compare growth during actual flight against a declared small-amplitude threshold.](../assets/figures/c3-e22.svg)
 
 Compare growth during actual flight against a declared small-amplitude threshold.
@@ -433,26 +554,34 @@ Step 16 — distinguish two deceleration regimes. Steady redirection of a unifor
 
 步骤 16——区分两种减速阶段。均匀射流在固定接收面稳态转向、且出口轴向动量消失时，存在动量流率产生的力；初始接触则压缩双方介质并发出瞬态波。这是同一有限入射状态的不同后果，并非两个可独立相加的载荷。规定进入接收体的法向速度为正，接收体初始静止，压缩压力为相对接触前参考值的超压。
 
-**Symbols before Eq. (C3-E23).** $q\_j$ is jet dynamic-pressure scale (Pa), $\rho$ density (kg m⁻³), $U\_j>0$ uniform speed (m s⁻¹), $A\_j$ incident area (m²), $\dot m$ positive mass-flow rate (kg s⁻¹; dot on $m$ here denotes throughflow, not changing the finite emitted mass), and $F\_{\mathrm{steady}}$ receiver-normal steady force (N). Complete lateral redirection, fixed receiver, negligible other axial forces and uniform inlet are assumed.
+**Symbols before Eq. (C3-E23).** $q_j$ is jet dynamic-pressure scale (Pa), $\rho$ density (kg m⁻³), $U_j>0$ uniform speed (m s⁻¹), $A_j$ incident area (m²), $\dot m$ positive mass-flow rate (kg s⁻¹; dot on $m$ here denotes throughflow, not changing the finite emitted mass), and $F_{\mathrm{steady}}$ receiver-normal steady force (N). Complete lateral redirection, fixed receiver, negligible other axial forces and uniform inlet are assumed.
 
-**式（C3-E23）前的符号定义。** $q\_j$ 为射流动压尺度（Pa），$\rho$ 为密度（kg m⁻³），$U\_j>0$ 为均匀速度（m s⁻¹），$A\_j$ 为入射面积（m²），$\dot m$ 为正的质量流率（kg s⁻¹；此处 $m$ 上的点表示通过流率，并非有限喷出质量变化），$F\_{\mathrm{steady}}$ 为接收体法向稳态力（N）。假设完全侧向转流、接收体固定、其他轴向力可忽略且入口均匀。
+**式（C3-E23）前的符号定义。** $q_j$ 为射流动压尺度（Pa），$\rho$ 为密度（kg m⁻³），$U_j>0$ 为均匀速度（m s⁻¹），$A_j$ 为入射面积（m²），$\dot m$ 为正的质量流率（kg s⁻¹；此处 $m$ 上的点表示通过流率，并非有限喷出质量变化），$F_{\mathrm{steady}}$ 为接收体法向稳态力（N）。假设完全侧向转流、接收体固定、其他轴向力可忽略且入口均匀。
 
-(C3-E23) · Dynamic-pressure definition and steady momentum flux$$
-q\_j=\frac12\rho U\_j^2,\qquad\dot m=\rho A\_jU\_j,\qquad F\_{\mathrm{steady}}=\dot mU\_j=\rho A\_jU\_j^2=2q\_jA\_j.
+(C3-E23) · Dynamic-pressure definition and steady momentum flux
+
 $$
+q_j=\frac12\rho U_j^2,\qquad\dot m=\rho A_jU_j,\qquad F_{\mathrm{steady}}=\dot mU_j=\rho A_jU_j^2=2q_jA_j.
+$$
+
+
 ![Steady force follows from momentum flux, rather than assigning dynamic pressure everywhere.](../assets/figures/c3-e23.svg)
 
 Steady force follows from momentum flux, rather than assigning dynamic pressure everywhere.
 
 稳态力来自动量流率，而非将动压指定至全部表面。
 
-**Symbols before Eq. (C3-E24).** $u$ is liquid normal velocity, $U\_j$ its initial incident speed and $v\_i$ common contact velocity (m s⁻¹); $p'$ is linear compressive pressure disturbance and $p\_{\mathrm{early}}$ contact value (Pa). $\rho$ is liquid density (kg m⁻³), $c$ liquid longitudinal sound speed (m s⁻¹), $Z\_l=\rho c>0$ liquid and $Z\_r>0$ receiver longitudinal impedance (Pa s m⁻¹). $z$ is normal coordinate (m), $t$ time (s), and $\partial\_t,\partial\_z$ are partial derivatives. The two differential operators follow right/left characteristics. Both media are locally semi-infinite and initially unpressurized relative to the same contact reference; the receiver is initially at rest.
+**Symbols before Eq. (C3-E24).** $u$ is liquid normal velocity, $U_j$ its initial incident speed and $v_i$ common contact velocity (m s⁻¹); $p'$ is linear compressive pressure disturbance and $p_{\mathrm{early}}$ contact value (Pa). $\rho$ is liquid density (kg m⁻³), $c$ liquid longitudinal sound speed (m s⁻¹), $Z_l=\rho c>0$ liquid and $Z_r>0$ receiver longitudinal impedance (Pa s m⁻¹). $z$ is normal coordinate (m), $t$ time (s), and $\partial_t,\partial_z$ are partial derivatives. The two differential operators follow right/left characteristics. Both media are locally semi-infinite and initially unpressurized relative to the same contact reference; the receiver is initially at rest.
 
-**式（C3-E24）前的符号定义。** $u$ 为液体法向速度，$U\_j$ 为初始入射速度，$v\_i$ 为共同接触速度（m s⁻¹）；$p'$ 为线性压缩压力扰动，$p\_{\mathrm{early}}$ 为接触值（Pa）。$\rho$ 为液体密度（kg m⁻³），$c$ 为液体纵向声速（m s⁻¹），$Z\_l=\rho c>0$ 为液体阻抗，$Z\_r>0$ 为接收体纵向阻抗（Pa s m⁻¹）。$z$ 为法向坐标（m），$t$ 为时间（s），$\partial\_t,\partial\_z$ 为偏导数。两个微分算子沿右／左行特征。两介质局部半无限，相对同一接触参考值初始无压力扰动；接收体初始静止。
+**式（C3-E24）前的符号定义。** $u$ 为液体法向速度，$U_j$ 为初始入射速度，$v_i$ 为共同接触速度（m s⁻¹）；$p'$ 为线性压缩压力扰动，$p_{\mathrm{early}}$ 为接触值（Pa）。$\rho$ 为液体密度（kg m⁻³），$c$ 为液体纵向声速（m s⁻¹），$Z_l=\rho c>0$ 为液体阻抗，$Z_r>0$ 为接收体纵向阻抗（Pa s m⁻¹）。$z$ 为法向坐标（m），$t$ 为时间（s），$\partial_t,\partial_z$ 为偏导数。两个微分算子沿右／左行特征。两介质局部半无限，相对同一接触参考值初始无压力扰动；接收体初始静止。
 
-(C3-E24) · Linear transient wave equations and impact matching$$
-\begin{aligned}\partial\_tu&=-\rho^{-1}\partial\_zp',\qquad\partial\_tp'=-\rho c^2\partial\_zu,\quad Z\_l=\rho c,\\ (\partial\_t+c\partial\_z)(u+p'/Z\_l)&=0,\quad(\partial\_t-c\partial\_z)(u-p'/Z\_l)=0,\\ p\_{\mathrm{early}}&=Z\_l(U\_j-v\_i)=Z\_rv\_i\ \Longrightarrow\ v\_i=\frac{Z\_l}{Z\_l+Z\_r}U\_j,\quad p\_{\mathrm{early}}=\frac{Z\_lZ\_r}{Z\_l+Z\_r}U\_j.\end{aligned}
+(C3-E24) · Linear transient wave equations and impact matching
+
 $$
+\begin{aligned}\partial_tu&=-\rho^{-1}\partial_zp',\qquad\partial_tp'=-\rho c^2\partial_zu,\quad Z_l=\rho c,\\ (\partial_t+c\partial_z)(u+p'/Z_l)&=0,\quad(\partial_t-c\partial_z)(u-p'/Z_l)=0,\\ p_{\mathrm{early}}&=Z_l(U_j-v_i)=Z_rv_i\ \Longrightarrow\ v_i=\frac{Z_l}{Z_l+Z_r}U_j,\quad p_{\mathrm{early}}=\frac{Z_lZ_r}{Z_l+Z_r}U_j.\end{aligned}
+$$
+
+
 ![Pressure continuity and equal normal velocity determine the early contact state.](../assets/figures/c3-e24.svg)
 
 Pressure continuity and equal normal velocity determine the early contact state.
@@ -463,13 +592,17 @@ Step 17 — substitute the momentum and compression equations into each characte
 
 步骤 17——把动量及压缩方程代入各特征导数，压力梯度及速度梯度项相互抵消。向上游传播的液体波使速度从入射值降到接触速度，压力等于阻抗乘这一降速；接收体下行波从静止状态开始。匹配双方压力，在分母相加两个正阻抗，解出接触速度及压力。接收体阻抗趋于无穷时，接触速度趋零，压力趋于密度乘声速乘入射速度；接收体阻抗趋零时，压力趋零。这些极限核验符号及柔顺性的物理作用。这是瞬态减速计算，不需要外加简谐激励前置知识。[MIT 连续介质声学：守恒、阻抗及界面条件](https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/50a609ff2cc992401a099bca53801474_MIT6_013S09_chap13.pdf)
 
-**Symbols before Eq. (C3-E25).** $\mathcal J\_{\mathrm{rec}}$ is receiver normal contact impulse, $P\_{\mathrm{in}},P\_{\mathrm{out}}$ incoming/outgoing axial liquid momentum (N s). $m\_j$ emitted mass (kg), $\rho$ liquid density (kg m⁻³), $A\_j$ area (m²), $a\_j,L\_j$ radius/length (m), $U\_j$ incident speed and $c$ sound speed (m s⁻¹). $\tau\_{\mathrm{eq}}$ is an impulse-equivalent duration (s) for a fictitious uniform rigid-contact rectangle with zero outgoing axial momentum. $t\_{\mathrm{side}},t\_{\mathrm{axial}},t\_{\mathrm{early}},t\_{\mathrm{return}}$ are side-release, axial-release, early observation and first receiver-return times (s); $\min$ selects the earliest. The liquid momentum balance excludes additional direct source forces or a separate collapse shock; receiver support reactions affect receiver motion but are not counted as a second direct liquid impulse.
+**Symbols before Eq. (C3-E25).** $\mathcal J_{\mathrm{rec}}$ is receiver normal contact impulse, $P_{\mathrm{in}},P_{\mathrm{out}}$ incoming/outgoing axial liquid momentum (N s). $m_j$ emitted mass (kg), $\rho$ liquid density (kg m⁻³), $A_j$ area (m²), $a_j,L_j$ radius/length (m), $U_j$ incident speed and $c$ sound speed (m s⁻¹). $\tau_{\mathrm{eq}}$ is an impulse-equivalent duration (s) for a fictitious uniform rigid-contact rectangle with zero outgoing axial momentum. $t_{\mathrm{side}},t_{\mathrm{axial}},t_{\mathrm{early}},t_{\mathrm{return}}$ are side-release, axial-release, early observation and first receiver-return times (s); $\min$ selects the earliest. The liquid momentum balance excludes additional direct source forces or a separate collapse shock; receiver support reactions affect receiver motion but are not counted as a second direct liquid impulse.
 
-**式（C3-E25）前的符号定义。** $\mathcal J\_{\mathrm{rec}}$ 为接收体法向接触冲量，$P\_{\mathrm{in}},P\_{\mathrm{out}}$ 为入／出射液体轴向动量（N s）。$m\_j$ 为喷出质量（kg），$\rho$ 为密度（kg m⁻³），$A\_j$ 为面积（m²），$a\_j,L\_j$ 为半径／长度（m），$U\_j$ 为入射速度，$c$ 为声速（m s⁻¹）。$\tau\_{\mathrm{eq}}$ 为出射轴向动量为零时，假想均匀刚性接触矩形载荷的冲量等效时长（s）。$t\_{\mathrm{side}},t\_{\mathrm{axial}},t\_{\mathrm{early}},t\_{\mathrm{return}}$ 为侧向释放／轴向释放／早期观察／首个接收体回波时间（s）；$\min$ 取最早值。液体动量平衡排除额外直接源力或独立塌缩激波；接收体支撑反力影响其运动，但不另算为第二个直接液体冲量。
+**式（C3-E25）前的符号定义。** $\mathcal J_{\mathrm{rec}}$ 为接收体法向接触冲量，$P_{\mathrm{in}},P_{\mathrm{out}}$ 为入／出射液体轴向动量（N s）。$m_j$ 为喷出质量（kg），$\rho$ 为密度（kg m⁻³），$A_j$ 为面积（m²），$a_j,L_j$ 为半径／长度（m），$U_j$ 为入射速度，$c$ 为声速（m s⁻¹）。$\tau_{\mathrm{eq}}$ 为出射轴向动量为零时，假想均匀刚性接触矩形载荷的冲量等效时长（s）。$t_{\mathrm{side}},t_{\mathrm{axial}},t_{\mathrm{early}},t_{\mathrm{return}}$ 为侧向释放／轴向释放／早期观察／首个接收体回波时间（s）；$\min$ 取最早值。液体动量平衡排除额外直接源力或独立塌缩激波；接收体支撑反力影响其运动，但不另算为第二个直接液体冲量。
 
-(C3-E25) · Finite momentum and early-impact duration conditions$$
-\begin{aligned}\mathcal J\_{\mathrm{rec}}&=P\_{\mathrm{in}}-P\_{\mathrm{out}},\quad P\_{\mathrm{in}}=m\_jU\_j=\rho A\_jL\_jU\_j,\\ (\rho cU\_j)A\_j\tau\_{\mathrm{eq}}&=m\_jU\_j\ \Longrightarrow\ \tau\_{\mathrm{eq}}=L\_j/c,\\ t\_{\mathrm{side}}&=a\_j/c,\quad t\_{\mathrm{axial}}=L\_j/c,\quad t\_{\mathrm{early}}\ll\min(t\_{\mathrm{side}},t\_{\mathrm{axial}},t\_{\mathrm{return}}).\end{aligned}
+(C3-E25) · Finite momentum and early-impact duration conditions
+
 $$
+\begin{aligned}\mathcal J_{\mathrm{rec}}&=P_{\mathrm{in}}-P_{\mathrm{out}},\quad P_{\mathrm{in}}=m_jU_j=\rho A_jL_jU_j,\\ (\rho cU_j)A_j\tau_{\mathrm{eq}}&=m_jU_j\ \Longrightarrow\ \tau_{\mathrm{eq}}=L_j/c,\\ t_{\mathrm{side}}&=a_j/c,\quad t_{\mathrm{axial}}=L_j/c,\quad t_{\mathrm{early}}\ll\min(t_{\mathrm{side}},t_{\mathrm{axial}},t_{\mathrm{return}}).\end{aligned}
+$$
+
+
 ![A very large initial pressure has a finite momentum budget and restricted duration.](../assets/figures/c3-e25.svg)
 
 A very large initial pressure has a finite momentum budget and restricted duration.
@@ -480,26 +613,34 @@ Step 18 — integrate the receiver force over the full event and use the emitted
 
 步骤 18——在完整事件中积分接收体力，并使用喷出控制体动量平衡。出射轴向动量为零时得到停止冲量，再除以假想全面积水锤力得到等效时长。这并不支持矩形压力曲线：中心一维估计还要求观察期间没有侧向释放及接收体反射。存在弯曲及回波的薄膜并不自动等于半无限接收体。反弹可增加轴向动量变化；独立塌缩波或持续源做功应计入各自平衡，不能默默归给有限液柱。
 
-**Symbols before Eq. (C3-E26).** $p\_{\mathrm{obs}}$ is signed area–time mean excess pressure (Pa), $p$ local pressure and $p\_{\mathrm{ref}}$ fixed reference (Pa); $\boldsymbol x$ position (m), $t$ current time and $\xi$ dummy time (s). $A\_o>0$ is the fixed observer area (m²), $\tau\_o>0$ averaging duration (s), $dA$ area element (m²), $\mathcal J\_{\mathrm{rec}}\ge0$ total compressive normal impulse over the observed footprint (N s). Integrals sum the area and preceding time window. The bound assumes negligible normal viscous stress, so excess pressure equals compressive normal traction; this excess must be nonnegative throughout the full-event footprint budget, with no omitted forces. An arbitrary signed waveform, finite normal viscous stress or a different interface does not satisfy these premises.
+**Symbols before Eq. (C3-E26).** $p_{\mathrm{obs}}$ is signed area–time mean excess pressure (Pa), $p$ local pressure and $p_{\mathrm{ref}}$ fixed reference (Pa); $\boldsymbol x$ position (m), $t$ current time and $\xi$ dummy time (s). $A_o>0$ is the fixed observer area (m²), $\tau_o>0$ averaging duration (s), $dA$ area element (m²), $\mathcal J_{\mathrm{rec}}\ge0$ total compressive normal impulse over the observed footprint (N s). Integrals sum the area and preceding time window. The bound assumes negligible normal viscous stress, so excess pressure equals compressive normal traction; this excess must be nonnegative throughout the full-event footprint budget, with no omitted forces. An arbitrary signed waveform, finite normal viscous stress or a different interface does not satisfy these premises.
 
-**式（C3-E26）前的符号定义。** $p\_{\mathrm{obs}}$ 为带符号面积—时间平均超压（Pa），$p$ 为局部压力、$p\_{\mathrm{ref}}$ 为固定参考值（Pa）；$\boldsymbol x$ 为位置（m），$t$ 为当前时间、$\xi$ 为积分时间（s）。$A\_o>0$ 为固定观察面积（m²），$\tau\_o>0$ 为平均时长（s），$dA$ 为面积微元（m²），$\mathcal J\_{\mathrm{rec}}\ge0$ 为观察载荷区域上的总法向压缩冲量（N s）。积分对面积及前一时间窗口求和。界限假设法向黏性应力可忽略，因而超压等于法向压缩牵引；在采用完整事件冲量预算的整个区域内，该超压须始终非负，且不存在漏项力。任意带符号波形、有限法向黏性应力或另一界面不满足这些前提。
+**式（C3-E26）前的符号定义。** $p_{\mathrm{obs}}$ 为带符号面积—时间平均超压（Pa），$p$ 为局部压力、$p_{\mathrm{ref}}$ 为固定参考值（Pa）；$\boldsymbol x$ 为位置（m），$t$ 为当前时间、$\xi$ 为积分时间（s）。$A_o>0$ 为固定观察面积（m²），$\tau_o>0$ 为平均时长（s），$dA$ 为面积微元（m²），$\mathcal J_{\mathrm{rec}}\ge0$ 为观察载荷区域上的总法向压缩冲量（N s）。积分对面积及前一时间窗口求和。界限假设法向黏性应力可忽略，因而超压等于法向压缩牵引；在采用完整事件冲量预算的整个区域内，该超压须始终非负，且不存在漏项力。任意带符号波形、有限法向黏性应力或另一界面不满足这些前提。
 
-(C3-E26) · Observer definition and conditional impulse bound$$
-\begin{aligned}p\_{\mathrm{obs}}(t)&=\frac1{A\_o\tau\_o}\int\_{t-\tau\_o}^t\int\_{A\_o}[p(\boldsymbol x,\xi)-p\_{\mathrm{ref}}]\,dA\,d\xi,\\ 0\le p\_{\mathrm{obs}}(t)&\le\frac{\mathcal J\_{\mathrm{rec}}}{A\_o\tau\_o},\\ &\text{for nonnegative excess pressure, negligible normal viscous stress,}\\ &\text{and full-event footprint impulse }\mathcal J\_{\mathrm{rec}}.\end{aligned}
+(C3-E26) · Observer definition and conditional impulse bound
+
 $$
+\begin{aligned}p_{\mathrm{obs}}(t)&=\frac1{A_o\tau_o}\int_{t-\tau_o}^t\int_{A_o}[p(\boldsymbol x,\xi)-p_{\mathrm{ref}}]\,dA\,d\xi,\\ 0\le p_{\mathrm{obs}}(t)&\le\frac{\mathcal J_{\mathrm{rec}}}{A_o\tau_o},\\ &\text{for nonnegative excess pressure, negligible normal viscous stress,}\\ &\text{and full-event footprint impulse }\mathcal J_{\mathrm{rec}}.\end{aligned}
+$$
+
+
 ![A reported maximum is meaningful only for an unchanged observer.](../assets/figures/c3-e26.svg)
 
 A reported maximum is meaningful only for an unchanged observer.
 
 仅在观察定义不变时，报告的最大值才具有可比较含义。
 
-**Symbols before Eq. (C3-E27).** $E\_w$ is outgoing linear plane-wave energy crossing the stated footprint/window (J), $p'$ its pressure disturbance and $\overline p$ signed area–time mean (Pa), $Z\_l>0$ constant wave impedance (Pa s m⁻¹), $A\_o>0$ area (m²), $\tau\_o>0$ duration and $t$ time (s), $dA$ area element (m²). $\int$ is area/time integration and $|\ |$ magnitude. The premise is one-way linear pressure–velocity relation $u'=p'/Z\_l$, so intensity is $p'^2/Z\_l$. This is not an energy bound on arbitrary standing-wave or solid contact traction.
+**Symbols before Eq. (C3-E27).** $E_w$ is outgoing linear plane-wave energy crossing the stated footprint/window (J), $p'$ its pressure disturbance and $\overline p$ signed area–time mean (Pa), $Z_l>0$ constant wave impedance (Pa s m⁻¹), $A_o>0$ area (m²), $\tau_o>0$ duration and $t$ time (s), $dA$ area element (m²). $\int$ is area/time integration and $|\ |$ magnitude. The premise is one-way linear pressure–velocity relation $u'=p'/Z_l$, so intensity is $p'^2/Z_l$. This is not an energy bound on arbitrary standing-wave or solid contact traction.
 
-**式（C3-E27）前的符号定义。** $E\_w$ 为通过规定面积／时间窗口的单向线性平面波能量（J），$p'$ 为其压力扰动、$\overline p$ 为带符号面积—时间均值（Pa），$Z\_l>0$ 为恒定波阻抗（Pa s m⁻¹），$A\_o>0$ 为面积（m²），$\tau\_o>0$ 为时长、$t$ 为时间（s），$dA$ 为面积微元（m²）。$\int$ 为面积／时间积分，$|\ |$ 为大小。前提为单向线性压力—速度关系 $u'=p'/Z\_l$，故强度为 $p'^2/Z\_l$。它不是任意驻波或固体接触牵引的能量界。
+**式（C3-E27）前的符号定义。** $E_w$ 为通过规定面积／时间窗口的单向线性平面波能量（J），$p'$ 为其压力扰动、$\overline p$ 为带符号面积—时间均值（Pa），$Z_l>0$ 为恒定波阻抗（Pa s m⁻¹），$A_o>0$ 为面积（m²），$\tau_o>0$ 为时长、$t$ 为时间（s），$dA$ 为面积微元（m²）。$\int$ 为面积／时间积分，$|\ |$ 为大小。前提为单向线性压力—速度关系 $u'=p'/Z_l$，故强度为 $p'^2/Z_l$。它不是任意驻波或固体接触牵引的能量界。
 
-(C3-E27) · One-way-wave energy and finite-observer Cauchy–Schwarz bound$$
-\begin{aligned}E\_w&=\int\_0^{\tau\_o}\int\_{A\_o}\frac{p'^2}{Z\_l}\,dA\,dt,\qquad \overline p=\frac1{A\_o\tau\_o}\int\_0^{\tau\_o}\int\_{A\_o}p'\,dA\,dt,\\ |\overline p|^2&\le\frac1{A\_o\tau\_o}\int\_0^{\tau\_o}\int\_{A\_o}p'^2\,dA\,dt=\frac{Z\_lE\_w}{A\_o\tau\_o}.\end{aligned}
+(C3-E27) · One-way-wave energy and finite-observer Cauchy–Schwarz bound
+
 $$
+\begin{aligned}E_w&=\int_0^{\tau_o}\int_{A_o}\frac{p'^2}{Z_l}\,dA\,dt,\qquad \overline p=\frac1{A_o\tau_o}\int_0^{\tau_o}\int_{A_o}p'\,dA\,dt,\\ |\overline p|^2&\le\frac1{A_o\tau_o}\int_0^{\tau_o}\int_{A_o}p'^2\,dA\,dt=\frac{Z_lE_w}{A_o\tau_o}.\end{aligned}
+$$
+
+
 ![Finite area and time prevent an unmeasured point spike from standing in for delivered loading.](../assets/figures/c3-e27.svg)
 
 Finite area and time prevent an unmeasured point spike from standing in for delivered loading.
@@ -510,13 +651,17 @@ Step 19 — a nonnegative observed load in any subwindow cannot exceed its full-
 
 步骤 19——任意子窗口中非负观察载荷不能超过完整事件冲量，得到式（C3-E26）。对单向线性波，在面积—时间域上对压力及一应用 Cauchy–Schwarz，其测度为面积乘时长；代入波能量即得式（C3-E27）。两者假设不同，不能合并为普适定理。它们说明减小观察时间或面积可能提高报告峰值，却不增加传递能量。网格点尖峰不是实验已解析最大值。最高单次输出及最大可重复完整转印输出需要分开的可行域及不同证据。
 
-**Symbols before Eq. (C3-E28).** $\rho(\boldsymbol x,t)$ is compressible density (kg m⁻³), $\boldsymbol u$ velocity (m s⁻¹), $p$ absolute thermodynamic pressure (Pa), $e$ specific internal energy and $e\_t$ total specific energy (J kg⁻¹). $\boldsymbol I$ is identity tensor; $\boldsymbol\tau$ viscous stress (Pa), $\boldsymbol q$ conductive heat flux (W m⁻²), $Q\_{\mathrm{abs}}$ optical volumetric heating (W m⁻³; zero after heating if no continued absorption). $\mathcal P$ is the adopted equation-of-state function; $Y\_k$ species mass fractions, $k$ species index (dimensionless). $\boldsymbol x$ position (m), $t$ time (s), $\partial\_t$ fixed-position derivative; $\nabla\cdot$ tensor/vector divergence, $\otimes$ tensor product and $\cdot$ contraction; $|\ |$ velocity norm.
+**Symbols before Eq. (C3-E28).** $\rho(\boldsymbol x,t)$ is compressible density (kg m⁻³), $\boldsymbol u$ velocity (m s⁻¹), $p$ absolute thermodynamic pressure (Pa), $e$ specific internal energy and $e_t$ total specific energy (J kg⁻¹). $\boldsymbol I$ is identity tensor; $\boldsymbol\tau$ viscous stress (Pa), $\boldsymbol q$ conductive heat flux (W m⁻²), $Q_{\mathrm{abs}}$ optical volumetric heating (W m⁻³; zero after heating if no continued absorption). $\mathcal P$ is the adopted equation-of-state function; $Y_k$ species mass fractions, $k$ species index (dimensionless). $\boldsymbol x$ position (m), $t$ time (s), $\partial_t$ fixed-position derivative; $\nabla\cdot$ tensor/vector divergence, $\otimes$ tensor product and $\cdot$ contraction; $|\ |$ velocity norm.
 
-**式（C3-E28）前的符号定义。** $\rho(\boldsymbol x,t)$ 为可压缩密度（kg m⁻³），$\boldsymbol u$ 为速度（m s⁻¹），$p$ 为绝对热力学压力（Pa），$e$ 为比内能、$e\_t$ 为总比能（J kg⁻¹）。$\boldsymbol I$ 为单位张量；$\boldsymbol\tau$ 为黏性应力（Pa），$\boldsymbol q$ 为导热通量（W m⁻²），$Q\_{\mathrm{abs}}$ 为光学体积加热（W m⁻³；加热后若无继续吸收则为零）。$\mathcal P$ 为采用的状态方程函数；$Y\_k$ 为组分质量分数，$k$ 为组分编号（无量纲）。$\boldsymbol x$ 为位置（m），$t$ 为时间（s），$\partial\_t$ 为固定位置导数；$\nabla\cdot$ 为张量／向量散度，$\otimes$ 为张量积、$\cdot$ 为缩并；$|\ |$ 为速度范数。
+**式（C3-E28）前的符号定义。** $\rho(\boldsymbol x,t)$ 为可压缩密度（kg m⁻³），$\boldsymbol u$ 为速度（m s⁻¹），$p$ 为绝对热力学压力（Pa），$e$ 为比内能、$e_t$ 为总比能（J kg⁻¹）。$\boldsymbol I$ 为单位张量；$\boldsymbol\tau$ 为黏性应力（Pa），$\boldsymbol q$ 为导热通量（W m⁻²），$Q_{\mathrm{abs}}$ 为光学体积加热（W m⁻³；加热后若无继续吸收则为零）。$\mathcal P$ 为采用的状态方程函数；$Y_k$ 为组分质量分数，$k$ 为组分编号（无量纲）。$\boldsymbol x$ 为位置（m），$t$ 为时间（s），$\partial_t$ 为固定位置导数；$\nabla\cdot$ 为张量／向量散度，$\otimes$ 为张量积、$\cdot$ 为缩并；$|\ |$ 为速度范数。
 
-(C3-E28) · Compressible bulk conservation and required constitutive closure$$
-\begin{aligned}\partial\_t\rho+\nabla\cdot(\rho\boldsymbol u)&=0,\\ \partial\_t(\rho\boldsymbol u)+\nabla\cdot(\rho\boldsymbol u\otimes\boldsymbol u+p\boldsymbol I-\boldsymbol\tau)&=0,\\ \partial\_t(\rho e\_t)+\nabla\cdot[(\rho e\_t+p)\boldsymbol u-\boldsymbol\tau\cdot\boldsymbol u+\boldsymbol q]&=Q\_{\mathrm{abs}},\quad e\_t=e+|\boldsymbol u|^2/2,\quad p=\mathcal P(\rho,e,\{Y\_k\}).\end{aligned}
+(C3-E28) · Compressible bulk conservation and required constitutive closure
+
 $$
+\begin{aligned}\partial_t\rho+\nabla\cdot(\rho\boldsymbol u)&=0,\\ \partial_t(\rho\boldsymbol u)+\nabla\cdot(\rho\boldsymbol u\otimes\boldsymbol u+p\boldsymbol I-\boldsymbol\tau)&=0,\\ \partial_t(\rho e_t)+\nabla\cdot[(\rho e_t+p)\boldsymbol u-\boldsymbol\tau\cdot\boldsymbol u+\boldsymbol q]&=Q_{\mathrm{abs}},\quad e_t=e+|\boldsymbol u|^2/2,\quad p=\mathcal P(\rho,e,\{Y_k\}).\end{aligned}
+$$
+
+
 ![Strong compression requires conservative evolution with an appropriate equation of state.](../assets/figures/c3-e28.svg)
 
 Strong compression requires conservative evolution with an appropriate equation of state.
@@ -539,45 +684,53 @@ Step 21 — allocate incident optical energy, then separately declare the therma
 
 步骤 21——先分配入射光能，再分别声明热路由及最终动能转换假设。入射能为 25 μJ，截获比例 0.8，有效吸收率 0.5。均分后各位点吸收 400 nJ。假设激活截止时有 40% 到达 PFC，因此其 160 nJ 超过第二章约 97.82 nJ 的准备估计；但这一比较不能证明空间温度或成核时序。另假设最终喷出射流动能为吸收能的 0.5%。热比例及射流比例表示同一能量的连续转移，并非可相加的互斥预算项。
 
-**Symbols before Eq. (C3-E29).** $E\_L$ is incident laser energy, $E\_{\mathrm{abs,tot}}$ total absorbed energy, $E\_{\mathrm{abs,site}}$ per-site absorbed energy, $E\_{\mathrm{PFC,deadline}}$ energy delivered to that PFC inventory by the activation deadline, $E\_j$ final per-jet kinetic energy and $E\_{j,\mathrm{tot}}$ total jet energy (J; μJ = 10⁻⁶ J, nJ = 10⁻⁹ J). $N\_d=25$ is site count; $f\_{\mathrm{geo}}=0.8$ intercepted fraction, $A\_\lambda=0.5$ effective absorptance at laser wavelength $\lambda$ (m), $f\_T=0.40$ stipulated thermal fraction and $\eta\_j=0.005$ stipulated absorbed-to-jet kinetic efficiency (dimensionless). Subscripts label reservoirs/stages.
+**Symbols before Eq. (C3-E29).** $E_L$ is incident laser energy, $E_{\mathrm{abs,tot}}$ total absorbed energy, $E_{\mathrm{abs,site}}$ per-site absorbed energy, $E_{\mathrm{PFC,deadline}}$ energy delivered to that PFC inventory by the activation deadline, $E_j$ final per-jet kinetic energy and $E_{j,\mathrm{tot}}$ total jet energy (J; μJ = 10⁻⁶ J, nJ = 10⁻⁹ J). $N_d=25$ is site count; $f_{\mathrm{geo}}=0.8$ intercepted fraction, $A_\lambda=0.5$ effective absorptance at laser wavelength $\lambda$ (m), $f_T=0.40$ stipulated thermal fraction and $\eta_j=0.005$ stipulated absorbed-to-jet kinetic efficiency (dimensionless). Subscripts label reservoirs/stages.
 
-**式（C3-E29）前的符号定义。** $E\_L$ 为入射激光能，$E\_{\mathrm{abs,tot}}$ 为总吸收能，$E\_{\mathrm{abs,site}}$ 为单个位点吸收能，$E\_{\mathrm{PFC,deadline}}$ 为激活截止前到达该 PFC 储量的能量，$E\_j$ 为最终单射流动能、$E\_{j,\mathrm{tot}}$ 为总射流动能（J；μJ = 10⁻⁶ J，nJ = 10⁻⁹ J）。$N\_d=25$ 为位点数；$f\_{\mathrm{geo}}=0.8$ 为截获比例，$A\_\lambda=0.5$ 为激光波长 $\lambda$（m）处有效吸收率，$f\_T=0.40$ 为假设热比例，$\eta\_j=0.005$ 为假设吸收能至射流动能效率（无量纲）。下标区分能量库／阶段。
+**式（C3-E29）前的符号定义。** $E_L$ 为入射激光能，$E_{\mathrm{abs,tot}}$ 为总吸收能，$E_{\mathrm{abs,site}}$ 为单个位点吸收能，$E_{\mathrm{PFC,deadline}}$ 为激活截止前到达该 PFC 储量的能量，$E_j$ 为最终单射流动能、$E_{j,\mathrm{tot}}$ 为总射流动能（J；μJ = 10⁻⁶ J，nJ = 10⁻⁹ J）。$N_d=25$ 为位点数；$f_{\mathrm{geo}}=0.8$ 为截获比例，$A_\lambda=0.5$ 为激光波长 $\lambda$（m）处有效吸收率，$f_T=0.40$ 为假设热比例，$\eta_j=0.005$ 为假设吸收能至射流动能效率（无量纲）。下标区分能量库／阶段。
 
-(C3-E29) · Declared optical and mechanical allocation$$
-\begin{aligned}E\_{\mathrm{abs,tot}}&=f\_{\mathrm{geo}}A\_\lambda E\_L=(0.8)(0.5)(25\,\mu\mathrm J)=10\,\mu\mathrm J,\\ E\_{\mathrm{abs,site}}&=E\_{\mathrm{abs,tot}}/N\_d=400\,\mathrm{nJ},\quad E\_{\mathrm{PFC,deadline}}=f\_T E\_{\mathrm{abs,site}}=160\,\mathrm{nJ},\\ E\_j&=\eta\_j E\_{\mathrm{abs,site}}=2.00\,\mathrm{nJ},\quad E\_{j,\mathrm{tot}}=N\_dE\_j=50.0\,\mathrm{nJ}.\end{aligned}
+(C3-E29) · Declared optical and mechanical allocation
+
 $$
+\begin{aligned}E_{\mathrm{abs,tot}}&=f_{\mathrm{geo}}A_\lambda E_L=(0.8)(0.5)(25\,\mu\mathrm J)=10\,\mu\mathrm J,\\ E_{\mathrm{abs,site}}&=E_{\mathrm{abs,tot}}/N_d=400\,\mathrm{nJ},\quad E_{\mathrm{PFC,deadline}}=f_T E_{\mathrm{abs,site}}=160\,\mathrm{nJ},\\ E_j&=\eta_j E_{\mathrm{abs,site}}=2.00\,\mathrm{nJ},\quad E_{j,\mathrm{tot}}=N_dE_j=50.0\,\mathrm{nJ}.\end{aligned}
+$$
+
+
 ![Energy allocations follow the project chain without double counting.](../assets/figures/c3-e29.svg)
 
 Energy allocations follow the project chain without double counting.
 
 沿项目因果链分配能量，并避免重复计数。
 
-**Symbols before Eq. (C3-E30).** $m\_j$ is per-jet carrier mass (kg), $\rho=1000$ kg m⁻³ carrier density; $d\_j=10\times10^{-6}$ m diameter and $L\_j=50\times10^{-6}$ m emitted length supply the first row. $E\_j=2.00\times10^{-9}$ J is per-jet kinetic energy; $U\_j$ uniform speed (m s⁻¹), $q\_j=\rho U\_j^2/2$ dynamic pressure and $p\_{\mathrm{rigid,early}}$ early rigid-contact pressure (Pa; MPa = 10⁶ Pa). $c=1480$ m s⁻¹ is stipulated sound speed; $P\_j,P\_{\mathrm{tot}}$ per-jet and total aligned incoming momentum (N s); $\pi$ dimensionless. Uniform direction, full activation and independent cells are assumed.
+**Symbols before Eq. (C3-E30).** $m_j$ is per-jet carrier mass (kg), $\rho=1000$ kg m⁻³ carrier density; $d_j=10\times10^{-6}$ m diameter and $L_j=50\times10^{-6}$ m emitted length supply the first row. $E_j=2.00\times10^{-9}$ J is per-jet kinetic energy; $U_j$ uniform speed (m s⁻¹), $q_j=\rho U_j^2/2$ dynamic pressure and $p_{\mathrm{rigid,early}}$ early rigid-contact pressure (Pa; MPa = 10⁶ Pa). $c=1480$ m s⁻¹ is stipulated sound speed; $P_j,P_{\mathrm{tot}}$ per-jet and total aligned incoming momentum (N s); $\pi$ dimensionless. Uniform direction, full activation and independent cells are assumed.
 
-**式（C3-E30）前的符号定义。** $m\_j$ 为单射流载液质量（kg），$\rho=1000$ kg m⁻³ 为载液密度；$d\_j=10\times10^{-6}$ m 直径及 $L\_j=50\times10^{-6}$ m 喷出长度用于第一行。$E\_j=2.00\times10^{-9}$ J 为单射流动能；$U\_j$ 为均匀速度（m s⁻¹），$q\_j=\rho U\_j^2/2$ 为动压，$p\_{\mathrm{rigid,early}}$ 为早期刚性接触压力（Pa；MPa = 10⁶ Pa）。$c=1480$ m s⁻¹ 为给定声速；$P\_j,P\_{\mathrm{tot}}$ 为单射流及总对齐入射动量（N s）；$\pi$ 无量纲。假设方向相同、全部激活且单元独立。
+**式（C3-E30）前的符号定义。** $m_j$ 为单射流载液质量（kg），$\rho=1000$ kg m⁻³ 为载液密度；$d_j=10\times10^{-6}$ m 直径及 $L_j=50\times10^{-6}$ m 喷出长度用于第一行。$E_j=2.00\times10^{-9}$ J 为单射流动能；$U_j$ 为均匀速度（m s⁻¹），$q_j=\rho U_j^2/2$ 为动压，$p_{\mathrm{rigid,early}}$ 为早期刚性接触压力（Pa；MPa = 10⁶ Pa）。$c=1480$ m s⁻¹ 为给定声速；$P_j,P_{\mathrm{tot}}$ 为单射流及总对齐入射动量（N s）；$\pi$ 无量纲。假设方向相同、全部激活且单元独立。
 
-(C3-E30) · Worked finite jet mass, speed and pressure scales$$
-\begin{aligned}m\_j&=(1000\,\mathrm{kg\,m^{-3}})\frac{\pi(10\times10^{-6}\,\mathrm m)^2}{4}(50\times10^{-6}\,\mathrm m)\simeq3.926991\times10^{-12}\,\mathrm{kg},\\ U\_j&=\sqrt{\frac{2(2.00\times10^{-9}\,\mathrm J)}{3.926991\times10^{-12}\,\mathrm{kg}}}\simeq31.91538\,\mathrm{m\,s^{-1}},\\ q\_j&\simeq0.5092958\,\mathrm{MPa},\quad p\_{\mathrm{rigid,early}}=\rho cU\_j\simeq47.23477\,\mathrm{MPa},\\ P\_j&=m\_jU\_j\simeq1.253314\times10^{-10}\,\mathrm{N\,s},\quad P\_{\mathrm{tot}}=25P\_j\simeq3.133285\times10^{-9}\,\mathrm{N\,s}.\end{aligned}
+(C3-E30) · Worked finite jet mass, speed and pressure scales
+
 $$
+\begin{aligned}m_j&=(1000\,\mathrm{kg\,m^{-3}})\frac{\pi(10\times10^{-6}\,\mathrm m)^2}{4}(50\times10^{-6}\,\mathrm m)\simeq3.926991\times10^{-12}\,\mathrm{kg},\\ U_j&=\sqrt{\frac{2(2.00\times10^{-9}\,\mathrm J)}{3.926991\times10^{-12}\,\mathrm{kg}}}\simeq31.91538\,\mathrm{m\,s^{-1}},\\ q_j&\simeq0.5092958\,\mathrm{MPa},\quad p_{\mathrm{rigid,early}}=\rho cU_j\simeq47.23477\,\mathrm{MPa},\\ P_j&=m_jU_j\simeq1.253314\times10^{-10}\,\mathrm{N\,s},\quad P_{\mathrm{tot}}=25P_j\simeq3.133285\times10^{-9}\,\mathrm{N\,s}.\end{aligned}
+$$
+
+
 ![The finite state carried to Chapter 4 includes mass and energy, not only a pressure peak.](../assets/figures/c3-e30.svg)
 
 The finite state carried to Chapter 4 includes mass and energy, not only a pressure peak.
 
 传入第四章的有限状态包含质量及能量，而非只有压力峰值。
 
-| Checked quantity  已核验量 | Result  结果 | Interpretation  解释 |
+| Checked quantity<br>已核验量 | Result<br>结果 | Interpretation<br>解释 |
 | --- | --- | --- |
-| Emitted volume per site  各位点喷出体积 | 3.926991 pL  3.926991 pL | Below the 50-pL carrier inventory  小于 50 pL 载液储量 |
-| Total emitted mass  总喷出质量 | 98.17477 ng  98.17477 ng | 25 independent finite jets  25 个独立有限射流 |
-| Emission duration estimate  发射时长估计 | 1.566643 μs  1.566643 μs | Length divided by assigned uniform speed  长度除以给定均匀速度 |
-| Flight across 100 μm air gap  飞越 100 μm 气隙 | 3.133285 μs  3.133285 μs | No dense-liquid drag assumed  假设无稠密液体阻力 |
-| Impulse-equivalent early duration  冲量等效早期时长 | 33.78378 ns  33.78378 ns | Not a predicted rectangular pulse  并非预测矩形脉冲 |
-| Side-release scale  侧向释放尺度 | 3.378378 ns  3.378378 ns | Central 1D impact requires still earlier observation  中心一维冲击要求更早观察 |
-| Reynolds / Weber / Ohnesorge  Reynolds／Weber／Ohnesorge 数 | 319.1538 / 141.4711 / 0.0372678  319.1538 / 141.4711 / 0.0372678 | Diameter-based diagnostics  以直径定义的诊断量 |
-| Capillary time / fastest wavelength  毛细时间／最快波长 | 1.317616 μs / 45.07184 μm  1.317616 μs／45.07184 μm | Radius-based infinite-cylinder benchmark  以半径定义的无限圆柱对照 |
-| Arrival disturbance from 1% initial amplitude  初始 1% 振幅的到达扰动 | 2.26247% of radius  半径的 2.26247% | Linear control permits coherent arrival  线性对照允许相干到达 |
-| 1% to 10% radius linear-threshold time  半径 1% 到 10% 的线性阈值时间 | 8.836529 μs  8.836529 μs | A declared validity screen, not pinch-off time  声明的适用性筛查，并非夹断时间 |
-| Formal extrapolation from 1% to full radius  1% 到整个半径的形式外推 | 17.67306 μs  17.67306 μs | Reproduces source estimate outside linear validity  还原原文估计，但超出线性适用范围 |
+| Emitted volume per site<br>各位点喷出体积 | 3.926991 pL<br>3.926991 pL | Below the 50-pL carrier inventory<br>小于 50 pL 载液储量 |
+| Total emitted mass<br>总喷出质量 | 98.17477 ng<br>98.17477 ng | 25 independent finite jets<br>25 个独立有限射流 |
+| Emission duration estimate<br>发射时长估计 | 1.566643 μs<br>1.566643 μs | Length divided by assigned uniform speed<br>长度除以给定均匀速度 |
+| Flight across 100 μm air gap<br>飞越 100 μm 气隙 | 3.133285 μs<br>3.133285 μs | No dense-liquid drag assumed<br>假设无稠密液体阻力 |
+| Impulse-equivalent early duration<br>冲量等效早期时长 | 33.78378 ns<br>33.78378 ns | Not a predicted rectangular pulse<br>并非预测矩形脉冲 |
+| Side-release scale<br>侧向释放尺度 | 3.378378 ns<br>3.378378 ns | Central 1D impact requires still earlier observation<br>中心一维冲击要求更早观察 |
+| Reynolds / Weber / Ohnesorge<br>Reynolds／Weber／Ohnesorge 数 | 319.1538 / 141.4711 / 0.0372678<br>319.1538 / 141.4711 / 0.0372678 | Diameter-based diagnostics<br>以直径定义的诊断量 |
+| Capillary time / fastest wavelength<br>毛细时间／最快波长 | 1.317616 μs / 45.07184 μm<br>1.317616 μs／45.07184 μm | Radius-based infinite-cylinder benchmark<br>以半径定义的无限圆柱对照 |
+| Arrival disturbance from 1% initial amplitude<br>初始 1% 振幅的到达扰动 | 2.26247% of radius<br>半径的 2.26247% | Linear control permits coherent arrival<br>线性对照允许相干到达 |
+| 1% to 10% radius linear-threshold time<br>半径 1% 到 10% 的线性阈值时间 | 8.836529 μs<br>8.836529 μs | A declared validity screen, not pinch-off time<br>声明的适用性筛查，并非夹断时间 |
+| Formal extrapolation from 1% to full radius<br>1% 到整个半径的形式外推 | 17.67306 μs<br>17.67306 μs | Reproduces source estimate outside linear validity<br>还原原文估计，但超出线性适用范围 |
 
 All numerical properties and efficiencies in this worked control are stipulated water-like teaching inputs, not a calibrated PFC formulation. The 47.2348-MPa value is an early rigid-contact scale with a nanosecond spatial-validity condition. Sustaining that full-area pressure over the 1.5666-μs emitted duration would demand 46.37 times the plug's available axial momentum. The incoming energy remains 2.00 nJ per site or 50.0 nJ total. Chapter 4 will test whether the actual footprint, time history and force path deliver enough opening work without damaging the film. A high early-impact scale can therefore coexist with failure of an intact-transfer fracture-energy screen.
 
@@ -597,13 +750,17 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (C3-E31).** Original formulas: $i,j$ index bubbles; $R\_i,R\_j,d\_{ij}$ are radius/separation (m), dots time derivatives; $p\_{b,i},p\_\infty,\Delta p\_c>0$ are bubble pressure, ambient pressure and constant ideal collapse difference (Pa). $\sigma\_b$ tension (N m⁻¹), $\mu$ viscosity (Pa s), $\rho$ carrier density (kg m⁻³), $\sum$ sums neighbors. $N$ is count, $E\_{B,\mathrm{tot}}$ fixed total initial pressure work (J), $R\_{\max,N}$ per-bubble maximum radius and $R\_\*$ isolated reference radius (m); $\pi$ dimensionless, $\*$ reference label. The coupled row requires far separation; the fixed-work row assumes identical constant-pressure ideal cavities.
+**Symbols before Eq. (C3-E31).** Original formulas: $i,j$ index bubbles; $R_i,R_j,d_{ij}$ are radius/separation (m), dots time derivatives; $p_{b,i},p_\infty,\Delta p_c>0$ are bubble pressure, ambient pressure and constant ideal collapse difference (Pa). $\sigma_b$ tension (N m⁻¹), $\mu$ viscosity (Pa s), $\rho$ carrier density (kg m⁻³), $\sum$ sums neighbors. $N$ is count, $E_{B,\mathrm{tot}}$ fixed total initial pressure work (J), $R_{\max,N}$ per-bubble maximum radius and $R_*$ isolated reference radius (m); $\pi$ dimensionless, $*$ reference label. The coupled row requires far separation; the fixed-work row assumes identical constant-pressure ideal cavities.
 
-**式（C3-E31）前的符号定义。** 原始公式：$i,j$ 为气泡编号；$R\_i,R\_j,d\_{ij}$ 为半径／间距（m），点为时间导数；$p\_{b,i},p\_\infty,\Delta p\_c>0$ 为泡内压力、环境压力、恒定理想塌缩压差（Pa）。$\sigma\_b$ 为张力（N m⁻¹），$\mu$ 为黏度（Pa s），$\rho$ 为载液密度（kg m⁻³），$\sum$ 对邻泡求和。$N$ 为数量，$E\_{B,\mathrm{tot}}$ 为固定初始总压力做功（J），$R\_{\max,N}$ 为单泡最大半径、$R\_\*$ 为孤立参考半径（m）；$\pi$ 无量纲，$\*$ 为参考标签。耦合行要求充分分离；固定做功行假设相同恒定压力理想腔体。
+**式（C3-E31）前的符号定义。** 原始公式：$i,j$ 为气泡编号；$R_i,R_j,d_{ij}$ 为半径／间距（m），点为时间导数；$p_{b,i},p_\infty,\Delta p_c>0$ 为泡内压力、环境压力、恒定理想塌缩压差（Pa）。$\sigma_b$ 为张力（N m⁻¹），$\mu$ 为黏度（Pa s），$\rho$ 为载液密度（kg m⁻³），$\sum$ 对邻泡求和。$N$ 为数量，$E_{B,\mathrm{tot}}$ 为固定初始总压力做功（J），$R_{\max,N}$ 为单泡最大半径、$R_*$ 为孤立参考半径（m）；$\pi$ 无量纲，$*$ 为参考标签。耦合行要求充分分离；固定做功行假设相同恒定压力理想腔体。
 
-(C3-E31) · Reference answer: original interaction and allocation formulas$$
-\begin{aligned}R\_i\ddot R\_i+\frac32\dot R\_i^2&=\frac{p\_{b,i}-p\_\infty-2\sigma\_b/R\_i-4\mu\dot R\_i/R\_i}{\rho}-\sum\_{j\ne i}\frac{R\_j^2\ddot R\_j+2R\_j\dot R\_j^2}{d\_{ij}},\\ E\_{B,\mathrm{tot}}&=N\frac{4\pi}{3}\Delta p\_cR\_{\max,N}^3,\qquad R\_{\max,N}=R\_\*N^{-1/3}.\end{aligned}
+(C3-E31) · Reference answer: original interaction and allocation formulas
+
 $$
+\begin{aligned}R_i\ddot R_i+\frac32\dot R_i^2&=\frac{p_{b,i}-p_\infty-2\sigma_b/R_i-4\mu\dot R_i/R_i}{\rho}-\sum_{j\ne i}\frac{R_j^2\ddot R_j+2R_j\dot R_j^2}{d_{ij}},\\ E_{B,\mathrm{tot}}&=N\frac{4\pi}{3}\Delta p_cR_{\max,N}^3,\qquad R_{\max,N}=R_*N^{-1/3}.\end{aligned}
+$$
+
+
 ![Use connectivity and source allocation before any sum of outputs.](../assets/figures/c3-e31.svg)
 
 Use connectivity and source allocation before any sum of outputs.
@@ -642,13 +799,17 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (C3-E32).** Original formulas: $U\_{\mathrm{rms}}$ is mass-weighted speed, $U\_j$ uniform benchmark speed (m s⁻¹), $m\_j>0$ emitted carrier mass (kg), $E\_{\mathrm{avail}},E\_j$ available and kinetic energy (J), $P\_j$ directional momentum (N s). $a\_0,H,\delta\_0,\delta\_{\mathrm{arr}}$ are base radius, gap, initial and arriving disturbance amplitude (m); $g\_{\max}$ fastest cylinder growth rate (s⁻¹), $\exp$ exponential of dimensionless argument. Growth assumes constant inviscid base cylinder and a small perturbation in negligible surrounding gas.
+**Symbols before Eq. (C3-E32).** Original formulas: $U_{\mathrm{rms}}$ is mass-weighted speed, $U_j$ uniform benchmark speed (m s⁻¹), $m_j>0$ emitted carrier mass (kg), $E_{\mathrm{avail}},E_j$ available and kinetic energy (J), $P_j$ directional momentum (N s). $a_0,H,\delta_0,\delta_{\mathrm{arr}}$ are base radius, gap, initial and arriving disturbance amplitude (m); $g_{\max}$ fastest cylinder growth rate (s⁻¹), $\exp$ exponential of dimensionless argument. Growth assumes constant inviscid base cylinder and a small perturbation in negligible surrounding gas.
 
-**式（C3-E32）前的符号定义。** 原始公式：$U\_{\mathrm{rms}}$ 为质量加权速度，$U\_j$ 为均匀对照速度（m s⁻¹），$m\_j>0$ 为喷出载液质量（kg），$E\_{\mathrm{avail}},E\_j$ 为可用能及动能（J），$P\_j$ 为方向动量（N s）。$a\_0,H,\delta\_0,\delta\_{\mathrm{arr}}$ 为基态半径、间隙、初始及到达扰动振幅（m）；$g\_{\max}$ 为最快圆柱增长率（s⁻¹），$\exp$ 为无量纲自变量的指数。增长假设恒定无黏基态圆柱、微小扰动及周围气体动力学可忽略。
+**式（C3-E32）前的符号定义。** 原始公式：$U_{\mathrm{rms}}$ 为质量加权速度，$U_j$ 为均匀对照速度（m s⁻¹），$m_j>0$ 为喷出载液质量（kg），$E_{\mathrm{avail}},E_j$ 为可用能及动能（J），$P_j$ 为方向动量（N s）。$a_0,H,\delta_0,\delta_{\mathrm{arr}}$ 为基态半径、间隙、初始及到达扰动振幅（m）；$g_{\max}$ 为最快圆柱增长率（s⁻¹），$\exp$ 为无量纲自变量的指数。增长假设恒定无黏基态圆柱、微小扰动及周围气体动力学可忽略。
 
-(C3-E32) · Reference answer: original finite-mass and growth formulas$$
-U\_{\mathrm{rms}}\le\sqrt{\frac{2E\_{\mathrm{avail}}}{m\_j}},\qquad P\_j^2\le2m\_jE\_j,\qquad \frac{\delta\_{\mathrm{arr}}}{a\_0}=\frac{\delta\_0}{a\_0}\exp(g\_{\max}H/U\_j).
+(C3-E32) · Reference answer: original finite-mass and growth formulas
+
 $$
+U_{\mathrm{rms}}\le\sqrt{\frac{2E_{\mathrm{avail}}}{m_j}},\qquad P_j^2\le2m_jE_j,\qquad \frac{\delta_{\mathrm{arr}}}{a_0}=\frac{\delta_0}{a_0}\exp(g_{\max}H/U_j).
+$$
+
+
 ![Speed, focusing and survival must refer to the same emitted liquid state.](../assets/figures/c3-e32.svg)
 
 Speed, focusing and survival must refer to the same emitted liquid state.
@@ -687,13 +848,17 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (C3-E33).** Original formulas: $p\_{\mathrm{early}}$ is early compressive impact scale and $p\_{\mathrm{obs}}$ signed finite-observer mean (Pa), $Z\_l,Z\_r>0$ liquid/receiver impedances (Pa s m⁻¹), $\rho$ carrier density (kg m⁻³), $c$ sound speed and $U\_j$ incident speed (m s⁻¹), $L\_j$ finite jet length (m), $\tau\_{\mathrm{eq}}$ rigid stopping-impulse equivalent duration (s). $A\_o$ observation area and $dA$ element (m²), $\tau\_o$ averaging duration, $t$ current time and $\xi$ dummy time (s), $p,p\_{\mathrm{ref}}$ local/reference pressure (Pa). $\int$ integrates local pressure $p(\boldsymbol x,\xi)$ over the footprint/window, with position $\boldsymbol x$ (m) implicit. Impact is locally one-dimensional and linear; equivalent duration assumes zero outgoing axial momentum and no added force source.
+**Symbols before Eq. (C3-E33).** Original formulas: $p_{\mathrm{early}}$ is early compressive impact scale and $p_{\mathrm{obs}}$ signed finite-observer mean (Pa), $Z_l,Z_r>0$ liquid/receiver impedances (Pa s m⁻¹), $\rho$ carrier density (kg m⁻³), $c$ sound speed and $U_j$ incident speed (m s⁻¹), $L_j$ finite jet length (m), $\tau_{\mathrm{eq}}$ rigid stopping-impulse equivalent duration (s). $A_o$ observation area and $dA$ element (m²), $\tau_o$ averaging duration, $t$ current time and $\xi$ dummy time (s), $p,p_{\mathrm{ref}}$ local/reference pressure (Pa). $\int$ integrates local pressure $p(\boldsymbol x,\xi)$ over the footprint/window, with position $\boldsymbol x$ (m) implicit. Impact is locally one-dimensional and linear; equivalent duration assumes zero outgoing axial momentum and no added force source.
 
-**式（C3-E33）前的符号定义。** 原始公式：$p\_{\mathrm{early}}$ 为早期压缩冲击尺度，$p\_{\mathrm{obs}}$ 为带符号有限观察均值（Pa），$Z\_l,Z\_r>0$ 为液体／接收体阻抗（Pa s m⁻¹），$\rho$ 为载液密度（kg m⁻³），$c$ 为声速、$U\_j$ 为入射速度（m s⁻¹），$L\_j$ 为有限射流长度（m），$\tau\_{\mathrm{eq}}$ 为刚性停止冲量等效时长（s）。$A\_o$ 为观察面积、$dA$ 为面积微元（m²），$\tau\_o$ 为平均时长，$t$ 为当前时间、$\xi$ 为积分时间（s），$p,p\_{\mathrm{ref}}$ 为局部／参考压力（Pa）。$\int$ 将局部压力 $p(\boldsymbol x,\xi)$ 在载荷区域／窗口积分，位置 $\boldsymbol x$（m）为隐含自变量。冲击局部一维且线性；等效时长假设出射轴向动量为零且无额外力源。
+**式（C3-E33）前的符号定义。** 原始公式：$p_{\mathrm{early}}$ 为早期压缩冲击尺度，$p_{\mathrm{obs}}$ 为带符号有限观察均值（Pa），$Z_l,Z_r>0$ 为液体／接收体阻抗（Pa s m⁻¹），$\rho$ 为载液密度（kg m⁻³），$c$ 为声速、$U_j$ 为入射速度（m s⁻¹），$L_j$ 为有限射流长度（m），$\tau_{\mathrm{eq}}$ 为刚性停止冲量等效时长（s）。$A_o$ 为观察面积、$dA$ 为面积微元（m²），$\tau_o$ 为平均时长，$t$ 为当前时间、$\xi$ 为积分时间（s），$p,p_{\mathrm{ref}}$ 为局部／参考压力（Pa）。$\int$ 将局部压力 $p(\boldsymbol x,\xi)$ 在载荷区域／窗口积分，位置 $\boldsymbol x$（m）为隐含自变量。冲击局部一维且线性；等效时长假设出射轴向动量为零且无额外力源。
 
-(C3-E33) · Reference answer: original impact and observer formulas$$
-p\_{\mathrm{early}}\simeq\frac{Z\_lZ\_r}{Z\_l+Z\_r}U\_j,\quad Z\_l=\rho c,\qquad \tau\_{\mathrm{eq}}=\frac{L\_j}{c},\qquad p\_{\mathrm{obs}}(t)=\frac1{A\_o\tau\_o}\int\_{t-\tau\_o}^t\int\_{A\_o}(p-p\_{\mathrm{ref}})\,dA\,d\xi.
+(C3-E33) · Reference answer: original impact and observer formulas
+
 $$
+p_{\mathrm{early}}\simeq\frac{Z_lZ_r}{Z_l+Z_r}U_j,\quad Z_l=\rho c,\qquad \tau_{\mathrm{eq}}=\frac{L_j}{c},\qquad p_{\mathrm{obs}}(t)=\frac1{A_o\tau_o}\int_{t-\tau_o}^t\int_{A_o}(p-p_{\mathrm{ref}})\,dA\,d\xi.
+$$
+
+
 ![A finite impact scale is an input to load-path analysis, not proof of intact release.](../assets/figures/c3-e33.svg)
 
 A finite impact scale is an input to load-path analysis, not proof of intact release.

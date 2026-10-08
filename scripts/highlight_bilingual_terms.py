@@ -462,7 +462,7 @@ def course_pages(root):
     settings = root / 'COURSE_SETTINGS.json'
     if settings.exists():
         course = json.loads(settings.read_text(encoding='utf-8'))
-        return sorted([root/'index.html', *(root/c['file'] for c in course['chapters']), *root.glob('reference/*.html')])
+        return sorted([root/'index.html', *(root/c['file'] for c in course['chapters']+course.get('appendices',[])), *(root/c['file'] for c in course.get('legacy_routes',[])), *root.glob('reference/*.html')])
     return sorted([*root.glob('*.html'), *root.glob('course/**/*.html'),
                    *root.glob('chapters/*.html'), *root.glob('lessons/*.html'),
                    *root.glob('reference/*.html')])

@@ -3,6 +3,7 @@ r"""Chapter 2: optical heating, activation, finite PFC phase inventory.
 Worker-owned content only. Equations and diagrams are rendered by coursekit.
 """
 from coursekit import P, H, E, T, cite, defense, note
+from symbol_tables import glossary
 
 b = []
 b.append(H(r'2. From laser absorption to a finite PFC bubble', r'2. 从激光吸收到有限 PFC 气泡', r'system'))
@@ -15,16 +16,7 @@ b.append(P(
 b.append(P(
     r'<strong>Assumptions are introduced in stages.</strong> The first optical control neglects scattering and nonlinear absorption. The pre-phase heat equation assumes negligible pressure-work and viscous heating within each nearly incompressible phase. The nucleation calculation adopts a locally isothermal capillarity model with a nucleus much smaller than its available liquid core. The final uniform-bubble closure assumes a common bulk temperature and uses an ideal mixture only when dilute. These are different approximations, not a single universally valid PFC model. A micron-scale teaching core is not a nanodroplet.',
     r'<strong>逐步引入假设。</strong> 首个光学参照忽略散射和非线性吸收。相变前的热方程假设每个近不可压缩相内的压力功与黏性生热可忽略。成核计算采用局部等温毛细模型，且汽核远小于可用液核。最后的均匀气泡闭合假设共同的体相温度，仅在稀薄条件下使用理想混合物。这些是不同近似，不能合并为普适 PFC 模型。微米级教学核心也不是纳米液滴。'))
-b.append(T(
-    [(r'Symbol family', r'符号组'), (r'Meaning and units', r'含义与单位')],
-    [
-        [(r'Optics: $F,I,E_L$', r'光学：$F,I,E_L$'), (r'Fluence (J m⁻²), irradiance (W m⁻²), incident pulse energy (J).', r'能量密度（J m⁻²）、辐照度（W m⁻²）、入射脉冲能量（J）。')],
-        [(r'Heat: $T,\rho,c_p,k$', r'热学：$T,\rho,c_p,k$'), (r'Temperature (K), mass density (kg m⁻³), specific heat capacity (J kg⁻¹ K⁻¹), conductivity (W m⁻¹ K⁻¹).', r'温度（K）、质量密度（kg m⁻³）、比热容（J kg⁻¹ K⁻¹）、导热系数（W m⁻¹ K⁻¹）。')],
-        [(r'Geometry: $a_0,R,V_b$', r'几何：$a_0,R,V_b$'), (r'Initial PFC-core radius (m), subsequent bubble radius (m), bubble volume (m³). They are distinct.', r'初始 PFC 核半径（m）、后续气泡半径（m）、气泡体积（m³）；三者并不相同。')],
-        [(r'Phases: $m_l,m_v,j_s$', r'相：$m_l,m_v,j_s$'), (r'Remaining liquid and vapor mass (kg); signed species phase flux (kg m⁻² s⁻¹). Subscripts name phases or species.', r'剩余液体和蒸汽质量（kg）；带符号组分相变通量（kg m⁻² s⁻¹）。下标表示相或组分。')],
-        [(r'Interfaces: $\sigma_{pc},\sigma_{vp}$', r'界面：$\sigma_{pc},\sigma_{vp}$'), (r'PFC–carrier and vapor–PFC interfacial tensions (N m⁻¹). They describe different interfaces.', r'PFC–载液及蒸汽–PFC 界面张力（N m⁻¹）；两者描述不同界面。')],
-        [(r'Thermodynamics: $U_b,h_s,M_s$', r'热力学：$U_b,h_s,M_s$'), (r'Bubble internal energy (J), transported specific enthalpy (J kg⁻¹), species molar mass (kg mol⁻¹).', r'气泡内能（J）、输运比焓（J kg⁻¹）、组分摩尔质量（kg mol⁻¹）。')],
-    ]))
+b.append(glossary(2))
 b.append(P(
     r'A fair PFC comparison uses a PFC-free aqueous droplet with matched outer geometry, absorber location, absorbed energy, initial temperature, pressure, outlet, and target load path. Changing absorber concentration or spot size simultaneously cannot isolate a material benefit. Compare activation probability, emitted mass and velocity, useful impulse, intact-transfer yield, and reset. A persistently vapor-filled inclusion can activate readily while cushioning the subsequent collapse.',
     r'公平的 PFC 对比应使用不含 PFC 的水性液滴，并匹配外部几何、吸收体位置、吸收能量、初始温度、压力、出口及目标受力路径。同时改变吸收体浓度或光斑大小，就不能分离材料优势。应比较激活概率、喷出质量与速度、有用冲量、完整转印成功率及复位。长期充满蒸汽的夹杂可能易于激活，却缓冲后续塌缩。'))

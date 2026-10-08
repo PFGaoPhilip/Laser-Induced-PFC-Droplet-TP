@@ -1,12 +1,13 @@
 {
-  "chapter": 5,
+  "unit": "Appendix A",
+  "legacy_source_number": 5,
   "date": "2026-10-09",
   "status": "authored_and_self_audited_not_learner_mastered",
   "scope": "Promoted source Appendix A; four retained platform mechanisms; no COMSOL model or target pressure maximum claimed",
   "equations": 24,
   "defense_questions": 3,
-  "english_words_including_local_definitions": 4889,
-  "english_words_excluding_local_definitions": 3479,
+  "english_words_including_local_definitions": 5246,
+  "english_words_excluding_local_definitions": 3836,
   "checks": [
     {
       "name": "declared wall elastic pressure",
@@ -315,9 +316,9 @@
       "name": "exactly three defense questions",
       "passed": true,
       "detail": [
-        "C5-Q1",
-        "C5-Q2",
-        "C5-Q3"
+        "A-Q1",
+        "A-Q2",
+        "A-Q3"
       ]
     },
     {
@@ -333,7 +334,7 @@
     {
       "name": "every reference answer begins with a quoted equation",
       "passed": true,
-      "detail": "C5-E21, C5-E22, C5-E23 precede answer prose"
+      "detail": "A-E21, A-E22, A-E23 precede answer prose"
     },
     {
       "name": "no escaped-LaTeX control characters in prose",

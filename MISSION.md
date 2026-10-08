@@ -11,9 +11,9 @@ Explain and calculate the complete physical chain needed to explore laser-activa
 ## Success looks like
 ## 成功标准
 
-Explain the causal mechanism, quantitative balance, assumptions and failure conditions of each of the five chapters through three defenses in your own words.
+Explain the causal mechanism, quantitative balance, assumptions and failure conditions of Chapters 1–4 and Appendix A through three defenses per unit in your own words.
 
-通过每章三个用自己语言作答的答辩，解释五章的因果机制、定量平衡、假设与失效条件。
+通过每单元三个用自己语言作答的答辩，解释第 1–4 章及附录 A 的因果机制、定量平衡、假设与失效条件。
 
 Carry a finite PFC inventory into a physically consistent array/jet output and assess whether its actual load path supplies selective fracture, intact landing and reset. Report the highest verified single-shot output separately from repeatable intact transfer.
 

@@ -1,5 +1,6 @@
 """Chapter 3: source-informed, fully declared array-to-jet mechanics."""
 from coursekit import P, H, E, T, cite, defense, note
+from symbol_tables import glossary
 
 
 def eq(n, tex, en, zh, kind, dtype, labels, notes, cap_en, cap_zh):
@@ -16,30 +17,7 @@ B.append(P(
 B.append(P(
     "Use fixed Cartesian bubble centers for the first interaction model; neglect center translation, gravity, walls, coalescence and shape modes. Require nearly spherical bubbles, radius much smaller than separation, low wall Mach number, and pressure communication faster than the radial event. At time zero the ideal-collapse controls start at their maximum radius with zero wall velocity, with constant positive ambient-minus-bubble pressure. Real PFC pressures must instead be coupled to Chapter 2. The spatial launch problem later uses the actual walls, outlets and moving interfaces. Its liquid-to-gas normal defines positive curvature for an exterior cylindrical jet and negative curvature for an interior spherical cavity.",
     "第一种相互作用模型采用固定 Cartesian 气泡中心，忽略中心平移、重力、壁面、合并及形状模态。要求气泡接近球形、半径远小于间距、壁面 Mach 数小，且压力传播快于径向事件。理想塌缩对照在零时刻从最大半径及零壁速开始，环境压力减去泡内压力为恒定正值。实际 PFC 压力则必须与第二章耦合。后续空间发射问题采用实际壁面、出口及运动界面。液体指向气体的法向，使外部圆柱射流曲率为正、内部球腔曲率为负。"))
-B.append(T(
-    [("Symbol family", "符号组"), ("Meaning and units", "含义与单位")],
-    [[(r"$i,j=1,\ldots,N_b$; $N_d,N_b$", r"$i,j=1,\ldots,N_b$；$N_d,N_b$"),
-      ("Bubble indices; fabricated-site count and activated-bubble count (dimensionless).", "气泡编号；制造位点数及已激活气泡数（无量纲）。")],
-     [(r"$R_i,d_{ij},s,R_{\max}$", r"$R_i,d_{ij},s,R_{\max}$"),
-      ("Radius, center distance, nearest-vertex pitch and maximum radius (m). Newton dots denote time derivatives.", "半径、中心距离、相邻顶点间距及最大半径（m）；Newton 点表示时间导数。")],
-     [(r"$\rho,\mu,\sigma_b,\sigma_j,c$", r"$\rho,\mu,\sigma_b,\sigma_j,c$"),
-      ("Carrier density (kg m⁻³), viscosity (Pa s), bubble and jet surface tensions (N m⁻¹), sound speed (m s⁻¹).", "载液密度（kg m⁻³）、黏度（Pa s）、气泡及射流表面张力（N m⁻¹）、声速（m s⁻¹）。")],
-     [(r"$\phi,\Pi,\boldsymbol u$", r"$\phi,\Pi,\boldsymbol u$"),
-      ("Velocity potential (m² s⁻¹), pressure impulse per area (Pa s), velocity field (m s⁻¹).", "速度势（m² s⁻¹）、单位面积压力冲量（Pa s）、速度场（m s⁻¹）。")],
-     [(r"$E,m,P,\mathcal J$", r"$E,m,P,\mathcal J$"),
-      ("Energy (J), liquid mass (kg), directional momentum (N s), delivered force impulse (N s). Labels identify the particular system.", "能量（J）、液体质量（kg）、方向动量（N s）、传递的力冲量（N s）；下标区分具体系统。")],
-     [("$a_j,d_j,L_j,H,z$", "$a_j,d_j,L_j,H,z$"),
-      ("Jet radius, diameter, emitted length, flight gap and axial coordinate (m).", "射流半径、直径、喷出长度、飞行间隙及轴向坐标（m）。")],
-     [(r"$S,\chi,C(\chi),b_i$", r"$S,\chi,C(\chi),b_i$"),
-      ("Neighbor reciprocal-distance sum (m⁻¹), interaction parameter, collapse-time coefficient (dimensionless), and source strength (m³ s⁻¹).", "邻距倒数和（m⁻¹）、相互作用参数、塌缩时间系数（无量纲）及源强度（m³ s⁻¹）。")],
-     [(r"$\Gamma,\Omega,\boldsymbol n,\kappa$", r"$\Gamma,\Omega,\boldsymbol n,\kappa$"),
-      ("Moving interface, liquid domain, unit normal pointing out of liquid, and signed curvature (m⁻¹).", "运动界面、液体域、指向液体外部的单位法向及带符号曲率（m⁻¹）。")],
-     [(r"$g,\delta,k,q,I_0,I_1$", r"$g,\delta,k,q,I_0,I_1$"),
-      ("Disturbance growth rate (s⁻¹; not gravity), amplitude (m), wavenumber (m⁻¹), dimensionless wavenumber and modified Bessel functions. The pitch remains the distinct symbol s.", "扰动增长率（s⁻¹；并非重力）、振幅（m）、波数（m⁻¹）、无量纲波数及修正 Bessel 函数；间距保留为另一符号 s。")],
-     [(r"$Z_l,Z_r,A_o,\tau_o,p_{\mathrm{obs}}$", r"$Z_l,Z_r,A_o,\tau_o,p_{\mathrm{obs}}$"),
-      ("Liquid/receiver impedance (Pa s m⁻¹), observer area (m²), averaging time (s) and observed mean excess pressure (Pa).", "液体／接收体阻抗（Pa s m⁻¹）、观察面积（m²）、平均时间（s）及观察平均超压（Pa）。")],
-     [(r"$\partial_t,\nabla,\nabla^2,\int,\sum$", r"$\partial_t,\nabla,\nabla^2,\int,\sum$"),
-      ("Fixed-position time derivative, spatial gradient/Laplacian, integral and finite sum. Powers are arithmetic powers; subscripts label sites or physical roles.", "固定位置时间导数、空间梯度／Laplace 算子、积分及有限求和。上标幂为算术幂；下标表示位点或物理作用。")]]))
+B.append(glossary(3))
 B.append(P(
     "Step 1 — distinguish five uniformities: core inventory, carrier volume, pitch, optical fluence and activation time. Separate liquid cells can be summed only after their finite outputs and arrival times are known. Bubbles sharing a liquid domain move common liquid and modify one another's ambient pressure. A regular pattern therefore supplies geometry, not a count-proportional pressure law.",
     "步骤 1——区分五种均匀性：芯部储量、载液体积、间距、光学通量及激活时间。分隔液体单元只能在有限输出及到达时间已知后求和。共享液体域的气泡推动共同液体，并改变彼此的周围压力。因此规则排列只提供几何，并不提供压力正比于数量的定律。"))
