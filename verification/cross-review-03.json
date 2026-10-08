@@ -1,0 +1,357 @@
+{
+  "chapter_reviewed": 3,
+  "reviewer": "Chapter 4 author; independent of Chapter 3 author",
+  "date": "2026-10-09",
+  "status": "verified-after-root-repairs",
+  "checks": [
+    {
+      "name": "Coupled energy yields correct radial equation at site 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Coupled energy yields correct radial equation at site 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Coupled energy yields correct radial equation at site 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Integrated squared speed satisfies symmetric ODE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Initial zero speed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Leading kinetic energy equals released work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Zero-interaction Rayleigh coefficient",
+      "passed": true,
+      "detail": {
+        "actual": 0.9146813565019815,
+        "expected": 0.914681356501962
+      }
+    },
+    {
+      "name": "3-polygon distance formula",
+      "passed": true,
+      "detail": {
+        "actual": 9999.999999999998,
+        "expected": 10000.0
+      }
+    },
+    {
+      "name": "3-polygon interaction",
+      "passed": true,
+      "detail": {
+        "actual": 0.29999999999999993,
+        "expected": 0.3
+      }
+    },
+    {
+      "name": "3-polygon collapse coefficient",
+      "passed": true,
+      "detail": {
+        "actual": 1.0198363742270358,
+        "expected": 1.019836
+      }
+    },
+    {
+      "name": "3-polygon formal time microseconds",
+      "passed": true,
+      "detail": {
+        "actual": 3.0595091226811073,
+        "expected": 3.059509
+      }
+    },
+    {
+      "name": "3-polygon fixed total work",
+      "passed": true,
+      "detail": {
+        "actual": 2.700000000000001e-14,
+        "expected": 2.7000000000000002e-14
+      }
+    },
+    {
+      "name": "4-polygon distance formula",
+      "passed": true,
+      "detail": {
+        "actual": 13535.533905932738,
+        "expected": 13535.533905932738
+      }
+    },
+    {
+      "name": "4-polygon interaction",
+      "passed": true,
+      "detail": {
+        "actual": 0.40606601717798213,
+        "expected": 0.406066
+      }
+    },
+    {
+      "name": "4-polygon collapse coefficient",
+      "passed": true,
+      "detail": {
+        "actual": 1.0543960385963642,
+        "expected": 1.054396
+      }
+    },
+    {
+      "name": "4-polygon formal time microseconds",
+      "passed": true,
+      "detail": {
+        "actual": 3.163188115789093,
+        "expected": 3.163188
+      }
+    },
+    {
+      "name": "4-polygon fixed total work",
+      "passed": true,
+      "detail": {
+        "actual": 2.700000000000001e-14,
+        "expected": 2.7000000000000002e-14
+      }
+    },
+    {
+      "name": "5-polygon distance formula",
+      "passed": true,
+      "detail": {
+        "actual": 16180.339887498947,
+        "expected": 16180.339887498947
+      }
+    },
+    {
+      "name": "5-polygon interaction",
+      "passed": true,
+      "detail": {
+        "actual": 0.4854101966249684,
+        "expected": 0.48541
+      }
+    },
+    {
+      "name": "5-polygon collapse coefficient",
+      "passed": true,
+      "detail": {
+        "actual": 1.0794973343115235,
+        "expected": 1.079497
+      }
+    },
+    {
+      "name": "5-polygon formal time microseconds",
+      "passed": true,
+      "detail": {
+        "actual": 3.2384920029345703,
+        "expected": 3.238492
+      }
+    },
+    {
+      "name": "5-polygon fixed total work",
+      "passed": true,
+      "detail": {
+        "actual": 2.700000000000001e-14,
+        "expected": 2.7000000000000002e-14
+      }
+    },
+    {
+      "name": "Gaussian 10% edge-drop radius ratio",
+      "passed": true,
+      "detail": {
+        "actual": 4.356884570660532,
+        "expected": 4.35688457
+      }
+    },
+    {
+      "name": "Independent activation all-sites probability",
+      "passed": true,
+      "detail": {
+        "actual": 0.27738957312183377,
+        "expected": 0.27738957312183377
+      }
+    },
+    {
+      "name": "Independent activation coefficient of variation",
+      "passed": true,
+      "detail": {
+        "actual": 0.04588314677411235,
+        "expected": 0.04588314677411238
+      }
+    },
+    {
+      "name": "Inviscid fastest dimensionless wavenumber",
+      "passed": true,
+      "detail": {
+        "actual": 0.6970188976698319,
+        "expected": 0.697019
+      }
+    },
+    {
+      "name": "Inviscid maximum growth times capillary time",
+      "passed": true,
+      "detail": {
+        "actual": 0.34333870186129933,
+        "expected": 0.343339
+      }
+    },
+    {
+      "name": "Inherited finite jet speed",
+      "passed": true,
+      "detail": {
+        "actual": 31.915382432114615,
+        "expected": 31.915382432114615
+      }
+    },
+    {
+      "name": "Early rigid pressure scale Pa",
+      "passed": true,
+      "detail": {
+        "actual": 47234765.99952963,
+        "expected": 47234766.0
+      }
+    },
+    {
+      "name": "Side release ns",
+      "passed": true,
+      "detail": {
+        "actual": 3.3783783783783785,
+        "expected": 3.378378
+      }
+    },
+    {
+      "name": "Impulse-equivalent duration ns",
+      "passed": true,
+      "detail": {
+        "actual": 33.78378378378379,
+        "expected": 33.78378
+      }
+    },
+    {
+      "name": "Full-emission high pressure momentum excess",
+      "passed": true,
+      "detail": {
+        "actual": 46.372623080673506,
+        "expected": 46.37
+      },
+      "rounding_check": "Two-decimal prose value has half-unit rounding tolerance0.005."
+    },
+    {
+      "name": "Arrival linear disturbance fraction",
+      "passed": true,
+      "detail": {
+        "actual": 0.02262472381955403,
+        "expected": 0.0226247
+      }
+    },
+    {
+      "name": "Ten-percent linear threshold microseconds",
+      "passed": true,
+      "detail": {
+        "actual": 8.836528575546032,
+        "expected": 8.836529
+      }
+    },
+    {
+      "name": "Whole-radius extrapolation microseconds",
+      "passed": true,
+      "detail": {
+        "actual": 17.673057151092063,
+        "expected": 17.67306
+      }
+    },
+    {
+      "name": "Exactly three defense questions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired prose structural matching",
+      "passed": true,
+      "detail": "Rechecked after root escaped inline math before HTML parsing."
+    }
+  ],
+  "all_independent_checks_passed": true,
+  "cluster_values": [
+    {
+      "N": 3,
+      "chi": 0.29999999999999993,
+      "C": 1.0198363742270358,
+      "time_s": 3.059509122681107e-06,
+      "fixed_total_radius_m": 2.0800838230519044e-05,
+      "fixed_total_time_s": 2.056871269239616e-06
+    },
+    {
+      "N": 4,
+      "chi": 0.40606601717798213,
+      "C": 1.0543960385963642,
+      "time_s": 3.1631881157890928e-06,
+      "fixed_total_radius_m": 1.88988157484231e-05,
+      "fixed_total_time_s": 1.8994637279818997e-06
+    },
+    {
+      "N": 5,
+      "chi": 0.4854101966249684,
+      "C": 1.0794973343115235,
+      "time_s": 3.2384920029345704e-06,
+      "fixed_total_radius_m": 1.75441064292772e-05,
+      "fixed_total_time_s": 1.7798021470709548e-06
+    }
+  ],
+  "semantic_review": [
+    "Neighbor-pressure sign follows minus carrier density times fixed-position potential derivative; both acceleration and product-rule speed-square terms are retained.",
+    "Independent Euler–Lagrange calculation from self and pair kinetic energy reproduces all coupled radial terms and their coefficients.",
+    "Polygon pitch is nearest-vertex distance; diagonal lengths and reciprocal sums are correct for 3,4,5.",
+    "The integrated symmetric trajectory conserves the retained leading-model pressure work; zero interaction recovers Rayleigh.",
+    "Fixed total pressure work changes each maximum radius rather than granting constant cavity size at higher site count.",
+    "Patterned/addressed optical allocation is explicitly separate from the broad Gaussian uniformity control, in EN and ZH.",
+    "Shared-fluid cluster solution is explicitly not a multiplier for 25 independent cells.",
+    "Material interface approximation excludes significant simultaneous mass transfer; finite sealed cells require actual pressure/volume/gauge boundaries.",
+    "Slender dynamics, exact geometric curvature, infinite-cylinder growth and finite-length jet arrival are not conflated.",
+    "The whole-radius disturbance time is labeled nonlinear extrapolation; the stated jet length is only about one fastest wavelength.",
+    "Early water-hammer scale is restricted by side/axial/receiver return times and finite momentum; equivalent rectangle is not claimed as a waveform.",
+    "Outgoing-wave energy bound is explicitly distinguished from contact traction and standing waves.",
+    "Paired physical qualifications, signs and numerical values inspected; no material EN/ZH contradiction found in reviewed sections."
+  ],
+  "concrete_issues": [
+    {
+      "id": "C3-E26",
+      "severity": "minor assumption clarification",
+      "issue": "The pressure-average bound uses the receiver normal contact-traction impulse. It needs pressure excess to equal the observed normal compressive traction, or a pressure-only impulse definition; nonnegative total normal traction alone does not guarantee a pressure-only bound when normal viscous stress is appreciable.",
+      "recommended_fix": "State negligible normal viscous stress in this observer control, or define the impulse budget explicitly as integral of observed pressure excess.",
+      "reported_to_root": true,
+      "status": "resolved-by-root-and-reviewed"
+    },
+    {
+      "id": "C3-E19",
+      "severity": "minor derivation clarification",
+      "issue": "The finite slice starting equality uses A dz for a pointwise area; this is leading-order unless A is a slice average. The derived differential continuity law itself is correct.",
+      "recommended_fix": "Start with exact volume integral over [z,z+Δz], divide by positive Δz, then take Δz→0, or explicitly state the leading-order slice approximation.",
+      "reported_to_root": true,
+      "status": "resolved-by-root-and-reviewed"
+    },
+    {
+      "id": "C3-E11",
+      "severity": "HTML integrity",
+      "issue": "Raw inline i<j was parsed as an HTML element in local definitions.",
+      "recommended_fix": "Escape inline math before HTML parsing.",
+      "resolution": "Root P/H primitives now escape inline math, preserving all inequality text and both language paragraphs. Independent pair-structure recheck passes.",
+      "status": "resolved-by-root-and-reviewed",
+      "reported_to_root": true
+    }
+  ],
+  "remaining_limits": [
+    "Leading spherical model omits translation/shape/walls/near-contact hydrodynamics; radius/pitch0.15 has no rigorous error certification.",
+    "Laser/PFC source history, jet conversion, solid coupling and actual pressure maximum remain uncalibrated.",
+    "Independent algebra/numerics check adopted models; this is not experimental validation.",
+    "The 46.37 momentum factor is rounded prose; independently computed46.37262308 agrees at stated precision."
+  ],
+  "cleanup": "No temporary files or bytecode generated; computations ran through Python -B stdin."
+}

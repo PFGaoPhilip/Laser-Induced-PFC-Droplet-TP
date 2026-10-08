@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C4-E01 — Pressure and shear act at the exposed film face; the drawn normal fixes the traction sign.</title>
+<desc id="desc">film surface; n_f ↓ solid → liquid; p → compressive load; u, x, t in liquid; μ, D_u — shear; T_l, t_l at exposed face; I — identity tensor; Positive opening direction ↑; The release interface is a separate surface.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E01 · Physical variable map / 物理变量图</text>
+<rect x="127" y="126" width="669" height="36" class="area"/>
+<rect x="127" y="241" width="669" height="39" class="area"/>
+<text x="143" y="107" class="">Exposed film face / 薄膜外露面</text>
+<path d="M283 227 V169" class="arrow"/>
+<path d="M463 227 V169" class="arrow"/>
+<path d="M638 227 V169" class="arrow"/>
+<path d="M720 165 V214" class="arrow"/>
+<text x="736" y="207" class="">nf ↓</text>
+<text x="272" y="313" class="">Liquid / 液体: u , p , μ , Du</text>
+<text x="354" y="192" class="muted">tl = Tl nf</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• film surface</text>
+<text x="30" y="433" class="muted">• n_f ↓ solid → liquid</text>
+<text x="30" y="457" class="muted">• p → compressive load</text>
+<text x="30" y="481" class="muted">• u, x, t in liquid</text>
+<text x="30" y="505" class="muted">• μ, D_u — shear</text>
+<text x="30" y="529" class="muted">• T_l, t_l at exposed face</text>
+<text x="30" y="553" class="muted">• I — identity tensor</text>
+<text x="30" y="595" class="muted">Positive opening direction ↑</text>
+<text x="30" y="618" class="muted">The release interface is a separate surface.</text>
+</svg>

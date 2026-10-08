@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 569" role="img" aria-labelledby="title desc">
+<title id="title">C1-E27 — Bulk momentum and volume conservation supply the spatial field needed for jet formation.</title>
+<desc id="desc">Liquid domain x; u(x,t); p(x,t); ρ; μ; t; Moving Γ; Outlet and wall; Resolve the spatial velocity and pressure, not only one radius</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="569" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E27 · Physical variable map / 物理变量图</text>
+<path d="M88 101 H700 M88 274 H700" class="thin"/>
+<circle cx="258" cy="186" r="52" class="area"/>
+<path d="M700 101 C640 154 640 222 700 274" class="line"/>
+<path d="M318 186 H270" class="arrow"/>
+<text x="303" y="160" class="">n → gas / 指向气相</text>
+<path d="M258 126 H320" class="arrow"/>
+<text x="261" y="104" class="">s</text>
+<text x="234" y="195" class="">pb</text>
+<text x="477" y="197" class="">Liquid / 液体: u , p , ρ , μ</text>
+<path d="M670 187 H753" class="arrow"/>
+<text x="732" y="165" class="">Γ , X(t)</text>
+<text x="777" y="207" class="">p∞</text>
+<text x="105" y="316" class="">Moving interface / 运动界面: Vn , κ , φ</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Liquid domain x</text>
+<text x="30" y="433" class="muted">• p(x,t)</text>
+<text x="30" y="457" class="muted">• μ</text>
+<text x="30" y="481" class="muted">• Moving Γ</text>
+<text x="508" y="409" class="muted">• u(x,t)</text>
+<text x="508" y="433" class="muted">• ρ</text>
+<text x="508" y="457" class="muted">• t</text>
+<text x="508" y="481" class="muted">• Outlet and wall</text>
+<text x="30" y="523" class="muted">Resolve the spatial velocity and pressure, not only one radius</text>
+</svg>

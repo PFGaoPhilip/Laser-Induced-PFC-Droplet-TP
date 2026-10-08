@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C5-E18 — The gel communication estimate exceeds the ideal liquid-collapse reference for the declared inputs.</title>
+<desc id="desc">Lg = Rmax = 30 µm; Gg = 20 kPa; ρg = ρl = 1000 kg/m³; cs = 4.47214 m/s; ts = 6.70820 µs; tc,liq = 2.74404 µs; Δpc = 100 kPa; Compare two distinct controls, not an actual gel-collapse prediction; Support deformation need not equilibrate during the event</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C5-E18 · Physical variable map / 物理变量图</text>
+<text x="97" y="90" class="">Two declared models / 两个声明的模型</text>
+<rect x="109" y="119" width="610" height="40" class="area"/>
+<text x="130" y="146" class="">ts = 6.70820 µs — shear transit / 剪切传播</text>
+<rect x="109" y="207" width="250" height="40" class="area"/>
+<text x="130" y="232" class="">tc,liq = 2.74404 µs</text>
+<text x="464" y="244" class="muted">Ideal liquid collapse / 理想液体塌缩</text>
+<text x="131" y="314" class="">ts / tc,liq = 2.44464 ; Lg = Rmax = 30 µm</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Lg = Rmax = 30 µm</text>
+<text x="30" y="433" class="muted">• Gg = 20 kPa</text>
+<text x="30" y="457" class="muted">• ρg = ρl = 1000 kg/m³</text>
+<text x="30" y="481" class="muted">• cs = 4.47214 m/s</text>
+<text x="30" y="505" class="muted">• ts = 6.70820 µs</text>
+<text x="30" y="529" class="muted">• tc,liq = 2.74404 µs</text>
+<text x="30" y="553" class="muted">• Δpc = 100 kPa</text>
+<text x="30" y="595" class="muted">Compare two distinct controls, not an actual gel-collapse prediction</text>
+<text x="30" y="618" class="muted">Support deformation need not equilibrate during the event</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C3-E25 — A very large initial pressure has a finite momentum budget and restricted duration.</title>
+<desc id="desc">m_j, U_j → P_in; P_out after redirection or rebound; J_rec delivered normal impulse; A_j, a_j, L_j finite plug; ρcU_j fictitious rectangular pressure; τ_eq = L_j/c; t_side, t_axial, t_early, t_return; Equivalent duration is not a predicted pulse shape; A free side can release the central pressure earlier</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C3-E25 · Physical variable map / 物理变量图</text>
+<rect x="88" y="146" width="535" height="78" class="area"/>
+<path d="M110 202 H577" class="arrow"/>
+<text x="282" y="127" class="">a , dj , Aj</text>
+<text x="250" y="180" class="">Uj , mj , Pj , Ej</text>
+<text x="268" y="261" class="">Finite liquid / 有限液体: Lj</text>
+<rect x="747" y="77" width="45" height="235" class="area"/>
+<path d="M623 177 H747" class="arrow"/>
+<text x="696" y="338" class="">Receiver / 接收体: Zr, vi</text>
+<text x="804" y="151" class="">p, traction</text>
+<text x="804" y="183" class="">Ao, τo</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• m_j, U_j → P_in</text>
+<text x="30" y="433" class="muted">• P_out after redirection or rebound</text>
+<text x="30" y="457" class="muted">• J_rec delivered normal impulse</text>
+<text x="30" y="481" class="muted">• A_j, a_j, L_j finite plug</text>
+<text x="30" y="505" class="muted">• ρcU_j fictitious rectangular pressure</text>
+<text x="30" y="529" class="muted">• τ_eq = L_j/c</text>
+<text x="30" y="553" class="muted">• t_side, t_axial, t_early, t_return</text>
+<text x="30" y="595" class="muted">Equivalent duration is not a predicted pulse shape</text>
+<text x="30" y="618" class="muted">A free side can release the central pressure earlier</text>
+</svg>

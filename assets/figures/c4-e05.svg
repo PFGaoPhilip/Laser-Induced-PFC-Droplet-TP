@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 617" role="img" aria-labelledby="title desc">
+<title id="title">C4-E05 — A fixed clamp removes the boundary virtual-work terms.</title>
+<desc id="desc">Ω_f, x, y — film plane; w, δw — displacement and variation; D_f, ν_f → ∇⁴w restoring load; T₀ → −∇²w restoring load; U_b, U_T — stored energy; clamp: δw = 0, slope variation = 0; Four spatial derivatives arise from two integrations by parts.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="617" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E05 · Physical variable map / 物理变量图</text>
+<rect x="107" y="205" width="760" height="65" class="area"/>
+<path d="M145 205 C276 205 295 106 482 106 S686 205 828 205" class="line"/>
+<path d="M305 206 V150" class="arrow"/>
+<path d="M465 206 V150" class="arrow"/>
+<path d="M635 206 V150" class="arrow"/>
+<text x="150" y="297" class="">Donor / 供体</text>
+<text x="326" y="95" class="">Film / 薄膜: Ef, hf, ρf, Df</text>
+<path d="M124 321 H825" class="thin"/>
+<text x="433" y="343" class="">Crack / 裂纹: b , Ac</text>
+<text x="298" y="181" class="">pload , w , tcoh</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Ω_f, x, y — film plane</text>
+<text x="30" y="433" class="muted">• w, δw — displacement and variation</text>
+<text x="30" y="457" class="muted">• D_f, ν_f → ∇⁴w restoring load</text>
+<text x="30" y="481" class="muted">• T₀ → −∇²w restoring load</text>
+<text x="30" y="505" class="muted">• U_b, U_T — stored energy</text>
+<text x="30" y="529" class="muted">• clamp: δw = 0, slope variation = 0</text>
+<text x="30" y="571" class="muted">Four spatial derivatives arise from two integrations by parts.</text>
+</svg>

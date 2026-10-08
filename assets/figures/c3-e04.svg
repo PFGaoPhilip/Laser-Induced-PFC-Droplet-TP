@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">C3-E04 — The correction changes surrounding pressure; it is not a new energy reservoir.</title>
+<desc id="desc">j source → i receiver; R_j, Ṙ_j, R̈_j; d_ij center separation; p′_j→i near receiver; p_ext,i = p∞ + Σ p′; ρ, φ_j, ∂ₜ, t, N_b: field legend; Positive source-volume acceleration raises surrounding pressure; Convective cross terms and shape gradients omitted</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C3-E04 · Physical variable map / 物理变量图</text>
+<circle cx="144" cy="122" r="22" class="area"/>
+<circle cx="254" cy="122" r="22" class="area"/>
+<circle cx="364" cy="122" r="22" class="area"/>
+<circle cx="144" cy="207" r="22" class="area"/>
+<circle cx="254" cy="207" r="22" class="area"/>
+<circle cx="364" cy="207" r="22" class="area"/>
+<circle cx="144" cy="292" r="22" class="area"/>
+<circle cx="254" cy="292" r="22" class="area"/>
+<circle cx="364" cy="292" r="22" class="area"/>
+<path d="M164 122 H232" class="thin"/>
+<text x="186" y="107" class="">dij , s</text>
+<text x="100" y="77" class="">Sites / 位点: i , j , Nd</text>
+<text x="443" y="156" class="">Individual phase inventories / 各相存量</text>
+<text x="443" y="188" class="">pb,i(t), Ri(t), activation delay / 激活延迟</text>
+<path d="M493 262 H894" class="arrow"/>
+<text x="535" y="291" class="">Propagation / 传播: ri / c</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• j source → i receiver</text>
+<text x="30" y="433" class="muted">• R_j, Ṙ_j, R̈_j</text>
+<text x="30" y="457" class="muted">• d_ij center separation</text>
+<text x="30" y="481" class="muted">• p′_j→i near receiver</text>
+<text x="30" y="505" class="muted">• p_ext,i = p∞ + Σ p′</text>
+<text x="30" y="529" class="muted">• ρ, φ_j, ∂ₜ, t, N_b: field legend</text>
+<text x="30" y="571" class="muted">Positive source-volume acceleration raises surrounding pressure</text>
+<text x="30" y="594" class="muted">Convective cross terms and shape gradients omitted</text>
+</svg>

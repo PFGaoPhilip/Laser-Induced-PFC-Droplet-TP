@@ -1,0 +1,696 @@
+{
+  "status": "pass",
+  "checks_count": 73,
+  "checks": [
+    {
+      "name": "Binomial probabilities normalize",
+      "passed": true,
+      "detail": {
+        "actual": 1.0,
+        "expected": 1.0
+      }
+    },
+    {
+      "name": "Binomial mean",
+      "passed": true,
+      "detail": {
+        "actual": 23.75,
+        "expected": 23.75
+      }
+    },
+    {
+      "name": "Binomial variance",
+      "passed": true,
+      "detail": {
+        "actual": 1.187500000000001,
+        "expected": 1.187500000000001
+      }
+    },
+    {
+      "name": "Activation relative standard deviation",
+      "passed": true,
+      "detail": {
+        "actual": 0.04588314677411238,
+        "expected": 0.04588314677411235
+      }
+    },
+    {
+      "name": "Complete activation probability",
+      "passed": true,
+      "detail": {
+        "actual": 0.27738957312183377,
+        "expected": 0.27738957312183377
+      }
+    },
+    {
+      "name": "Gaussian 10 percent edge decrease",
+      "passed": true,
+      "detail": {
+        "actual": 0.9,
+        "expected": 0.9
+      }
+    },
+    {
+      "name": "Gaussian width multiplier",
+      "passed": true,
+      "detail": {
+        "actual": 4.356884570660532,
+        "expected": 4.356884570660532
+      }
+    },
+    {
+      "name": "Broad Gaussian enclosing-circle intercepted fraction",
+      "passed": true,
+      "detail": {
+        "actual": 0.09999999999999998,
+        "expected": 0.1
+      }
+    },
+    {
+      "name": "Cartesian polygon reciprocal sum N=3",
+      "passed": true,
+      "detail": {
+        "actual": 9999.999999999998,
+        "expected": 10000.0
+      }
+    },
+    {
+      "name": "Every polygon vertex has the same sum N=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cartesian polygon reciprocal sum N=4",
+      "passed": true,
+      "detail": {
+        "actual": 13535.533905932738,
+        "expected": 13535.533905932736
+      }
+    },
+    {
+      "name": "Every polygon vertex has the same sum N=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cartesian polygon reciprocal sum N=5",
+      "passed": true,
+      "detail": {
+        "actual": 16180.339887498947,
+        "expected": 16180.339887498949
+      }
+    },
+    {
+      "name": "Every polygon vertex has the same sum N=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Isolated quadrature equals beta evaluation",
+      "passed": true,
+      "detail": {
+        "actual": 0.9146813565021323,
+        "expected": 0.9146813565019626
+      }
+    },
+    {
+      "name": "Collapse coefficient increases across declared chi controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Formal collapse time N=1",
+      "passed": true,
+      "detail": {
+        "actual": 2.744044069506397,
+        "expected": 2.744044069470488
+      }
+    },
+    {
+      "name": "Original radial ODE reaches finite cutoff N=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original ODE time versus radius quadrature N=1",
+      "passed": true,
+      "detail": {
+        "actual": 0.914680490474952,
+        "expected": 0.9146804904767061
+      }
+    },
+    {
+      "name": "Original ODE velocity versus integrated solution N=1",
+      "passed": true,
+      "detail": {
+        "actual": 5333332.659177793,
+        "expected": 5333332.669569547
+      }
+    },
+    {
+      "name": "Shared kinetic-energy budget at cutoff N=1",
+      "passed": true,
+      "detail": {
+        "actual": 0.6666665820343641,
+        "expected": 0.6666665833333334
+      }
+    },
+    {
+      "name": "Formal collapse time N=3",
+      "passed": true,
+      "detail": {
+        "actual": 3.0595091226816282,
+        "expected": 3.059509122642131
+      }
+    },
+    {
+      "name": "Original radial ODE reaches finite cutoff N=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original ODE time versus radius quadrature N=3",
+      "passed": true,
+      "detail": {
+        "actual": 1.0198355077357775,
+        "expected": 1.0198355077379637
+      }
+    },
+    {
+      "name": "Original ODE velocity versus integrated solution N=3",
+      "passed": true,
+      "detail": {
+        "actual": 5325344.630925507,
+        "expected": 5325344.648907558
+      }
+    },
+    {
+      "name": "Shared kinetic-energy budget at cutoff N=3",
+      "passed": true,
+      "detail": {
+        "actual": 0.6666665810822053,
+        "expected": 0.6666665833333333
+      }
+    },
+    {
+      "name": "Formal collapse time N=4",
+      "passed": true,
+      "detail": {
+        "actual": 3.1631881157896333,
+        "expected": 3.163188115749175
+      }
+    },
+    {
+      "name": "Original radial ODE reaches finite cutoff N=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original ODE time versus radius quadrature N=4",
+      "passed": true,
+      "detail": {
+        "actual": 1.0543951719410776,
+        "expected": 1.0543951719433746
+      }
+    },
+    {
+      "name": "Original ODE velocity versus integrated solution N=4",
+      "passed": true,
+      "detail": {
+        "actual": 5322526.166719577,
+        "expected": 5322526.182161608
+      }
+    },
+    {
+      "name": "Shared kinetic-energy budget at cutoff N=4",
+      "passed": true,
+      "detail": {
+        "actual": 0.6666665813991605,
+        "expected": 0.6666665833333333
+      }
+    },
+    {
+      "name": "Formal collapse time N=5",
+      "passed": true,
+      "detail": {
+        "actual": 3.238492002935126,
+        "expected": 3.238492002894017
+      }
+    },
+    {
+      "name": "Original radial ODE reaches finite cutoff N=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original ODE time versus radius quadrature N=5",
+      "passed": true,
+      "detail": {
+        "actual": 1.079496467533566,
+        "expected": 1.0794964675359355
+      }
+    },
+    {
+      "name": "Original ODE velocity versus integrated solution N=5",
+      "passed": true,
+      "detail": {
+        "actual": 5320419.727129474,
+        "expected": 5320419.736571089
+      }
+    },
+    {
+      "name": "Shared kinetic-energy budget at cutoff N=5",
+      "passed": true,
+      "detail": {
+        "actual": 0.6666665821502671,
+        "expected": 0.6666665833333333
+      }
+    },
+    {
+      "name": "Fixed total initial work N=3",
+      "passed": true,
+      "detail": {
+        "actual": 1.130973355292326e-08,
+        "expected": 1.1309733552923255e-08
+      }
+    },
+    {
+      "name": "Fixed total initial work N=4",
+      "passed": true,
+      "detail": {
+        "actual": 1.130973355292326e-08,
+        "expected": 1.1309733552923255e-08
+      }
+    },
+    {
+      "name": "Fixed total initial work N=5",
+      "passed": true,
+      "detail": {
+        "actual": 1.1309733552923262e-08,
+        "expected": 1.1309733552923255e-08
+      }
+    },
+    {
+      "name": "Five-bubble cross cannot use a single equal-radius trajectory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed-flow nozzle outlet speed",
+      "passed": true,
+      "detail": {
+        "actual": 48.0,
+        "expected": 48.0
+      }
+    },
+    {
+      "name": "Fixed-flow required overpressure",
+      "passed": true,
+      "detail": {
+        "actual": 1154700.0,
+        "expected": 1154700.0
+      }
+    },
+    {
+      "name": "Fixed-pressure nozzle outlet speed",
+      "passed": true,
+      "detail": {
+        "actual": 19.67516599327043,
+        "expected": 19.67516599327043
+      }
+    },
+    {
+      "name": "Fixed-pressure nozzle continuity",
+      "passed": true,
+      "detail": {
+        "actual": 6.181135694261812e-09,
+        "expected": 6.181135694261812e-09
+      }
+    },
+    {
+      "name": "Fixed-impulse lower-mass energy ratio",
+      "passed": true,
+      "detail": {
+        "actual": 4.0,
+        "expected": 4.0
+      }
+    },
+    {
+      "name": "Fixed-energy lower-mass momentum ratio",
+      "passed": true,
+      "detail": {
+        "actual": 0.5,
+        "expected": 0.5
+      }
+    },
+    {
+      "name": "Nonuniform velocity satisfies strict finite-mass momentum bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent-cell energy allocation",
+      "passed": true,
+      "detail": {
+        "actual": 2e-09,
+        "expected": 2e-09
+      }
+    },
+    {
+      "name": "Finite carrier mass",
+      "passed": true,
+      "detail": {
+        "actual": 3.926990816987242e-12,
+        "expected": 3.926990816987241e-12
+      }
+    },
+    {
+      "name": "Uniform emitted speed",
+      "passed": true,
+      "detail": {
+        "actual": 31.915382432114615,
+        "expected": 31.915382432114615
+      }
+    },
+    {
+      "name": "Early rigid-contact pressure scale",
+      "passed": true,
+      "detail": {
+        "actual": 47234765.99952963,
+        "expected": 47234765.99952963
+      }
+    },
+    {
+      "name": "Total aligned momentum",
+      "passed": true,
+      "detail": {
+        "actual": 3.133285343288751e-09,
+        "expected": 3.133285343288751e-09
+      }
+    },
+    {
+      "name": "Emitted carrier volume respects supplied 50-pL inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Rigid impulse-equivalent rectangle matches finite momentum",
+      "passed": true,
+      "detail": {
+        "actual": 1.2533141373155006e-10,
+        "expected": 1.2533141373155003e-10
+      }
+    },
+    {
+      "name": "Steady redirecting force times passage time matches finite momentum",
+      "passed": true,
+      "detail": {
+        "actual": 1.2533141373155006e-10,
+        "expected": 1.2533141373155003e-10
+      }
+    },
+    {
+      "name": "Receiver-impedance rigid limit",
+      "passed": true,
+      "detail": {
+        "actual": 47234765.92962218,
+        "expected": 47234765.99952963
+      }
+    },
+    {
+      "name": "Soft-receiver contact pressure tends toward zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fastest cylinder dimensionless wavenumber",
+      "passed": true,
+      "detail": {
+        "actual": 0.6970188972940085,
+        "expected": 0.6970188977
+      }
+    },
+    {
+      "name": "Fastest dimensionless cylinder growth",
+      "passed": true,
+      "detail": {
+        "actual": 0.3433387018612993,
+        "expected": 0.343338701861
+      }
+    },
+    {
+      "name": "Radius-based capillary time",
+      "passed": true,
+      "detail": {
+        "actual": 1.317615691736825e-06,
+        "expected": 1.317615691736825e-06
+      }
+    },
+    {
+      "name": "Arrival disturbance relative to radius",
+      "passed": true,
+      "detail": {
+        "actual": 0.022624723819554028,
+        "expected": 0.022624723819386
+      }
+    },
+    {
+      "name": "Small 10-percent-radius threshold time",
+      "passed": true,
+      "detail": {
+        "actual": 8.836528575546034e-06,
+        "expected": 8.836528575626e-06
+      }
+    },
+    {
+      "name": "Formal full-radius extrapolation is twice linear threshold time",
+      "passed": true,
+      "detail": {
+        "actual": 1.7673057151092068e-05,
+        "expected": 1.7673057151092068e-05
+      }
+    },
+    {
+      "name": "Declared cylinder control survives flight to small threshold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exactly three defense questions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter defense IDs unique and expected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exactly 33 uniquely identified displays",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every display has local EN/ZH definitions and diagram labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every reference answer starts with original formula",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No accidental control characters in authored HTML",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Public citation links contain no local computer paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Separate patterned illumination explicitly declared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Per-jet and total mass labels use ng rather than pg",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "numerical_results": {
+    "uniformity": {
+      "mean_count": 23.75,
+      "count_variance": 1.187500000000001,
+      "count_cv": 0.04588314677411238,
+      "all_active": 0.27738957312183377,
+      "gaussian_radius_multiplier": 4.356884570660532
+    },
+    "clusters": {
+      "chi": [
+        0,
+        0.3,
+        0.4060660171779821,
+        0.4854101966249685
+      ],
+      "C": [
+        0.9146813565021323,
+        1.0198363742272094,
+        1.0543960385965443,
+        1.0794973343117085
+      ],
+      "times_us": [
+        2.744044069470488,
+        3.059509122642131,
+        3.163188115749175,
+        3.238492002894017
+      ],
+      "fixed_total_work": [
+        {
+          "n": 3,
+          "radius_um": 20.800838230519044,
+          "chi": 0.20800838230519045,
+          "time_us": 2.0568712692399633
+        },
+        {
+          "n": 4,
+          "radius_um": 18.8988157484231,
+          "chi": 0.2558055613447564,
+          "time_us": 1.8994637279822244
+        },
+        {
+          "n": 5,
+          "radius_um": 17.5441064292772,
+          "chi": 0.2838696050481606,
+          "time_us": 1.779802147071258
+        }
+      ]
+    },
+    "nozzle": {
+      "fixed_flow_required_Pa": 1154700.0,
+      "fixed_pressure_speed_m_per_s": 19.67516599327043,
+      "fixed_pressure_inlet_m_per_s": 1.2296978745794018
+    },
+    "independent_25_cell_control": {
+      "absorbed_total_J": 1e-05,
+      "absorbed_site_J": 4.0000000000000003e-07,
+      "deadline_core_heat_J": 1.6000000000000003e-07,
+      "jet_energy_J": 2e-09,
+      "total_jet_energy_J": 5.0000000000000004e-08,
+      "mass_kg": 3.926990816987242e-12,
+      "mass_ng": 3.926990816987242,
+      "total_mass_kg": 9.817477042468105e-11,
+      "speed_m_per_s": 31.915382432114615,
+      "dynamic_Pa": 509295.8178940651,
+      "rigid_early_Pa": 47234765.99952963,
+      "momentum_N_s": 1.2533141373155003e-10,
+      "total_momentum_N_s": 3.133285343288751e-09,
+      "volume_pL": 3.9269908169872427,
+      "emission_s": 1.5666426716443753e-06,
+      "flight_s": 3.1332853432887506e-06,
+      "equivalent_early_s": 3.3783783783783786e-08,
+      "side_release_s": 3.3783783783783785e-09,
+      "wall_hammer_emission_impulse_ratio": 46.372623080673506,
+      "Mach": 0.021564447589266632,
+      "Re": 319.1538243211462,
+      "We": 141.47106052612924,
+      "Oh": 0.03726779962499649,
+      "capillary_time_s": 1.317615691736825e-06,
+      "qmax": 0.6970188972940085,
+      "growth_max_per_s": 260575.75362412754,
+      "fastest_wavelength_m": 4.5071843328584004e-05,
+      "arrival_relative_radius": 0.022624723819554028,
+      "small_threshold_s": 8.836528575546034e-06,
+      "formal_full_radius_extrapolation_s": 1.7673057151092068e-05
+    }
+  },
+  "equations": 33,
+  "questions": 3,
+  "english_words_including_local_definitions": 7828,
+  "chapter": 3,
+  "date": "2026-10-09",
+  "review_type": "Author second-pass science audit plus independent reduced-model numerical controls; no external expert review claimed.",
+  "source_scope": [
+    "Supplied course Chapter 3 sections 3.1-3.8",
+    "Supplied final three research-defense questions",
+    "Cavitation_Course_Before_After_Comparison_EN_ZH.md"
+  ],
+  "additional_primary_sources": [
+    {
+      "title": "Controlled Multibubble Surface Cavitation",
+      "doi": "10.1103/PhysRevLett.96.224501",
+      "url": "https://research.utwente.nl/en/publications/controlled-multibubble-surface-cavitation/",
+      "support": "Author institutional abstract verifies interior shielding/delayed collapse and radial-model failure during final jetting. The interaction equation is derived directly here from the spherical potential.",
+      "access_limit": "Linked institutional full PDF returned HTTP 403; no unviewed body content used."
+    },
+    {
+      "title": "Highly focused supersonic microjets: numerical simulations",
+      "doi": "10.1017/jfm.2013.26",
+      "url": "https://ivopeters.org/wp-content/uploads/2014/11/2013-highly-focused-supersonic-microjets-numerical-simulations.pdf",
+      "support": "Author manuscript verifies pressure-impulse input, moving-meniscus focusing and geometry-specific energy-to-impulse fits. No fit is reused as a universal PFC calibration."
+    },
+    {
+      "title": "Drop Formation in a One-Dimensional Approximation of the Navier-Stokes Equation",
+      "doi": "10.1017/S0022112094000480",
+      "url": "https://arxiv.org/html/physics/0110081",
+      "support": "Primary-author text equations 17-18 support volume/slender momentum and the factor-three extensional viscosity; energy dissipation and finite-resolution limits are recorded."
+    },
+    {
+      "title": "MIT Interfacial Phenomena Lecture 11",
+      "url": "https://ocw.mit.edu/courses/18-357-interfacial-phenomena-fall-2010/d77da8d5f1bb8b69a62682bc0dbc5845_MIT18_357F10_Lecture11.pdf",
+      "support": "Equations 11.20-11.32 verify regular Bessel solution, capillary dispersion, q about0.697 and fastest wavelength about9.02 radii. The inverse growth rate is distinguished here from amplitude-dependent exact breakup."
+    },
+    {
+      "title": "MIT continuum acoustics Chapter 13",
+      "url": "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/50a609ff2cc992401a099bca53801474_MIT6_013S09_chap13.pdf",
+      "support": "Conservation, longitudinal impedance, pressure/normal-velocity continuity and outgoing-wave intensity verify the short impact derivation and the conditional energy observer bound."
+    }
+  ],
+  "derivation_gaps_repaired": [
+    "Fixed-position derivative of a monopole retains both R squared times acceleration and twice R times wall-speed squared.",
+    "Polygon distances are derived from chords; integrating factor, endpoint integration, inward square-root branch and monotonic collapse-time coefficient are shown.",
+    "Shared-liquid self/pair kinetic-energy integrals and unordered-pair counting recover released pressure work in the leading model.",
+    "Fixed total pressure work changes per-bubble radius as N to the minus one third; fixed per-bubble radius is separately identified.",
+    "Potential-flow launch supplies kinematic, stress, material Bernoulli, wall and initial conditions; actual target jet evolution is explicitly unresolved.",
+    "Fixed total impulse, fixed impulse per area and fixed energy are separate focusing controls.",
+    "Slender continuity, radial velocity and axial-minus-radial Newtonian stress derive extensional factor three.",
+    "Exact inviscid-cylinder linear growth is derived from curvature, Bessel potential and two free-surface conditions.",
+    "Early impact comes from characteristic matching and its finite momentum duration, not added independent sources.",
+    "Observer pressure and finite impulse/wave bounds state sign, area, duration and source assumptions.",
+    "The equal-allocation 25-cell worked example declares ideal patterned/addressed illumination; it cannot silently use a broad 10-percent-edge-uniform Gaussian with interception0.8."
+  ],
+  "limits_and_unresolved_items": [
+    "Monopole coupling is far-separated, nearly spherical, fixed-center, low-Mach and rapidly communicating; the source radius/pitch0.15 control is not error-certified exact.",
+    "The zero-radius ideal endpoint remains a formal benchmark; no divergent wall speed is a physical maximum.",
+    "Pressure-volume histories must come from each finite PFC thermal/phase inventory; coupled PFC activation and geometry-specific nonlinear jets are not solved by these controls.",
+    "The 25 sites are independent supplied cells, not the solved strongly coupled shared-domain array. Polygon times are not multipliers.",
+    "Jet diameter and efficiency in the integrated example are teaching allocations, not predictions of a resolved PFC launch.",
+    "A 50-micrometer emitted jet is only approximately one fastest cylindrical wavelength long; finite ends, startup shape and stretch remain uncontrolled.",
+    "17.6731microseconds is a whole-radius extrapolation outside linear validity; the declared10-percent-radius threshold is8.83653microseconds.",
+    "Early rigid contact47.2348MPa requires sufficiently early central1D observation; side release scale3.37838ns is shorter than axial impulse-equivalent33.7838ns.",
+    "Pressure must be transmitted through the actual film/PVC path and compared with strength/fracture/damage in Chapter4.",
+    "No universal target maximum, calibrated conversion efficiency or repeatability envelope is claimed; no COMSOL result is used as evidence.",
+    "Quiescent-reservoir spatial reference cannot be imposed on a sealed finite cell; actual pressure/volume boundary and potential gauge are required."
+  ],
+  "semantic_audit": {
+    "radius_dots": true,
+    "growth_symbol_distinct_from_pitch": true,
+    "all_displays_use_E_with_local_definitions": true,
+    "contextual_geometry_or_boundary_annotation_each_display": true,
+    "three_formulas_first_reference_answers": true,
+    "all_numerical_properties_efficiencies_declared_teaching_inputs": true,
+    "matched_EN_ZH_caveats_second_pass": true,
+    "mastery_status": "pending learner own-words defense review",
+    "no_original_PDFs_published": true,
+    "no_subagents_spawned": true
+  },
+  "cleanup": {
+    "python_bytecode_disabled": true,
+    "temporary_files_created": [],
+    "originals_copied_by_root": true,
+    "shared_log_owned_by_root": true
+  }
+}

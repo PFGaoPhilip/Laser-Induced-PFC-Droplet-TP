@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
+<title id="title">C4-E40 — Two integrations by parts expose the boundary moment and shear terms before they are removed.</title>
+<desc id="desc">Ω_f — plate interior; ∂Ω_f, dℓ — fixed clamped edge; w, δw — displacement and variation; B_αβ, D_f, ν_f — curvature moments; n_α, n_β — in-plane boundary normal; δU_b, δU_T — virtual energy; T₀ — pretension; boundary: δw = 0, ∂ₙδw = 0; The first bending boundary term contains the slope variation.; The second contains the displacement variation; both vanish at the clamp.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="592" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E40 · Physical variable map / 物理变量图</text>
+<path d="M96 242 H889" class="thin"/>
+<path d="M115 242 C279 242 295 128 494 128 S691 242 869 242" class="line"/>
+<rect x="91" y="220" width="28" height="48" class="area"/>
+<rect x="866" y="220" width="28" height="48" class="area"/>
+<text x="262" y="101" class="">Ωf : film interior / 薄膜内部</text>
+<text x="585" y="281" class="">∂Ωf , dℓ ; n outward / 外法向</text>
+<path d="M868 206 H924" class="arrow"/>
+<text x="909" y="190" class="">n</text>
+<text x="93" y="323" class="">Clamp / 夹持: δw = 0 ; ∂n δw = 0</text>
+<text x="357" y="204" class="muted">δUb , δUT</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Ω_f — plate interior</text>
+<text x="30" y="433" class="muted">• w, δw — displacement and variation</text>
+<text x="30" y="457" class="muted">• n_α, n_β — in-plane boundary normal</text>
+<text x="30" y="481" class="muted">• T₀ — pretension</text>
+<text x="508" y="409" class="muted">• ∂Ω_f, dℓ — fixed clamped edge</text>
+<text x="508" y="433" class="muted">• B_αβ, D_f, ν_f — curvature moments</text>
+<text x="508" y="457" class="muted">• δU_b, δU_T — virtual energy</text>
+<text x="508" y="481" class="muted">• boundary: δw = 0, ∂ₙδw = 0</text>
+<text x="30" y="523" class="muted">The first bending boundary term contains the slope variation.</text>
+<text x="30" y="546" class="muted">The second contains the displacement variation; both vanish at the clamp.</text>
+</svg>

@@ -1,0 +1,176 @@
+{
+  "title": "Laser Induced PFC Droplet TP",
+  "title_zh": "激光诱导 PFC 液滴转印",
+  "repository": "PFGaoPhilip/Laser-Induced-PFC-Droplet-TP",
+  "url": "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/",
+  "source_sha256": "cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0",
+  "comparison_sha256": "e5462de2b8ca7e717a4e9f0a26cc5c2a9fc0e1d8c054f48d087cd2a27fc0d87f",
+  "prepared": "2026-10-09",
+  "languages": [
+    "en",
+    "zh-CN"
+  ],
+  "default_theme": "dark",
+  "offline_assets": true,
+  "formula_figure_required": true,
+  "local_symbols_before_every_display": true,
+  "mastery_policy": {
+    "questions_per_chapter": 3,
+    "own_words_sufficient": true,
+    "equation_memorization_required": false,
+    "decision": "teacher_review_all_three",
+    "automatic_keyword_grading": false,
+    "publication_is_not_mastery": true
+  },
+  "chapters": [
+    {
+      "id": "C01",
+      "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
+      "title": "Cavity pressure, carrier inertia and directional jets",
+      "title_zh": "空腔压力、载液惯性与定向射流",
+      "defense_ids": [
+        "C1-Q1",
+        "C1-Q2",
+        "C1-Q3"
+      ],
+      "unit_map_row": [
+        [
+          "Chapter 1: Cavitation and jets",
+          "第1章：空化与射流基础"
+        ],
+        [
+          "Spherical cavity dynamics, liquid inertia, pressure impulse, moving interfaces, and directional jet formation.",
+          "球形腔体动力学、液体惯性、压力冲量、运动界面与定向射流形成。"
+        ],
+        [
+          "How does cavity pressure accelerate liquid, and why does a directional jet require asymmetry?",
+          "腔体压力如何加速液体？为什么形成定向射流必须有不对称性？"
+        ]
+      ]
+    },
+    {
+      "id": "C02",
+      "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
+      "title": "From laser absorption to a finite PFC bubble",
+      "title_zh": "从激光吸收到有限 PFC 气泡",
+      "defense_ids": [
+        "C2-Q1",
+        "C2-Q2",
+        "C2-Q3"
+      ],
+      "unit_map_row": [
+        [
+          "Chapter 2: PFC versus ordinary droplets",
+          "第2章：PFC与普通液滴对比"
+        ],
+        [
+          "Laser energy deposition, nucleation, heat and mass transfer, PFC material properties, and finite-inventory phase thermodynamics.",
+          "激光能量沉积、成核、传热传质、PFC物性与有限存量相变热力学。"
+        ],
+        [
+          "Under matched conditions, what does PFC actually change—and what does it not guarantee?",
+          "在匹配条件下，PFC究竟改变了什么，又不能保证什么？"
+        ]
+      ]
+    },
+    {
+      "id": "C03",
+      "file": "chapters/03-arrays-finite-jets-and-impact.html",
+      "title": "Arrays, finite jets and measurable impact",
+      "title_zh": "阵列、有限射流与可测冲击",
+      "defense_ids": [
+        "C3-Q1",
+        "C3-Q2",
+        "C3-Q3"
+      ],
+      "unit_map_row": [
+        [
+          "Chapter 3: Arrays and preliminary calculations",
+          "第3章：阵列与初步计算"
+        ],
+        [
+          "Jet formation, transport and impact; bubble-array coupling, energy allocation, and finite pressure/velocity limits.",
+          "射流形成、输运与冲击；气泡阵列耦合、能量分配及有限压力／速度极限。"
+        ],
+        [
+          "How do individual sites combine into a finite, physically consistent mechanical output?",
+          "单个位点如何共同形成有限且符合物理约束的力学输出？"
+        ]
+      ]
+    },
+    {
+      "id": "C04",
+      "file": "chapters/04-fracture-and-transfer.html",
+      "title": "Fracture and transfer",
+      "title_zh": "断裂与转印",
+      "defense_ids": [
+        "C4-Q1",
+        "C4-Q2",
+        "C4-Q3"
+      ],
+      "unit_map_row": [
+        [
+          "Chapter 4: Fracture and transfer",
+          "第4章：断裂与转印"
+        ],
+        [
+          "Film/PVC loading, transient structural response, interface separation, and transfer criteria.",
+          "薄膜／PVC受载、瞬态结构响应、界面分离与转印判据。"
+        ],
+        [
+          "Does the delivered load release the intended interface without destroying the payload?",
+          "实际传递的载荷能否释放目标界面，同时不损坏被转印对象？"
+        ]
+      ]
+    },
+    {
+      "id": "C05",
+      "file": "chapters/05-hydrogel-versus-liquid.html",
+      "title": "Hydrogel versus liquid platforms",
+      "title_zh": "水凝胶与液体平台",
+      "defense_ids": [
+        "C5-Q1",
+        "C5-Q2",
+        "C5-Q3"
+      ],
+      "unit_map_row": [
+        [
+          "Appendix A: Hydrogel versus liquid",
+          "附录A：水凝胶与液体平台"
+        ],
+        [
+          "Hydrogel confinement, constitutive resistance, response times, and architecture comparison.",
+          "水凝胶约束、本构阻力、响应时间与结构方案比较。"
+        ],
+        [
+          "Does the gel improve the complete transfer process, or merely change the mechanism?",
+          "凝胶是在改善完整转印过程，还是仅仅改变了致动机制？"
+        ]
+      ]
+    }
+  ],
+  "causal_chain": [
+    "absorption",
+    "heat transport",
+    "activation",
+    "finite phase inventory",
+    "bubble pressure and flow",
+    "spatial jet",
+    "transmitted load",
+    "fracture",
+    "intact placement",
+    "reset"
+  ],
+  "architectures": [
+    "PFC in aqueous droplet stamp",
+    "PFC-containing liquid layer: direct film loading",
+    "PFC-containing liquid layer: intact PVC-mediated loading",
+    "open liquid pocket in gel",
+    "PFC embedded in bulk gel",
+    "sealed gel/composite cavity"
+  ],
+  "maximum_reports": [
+    "highest verified single-shot defined pressure or finite-mass speed",
+    "repeatable intact-transfer envelope"
+  ]
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
+<title id="title">C1-E16 — The endpoint singularity is integrable, so the model has a finite collapse time.</title>
+<desc id="desc">tc; Rmax; R; Ṙ &lt; 0; ρ; Δpc; x = R/Rmax; Ct; At x = 0 the integrand behaves as x³ᐟ²; At x = 1 it behaves as (1 − x)⁻¹ᐟ²</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="592" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E16 · Physical variable map / 物理变量图</text>
+<circle cx="197" cy="184" r="83" class="area"/>
+<circle cx="426" cy="184" r="37" class="area"/>
+<path d="M285 184 H377" class="arrow"/>
+<text x="120" y="294" class="">Rmax , Ṙ(0) = 0</text>
+<text x="386" y="264" class="">R ↓</text>
+<path d="M638 288 H923" class="arrow"/>
+<path d="M660 291 V94" class="arrow"/>
+<path d="M665 118 C778 120 857 143 904 282" class="line"/>
+<text x="683" y="96" class="">R / Rmax</text>
+<text x="843" y="315" class="">t / tc</text>
+<text x="584" y="336" class="muted">Formal collapse / 形式塌缩</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• tc</text>
+<text x="30" y="433" class="muted">• R</text>
+<text x="30" y="457" class="muted">• ρ</text>
+<text x="30" y="481" class="muted">• x = R/Rmax</text>
+<text x="508" y="409" class="muted">• Rmax</text>
+<text x="508" y="433" class="muted">• Ṙ &lt; 0</text>
+<text x="508" y="457" class="muted">• Δpc</text>
+<text x="508" y="481" class="muted">• Ct</text>
+<text x="30" y="523" class="muted">At x = 0 the integrand behaves as x³ᐟ²</text>
+<text x="30" y="546" class="muted">At x = 1 it behaves as (1 − x)⁻¹ᐟ²</text>
+</svg>

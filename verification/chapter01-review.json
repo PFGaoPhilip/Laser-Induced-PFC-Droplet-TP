@@ -1,0 +1,1305 @@
+{
+  "chapter": 1,
+  "status": "passed",
+  "equation_count": 34,
+  "defense_question_count": 3,
+  "english_prose_words_excluding_local_definitions": 3910,
+  "english_words_including_local_definitions": 6456,
+  "check_count": 107,
+  "checks": [
+    {
+      "name": "Rayleigh coefficient: direct radius integral versus beta",
+      "actual": 0.9146813565021329,
+      "expected": 0.9146813565019628,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Rayleigh coefficient: published benchmark",
+      "actual": 0.9146813565019628,
+      "expected": 0.9146813565019628,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Source collapse-time example (seconds)",
+      "actual": 2.7440440695058887e-06,
+      "expected": 2.7440440695058887e-06,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Source pressure-work example (joules)",
+      "actual": 1.1309733552923255e-08,
+      "expected": 1.1309733552923255e-08,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Source inward speed at half radius",
+      "actual": -21.602468994692867,
+      "expected": -21.602468994692867,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Half-radius kinetic energy equals 7/8 of maximum pressure work",
+      "actual": 9.896016858807848e-09,
+      "expected": 9.896016858807848e-09,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "Rayleigh governing-equation residual at R/Rmax=0.9",
+      "actual": -100.0,
+      "expected": -100.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Conservation: kinetic energy versus lost-volume work at 0.9",
+      "actual": 3.0649377928422015e-09,
+      "expected": 3.064937792842201e-09,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "Rayleigh governing-equation residual at R/Rmax=0.5",
+      "actual": -100.0,
+      "expected": -100.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Conservation: kinetic energy versus lost-volume work at 0.5",
+      "actual": 9.896016858807848e-09,
+      "expected": 9.896016858807848e-09,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "Rayleigh governing-equation residual at R/Rmax=0.2",
+      "actual": -100.0,
+      "expected": -100.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Conservation: kinetic energy versus lost-volume work at 0.2",
+      "actual": 1.1219255684499868e-08,
+      "expected": 1.121925568449987e-08,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "Fixed-position potential time derivative",
+      "actual": -5.4999999998806,
+      "expected": -5.5,
+      "relative_tolerance": 2e-10,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Moving-wall potential time derivative",
+      "actual": -6.999999999868223,
+      "expected": -7.0,
+      "relative_tolerance": 2e-10,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Exterior kinetic shell integral",
+      "actual": 1.0,
+      "expected": 1.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Exterior strain-dissipation shell integral",
+      "actual": 0.3333333333333333,
+      "expected": 0.3333333333333333,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Viscous dissipation recovered from radial strain integral",
+      "actual": 0.0003518583772020568,
+      "expected": 0.00035185837720205684,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Full RP energy identity including viscous and capillary terms",
+      "actual": 0.056799995176903394,
+      "expected": 0.05679999517690346,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Full RP stress sign for inward velocity",
+      "actual": 1600.0,
+      "expected": 1600.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Selected ideal-trajectory Mach diagnostic radius fraction",
+      "actual": 0.14348740311819277,
+      "expected": 0.14348740311819275,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Ideal wall Mach equals chosen diagnostic at that radius",
+      "actual": 0.09999999999999998,
+      "expected": 0.1,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Column pressure impulse",
+      "actual": 0.3,
+      "expected": 0.3,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Column speed increment",
+      "actual": 2.9999999999999996,
+      "expected": 3.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Sound-crossing time in seconds",
+      "actual": 6.666666666666667e-08,
+      "expected": 6.666666666666667e-08,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-18,
+      "passed": true
+    },
+    {
+      "name": "Column displacement diagnostic",
+      "actual": 0.014999999999999996,
+      "expected": 0.015,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Column viscous-impulse diagnostic",
+      "actual": 4.9999999999999996e-05,
+      "expected": 5e-05,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Number of acoustic crossings during pulse",
+      "actual": 7.499999999999999,
+      "expected": 7.5,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Straight-column linear impulse at z/L=0",
+      "actual": 0.3,
+      "expected": 0.3,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Straight-column linear impulse at z/L=0.333333",
+      "actual": 0.2,
+      "expected": 0.2,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Straight-column linear impulse at z/L=1",
+      "actual": 0.0,
+      "expected": 0.0,
+      "relative_tolerance": 2e-11,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Unique equation IDs",
+      "passed": true,
+      "detail": [
+        "C1-E01",
+        "C1-E02",
+        "C1-E03",
+        "C1-E04",
+        "C1-E05",
+        "C1-E06",
+        "C1-E07",
+        "C1-E08",
+        "C1-E09",
+        "C1-E10",
+        "C1-E11",
+        "C1-E12",
+        "C1-E13",
+        "C1-E14",
+        "C1-E15",
+        "C1-E16",
+        "C1-E17",
+        "C1-E18",
+        "C1-E19",
+        "C1-E20",
+        "C1-E21",
+        "C1-E22",
+        "C1-E23",
+        "C1-E24",
+        "C1-E25",
+        "C1-E26",
+        "C1-E27",
+        "C1-E28",
+        "C1-E29",
+        "C1-E30",
+        "C1-E31",
+        "C1-E32",
+        "C1-E33",
+        "C1-E34"
+      ]
+    },
+    {
+      "name": "Sequential complete equation IDs",
+      "passed": true,
+      "detail": [
+        "C1-E01",
+        "C1-E02",
+        "C1-E03",
+        "C1-E04",
+        "C1-E05",
+        "C1-E06",
+        "C1-E07",
+        "C1-E08",
+        "C1-E09",
+        "C1-E10",
+        "C1-E11",
+        "C1-E12",
+        "C1-E13",
+        "C1-E14",
+        "C1-E15",
+        "C1-E16",
+        "C1-E17",
+        "C1-E18",
+        "C1-E19",
+        "C1-E20",
+        "C1-E21",
+        "C1-E22",
+        "C1-E23",
+        "C1-E24",
+        "C1-E25",
+        "C1-E26",
+        "C1-E27",
+        "C1-E28",
+        "C1-E29",
+        "C1-E30",
+        "C1-E31",
+        "C1-E32",
+        "C1-E33",
+        "C1-E34"
+      ]
+    },
+    {
+      "name": "Exactly three defense questions",
+      "passed": true,
+      "detail": [
+        "C1-Q1",
+        "C1-Q2",
+        "C1-Q3"
+      ]
+    },
+    {
+      "name": "C1-E01 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E01 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "R(t)",
+          "R₀ > 0",
+          "Ṙ(0) = U₀",
+          "r → ∞",
+          "u → 0",
+          "p → p∞",
+          "t = 0"
+        ],
+        "notes": [
+          "Radial direction points from bubble center into carrier",
+          "Far-field pressure is an input, not a laser calculation"
+        ]
+      }
+    },
+    {
+      "name": "C1-E02 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E02 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "r ≥ R",
+          "u(r,t)",
+          "Ṙ",
+          "C(t) = R²Ṙ",
+          "t",
+          "r²u = constant"
+        ],
+        "notes": [
+          "Concentric surfaces carry the same volume flux",
+          "At r = 2R the speed is Ṙ/4"
+        ]
+      }
+    },
+    {
+      "name": "C1-E03 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E03 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "φ(r,t)",
+          "r",
+          "R",
+          "Ṙ",
+          "s: integration radius",
+          "u = ∂rφ",
+          "φ∞ = 0",
+          "t"
+        ],
+        "notes": [
+          "Differentiate spatially to recover the radial flow"
+        ]
+      }
+    },
+    {
+      "name": "C1-E04 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E04 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "Fixed r",
+          "Moving R(t)",
+          "φ",
+          "Ṙ",
+          "R̈",
+          "∂tφ at fixed r",
+          "dφ(R,t)/dt",
+          "t"
+        ],
+        "notes": [
+          "Take the partial derivative before setting r = R",
+          "The moving-point derivative differs by Ṙ²"
+        ]
+      }
+    },
+    {
+      "name": "C1-E05 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E05 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "pl at r = R",
+          "p∞",
+          "ρ",
+          "φ",
+          "u(R,t) = Ṙ",
+          "R̈",
+          "r",
+          "t"
+        ],
+        "notes": [
+          "R R̈ and 3Ṙ²/2 each have units m²/s²"
+        ]
+      }
+    },
+    {
+      "name": "C1-E06 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E06 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "pb inside",
+          "pl outside",
+          "R",
+          "r",
+          "u",
+          "Ṙ",
+          "2σ/R",
+          "4μṘ/R",
+          "∂ru = −2Ṙ/R"
+        ],
+        "notes": [
+          "Viscous stress changes sign when the wall reverses"
+        ]
+      }
+    },
+    {
+      "name": "C1-E07 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E07 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "ρ carrier",
+          "R",
+          "Ṙ",
+          "R̈",
+          "pb",
+          "p∞",
+          "2σ/R",
+          "4μṘ/R"
+        ],
+        "notes": [
+          "Outward is positive",
+          "The equation predicts radius, not jet shape"
+        ]
+      }
+    },
+    {
+      "name": "C1-E08 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E08 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "phase",
+        "labels": [
+          "pb",
+          "pv,PFC",
+          "pv,w",
+          "pg",
+          "Finite PFC liquid inventory"
+        ],
+        "notes": [
+          "Partial pressures need mass and energy histories",
+          "No fixed-mass gas law is automatically a vaporization law"
+        ]
+      }
+    },
+    {
+      "name": "C1-E09 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E09 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "energy",
+        "labels": [
+          "Kl",
+          "ρ",
+          "u(r,t)",
+          "R",
+          "Ṙ",
+          "r: exterior shells",
+          "4πr²dr",
+          "t"
+        ],
+        "notes": [
+          "Integrate liquid shells outside the cavity",
+          "The radial field decays enough for finite kinetic energy"
+        ]
+      }
+    },
+    {
+      "name": "C1-E10 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E10 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "energy",
+        "labels": [
+          "Kl",
+          "Eσ",
+          "Vb",
+          "V̇b",
+          "R",
+          "Ṙ",
+          "R̈",
+          "ρ",
+          "σ",
+          "t"
+        ],
+        "notes": [
+          "Surface energy is stored at the spherical boundary",
+          "Volume work changes both liquid speed and effective inertia"
+        ]
+      }
+    },
+    {
+      "name": "C1-E11 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E11 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "energy",
+        "labels": [
+          "Pressure work (pb − p∞)V̇b",
+          "Kl",
+          "Eσ",
+          "16πμR Ṙ² ≥ 0",
+          "pb",
+          "p∞",
+          "R",
+          "Ṙ",
+          "t"
+        ],
+        "notes": [
+          "Expansion or collapse may supply positive pressure work",
+          "Viscosity always removes mechanical energy"
+        ]
+      }
+    },
+    {
+      "name": "C1-E12 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E12 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "energy",
+        "labels": [
+          "Drr",
+          "Dθθ",
+          "Dψψ",
+          "Dμ",
+          "μ",
+          "R",
+          "r",
+          "Ṙ",
+          "4πr²dr"
+        ],
+        "notes": [
+          "Integrate the positive dissipation density in exterior shells"
+        ]
+      }
+    },
+    {
+      "name": "C1-E13 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E13 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "Rmax at t = 0",
+          "Ṙ(0) = 0",
+          "R(t)",
+          "R̈",
+          "p∞",
+          "pv",
+          "Δpc > 0",
+          "ρ"
+        ],
+        "notes": [
+          "Constant pressure deficit initiates inward acceleration"
+        ]
+      }
+    },
+    {
+      "name": "C1-E14 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E14 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "y(R) = Ṙ²",
+          "R decreases",
+          "Ṙ ≠ 0",
+          "R̈",
+          "Δpc",
+          "ρ",
+          "R³y",
+          "t",
+          "Rmax endpoint"
+        ],
+        "notes": [
+          "Cancel speed only away from the initial turning point"
+        ]
+      }
+    },
+    {
+      "name": "C1-E15 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E15 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "Rmax",
+          "R",
+          "s: integration radius",
+          "y = Ṙ²",
+          "Ṙ < 0",
+          "Δpc",
+          "ρ"
+        ],
+        "notes": [
+          "Speed is zero at R = Rmax",
+          "Zero radius is an excluded model endpoint"
+        ]
+      }
+    },
+    {
+      "name": "C1-E16 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E16 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "timescale",
+        "labels": [
+          "tc",
+          "Rmax",
+          "R",
+          "Ṙ < 0",
+          "ρ",
+          "Δpc",
+          "x = R/Rmax",
+          "Ct"
+        ],
+        "notes": [
+          "At x = 0 the integrand behaves as x³ᐟ²",
+          "At x = 1 it behaves as (1 − x)⁻¹ᐟ²"
+        ]
+      }
+    },
+    {
+      "name": "C1-E17 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E17 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "timescale",
+        "labels": [
+          "x ∈ [0,1]",
+          "q = x³",
+          "dx = q⁻²ᐟ³dq/3",
+          "Ct = 0.914681…",
+          "B(a,b)",
+          "a = 5/6",
+          "b = 1/2"
+        ],
+        "notes": [
+          "The coefficient comes from the complete radius trajectory, not a material fit"
+        ]
+      }
+    },
+    {
+      "name": "C1-E18 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E18 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "energy",
+        "labels": [
+          "Kl(R)",
+          "EB",
+          "Δpc",
+          "Vmax",
+          "Rmax",
+          "R",
+          "ρ",
+          "Kl/EB = 1 − (R/Rmax)³"
+        ],
+        "notes": [
+          "Finite energy survives the excluded zero-radius speed singularity"
+        ]
+      }
+    },
+    {
+      "name": "C1-E19 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E19 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "Rmax = 30 μm",
+          "R = 15 μm",
+          "ρ = 1000 kg/m³",
+          "Δpc = 100 kPa",
+          "tc = 2.74404 μs",
+          "EB = 11.3097 nJ",
+          "Ṙ = −21.6025 m/s",
+          "Kl = 9.89602 nJ"
+        ],
+        "notes": [
+          "These values are a spherical control, not a PFC performance prediction"
+        ]
+      }
+    },
+    {
+      "name": "C1-E20 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E20 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "timescale",
+        "labels": [
+          "Mw = |Ṙ|/c",
+          "Ṙ",
+          "c = 1500 m/s",
+          "M* = 0.1",
+          "xM = RM/Rmax",
+          "ρ",
+          "Δpc",
+          "RM ≈ 4.305 μm"
+        ],
+        "notes": [
+          "The selected threshold flags omitted physics; it does not stop a real cavity"
+        ]
+      }
+    },
+    {
+      "name": "C1-E21 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E21 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "impulse",
+        "labels": [
+          "Π(x)",
+          "p(x,t) − pref(t)",
+          "x: position",
+          "t₀",
+          "t₁",
+          "τ = t₁ − t₀",
+          "Pa s"
+        ],
+        "notes": [
+          "Shade the time integral of pressure at a selected position"
+        ]
+      }
+    },
+    {
+      "name": "C1-E22 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E22 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "impulse",
+        "labels": [
+          "Δu",
+          "−∇Π/ρ",
+          "u(x,t)",
+          "ρ",
+          "μ",
+          "ν = μ/ρ",
+          "t₀ → t₁",
+          "Convective impulse",
+          "Viscous impulse"
+        ],
+        "notes": [
+          "Pressure-gradient impulse shares momentum change with two residual terms"
+        ]
+      }
+    },
+    {
+      "name": "C1-E23 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E23 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "impulse",
+        "labels": [
+          "U",
+          "τ",
+          "L",
+          "ν",
+          "Π(x)",
+          "Δu ≈ −∇Π/ρ",
+          "∇²Π = 0",
+          "ρ"
+        ],
+        "notes": [
+          "Freeze the domain only while displacement and residual impulses remain small"
+        ]
+      }
+    },
+    {
+      "name": "C1-E24 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E24 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "impulse",
+        "labels": [
+          "z = 0: Π₀",
+          "z = L: Π = 0",
+          "L",
+          "Π(z)",
+          "A₀ = Π₀",
+          "A₁ = −Π₀/L",
+          "ρ",
+          "Δuz → outlet"
+        ],
+        "notes": [
+          "The fixed side walls do not change normal velocity"
+        ]
+      }
+    },
+    {
+      "name": "C1-E25 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E25 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "impulse",
+        "labels": [
+          "Δp = 0.60 MPa",
+          "τ = 0.50 μs",
+          "Π₀ = 0.30 Pa s",
+          "ρ",
+          "L = 100 μm",
+          "U = 3.0 m/s",
+          "c",
+          "ta = L/c",
+          "ν"
+        ],
+        "notes": [
+          "Small bulk residual scales support the ideal column approximation",
+          "Many sound crossings are not a guarantee of correct pressure geometry"
+        ]
+      }
+    },
+    {
+      "name": "C1-E26 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E26 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "h: center to boundary",
+          "Rmax",
+          "γ = h/Rmax",
+          "er",
+          "S²",
+          "dΩ",
+          "Opposite directions cancel"
+        ],
+        "notes": [
+          "The relevant boundary type and curvature must also be specified"
+        ]
+      }
+    },
+    {
+      "name": "C1-E27 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E27 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "jet",
+        "labels": [
+          "Liquid domain x",
+          "u(x,t)",
+          "p(x,t)",
+          "ρ",
+          "μ",
+          "t",
+          "Moving Γ",
+          "Outlet and wall"
+        ],
+        "notes": [
+          "Resolve the spatial velocity and pressure, not only one radius"
+        ]
+      }
+    },
+    {
+      "name": "C1-E28 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E28 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "jet",
+        "labels": [
+          "Γ: liquid–gas interface",
+          "n: liquid → gas",
+          "s: tangent",
+          "Vn = u·n",
+          "u",
+          "D",
+          "pl",
+          "pb",
+          "σκ",
+          "2μ n·D n",
+          "κsphere = −2/R"
+        ],
+        "notes": [
+          "At a stationary no-slip solid wall use the wall velocity instead",
+          "Phase transfer modifies the kinematic condition in Chapter 2"
+        ]
+      }
+    },
+    {
+      "name": "C1-E29 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E29 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "jet",
+        "labels": [
+          "X(t) ∈ Γ",
+          "u = ∇φ",
+          "φ",
+          "∇²φ = 0",
+          "pb",
+          "p∞",
+          "σ",
+          "κ",
+          "ρ",
+          "∂tφ vs Dφ/Dt"
+        ],
+        "notes": [
+          "Update shape and potential together",
+          "Self-impact or jet piercing requires additional topology and compressibility treatment"
+        ]
+      }
+    },
+    {
+      "name": "C1-E30 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E30 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "φΓ = −R Ṙ",
+          "κ = −2/R",
+          "R",
+          "Ṙ",
+          "R̈",
+          "pb",
+          "p∞",
+          "σ",
+          "ρ"
+        ],
+        "notes": [
+          "Recover the same 3/2 coefficient from the material derivative"
+        ]
+      }
+    },
+    {
+      "name": "C1-E31 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E31 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "timescale",
+        "labels": [
+          "Mw = |Ṙ|/c",
+          "Ce = Le/(cτe)",
+          "Ṙ",
+          "c",
+          "Le",
+          "τe",
+          "Pressure propagation path"
+        ],
+        "notes": [
+          "Small wall Mach alone does not ensure fast pressure communication",
+          "An impact rise time can be much shorter than the total collapse time"
+        ]
+      }
+    },
+    {
+      "name": "C1-E32 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E32 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "phase",
+        "labels": [
+          "PFC liquid → vapor",
+          "pv,PFC",
+          "pv,w",
+          "pg",
+          "pb",
+          "p∞",
+          "ρ carrier",
+          "R",
+          "Ṙ",
+          "R̈",
+          "σ",
+          "μ"
+        ],
+        "notes": [
+          "The pressure history must connect to a specific liquid path"
+        ]
+      }
+    },
+    {
+      "name": "C1-E33 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E33 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "sphere",
+        "labels": [
+          "Rmax",
+          "R → 0",
+          "Ṙ < 0",
+          "Δpc",
+          "ρ",
+          "tc",
+          "B(5/6,1/2)/√6",
+          "Kl finite"
+        ],
+        "notes": [
+          "Finite time and finite energy coexist with an excluded wall-speed singularity"
+        ]
+      }
+    },
+    {
+      "name": "C1-E34 bilingual local definitions",
+      "passed": true,
+      "detail": "Local declarations supplied before the display"
+    },
+    {
+      "name": "C1-E34 immediate physical diagram",
+      "passed": true,
+      "detail": {
+        "type": "impulse",
+        "labels": [
+          "Π(x)",
+          "p − pref",
+          "t₀ → t₁",
+          "Δu ≈ −∇Π/ρ",
+          "ρ",
+          "Π₀",
+          "L",
+          "Ucolumn",
+          "ta = L/c",
+          "c"
+        ],
+        "notes": [
+          "Pa s is impulse per area; seconds is travel time",
+          "A spatial gradient, not a scalar peak, sets velocity"
+        ]
+      }
+    },
+    {
+      "name": "C1-Q1 formulas first in reference answer",
+      "passed": true,
+      "detail": "The first substantive content follows the summary"
+    },
+    {
+      "name": "C1-Q1 original formula section present",
+      "passed": true,
+      "detail": "C1-E32"
+    },
+    {
+      "name": "C1-Q2 formulas first in reference answer",
+      "passed": true,
+      "detail": "The first substantive content follows the summary"
+    },
+    {
+      "name": "C1-Q2 original formula section present",
+      "passed": true,
+      "detail": "C1-E33"
+    },
+    {
+      "name": "C1-Q3 formulas first in reference answer",
+      "passed": true,
+      "detail": "The first substantive content follows the summary"
+    },
+    {
+      "name": "C1-Q3 original formula section present",
+      "passed": true,
+      "detail": "C1-E34"
+    }
+  ],
+  "source_sha256": "cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0",
+  "comparison_sha256": "e5462de2b8ca7e717a4e9f0a26cc5c2a9fc0e1d8c054f48d087cd2a27fc0d87f",
+  "primary_sources_visited": [
+    {
+      "url": "https://media.library.caltech.edu/CaltechBOOK%3A1995.001/chap2.htm",
+      "support": "Classical spherical flow and normal stress; gas/thermal/compressibility limits. The chapter's algebra is worked anew from conservation.",
+      "access": "Full chapter text"
+    },
+    {
+      "url": "https://arxiv.org/html/1703.01088",
+      "support": "Published Rayleigh factor beta integral, symmetry and boundary dependence of collapse jets; not used as a PFC calibration.",
+      "access": "Full article HTML"
+    },
+    {
+      "url": "https://research-portal.uea.ac.uk/en/publications/pressure-impulse-theory-for-liquid-impact-problems/",
+      "support": "Cooker and Peregrine 1995 publication identity/DOI. Reduced model and omitted terms are derived explicitly here.",
+      "access": "Author university bibliographic record"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/pressureimpulse-theory-for-liquid-impact-problems/CA64B545C3897DB7F783834C00B5469D",
+      "support": "Primary publisher metadata and pressure-impulse abstract/search result.",
+      "access": "Publisher result; DOI open initially failed"
+    },
+    {
+      "url": "https://ivopeters.org/wp-content/uploads/2014/11/2013-highly-focused-supersonic-microjets-numerical-simulations.pdf",
+      "support": "Author-hosted paper verifies meniscus-focused jet differs from void-collapse jet, and potential-flow moving-boundary formulation. No experimental speed/efficiency imported to target PFC.",
+      "access": "Full author-hosted PDF text, not downloaded or published"
+    }
+  ],
+  "repaired_derivation_gaps": [
+    "Eulerian fixed-position potential derivative is shown before evaluation at the moving wall; material derivative distinguished explicitly.",
+    "Newtonian radial strain and interface normal traction produce the capillary and viscous terms with checked signs.",
+    "Exterior kinetic integral, product-rule derivative, and positive viscous dissipation are worked and cross-checked independently by strain integration.",
+    "Rayleigh monotonic-branch cancellation excludes the initial zero-speed point and is extended continuously; integration constant, negative root and Jacobian are explicit.",
+    "Collapse coefficient obtained by direct integral and beta function; ideal kinetic energy equals lost-volume pressure work.",
+    "Pressure-impulse reduction contains explicit convective and viscous residuals before approximation and derives the harmonic field and straight-column endpoint solution.",
+    "Spatial liquid-to-gas curvature convention, kinematic/normal/tangential stress conditions, Eulerian/material Bernoulli derivatives and spherical recovery are explicit."
+  ],
+  "semantic_second_pass": {
+    "method": "Author reconstruction from each equation to preceding definitions/premises; numerical controls supplement it. No independent expert review claimed.",
+    "items_checked": [
+      "Every E() has EN/ZH local definitions and physical diagram metadata.",
+      "Pressure differences have references; EOS/partial pressures remain absolute.",
+      "Carrier density differs from PFC inventory density.",
+      "Real phase transfer is deferred explicitly rather than hidden in fixed-mass gas closure.",
+      "No external acoustic resonance curriculum introduced.",
+      "Point singularity not used as universal pressure or jet-speed maximum.",
+      "Pressure impulse and sound-crossing time have distinct dimensions.",
+      "The integrated teaching route leads directly to Chapter 2, with no parallel foundational entry path.",
+      "Exactly three chapter defenses and no additional quizzes; reference answers quote original formulas first."
+    ]
+  },
+  "remaining_limits": [
+    "No calibrated optical/PFC thermodynamic pressure history, experimental target geometry or jet-conversion efficiency is assumed.",
+    "No numerical moving-interface solution for a particular target is supplied; its closed boundary-value problem is stated.",
+    "The ideal zero-radius trajectory and chosen Mach diagnostic do not predict physical arrest or an achievable maximum.",
+    "Short-impulse residual ratios are scale diagnostics, not strict errors for singular wall layers/contact lines.",
+    "Jet self-impact/topology, compressibility, finite arriving mass and receiver load require subsequent project stages.",
+    "New chapter content is pending learner mastery; writing or saving responses does not certify understanding."
+  ],
+  "compile_cleanup": "Run with -B; no bytecode, temporary math files or downloaded PDFs created by this worker. Parent owns combined build and project log."
+}

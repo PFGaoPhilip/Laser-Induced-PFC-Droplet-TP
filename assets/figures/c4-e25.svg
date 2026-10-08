@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">C4-E25 — The traction–separation curve contains strength, stiffness and a finite separation distance.</title>
+<desc id="desc">δ → interface opening; t_n(δ) ↑ tensile resistance; K_n — initial curve slope; δ₀ → peak opening; T_max → peak traction; δ_c → complete separation; Compression is a different branch.; Tensile damage must not be inferred from pressure magnitude.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E25 · Physical variable map / 物理变量图</text>
+<path d="M120 287 H859" class="arrow"/>
+<path d="M145 298 V90" class="arrow"/>
+<path d="M145 287 L343 110 L779 287" class="line"/>
+<path d="M343 110 V287" class="thin"/>
+<text x="91" y="92" class="">tn , Tmax</text>
+<text x="299" y="317" class="">δ0</text>
+<text x="750" y="317" class="">δc</text>
+<text x="815" y="318" class="">δ</text>
+<text x="386" y="221" class="">Area = Γ / 面积 = Γ</text>
+<text x="196" y="206" class="">Kn</text>
+<text x="583" y="91" class="">Opening only / 仅张开分支</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• δ → interface opening</text>
+<text x="30" y="433" class="muted">• t_n(δ) ↑ tensile resistance</text>
+<text x="30" y="457" class="muted">• K_n — initial curve slope</text>
+<text x="30" y="481" class="muted">• δ₀ → peak opening</text>
+<text x="30" y="505" class="muted">• T_max → peak traction</text>
+<text x="30" y="529" class="muted">• δ_c → complete separation</text>
+<text x="30" y="571" class="muted">Compression is a different branch.</text>
+<text x="30" y="594" class="muted">Tensile damage must not be inferred from pressure magnitude.</text>
+</svg>

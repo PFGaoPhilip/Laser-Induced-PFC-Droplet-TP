@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 569" role="img" aria-labelledby="title desc">
+<title id="title">C1-E13 — The ideal control begins at rest and excludes the mechanisms that arrest real collapse.</title>
+<desc id="desc">Rmax at t = 0; Ṙ(0) = 0; R(t); R̈; p∞; pv; Δpc &gt; 0; ρ; Constant pressure deficit initiates inward acceleration</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="569" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E13 · Physical variable map / 物理变量图</text>
+<circle cx="310" cy="185" r="78" class="area"/>
+<path d="M310 185 H388" class="arrow"/>
+<text x="337" y="169" class="">R(t)</text>
+<path d="M310 185 L457 263" class="arrow"/>
+<text x="398" y="226" class="">r ≥ R</text>
+<text x="277" y="193" class="">pb</text>
+<text x="610" y="166" class="">p∞ , ρ , μ , σ</text>
+<text x="610" y="194" class="">Surrounding medium / 周围介质</text>
+<path d="M310 78 L310 54" class="arrow"/>
+<path d="M201 185 L167 185" class="arrow"/>
+<path d="M419 185 L459 185" class="arrow"/>
+<text x="100" y="312" class="">Signed wall motion / 有符号壁运动: Ṙ, R̈</text>
+<text x="129" y="75" class="muted">+r direction / +r 方向</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Rmax at t = 0</text>
+<text x="30" y="433" class="muted">• R(t)</text>
+<text x="30" y="457" class="muted">• p∞</text>
+<text x="30" y="481" class="muted">• Δpc &gt; 0</text>
+<text x="508" y="409" class="muted">• Ṙ(0) = 0</text>
+<text x="508" y="433" class="muted">• R̈</text>
+<text x="508" y="457" class="muted">• pv</text>
+<text x="508" y="481" class="muted">• ρ</text>
+<text x="30" y="523" class="muted">Constant pressure deficit initiates inward acceleration</text>
+</svg>

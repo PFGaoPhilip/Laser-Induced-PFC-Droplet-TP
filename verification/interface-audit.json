@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks_count": 17,
+  "checks": [
+    "Default night",
+    "Day toggle and ARIA",
+    "Choice persistence",
+    "Relative link and anchor retained",
+    "External scholarly link unchanged",
+    "Night toggle",
+    "Saved mode restored",
+    "URL mode overrides saved mode",
+    "Storage-denied theme remains usable",
+    "Saved learner explanation restored",
+    "Editing persists exact response",
+    "Missing explanations prevent empty submission",
+    "Three explanations copied with question IDs",
+    "Copy requests semantic review rather than granting mastery",
+    "Storage failure tells learner to export",
+    "Clipboard failure reveals selectable full text",
+    "Download available without clipboard or storage"
+  ],
+  "scope": "Executable DOM-adapter checks for shipped theme and response scripts; not a visual-browser audit or learner-mastery decision."
+}

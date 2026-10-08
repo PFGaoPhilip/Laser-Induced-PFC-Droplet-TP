@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
+<title id="title">C2-E30 — The expansion ratio follows from mass conservation at a stated pressure and temperature.</title>
+<desc id="desc">a₀ = 5 μm: original liquid; R_b,inv = 26.6827 μm: assumed vapor state; m_PFC,0, ρ_d: original inventory; T_* = 323 K; p_v,PFC = 100 kPa; M_PFC, R_u: ideal mole relation; 151.9778: volume expansion; π: sphere geometry; Volume ratio is about 152; radius ratio about 5.34; Inventory radius is not dynamical R_max</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="592" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E30 · Physical variable map / 物理变量图</text>
+<circle cx="310" cy="185" r="78" class="area"/>
+<path d="M310 185 H388" class="arrow"/>
+<text x="337" y="169" class="">a₀</text>
+<text x="270" y="198" class="">pd , ρd</text>
+<text x="583" y="157" class="">Carrier / 载液: pc</text>
+<text x="583" y="189" class="">Interface / 界面: σpc , Πshell</text>
+<text x="92" y="311" class="">Finite PFC core / 有限 PFC 液核</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• a₀ = 5 μm: original liquid</text>
+<text x="30" y="433" class="muted">• m_PFC,0, ρ_d: original inventory</text>
+<text x="30" y="457" class="muted">• p_v,PFC = 100 kPa</text>
+<text x="30" y="481" class="muted">• 151.9778: volume expansion</text>
+<text x="508" y="409" class="muted">• R_b,inv = 26.6827 μm: assumed vapor state</text>
+<text x="508" y="433" class="muted">• T_* = 323 K</text>
+<text x="508" y="457" class="muted">• M_PFC, R_u: ideal mole relation</text>
+<text x="508" y="481" class="muted">• π: sphere geometry</text>
+<text x="30" y="523" class="muted">Volume ratio is about 152; radius ratio about 5.34</text>
+<text x="30" y="546" class="muted">Inventory radius is not dynamical R_max</text>
+</svg>

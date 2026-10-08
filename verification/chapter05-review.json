@@ -1,0 +1,412 @@
+{
+  "chapter": 5,
+  "date": "2026-10-09",
+  "status": "authored_and_self_audited_not_learner_mastered",
+  "scope": "Promoted source Appendix A; four retained platform mechanisms; no COMSOL model or target pressure maximum claimed",
+  "equations": 24,
+  "defense_questions": 3,
+  "english_words_including_local_definitions": 4889,
+  "english_words_excluding_local_definitions": 3479,
+  "checks": [
+    {
+      "name": "declared wall elastic pressure",
+      "passed": true,
+      "detail": {
+        "computed": 43325.61728395062,
+        "expected": 43325.61728395062,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "declared closed-form work",
+      "passed": true,
+      "detail": {
+        "computed": 4.516039439535328e-09,
+        "expected": 4.516039439535328e-09,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "work from direct pressure-volume quadrature",
+      "passed": true,
+      "detail": {
+        "computed": 4.516039439535329e-09,
+        "expected": 4.516039439535328e-09,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "independent network strain-energy volume integral",
+      "passed": true,
+      "detail": {
+        "computed": 4.516039439535329e-09,
+        "expected": 4.516039439535328e-09,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "transformed stress-integral pressure at R/A=1.0",
+      "passed": true,
+      "detail": {
+        "computed": 0.0,
+        "expected": 0.0,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "work derivative equals area times resistance at R/A=1.0",
+      "passed": true,
+      "detail": {
+        "computed": 9.293548592245339e-17,
+        "expected": 0.0,
+        "relative_tolerance": 2e-08
+      }
+    },
+    {
+      "name": "transformed stress-integral pressure at R/A=1.2",
+      "passed": true,
+      "detail": {
+        "computed": 11844.135802469136,
+        "expected": 11844.135802469133,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "work derivative equals area times resistance at R/A=1.2",
+      "passed": true,
+      "detail": {
+        "computed": 5.358160804116877e-06,
+        "expected": 5.358160803622591e-06,
+        "relative_tolerance": 2e-08
+      }
+    },
+    {
+      "name": "transformed stress-integral pressure at R/A=2.0",
+      "passed": true,
+      "detail": {
+        "computed": 29375.000000000004,
+        "expected": 29375.0,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "work derivative equals area times resistance at R/A=2.0",
+      "passed": true,
+      "detail": {
+        "computed": 3.691371368149564e-05,
+        "expected": 3.6913713679680075e-05,
+        "relative_tolerance": 2e-08
+      }
+    },
+    {
+      "name": "transformed stress-integral pressure at R/A=6.0",
+      "passed": true,
+      "detail": {
+        "computed": 43325.617283950625,
+        "expected": 43325.61728395062,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "work derivative equals area times resistance at R/A=6.0",
+      "passed": true,
+      "detail": {
+        "computed": 0.0004900011875160645,
+        "expected": 0.0004900011874974081,
+        "relative_tolerance": 2e-08
+      }
+    },
+    {
+      "name": "transformed stress-integral pressure at R/A=20.0",
+      "passed": true,
+      "detail": {
+        "computed": 47999.93749999999,
+        "expected": 47999.93749999999,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "work derivative equals area times resistance at R/A=20.0",
+      "passed": true,
+      "detail": {
+        "computed": 0.0060318500411319685,
+        "expected": 0.006031850040910768,
+        "relative_tolerance": 2e-08
+      }
+    },
+    {
+      "name": "reference pressure vanishes",
+      "passed": true,
+      "detail": {
+        "computed": 0.0,
+        "expected": 0,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "reference work vanishes",
+      "passed": true,
+      "detail": {
+        "computed": 1.548924765341578e-27,
+        "expected": 0,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "large-expansion pressure asymptote",
+      "passed": true,
+      "detail": {
+        "normalized_pressure": 0.999999992
+      }
+    },
+    {
+      "name": "elastic restoration changes sign on contraction",
+      "passed": true,
+      "detail": {
+        "contracted_pressure_Pa": -190000.0,
+        "scope": "intact mathematical model, not rupture validation"
+      }
+    },
+    {
+      "name": "principal stretches preserve local material volume",
+      "passed": true,
+      "detail": {
+        "computed": 0.9999999999999999,
+        "expected": 1,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "principal stretches preserve local material volume",
+      "passed": true,
+      "detail": {
+        "computed": 1.0,
+        "expected": 1,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "principal stretches preserve local material volume",
+      "passed": true,
+      "detail": {
+        "computed": 1.0,
+        "expected": 1,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "constant-pressure displacement work",
+      "passed": true,
+      "detail": {
+        "computed": 1.1257373675363426e-08,
+        "expected": 1.1257373675363424e-08,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "fraction stored in gel",
+      "passed": true,
+      "detail": {
+        "computed": 0.40116279069767447,
+        "expected": 0.40116279069767447,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "finite expansion ledger residual",
+      "passed": true,
+      "detail": {
+        "computed": 6.741334235828098e-09,
+        "expected": 6.741334235828097e-09,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "inward speed viscous pressure sign",
+      "passed": true,
+      "detail": {
+        "computed": 13333.333333333334,
+        "expected": 13333.333333333334,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "viscous loss power",
+      "passed": true,
+      "detail": {
+        "computed": 0.0015079644737231008,
+        "expected": 0.0015079644737231008,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "viscous mechanical power is negative loss",
+      "passed": true,
+      "detail": {
+        "computed": -0.0015079644737231008,
+        "expected": -0.0015079644737231008,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "radial pressure law conserves mechanical energy with viscous loss",
+      "passed": true,
+      "detail": {
+        "computed": -0.010555751316061705,
+        "expected": -0.010555751316061705,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "shear wave speed",
+      "passed": true,
+      "detail": {
+        "computed": 4.47213595499958,
+        "expected": 4.47213595499958,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "shear crossing time",
+      "passed": true,
+      "detail": {
+        "computed": 6.708203932499369e-06,
+        "expected": 6.708203932499369e-06,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "ideal liquid-collapse comparison",
+      "passed": true,
+      "detail": {
+        "computed": 2.7440440695e-06,
+        "expected": 2.7440440695e-06,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "two-model time ratio",
+      "passed": true,
+      "detail": {
+        "computed": 2.444641471709924,
+        "expected": 2.444641471709924,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "illustrative poroelastic diffusion coefficient",
+      "passed": true,
+      "detail": {
+        "computed": 6.000000000000001e-10,
+        "expected": 6e-10,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "illustrative drainage time",
+      "passed": true,
+      "detail": {
+        "computed": 1.4999999999999998,
+        "expected": 1.5,
+        "relative_tolerance": 1e-09
+      }
+    },
+    {
+      "name": "exactly three defense questions",
+      "passed": true,
+      "detail": [
+        "C5-Q1",
+        "C5-Q2",
+        "C5-Q3"
+      ]
+    },
+    {
+      "name": "unique equation identifiers",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "every formula has local definitions and a meaningful figure",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "every reference answer begins with a quoted equation",
+      "passed": true,
+      "detail": "C5-E21, C5-E22, C5-E23 precede answer prose"
+    },
+    {
+      "name": "no escaped-LaTeX control characters in prose",
+      "passed": true,
+      "detail": "Raw authoring literals preserve LaTeX"
+    },
+    {
+      "name": "no private local computer paths in course prose",
+      "passed": true,
+      "detail": "Content only"
+    }
+  ],
+  "checks_passed": 40,
+  "sources_verified": [
+    {
+      "id": "r11",
+      "doi": "10.1073/pnas.2318739121",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10835071/",
+      "access": "Primary full-text search result accessible; direct open subsequently returned bot-check. Publisher DOI page returned cookie page.",
+      "supports": "Sealed hydrogel composite, laser-induced water-vapor bulging and delamination. Not a PFC liquid-jet demonstration.",
+      "derived_or_original": "Four-architecture comparison and proposed discriminating tests are conditional analysis, not reported paper results."
+    },
+    {
+      "id": "r12",
+      "doi": "10.1017/S0022112000003347",
+      "url": "https://research.uni-luebeck.de/en/publications/dynamics-of-laser-induced-cavitation-bubbles-near-an-elastic-boun/",
+      "access": "Author-affiliated institutional primary abstract read directly.",
+      "supports": "Deformable boundary recoil, liquid jets toward/away from boundary, gel material ejection, and 960 m/s reported maximum in that experiment.",
+      "limits": "Cannot transfer speed or stabilization to the proposed PFC geometry; full article body not reread this turn."
+    },
+    {
+      "id": "r13",
+      "doi": "10.1017/jfm.2015.7",
+      "url": "https://par.nsf.gov/servlets/purl/10033369",
+      "access": "Primary accepted-paper indexed excerpt verified mapping Eq. 2.15 and neo-Hookean resistance Eq. 2.18. Direct PDF requests returned timeout/502; publisher abstract verified via Cambridge.",
+      "supports": "Finite-strain nonlinear-elastic radial framework and pressure formula.",
+      "derived_or_original": "Mapping/stretch/stress/Jacobian/work algebra and conservation controls are fully rederived here; no reliance on truncated indexed rendering of dynamic Eq. 2.17."
+    },
+    {
+      "doi": "10.1039/D0SM02243H",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h",
+      "access": "Primary article/search text read.",
+      "supports": "Poroelastic coefficient scales as modulus times permeability / solvent viscosity and drainage time as length squared / coefficient.",
+      "limits": "Chapter illustrative permeability and modulus are declared, not assigned from the study."
+    }
+  ],
+  "derivation_gaps_repaired": [
+    "Explicit volume mapping and incompressible principal stretches",
+    "Elimination of the unknown pressure multiplier by the tangential-radial stress difference",
+    "Changed stress integral limits, Jacobian, factorization and endpoint branch at zero deformation",
+    "Full elastic-work antiderivative with lower-endpoint subtraction",
+    "Both fixed-position and convective acceleration in the integrated radial momentum law",
+    "Mechanical-energy identity and nonnegative viscous loss sign",
+    "Kelvin–Voigt retardation vs held-strain stress relaxation",
+    "Darcy-plus-storage diffusion derivation with its distinct small-perturbation assumptions"
+  ],
+  "semantic_audit": [
+    "Rref is not automatically the liquid-PFC core a0 or current vapor radius",
+    "5Gg/2 is an intact constitutive pressure asymptote, not fracture threshold or jet stabilization proof",
+    "Stored work may return, but useful recovery requires timing/geometry; dashpot loss cannot return",
+    "Shear timescale tests nonradial support communication and does not erase inertia already in the spherical model",
+    "Longitudinal wave speed is a separate compressible extension; no shock peak is claimed",
+    "Open liquid pocket, bulk inclusion, liquid site and sealed blister retain separate load/flow paths",
+    "Both direct-film and intact-PVC-transmitted force paths remain available",
+    "Largest single-event verified output and repeatable intact transfer are reported separately"
+  ],
+  "unresolved_limits": [
+    "Rate/temperature/strain-dependent network law and damage at sixfold wall stretch unvalidated",
+    "Actual PFC shell chemistry, activation and phase pressure history in the gel unknown",
+    "Prestress, finite geometry, outlet evolution and solvent-network slip may invalidate the simple control",
+    "Hydrogel jet stabilization and intact-transfer improvements require synchronized repeated-event evidence",
+    "Actual fracture, receiver adhesion, placement and reset laws are not measured by this chapter",
+    "No independent expert review of this chapter performed by this worker; numerical controls do not replace material validation"
+  ],
+  "cleanup": "Used Python -B; no compile/cache/temporary files created by this check. Review JSON and check script are intentional verification artifacts. Root integrates project log."
+}

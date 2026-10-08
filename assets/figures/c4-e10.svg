@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 617" role="img" aria-labelledby="title desc">
+<title id="title">C4-E10 — Pulse duration must be compared with the response scales of the actual load path.</title>
+<desc id="desc">a_f — lateral deformation length; m_A — inertia; D_f → t_b,scale; T₀ → t_T,scale; K_n → t_n,scale; pulse duration → compare response times; PVC also has a finite through-thickness wave time.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="617" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E10 · Physical variable map / 物理变量图</text>
+<text x="99" y="98" class="">Time definitions / 时间定义</text>
+<rect x="109" y="117" width="560" height="38" class="area"/>
+<text x="129" y="142" class="">D_f → t_b,scale</text>
+<path d="M109 167 H669" class="thin"/>
+<rect x="109" y="180" width="560" height="38" class="area"/>
+<text x="129" y="205" class="">T₀ → t_T,scale</text>
+<path d="M109 230 H669" class="thin"/>
+<rect x="109" y="243" width="560" height="38" class="area"/>
+<text x="129" y="268" class="">K_n → t_n,scale</text>
+<path d="M109 293 H669" class="thin"/>
+<text x="110" y="334" class="muted">Equal boxes identify definitions, not a time ratio / 等宽框列定义，不代表时间比</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• a_f — lateral deformation length</text>
+<text x="30" y="433" class="muted">• m_A — inertia</text>
+<text x="30" y="457" class="muted">• D_f → t_b,scale</text>
+<text x="30" y="481" class="muted">• T₀ → t_T,scale</text>
+<text x="30" y="505" class="muted">• K_n → t_n,scale</text>
+<text x="30" y="529" class="muted">• pulse duration → compare response times</text>
+<text x="30" y="571" class="muted">PVC also has a finite through-thickness wave time.</text>
+</svg>

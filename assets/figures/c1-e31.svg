@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C1-E31 — A pressure pulse can require compressibility even while the bulk wall speed is modest.</title>
+<desc id="desc">Mw = |Ṙ|/c; Ce = Le/(cτe); Ṙ; c; Le; τe; Pressure propagation path; Small wall Mach alone does not ensure fast pressure communication; An impact rise time can be much shorter than the total collapse time</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E31 · Physical variable map / 物理变量图</text>
+<circle cx="171" cy="181" r="57" class="area"/>
+<path d="M228 181 H855" class="arrow"/>
+<text x="118" y="275" class="">R , Ṙ</text>
+<text x="303" y="145" class="">Pressure information / 压力信息: c</text>
+<path d="M231 286 H854" class="thin"/>
+<text x="470" y="312" class="">Le ; ta = Le / c</text>
+<rect x="596" y="89" width="92" height="52" class="area"/>
+<text x="608" y="122" class="">τe</text>
+<text x="107" y="82" class="">Moving cavity / 运动腔体</text>
+<text x="538" y="239" class="muted">Compare transit with event / 传播与事件比较</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Mw = |Ṙ|/c</text>
+<text x="30" y="433" class="muted">• Ce = Le/(cτe)</text>
+<text x="30" y="457" class="muted">• Ṙ</text>
+<text x="30" y="481" class="muted">• c</text>
+<text x="30" y="505" class="muted">• Le</text>
+<text x="30" y="529" class="muted">• τe</text>
+<text x="30" y="553" class="muted">• Pressure propagation path</text>
+<text x="30" y="595" class="muted">Small wall Mach alone does not ensure fast pressure communication</text>
+<text x="30" y="618" class="muted">An impact rise time can be much shorter than the total collapse time</text>
+</svg>

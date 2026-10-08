@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
+<title id="title">C1-E25 — Pressure impulse and acoustic time have distinct definitions, dimensions and roles.</title>
+<desc id="desc">Δp = 0.60 MPa; τ = 0.50 μs; Π₀ = 0.30 Pa s; ρ; L = 100 μm; U = 3.0 m/s; c; ta = L/c; ν; Small bulk residual scales support the ideal column approximation; Many sound crossings are not a guarantee of correct pressure geometry</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="616" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E25 · Physical variable map / 物理变量图</text>
+<rect x="100" y="127" width="530" height="128" class="area"/>
+<path d="M130 206 H604" class="arrow"/>
+<path d="M664 269 H915" class="arrow"/>
+<path d="M680 275 V103" class="arrow"/>
+<path d="M681 249 L700 249 L717 143 L814 143 L835 249 L899 249" class="line"/>
+<text x="93" y="105" class="">Driven end / 驱动端: Π0</text>
+<text x="423" y="111" class="muted">Outlet / 出口: Π = 0</text>
+<path d="M108 282 H627" class="thin"/>
+<text x="345" y="310" class="">L</text>
+<text x="265" y="181" class="">Δu = −∇Π / ρ</text>
+<text x="728" y="131" class="muted">p − pref</text>
+<text x="883" y="301" class="muted">t, τ</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Δp = 0.60 MPa</text>
+<text x="30" y="433" class="muted">• Π₀ = 0.30 Pa s</text>
+<text x="30" y="457" class="muted">• L = 100 μm</text>
+<text x="30" y="481" class="muted">• c</text>
+<text x="30" y="505" class="muted">• ν</text>
+<text x="508" y="409" class="muted">• τ = 0.50 μs</text>
+<text x="508" y="433" class="muted">• ρ</text>
+<text x="508" y="457" class="muted">• U = 3.0 m/s</text>
+<text x="508" y="481" class="muted">• ta = L/c</text>
+<text x="30" y="547" class="muted">Small bulk residual scales support the ideal column approximation</text>
+<text x="30" y="570" class="muted">Many sound crossings are not a guarantee of correct pressure geometry</text>
+</svg>

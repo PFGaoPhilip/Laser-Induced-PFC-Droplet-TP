@@ -1,0 +1,292 @@
+{
+  "chapter": 4,
+  "reviewer": "Independent Chapter 5 authoring worker",
+  "date": "2026-10-09",
+  "status": "passed_original_review_issues_resolved",
+  "inspected_content_sha256": "7a38919dc4962d68bfeacf153e7f8805f7ef8280f04273ba00cd06b83badec17",
+  "scope": "Initial review: all 39 original displays and chapter prose. Repair confirmation: C4-E40 integration-by-parts identity, C4-E41 fixed-clamp plate power balance, revised C4-E19 compliance definition and stationary donor premise; no extra broad checks.",
+  "checks": [
+    {
+      "name": "circular plate biharmonic residual",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "clamped edge displacement",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "clamped edge slope",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "regular centre slope",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "independent blister volume",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "independent curvature energy",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "source-inclusive fixed-pressure G",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixed-volume G",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "same-state pressure expression",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "opposite propagation trends",
+      "passed": true,
+      "detail": {
+        "fixed_pressure": "b^4",
+        "fixed_volume": "b^-8"
+      }
+    },
+    {
+      "name": "fixed-clamp bending operator and energy",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "fixed-clamp tension operator and energy",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "test field edge displacement and normal slope vanish",
+      "passed": true,
+      "detail": "Checks fixed clamps only"
+    },
+    {
+      "name": "downward solid-to-liquid normal gives upward pressure traction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PVC contact traction cancels in summed equation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "critical maintained pressure",
+      "passed": true,
+      "detail": {
+        "computed": 155921.425654583,
+        "expected": 155921.425654583
+      }
+    },
+    {
+      "name": "centre deflection",
+      "passed": true,
+      "detail": {
+        "computed": 1.2826973532365306e-06,
+        "expected": 1.2826973532365306e-06
+      }
+    },
+    {
+      "name": "edge bending stress",
+      "passed": true,
+      "detail": {
+        "computed": 11694106.924093723,
+        "expected": 11694106.924093723
+      }
+    },
+    {
+      "name": "cohesive-law quadrature",
+      "passed": true,
+      "detail": {
+        "computed": 0.004999999999999999,
+        "expected": 0.005
+      }
+    },
+    {
+      "name": "positive softening interval and admissibility",
+      "passed": true,
+      "detail": {
+        "delta0": 1e-08,
+        "deltac": 1e-07
+      }
+    },
+    {
+      "name": "finite incoming momentum",
+      "passed": true,
+      "detail": {
+        "computed": 3.133285343288751e-09,
+        "expected": 3.133285343288751e-09
+      }
+    },
+    {
+      "name": "actual impulse-implied speed",
+      "passed": true,
+      "detail": {
+        "computed": 0.6723788290319208,
+        "expected": 0.6723788290319208
+      }
+    },
+    {
+      "name": "actual impulse-implied KE",
+      "passed": true,
+      "detail": {
+        "computed": 5.266886825358426e-10,
+        "expected": 5.266886825358426e-10
+      }
+    },
+    {
+      "name": "actual low-Gamma release plus KE",
+      "passed": true,
+      "detail": {
+        "computed": 5.526688682535843e-09,
+        "expected": 5.526688682535843e-09
+      }
+    },
+    {
+      "name": "actual speed exceeds requested minimum",
+      "passed": true,
+      "detail": {
+        "minimum": 0.5,
+        "actual": 0.6723788290319208
+      }
+    },
+    {
+      "name": "high fracture cost fails budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "low fracture budget passes necessary screen",
+      "passed": true,
+      "detail": {
+        "required_minimum_at_actual_CM": 5.526688682535843e-09,
+        "available": 1e-08
+      }
+    },
+    {
+      "name": "exactly three defenses",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no LaTeX control-character corruption",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checks_passed": 29,
+  "method": "New symbolic radial/area/energy differentiation, fixed-clamp polynomial virtual-work control, direct cohesive quadrature and independently recomputed budgets; not the author verification script.",
+  "inspected_claims": [
+    {
+      "claim": "Traction sign",
+      "finding": "Correct: outward solid-to-liquid n_f downward when liquid below; -p I n_f then upward. Exposed compressive stress is distinct from opening of another interface."
+    },
+    {
+      "claim": "PVC load path",
+      "finding": "Correct conditional two-sheet model. Intermediate transmitted traction is opposite on each sheet and unknown until contact/bond closure. Fully bonded laminate caveat explicit."
+    },
+    {
+      "claim": "Plate energy and operator",
+      "finding": "Bending and tension energy derivatives match the transient operator, with clamped displacement and slope variations eliminating boundary work. Applied pulse impulse retains reaction impulses before the free-jump approximation."
+    },
+    {
+      "claim": "Blister calculation",
+      "finding": "Regular clamped shape, volume, bending energy, negative reservoir-inclusive potential and fixed-pressure G correct. Fixed-volume G also correct, with opposite crack-radius trend. Controls are not reused as transient jet solutions."
+    },
+    {
+      "claim": "Cohesive law",
+      "finding": "Triangular monotonic work equals Tmax*deltac/2; positive softening interval condition correct. Compression, unloading/history and mixed mode remain explicitly unresolved."
+    },
+    {
+      "claim": "Actual versus minimum motion",
+      "finding": "Actual net impulse implies 0.672378829 m/s and 0.526688683 nJ; low-Gamma release-plus-KE is 5.526688683 nJ. 0.50 m/s and 0.29125 nJ are expressly minimum requirements."
+    },
+    {
+      "claim": "Necessary versus sufficient transfer",
+      "finding": "Global work/momentum screens are necessary and conditional; crack coverage, competing release, damage, rotation, landing and reset not claimed solved."
+    },
+    {
+      "claim": "Bilingual meaning",
+      "finding": "Reviewed signs, model restrictions, load-control contrast, corrected numbers, zero-initial-energy premise and necessary-versus-sufficient statements agree in EN/ZH. No material contradiction found."
+    }
+  ],
+  "actionable_clarifications": [
+    {
+      "id": "C4-R1",
+      "priority": "medium",
+      "location": "C4-E05 and transient plate energy discussion",
+      "type": "traceability_gap",
+      "issue": "Two integrations by parts and clamped cancellation asserted; intermediate boundary terms and plate-specific power identity not displayed. Final result is correct.",
+      "fix": "Define H_ij=D[(1-nu)w_ij+nu delta_ij Delta w]. Show δUb=∫∂j∂iH_ij δw dA+∮[n_iH_ij∂jδw−n_j∂iH_ijδw]ds, plus the tension boundary term. State fixed-clamp δw and ∂nδw vanish. Replace δw by wdot for the transient plate work identity; moving/free supports require boundary work.",
+      "status": "resolved",
+      "resolution": "C4-E40 now shows both integrations by parts, correct outward boundary terms, and the tension boundary term. B_alpha,beta=D[(1-nu)w_alpha,beta+nu delta_alpha,beta Laplacian w] contracts to D biharmonic w. Fixed-clamp zero boundary value implies zero tangential variation derivative; prescribed zero normal derivative then makes the entire variation gradient zero. C4-E41 correctly identifies kinetic/bending/tension power with constant coefficients and fixed area/support, giving load power minus cohesive-resistance power. Stationary donor reference makes wall opening rate compatible with wdot. EN/ZH definitions and restrictions agree."
+    },
+    {
+      "id": "C4-R2",
+      "priority": "low",
+      "location": "C4-E19 local definitions",
+      "type": "zero_branch_domain",
+      "issue": "Cb=Vbl/p0 requires p0>0; wider positive-pressure control stated, but local definition lacks that domain.",
+      "fix": "State p0>0 for quotient, with zero-pressure compliance by ∂Vbl/∂p0 or continuous πb^6/(192Df). No numbers affected.",
+      "status": "resolved",
+      "resolution": "C4-E19 now defines Cb by the pressure derivative at fixed b. This yields pi b^6/(192Df) at positive and zero load without division by pressure; Vbl=Cb p0 and stored/source-inclusive energies remain correct. The quotient is explicitly confined to positive pressure in prose. EN/ZH domains agree."
+    }
+  ],
+  "remaining_limits": [
+    "Actual PVC/film contact and rate/temperature fracture laws unknown.",
+    "No spatial jet-to-crack or full-area release calculation done by screens.",
+    "h/b=0.10 plate benchmark requires finite-thickness/shear error assessment, as disclosed.",
+    "Coupling fractions uncalibrated; payload allowable stress, landing adhesion and reset unknown.",
+    "Independent agent review and numerical checks are not experimental material validation."
+  ],
+  "cleanup": "Updated only verification/cross-review-04.json. Used Python -B and inline script; no compile intermediates generated. Root maintains project log.",
+  "original_inspected_content_sha256": "ec84cdeaeaa037548046d337a240f2a7d8f7f04c8a50e5f725a345b1436a15d5",
+  "final_content_sha256": "7a38919dc4962d68bfeacf153e7f8805f7ef8280f04273ba00cd06b83badec17",
+  "final_equation_count": 41,
+  "repair_confirmation": {
+    "date": "2026-10-09",
+    "method": "Direct mathematical/bilingual review of repaired displays and definitions, followed by final E06 Chinese areal-mass limit wording confirmation; no content edits or new optional tests.",
+    "claims": [
+      {
+        "id": "C4-E40",
+        "passed": true,
+        "detail": "Tensor coefficient, summed bulk derivatives, both surface terms, signs and fixed-clamp elimination correct."
+      },
+      {
+        "id": "C4-E41",
+        "passed": true,
+        "detail": "All four power expressions dimensionally W and correct under constant parameters, fixed clamp and stationary donor reference."
+      },
+      {
+        "id": "C4-E19",
+        "passed": true,
+        "detail": "Derivative compliance handles zero pressure and retains the correct stored and source-inclusive potentials."
+      },
+      {
+        "id": "stationary-donor-premise",
+        "passed": true,
+        "detail": "Explicit in both languages; moving donor requires its own momentum and power balances."
+      },
+      {
+        "id": "C4-E06-Chinese-limit-phrase",
+        "passed": true,
+        "detail": "With stiffness, pretension and cohesion set to zero, the plate law reduces to m_A wddot = p_load. Chinese now means free acceleration of unconstrained areal mass, matching the English plate limit and avoiding an incorrect fluid free-surface interpretation."
+      }
+    ],
+    "unresolved_review_issues": []
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
+<title id="title">C4-E07 — The PVC-to-film load follows intermediate-sheet motion and contact.</title>
+<desc id="desc">p_liq → PVC; w_P, m_A,P, D_P, T_P — PVC response; t_P→f → contact or bond; w, m_A, D_f, T₀ — film response; t_coh → release interface; No liquid passes through intact PVC.; Transmitted traction is an unknown, not a copied pressure.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="616" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E07 · Physical variable map / 物理变量图</text>
+<rect x="119" y="126" width="703" height="28" class="area"/>
+<rect x="119" y="233" width="703" height="40" class="area"/>
+<text x="135" y="111" class="">Film / 薄膜: w , mA , Df</text>
+<text x="138" y="314" class="">Intact PVC / 完整 PVC: wP , mA,P , DP</text>
+<path d="M303 303 V276" class="arrow"/>
+<path d="M303 226 V162" class="arrow"/>
+<path d="M486 303 V276" class="arrow"/>
+<path d="M486 226 V162" class="arrow"/>
+<path d="M669 303 V276" class="arrow"/>
+<path d="M669 226 V162" class="arrow"/>
+<text x="328" y="198" class="">tP→f : transmitted traction / 传递牵引</text>
+<text x="651" y="337" class="muted">Liquid load / 液体载荷</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• p_liq → PVC</text>
+<text x="30" y="433" class="muted">• w_P, m_A,P, D_P, T_P — PVC response</text>
+<text x="30" y="457" class="muted">• t_P→f → contact or bond</text>
+<text x="30" y="481" class="muted">• w, m_A, D_f, T₀ — film response</text>
+<text x="30" y="505" class="muted">• t_coh → release interface</text>
+<text x="30" y="547" class="muted">No liquid passes through intact PVC.</text>
+<text x="30" y="570" class="muted">Transmitted traction is an unknown, not a copied pressure.</text>
+</svg>

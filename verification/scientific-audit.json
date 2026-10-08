@@ -1,0 +1,53 @@
+{
+  "status": "passed_with_declared_model_limits",
+  "chapters": {
+    "C01": {
+      "source_sha256": "437089d0c11d62999fa942555e50f6211dc4de88874afbb002f80ba27ad92783",
+      "self_audit_status": "passed",
+      "checks": 107,
+      "independent_review": "cross-review-01-02.json"
+    },
+    "C02": {
+      "source_sha256": "57888d191c77641b4e38782a7c178d496756459d0f5673c4fa00c1ee0d440d77",
+      "self_audit_status": "passed",
+      "checks": 57,
+      "independent_review": "cross-review-01-02.json"
+    },
+    "C03": {
+      "source_sha256": "d24fbc3761cca95c9b16fbc4761fde9c07dad1f43c745d8a9d6fe22effc25440",
+      "self_audit_status": "pass",
+      "checks": 73,
+      "independent_review": "cross-review-03.json"
+    },
+    "C04": {
+      "source_sha256": "7a38919dc4962d68bfeacf153e7f8805f7ef8280f04273ba00cd06b83badec17",
+      "self_audit_status": "verified",
+      "checks": 132,
+      "independent_review": "cross-review-04.json"
+    },
+    "C05": {
+      "source_sha256": "a724ff7451b4458372af5156697164450ee9b184a63f8851be4c1a291f7bf2c9",
+      "self_audit_status": "authored_and_self_audited_not_learner_mastered",
+      "checks": 40,
+      "independent_review": "cross-review-05.json"
+    }
+  },
+  "theory_scope": "Verified adopted models and declared teaching controls; target PFC activation, jet efficiencies, actual maximum pressure/velocity, rate-dependent fracture and gel stabilization remain explicitly unresolved until appropriate formulation/geometry data and validation.",
+  "root_corrections": [
+    "Inline inequalities escaped before HTML parsing",
+    "Finite-slice conservation uses a true finite-volume integral and limit",
+    "Normal viscous stress premise retained in pressure observation bound",
+    "Pressure compliance uses a derivative at zero load",
+    "Boundary plate work shown explicitly",
+    "Optical array control uses patterned equal illumination",
+    "Fluence terminology means energy per area",
+    "Minor final typesetting uses LaTeX colon rather than a drive-path-like literal"
+  ],
+  "independent_review_files": [
+    "cross-review-01-02.json",
+    "cross-review-03.json",
+    "cross-review-04.json",
+    "cross-review-05.json"
+  ],
+  "learner_mastery": "All five pending own-word responses; scientific review does not grant learner mastery"
+}

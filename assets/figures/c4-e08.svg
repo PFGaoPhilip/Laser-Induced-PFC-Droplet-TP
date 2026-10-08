@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 593" role="img" aria-labelledby="title desc">
+<title id="title">C4-E08 — Pulse integration exposes the reactions that can invalidate a free velocity jump.</title>
+<desc id="desc">t_a → t_b — pulse interval; p_load(t) → J_A; m_A → velocity change; ẇ(x,t_a), ẇ(x,t_b); D_f∇⁴w, −T₀∇²w, t_coh — reaction impulses; Applied impulse and reaction impulse both enter.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="593" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E08 · Physical variable map / 物理变量图</text>
+<rect x="103" y="165" width="470" height="39" class="area"/>
+<text x="126" y="88" class="">Film / 薄膜: mA , Df , T₀</text>
+<path d="M225 271 V208" class="arrow"/>
+<path d="M340 271 V208" class="arrow"/>
+<path d="M455 271 V208" class="arrow"/>
+<path d="M340 103 V155" class="arrow"/>
+<text x="396" y="85" class="muted">tcoh + bending / 内聚及弯曲</text>
+<text x="196" y="307" class="">Applied JA / 施加面冲量</text>
+<path d="M668 269 H915" class="arrow"/>
+<path d="M680 274 V104" class="arrow"/>
+<path d="M681 249 L700 249 L717 143 L814 143 L835 249 L899 249" class="line"/>
+<text x="714" y="126" class="muted">pload</text>
+<text x="803" y="307" class="muted">ta → tb</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• t_a → t_b — pulse interval</text>
+<text x="30" y="433" class="muted">• p_load(t) → J_A</text>
+<text x="30" y="457" class="muted">• m_A → velocity change</text>
+<text x="30" y="481" class="muted">• ẇ(x,t_a), ẇ(x,t_b)</text>
+<text x="30" y="505" class="muted">• D_f∇⁴w, −T₀∇²w, t_coh — reaction impulses</text>
+<text x="30" y="547" class="muted">Applied impulse and reaction impulse both enter.</text>
+</svg>

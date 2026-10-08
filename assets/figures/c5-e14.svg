@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">C5-E14 — The elastic cost occupies a finite fraction of the work budget even though its pressure is below 100 kPa.</title>
+<desc id="desc">Δpw = 100 kPa; ΔV: same cavity expansion; W100 = 11.2574 nJ; Wg = 4.51604 nJ; residual = 6.74133 nJ; R, Rref; Compare energy at the same displaced volume; Residual is not automatically an emitted jet</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C5-E14 · Physical variable map / 物理变量图</text>
+<circle cx="180" cy="179" r="77" class="line"/>
+<circle cx="180" cy="179" r="29" class="area"/>
+<path d="M180 179 H257" class="arrow"/>
+<text x="220" y="158" class="">R</text>
+<text x="126" y="285" class="">Rref → R</text>
+<text x="98" y="98" class="">Cavity / 腔体: pb dV</text>
+<rect x="436" y="125" width="410" height="123" class="area"/>
+<text x="459" y="164" class="">Elastic storage / 弹性储能: Wg</text>
+<text x="460" y="207" class="">Viscous loss / 黏性耗散: Ḋg ≥ 0</text>
+<path d="M273 180 H431" class="arrow"/>
+<text x="467" y="294" class="muted">Gg , ηg ; intact network / 完整网络</text>
+<text x="93" y="329" class="muted">Stored work is not automatically jet energy / 储存功不自动转为射流能</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Δpw = 100 kPa</text>
+<text x="30" y="433" class="muted">• ΔV: same cavity expansion</text>
+<text x="30" y="457" class="muted">• W100 = 11.2574 nJ</text>
+<text x="30" y="481" class="muted">• Wg = 4.51604 nJ</text>
+<text x="30" y="505" class="muted">• residual = 6.74133 nJ</text>
+<text x="30" y="529" class="muted">• R, Rref</text>
+<text x="30" y="571" class="muted">Compare energy at the same displaced volume</text>
+<text x="30" y="594" class="muted">Residual is not automatically an emitted jet</text>
+</svg>

@@ -1,0 +1,604 @@
+{
+  "chapter": 2,
+  "reviewed_on": "2026-10-09",
+  "status": "passed",
+  "equation_count": 36,
+  "question_count": 3,
+  "question_ids": [
+    "C2-Q1",
+    "C2-Q2",
+    "C2-Q3"
+  ],
+  "english_prose_word_count_excluding_local_symbols": 4782,
+  "supplied_source": "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md, Chapter 2 and three final defense questions",
+  "organization_reference": "sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md; one integrated route",
+  "checks": [
+    {
+      "name": "Initial core mass",
+      "actual": 8.534660042252274e-13,
+      "expected": 8.534660042252273e-13,
+      "unit": "kg",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Sensible preparation estimate",
+      "actual": 1.6745003002898963e-08,
+      "expected": 1.674500300289896e-08,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Latent preparation estimate",
+      "actual": 8.10792704013966e-08,
+      "expected": 8.107927040139659e-08,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Total preparation screen",
+      "actual": 9.782427340429556e-08,
+      "expected": 9.782427340429555e-08,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Ideal inventory-state volume expansion",
+      "actual": 151.97778263737408,
+      "expected": 151.97778263737408,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Ideal inventory radius",
+      "actual": 2.6682716317574947e-05,
+      "expected": 2.6682716317574947e-05,
+      "unit": "m",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Radius substitution recovers stated vapor pressure",
+      "actual": 100000.00000000004,
+      "expected": 100000.0,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "PFC pressure at 30 micrometers with full inventory",
+      "actual": 70360.08455433988,
+      "expected": 70360.08455433988,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Thermal diffusivity",
+      "actual": 4.690343520759461e-08,
+      "expected": 4.690343520759461e-08,
+      "unit": "m2/s",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Five-micrometer diffusion scale",
+      "actual": 0.00053301,
+      "expected": 0.00053301,
+      "unit": "s",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Ten-nanosecond penetration scale",
+      "actual": 2.1657200928927683e-08,
+      "expected": 2.1657200928927683e-08,
+      "unit": "m",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "100-nanometer diffusion scale",
+      "actual": 2.1320399999999995e-07,
+      "expected": 2.13204e-07,
+      "unit": "s",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "PFP mass-specific cp from NIST molar datum",
+      "actual": 653.7415856375438,
+      "expected": 653.7415856375438,
+      "unit": "J/(kg K)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "PFH mass-specific latent enthalpy at 316 K",
+      "actual": 93183.7423655891,
+      "expected": 93183.7423655891,
+      "unit": "J/kg",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "PFP saturation pressure at 293 K",
+      "actual": 70596.49151068536,
+      "expected": 70596.49151068536,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "PFP saturation pressure at 303 K",
+      "actual": 103353.07479481792,
+      "expected": 103353.07479481792,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "PFP saturation pressure at 323 K",
+      "actual": 204331.62528007207,
+      "expected": 204331.62528007207,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Water saturation pressure at 293 K",
+      "actual": 2315.1000680945444,
+      "expected": 2315.1000680945444,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Water saturation pressure at 323 K",
+      "actual": 12248.206358008852,
+      "expected": 12248.206358008852,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Five-micrometer capillary excess",
+      "actual": 7999.999999999999,
+      "expected": 8000,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "100-nanometer capillary excess",
+      "actual": 400000.0,
+      "expected": 400000,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Size changes the positive-driving branch at 323 K",
+      "passed": true,
+      "detail": "Declared sigma_pc=0.020 N/m, no shell stress. This is not an activation prediction.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Gaussian annular quadrature",
+      "actual": 1e-06,
+      "expected": 1e-06,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Centered aperture quadrature",
+      "actual": 0.3934693402873666,
+      "expected": 0.3934693402873666,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Beer-Lambert depth quadrature",
+      "actual": 0.6321205588285578,
+      "expected": 0.6321205588285577,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Effective absorptance including one reflection",
+      "actual": 0.568908502945702,
+      "expected": 0.5689085029457019,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Intercepted absorbed energy",
+      "actual": 2.2384805333791873e-07,
+      "expected": 2.2384805333791867e-07,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Minimum delivered-heat fraction in preparation screen",
+      "actual": 0.437011946030288,
+      "expected": 0.43701194603028803,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "20-percent and 50-percent heat-delivery energy branches",
+      "passed": true,
+      "detail": "A passed preparation screen does not establish nucleation or mechanical conversion.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Halved-core inventory scales by one eighth",
+      "actual": 0.125,
+      "expected": 0.125,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "25-cell initial PFC mass handed to Chapter 3",
+      "actual": 2.1336650105630685e-11,
+      "expected": 2.133665010563068e-11,
+      "unit": "kg",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "25-cell preparation screen handed to Chapter 3",
+      "actual": 2.4456068351073892e-06,
+      "expected": 2.445606835107389e-06,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Barrier obtained by critical-radius substitution",
+      "actual": 1.6755160819145563e-15,
+      "expected": 1.6755160819145567e-15,
+      "unit": "J",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Stationary-radius derivative cancellation",
+      "actual": 1.3164988331759625e-16,
+      "expected": 0,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Critical point is a maximum and nonpositive-driving branch is absent",
+      "passed": true,
+      "detail": "Homogeneous small-nucleus capillarity control, not a real core activation fit.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Poisson constant-rate probability for integrated rate 3",
+      "actual": 0.950212931632136,
+      "expected": 0.950212931632136,
+      "unit": "",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Poisson zero-rate and monotonic probability bounds",
+      "passed": true,
+      "detail": "The Poisson law assumes independent events and a supplied nonnegative rate.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Stefan signed flux for heat sign 1",
+      "actual": 10.0,
+      "expected": 10,
+      "unit": "kg/(m2 s)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Liquid interface mass jump sign 1",
+      "actual": 10.000000000000009,
+      "expected": 10.0,
+      "unit": "kg/(m2 s)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Vapor interface mass jump sign 1",
+      "actual": 10.0,
+      "expected": 10.0,
+      "unit": "kg/(m2 s)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Liquid velocity-slip sign 1",
+      "actual": 0.010000000000000009,
+      "expected": 0.01,
+      "unit": "m/s",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Stefan signed flux for heat sign -1",
+      "actual": -10.0,
+      "expected": -10,
+      "unit": "kg/(m2 s)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Liquid interface mass jump sign -1",
+      "actual": -10.000000000000009,
+      "expected": -10.0,
+      "unit": "kg/(m2 s)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Vapor interface mass jump sign -1",
+      "actual": -10.000000000000002,
+      "expected": -10.0,
+      "unit": "kg/(m2 s)",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Liquid velocity-slip sign -1",
+      "actual": -0.010000000000000009,
+      "expected": -0.01,
+      "unit": "m/s",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Equilibrium pressure branches at radius 1e-05 m",
+      "actual": 204331.62528007207,
+      "expected": 204331.62528007207,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Finite-inventory equilibrium ledger at radius 1e-05 m",
+      "passed": true,
+      "detail": "Closed nondissolving, rapidly equilibrated, bulk-interface ideal-vapor control.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Equilibrium pressure branches at radius 3e-05 m",
+      "actual": 70360.08455433988,
+      "expected": 70360.08455433988,
+      "unit": "Pa",
+      "method": "independent numerical evaluation",
+      "passed": true
+    },
+    {
+      "name": "Finite-inventory equilibrium ledger at radius 3e-05 m",
+      "passed": true,
+      "detail": "Closed nondissolving, rapidly equilibrated, bulk-interface ideal-vapor control.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Unique ordered equation identifiers",
+      "passed": true,
+      "detail": [
+        "C2-E01",
+        "C2-E02",
+        "C2-E03",
+        "C2-E04",
+        "C2-E05",
+        "C2-E06",
+        "C2-E07",
+        "C2-E08",
+        "C2-E09",
+        "C2-E10",
+        "C2-E11",
+        "C2-E12",
+        "C2-E13",
+        "C2-E14",
+        "C2-E15",
+        "C2-E16",
+        "C2-E17",
+        "C2-E18",
+        "C2-E19",
+        "C2-E20",
+        "C2-E21",
+        "C2-E22",
+        "C2-E23",
+        "C2-E24",
+        "C2-E25",
+        "C2-E26",
+        "C2-E27",
+        "C2-E28",
+        "C2-E29",
+        "C2-E30",
+        "C2-E31",
+        "C2-E32",
+        "C2-E33",
+        "C2-E34",
+        "C2-E35",
+        "C2-E36"
+      ],
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Exactly three defense questions",
+      "passed": true,
+      "detail": [
+        "C2-Q1",
+        "C2-Q2",
+        "C2-Q3"
+      ],
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Local bilingual definitions and immediate figures",
+      "passed": true,
+      "detail": "All 36 display units use E() and have local definitions plus a physical variable map.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Formula-first reference answers",
+      "passed": true,
+      "detail": "Each reference panel starts with its original relevant equations, then explanation.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Paired EN-ZH prose",
+      "passed": true,
+      "detail": "Paired wording was separately reviewed for assumptions, numerical values and caveats.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "No Python escape corruption",
+      "passed": true,
+      "detail": "All authored literals use raw strings, preventing rho/boldsymbol etc. escape corruption.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Newton radius-derivative notation",
+      "passed": true,
+      "detail": "Radius velocities use dot R; material/time derivatives of other fields retain their defined operators.",
+      "method": "content/structure inspection"
+    },
+    {
+      "name": "Strict KaTeX rendering of displays and inline math",
+      "passed": true,
+      "detail": {
+        "display_count": 36,
+        "inline_count": 702,
+        "error": ""
+      },
+      "method": "content/structure inspection"
+    }
+  ],
+  "numerical_handoff": {
+    "core_mass_kg": 8.534660042252274e-13,
+    "preparation_estimate_J": 9.782427340429556e-08,
+    "sensible_estimate_J": 1.6745003002898963e-08,
+    "latent_estimate_J": 8.10792704013966e-08,
+    "inventory_radius_m": 2.6682716317574947e-05,
+    "inventory_volume_ratio": 151.97778263737408,
+    "count25_mass_kg": 2.1336650105630685e-11,
+    "count25_preparation_estimate_J": 2.4456068351073892e-06
+  },
+  "sources": [
+    {
+      "id": "r8",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C678262&Mask=4&Units=SI",
+      "accessed": "Primary NIST phase-change body successfully read.",
+      "supports": [
+        "PFP molar mass 0.2880343 kg/mol",
+        "Boiling datasets 302.6/303.2 K",
+        "Barber-Cady Antoine coefficients 4.2063,1103.454,-39.77; domain 282.82-337.94 K"
+      ]
+    },
+    {
+      "id": "r8-cp",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C678262&Mask=2&Units=SI",
+      "accessed": "Primary NIST condensed-phase body successfully read.",
+      "supports": [
+        "Liquid molar heat capacity 188.3 J/(mol K) at 293 K, interpolated Campos-Vallette-Diaz dataset"
+      ]
+    },
+    {
+      "id": "r9",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C355420&Mask=4",
+      "accessed": "Primary NIST phase-change body successfully read.",
+      "supports": [
+        "PFH molar mass 0.3380418 kg/mol",
+        "Boiling datasets 330.3-333 K",
+        "Vaporization enthalpy 31.5 kJ/mol at 316 K"
+      ]
+    },
+    {
+      "id": "r15",
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=4",
+      "accessed": "Primary NIST phase-change body successfully read.",
+      "supports": [
+        "Water molar mass 0.0180153 kg/mol and boiling compilation 373.17 K",
+        "Bridgeman-Aldrich Antoine 273-303 K and 304-333 K branches"
+      ]
+    },
+    {
+      "id": "r6",
+      "doi": "10.1364/BOE.2.001432",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3114212/",
+      "abstract_url": "https://pubmed.ncbi.nlm.nih.gov/21698007/",
+      "accessed": "Full primary article body was returned in web search result; later direct PMC open returned CAPTCHA. PubMed primary abstract was read.",
+      "supports": [
+        "Formulation-specific optical vaporization of PbS-containing PFP under 1064 nm light"
+      ],
+      "excluded_claims": [
+        "No transfer yield or liquid-jet speed inferred",
+        "No universal laser threshold copied"
+      ]
+    },
+    {
+      "id": "r7",
+      "doi": "10.1364/OL.39.002599",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24784055/",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9008802/",
+      "accessed": "PubMed primary abstract read; direct PMC full-text access returned CAPTCHA.",
+      "supports": [
+        "Optically activated gold-containing PFH nanoemulsion"
+      ],
+      "excluded_claims": [
+        "No clot-treatment outcome used as transfer evidence",
+        "No full-text-only claims adopted"
+      ]
+    }
+  ],
+  "original_derivations": [
+    "Gaussian annular energy, change of variable and centered-aperture interception",
+    "Beer-Lambert separation, depth integral and energy ledger",
+    "Heat-diffusion scales and thermal-contact signs",
+    "Homogeneous capillarity stationary-point branches and critical-barrier substitution",
+    "Poisson survival differential equation and integration",
+    "Moving-interface liquid-to-vapor sign and radial phase-slip algebra",
+    "Open-bubble first-law product rule with changing species masses",
+    "Ideal partial-pressure logarithmic derivative and finite-inventory equilibrium branches",
+    "Finite-core preparation and inventory-state calculations",
+    "Refined isobaric liquid-heating, coexistence, and vapor-heating enthalpy path"
+  ],
+  "semantic_audit": [
+    "Core radius a/a0 is distinct from nucleus radius rn and bubble radius R.",
+    "PFC-carrier sigma_pc is distinct from vapor-PFC sigma_vp.",
+    "Carrier density supplies outer-liquid inertia; PFC density supplies its inventory.",
+    "A positive capillarity driving pressure does not remove nucleation barrier.",
+    "The homogeneous nucleation control fails when critical nucleus is comparable to core.",
+    "Phase-change slip and recoil are conditions before reusing simple Chapter 1 RP.",
+    "Conductive bubble heat excludes mass enthalpy; latent conversion is not added twice.",
+    "Saturation is conditional on residual inventory, equilibration, and bulk-interface approximation.",
+    "The 95 kJ/kg constant latent teaching input is not attributed to NIST at 323 K.",
+    "The 97.8243 nJ screen is not exact isobaric endpoint enthalpy, laser threshold, or jet energy.",
+    "The 26.6827 micrometer inventory radius is not Rmax or emitted jet geometry.",
+    "Creation of content does not mark learner mastery; own-word explanations need semantic review."
+  ],
+  "unresolved": [
+    "Actual PFC identity/purity, size distribution and shell law are not fixed by these controls.",
+    "Formulation interfacial tensions, optical absorptance, contact resistance and hotspot geometry need evidence.",
+    "A formulation-specific activation or nucleation-rate law remains unspecified.",
+    "Stefan balance alone does not supply interface temperatures or multicomponent diffusion kinetics.",
+    "Uniform bubble temperature, ideal vapor and negligible recoil need event-specific validation.",
+    "A calibrated high-density EOS and pressure-dependent phase enthalpies are required for strong compression.",
+    "No target geometry spatial simulation, experimental pressure maximum, or jet conversion efficiency established."
+  ],
+  "independent_review": "This file records a second self-audit plus independent numerical methods. It is not an independent expert/agent review.",
+  "cleanup": "Python -B and stdin/stdout math rendering; no temporary files or bytecode generated by this worker."
+}

@@ -1,0 +1,932 @@
+{
+  "reviewer": "/root/pfc_course_chapter03",
+  "created_utc": "2026-10-08T22:10:15.365956+00:00",
+  "status": "passed_with_explicit_model_and_evidence_limits",
+  "scope": {
+    "chapter": 5,
+    "file": "content/chapter05.py",
+    "equation_ids": [
+      "C5-E01",
+      "C5-E02",
+      "C5-E03",
+      "C5-E04",
+      "C5-E05",
+      "C5-E06",
+      "C5-E07",
+      "C5-E08",
+      "C5-E09",
+      "C5-E10",
+      "C5-E11",
+      "C5-E12",
+      "C5-E13",
+      "C5-E14",
+      "C5-E15",
+      "C5-E16",
+      "C5-E17",
+      "C5-E18",
+      "C5-E19",
+      "C5-E20",
+      "C5-E21",
+      "C5-E22",
+      "C5-E23",
+      "C5-E24"
+    ],
+    "displayed_equations": 24,
+    "defense_questions": 3,
+    "non_equation_bilingual_pairs_manually_read": 90,
+    "content_changed_by_reviewer": false,
+    "review_report_only": true,
+    "not_experiment": true,
+    "not_COMSOL_validation": true
+  },
+  "content_sha256": "45255dc774fb6e3665c733a4ce04a46bc2e13ab28a9d564775cf5684ea861f80",
+  "checks": [
+    {
+      "name": "mapping shell-volume invariant at r0/Rref=1.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": -7.573064690121711e-14,
+      "expected": 0.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "stretch determinant at r0/Rref=1.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.0,
+      "expected": 1.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "mapping shell-volume invariant at r0/Rref=1.2",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.7279999999999943,
+      "expected": 0.7279999999999998,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "stretch determinant at r0/Rref=1.2",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.0000000000000002,
+      "expected": 1.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "mapping shell-volume invariant at r0/Rref=3.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 25.999999999999908,
+      "expected": 26.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "stretch determinant at r0/Rref=3.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.9999999999999998,
+      "expected": 1.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "mapping shell-volume invariant at r0/Rref=10.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 998.9999999999992,
+      "expected": 999.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "stretch determinant at r0/Rref=10.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.0,
+      "expected": 1.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "reference cavity wall maps to current cavity wall",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent recomputation",
+      "actual": 2.9999999999999997e-05,
+      "expected": 3e-05,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "direct current-coordinate stress integral b=1.1",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E03",
+        "C5-E05"
+      ],
+      "method": "quadrature of current radial stress-difference integral using y=R/r, without q antiderivative",
+      "actual": 0.34031145413564684,
+      "expected": 0.3403114541356466,
+      "relative_tolerance": 3e-10,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "independent reference-volume neo-Hookean energy b=1.1",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E02",
+        "C5-E07"
+      ],
+      "method": "integrate G/2(lambda_r^2+2lambda_theta^2-3) over undeformed material volume; y=Rref/r0",
+      "actual": 0.04075757575757586,
+      "expected": 0.040757575757576214,
+      "relative_tolerance": 8e-10,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "direct current-coordinate stress integral b=2.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E03",
+        "C5-E05"
+      ],
+      "method": "quadrature of current radial stress-difference integral using y=R/r, without q antiderivative",
+      "actual": 1.46875,
+      "expected": 1.46875,
+      "relative_tolerance": 3e-10,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "independent reference-volume neo-Hookean energy b=2.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E02",
+        "C5-E07"
+      ],
+      "method": "integrate G/2(lambda_r^2+2lambda_theta^2-3) over undeformed material volume; y=Rref/r0",
+      "actual": 5.166666666666666,
+      "expected": 5.166666666666667,
+      "relative_tolerance": 8e-10,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "direct current-coordinate stress integral b=6.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E03",
+        "C5-E05"
+      ],
+      "method": "quadrature of current radial stress-difference integral using y=R/r, without q antiderivative",
+      "actual": 2.1662808641975304,
+      "expected": 2.166280864197531,
+      "relative_tolerance": 3e-10,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "independent reference-volume neo-Hookean energy b=6.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E02",
+        "C5-E07"
+      ],
+      "method": "integrate G/2(lambda_r^2+2lambda_theta^2-3) over undeformed material volume; y=Rref/r0",
+      "actual": 287.5,
+      "expected": 287.5,
+      "relative_tolerance": 8e-10,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "q substitution Jacobian",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E04"
+      ],
+      "method": "central difference of q(r/Rref), checked against the derived Jacobian",
+      "actual": 0.06450000002947491,
+      "expected": 0.06449999999999996,
+      "relative_tolerance": 3e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "q wall endpoint",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E04"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.16666666666666693,
+      "expected": 0.16666666666666666,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "q transformed stress integrand identity",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E04"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.7850000000000006,
+      "expected": 1.7850000000000001,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "zero elastic pressure in unstretched state",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E06"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.0,
+      "expected": 0.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "zero elastic work in unstretched state",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E07"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.548924765341578e-27,
+      "expected": 0.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-23,
+      "passed": true
+    },
+    {
+      "name": "large expansion plateau",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E06"
+      ],
+      "method": "independent recomputation",
+      "actual": 2.499999998,
+      "expected": 2.5,
+      "relative_tolerance": 2e-09,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "elastic stiffness positive for R>=Rref",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E06"
+      ],
+      "method": "independent content inspection",
+      "passed": true
+    },
+    {
+      "name": "elastic pressure-work conjugacy",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E08"
+      ],
+      "method": "finite difference of closed work and independent volume-conjugate pressure evaluation",
+      "actual": 0.0004900011875188218,
+      "expected": 0.000490001187497408,
+      "relative_tolerance": 3e-09,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "small-strain elastic pressure coefficient",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E08"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.9998250299952938,
+      "expected": 1.0,
+      "relative_tolerance": 0.0002,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "small-strain stored-work coefficient",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E08"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.0000166719021524,
+      "expected": 1.0,
+      "relative_tolerance": 4e-05,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "sixfold-radius elastic pressure Pa",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E13"
+      ],
+      "method": "independent recomputation",
+      "actual": 43325.61728395062,
+      "expected": 43325.6173,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "sixfold-radius elastic stored work J",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E13"
+      ],
+      "method": "independent recomputation",
+      "actual": 4.516039439535328e-09,
+      "expected": 4.51603944e-09,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-19,
+      "passed": true
+    },
+    {
+      "name": "expanded cavity volume increment m3",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E14"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.1257373675363425e-13,
+      "expected": 1.12573737e-13,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-23,
+      "passed": true
+    },
+    {
+      "name": "stipulated 100kPa pressure work nJ",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E14"
+      ],
+      "method": "independent recomputation",
+      "actual": 11.257373675363425,
+      "expected": 11.2573737,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "elastic stored fraction of stipulated pressure work",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E14"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.40116279069767447,
+      "expected": 0.401162791,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "pressure-work residual before other allocations nJ",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E14"
+      ],
+      "method": "independent recomputation",
+      "actual": 6.741334235828098,
+      "expected": 6.74133424,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "integrated Eulerian plus convective radial acceleration v=-10.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E10"
+      ],
+      "method": "direct transformed radial quadrature",
+      "actual": 300.00000000000006,
+      "expected": 300.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "full pressure-work identity v=-10.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E11",
+        "C5-E12"
+      ],
+      "method": "independent derivatives of exterior kinetic energy, stored network work and surface energy, against momentum-law pressure",
+      "actual": -0.03937207974428416,
+      "expected": -0.039372079744284166,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 2e-15,
+      "passed": true
+    },
+    {
+      "name": "viscous term opposes wall motion v=-10.0",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E11"
+      ],
+      "method": "independent content inspection",
+      "passed": true
+    },
+    {
+      "name": "viscous dissipation nonnegative v=-10.0",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E12"
+      ],
+      "method": "independent content inspection",
+      "passed": true
+    },
+    {
+      "name": "integrated Eulerian plus convective radial acceleration v=10.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E10"
+      ],
+      "method": "direct transformed radial quadrature",
+      "actual": 300.00000000000006,
+      "expected": 300.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "full pressure-work identity v=10.0",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E11",
+        "C5-E12"
+      ],
+      "method": "independent derivatives of exterior kinetic energy, stored network work and surface energy, against momentum-law pressure",
+      "actual": 0.03937207974428416,
+      "expected": 0.03937207974428415,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 2e-15,
+      "passed": true
+    },
+    {
+      "name": "viscous term opposes wall motion v=10.0",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E11"
+      ],
+      "method": "independent content inspection",
+      "passed": true
+    },
+    {
+      "name": "viscous dissipation nonnegative v=10.0",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E12"
+      ],
+      "method": "independent content inspection",
+      "passed": true
+    },
+    {
+      "name": "collapse viscous RHS contribution Pa",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E15"
+      ],
+      "method": "independent recomputation",
+      "actual": 13333.333333333334,
+      "expected": 13333.3333,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "instantaneous viscous dissipation W",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E15"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.0015079644737231008,
+      "expected": 0.00150796447,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "Kelvin-Voigt zero-stress recovery residual Pa",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E17"
+      ],
+      "method": "independent recomputation",
+      "actual": -2.842170943040401e-14,
+      "expected": 0.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Kelvin-Voigt held-strain post-ramp stress Pa",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E17"
+      ],
+      "method": "held strain retains elastic stress; this is not finite stress relaxation",
+      "actual": 1000.0,
+      "expected": 1000.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "small-strain shear speed m/s",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E18"
+      ],
+      "method": "independent recomputation",
+      "actual": 4.47213595499958,
+      "expected": 4.47213595,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "shear crossing clock us",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E18"
+      ],
+      "method": "independent recomputation",
+      "actual": 6.708203932499369,
+      "expected": 6.70820393,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "separate ideal liquid collapse clock us",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E18"
+      ],
+      "method": "independent recomputation",
+      "actual": 2.7440440695,
+      "expected": 2.74404407,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "shear-to-liquid-clock ratio",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E18"
+      ],
+      "method": "independent recomputation",
+      "actual": 2.444641471709924,
+      "expected": 2.44464147,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "scalar poroelastic diffusion coefficient m2/s",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E20"
+      ],
+      "method": "independent recomputation",
+      "actual": 6.000000000000001e-10,
+      "expected": 6e-10,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "stipulated 30um drainage time s",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E20"
+      ],
+      "method": "independent recomputation",
+      "actual": 1.5,
+      "expected": 1.5,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "drainage time quadratic length scaling",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E20"
+      ],
+      "method": "independent recomputation",
+      "actual": 3.9999999999999996,
+      "expected": 4.0,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "drainage time inverse permeability scaling",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E20"
+      ],
+      "method": "independent recomputation",
+      "actual": 0.49999999999999994,
+      "expected": 0.5,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "3us-event to drainage-clock ratio",
+      "kind": "numerical_control",
+      "equation_ids": [
+        "C5-E20"
+      ],
+      "method": "independent recomputation",
+      "actual": 2e-06,
+      "expected": 2e-06,
+      "relative_tolerance": 2e-08,
+      "absolute_tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "24 distinct displayed equation blocks",
+      "kind": "content_control",
+      "equation_ids": [],
+      "method": "imported equation metadata",
+      "passed": true
+    },
+    {
+      "name": "all displayed equations declare EN/ZH symbols locally",
+      "kind": "content_control",
+      "equation_ids": [],
+      "method": "metadata presence plus manual meaning audit",
+      "passed": true
+    },
+    {
+      "name": "all displayed equations have contextual diagrams and bilingual captions",
+      "kind": "content_control",
+      "equation_ids": [],
+      "method": "metadata presence; root owns final visual rendering",
+      "passed": true
+    },
+    {
+      "name": "exactly three chapter defense questions",
+      "kind": "content_control",
+      "equation_ids": [],
+      "method": "rendered question structure",
+      "passed": true
+    },
+    {
+      "name": "each reference answer begins with original formula block",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E21",
+        "C5-E22",
+        "C5-E23"
+      ],
+      "method": "first substantive child after answer summary is the recalled governing formula with local declarations",
+      "passed": true
+    },
+    {
+      "name": "reference-coordinate derivative wording fixed",
+      "kind": "content_control",
+      "equation_ids": [
+        "C5-E01"
+      ],
+      "method": "independent content inspection",
+      "passed": true
+    }
+  ],
+  "check_summary": {
+    "total": 58,
+    "passed": 58,
+    "failed": 0
+  },
+  "scientific_audit": [
+    {
+      "equation_ids": [
+        "C5-E01",
+        "C5-E02"
+      ],
+      "claim": "The reference/current cavity mapping, all three principal stretches and incompressibility determinant are consistent. Rref is an unstretched network-reference cavity, not silently the PFC liquid-core radius a0.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E03",
+        "C5-E04",
+        "C5-E05",
+        "C5-E06"
+      ],
+      "claim": "Tension-positive radial stress balance and wall traction give positive elastic expansion resistance. The q Jacobian and lower/upper endpoints produce Gg/2[5-4Rref/R-(Rref/R)^4]. The large-radius 5Gg/2 limit is constitutive, not fracture or stability evidence.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E07",
+        "C5-E08"
+      ],
+      "claim": "Stored work agrees both with pressure-volume integration and an independently integrated reference-volume neo-Hookean strain-energy density. It is recoverable storage, not irreversible loss or guaranteed useful jet work.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E09",
+        "C5-E10",
+        "C5-E11",
+        "C5-E12",
+        "C5-E15"
+      ],
+      "claim": "Eulerian and convective accelerations, exterior momentum integration, Kelvin-Voigt viscous stress difference and energy identity retain finite liquid/network inertia. Viscosity opposes either motion sign and has positive dissipation. Static elastic stress-difference evaluation does not discard the separate dynamic momentum equation.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E13",
+        "C5-E14"
+      ],
+      "claim": "Teaching numbers reproduce 43.3256kPa elastic resistance and 4.51604nJ stored work. The 100kPa pressure-work comparison is stipulated and does not solve a laser/PFC pressure history or predict jet energy from the residual.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E16",
+        "C5-E17",
+        "C5-E18",
+        "C5-E19"
+      ],
+      "claim": "A separately measured relaxation time, Kelvin-Voigt strain-recovery retardation, shear propagation and compressional propagation are correctly distinguished. Low shear speed does not imply low bulk resistance or eliminate inertia. The quoted ideal-liquid collapse clock is an external comparison, not a solved gel-cavity collapse time.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E20"
+      ],
+      "claim": "Darcy relative solvent volume flux plus an adopted scalar storage law gives D=kperm Md/mu and L^2/D. This is explicitly a small-perturbation separate control with an effective storage/constrained modulus, not a complete finite-deformation Biot/gel cavitation model. Undrained at 30um does not mean all local solvent motion is absent.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [
+        "C5-E21",
+        "C5-E22",
+        "C5-E23",
+        "C5-E24"
+      ],
+      "claim": "The three defense panels quote original formulas first, explain matter/force paths, retain fracture work and vector target impulse as distinct necessary screens, and leave semantic mastery for the learner’s own explanation. Neither target impulse nor a fracture-energy integral proves landing or intact transfer.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [],
+      "claim": "The architecture comparison preserves a liquid site, an open liquid pocket in gel, directly embedded PFC, and a sealed bulge cavity. It distinguishes both direct-impact and intact-PVC-transmitted film force paths, and labels jet stabilization as unresolved.",
+      "result": "passed"
+    },
+    {
+      "equation_ids": [],
+      "claim": "EN/ZH definitions and explanatory pairs convey consistent physical signs, coordinates, stored-versus-lost energy, recovery-versus-relaxation, and experiment-versus-proposal distinctions.",
+      "result": "passed_manual_bilingual_scientific_audit"
+    }
+  ],
+  "issues": [
+    {
+      "id": "C5-NOTATION-01",
+      "severity": "minor",
+      "equation_id": "C5-E01",
+      "original_issue": "English called partial r/partial r0 a fixed-time material derivative, which could be confused with the material time derivative D/Dt.",
+      "proposed_fix": "Say derivative with respect to the reference material coordinate at fixed time.",
+      "status": "resolved_verified",
+      "fixed_by": "root",
+      "verification": "Updated English declaration verified in imported source metadata; Chinese still explicitly describes the fixed-time material-coordinate derivative."
+    },
+    {
+      "id": "C5-BILINGUAL-02",
+      "severity": "minor",
+      "equation_id": "C5-E20 explanatory paragraph",
+      "original_issue": "English primary poroelastic gel measurements was rendered 初始研究中的凝胶孔弹性测量, which changes primary-source attribution into an initial-study description.",
+      "proposed_fix": "Use 原始研究中的凝胶孔弹性测量.",
+      "status": "resolved_verified",
+      "verification": "Corrected 原始研究中的凝胶孔弹性测量 phrase verified in source; primary-source attribution now agrees with English.",
+      "fixed_by": "root"
+    }
+  ],
+  "primary_sources_checked": [
+    {
+      "title": "Laser-driven noncontact bubble transfer printing via a hydrogel composite stamp",
+      "doi": "10.1073/pnas.2318739121",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10835071/",
+      "access_in_this_review": "Primary indexed full-text body excerpt read; direct open returned reCAPTCHA.",
+      "supports": "A sealed water-bearing hydrogel/absorber composite uses laser heating, vapor bulging and delamination on a millisecond cycle. It is not experimental verification of a stabilized PFC free jet.",
+      "does_not_support": "Microsecond PFC gel constitutive parameters, target jet stabilization or a target-system maximum load."
+    },
+    {
+      "title": "Dynamics of laser-induced cavitation bubbles near an elastic boundary",
+      "doi": "10.1017/S0022112000003347",
+      "url": "https://research.uni-luebeck.de/en/publications/dynamics-of-laser-induced-cavitation-bubbles-near-an-elastic-boun/",
+      "access_in_this_review": "Primary institutional abstract read successfully.",
+      "supports": "Laser bubbles near an elastic PAA boundary can jet toward or away from the surface, split and eject boundary material; the abstract reports a measured liquid-jet maximum of 960m/s in that experiment.",
+      "does_not_support": "A universal speed ceiling, a calibrated PFC nanodroplet/gel prediction, or universal stabilizing compliance."
+    },
+    {
+      "title": "Poroelastic shape relaxation of hydrogel particles",
+      "doi": "10.1039/D0SM02243H",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h",
+      "access_in_this_review": "Primary indexed body excerpt read; direct open returned HTTP403.",
+      "supports": "Diffusive poroelastic relaxation with quadratic length dependence and separately characterized material properties.",
+      "does_not_support": "The chapter’s stipulated permeability/modulus as measured values for the proposed PFC stamp, or a nonlinear cavitating gel constitutive law."
+    },
+    {
+      "title": "Bubble dynamics in a viscoelastic medium with nonlinear elasticity",
+      "doi": "10.1017/jfm.2015.7",
+      "url": "https://par.nsf.gov/servlets/purl/10033369",
+      "access_in_this_review": "Primary accepted-paper title/abstract excerpt read; direct full-text open returned HTTP502.",
+      "supports": "The neo-Hookean nonlinear viscoelastic bubble control is an established scoped treatment. The source author separately recorded Eq2.15/2.18 verification; this independent review reconstructs the mapping, stress integral and energy rather than claiming full-body Eq2.18 access.",
+      "does_not_support": "Experimental validation of the chapter’s chosen target material, architecture or sixfold-radius intact assumption."
+    }
+  ],
+  "unresolved_physical_gaps": [
+    {
+      "gap": "Target-specific material law",
+      "why_it_matters": "The 20kPa shear modulus, 0.010Pa s represented viscosity, 1e-17m2 permeability and 60kPa scalar modulus are teaching assumptions. Actual frequency/rate/temperature dependence, spectrum, compressibility, swelling reference, interface stress and finite-strain behavior need measurement."
+    },
+    {
+      "gap": "Finite sixfold network expansion without fracture",
+      "why_it_matters": "The infinite intact neo-Hookean plateau gives no damage or nucleation threshold. Finite boundary conditions, prestretch, crack toughness, defect statistics and solvent-network separation may change the response."
+    },
+    {
+      "gap": "Mass and heat path in actual PFC-containing gel",
+      "why_it_matters": "The no-slip intact-network radial control excludes the phase-change slip, finite PFC inventory, conduction, laser absorption and solvent exchange solved or screened in earlier chapters. These must be coupled with an explicit liquid pocket and interface if the architecture requires them."
+    },
+    {
+      "gap": "External jet stabilization and optimum output",
+      "why_it_matters": "A spherical scalar radius cannot predict a coherent external liquid jet’s direction, outlet topology, mass, breakup or peak observed load. Compliance can support, store, delay, split or damage the path; its stabilizing effect remains a hypothesis."
+    },
+    {
+      "gap": "Repeatable intact transfer window",
+      "why_it_matters": "An extreme single-event pressure/speed, impulse or sufficient fracture-energy screen does not establish reusable reset, clean detachment, intact placement, chemical contamination or target survival. These require separate finite observers and experiments."
+    }
+  ],
+  "method_limits": [
+    "Numerical checks validate stated mathematical controls and rounded teaching examples, not experimental material parameters.",
+    "Primary-paper access limits are recorded explicitly; no secondary abstract or inaccessible full-text equation is claimed as directly verified.",
+    "Manual symbol and bilingual audits are not replaced by metadata-presence checks.",
+    "Root owns final figure layout, website integration, project log and release checks. No optional broad test suite or COMSOL task was run."
+  ],
+  "conclusion": "No further governing-equation or EN/ZH physical mismatch found within the stated assumptions. The derivative-label ambiguity and primary-source attribution translation were resolved and verified. Hydrogel stabilization and a target maximum remain properly unresolved.",
+  "final_confirmation_utc": "2026-10-08T22:14:14.086578+00:00"
+}

@@ -1,0 +1,588 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/pfc_course_chapter03",
+  "scope": "Independent cross-review of Chapters1-2; no edits to authors content or shared files",
+  "completed_utc": "2026-10-08T22:03:50.125482+00:00",
+  "status": "passed_after_four_local_scientific_fixes",
+  "equation_count": 70,
+  "defense_count": 6,
+  "issues": [
+    {
+      "id": "CR12-01",
+      "priority": "P2",
+      "chapter": 1,
+      "equation_ids": [
+        "C1-E32",
+        "C1-E07",
+        "C1-E11"
+      ],
+      "location": "C1-Q1 reference answer, first explanation paragraph",
+      "status": "resolved_verified",
+      "finding": "The answer says capillarity and viscosity resist motion. Constant surface tension penalizes expansion and assists collapse; viscosity dissipates motion of either sign.",
+      "proposed_fix": "In both languages, say capillarity penalizes expansion while viscosity dissipates motion in either direction.",
+      "basis": "The capillary term is always negative in outward-positive RP. Its mechanical power is minus d(4 pi sigma R^2)/dt and can be positive during collapse.",
+      "reported_to_parent": true,
+      "resolution": "Parent applied the proposed bilingual qualification; reviewer verified the edited source. No author/shared files edited by reviewer."
+    },
+    {
+      "id": "CR12-02",
+      "priority": "P2",
+      "chapter": 1,
+      "equation_ids": [
+        "C1-E28",
+        "C1-E29"
+      ],
+      "location": "Clean-interface tangential traction display",
+      "status": "resolved_verified",
+      "finding": "The displayed s dot D n=0 divides out viscosity without stating mu>0. At mu=0 the tangential traction vanishes automatically and imposes no strain constraint.",
+      "proposed_fix": "Retain 2 mu s dot D n=0 as the traction condition, or restrict the divided form to mu>0; keep the inviscid closure free of this strain constraint.",
+      "basis": "Newtonian stress is minus p I plus 2 mu D. With constant clean surface tension and neglected gas shear, tangential traction is 2 mu s dot D n.",
+      "reported_to_parent": true,
+      "resolution": "Parent applied the proposed bilingual qualification; reviewer verified the edited source. No author/shared files edited by reviewer."
+    },
+    {
+      "id": "CR12-03",
+      "priority": "P2",
+      "chapter": 2,
+      "equation_ids": [
+        "C2-E23"
+      ],
+      "location": "Step 21 paragraph before the thermal product-rule display",
+      "status": "resolved_verified",
+      "finding": "The prose calls h_boundary minus e_bulk entirely flow work, while local definitions explicitly allow the boundary temperature to differ from the bulk temperature.",
+      "proposed_fix": "State that it is pure flow work only at the same thermodynamic state; otherwise include the boundary-to-bulk internal-energy difference. Translate the same qualification into Chinese.",
+      "basis": "h(Ti)-e(Tb)=[e(Ti)-e(Tb)]+p_boundary/rho_boundary. The equation is correct; only the interpretation needs qualification.",
+      "reported_to_parent": true,
+      "resolution": "Parent applied the proposed bilingual qualification; reviewer verified the edited source. No author/shared files edited by reviewer."
+    },
+    {
+      "id": "CR12-04",
+      "priority": "P2",
+      "chapter": 2,
+      "equation_ids": [
+        "C2-E20",
+        "C2-E21"
+      ],
+      "location": "Worked Stefan sign-control paragraph after C2-E21",
+      "status": "resolved_verified",
+      "finding": "The pure-component interface example labels rho_l=1000 as aqueous carrier density immediately within a PFC phase-change discussion. For PFC-to-vapor transfer, rho_l is adjacent PFC-liquid density, distinct from carrier density in RP inertia.",
+      "proposed_fix": "Either label 1000 a stipulated adjacent single-component liquid density for a separate mathematical sign-control, or use the PFC teaching density 1630 and slip 0.00613497 m/s. Keep mixture species transfer limitations explicit.",
+      "basis": "Mass jump flux equals rho_l (interface radial speed minus adjacent radial liquid speed). It uses the density of the actual liquid adjacent to that phase interface.",
+      "reported_to_parent": true,
+      "resolution": "Parent applied the proposed bilingual qualification; reviewer verified the edited source. No author/shared files edited by reviewer."
+    }
+  ],
+  "inspected_claims": [
+    {
+      "equations": "C1-E01-C1-E07",
+      "verdict": "governing algebra consistent",
+      "inspection": "IC/BCs, outward radial velocity, inverse-square volume conservation, infinity-gauged potential, fixed-position time derivative, Bernoulli, capillary and viscous normal traction reconstructed; fixed and moving time derivatives distinguished.",
+      "limits": "Infinite incompressible constant-property spherical carrier, no phase slip, negligible gas shear, supplied uniform bubble pressure."
+    },
+    {
+      "equations": "C1-E09-C1-E12",
+      "verdict": "energy and dissipation consistent",
+      "inspection": "Exterior kinetic integral converges; product derivatives and RP multiplication recover capillary storage and positive 16 pi mu R Rdot^2 loss. Independent strain components give the same coefficient.",
+      "limits": "Constant tension and viscosity; thermal/source energy not supplied by this mechanical identity."
+    },
+    {
+      "equations": "C1-E13-C1-E20",
+      "verdict": "ideal-collapse derivation consistent",
+      "inspection": "Monotonic branch excludes zero-speed cancellation at initial endpoint; integration constant and negative root correct; radius change of variable and beta Jacobian correct; finite pressure work versus singular shrinking inertia distinguished.",
+      "limits": "Constant pressure deficit, no capillarity, viscosity, gas, compressibility or thermal/phase dynamics. Numerical Mach threshold is a diagnostic, not physical arrest."
+    },
+    {
+      "equations": "C1-E21-C1-E26",
+      "verdict": "impulse dimensions, residuals and column benchmark consistent",
+      "inspection": "Fixed-position integration retains convective and viscous terms before reduction; harmonic impulse follows only reduced assumptions; endpoint column impulse gradient is not uniform pressure. Sound crossing time is not impulse and does not certify exactness.",
+      "limits": "Fixed/frozen liquid domain, small interface displacement and omitted impulses, no singular-wall error guarantee."
+    },
+    {
+      "equations": "C1-E27-C1-E31",
+      "verdict": "normal stress, tangential traction and potential closure consistent after explicit viscosity-factor fix",
+      "inspection": "Liquid-to-gas normal gives inner curvature minus2/R and outer curvature positive. Material Bernoulli adds one velocity-square contribution, recovering inviscid RP. Actual target geometry, contact line and topology are explicit unresolved inputs.",
+      "limits": "Clean constant-tension interface and ignored gas viscosity; at mu=0 the traction condition cannot be divided by viscosity."
+    },
+    {
+      "equations": "C2-E01-C2-E10",
+      "verdict": "optical and pre-phase thermal controls consistent",
+      "inspection": "Gaussian radial Jacobian, aperture interception, temporal normalization, Beer-Lambert depth integration and single-reflection absorptance correct. Fourier/contact flux signs and order-only diffusion scales are explicit.",
+      "limits": "Absorption-only, instant optical transit, no nonlinear/plasma/scattering source. Heat equation is reduced nearly incompressible phase control; short pulse alone does not establish uniform heating."
+    },
+    {
+      "equations": "C2-E11-C2-E17",
+      "verdict": "property, capillary and stochastic branches consistent",
+      "inspection": "Outer PFC-carrier tension distinct from vapor-PFC nucleus tension; static shell pressure not treated as dynamic law; stationary barrier and second derivative correct; nonpositive driving branch excluded; Poisson rate is supplied, not predicted.",
+      "limits": "Neat-compound NIST references cannot serve as formulation onset laws. Homogeneous local-isothermal reservoir model requires small nucleus relative to core; finite hot duration and heterogeneity matter."
+    },
+    {
+      "equations": "C2-E18-C2-E26",
+      "verdict": "finite mass, heat jump, open energy and EOS controls consistent after interpretation fixes",
+      "inspection": "Compartments exhaust finite PFC supply; complete spherical area is conditional; single-component liquid-to-vapor normal and slip signs correct; Stefan latent enthalpy not counted twice; open-boundary enthalpy uses actual entry/exit states; pressure log derivative handles changing mass, temperature and volume; min equilibrium inventory branch conditional.",
+      "limits": "Pure-component interface balance cannot replace all species diffusion conditions. Uniform-state ideal energy/pressure closure excludes strong dense compression and resolved gas kinetics; recoil and slip must be checked before simple RP reuse."
+    },
+    {
+      "equations": "C2-E27-C2-E31 and C2 handoff",
+      "verdict": "connected numerical mass and preparation ledger consistent",
+      "inspection": "0.853466 ng per core, 97.824273 nJ approximate screen, 26.682716 micrometer inventory state and 70.360085 kPa at30 micrometers independently evaluated. 25 cores give21.33665 ng and2.445607 microujoule preparation estimate; no mistaken jet-energy or maximum-radius identity.",
+      "limits": "Preparation estimate is not exact isobaric endpoint enthalpy, optical threshold, vaporization rate or jet energy. Chapter3 uses separately declared conversion, mass and geometry."
+    },
+    {
+      "equations": "All 70 display units and bilingual prose/reference panels",
+      "verdict": "local definitions and EN/ZH scientific meaning aligned; four shared physical wording/limit issues corrected together",
+      "inspection": "All displays manually read with EN/ZH symbol declarations; pressure references, sign, units, distinct liquid/core/bubble/nucleus radii, fixed-position versus material operators and assumption qualifiers inspected. Exactly3 defense questions per chapter, original relevant equations first.",
+      "limits": "This scientific review does not certify rendered figure placement/contrast, browser interactivity, or learner mastery. No material-physics EN/ZH mismatch found independent of the identified common wording issues."
+    }
+  ],
+  "checks": [
+    {
+      "name": "C1-E17 radius quadrature versus beta integral",
+      "actual": 0.9146813564901625,
+      "expected": 0.9146813565019628,
+      "unit": "dimensionless",
+      "relative_tolerance": 1e-10,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E19 collapse time",
+      "actual": 2.744044069470488e-06,
+      "expected": 2.74404e-06,
+      "unit": "s",
+      "relative_tolerance": 2e-06,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E19 pressure work",
+      "actual": 1.1309733552923255e-08,
+      "expected": 1.13097e-08,
+      "unit": "J",
+      "relative_tolerance": 5e-06,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E19 inward speed branch",
+      "actual": -21.602468994692867,
+      "expected": -21.6025,
+      "unit": "m/s",
+      "relative_tolerance": 2e-06,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E18 kinetic versus lost-volume pressure work",
+      "actual": 9.896016858807848e-09,
+      "expected": 9.896016858807848e-09,
+      "unit": "J",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E06/C1-E28 spherical normal-stress recovery U=-20.0",
+      "actual": 101720.0,
+      "expected": 101720.0,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E11 full mechanical energy U=-20.0",
+      "actual": -0.00289026524130268,
+      "expected": -0.00289026524130261,
+      "unit": "W",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E11 viscosity removes energy U=-20.0",
+      "passed": true,
+      "detail": "Positive dissipation for either wall-speed sign.",
+      "evidence_type": "sign/conservation check"
+    },
+    {
+      "name": "C1-E06/C1-E28 spherical normal-stress recovery U=20.0",
+      "actual": 98520.0,
+      "expected": 98520.0,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E11 full mechanical energy U=20.0",
+      "actual": 0.0008796459430051467,
+      "expected": 0.0008796459430051422,
+      "unit": "W",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E11 viscosity removes energy U=20.0",
+      "passed": true,
+      "detail": "Positive dissipation for either wall-speed sign.",
+      "evidence_type": "sign/conservation check"
+    },
+    {
+      "name": "C1-E25 straight-column impulse speed",
+      "actual": 2.9999999999999996,
+      "expected": 3.0,
+      "unit": "m/s",
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C1-E25 acoustic crossing time",
+      "actual": 6.666666666666667e-08,
+      "expected": 6.66666666666667e-08,
+      "unit": "s",
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E27 finite PFC mass",
+      "actual": 8.534660042252273e-13,
+      "expected": 8.534660042252274e-13,
+      "unit": "kg",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E28 preparation screen",
+      "actual": 9.782427340429555e-08,
+      "expected": 9.782427340429556e-08,
+      "unit": "J",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E30 inventory radius",
+      "actual": 2.6682716317574968e-05,
+      "expected": 2.6682716317574947e-05,
+      "unit": "m",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2 inventory partial pressure at 30 micrometers",
+      "actual": 70360.08455433988,
+      "expected": 70360.08455433988,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2 Chapter 3 handoff total PFC mass",
+      "actual": 2.1336650105630682e-11,
+      "expected": 2.1336650105630685e-11,
+      "unit": "kg",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2 Chapter 3 handoff summed preparation screen",
+      "actual": 2.445606835107389e-06,
+      "expected": 2.445606835107389e-06,
+      "unit": "J",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E10 thermal diffusivity",
+      "actual": 4.690343520759461e-08,
+      "expected": 4.690343520759461e-08,
+      "unit": "m2/s",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E10 10 ns diffusion depth",
+      "actual": 2.1657200928927683e-08,
+      "expected": 2.1657200928927683e-08,
+      "unit": "m",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E12 PFP saturation pressure 293.0K",
+      "actual": 70596.49151068536,
+      "expected": 70596.49151068536,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E12 PFP saturation pressure 303.0K",
+      "actual": 103353.07479481792,
+      "expected": 103353.07479481792,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E12 PFP saturation pressure 323.0K",
+      "actual": 204331.62528007207,
+      "expected": 204331.62528007207,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E13 water saturation pressure 293.0K",
+      "actual": 2315.1000680945444,
+      "expected": 2315.1000680945444,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E13 water saturation pressure 323.0K",
+      "actual": 12248.206358008852,
+      "expected": 12248.206358008852,
+      "unit": "Pa",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E31 Gaussian intercepted absorbed energy",
+      "actual": 2.2384805333791867e-07,
+      "expected": 2.2384805333791873e-07,
+      "unit": "J",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E31 declared minimum heat fraction",
+      "actual": 0.43701194603028803,
+      "expected": 0.43701194603028803,
+      "unit": "dimensionless",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2 property molar to mass specific PFP heat capacity",
+      "actual": 653.7415856375438,
+      "expected": 653.7415856375438,
+      "unit": "J/(kg K)",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2 property molar to mass specific PFH latent enthalpy",
+      "actual": 93183.7423655891,
+      "expected": 93183.7423655891,
+      "unit": "J/kg",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E20/E21 mass and heat jump sign -1",
+      "actual": -9.999999999999943,
+      "expected": -10.0,
+      "unit": "kg/(m2 s)",
+      "relative_tolerance": 1e-10,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E20/E21 mass and heat jump sign 1",
+      "actual": 9.999999999999943,
+      "expected": 10.0,
+      "unit": "kg/(m2 s)",
+      "relative_tolerance": 1e-10,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "Proposed PFC slip example uses adjacent PFC liquid density",
+      "actual": 0.006134969325153374,
+      "expected": 0.006134969325153374,
+      "unit": "m/s",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E23 unequal boundary and bulk temperature contains sensible term",
+      "actual": 23000.0,
+      "expected": 23000.0,
+      "unit": "J/kg",
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-15,
+      "passed": true,
+      "evidence_type": "independent numerical check"
+    },
+    {
+      "name": "C2-E23 flow-work-only description requires a common state",
+      "passed": true,
+      "detail": "Stipulated cv=1000 J/(kg K), species R=100 J/(kg K), Ti=323 K, Tb=300 K: h(Ti)-e(Tb)=55300 J/kg; flow term alone=32300 J/kg. Not material data.",
+      "evidence_type": "counterexample to prose wording"
+    },
+    {
+      "name": "Chapter 1 display IDs and count",
+      "passed": true,
+      "detail": "34 unique formula units",
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 1 three defense questions",
+      "passed": true,
+      "detail": [
+        "C1-Q1",
+        "C1-Q2",
+        "C1-Q3"
+      ],
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 1 bilingual local definitions and diagrams",
+      "passed": true,
+      "detail": "Presence inspection supplemented by manual scientific symbol audit; this is not a formal completeness proof.",
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 1 formulas-first reference panels",
+      "passed": true,
+      "detail": "Each answer body begins with E() after the required details summary.",
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 2 display IDs and count",
+      "passed": true,
+      "detail": "36 unique formula units",
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 2 three defense questions",
+      "passed": true,
+      "detail": [
+        "C2-Q1",
+        "C2-Q2",
+        "C2-Q3"
+      ],
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 2 bilingual local definitions and diagrams",
+      "passed": true,
+      "detail": "Presence inspection supplemented by manual scientific symbol audit; this is not a formal completeness proof.",
+      "evidence_type": "content inspection"
+    },
+    {
+      "name": "Chapter 2 formulas-first reference panels",
+      "passed": true,
+      "detail": "Each answer body begins with E() after the required details summary.",
+      "evidence_type": "content inspection"
+    }
+  ],
+  "check_count": 43,
+  "passed_check_count": 43,
+  "primary_sources": [
+    {
+      "url": "https://media.library.caltech.edu/CaltechBOOK%3A1995.001/chap2.htm",
+      "access": "Full primary textbook chapter text read during this independent review.",
+      "supports": "Classical spherical carrier flow, stress formulation, phase-slip limitation, thermal closure and ideal-collapse breakdown. Algebra independently reconstructed here."
+    },
+    {
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C678262&Mask=2&Units=SI",
+      "access": "Full NIST condensed-phase entry read.",
+      "supports": "PFP liquid heat-capacity datum188.3 J/(mol K) at293 K and molar mass0.2880343 kg/mol."
+    },
+    {
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C678262&Mask=4&Units=SI",
+      "access": "First direct open inaccessible; subsequent phase-data link from NIST condensed entry succeeded and full phase entry read.",
+      "supports": "PFP boiling entries302.6/303.2 K; Barber-Cady Antoine coefficients and282.82-337.94 K domain."
+    },
+    {
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C355420&Mask=4",
+      "access": "Full NIST phase entry read after SI-query variant failed.",
+      "supports": "PFH molar mass0.3380418 kg/mol, boiling entries330.3-333 K and31.5 kJ/mol at316 K latent reference."
+    },
+    {
+      "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=4",
+      "access": "NIST entry read with focused Antoine/boiling section.",
+      "supports": "Water373.17 K compiled boiling reference and the two stated Antoine coefficient intervals."
+    }
+  ],
+  "experiment_status": "No experiment performed, no COMSOL model run, no target-formulation maximum or transfer yield established. Numerical checks are benchmarks or stipulated teaching controls only.",
+  "unresolved_gaps": [
+    "Formulation-specific PFC identity, shell law, optical and thermal contact data, activation kinetics and high-state EOS remain model inputs.",
+    "Finite phase kinetics and bubble temperature history are posed but not solved for a target experiment.",
+    "Actual target spatial jet solution, emitted-mass/conversion law and loaded receiver dynamics require later chapters and validation."
+  ],
+  "causal_chain": "Pressure-inertia mechanics -> optical deposition -> heat reaching finite PFC -> activation -> signed phase transfer and pressure -> spatial jet and finite observed impact in subsequent chapters. No harmonic forcing detour and no parallel curriculum.",
+  "bilingual_audit": "Equation-local declarations and every EN/ZH prose pair inspected. Physics/sign/dimension assumptions are mirrored. Four local scientific issues were corrected in both languages and their resolutions verified.",
+  "cleanup": "Executed with Python -B via stdin. Created only this owned JSON; no bytecode, temporary files, downloaded PDFs or simulation outputs generated. Parent owns overall log and publication.",
+  "initial_snapshot_hashes": {
+    "content\\chapter01.py": "437089d0c11d62999fa942555e50f6211dc4de88874afbb002f80ba27ad92783",
+    "content\\chapter02.py": "57888d191c77641b4e38782a7c178d496756459d0f5673c4fa00c1ee0d440d77",
+    "sources\\Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md": "cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0",
+    "sources\\Cavitation_Course_Before_After_Comparison_EN_ZH.md": "e5462de2b8ca7e717a4e9f0a26cc5c2a9fc0e1d8c054f48d087cd2a27fc0d87f"
+  },
+  "final_snapshot_hashes": {
+    "content\\chapter01.py": "437089d0c11d62999fa942555e50f6211dc4de88874afbb002f80ba27ad92783",
+    "content\\chapter02.py": "57888d191c77641b4e38782a7c178d496756459d0f5673c4fa00c1ee0d440d77"
+  },
+  "resolution_verification": {
+    "tangential_traction_factor": true,
+    "capillarity_direction": true,
+    "unequal_temperature_enthalpy": true,
+    "adjacent_phase_density": true,
+    "method": "Focused post-fix source inspection and independent algebra; original43 numerical/content checks were already passing. No optional suite repeated."
+  }
+}

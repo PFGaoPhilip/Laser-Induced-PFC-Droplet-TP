@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 593" role="img" aria-labelledby="title desc">
+<title id="title">C4-E21 — The pressure threshold depends on crack geometry and fracture resistance, not pressure alone.</title>
+<desc id="desc">p₀ → pressure loading; p₀,crit → onset threshold; D_f, Γ → stiffness and fracture resistance; b → pre-existing crack size; G_p₀/Γ → propagation screen; Larger existing delamination lowers critical pressure.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="593" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E21 · Physical variable map / 物理变量图</text>
+<path d="M80 263 H603" class="thin"/>
+<path d="M92 263 C195 263 191 146 347 146 S499 263 590 263" class="line"/>
+<rect x="77" y="243" width="26" height="45" class="area"/>
+<rect x="579" y="243" width="26" height="45" class="area"/>
+<path d="M342 259 V150" class="arrow"/>
+<text x="355" y="218" class="">w(r)</text>
+<text x="259" y="319" class="">p₀ ↑ ; Vbl</text>
+<path d="M344 282 H588" class="thin"/>
+<text x="467" y="302" class="">b</text>
+<text x="337" y="280" class="">0</text>
+<circle cx="783" cy="196" r="85" class="thin"/>
+<path d="M783 196 H868" class="arrow"/>
+<text x="817" y="184" class="">b</text>
+<text x="722" y="317" class="">Ac = π b²</text>
+<text x="101" y="91" class="">Clamped blister / 夹持鼓泡</text>
+<text x="624" y="102" class="muted">w(b)=0 ; slope=0 / 边缘斜率为零</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• p₀ → pressure loading</text>
+<text x="30" y="433" class="muted">• p₀,crit → onset threshold</text>
+<text x="30" y="457" class="muted">• D_f, Γ → stiffness and fracture resistance</text>
+<text x="30" y="481" class="muted">• b → pre-existing crack size</text>
+<text x="30" y="505" class="muted">• G_p₀/Γ → propagation screen</text>
+<text x="30" y="547" class="muted">Larger existing delamination lowers critical pressure.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
+<title id="title">C2-E23 — A variable vapor mass makes a fixed-mass polytropic shortcut conditional.</title>
+<desc id="desc">T_b, Ṫ_b: common vapor temperature; m_v,s, ṁ_v,s: changing species mass; e_s, c_v,s: internal-energy storage; h_v,s: boundary enthalpy; U_b: total stored energy; Q̇_b: conduction; p_b V̇_b: work; s = 1…N_s: summation; The product rule includes both temperature and mass changes; Consistent energy references preserve the balance</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="592" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E23 · Physical variable map / 物理变量图</text>
+<rect x="68" y="120" width="180" height="110" class="area"/>
+<rect x="392" y="120" width="210" height="110" class="area"/>
+<rect x="748" y="120" width="160" height="110" class="area"/>
+<text x="85" y="157" class="">Source / 能源</text>
+<text x="91" y="198" class="">Eabs , Q</text>
+<text x="412" y="158" class="">Bubble / 气泡</text>
+<text x="418" y="199" class="">pb dV , Kℓ</text>
+<text x="766" y="158" class="">Output / 输出</text>
+<text x="775" y="198" class="">Ej , W</text>
+<path d="M248 176 H392" class="arrow"/>
+<path d="M602 176 H748" class="arrow"/>
+<path d="M500 230 V280" class="arrow"/>
+<text x="300" y="104" class="">Conservation / 守恒</text>
+<text x="541" y="294" class="">Dissipation / 耗散: Ḋ ≥ 0</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• T_b, Ṫ_b: common vapor temperature</text>
+<text x="30" y="433" class="muted">• e_s, c_v,s: internal-energy storage</text>
+<text x="30" y="457" class="muted">• U_b: total stored energy</text>
+<text x="30" y="481" class="muted">• p_b V̇_b: work</text>
+<text x="508" y="409" class="muted">• m_v,s, ṁ_v,s: changing species mass</text>
+<text x="508" y="433" class="muted">• h_v,s: boundary enthalpy</text>
+<text x="508" y="457" class="muted">• Q̇_b: conduction</text>
+<text x="508" y="481" class="muted">• s = 1…N_s: summation</text>
+<text x="30" y="523" class="muted">The product rule includes both temperature and mass changes</text>
+<text x="30" y="546" class="muted">Consistent energy references preserve the balance</text>
+</svg>

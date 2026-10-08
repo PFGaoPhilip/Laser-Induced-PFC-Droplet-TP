@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
+<title id="title">C2-E02 — The Gaussian energy follows from summing annular contributions.</title>
+<desc id="desc">E_L: sum over annuli; F₀: central fluence; r, w: transverse geometry; x = 2r²/w²; π: circular annuli; Annulus area = 2πr dr; Integral of e⁻ˣ from 0 to infinity = 1</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="616" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E02 · Physical variable map / 物理变量图</text>
+<circle cx="257" cy="193" r="103" class="thin"/>
+<path d="M257 193 H360" class="arrow"/>
+<text x="308" y="175" class="">r , w</text>
+<text x="125" y="322" class="">Beam cross-section / 光束截面</text>
+<path d="M598 284 H922" class="arrow"/>
+<path d="M626 285 V99" class="arrow"/>
+<path d="M628 123 C687 123 727 176 770 229 S850 280 912 282" class="line"/>
+<path d="M797 260 V284" class="thin"/>
+<text x="791" y="312" class="">w</text>
+<text x="924" y="302" class="">r</text>
+<text x="590" y="93" class="">F(r)</text>
+<text x="639" y="121" class="">F₀</text>
+<text x="761" y="183" class="muted">F₀ e⁻²</text>
+<text x="123" y="91" class="">EL = ∫ F(r) 2πr dr</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• E_L: sum over annuli</text>
+<text x="30" y="433" class="muted">• F₀: central fluence</text>
+<text x="30" y="457" class="muted">• r, w: transverse geometry</text>
+<text x="30" y="481" class="muted">• x = 2r²/w²</text>
+<text x="30" y="505" class="muted">• π: circular annuli</text>
+<text x="30" y="547" class="muted">Annulus area = 2πr dr</text>
+<text x="30" y="570" class="muted">Integral of e⁻ˣ from 0 to infinity = 1</text>
+</svg>

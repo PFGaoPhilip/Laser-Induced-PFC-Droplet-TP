@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
+<title id="title">C2-E14 — The barrier belongs to creating a new internal vapor interface.</title>
+<desc id="desc">r_n: nucleus radius inside PFC; σ_vp: newly created vapor–PFC interface; T_i: local nucleus temperature; p_d: surrounding PFC liquid; p_sat,PFC: equilibrium vapor reference; Δp_n: volume driving; W: surface cost minus volume gain; π: spherical geometry; The outer PFC–carrier tension is a different interface; The whole core cannot be treated as an infinite liquid reservoir</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="592" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E14 · Physical variable map / 物理变量图</text>
+<circle cx="310" cy="185" r="78" class="area"/>
+<path d="M310 185 H388" class="arrow"/>
+<text x="337" y="169" class="">rn</text>
+<text x="284" y="196" class="">pv</text>
+<text x="109" y="91" class="">PFC liquid / PFC 液相: pd , Ti</text>
+<text x="105" y="299" class="">New interface / 新界面: σvp</text>
+<path d="M595 279 H922" class="arrow"/>
+<path d="M617 324 V93" class="arrow"/>
+<path d="M620 279 C655 278 676 133 731 155 S796 279 853 318" class="line"/>
+<path d="M710 148 V279" class="thin"/>
+<text x="714" y="130" class="muted">r* , W*</text>
+<text x="572" y="94" class="">W(rn)</text>
+<text x="865" y="299" class="muted">rn</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• r_n: nucleus radius inside PFC</text>
+<text x="30" y="433" class="muted">• T_i: local nucleus temperature</text>
+<text x="30" y="457" class="muted">• p_sat,PFC: equilibrium vapor reference</text>
+<text x="30" y="481" class="muted">• W: surface cost minus volume gain</text>
+<text x="508" y="409" class="muted">• σ_vp: newly created vapor–PFC interface</text>
+<text x="508" y="433" class="muted">• p_d: surrounding PFC liquid</text>
+<text x="508" y="457" class="muted">• Δp_n: volume driving</text>
+<text x="508" y="481" class="muted">• π: spherical geometry</text>
+<text x="30" y="523" class="muted">The outer PFC–carrier tension is a different interface</text>
+<text x="30" y="546" class="muted">The whole core cannot be treated as an infinite liquid reservoir</text>
+</svg>
