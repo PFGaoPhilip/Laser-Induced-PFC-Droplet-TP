@@ -12,3 +12,22 @@ html[data-theme=light]{color-scheme:light;--canvas:#eef3f2;--paper:#fffefa;--pan
 /* Keep each symbol and its SI unit readable in the individual glossary rows. */
 .symbol-glossary .symbol-cell { white-space: nowrap; }
 .symbol-glossary td:nth-child(3) { white-space: nowrap; }
+
+/* One definition per cell; the collapsed center border spans every row. */
+.symbol-panel-heading p { margin: .15rem 0 .8rem; }
+.symbol-table-scroll { overflow-x: auto; }
+.symbol-definitions { table-layout: fixed; margin: .3rem 0 .75rem; }
+.symbol-definitions td { width: 50%; border: 0; padding: .65rem .9rem .65rem 0; overflow-wrap: anywhere; }
+.symbol-definitions td + td { border-left: 2px solid var(--rule); padding-left: .9rem; padding-right: 0; }
+.symbol-definitions .katex { font-size: 1.1em; }
+.symbol-definitions p { margin: .1rem 0 .65rem; }
+.symbol-definitions .lang-pair > p.zh { margin-top: -.35rem; }
+.symbol-conventions { border-top: 1px solid var(--rule); padding-top: .7rem; font-size: .95em; }
+.symbol-conventions p { margin: .2rem 0 .75rem; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media(max-width:600px) {
+  .symbol-definitions tbody { display: block; border-left: 2px solid var(--rule); }
+  .symbol-definitions tr { display: contents; }
+  .symbol-definitions td, .symbol-definitions td + td { display: block; width: 100%; border: 0; padding: .6rem 0 .6rem .8rem; }
+  .symbol-definitions .symbol-placeholder { display: none; }
+}

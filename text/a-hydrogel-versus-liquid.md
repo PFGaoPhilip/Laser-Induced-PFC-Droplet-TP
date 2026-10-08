@@ -83,9 +83,21 @@ Step 1 — exact volume conservation. Follow one material shell from its referen
 
 步骤 1——精确的体积守恒。跟踪一个材料球壳从参考位置到当前位置。不可压缩性要求腔体与球壳之间的材料体积相等。在固定时刻求导即可得到径向伸长；只有严格为正的半径才进行除法。
 
-**Symbols before Eq. (A-E01).** $r_0\geq R_{\mathrm{ref}}>0$ and $r\geq R>0$ are reference/current material radii (m); $R_{\mathrm{ref}}$, $R$ are cavity radii (m). $\lambda_r$, $\lambda_\theta$, $\lambda_\phi$ are dimensionless principal stretches; $\theta,\phi$ are tangential directions. $\partial r/\partial r_0$ is the derivative with respect to the reference material coordinate at fixed time.
+**Symbols before Eq. (A-E01).**
 
-**式（A-E01）前的符号定义。** $r_0\geq R_{\mathrm{ref}}>0$ 与 $r\geq R>0$ 为参考／当前材料半径（m）；$R_{\mathrm{ref}}$、$R$ 为腔体半径（m）。$\lambda_r$、$\lambda_\theta$、$\lambda_\phi$ 为无量纲主伸长；$\theta,\phi$ 为切向方向。$\partial r/\partial r_0$ 表示构形映射中固定时刻的材料坐标导数。
+**式（A-E01）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $r_0\geq R_{\mathrm{ref}}>0$ — Reference material radius (m)<br>$r_0\geq R_{\mathrm{ref}}>0$ — 参考物质半径（m） | $r\geq R>0$ — Current material radius (m)<br>$r\geq R>0$ — 当前物质半径（m） |
+| $R_{\mathrm{ref}}$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}$ — 无应力参考腔体半径（m） | $R$ — Current cavity radius (m)<br>$R$ — 当前腔体半径（m） |
+| $\lambda_r$ — Radial principal stretch (dimensionless)<br>$\lambda_r$ — 径向主伸长比（无量纲） | $\lambda_\theta$ — Polar tangential principal stretch (dimensionless)<br>$\lambda_\theta$ — 极角切向主伸长比（无量纲） |
+| $\lambda_\phi$ — Azimuthal tangential principal stretch (dimensionless)<br>$\lambda_\phi$ — 方位角切向主伸长比（无量纲） | $\theta$ — Polar tangential coordinate label (—)<br>$\theta$ — 极角切向坐标标记（—） |
+| $\phi$ — Azimuthal tangential coordinate label (—)<br>$\phi$ — 方位角切向坐标标记（—） |  |
+
+**Conventions and conditions.** $\partial r/\partial r_0$ is the derivative with respect to the reference material coordinate at fixed time.
+
+**约定与条件。** $\partial r/\partial r_0$ 表示构形映射中固定时刻的材料坐标导数。
 
 (A-E01) · Exact kinematics under incompressibility
 
@@ -104,9 +116,23 @@ Step 2 — declared constitutive law. In principal directions the neo-Hookean Ca
 
 步骤 2——明确采用的本构规律。在主方向上，neo-Hookean Cauchy 应力由共同的不可压缩约束乘子及依赖伸长的部分组成。用切向应力减去径向应力，消除未知约束乘子。这是材料模型，不是普适的水凝胶定律。
 
-**Symbols before Eq. (A-E02).** $\mathbf T^e$ and its $rr$, $\theta\theta$, $\phi\phi$ principal components are elastic Cauchy stresses (Pa), tensile positive. $\chi$ is the incompressibility multiplier (Pa); $\mathbf I$ is the dimensionless identity tensor; $G_g>0$ is network shear modulus (Pa). $\mathbf F$ is the dimensionless deformation gradient, $\mathbf B$ its left Cauchy–Green tensor, and $\mathsf T$ denotes transpose. $\lambda_r$, $\lambda_\theta$ are stretches; $r,r_0>0$ are current/reference material radii (m).
+**Symbols before Eq. (A-E02).**
 
-**式（A-E02）前的符号定义。** $\mathbf T^e$ 及其 $rr$、$\theta\theta$、$\phi\phi$ 主分量为弹性 Cauchy 应力（Pa），拉伸取正。$\chi$ 为不可压缩约束乘子（Pa）；$\mathbf I$ 为无量纲单位张量；$G_g>0$ 为网络剪切模量（Pa）。$\mathbf F$ 为无量纲变形梯度，$\mathbf B$ 为左 Cauchy–Green 张量，$\mathsf T$ 表示转置。$\lambda_r$、$\lambda_\theta$ 为伸长；$r,r_0>0$ 为当前／参考材料半径（m）。
+**式（A-E02）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathbf T^e$ — Elastic Cauchy stress tensor, tension positive (Pa)<br>$\mathbf T^e$ — 拉伸取正的弹性柯西应力张量（Pa） | $\chi$ is the incompressibility multiplier (Pa)<br>$\chi$ 为不可压缩约束乘子（Pa） |
+| $\mathbf I$ is the dimensionless identity tensor<br>$\mathbf I$ 为无量纲单位张量 | $G_g>0$ is network shear modulus (Pa)<br>$G_g>0$ 为网络剪切模量（Pa） |
+| $\mathbf F$ is the dimensionless deformation gradient<br>$\mathbf F$ 为无量纲变形梯度 | $\mathbf B$ its left Cauchy–Green tensor (dimensionless)<br>$\mathbf B$ 为左 Cauchy–Green 张量（无量纲） |
+| $\lambda_r$ — Radial principal stretch (dimensionless)<br>$\lambda_r$ — 径向主伸长比（无量纲） | $\lambda_\theta$ — Polar tangential principal stretch (dimensionless)<br>$\lambda_\theta$ — 极角切向主伸长比（无量纲） |
+| $r$ — Current material radius (m)<br>$r$ — 当前物质半径（m） | $r_0>0$ — Reference material radius (m)<br>$r_0>0$ — 参考物质半径（m） |
+| $T^e_{rr}$ — Radial elastic Cauchy stress (Pa)<br>$T^e_{rr}$ — 径向弹性柯西应力（Pa） | $T^e_{\theta\theta}$ — Polar tangential elastic Cauchy stress (Pa)<br>$T^e_{\theta\theta}$ — 极角切向弹性柯西应力（Pa） |
+| $T^e_{\phi\phi}$ — Azimuthal tangential elastic Cauchy stress (Pa)<br>$T^e_{\phi\phi}$ — 方位角切向弹性柯西应力（Pa） |  |
+
+**Conventions and conditions.** $\mathsf T$ denotes transpose; Elastic stress is positive in tension..
+
+**约定与条件。** $\mathsf T$ 表示转置；弹性应力以拉伸为正。。
 
 (A-E02) · Constitutive assumption and exact subtraction
 
@@ -125,9 +151,21 @@ Step 3 — integrate the elastic contribution. For a static spherical field, rad
 
 步骤 3——积分弹性贡献。对静态球形应力场，径向平衡使径向应力导数等于切向—径向应力差的两倍除以半径。壁面牵引与远场牵引由此确定维持弹性变形所需的压力。同一应力差积分还会作为阻力出现在动力学平衡中；后者并不要求整个动态场处于准静态。
 
-**Symbols before Eq. (A-E03).** $T^e_{rr}$, $T^e_{\theta\theta}$ are radial/tangential elastic stresses (Pa) in this static control; $r$ is current radius, $r_0=r_0(r)$ the reference coordinate, $R>0$ the cavity radius (m). $p_b$, $p_\infty$ are inner/far-field pressures (Pa); $\sigma\geq0$ is constant tension (N m⁻¹); $G_g>0$ is shear modulus (Pa); $p_{\mathrm{el}}$ is the signed elastic resistance (Pa). $d/dr$ differentiates in $r$, $\int_R^\infty$ integrates over exterior material, and $\infty$ labels the infinite far field.
+**Symbols before Eq. (A-E03).**
 
-**式（A-E03）前的符号定义。** $T^e_{rr}$、$T^e_{\theta\theta}$ 为该静态控制模型的径向／切向弹性应力（Pa）；$r$ 为当前半径，$r_0=r_0(r)$ 为参考坐标，$R>0$ 为腔体半径（m）。$p_b$、$p_\infty$ 为内部／远场压力（Pa）；$\sigma\geq0$ 为恒定张力（N m⁻¹）；$G_g>0$ 为剪切模量（Pa）；$p_{\mathrm{el}}$ 为带符号的弹性阻力（Pa）。$d/dr$ 表示对 $r$ 求导，$\int_R^\infty$ 对外部材料积分，$\infty$ 标记无限远场。
+**式（A-E03）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $T^e_{rr}$ — Radial elastic Cauchy stress (Pa)<br>$T^e_{rr}$ — 径向弹性柯西应力（Pa） | $T^e_{\theta\theta}$ — Polar tangential elastic Cauchy stress (Pa)<br>$T^e_{\theta\theta}$ — 极角切向弹性柯西应力（Pa） |
+| $r$ is current radius (m)<br>$r$ 为当前半径（m） | $r_0=r_0(r)$ the reference coordinate (m)<br>$r_0=r_0(r)$ 为参考坐标（m） |
+| $R>0$ the cavity radius (m)<br>$R>0$ 为腔体半径（m） | $p_b$ — Cavity pressure (Pa)<br>$p_b$ — 空腔压力（Pa） |
+| $p_\infty$ — Far-field pressure (Pa)<br>$p_\infty$ — 远场压力（Pa） | $\sigma\geq0$ is constant tension (N m⁻¹)<br>$\sigma\geq0$ 为恒定张力（N m⁻¹） |
+| $G_g>0$ is shear modulus (Pa)<br>$G_g>0$ 为剪切模量（Pa） | $p_{\mathrm{el}}$ is the signed elastic resistance (Pa)<br>$p_{\mathrm{el}}$ 为带符号的弹性阻力（Pa） |
+
+**Conventions and conditions.** $d/dr$ differentiates in $r$, $\int_R^\infty$ integrates over exterior material, and $\infty$ labels the infinite far field.
+
+**约定与条件。** $d/dr$ 表示对 $r$ 求导，$\int_R^\infty$ 对外部材料积分，$\infty$ 标记无限远场。
 
 (A-E03) · Static balance defining the elastic resistance
 
@@ -146,9 +184,21 @@ Step 4 — change variables with its Jacobian. During expansion $R>R_{\mathrm{re
 
 步骤 4——带雅可比地变换变量。膨胀时 $R>R_{\mathrm{ref}}$，定义无量纲比值 $q=r_0/r$。由构形映射，它从壁面处的 $R_{\mathrm{ref}}/R$ 增大到无穷远处的 1。对其三次方求导，约去正的平方，并对有限外部位置使用正因子 $1-q^3$。在恰好未变形的状态，这个变换退化；此时直接求得零阻力，而不是除以零。
 
-**Symbols before Eq. (A-E04).** $q=r_0/r$ is a positive dimensionless coordinate ratio; $r_0,r$ are reference/current material radii (m), and $R>R_{\mathrm{ref}}>0$ are current/reference cavity radii (m). $q(R)$ and $q(\infty)$ denote endpoint values. $dq,dr$ are coordinate differentials; $\infty$ denotes the far-field limit. The factorization $1-q^6=(1-q^3)(1+q^3)$ applies for $q<1$ before taking the endpoint limit.
+**Symbols before Eq. (A-E04).**
 
-**式（A-E04）前的符号定义。** $q=r_0/r$ 为正的无量纲坐标比；$r_0,r$ 为参考／当前材料半径（m），$R>R_{\mathrm{ref}}>0$ 为当前／参考腔体半径（m）。$q(R)$、$q(\infty)$ 表示端点值。$dq,dr$ 为坐标微分；$\infty$ 表示远场极限。因式分解 $1-q^6=(1-q^3)(1+q^3)$ 先在 $q<1$ 时使用，再取端点极限。
+**式（A-E04）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $q=r_0/r$ is a positive dimensionless coordinate ratio<br>$q=r_0/r$ 为正的无量纲坐标比 | $r_0$ — Reference material radius (m)<br>$r_0$ — 参考物质半径（m） |
+| $r$ — Current material radius (m)<br>$r$ — 当前物质半径（m） | $R>R_{\mathrm{ref}}>0$ — Current cavity radius (m)<br>$R>R_{\mathrm{ref}}>0$ — 当前腔体半径（m） |
+| $R_{\mathrm{ref}}$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}$ — 无应力参考腔体半径（m） | $q(R)$ — Coordinate-ratio value at the cavity wall (dimensionless)<br>$q(R)$ — 空腔壁面处的坐标比值（无量纲） |
+| $q(\infty)$ denote endpoint values (dimensionless)<br>$q(\infty)$ 表示端点值（无量纲） | $dq$ — Dimensionless coordinate-ratio integration element (dimensionless)<br>$dq$ — 无量纲坐标比积分微元（无量纲） |
+| $dr$ — Current-radius integration element (m)<br>$dr$ — 当前半径积分微元（m） |  |
+
+**Conventions and conditions.** $\infty$ denotes the far-field limit; The factorization $1-q^6=(1-q^3)(1+q^3)$ applies for $q<1$ before taking the endpoint limit.
+
+**约定与条件。** $\infty$ 表示远场极限；因式分解 $1-q^6=(1-q^3)(1+q^3)$ 先在 $q<1$ 时使用，再取端点极限。
 
 (A-E04) · Exact change of variable for expansion
 
@@ -163,9 +213,19 @@ The material coordinate ratio converts a spatial stress integral into a regular 
 
 材料坐标比将空间应力积分转化为正则的多项式积分。
 
-**Symbols before Eq. (A-E05).** $p_{\mathrm{el}}$ is elastic cavity resistance (Pa); $G_g>0$ is network shear modulus (Pa); $R\geq R_{\mathrm{ref}}>0$ are current/reference cavity radii (m). $q$ is the dimensionless integration variable. $\int$ is a definite integral, and $[f(q)]_a^b$ means upper-endpoint minus lower-endpoint evaluation of the bracketed function.
+**Symbols before Eq. (A-E05).**
 
-**式（A-E05）前的符号定义。** $p_{\mathrm{el}}$ 为弹性腔体阻力（Pa）；$G_g>0$ 为网络剪切模量（Pa）；$R\geq R_{\mathrm{ref}}>0$ 为当前／参考腔体半径（m）。$q$ 为无量纲积分变量。$\int$ 为定积分，$[f(q)]_a^b$ 表示括号中函数的上端点值减去下端点值。
+**式（A-E05）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $p_{\mathrm{el}}$ is elastic cavity resistance (Pa)<br>$p_{\mathrm{el}}$ 为弹性腔体阻力（Pa） | $G_g>0$ is network shear modulus (Pa)<br>$G_g>0$ 为网络剪切模量（Pa） |
+| $R\geq R_{\mathrm{ref}}>0$ — Current cavity radius (m)<br>$R\geq R_{\mathrm{ref}}>0$ — 当前腔体半径（m） | $R_{\mathrm{ref}}$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}$ — 无应力参考腔体半径（m） |
+| $q$ is the dimensionless integration variable<br>$q$ 为无量纲积分变量 |  |
+
+**Conventions and conditions.** $\int$ is a definite integral; $[f(q)]_a^b$ means upper-endpoint minus lower-endpoint evaluation of the bracketed function.
+
+**约定与条件。** $\int$ 为定积分；$[f(q)]_a^b$ 表示括号中函数的上端点值减去下端点值。
 
 (A-E05) · Derived neo-Hookean elastic resistance
 
@@ -184,9 +244,18 @@ Each row uses, in order, Eq. (A-E04), the antiderivative of $1+q^3$, upper-minus
 
 各行依次使用式（A-E04）、$1+q^3$ 的原函数、上端点减下端点，以及标量乘法。该结果与 Gaudron 等人式（2.18）报告的 neo-Hookean 弹性项一致。本构模型的大膨胀极限是压力阻力的平台值，不是材料断裂阈值。已破裂、有限尺寸、预应力或具有应变硬化的凝胶都可能偏离这一结果。[[R13]](../reference/sources.html#r13)
 
-**Symbols before Eq. (A-E06).** $p_{\mathrm{el}}$ is pressure resistance (Pa); $G_g>0$ is shear modulus (Pa); $R\geq R_{\mathrm{ref}}>0$ are cavity radii (m). $d/dR$ is the radius derivative (giving Pa m⁻¹ here); $\lim$ takes the positive large-radius-ratio limit; $\infty$ denotes an unbounded ratio.
+**Symbols before Eq. (A-E06).**
 
-**式（A-E06）前的符号定义。** $p_{\mathrm{el}}$ 为压力阻力（Pa）；$G_g>0$ 为剪切模量（Pa）；$R\geq R_{\mathrm{ref}}>0$ 为腔体半径（m）。$d/dR$ 表示半径导数（此处单位为 Pa m⁻¹）；$\lim$ 取正的大半径比极限；$\infty$ 表示比值无界。
+**式（A-E06）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $p_{\mathrm{el}}$ is pressure resistance (Pa)<br>$p_{\mathrm{el}}$ 为压力阻力（Pa） | $G_g>0$ is shear modulus (Pa)<br>$G_g>0$ 为剪切模量（Pa） |
+| $R\geq R_{\mathrm{ref}}>0$ — Current cavity radius (m)<br>$R\geq R_{\mathrm{ref}}>0$ — 当前腔体半径（m） | $R_{\mathrm{ref}}$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}$ — 无应力参考腔体半径（m） |
+
+**Conventions and conditions.** $d/dR$ is the radius derivative (giving Pa m⁻¹ here); $\lim$ takes the positive large-radius-ratio limit; $\infty$ denotes an unbounded ratio.
+
+**约定与条件。** $d/dR$ 表示半径导数（此处单位为 Pa m⁻¹）；$\lim$ 取正的大半径比极限；$\infty$ 表示比值无界。
 
 (A-E06) · Limiting-state and sign checks
 
@@ -209,9 +278,20 @@ Step 5 — integrate work against cavity volume. Pressure is conjugate to volume
 
 步骤 5——对腔体体积积分功。压力与体积变化共轭，而不是单独与半径变化共轭。乘以球面面积，代入式（A-E05），再逐项积分虚拟半径的各次幂。最后一项使用 $\xi^{-2}$ 的原函数 $-1/\xi$；保留两个端点，保证参考状态的功为零。
 
-**Symbols before Eq. (A-E07).** $W_g$ is stored elastic work relative to the unstretched state (J); $p_{\mathrm{el}}(\xi)$ is signed elastic resistance (Pa); $G_g>0$ is modulus (Pa). $R\geq R_{\mathrm{ref}}>0$ and dummy integration radius $\xi$ are lengths (m); $d\xi$ is its differential. $\pi$ is the circle constant; $[\ ]_{R_{\mathrm{ref}}}^{R}$ denotes endpoint subtraction.
+**Symbols before Eq. (A-E07).**
 
-**式（A-E07）前的符号定义。** $W_g$ 为相对未伸长状态的储存弹性功（J）；$p_{\mathrm{el}}(\xi)$ 为带符号弹性阻力（Pa）；$G_g>0$ 为模量（Pa）。$R\geq R_{\mathrm{ref}}>0$ 与虚拟积分半径 $\xi$ 为长度（m）；$d\xi$ 为其微分。$\pi$ 为圆周率；$[\ ]_{R_{\mathrm{ref}}}^{R}$ 表示端点相减。
+**式（A-E07）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $W_g$ is stored elastic work relative to the unstretched state (J)<br>$W_g$ 为相对未伸长状态的储存弹性功（J） | $p_{\mathrm{el}}(\xi)$ is signed elastic resistance (Pa)<br>$p_{\mathrm{el}}(\xi)$ 为带符号弹性阻力（Pa） |
+| $G_g>0$ is modulus (Pa)<br>$G_g>0$ 为模量（Pa） | $R\geq R_{\mathrm{ref}}>0$ — Current cavity radius (m)<br>$R\geq R_{\mathrm{ref}}>0$ — 当前腔体半径（m） |
+| $R_{\mathrm{ref}}$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}$ — 无应力参考腔体半径（m） | $d\xi$ is its differential (m)<br>$d\xi$ 为其微分（m） |
+| $\pi$ is the circle constant (dimensionless)<br>$\pi$ 为圆周率（无量纲） | $\xi$ — Dummy cavity-radius integration coordinate (m)<br>$\xi$ — 空腔半径积分哑坐标（m） |
+
+**Conventions and conditions.** $[\ ]_{R_{\mathrm{ref}}}^{R}$ denotes endpoint subtraction.
+
+**约定与条件。** $[\ ]_{R_{\mathrm{ref}}}^{R}$ 表示端点相减。
 
 (A-E07) · Exact work integral within the elastic model
 
@@ -230,9 +310,20 @@ In the final row the lower endpoint contributes $(5/3-2+1)R_{\mathrm{ref}}^3=2R_
 
 最后一行中，下端点贡献为 $(5/3-2+1)R_{\mathrm{ref}}^3=2R_{\mathrm{ref}}^3/3$，需将其减去。因此，即使压力出现平台，功仍可近似随腔体体积增长。单位为 Pa m³ = J。对闭式结果求导恰好得到压力乘面积；这个核查比单独比较压力大小更有力。
 
-**Symbols before Eq. (A-E08).** $W_g$ is elastic work (J), $p_{\mathrm{el}}$ resistance (Pa), $G_g>0$ shear modulus (Pa), $R,R_{\mathrm{ref}}>0$ cavity radii (m), and $\delta R=R-R_{\mathrm{ref}}$ a small radius change (m), with $|\delta R|/R_{\mathrm{ref}}\ll1$. $d/dR$ is differentiation in radius; $O$ denotes terms bounded by a constant times the indicated scale as that ratio tends to zero; $\pi$ is dimensionless.
+**Symbols before Eq. (A-E08).**
 
-**式（A-E08）前的符号定义。** $W_g$ 为弹性功（J），$p_{\mathrm{el}}$ 为阻力（Pa），$G_g>0$ 为剪切模量（Pa），$R,R_{\mathrm{ref}}>0$ 为腔体半径（m），$\delta R=R-R_{\mathrm{ref}}$ 为小半径变化（m），满足 $|\delta R|/R_{\mathrm{ref}}\ll1$。$d/dR$ 表示对半径求导；$O$ 表示当该比值趋于零时，被某常数乘所示尺度界定的项；$\pi$ 为无量纲量。
+**式（A-E08）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $W_g$ is elastic work (J)<br>$W_g$ 为弹性功（J） | $p_{\mathrm{el}}$ resistance (Pa)<br>$p_{\mathrm{el}}$ 为阻力（Pa） |
+| $G_g>0$ shear modulus (Pa)<br>$G_g>0$ 为剪切模量（Pa） | $R$ — Current cavity radius (m)<br>$R$ — 当前腔体半径（m） |
+| $R_{\mathrm{ref}}>0$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}>0$ — 无应力参考腔体半径（m） | $\delta R=R-R_{\mathrm{ref}}$ a small radius change (m), with $\|\delta R\|/R_{\mathrm{ref}}\ll1$<br>$\delta R=R-R_{\mathrm{ref}}$ 为小半径变化（m），满足 $\|\delta R\|/R_{\mathrm{ref}}\ll1$ |
+| $\pi$ is dimensionless<br>$\pi$ 为无量纲量 |  |
+
+**Conventions and conditions.** $d/dR$ is differentiation in radius; $O$ denotes terms bounded by a constant times the indicated scale as that ratio tends to zero.
+
+**约定与条件。** $d/dR$ 表示对半径求导；$O$ 表示当该比值趋于零时，被某常数乘所示尺度界定的项。
 
 (A-E08) · Work-conjugacy and small-deformation checks
 
@@ -259,9 +350,24 @@ Step 6 — choose a Kelvin–Voigt viscous contribution. Let the total stress ad
 
 步骤 6——选择 Kelvin–Voigt 黏性贡献。令总应力在弹性应力上加入 $2\eta_g\mathbf D$，其中 $\mathbf D$ 为对称速度梯度。不可压缩性及壁面／材料无滑移给出径向速度场。向外运动时，其径向梯度为负，切向拉伸为正。
 
-**Symbols before Eq. (A-E09).** $\mathbf T$, $\mathbf T^e$ and their radial/tangential components are total/elastic Cauchy stresses (Pa). $\eta_g\geq0$ is the chosen medium viscosity (Pa s); $\mathbf D$ and its components are strain rates (s⁻¹). $u_r$ is radial material speed (m s⁻¹); $r\geq R(t)>0$ is current position, $R$ wall radius (m), $t$ time (s), and $\dot R$ wall speed (m s⁻¹). $\partial/\partial r$ is the fixed-time spatial derivative.
+**Symbols before Eq. (A-E09).**
 
-**式（A-E09）前的符号定义。** $\mathbf T$、$\mathbf T^e$ 及其径向／切向分量为总／弹性 Cauchy 应力（Pa）。$\eta_g\geq0$ 为所选介质黏度（Pa s）；$\mathbf D$ 及其分量为应变率（s⁻¹）。$u_r$ 为径向材料速度（m s⁻¹）；$r\geq R(t)>0$ 为当前位置，$R$ 为壁面半径（m），$t$ 为时间（s），$\dot R$ 为泡壁速度（m s⁻¹）。$\partial/\partial r$ 为固定时刻的空间导数。
+**式（A-E09）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathbf T$ — Total Cauchy stress tensor (Pa)<br>$\mathbf T$ — 总柯西应力张量（Pa） | $\mathbf T^e$ — Elastic Cauchy stress tensor, tension positive (Pa)<br>$\mathbf T^e$ — 拉伸取正的弹性柯西应力张量（Pa） |
+| $\eta_g\geq0$ is the chosen medium viscosity (Pa s)<br>$\eta_g\geq0$ 为所选介质黏度（Pa s） | $\mathbf D$ — Material strain-rate tensor (s⁻¹)<br>$\mathbf D$ — 物质应变率张量（s⁻¹） |
+| $u_r$ is radial material speed (m s⁻¹)<br>$u_r$ 为径向材料速度（m s⁻¹） | $r\geq R(t)>0$ is current position (m)<br>$r\geq R(t)>0$ 为当前位置（m） |
+| $R$ wall radius (m)<br>$R$ 为壁面半径（m） | $t$ time (s)<br>$t$ 为时间（s） |
+| $\dot R$ wall speed (m s⁻¹)<br>$\dot R$ 为泡壁速度（m s⁻¹） | $T_{rr}$ — Total radial Cauchy stress (Pa)<br>$T_{rr}$ — 总径向柯西应力（Pa） |
+| $T_{\theta\theta}$ — Total polar tangential Cauchy stress (Pa)<br>$T_{\theta\theta}$ — 总极角切向柯西应力（Pa） | $T^e_{rr}$ — Radial elastic Cauchy stress (Pa)<br>$T^e_{rr}$ — 径向弹性柯西应力（Pa） |
+| $T^e_{\theta\theta}$ — Polar tangential elastic Cauchy stress (Pa)<br>$T^e_{\theta\theta}$ — 极角切向弹性柯西应力（Pa） | $D_{rr}$ — Radial strain-rate component (s⁻¹)<br>$D_{rr}$ — 径向应变率分量（s⁻¹） |
+| $D_{\theta\theta}$ — Polar tangential strain-rate component (s⁻¹)<br>$D_{\theta\theta}$ — 极角切向应变率分量（s⁻¹） | $D_{\phi\phi}$ — Azimuthal tangential strain-rate component (s⁻¹)<br>$D_{\phi\phi}$ — 方位角切向应变率分量（s⁻¹） |
+
+**Conventions and conditions.** $\partial/\partial r$ is the fixed-time spatial derivative.
+
+**约定与条件。** $\partial/\partial r$ 为固定时刻的空间导数。
 
 (A-E09) · Kelvin–Voigt closure and exact radial kinematics
 
@@ -280,9 +386,22 @@ Step 7 — integrate the radial momentum equation. The fixed-position time deriv
 
 步骤 7——积分径向动量方程。必须同时保留固定位置的时间偏导和对流导数。代入式（A-E09）后得到可积的加速度场。总壁面应力为 $-p_b+2\sigma/R$，总远场应力为 $-p_\infty$；应积分应力差，而不是猜测其符号。
 
-**Symbols before Eq. (A-E10).** $a_r$ is material radial acceleration (m s⁻²); $u_r$ radial speed (m s⁻¹); $r\geq R>0$ position and cavity radius (m); $t$ time (s); $\dot R$, $\ddot R$ wall speed/acceleration (m s⁻¹, m s⁻²). $\rho_g>0$ is density (kg m⁻³), $\eta_g\geq0$ viscosity (Pa s), and $T_{rr},T_{\theta\theta}$ total stresses (Pa). $\partial$ denotes fixed-other-coordinate derivatives and the integrals run through the exterior to infinity. Integrated acceleration times density has units Pa.
+**Symbols before Eq. (A-E10).**
 
-**式（A-E10）前的符号定义。** $a_r$ 为材料径向加速度（m s⁻²）；$u_r$ 为径向速度（m s⁻¹）；$r\geq R>0$ 为位置与腔体半径（m）；$t$ 为时间（s）；$\dot R$、$\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²）。$\rho_g>0$ 为密度（kg m⁻³），$\eta_g\geq0$ 为黏度（Pa s），$T_{rr},T_{\theta\theta}$ 为总应力（Pa）。$\partial$ 表示保持其他坐标不变的偏导，积分经外部材料到无穷远。积分后的加速度乘以密度的单位为 Pa。
+**式（A-E10）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $a_r$ is material radial acceleration (m s⁻²)<br>$a_r$ 为材料径向加速度（m s⁻²） | $u_r$ radial speed (m s⁻¹)<br>$u_r$ 为径向速度（m s⁻¹） |
+| $r\geq R>0$ — Current material radial position outside the cavity (m)<br>$r\geq R>0$ — 空腔外部的当前物质径向位置（m） | $t$ time (s)<br>$t$ 为时间（s） |
+| $\dot R$ — Cavity-wall radial velocity (m s⁻¹)<br>$\dot R$ — 空腔壁面径向速度（m s⁻¹） | $\ddot R$ wall speed/acceleration (m s⁻¹, m s⁻²)<br>$\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²） |
+| $\rho_g>0$ is density (kg m⁻³)<br>$\rho_g>0$ 为密度（kg m⁻³） | $\eta_g\geq0$ viscosity (Pa s)<br>$\eta_g\geq0$ 为黏度（Pa s） |
+| $T_{rr}$ — Total radial Cauchy stress (Pa)<br>$T_{rr}$ — 总径向柯西应力（Pa） | $T_{\theta\theta}$ — Total polar tangential Cauchy stress (Pa)<br>$T_{\theta\theta}$ — 总极角切向柯西应力（Pa） |
+| $R$ — Current cavity radius (m)<br>$R$ — 当前腔体半径（m） |  |
+
+**Conventions and conditions.** $\partial$ denotes fixed-other-coordinate derivatives and the integrals run through the exterior to infinity; Integrated acceleration times density has units Pa.
+
+**约定与条件。** $\partial$ 表示保持其他坐标不变的偏导，积分经外部材料到无穷远；积分后的加速度乘以密度的单位为 Pa。
 
 (A-E10) · Momentum law and explicitly evaluated integrals
 
@@ -297,9 +416,21 @@ Integrating the material acceleration and the viscous stress difference gives th
 
 对材料加速度与黏性应力差积分，得到各自不同的径向贡献。
 
-**Symbols before Eq. (A-E11).** $\rho_g$ is effective medium density (kg m⁻³); $R>0$ is the cavity radius (m); $\dot R$, $\ddot R$ are wall speed/acceleration (m s⁻¹, m s⁻²). $p_b$, $p_\infty$, $p_{\mathrm{el}}(R)$ are cavity, far-field and signed elastic pressures (Pa); $\sigma$ is tension (N m⁻¹); $\eta_g$ is the represented medium viscosity (Pa s). Each term has units Pa.
+**Symbols before Eq. (A-E11).**
 
-**式（A-E11）前的符号定义。** $\rho_g$ 为有效介质密度（kg m⁻³）；$R>0$ 为腔体半径（m）；$\dot R$、$\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²）。$p_b$、$p_\infty$、$p_{\mathrm{el}}(R)$ 为腔内、远场及带符号弹性压力（Pa）；$\sigma$ 为张力（N m⁻¹）；$\eta_g$ 为所描述介质的黏度（Pa s）。每一项的单位均为 Pa。
+**式（A-E11）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\rho_g$ is effective medium density (kg m⁻³)<br>$\rho_g$ 为有效介质密度（kg m⁻³） | $R>0$ is the cavity radius (m)<br>$R>0$ 为腔体半径（m） |
+| $\dot R$ — Cavity-wall radial velocity (m s⁻¹)<br>$\dot R$ — 空腔壁面径向速度（m s⁻¹） | $\ddot R$ — Cavity-wall radial acceleration (m s⁻²)<br>$\ddot R$ — 空腔壁面径向加速度（m s⁻²） |
+| $p_b$ — Cavity pressure (Pa)<br>$p_b$ — 空腔压力（Pa） | $p_\infty$ — Far-field pressure (Pa)<br>$p_\infty$ — 远场压力（Pa） |
+| $p_{\mathrm{el}}(R)$ — Signed elastic cavity-pressure resistance (Pa)<br>$p_{\mathrm{el}}(R)$ — 带符号弹性空腔压力阻力（Pa） | $\sigma$ is tension (N m⁻¹)<br>$\sigma$ 为张力（N m⁻¹） |
+| $\eta_g$ is the represented medium viscosity (Pa s)<br>$\eta_g$ 为所描述介质的黏度（Pa s） |  |
+
+**Conventions and conditions.** Each term has units Pa.
+
+**约定与条件。** 每一项的单位均为 Pa。
 
 (A-E11) · Derived intact-medium radial control
 
@@ -322,9 +453,23 @@ Step 8 — multiply by the volume-change rate to check conservation. The medium 
 
 步骤 8——乘以体积变化率，核查能量守恒。介质动能由径向速度场确定，弹性功导数已完成核查。黏性压力对加速度的作用具有符号，但它总会移除机械能，因为耗散包含速度平方。
 
-**Symbols before Eq. (A-E12).** $K_g,W_g,E_\sigma$ are medium kinetic energy, stored network work and interface energy (J); $\rho_g$ density (kg m⁻³); $R>0$ radius (m); $\dot R$ wall speed (m s⁻¹); $\sigma$ tension (N m⁻¹). $\dot V$ is cavity volume-change rate (m³ s⁻¹), $p_b,p_\infty$ pressures (Pa), $P_{\mathrm{dis}}$ nonnegative viscous power (W), $\eta_g\geq0$ viscosity (Pa s), $t$ time (s); $d/dt$ is the full time derivative and $\pi$ the circle constant.
+**Symbols before Eq. (A-E12).**
 
-**式（A-E12）前的符号定义。** $K_g,W_g,E_\sigma$ 为介质动能、储存网络功与界面能（J）；$\rho_g$ 为密度（kg m⁻³）；$R>0$ 为半径（m）；$\dot R$ 为泡壁速度（m s⁻¹）；$\sigma$ 为张力（N m⁻¹）。$\dot V$ 为腔体体积变化率（m³ s⁻¹），$p_b,p_\infty$ 为压力（Pa），$P_{\mathrm{dis}}$ 为非负黏性功率（W），$\eta_g\geq0$ 为黏度（Pa s），$t$ 为时间（s）；$d/dt$ 为全时间导数，$\pi$ 为圆周率。
+**式（A-E12）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $K_g$ — Surrounding-medium kinetic energy (J)<br>$K_g$ — 周围介质动能（J） | $W_g$ — Stored network elastic work (J)<br>$W_g$ — 储存的网络弹性功（J） |
+| $E_\sigma$ — Interface energy (J)<br>$E_\sigma$ — 界面能（J） | $\rho_g$ density (kg m⁻³)<br>$\rho_g$ 为密度（kg m⁻³） |
+| $R>0$ radius (m)<br>$R>0$ 为半径（m） | $\dot R$ wall speed (m s⁻¹)<br>$\dot R$ 为泡壁速度（m s⁻¹） |
+| $\sigma$ tension (N m⁻¹)<br>$\sigma$ 为张力（N m⁻¹） | $\dot V$ is cavity volume-change rate (m³ s⁻¹)<br>$\dot V$ 为腔体体积变化率（m³ s⁻¹） |
+| $p_b$ — Cavity pressure (Pa)<br>$p_b$ — 空腔压力（Pa） | $p_\infty$ — Far-field pressure (Pa)<br>$p_\infty$ — 远场压力（Pa） |
+| $P_{\mathrm{dis}}$ nonnegative viscous power (W)<br>$P_{\mathrm{dis}}$ 为非负黏性功率（W） | $\eta_g\geq0$ viscosity (Pa s)<br>$\eta_g\geq0$ 为黏度（Pa s） |
+| $t$ time (s)<br>$t$ 为时间（s） | $\pi$ the circle constant (dimensionless)<br>$\pi$ 为圆周率（无量纲） |
+
+**Conventions and conditions.** $d/dt$ is the full time derivative.
+
+**约定与条件。** $d/dt$ 为全时间导数。
 
 (A-E12) · Derived mechanical energy balance
 
@@ -347,9 +492,19 @@ All following numbers are declared teaching inputs, not measurements of a propos
 
 以下数值均为明确设定的教学输入，并非所提出 PFC 凝胶的实测值。取网络剪切模量 20 kPa、无应力半径 5 µm、当前半径 30 µm，以及密度 1000 kg m⁻³。先计算壁面阻力和储存功。壁面伸长六倍属于大变形；此时假设 neo-Hookean 网络保持完整，是需要材料验证的明确假设。
 
-**Symbols before Eq. (A-E13).** $p_{\mathrm{el}}$ is elastic resistance (Pa); $W_g$ is stored elastic work (J). The displayed 20000 is $G_g$ in Pa, 5 and 30 in the dimensionless ratios are both radii in µm, and $5\times10^{-6}$, $30\times10^{-6}$ are $R_{\mathrm{ref}},R$ in m. $\pi$ is dimensionless, $\mathrm{Pa}$ means pascal and $\mathrm J$ joule; $\times$ indicates multiplication.
+**Symbols before Eq. (A-E13).**
 
-**式（A-E13）前的符号定义。** $p_{\mathrm{el}}$ 为弹性阻力（Pa）；$W_g$ 为储存弹性功（J）。所示 20000 为以 Pa 表示的 $G_g$，无量纲比值中的 5 与 30 均为以 µm 表示的半径，$5\times10^{-6}$、$30\times10^{-6}$ 为以 m 表示的 $R_{\mathrm{ref}},R$。$\pi$ 为无量纲量，$\mathrm{Pa}$ 表示帕斯卡，$\mathrm J$ 表示焦耳；$\times$ 表示乘法。
+**式（A-E13）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $p_{\mathrm{el}}$ is elastic resistance (Pa)<br>$p_{\mathrm{el}}$ 为弹性阻力（Pa） | $W_g$ is stored elastic work (J)<br>$W_g$ 为储存弹性功（J） |
+| $\pi$ is dimensionless<br>$\pi$ 为无量纲量 | $G_g=20000$ — Substituted network shear modulus (Pa)<br>$G_g=20000$ — 代入的网络剪切模量（Pa） |
+| $R_{\mathrm{ref}}=5\times10^{-6}$ — Substituted reference cavity radius (m)<br>$R_{\mathrm{ref}}=5\times10^{-6}$ — 代入的参考空腔半径（m） | $R=30\times10^{-6}$ — Substituted current cavity radius (m)<br>$R=30\times10^{-6}$ — 代入的当前空腔半径（m） |
+
+**Conventions and conditions.** The numbers 5 and 30 in radius ratios both use µm. Powers denote numerical exponents; Pa means pascal, J joule, and the cross denotes multiplication..
+
+**约定与条件。** 半径比值中的数值 5 与 30 均采用 µm。幂表示数值指数；Pa 为帕斯卡，J 为焦耳，叉号表示乘法。。
 
 (A-E13) · Teaching-input substitution
 
@@ -368,9 +523,20 @@ For comparison, prescribe a constant net pressure-work scale of 100 kPa over exa
 
 作为比较，对完全相同的排开体积指定恒定净压力功尺度 100 kPa。这是功的尺度，而不是求解得到的气体压力历程。它给出 11.2574 nJ，其中计算出的网络储存占 40.1163%。余下 6.74133 nJ 是这个人为膨胀账本中，动能与表面能增量加损耗的剩余上限；它不是外部射流能量的预测值。只有一致地处理表面能增量后，初始表面能才能消去。
 
-**Symbols before Eq. (A-E14).** $\Delta V$ is expanded cavity volume (m³), $R=30$ µm and $R_{\mathrm{ref}}=5$ µm are radii; $\Delta p_w=100000$ Pa is a constant illustrative net pressure-work input. $W_{100}$ is the resulting work scale (J), with subscript 100 labeling its 100 kPa input, and $W_g=4.51603944$ nJ is stored network work. $\pi$ is dimensionless; nJ means $10^{-9}$ J.
+**Symbols before Eq. (A-E14).**
 
-**式（A-E14）前的符号定义。** $\Delta V$ 为腔体膨胀体积（m³），$R=30$ µm、$R_{\mathrm{ref}}=5$ µm 为半径；$\Delta p_w=100000$ Pa 为恒定的示例净压力功输入。$W_{100}$ 为由此得到的功尺度（J），下标 100 标记其 100 kPa 输入，$W_g=4.51603944$ nJ 为储存网络功。$\pi$ 为无量纲量；nJ 表示 $10^{-9}$ J。
+**式（A-E14）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Delta V$ is expanded cavity volume (m³)<br>$\Delta V$ 为腔体膨胀体积（m³） | $R=30$ µm (m)<br>$R=30$ µm（m） |
+| $R_{\mathrm{ref}}=5$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}=5$ — 无应力参考腔体半径（m） | $\Delta p_w=100000$ Pa is a constant illustrative net pressure-work input<br>$\Delta p_w=100000$ Pa 为恒定的示例净压力功输入 |
+| $W_{100}$ is the resulting work scale (J), with subscript 100 labeling its 100 kPa input<br>$W_{100}$ 为由此得到的功尺度（J），下标 100 标记其 100 kPa 输入 | $W_g=4.51603944$ nJ is stored network work (J)<br>$W_g=4.51603944$ nJ 为储存网络功（J） |
+| $\pi$ is dimensionless<br>$\pi$ 为无量纲量 |  |
+
+**Conventions and conditions.** nJ means $10^{-9}$ J.
+
+**约定与条件。** nJ 表示 $10^{-9}$ J。
 
 (A-E14) · Finite work-budget comparison
 
@@ -389,9 +555,19 @@ A separate sign calculation uses an illustrative viscosity 0.010 Pa s, current r
 
 另一个符号计算采用示例黏度 0.010 Pa s、当前半径 30 µm，以及向内泡壁速度 −10 m s⁻¹。其方程右侧带符号压力贡献为 +13.3333 kPa，但不可逆功率仍为 +1.50796 mW。塌缩时阻力为正不代表产生能量。这些瞬时值需要结合时间历程，才能积分总耗散。
 
-**Symbols before Eq. (A-E15).** $p_{\mathrm{visc,RHS}}$ is the signed viscous pressure term on the radial equation's right-hand side (Pa); RHS labels that side. $P_{\mathrm{dis}}$ is dissipated power (W), $\eta_g=0.010$ Pa s is illustrative viscosity, $R=30\times10^{-6}$ m radius, $\dot R=-10$ m s⁻¹ wall speed, and $\pi$ the circle constant. The number 100 is the squared speed in m² s⁻².
+**Symbols before Eq. (A-E15).**
 
-**式（A-E15）前的符号定义。** $p_{\mathrm{visc,RHS}}$ 为径向方程右侧的带符号黏性压力项（Pa）；RHS 标记右侧。$P_{\mathrm{dis}}$ 为耗散功率（W），$\eta_g=0.010$ Pa s 为示例黏度，$R=30\times10^{-6}$ m 为半径，$\dot R=-10$ m s⁻¹ 为泡壁速度，$\pi$ 为圆周率。数值 100 为以 m² s⁻² 表示的速度平方。
+**式（A-E15）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $p_{\mathrm{visc,RHS}}$ is the signed viscous pressure term on the radial equation's right-hand side (Pa)<br>$p_{\mathrm{visc,RHS}}$ 为径向方程右侧的带符号黏性压力项（Pa） | $P_{\mathrm{dis}}$ is dissipated power (W)<br>$P_{\mathrm{dis}}$ 为耗散功率（W） |
+| $\eta_g=0.010$ Pa s is illustrative viscosity<br>$\eta_g=0.010$ Pa s 为示例黏度 | $R=30\times10^{-6}$ m radius<br>$R=30\times10^{-6}$ m 为半径 |
+| $\dot R=-10$ m s⁻¹ wall speed<br>$\dot R=-10$ m s⁻¹ 为泡壁速度 | $\pi$ the circle constant (dimensionless)<br>$\pi$ 为圆周率（无量纲） |
+
+**Conventions and conditions.** RHS labels that side; The number 100 is the squared speed in m² s⁻².
+
+**约定与条件。** RHS 标记右侧；数值 100 为以 m² s⁻² 表示的速度平方。
 
 (A-E15) · Signed-pressure and positive-loss check
 
@@ -414,9 +590,18 @@ Step 9 — compare network memory to event duration. The Deborah number uses an 
 
 步骤 9——比较网络记忆与事件持续时间。Deborah 数使用独立确定的应力松弛时间。数值大表示应力记忆在事件期间持续存在，并不表示壁面无限刚硬。数值小允许发生松弛，但不会消除几何约束，也不能证明溶剂迅速排出。若存在松弛谱，可能需要多个时间而不是一个。
 
-**Symbols before Eq. (A-E16).** $\mathrm{De}$ is the dimensionless event Deborah number; $\tau_{\mathrm{rel}}>0$ is an independently identified network stress-relaxation time (s), and $\tau_e>0$ is the specified cavity/jet event duration (s). Subscripts rel and e label relaxation and event respectively.
+**Symbols before Eq. (A-E16).**
 
-**式（A-E16）前的符号定义。** $\mathrm{De}$ 为无量纲事件 Deborah 数；$\tau_{\mathrm{rel}}>0$ 为独立确定的网络应力松弛时间（s），$\tau_e>0$ 为指定的腔体／射流事件持续时间（s）。下标 rel、e 分别表示松弛与事件。
+**式（A-E16）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathrm{De}$ is the dimensionless event Deborah number<br>$\mathrm{De}$ 为无量纲事件 Deborah 数 | $\tau_{\mathrm{rel}}>0$ is an independently identified network stress-relaxation time (s)<br>$\tau_{\mathrm{rel}}>0$ 为独立确定的网络应力松弛时间（s） |
+| $\tau_e>0$ is the specified cavity/jet event duration (s)<br>$\tau_e>0$ 为指定的腔体／射流事件持续时间（s） |  |
+
+**Conventions and conditions.** Subscripts rel and e label relaxation and event respectively.
+
+**约定与条件。** 下标 rel、e 分别表示松弛与事件。
 
 (A-E16) · Response-time definition
 
@@ -435,9 +620,20 @@ Do not silently call $\eta_g/G_g$ a Kelvin–Voigt stress-relaxation time. In th
 
 不要默默把 $\eta_g/G_g$ 称作 Kelvin–Voigt 应力松弛时间。在其线性剪切版本中，保持应变不变时，速率项消失后弹性应力保持恒定。若解除外加应力，才会产生指数式应变恢复，其时间为迟滞时间。这一区分可避免给球形黏壶模型拟合一个凭空假设的松弛机制。
 
-**Symbols before Eq. (A-E17).** $T_{\mathrm{sh}}$ is shear stress (Pa); $\gamma$ is dimensionless small shear strain, $\dot\gamma$ its rate (s⁻¹), $G_g>0$ shear modulus (Pa), and $\eta_g>0$ viscosity (Pa s). $t\geq0$ is time after release (s), $\gamma_0$ initial strain, $\tau_{\mathrm{KV}}$ the Kelvin–Voigt zero-stress recovery/retardation time (s), and $\exp$ the exponential of a dimensionless argument. sh and KV are labels, not multiplication.
+**Symbols before Eq. (A-E17).**
 
-**式（A-E17）前的符号定义。** $T_{\mathrm{sh}}$ 为剪切应力（Pa）；$\gamma$ 为无量纲小剪切应变，$\dot\gamma$ 为其速率（s⁻¹），$G_g>0$ 为剪切模量（Pa），$\eta_g>0$ 为黏度（Pa s）。$t\geq0$ 为卸载后的时间（s），$\gamma_0$ 为初始应变，$\tau_{\mathrm{KV}}$ 为 Kelvin–Voigt 零应力恢复／迟滞时间（s），$\exp$ 表示对无量纲参数取指数。sh 与 KV 是标签，不是乘法。
+**式（A-E17）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $T_{\mathrm{sh}}$ is shear stress (Pa)<br>$T_{\mathrm{sh}}$ 为剪切应力（Pa） | $\gamma$ is dimensionless small shear strain<br>$\gamma$ 为无量纲小剪切应变 |
+| $\dot\gamma$ its rate (s⁻¹)<br>$\dot\gamma$ 为其速率（s⁻¹） | $G_g>0$ shear modulus (Pa)<br>$G_g>0$ 为剪切模量（Pa） |
+| $\eta_g>0$ viscosity (Pa s)<br>$\eta_g>0$ 为黏度（Pa s） | $t\geq0$ is time after release (s)<br>$t\geq0$ 为卸载后的时间（s） |
+| $\gamma_0$ initial strain (dimensionless)<br>$\gamma_0$ 为初始应变（无量纲） | $\tau_{\mathrm{KV}}$ the Kelvin–Voigt zero-stress recovery/retardation time (s), and $\exp$ the exponential of a dimensionless argument<br>$\tau_{\mathrm{KV}}$ 为 Kelvin–Voigt 零应力恢复／迟滞时间（s），$\exp$ 表示对无量纲参数取指数 |
+
+**Conventions and conditions.** sh and KV are labels, not multiplication.
+
+**约定与条件。** sh 与 KV 是标签，不是乘法。
 
 (A-E17) · Linear constitutive check for the chosen dashpot
 
@@ -456,9 +652,21 @@ Step 10 — test spatial communication. A small-strain shear speed estimate conc
 
 步骤 10——检验空间传播。小应变剪切波速估计涉及指定长度上的网络／剪切变形；理想液体塌缩参考则涉及指定最大半径上的液体径向惯性。比较时采用相同的 30 µm 长度，但保持两个物理模型的区别。所得比值为 2.44464：整个支撑体的剪切平衡并不自动比该液体塌缩过程快。这提示需关注非径向支撑运动，而不是证明所推导球形模型完全忽略了惯性。
 
-**Symbols before Eq. (A-E18).** $c_s$ is a small-strain shear speed estimate (m s⁻¹), $G_g=20000$ Pa modulus, $\rho_g=1000$ kg m⁻³ medium density, $L_g=30$ µm comparison length, and $t_s$ its shear crossing time (s). $t_{c,\mathrm{liq}}$ is ideal empty-liquid-cavity collapse time (s), $R_{\max}=30$ µm maximum radius, $\rho_l=1000$ kg m⁻³ liquid density, and $\Delta p_c=100000$ Pa collapse pressure gap. The coefficient is the Rayleigh integral; liq labels the liquid control, $\simeq$ is an estimate, and µs means $10^{-6}$ s.
+**Symbols before Eq. (A-E18).**
 
-**式（A-E18）前的符号定义。** $c_s$ 为小应变剪切波速估计（m s⁻¹），$G_g=20000$ Pa 为模量，$\rho_g=1000$ kg m⁻³ 为介质密度，$L_g=30$ µm 为比较长度，$t_s$ 为该长度上的剪切传播时间（s）。$t_{c,\mathrm{liq}}$ 为理想空液体腔的塌缩时间（s），$R_{\max}=30$ µm 为最大半径，$\rho_l=1000$ kg m⁻³ 为液体密度，$\Delta p_c=100000$ Pa 为塌缩压力差。系数来自 Rayleigh 积分；liq 标记液体控制模型，$\simeq$ 表示估计，µs 表示 $10^{-6}$ s。
+**式（A-E18）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $c_s$ is a small-strain shear speed estimate (m s⁻¹)<br>$c_s$ 为小应变剪切波速估计（m s⁻¹） | $G_g=20000$ Pa modulus<br>$G_g=20000$ Pa 为模量 |
+| $\rho_g=1000$ kg m⁻³ medium density<br>$\rho_g=1000$ kg m⁻³ 为介质密度 | $L_g=30$ µm comparison length<br>$L_g=30$ µm 为比较长度 |
+| $t_s$ its shear crossing time (s)<br>$t_s$ 为该长度上的剪切传播时间（s） | $t_{c,\mathrm{liq}}$ is ideal empty-liquid-cavity collapse time (s)<br>$t_{c,\mathrm{liq}}$ 为理想空液体腔的塌缩时间（s） |
+| $R_{\max}=30$ µm maximum radius<br>$R_{\max}=30$ µm 为最大半径 | $\rho_l=1000$ kg m⁻³ liquid density<br>$\rho_l=1000$ kg m⁻³ 为液体密度 |
+| $\Delta p_c=100000$ Pa collapse pressure gap<br>$\Delta p_c=100000$ Pa 为塌缩压力差 |  |
+
+**Conventions and conditions.** The coefficient is the Rayleigh integral; liq labels the liquid control, $\simeq$ is an estimate, and µs means $10^{-6}$ s.
+
+**约定与条件。** 系数来自 Rayleigh 积分；liq 标记液体控制模型，$\simeq$ 表示估计，µs 表示 $10^{-6}$ s。
 
 (A-E18) · Teaching response-time comparison
 
@@ -477,9 +685,21 @@ Low shear modulus does not imply low rapid-compression resistance. In a small-st
 
 低剪切模量不意味着快速压缩阻力小。在小应变可压缩扩展中，纵向运动还涉及体积模量。当声传播时间或较高泡壁速度变得关键时，必须恢复可压缩性。不可压缩球形控制模型采用了纵向传播的极限理想化；它自身不能预测冲击波峰值或有限传播到达时间。
 
-**Symbols before Eq. (A-E19).** $c_L$ is longitudinal wave speed estimate (m s⁻¹) in a separate small-strain compressible extension; $K_g^{\mathrm{bulk}}>0$ is bulk modulus (Pa), distinctly labeled from kinetic energy $K_g$; $G_g$ shear modulus (Pa), $\rho_g$ density (kg m⁻³), $L_g$ length (m), $t_L$ longitudinal crossing time (s), $M_w$ dimensionless wall Mach number, and $\dot R$ wall speed (m s⁻¹). $|\ |$ takes absolute value; $\simeq$ denotes an estimate.
+**Symbols before Eq. (A-E19).**
 
-**式（A-E19）前的符号定义。** $c_L$ 为独立小应变可压缩扩展中的纵波波速估计（m s⁻¹）；$K_g^{\mathrm{bulk}}>0$ 为体积模量（Pa），其明确标签使之区别于动能 $K_g$；$G_g$ 为剪切模量（Pa），$\rho_g$ 为密度（kg m⁻³），$L_g$ 为长度（m），$t_L$ 为纵波传播时间（s），$M_w$ 为无量纲泡壁 Mach 数，$\dot R$ 为泡壁速度（m s⁻¹）。$|\ |$ 表示绝对值；$\simeq$ 表示估计。
+**式（A-E19）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $c_L$ is longitudinal wave speed estimate (m s⁻¹) in a separate small-strain compressible extension<br>$c_L$ 为独立小应变可压缩扩展中的纵波波速估计（m s⁻¹） | $K_g^{\mathrm{bulk}}>0$ is bulk modulus (Pa), distinctly labeled from kinetic energy $K_g$<br>$K_g^{\mathrm{bulk}}>0$ 为体积模量（Pa），其明确标签使之区别于动能 $K_g$ |
+| $G_g$ shear modulus (Pa)<br>$G_g$ 为剪切模量（Pa） | $\rho_g$ density (kg m⁻³)<br>$\rho_g$ 为密度（kg m⁻³） |
+| $L_g$ length (m)<br>$L_g$ 为长度（m） | $t_L$ longitudinal crossing time (s)<br>$t_L$ 为纵波传播时间（s） |
+| $M_w$ dimensionless wall Mach number<br>$M_w$ 为无量纲泡壁 Mach 数 | $\dot R$ wall speed (m s⁻¹)<br>$\dot R$ 为泡壁速度（m s⁻¹） |
+| $K_g$ — Surrounding-medium kinetic energy (J)<br>$K_g$ — 周围介质动能（J） |  |
+
+**Conventions and conditions.** $|\ |$ takes absolute value; $\simeq$ denotes an estimate.
+
+**约定与条件。** $|\ |$ 表示绝对值；$\simeq$ 表示估计。
 
 (A-E19) · Separate compressibility diagnostic
 
@@ -498,9 +718,21 @@ Step 11 — derive the drainage estimate from a separate two-phase approximation
 
 步骤 11——从独立的两相近似推导排水估计。对均匀凝胶中的小扰动，采用 Darcy 相对溶剂通量和恒定储存模量。溶剂守恒随后给出扩散方程。这并不会自动将大应变完整腔体规律扩展到蒸气界面附近的多孔流动。
 
-**Symbols before Eq. (A-E20).** $\mathbf j_l$ is relative solvent volume flux (m s⁻¹); $k_{\mathrm{perm}}>0$ permeability (m²), $\mu_l>0$ solvent viscosity (Pa s), $p_{\mathrm{pore}}$ incremental pore pressure (Pa), $M_d>0$ storage/constrained drained modulus adopted for this scalar approximation (Pa), $t$ time (s), $D_{\mathrm{poro}}$ diffusion coefficient (m² s⁻¹), $L_g$ drainage length (m), and $t_{\mathrm{poro}}$ drainage time estimate (s). $\nabla$, $\nabla\cdot$, $\nabla^2$ are gradient, divergence and Laplacian in space; the dot here is the vector divergence operator, not an equation separator; $\sim$ means scaling estimate.
+**Symbols before Eq. (A-E20).**
 
-**式（A-E20）前的符号定义。** $\mathbf j_l$ 为相对溶剂体积通量（m s⁻¹）；$k_{\mathrm{perm}}>0$ 为渗透率（m²），$\mu_l>0$ 为溶剂黏度（Pa s），$p_{\mathrm{pore}}$ 为增量孔隙压力（Pa），$M_d>0$ 为该标量近似采用的储存／受约束排水模量（Pa），$t$ 为时间（s），$D_{\mathrm{poro}}$ 为扩散系数（m² s⁻¹），$L_g$ 为排水长度（m），$t_{\mathrm{poro}}$ 为排水时间估计（s）。$\nabla$、$\nabla\cdot$、$\nabla^2$ 为空间梯度、散度和 Laplace 算子；此处点号属于向量散度算子，不是方程分隔符；$\sim$ 表示尺度估计。
+**式（A-E20）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathbf j_l$ is relative solvent volume flux (m s⁻¹)<br>$\mathbf j_l$ 为相对溶剂体积通量（m s⁻¹） | $k_{\mathrm{perm}}>0$ permeability (m²)<br>$k_{\mathrm{perm}}>0$ 为渗透率（m²） |
+| $\mu_l>0$ solvent viscosity (Pa s)<br>$\mu_l>0$ 为溶剂黏度（Pa s） | $p_{\mathrm{pore}}$ incremental pore pressure (Pa)<br>$p_{\mathrm{pore}}$ 为增量孔隙压力（Pa） |
+| $M_d>0$ storage/constrained drained modulus adopted for this scalar approximation (Pa)<br>$M_d>0$ 为该标量近似采用的储存／受约束排水模量（Pa） | $t$ time (s)<br>$t$ 为时间（s） |
+| $D_{\mathrm{poro}}$ diffusion coefficient (m² s⁻¹)<br>$D_{\mathrm{poro}}$ 为扩散系数（m² s⁻¹） | $L_g$ drainage length (m)<br>$L_g$ 为排水长度（m） |
+| $t_{\mathrm{poro}}$ drainage time estimate (s)<br>$t_{\mathrm{poro}}$ 为排水时间估计（s） |  |
+
+**Conventions and conditions.** $\nabla$, $\nabla\cdot$, $\nabla^2$ are gradient, divergence and Laplacian in space; the dot here is the vector divergence operator, not an equation separator; $\sim$ means scaling estimate.
+
+**约定与条件。** $\nabla$、$\nabla\cdot$、$\nabla^2$ 为空间梯度、散度和 Laplace 算子；此处点号属于向量散度算子，不是方程分隔符；$\sim$ 表示尺度估计。
 
 (A-E20) · Darcy/storage approximation and derived diffusion
 
@@ -557,9 +789,21 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (A-E21).** $\rho_g$ is effective exterior density (kg m⁻³); $R>0$ cavity radius (m); $\dot R,\ddot R$ wall speed/acceleration (m s⁻¹, m s⁻²); $p_b,p_\infty,p_{\mathrm{el}}$ cavity, far-field and elastic pressures (Pa); $\sigma$ tension (N m⁻¹); $\eta_g$ represented medium viscosity (Pa s). This quoted original formula has the intact spherical, no-slip assumptions of Eq. (A-E11).
+**Symbols before Eq. (A-E21).**
 
-**式（A-E21）前的符号定义。** $\rho_g$ 为外部有效密度（kg m⁻³）；$R>0$ 为腔体半径（m）；$\dot R,\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²）；$p_b,p_\infty,p_{\mathrm{el}}$ 为腔内、远场及弹性压力（Pa）；$\sigma$ 为张力（N m⁻¹）；$\eta_g$ 为所描述介质的黏度（Pa s）。这一引用的原始公式采用式（A-E11）的完整球形、无滑移假设。
+**式（A-E21）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\rho_g$ is effective exterior density (kg m⁻³)<br>$\rho_g$ 为外部有效密度（kg m⁻³） | $R>0$ cavity radius (m)<br>$R>0$ 为腔体半径（m） |
+| $\dot R$ — Cavity-wall radial velocity (m s⁻¹)<br>$\dot R$ — 空腔壁面径向速度（m s⁻¹） | $\ddot R$ — Cavity-wall radial acceleration (m s⁻²)<br>$\ddot R$ — 空腔壁面径向加速度（m s⁻²） |
+| $p_b$ — Cavity pressure (Pa)<br>$p_b$ — 空腔压力（Pa） | $p_\infty$ — Far-field pressure (Pa)<br>$p_\infty$ — 远场压力（Pa） |
+| $p_{\mathrm{el}}$ — Signed elastic cavity resistance (Pa)<br>$p_{\mathrm{el}}$ — 带符号弹性腔体阻力（Pa） | $\sigma$ tension (N m⁻¹)<br>$\sigma$ 为张力（N m⁻¹） |
+| $\eta_g$ represented medium viscosity (Pa s)<br>$\eta_g$ 为所描述介质的黏度（Pa s） |  |
+
+**Conventions and conditions.** This quoted original formula has the intact spherical, no-slip assumptions of Eq; (A-E11).
+
+**约定与条件。** 这一引用的原始公式采用式（A-E11）的完整球形、无滑移假设。
 
 (A-E21) · Original radial control recalled
 
@@ -606,9 +850,19 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (A-E22).** $p_{\mathrm{el}}$ is elastic resistance (Pa), $W_g$ stored work (J), $G_g>0$ shear modulus (Pa), and $R\geq R_{\mathrm{ref}}>0$ current/reference cavity radii (m); $\pi$ is dimensionless. These quote Eqs. (A-E05) and (A-E07) for the intact infinite incompressible neo-Hookean medium.
+**Symbols before Eq. (A-E22).**
 
-**式（A-E22）前的符号定义。** $p_{\mathrm{el}}$ 为弹性阻力（Pa），$W_g$ 为储存功（J），$G_g>0$ 为剪切模量（Pa），$R\geq R_{\mathrm{ref}}>0$ 为当前／参考腔体半径（m）；$\pi$ 为无量纲量。这些公式引用式（A-E05）与（A-E07），适用于完整、无限、不可压缩 neo-Hookean 介质。
+**式（A-E22）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $p_{\mathrm{el}}$ is elastic resistance (Pa)<br>$p_{\mathrm{el}}$ 为弹性阻力（Pa） | $W_g$ stored work (J)<br>$W_g$ 为储存功（J） |
+| $G_g>0$ shear modulus (Pa)<br>$G_g>0$ 为剪切模量（Pa） | $R\geq R_{\mathrm{ref}}>0$ — Current cavity radius (m)<br>$R\geq R_{\mathrm{ref}}>0$ — 当前腔体半径（m） |
+| $R_{\mathrm{ref}}$ — Stress-free reference cavity radius (m)<br>$R_{\mathrm{ref}}$ — 无应力参考腔体半径（m） | $\pi$ is dimensionless<br>$\pi$ 为无量纲量 |
+
+**Conventions and conditions.** These quote Eqs; (A-E05) and (A-E07) for the intact infinite incompressible neo-Hookean medium.
+
+**约定与条件。** 这些公式引用式（A-E05）与（A-E07），适用于完整、无限、不可压缩 neo-Hookean 介质。
 
 (A-E22) · Original pressure and work formulas recalled
 
@@ -655,9 +909,22 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (A-E23).** $\mathrm{De}$ is dimensionless event Deborah number, $\tau_{\mathrm{rel}}$ measured stress-memory time, $\tau_e$ event duration and $t_s,t_{\mathrm{poro}}$ shear/drainage estimates (s). $L_g$ is a specified length (m), $G_g$ shear modulus (Pa), $\rho_g$ density (kg m⁻³), $\mu_l$ solvent viscosity (Pa s), $k_{\mathrm{perm}}$ permeability (m²), and $M_d$ adopted drained storage modulus (Pa). $\sim$ denotes scaling and the square root is the small-strain shear-speed estimate. These recall Eqs. (A-E16), (A-E18) and (A-E20).
+**Symbols before Eq. (A-E23).**
 
-**式（A-E23）前的符号定义。** $\mathrm{De}$ 为无量纲事件 Deborah 数，$\tau_{\mathrm{rel}}$ 为实测应力记忆时间，$\tau_e$ 为事件持续时间，$t_s,t_{\mathrm{poro}}$ 为剪切／排水时间估计（s）。$L_g$ 为指定长度（m），$G_g$ 为剪切模量（Pa），$\rho_g$ 为密度（kg m⁻³），$\mu_l$ 为溶剂黏度（Pa s），$k_{\mathrm{perm}}$ 为渗透率（m²），$M_d$ 为所采用的排水储存模量（Pa）。$\sim$ 表示尺度关系，平方根为小应变剪切波速估计。这些公式引用式（A-E16）、（A-E18）、（A-E20）。
+**式（A-E23）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathrm{De}$ is dimensionless event Deborah number<br>$\mathrm{De}$ 为无量纲事件 Deborah 数 | $\tau_{\mathrm{rel}}$ measured stress-memory time (s)<br>$\tau_{\mathrm{rel}}$ 为实测应力记忆时间（s） |
+| $\tau_e$ event duration (s)<br>$\tau_e$ 为事件持续时间（s） | $t_s$ — Shear crossing-time estimate (s)<br>$t_s$ — 剪切跨越时间估计（s） |
+| $t_{\mathrm{poro}}$ — Drainage-time estimate (s)<br>$t_{\mathrm{poro}}$ — 排水时间估计（s） | $L_g$ is a specified length (m)<br>$L_g$ 为指定长度（m） |
+| $G_g$ shear modulus (Pa)<br>$G_g$ 为剪切模量（Pa） | $\rho_g$ density (kg m⁻³)<br>$\rho_g$ 为密度（kg m⁻³） |
+| $\mu_l$ solvent viscosity (Pa s)<br>$\mu_l$ 为溶剂黏度（Pa s） | $k_{\mathrm{perm}}$ permeability (m²)<br>$k_{\mathrm{perm}}$ 为渗透率（m²） |
+| $M_d$ adopted drained storage modulus (Pa)<br>$M_d$ 为所采用的排水储存模量（Pa） |  |
+
+**Conventions and conditions.** $\sim$ denotes scaling and the square root is the small-strain shear-speed estimate; These recall Eqs; (A-E16), (A-E18) and (A-E20).
+
+**约定与条件。** $\sim$ 表示尺度关系，平方根为小应变剪切波速估计；这些公式引用式（A-E16）、（A-E18）、（A-E20）。
 
 (A-E23) · Original event-response formulas recalled
 
@@ -672,9 +939,21 @@ Three timescale comparisons constrain three different physical assumptions.
 
 三个时间尺度比较分别约束三个不同的物理假设。
 
-**Symbols before Eq. (A-E24).** $\mathbf J_{\mathrm{target}}$ is vector impulse delivered to the specified target (N s); $\mathbf t_{\mathrm{load}}$ is external load traction (Pa), $A_t$ target loading area (m²), and $t_0,t_1$ defined start/end times (s). $W_{\mathrm{sep,min}}$ is necessary fracture-work budget (J), $A_{\mathrm{rel}}$ intended released interface area (m²), and $\Gamma_c$ relevant interface fracture energy (J m⁻²), conditional on mode and rate. $dA,dt$ are area/time measures and $\int$ is definite integration. Neither integral alone proves crack onset or intact landing.
+**Symbols before Eq. (A-E24).**
 
-**式（A-E24）前的符号定义。** $\mathbf J_{\mathrm{target}}$ 为传递到指定目标的向量冲量（N s）；$\mathbf t_{\mathrm{load}}$ 为外加载荷牵引（Pa），$A_t$ 为目标受载面积（m²），$t_0,t_1$ 为明确的起止时间（s）。$W_{\mathrm{sep,min}}$ 为必要断裂功预算（J），$A_{\mathrm{rel}}$ 为目标释放界面面积（m²），$\Gamma_c$ 为相关界面断裂能（J m⁻²），取决于模态与速率。$dA,dt$ 为面积／时间测度，$\int$ 为定积分。这两个积分都不能独自证明裂纹起始或完整落点。
+**式（A-E24）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathbf J_{\mathrm{target}}$ is vector impulse delivered to the specified target (N s)<br>$\mathbf J_{\mathrm{target}}$ 为传递到指定目标的向量冲量（N s） | $\mathbf t_{\mathrm{load}}$ is external load traction (Pa)<br>$\mathbf t_{\mathrm{load}}$ 为外加载荷牵引（Pa） |
+| $A_t$ target loading area (m²)<br>$A_t$ 为目标受载面积（m²） | $t_0$ — Specified event start time (s)<br>$t_0$ — 指定事件开始时刻（s） |
+| $t_1$ — Specified event end time (s)<br>$t_1$ — 指定事件结束时刻（s） | $W_{\mathrm{sep,min}}$ is necessary fracture-work budget (J)<br>$W_{\mathrm{sep,min}}$ 为必要断裂功预算（J） |
+| $A_{\mathrm{rel}}$ intended released interface area (m²)<br>$A_{\mathrm{rel}}$ 为目标释放界面面积（m²） | $\Gamma_c$ relevant interface fracture energy (J m⁻²), conditional on mode and rate<br>$\Gamma_c$ 为相关界面断裂能（J m⁻²），取决于模态与速率 |
+| $dA$ — Area integration element (m²)<br>$dA$ — 面积积分微元（m²） | $dt$ — Time integration element (s)<br>$dt$ — 时间积分微元（s） |
+
+**Conventions and conditions.** Neither integral alone proves crack onset or intact landing.
+
+**约定与条件。** 这两个积分都不能独自证明裂纹起始或完整落点。
 
 (A-E24) · Original load and interface-work accounting
 

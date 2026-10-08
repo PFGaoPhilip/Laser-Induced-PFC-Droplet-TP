@@ -34,9 +34,17 @@ Each chapter and Appendix A ends with exactly three questions, detailed formula-
 ## Editable source and checks
 ## 可编辑来源与核验
 
+Before every equation, individual bilingual definitions are arranged two per row with a continuous vertical divider. Narrow screens show one variable per row. Each entry states its own meaning and units; conventions and applicability conditions follow the table.
+
+每个公式前均提供独立的英中符号定义，宽屏每行两项，以连续竖线隔开；窄屏每行一项。各项分别说明含义与单位，表后保留约定及适用条件。
+
 `text/course.md` retains complete bilingual prose and LaTeX formula text. `content/chapter01.py` through `chapter05.py` contain editable chapter sources. `verification/equations.json` preserves local symbol declarations and physical-variable maps for every display. Chapter checks and integration audits are included separately from experimental validation.
 
 `text/course.md` 保留完整双语正文及 LaTeX 公式文本。`content/chapter01.py` 至 `chapter05.py` 为可编辑章节来源。`verification/equations.json` 保存每个公式前的符号定义与物理变量图信息。各章核验与整合审计均与实验验证明确区分。
+
+`content/equation_symbol_rows.json` contains the reviewed individual entries, their units, and the original bilingual fragments for traceability. The builder renders these records directly.
+
+`content/equation_symbol_rows.json` 保存核验后的独立条目、对应单位及用于追溯的原始英中文本片段；网页构建器直接渲染这些记录。
 
 To rebuild, install Python with BeautifulSoup4 and Markdownify, and use Node.js. The numerical chapter checks also use SciPy and SymPy. Run the commands below from this folder. KaTeX is bundled with its license. Set `NODE_BINARY` only when Node is not on the normal executable path.
 

@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 528,
-      "sha256": "c18604b9bedfa885264498c8daa05ba9563fd05ef74295eaa454636420880f4d"
+      "bytes": 561,
+      "sha256": "fd83920e7587df8bd6af77481de71f0fff98f74cff8a58773901d7a5f9335c08"
     },
     {
       "path": ".nojekyll",
@@ -14,13 +14,13 @@
     },
     {
       "path": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1181167,
-      "sha256": "e3cb1eafd86e4f292f3f2949880e198f24fcd627b398d63986ed6f12fdc39305"
+      "bytes": 1273579,
+      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
     },
     {
       "path": "assets/bilingual-terms.css",
       "bytes": 38891,
-      "sha256": "ba7e8fee472b6285bcaf856a6ebcd1bcb654db237198c49fe9e066ec38265893"
+      "sha256": "47c8d9b9180faa838a2f198b8ca5fb3c64435d49e6ccab145be344dcb41e2591"
     },
     {
       "path": "assets/course-progress.js",
@@ -34,8 +34,8 @@
     },
     {
       "path": "assets/course.css",
-      "bytes": 9904,
-      "sha256": "67277a5b5f90b01e73aaf69fa2572485f3b3bcb926c33a0efe9bbc3ece62c7a6"
+      "bytes": 11180,
+      "sha256": "95a6471f5f5eda8e076da4efd4f770d490fda3a40e5cfcafa384c5ecc87404a2"
     },
     {
       "path": "assets/figures/a-e01.svg",
@@ -1419,28 +1419,28 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1227484,
-      "sha256": "fbfd5f1e00ca565168248f09f94fb7faf22280ec7b979dc218ff248048b2038d"
+      "bytes": 1318761,
+      "sha256": "5000768e10c0b9c48023ea52a1827c66bcecadb5ab30601a340080b6266b76ac"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1467820,
-      "sha256": "ca5842fca985296c1940bde15b1508f60a6e4273d10aa6a5c82780c3ee428959"
+      "bytes": 1560898,
+      "sha256": "c45cadced11964e5a5f93f268e658db1832398591f9d2c972a1ea7f62af1053f"
     },
     {
       "path": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 1825691,
-      "sha256": "84031d7b684605b0ce84906a7a13b2b4fab1eed2bf540e7cb93dee8cb146d190"
+      "bytes": 2019104,
+      "sha256": "d445c6be980ec72d0e51bf2b4c685fb7a709415ddc9c445944dbed3abbe062d6"
     },
     {
       "path": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1757344,
-      "sha256": "241dc744acabb9da2e699a63c90ac32bce5770c7a2779c84a8f1db9b0b52f8d8"
+      "bytes": 1869451,
+      "sha256": "831e31bdeebe61c0f862610f19383fdf08c1683f1b306a29dc18ef6e0615de15"
     },
     {
       "path": "chapters/05-hydrogel-versus-liquid.html",
-      "bytes": 1181167,
-      "sha256": "e3cb1eafd86e4f292f3f2949880e198f24fcd627b398d63986ed6f12fdc39305"
+      "bytes": 1273579,
+      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
     },
     {
       "path": "content/chapter01.py",
@@ -1468,9 +1468,24 @@
       "sha256": "cbadba1c56af62221943f2c035b98883c98ab6485f1ddf13cdac6c63c482d1cb"
     },
     {
+      "path": "content/equation_symbol_rows.json",
+      "bytes": 715811,
+      "sha256": "57943c52f0546f55c6e4bd7b370dc425f52ed01d7aa657c5b5c2c08b6ba3cd77"
+    },
+    {
       "path": "content/symbol_glossaries.py",
       "bytes": 34089,
       "sha256": "ac758842bc41f66b3a9ac7e0374206c3569696b9f2db7697e560ecd9c3821142"
+    },
+    {
+      "path": "content/symbol_row_overrides.py",
+      "bytes": 14526,
+      "sha256": "0556541baf2e2743e6f47f980299f066b1a178ab33e098142d508a7990dcd3f0"
+    },
+    {
+      "path": "content/symbol_row_vocabulary.py",
+      "bytes": 42910,
+      "sha256": "df7b79c85248a05c415f4f90efb5a92e11d58387656650804e659dc0b51826cc"
     },
     {
       "path": "COURSE_SETTINGS.json",
@@ -1494,8 +1509,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4568,
-      "sha256": "85afd45a94b332d65096cf39703eda54acb7f4a00ffdb7f2321e6f6e7c0df7b3"
+      "bytes": 5387,
+      "sha256": "bb599e6301bb8736349d42dda291ee5958d27571c9cd912b241efa2981349492"
     },
     {
       "path": "reference/defense.html",
@@ -1524,13 +1539,18 @@
     },
     {
       "path": "scripts/coursekit.py",
-      "bytes": 4002,
-      "sha256": "abfcdfa144997f5bd3ac2250b603f4d19897e2fcc40882cf8f7066a04cc1e977"
+      "bytes": 3899,
+      "sha256": "bd874ba33df35b6914639552cec6d161c007ae94ccabab0d90a64eb44a74ac80"
     },
     {
       "path": "scripts/draw_figures.py",
       "bytes": 19786,
       "sha256": "8478acbca48d64f568d201744a491d7d5c69595d9ec7a5479eb12f66e6b4dcf7"
+    },
+    {
+      "path": "scripts/equation_symbols.py",
+      "bytes": 1864,
+      "sha256": "edb8b5c525f38bb1a9bec1d9ef403f3cb081be78a4bcc518d23caff9ccf02a2c"
     },
     {
       "path": "scripts/highlight_bilingual_terms.py",
@@ -1539,8 +1559,13 @@
     },
     {
       "path": "scripts/package_site.py",
-      "bytes": 4951,
-      "sha256": "40f51dbe68169f8714ff56726a4d0087a207758754b1d6d3247645a732cce3c8"
+      "bytes": 5127,
+      "sha256": "e28e7ee096a31e6a9dacf4995bc8d026b66a7f6011c094833c91d4abedacd16f"
+    },
+    {
+      "path": "scripts/prepare_symbol_rows.py",
+      "bytes": 8694,
+      "sha256": "4e79d395a7b623e6ae346090430f188f4fcd6a5b6782a42845340286eafc23d5"
     },
     {
       "path": "scripts/render_math.cjs",
@@ -1564,8 +1589,8 @@
     },
     {
       "path": "scripts/verify_course.py",
-      "bytes": 10311,
-      "sha256": "72d7e52001c3119a8972797a7f1bd84e83c0aaacd3dbf45b18d2764e7170bb3e"
+      "bytes": 11859,
+      "sha256": "90e551c19b67d1baa306cbfea99a8fa38f062034b9a65652c7440554311c3dfe"
     },
     {
       "path": "scripts/verify_publication.py",
@@ -1584,33 +1609,33 @@
     },
     {
       "path": "text/01-cavity-pressure-inertia-and-directional-jets.md",
-      "bytes": 101947,
-      "sha256": "4634bfa66ea7301a21851b60cd9b6bbff19da1110f478917c1ba39e0e216b5a0"
+      "bytes": 113835,
+      "sha256": "704ee656d1ecb32417703207bca4b41181248131654de8c2b241350cec8fd494"
     },
     {
       "path": "text/02-optical-heating-and-finite-pfc-inventory.md",
-      "bytes": 116778,
-      "sha256": "c48313b9341e8e757fb25f7b9cf6b595ffe9d30f0da782f1a0573f18d29cd9d1"
+      "bytes": 128892,
+      "sha256": "0f83a25076fa02298d080bbdab900fd02c131fc571372520b16743368a9ec08c"
     },
     {
       "path": "text/03-arrays-finite-jets-and-impact.md",
-      "bytes": 123307,
-      "sha256": "cd90114304327c2dfc2be35d95d16913379766a386fdd6d5713b8f4ff9e01897"
+      "bytes": 142056,
+      "sha256": "ef7ac01391e4c5ed659723dac6c5b5de8be35807dc0ef46ac3bd023ddc9c805c"
     },
     {
       "path": "text/04-fracture-and-transfer.md",
-      "bytes": 123218,
-      "sha256": "c1c2e6be5d178c8fe8628e08a562aed7577ae22a464b894cca8a4a2b5f3f19aa"
+      "bytes": 135634,
+      "sha256": "80c4c8e80c042bda0d688b7471d4b6eadd6b4e09ca69cf685927335ffa3a2d80"
     },
     {
       "path": "text/a-hydrogel-versus-liquid.md",
-      "bytes": 85785,
-      "sha256": "09c2e92802c0667cf92833ea56ec8aae668571bebc228baf7d0fb152c5a8c111"
+      "bytes": 95755,
+      "sha256": "da79fe2540e229df777959e7e83eee8cbab4d90cc15fce15b96dd6c6078a3c23"
     },
     {
       "path": "text/course.md",
-      "bytes": 551079,
-      "sha256": "cd3430389707cb66bc5ea774deb77a1929ac5c739b513935d3fd4cb4d144acdb"
+      "bytes": 616216,
+      "sha256": "507c56c6271214a5a763b2120d850170274b3915422793487b2891cf21ba753f"
     },
     {
       "path": "verification/appendix-and-symbols-audit.json",
@@ -1619,8 +1644,8 @@
     },
     {
       "path": "verification/bilingual-terms.json",
-      "bytes": 163832,
-      "sha256": "05b8dcb294650fc1984f5480347f398877ab4dba70c119c7a1bd53115139b973"
+      "bytes": 145281,
+      "sha256": "90d2ff366d5c1c1f6eb597ea0ba6838267670f82fcf021cf1471f37356d40593"
     },
     {
       "path": "verification/browser-audit.json",
@@ -1679,8 +1704,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 507673,
-      "sha256": "53be66f2cf90a9ab6584ad29c12c0463377d1ce3b5c0c9f7447d2139667f411d"
+      "bytes": 853151,
+      "sha256": "dd22f7d2bd5ee0a90479c7f78607286aed03b809ff0769c67cf62dfcc521f44c"
     },
     {
       "path": "verification/cross-review-01-02.json",
@@ -1748,14 +1773,34 @@
       "sha256": "9516709f3532898a6f79a34bac7589e0cd8e94295bbd5943ed9dafd3ffeedbb8"
     },
     {
+      "path": "verification/local-symbol-layout-audit.json",
+      "bytes": 729,
+      "sha256": "0f441194afbfa111871818501283e89de69fbdd0bbcf4f603d6b32b5e8a86f94"
+    },
+    {
       "path": "verification/release-audit.json",
-      "bytes": 545,
-      "sha256": "11bbcb417e3201fba183cae453adbd3ec8c1022cf1b102f430b68c59432bec53"
+      "bytes": 597,
+      "sha256": "4955dcada0ddf1e3122652660135b33b22d8548fbdb87b9048e957f709cfc750"
     },
     {
       "path": "verification/scientific-audit.json",
       "bytes": 2353,
       "sha256": "db726ad5c7522c4e16608ec6377f5a6b7c3263e1b69163371219617beb29331e"
+    },
+    {
+      "path": "verification/symbol-layout-browser-audit.json",
+      "bytes": 3793,
+      "sha256": "d2b985236c1e7b0c589e37ba047c920382b907878605cd46f33e36654565107e"
+    },
+    {
+      "path": "verification/symbol-layout-desktop.png",
+      "bytes": 106092,
+      "sha256": "7865f2661250c73f07ae7fe73f2429f1b590a888b9a7ba1e878d2c201bd8c839"
+    },
+    {
+      "path": "verification/symbol-layout-mobile.png",
+      "bytes": 90216,
+      "sha256": "1ad5304ed35c4b2dcc2735c557529f355391b0b54fdad6a9ad4e9a4537590934"
     }
   ],
   "original_pdfs": 0,

@@ -3,9 +3,9 @@
   "style": "Different concepts have different colors within each English/Chinese prose pair. Each term keeps the same color throughout the course, with day/night variants.",
   "dictionary_terms": 120,
   "pages": 10,
-  "highlights": 2830,
+  "highlights": 2935,
   "color_count": 8,
-  "paired_prose_groups_checked": 1583,
+  "paired_prose_groups_checked": 1947,
   "no_distinct_terms_share_a_color_in_any_paired_prose_group": true,
   "palette": [
     {
@@ -124,15 +124,15 @@
   "term_color_indices": {
     "absorbed-energy": 0,
     "absorber": 6,
-    "absorptance": 2,
-    "absorption-coefficient": 1,
-    "acoustic-crossing-time": 2,
+    "absorptance": 3,
+    "absorption-coefficient": 0,
+    "acoustic-crossing-time": 4,
     "acoustic-impedance": 0,
     "acoustic-radiation": 0,
-    "activation-probability": 4,
+    "activation-probability": 2,
     "blake-threshold": 0,
     "blister": 2,
-    "boundary-integral": 2,
+    "boundary-integral": 4,
     "bubble-cloud": 0,
     "bubble-dynamics": 1,
     "bubble-interaction": 0,
@@ -143,113 +143,113 @@
     "cavitation": 6,
     "cavitation-inception": 0,
     "coalescence": 0,
-    "cohesive-strength": 1,
+    "cohesive-strength": 0,
     "cohesive-traction": 0,
     "collapse-time": 0,
     "compliant-boundary": 0,
-    "compressibility": 3,
-    "condensation": 7,
-    "confinement": 2,
+    "compressibility": 2,
+    "condensation": 3,
+    "confinement": 3,
     "control-volume": 1,
     "critical-radius": 0,
     "damping": 0,
     "deborah-number": 1,
     "delamination": 1,
-    "ejected-jet": 5,
-    "elastic-boundary": 3,
+    "ejected-jet": 4,
+    "elastic-boundary": 2,
     "energy-barrier": 0,
-    "energy-budget": 2,
-    "energy-release-rate": 0,
+    "energy-budget": 3,
+    "energy-release-rate": 2,
     "equation-of-state": 5,
     "extensional-viscosity": 0,
-    "fluence": 3,
-    "fracture-energy": 2,
+    "fluence": 0,
+    "fracture-energy": 5,
     "fracture-toughness": 0,
-    "free-surface": 4,
+    "free-surface": 5,
     "gas-cushioning": 0,
     "gas-nuclei": 0,
     "geometric-focusing": 0,
     "gilmore": 0,
-    "growth-rate": 0,
+    "growth-rate": 2,
     "heat-capacity": 4,
-    "heat-transfer": 4,
+    "heat-transfer": 5,
     "heterogeneous-nucleation": 0,
     "homogeneous-nucleation": 0,
-    "hydrogel": 3,
-    "incompressibility": 6,
-    "inertia": 5,
+    "hydrogel": 2,
+    "incompressibility": 5,
+    "inertia": 4,
     "interfacial-adhesion": 0,
-    "interfacial-fracture": 0,
+    "interfacial-fracture": 1,
     "jet": 0,
     "jet-speed": 4,
     "keller-miksis": 0,
     "kelvin-impulse": 0,
-    "kinematic-condition": 2,
-    "kinetic-energy": 4,
+    "kinematic-condition": 0,
+    "kinetic-energy": 6,
     "laplace-pressure": 0,
     "latent-heat": 1,
     "liquid-bridge": 1,
-    "mach-number": 5,
-    "mass-transfer": 2,
+    "mach-number": 7,
+    "mass-transfer": 3,
     "microbubble": 0,
-    "microjet": 4,
-    "momentum": 3,
+    "microjet": 3,
+    "momentum": 2,
     "nanodroplet": 0,
-    "neo-hookean": 2,
+    "neo-hookean": 3,
     "noncondensable-gas": 6,
     "nonspherical-collapse": 0,
-    "nucleation": 3,
+    "nucleation": 2,
     "nucleation-barrier": 1,
     "ohnesorge-number": 1,
     "optical-breakdown": 0,
     "optical-uniformity": 0,
     "optoacoustic": 0,
-    "peak-pressure": 5,
+    "peak-pressure": 3,
     "pfc": 1,
-    "phase-change": 3,
+    "phase-change": 2,
     "phase-inventory": 1,
     "poisson-ratio": 0,
     "polytropic-exponent": 0,
     "poroelastic": 0,
-    "potential-flow": 3,
+    "potential-flow": 2,
     "pressure-impulse": 1,
     "rayleigh-plesset": 0,
-    "re-entrant-jet": 2,
+    "re-entrant-jet": 3,
     "rebound": 5,
-    "relaxation-time": 3,
+    "relaxation-time": 0,
     "resonance": 0,
-    "reynolds-number": 0,
+    "reynolds-number": 1,
     "rigid-boundary": 0,
     "rigid-wall": 0,
     "shock-wave": 0,
     "spherical-collapse": 0,
     "stand-off": 1,
-    "stefan-balance": 2,
+    "stefan-balance": 6,
     "stiffened-gas": 0,
     "superheat": 0,
-    "surface-tension": 5,
+    "surface-tension": 4,
     "thermal-diffusion": 0,
     "thermal-diffusivity": 0,
     "thermal-localization": 0,
     "thermocavitation": 0,
-    "traction": 7,
+    "traction": 6,
     "traction-separation": 0,
     "vapor-pressure": 7,
-    "vaporization": 2,
+    "vaporization": 3,
     "velocity-potential": 1,
     "viscoelasticity": 0,
-    "viscosity": 2,
+    "viscosity": 3,
     "water-hammer": 0,
     "weber-number": 2,
     "young-modulus": 1
   },
   "strict_pair_audit": {
-    "paired_blocks_checked": 1562,
+    "paired_blocks_checked": 3905,
     "one_sided_colored_terms_remaining": 0,
     "pages": [
       {
         "file": "appendices/a-hydrogel-versus-liquid.html",
-        "paired_blocks_checked": 227,
+        "paired_blocks_checked": 507,
         "contextual_matches": [
           {
             "line": 2,
@@ -446,8 +446,8 @@
           },
           {
             "line": 38,
-            "English": "Symbols before Eq. (A-E24). J t a r g e t \\mathbf J_{\\mathrm{target}} J target ​ is vector impulse delivered to the specified target (N s); t l o a d \\mathbf t_{\\mathrm{load}} t load ​ is external load traction (Pa), A t A_t A t ​ target loading area (m²), and t 0 , t 1 t_0,t_1 t 0 ​ , t 1 ​ defined start/end times (s). W s e p , m i n W_{\\mathrm{sep,min}} W sep , min ​ is necessary fracture-work budget (J), A r e l A_{\\mathrm{rel}} A rel ​ intended released interface area (m²), and Γ c \\Gamma_c Γ c ​ relevant interface fracture energy (J m⁻²), conditional on mode and rate. d A , d t dA,dt d A , d t are area/time measures and ∫ \\int ∫ is definite integration. Neither integral alone proves crack onset or intact landing.",
-            "Chinese": "式（A-E24）前的符号定义。 J t a r g e t \\mathbf J_{\\mathrm{target}} J target ​ 为传递到指定目标的向量冲量（N s）； t l o a d \\mathbf t_{\\mathrm{load}} t load ​ 为外加载荷 牵引 （Pa）， A t A_t A t ​ 为目标受载面积（m²）， t 0 , t 1 t_0,t_1 t 0 ​ , t 1 ​ 为明确的起止时间（s）。 W s e p , m i n W_{\\mathrm{sep,min}} W sep , min ​ 为必要断裂功预算（J）， A r e l A_{\\mathrm{rel}} A rel ​ 为目标释放界面面积（m²）， Γ c \\Gamma_c Γ c ​ 为相关 界面断裂 能（J m⁻²），取决于模态与速率。 d A , d t dA,dt d A , d t 为面积／时间测度， ∫ \\int ∫ 为定积分。这两个积分都不能独自证明裂纹起始或完整落点。",
+            "English": "Γ c \\Gamma_c Γ c ​ relevant interface fracture energy (J m⁻²), conditional on mode and rate",
+            "Chinese": "Γ c \\Gamma_c Γ c ​ 为相关 界面断裂 能（J m⁻²），取决于模态与速率",
             "English_only": [
               "fracture-energy"
             ],
@@ -471,7 +471,7 @@
       },
       {
         "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-        "paired_blocks_checked": 242,
+        "paired_blocks_checked": 637,
         "contextual_matches": [
           {
             "line": 2,
@@ -512,18 +512,6 @@
           {
             "line": 14,
             "terms": [
-              "kinetic-energy"
-            ]
-          },
-          {
-            "line": 14,
-            "terms": [
-              "kinetic-energy"
-            ]
-          },
-          {
-            "line": 14,
-            "terms": [
               "velocity-potential"
             ]
           },
@@ -537,6 +525,12 @@
             "line": 112,
             "terms": [
               "confinement"
+            ]
+          },
+          {
+            "line": 112,
+            "terms": [
+              "mach-number"
             ]
           },
           {
@@ -579,6 +573,18 @@
             "line": 112,
             "terms": [
               "shock-wave"
+            ]
+          },
+          {
+            "line": 112,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 112,
+            "terms": [
+              "velocity-potential"
             ]
           },
           {
@@ -747,8 +753,8 @@
           },
           {
             "line": 112,
-            "English": "Symbols before Eq. (C1-E33). R ˙ ≤ 0 \\dot R\\le0 R ˙ ≤ 0 is inward wall velocity (m s⁻¹); R ∈ ( 0 , R max ⁡ ] R\\in(0,R_{\\max}] R ∈ ( 0 , R m a x ​ ] and R max ⁡ R_{\\max} R m a x ​ are current and maximum radii (m); Δ p c > 0 \\Delta p_c>0 Δ p c ​ > 0 is constant collapse pressure (Pa); ρ \\rho ρ is carrier density (kg m⁻³); t c t_c t c ​ is ideal collapse time (s); B B B is the dimensionless beta function defined in Eq. (C1-E17); K l K_l K l ​ is carrier kinetic energy (J); π \\pi π is the circle constant. The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility .",
-            "Chinese": "式（C1-E33）前的符号定义。 R ˙ ≤ 0 \\dot R\\le0 R ˙ ≤ 0 为向内壁面速度（m s⁻¹）； R ∈ ( 0 , R max ⁡ ] R\\in(0,R_{\\max}] R ∈ ( 0 , R m a x ​ ] 与 R max ⁡ R_{\\max} R m a x ​ 为当前与最大半径（m）； Δ p c > 0 \\Delta p_c>0 Δ p c ​ > 0 为常数塌缩压差（Pa）； ρ \\rho ρ 为载液密度（kg m⁻³）； t c t_c t c ​ 为理想 塌缩时间 （s）； B B B 为式（C1-E17）定义的无量纲贝塔函数； K l K_l K l ​ 为载液 动能 （J）； π \\pi π 为圆周率。初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。",
+            "English": "Conventions and conditions. (C1-E17); The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility .",
+            "Chinese": "约定与条件。 初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。",
             "English_only": [],
             "Chinese_only": [
               "noncondensable-gas"
@@ -771,7 +777,7 @@
       },
       {
         "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-        "paired_blocks_checked": 230,
+        "paired_blocks_checked": 628,
         "contextual_matches": [
           {
             "line": 2,
@@ -917,11 +923,11 @@
           },
           {
             "line": 2,
-            "English": "Symbols before Eq. (C2-E06). h a > 0 h_a>0 h a ​ > 0 is uniform absorber thickness (m); z z z is depth (m); Q a b s Q_{\\mathrm{abs}} Q abs ​ is volumetric heat source (W m⁻³); I i n I_{\\mathrm{in}} I in ​ is irradiance entering the slab (W m⁻²); μ a \\mu_a μ a ​ is absorption coefficient (m⁻¹); R λ ∈ [ 0 , 1 ] \\mathcal R_\\lambda\\in[0,1] R λ ​ ∈ [ 0 , 1 ] is front-face reflected energy fraction at wavelength λ \\lambda λ (m); A λ A_\\lambda A λ ​ is effective incident-light absorptance (dimensionless); f g e o f_{\\mathrm{geo}} f geo ​ is intercepted fraction; E L , E a b s E_L,E_{\\mathrm{abs}} E L ​ , E abs ​ are incident and absorbed energies (J); Ω a \\Omega_a Ω a ​ is absorbing volume, d V dV d V its volume element (m³); t , d t t,dt t , d t denote time and its element (s); ∫ \\int ∫ is integration; e x e^x e x is the exponential.",
-            "Chinese": "式（C2-E06）前的符号定义。 h a > 0 h_a>0 h a ​ > 0 为均匀 吸收体 厚度（m）； z z z 为深度（m）； Q a b s Q_{\\mathrm{abs}} Q abs ​ 为体积热源（W m⁻³）； I i n I_{\\mathrm{in}} I in ​ 为进入薄层的辐照度（W m⁻²）； μ a \\mu_a μ a ​ 为 吸收系数 （m⁻¹）； R λ ∈ [ 0 , 1 ] \\mathcal R_\\lambda\\in[0,1] R λ ​ ∈ [ 0 , 1 ] 为波长 λ \\lambda λ （m）处前表面的反射能量比例； A λ A_\\lambda A λ ​ 为相对于入射光的有效 吸收率 （无量纲）； f g e o f_{\\mathrm{geo}} f geo ​ 为截获比例； E L , E a b s E_L,E_{\\mathrm{abs}} E L ​ , E abs ​ 为入射与 吸收能量 （J）； Ω a \\Omega_a Ω a ​ 为 吸收体 体积， d V dV d V 为其体积元（m³）； t , d t t,dt t , d t 为时间及其微元（s）； ∫ \\int ∫ 为积分； e x e^x e x 为指数函数。",
+            "English": "Ω a \\Omega_a Ω a ​ is absorbing volume (m³)",
+            "Chinese": "Ω a \\Omega_a Ω a ​ 为 吸收体 体积（m³）",
             "English_only": [],
             "Chinese_only": [
-              "absorbed-energy"
+              "absorber"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -936,23 +942,22 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 2,
-            "English": "Symbols before Eq. (C2-E09). α > 0 \\alpha>0 α > 0 is thermal diffusivity (m² s⁻¹); k , ρ , c p k,\\rho,c_p k , ρ , c p ​ are phase conductivity (W m⁻¹ K⁻¹), density (kg m⁻³), and specific heat (J kg⁻¹ K⁻¹); Δ T ≠ 0 \\Delta T\\ne0 Δ T  = 0 is characteristic temperature change (K); L h > 0 L_h>0 L h ​ > 0 is heating distance (m); t t h t_{\\mathrm{th}} t th ​ is diffusion time estimate (s); τ h > 0 \\tau_h>0 τ h ​ > 0 is available heating duration (s); δ T \\delta_T δ T ​ is penetration estimate (m); ∼ \\sim ∼ means order-of-magnitude scaling, not equality.",
-            "Chinese": "式（C2-E09）前的符号定义。 α > 0 \\alpha>0 α > 0 为 热扩散率 （m² s⁻¹）； k , ρ , c p k,\\rho,c_p k , ρ , c p ​ 为该相导热系数（W m⁻¹ K⁻¹）、密度（kg m⁻³）及 比热容 （J kg⁻¹ K⁻¹）； Δ T ≠ 0 \\Delta T\\ne0 Δ T  = 0 为特征温度变化（K）； L h > 0 L_h>0 L h ​ > 0 为加热距离（m）； t t h t_{\\mathrm{th}} t th ​ 为扩散时间估计（s）； τ h > 0 \\tau_h>0 τ h ​ > 0 为可用加热时长（s）； δ T \\delta_T δ T ​ 为渗透深度估计（m）； ∼ \\sim ∼ 表示量级尺度关系，不表示严格相等。",
+            "line": 13,
+            "English": "α d \\alpha_d α d ​ is declared PFC -liquid diffusivity (m² s⁻¹), with d labeling droplet liquid",
+            "Chinese": "α d \\alpha_d α d ​ 为所声明 PFC 液体的 热扩散率 （m² s⁻¹），d 表示液滴液体",
             "English_only": [],
             "Chinese_only": [
-              "heat-capacity"
+              "thermal-diffusivity"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
             "line": 13,
-            "English": "Symbols before Eq. (C2-E10). α d \\alpha_d α d ​ is declared PFC -liquid diffusivity (m² s⁻¹), with d labeling droplet liquid; t t h t_{\\mathrm{th}} t th ​ is diffusion-time estimate (s); δ T \\delta_T δ T ​ is penetration estimate (m). The numerator 0.050 is conductivity in W m⁻¹ K⁻¹; 1630 is density in kg m⁻³; 654 is specific heat in J kg⁻¹ K⁻¹; 5 × 10 − 6 5\\times10^{-6} 5 × 1 0 − 6 is distance in m; 10 − 8 10^{-8} 1 0 − 8 is duration in s. Powers are numerical exponents, and ∼ \\sim ∼ denotes a scale estimate.",
-            "Chinese": "式（C2-E10）前的符号定义。 α d \\alpha_d α d ​ 为所声明 PFC 液体的 热扩散率 （m² s⁻¹），d 表示液滴液体； t t h t_{\\mathrm{th}} t th ​ 为扩散时间估计（s）； δ T \\delta_T δ T ​ 为渗透深度估计（m）。分子 0.050 为导热系数，单位 W m⁻¹ K⁻¹；1630 为密度，单位 kg m⁻³；654 为 比热容 ，单位 J kg⁻¹ K⁻¹； 5 × 10 − 6 5\\times10^{-6} 5 × 1 0 − 6 为距离，单位 m； 10 − 8 10^{-8} 1 0 − 8 为时长，单位 s。幂为数值指数， ∼ \\sim ∼ 表示尺度估计。",
+            "English": "Conventions and conditions. The numerator 0.050 is conductivity in W m⁻¹ K⁻¹; 1630 is density in kg m⁻³; 654 is specific heat in J kg⁻¹ K⁻¹; 5 × 10 − 6 5\\times10^{-6} 5 × 1 0 − 6 is distance in m; 10 − 8 10^{-8} 1 0 − 8 is duration in s; Powers are numerical exponents, and ∼ \\sim ∼ denotes a scale estimate.",
+            "Chinese": "约定与条件。 分子 0.050 为导热系数，单位 W m⁻¹ K⁻¹；1630 为密度，单位 kg m⁻³；654 为 比热容 ，单位 J kg⁻¹ K⁻¹； 5 × 10 − 6 5\\times10^{-6} 5 × 1 0 − 6 为距离，单位 m； 10 − 8 10^{-8} 1 0 − 8 为时长，单位 s；幂为数值指数， ∼ \\sim ∼ 表示尺度估计。",
             "English_only": [],
             "Chinese_only": [
-              "heat-capacity",
-              "thermal-diffusivity"
+              "heat-capacity"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -988,8 +993,8 @@
           },
           {
             "line": 23,
-            "English": "Symbols before Eq. (C2-E14). Δ p n \\Delta p_n Δ p n ​ is vapor- nucleation driving pressure (Pa), n labeling nucleation ; p s a t , P F C ( T i ) p_{\\mathrm{sat,PFC}}(T_i) p sat , PFC ​ ( T i ​ ) is bulk PFC saturation pressure at local interface temperature T i T_i T i ​ (Pa and K); p d p_d p d ​ is PFC -liquid pressure (Pa); W ( r n ) W(r_n) W ( r n ​ ) is nucleus formation free energy (J); r n ≥ 0 r_n\\ge0 r n ​ ≥ 0 is vapor-nucleus radius (m); σ v p > 0 \\sigma_{vp}>0 σ v p ​ > 0 is vapor– PFC tension (N m⁻¹), vp naming the interface; π \\pi π is the circular constant. The model assumes fixed T i , p d T_i,p_d T i ​ , p d ​ , and r n r_n r n ​ small compared with the PFC core.",
-            "Chinese": "式（C2-E14）前的符号定义。 Δ p n \\Delta p_n Δ p n ​ 为 汽化 成核 驱动压差（Pa），n 表示 成核 ； p s a t , P F C ( T i ) p_{\\mathrm{sat,PFC}}(T_i) p sat , PFC ​ ( T i ​ ) 为局部界面温度 T i T_i T i ​ 下的体相 PFC 饱和 蒸汽压 （Pa 和 K）； p d p_d p d ​ 为 PFC 液体压力（Pa）； W ( r n ) W(r_n) W ( r n ​ ) 为汽核形成自由能（J）； r n ≥ 0 r_n\\ge0 r n ​ ≥ 0 为汽核半径（m）； σ v p > 0 \\sigma_{vp}>0 σ v p ​ > 0 为蒸汽– PFC 张力（N m⁻¹），vp 表示该界面； π \\pi π 为圆周率。模型假设 T i , p d T_i,p_d T i ​ , p d ​ 固定，且 r n r_n r n ​ 远小于 PFC 核心。",
+            "English": "Δ p n \\Delta p_n Δ p n ​ is vapor- nucleation driving pressure (Pa), n labeling nucleation",
+            "Chinese": "Δ p n \\Delta p_n Δ p n ​ 为 汽化 成核 驱动压差（Pa），n 表示 成核",
             "English_only": [],
             "Chinese_only": [
               "vaporization"
@@ -998,11 +1003,19 @@
           },
           {
             "line": 25,
-            "English": "Symbols before Eq. (C2-E16). W ∗ = W ( r ∗ ) W_*=W(r_*) W ∗ ​ = W ( r ∗ ​ ) is critical-nucleus free- energy barrier (J), with star labeling the critical value; σ v p > 0 \\sigma_{vp}>0 σ v p ​ > 0 is vapor– PFC interfacial tension (N m⁻¹); Δ p n > 0 \\Delta p_n>0 Δ p n ​ > 0 is driving pressure (Pa); π \\pi π is the circular constant; superscripts 2 and 3 are powers. This result inherits the homogeneous, locally isothermal, small-nucleus assumptions.",
-            "Chinese": "式（C2-E16）前的符号定义。 W ∗ = W ( r ∗ ) W_*=W(r_*) W ∗ ​ = W ( r ∗ ​ ) 为临界汽核自由能势垒（J），星号标记临界值； σ v p > 0 \\sigma_{vp}>0 σ v p ​ > 0 为蒸汽– PFC 界面张力 （N m⁻¹）； Δ p n > 0 \\Delta p_n>0 Δ p n ​ > 0 为驱动压差（Pa）； π \\pi π 为圆周率；上标 2、3 表示幂。该结果继承均匀 成核 、局部等温及小汽核假设。",
+            "English": "W ∗ = W ( r ∗ ) W_*=W(r_*) W ∗ ​ = W ( r ∗ ​ ) is critical-nucleus free- energy barrier (J), with star labeling the critical value",
+            "Chinese": "W ∗ = W ( r ∗ ) W_*=W(r_*) W ∗ ​ = W ( r ∗ ​ ) 为临界汽核自由能势垒（J），星号标记临界值",
             "English_only": [
               "energy-barrier"
             ],
+            "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 25,
+            "English": "Conventions and conditions. superscripts 2 and 3 are powers; This result inherits the homogeneous, locally isothermal, small-nucleus assumptions.",
+            "Chinese": "约定与条件。 上标 2、3 表示幂；该结果继承均匀 成核 、局部等温及小汽核假设。",
+            "English_only": [],
             "Chinese_only": [
               "nucleation"
             ],
@@ -1020,8 +1033,18 @@
           },
           {
             "line": 25,
-            "English": "Symbols before Eq. (C2-E20). j s j_s j s ​ is single-component phase mass flux (kg m⁻² s⁻¹), s labeling that component; ρ l , ρ v > 0 \\rho_l,\\rho_v>0 ρ l ​ , ρ v ​ > 0 are adjacent liquid and vapor densities (kg m⁻³); u l , u v \\boldsymbol u_l,\\boldsymbol u_v u l ​ , u v ​ are their velocities (m s⁻¹); v Γ \\boldsymbol v_\\Gamma v Γ ​ is interface velocity (m s⁻¹); n \\boldsymbol n n is unit normal liquid→vapor and e r \\boldsymbol e_r e r ​ outward radial unit vector (dimensionless); R > 0 R>0 R > 0 is bubble radius (m), R ˙ \\dot R R ˙ its time derivative (m s⁻¹); u l ( R ) u_l(R) u l ​ ( R ) is outward radial liquid velocity at the interface (m s⁻¹); ⋅ \\cdot ⋅ is a vector dot product.",
-            "Chinese": "式（C2-E20）前的符号定义。 j s j_s j s ​ 为单组分 相变 质量通量（kg m⁻² s⁻¹），s 标记该组分； ρ l , ρ v > 0 \\rho_l,\\rho_v>0 ρ l ​ , ρ v ​ > 0 为邻接液体与蒸汽密度（kg m⁻³）； u l , u v \\boldsymbol u_l,\\boldsymbol u_v u l ​ , u v ​ 为两侧速度（m s⁻¹）； v Γ \\boldsymbol v_\\Gamma v Γ ​ 为界面速度（m s⁻¹）； n \\boldsymbol n n 为液→汽单位法向， e r \\boldsymbol e_r e r ​ 为向外径向单位向量（无量纲）； R > 0 R>0 R > 0 为气泡半径（m）， R ˙ \\dot R R ˙ 为其时间导数（m s⁻¹）； u l ( R ) u_l(R) u l ​ ( R ) 为界面处向外径向液速（m s⁻¹）； ⋅ \\cdot ⋅ 为向量点积。",
+            "English": "m v , s m_{v,s} m v , s ​ is vapor mass of species s s s (kg), where s s s labels a specified species such as PFC or water",
+            "Chinese": "m v , s m_{v,s} m v , s ​ 为组分 s s s 的蒸汽质量（kg）",
+            "English_only": [
+              "pfc"
+            ],
+            "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 25,
+            "English": "j s j_s j s ​ is single-component phase mass flux (kg m⁻² s⁻¹), s labeling that component",
+            "Chinese": "j s j_s j s ​ 为单组分 相变 质量通量（kg m⁻² s⁻¹），s 标记该组分",
             "English_only": [],
             "Chinese_only": [
               "phase-change"
@@ -1080,8 +1103,8 @@
           },
           {
             "line": 25,
-            "English": "Symbols before Eq. (C2-E22). U b U_b U b ​ is bubble internal energy (J); Q ˙ b \\dot Q_b Q ˙ ​ b ​ is net conductive heat into the bubble (W), excluding transported mass enthalpy; p b p_b p b ​ is uniform absolute bubble pressure (Pa); V b V_b V b ​ is bubble volume (m³); R > 0 R>0 R > 0 is radius in the spherical control (m); h v , s h_{v,s} h v , s ​ is boundary specific vapor enthalpy of species s (J kg⁻¹); m ˙ v , s \\dot m_{v,s} m ˙ v , s ​ is its signed net mass-entry rate (kg s⁻¹); s = 1 , … , N s s=1,\\ldots,N_s s = 1 , … , N s ​ indexes the N s N_s N s ​ species, a dimensionless count; ∑ \\sum ∑ is summation; a dot is a time derivative, and π \\pi π is the circular constant. Distinct entry/exit states require distinct summed boundary terms.",
-            "Chinese": "式（C2-E22）前的符号定义。 U b U_b U b ​ 为气泡内能（J）； Q ˙ b \\dot Q_b Q ˙ ​ b ​ 为进入气泡的净传导热（W），不含随 质量输运 的焓； p b p_b p b ​ 为均匀绝对气泡压力（Pa）； V b V_b V b ​ 为气泡体积（m³）； R > 0 R>0 R > 0 为球形参照的半径（m）； h v , s h_{v,s} h v , s ​ 为组分 s 的边界蒸汽比焓（J kg⁻¹）； m ˙ v , s \\dot m_{v,s} m ˙ v , s ​ 为其带符号净流入质量速率（kg s⁻¹）； s = 1 , … , N s s=1,\\ldots,N_s s = 1 , … , N s ​ 遍历 N s N_s N s ​ 个组分， N s N_s N s ​ 为无量纲数量； ∑ \\sum ∑ 为求和；上点为时间导数， π \\pi π 为圆周率。不同流入／流出状态要求分别求和其边界项。",
+            "English": "Q ˙ b \\dot Q_b Q ˙ ​ b ​ is net conductive heat into the bubble (W), excluding transported mass enthalpy",
+            "Chinese": "Q ˙ b \\dot Q_b Q ˙ ​ b ​ 为进入气泡的净传导热（W），不含随 质量输运 的焓",
             "English_only": [],
             "Chinese_only": [
               "mass-transfer"
@@ -1100,18 +1123,8 @@
           },
           {
             "line": 25,
-            "English": "Symbols before Eq. (C2-E24). p v , s p_{v,s} p v , s ​ is ideal partial pressure of species s (Pa), v naming the vapor-domain component; V b > 0 V_b>0 V b ​ > 0 is bubble volume (m³); m v , s ≥ 0 m_{v,s}\\ge0 m v , s ​ ≥ 0 is its mass (kg); M s > 0 M_s>0 M s ​ > 0 is molar mass (kg mol⁻¹); R u = 8.314462618 R_u=8.314462618 R u ​ = 8.314462618 J mol⁻¹ K⁻¹ is the universal gas constant; T b > 0 T_b>0 T b ​ > 0 is bulk temperature (K); p b p_b p b ​ is total pressure (Pa); s = 1 , … , N s s=1,\\ldots,N_s s = 1 , … , N s ​ indexes all components including permanent gas ; ∑ \\sum ∑ is summation. P \\mathcal P P is a specified equation-of-state function, ρ b \\rho_b ρ b ​ mixture density (kg m⁻³), e b e_b e b ​ specific internal energy (J kg⁻¹), and Y \\boldsymbol Y Y the species mass-fraction vector (dimensionless, entries summing to one); EOS means equation of state .",
-            "Chinese": "式（C2-E24）前的符号定义。 p v , s p_{v,s} p v , s ​ 为组分 s 的理想分压（Pa），v 标记蒸汽域组分； V b > 0 V_b>0 V b ​ > 0 为气泡体积（m³）； m v , s ≥ 0 m_{v,s}\\ge0 m v , s ​ ≥ 0 为其质量（kg）； M s > 0 M_s>0 M s ​ > 0 为摩尔质量（kg mol⁻¹）； R u = 8.314462618 R_u=8.314462618 R u ​ = 8.314462618 J mol⁻¹ K⁻¹ 为通用气体常数； T b > 0 T_b>0 T b ​ > 0 为体相温度（K）； p b p_b p b ​ 为总压力（Pa）； s = 1 , … , N s s=1,\\ldots,N_s s = 1 , … , N s ​ 遍历包含永久气体的所有组分； ∑ \\sum ∑ 为求和。 P \\mathcal P P 为明确的 状态方程 函数， ρ b \\rho_b ρ b ​ 为混合物密度（kg m⁻³）， e b e_b e b ​ 为比内能（J kg⁻¹）， Y \\boldsymbol Y Y 为组分质量分数向量（无量纲，各分量之和为一）； EOS 指 状态方程 。",
-            "English_only": [
-              "noncondensable-gas"
-            ],
-            "Chinese_only": [],
-            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
-          },
-          {
-            "line": 25,
-            "English": "Symbols before Eq. (C2-E26). m v , e q m_{v,\\mathrm{eq}} m v , eq ​ is equilibrium PFC vapor mass (kg), eq labeling the restricted equilibrium control; m P F C , 0 m_{\\mathrm{PFC},0} m PFC , 0 ​ is finite initial supply (kg); M P F C M_{\\mathrm{PFC}} M PFC ​ is PFC molar mass (kg mol⁻¹); p s a t , P F C ( T b ) p_{\\mathrm{sat,PFC}}(T_b) p sat , PFC ​ ( T b ​ ) is bulk saturation pressure (Pa); p v , P F C , e q p_{v,\\mathrm{PFC,eq}} p v , PFC , eq ​ is ideal equilibrium PFC partial pressure (Pa); T b > 0 T_b>0 T b ​ > 0 is prescribed temperature (K); V b > 0 V_b>0 V b ​ > 0 is available vapor volume (m³); R u R_u R u ​ is universal gas constant (J mol⁻¹ K⁻¹); min ⁡ \\min min selects the lesser nonnegative argument. The supply is closed and nondissolving, and mass exchange is assumed fast.",
-            "Chinese": "式（C2-E26）前的符号定义。 m v , e q m_{v,\\mathrm{eq}} m v , eq ​ 为平衡 PFC 蒸汽质量（kg），eq 标记 受限 平衡参照； m P F C , 0 m_{\\mathrm{PFC},0} m PFC , 0 ​ 为有限初始供应（kg）； M P F C M_{\\mathrm{PFC}} M PFC ​ 为 PFC 摩尔质量（kg mol⁻¹）； p s a t , P F C ( T b ) p_{\\mathrm{sat,PFC}}(T_b) p sat , PFC ​ ( T b ​ ) 为体相饱和 蒸汽压 （Pa）； p v , P F C , e q p_{v,\\mathrm{PFC,eq}} p v , PFC , eq ​ 为理想平衡 PFC 分压（Pa）； T b > 0 T_b>0 T b ​ > 0 为给定温度（K）； V b > 0 V_b>0 V b ​ > 0 为可用蒸汽体积（m³）； R u R_u R u ​ 为通用气体常数（J mol⁻¹ K⁻¹）； min ⁡ \\min min 选择较小非负值。供应闭合且不溶解，并假设质量交换迅速。",
+            "English": "m v , e q m_{v,\\mathrm{eq}} m v , eq ​ is equilibrium PFC vapor mass (kg), eq labeling the restricted equilibrium control",
+            "Chinese": "m v , e q m_{v,\\mathrm{eq}} m v , eq ​ 为平衡 PFC 蒸汽质量（kg），eq 标记 受限 平衡参照",
             "English_only": [],
             "Chinese_only": [
               "confinement"
@@ -1183,8 +1196,8 @@
           },
           {
             "line": 36,
-            "English": "Symbols before Eq. (C2-E36). j s j_s j s ​ is signed phase flux (kg m⁻² s⁻¹); L v , s L_{v,s} L v , s ​ is latent enthalpy (J kg⁻¹); q l , q v \\boldsymbol q_l,\\boldsymbol q_v q l ​ , q v ​ are liquid/vapor conductive fluxes (W m⁻²); n \\boldsymbol n n is unit liquid→vapor normal; U b U_b U b ​ is bubble internal energy (J); Q ˙ b \\dot Q_b Q ˙ ​ b ​ is conductive heat input excluding mass enthalpy (W); p b p_b p b ​ is pressure (Pa); V b V_b V b ​ is volume (m³); h v , s h_{v,s} h v , s ​ is boundary specific vapor enthalpy (J kg⁻¹); m v , s m_{v,s} m v , s ​ is species mass (kg); ∑ s \\sum_s ∑ s ​ sums all declared species; R R R is spherical bubble radius (m), R ˙ \\dot R R ˙ its wall speed (m s⁻¹), u l ( R ) u_l(R) u l ​ ( R ) adjacent radial liquid speed (m s⁻¹), and ρ l \\rho_l ρ l ​ liquid density (kg m⁻³). A dot is a time derivative and ⋅ \\cdot ⋅ is a vector dot product. Interface heat and slip formulas assume the stated single-component reduced jump.",
-            "Chinese": "式（C2-E36）前的符号定义。 j s j_s j s ​ 为带符号 相变 通量（kg m⁻² s⁻¹）； L v , s L_{v,s} L v , s ​ 为潜焓（J kg⁻¹）； q l , q v \\boldsymbol q_l,\\boldsymbol q_v q l ​ , q v ​ 为液／汽传导热通量（W m⁻²）； n \\boldsymbol n n 为液→汽单位法向； U b U_b U b ​ 为气泡内能（J）； Q ˙ b \\dot Q_b Q ˙ ​ b ​ 为不含质量焓的传导热输入（W）； p b p_b p b ​ 为压力（Pa）； V b V_b V b ​ 为体积（m³）； h v , s h_{v,s} h v , s ​ 为边界蒸汽比焓（J kg⁻¹）； m v , s m_{v,s} m v , s ​ 为组分质量（kg）； ∑ s \\sum_s ∑ s ​ 对所有声明组分求和； R R R 为球形气泡半径（m）， R ˙ \\dot R R ˙ 为壁速（m s⁻¹）， u l ( R ) u_l(R) u l ​ ( R ) 为邻接径向液速（m s⁻¹）， ρ l \\rho_l ρ l ​ 为液体密度（kg m⁻³）。上点表示时间导数， ⋅ \\cdot ⋅ 表示向量点积。界面热及滑移公式采用所声明单组分简化跳跃假设。",
+            "English": "j s j_s j s ​ is signed phase flux (kg m⁻² s⁻¹)",
+            "Chinese": "j s j_s j s ​ 为带符号 相变 通量（kg m⁻² s⁻¹）",
             "English_only": [],
             "Chinese_only": [
               "phase-change"
@@ -1216,12 +1229,18 @@
       },
       {
         "file": "chapters/03-arrays-finite-jets-and-impact.html",
-        "paired_blocks_checked": 294,
+        "paired_blocks_checked": 805,
         "contextual_matches": [
           {
             "line": 2,
             "terms": [
               "mach-number"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "velocity-potential"
             ]
           },
           {
@@ -1249,12 +1268,6 @@
             ]
           },
           {
-            "line": 174,
-            "terms": [
-              "ohnesorge-number"
-            ]
-          },
-          {
             "line": 193,
             "terms": [
               "shock-wave"
@@ -1264,6 +1277,12 @@
             "line": 193,
             "terms": [
               "mach-number"
+            ]
+          },
+          {
+            "line": 193,
+            "terms": [
+              "kinetic-energy"
             ]
           },
           {
@@ -1318,8 +1337,18 @@
           },
           {
             "line": 22,
-            "English": "Symbols before Eq. (C3-E02). F ( r ) F(r) F ( r ) is Gaussian pulse fluence at radial distance r r r (J m⁻²); F 0 > 0 F_0>0 F 0 ​ > 0 is central fluence . R A > 0 R_A>0 R A ​ > 0 encloses the array and w > 0 w>0 w > 0 is the Gaussian 1/e² radius (m). ϵ ∈ ( 0 , 1 ) \\epsilon\\in(0,1) ϵ ∈ ( 0 , 1 ) is allowed fractional edge decrease. exp ⁡ \\exp exp and ln ⁡ \\ln ln are exponential and natural logarithm of dimensionless arguments.",
-            "Chinese": "式（C3-E02）前的符号定义。 F ( r ) F(r) F ( r ) 是径向距离 r r r 处的 Gaussian 脉冲通量（J m⁻²）； F 0 > 0 F_0>0 F 0 ​ > 0 为中心通量。 R A > 0 R_A>0 R A ​ > 0 包围阵列， w > 0 w>0 w > 0 为 Gaussian 的 1/e² 半径（m）。 ϵ ∈ ( 0 , 1 ) \\epsilon\\in(0,1) ϵ ∈ ( 0 , 1 ) 是允许的边缘相对降低量。 exp ⁡ \\exp exp 、 ln ⁡ \\ln ln 分别为无量纲自变量的指数及自然对数。",
+            "English": "F ( r ) F(r) F ( r ) is Gaussian pulse fluence at radial distance r r r (J m⁻²)",
+            "Chinese": "F ( r ) F(r) F ( r ) 是径向距离 r r r 处的 Gaussian 脉冲通量（J m⁻²）",
+            "English_only": [
+              "fluence"
+            ],
+            "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 22,
+            "English": "F 0 > 0 F_0>0 F 0 ​ > 0 is central fluence (J m⁻²)",
+            "Chinese": "F 0 > 0 F_0>0 F 0 ​ > 0 为中心通量（J m⁻²）",
             "English_only": [
               "fluence"
             ],
@@ -1348,8 +1377,8 @@
           },
           {
             "line": 134,
-            "English": "Symbols before Eq. (C3-E15). p l , p g , p ∞ p_l,p_g,p_\\infty p l ​ , p g ​ , p ∞ ​ are interface-liquid, gas and remote pressures (Pa); σ \\sigma σ is the tension appropriate to that interface (N m⁻¹). κ \\kappa κ is signed total curvature (m⁻¹), ∇ s ⋅ \\nabla_s\\cdot ∇ s ​ ⋅ surface divergence, n \\boldsymbol n n the liquid-to-gas unit normal, R R R inner-cavity radius and a j a_j a j ​ exterior-cylinder radius (m). ϕ Γ \\phi_\\Gamma ϕ Γ ​ and ϕ \\phi ϕ are surface/bulk potential (m² s⁻¹); u \\boldsymbol u u velocity (m s⁻¹), ρ \\rho ρ density (kg m⁻³), t t t time (s). D / D t D/Dt D / D t is the material derivative, ∂ t \\partial_t ∂ t ​ fixed-position derivative, ∇ \\nabla ∇ spatial gradient, ∣ ∣ |\\ | ∣ ∣ Euclidean norm; labels cavity and jet select geometries.",
-            "Chinese": "式（C3-E15）前的符号定义。 p l , p g , p ∞ p_l,p_g,p_\\infty p l ​ , p g ​ , p ∞ ​ 为界面液压、气压、远压（Pa）； σ \\sigma σ 为对应 界面张力 （N m⁻¹）。 κ \\kappa κ 为带符号总曲率（m⁻¹）， ∇ s ⋅ \\nabla_s\\cdot ∇ s ​ ⋅ 为表面散度， n \\boldsymbol n n 为液体指向气体的单位法向， R R R 为内部腔体半径、 a j a_j a j ​ 为外部圆柱半径（m）。 ϕ Γ \\phi_\\Gamma ϕ Γ ​ 、 ϕ \\phi ϕ 为表面／体内势（m² s⁻¹）； u \\boldsymbol u u 为速度（m s⁻¹）， ρ \\rho ρ 为密度（kg m⁻³）， t t t 为时间（s）。 D / D t D/Dt D / D t 为材料导数， ∂ t \\partial_t ∂ t ​ 为固定位置导数， ∇ \\nabla ∇ 为空间梯度， ∣ ∣ |\\ | ∣ ∣ 为 Euclidean 范数；cavity、 jet 标签选择几何。",
+            "English": "σ \\sigma σ is the tension appropriate to that interface (N m⁻¹)",
+            "Chinese": "σ \\sigma σ 为对应 界面张力 （N m⁻¹）",
             "English_only": [],
             "Chinese_only": [
               "surface-tension"
@@ -1378,12 +1407,32 @@
           },
           {
             "line": 193,
-            "English": "Symbols before Eq. (C3-E29). E L E_L E L ​ is incident laser energy, E a b s , t o t E_{\\mathrm{abs,tot}} E abs , tot ​ total absorbed energy , E a b s , s i t e E_{\\mathrm{abs,site}} E abs , site ​ per-site absorbed energy , E P F C , d e a d l i n e E_{\\mathrm{PFC,deadline}} E PFC , deadline ​ energy delivered to that PFC inventory by the activation deadline, E j E_j E j ​ final per- jet kinetic energy and E j , t o t E_{j,\\mathrm{tot}} E j , tot ​ total jet energy (J; μJ = 10⁻⁶ J, nJ = 10⁻⁹ J). N d = 25 N_d=25 N d ​ = 25 is site count; f g e o = 0.8 f_{\\mathrm{geo}}=0.8 f geo ​ = 0.8 intercepted fraction, A λ = 0.5 A_\\lambda=0.5 A λ ​ = 0.5 effective absorptance at laser wavelength λ \\lambda λ (m), f T = 0.40 f_T=0.40 f T ​ = 0.40 stipulated thermal fraction and η j = 0.005 \\eta_j=0.005 η j ​ = 0.005 stipulated absorbed-to- jet kinetic efficiency (dimensionless). Subscripts label reservoirs/stages.",
-            "Chinese": "式（C3-E29）前的符号定义。 E L E_L E L ​ 为入射激光能， E a b s , t o t E_{\\mathrm{abs,tot}} E abs , tot ​ 为总吸收能， E a b s , s i t e E_{\\mathrm{abs,site}} E abs , site ​ 为单个位点吸收能， E P F C , d e a d l i n e E_{\\mathrm{PFC,deadline}} E PFC , deadline ​ 为激活截止前到达该 PFC 储量的能量， E j E_j E j ​ 为最终单 射流 动能 、 E j , t o t E_{j,\\mathrm{tot}} E j , tot ​ 为总 射流 动能 （J；μJ = 10⁻⁶ J，nJ = 10⁻⁹ J）。 N d = 25 N_d=25 N d ​ = 25 为位点数； f g e o = 0.8 f_{\\mathrm{geo}}=0.8 f geo ​ = 0.8 为截获比例， A λ = 0.5 A_\\lambda=0.5 A λ ​ = 0.5 为激光波长 λ \\lambda λ （m）处有效 吸收率 ， f T = 0.40 f_T=0.40 f T ​ = 0.40 为假设热比例， η j = 0.005 \\eta_j=0.005 η j ​ = 0.005 为假设吸收能至 射流 动能 效率（无量纲）。下标区分能量库／阶段。",
+            "English": "E a b s , t o t E_{\\mathrm{abs,tot}} E abs , tot ​ total absorbed energy (J)",
+            "Chinese": "E a b s , t o t E_{\\mathrm{abs,tot}} E abs , tot ​ 为总吸收能（J）",
             "English_only": [
               "absorbed-energy"
             ],
             "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 193,
+            "English": "E a b s , s i t e E_{\\mathrm{abs,site}} E abs , site ​ per-site absorbed energy (J)",
+            "Chinese": "E a b s , s i t e E_{\\mathrm{abs,site}} E abs , site ​ 为单个位点吸收能（J）",
+            "English_only": [
+              "absorbed-energy"
+            ],
+            "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 193,
+            "English": "E j , t o t E_{j,\\mathrm{tot}} E j , tot ​ total jet energy (J; μJ = 10⁻⁶ J, nJ = 10⁻⁹ J)",
+            "Chinese": "E j , t o t E_{j,\\mathrm{tot}} E j , tot ​ 为总 射流 动能 （J；μJ = 10⁻⁶ J，nJ = 10⁻⁹ J）",
+            "English_only": [],
+            "Chinese_only": [
+              "kinetic-energy"
+            ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
@@ -1433,21 +1482,8 @@
       },
       {
         "file": "chapters/04-fracture-and-transfer.html",
-        "paired_blocks_checked": 221,
-        "contextual_matches": [
-          {
-            "line": 2,
-            "terms": [
-              "kinetic-energy"
-            ]
-          },
-          {
-            "line": 2,
-            "terms": [
-              "kinetic-energy"
-            ]
-          }
-        ],
+        "paired_blocks_checked": 700,
+        "contextual_matches": [],
         "nonliteral_occurrences_left_plain": [
           {
             "line": 2,
@@ -1456,6 +1492,16 @@
             "English_only": [],
             "Chinese_only": [
               "kinetic-energy"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 2,
+            "English": "Conventions and conditions. ∇ ∥ 2 \\nabla_\\parallel^2 ∇ ∥ 2 ​ is in-plane Laplacian (m⁻²), and ∇ ∥ 4 \\nabla_\\parallel^4 ∇ ∥ 4 ​ its square; ∂ n \\partial_n ∂ n ​ differentiates along the outward in-plane boundary normal; Initial zero is displacement or velocity according to its row; Labels load and coh identify applied and cohesive forces.",
+            "Chinese": "约定与条件。 ∇ ∥ 2 \\nabla_\\parallel^2 ∇ ∥ 2 ​ 为面内拉普拉斯算子（m⁻²）， ∇ ∥ 4 \\nabla_\\parallel^4 ∇ ∥ 4 ​ 为其平方； ∂ n \\partial_n ∂ n ​ 表示沿面内边界外法向求导；初始零值按对应行分别表示位移或速度；标签load和coh表示外载与 内聚力 。",
+            "English_only": [],
+            "Chinese_only": [
+              "cohesive-traction"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -1481,8 +1527,8 @@
           },
           {
             "line": 2,
-            "English": "Symbols before Eq. (C4-E09). Δ w ˙ \\Delta\\dot w Δ w ˙ is the film velocity change from rest (m s⁻¹); Δ \\Delta Δ denotes final-minus-initial difference, and a dot is a time derivative. J A J_A J A ​ is local applied impulse per area (Pa s), m A > 0 m_A>0 m A ​ > 0 film areal mass (kg m⁻²), and E A \\mathcal E_A E A ​ resulting kinetic energy per area (J m⁻²). ≃ \\simeq ≃ marks negligible restoring/cohesive impulse during the pulse, not guaranteed transmission through an adhered stack. Subscript A labels quantities per area.",
-            "Chinese": "式（C4-E09）前的符号定义。 Δ w ˙ \\Delta\\dot w Δ w ˙ 为薄膜从静止开始的速度变化（m s⁻¹）； Δ \\Delta Δ 表示终值减初值，上点为时间导数。 J A J_A J A ​ 为局部单位面积外加冲量（Pa s）， m A > 0 m_A>0 m A ​ > 0 为薄膜面密度（kg m⁻²）， E A \\mathcal E_A E A ​ 为所得单位面积 动能 （J m⁻²）。 ≃ \\simeq ≃ 表示脉冲期间恢复力／ 内聚力 冲量可忽略，而非保证粘接叠层中的载荷传递。下标A表示单位面积量。",
+            "English": "Conventions and conditions. ≃ \\simeq ≃ marks negligible restoring/cohesive impulse during the pulse, not guaranteed transmission through an adhered stack; Subscript A labels quantities per area; Δ \\Delta Δ denotes final-minus-initial difference, and a dot is a time derivative.",
+            "Chinese": "约定与条件。 ≃ \\simeq ≃ 表示脉冲期间恢复力／ 内聚力 冲量可忽略，而非保证粘接叠层中的载荷传递；下标A表示单位面积量； Δ \\Delta Δ 表示终值减初值，上点为时间导数。",
             "English_only": [],
             "Chinese_only": [
               "cohesive-traction"
@@ -1502,9 +1548,19 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
+            "line": 126,
+            "English": "L j = 50 L_j=50 L j ​ = 50 μm jet length",
+            "Chinese": "L j = 50 L_j=50 L j ​ = 50 μm为长度",
+            "English_only": [
+              "jet"
+            ],
+            "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
             "line": 155,
-            "English": "Symbols before Eq. (C4-E30). E r e q ( v f ) E_{\\rm req}(v_f) E req ​ ( v f ​ ) is minimum fracture-plus-translation energy (J), I r e q ( v f ) I_{\\rm req}(v_f) I req ​ ( v f ​ ) required net impulse for the minimum departure speed (N s), v f ≥ 0 v_f\\ge0 v f ​ ≥ 0 that required speed (m s⁻¹), m f > 0 m_f>0 m f ​ > 0 payload mass (kg), A f A_f A f ​ full intended release area (m²), and Γ ≥ 0 \\Gamma\\ge0 Γ ≥ 0 assumed uniform fracture energy (J m⁻²). E s o l i d E_{\\rm solid} E solid ​ is assigned available solid energy (J); I n e t I_{\\rm net} I net ​ is net opening-direction impulse after interface/support reactions (N s). Subscripts req, f, solid and net identify required, payload, useful solid and net quantities. The inequalities are necessary under the stated zero-initial-energy/no-additional-source assumptions; they are not spatial fracture solutions.",
-            "Chinese": "式（C4-E30）前的符号定义。 E r e q ( v f ) E_{\\rm req}(v_f) E req ​ ( v f ​ ) 为最低断裂加平 动能 量（J）， I r e q ( v f ) I_{\\rm req}(v_f) I req ​ ( v f ​ ) 为达到最低离开速度所需净冲量（N s）， v f ≥ 0 v_f\\ge0 v f ​ ≥ 0 为所需速度（m s⁻¹）， m f > 0 m_f>0 m f ​ > 0 为对象质量（kg）， A f A_f A f ​ 为全部目标释放面积（m²）， Γ ≥ 0 \\Gamma\\ge0 Γ ≥ 0 为假设均匀 断裂能 （J m⁻²）。 E s o l i d E_{\\rm solid} E solid ​ 为指定可用固体能量（J）； I n e t I_{\\rm net} I net ​ 为考虑界面／支承反作用后的净张开方向冲量（N s）。下标req、f、solid、net分别标识所需、对象、有效固体及净量。在所述零初始能量／无额外源假设下，不等式是必要条件，而非空间断裂解。",
+            "English": "E r e q ( v f ) E_{\\rm req}(v_f) E req ​ ( v f ​ ) is minimum fracture-plus-translation energy (J)",
+            "Chinese": "E r e q ( v f ) E_{\\rm req}(v_f) E req ​ ( v f ​ ) 为最低断裂加平 动能 量（J）",
             "English_only": [],
             "Chinese_only": [
               "kinetic-energy"
@@ -1533,8 +1589,8 @@
           },
           {
             "line": 155,
-            "English": "Symbols before Eq. (C4-E32). Γ = 0.005 \\Gamma=0.005 Γ = 0.005 J m⁻² is the changed teaching fracture energy ; A f = 1.00 A_f=1.00 A f ​ = 1.00 ×10⁻⁶ m² is release area; m f = 2.33 m_f=2.33 m f ​ = 2.33 ×10⁻⁹ kg is payload mass; and v f = 0.50 v_f=0.50 v f ​ = 0.50 m s⁻¹ is minimum required departure speed. E r e q E_{\\rm req} E req ​ is minimum fracture-plus-translation energy (J), I r e q I_{\\rm req} I req ​ required net impulse (N s), and I n e t = 1.566642672 I_{\\rm net}=1.566642672 I net ​ = 1.566642672 ×10⁻⁹ N s the assigned actual net impulse. nJ is nanojoule. Subscripts req, f and net label required, payload and net. The 10.0 nJ comparator is assigned solid energy. The first-row numbers are SI mass and speed.",
-            "Chinese": "式（C4-E32）前的符号定义。 Γ = 0.005 \\Gamma=0.005 Γ = 0.005 J m⁻²为改变后的教学 断裂能 ； A f = 1.00 A_f=1.00 A f ​ = 1.00 ×10⁻⁶ m²为释放面积； m f = 2.33 m_f=2.33 m f ​ = 2.33 ×10⁻⁹ kg为对象质量； v f = 0.50 v_f=0.50 v f ​ = 0.50 m s⁻¹为最低所需离开速度。 E r e q E_{\\rm req} E req ​ 为最低断裂加平 动能 （J）， I r e q I_{\\rm req} I req ​ 为所需净冲量（N s）， I n e t = 1.566642672 I_{\\rm net}=1.566642672 I net ​ = 1.566642672 ×10⁻⁹ N s为指定实际净冲量。nJ为纳焦耳。下标req、f、net分别标识所需、对象及净量。10.0 nJ比较值是指定固体能量。第一行数值为SI制质量与速度。",
+            "English": "E r e q E_{\\rm req} E req ​ is minimum fracture-plus-translation energy (J)",
+            "Chinese": "E r e q E_{\\rm req} E req ​ 为最低断裂加平 动能 （J）",
             "English_only": [],
             "Chinese_only": [
               "kinetic-energy"
@@ -1553,12 +1609,32 @@
           },
           {
             "line": 155,
+            "English": "Conventions and conditions. ∫ \\int ∫ means surface/time integration; the dot denotes a vector projection; Subscripts l and f label liquid and film; The same identities first load PVC if it is the exposed layer; t a < t b t_a<t_b t a ​ < t b ​ fixes the integration interval..",
+            "Chinese": "约定与条件。 原公式： t l \\boldsymbol t_l t l ​ 为流体施加于固体的 牵引 （Pa）； ∫ \\int ∫ 表示表面／时间积分；点乘表示向量投影；下标l、f表示液体与薄膜；若PVC为外露层，同一恒等式首先加载PVC； t a < t b t_a<t_b t a ​ < t b ​ 确定积分区间。。",
+            "English_only": [],
+            "Chinese_only": [
+              "traction"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 155,
             "English": "A 47.23 MPa peak only characterizes the earliest local compressive contact under a rigid-receiver approximation. Its footprint, duration and load-path transmission are still needed. Twenty-five jets carry 50 nJ, and the assumed useful solid fraction supplies only 10 nJ. Releasing 1 mm² at 0.020 J m⁻² already costs 20 nJ, so the declared budget fails before translation is paid. Direct impact first loads the film; with intact PVC it first loads PVC, whose motion and contact determine what reaches the film. A pressure trace at PVC is not automatically an opening traction at the release interface. Failure of this necessary energy screen is decisive for the stated assumptions; passing a lower-energy case still requires crack coverage and intactness.",
             "Chinese": "47.23 MPa峰值只是在刚性接收体近似下，最早局部压缩接触的特征。还需要作用范围、持续时间及传力路径中的传递情况。25股 射流 携带50 nJ，假设有效固体比例只提供10 nJ。在0.020 J m⁻² 断裂能 下释放1 mm²已经需要20 nJ，因此尚未支付平 动能 ，所述预算就失败了。直接冲击首先加载薄膜；完整PVC情况下首先加载PVC，其运动与接触决定到达薄膜的载荷。PVC处压力历程并非自动等于释放界面张开 牵引 。在所述假设下，必要能量筛选失败具有决定性；低能耗情况通过筛选后，仍需检验裂纹覆盖与完整性。",
             "English_only": [],
             "Chinese_only": [
               "fracture-energy",
               "kinetic-energy"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 155,
+            "English": "Conventions and conditions. \\sqrt{\\ } ​ is the positive root; Subscripts f, 0 and crit denote film, maintained load and threshold; These expressions require regular centre and a clamped crack edge, quasistatic bending, and negligible stretching/pretension.",
+            "Chinese": "约定与条件。 原 鼓泡 公式： w ( r ) w(r) w ( r ) 为张开位移（m）； \\sqrt{\\ } ​ 取正根；下标f、0、crit分别表示薄膜、恒定载荷与阈值；表达式要求中心正则、裂纹边缘夹持、准静态弯曲，且拉伸／预张力可忽略。",
+            "English_only": [],
+            "Chinese_only": [
+              "blister"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -1589,7 +1665,7 @@
       },
       {
         "file": "chapters/05-hydrogel-versus-liquid.html",
-        "paired_blocks_checked": 227,
+        "paired_blocks_checked": 507,
         "contextual_matches": [
           {
             "line": 2,
@@ -1786,8 +1862,8 @@
           },
           {
             "line": 38,
-            "English": "Symbols before Eq. (A-E24). J t a r g e t \\mathbf J_{\\mathrm{target}} J target ​ is vector impulse delivered to the specified target (N s); t l o a d \\mathbf t_{\\mathrm{load}} t load ​ is external load traction (Pa), A t A_t A t ​ target loading area (m²), and t 0 , t 1 t_0,t_1 t 0 ​ , t 1 ​ defined start/end times (s). W s e p , m i n W_{\\mathrm{sep,min}} W sep , min ​ is necessary fracture-work budget (J), A r e l A_{\\mathrm{rel}} A rel ​ intended released interface area (m²), and Γ c \\Gamma_c Γ c ​ relevant interface fracture energy (J m⁻²), conditional on mode and rate. d A , d t dA,dt d A , d t are area/time measures and ∫ \\int ∫ is definite integration. Neither integral alone proves crack onset or intact landing.",
-            "Chinese": "式（A-E24）前的符号定义。 J t a r g e t \\mathbf J_{\\mathrm{target}} J target ​ 为传递到指定目标的向量冲量（N s）； t l o a d \\mathbf t_{\\mathrm{load}} t load ​ 为外加载荷 牵引 （Pa）， A t A_t A t ​ 为目标受载面积（m²）， t 0 , t 1 t_0,t_1 t 0 ​ , t 1 ​ 为明确的起止时间（s）。 W s e p , m i n W_{\\mathrm{sep,min}} W sep , min ​ 为必要断裂功预算（J）， A r e l A_{\\mathrm{rel}} A rel ​ 为目标释放界面面积（m²）， Γ c \\Gamma_c Γ c ​ 为相关 界面断裂 能（J m⁻²），取决于模态与速率。 d A , d t dA,dt d A , d t 为面积／时间测度， ∫ \\int ∫ 为定积分。这两个积分都不能独自证明裂纹起始或完整落点。",
+            "English": "Γ c \\Gamma_c Γ c ​ relevant interface fracture energy (J m⁻²), conditional on mode and rate",
+            "Chinese": "Γ c \\Gamma_c Γ c ​ 为相关 界面断裂 能（J m⁻²），取决于模态与速率",
             "English_only": [
               "fracture-energy"
             ],
@@ -1932,10 +2008,10 @@
     ]
   },
   "highlighter_sha256": "fcedfc2648e01d161a6d5ccdfa3e60912a77ba1f115b8814d0d94d7c92add5d5",
-  "color_stylesheet_sha256": "ba7e8fee472b6285bcaf856a6ebcd1bcb654db237198c49fe9e066ec38265893",
+  "color_stylesheet_sha256": "47c8d9b9180faa838a2f198b8ca5fb3c64435d49e6ccab145be344dcb41e2591",
   "term_totals": {
-    "absorbed-energy": 32,
-    "absorber": 55,
+    "absorbed-energy": 30,
+    "absorber": 58,
     "absorptance": 17,
     "absorption-coefficient": 12,
     "acoustic-crossing-time": 12,
@@ -1950,8 +2026,8 @@
     "capillary-time": 6,
     "cavitation": 24,
     "cohesive-strength": 8,
-    "cohesive-traction": 15,
-    "collapse-time": 29,
+    "cohesive-traction": 14,
+    "collapse-time": 31,
     "compressibility": 40,
     "condensation": 16,
     "confinement": 32,
@@ -1959,33 +2035,33 @@
     "critical-radius": 9,
     "deborah-number": 16,
     "delamination": 24,
-    "ejected-jet": 10,
+    "ejected-jet": 16,
     "elastic-boundary": 6,
-    "energy-budget": 10,
-    "energy-release-rate": 19,
+    "energy-budget": 16,
+    "energy-release-rate": 21,
     "equation-of-state": 26,
-    "fluence": 28,
+    "fluence": 30,
     "fracture-energy": 52,
     "free-surface": 6,
     "gas-cushioning": 2,
     "gas-nuclei": 2,
     "growth-rate": 10,
-    "heat-capacity": 39,
+    "heat-capacity": 41,
     "heat-transfer": 18,
     "hydrogel": 70,
     "incompressibility": 59,
     "inertia": 97,
-    "interfacial-fracture": 4,
-    "jet": 383,
-    "jet-speed": 28,
+    "interfacial-fracture": 8,
+    "jet": 416,
+    "jet-speed": 30,
     "kinematic-condition": 3,
-    "kinetic-energy": 118,
-    "latent-heat": 18,
+    "kinetic-energy": 122,
+    "latent-heat": 17,
     "liquid-bridge": 6,
-    "mach-number": 18,
+    "mach-number": 20,
     "mass-transfer": 8,
     "microjet": 4,
-    "momentum": 133,
+    "momentum": 137,
     "nanodroplet": 10,
     "neo-hookean": 34,
     "noncondensable-gas": 16,
@@ -1995,19 +2071,20 @@
     "optical-breakdown": 2,
     "optical-uniformity": 1,
     "peak-pressure": 14,
-    "pfc": 354,
+    "pfc": 360,
     "phase-change": 28,
     "phase-inventory": 4,
     "poisson-ratio": 18,
     "polytropic-exponent": 4,
     "poroelastic": 8,
     "potential-flow": 5,
-    "pressure-impulse": 54,
+    "pressure-impulse": 60,
     "rayleigh-plesset": 7,
     "re-entrant-jet": 6,
     "rebound": 12,
     "relaxation-time": 20,
     "resonance": 2,
+    "reynolds-number": 2,
     "rigid-boundary": 2,
     "shock-wave": 6,
     "spherical-collapse": 2,
@@ -2020,17 +2097,17 @@
     "traction-separation": 4,
     "vapor-pressure": 24,
     "vaporization": 24,
-    "velocity-potential": 54,
+    "velocity-potential": 71,
     "viscoelasticity": 2,
-    "viscosity": 232,
+    "viscosity": 236,
     "water-hammer": 2,
-    "weber-number": 2,
+    "weber-number": 4,
     "young-modulus": 6
   },
   "checks": [
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
-      "highlights": 316,
+      "highlights": 318,
       "terms": {
         "absorbed-energy": 8,
         "absorber": 4,
@@ -2048,7 +2125,7 @@
         "inertia": 10,
         "jet": 34,
         "jet-speed": 4,
-        "kinetic-energy": 12,
+        "kinetic-energy": 14,
         "mach-number": 2,
         "momentum": 7,
         "neo-hookean": 17,
@@ -2066,11 +2143,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "e3cb1eafd86e4f292f3f2949880e198f24fcd627b398d63986ed6f12fdc39305"
+      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "highlights": 522,
+      "highlights": 536,
       "terms": {
         "absorber": 2,
         "acoustic-crossing-time": 6,
@@ -2093,7 +2170,7 @@
         "kinetic-energy": 26,
         "latent-heat": 2,
         "liquid-bridge": 6,
-        "mach-number": 10,
+        "mach-number": 12,
         "mass-transfer": 4,
         "microjet": 2,
         "momentum": 15,
@@ -2104,7 +2181,7 @@
         "phase-change": 2,
         "phase-inventory": 2,
         "potential-flow": 2,
-        "pressure-impulse": 35,
+        "pressure-impulse": 39,
         "rayleigh-plesset": 7,
         "re-entrant-jet": 4,
         "shock-wave": 2,
@@ -2113,20 +2190,20 @@
         "traction": 9,
         "vapor-pressure": 12,
         "vaporization": 2,
-        "velocity-potential": 36,
-        "viscosity": 76
+        "velocity-potential": 42,
+        "viscosity": 78
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "fbfd5f1e00ca565168248f09f94fb7faf22280ec7b979dc218ff248048b2038d"
+      "sha256": "5000768e10c0b9c48023ea52a1827c66bcecadb5ab30601a340080b6266b76ac"
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "highlights": 586,
+      "highlights": 596,
       "terms": {
-        "absorbed-energy": 16,
-        "absorber": 41,
+        "absorbed-energy": 14,
+        "absorber": 44,
         "absorptance": 13,
         "absorption-coefficient": 12,
         "activation-probability": 9,
@@ -2136,16 +2213,16 @@
         "critical-radius": 9,
         "energy-budget": 4,
         "equation-of-state": 20,
-        "fluence": 28,
+        "fluence": 30,
         "gas-nuclei": 2,
-        "heat-capacity": 35,
+        "heat-capacity": 37,
         "heat-transfer": 6,
         "incompressibility": 4,
         "inertia": 6,
         "jet": 18,
         "jet-speed": 8,
         "kinetic-energy": 4,
-        "latent-heat": 16,
+        "latent-heat": 15,
         "mass-transfer": 2,
         "momentum": 4,
         "nanodroplet": 6,
@@ -2153,7 +2230,7 @@
         "nucleation": 35,
         "nucleation-barrier": 2,
         "optical-breakdown": 2,
-        "pfc": 186,
+        "pfc": 192,
         "phase-change": 14,
         "polytropic-exponent": 4,
         "stefan-balance": 2,
@@ -2168,11 +2245,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "ca5842fca985296c1940bde15b1508f60a6e4273d10aa6a5c82780c3ee428959"
+      "sha256": "c45cadced11964e5a5f93f268e658db1832398591f9d2c972a1ea7f62af1053f"
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "highlights": 468,
+      "highlights": 537,
       "terms": {
         "absorber": 2,
         "absorptance": 4,
@@ -2182,23 +2259,23 @@
         "capillary-pressure": 4,
         "capillary-time": 6,
         "cavitation": 2,
-        "collapse-time": 7,
+        "collapse-time": 9,
         "compressibility": 7,
         "control-volume": 4,
-        "ejected-jet": 8,
-        "energy-budget": 6,
+        "ejected-jet": 14,
+        "energy-budget": 8,
         "equation-of-state": 4,
         "fracture-energy": 4,
         "free-surface": 4,
         "growth-rate": 10,
         "incompressibility": 8,
         "inertia": 8,
-        "jet": 127,
-        "jet-speed": 4,
+        "jet": 161,
+        "jet-speed": 6,
         "kinematic-condition": 2,
         "kinetic-energy": 26,
         "mach-number": 4,
-        "momentum": 73,
+        "momentum": 77,
         "nanodroplet": 2,
         "nucleation": 2,
         "ohnesorge-number": 4,
@@ -2206,37 +2283,39 @@
         "peak-pressure": 2,
         "pfc": 26,
         "potential-flow": 3,
-        "pressure-impulse": 11,
+        "pressure-impulse": 13,
         "re-entrant-jet": 2,
+        "reynolds-number": 2,
         "shock-wave": 2,
         "surface-tension": 10,
         "traction": 14,
-        "velocity-potential": 16,
-        "viscosity": 32,
+        "velocity-potential": 27,
+        "viscosity": 34,
         "water-hammer": 2,
-        "weber-number": 2
+        "weber-number": 4
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "84031d7b684605b0ce84906a7a13b2b4fab1eed2bf540e7cb93dee8cb146d190"
+      "sha256": "d445c6be980ec72d0e51bf2b4c685fb7a709415ddc9c445944dbed3abbe062d6"
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "highlights": 415,
+      "highlights": 423,
       "terms": {
         "blister": 34,
         "boundary-integral": 2,
         "cohesive-strength": 6,
-        "cohesive-traction": 15,
+        "cohesive-traction": 14,
         "condensation": 4,
         "delamination": 24,
-        "energy-release-rate": 17,
+        "energy-budget": 4,
+        "energy-release-rate": 19,
         "fracture-energy": 44,
         "hydrogel": 2,
         "inertia": 30,
-        "interfacial-fracture": 4,
-        "jet": 55,
+        "interfacial-fracture": 8,
+        "jet": 54,
         "kinetic-energy": 36,
         "momentum": 23,
         "peak-pressure": 2,
@@ -2252,11 +2331,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "241dc744acabb9da2e699a63c90ac32bce5770c7a2779c84a8f1db9b0b52f8d8"
+      "sha256": "831e31bdeebe61c0f862610f19383fdf08c1683f1b306a29dc18ef6e0615de15"
     },
     {
       "file": "chapters/05-hydrogel-versus-liquid.html",
-      "highlights": 316,
+      "highlights": 318,
       "terms": {
         "absorbed-energy": 8,
         "absorber": 4,
@@ -2274,7 +2353,7 @@
         "inertia": 10,
         "jet": 34,
         "jet-speed": 4,
-        "kinetic-energy": 12,
+        "kinetic-energy": 14,
         "mach-number": 2,
         "momentum": 7,
         "neo-hookean": 17,
@@ -2292,7 +2371,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "e3cb1eafd86e4f292f3f2949880e198f24fcd627b398d63986ed6f12fdc39305"
+      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
     },
     {
       "file": "index.html",

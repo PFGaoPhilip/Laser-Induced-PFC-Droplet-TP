@@ -2,6 +2,7 @@
 from html import escape
 import json
 import re
+from equation_symbols import symbol_panel
 
 EQUATIONS = []
 
@@ -29,8 +30,7 @@ def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, captio
     EQUATIONS.append(item)
     label = escape(identifier.lower())
     return (f'<section class="equation-unit" id="{escape(identifier)}" data-kind="{escape(kind)}">'
-            + P(f'<strong>Symbols before Eq. ({identifier}).</strong> '+symbols_en,
-                f'<strong>式（{identifier}）前的符号定义。</strong> '+symbols_zh, 'symbols')
+            + symbol_panel(identifier, P)
             + f'<div class="equation-heading">({escape(identifier)}) · {escape(kind)}</div>'
             + f'<div class="math-display" data-tex="{escape(tex, quote=True)}"></div>'
             + f'<figure class="formula-figure"><img src="../assets/figures/{label}.svg" alt="{escape(caption_en, quote=True)}" loading="lazy">'

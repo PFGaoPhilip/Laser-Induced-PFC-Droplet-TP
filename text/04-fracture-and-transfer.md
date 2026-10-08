@@ -58,9 +58,21 @@ Step 1 — Adopt a Newtonian liquid constitutive law. Take the surface normal ou
 
 步骤1——采用牛顿液体本构关系。表面法向取从固体指向液体的外法向。此时，液体应力与该法向收缩，得到液体施加在固体上的牵引。若液体位于水平薄膜下方，该法向向下，正压力会将薄膜向上推动。这仍是外露表面上的压缩应力；另一个粘接界面是否张开，取决于薄膜变形与相对运动。
 
-**Symbols before Eq. (C4-E01).** $\boldsymbol u(\boldsymbol x,t)$ is liquid velocity (m s⁻¹), $\boldsymbol x$ position (m), and $t$ time (s). $\nabla$ is the spatial gradient (m⁻¹); superscript $\mathsf T$ transposes a tensor. $\boldsymbol D_u$ is strain-rate tensor (s⁻¹), $\boldsymbol T_l$ liquid Cauchy stress (Pa), $p$ liquid pressure (Pa), $\mu\ge0$ dynamic viscosity (Pa s), and $\boldsymbol I$ the dimensionless identity tensor. $\boldsymbol n_f$ is the unit solid-to-liquid normal; $\boldsymbol t_l$ is traction on the solid (Pa). Subscripts u, l and f label velocity strain, liquid and film surface.
+**Symbols before Eq. (C4-E01).**
 
-**式（C4-E01）前的符号定义。** $\boldsymbol u(\boldsymbol x,t)$为液体速度（m s⁻¹），$\boldsymbol x$为位置（m），$t$为时间（s）。$\nabla$为空间梯度（m⁻¹）；上标$\mathsf T$表示张量转置。$\boldsymbol D_u$为应变率张量（s⁻¹），$\boldsymbol T_l$为液体柯西应力（Pa），$p$为液体压力（Pa），$\mu\ge0$为动力黏度（Pa s），$\boldsymbol I$为无量纲单位张量。$\boldsymbol n_f$为固体指向液体的单位法向；$\boldsymbol t_l$为固体上的牵引（Pa）。下标u、l、f分别标识速度应变、液体及薄膜表面。
+**式（C4-E01）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\boldsymbol u(\boldsymbol x,t)$ is liquid velocity (m s⁻¹)<br>$\boldsymbol u(\boldsymbol x,t)$为液体速度（m s⁻¹） | $\boldsymbol x$ position (m)<br>$\boldsymbol x$为位置（m） |
+| $t$ time (s)<br>$t$为时间（s） | $\boldsymbol D_u$ is strain-rate tensor (s⁻¹)<br>$\boldsymbol D_u$为应变率张量（s⁻¹） |
+| $\boldsymbol T_l$ liquid Cauchy stress (Pa)<br>$\boldsymbol T_l$为液体柯西应力（Pa） | $p$ liquid pressure (Pa)<br>$p$为液体压力（Pa） |
+| $\mu\ge0$ dynamic viscosity (Pa s)<br>$\mu\ge0$为动力黏度（Pa s） | $\boldsymbol I$ the dimensionless identity tensor<br>$\boldsymbol I$为无量纲单位张量 |
+| $\boldsymbol n_f$ is the unit solid-to-liquid normal (dimensionless)<br>$\boldsymbol n_f$为固体指向液体的单位法向（无量纲） | $\boldsymbol t_l$ is traction on the solid (Pa)<br>$\boldsymbol t_l$为固体上的牵引（Pa） |
+
+**Conventions and conditions.** $\nabla$ is the spatial gradient (m⁻¹); superscript $\mathsf T$ transposes a tensor; Subscripts u, l and f label velocity strain, liquid and film surface.
+
+**约定与条件。** $\nabla$为空间梯度（m⁻¹）；上标$\mathsf T$表示张量转置；下标u、l、f分别标识速度应变、液体及薄膜表面。
 
 (C4-E01) · Constitutive assumption and traction identity
 
@@ -79,9 +91,22 @@ Step 2 — Integrate the traction in space to obtain force. Integrate force in t
 
 步骤2——对牵引作空间积分得到力，再对力作时间积分得到冲量。求功时，则必须先将牵引投影到表面速度上再积分。单位分别为Pa的压力、N s的冲量与J的功不能相等。近刚性表面可能承受显著短时应力与冲量，但位移很小，因此变形功仍很小。
 
-**Symbols before Eq. (C4-E02).** $A_f(t)$ is the loaded solid surface (m²), $dA$ its surface-area element (m²), and $\int$ denotes integration over the indicated surface or time. $\boldsymbol t_l$ is applied liquid traction (Pa), $\boldsymbol F_l$ its resultant (N), $\boldsymbol I_l$ its impulse (N s), and $\mathcal W_l$ work delivered to the solid (J). $\boldsymbol v_f$ is local solid surface velocity (m s⁻¹). $t_a<t_b$ are event start and end times (s); $t$ and $dt$ are time and its integration element (s). The vector dot product projects force onto velocity. Subscripts l and f label liquid and film.
+**Symbols before Eq. (C4-E02).**
 
-**式（C4-E02）前的符号定义。** $A_f(t)$为固体受载表面（m²），$dA$为表面积微元（m²），$\int$表示对所示表面或时间积分。$\boldsymbol t_l$为液体施加的牵引（Pa），$\boldsymbol F_l$为其合力（N），$\boldsymbol I_l$为其冲量（N s），$\mathcal W_l$为传入固体的功（J）。$\boldsymbol v_f$为固体表面局部速度（m s⁻¹）。$t_a<t_b$为事件起止时间（s）；$t$与$dt$分别为时间及其积分微元（s）。向量点乘将力投影到速度上。下标l和f表示液体与薄膜。
+**式（C4-E02）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $A_f(t)$ is the loaded solid surface (m²)<br>$A_f(t)$为固体受载表面（m²） | $dA$ its surface-area element (m²), and $\int$ denotes integration over the indicated surface or time<br>$dA$为表面积微元（m²），$\int$表示对所示表面或时间积分 |
+| $\boldsymbol t_l$ is applied liquid traction (Pa)<br>$\boldsymbol t_l$为液体施加的牵引（Pa） | $\boldsymbol F_l$ its resultant (N)<br>$\boldsymbol F_l$为其合力（N） |
+| $\boldsymbol I_l$ its impulse (N s)<br>$\boldsymbol I_l$为其冲量（N s） | $\mathcal W_l$ work delivered to the solid (J)<br>$\mathcal W_l$为传入固体的功（J） |
+| $\boldsymbol v_f$ is local solid surface velocity (m s⁻¹)<br>$\boldsymbol v_f$为固体表面局部速度（m s⁻¹） | $t_a$ — Load-event start time (s)<br>$t_a$ — 载荷事件开始时刻（s） |
+| $t_b$ — Load-event end time (s)<br>$t_b$ — 载荷事件结束时刻（s） | $t$ — Time (s)<br>$t$ — 时间（s） |
+| $dt$ — Time integration element (s)<br>$dt$ — 时间积分微元（s） |  |
+
+**Conventions and conditions.** The vector dot product projects force onto velocity; Subscripts l and f label liquid and film; $t_a<t_b$ fixes the integration interval..
+
+**约定与条件。** 向量点乘将力投影到速度上；下标l和f表示液体与薄膜；$t_a<t_b$ 确定积分区间。。
 
 (C4-E02) · Exact mechanical definitions
 
@@ -104,9 +129,20 @@ Step 3 — Adopt a homogeneous isotropic Kirchhoff–Love plate with linear elas
 
 步骤3——采用均匀各向同性Kirchhoff–Love薄板，假设线弹性平面应力、小应变、小斜率，且厚度远小于变形长度。沿厚度积分密度得到面密度；沿对称厚度积分弯曲应力矩得到弯曲刚度，其中二阶矩积分为厚度立方除以十二。粘接多层结构需要自身的层合刚度；若未确定共同中性面，不能简单相加两层薄膜的刚度。
 
-**Symbols before Eq. (C4-E03).** $m_A>0$ is film areal mass (kg m⁻²), $D_f>0$ bending stiffness (N m), $\rho_f>0$ constant density (kg m⁻³), $h_f>0$ film thickness (m), $E_f>0$ Young’s modulus (Pa), and $-1<\nu_f<1/2$ Poisson’s ratio (dimensionless). $z$ is thickness coordinate (m), zero at the neutral midplane; $dz$ is its integration element (m). $\int$ is definite thickness integration. Subscripts A and f label areal quantity and film.
+**Symbols before Eq. (C4-E03).**
 
-**式（C4-E03）前的符号定义。** $m_A>0$为薄膜面密度（kg m⁻²），$D_f>0$为弯曲刚度（N m），$\rho_f>0$为恒定密度（kg m⁻³），$h_f>0$为薄膜厚度（m），$E_f>0$为杨氏模量（Pa），$-1<\nu_f<1/2$为泊松比（无量纲）。$z$为厚度坐标（m），中性面处为零；$dz$为其积分微元（m）。$\int$表示沿厚度定积分。下标A与f标识面量与薄膜。
+**式（C4-E03）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $m_A>0$ is film areal mass (kg m⁻²)<br>$m_A>0$为薄膜面密度（kg m⁻²） | $D_f>0$ bending stiffness (N m)<br>$D_f>0$为弯曲刚度（N m） |
+| $\rho_f>0$ constant density (kg m⁻³)<br>$\rho_f>0$为恒定密度（kg m⁻³） | $h_f>0$ film thickness (m)<br>$h_f>0$为薄膜厚度（m） |
+| $E_f>0$ Young’s modulus (Pa)<br>$E_f>0$为杨氏模量（Pa） | $-1<\nu_f<1/2$ Poisson’s ratio (dimensionless)<br>$-1<\nu_f<1/2$为泊松比（无量纲） |
+| $z$ is thickness coordinate (m), zero at the neutral midplane<br>$z$为厚度坐标（m），中性面处为零 | $dz$ is its integration element (m)<br>$dz$为其积分微元（m） |
+
+**Conventions and conditions.** $\int$ is definite thickness integration; Subscripts A and f label areal quantity and film.
+
+**约定与条件。** $\int$表示沿厚度定积分；下标A与f标识面量与薄膜。
 
 (C4-E03) · Derived plate parameters under constitutive assumptions
 
@@ -125,9 +161,23 @@ Step 4 — Form the kinetic, bending and prescribed-pretension energies. Curvatu
 
 步骤4——写出动能、弯曲能与给定预张力能。在此线性薄板模型中，曲率由位移的二阶空间导数给出。两个面内方向的曲率及扭曲通过泊松比耦合。预张力假定均匀，其储能与斜率有关。这些表达式区分形状储能与运动动能。
 
-**Symbols before Eq. (C4-E04).** $\Omega_f$ is the reference film plane (m²), $dA$ its area element (m²), $w(x,y,t)$ vertical displacement (m), $x,y$ in-plane coordinates (m), and $t$ time (s). A dot differentiates in time; subscripts $xx,yy,xy$ differentiate twice in the indicated coordinates, giving curvatures (m⁻¹). $\nabla_\parallel$ is the in-plane gradient; $|\ |$ denotes Euclidean magnitude. $m_A$ is areal mass (kg m⁻²), $D_f$ bending stiffness (N m), $\nu_f$ Poisson’s ratio, and $T_0\ge0$ prescribed isotropic tensile force per edge length (N m⁻¹). $K_f,U_b,U_T$ are kinetic, bending and pretension energies (J); $\int$ denotes area integration. Labels f, b, T identify film, bending and tension.
+**Symbols before Eq. (C4-E04).**
 
-**式（C4-E04）前的符号定义。** $\Omega_f$为薄膜参考平面（m²），$dA$为面积微元（m²），$w(x,y,t)$为竖直位移（m），$x,y$为面内坐标（m），$t$为时间（s）。上点表示时间导数；下标$xx,yy,xy$表示对所示坐标求二阶导数，得到曲率（m⁻¹）。$\nabla_\parallel$为面内梯度；$|\ |$为欧氏模长。$m_A$为面密度（kg m⁻²），$D_f$为弯曲刚度（N m），$\nu_f$为泊松比，$T_0\ge0$为给定各向同性单位边长拉力（N m⁻¹）。$K_f,U_b,U_T$分别为动能、弯曲能及预张力能（J）；$\int$表示面积积分。标签f、b、T分别指薄膜、弯曲与张力。
+**式（C4-E04）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Omega_f$ is the reference film plane (m²)<br>$\Omega_f$为薄膜参考平面（m²） | $dA$ its area element (m²)<br>$dA$为面积微元（m²） |
+| $w(x,y,t)$ vertical displacement (m)<br>$w(x,y,t)$为竖直位移（m） | $x$ — First Cartesian in-plane coordinate (m)<br>$x$ — 第一笛卡尔面内坐标（m） |
+| $y$ — Second Cartesian in-plane coordinate (m)<br>$y$ — 第二笛卡尔面内坐标（m） | $t$ time (s)<br>$t$为时间（s） |
+| $m_A$ is areal mass (kg m⁻²)<br>$m_A$为面密度（kg m⁻²） | $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） |
+| $\nu_f$ Poisson’s ratio<br>$\nu_f$为泊松比 | $T_0\ge0$ prescribed isotropic tensile force per edge length (N m⁻¹)<br>$T_0\ge0$为给定各向同性单位边长拉力（N m⁻¹） |
+| $K_f$ — Film kinetic energy (J)<br>$K_f$ — 薄膜动能（J） | $U_b$ — Plate bending energy, not bubble internal energy in this unit (J)<br>$U_b$ — 板弯曲能，本单元不表示气泡内能（J） |
+| $U_T$ — Stored pretension energy (J)<br>$U_T$ — 预张力储能（J） |  |
+
+**Conventions and conditions.** A dot differentiates in time; subscripts $xx,yy,xy$ differentiate twice in the indicated coordinates, giving curvatures (m⁻¹); $\nabla_\parallel$ is the in-plane gradient; $|\ |$ denotes Euclidean magnitude; $\int$ denotes area integration; Labels f, b, T identify film, bending and tension.
+
+**约定与条件。** 上点表示时间导数；下标$xx,yy,xy$表示对所示坐标求二阶导数，得到曲率（m⁻¹）；$\nabla_\parallel$为面内梯度；$|\ |$为欧氏模长；$\int$表示面积积分；标签f、b、T分别指薄膜、弯曲与张力。
 
 (C4-E04) · Linear-plate energy model
 
@@ -146,9 +196,25 @@ Step 5 — Vary displacement while holding a clamped boundary fixed. Two integra
 
 步骤5——在固定夹持边界的条件下对位移作变分。对弯曲的各二阶导数作两次分部积分，转为作用于位移的四阶导数；由于位移变分及其法向斜率变分均为零，边界项消失。对张力项作一次分部积分，得到负拉普拉斯算子。所得横向虚功平衡中，每一项均具有压力单位。
 
-**Symbols before Eq. (C4-E40).** $\Omega_f$ is the smooth reference film plane (m²), $\partial\Omega_f$ its boundary, $dA$ area element (m²), and $d\ell$ boundary arc-length element (m). $w$ is displacement (m); $\delta w$ an admissible infinitesimal variation (m); $\delta U_b,\delta U_T$ the corresponding bending/pretension energy variations (J). $\alpha,\beta=1,2$ index the two Cartesian in-plane directions, with $\sum$ summing all four index pairs. $\partial_\alpha$ is coordinate differentiation (m⁻¹); $w_{\alpha\beta}=\partial_\alpha\partial_\beta w$ is curvature (m⁻¹). $D_f$ is bending stiffness (N m), $\nu_f$ Poisson’s ratio, $T_0$ pretension (N m⁻¹), and $B_{\alpha\beta}$ the bending-energy tensor conjugate to curvature (N). $\delta_{\alpha\beta}$ is the dimensionless Kronecker identity, distinct from variation notation. $n_\alpha,n_\beta$ are components of the outward in-plane unit boundary normal; $\partial_n$ its derivative. $\nabla_\parallel$ and $\nabla_\parallel^2$ are in-plane gradient and Laplacian; $\boldsymbol0$ is zero gradient. $\int,\oint$ denote area and closed-boundary integrals. $\Rightarrow$ uses zero tangential derivative of an identically zero boundary variation plus the prescribed zero normal derivative.
+**Symbols before Eq. (C4-E40).**
 
-**式（C4-E40）前的符号定义。** $\Omega_f$为光滑薄膜参考平面（m²），$\partial\Omega_f$为其边界，$dA$为面积微元（m²），$d\ell$为边界弧长微元（m）。$w$为位移（m）；$\delta w$为容许无穷小变分（m）；$\delta U_b,\delta U_T$为相应弯曲／预张力能变分（J）。$\alpha,\beta=1,2$标识两个笛卡尔面内方向，$\sum$对四种指标组合求和。$\partial_\alpha$为坐标求导（m⁻¹）；$w_{\alpha\beta}=\partial_\alpha\partial_\beta w$为曲率（m⁻¹）。$D_f$为弯曲刚度（N m），$\nu_f$为泊松比，$T_0$为预张力（N m⁻¹），$B_{\alpha\beta}$为与曲率共轭的弯曲能张量（N）。$\delta_{\alpha\beta}$为无量纲Kronecker单位张量，与变分记号不同。$n_\alpha,n_\beta$为面内边界外单位法向分量；$\partial_n$为沿该法向求导。$\nabla_\parallel$及$\nabla_\parallel^2$为面内梯度及拉普拉斯算子；$\boldsymbol0$为零梯度。$\int,\oint$分别表示面积积分与闭合边界积分。$\Rightarrow$使用恒为零的边界变分具有零切向导数，并结合给定零法向导数。
+**式（C4-E40）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Omega_f$ is the smooth reference film plane (m²), $\partial\Omega_f$ its boundary<br>$\Omega_f$为光滑薄膜参考平面（m²），$\partial\Omega_f$为其边界 | $dA$ area element (m²)<br>$dA$为面积微元（m²） |
+| $d\ell$ boundary arc-length element (m)<br>$d\ell$为边界弧长微元（m） | $w$ is displacement (m)<br>$w$为位移（m） |
+| $\delta w$ an admissible infinitesimal variation (m)<br>$\delta w$为容许无穷小变分（m） | $\delta U_b$ — Bending-energy variation (J)<br>$\delta U_b$ — 弯曲能变分（J） |
+| $\delta U_T$ — Pretension-energy variation (J)<br>$\delta U_T$ — 预张力能变分（J） | $\alpha$ — Cartesian in-plane direction index, taking 1 or 2 (dimensionless)<br>$\alpha$ — 取 1 或 2 的笛卡尔面内方向指标（无量纲） |
+| $\beta$ — Cartesian in-plane direction index, taking 1 or 2 (dimensionless)<br>$\beta$ — 取 1 或 2 的笛卡尔面内方向指标（无量纲） | $w_{\alpha\beta}=\partial_\alpha\partial_\beta w$ is curvature (m⁻¹)<br>$w_{\alpha\beta}=\partial_\alpha\partial_\beta w$为曲率（m⁻¹） |
+| $D_f$ is bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $\nu_f$ Poisson’s ratio<br>$\nu_f$为泊松比 |
+| $T_0$ pretension (N m⁻¹)<br>$T_0$为预张力（N m⁻¹） | $B_{\alpha\beta}$ the bending-energy tensor conjugate to curvature (N)<br>$B_{\alpha\beta}$为与曲率共轭的弯曲能张量（N） |
+| $\delta_{\alpha\beta}$ is the dimensionless Kronecker identity, distinct from variation notation<br>$\delta_{\alpha\beta}$为无量纲Kronecker单位张量，与变分记号不同 | $n_\alpha$ — Component of the outward in-plane unit normal (dimensionless)<br>$n_\alpha$ — 面内外单位法向的分量（无量纲） |
+| $n_\beta$ — Component of the outward in-plane unit normal (dimensionless)<br>$n_\beta$ — 面内外单位法向的分量（无量纲） | $\boldsymbol0$ is zero gradient (dimensionless)<br>$\boldsymbol0$为零梯度（无量纲） |
+
+**Conventions and conditions.** $\partial_\alpha$ is coordinate differentiation (m⁻¹); $\partial_n$ its derivative; $\nabla_\parallel$ and $\nabla_\parallel^2$ are in-plane gradient and Laplacian; $\int,\oint$ denote area and closed-boundary integrals; $\Rightarrow$ uses zero tangential derivative of an identically zero boundary variation plus the prescribed zero normal derivative; $\sum_{\alpha,\beta=1}^{2}$ sums all four index pairs..
+
+**约定与条件。** $\partial_\alpha$为坐标求导（m⁻¹）；$\partial_n$为沿该法向求导；$\nabla_\parallel$及$\nabla_\parallel^2$为面内梯度及拉普拉斯算子；$\int,\oint$分别表示面积积分与闭合边界积分；$\Rightarrow$使用恒为零的边界变分具有零切向导数，并结合给定零法向导数；$\sum_{\alpha,\beta=1}^{2}$ 对四种指标组合求和。。
 
 (C4-E40) · Explicit integration-by-parts boundary terms
 
@@ -163,9 +229,22 @@ Two integrations by parts expose the boundary moment and shear terms before they
 
 两次分部积分先明确显示边界弯矩与剪力项，再依据条件将其消去。
 
-**Symbols before Eq. (C4-E05).** $\delta$ denotes an infinitesimal admissible variation, not physical crack opening here; $\delta w$ is a displacement variation (m). $U_b,U_T$ are bending and pretension energy (J); $D_f$ is bending stiffness (N m); $\nu_f$ is dimensionless Poisson’s ratio; $T_0$ is uniform pretension (N m⁻¹). $w$ is transverse displacement (m); $x,y$ are in-plane coordinates (m). Subscripts $xxxx,xxyy,yyyy$ denote the indicated fourth derivatives (m⁻³). $\nabla_\parallel^2=\partial_x^2+\partial_y^2$ is the in-plane Laplacian; $\nabla_\parallel^4$ is that Laplacian applied twice. $\Omega_f$ is film area (m²); $dA$ is its element (m²); $\int$ is area integration. The variations and their normal slopes vanish at a clamped boundary.
+**Symbols before Eq. (C4-E05).**
 
-**式（C4-E05）前的符号定义。** $\delta$在此表示无穷小容许变分，而非物理裂纹张开；$\delta w$为位移变分（m）。$U_b,U_T$为弯曲能及预张力能（J）；$D_f$为弯曲刚度（N m）；$\nu_f$为无量纲泊松比；$T_0$为均匀预张力（N m⁻¹）。$w$为横向位移（m）；$x,y$为面内坐标（m）。下标$xxxx,xxyy,yyyy$表示所示四阶导数（m⁻³）。$\nabla_\parallel^2=\partial_x^2+\partial_y^2$为面内拉普拉斯算子；$\nabla_\parallel^4$为将该算子作用两次。$\Omega_f$为薄膜面积（m²）；$dA$为面积微元（m²）；$\int$表示面积积分。夹持边界处变分及其法向斜率均为零。
+**式（C4-E05）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\delta w$ is a displacement variation (m)<br>$\delta w$为位移变分（m） | $U_b$ — Plate bending energy, not bubble internal energy in this unit (J)<br>$U_b$ — 板弯曲能，本单元不表示气泡内能（J） |
+| $U_T$ — Stored pretension energy (J)<br>$U_T$ — 预张力储能（J） | $D_f$ is bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） |
+| $\nu_f$ is dimensionless Poisson’s ratio<br>$\nu_f$为无量纲泊松比 | $T_0$ is uniform pretension (N m⁻¹)<br>$T_0$为均匀预张力（N m⁻¹） |
+| $w$ is transverse displacement (m)<br>$w$为横向位移（m） | $x$ — First Cartesian in-plane coordinate (m)<br>$x$ — 第一笛卡尔面内坐标（m） |
+| $y$ — Second Cartesian in-plane coordinate (m)<br>$y$ — 第二笛卡尔面内坐标（m） | $\Omega_f$ is film area (m²)<br>$\Omega_f$为薄膜面积（m²） |
+| $dA$ is its element (m²)<br>$dA$为面积微元（m²） |  |
+
+**Conventions and conditions.** Subscripts $xxxx,xxyy,yyyy$ denote the indicated fourth derivatives (m⁻³); $\nabla_\parallel^2=\partial_x^2+\partial_y^2$ is the in-plane Laplacian; $\nabla_\parallel^4$ is that Laplacian applied twice; $\int$ is area integration; The variations and their normal slopes vanish at a clamped boundary; $\delta$ denotes an infinitesimal admissible variation, not physical crack opening here.
+
+**约定与条件。** 下标$xxxx,xxyy,yyyy$表示所示四阶导数（m⁻³）；$\nabla_\parallel^2=\partial_x^2+\partial_y^2$为面内拉普拉斯算子；$\nabla_\parallel^4$为将该算子作用两次；$\int$表示面积积分；夹持边界处变分及其法向斜率均为零；$\delta$在此表示无穷小容许变分，而非物理裂纹张开。
 
 (C4-E05) · Derived variational identity for fixed clamps
 
@@ -180,9 +259,21 @@ A fixed clamp removes the boundary virtual-work terms.
 
 固定夹持边界使边界虚功项消失。
 
-**Symbols before Eq. (C4-E06).** $w(\boldsymbol x,t)$ is film displacement in the positive departure direction (m); $\boldsymbol x=(x,y)$ is in-plane position (m), and $t$ time (s). $\dot w,\ddot w$ are time derivatives (m s⁻¹, m s⁻²). $m_A$ is areal mass (kg m⁻²), $D_f$ bending stiffness (N m), and $T_0\ge0$ pretension (N m⁻¹). $\nabla_\parallel^2$ is in-plane Laplacian (m⁻²), and $\nabla_\parallel^4$ its square. $p_{\rm load}$ is net applied transverse traction projected positively (Pa), whereas $t_{\rm coh}\ge0$ is an opening-resisting cohesive traction magnitude (Pa). $\partial_n$ differentiates along the outward in-plane boundary normal. Initial zero is displacement or velocity according to its row. Labels load and coh identify applied and cohesive forces.
+**Symbols before Eq. (C4-E06).**
 
-**式（C4-E06）前的符号定义。** $w(\boldsymbol x,t)$为沿正离开方向的薄膜位移（m）；$\boldsymbol x=(x,y)$为面内位置（m），$t$为时间（s）。$\dot w,\ddot w$为时间导数（m s⁻¹、m s⁻²）。$m_A$为面密度（kg m⁻²），$D_f$为弯曲刚度（N m），$T_0\ge0$为预张力（N m⁻¹）。$\nabla_\parallel^2$为面内拉普拉斯算子（m⁻²），$\nabla_\parallel^4$为其平方。$p_{\rm load}$为沿正方向投影的净外加横向牵引（Pa），$t_{\rm coh}\ge0$为抵抗张开的内聚牵引幅值（Pa）。$\partial_n$表示沿面内边界外法向求导。初始零值按对应行分别表示位移或速度。标签load和coh表示外载与内聚力。
+**式（C4-E06）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $w(\boldsymbol x,t)$ is film displacement in the positive departure direction (m)<br>$w(\boldsymbol x,t)$为沿正离开方向的薄膜位移（m） | $\boldsymbol x=(x,y)$ is in-plane position (m)<br>$\boldsymbol x=(x,y)$为面内位置（m） |
+| $t$ time (s)<br>$t$为时间（s） | $\dot w$ — Film transverse velocity (m s⁻¹)<br>$\dot w$ — 薄膜横向速度（m s⁻¹） |
+| $\ddot w$ — Film transverse acceleration (m s⁻²)<br>$\ddot w$ — 薄膜横向加速度（m s⁻²） | $m_A$ is areal mass (kg m⁻²)<br>$m_A$为面密度（kg m⁻²） |
+| $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $T_0\ge0$ pretension (N m⁻¹)<br>$T_0\ge0$为预张力（N m⁻¹） |
+| $p_{\rm load}$ is net applied transverse traction projected positively (Pa)<br>$p_{\rm load}$为沿正方向投影的净外加横向牵引（Pa） | $t_{\rm coh}\ge0$ is an opening-resisting cohesive traction magnitude (Pa)<br>$t_{\rm coh}\ge0$为抵抗张开的内聚牵引幅值（Pa） |
+
+**Conventions and conditions.** $\nabla_\parallel^2$ is in-plane Laplacian (m⁻²), and $\nabla_\parallel^4$ its square; $\partial_n$ differentiates along the outward in-plane boundary normal; Initial zero is displacement or velocity according to its row; Labels load and coh identify applied and cohesive forces.
+
+**约定与条件。** $\nabla_\parallel^2$为面内拉普拉斯算子（m⁻²），$\nabla_\parallel^4$为其平方；$\partial_n$表示沿面内边界外法向求导；初始零值按对应行分别表示位移或速度；标签load和coh表示外载与内聚力。
 
 (C4-E06) · Reduced transient momentum balance with explicit initial/boundary data
 
@@ -201,9 +292,23 @@ A fixed clamp also has zero boundary velocity and zero normal velocity slope. Mu
 
 固定夹持边界还具有零边界速度及零法向速度斜率。将薄板平衡乘以速度，再在平面上积分。惯性项成为动能的导数；同样两次空间分部积分使弯曲项成为弯曲能导数，一次分部积分使张力项成为预张力能导数。因此，瞬态平衡具有直接的功检验。内聚功率是从板运动中取出的功率，其可恢复与不可逆部分必须由界面关系分配。
 
-**Symbols before Eq. (C4-E41).** $\Omega_f$ is reference film area (m²), $dA$ its area element (m²), $w$ displacement (m), and $\dot w,\ddot w$ velocity and acceleration (m s⁻¹, m s⁻²). $m_A$ is areal mass (kg m⁻²), $D_f$ bending stiffness (N m), $T_0$ constant pretension (N m⁻¹), $p_{\rm load}$ applied transverse traction (Pa), and $t_{\rm coh}$ resisting cohesive traction (Pa). $K_f,U_b,U_T$ are kinetic, bending and pretension energies (J); $t$ is time (s); $d/dt$ is its derivative. $\nabla_\parallel^2$ is planar Laplacian and $\nabla_\parallel^4$ its square; $\int$ is area integration. The derivatives are valid for the stated constant parameters and sufficiently regular fields at a fixed clamp with zero velocity and normal velocity slope. Every row has power units W; f, b, T, load and coh label film, bending, tension, applied and cohesive.
+**Symbols before Eq. (C4-E41).**
 
-**式（C4-E41）前的符号定义。** $\Omega_f$为薄膜参考面积（m²），$dA$为面积微元（m²），$w$为位移（m），$\dot w,\ddot w$为速度及加速度（m s⁻¹、m s⁻²）。$m_A$为面密度（kg m⁻²），$D_f$为弯曲刚度（N m），$T_0$为恒定预张力（N m⁻¹），$p_{\rm load}$为外加横向牵引（Pa），$t_{\rm coh}$为抵抗内聚牵引（Pa）。$K_f,U_b,U_T$为动能、弯曲能及预张力能（J）；$t$为时间（s）；$d/dt$为时间导数。$\nabla_\parallel^2$为平面拉普拉斯算子，$\nabla_\parallel^4$为其平方；$\int$表示面积积分。导数适用于所述恒定参数、足够正则的场，以及速度和法向速度斜率均为零的固定夹持边界。各行单位均为功率W；f、b、T、load、coh分别表示薄膜、弯曲、张力、外加及内聚。
+**式（C4-E41）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Omega_f$ is reference film area (m²)<br>$\Omega_f$为薄膜参考面积（m²） | $dA$ its area element (m²)<br>$dA$为面积微元（m²） |
+| $w$ displacement (m)<br>$w$为位移（m） | $\dot w$ — Film transverse velocity (m s⁻¹)<br>$\dot w$ — 薄膜横向速度（m s⁻¹） |
+| $\ddot w$ — Film transverse acceleration (m s⁻²)<br>$\ddot w$ — 薄膜横向加速度（m s⁻²） | $m_A$ is areal mass (kg m⁻²)<br>$m_A$为面密度（kg m⁻²） |
+| $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $T_0$ constant pretension (N m⁻¹)<br>$T_0$为恒定预张力（N m⁻¹） |
+| $p_{\rm load}$ applied transverse traction (Pa)<br>$p_{\rm load}$为外加横向牵引（Pa） | $t_{\rm coh}$ resisting cohesive traction (Pa)<br>$t_{\rm coh}$为抵抗内聚牵引（Pa） |
+| $K_f$ — Film kinetic energy (J)<br>$K_f$ — 薄膜动能（J） | $U_b$ — Plate bending energy, not bubble internal energy in this unit (J)<br>$U_b$ — 板弯曲能，本单元不表示气泡内能（J） |
+| $U_T$ — Stored pretension energy (J)<br>$U_T$ — 预张力储能（J） | $t$ is time (s)<br>$t$为时间（s） |
+
+**Conventions and conditions.** $d/dt$ is its derivative; $\nabla_\parallel^2$ is planar Laplacian and $\nabla_\parallel^4$ its square; $\int$ is area integration; The derivatives are valid for the stated constant parameters and sufficiently regular fields at a fixed clamp with zero velocity and normal velocity slope; Every row has power units W; f, b, T, load and coh label film, bending, tension, applied and cohesive.
+
+**约定与条件。** $d/dt$为时间导数；$\nabla_\parallel^2$为平面拉普拉斯算子，$\nabla_\parallel^4$为其平方；$\int$表示面积积分；导数适用于所述恒定参数、足够正则的场，以及速度和法向速度斜率均为零的固定夹持边界；各行单位均为功率W；f、b、T、load、coh分别表示薄膜、弯曲、张力、外加及内聚。
 
 (C4-E41) · Transient plate power identity under fixed clamps
 
@@ -226,9 +331,22 @@ Step 6 — Keep the intermediate PVC sheet as a mechanical participant. As a sim
 
 步骤6——将中间PVC片层保留为独立力学环节。作为简单横向双片层模型，给每层指定各自面惯性、刚度与支承。根据牛顿第三定律，未知传递牵引对两片层的作用符号相反，必须由接触或粘接关系确定。此模型不描述完全粘接层合结构的面内组合弯曲；后者应满足相容条件并采用相应层合刚度。
 
-**Symbols before Eq. (C4-E07).** $w_P,w$ are PVC and film displacements in the same positive direction (m); double dots are accelerations (m s⁻²). $m_{A,P},m_A$ are their areal masses (kg m⁻²); $D_P,D_f$ their bending stiffnesses (N m); $T_P,T_0$ their prescribed pretensions (N m⁻¹). $\nabla_\parallel^2$ is the in-plane Laplacian and $\nabla_\parallel^4$ its square. $p_{\rm liq}$ is net liquid traction on PVC (Pa), $t_{P\to f}$ transmitted PVC-to-film traction projected positively (Pa), and $t_{\rm coh}$ film-release resistance (Pa). P labels PVC, f film, A areal, liq liquid and coh cohesion; the arrow labels the transmission direction. Each sheet has its actual initial and support conditions. No value of transmitted traction is supplied without an additional contact/bond closure.
+**Symbols before Eq. (C4-E07).**
 
-**式（C4-E07）前的符号定义。** $w_P,w$为PVC与薄膜沿同一正方向的位移（m）；双上点为加速度（m s⁻²）。$m_{A,P},m_A$为两者面密度（kg m⁻²）；$D_P,D_f$为弯曲刚度（N m）；$T_P,T_0$为给定预张力（N m⁻¹）。$\nabla_\parallel^2$为面内拉普拉斯算子，$\nabla_\parallel^4$为其平方。$p_{\rm liq}$为液体作用于PVC的净牵引（Pa），$t_{P\to f}$为沿正方向投影的PVC传向薄膜牵引（Pa），$t_{\rm coh}$为薄膜释放阻力（Pa）。P表示PVC，f表示薄膜，A表示面量，liq表示液体，coh表示内聚；箭头标识传递方向。每层均具有自身实际初始及支承条件。若无附加接触／粘接闭合关系，传递牵引就尚未确定。
+**式（C4-E07）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $w_P$ — PVC displacement along the common positive direction (m)<br>$w_P$ — 沿共同正方向的 PVC 位移（m） | $w$ — Film displacement along the same positive direction as PVC displacement (m)<br>$w$ — 与 PVC 位移采用相同正方向的薄膜位移（m） |
+| $m_{A,P}$ — PVC areal mass (kg m⁻²)<br>$m_{A,P}$ — PVC 面密度（kg m⁻²） | $m_A$ — Film areal mass (kg m⁻²)<br>$m_A$ — 薄膜面密度（kg m⁻²） |
+| $D_P$ — PVC bending stiffness (N m)<br>$D_P$ — PVC 弯曲刚度（N m） | $D_f$ — Film bending rigidity (N m)<br>$D_f$ — 薄膜弯曲刚度（N m） |
+| $T_P$ — Prescribed PVC pretension (N m⁻¹)<br>$T_P$ — 给定 PVC 预张力（N m⁻¹） | $T_0$ — Prescribed isotropic tensile force per edge length (N m⁻¹)<br>$T_0$ — 给定的单位边长各向同性拉力（N m⁻¹） |
+| $p_{\rm liq}$ is net liquid traction on PVC (Pa)<br>$p_{\rm liq}$为液体作用于PVC的净牵引（Pa） | $t_{P\to f}$ transmitted PVC-to-film traction projected positively (Pa)<br>$t_{P\to f}$为沿正方向投影的PVC传向薄膜牵引（Pa） |
+| $t_{\rm coh}$ film-release resistance (Pa)<br>$t_{\rm coh}$为薄膜释放阻力（Pa） |  |
+
+**Conventions and conditions.** double dots are accelerations (m s⁻²); $\nabla_\parallel^2$ is the in-plane Laplacian and $\nabla_\parallel^4$ its square; P labels PVC, f film, A areal, liq liquid and coh cohesion; the arrow labels the transmission direction; Each sheet has its actual initial and support conditions; No value of transmitted traction is supplied without an additional contact/bond closure.
+
+**约定与条件。** 双上点为加速度（m s⁻²）；$\nabla_\parallel^2$为面内拉普拉斯算子，$\nabla_\parallel^4$为其平方；P表示PVC，f表示薄膜，A表示面量，liq表示液体，coh表示内聚；箭头标识传递方向；每层均具有自身实际初始及支承条件；若无附加接触／粘接闭合关系，传递牵引就尚未确定。
 
 (C4-E07) · Conditional coupled-sheet model
 
@@ -247,9 +365,23 @@ Step 7 — Integrate the transient film equation through a finite pulse. The exa
 
 步骤7——在有限脉冲期间积分薄膜瞬态方程。降阶模型的严格积分平衡包含恢复力与内聚力的时间积分。只有这些冲量相较外加冲量很小时，才可得到自由速度跃变。若整个受载区都被刚性供体约束，就不满足这一条件。已经在流体求解中解析的惯性，也不能再以独立附加液体质量重复计入。
 
-**Symbols before Eq. (C4-E08).** $m_A$ is film areal mass (kg m⁻²), $w(\boldsymbol x,t)$ vertical displacement (m), $\boldsymbol x$ in-plane position (m), and $\dot w$ velocity (m s⁻¹). $t_a,t_b,t,dt$ are pulse endpoints, integration time and time element (s). $J_A$ is local applied impulse per area (Pa s), $p_{\rm load}$ net applied traction (Pa), $t_{\rm coh}$ cohesive resistance (Pa), $D_f$ bending stiffness (N m), and $T_0$ pretension (N m⁻¹). $\nabla_\parallel^2$ and $\nabla_\parallel^4$ are the in-plane Laplacian and its square. $\int$ integrates the actual local load/response during the pulse. Labels A, f, load and coh mean areal, film, applied and cohesive.
+**Symbols before Eq. (C4-E08).**
 
-**式（C4-E08）前的符号定义。** $m_A$为薄膜面密度（kg m⁻²），$w(\boldsymbol x,t)$为竖直位移（m），$\boldsymbol x$为面内位置（m），$\dot w$为速度（m s⁻¹）。$t_a,t_b,t,dt$分别为脉冲起止时刻、积分时间及时间微元（s）。$J_A$为局部单位面积外加冲量（Pa s），$p_{\rm load}$为净外加牵引（Pa），$t_{\rm coh}$为内聚阻力（Pa），$D_f$为弯曲刚度（N m），$T_0$为预张力（N m⁻¹）。$\nabla_\parallel^2$与$\nabla_\parallel^4$为面内拉普拉斯算子及其平方。$\int$表示对脉冲期间实际局部载荷／响应积分。标签A、f、load、coh分别表示面量、薄膜、外加及内聚。
+**式（C4-E08）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $m_A$ is film areal mass (kg m⁻²)<br>$m_A$为薄膜面密度（kg m⁻²） | $w(\boldsymbol x,t)$ vertical displacement (m)<br>$w(\boldsymbol x,t)$为竖直位移（m） |
+| $\boldsymbol x$ in-plane position (m)<br>$\boldsymbol x$为面内位置（m） | $\dot w$ velocity (m s⁻¹)<br>$\dot w$为速度（m s⁻¹） |
+| $t_a$ — Load-event start time (s)<br>$t_a$ — 载荷事件开始时刻（s） | $t_b$ — Load-event end time (s)<br>$t_b$ — 载荷事件结束时刻（s） |
+| $t$ — Time (s)<br>$t$ — 时间（s） | $dt$ — Time integration element (s)<br>$dt$ — 时间积分微元（s） |
+| $J_A$ is local applied impulse per area (Pa s)<br>$J_A$为局部单位面积外加冲量（Pa s） | $p_{\rm load}$ net applied traction (Pa)<br>$p_{\rm load}$为净外加牵引（Pa） |
+| $t_{\rm coh}$ cohesive resistance (Pa)<br>$t_{\rm coh}$为内聚阻力（Pa） | $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） |
+| $T_0$ pretension (N m⁻¹)<br>$T_0$为预张力（N m⁻¹） |  |
+
+**Conventions and conditions.** $\nabla_\parallel^2$ and $\nabla_\parallel^4$ are the in-plane Laplacian and its square; $\int$ integrates the actual local load/response during the pulse; Labels A, f, load and coh mean areal, film, applied and cohesive.
+
+**约定与条件。** $\nabla_\parallel^2$与$\nabla_\parallel^4$为面内拉普拉斯算子及其平方；$\int$表示对脉冲期间实际局部载荷／响应积分；标签A、f、load、coh分别表示面量、薄膜、外加及内聚。
 
 (C4-E08) · Exact time integral within the reduced plate model
 
@@ -264,9 +396,18 @@ Pulse integration exposes the reactions that can invalidate a free velocity jump
 
 脉冲积分明确显示哪些反作用冲量会使自由速度跃变失效。
 
-**Symbols before Eq. (C4-E09).** $\Delta\dot w$ is the film velocity change from rest (m s⁻¹); $\Delta$ denotes final-minus-initial difference, and a dot is a time derivative. $J_A$ is local applied impulse per area (Pa s), $m_A>0$ film areal mass (kg m⁻²), and $\mathcal E_A$ resulting kinetic energy per area (J m⁻²). $\simeq$ marks negligible restoring/cohesive impulse during the pulse, not guaranteed transmission through an adhered stack. Subscript A labels quantities per area.
+**Symbols before Eq. (C4-E09).**
 
-**式（C4-E09）前的符号定义。** $\Delta\dot w$为薄膜从静止开始的速度变化（m s⁻¹）；$\Delta$表示终值减初值，上点为时间导数。$J_A$为局部单位面积外加冲量（Pa s），$m_A>0$为薄膜面密度（kg m⁻²），$\mathcal E_A$为所得单位面积动能（J m⁻²）。$\simeq$表示脉冲期间恢复力／内聚力冲量可忽略，而非保证粘接叠层中的载荷传递。下标A表示单位面积量。
+**式（C4-E09）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Delta\dot w$ is the film velocity change from rest (m s⁻¹)<br>$\Delta\dot w$为薄膜从静止开始的速度变化（m s⁻¹） | $J_A$ is local applied impulse per area (Pa s)<br>$J_A$为局部单位面积外加冲量（Pa s） |
+| $m_A>0$ film areal mass (kg m⁻²)<br>$m_A>0$为薄膜面密度（kg m⁻²） | $\mathcal E_A$ resulting kinetic energy per area (J m⁻²)<br>$\mathcal E_A$为所得单位面积动能（J m⁻²） |
+
+**Conventions and conditions.** $\simeq$ marks negligible restoring/cohesive impulse during the pulse, not guaranteed transmission through an adhered stack; Subscript A labels quantities per area; $\Delta$ denotes final-minus-initial difference, and a dot is a time derivative.
+
+**约定与条件。** $\simeq$表示脉冲期间恢复力／内聚力冲量可忽略，而非保证粘接叠层中的载荷传递；下标A表示单位面积量；$\Delta$表示终值减初值，上点为时间导数。
 
 (C4-E09) · Short-pulse free-response approximation
 
@@ -285,9 +426,20 @@ For a deformation varying over a lateral length, compare the pulse duration with
 
 对在某一横向长度上变化的变形，将脉冲持续时间与惯性和相应恢复项平衡所得的弯曲、张力响应尺度比较。小张开内聚刚度还提供第三个尺度。这是瞬态比较，不需要另设简谐共振知识主线。若脉冲形状突变或裂纹高速扩展，仅仅持续时间较长也不足以宣称平衡。
 
-**Symbols before Eq. (C4-E10).** $t_b^{\rm scale},t_T^{\rm scale},t_n^{\rm scale}$ are bending, pretension and normal-cohesion response scales (s), not exact modal periods; superscript scale labels estimates and subscripts b, T, n identify the restoring mechanisms. $a_f>0$ is lateral deformation length (m), $m_A>0$ areal mass (kg m⁻²), $D_f>0$ bending stiffness (N m), $T_0>0$ pretension (N m⁻¹), and $K_n>0$ small-opening normal cohesive stiffness (Pa m⁻¹). $\sqrt{\ }$ is the positive root. If pretension or cohesion is absent, its corresponding timescale is omitted rather than divided by zero.
+**Symbols before Eq. (C4-E10).**
 
-**式（C4-E10）前的符号定义。** $t_b^{\rm scale},t_T^{\rm scale},t_n^{\rm scale}$分别为弯曲、预张力及法向内聚响应尺度（s），而非精确模态周期；上标scale表示估计，下标b、T、n标识恢复机制。$a_f>0$为横向变形长度（m），$m_A>0$为面密度（kg m⁻²），$D_f>0$为弯曲刚度（N m），$T_0>0$为预张力（N m⁻¹），$K_n>0$为小张开法向内聚刚度（Pa m⁻¹）。$\sqrt{\ }$取正根。若预张力或内聚机制不存在，则不使用对应时间尺度，不能除以零。
+**式（C4-E10）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $t_b^{\rm scale}$ — Bending response-time estimate (s)<br>$t_b^{\rm scale}$ — 弯曲响应时间估计（s） | $t_T^{\rm scale}$ — Pretension response-time estimate (s)<br>$t_T^{\rm scale}$ — 预张力响应时间估计（s） |
+| $t_n^{\rm scale}$ — Normal-cohesion response-time estimate (s)<br>$t_n^{\rm scale}$ — 法向内聚响应时间估计（s） | $a_f>0$ is lateral deformation length (m)<br>$a_f>0$为横向变形长度（m） |
+| $m_A>0$ areal mass (kg m⁻²)<br>$m_A>0$为面密度（kg m⁻²） | $D_f>0$ bending stiffness (N m)<br>$D_f>0$为弯曲刚度（N m） |
+| $T_0>0$ pretension (N m⁻¹)<br>$T_0>0$为预张力（N m⁻¹） | $K_n>0$ small-opening normal cohesive stiffness (Pa m⁻¹)<br>$K_n>0$为小张开法向内聚刚度（Pa m⁻¹） |
+
+**Conventions and conditions.** superscript scale labels estimates and subscripts b, T, n identify the restoring mechanisms; $\sqrt{\ }$ is the positive root; If pretension or cohesion is absent, its corresponding timescale is omitted rather than divided by zero.
+
+**约定与条件。** 上标scale表示估计，下标b、T、n标识恢复机制；$\sqrt{\ }$取正根；若预张力或内聚机制不存在，则不使用对应时间尺度，不能除以零。
 
 (C4-E10) · Derived term-balance estimates
 
@@ -310,9 +462,20 @@ Step 8 — Define crack driving force under an explicit loading control. Peak te
 
 步骤8——在明确加载控制方式下定义裂纹驱动力。峰值拉伸内聚牵引是单位为Pa的局部强度。可逆黏附功是热力学表面能差；实际断裂能还包含真实界面扩展所需耗散，单位为J m⁻²。对准静态保守力学系统，应在保持所述源控制量不变时，按裂纹面积对势能求导。张开／剪切混合、温度与裂纹速度均可能改变断裂阻力。
 
-**Symbols before Eq. (C4-E11).** $G$ is quasistatic energy-release rate (J m⁻²), $\mathcal P$ total mechanical potential including the external loading system (J), $A_c$ crack area (m²), and $\partial/\partial A_c$ a partial derivative. $\mathcal C$ labels the held loading control, such as pressure or displacement; it is not a material coefficient. $\Gamma$ is fracture resistance (J m⁻²), $\psi$ mode-mixture parameter (dimensionless), $T_i$ interface temperature (K), and $v_c$ crack-front speed (m s⁻¹). Subscripts c and i label crack and interface. The inequality is an energetic propagation criterion for the specified fracture model, not a sufficient transfer criterion.
+**Symbols before Eq. (C4-E11).**
 
-**式（C4-E11）前的符号定义。** $G$为准静态能量释放率（J m⁻²），$\mathcal P$为包含外部加载系统的总力学势能（J），$A_c$为裂纹面积（m²），$\partial/\partial A_c$为偏导数。$\mathcal C$标识保持不变的加载控制量，例如压力或位移，而非材料系数。$\Gamma$为断裂阻力（J m⁻²），$\psi$为模态混合参数（无量纲），$T_i$为界面温度（K），$v_c$为裂纹前沿速度（m s⁻¹）。下标c与i表示裂纹及界面。此不等式是指定断裂模型的能量扩展判据，而非充分转印判据。
+**式（C4-E11）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $G$ is quasistatic energy-release rate (J m⁻²)<br>$G$为准静态能量释放率（J m⁻²） | $\mathcal P$ total mechanical potential including the external loading system (J)<br>$\mathcal P$为包含外部加载系统的总力学势能（J） |
+| $A_c$ crack area (m²), and $\partial/\partial A_c$ a partial derivative<br>$A_c$为裂纹面积（m²），$\partial/\partial A_c$为偏导数 | $\mathcal C$ labels the held loading control, such as pressure or displacement (—)<br>$\mathcal C$标识保持不变的加载控制量，例如压力或位移，而非材料系数（—） |
+| $\Gamma$ is fracture resistance (J m⁻²)<br>$\Gamma$为断裂阻力（J m⁻²） | $\psi$ mode-mixture parameter (dimensionless)<br>$\psi$为模态混合参数（无量纲） |
+| $T_i$ interface temperature (K)<br>$T_i$为界面温度（K） | $v_c$ crack-front speed (m s⁻¹)<br>$v_c$为裂纹前沿速度（m s⁻¹） |
+
+**Conventions and conditions.** it is not a material coefficient; Subscripts c and i label crack and interface; The inequality is an energetic propagation criterion for the specified fracture model, not a sufficient transfer criterion.
+
+**约定与条件。** 下标c与i表示裂纹及界面；此不等式是指定断裂模型的能量扩展判据，而非充分转印判据。
 
 (C4-E11) · Definition with quasistatic fracture criterion
 
@@ -335,9 +498,22 @@ During rapid fracture, retain kinetic energy. For a specified crack-front model,
 
 快速断裂时必须保留动能。对指定裂纹前沿模型，固体瞬时功率平衡包含弹性储能、惯性、断裂消耗与其他耗散。下式假设所选断裂能已经计入一次内聚耗散，不能再重复加入同一耗散。若没有结构及界面方程，它仍不能确定裂纹路径。
 
-**Symbols before Eq. (C4-E12).** $P_{\rm load}$ is mechanical power delivered to the solid (W), $K_f$ its kinetic energy (J), $U_f$ its recoverable elastic energy including any recoverable interface energy (J), and $d/dt$ the time derivative with $t$ in s. $\mathcal L_c$ is the active crack-front line; $d\ell$ is its arc-length element (m). $v_c\ge0$ is front speed (m s⁻¹), $\Gamma$ fracture energy (J m⁻²), $\psi$ dimensionless mode mixture, and $T_i$ interface temperature (K). $P_{\rm other}\ge0$ is additional nonfracture dissipation (W). $\int$ integrates along the front. Labels load, f, c, i and other denote applied, solid film, crack, interface and remaining dissipative processes.
+**Symbols before Eq. (C4-E12).**
 
-**式（C4-E12）前的符号定义。** $P_{\rm load}$为传入固体的力学功率（W），$K_f$为固体动能（J），$U_f$为可恢复弹性能，含任何可恢复界面能（J），$d/dt$为时间导数，$t$单位s。$\mathcal L_c$为活跃裂纹前沿曲线；$d\ell$为弧长微元（m）。$v_c\ge0$为前沿速度（m s⁻¹），$\Gamma$为断裂能（J m⁻²），$\psi$为无量纲模态混合参数，$T_i$为界面温度（K）。$P_{\rm other}\ge0$为其他非断裂耗散（W）。$\int$表示沿前沿积分。标签load、f、c、i、other分别表示外加、固体薄膜、裂纹、界面及其余耗散过程。
+**式（C4-E12）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $P_{\rm load}$ is mechanical power delivered to the solid (W)<br>$P_{\rm load}$为传入固体的力学功率（W） | $K_f$ its kinetic energy (J)<br>$K_f$为固体动能（J） |
+| $U_f$ its recoverable elastic energy including any recoverable interface energy (J), and $d/dt$ the time derivative with $t$ in s<br>$U_f$为可恢复弹性能，含任何可恢复界面能（J），$d/dt$为时间导数 | $\mathcal L_c$ is the active crack-front line (—)<br>$\mathcal L_c$为活跃裂纹前沿曲线（—） |
+| $d\ell$ is its arc-length element (m)<br>$d\ell$为弧长微元（m） | $v_c\ge0$ is front speed (m s⁻¹)<br>$v_c\ge0$为前沿速度（m s⁻¹） |
+| $\Gamma$ fracture energy (J m⁻²)<br>$\Gamma$为断裂能（J m⁻²） | $\psi$ dimensionless mode mixture<br>$\psi$为无量纲模态混合参数 |
+| $T_i$ interface temperature (K)<br>$T_i$为界面温度（K） | $P_{\rm other}\ge0$ is additional nonfracture dissipation (W)<br>$P_{\rm other}\ge0$为其他非断裂耗散（W） |
+| $t$ — Time (s)<br>$t$ — 时间（s） |  |
+
+**Conventions and conditions.** $\int$ integrates along the front; Labels load, f, c, i and other denote applied, solid film, crack, interface and remaining dissipative processes.
+
+**约定与条件。** $\int$表示沿前沿积分；标签load、f、c、i、other分别表示外加、固体薄膜、裂纹、界面及其余耗散过程。
 
 (C4-E12) · Conditional dynamic energy balance
 
@@ -360,9 +536,20 @@ Step 9 — Specify a solvable pressure-controlled limit. A circular pre-existing
 
 步骤9——指定可解的恒压控制极限。薄各向同性板下方具有圆形预存脱层，其外部粘接区夹持边缘。在裂纹半径变化时，外部储库保持均匀正压差。忽略惯性、预张力及膜拉伸。中心没有点力或奇异弯矩，位移与曲率保持正则。这是独立基准，并非25射流瞬态载荷。
 
-**Symbols before Eq. (C4-E13).** $r\in[0,b]$ is radius in the plate plane (m), $b>0$ delamination radius (m), $w(r)$ opening displacement (m), $p_0>0$ externally maintained pressure difference (Pa), and $D_f>0$ bending stiffness (N m). $\mathscr L_r$ is the axisymmetric planar Laplacian (m⁻²); $f$ is an arbitrary smooth radial function, and $g=\mathscr L_rw$ has units m⁻¹. $d/dr$ and a prime denote radial differentiation; the operator at $r=0$ is its regular limit. Labels r, f and 0 denote radial operator, film/arbitrary function according to context, and maintained load. The two zero values prescribe edge displacement and slope.
+**Symbols before Eq. (C4-E13).**
 
-**式（C4-E13）前的符号定义。** $r\in[0,b]$为板平面内半径（m），$b>0$为脱层半径（m），$w(r)$为张开位移（m），$p_0>0$为外部保持的压差（Pa），$D_f>0$为弯曲刚度（N m）。$\mathscr L_r$为轴对称平面拉普拉斯算子（m⁻²）；$f$为任意光滑径向函数，$g=\mathscr L_rw$的单位为m⁻¹。$d/dr$及撇号表示径向求导；$r=0$处算子取正则极限。标签r、f、0分别表示径向算子、薄膜／任意函数（依语境）及恒定载荷。两个零值指定边缘位移与斜率。
+**式（C4-E13）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $r\in[0,b]$ is radius in the plate plane (m)<br>$r\in[0,b]$为板平面内半径（m） | $b>0$ delamination radius (m)<br>$b>0$为脱层半径（m） |
+| $w(r)$ opening displacement (m)<br>$w(r)$为张开位移（m） | $p_0>0$ externally maintained pressure difference (Pa)<br>$p_0>0$为外部保持的压差（Pa） |
+| $D_f>0$ bending stiffness (N m)<br>$D_f>0$为弯曲刚度（N m） | $\mathscr L_r$ is the axisymmetric planar Laplacian (m⁻²)<br>$\mathscr L_r$为轴对称平面拉普拉斯算子（m⁻²） |
+| $f$ is an arbitrary smooth radial function (—)<br>$f$为任意光滑径向函数（—） | $g=\mathscr L_rw$ has units m⁻¹<br>$g=\mathscr L_rw$的单位为m⁻¹ |
+
+**Conventions and conditions.** $d/dr$ and a prime denote radial differentiation; the operator at $r=0$ is its regular limit; Labels r, f and 0 denote radial operator, film/arbitrary function according to context, and maintained load; The two zero values prescribe edge displacement and slope.
+
+**约定与条件。** $d/dr$及撇号表示径向求导；$r=0$处算子取正则极限；标签r、f、0分别表示径向算子、薄膜／任意函数（依语境）及恒定载荷；两个零值指定边缘位移与斜率。
 
 (C4-E13) · Quasistatic plate boundary-value model
 
@@ -381,9 +568,21 @@ Step 10 — First solve for the curvature sum. Multiply its radial Laplacian equ
 
 步骤10——先求曲率和。将其径向拉普拉斯方程乘以半径，积分一次，仅在离开中心时除以半径。曲率梯度的正则性排除反比于半径的项。再积分一次留下恒定曲率偏移，之后由边缘斜率确定。
 
-**Symbols before Eq. (C4-E14).** $r\in(0,b]$ is radial coordinate (m); $b$ is delamination radius (m). $g(r)=\mathscr L_rw$ is the curvature sum (m⁻¹), with a prime and $d/dr$ denoting radial differentiation. $p_0$ is maintained pressure difference (Pa); $D_f$ bending stiffness (N m). $C_1,C_2$ are integration constants with units m⁻¹. $C_1=0$ follows from regular central curvature gradient and absence of a point load. $\mathscr L_r$ is the radial Laplacian, $w$ displacement (m); the subscript 0 labels the maintained pressure, not the initial liquid pressure.
+**Symbols before Eq. (C4-E14).**
 
-**式（C4-E14）前的符号定义。** $r\in(0,b]$为径向坐标（m）；$b$为脱层半径（m）。$g(r)=\mathscr L_rw$为曲率和（m⁻¹），撇号及$d/dr$表示径向求导。$p_0$为恒定压差（Pa）；$D_f$为弯曲刚度（N m）。$C_1,C_2$为单位m⁻¹的积分常数。$C_1=0$来自中心曲率梯度正则及无点载荷条件。$\mathscr L_r$为径向拉普拉斯算子，$w$为位移（m）；下标0标识恒定压力，而非液体初始压力。
+**式（C4-E14）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $r\in(0,b]$ is radial coordinate (m)<br>$r\in(0,b]$为径向坐标（m） | $b$ is delamination radius (m)<br>$b$为脱层半径（m） |
+| $g(r)=\mathscr L_rw$ is the curvature sum (m⁻¹), with a prime and $d/dr$ denoting radial differentiation<br>$g(r)=\mathscr L_rw$为曲率和（m⁻¹），撇号及$d/dr$表示径向求导 | $p_0$ is maintained pressure difference (Pa)<br>$p_0$为恒定压差（Pa） |
+| $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $C_1$ — Curvature integration constant (m⁻¹)<br>$C_1$ — 曲率积分常数（m⁻¹） |
+| $C_2$ — Curvature integration constant (m⁻¹)<br>$C_2$ — 曲率积分常数（m⁻¹） | $\mathscr L_r$ is the radial Laplacian (m⁻²)<br>$\mathscr L_r$为径向拉普拉斯算子（m⁻²） |
+| $w$ displacement (m)<br>$w$为位移（m） |  |
+
+**Conventions and conditions.** $C_1=0$ follows from regular central curvature gradient and absence of a point load; the subscript 0 labels the maintained pressure, not the initial liquid pressure.
+
+**约定与条件。** $C_1=0$来自中心曲率梯度正则及无点载荷条件；下标0标识恒定压力，而非液体初始压力。
 
 (C4-E14) · Derived first two radial integrations
 
@@ -402,9 +601,21 @@ Step 11 — Integrate the curvature sum to obtain displacement. The first integr
 
 步骤11——对曲率和积分得到位移。第一次积分可能产生反比于半径的斜率，中心正则性将其排除。第二次积分得到四次特解，以及二次项和常数项。先使用边缘零斜率求曲率偏移，再使用边缘零位移求剩余常数。
 
-**Symbols before Eq. (C4-E15).** $r\in(0,b]$ is radial position (m), $b$ delamination radius (m), $w$ displacement (m), and $g$ curvature sum (m⁻¹). A prime and $d/dr$ are radial derivatives; $w^{\prime}$ is dimensionless slope. $p_0$ is maintained pressure (Pa), $D_f$ bending stiffness (N m), $C_2$ curvature integration constant (m⁻¹), and $C_3,C_4$ displacement integration constants (m). $C_3=0$ excludes a central inverse-radius slope. All rows are regular-limit solutions at the centre. Subscripts 2,3,4 index distinct constants, not derivative orders.
+**Symbols before Eq. (C4-E15).**
 
-**式（C4-E15）前的符号定义。** $r\in(0,b]$为径向位置（m），$b$为脱层半径（m），$w$为位移（m），$g$为曲率和（m⁻¹）。撇号及$d/dr$为径向导数；$w^{\prime}$为无量纲斜率。$p_0$为恒定压力（Pa），$D_f$为弯曲刚度（N m），$C_2$为曲率积分常数（m⁻¹），$C_3,C_4$为位移积分常数（m）。$C_3=0$排除中心反比于半径的斜率。各行在中心均取正则极限。下标2、3、4标识不同常数，而非导数阶数。
+**式（C4-E15）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $r\in(0,b]$ is radial position (m)<br>$r\in(0,b]$为径向位置（m） | $b$ delamination radius (m)<br>$b$为脱层半径（m） |
+| $w$ displacement (m)<br>$w$为位移（m） | $g$ curvature sum (m⁻¹)<br>$g$为曲率和（m⁻¹） |
+| $w^{\prime}$ is dimensionless slope<br>$w^{\prime}$为无量纲斜率 | $p_0$ is maintained pressure (Pa)<br>$p_0$为恒定压力（Pa） |
+| $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $C_2$ curvature integration constant (m⁻¹)<br>$C_2$为曲率积分常数（m⁻¹） |
+| $C_3$ — Displacement integration constant (m)<br>$C_3$ — 位移积分常数（m） | $C_4$ — Displacement integration constant (m)<br>$C_4$ — 位移积分常数（m） |
+
+**Conventions and conditions.** A prime and $d/dr$ are radial derivatives; $C_3=0$ excludes a central inverse-radius slope; All rows are regular-limit solutions at the centre; Subscripts 2,3,4 index distinct constants, not derivative orders.
+
+**约定与条件。** 撇号及$d/dr$为径向导数；$C_3=0$排除中心反比于半径的斜率；各行在中心均取正则极限；下标2、3、4标识不同常数，而非导数阶数。
 
 (C4-E15) · Derived second pair of radial integrations
 
@@ -419,9 +630,20 @@ The regular displacement contains quartic, quadratic and constant contributions.
 
 正则位移含四次项、二次项与常数项。
 
-**Symbols before Eq. (C4-E16).** $w(r)$ is displacement (m), $w^{\prime}$ radial slope, $r\in[0,b]$ radial position (m), and $b>0$ delamination radius (m), allowing division by $b$. $p_0>0$ is maintained pressure (Pa), $D_f>0$ bending stiffness (N m), $C_2$ curvature constant (m⁻¹), and $C_4$ displacement constant (m). The prime denotes $d/dr$; $\Rightarrow$ denotes the algebraic consequence of each clamped boundary condition. Subscripts 2 and 4 label constants, and f labels film.
+**Symbols before Eq. (C4-E16).**
 
-**式（C4-E16）前的符号定义。** $w(r)$为位移（m），$w^{\prime}$为径向斜率，$r\in[0,b]$为径向位置（m），$b>0$为脱层半径（m），因此可以除以$b$。$p_0>0$为恒定压力（Pa），$D_f>0$为弯曲刚度（N m），$C_2$为曲率常数（m⁻¹），$C_4$为位移常数（m）。撇号表示$d/dr$；$\Rightarrow$表示各夹持边界条件的代数结果。下标2与4标识常数，f表示薄膜。
+**式（C4-E16）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $w(r)$ is displacement (m)<br>$w(r)$为位移（m） | $w^{\prime}$ radial slope (dimensionless)<br>$w^{\prime}$为径向斜率（无量纲） |
+| $r\in[0,b]$ radial position (m)<br>$r\in[0,b]$为径向位置（m） | $b>0$ delamination radius (m), allowing division by $b$<br>$b>0$为脱层半径（m），因此可以除以$b$ |
+| $p_0>0$ is maintained pressure (Pa)<br>$p_0>0$为恒定压力（Pa） | $D_f>0$ bending stiffness (N m)<br>$D_f>0$为弯曲刚度（N m） |
+| $C_2$ curvature constant (m⁻¹)<br>$C_2$为曲率常数（m⁻¹） | $C_4$ displacement constant (m)<br>$C_4$为位移常数（m） |
+
+**Conventions and conditions.** The prime denotes $d/dr$; $\Rightarrow$ denotes the algebraic consequence of each clamped boundary condition; Subscripts 2 and 4 label constants, and f labels film.
+
+**约定与条件。** 撇号表示$d/dr$；$\Rightarrow$表示各夹持边界条件的代数结果；下标2与4标识常数，f表示薄膜。
 
 (C4-E16) · Exact solution of the stated linear-plate benchmark
 
@@ -440,9 +662,20 @@ Step 12 — Check the solution by substitution, not only by its shape. The radia
 
 步骤12——通过代入检验解，而不仅仅观察轮廓。半径平方的径向拉普拉斯为四；半径四次方的径向拉普拉斯为十六倍半径平方。再作用一次得到常数六十四。边缘位移与斜率均为零。正压力给出正中心张开，刚度增大则抑制位移。量纲为Pa × m⁴ /(N m) = m。结果与MIT第7讲式7.24的夹持圆板解一致。
 
-**Symbols before Eq. (C4-E17).** $\mathscr L_r$ is the radial planar Laplacian (m⁻²), and superscript 2 on the operator means composition twice; superscripts on $r$ are powers. $r$ is radial position (m), $b$ delamination radius (m), $w$ blister displacement (m), and its prime is radial slope. $D_f$ is bending stiffness (N m); $p_0$ maintained pressure (Pa). Literal 4 and 16 are numerical coefficients; $\mathscr L_r(r^2)$ is dimensionless and $\mathscr L_r(r^4)$ has units m². The slope expression vanishes at $r=0$ and $r=b$.
+**Symbols before Eq. (C4-E17).**
 
-**式（C4-E17）前的符号定义。** $\mathscr L_r$为径向平面拉普拉斯算子（m⁻²），算子上的上标2表示连续作用两次；$r$上的上标表示幂。$r$为径向位置（m），$b$为脱层半径（m），$w$为鼓泡位移（m），其撇号为径向斜率。$D_f$为弯曲刚度（N m）；$p_0$为恒定压力（Pa）。数字4与16是数值系数；$\mathscr L_r(r^2)$无量纲，$\mathscr L_r(r^4)$单位为m²。斜率式在$r=0$及$r=b$均为零。
+**式（C4-E17）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\mathscr L_r$ is the radial planar Laplacian (m⁻²), and superscript 2 on the operator means composition twice<br>$\mathscr L_r$为径向平面拉普拉斯算子（m⁻²），算子上的上标2表示连续作用两次 | $r$ is radial position (m)<br>$r$为径向位置（m） |
+| $b$ delamination radius (m)<br>$b$为脱层半径（m） | $w$ blister displacement (m), and its prime is radial slope<br>$w$为鼓泡位移（m），其撇号为径向斜率 |
+| $D_f$ is bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $p_0$ maintained pressure (Pa)<br>$p_0$为恒定压力（Pa） |
+| $\mathscr L_r(r^2)$ is dimensionless<br>$\mathscr L_r(r^2)$无量纲 | $\mathscr L_r(r^4)$ has units m²<br>$\mathscr L_r(r^4)$单位为m² |
+
+**Conventions and conditions.** superscripts on $r$ are powers; Literal 4 and 16 are numerical coefficients; The slope expression vanishes at $r=0$; $r=b$.
+
+**约定与条件。** $r$上的上标表示幂；数字4与16是数值系数；斜率式在$r=0$及$r=b$均为零。
 
 (C4-E17) · Governing-equation and boundary verification
 
@@ -461,9 +694,20 @@ Step 13 — Integrate displacement to obtain added cavity volume. The axisymmetr
 
 步骤13——积分位移得到新增腔体体积。轴对称表面积微元包含半径乘径向增量，因此不能简单用中心位移乘面积。展开平方，逐项积分各次幂，再代入上下限。前两项的端点贡献相消，只剩最后的六次幂贡献。
 
-**Symbols before Eq. (C4-E18).** $V_{\rm bl}$ is added blister volume (m³), $w(r)$ displacement (m), $r\in[0,b]$ radial integration coordinate (m), $dr$ its integration element (m), and $b$ delamination radius (m). $p_0$ is maintained pressure (Pa); $D_f$ bending stiffness (N m); $\pi$ the dimensionless circle constant. $\int$ is radial integration, and $[\ ]_0^b$ denotes antiderivative at the upper endpoint minus its value at zero. Subscript bl labels the blister; superscripts on lengths are powers.
+**Symbols before Eq. (C4-E18).**
 
-**式（C4-E18）前的符号定义。** $V_{\rm bl}$为新增鼓泡体积（m³），$w(r)$为位移（m），$r\in[0,b]$为径向积分坐标（m），$dr$为积分微元（m），$b$为脱层半径（m）。$p_0$为恒定压力（Pa）；$D_f$为弯曲刚度（N m）；$\pi$为无量纲圆周率。$\int$表示径向积分，$[\ ]_0^b$表示原函数在上端点的值减去其零端点值。下标bl表示鼓泡；长度上的上标均表示幂。
+**式（C4-E18）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $V_{\rm bl}$ is added blister volume (m³)<br>$V_{\rm bl}$为新增鼓泡体积（m³） | $w(r)$ displacement (m)<br>$w(r)$为位移（m） |
+| $r\in[0,b]$ radial integration coordinate (m)<br>$r\in[0,b]$为径向积分坐标（m） | $dr$ its integration element (m)<br>$dr$为积分微元（m） |
+| $b$ delamination radius (m)<br>$b$为脱层半径（m） | $p_0$ is maintained pressure (Pa)<br>$p_0$为恒定压力（Pa） |
+| $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） | $\pi$ the dimensionless circle constant<br>$\pi$为无量纲圆周率 |
+
+**Conventions and conditions.** $\int$ is radial integration; Subscript bl labels the blister; superscripts on lengths are powers; $[\ ]_0^b$ denotes antiderivative at the upper endpoint minus its value at zero.
+
+**约定与条件。** $\int$表示径向积分；下标bl表示鼓泡；长度上的上标均表示幂；$[\ ]_0^b$表示原函数在上端点的值减去其零端点值。
 
 (C4-E18) · Exact geometric volume integral for the benchmark
 
@@ -482,9 +726,21 @@ Step 14 — Include the maintained-pressure source in potential energy. At a fix
 
 步骤14——将恒压源计入势能。在固定裂纹半径时，位移与体积都随压力线性变化。弹性能为压力—体积加载曲线下的面积，即压力乘体积的一半。压力储库的势能贡献是负压力乘体积。将其扣除后，总势能为负的一半乘积。若只用板的储能，就会得到恒压裂纹驱动力的错误符号。
 
-**Symbols before Eq. (C4-E19).** $C_b>0$ is blister volume compliance (m³ Pa⁻¹), defined by the pressure derivative at fixed radius, including the regular zero-load value. $V_{\rm bl}\ge0$ is added volume (m³), $p_0\ge0$ maintained pressure (Pa), $b>0$ crack radius (m), and $D_f>0$ bending stiffness (N m). $\partial/\partial p_0$ is the pressure derivative; the vertical bar holds radius fixed. $U_b$ is stored plate bending energy (J), $\mathcal P$ plate-plus-pressure-reservoir potential (J), and $v$ a dummy volume along the fixed-radius elastic loading curve (m³), with $dv$ its element (m³). $\int$ integrates that loading curve. Subscripts b and bl label blister compliance/bending and blister volume, respectively; the meanings are explicitly fixed here. No crack-area variation is taken during the loading-curve integral. For positive pressure, compliance also equals volume divided by pressure; at zero pressure the derivative avoids division by zero.
+**Symbols before Eq. (C4-E19).**
 
-**式（C4-E19）前的符号定义。** $C_b>0$为鼓泡体积柔度（m³ Pa⁻¹），由固定半径下的压力导数定义，包含正则零载荷值。$V_{\rm bl}\ge0$为新增体积（m³），$p_0\ge0$为恒定压力（Pa），$b>0$为裂纹半径（m），$D_f>0$为弯曲刚度（N m）。$\partial/\partial p_0$为压力导数；竖线表示保持半径不变。$U_b$为板弯曲储能（J），$\mathcal P$为板与恒压储库的总势能（J），$v$为固定半径弹性加载曲线上的虚拟体积变量（m³），$dv$为其微元（m³）。$\int$表示该加载曲线积分。下标b与bl分别表示鼓泡柔度／弯曲及鼓泡体积，此处已明确其含义。在加载曲线积分过程中不改变裂纹面积。正压力时，柔度也等于体积除以压力；零压力时采用导数避免除以零。
+**式（C4-E19）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $C_b>0$ is blister volume compliance (m³ Pa⁻¹), defined by the pressure derivative at fixed radius, including the regular zero-load value<br>$C_b>0$为鼓泡体积柔度（m³ Pa⁻¹），由固定半径下的压力导数定义，包含正则零载荷值 | $V_{\rm bl}\ge0$ is added volume (m³)<br>$V_{\rm bl}\ge0$为新增体积（m³） |
+| $p_0\ge0$ maintained pressure (Pa)<br>$p_0\ge0$为恒定压力（Pa） | $b>0$ crack radius (m)<br>$b>0$为裂纹半径（m） |
+| $D_f>0$ bending stiffness (N m)<br>$D_f>0$为弯曲刚度（N m） | $U_b$ is stored plate bending energy (J)<br>$U_b$为板弯曲储能（J） |
+| $\mathcal P$ plate-plus-pressure-reservoir potential (J)<br>$\mathcal P$为板与恒压储库的总势能（J） | $v$ a dummy volume along the fixed-radius elastic loading curve (m³), with $dv$ its element (m³)<br>$v$为固定半径弹性加载曲线上的虚拟体积变量（m³） |
+| $dv$ — Dummy-volume integration element (m³)<br>$dv$ — 体积哑变量积分微元（m³） |  |
+
+**Conventions and conditions.** $\partial/\partial p_0$ is the pressure derivative; the vertical bar holds radius fixed; $\int$ integrates that loading curve; Subscripts b and bl label blister compliance/bending and blister volume, respectively; the meanings are explicitly fixed here; No crack-area variation is taken during the loading-curve integral; For positive pressure, compliance also equals volume divided by pressure; at zero pressure the derivative avoids division by zero.
+
+**约定与条件。** $\partial/\partial p_0$为压力导数；竖线表示保持半径不变；$\int$表示该加载曲线积分；下标b与bl分别表示鼓泡柔度／弯曲及鼓泡体积，此处已明确其含义；在加载曲线积分过程中不改变裂纹面积；正压力时，柔度也等于体积除以压力；零压力时采用导数避免除以零。
 
 (C4-E19) · Derived potential under maintained-pressure control
 
@@ -503,9 +759,20 @@ Step 15 — Differentiate the total potential with respect to radius and divide 
 
 步骤15——按半径对总势能求导，再除以相应面积导数。两次求导都必须保留数值系数。正压力给出正能量释放率，因为脱层柔度增大会降低板与储库的总势能。在此弯曲极限内，相同压力下裂纹半径加倍，驱动力增至十六倍。
 
-**Symbols before Eq. (C4-E20).** $A_c$ is delaminated area (m²), $b>0$ its radius (m), $\pi$ the circle constant, $\mathcal P$ total potential including maintained pressure (J), $p_0$ fixed pressure difference (Pa), and $D_f$ bending stiffness (N m). $d/db$ differentiates in radius; the vertical bar and subscript $p_0$ indicate held pressure. $G_{p_0}$ is energy-release rate under that control (J m⁻²). Subscript c labels crack area; all length superscripts are powers. Positive $b$ makes the area derivative nonzero.
+**Symbols before Eq. (C4-E20).**
 
-**式（C4-E20）前的符号定义。** $A_c$为脱层面积（m²），$b>0$为其半径（m），$\pi$为圆周率，$\mathcal P$为包含恒压源的总势能（J），$p_0$为固定压差（Pa），$D_f$为弯曲刚度（N m）。$d/db$表示按半径求导；竖线及下标$p_0$表示保持压力不变。$G_{p_0}$为该控制方式下的能量释放率（J m⁻²）。下标c表示裂纹面积；长度上的上标均为幂。$b$为正保证面积导数非零。
+**式（C4-E20）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $A_c$ is delaminated area (m²)<br>$A_c$为脱层面积（m²） | $b>0$ its radius (m)<br>$b>0$为其半径（m） |
+| $\pi$ the circle constant (dimensionless)<br>$\pi$为圆周率（无量纲） | $\mathcal P$ total potential including maintained pressure (J)<br>$\mathcal P$为包含恒压源的总势能（J） |
+| $p_0$ fixed pressure difference (Pa)<br>$p_0$为固定压差（Pa） | $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） |
+| $G_{p_0}$ is energy-release rate under that control (J m⁻²)<br>$G_{p_0}$为该控制方式下的能量释放率（J m⁻²） |  |
+
+**Conventions and conditions.** $d/db$ differentiates in radius; the vertical bar and subscript $p_0$ indicate held pressure; Subscript c labels crack area; all length superscripts are powers; Positive $b$ makes the area derivative nonzero.
+
+**约定与条件。** $d/db$表示按半径求导；竖线及下标$p_0$表示保持压力不变；下标c表示裂纹面积；长度上的上标均为幂；$b$为正保证面积导数非零。
 
 (C4-E20) · Derived quasistatic energy-release rate
 
@@ -520,9 +787,19 @@ Geometry and compliance convert pressure into fracture energy per area.
 
 几何与柔度将压力转换为单位面积断裂能。
 
-**Symbols before Eq. (C4-E21).** $p_{0,\rm crit}>0$ is critical maintained pressure (Pa) for constant fracture resistance $\Gamma>0$ (J m⁻²); $D_f>0$ is bending stiffness (N m), $b>0$ delamination radius (m), $p_0\ge0$ applied maintained pressure (Pa), and $G_{p_0}$ the corresponding energy-release rate (J m⁻²). $\sqrt{\ }$ is the positive root; subscript crit labels the onset threshold. The quotient $G_{p_0}/\Gamma$ is dimensionless. This onset criterion assumes an existing crack and the quasistatic bending model.
+**Symbols before Eq. (C4-E21).**
 
-**式（C4-E21）前的符号定义。** $p_{0,\rm crit}>0$为恒定断裂阻力$\Gamma>0$（J m⁻²）对应的临界恒压（Pa）；$D_f>0$为弯曲刚度（N m），$b>0$为脱层半径（m），$p_0\ge0$为外加恒压（Pa），$G_{p_0}$为相应能量释放率（J m⁻²）。$\sqrt{\ }$取正根；下标crit表示起始阈值。比值$G_{p_0}/\Gamma$无量纲。此起始判据假设存在预裂纹，并采用准静态弯曲模型。
+**式（C4-E21）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $p_{0,\rm crit}>0$ is critical maintained pressure (Pa) for constant fracture resistance $\Gamma>0$ (J m⁻²)<br>$p_{0,\rm crit}>0$为恒定断裂阻力$\Gamma>0$（J m⁻²）对应的临界恒压（Pa） | $D_f>0$ is bending stiffness (N m)<br>$D_f>0$为弯曲刚度（N m） |
+| $b>0$ delamination radius (m)<br>$b>0$为脱层半径（m） | $p_0\ge0$ applied maintained pressure (Pa)<br>$p_0\ge0$为外加恒压（Pa） |
+| $G_{p_0}$ the corresponding energy-release rate (J m⁻²)<br>$G_{p_0}$为相应能量释放率（J m⁻²） | $\Gamma$ — Practical interfacial fracture energy (J m⁻²)<br>$\Gamma$ — 实际界面断裂能（J m⁻²） |
+
+**Conventions and conditions.** $\sqrt{\ }$ is the positive root; subscript crit labels the onset threshold; The quotient $G_{p_0}/\Gamma$ is dimensionless; This onset criterion assumes an existing crack and the quasistatic bending model.
+
+**约定与条件。** $\sqrt{\ }$取正根；下标crit表示起始阈值；比值$G_{p_0}/\Gamma$无量纲；此起始判据假设存在预裂纹，并采用准静态弯曲模型。
 
 (C4-E21) · Derived onset threshold within the benchmark
 
@@ -541,9 +818,21 @@ Step 16 — Change the loading control explicitly. Hold the added volume fixed, 
 
 步骤16——明确改变加载控制。固定新增体积，且不再由恒压储库持续做功。利用体积柔度消去压力，在固定体积下对板储能求导，再代回瞬时压力。在相同状态处，瞬时表达式与恒压情况一致，但演化不同：半径增大会提高恒压驱动力，却降低恒容驱动力。对于恒定阻力，在所采用模型中，这区分了趋于失稳的恒压控制与趋于稳定的恒容控制。封闭激光加热腔体具有有限质量和变化温度，因此不能自动将任一简单控制当作其演化路径。
 
-**Symbols before Eq. (C4-E22).** $\bar V>0$ is imposed fixed added volume (m³), $U_b$ plate bending energy (J), $C_b$ volume compliance (m³ Pa⁻¹), $D_f$ bending stiffness (N m), $b>0$ crack radius (m), and $p(b)$ the pressure required at that radius (Pa). $G_{\bar V}$ and $G_{p_0}$ are energy-release rates under fixed volume and fixed pressure, respectively (J m⁻²); $p_0$ is maintained pressure (Pa). $d/db$ is radius differentiation holding $\bar V$ fixed, $\pi$ the circle constant, and $\propto$ means proportional at fixed other parameters. The bar labels controlled volume, not averaging. The fixed-volume system here supplies no additional pressure-source work.
+**Symbols before Eq. (C4-E22).**
 
-**式（C4-E22）前的符号定义。** $\bar V>0$为强制固定的新增体积（m³），$U_b$为板弯曲能（J），$C_b$为体积柔度（m³ Pa⁻¹），$D_f$为弯曲刚度（N m），$b>0$为裂纹半径（m），$p(b)$为该半径处所需压力（Pa）。$G_{\bar V}$与$G_{p_0}$分别为恒容及恒压控制下的能量释放率（J m⁻²）；$p_0$为恒定压力（Pa）。$d/db$表示保持$\bar V$不变的半径求导，$\pi$为圆周率，$\propto$表示其他参数固定时成正比。横线标识受控体积，而非平均。此恒容系统不再提供额外压力源功。
+**式（C4-E22）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\bar V>0$ is imposed fixed added volume (m³)<br>$\bar V>0$为强制固定的新增体积（m³） | $U_b$ plate bending energy (J)<br>$U_b$为板弯曲能（J） |
+| $C_b$ volume compliance (m³ Pa⁻¹)<br>$C_b$为体积柔度（m³ Pa⁻¹） | $D_f$ bending stiffness (N m)<br>$D_f$为弯曲刚度（N m） |
+| $b>0$ crack radius (m)<br>$b>0$为裂纹半径（m） | $p(b)$ the pressure required at that radius (Pa)<br>$p(b)$为该半径处所需压力（Pa） |
+| $G_{\bar V}$ — Energy-release rate at fixed added volume (J m⁻²)<br>$G_{\bar V}$ — 固定新增体积下的能量释放率（J m⁻²） | $G_{p_0}$ — Energy-release rate at fixed maintained pressure (J m⁻²)<br>$G_{p_0}$ — 固定恒定压力下的能量释放率（J m⁻²） |
+| $p_0$ is maintained pressure (Pa)<br>$p_0$为恒定压力（Pa） | $\pi$ the circle constant, and $\propto$ means proportional at fixed other parameters (dimensionless)<br>$\pi$为圆周率，$\propto$表示其他参数固定时成正比（无量纲） |
+
+**Conventions and conditions.** $d/db$ is radius differentiation holding $\bar V$ fixed; The bar labels controlled volume, not averaging; The fixed-volume system here supplies no additional pressure-source work.
+
+**约定与条件。** $d/db$表示保持$\bar V$不变的半径求导；横线标识受控体积，而非平均；此恒容系统不再提供额外压力源功。
 
 (C4-E22) · Derived loading-control comparison
 
@@ -566,9 +855,17 @@ Use the source course’s illustrative plate: modulus 2 GPa, thickness 10 μm, P
 
 采用源课程的示例薄板：模量2 GPa、厚度10 μm、泊松比0.35、预裂纹半径100 μm、恒定断裂能0.10 J m⁻²。这些是教学输入，并非后续1 μm对象或某一已确认PVC配方的物性。先将厚度换算为米再求立方，然后求刚度与正的起始阈值根。
 
-**Symbols before Eq. (C4-E23).** $D_f$ is film bending stiffness (N m) and $p_{0,\rm crit}$ the positive critical maintained pressure (Pa). The substituted teaching Young’s modulus is 2.00×10⁹ Pa, thickness 10.0×10⁻⁶ m, Poisson’s ratio 0.35, crack radius 100×10⁻⁶ m, and fracture resistance 0.10 J m⁻². Pa, N, m, J and kPa denote pascal, newton, metre, joule and kilopascal. $\sqrt{\ }$ is the positive root; superscripts are powers. Subscript f labels the film and crit the onset threshold.
+**Symbols before Eq. (C4-E23).**
 
-**式（C4-E23）前的符号定义。** $D_f$为薄膜弯曲刚度（N m），$p_{0,\rm crit}$为正临界恒压（Pa）。代入的教学杨氏模量为2.00×10⁹ Pa，厚度10.0×10⁻⁶ m，泊松比0.35，裂纹半径100×10⁻⁶ m，断裂阻力0.10 J m⁻²。Pa、N、m、J及kPa分别为帕、牛顿、米、焦耳及千帕。$\sqrt{\ }$取正根；上标表示幂。下标f表示薄膜，crit表示起始阈值。
+**式（C4-E23）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $D_f$ is film bending stiffness (N m)<br>$D_f$为薄膜弯曲刚度（N m） | $p_{0,\rm crit}$ the positive critical maintained pressure (Pa)<br>$p_{0,\rm crit}$为正临界恒压（Pa） |
+
+**Conventions and conditions.** The substituted teaching Young’s modulus is 2.00×10⁹ Pa, thickness 10.0×10⁻⁶ m, Poisson’s ratio 0.35, crack radius 100×10⁻⁶ m, and fracture resistance 0.10 J m⁻²; Pa, N, m, J and kPa denote pascal, newton, metre, joule and kilopascal; $\sqrt{\ }$ is the positive root; superscripts are powers; Subscript f labels the film and crit the onset threshold.
+
+**约定与条件。** 代入的教学杨氏模量为2.00×10⁹ Pa，厚度10.0×10⁻⁶ m，泊松比0.35，裂纹半径100×10⁻⁶ m，断裂阻力0.10 J m⁻²；Pa、N、m、J及kPa分别为帕、牛顿、米、焦耳及千帕；$\sqrt{\ }$取正根；上标表示幂；下标f表示薄膜，crit表示起始阈值。
 
 (C4-E23) · Checked teaching substitution
 
@@ -587,9 +884,21 @@ At that pressure, check deflection, volume and payload stress. For the clamped c
 
 在该压力下，检验挠度、体积与对象应力。夹持圆板轮廓的边缘径向弯矩幅值为压力乘半径平方除以八；厚度外表面的线性弯曲应力为六倍弯矩除以厚度平方。因此，目标界面能够扩展，还要求此假设薄板可以承受约11.7 MPa的边缘弯曲应力；材料许用强度尚未给定。厚径比为0.10，因此薄板理想化是仍需评估有限厚度误差的基准，而非已认证的精度。
 
-**Symbols before Eq. (C4-E24).** $w(0)$ is centre displacement (m), $h_f=10$ μm thickness (m), $b=100$ μm crack radius (m), $D_f=1.899335$×10⁻⁷ N m bending stiffness, and $p_{0,\rm crit}=155.921$ kPa maintained threshold. $V_{\rm bl}$ is blister volume (m³), $M_r(b)$ radial bending moment per edge length (N), and $\sigma_{rr}$ radial normal bending stress (Pa). Subscript edge labels its outer-surface value at the clamped edge; r labels radial direction. $|\ |$ denotes magnitude, $\pi$ the circle constant; μm and MPa are micrometre and megapascal. This stress result uses the same linear isotropic plate assumptions.
+**Symbols before Eq. (C4-E24).**
 
-**式（C4-E24）前的符号定义。** $w(0)$为中心位移（m），$h_f=10$ μm为厚度（m），$b=100$ μm为裂纹半径（m），$D_f=1.899335$×10⁻⁷ N m为弯曲刚度，$p_{0,\rm crit}=155.921$ kPa为恒压阈值。$V_{\rm bl}$为鼓泡体积（m³），$M_r(b)$为单位边长径向弯矩（N），$\sigma_{rr}$为径向法向弯曲应力（Pa）。下标edge表示夹持边缘厚度外表面的值；r表示径向。$|\ |$表示幅值，$\pi$为圆周率；μm与MPa分别为微米及兆帕。应力结果采用相同线性各向同性薄板假设。
+**式（C4-E24）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $w(0)$ is centre displacement (m)<br>$w(0)$为中心位移（m） | $h_f=10$ μm thickness (m)<br>$h_f=10$ μm为厚度（m） |
+| $b=100$ μm crack radius (m)<br>$b=100$ μm为裂纹半径（m） | $D_f=1.899335$×10⁻⁷ N m bending stiffness<br>$D_f=1.899335$×10⁻⁷ N m为弯曲刚度 |
+| $p_{0,\rm crit}=155.921$ kPa maintained threshold (Pa)<br>$p_{0,\rm crit}=155.921$ kPa为恒压阈值（Pa） | $V_{\rm bl}$ is blister volume (m³)<br>$V_{\rm bl}$为鼓泡体积（m³） |
+| $M_r(b)$ radial bending moment per edge length (N)<br>$M_r(b)$为单位边长径向弯矩（N） | $\sigma_{rr}$ radial normal bending stress (Pa)<br>$\sigma_{rr}$为径向法向弯曲应力（Pa） |
+| $\pi$ the circle constant (dimensionless)<br>$\pi$为圆周率（无量纲） |  |
+
+**Conventions and conditions.** Subscript edge labels its outer-surface value at the clamped edge; r labels radial direction; $|\ |$ denotes magnitude; μm and MPa are micrometre and megapascal; This stress result uses the same linear isotropic plate assumptions.
+
+**约定与条件。** 下标edge表示夹持边缘厚度外表面的值；r表示径向；$|\ |$表示幅值；μm与MPa分别为微米及兆帕；应力结果采用相同线性各向同性薄板假设。
 
 (C4-E24) · Magnitude, geometric-validity and competing-failure checks
 
@@ -612,9 +921,19 @@ Step 17 — Adopt a monotonic triangular tensile traction–separation law at th
 
 步骤17——在实际释放界面采用单调三角形拉伸牵引—分离关系。初始斜率决定可逆张开刚度，峰值决定损伤起始强度，最终张开决定完全拉伸分离。下式是明确采用的模型，而非实测的通用界面性质。压缩需要接触分支；卸载需要可恢复响应与不可逆损伤历史；混合模态加载需要自身的耦合关系。
 
-**Symbols before Eq. (C4-E25).** $\delta\ge0$ now denotes physical relative tensile opening (m), not variational notation. $t_n(\delta)$ is tensile cohesive traction magnitude (Pa), $K_n>0$ initial normal stiffness (Pa m⁻¹), $T_{\max}>0$ peak tensile traction (Pa), $\delta_0=T_{\max}/K_n$ peak-traction opening (m), and $\delta_c>\delta_0$ complete-separation opening (m). Subscripts n, 0 and c label normal, peak onset and final separation; max labels the maximum. The law assumes monotonically increasing opening and a strictly positive softening interval. Compression and unloading are not specified by this formula.
+**Symbols before Eq. (C4-E25).**
 
-**式（C4-E25）前的符号定义。** $\delta\ge0$此处表示物理相对拉伸张开（m），不再是变分符号。$t_n(\delta)$为拉伸内聚牵引幅值（Pa），$K_n>0$为初始法向刚度（Pa m⁻¹），$T_{\max}>0$为峰值拉伸牵引（Pa），$\delta_0=T_{\max}/K_n$为峰值牵引处张开（m），$\delta_c>\delta_0$为完全分离张开（m）。下标n、0、c分别表示法向、峰值起始及最终分离；max表示最大值。关系假设张开单调增大，且软化区间严格为正。此式未指定压缩与卸载行为。
+**式（C4-E25）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\delta\ge0$ now denotes physical relative tensile opening (m), not variational notation<br>$\delta\ge0$此处表示物理相对拉伸张开（m），不再是变分符号 | $t_n(\delta)$ is tensile cohesive traction magnitude (Pa)<br>$t_n(\delta)$为拉伸内聚牵引幅值（Pa） |
+| $K_n>0$ initial normal stiffness (Pa m⁻¹)<br>$K_n>0$为初始法向刚度（Pa m⁻¹） | $T_{\max}>0$ peak tensile traction (Pa)<br>$T_{\max}>0$为峰值拉伸牵引（Pa） |
+| $\delta_0=T_{\max}/K_n$ peak-traction opening (m)<br>$\delta_0=T_{\max}/K_n$为峰值牵引处张开（m） | $\delta_c>\delta_0$ complete-separation opening (m)<br>$\delta_c>\delta_0$为完全分离张开（m） |
+
+**Conventions and conditions.** Subscripts n, 0 and c label normal, peak onset and final separation; max labels the maximum; The law assumes monotonically increasing opening and a strictly positive softening interval; Compression and unloading are not specified by this formula.
+
+**约定与条件。** 下标n、0、c分别表示法向、峰值起始及最终分离；max表示最大值；关系假设张开单调增大，且软化区间严格为正；此式未指定压缩与卸载行为。
 
 (C4-E25) · Adopted monotonic tensile cohesive law
 
@@ -633,9 +952,20 @@ Step 18 — Integrate both branches to obtain fracture work per area. The first 
 
 步骤18——积分两个分支，得到单位面积断裂功。第一分支形成上升三角形，第二分支形成下降三角形。只要张开顺序满足要求，两者之和不依赖峰值出现位置。牵引乘分离距离的单位为Pa m = J m⁻²，符合要求。这并不意味着刚度与损伤起始动力学无关，只表示此特定三角形关系的总面积由峰值牵引及最终张开决定。
 
-**Symbols before Eq. (C4-E26).** $\Gamma>0$ is the fracture energy of the adopted monotonic law (J m⁻²), $\delta$ tensile opening integration variable (m), and $d\delta$ its element (m). $t_n$ is tensile cohesive traction (Pa), $K_n>0$ initial stiffness (Pa m⁻¹), $T_{\max}>0$ peak traction (Pa), $\delta_0$ opening at the peak (m), and $\delta_c>\delta_0$ final separation opening (m). $\int$ integrates traction against opening; endpoint brackets mean upper minus lower value. Subscripts n, 0, c and max label normal, peak onset, final separation and maximum. The last inequality enforces a nonzero softening branch; it is a model-admissibility condition.
+**Symbols before Eq. (C4-E26).**
 
-**式（C4-E26）前的符号定义。** $\Gamma>0$为所采用单调关系的断裂能（J m⁻²），$\delta$为拉伸张开积分变量（m），$d\delta$为其微元（m）。$t_n$为拉伸内聚牵引（Pa），$K_n>0$为初始刚度（Pa m⁻¹），$T_{\max}>0$为峰值牵引（Pa），$\delta_0$为峰值处张开（m），$\delta_c>\delta_0$为最终分离张开（m）。$\int$表示牵引对张开的积分；端点方括号表示上端值减下端值。下标n、0、c、max分别表示法向、峰值起始、最终分离与最大值。末行不等式保证非零软化分支，是模型的可接受条件。
+**式（C4-E26）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Gamma>0$ is the fracture energy of the adopted monotonic law (J m⁻²)<br>$\Gamma>0$为所采用单调关系的断裂能（J m⁻²） | $\delta$ tensile opening integration variable (m)<br>$\delta$为拉伸张开积分变量（m） |
+| $d\delta$ its element (m)<br>$d\delta$为其微元（m） | $t_n$ is tensile cohesive traction (Pa)<br>$t_n$为拉伸内聚牵引（Pa） |
+| $K_n>0$ initial stiffness (Pa m⁻¹)<br>$K_n>0$为初始刚度（Pa m⁻¹） | $T_{\max}>0$ peak traction (Pa)<br>$T_{\max}>0$为峰值牵引（Pa） |
+| $\delta_0$ opening at the peak (m)<br>$\delta_0$为峰值处张开（m） | $\delta_c>\delta_0$ final separation opening (m)<br>$\delta_c>\delta_0$为最终分离张开（m） |
+
+**Conventions and conditions.** $\int$ integrates traction against opening; endpoint brackets mean upper minus lower value; Subscripts n, 0, c and max label normal, peak onset, final separation and maximum; The last inequality enforces a nonzero softening branch; it is a model-admissibility condition.
+
+**约定与条件。** $\int$表示牵引对张开的积分；端点方括号表示上端值减下端值；下标n、0、c、max分别表示法向、峰值起始、最终分离与最大值；末行不等式保证非零软化分支，是模型的可接受条件。
 
 (C4-E26) · Exact work integral of the adopted cohesive law
 
@@ -650,9 +980,19 @@ Complete separation needs the entire traction–opening area, not merely the pea
 
 完全分离需要完整牵引—张开曲线面积，而不仅仅达到峰值。
 
-**Symbols before Eq. (C4-E27).** $\Gamma$ is assumed fracture energy (J m⁻²), $T_{\max}$ assumed peak tensile traction (Pa), $K_n$ assumed initial normal stiffness (Pa m⁻¹), $\delta_0$ peak-traction opening (m), and $\delta_c$ final tensile separation (m). MPa and nm denote megapascal and nanometre. $\Rightarrow$ denotes substitution into the triangular law. These are separate illustrative cohesive parameters, not measurements of the film release interface. Subscripts max, n, 0 and c identify peak, normal, peak opening and complete opening.
+**Symbols before Eq. (C4-E27).**
 
-**式（C4-E27）前的符号定义。** $\Gamma$为假设断裂能（J m⁻²），$T_{\max}$为假设峰值拉伸牵引（Pa），$K_n$为假设初始法向刚度（Pa m⁻¹），$\delta_0$为峰值牵引处张开（m），$\delta_c$为最终拉伸分离（m）。MPa与nm表示兆帕与纳米。$\Rightarrow$表示代入三角形关系。这些是独立内聚教学参数，而非薄膜释放界面的测量。下标max、n、0、c分别标识峰值、法向、峰值张开与完全张开。
+**式（C4-E27）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Gamma$ is assumed fracture energy (J m⁻²)<br>$\Gamma$为假设断裂能（J m⁻²） | $T_{\max}$ assumed peak tensile traction (Pa)<br>$T_{\max}$为假设峰值拉伸牵引（Pa） |
+| $K_n$ assumed initial normal stiffness (Pa m⁻¹)<br>$K_n$为假设初始法向刚度（Pa m⁻¹） | $\delta_0$ peak-traction opening (m)<br>$\delta_0$为峰值牵引处张开（m） |
+| $\delta_c$ final tensile separation (m)<br>$\delta_c$为最终拉伸分离（m） |  |
+
+**Conventions and conditions.** MPa and nm denote megapascal and nanometre; $\Rightarrow$ denotes substitution into the triangular law; These are separate illustrative cohesive parameters, not measurements of the film release interface; Subscripts max, n, 0 and c identify peak, normal, peak opening and complete opening.
+
+**约定与条件。** MPa与nm表示兆帕与纳米；$\Rightarrow$表示代入三角形关系；这些是独立内聚教学参数，而非薄膜释放界面的测量；下标max、n、0、c分别标识峰值、法向、峰值张开与完全张开。
 
 (C4-E27) · Cohesive admissibility teaching calculation
 
@@ -675,9 +1015,21 @@ Step 19 — Carry the same finite source forward. The Chapter 2 core inventory f
 
 步骤19——继续沿用同一个有限源。第2章液核存量为第3章25个独立供给液体单元中的各单元提供相变物质。光学算例声明采用图案化／逐点定址照明，等量分配至各位点。总吸收光能为10 μJ；明确假设出射射流转换率为0.005，因此总射流动能为50 nJ。每股射流使用载液密度1000 kg m⁻³、直径10 μm、长度50 μm。不加入任何相互作用气泡倍增系数。重新计算入射质量与动量，并避免中间速度舍入。
 
-**Symbols before Eq. (C4-E28).** $m_j$ is carrier mass in one uniform cylindrical jet (kg), $\rho=1000$ kg m⁻³ carrier density, $d_j=10$ μm jet diameter, $L_j=50$ μm jet length, and $\pi$ the circle constant. $E_j=2.00$ nJ is assigned kinetic energy per jet, $U_j$ its uniform speed (m s⁻¹), $N=25$ independent identically supplied jets, $E_{\rm in}$ total incoming kinetic energy (J), and $I_{\rm in}$ aligned incoming momentum (N s). $\sqrt{\ }$ is the positive root. Subscripts j and in label single jet and incoming array; nJ is nanojoule. Simultaneous aligned arrival is assumed for the directional sum, but pressure fields are not added as N times a peak.
+**Symbols before Eq. (C4-E28).**
 
-**式（C4-E28）前的符号定义。** $m_j$为单股均匀圆柱射流的载液质量（kg），$\rho=1000$ kg m⁻³为载液密度，$d_j=10$ μm为射流直径，$L_j=50$ μm为长度，$\pi$为圆周率。$E_j=2.00$ nJ为指定单射流动能，$U_j$为其均匀速度（m s⁻¹），$N=25$为独立且供给相同的射流数，$E_{\rm in}$为总入射动能（J），$I_{\rm in}$为同向入射动量（N s）。$\sqrt{\ }$取正根。下标j、in分别标识单射流与入射阵列；nJ为纳焦耳。方向求和假设同时同向到达，但不将压力场按N倍峰值相加。
+**式（C4-E28）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $m_j$ is carrier mass in one uniform cylindrical jet (kg)<br>$m_j$为单股均匀圆柱射流的载液质量（kg） | $\rho=1000$ kg m⁻³ carrier density<br>$\rho=1000$ kg m⁻³为载液密度 |
+| $d_j=10$ μm jet diameter<br>$d_j=10$ μm为射流直径 | $L_j=50$ μm jet length<br>$L_j=50$ μm为长度 |
+| $\pi$ the circle constant (dimensionless)<br>$\pi$为圆周率（无量纲） | $E_j=2.00$ nJ is assigned kinetic energy per jet (J)<br>$E_j=2.00$ nJ为指定单射流动能（J） |
+| $U_j$ its uniform speed (m s⁻¹)<br>$U_j$为其均匀速度（m s⁻¹） | $N=25$ independent identically supplied jets (dimensionless)<br>$N=25$为独立且供给相同的射流数（无量纲） |
+| $E_{\rm in}$ total incoming kinetic energy (J)<br>$E_{\rm in}$为总入射动能（J） | $I_{\rm in}$ aligned incoming momentum (N s)<br>$I_{\rm in}$为同向入射动量（N s） |
+
+**Conventions and conditions.** $\sqrt{\ }$ is the positive root; Subscripts j and in label single jet and incoming array; nJ is nanojoule; Simultaneous aligned arrival is assumed for the directional sum, but pressure fields are not added as N times a peak.
+
+**约定与条件。** $\sqrt{\ }$取正根；下标j、in分别标识单射流与入射阵列；nJ为纳焦耳；方向求和假设同时同向到达，但不将压力场按N倍峰值相加。
 
 (C4-E28) · Finite incoming state inherited from the teaching source
 
@@ -696,9 +1048,21 @@ Step 20 — State solid-coupling assumptions separately. Take a payload of area 
 
 步骤20——独立声明固体耦合假设。取对象面积1 mm²、厚度1 μm、密度2330 kg m⁻³，初始静止，且没有初始储存的可恢复能量源。假设入射射流能量的20%可用于固体变形、释放及离开；考虑传力路径反作用后，作用于对象的净张开方向冲量为入射同向动量的50%。这些比例需要测量或耦合计算；均不能由PFC沸点或47.23 MPa刚性接触尺度推出。
 
-**Symbols before Eq. (C4-E29).** $m_f$ is payload mass (kg), $\rho_f=2330$ kg m⁻³ density, $A_f=1.00$ mm² = 1.00×10⁻⁶ m² release area, and $h_f=1.00$ μm = 1.00×10⁻⁶ m thickness. $E_{\rm solid}$ is assigned useful solid energy (J), $E_{\rm in}$ incoming jet kinetic energy (J), and $\eta_E=0.20$ a dimensionless energy-allocation assumption. $I_{\rm net}$ is assigned net opening-direction payload impulse after all load-path reactions (N s), $I_{\rm in}$ aligned incoming momentum (N s), and $\eta_I=0.50$ a dimensionless impulse assumption. Labels f, in, solid, net, E and I identify film, incoming, useful solid allocation, net, energy and impulse. The numerical first-row factors represent density, area and thickness in SI units.
+**Symbols before Eq. (C4-E29).**
 
-**式（C4-E29）前的符号定义。** $m_f$为对象质量（kg），$\rho_f=2330$ kg m⁻³为密度，$A_f=1.00$ mm² = 1.00×10⁻⁶ m²为释放面积，$h_f=1.00$ μm = 1.00×10⁻⁶ m为厚度。$E_{\rm solid}$为指定有效固体能量（J），$E_{\rm in}$为入射射流动能（J），$\eta_E=0.20$为无量纲能量分配假设。$I_{\rm net}$为考虑全部传力路径反作用后的净张开方向对象冲量（N s），$I_{\rm in}$为同向入射动量（N s），$\eta_I=0.50$为无量纲冲量假设。标签f、in、solid、net、E、I分别标识薄膜、入射、有效固体分配、净量、能量与冲量。第一行数值因子分别是SI制密度、面积及厚度。
+**式（C4-E29）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $m_f$ is payload mass (kg)<br>$m_f$为对象质量（kg） | $\rho_f=2330$ kg m⁻³ density<br>$\rho_f=2330$ kg m⁻³为密度 |
+| $A_f=1.00$ mm² = 1.00×10⁻⁶ m² release area (m²)<br>$A_f=1.00$ mm² = 1.00×10⁻⁶ m²为释放面积（m²） | $h_f=1.00$ μm = 1.00×10⁻⁶ m thickness<br>$h_f=1.00$ μm = 1.00×10⁻⁶ m为厚度 |
+| $E_{\rm solid}$ is assigned useful solid energy (J)<br>$E_{\rm solid}$为指定有效固体能量（J） | $E_{\rm in}$ incoming jet kinetic energy (J)<br>$E_{\rm in}$为入射射流动能（J） |
+| $\eta_E=0.20$ a dimensionless energy-allocation assumption<br>$\eta_E=0.20$为无量纲能量分配假设 | $I_{\rm net}$ is assigned net opening-direction payload impulse after all load-path reactions (N s)<br>$I_{\rm net}$为考虑全部传力路径反作用后的净张开方向对象冲量（N s） |
+| $I_{\rm in}$ aligned incoming momentum (N s)<br>$I_{\rm in}$为同向入射动量（N s） | $\eta_I=0.50$ a dimensionless impulse assumption<br>$\eta_I=0.50$为无量纲冲量假设 |
+
+**Conventions and conditions.** Labels f, in, solid, net, E and I identify film, incoming, useful solid allocation, net, energy and impulse; The numerical first-row factors represent density, area and thickness in SI units.
+
+**约定与条件。** 标签f、in、solid、net、E、I分别标识薄膜、入射、有效固体分配、净量、能量与冲量；第一行数值因子分别是SI制密度、面积及厚度。
 
 (C4-E29) · Explicit conditional solid-coupling allocation
 
@@ -717,9 +1081,20 @@ Step 21 — Apply necessary global screens. Constant fracture energy over the en
 
 步骤21——应用必要的整体筛选。若整个目标面积上的断裂能恒定，则释放需要断裂能乘面积。将初始静止对象平动到指定最低速度，需要质量乘速度平方的一半。净冲量至少要提供质量乘该最低速度。这些筛选忽略残余弯曲、转动、其他耗散及错误断裂，因此不通过可排除所假设转印，而通过并不能证明成功。若所给冲量是精确总实际冲量，且之后没有其他力，则最终质心速度由等式确定，不能独立任意选择。
 
-**Symbols before Eq. (C4-E30).** $E_{\rm req}(v_f)$ is minimum fracture-plus-translation energy (J), $I_{\rm req}(v_f)$ required net impulse for the minimum departure speed (N s), $v_f\ge0$ that required speed (m s⁻¹), $m_f>0$ payload mass (kg), $A_f$ full intended release area (m²), and $\Gamma\ge0$ assumed uniform fracture energy (J m⁻²). $E_{\rm solid}$ is assigned available solid energy (J); $I_{\rm net}$ is net opening-direction impulse after interface/support reactions (N s). Subscripts req, f, solid and net identify required, payload, useful solid and net quantities. The inequalities are necessary under the stated zero-initial-energy/no-additional-source assumptions; they are not spatial fracture solutions.
+**Symbols before Eq. (C4-E30).**
 
-**式（C4-E30）前的符号定义。** $E_{\rm req}(v_f)$为最低断裂加平动能量（J），$I_{\rm req}(v_f)$为达到最低离开速度所需净冲量（N s），$v_f\ge0$为所需速度（m s⁻¹），$m_f>0$为对象质量（kg），$A_f$为全部目标释放面积（m²），$\Gamma\ge0$为假设均匀断裂能（J m⁻²）。$E_{\rm solid}$为指定可用固体能量（J）；$I_{\rm net}$为考虑界面／支承反作用后的净张开方向冲量（N s）。下标req、f、solid、net分别标识所需、对象、有效固体及净量。在所述零初始能量／无额外源假设下，不等式是必要条件，而非空间断裂解。
+**式（C4-E30）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $E_{\rm req}(v_f)$ is minimum fracture-plus-translation energy (J)<br>$E_{\rm req}(v_f)$为最低断裂加平动能量（J） | $I_{\rm req}(v_f)$ required net impulse for the minimum departure speed (N s)<br>$I_{\rm req}(v_f)$为达到最低离开速度所需净冲量（N s） |
+| $v_f\ge0$ that required speed (m s⁻¹)<br>$v_f\ge0$为所需速度（m s⁻¹） | $m_f>0$ payload mass (kg)<br>$m_f>0$为对象质量（kg） |
+| $A_f$ full intended release area (m²)<br>$A_f$为全部目标释放面积（m²） | $\Gamma\ge0$ assumed uniform fracture energy (J m⁻²)<br>$\Gamma\ge0$为假设均匀断裂能（J m⁻²） |
+| $E_{\rm solid}$ is assigned available solid energy (J)<br>$E_{\rm solid}$为指定可用固体能量（J） | $I_{\rm net}$ is net opening-direction impulse after interface/support reactions (N s)<br>$I_{\rm net}$为考虑界面／支承反作用后的净张开方向冲量（N s） |
+
+**Conventions and conditions.** Subscripts req, f, solid and net identify required, payload, useful solid and net quantities; The inequalities are necessary under the stated zero-initial-energy/no-additional-source assumptions; they are not spatial fracture solutions.
+
+**约定与条件。** 下标req、f、solid、net分别标识所需、对象、有效固体及净量；在所述零初始能量／无额外源假设下，不等式是必要条件，而非空间断裂解。
 
 (C4-E30) · Necessary global energy and momentum screens
 
@@ -734,9 +1109,18 @@ The full intended release area, not a pressure peak, determines the fracture-ene
 
 决定断裂能消耗的是全部目标释放面积，而非压力峰值。
 
-**Symbols before Eq. (C4-E31).** $\Gamma$ is assumed uniform release fracture energy (J m⁻²), $A_f=1.00$×10⁻⁶ m² intended full release area, and $E_{\rm solid}=10.0$ nJ assigned available solid energy. nJ is nanojoule; $\Rightarrow$ denotes numerical substitution. The comparison assumes no initially stored recoverable energy and no additional post-impact source. Subscript f labels film area, and solid labels the assigned useful energy.
+**Symbols before Eq. (C4-E31).**
 
-**式（C4-E31）前的符号定义。** $\Gamma$为假设均匀释放断裂能（J m⁻²），$A_f=1.00$×10⁻⁶ m²为全部目标释放面积，$E_{\rm solid}=10.0$ nJ为指定可用固体能量。nJ为纳焦耳；$\Rightarrow$表示数值代入。比较假设没有初始储存的可恢复能量，也没有额外冲击后源。下标f表示薄膜面积，solid表示指定有效能量。
+**式（C4-E31）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Gamma$ is assumed uniform release fracture energy (J m⁻²)<br>$\Gamma$为假设均匀释放断裂能（J m⁻²） | $A_f=1.00$×10⁻⁶ m² intended full release area (m²)<br>$A_f=1.00$×10⁻⁶ m²为全部目标释放面积（m²） |
+| $E_{\rm solid}=10.0$ nJ assigned available solid energy (J)<br>$E_{\rm solid}=10.0$ nJ为指定可用固体能量（J） |  |
+
+**Conventions and conditions.** nJ is nanojoule; $\Rightarrow$ denotes numerical substitution; The comparison assumes no initially stored recoverable energy and no additional post-impact source; Subscript f labels film area, and solid labels the assigned useful energy.
+
+**约定与条件。** nJ为纳焦耳；$\Rightarrow$表示数值代入；比较假设没有初始储存的可恢复能量，也没有额外冲击后源；下标f表示薄膜面积，solid表示指定有效能量。
 
 (C4-E31) · Failed release-energy screen
 
@@ -755,9 +1139,20 @@ That failure is already decisive under the stated budget. The 47.23 MPa number i
 
 在所述预算下，上述失败已经具有决定性。47.23 MPa是微小作用范围上的短时压缩刚性接触尺度；它不会创造额外能量，不会自动覆盖1 mm²，也不会持续整个射流发射时间。它反而可能造成局部损伤。现在仅将教学释放断裂能改为0.005 J m⁻²，并要求最低离开速度0.50 m s⁻¹。保持入射射流和耦合假设不变，重新计算两项筛选。
 
-**Symbols before Eq. (C4-E32).** $\Gamma=0.005$ J m⁻² is the changed teaching fracture energy; $A_f=1.00$×10⁻⁶ m² is release area; $m_f=2.33$×10⁻⁹ kg is payload mass; and $v_f=0.50$ m s⁻¹ is minimum required departure speed. $E_{\rm req}$ is minimum fracture-plus-translation energy (J), $I_{\rm req}$ required net impulse (N s), and $I_{\rm net}=1.566642672$×10⁻⁹ N s the assigned actual net impulse. nJ is nanojoule. Subscripts req, f and net label required, payload and net. The 10.0 nJ comparator is assigned solid energy. The first-row numbers are SI mass and speed.
+**Symbols before Eq. (C4-E32).**
 
-**式（C4-E32）前的符号定义。** $\Gamma=0.005$ J m⁻²为改变后的教学断裂能；$A_f=1.00$×10⁻⁶ m²为释放面积；$m_f=2.33$×10⁻⁹ kg为对象质量；$v_f=0.50$ m s⁻¹为最低所需离开速度。$E_{\rm req}$为最低断裂加平动能（J），$I_{\rm req}$为所需净冲量（N s），$I_{\rm net}=1.566642672$×10⁻⁹ N s为指定实际净冲量。nJ为纳焦耳。下标req、f、net分别标识所需、对象及净量。10.0 nJ比较值是指定固体能量。第一行数值为SI制质量与速度。
+**式（C4-E32）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Gamma=0.005$ J m⁻² is the changed teaching fracture energy<br>$\Gamma=0.005$ J m⁻²为改变后的教学断裂能 | $A_f=1.00$×10⁻⁶ m² is release area (m²)<br>$A_f=1.00$×10⁻⁶ m²为释放面积（m²） |
+| $m_f=2.33$×10⁻⁹ kg is payload mass (kg)<br>$m_f=2.33$×10⁻⁹ kg为对象质量（kg） | $v_f=0.50$ m s⁻¹ is minimum required departure speed<br>$v_f=0.50$ m s⁻¹为最低所需离开速度 |
+| $E_{\rm req}$ is minimum fracture-plus-translation energy (J)<br>$E_{\rm req}$为最低断裂加平动能（J） | $I_{\rm req}$ required net impulse (N s)<br>$I_{\rm req}$为所需净冲量（N s） |
+| $I_{\rm net}=1.566642672$×10⁻⁹ N s the assigned actual net impulse<br>$I_{\rm net}=1.566642672$×10⁻⁹ N s为指定实际净冲量 |  |
+
+**Conventions and conditions.** nJ is nanojoule; Subscripts req, f and net label required, payload and net; The 10.0 nJ comparator is assigned solid energy; The first-row numbers are SI mass and speed.
+
+**约定与条件。** nJ为纳焦耳；下标req、f、net分别标识所需、对象及净量；10.0 nJ比较值是指定固体能量；第一行数值为SI制质量与速度。
 
 (C4-E32) · Passed necessary release and minimum-speed screens
 
@@ -776,9 +1171,20 @@ Step 22 — Check mutual consistency of the energy and impulse allocations. If t
 
 步骤22——检验能量与冲量分配是否相容。若指定净冲量是对象从静止开始受到的全部实际冲量，则其最终质心速度为0.67238 m s⁻¹，高于所需最低值。对应动能为0.52669 nJ，而非最低速度的0.29125 nJ。将该动能计入后，低断裂能情况仍低于10 nJ预算。若设计要求速度恰好为0.50 m s⁻¹，就必须明确后续反向冲量或不同耦合分配。若无物理传力路径，能量与动量不能独立调节。
 
-**Symbols before Eq. (C4-E33).** $v_{\rm CM}$ is actual final centre-of-mass speed (m s⁻¹) if the specified $I_{\rm net}$ is the complete net impulse from rest (N s). $m_f=2.33$×10⁻⁹ kg is payload mass; $K_{\rm CM}$ centre-of-mass kinetic energy (J); $\Gamma=0.005$ J m⁻² fracture energy; $A_f=1.00$×10⁻⁶ m² release area; and $E_{\rm solid}=10.0$ nJ assigned available energy. CM labels centre of mass and net labels impulse after all reactions. nJ denotes nanojoule. Rotation, shape motion and dissipation still require additional positive energy beyond the terms shown.
+**Symbols before Eq. (C4-E33).**
 
-**式（C4-E33）前的符号定义。** $v_{\rm CM}$为实际最终质心速度（m s⁻¹），条件是所给$I_{\rm net}$为从静止开始受到的全部净冲量（N s）。$m_f=2.33$×10⁻⁹ kg为对象质量；$K_{\rm CM}$为质心动能（J）；$\Gamma=0.005$ J m⁻²为断裂能；$A_f=1.00$×10⁻⁶ m²为释放面积；$E_{\rm solid}=10.0$ nJ为指定可用能量。CM标识质心，net表示考虑全部反作用后的冲量。nJ为纳焦耳。转动、形状运动及耗散仍需在所示项之外增加正能量。
+**式（C4-E33）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $v_{\rm CM}$ is actual final centre-of-mass speed (m s⁻¹) if the specified $I_{\rm net}$ is the complete net impulse from rest (N s)<br>$v_{\rm CM}$为实际最终质心速度（m s⁻¹），条件是所给$I_{\rm net}$为从静止开始受到的全部净冲量（N s） | $m_f=2.33$×10⁻⁹ kg is payload mass (kg)<br>$m_f=2.33$×10⁻⁹ kg为对象质量（kg） |
+| $K_{\rm CM}$ centre-of-mass kinetic energy (J)<br>$K_{\rm CM}$为质心动能（J） | $\Gamma=0.005$ J m⁻² fracture energy<br>$\Gamma=0.005$ J m⁻²为断裂能 |
+| $A_f=1.00$×10⁻⁶ m² release area (m²)<br>$A_f=1.00$×10⁻⁶ m²为释放面积（m²） | $E_{\rm solid}=10.0$ nJ assigned available energy (J)<br>$E_{\rm solid}=10.0$ nJ为指定可用能量（J） |
+| $I_{\rm net}$ — Net opening-direction impulse after all load-path reactions (N s)<br>$I_{\rm net}$ — 考虑全部载荷路径反作用后的净张开方向冲量（N s） |  |
+
+**Conventions and conditions.** CM labels centre of mass and net labels impulse after all reactions; nJ denotes nanojoule; Rotation, shape motion and dissipation still require additional positive energy beyond the terms shown.
+
+**约定与条件。** CM标识质心，net表示考虑全部反作用后的冲量；nJ为纳焦耳；转动、形状运动及耗散仍需在所示项之外增加正能量。
 
 (C4-E33) · Energy–momentum compatibility check
 
@@ -805,9 +1211,18 @@ Step 23 — Follow the payload beyond release. During a short ballistic flight w
 
 步骤23——继续追踪释放后的对象。在阻力与重力可忽略的短时弹道飞行中，横向偏移等于法向飞行间隙乘离开角的正切。这使用对象轨迹，而非之前液体射流的飞行间隙。即使净冲量足够，不均匀阵列也可能产生转矩和转动。接收表面必须使对象停下而不损伤或反弹，并提供足够最终黏附。
 
-**Symbols before Eq. (C4-E34).** $\Delta x$ is lateral payload offset (m), $H_f>0$ normal payload flight gap (m), and $\theta\in(-\pi/2,\pi/2)$ departure angle relative to the target normal. $\tan$ is tangent; the numerical angle is converted from degrees to radians for evaluation. μm is micrometre and $\Rightarrow$ denotes substitution. Subscript f labels film/payload flight, not liquid-jet travel; $\Delta$ marks position difference. The relation assumes straight flight without significant drag, gravity or rotation-dependent aerodynamic force.
+**Symbols before Eq. (C4-E34).**
 
-**式（C4-E34）前的符号定义。** $\Delta x$为对象横向偏移（m），$H_f>0$为对象法向飞行间隙（m），$\theta\in(-\pi/2,\pi/2)$为相对目标法向的离开角。$\tan$为正切；数值角度由度转换为弧度计算。μm为微米，$\Rightarrow$表示代入。下标f标识薄膜／对象飞行，而非液体射流运动；$\Delta$表示位置差。关系假设直线飞行，且无显著阻力、重力或随转动变化的气动力。
+**式（C4-E34）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Delta x$ is lateral payload offset (m)<br>$\Delta x$为对象横向偏移（m） | $H_f>0$ normal payload flight gap (m)<br>$H_f>0$为对象法向飞行间隙（m） |
+| $\theta\in(-\pi/2,\pi/2)$ departure angle relative to the target normal (rad)<br>$\theta\in(-\pi/2,\pi/2)$为相对目标法向的离开角（rad） |  |
+
+**Conventions and conditions.** $\tan$ is tangent; the numerical angle is converted from degrees to radians for evaluation; μm is micrometre and $\Rightarrow$ denotes substitution; Subscript f labels film/payload flight, not liquid-jet travel; The relation assumes straight flight without significant drag, gravity or rotation-dependent aerodynamic force; $\Delta$ marks position difference.
+
+**约定与条件。** $\tan$为正切；数值角度由度转换为弧度计算；μm为微米，$\Rightarrow$表示代入；下标f标识薄膜／对象飞行，而非液体射流运动；关系假设直线飞行，且无显著阻力、重力或随转动变化的气动力；$\Delta$表示位置差。
 
 (C4-E34) · Ballistic placement estimate
 
@@ -844,9 +1259,22 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (C4-E35).** Original formulas: $\boldsymbol t_l$ is fluid traction on the solid (Pa), $\boldsymbol T_l$ liquid stress tensor (Pa), $\boldsymbol n_f$ solid-to-liquid unit normal, $\boldsymbol I_l$ applied liquid impulse (N s), and $\mathcal W_l$ delivered work (J). $A_f(t)$ is loaded surface (m²), $dA$ its element (m²), $\boldsymbol v_f$ surface velocity (m s⁻¹), and $t_a,t_b,t,dt$ event endpoints, integration time and time element (s). $\int$ means surface/time integration; the dot denotes a vector projection. Subscripts l and f label liquid and film. The same identities first load PVC if it is the exposed layer.
+**Symbols before Eq. (C4-E35).**
 
-**式（C4-E35）前的符号定义。** 原公式：$\boldsymbol t_l$为流体施加于固体的牵引（Pa），$\boldsymbol T_l$为液体应力张量（Pa），$\boldsymbol n_f$为固体指向液体的单位法向，$\boldsymbol I_l$为液体外加冲量（N s），$\mathcal W_l$为传递功（J）。$A_f(t)$为受载表面（m²），$dA$为其微元（m²），$\boldsymbol v_f$为表面速度（m s⁻¹），$t_a,t_b,t,dt$分别为事件起止时间、积分时间及时间微元（s）。$\int$表示表面／时间积分；点乘表示向量投影。下标l、f表示液体与薄膜。若PVC为外露层，同一恒等式首先加载PVC。
+**式（C4-E35）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\boldsymbol t_l$ — Liquid traction on the solid (Pa)<br>$\boldsymbol t_l$ — 液体作用于固体的牵引（Pa） | $\boldsymbol T_l$ liquid stress tensor (Pa)<br>$\boldsymbol T_l$为液体应力张量（Pa） |
+| $\boldsymbol n_f$ solid-to-liquid unit normal (dimensionless)<br>$\boldsymbol n_f$为固体指向液体的单位法向（无量纲） | $\boldsymbol I_l$ applied liquid impulse (N s)<br>$\boldsymbol I_l$为液体外加冲量（N s） |
+| $\mathcal W_l$ delivered work (J)<br>$\mathcal W_l$为传递功（J） | $A_f(t)$ is loaded surface (m²)<br>$A_f(t)$为受载表面（m²） |
+| $dA$ its element (m²)<br>$dA$为其微元（m²） | $\boldsymbol v_f$ surface velocity (m s⁻¹)<br>$\boldsymbol v_f$为表面速度（m s⁻¹） |
+| $t_a$ — Load-event start time (s)<br>$t_a$ — 载荷事件开始时刻（s） | $t_b$ — Load-event end time (s)<br>$t_b$ — 载荷事件结束时刻（s） |
+| $t$ — Time (s)<br>$t$ — 时间（s） | $dt$ — Time integration element (s)<br>$dt$ — 时间积分微元（s） |
+
+**Conventions and conditions.** $\int$ means surface/time integration; the dot denotes a vector projection; Subscripts l and f label liquid and film; The same identities first load PVC if it is the exposed layer; $t_a<t_b$ fixes the integration interval..
+
+**约定与条件。** 原公式：$\boldsymbol t_l$为流体施加于固体的牵引（Pa）；$\int$表示表面／时间积分；点乘表示向量投影；下标l、f表示液体与薄膜；若PVC为外露层，同一恒等式首先加载PVC；$t_a<t_b$ 确定积分区间。。
 
 (C4-E35) · Original load, impulse and work formulas
 
@@ -861,9 +1289,19 @@ Reference answer: pressure, impulse and work describe different parts of the tra
 
 参考答案：压力、冲量与功描述传递路径中的不同部分。
 
-**Symbols before Eq. (C4-E36).** Original necessary screens: $E_{\rm solid}$ is assigned available solid energy (J), $\Gamma$ uniform release fracture energy (J m⁻²), $A_f$ intended full release area (m²), $m_f$ payload mass (kg), $v_f$ minimum required departure speed (m s⁻¹), and $I_{\rm net}$ net opening impulse after all reactions (N s). The payload initially rests and has no additional recoverable source. Subscripts solid, f and net label useful solid allocation, payload and net impulse.
+**Symbols before Eq. (C4-E36).**
 
-**式（C4-E36）前的符号定义。** 原必要筛选：$E_{\rm solid}$为指定可用固体能量（J），$\Gamma$为均匀释放断裂能（J m⁻²），$A_f$为全部目标释放面积（m²），$m_f$为对象质量（kg），$v_f$为最低所需离开速度（m s⁻¹），$I_{\rm net}$为考虑全部反作用后的净张开冲量（N s）。对象初始静止，且无额外可恢复源。下标solid、f、net标识有效固体分配、对象及净冲量。
+**式（C4-E36）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $E_{\rm solid}$ — Assigned useful solid-energy budget (J)<br>$E_{\rm solid}$ — 指定的有效固体能量预算（J） | $\Gamma$ uniform release fracture energy (J m⁻²)<br>$\Gamma$为均匀释放断裂能（J m⁻²） |
+| $A_f$ intended full release area (m²)<br>$A_f$为全部目标释放面积（m²） | $m_f$ payload mass (kg)<br>$m_f$为对象质量（kg） |
+| $v_f$ minimum required departure speed (m s⁻¹)<br>$v_f$为最低所需离开速度（m s⁻¹） | $I_{\rm net}$ net opening impulse after all reactions (N s)<br>$I_{\rm net}$为考虑全部反作用后的净张开冲量（N s） |
+
+**Conventions and conditions.** The payload initially rests and has no additional recoverable source; Subscripts solid, f and net label useful solid allocation, payload and net impulse.
+
+**约定与条件。** 原必要筛选：$E_{\rm solid}$为指定可用固体能量（J）；对象初始静止，且无额外可恢复源；下标solid、f、net标识有效固体分配、对象及净冲量。
 
 (C4-E36) · Original global screens
 
@@ -906,9 +1344,20 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (C4-E37).** Original blister formulas: $w(r)$ is opening displacement (m), $r\in[0,b]$ radial position (m), $b>0$ existing circular crack radius (m), $p_0\ge0$ uniform maintained pressure difference (Pa), $D_f>0$ linear plate bending stiffness (N m), $G_{p_0}$ fixed-pressure energy-release rate (J m⁻²), $\Gamma>0$ constant fracture resistance (J m⁻²), and $p_{0,\rm crit}$ positive onset pressure (Pa). $\sqrt{\ }$ is the positive root. Subscripts f, 0 and crit denote film, maintained load and threshold. These expressions require regular centre and a clamped crack edge, quasistatic bending, and negligible stretching/pretension.
+**Symbols before Eq. (C4-E37).**
 
-**式（C4-E37）前的符号定义。** 原鼓泡公式：$w(r)$为张开位移（m），$r\in[0,b]$为径向位置（m），$b>0$为预存圆裂纹半径（m），$p_0\ge0$为均匀恒定压差（Pa），$D_f>0$为线性薄板弯曲刚度（N m），$G_{p_0}$为恒压能量释放率（J m⁻²），$\Gamma>0$为恒定断裂阻力（J m⁻²），$p_{0,\rm crit}$为正起始压力（Pa）。$\sqrt{\ }$取正根。下标f、0、crit分别表示薄膜、恒定载荷与阈值。表达式要求中心正则、裂纹边缘夹持、准静态弯曲，且拉伸／预张力可忽略。
+**式（C4-E37）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $w(r)$ — Blister opening displacement (m)<br>$w(r)$ — 鼓泡张开位移（m） | $r\in[0,b]$ radial position (m)<br>$r\in[0,b]$为径向位置（m） |
+| $b>0$ existing circular crack radius (m)<br>$b>0$为预存圆裂纹半径（m） | $p_0\ge0$ uniform maintained pressure difference (Pa)<br>$p_0\ge0$为均匀恒定压差（Pa） |
+| $D_f>0$ linear plate bending stiffness (N m)<br>$D_f>0$为线性薄板弯曲刚度（N m） | $G_{p_0}$ fixed-pressure energy-release rate (J m⁻²)<br>$G_{p_0}$为恒压能量释放率（J m⁻²） |
+| $\Gamma>0$ constant fracture resistance (J m⁻²)<br>$\Gamma>0$为恒定断裂阻力（J m⁻²） | $p_{0,\rm crit}$ positive onset pressure (Pa)<br>$p_{0,\rm crit}$为正起始压力（Pa） |
+
+**Conventions and conditions.** $\sqrt{\ }$ is the positive root; Subscripts f, 0 and crit denote film, maintained load and threshold; These expressions require regular centre and a clamped crack edge, quasistatic bending, and negligible stretching/pretension.
+
+**约定与条件。** 原鼓泡公式：$w(r)$为张开位移（m）；$\sqrt{\ }$取正根；下标f、0、crit分别表示薄膜、恒定载荷与阈值；表达式要求中心正则、裂纹边缘夹持、准静态弯曲，且拉伸／预张力可忽略。
 
 (C4-E37) · Original pressure-controlled benchmark formulas
 
@@ -951,9 +1400,21 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
-**Symbols before Eq. (C4-E38).** Original interface formulas: $\Gamma$ is tensile cohesive fracture work per area (J m⁻²), $\delta$ physical opening integration variable (m), $d\delta$ its element (m), $\delta_c$ complete opening (m), $t_n$ tensile cohesive traction (Pa), and $T_{\max}$ peak tensile traction (Pa). The half-product applies to the adopted triangular monotonic law. $G$ is energy available per new crack area (J m⁻²), $\psi$ dimensionless mode mixture, $T_i$ interface temperature (K), and $v_c$ crack speed (m s⁻¹). $\int$ denotes opening integration. Subscripts n, c, i and max identify normal, crack/final opening, interface and maximum.
+**Symbols before Eq. (C4-E38).**
 
-**式（C4-E38）前的符号定义。** 原界面公式：$\Gamma$为单位面积拉伸内聚断裂功（J m⁻²），$\delta$为物理张开积分变量（m），$d\delta$为其微元（m），$\delta_c$为完全张开（m），$t_n$为拉伸内聚牵引（Pa），$T_{\max}$为峰值拉伸牵引（Pa）。一半乘积适用于所采用的三角形单调关系。$G$为单位新增裂纹面积可用能量（J m⁻²），$\psi$为无量纲模态混合参数，$T_i$为界面温度（K），$v_c$为裂纹速度（m s⁻¹）。$\int$表示张开积分。下标n、c、i、max分别表示法向、裂纹／最终张开、界面与最大值。
+**式（C4-E38）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $\Gamma$ — Practical interfacial fracture energy (J m⁻²)<br>$\Gamma$ — 实际界面断裂能（J m⁻²） | $\delta$ physical opening integration variable (m)<br>$\delta$为物理张开积分变量（m） |
+| $d\delta$ its element (m)<br>$d\delta$为其微元（m） | $\delta_c$ complete opening (m)<br>$\delta_c$为完全张开（m） |
+| $t_n$ tensile cohesive traction (Pa)<br>$t_n$为拉伸内聚牵引（Pa） | $T_{\max}$ peak tensile traction (Pa)<br>$T_{\max}$为峰值拉伸牵引（Pa） |
+| $G$ is energy available per new crack area (J m⁻²)<br>$G$为单位新增裂纹面积可用能量（J m⁻²） | $\psi$ dimensionless mode mixture<br>$\psi$为无量纲模态混合参数 |
+| $T_i$ interface temperature (K)<br>$T_i$为界面温度（K） | $v_c$ crack speed (m s⁻¹)<br>$v_c$为裂纹速度（m s⁻¹） |
+
+**Conventions and conditions.** The half-product applies to the adopted triangular monotonic law; $\int$ denotes opening integration; Subscripts n, c, i and max identify normal, crack/final opening, interface and maximum.
+
+**约定与条件。** 原界面公式：$\Gamma$为单位面积拉伸内聚断裂功（J m⁻²）；一半乘积适用于所采用的三角形单调关系；$\int$表示张开积分；下标n、c、i、max分别表示法向、裂纹／最终张开、界面与最大值。
 
 (C4-E38) · Original cohesive work and fracture criteria
 
@@ -968,9 +1429,21 @@ Reference answer: successful release requires both initiation and separation wor
 
 参考答案：成功释放需要在正确界面上同时满足起始与分离功要求。
 
-**Symbols before Eq. (C4-E39).** Original screens and placement relation: $E_{\rm solid}$ is available useful solid energy (J), $\Gamma$ fracture energy (J m⁻²), $A_f$ full release area (m²), $m_f$ payload mass (kg), $v_f$ minimum departure speed (m s⁻¹), and $I_{\rm net}$ net opening impulse (N s). $\Delta x$ is lateral payload offset (m), $H_f$ normal payload flight gap (m), $\theta$ departure angle relative to receiver normal, and $\tan$ tangent. The screens assume initial rest without another energy source; the placement relation assumes straight short flight. Subscripts solid, f and net label useful solid energy, payload and net impulse.
+**Symbols before Eq. (C4-E39).**
 
-**式（C4-E39）前的符号定义。** 原筛选与落位关系：$E_{\rm solid}$为可用有效固体能量（J），$\Gamma$为断裂能（J m⁻²），$A_f$为全部释放面积（m²），$m_f$为对象质量（kg），$v_f$为最低离开速度（m s⁻¹），$I_{\rm net}$为净张开冲量（N s）。$\Delta x$为对象横向偏移（m），$H_f$为对象法向飞行间隙（m），$\theta$为相对接收面法向的离开角，$\tan$为正切。筛选假设初始静止且无其他能量源；落位关系假设短时直线飞行。下标solid、f、net标识有效固体能量、对象及净冲量。
+**式（C4-E39）前的符号定义。**
+
+| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| --- | --- |
+| $E_{\rm solid}$ — Assigned useful solid-energy budget (J)<br>$E_{\rm solid}$ — 指定的有效固体能量预算（J） | $\Gamma$ fracture energy (J m⁻²)<br>$\Gamma$为断裂能（J m⁻²） |
+| $A_f$ full release area (m²)<br>$A_f$为全部释放面积（m²） | $m_f$ payload mass (kg)<br>$m_f$为对象质量（kg） |
+| $v_f$ minimum departure speed (m s⁻¹)<br>$v_f$为最低离开速度（m s⁻¹） | $I_{\rm net}$ net opening impulse (N s)<br>$I_{\rm net}$为净张开冲量（N s） |
+| $\Delta x$ is lateral payload offset (m)<br>$\Delta x$为对象横向偏移（m） | $H_f$ normal payload flight gap (m)<br>$H_f$为对象法向飞行间隙（m） |
+| $\theta$ departure angle relative to receiver normal, and $\tan$ tangent (rad)<br>$\theta$为相对接收面法向的离开角，$\tan$为正切（rad） |  |
+
+**Conventions and conditions.** The screens assume initial rest without another energy source; the placement relation assumes straight short flight; Subscripts solid, f and net label useful solid energy, payload and net impulse.
+
+**约定与条件。** 原筛选与落位关系：$E_{\rm solid}$为可用有效固体能量（J）；筛选假设初始静止且无其他能量源；落位关系假设短时直线飞行；下标solid、f、net标识有效固体能量、对象及净冲量。
 
 (C4-E39) · Original necessary operating-window checks
 

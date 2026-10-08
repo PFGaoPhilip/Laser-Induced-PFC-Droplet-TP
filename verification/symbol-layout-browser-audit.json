@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "scope": "Isolated headless rendering of the shipped C1-E06 DOM with bundled course styles, fonts and day/night script.",
+  "wide_dark_and_narrow_light": [
+    {
+      "theme": "dark",
+      "viewport": 1170,
+      "entries": 9,
+      "fonts": "loaded",
+      "tableWidth": 844,
+      "overflow": false,
+      "centerBorders": [
+        "2px",
+        "2px",
+        "2px",
+        "2px",
+        "2px"
+      ],
+      "narrowRule": "0px",
+      "positions": [
+        {
+          "symbol": "u",
+          "x": 155.5,
+          "y": 181.390625,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "\\dot R",
+          "x": 577.5,
+          "y": 181.390625,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "r",
+          "x": 155.5,
+          "y": 264.484375,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "R",
+          "x": 577.5,
+          "y": 264.484375,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "p_l",
+          "x": 155.5,
+          "y": 347.578125,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "p_b",
+          "x": 577.5,
+          "y": 347.578125,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "\\sigma",
+          "x": 155.5,
+          "y": 430.671875,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "\\mu",
+          "x": 577.5,
+          "y": 430.671875,
+          "width": 422,
+          "height": 83.09375
+        },
+        {
+          "symbol": "\\partial_r u",
+          "x": 155.5,
+          "y": 513.765625,
+          "width": 422,
+          "height": 83.09375
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "viewport": 504,
+      "entries": 9,
+      "fonts": "loaded",
+      "tableWidth": 406,
+      "overflow": false,
+      "centerBorders": [
+        "0px",
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "narrowRule": "2px",
+      "positions": [
+        {
+          "symbol": "u",
+          "x": 51,
+          "y": 146.703125,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "\\dot R",
+          "x": 51,
+          "y": 220.609375,
+          "width": 404,
+          "height": 72.484375
+        },
+        {
+          "symbol": "r",
+          "x": 51,
+          "y": 293.09375,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "R",
+          "x": 51,
+          "y": 367,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "p_l",
+          "x": 51,
+          "y": 440.90625,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "p_b",
+          "x": 51,
+          "y": 514.8125,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "\\sigma",
+          "x": 51,
+          "y": 588.71875,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "\\mu",
+          "x": 51,
+          "y": 662.625,
+          "width": 404,
+          "height": 73.90625
+        },
+        {
+          "symbol": "\\partial_r u",
+          "x": 51,
+          "y": 736.53125,
+          "width": 404,
+          "height": 73.90625
+        }
+      ]
+    }
+  ],
+  "continuous_border_width": "2px",
+  "horizontal_overflow": false,
+  "one_or_two_variables_per_visual_row": true
+}

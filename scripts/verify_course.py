@@ -19,6 +19,13 @@ def main():
     settings=json.loads((ROOT/'COURSE_SETTINGS.json').read_text(encoding='utf-8'))
     units=settings['chapters']+settings.get('appendices',[])
     eqs=json.loads((ROOT/'verification/equations.json').read_text(encoding='utf-8'))
+    local_definitions=json.loads((ROOT/'content/equation_symbol_rows.json').read_text(encoding='utf-8'))
+    check('Every equation has reviewed individual local definitions',set(local_definitions)=={e['id'] for e in eqs})
+    css=(ROOT/'assets/course.css').read_text(encoding='utf-8')
+    check('Continuous vertical rule uses collapsed table borders',
+          '.symbol-definitions td + td { border-left: 2px solid var(--rule)' in css and 'border-collapse:collapse' in css)
+    check('Narrow-screen definitions switch to one variable per row',
+          '.symbol-definitions tbody { display: block; border-left: 2px solid var(--rule)' in css)
     paths=[ROOT/'index.html',*(ROOT/c['file'] for c in units),*sorted((ROOT/'reference').glob('*.html'))]
     docs={p:BeautifulSoup(p.read_text(encoding='utf-8'),'html.parser') for p in paths}
     ids={p:{n['id'] for n in soup.select('[id]')} for p,soup in docs.items()}
@@ -48,6 +55,15 @@ def main():
             check(unit['id']+': local bilingual symbols before math',symbols is not None and formula is not None and ordered.index(symbols)<ordered.index(formula))
             check(unit['id']+': immediate physical-variable figure',formula is not None and formula.find_next_sibling().name=='figure' and 'formula-figure' in formula.find_next_sibling().get('class',[]))
             check(unit['id']+': static readable math and MathML',bool(formula and formula.select_one('.katex-html') and formula.select_one('math')))
+            table=symbols.select_one('table.symbol-definitions') if symbols else None
+            expected=local_definitions[unit['id']]['rows']
+            entries=table.select('td.symbol-definition') if table else []
+            check(unit['id']+': one symbol per local definition',
+                  [n.get('data-symbol') for n in entries]==[row['symbol'] for row in expected])
+            check(unit['id']+': explicit individual local units',
+                  [n.get('data-unit') for n in entries]==[row['unit'] for row in expected] and all(row['unit']!='defined in text' for row in expected))
+            check(unit['id']+': at most two variables per visual row',table is not None and all(1<=len(row.select('td.symbol-definition'))<=2 for row in table.select('tbody tr')))
+            check(unit['id']+': bilingual definition in each cell',all(len(n.select('.lang-pair > p'))==2 for n in entries))
         for n in soup.select('[src],link[href],a[href]'):
             val=n.get('src') or n.get('href')
             if not val:continue

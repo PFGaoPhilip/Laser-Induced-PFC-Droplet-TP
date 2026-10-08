@@ -26,11 +26,13 @@ def main():
     selected.update(Path('text')/Path(c['file']).with_suffix('.md').name for c in units)
     selected.update(Path('sources')/name for name in ['Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md','Cavitation_Course_Before_After_Comparison_EN_ZH.md'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'content').glob('*.py'))
+    selected.add(Path('content/equation_symbol_rows.json'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'scripts').glob('*') if p.is_file() and p.suffix in ['.py','.cjs'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if not any(tag in p.name for tag in ['publication','cleanup','package-audit']))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('chapter*-check.py'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.cjs'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('diagram-review-[0-9][0-9].png'))
+    selected.update(Path('verification')/name for name in ['symbol-layout-desktop.png','symbol-layout-mobile.png'])
     selected={p for p in selected if '__pycache__' not in p.parts}
     # These are authored public sources, local dependencies and evidence, not private PDFs or response records.
     forbidden_ext={'.pdf','.zip','.mph','.docx','.pptx','.pem','.key','.sqlite','.db','.exe','.dll'}
