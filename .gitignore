@@ -1,0 +1,26 @@
+# The authoring workspace reuses the existing parent repository.
+publication/
+# Retained obsolete partial-build files; excluded from the release and project commits.
+chapters/01-01-cavity-pressure-inertia-and-directional-jets.html
+text/01-01-cavity-pressure-inertia-and-directional-jets.md
+verification/diagram-review.png
+sources/skills/
+learning-records/*-responses.*
+learning-records/*-evidence.*
+__pycache__/
+tmp/
+temp/
+*.pyc
+*.tmp
+*.log
+*.zip
+.env*
+*token*.json
+*credential*.json
+*.pdf
+*.mph
+*.mphbin
+*.h5
+*.vtk
+*.vtu
+*.odb
