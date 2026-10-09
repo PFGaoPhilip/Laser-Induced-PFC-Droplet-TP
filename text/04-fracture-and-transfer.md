@@ -74,7 +74,8 @@ Step 1 — Adopt a Newtonian liquid constitutive law. Take the surface normal ou
 
 **约定与条件。** $\nabla$为空间梯度（m⁻¹）；上标$\mathsf T$表示张量转置；下标u、l、f分别标识速度应变、液体及薄膜表面。
 
-(C4-E01) · Constitutive assumption and traction identity
+(C4-E01) · Constitutive assumption and traction identity / 本构假设与牵引恒等式
+
 
 $$
 \boldsymbol D_u=\frac{\nabla\boldsymbol u+(\nabla\boldsymbol u)^{\mathsf T}}{2},\qquad \boldsymbol T_l=-p\boldsymbol I+2\mu\boldsymbol D_u,\qquad \boldsymbol t_l=\boldsymbol T_l\boldsymbol n_f
@@ -108,7 +109,8 @@ Step 2 — Integrate the traction in space to obtain force. Integrate force in t
 
 **约定与条件。** 向量点乘将力投影到速度上；下标l和f表示液体与薄膜；$t_a<t_b$ 确定积分区间。。
 
-(C4-E02) · Exact mechanical definitions
+(C4-E02) · Exact mechanical definitions / 精确的力学定义
+
 
 $$
 \begin{aligned}\boldsymbol F_l(t)&=\int_{A_f(t)}\boldsymbol t_l\,dA,\\ \boldsymbol I_l&=\int_{t_a}^{t_b}\boldsymbol F_l(t)\,dt,\\ \mathcal W_l&=\int_{t_a}^{t_b}\int_{A_f(t)}\boldsymbol t_l\cdot\boldsymbol v_f\,dA\,dt.\end{aligned}
@@ -144,7 +146,8 @@ Step 3 — Adopt a homogeneous isotropic Kirchhoff–Love plate with linear elas
 
 **约定与条件。** $\int$表示沿厚度定积分；下标A与f标识面量与薄膜。
 
-(C4-E03) · Derived plate parameters under constitutive assumptions
+(C4-E03) · Derived plate parameters under constitutive assumptions / 在本构假设下推导的板参数
+
 
 $$
 m_A=\int_{-h_f/2}^{h_f/2}\rho_f\,dz=\rho_fh_f,\qquad D_f=\frac{E_f}{1-\nu_f^2}\int_{-h_f/2}^{h_f/2}z^2\,dz=\frac{E_fh_f^3}{12(1-\nu_f^2)}
@@ -179,7 +182,8 @@ Step 4 — Form the kinetic, bending and prescribed-pretension energies. Curvatu
 
 **约定与条件。** 上点表示时间导数；下标$xx,yy,xy$表示对所示坐标求二阶导数，得到曲率（m⁻¹）；$\nabla_\parallel$为面内梯度；$|\ |$为欧氏模长；$\int$表示面积积分；标签f、b、T分别指薄膜、弯曲与张力。
 
-(C4-E04) · Linear-plate energy model
+(C4-E04) · Linear-plate energy model / 线性板的能量模型
+
 
 $$
 \begin{aligned}K_f&=\frac{m_A}{2}\int_{\Omega_f}\dot w^2\,dA,\\U_b&=\frac{D_f}{2}\int_{\Omega_f}\left[w_{xx}^2+w_{yy}^2+2\nu_fw_{xx}w_{yy}+2(1-\nu_f)w_{xy}^2\right]dA,\\U_T&=\frac{T_0}{2}\int_{\Omega_f}|\nabla_\parallel w|^2\,dA.\end{aligned}
@@ -216,7 +220,8 @@ Step 5 — Vary displacement while holding a clamped boundary fixed. Two integra
 
 **约定与条件。** $\partial_\alpha$为坐标求导（m⁻¹）；$\partial_n$为沿该法向求导；$\nabla_\parallel$及$\nabla_\parallel^2$为面内梯度及拉普拉斯算子；$\int,\oint$分别表示面积积分与闭合边界积分；$\Rightarrow$使用恒为零的边界变分具有零切向导数，并结合给定零法向导数；$\sum_{\alpha,\beta=1}^{2}$ 对四种指标组合求和。。
 
-(C4-E40) · Explicit integration-by-parts boundary terms
+(C4-E40) · Explicit integration-by-parts boundary terms / 明确写出的分部积分边界项
+
 
 $$
 \begin{aligned}B_{\alpha\beta}&=D_f[(1-\nu_f)w_{\alpha\beta}+\nu_f\delta_{\alpha\beta}\nabla_\parallel^2w],\\\delta U_b&=\sum_{\alpha,\beta=1}^{2}\int_{\Omega_f}B_{\alpha\beta}\partial_\alpha\partial_\beta(\delta w)\,dA\\&=\sum_{\alpha,\beta=1}^{2}\oint_{\partial\Omega_f}n_\alpha B_{\alpha\beta}\partial_\beta(\delta w)\,d\ell-\sum_{\alpha,\beta=1}^{2}\int_{\Omega_f}(\partial_\alpha B_{\alpha\beta})\partial_\beta(\delta w)\,dA\\&=\sum_{\alpha,\beta=1}^{2}\oint_{\partial\Omega_f}[n_\alpha B_{\alpha\beta}\partial_\beta(\delta w)-n_\beta(\partial_\alpha B_{\alpha\beta})\delta w]\,d\ell+\sum_{\alpha,\beta=1}^{2}\int_{\Omega_f}(\partial_\beta\partial_\alpha B_{\alpha\beta})\delta w\,dA,\\\delta U_T&=T_0\oint_{\partial\Omega_f}\delta w\,\partial_nw\,d\ell-T_0\int_{\Omega_f}\delta w\nabla_\parallel^2w\,dA,\\\delta w=0,\quad\partial_n\delta w=0&\ \Longrightarrow\ \nabla_\parallel\delta w=\boldsymbol0\quad\text{on the fixed clamp}.\end{aligned}
@@ -246,7 +251,8 @@ Two integrations by parts expose the boundary moment and shear terms before they
 
 **约定与条件。** 下标$xxxx,xxyy,yyyy$表示所示四阶导数（m⁻³）；$\nabla_\parallel^2=\partial_x^2+\partial_y^2$为面内拉普拉斯算子；$\nabla_\parallel^4$为将该算子作用两次；$\int$表示面积积分；夹持边界处变分及其法向斜率均为零；$\delta$在此表示无穷小容许变分，而非物理裂纹张开。
 
-(C4-E05) · Derived variational identity for fixed clamps
+(C4-E05) · Derived variational identity for fixed clamps / 固定夹持条件下推导的变分恒等式
+
 
 $$
 \begin{aligned}\delta U_b&=D_f\int_{\Omega_f}\left[w_{xxxx}+\{2\nu_f+2(1-\nu_f)\}w_{xxyy}+w_{yyyy}\right]\delta w\,dA\\&=D_f\int_{\Omega_f}(w_{xxxx}+2w_{xxyy}+w_{yyyy})\delta w\,dA=D_f\int_{\Omega_f}\nabla_\parallel^4w\,\delta w\,dA,\\\delta U_T&=-T_0\int_{\Omega_f}\nabla_\parallel^2w\,\delta w\,dA.\end{aligned}
@@ -275,7 +281,8 @@ A fixed clamp removes the boundary virtual-work terms.
 
 **约定与条件。** $\nabla_\parallel^2$为面内拉普拉斯算子（m⁻²），$\nabla_\parallel^4$为其平方；$\partial_n$表示沿面内边界外法向求导；初始零值按对应行分别表示位移或速度；标签load和coh表示外载与内聚力。
 
-(C4-E06) · Reduced transient momentum balance with explicit initial/boundary data
+(C4-E06) · Reduced transient momentum balance with explicit initial/boundary data / 含明确初始与边界数据的简化瞬态动量平衡
+
 
 $$
 \begin{aligned}m_A\ddot w+D_f\nabla_\parallel^4w-T_0\nabla_\parallel^2w&=p_{\rm load}-t_{\rm coh},\\w(\boldsymbol x,0)=0,\quad\dot w(\boldsymbol x,0)&=0,\\w=0,\quad\partial_n w&=0\quad\text{on a clamped edge}.\end{aligned}
@@ -310,7 +317,8 @@ A fixed clamp also has zero boundary velocity and zero normal velocity slope. Mu
 
 **约定与条件。** $d/dt$为时间导数；$\nabla_\parallel^2$为平面拉普拉斯算子，$\nabla_\parallel^4$为其平方；$\int$表示面积积分；导数适用于所述恒定参数、足够正则的场，以及速度和法向速度斜率均为零的固定夹持边界；各行单位均为功率W；f、b、T、load、coh分别表示薄膜、弯曲、张力、外加及内聚。
 
-(C4-E41) · Transient plate power identity under fixed clamps
+(C4-E41) · Transient plate power identity under fixed clamps / 固定夹持条件下瞬态板的功率恒等式
+
 
 $$
 \begin{aligned}\int_{\Omega_f}m_A\ddot w\dot w\,dA&=\frac{dK_f}{dt},\qquad \int_{\Omega_f}D_f\nabla_\parallel^4w\dot w\,dA=\frac{dU_b}{dt},\\-\int_{\Omega_f}T_0\nabla_\parallel^2w\dot w\,dA&=\frac{dU_T}{dt},\\\frac{d}{dt}(K_f+U_b+U_T)&=\int_{\Omega_f}p_{\rm load}\dot w\,dA-\int_{\Omega_f}t_{\rm coh}\dot w\,dA.\end{aligned}
@@ -348,7 +356,8 @@ Step 6 — Keep the intermediate PVC sheet as a mechanical participant. As a sim
 
 **约定与条件。** 双上点为加速度（m s⁻²）；$\nabla_\parallel^2$为面内拉普拉斯算子，$\nabla_\parallel^4$为其平方；P表示PVC，f表示薄膜，A表示面量，liq表示液体，coh表示内聚；箭头标识传递方向；每层均具有自身实际初始及支承条件；若无附加接触／粘接闭合关系，传递牵引就尚未确定。
 
-(C4-E07) · Conditional coupled-sheet model
+(C4-E07) · Conditional coupled-sheet model / 有条件的耦合薄片模型
+
 
 $$
 \begin{aligned}m_{A,P}\ddot w_P+D_P\nabla_\parallel^4w_P-T_P\nabla_\parallel^2w_P&=p_{\rm liq}-t_{P\to f},\\m_A\ddot w+D_f\nabla_\parallel^4w-T_0\nabla_\parallel^2w&=t_{P\to f}-t_{\rm coh}.\end{aligned}
@@ -383,7 +392,8 @@ Step 7 — Integrate the transient film equation through a finite pulse. The exa
 
 **约定与条件。** $\nabla_\parallel^2$与$\nabla_\parallel^4$为面内拉普拉斯算子及其平方；$\int$表示对脉冲期间实际局部载荷／响应积分；标签A、f、load、coh分别表示面量、薄膜、外加及内聚。
 
-(C4-E08) · Exact time integral within the reduced plate model
+(C4-E08) · Exact time integral within the reduced plate model / 简化板模型内的精确时间积分
+
 
 $$
 m_A[\dot w(\boldsymbol x,t_b)-\dot w(\boldsymbol x,t_a)]=J_A-\int_{t_a}^{t_b}[D_f\nabla_\parallel^4w-T_0\nabla_\parallel^2w+t_{\rm coh}]\,dt,\qquad J_A=\int_{t_a}^{t_b}p_{\rm load}\,dt
@@ -409,7 +419,8 @@ Pulse integration exposes the reactions that can invalidate a free velocity jump
 
 **约定与条件。** $\simeq$表示脉冲期间恢复力／内聚力冲量可忽略，而非保证粘接叠层中的载荷传递；下标A表示单位面积量；$\Delta$表示终值减初值，上点为时间导数。
 
-(C4-E09) · Short-pulse free-response approximation
+(C4-E09) · Short-pulse free-response approximation / 短脉冲后的自由响应近似
+
 
 $$
 \Delta\dot w\simeq\frac{J_A}{m_A},\qquad \mathcal E_A\simeq\frac12m_A(\Delta\dot w)^2=\frac{J_A^2}{2m_A}
@@ -441,7 +452,8 @@ For a deformation varying over a lateral length, compare the pulse duration with
 
 **约定与条件。** 上标scale表示估计，下标b、T、n标识恢复机制；$\sqrt{\ }$取正根；若预张力或内聚机制不存在，则不使用对应时间尺度，不能除以零。
 
-(C4-E10) · Derived term-balance estimates
+(C4-E10) · Derived term-balance estimates / 通过各项平衡推导的估算
+
 
 $$
 t_b^{\rm scale}=a_f^2\sqrt{\frac{m_A}{D_f}},\qquad t_T^{\rm scale}=a_f\sqrt{\frac{m_A}{T_0}},\qquad t_n^{\rm scale}=\sqrt{\frac{m_A}{K_n}}
@@ -477,7 +489,8 @@ Step 8 — Define crack driving force under an explicit loading control. Peak te
 
 **约定与条件。** 下标c与i表示裂纹及界面；此不等式是指定断裂模型的能量扩展判据，而非充分转印判据。
 
-(C4-E11) · Definition with quasistatic fracture criterion
+(C4-E11) · Definition with quasistatic fracture criterion / 定义与准静态断裂判据
+
 
 $$
 G=-\left.\frac{\partial\mathcal P}{\partial A_c}\right|_{\mathcal C},\qquad G\ge\Gamma(\psi,T_i,v_c)
@@ -515,7 +528,8 @@ During rapid fracture, retain kinetic energy. For a specified crack-front model,
 
 **约定与条件。** $\int$表示沿前沿积分；标签load、f、c、i、other分别表示外加、固体薄膜、裂纹、界面及其余耗散过程。
 
-(C4-E12) · Conditional dynamic energy balance
+(C4-E12) · Conditional dynamic energy balance / 有条件的动态能量平衡
+
 
 $$
 P_{\rm load}=\frac{d}{dt}(K_f+U_f)+\int_{\mathcal L_c}\Gamma(\psi,T_i,v_c)v_c\,d\ell+P_{\rm other}
@@ -551,7 +565,8 @@ Step 9 — Specify a solvable pressure-controlled limit. A circular pre-existing
 
 **约定与条件。** $d/dr$及撇号表示径向求导；$r=0$处算子取正则极限；标签r、f、0分别表示径向算子、薄膜／任意函数（依语境）及恒定载荷；两个零值指定边缘位移与斜率。
 
-(C4-E13) · Quasistatic plate boundary-value model
+(C4-E13) · Quasistatic plate boundary-value model / 准静态板的边值模型
+
 
 $$
 \mathscr L_rg=\frac{p_0}{D_f},\qquad g=\mathscr L_rw,\qquad \mathscr L_r f=\frac1r\frac{d}{dr}\left(r\frac{df}{dr}\right),\qquad w(b)=0,\quad w^{\prime}(b)=0
@@ -584,7 +599,8 @@ Step 10 — First solve for the curvature sum. Multiply its radial Laplacian equ
 
 **约定与条件。** $C_1=0$来自中心曲率梯度正则及无点载荷条件；下标0标识恒定压力，而非液体初始压力。
 
-(C4-E14) · Derived first two radial integrations
+(C4-E14) · Derived first two radial integrations / 推导中的前两次径向积分
+
 
 $$
 \begin{aligned}\frac{d}{dr}(rg^{\prime})&=\frac{p_0r}{D_f},\\rg^{\prime}&=\frac{p_0r^2}{2D_f}+C_1,\\g^{\prime}&=\frac{p_0r}{2D_f}+\frac{C_1}{r},\quad C_1=0,\\g(r)&=\frac{p_0r^2}{4D_f}+C_2.\end{aligned}
@@ -617,7 +633,8 @@ Step 11 — Integrate the curvature sum to obtain displacement. The first integr
 
 **约定与条件。** 撇号及$d/dr$为径向导数；$C_3=0$排除中心反比于半径的斜率；各行在中心均取正则极限；下标2、3、4标识不同常数，而非导数阶数。
 
-(C4-E15) · Derived second pair of radial integrations
+(C4-E15) · Derived second pair of radial integrations / 推导中的后两次径向积分
+
 
 $$
 \begin{aligned}\frac{d}{dr}(rw^{\prime})&=rg=\frac{p_0r^3}{4D_f}+C_2r,\\rw^{\prime}&=\frac{p_0r^4}{16D_f}+\frac{C_2r^2}{2}+C_3,\quad C_3=0,\\w^{\prime}&=\frac{p_0r^3}{16D_f}+\frac{C_2r}{2},\\w(r)&=\frac{p_0r^4}{64D_f}+\frac{C_2r^2}{4}+C_4.\end{aligned}
@@ -645,7 +662,8 @@ The regular displacement contains quartic, quadratic and constant contributions.
 
 **约定与条件。** 撇号表示$d/dr$；$\Rightarrow$表示各夹持边界条件的代数结果；下标2与4标识常数，f表示薄膜。
 
-(C4-E16) · Exact solution of the stated linear-plate benchmark
+(C4-E16) · Exact solution of the stated linear-plate benchmark / 所述线性板基准问题的精确解
+
 
 $$
 \begin{aligned}0=w^{\prime}(b)&=\frac{p_0b^3}{16D_f}+\frac{C_2b}{2}\quad\Rightarrow\quad C_2=-\frac{p_0b^2}{8D_f},\\0=w(b)&=\frac{p_0b^4}{64D_f}-\frac{p_0b^4}{32D_f}+C_4\quad\Rightarrow\quad C_4=\frac{p_0b^4}{64D_f},\\w(r)&=\frac{p_0}{64D_f}(r^4-2b^2r^2+b^4)=\frac{p_0}{64D_f}(b^2-r^2)^2.\end{aligned}
@@ -677,7 +695,8 @@ Step 12 — Check the solution by substitution, not only by its shape. The radia
 
 **约定与条件。** $r$上的上标表示幂；数字4与16是数值系数；斜率式在$r=0$及$r=b$均为零。
 
-(C4-E17) · Governing-equation and boundary verification
+(C4-E17) · Governing-equation and boundary verification / 控制方程与边界条件核验
+
 
 $$
 \mathscr L_r(r^2)=4,\qquad \mathscr L_r(r^4)=16r^2,\qquad D_f\mathscr L_r^2w=p_0,\qquad w^{\prime}(r)=\frac{p_0r(r^2-b^2)}{16D_f}
@@ -709,7 +728,8 @@ Step 13 — Integrate displacement to obtain added cavity volume. The axisymmetr
 
 **约定与条件。** $\int$表示径向积分；下标bl表示鼓泡；长度上的上标均表示幂；$[\ ]_0^b$表示原函数在上端点的值减去其零端点值。
 
-(C4-E18) · Exact geometric volume integral for the benchmark
+(C4-E18) · Exact geometric volume integral for the benchmark / 基准模型的精确几何体积积分
+
 
 $$
 \begin{aligned}V_{\rm bl}&=2\pi\int_0^b w(r)r\,dr=\frac{\pi p_0}{32D_f}\int_0^b(b^4r-2b^2r^3+r^5)\,dr,\\&=\frac{\pi p_0}{32D_f}\left[\frac{b^4r^2}{2}-\frac{b^2r^4}{2}+\frac{r^6}{6}\right]_0^b=\frac{\pi p_0b^6}{192D_f}.\end{aligned}
@@ -742,7 +762,8 @@ Step 14 — Include the maintained-pressure source in potential energy. At a fix
 
 **约定与条件。** $\partial/\partial p_0$为压力导数；竖线表示保持半径不变；$\int$表示该加载曲线积分；下标b与bl分别表示鼓泡柔度／弯曲及鼓泡体积，此处已明确其含义；在加载曲线积分过程中不改变裂纹面积；正压力时，柔度也等于体积除以压力；零压力时采用导数避免除以零。
 
-(C4-E19) · Derived potential under maintained-pressure control
+(C4-E19) · Derived potential under maintained-pressure control / 维持压力控制条件下推导的势能
+
 
 $$
 C_b=\left.\frac{\partial V_{\rm bl}}{\partial p_0}\right|_b=\frac{\pi b^6}{192D_f},\qquad V_{\rm bl}=C_bp_0,\qquad U_b=\int_0^{V_{\rm bl}}\frac{v}{C_b}\,dv=\frac{V_{\rm bl}^2}{2C_b}=\frac{p_0V_{\rm bl}}2,\qquad \mathcal P=U_b-p_0V_{\rm bl}=-\frac{\pi p_0^2b^6}{384D_f}
@@ -774,7 +795,8 @@ Step 15 — Differentiate the total potential with respect to radius and divide 
 
 **约定与条件。** $d/db$表示按半径求导；竖线及下标$p_0$表示保持压力不变；下标c表示裂纹面积；长度上的上标均为幂；$b$为正保证面积导数非零。
 
-(C4-E20) · Derived quasistatic energy-release rate
+(C4-E20) · Derived quasistatic energy-release rate / 推导得到的准静态能量释放率
+
 
 $$
 \begin{aligned}A_c&=\pi b^2,\qquad \left.\frac{d\mathcal P}{db}\right|_{p_0}=-\frac{6\pi p_0^2b^5}{384D_f},\qquad\frac{dA_c}{db}=2\pi b,\\G_{p_0}&=-\frac{(d\mathcal P/db)_{p_0}}{dA_c/db}=\frac{p_0^2b^4}{128D_f}.\end{aligned}
@@ -801,7 +823,8 @@ Geometry and compliance convert pressure into fracture energy per area.
 
 **约定与条件。** $\sqrt{\ }$取正根；下标crit表示起始阈值；比值$G_{p_0}/\Gamma$无量纲；此起始判据假设存在预裂纹，并采用准静态弯曲模型。
 
-(C4-E21) · Derived onset threshold within the benchmark
+(C4-E21) · Derived onset threshold within the benchmark / 基准模型内推导的起始阈值
+
 
 $$
 p_{0,\rm crit}=\frac{\sqrt{128D_f\Gamma}}{b^2},\qquad \frac{G_{p_0}}{\Gamma}=\left(\frac{p_0}{p_{0,\rm crit}}\right)^2
@@ -834,7 +857,8 @@ Step 16 — Change the loading control explicitly. Hold the added volume fixed, 
 
 **约定与条件。** $d/db$表示保持$\bar V$不变的半径求导；横线标识受控体积，而非平均；此恒容系统不再提供额外压力源功。
 
-(C4-E22) · Derived loading-control comparison
+(C4-E22) · Derived loading-control comparison / 推导得到的加载控制方式比较
+
 
 $$
 \begin{aligned}U_b\big|_{\bar V}&=\frac{\bar V^2}{2C_b}=\frac{96D_f\bar V^2}{\pi b^6},\qquad p(b)=\frac{192D_f\bar V}{\pi b^6},\\G_{\bar V}&=-\frac{dU_b/db}{2\pi b}=\frac{288D_f\bar V^2}{\pi^2b^8}=\frac{p(b)^2b^4}{128D_f},\\G_{p_0}&\propto b^4\ \text{at fixed }p_0,\qquad G_{\bar V}\propto b^{-8}\ \text{at fixed }\bar V.\end{aligned}
@@ -867,7 +891,8 @@ Use the source course’s illustrative plate: modulus 2 GPa, thickness 10 μm, P
 
 **约定与条件。** 代入的教学杨氏模量为2.00×10⁹ Pa，厚度10.0×10⁻⁶ m，泊松比0.35，裂纹半径100×10⁻⁶ m，断裂阻力0.10 J m⁻²；Pa、N、m、J及kPa分别为帕、牛顿、米、焦耳及千帕；$\sqrt{\ }$取正根；上标表示幂；下标f表示薄膜，crit表示起始阈值。
 
-(C4-E23) · Checked teaching substitution
+(C4-E23) · Checked teaching substitution / 已核验的教学参数代入
+
 
 $$
 \begin{aligned}D_f&=\frac{(2.00\times10^9\ {\rm Pa})(10.0\times10^{-6}\ {\rm m})^3}{12(1-0.35^2)}=1.899335\times10^{-7}\ {\rm N\,m},\\p_{0,\rm crit}&=\frac{\sqrt{128(1.899335\times10^{-7}\ {\rm N\,m})(0.10\ {\rm J\,m^{-2}})}}{(100\times10^{-6}\ {\rm m})^2}=155.921\ {\rm kPa}.\end{aligned}
@@ -900,7 +925,8 @@ At that pressure, check deflection, volume and payload stress. For the clamped c
 
 **约定与条件。** 下标edge表示夹持边缘厚度外表面的值；r表示径向；$|\ |$表示幅值；μm与MPa分别为微米及兆帕；应力结果采用相同线性各向同性薄板假设。
 
-(C4-E24) · Magnitude, geometric-validity and competing-failure checks
+(C4-E24) · Magnitude, geometric-validity and competing-failure checks / 数量级、几何适用性与竞争失效模式检验
+
 
 $$
 \begin{aligned}w(0)&=\frac{p_{0,\rm crit}b^4}{64D_f}=1.28270\ \mu{\rm m},\qquad \frac{w(0)}{h_f}=0.12827,\\V_{\rm bl}&=\frac{\pi p_{0,\rm crit}b^6}{192D_f}=1.34324\times10^{-14}\ {\rm m^3},\\|M_r(b)|&=\frac{p_{0,\rm crit}b^2}{8},\qquad |\sigma_{rr}|_{\rm edge}=\frac{6|M_r(b)|}{h_f^2}=11.6941\ {\rm MPa}.\end{aligned}
@@ -935,7 +961,8 @@ Step 17 — Adopt a monotonic triangular tensile traction–separation law at th
 
 **约定与条件。** 下标n、0、c分别表示法向、峰值起始及最终分离；max表示最大值；关系假设张开单调增大，且软化区间严格为正；此式未指定压缩与卸载行为。
 
-(C4-E25) · Adopted monotonic tensile cohesive law
+(C4-E25) · Adopted monotonic tensile cohesive law / 采用的单调拉伸内聚定律
+
 
 $$
 \delta_0=\frac{T_{\max}}{K_n},\qquad t_n(\delta)=\begin{cases}K_n\delta,&0\le\delta\le\delta_0,\\T_{\max}\dfrac{\delta_c-\delta}{\delta_c-\delta_0},&\delta_0<\delta<\delta_c,\\0,&\delta\ge\delta_c.\end{cases}
@@ -967,7 +994,8 @@ Step 18 — Integrate both branches to obtain fracture work per area. The first 
 
 **约定与条件。** $\int$表示牵引对张开的积分；端点方括号表示上端值减下端值；下标n、0、c、max分别表示法向、峰值起始、最终分离与最大值；末行不等式保证非零软化分支，是模型的可接受条件。
 
-(C4-E26) · Exact work integral of the adopted cohesive law
+(C4-E26) · Exact work integral of the adopted cohesive law / 所采用内聚定律的精确功积分
+
 
 $$
 \begin{aligned}\Gamma&=\int_0^{\delta_c}t_n(\delta)\,d\delta\\&=\frac{K_n\delta_0^2}{2}+\frac{T_{\max}}{\delta_c-\delta_0}\left[\delta_c\delta-\frac{\delta^2}{2}\right]_{\delta_0}^{\delta_c}\\&=\frac{T_{\max}\delta_0}{2}+\frac{T_{\max}(\delta_c-\delta_0)}{2}=\frac{T_{\max}\delta_c}{2},\\\delta_c&=\frac{2\Gamma}{T_{\max}},\qquad K_n>\frac{T_{\max}^2}{2\Gamma}\quad\text{for }\delta_0<\delta_c.\end{aligned}
@@ -994,7 +1022,8 @@ Complete separation needs the entire traction–opening area, not merely the pea
 
 **约定与条件。** MPa与nm表示兆帕与纳米；$\Rightarrow$表示代入三角形关系；这些是独立内聚教学参数，而非薄膜释放界面的测量；下标max、n、0、c分别标识峰值、法向、峰值张开与完全张开。
 
-(C4-E27) · Cohesive admissibility teaching calculation
+(C4-E27) · Cohesive admissibility teaching calculation / 内聚模型容许条件的教学计算
+
 
 $$
 \Gamma=0.005\ {\rm J\,m^{-2}},\quad T_{\max}=0.10\ {\rm MPa},\quad K_n=10^{13}\ {\rm Pa\,m^{-1}}\quad\Rightarrow\quad\delta_0=10\ {\rm nm},\quad\delta_c=100\ {\rm nm}
@@ -1031,7 +1060,8 @@ Step 19 — Carry the same finite source forward. The Chapter 2 core inventory f
 
 **约定与条件。** $\sqrt{\ }$取正根；下标j、in分别标识单射流与入射阵列；nJ为纳焦耳；方向求和假设同时同向到达，但不将压力场按N倍峰值相加。
 
-(C4-E28) · Finite incoming state inherited from the teaching source
+(C4-E28) · Finite incoming state inherited from the teaching source / 沿用教学源模型的有限入射状态
+
 
 $$
 \begin{aligned}m_j&=\frac{\rho\pi d_j^2L_j}{4}=3.926990817\times10^{-12}\ {\rm kg},\\U_j&=\sqrt{\frac{2E_j}{m_j}}=31.9153824\ {\rm m\,s^{-1}},\\E_{\rm in}&=NE_j=50.0\ {\rm nJ},\qquad I_{\rm in}=Nm_jU_j=3.133285343\times10^{-9}\ {\rm N\,s}.\end{aligned}
@@ -1064,7 +1094,8 @@ Step 20 — State solid-coupling assumptions separately. Take a payload of area 
 
 **约定与条件。** 标签f、in、solid、net、E、I分别标识薄膜、入射、有效固体分配、净量、能量与冲量；第一行数值因子分别是SI制密度、面积及厚度。
 
-(C4-E29) · Explicit conditional solid-coupling allocation
+(C4-E29) · Explicit conditional solid-coupling allocation / 明确给定且有条件的固体耦合分配
+
 
 $$
 \begin{aligned}m_f&=\rho_fA_fh_f=(2330)(1.00\times10^{-6})(1.00\times10^{-6})\ {\rm kg}=2.33\times10^{-9}\ {\rm kg},\\E_{\rm solid}&=\eta_EE_{\rm in}=0.20(50.0\ {\rm nJ})=10.0\ {\rm nJ},\\I_{\rm net}&=\eta_II_{\rm in}=0.50(3.133285343\times10^{-9}\ {\rm N\,s})=1.566642672\times10^{-9}\ {\rm N\,s}.\end{aligned}
@@ -1096,7 +1127,8 @@ Step 21 — Apply necessary global screens. Constant fracture energy over the en
 
 **约定与条件。** 下标req、f、solid、net分别标识所需、对象、有效固体及净量；在所述零初始能量／无额外源假设下，不等式是必要条件，而非空间断裂解。
 
-(C4-E30) · Necessary global energy and momentum screens
+(C4-E30) · Necessary global energy and momentum screens / 全局能量与动量的必要条件筛查
+
 
 $$
 E_{\rm req}(v_f)=\Gamma A_f+\frac12m_fv_f^2,\qquad I_{\rm req}(v_f)=m_fv_f,\qquad E_{\rm solid}\ge E_{\rm req}(v_f),\qquad I_{\rm net}\ge I_{\rm req}(v_f)
@@ -1122,7 +1154,8 @@ The full intended release area, not a pressure peak, determines the fracture-ene
 
 **约定与条件。** nJ为纳焦耳；$\Rightarrow$表示数值代入；比较假设没有初始储存的可恢复能量，也没有额外冲击后源；下标f表示薄膜面积，solid表示指定有效能量。
 
-(C4-E31) · Failed release-energy screen
+(C4-E31) · Failed release-energy screen / 未通过的释放能量筛查
+
 
 $$
 \Gamma=0.020\ {\rm J\,m^{-2}}\quad\Rightarrow\quad \Gamma A_f=(0.020)(1.00\times10^{-6})\ {\rm J}=20.0\ {\rm nJ}>E_{\rm solid}=10.0\ {\rm nJ}
@@ -1154,7 +1187,8 @@ That failure is already decisive under the stated budget. The 47.23 MPa number i
 
 **约定与条件。** nJ为纳焦耳；下标req、f、net分别标识所需、对象及净量；10.0 nJ比较值是指定固体能量；第一行数值为SI制质量与速度。
 
-(C4-E32) · Passed necessary release and minimum-speed screens
+(C4-E32) · Passed necessary release and minimum-speed screens / 通过的释放与最低速度必要条件筛查
+
 
 $$
 \begin{aligned}\Gamma A_f&=5.00\ {\rm nJ},\qquad \frac12m_fv_f^2=\frac12(2.33\times10^{-9})(0.50)^2\ {\rm J}=0.29125\ {\rm nJ},\\E_{\rm req}(0.50\ {\rm m\,s^{-1}})&=5.29125\ {\rm nJ}<10.0\ {\rm nJ},\\I_{\rm req}(0.50\ {\rm m\,s^{-1}})&=(2.33\times10^{-9})(0.50)\ {\rm N\,s}=1.165\times10^{-9}\ {\rm N\,s}<I_{\rm net}.\end{aligned}
@@ -1186,7 +1220,8 @@ Step 22 — Check mutual consistency of the energy and impulse allocations. If t
 
 **约定与条件。** CM标识质心，net表示考虑全部反作用后的冲量；nJ为纳焦耳；转动、形状运动及耗散仍需在所示项之外增加正能量。
 
-(C4-E33) · Energy–momentum compatibility check
+(C4-E33) · Energy–momentum compatibility check / 能量–动量相容性检验
+
 
 $$
 v_{\rm CM}=\frac{I_{\rm net}}{m_f}=0.672378829\ {\rm m\,s^{-1}},\qquad K_{\rm CM}=\frac{I_{\rm net}^2}{2m_f}=0.526688683\ {\rm nJ},\qquad \Gamma A_f+K_{\rm CM}=5.526688683\ {\rm nJ}<E_{\rm solid}
@@ -1224,7 +1259,8 @@ Step 23 — Follow the payload beyond release. During a short ballistic flight w
 
 **约定与条件。** $\tan$为正切；数值角度由度转换为弧度计算；μm为微米，$\Rightarrow$表示代入；下标f标识薄膜／对象飞行，而非液体射流运动；关系假设直线飞行，且无显著阻力、重力或随转动变化的气动力；$\Delta$表示位置差。
 
-(C4-E34) · Ballistic placement estimate
+(C4-E34) · Ballistic placement estimate / 弹道式定位估算
+
 
 $$
 \Delta x=H_f\tan\theta,\qquad H_f=100\ \mu{\rm m},\quad\theta=1^{\circ}\quad\Rightarrow\quad\Delta x=1.74551\ \mu{\rm m}
@@ -1276,7 +1312,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 原公式：$\boldsymbol t_l$为流体施加于固体的牵引（Pa）；$\int$表示表面／时间积分；点乘表示向量投影；下标l、f表示液体与薄膜；若PVC为外露层，同一恒等式首先加载PVC；$t_a<t_b$ 确定积分区间。。
 
-(C4-E35) · Original load, impulse and work formulas
+(C4-E35) · Original load, impulse and work formulas / 原始载荷、冲量与功公式
+
 
 $$
 \boldsymbol t_l=\boldsymbol T_l\boldsymbol n_f,\qquad \boldsymbol I_l=\int_{t_a}^{t_b}\int_{A_f(t)}\boldsymbol t_l\,dA\,dt,\qquad \mathcal W_l=\int_{t_a}^{t_b}\int_{A_f(t)}\boldsymbol t_l\cdot\boldsymbol v_f\,dA\,dt
@@ -1303,7 +1340,8 @@ Reference answer: pressure, impulse and work describe different parts of the tra
 
 **约定与条件。** 原必要筛选：$E_{\rm solid}$为指定可用固体能量（J）；对象初始静止，且无额外可恢复源；下标solid、f、net标识有效固体分配、对象及净冲量。
 
-(C4-E36) · Original global screens
+(C4-E36) · Original global screens / 原始全局筛查公式
+
 
 $$
 E_{\rm solid}\ge\Gamma A_f+\frac12m_fv_f^2,\qquad I_{\rm net}\ge m_fv_f
@@ -1359,7 +1397,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 原鼓泡公式：$w(r)$为张开位移（m）；$\sqrt{\ }$取正根；下标f、0、crit分别表示薄膜、恒定载荷与阈值；表达式要求中心正则、裂纹边缘夹持、准静态弯曲，且拉伸／预张力可忽略。
 
-(C4-E37) · Original pressure-controlled benchmark formulas
+(C4-E37) · Original pressure-controlled benchmark formulas / 原始压力控制基准模型公式
+
 
 $$
 w(r)=\frac{p_0}{64D_f}(b^2-r^2)^2,\qquad G_{p_0}=\frac{p_0^2b^4}{128D_f},\qquad p_{0,\rm crit}=\frac{\sqrt{128D_f\Gamma}}{b^2}
@@ -1416,7 +1455,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 原界面公式：$\Gamma$为单位面积拉伸内聚断裂功（J m⁻²）；一半乘积适用于所采用的三角形单调关系；$\int$表示张开积分；下标n、c、i、max分别表示法向、裂纹／最终张开、界面与最大值。
 
-(C4-E38) · Original cohesive work and fracture criteria
+(C4-E38) · Original cohesive work and fracture criteria / 原始内聚功与断裂判据
+
 
 $$
 \Gamma=\int_0^{\delta_c}t_n(\delta)\,d\delta=\frac12T_{\max}\delta_c,\qquad G\ge\Gamma(\psi,T_i,v_c)
@@ -1445,7 +1485,8 @@ Reference answer: successful release requires both initiation and separation wor
 
 **约定与条件。** 原筛选与落位关系：$E_{\rm solid}$为可用有效固体能量（J）；筛选假设初始静止且无其他能量源；落位关系假设短时直线飞行；下标solid、f、net标识有效固体能量、对象及净冲量。
 
-(C4-E39) · Original necessary operating-window checks
+(C4-E39) · Original necessary operating-window checks / 原始工作窗口的必要条件检验
+
 
 $$
 E_{\rm solid}\ge\Gamma A_f+\frac12m_fv_f^2,\qquad I_{\rm net}\ge m_fv_f,\qquad \Delta x=H_f\tan\theta

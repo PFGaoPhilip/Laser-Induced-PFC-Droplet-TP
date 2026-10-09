@@ -80,7 +80,8 @@ Step 1 — distinguish five uniformities: core inventory, carrier volume, pitch,
 
 **约定与条件。** 所有量均无量纲。
 
-(C3-E01) · Independent-event statistical model
+(C3-E01) · Independent-event statistical model / 独立事件的统计模型
+
 
 $$
 \begin{aligned}\mathbb E[N_b]&=N_dp_a,\quad \operatorname{Var}(N_b)=N_dp_a(1-p_a),\\ \mathrm{CV}(N_b)&=\frac{\sqrt{N_dp_a(1-p_a)}}{N_dp_a}=\sqrt{\frac{1-p_a}{N_dp_a}},\quad \Pr(N_b=N_d)=p_a^{N_d}.\end{aligned}
@@ -111,7 +112,8 @@ For 25 sites and activation probability 0.95, the mean count is 23.75 and relati
 
 **约定与条件。** $\exp$、$\ln$ 分别为无量纲自变量的指数及自然对数。
 
-(C3-E02) · Derived optical-uniformity condition
+(C3-E02) · Derived optical-uniformity condition / 推导得到的光学均匀性条件
+
 
 $$
 \frac{F(R_A)}{F_0}=\exp(-2R_A^2/w^2)\ge1-\epsilon\ \Longrightarrow\ w^2\ge\frac{2R_A^2}{-\ln(1-\epsilon)}\ \Longrightarrow\ w\ge R_A\sqrt{\frac{2}{-\ln(1-\epsilon)}}.
@@ -153,7 +155,8 @@ Step 2 — use incompressibility to obtain one source. At a distance from a fixe
 
 **约定与条件。** $\partial_t$ 保持位置固定；$\int$ 为径向积分，$\infty$ 为速度势为零的远场。
 
-(C3-E03) · Continuity and potential integration
+(C3-E03) · Continuity and potential integration / 连续性关系与势函数积分
+
 
 $$
 \begin{aligned}4\pi r_j^2u_j(r_j,t)&=4\pi R_j^2\dot R_j,\\ \phi_j(r_j,t)&=\int_{\infty}^{r_j}\frac{R_j^2\dot R_j}{\xi^2}\,d\xi=-\frac{R_j^2\dot R_j}{r_j},\\ \partial_t\phi_j\big|_{r_j=d_{ij}}&=-\frac{2R_j\dot R_j^2+R_j^2\ddot R_j}{d_{ij}}.\end{aligned}
@@ -183,7 +186,8 @@ A moving spherical volume produces a monopole potential.
 
 **约定与条件。** $\sum_{j\ne i}$ 对其他源求和；$\simeq$ 表示充分分离时的首阶近似；$i\ne j$；每个指标从 1 遍历至 $N_b$；半径上的牛顿点号表示其时间导数。。
 
-(C3-E04) · Leading unsteady-Bernoulli approximation
+(C3-E04) · Leading unsteady-Bernoulli approximation / 非定常伯努利方程的首阶近似
+
 
 $$
 p'_{j\to i}\simeq-\rho\partial_t\phi_j(d_{ij},t)=\frac{\rho}{d_{ij}}(R_j^2\ddot R_j+2R_j\dot R_j^2),\qquad p_{\mathrm{ext},i}\simeq p_\infty+\sum_{j\ne i}p'_{j\to i}.
@@ -219,7 +223,8 @@ The product rule supplies both terms in the numerator; keeping only the radius a
 
 **约定与条件。** $\sum_{j\ne i}$ 对其他源求和；各项单位均为 m² s⁻²。
 
-(C3-E05) · Coupled spherical approximation
+(C3-E05) · Coupled spherical approximation / 耦合球形近似
+
 
 $$
 \begin{aligned}R_i\ddot R_i+\frac32\dot R_i^2+\sum_{j\ne i}\frac{R_j^2\ddot R_j+2R_j\dot R_j^2}{d_{ij}}&=B_i,\\ B_i&=\frac{p_{b,i}-p_\infty-2\sigma_b/R_i-4\mu\dot R_i/R_i}{\rho}.\end{aligned}
@@ -259,7 +264,8 @@ Step 4 — constrain identical cavities to a regular polygon, with identical ini
 
 **约定与条件。** $\sin$ 的角度采用弧度；$\sum$ 对规定步数求和；$\sum$ 对规定多边形步数求和；$k$ 从 1 遍历至 $N-1$。。
 
-(C3-E06) · Exact polygon geometry
+(C3-E06) · Exact polygon geometry / 精确的多边形几何关系
+
 
 $$
 \begin{aligned}d_k&=s\frac{\sin(k\pi/N)}{\sin(\pi/N)},\qquad S_N=\sum_{k=1}^{N-1}\frac1{d_k},\\ S_3&=\frac2s,\qquad S_4=\frac{2+1/\sqrt2}{s},\qquad S_5=\frac{2+2/\varphi_g}{s},\quad\varphi_g=\frac{1+\sqrt5}{2}.\end{aligned}
@@ -289,7 +295,8 @@ Equal geometric sums justify a shared radial trajectory in this constrained cont
 
 **约定与条件。** 点为时间导数；本理想对照忽略表面张力及黏度。
 
-(C3-E07) · Symmetric constant-pressure collapse control
+(C3-E07) · Symmetric constant-pressure collapse control / 对称恒压塌缩对照模型
+
 
 $$
 \begin{aligned}\Delta p_c&=p_\infty-p_b>0,\qquad S=S_N,\\ (1+SR)R\ddot R+\left(\frac32+2SR\right)\dot R^2&=-\frac{\Delta p_c}{\rho},\qquad R(0)=R_{\max},\quad\dot R(0)=0.\end{aligned}
@@ -322,7 +329,8 @@ Step 5 — solve the reduced equation on the inward branch. Away from the initia
 
 **约定与条件。** $\ln$ 为自然对数；$d/dR$ 对半径求导；仅在运动分支除以 $\dot R$。
 
-(C3-E08) · Chain rule and integrating-factor derivation
+(C3-E08) · Chain rule and integrating-factor derivation / 链式法则与积分因子推导
+
 
 $$
 \begin{aligned}y(R)&=\dot R^2,\quad \frac{dy}{dR}=\frac{2\dot R\ddot R}{\dot R}=2\ddot R\quad(\dot R\ne0),\\ y'+\frac{3+4SR}{R(1+SR)}y&=-\frac{2\Delta p_c}{\rho R(1+SR)},\\ \frac{3+4SR}{R(1+SR)}&=\frac3R+\frac S{1+SR}=\frac{d}{dR}\ln[R^3(1+SR)/\ell_*^3],\\ \frac{d}{dR}\left[R^3(1+SR)y\right]&=-\frac{2\Delta p_c}{\rho}R^2.\end{aligned}
@@ -351,7 +359,8 @@ Every term of the integrating factor can be reconstructed from the radial equati
 
 **约定与条件。** 方括号表示上端减下端，$\int$ 为定积分，$\sqrt{\ }$ 取非负根；显式负号选择塌缩。
 
-(C3-E09) · Integrated solution on the inward branch
+(C3-E09) · Integrated solution on the inward branch / 向内运动分支上的积分解
+
 
 $$
 \begin{aligned}[R^3(1+SR)y]_{R_{\max}}^R&=-\frac{2\Delta p_c}{\rho}\int_{R_{\max}}^R\xi^2d\xi=\frac{2\Delta p_c}{3\rho}(R_{\max}^3-R^3),\\ \dot R^2&=\frac{2\Delta p_c}{3\rho}\frac{R_{\max}^3-R^3}{R^3(1+SR)},\qquad \dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\frac{R_{\max}^3-R^3}{R^3(1+SR)}}.\end{aligned}
@@ -381,7 +390,8 @@ The initial condition removes the integration constant and the physical branch f
 
 **约定与条件。** 积分在 $x=1$ 处为收敛广义积分。
 
-(C3-E10) · Collapse-time quadrature and sign check
+(C3-E10) · Collapse-time quadrature and sign check / 塌缩时间的求积表达式与符号检验
+
 
 $$
 \begin{aligned}t_c&=\int_0^{R_{\max}}\frac{dR}{|\dot R|}=R_{\max}\sqrt{\frac{\rho}{\Delta p_c}}\,C(\chi),\quad x=R/R_{\max},\quad\chi=SR_{\max},\\ C(\chi)&=\sqrt{\frac32}\int_0^1\sqrt{\frac{x^3(1+\chi x)}{1-x^3}}\,dx,\\ C'(\chi)&=\frac12\sqrt{\frac32}\int_0^1\frac{x^{5/2}}{\sqrt{(1-x^3)(1+\chi x)}}\,dx>0\quad(\chi\ge0).\end{aligned}
@@ -433,7 +443,8 @@ Step 6 — verify the shared-liquid kinetic energy, including the pair cross ter
 
 **约定与条件。** 点为时间导数；$\nabla$ 为梯度，$\partial_n$ 为液体外法向导数；$i<j$ 将各无序对计一次；$|\ |$ 为向量范数，$\infty$ 为径向远端；充分分离使保留自身及首阶两泡积分成立；$*$ 标记参考。
 
-(C3-E11) · Leading-model energy check and fixed-total-work comparison
+(C3-E11) · Leading-model energy check and fixed-total-work comparison / 首阶模型的能量检验与固定总功比较
+
 
 $$
 \begin{aligned}b_i&=R_i^2\dot R_i,\quad \phi_i=-b_i/r_i,\quad K_N\simeq\frac{\rho}{2}\sum_{i,j=1}^{N}\int_\Omega\nabla\phi_i\cdot\nabla\phi_j\,dV,\\ \int_\Omega|\nabla\phi_i|^2\,dV&\simeq4\pi b_i^2\int_{R_i}^\infty r_i^{-2}\,dr_i=4\pi R_i^3\dot R_i^2,\\ \int_\Omega\nabla\phi_i\cdot\nabla\phi_j\,dV&\simeq\int_{\Gamma_j}\phi_i\partial_n\phi_j\,dA\simeq(-b_i/d_{ij})(-\dot R_j)4\pi R_j^2=\frac{4\pi b_ib_j}{d_{ij}}\quad(i\ne j),\\ K_N&\simeq2\pi\rho\sum_i R_i^3\dot R_i^2+4\pi\rho\sum_{i<j}\frac{b_ib_j}{d_{ij}}=2\pi\rho NR^3(1+SR)\dot R^2,\\ K_N&=\frac{4\pi N}{3}\Delta p_c(R_{\max}^3-R^3)\quad\text{in the leading symmetric model},\\ E_{B,\mathrm{tot}}&=N\frac{4\pi}{3}\Delta p_c R_{\max,N}^3=\frac{4\pi}{3}\Delta p_c R_*^3,\quad R_{\max,N}=R_*N^{-1/3}.\end{aligned}
@@ -475,7 +486,8 @@ A center-and-four-arm cross is not a pentagon. If the arm length is the pitch, t
 
 **约定与条件。** $V_i$ 上的点为体积时间导数（m³ s⁻¹、m³ s⁻²）；$\sum$ 对源求和；$\simeq$ 为远距、紧致、弱源近似。
 
-(C3-E12) · Volume-fraction definition and retarded monopole approximation
+(C3-E12) · Volume-fraction definition and retarded monopole approximation / 体积分数定义与延迟单极源近似
+
 
 $$
 \begin{aligned}\phi_b&=\frac{\sum_{i=1}^{N_b}V_i}{V_\Omega},\quad V_i=\frac{4\pi}{3}R_i^3,\quad\phi_b\big|_{\mathrm{cubic}}=\frac{4\pi R^3}{3s^3},\\ \phi(\boldsymbol x,t)&\simeq-\sum_i\frac{\dot V_i(t-r_i/c)}{4\pi r_i},\qquad p'(\boldsymbol x,t)\simeq\sum_i\frac{\rho}{4\pi r_i}\ddot V_i(t-r_i/c).\end{aligned}
@@ -514,7 +526,8 @@ Step 8 — replace spherical radii by a resolved liquid domain when an outlet me
 
 **约定与条件。** $\nabla$、$\nabla\cdot$、$\nabla^2$ 为空间梯度、散度、Laplace 算子；中心点是真正缩并，并非方程分隔符。
 
-(C3-E13) · Potential-flow reduction
+(C3-E13) · Potential-flow reduction / 势流简化模型
+
 
 $$
 \boldsymbol u=\nabla\phi,\qquad \nabla\cdot\boldsymbol u=0\ \Longrightarrow\ \nabla^2\phi=0\quad\text{in }\Omega(t).
@@ -544,7 +557,8 @@ Geometry enters through the domain and its boundary conditions.
 
 **约定与条件。** 箭头表示规定远场极限。
 
-(C3-E14) · Kinematic, initial and wall conditions
+(C3-E14) · Kinematic, initial and wall conditions / 运动学条件、初始条件与壁面条件
+
 
 $$
 \begin{aligned}\frac{d\boldsymbol X}{dt}&=\boldsymbol u(\boldsymbol X,t),\quad V_n=\partial_n\phi,\quad \partial_n\phi=\boldsymbol V_w\cdot\boldsymbol n\quad\text{on walls},\\ (\Gamma,\phi_\Gamma)_{t=0}&=(\Gamma_0,\phi_0),\qquad \phi\to0\quad\text{in a quiescent far field}.\end{aligned}
@@ -575,7 +589,8 @@ A potential equation without initial shape and wall data cannot predict a jet.
 
 **约定与条件。** $D/Dt$ 为材料导数，$\partial_t$ 为固定位置导数，$\nabla$ 为空间梯度，$|\ |$ 为 Euclidean 范数；cavity、jet 标签选择几何。
 
-(C3-E15) · Normal stress and material Bernoulli condition
+(C3-E15) · Normal stress and material Bernoulli condition / 法向应力与随界面运动的伯努利条件
+
 
 $$
 \begin{aligned}p_l&=p_g+\sigma\kappa,\quad\kappa=\nabla_s\cdot\boldsymbol n,\quad\kappa_{\mathrm{cavity}}=-2/R,\quad\kappa_{\mathrm{jet}}=1/a_j,\\ \frac{D\phi_\Gamma}{Dt}&=\frac12|\nabla\phi|^2+\frac{p_\infty-p_g-\sigma\kappa}{\rho},\qquad \frac D{Dt}=\partial_t+\boldsymbol u\cdot\nabla.\end{aligned}
@@ -612,7 +627,8 @@ Step 9 — normal stress supplies the first row of Eq. (C3-E15). Eulerian Bernou
 
 **约定与条件。** $\nabla,\nabla^2$ 为梯度／Laplace 算子；$\int$ 为时间积分，竖线表示指定固定预算分支；脉冲近似冻结几何并忽略积分后的对流及黏性。
 
-(C3-E16) · Pressure-impulse control and distinct focusing budgets
+(C3-E16) · Pressure-impulse control and distinct focusing budgets / 压力冲量对照模型与不同聚焦过程的收支
+
 
 $$
 \begin{aligned}\Pi(\boldsymbol x)&=\int_{t_0}^{t_0+\tau_p}(p-p_{\mathrm{ref}})\,dt,\quad \Delta\boldsymbol u\simeq-\nabla\Pi/\rho,\quad\nabla^2\Pi=0,\\ \Pi(z)&=\Pi_0(1-z/L),\quad U=\frac{\Pi_0}{\rho L},\quad m=\rho AL,\quad\mathcal J=\Pi_0A=mU,\\ U\big|_{\mathcal J\ \mathrm{fixed}}&=\frac{\mathcal J}{m},\quad E=\frac{\mathcal J^2}{2m},\qquad U\big|_{E\ \mathrm{fixed}}=\sqrt{\frac{2E}{m}}.\end{aligned}
@@ -646,7 +662,8 @@ Step 10 — integrate momentum over a short pulse and then take divergence using
 
 **约定与条件。** 平方根要求分子非负；它是允许损失的稳态无黏核心喷嘴对照，并非瞬态腔体解；$a_{\mathrm{in}}>a_j>0$；$\alpha=(a_j/a_{\mathrm{in}})^2$ 且 $0<\alpha<1$。。
 
-(C3-E17) · Continuity plus Bernoulli focusing benchmark
+(C3-E17) · Continuity plus Bernoulli focusing benchmark / 连续性关系与伯努利方程的聚焦基准模型
+
 
 $$
 \begin{aligned}Q&=\pi a_{\mathrm{in}}^2U_{\mathrm{in}}=\pi a_j^2U_j,\qquad \alpha=(a_j/a_{\mathrm{in}})^2,\quad U_{\mathrm{in}}=\alpha U_j,\\ p_{\mathrm{in}}-p_g&=\frac12\rho(U_j^2-U_{\mathrm{in}}^2)+\frac{\sigma_j}{a_j}+\Delta p_{\mathrm{loss}},\\ U_j&=\sqrt{\frac{2[p_{\mathrm{in}}-p_g-\sigma_j/a_j-\Delta p_{\mathrm{loss}}]}{\rho(1-\alpha^2)}}\quad(0<\alpha<1).\end{aligned}
@@ -681,7 +698,8 @@ For a 40-μm inlet radius, 10-μm outlet radius and 3 m s⁻¹ inlet speed, cont
 
 **约定与条件。** 圆柱式假设面积及密度均匀；$\int$ 对喷出质量积分；$|\ |$ 为向量范数或标量大小。
 
-(C3-E18) · Finite-mass definitions and Cauchy–Schwarz bound
+(C3-E18) · Finite-mass definitions and Cauchy–Schwarz bound / 有限质量定义与柯西–施瓦茨界限
+
 
 $$
 \begin{aligned}A_j&=\pi d_j^2/4,\qquad m_j=\rho A_jL_j,\qquad E_j=\frac12\int_{\mathcal M_j}|\boldsymbol u|^2dm=\frac12m_jU_{\mathrm{rms}}^2,\\ P_j&=\int_{\mathcal M_j}(\boldsymbol u\cdot\boldsymbol e_z)\,dm,\\ |P_j|^2&\le\left(\int_{\mathcal M_j}1\,dm\right)\left(\int_{\mathcal M_j}|\boldsymbol u\cdot\boldsymbol e_z|^2dm\right)\le2m_jE_j,\qquad U_{\mathrm{rms}}\le\sqrt{2E_{\mathrm{avail}}/m_j}.\end{aligned}
@@ -722,7 +740,8 @@ Step 12 — take an axisymmetric Newtonian jet in dynamically negligible gas, co
 
 **约定与条件。** $\partial_t,\partial_z$ 为固定坐标导数；$\int$ 为切片积分；微分极限要求场可微；最后一步除以正的 $2\pi a$。
 
-(C3-E19) · Slender-jet volume conservation
+(C3-E19) · Slender-jet volume conservation / 细长射流的体积守恒
+
 
 $$
 \begin{aligned}A(z,t)&=\pi a(z,t)^2,\\ \partial_t\int_z^{z+\Delta z}A(\xi,t)\,d\xi&=[Av](z,t)-[Av](z+\Delta z,t),\\ \partial_t\frac{1}{\Delta z}\int_z^{z+\Delta z}A\,d\xi+\frac{[Av](z+\Delta z,t)-[Av](z,t)}{\Delta z}&=0,\\ \Delta z\to0:\quad \partial_tA+\partial_z(Av)&=0\ \Longrightarrow\ \partial_ta+v\partial_za=-\frac a2\partial_zv.\end{aligned}
@@ -753,7 +772,8 @@ Axial stretching changes radius even before capillary necking grows.
 
 **约定与条件。** $\partial_r,\partial_z,\partial_t$ 为偏导数；$\partial_{zz}$ 为轴向二阶导数；虽然保留完整几何曲率，轴向动量规律仍为细长近似。
 
-(C3-E20) · Newtonian stress and slender axial momentum
+(C3-E20) · Newtonian stress and slender axial momentum / 牛顿流体应力与细长射流的轴向动量
+
 
 $$
 \begin{aligned}\partial_r u_r+u_r/r+\partial_zv&=0\ \Longrightarrow\ u_r=-\frac r2\partial_zv,\\ \tau_{zz}&=2\mu\partial_zv,\quad\tau_{rr}=2\mu\partial_ru_r=-\mu\partial_zv,\quad\tau_{zz}-\tau_{rr}=3\mu\partial_zv,\\ \partial_tv+v\partial_zv&=-\frac{\sigma_j}{\rho}\partial_z\kappa+\frac{3\mu}{\rho A}\partial_z(A\partial_zv),\\ \kappa&=\frac1{a\sqrt{1+(\partial_za)^2}}-\frac{\partial_{zz}a}{[1+(\partial_za)^2]^{3/2}}.\end{aligned}
@@ -790,7 +810,8 @@ Step 13 — integrate radial continuity from the axis and impose regularity to o
 
 **约定与条件。** 本章 $g$ 不表示重力；余弦及指数自变量无量纲；该无黏无限圆柱线性对照忽略周围气体动力学；$0<\delta_0\le\delta(t)\ll a_0$ 定义微小扰动范围。。
 
-(C3-E21) · Inviscid-cylinder instability derivation
+(C3-E21) · Inviscid-cylinder instability derivation / 无黏液柱失稳的推导
+
 
 $$
 \begin{aligned}a&=a_0+\delta(t)\cos[k(z-U_jt)],\quad \kappa\simeq a_0^{-1}+(k^2-a_0^{-2})\delta\cos[k(z-U_jt)],\\ \psi&=B I_0(kr)e^{gt}\cos[k(z-U_jt)],\quad\delta=\delta_0e^{gt},\\ g\delta_0&=BkI_1(ka_0),\quad \rho gB I_0(ka_0)=\sigma_j(a_0^{-2}-k^2)\delta_0,\\ g^2&=\frac{\sigma_j}{\rho a_0^3}\,q(1-q^2)\frac{I_1(q)}{I_0(q)},\quad q=ka_0\in(0,1).\end{aligned}
@@ -828,7 +849,8 @@ Step 14 — expand curvature to first order: the reciprocal radius contributes m
 
 **约定与条件。** $\ln,\exp$ 为自然对数／指数；增长计算假设基态恒定且圆柱足够长；$\delta_0<\delta_{\mathrm{crit}}\ll a_0$；所选阈值仍处于线性理论范围。。
 
-(C3-E22) · Finite-flight growth and regime diagnostics
+(C3-E22) · Finite-flight growth and regime diagnostics / 有限飞行时间内的扰动增长与适用区间诊断
+
 
 $$
 \begin{aligned}t_\sigma&=\sqrt{\rho a_0^3/\sigma_j},\quad g_{\max}=0.343339/t_\sigma,\quad\lambda_{\max}=2\pi a_0/0.697019,\\ t_{\mathrm{lin}}&=\frac1{g_{\max}}\ln\left(\frac{\delta_{\mathrm{crit}}}{\delta_0}\right),\qquad\frac{\delta_{\mathrm{arr}}}{a_0}=\frac{\delta_0}{a_0}\exp\left(g_{\max}\frac H{U_j}\right),\quad t_{\mathrm{flight}}=H/U_j,\\ \mathrm{Re}_j&=\frac{\rho U_jd_j}{\mu},\quad\mathrm{We}_j=\frac{\rho U_j^2d_j}{\sigma_j},\quad\mathrm{Oh}_j=\frac{\mu}{\sqrt{\rho\sigma_jd_j}},\qquad d_j=2a_0.\end{aligned}
@@ -868,7 +890,8 @@ Step 16 — distinguish two deceleration regimes. Steady redirection of a unifor
 
 **约定与条件。** 假设完全侧向转流、接收体固定、其他轴向力可忽略且入口均匀。
 
-(C3-E23) · Dynamic-pressure definition and steady momentum flux
+(C3-E23) · Dynamic-pressure definition and steady momentum flux / 动压定义与稳态动量通量
+
 
 $$
 q_j=\frac12\rho U_j^2,\qquad\dot m=\rho A_jU_j,\qquad F_{\mathrm{steady}}=\dot mU_j=\rho A_jU_j^2=2q_jA_j.
@@ -898,7 +921,8 @@ Steady force follows from momentum flux, rather than assigning dynamic pressure 
 
 **约定与条件。** 两个微分算子沿右／左行特征；两介质局部半无限，相对同一接触参考值初始无压力扰动；接收体初始静止。
 
-(C3-E24) · Linear transient wave equations and impact matching
+(C3-E24) · Linear transient wave equations and impact matching / 线性瞬态波动方程与冲击匹配条件
+
 
 $$
 \begin{aligned}\partial_tu&=-\rho^{-1}\partial_zp',\qquad\partial_tp'=-\rho c^2\partial_zu,\quad Z_l=\rho c,\\ (\partial_t+c\partial_z)(u+p'/Z_l)&=0,\quad(\partial_t-c\partial_z)(u-p'/Z_l)=0,\\ p_{\mathrm{early}}&=Z_l(U_j-v_i)=Z_rv_i\ \Longrightarrow\ v_i=\frac{Z_l}{Z_l+Z_r}U_j,\quad p_{\mathrm{early}}=\frac{Z_lZ_r}{Z_l+Z_r}U_j.\end{aligned}
@@ -934,7 +958,8 @@ Step 17 — substitute the momentum and compression equations into each characte
 
 **约定与条件。** 液体动量平衡排除额外直接源力或独立塌缩激波；接收体支撑反力影响其运动，但不另算为第二个直接液体冲量；$\min$ 取最早值。
 
-(C3-E25) · Finite momentum and early-impact duration conditions
+(C3-E25) · Finite momentum and early-impact duration conditions / 有限动量与冲击早期持续时间的条件
+
 
 $$
 \begin{aligned}\mathcal J_{\mathrm{rec}}&=P_{\mathrm{in}}-P_{\mathrm{out}},\quad P_{\mathrm{in}}=m_jU_j=\rho A_jL_jU_j,\\ (\rho cU_j)A_j\tau_{\mathrm{eq}}&=m_jU_j\ \Longrightarrow\ \tau_{\mathrm{eq}}=L_j/c,\\ t_{\mathrm{side}}&=a_j/c,\quad t_{\mathrm{axial}}=L_j/c,\quad t_{\mathrm{early}}\ll\min(t_{\mathrm{side}},t_{\mathrm{axial}},t_{\mathrm{return}}).\end{aligned}
@@ -967,7 +992,8 @@ Step 18 — integrate the receiver force over the full event and use the emitted
 
 **约定与条件。** 积分对面积及前一时间窗口求和；界限假设法向黏性应力可忽略，因而超压等于法向压缩牵引；在采用完整事件冲量预算的整个区域内，该超压须始终非负，且不存在漏项力；任意带符号波形、有限法向黏性应力或另一界面不满足这些前提。
 
-(C3-E26) · Observer definition and conditional impulse bound
+(C3-E26) · Observer definition and conditional impulse bound / 观测量定义与有条件的冲量界限
+
 
 $$
 \begin{aligned}p_{\mathrm{obs}}(t)&=\frac1{A_o\tau_o}\int_{t-\tau_o}^t\int_{A_o}[p(\boldsymbol x,\xi)-p_{\mathrm{ref}}]\,dA\,d\xi,\\ 0\le p_{\mathrm{obs}}(t)&\le\frac{\mathcal J_{\mathrm{rec}}}{A_o\tau_o},\\ &\text{for nonnegative excess pressure, negligible normal viscous stress,}\\ &\text{and full-event footprint impulse }\mathcal J_{\mathrm{rec}}.\end{aligned}
@@ -995,7 +1021,8 @@ A reported maximum is meaningful only for an unchanged observer.
 
 **约定与条件。** $\int$ 为面积／时间积分，$|\ |$ 为大小；前提为单向线性压力—速度关系 $u'=p'/Z_l$，故强度为 $p'^2/Z_l$；它不是任意驻波或固体接触牵引的能量界。
 
-(C3-E27) · One-way-wave energy and finite-observer Cauchy–Schwarz bound
+(C3-E27) · One-way-wave energy and finite-observer Cauchy–Schwarz bound / 单向行波能量与有限观测条件下的柯西–施瓦茨界限
+
 
 $$
 \begin{aligned}E_w&=\int_0^{\tau_o}\int_{A_o}\frac{p'^2}{Z_l}\,dA\,dt,\qquad \overline p=\frac1{A_o\tau_o}\int_0^{\tau_o}\int_{A_o}p'\,dA\,dt,\\ |\overline p|^2&\le\frac1{A_o\tau_o}\int_0^{\tau_o}\int_{A_o}p'^2\,dA\,dt=\frac{Z_lE_w}{A_o\tau_o}.\end{aligned}
@@ -1030,7 +1057,8 @@ Step 19 — a nonnegative observed load in any subwindow cannot exceed its full-
 
 **约定与条件。** $\nabla\cdot$ 为张量／向量散度，$\otimes$ 为张量积、$\cdot$ 为缩并；$|\ |$ 为速度范数。
 
-(C3-E28) · Compressible bulk conservation and required constitutive closure
+(C3-E28) · Compressible bulk conservation and required constitutive closure / 可压缩体相守恒律与所需本构闭合关系
+
 
 $$
 \begin{aligned}\partial_t\rho+\nabla\cdot(\rho\boldsymbol u)&=0,\\ \partial_t(\rho\boldsymbol u)+\nabla\cdot(\rho\boldsymbol u\otimes\boldsymbol u+p\boldsymbol I-\boldsymbol\tau)&=0,\\ \partial_t(\rho e_t)+\nabla\cdot[(\rho e_t+p)\boldsymbol u-\boldsymbol\tau\cdot\boldsymbol u+\boldsymbol q]&=Q_{\mathrm{abs}},\quad e_t=e+|\boldsymbol u|^2/2,\quad p=\mathcal P(\rho,e,\{Y_k\}).\end{aligned}
@@ -1076,7 +1104,8 @@ Step 21 — allocate incident optical energy, then separately declare the therma
 
 **约定与条件。** 下标区分能量库／阶段。
 
-(C3-E29) · Declared optical and mechanical allocation
+(C3-E29) · Declared optical and mechanical allocation / 明确给定的光能与机械能分配
+
 
 $$
 \begin{aligned}E_{\mathrm{abs,tot}}&=f_{\mathrm{geo}}A_\lambda E_L=(0.8)(0.5)(25\,\mu\mathrm J)=10\,\mu\mathrm J,\\ E_{\mathrm{abs,site}}&=E_{\mathrm{abs,tot}}/N_d=400\,\mathrm{nJ},\quad E_{\mathrm{PFC,deadline}}=f_T E_{\mathrm{abs,site}}=160\,\mathrm{nJ},\\ E_j&=\eta_j E_{\mathrm{abs,site}}=2.00\,\mathrm{nJ},\quad E_{j,\mathrm{tot}}=N_dE_j=50.0\,\mathrm{nJ}.\end{aligned}
@@ -1106,7 +1135,8 @@ Energy allocations follow the project chain without double counting.
 
 **约定与条件。** 假设方向相同、全部激活且单元独立。
 
-(C3-E30) · Worked finite jet mass, speed and pressure scales
+(C3-E30) · Worked finite jet mass, speed and pressure scales / 有限射流质量、速度与压力尺度的示例计算
+
 
 $$
 \begin{aligned}m_j&=(1000\,\mathrm{kg\,m^{-3}})\frac{\pi(10\times10^{-6}\,\mathrm m)^2}{4}(50\times10^{-6}\,\mathrm m)\simeq3.926991\times10^{-12}\,\mathrm{kg},\\ U_j&=\sqrt{\frac{2(2.00\times10^{-9}\,\mathrm J)}{3.926991\times10^{-12}\,\mathrm{kg}}}\simeq31.91538\,\mathrm{m\,s^{-1}},\\ q_j&\simeq0.5092958\,\mathrm{MPa},\quad p_{\mathrm{rigid,early}}=\rho cU_j\simeq47.23477\,\mathrm{MPa},\\ P_j&=m_jU_j\simeq1.253314\times10^{-10}\,\mathrm{N\,s},\quad P_{\mathrm{tot}}=25P_j\simeq3.133285\times10^{-9}\,\mathrm{N\,s}.\end{aligned}
@@ -1172,7 +1202,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** $*$ 为参考标签；耦合行要求充分分离；固定做功行假设相同恒定压力理想腔体。
 
-(C3-E31) · Reference answer: original interaction and allocation formulas
+(C3-E31) · Reference answer: original interaction and allocation formulas / 参考答案：原始相互作用与分配公式
+
 
 $$
 \begin{aligned}R_i\ddot R_i+\frac32\dot R_i^2&=\frac{p_{b,i}-p_\infty-2\sigma_b/R_i-4\mu\dot R_i/R_i}{\rho}-\sum_{j\ne i}\frac{R_j^2\ddot R_j+2R_j\dot R_j^2}{d_{ij}},\\ E_{B,\mathrm{tot}}&=N\frac{4\pi}{3}\Delta p_cR_{\max,N}^3,\qquad R_{\max,N}=R_*N^{-1/3}.\end{aligned}
@@ -1234,7 +1265,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 增长假设恒定无黏基态圆柱、微小扰动及周围气体动力学可忽略。
 
-(C3-E32) · Reference answer: original finite-mass and growth formulas
+(C3-E32) · Reference answer: original finite-mass and growth formulas / 参考答案：原始有限质量与扰动增长公式
+
 
 $$
 U_{\mathrm{rms}}\le\sqrt{\frac{2E_{\mathrm{avail}}}{m_j}},\qquad P_j^2\le2m_jE_j,\qquad \frac{\delta_{\mathrm{arr}}}{a_0}=\frac{\delta_0}{a_0}\exp(g_{\max}H/U_j).
@@ -1299,7 +1331,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** $\int$ 将局部压力 $p(\boldsymbol x,\xi)$ 在载荷区域／窗口积分，位置 $\boldsymbol x$（m）为隐含自变量；冲击局部一维且线性；等效时长假设出射轴向动量为零且无额外力源。
 
-(C3-E33) · Reference answer: original impact and observer formulas
+(C3-E33) · Reference answer: original impact and observer formulas / 参考答案：原始冲击与观测量公式
+
 
 $$
 p_{\mathrm{early}}\simeq\frac{Z_lZ_r}{Z_l+Z_r}U_j,\quad Z_l=\rho c,\qquad \tau_{\mathrm{eq}}=\frac{L_j}{c},\qquad p_{\mathrm{obs}}(t)=\frac1{A_o\tau_o}\int_{t-\tau_o}^t\int_{A_o}(p-p_{\mathrm{ref}})\,dA\,d\xi.

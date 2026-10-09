@@ -87,7 +87,8 @@ Ordinary superscripts are powers, bold symbols are vectors or tensors, and π is
 
 **约定与条件。** 箭头表示远场极限。
 
-(C1-E01) · Prescribed initial and boundary conditions
+(C1-E01) · Prescribed initial and boundary conditions / 给定的初始条件与边界条件
+
 
 $$
 R(0)=R_0>0,\qquad \dot R(0)=U_0,\qquad u(r,t)\to0,\quad p(r,t)\to p_\infty(t)\quad(r\to\infty)
@@ -122,7 +123,8 @@ The evolving spherical boundary and the prescribed far-field state.
 
 **约定与条件。** $\partial/\partial r$ 表示固定时间下的径向求导；箭头表示积分及应用界面条件。
 
-(C1-E02) · Exact continuity within the spherical model
+(C1-E02) · Exact continuity within the spherical model / 球形模型内的精确连续性关系
+
 
 $$
 \frac{1}{r^2}\frac{\partial(r^2u)}{\partial r}=0\ \Longrightarrow\ r^2u=C(t),\qquad u(R,t)=\dot R\ \Longrightarrow\ C(t)=R^2\dot R,\qquad u(r,t)=\frac{R^2\dot R}{r^2}
@@ -154,7 +156,8 @@ Inverse-square velocity decay places the inertia in the surrounding carrier.
 
 **约定与条件。** 该广义积分在 $r\ge R>0$ 时收敛；$\partial/\partial r$ 为固定时间的空间导数。
 
-(C1-E03) · Derived velocity potential
+(C1-E03) · Derived velocity potential / 推导得到的速度势
+
 
 $$
 \phi(r,t)=\int_\infty^r u(s,t)\,ds=R^2\dot R\int_\infty^r s^{-2}\,ds=-\frac{R^2\dot R}{r},\qquad \frac{\partial\phi}{\partial r}=u
@@ -185,7 +188,8 @@ The potential reference is fixed at infinity before differentiation.
 
 **约定与条件。** 竖线表示求导或取值条件；$d/dt$ 跟随运动壁面的取值；各导数的单位均为 m² s⁻²。
 
-(C1-E04) · Exact Eulerian and moving-point derivatives
+(C1-E04) · Exact Eulerian and moving-point derivatives / 精确的欧拉导数与运动点导数
+
 
 $$
 \left.\frac{\partial\phi}{\partial t}\right|_r=-\frac{2R\dot R^2+R^2\ddot R}{r},\qquad \left.\frac{\partial\phi}{\partial t}\right|_{r=R}=-(2\dot R^2+R\ddot R),\qquad \frac{d\phi(R(t),t)}{dt}=-\dot R^2-R\ddot R
@@ -218,7 +222,8 @@ A fixed liquid observation point and a moving interface point have different tim
 
 **约定与条件。** $\partial_t$ 必须先在固定位置求导，再于壁面取值。
 
-(C1-E05) · Derived inertial pressure
+(C1-E05) · Derived inertial pressure / 推导得到的惯性压力
+
 
 $$
 \frac{p_l-p_\infty}{\rho}=-\left.\frac{\partial\phi}{\partial t}\right|_{r=R}-\frac{u(R,t)^2}{2}=2\dot R^2+R\ddot R-\frac{\dot R^2}{2}=R\ddot R+\frac32\dot R^2
@@ -251,7 +256,8 @@ Liquid inertia relates the interface pressure to wall acceleration and squared s
 
 **约定与条件。** 壁面取值在 $r=R$ 处进行。
 
-(C1-E06) · Newtonian stress and capillary boundary condition
+(C1-E06) · Newtonian stress and capillary boundary condition / 牛顿流体应力与毛细边界条件
+
 
 $$
 \left.\frac{\partial u}{\partial r}\right|_{r=R}=\left.-\frac{2R^2\dot R}{r^3}\right|_{r=R}=-\frac{2\dot R}{R},\qquad p_l=p_b-\frac{2\sigma}{R}+2\mu\left.\frac{\partial u}{\partial r}\right|_{r=R}=p_b-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}
@@ -283,7 +289,8 @@ Capillary and viscous stresses act at the interface even when the radial bulk vi
 
 **约定与条件。** 各项均具有压力单位。
 
-(C1-E07) · Rayleigh–Plesset under the declared assumptions
+(C1-E07) · Rayleigh–Plesset under the declared assumptions / 所述假设下的 Rayleigh–Plesset 方程
+
 
 $$
 \rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}
@@ -313,7 +320,8 @@ Dimensions give density times length times acceleration = Pa; surface tension di
 
 **约定与条件。** 下标 $v$ 表示蒸气，PFC 表示该化学物质族；相加关系采用具有上述分压定义的气体混合物压力描述；$w$ 表示水；$g$ 表示非凝结气体。
 
-(C1-E08) · Pressure composition requiring thermodynamic closure
+(C1-E08) · Pressure composition requiring thermodynamic closure / 需要热力学闭合的压力组成关系
+
 
 $$
 p_b=p_{v,\mathrm{PFC}}+p_{v,w}+p_g
@@ -353,7 +361,8 @@ A polytropic fixed-mass gas law is a useful gas-bubble control only when its mas
 
 **约定与条件。** $4\pi r^2dr$ 为球形体积元（m³）；端点方括号表示上限取值减下限取值。
 
-(C1-E09) · Exact kinetic-energy integral in the spherical model
+(C1-E09) · Exact kinetic-energy integral in the spherical model / 球形模型内的精确动能积分
+
 
 $$
 \begin{aligned}K_l&=\int_R^\infty\frac12\rho u(r,t)^2\,4\pi r^2\,dr\\&=2\pi\rho R^4\dot R^2\int_R^\infty r^{-2}\,dr\\&=2\pi\rho R^4\dot R^2\left[-\frac1r\right]_R^\infty=2\pi\rho R^3\dot R^2.\end{aligned}
@@ -387,7 +396,8 @@ Exterior shells contribute finite kinetic energy even in an infinite domain.
 
 **约定与条件。** 能量的时间导数为功率（W）。
 
-(C1-E10) · Exact product-rule derivatives
+(C1-E10) · Exact product-rule derivatives / 乘积求导法则的精确应用
+
 
 $$
 \begin{aligned}\frac{dK_l}{dt}&=2\pi\rho\left(3R^2\dot R^3+2R^3\dot R\ddot R\right)=4\pi R^2\dot R\,\rho\left(R\ddot R+\frac32\dot R^2\right),\\V_b&=\frac{4\pi R^3}{3},\qquad \dot V_b=4\pi R^2\dot R,\\E_\sigma&=4\pi\sigma R^2,\qquad \frac{dE_\sigma}{dt}=8\pi\sigma R\dot R.\end{aligned}
@@ -420,7 +430,8 @@ Volume work couples kinetic storage, interface storage and dissipation.
 
 **约定与条件。** 非负项是耗散功率（W）。
 
-(C1-E11) · Derived mechanical-energy balance
+(C1-E11) · Derived mechanical-energy balance / 推导得到的机械能平衡
+
 
 $$
 \frac{d}{dt}(K_l+E_\sigma)=(p_b-p_\infty)\dot V_b-16\pi\mu R\dot R^2,\qquad 16\pi\mu R\dot R^2\ge0
@@ -454,7 +465,8 @@ The dissipation can also be checked directly. The radial strain rates are minus 
 
 **约定与条件。** 积分区域为液体外域；角向标记不复用速度势符号 $\phi$。
 
-(C1-E12) · Independent dissipation and conservation check
+(C1-E12) · Independent dissipation and conservation check / 独立的耗散与守恒检验
+
 
 $$
 \begin{aligned}D_{rr}&=-\frac{2R^2\dot R}{r^3},\qquad D_{\theta\theta}=D_{\psi\psi}=\frac{R^2\dot R}{r^3},\\\mathcal D_\mu&=\int_R^\infty 2\mu\left(D_{rr}^2+D_{\theta\theta}^2+D_{\psi\psi}^2\right)4\pi r^2\,dr\\&=48\pi\mu R^4\dot R^2\int_R^\infty r^{-4}\,dr=16\pi\mu R\dot R^2.\end{aligned}
@@ -489,7 +501,8 @@ The energy balance gives a useful design warning. More confinement can redirect 
 | $p_v$ — Stipulated constant vapor pressure (Pa)<br>$p_v$ — 假定恒定蒸气压（Pa） | $t=0$ is maximum-radius time (s)<br>$t=0$ 为最大半径时刻（s） |
 | $R>0$ — Instantaneous cavity radius (m)<br>$R>0$ — 瞬时空腔半径（m） | $R_{\max}>0$ — Radius at the start of ideal collapse (m)<br>$R_{\max}>0$ — 理想塌缩开始时的半径（m） |
 | $\dot R$ — Wall radial velocity (m s⁻¹)<br>$\dot R$ — 壁面径向速度（m s⁻¹） | $\ddot R$ — Wall radial acceleration (m s⁻²)<br>$\ddot R$ — 壁面径向加速度（m s⁻²） |
-| $\rho>0$ is carrier density (kg m⁻³)<br>$\rho>0$ 为载液密度（kg m⁻³） |  |(C1-E13) · Idealized collapse initial-value problem
+| $\rho>0$ is carrier density (kg m⁻³)<br>$\rho>0$ 为载液密度（kg m⁻³） |  |(C1-E13) · Idealized collapse initial-value problem / 理想化塌缩的初值问题
+
 
 $$
 \Delta p_c=p_\infty-p_v>0,\qquad R(0)=R_{\max},\quad \dot R(0)=0,\qquad R\ddot R+\frac32\dot R^2=-\frac{\Delta p_c}{\rho}
@@ -521,7 +534,8 @@ The ideal control begins at rest and excludes the mechanisms that arrest real co
 
 **约定与条件。** $d/dR$ 与 $d/dt$ 为单调分支上的普通导数；半径幂构成积分因子，并非导数。
 
-(C1-E14) · Exact chain rule and integrating factor
+(C1-E14) · Exact chain rule and integrating factor / 精确的链式法则与积分因子
+
 
 $$
 \begin{aligned}y(R)&=\dot R^2,\qquad \frac{dy}{dt}=\frac{dy}{dR}\dot R=2\dot R\ddot R\quad\Longrightarrow\quad\ddot R=\frac12\frac{dy}{dR},\\\frac{dy}{dR}+\frac{3y}{R}&=-\frac{2\Delta p_c}{\rho R},\\\frac{d(R^3y)}{dR}&=R^3\frac{dy}{dR}+3R^2y=-\frac{2\Delta p_c}{\rho}R^2.\end{aligned}
@@ -549,7 +563,8 @@ The monotonic collapse branch allows radius to replace time in the first integra
 
 **约定与条件。** 根号表示非负平方根；前置负号选择塌缩分支。
 
-(C1-E15) · Integrated speed with initial constant and branch
+(C1-E15) · Integrated speed with initial constant and branch / 含初始积分常数与分支选择的速度积分解
+
 
 $$
 \begin{aligned}R^3y(R)-R_{\max}^3y(R_{\max})&=-\frac{2\Delta p_c}{\rho}\int_{R_{\max}}^R s^2\,ds=-\frac{2\Delta p_c}{3\rho}(R^3-R_{\max}^3),\\y(R_{\max})&=0,\qquad \dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}{R}\right)^3-1\right]}.\end{aligned}
@@ -582,7 +597,8 @@ The initial condition fixes the integration constant and the inward sign fixes t
 
 **约定与条件。** 定积分沿塌缩分支进行。
 
-(C1-E16) · Exact separation and nondimensionalization
+(C1-E16) · Exact separation and nondimensionalization / 精确的变量分离与无量纲化
+
 
 $$
 \begin{aligned}t_c&=\int_{R_{\max}}^0\frac{dR}{\dot R}=\sqrt{\frac{3\rho}{2\Delta p_c}}\int_0^{R_{\max}}\frac{dR}{\sqrt{(R_{\max}/R)^3-1}},\\x&=\frac{R}{R_{\max}},\qquad dR=R_{\max}dx,\\t_c&=R_{\max}\sqrt{\frac{\rho}{\Delta p_c}}\ C_t,\qquad C_t=\sqrt{\frac32}\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx.\end{aligned}
@@ -614,7 +630,8 @@ The endpoint singularity is integrable, so the model has a finite collapse time.
 
 **约定与条件。** 根号中的数字 6 为无量纲常数；省略号表示后续小数；$x,q\in[0,1]$ 且 $q=x^3$ 确定换元范围。。
 
-(C1-E17) · Evaluated beta-function coefficient
+(C1-E17) · Evaluated beta-function coefficient / 通过贝塔函数计算的系数
+
 
 $$
 \begin{aligned}q&=x^3,\quad x=q^{1/3},\quad dx=\frac13q^{-2/3}\,dq,\\C_t&=\frac{1}{\sqrt6}\int_0^1q^{-1/6}(1-q)^{-1/2}\,dq=\frac{1}{\sqrt6}B\left(\frac56,\frac12\right)=0.9146813565\ldots,\\B(a,b)&=\int_0^1q^{a-1}(1-q)^{b-1}\,dq\quad(a>0,b>0).\end{aligned}
@@ -641,7 +658,8 @@ The change of variables exposes the beta integral that fixes the numerical coeff
 | $R\in(0,R_{\max}]$ — Instantaneous cavity radius (m)<br>$R\in(0,R_{\max}]$ — 瞬时空腔半径（m） | $R_{\max}$ — Radius at the start of ideal collapse (m)<br>$R_{\max}$ — 理想塌缩开始时的半径（m） |
 | $\rho$ is density (kg m⁻³)<br>$\rho$ 为密度（kg m⁻³） | $\Delta p_c$ is constant positive pressure difference (Pa)<br>$\Delta p_c$ 为常数正压差（Pa） |
 | $V_{\max}$ is maximum cavity volume (m³)<br>$V_{\max}$ 为最大空腔体积（m³） | $\pi$ is the circle constant (dimensionless)<br>$\pi$ 为圆周率（无量纲） |
-| $K_l/E_B$ is dimensionless and this control has zero viscous and capillary losses<br>$K_l/E_B$ 无量纲，此对照模型的黏性与毛细损失为零 |  |(C1-E18) · Independent pressure-work conservation check
+| $K_l/E_B$ is dimensionless and this control has zero viscous and capillary losses<br>$K_l/E_B$ 无量纲，此对照模型的黏性与毛细损失为零 |  |(C1-E18) · Independent pressure-work conservation check / 独立的压力功守恒检验
+
 
 $$
 \begin{aligned}K_l(R)&=2\pi\rho R^3\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]=\frac{4\pi}{3}\Delta p_c(R_{\max}^3-R^3),\\E_B&=\Delta p_cV_{\max}=\frac{4\pi}{3}\Delta p_cR_{\max}^3,\qquad \frac{K_l}{E_B}=1-\left(\frac R{R_{\max}}\right)^3.\end{aligned}
@@ -678,7 +696,8 @@ Use the supplied source's teaching inputs: maximum radius 30 μm, carrier densit
 
 **约定与条件。** s、J、μs 与 nJ 分别为秒、焦耳、微秒与纳焦耳；竖线表示在一半半径处取值。
 
-(C1-E19) · Declared teaching calculation
+(C1-E19) · Declared teaching calculation / 采用明确给定参数的教学计算
+
 
 $$
 \begin{aligned}t_c&=0.9146813565(30\times10^{-6})\sqrt{\frac{1000}{100\times10^3}}\ \mathrm s=2.74404\ \mu\mathrm s,\\E_B&=\frac{4\pi}{3}(100\times10^3)(30\times10^{-6})^3\ \mathrm J=11.3097\ \mathrm{nJ},\\\dot R\big|_{R=R_{\max}/2}&=-\sqrt{\frac{2(100\times10^3)}{3(1000)}(8-1)}\ \mathrm{m\,s^{-1}}=-21.6025\ \mathrm{m\,s^{-1}},\\K_l\big|_{R=R_{\max}/2}&=\frac78E_B=9.89602\ \mathrm{nJ}.\end{aligned}
@@ -715,7 +734,8 @@ As radius approaches zero, this model concentrates a finite energy into a shrink
 
 **约定与条件。** 绝对值符号表示大小；数值使用前述教学密度与压差。
 
-(C1-E20) · Ideal-trajectory diagnostic, not a physical limit
+(C1-E20) · Ideal-trajectory diagnostic, not a physical limit / 理想轨迹的诊断指标，而非物理极限
+
 
 $$
 M_w=\frac{|\dot R|}{c},\qquad x_M=\left[1+\frac{3\rho c^2M_*^2}{2\Delta p_c}\right]^{-1/3},\qquad M_*=0.1,\ c=1500\ \mathrm{m\,s^{-1}}\ \Longrightarrow\ x_M=0.143487
@@ -751,7 +771,8 @@ A Mach diagnostic exposes the shrinking validity range of incompressible collaps
 
 **约定与条件。** $\Pi$ 的方括号表示单位，而非端点取值；积分在固定位置进行，液体区域的位移将在下文评估。
 
-(C1-E21) · Definition of local pressure impulse
+(C1-E21) · Definition of local pressure impulse / 局部压力冲量的定义
+
 
 $$
 \Pi(\boldsymbol x)=\int_{t_0}^{t_1}\left[p(\boldsymbol x,t)-p_{\mathrm{ref}}(t)\right]dt,\qquad \tau=t_1-t_0>0,\qquad [\Pi]=\mathrm{Pa\,s}
@@ -780,7 +801,8 @@ Impulse combines duration and amplitude at each liquid position.
 
 **约定与条件。** $\nabla$ 为空间梯度（m⁻¹），$\nabla^2$ 为矢量拉普拉斯（m⁻²）；圆点是对流加速度中的真正矢量缩并，并非公式分隔符。
 
-(C1-E22) · Exact fixed-position integrated incompressible momentum
+(C1-E22) · Exact fixed-position integrated incompressible momentum / 固定位置处不可压缩动量方程的精确时间积分
+
 
 $$
 \Delta\boldsymbol u=-\frac{\nabla\Pi}{\rho}-\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt+\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt,\qquad \Delta\boldsymbol u=\boldsymbol u(\boldsymbol x,t_1)-\boldsymbol u(\boldsymbol x,t_0),\quad \nu=\frac\mu\rho
@@ -812,7 +834,8 @@ The short-event approximation must justify removing convective and viscous impul
 
 **约定与条件。** $\nabla\cdot$ 表示散度，$\nabla^2$ 表示拉普拉斯算子；$\ll$ 表示渐近很小，$\simeq$ 表示约化近似；最后的拉普拉斯方程属于该约化模型。
 
-(C1-E23) · Short-event reduced pressure-impulse model
+(C1-E23) · Short-event reduced pressure-impulse model / 短时事件的简化压力冲量模型
+
 
 $$
 \frac{U\tau}{L}\ll1,\qquad \frac{\nu\tau}{L^2}\ll1,\qquad \Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho},\qquad 0=\nabla\cdot\Delta\boldsymbol u\simeq-\frac{\nabla^2\Pi}{\rho}\ \Longrightarrow\ \nabla^2\Pi=0
@@ -848,7 +871,8 @@ A fixed impermeable wall imposes zero normal velocity change and hence zero norm
 
 **约定与条件。** $d/dz$ 为轴向导数；下标 $z$ 表示分量，0 表示受驱动端点。
 
-(C1-E24) · Exact straight-column solution of the reduced model
+(C1-E24) · Exact straight-column solution of the reduced model / 简化模型中直液柱的精确解
+
 
 $$
 \begin{aligned}\frac{d^2\Pi}{dz^2}&=0\quad\Longrightarrow\quad\Pi=A_1z+A_0,\\\Pi(0)&=\Pi_0,\quad\Pi(L)=0\quad\Longrightarrow\quad A_0=\Pi_0,\quad A_1=-\frac{\Pi_0}{L},\\\Pi(z)&=\Pi_0\left(1-\frac zL\right),\qquad \Delta u_z=-\frac1\rho\frac{d\Pi}{dz}=\frac{\Pi_0}{\rho L}.\end{aligned}
@@ -881,7 +905,8 @@ For a second declared teaching control, impose 0.60 MPa for 0.50 μs across a 10
 
 **约定与条件。** 三个比值均无量纲；μs 表示微秒。
 
-(C1-E25) · Declared impulse calculation and applicability diagnostics
+(C1-E25) · Declared impulse calculation and applicability diagnostics / 采用给定参数的冲量计算与适用性诊断
+
 
 $$
 \begin{aligned}\Pi_0&=\Delta p\tau=(0.60\times10^6)(0.50\times10^{-6})\ \mathrm{Pa\,s}=0.30\ \mathrm{Pa\,s},\\U&=\frac{\Pi_0}{\rho L}=3.0\ \mathrm{m\,s^{-1}},\qquad t_a=\frac Lc=0.066667\ \mu\mathrm s,\\\frac{U\tau}{L}&=0.015,\qquad\frac{\nu\tau}{L^2}=5.0\times10^{-5},\qquad\frac{\tau}{t_a}=7.5.\end{aligned}
@@ -913,7 +938,8 @@ Direction enters through asymmetry. A sphere in an infinite uniform liquid produ
 
 **约定与条件。** 角积分恒等式表示完全球对称下方向相互抵消，并非边界射流预测。
 
-(C1-E26) · Geometry definition and exact symmetry identity
+(C1-E26) · Geometry definition and exact symmetry identity / 几何定义与精确的对称性恒等式
+
 
 $$
 \gamma=\frac h{R_{\max}},\qquad \int_{S^2}\boldsymbol e_r\,d\Omega=\boldsymbol0
@@ -948,7 +974,8 @@ Stand-off locates a boundary; perfect spherical symmetry selects no outgoing dir
 
 **约定与条件。** $\nabla\cdot,\nabla,\nabla^2$ 分别为散度、梯度与矢量拉普拉斯；$\partial_t$ 为固定位置导数；对流中的圆点为矢量缩并；动量方程各项单位为单位体积力（N m⁻³）。
 
-(C1-E27) · Bulk conservation and Newtonian constitutive assumption
+(C1-E27) · Bulk conservation and Newtonian constitutive assumption / 体相守恒律与牛顿流体本构假设
+
 
 $$
 \nabla\cdot\boldsymbol u=0,\qquad \rho\left(\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u\right)=-\nabla p+\mu\nabla^2\boldsymbol u
@@ -982,7 +1009,8 @@ Bulk momentum and volume conservation supply the spatial field needed for jet fo
 
 **约定与条件。** $\nabla\boldsymbol u$ 为其空间梯度，上标 $\mathsf T$ 表示转置；$\nabla_s\cdot$ 为表面散度；圆点表示张量或矢量缩并。
 
-(C1-E28) · Kinematic condition and clean-interface traction
+(C1-E28) · Kinematic condition and clean-interface traction / 运动学条件与洁净界面牵引
+
 
 $$
 \begin{aligned}\boldsymbol D&=\frac12\left(\nabla\boldsymbol u+(\nabla\boldsymbol u)^\mathsf T\right),\qquad \kappa=\nabla_s\cdot\boldsymbol n,\\V_n&=\boldsymbol u\cdot\boldsymbol n,\qquad p_l=p_b+\sigma\kappa+2\mu\boldsymbol n\cdot\boldsymbol D\boldsymbol n,\\2\mu\boldsymbol s\cdot\boldsymbol D\boldsymbol n&=0,\qquad \kappa_{\mathrm{sphere}}=-\frac2R.\end{aligned}
@@ -1019,7 +1047,8 @@ At a stationary viscous solid wall, impose zero carrier velocity. At a moving fi
 
 **约定与条件。** $\nabla$ 与 $\nabla^2$ 为空间梯度与拉普拉斯；$D/Dt$ 为物质导数；$|\boldsymbol u|$ 为速率，圆点为矢量缩并；速度势参考值固定在无穷远。
 
-(C1-E29) · Inviscid pre-impact moving-interface closure
+(C1-E29) · Inviscid pre-impact moving-interface closure / 冲击前无黏运动界面的闭合关系
+
 
 $$
 \begin{aligned}\boldsymbol u&=\nabla\phi,\qquad \nabla^2\phi=0,\qquad\frac{d\boldsymbol X}{dt}=\boldsymbol u(\boldsymbol X,t),\\\frac{\partial\phi}{\partial t}&=\frac{p_\infty-p_b-\sigma\kappa}{\rho}-\frac12|\boldsymbol u|^2,\\\frac{D\phi}{Dt}&=\frac{\partial\phi}{\partial t}+\boldsymbol u\cdot\nabla\phi=\frac{p_\infty-p_b-\sigma\kappa}{\rho}+\frac12|\boldsymbol u|^2\qquad(\boldsymbol X\in\Gamma).\end{aligned}
@@ -1052,7 +1081,8 @@ As a consistency check, the spherical interface has potential minus radius times
 
 **约定与条件。** 速度势沿壁面求导；此检验中黏度为零。
 
-(C1-E30) · Exact spherical recovery of the potential closure
+(C1-E30) · Exact spherical recovery of the potential closure / 势流闭合关系对球形模型的精确恢复
+
 
 $$
 \begin{aligned}\phi_\Gamma&=-R\dot R,\qquad\kappa=-\frac2R,\\-\dot R^2-R\ddot R&=\frac{p_\infty-p_b+2\sigma/R}{\rho}+\frac12\dot R^2,\\\rho\left(R\ddot R+\frac32\dot R^2\right)&=p_b-p_\infty-\frac{2\sigma}{R}.\end{aligned}
@@ -1079,7 +1109,8 @@ The spatial potential formulation returns the spherical model under spherical ge
 
 **约定与条件。** $|\ |$ 表示大小；下标 $e$ 标识选定事件尺度。
 
-(C1-E31) · Compressibility applicability diagnostics
+(C1-E31) · Compressibility applicability diagnostics / 可压缩性适用性诊断
+
 
 $$
 M_w=\frac{|\dot R|}{c},\qquad \mathcal C_e=\frac{L_e}{c\tau_e}
@@ -1135,7 +1166,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 两式分别为球形力学平衡与需要闭合的压力组成。
 
-(C1-E32) · Original formulas quoted for defense 1
+(C1-E32) · Original formulas quoted for defense 1 / 答辩问题 1 引用的原始公式
+
 
 $$
 \rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R},\qquad p_b=p_{v,\mathrm{PFC}}+p_{v,w}+p_g
@@ -1199,7 +1231,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 初始空腔静止，并忽略非凝结气体、黏性、毛细及可压缩性。
 
-(C1-E33) · Original formulas quoted for defense 2
+(C1-E33) · Original formulas quoted for defense 2 / 答辩问题 2 引用的原始公式
+
 
 $$
 \dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]},\qquad t_c=\frac{B(5/6,1/2)}{\sqrt6}R_{\max}\sqrt{\frac\rho{\Delta p_c}},\qquad K_l=\frac{4\pi}{3}\Delta p_c(R_{\max}^3-R^3)
@@ -1265,7 +1298,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** $\nabla,\nabla^2$ 为空间梯度与拉普拉斯；约化动量公式要求冻结几何，且被忽略的冲量项较小。
 
-(C1-E34) · Original formulas quoted for defense 3
+(C1-E34) · Original formulas quoted for defense 3 / 答辩问题 3 引用的原始公式
+
 
 $$
 \Pi(\boldsymbol x)=\int_{t_0}^{t_1}(p-p_{\mathrm{ref}})dt,\qquad\Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho},\quad\nabla^2\Pi=0,\qquad U_{\mathrm{column}}=\frac{\Pi_0}{\rho L},\quad t_a=\frac Lc

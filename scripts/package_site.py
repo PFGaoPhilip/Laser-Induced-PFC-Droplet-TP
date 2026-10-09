@@ -33,6 +33,7 @@ def main():
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.cjs'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('diagram-review-[0-9][0-9].png'))
     selected.update(Path('verification')/name for name in ['symbol-layout-desktop.png','symbol-layout-mobile.png'])
+    selected.update(Path('verification')/name for name in ['equation-heading-desktop.png','equation-heading-mobile.png'])
     selected={p for p in selected if '__pycache__' not in p.parts}
     # These are authored public sources, local dependencies and evidence, not private PDFs or response records.
     forbidden_ext={'.pdf','.zip','.mph','.docx','.pptx','.pem','.key','.sqlite','.db','.exe','.dll'}

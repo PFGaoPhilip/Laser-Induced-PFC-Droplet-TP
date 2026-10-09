@@ -14,8 +14,8 @@
     },
     {
       "path": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1273579,
-      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
+      "bytes": 1276573,
+      "sha256": "7f75a4b90521fedf88d3fb419e77c8b89b73d6dd571bf50493b4d633586fe662"
     },
     {
       "path": "assets/bilingual-terms.css",
@@ -34,8 +34,8 @@
     },
     {
       "path": "assets/course.css",
-      "bytes": 11180,
-      "sha256": "95a6471f5f5eda8e076da4efd4f770d490fda3a40e5cfcafa384c5ecc87404a2"
+      "bytes": 11505,
+      "sha256": "9a4db22939db34ef1d439481db21f06f6dd3386379f91d4a4280b5a04cb917b3"
     },
     {
       "path": "assets/figures/a-e01.svg",
@@ -1419,28 +1419,28 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1318761,
-      "sha256": "5000768e10c0b9c48023ea52a1827c66bcecadb5ab30601a340080b6266b76ac"
+      "bytes": 1323715,
+      "sha256": "70ca17bed2825b05ef03599ab7581b8ab69479b19e130b7db7b7c10587889db7"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1560898,
-      "sha256": "c45cadced11964e5a5f93f268e658db1832398591f9d2c972a1ea7f62af1053f"
+      "bytes": 1566019,
+      "sha256": "1ee4070ee0ee429e3631b1fd64d89a727e99988daff878a24cb473100e2bd590"
     },
     {
       "path": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2019104,
-      "sha256": "d445c6be980ec72d0e51bf2b4c685fb7a709415ddc9c445944dbed3abbe062d6"
+      "bytes": 2023870,
+      "sha256": "48024c4915f321e572abaf4288f20af87c273a5fa76b45e450bffa26cd054f77"
     },
     {
       "path": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1869451,
-      "sha256": "831e31bdeebe61c0f862610f19383fdf08c1683f1b306a29dc18ef6e0615de15"
+      "bytes": 1874397,
+      "sha256": "64640a57823bbfe38c46e9a1a9a7f8d8313d6799e98bf83d66071eefdb4cc8fd"
     },
     {
       "path": "chapters/05-hydrogel-versus-liquid.html",
-      "bytes": 1273579,
-      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
+      "bytes": 1276573,
+      "sha256": "7f75a4b90521fedf88d3fb419e77c8b89b73d6dd571bf50493b4d633586fe662"
     },
     {
       "path": "content/chapter01.py",
@@ -1504,8 +1504,8 @@
     },
     {
       "path": "NOTES.md",
-      "bytes": 1650,
-      "sha256": "3b335008c7433753ad64c9d52bcd0bfae73333b8e8bc8b0044006c3d89842d38"
+      "bytes": 2084,
+      "sha256": "1392369b662a3708639993792f68e668d83b22ffcc1e7960fe285a9ecca96c6d"
     },
     {
       "path": "README.md",
@@ -1534,13 +1534,13 @@
     },
     {
       "path": "scripts/build_course.py",
-      "bytes": 35381,
-      "sha256": "1627c35b253438b1f18913dbb1d2d38b07c17e083c18fe7635930f94ee58f952"
+      "bytes": 35603,
+      "sha256": "c5b1233446cf3a3cd0e567d00b0f47d6775f17096e736920df6ed9bda2f73658"
     },
     {
       "path": "scripts/coursekit.py",
-      "bytes": 3899,
-      "sha256": "bd874ba33df35b6914639552cec6d161c007ae94ccabab0d90a64eb44a74ac80"
+      "bytes": 4108,
+      "sha256": "1d1273cc488773e07ca830f2e23e74f68cdf15256a495eb37e9b1f870758e61f"
     },
     {
       "path": "scripts/draw_figures.py",
@@ -1553,14 +1553,19 @@
       "sha256": "edb8b5c525f38bb1a9bec1d9ef403f3cb081be78a4bcc518d23caff9ccf02a2c"
     },
     {
+      "path": "scripts/equation_titles.py",
+      "bytes": 16112,
+      "sha256": "49b5711a365d08e9f105256b3a83b38d8000597087b7ba37ed7b6e8844b10683"
+    },
+    {
       "path": "scripts/highlight_bilingual_terms.py",
       "bytes": 36834,
       "sha256": "fcedfc2648e01d161a6d5ccdfa3e60912a77ba1f115b8814d0d94d7c92add5d5"
     },
     {
       "path": "scripts/package_site.py",
-      "bytes": 5127,
-      "sha256": "e28e7ee096a31e6a9dacf4995bc8d026b66a7f6011c094833c91d4abedacd16f"
+      "bytes": 5249,
+      "sha256": "b2a2caafda1db0228a62760a007a8dfb7911a190a5a435a3e040e0a33d4e42d9"
     },
     {
       "path": "scripts/prepare_symbol_rows.py",
@@ -1589,8 +1594,8 @@
     },
     {
       "path": "scripts/verify_course.py",
-      "bytes": 11859,
-      "sha256": "90e551c19b67d1baa306cbfea99a8fa38f062034b9a65652c7440554311c3dfe"
+      "bytes": 13594,
+      "sha256": "245b488866a531e630d7549fc2126b1ece8b8ad766ca83025608e9743de1f819"
     },
     {
       "path": "scripts/verify_publication.py",
@@ -1609,33 +1614,33 @@
     },
     {
       "path": "text/01-cavity-pressure-inertia-and-directional-jets.md",
-      "bytes": 113835,
-      "sha256": "704ee656d1ecb32417703207bca4b41181248131654de8c2b241350cec8fd494"
+      "bytes": 115288,
+      "sha256": "01e9a8043ee750b9901fbe3eeca77c3d704f85db1e04a8373df72898505de6e5"
     },
     {
       "path": "text/02-optical-heating-and-finite-pfc-inventory.md",
-      "bytes": 128892,
-      "sha256": "0f83a25076fa02298d080bbdab900fd02c131fc571372520b16743368a9ec08c"
+      "bytes": 130397,
+      "sha256": "5d45679f232c8ea4eef168e57f9d6e97b9948fb4bae6135afa274034f664a7c5"
     },
     {
       "path": "text/03-arrays-finite-jets-and-impact.md",
-      "bytes": 142056,
-      "sha256": "ef7ac01391e4c5ed659723dac6c5b5de8be35807dc0ef46ac3bd023ddc9c805c"
+      "bytes": 143589,
+      "sha256": "ba4387c66d20a93436fa0720dc6a3ec591077320dbe24798bc251ba187f0e456"
     },
     {
       "path": "text/04-fracture-and-transfer.md",
-      "bytes": 135634,
-      "sha256": "80c4c8e80c042bda0d688b7471d4b6eadd6b4e09ca69cf685927335ffa3a2d80"
+      "bytes": 137306,
+      "sha256": "ec22bb355f79cb2e68725201ea985dfa2c7e596d853d2a2d7f549f38ab25e40d"
     },
     {
       "path": "text/a-hydrogel-versus-liquid.md",
-      "bytes": 95755,
-      "sha256": "da79fe2540e229df777959e7e83eee8cbab4d90cc15fce15b96dd6c6078a3c23"
+      "bytes": 96697,
+      "sha256": "935e55753e5fb4dbe4409133718927c2fd15d01e43ffe7249df873840b1c5618"
     },
     {
       "path": "text/course.md",
-      "bytes": 616216,
-      "sha256": "507c56c6271214a5a763b2120d850170274b3915422793487b2891cf21ba753f"
+      "bytes": 623321,
+      "sha256": "8681757699350d064045211107941fd94041e06eedb404885501f46827d52395"
     },
     {
       "path": "verification/appendix-and-symbols-audit.json",
@@ -1644,8 +1649,8 @@
     },
     {
       "path": "verification/bilingual-terms.json",
-      "bytes": 145281,
-      "sha256": "90d2ff366d5c1c1f6eb597ea0ba6838267670f82fcf021cf1471f37356d40593"
+      "bytes": 148138,
+      "sha256": "0493b3e5de28784981bef27d0a95ac2e7dd5a91dbf2b1b2fbbad30c97b1fe839"
     },
     {
       "path": "verification/browser-audit.json",
@@ -1704,8 +1709,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 853151,
-      "sha256": "dd22f7d2bd5ee0a90479c7f78607286aed03b809ff0769c67cf62dfcc521f44c"
+      "bytes": 942993,
+      "sha256": "e2493f87d7b612fd2af8a57bc4c46014be2fbe95e42f6a475afff218e3867286"
     },
     {
       "path": "verification/cross-review-01-02.json",
@@ -1753,9 +1758,29 @@
       "sha256": "a2ac12a463e1d859ce44f3283fab154e8dd669db00b1760f2a8c1b75064dd2db"
     },
     {
+      "path": "verification/equation-heading-audit.json",
+      "bytes": 333,
+      "sha256": "fd38d44dde8114d6e370b3c1a5a12bc9dd3ddbb5b7cfde4b5d77459885465e6b"
+    },
+    {
+      "path": "verification/equation-heading-browser-audit.json",
+      "bytes": 2249,
+      "sha256": "adf57dc7ea96337a087f77ffe78b05f276c6415bbabdc2a9524ed091d4faea82"
+    },
+    {
+      "path": "verification/equation-heading-desktop.png",
+      "bytes": 121963,
+      "sha256": "b6bd9f3e2dc2b79649aa2e9dc3a3cd26a93a53525e6b6c2c12c9e2f014995cbd"
+    },
+    {
+      "path": "verification/equation-heading-mobile.png",
+      "bytes": 84978,
+      "sha256": "c784196c1c3ed78c0a5f435d033f0407138b91f9ea265bf5deed9b38102d9c79"
+    },
+    {
       "path": "verification/equations.json",
-      "bytes": 343392,
-      "sha256": "3f4584e16f72c245d21368fe6db5affc06487063184cc55b87da88117cbbedf5"
+      "bytes": 353017,
+      "sha256": "5949f289ad8c3f54471706d8fb204a9d92cda160a4ebe8a37bdca368999517b7"
     },
     {
       "path": "verification/figure-audit.json",
@@ -1779,8 +1804,8 @@
     },
     {
       "path": "verification/release-audit.json",
-      "bytes": 597,
-      "sha256": "4955dcada0ddf1e3122652660135b33b22d8548fbdb87b9048e957f709cfc750"
+      "bytes": 556,
+      "sha256": "162bb6e4bbee80d8a9e7da1da05a9eeac53db8f112edcd0617497ac4b7388b46"
     },
     {
       "path": "verification/scientific-audit.json",

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scope": "Isolated headless rendering of final highlighted C1-E06 and C1-E08 panels with shipped local styles, fonts and theme script; symbol panels omitted only from these preview images.",
+  "wide_dark_and_narrow_light": [
+    {
+      "theme": "dark",
+      "viewport": 1140,
+      "fonts": "loaded",
+      "overflow": false,
+      "titles": [
+        {
+          "text": "(C1-E06) · Newtonian stress and capillary boundary condition / 牛顿流体应力与毛细边界条件",
+          "enDisplay": "inline",
+          "zhDisplay": "inline",
+          "enTop": 98.390625,
+          "zhTop": 98.390625,
+          "forcedBreak": false
+        },
+        {
+          "text": "(C1-E08) · Pressure composition requiring thermodynamic closure / 需要热力学闭合的压力组成关系",
+          "enDisplay": "inline",
+          "zhDisplay": "inline",
+          "enTop": 934.546875,
+          "zhTop": 934.546875,
+          "forcedBreak": false
+        }
+      ],
+      "image": "verification/equation-heading-desktop.png",
+      "image_sha256": "b6bd9f3e2dc2b79649aa2e9dc3a3cd26a93a53525e6b6c2c12c9e2f014995cbd"
+    },
+    {
+      "theme": "light",
+      "viewport": 504,
+      "fonts": "loaded",
+      "overflow": false,
+      "titles": [
+        {
+          "text": "(C1-E06) · Newtonian stress and capillary boundary condition / 牛顿流体应力与毛细边界条件",
+          "enDisplay": "inline",
+          "zhDisplay": "inline",
+          "enTop": 75,
+          "zhTop": 74,
+          "forcedBreak": false
+        },
+        {
+          "text": "(C1-E08) · Pressure composition requiring thermodynamic closure / 需要热力学闭合的压力组成关系",
+          "enDisplay": "inline",
+          "zhDisplay": "inline",
+          "enTop": 649.515625,
+          "zhTop": 648.515625,
+          "forcedBreak": false
+        }
+      ],
+      "image": "verification/equation-heading-mobile.png",
+      "image_sha256": "c784196c1c3ed78c0a5f435d033f0407138b91f9ea265bf5deed9b38102d9c79"
+    }
+  ],
+  "result": "Both titles are inline English / Chinese, on one line when space permits, with natural narrow-screen wrapping and no document overflow."
+}

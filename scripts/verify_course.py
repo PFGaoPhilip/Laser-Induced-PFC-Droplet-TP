@@ -8,6 +8,7 @@ import hashlib
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from build_course import UNIT_MAP
+from equation_titles import TITLES_ZH
 
 ROOT=Path(__file__).resolve().parents[1]
 checks=[]
@@ -19,9 +20,14 @@ def main():
     settings=json.loads((ROOT/'COURSE_SETTINGS.json').read_text(encoding='utf-8'))
     units=settings['chapters']+settings.get('appendices',[])
     eqs=json.loads((ROOT/'verification/equations.json').read_text(encoding='utf-8'))
+    equations_by_id={e['id']:e for e in eqs}
+    check('Reviewed translations cover every original equation title',
+          set(TITLES_ZH)=={e['kind'] for e in eqs})
     local_definitions=json.loads((ROOT/'content/equation_symbol_rows.json').read_text(encoding='utf-8'))
     check('Every equation has reviewed individual local definitions',set(local_definitions)=={e['id'] for e in eqs})
     css=(ROOT/'assets/course.css').read_text(encoding='utf-8')
+    check('Equation translations remain inline with natural wrapping',
+          '.equation-heading.inline-pair > p.zh { display: inline; margin: 0;' in css)
     check('Continuous vertical rule uses collapsed table borders',
           '.symbol-definitions td + td { border-left: 2px solid var(--rule)' in css and 'border-collapse:collapse' in css)
     check('Narrow-screen definitions switch to one variable per row',
@@ -49,6 +55,19 @@ def main():
             paired_count+=1
         for unit in soup.select('.equation-unit'):
             displays+=1
+            heading=unit.select_one('.equation-heading')
+            equation=equations_by_id[unit['id']]
+            title_en=heading.find('p',lang='en',recursive=False) if heading else None
+            title_zh=heading.find('p',lang='zh-CN',recursive=False) if heading else None
+            check(unit['id']+': exact bilingual equation title',
+                  title_en is not None and title_zh is not None
+                  and title_en.get_text()==f'({unit["id"]}) · {equation["kind"]}'
+                  and title_zh.get_text()==equation.get('kind_zh')==TITLES_ZH[equation['kind']]
+                  and bool(re.search(r'[\u4e00-\u9fff]',title_zh.get_text())))
+            check(unit['id']+': inline slash between title translations',
+                  heading is not None and 'inline-pair' in heading.get('class',[])
+                  and not heading.find('br')
+                  and ''.join(str(n) for n in heading.children if not getattr(n,'name',None))==' / ')
             symbols=unit.select_one('.symbols')
             formula=unit.select_one('.math-display')
             ordered=[n for n in unit.children if getattr(n,'name',None)]
@@ -77,6 +96,12 @@ def main():
             if u.fragment and target in ids:check(rel+': anchor '+val,unquote(u.fragment) in ids[target])
         html_rows.append({'file':rel,'bytes':p.stat().st_size,'equations':len(soup.select('.equation-unit')),'defenses':len(soup.select('article[data-defense]'))})
     check('Every registry display rendered once',displays==len(eqs),{'rendered':displays,'registered':len(eqs)})
+    for ch in units:
+        markdown=(ROOT/'text'/Path(ch['file']).with_suffix('.md').name).read_text(encoding='utf-8')
+        for equation in docs[ROOT/ch['file']].select('.equation-unit'):
+            e=equations_by_id[equation['id']]
+            check(e['id']+': portable Markdown preserves inline bilingual title',
+                  f'({e["id"]}) · {e["kind"]} / {e["kind_zh"]}' in markdown)
     for ch in units:
         p=ROOT/ch['file'];soup=docs[p]
         glossaries=soup.select('table.symbol-glossary')

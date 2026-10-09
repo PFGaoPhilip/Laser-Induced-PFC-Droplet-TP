@@ -3,6 +3,7 @@ from html import escape
 import json
 import re
 from equation_symbols import symbol_panel
+from equation_titles import equation_title_zh
 
 EQUATIONS = []
 
@@ -25,13 +26,15 @@ def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, captio
     Define ALL displayed variables/operators/indices and units in symbols_en/zh.
     tex must have no tag; identifier is printed separately. Sources belong in nearby P().
     """
+    kind_zh = equation_title_zh(kind)
     item = dict(id=identifier, tex=tex, symbols_en=symbols_en, symbols_zh=symbols_zh,
-                kind=kind, diagram=diagram, caption_en=caption_en, caption_zh=caption_zh)
+                kind=kind, kind_zh=kind_zh, diagram=diagram, caption_en=caption_en, caption_zh=caption_zh)
     EQUATIONS.append(item)
     label = escape(identifier.lower())
     return (f'<section class="equation-unit" id="{escape(identifier)}" data-kind="{escape(kind)}">'
             + symbol_panel(identifier, P)
-            + f'<div class="equation-heading">({escape(identifier)}) · {escape(kind)}</div>'
+            + f'<div class="lang-pair equation-heading inline-pair"><p lang="en">({escape(identifier)}) · {escape(kind)}</p>'
+            + f' / <p lang="zh-CN" class="zh">{escape(kind_zh)}</p></div>'
             + f'<div class="math-display" data-tex="{escape(tex, quote=True)}"></div>'
             + f'<figure class="formula-figure"><img src="../assets/figures/{label}.svg" alt="{escape(caption_en, quote=True)}" loading="lazy">'
             + '<figcaption>'+P(caption_en, caption_zh)+'</figcaption></figure></section>')

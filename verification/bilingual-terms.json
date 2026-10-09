@@ -3,9 +3,9 @@
   "style": "Different concepts have different colors within each English/Chinese prose pair. Each term keeps the same color throughout the course, with day/night variants.",
   "dictionary_terms": 120,
   "pages": 10,
-  "highlights": 2935,
+  "highlights": 2979,
   "color_count": 8,
-  "paired_prose_groups_checked": 1947,
+  "paired_prose_groups_checked": 2023,
   "no_distinct_terms_share_a_color_in_any_paired_prose_group": true,
   "palette": [
     {
@@ -244,12 +244,12 @@
     "young-modulus": 1
   },
   "strict_pair_audit": {
-    "paired_blocks_checked": 3905,
+    "paired_blocks_checked": 4097,
     "one_sided_colored_terms_remaining": 0,
     "pages": [
       {
         "file": "appendices/a-hydrogel-versus-liquid.html",
-        "paired_blocks_checked": 507,
+        "paired_blocks_checked": 531,
         "contextual_matches": [
           {
             "line": 2,
@@ -425,6 +425,17 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
+            "line": 2,
+            "English": "(A-E17) · Linear constitutive check for the chosen dashpot",
+            "Chinese": "所选 黏性 阻尼 元件的线性本构检验",
+            "English_only": [],
+            "Chinese_only": [
+              "damping",
+              "viscosity"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
             "line": 28,
             "English": "Report two different outcomes separately: the largest verified single-event pressure or finite-mass jet speed under stated conditions, and the repeatable intact-transfer window. A favorable gel may trade peak speed for controlled peeling and lower placement scatter, or may improve alignment while reducing useful impulse. Neither trade is decidable from the radial resistance formula. The unresolved inputs are event-rate material laws, actual inclusion/reference geometry, damage and phase kinetics, outlet evolution, and the measured release/landing interface laws.",
             "Chinese": "分别报告两个不同结果：指定条件下经验证的最大单次压力或有限质量 射流速度 ，以及可重复的完整转印窗口。有利的凝胶可能以降低峰值速度换取可控剥离和较小定位离散，也可能改善对准却降低有效冲量。这两类取舍都不能由径向阻力公式决定。尚未解决的输入包括事件速率下的材料规律、实际夹杂／参考几何、损伤及 相变 动力学、出口演化，以及实测释放／落点界面规律。",
@@ -471,7 +482,7 @@
       },
       {
         "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-        "paired_blocks_checked": 637,
+        "paired_blocks_checked": 671,
         "contextual_matches": [
           {
             "line": 2,
@@ -713,6 +724,16 @@
           },
           {
             "line": 112,
+            "English": "(C1-E30) · Exact spherical recovery of the potential closure",
+            "Chinese": "势流 闭合关系对球形模型的精确恢复",
+            "English_only": [],
+            "Chinese_only": [
+              "potential-flow"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 112,
             "English": "The spatial potential formulation returns the spherical model under spherical geometry.",
             "Chinese": "空间 势流 表述在球形几何下恢复球形模型。",
             "English_only": [],
@@ -777,7 +798,7 @@
       },
       {
         "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-        "paired_blocks_checked": 628,
+        "paired_blocks_checked": 664,
         "contextual_matches": [
           {
             "line": 2,
@@ -806,7 +827,25 @@
           {
             "line": 23,
             "terms": [
+              "capillary-pressure"
+            ]
+          },
+          {
+            "line": 23,
+            "terms": [
               "vapor-pressure"
+            ]
+          },
+          {
+            "line": 23,
+            "terms": [
+              "homogeneous-nucleation"
+            ]
+          },
+          {
+            "line": 25,
+            "terms": [
+              "homogeneous-nucleation"
             ]
           },
           {
@@ -855,6 +894,12 @@
             "line": 36,
             "terms": [
               "confinement"
+            ]
+          },
+          {
+            "line": 36,
+            "terms": [
+              "phase-change"
             ]
           },
           {
@@ -1229,7 +1274,7 @@
       },
       {
         "file": "chapters/03-arrays-finite-jets-and-impact.html",
-        "paired_blocks_checked": 805,
+        "paired_blocks_checked": 838,
         "contextual_matches": [
           {
             "line": 2,
@@ -1377,11 +1422,31 @@
           },
           {
             "line": 134,
+            "English": "(C3-E14) · Kinematic, initial and wall conditions",
+            "Chinese": "运动学条件 、初始条件与壁面条件",
+            "English_only": [],
+            "Chinese_only": [
+              "kinematic-condition"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 134,
             "English": "σ \\sigma σ is the tension appropriate to that interface (N m⁻¹)",
             "Chinese": "σ \\sigma σ 为对应 界面张力 （N m⁻¹）",
             "English_only": [],
             "Chinese_only": [
               "surface-tension"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 164,
+            "English": "(C3-E20) · Newtonian stress and slender axial momentum",
+            "Chinese": "牛顿流体应力与细长 射流 的轴向 动量",
+            "English_only": [],
+            "Chinese_only": [
+              "jet"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -1482,7 +1547,7 @@
       },
       {
         "file": "chapters/04-fracture-and-transfer.html",
-        "paired_blocks_checked": 700,
+        "paired_blocks_checked": 741,
         "contextual_matches": [],
         "nonliteral_occurrences_left_plain": [
           {
@@ -1665,7 +1730,7 @@
       },
       {
         "file": "chapters/05-hydrogel-versus-liquid.html",
-        "paired_blocks_checked": 507,
+        "paired_blocks_checked": 531,
         "contextual_matches": [
           {
             "line": 2,
@@ -1837,6 +1902,17 @@
             ],
             "Chinese_only": [
               "ejected-jet"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 2,
+            "English": "(A-E17) · Linear constitutive check for the chosen dashpot",
+            "Chinese": "所选 黏性 阻尼 元件的线性本构检验",
+            "English_only": [],
+            "Chinese_only": [
+              "damping",
+              "viscosity"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -2016,29 +2092,29 @@
     "absorption-coefficient": 12,
     "acoustic-crossing-time": 12,
     "acoustic-impedance": 4,
-    "activation-probability": 16,
+    "activation-probability": 17,
     "blister": 52,
     "boundary-integral": 4,
     "bubble-dynamics": 2,
     "bubble-interaction": 2,
     "bulk-modulus": 8,
-    "capillary-pressure": 14,
+    "capillary-pressure": 16,
     "capillary-time": 6,
     "cavitation": 24,
     "cohesive-strength": 8,
     "cohesive-traction": 14,
-    "collapse-time": 31,
-    "compressibility": 40,
+    "collapse-time": 32,
+    "compressibility": 44,
     "condensation": 16,
     "confinement": 32,
     "control-volume": 4,
-    "critical-radius": 9,
+    "critical-radius": 10,
     "deborah-number": 16,
     "delamination": 24,
     "ejected-jet": 16,
     "elastic-boundary": 6,
     "energy-budget": 16,
-    "energy-release-rate": 21,
+    "energy-release-rate": 22,
     "equation-of-state": 26,
     "fluence": 30,
     "fracture-energy": 52,
@@ -2048,38 +2124,39 @@
     "growth-rate": 10,
     "heat-capacity": 41,
     "heat-transfer": 18,
+    "homogeneous-nucleation": 4,
     "hydrogel": 70,
-    "incompressibility": 59,
-    "inertia": 97,
+    "incompressibility": 62,
+    "inertia": 98,
     "interfacial-fracture": 8,
-    "jet": 416,
+    "jet": 418,
     "jet-speed": 30,
-    "kinematic-condition": 3,
-    "kinetic-energy": 122,
+    "kinematic-condition": 4,
+    "kinetic-energy": 123,
     "latent-heat": 17,
     "liquid-bridge": 6,
     "mach-number": 20,
     "mass-transfer": 8,
     "microjet": 4,
-    "momentum": 137,
+    "momentum": 146,
     "nanodroplet": 10,
-    "neo-hookean": 34,
+    "neo-hookean": 36,
     "noncondensable-gas": 16,
     "nucleation": 43,
     "nucleation-barrier": 2,
     "ohnesorge-number": 4,
     "optical-breakdown": 2,
-    "optical-uniformity": 1,
+    "optical-uniformity": 2,
     "peak-pressure": 14,
     "pfc": 360,
-    "phase-change": 28,
+    "phase-change": 30,
     "phase-inventory": 4,
     "poisson-ratio": 18,
     "polytropic-exponent": 4,
     "poroelastic": 8,
-    "potential-flow": 5,
-    "pressure-impulse": 60,
-    "rayleigh-plesset": 7,
+    "potential-flow": 6,
+    "pressure-impulse": 63,
+    "rayleigh-plesset": 8,
     "re-entrant-jet": 6,
     "rebound": 12,
     "relaxation-time": 20,
@@ -2093,11 +2170,11 @@
     "superheat": 4,
     "surface-tension": 54,
     "thermal-diffusivity": 4,
-    "traction": 120,
+    "traction": 122,
     "traction-separation": 4,
     "vapor-pressure": 24,
     "vaporization": 24,
-    "velocity-potential": 71,
+    "velocity-potential": 72,
     "viscoelasticity": 2,
     "viscosity": 236,
     "water-hammer": 2,
@@ -2107,7 +2184,7 @@
   "checks": [
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
-      "highlights": 318,
+      "highlights": 322,
       "terms": {
         "absorbed-energy": 8,
         "absorber": 4,
@@ -2115,20 +2192,20 @@
         "blister": 6,
         "bulk-modulus": 4,
         "collapse-time": 4,
-        "compressibility": 7,
+        "compressibility": 8,
         "confinement": 8,
         "deborah-number": 8,
         "elastic-boundary": 2,
         "heat-transfer": 2,
         "hydrogel": 24,
-        "incompressibility": 17,
+        "incompressibility": 18,
         "inertia": 10,
         "jet": 34,
         "jet-speed": 4,
         "kinetic-energy": 14,
         "mach-number": 2,
-        "momentum": 7,
-        "neo-hookean": 17,
+        "momentum": 8,
+        "neo-hookean": 18,
         "peak-pressure": 2,
         "pfc": 34,
         "phase-change": 4,
@@ -2143,11 +2220,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
+      "sha256": "7f75a4b90521fedf88d3fb419e77c8b89b73d6dd571bf50493b4d633586fe662"
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "highlights": 536,
+      "highlights": 547,
       "terms": {
         "absorber": 2,
         "acoustic-crossing-time": 6,
@@ -2155,25 +2232,25 @@
         "capillary-pressure": 6,
         "cavitation": 10,
         "collapse-time": 14,
-        "compressibility": 17,
+        "compressibility": 18,
         "condensation": 2,
         "confinement": 4,
         "ejected-jet": 2,
         "fracture-energy": 2,
         "gas-cushioning": 2,
         "heat-transfer": 6,
-        "incompressibility": 13,
-        "inertia": 27,
+        "incompressibility": 14,
+        "inertia": 28,
         "jet": 66,
         "jet-speed": 4,
-        "kinematic-condition": 1,
-        "kinetic-energy": 26,
+        "kinematic-condition": 2,
+        "kinetic-energy": 27,
         "latent-heat": 2,
         "liquid-bridge": 6,
         "mach-number": 12,
         "mass-transfer": 4,
         "microjet": 2,
-        "momentum": 15,
+        "momentum": 16,
         "noncondensable-gas": 14,
         "nucleation": 2,
         "peak-pressure": 4,
@@ -2181,42 +2258,43 @@
         "phase-change": 2,
         "phase-inventory": 2,
         "potential-flow": 2,
-        "pressure-impulse": 39,
-        "rayleigh-plesset": 7,
+        "pressure-impulse": 41,
+        "rayleigh-plesset": 8,
         "re-entrant-jet": 4,
         "shock-wave": 2,
         "stand-off": 8,
         "surface-tension": 26,
-        "traction": 9,
+        "traction": 10,
         "vapor-pressure": 12,
         "vaporization": 2,
-        "velocity-potential": 42,
+        "velocity-potential": 43,
         "viscosity": 78
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "5000768e10c0b9c48023ea52a1827c66bcecadb5ab30601a340080b6266b76ac"
+      "sha256": "70ca17bed2825b05ef03599ab7581b8ab69479b19e130b7db7b7c10587889db7"
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "highlights": 596,
+      "highlights": 606,
       "terms": {
         "absorbed-energy": 14,
         "absorber": 44,
         "absorptance": 13,
         "absorption-coefficient": 12,
-        "activation-probability": 9,
-        "capillary-pressure": 4,
+        "activation-probability": 10,
+        "capillary-pressure": 6,
         "condensation": 10,
         "confinement": 8,
-        "critical-radius": 9,
+        "critical-radius": 10,
         "energy-budget": 4,
         "equation-of-state": 20,
         "fluence": 30,
         "gas-nuclei": 2,
         "heat-capacity": 37,
         "heat-transfer": 6,
+        "homogeneous-nucleation": 4,
         "incompressibility": 4,
         "inertia": 6,
         "jet": 18,
@@ -2231,7 +2309,7 @@
         "nucleation-barrier": 2,
         "optical-breakdown": 2,
         "pfc": 192,
-        "phase-change": 14,
+        "phase-change": 16,
         "polytropic-exponent": 4,
         "stefan-balance": 2,
         "superheat": 4,
@@ -2245,11 +2323,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "c45cadced11964e5a5f93f268e658db1832398591f9d2c972a1ea7f62af1053f"
+      "sha256": "1ee4070ee0ee429e3631b1fd64d89a727e99988daff878a24cb473100e2bd590"
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "highlights": 537,
+      "highlights": 547,
       "terms": {
         "absorber": 2,
         "absorptance": 4,
@@ -2259,8 +2337,8 @@
         "capillary-pressure": 4,
         "capillary-time": 6,
         "cavitation": 2,
-        "collapse-time": 9,
-        "compressibility": 7,
+        "collapse-time": 10,
+        "compressibility": 8,
         "control-volume": 4,
         "ejected-jet": 14,
         "energy-budget": 8,
@@ -2270,20 +2348,20 @@
         "growth-rate": 10,
         "incompressibility": 8,
         "inertia": 8,
-        "jet": 161,
+        "jet": 163,
         "jet-speed": 6,
         "kinematic-condition": 2,
         "kinetic-energy": 26,
         "mach-number": 4,
-        "momentum": 77,
+        "momentum": 80,
         "nanodroplet": 2,
         "nucleation": 2,
         "ohnesorge-number": 4,
-        "optical-uniformity": 1,
+        "optical-uniformity": 2,
         "peak-pressure": 2,
         "pfc": 26,
-        "potential-flow": 3,
-        "pressure-impulse": 13,
+        "potential-flow": 4,
+        "pressure-impulse": 14,
         "re-entrant-jet": 2,
         "reynolds-number": 2,
         "shock-wave": 2,
@@ -2297,11 +2375,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "d445c6be980ec72d0e51bf2b4c685fb7a709415ddc9c445944dbed3abbe062d6"
+      "sha256": "48024c4915f321e572abaf4288f20af87c273a5fa76b45e450bffa26cd054f77"
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "highlights": 423,
+      "highlights": 428,
       "terms": {
         "blister": 34,
         "boundary-integral": 2,
@@ -2310,20 +2388,20 @@
         "condensation": 4,
         "delamination": 24,
         "energy-budget": 4,
-        "energy-release-rate": 19,
+        "energy-release-rate": 20,
         "fracture-energy": 44,
         "hydrogel": 2,
         "inertia": 30,
         "interfacial-fracture": 8,
         "jet": 54,
         "kinetic-energy": 36,
-        "momentum": 23,
+        "momentum": 26,
         "peak-pressure": 2,
         "pfc": 10,
         "poisson-ratio": 18,
         "resonance": 2,
         "rigid-boundary": 2,
-        "traction": 73,
+        "traction": 74,
         "traction-separation": 4,
         "viscosity": 2,
         "young-modulus": 6
@@ -2331,11 +2409,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "831e31bdeebe61c0f862610f19383fdf08c1683f1b306a29dc18ef6e0615de15"
+      "sha256": "64640a57823bbfe38c46e9a1a9a7f8d8313d6799e98bf83d66071eefdb4cc8fd"
     },
     {
       "file": "chapters/05-hydrogel-versus-liquid.html",
-      "highlights": 318,
+      "highlights": 322,
       "terms": {
         "absorbed-energy": 8,
         "absorber": 4,
@@ -2343,20 +2421,20 @@
         "blister": 6,
         "bulk-modulus": 4,
         "collapse-time": 4,
-        "compressibility": 7,
+        "compressibility": 8,
         "confinement": 8,
         "deborah-number": 8,
         "elastic-boundary": 2,
         "heat-transfer": 2,
         "hydrogel": 24,
-        "incompressibility": 17,
+        "incompressibility": 18,
         "inertia": 10,
         "jet": 34,
         "jet-speed": 4,
         "kinetic-energy": 14,
         "mach-number": 2,
-        "momentum": 7,
-        "neo-hookean": 17,
+        "momentum": 8,
+        "neo-hookean": 18,
         "peak-pressure": 2,
         "pfc": 34,
         "phase-change": 4,
@@ -2371,7 +2449,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "d036ef72b81f32bd6788d3a87a142cca9fdf05d7286dee77770938333d5311d2"
+      "sha256": "7f75a4b90521fedf88d3fb419e77c8b89b73d6dd571bf50493b4d633586fe662"
     },
     {
       "file": "index.html",

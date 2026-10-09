@@ -99,7 +99,8 @@ Step 1 — exact volume conservation. Follow one material shell from its referen
 
 **约定与条件。** $\partial r/\partial r_0$ 表示构形映射中固定时刻的材料坐标导数。
 
-(A-E01) · Exact kinematics under incompressibility
+(A-E01) · Exact kinematics under incompressibility / 不可压缩条件下的精确运动学关系
+
 
 $$
 \begin{aligned}r^3-R^3&=r_0^3-R_{\mathrm{ref}}^3,\\3r^2\frac{\partial r}{\partial r_0}&=3r_0^2,\\\lambda_r:=\frac{\partial r}{\partial r_0}&=\frac{r_0^2}{r^2},\qquad\lambda_\theta=\lambda_\phi=\frac{r}{r_0},\\\lambda_r\lambda_\theta\lambda_\phi&=1.\end{aligned}
@@ -134,7 +135,8 @@ Step 2 — declared constitutive law. In principal directions the neo-Hookean Ca
 
 **约定与条件。** $\mathsf T$ 表示转置；弹性应力以拉伸为正。。
 
-(A-E02) · Constitutive assumption and exact subtraction
+(A-E02) · Constitutive assumption and exact subtraction / 本构假设与精确相减关系
+
 
 $$
 \begin{aligned}\mathbf T^e&=-\chi\mathbf I+G_g\mathbf B,\qquad\mathbf B=\mathbf F\mathbf F^{\mathsf T},\\T^e_{rr}&=-\chi+G_g\lambda_r^2,\qquad T^e_{\theta\theta}=T^e_{\phi\phi}=-\chi+G_g\lambda_\theta^2,\\T^e_{\theta\theta}-T^e_{rr}&=G_g\left[\left(\frac r{r_0}\right)^2-\left(\frac{r_0}r\right)^4\right].\end{aligned}
@@ -167,7 +169,8 @@ Step 3 — integrate the elastic contribution. For a static spherical field, rad
 
 **约定与条件。** $d/dr$ 表示对 $r$ 求导，$\int_R^\infty$ 对外部材料积分，$\infty$ 标记无限远场。
 
-(A-E03) · Static balance defining the elastic resistance
+(A-E03) · Static balance defining the elastic resistance / 定义弹性阻力的静态平衡
+
 
 $$
 \begin{aligned}\frac{dT^e_{rr}}{dr}&=\frac{2}{r}(T^e_{\theta\theta}-T^e_{rr}),\\T^e_{rr}(\infty)&=-p_\infty,\qquad T^e_{rr}(R)=-p_b+\frac{2\sigma}{R},\\p_{\mathrm{el}}(R):=p_b-p_\infty-\frac{2\sigma}{R}&=2G_g\int_R^\infty\left[\left(\frac r{r_0}\right)^2-\left(\frac{r_0}r\right)^4\right]\frac{dr}{r}.\end{aligned}
@@ -200,7 +203,8 @@ Step 4 — change variables with its Jacobian. During expansion $R>R_{\mathrm{re
 
 **约定与条件。** $\infty$ 表示远场极限；因式分解 $1-q^6=(1-q^3)(1+q^3)$ 先在 $q<1$ 时使用，再取端点极限。
 
-(A-E04) · Exact change of variable for expansion
+(A-E04) · Exact change of variable for expansion / 膨胀过程的精确变量代换
+
 
 $$
 \begin{aligned}q^3&=1-\frac{R^3-R_{\mathrm{ref}}^3}{r^3},\qquad q(R)=\frac{R_{\mathrm{ref}}}{R},\qquad q(\infty)=1,\\3q^2\,dq&=3(1-q^3)\frac{dr}{r},\qquad \frac{dr}{r}=\frac{q^2\,dq}{1-q^3},\\\left(q^{-2}-q^4\right)\frac{dr}{r}&=\frac{1-q^6}{1-q^3}\,dq=(1+q^3)\,dq.\end{aligned}
@@ -227,7 +231,8 @@ The material coordinate ratio converts a spatial stress integral into a regular 
 
 **约定与条件。** $\int$ 为定积分；$[f(q)]_a^b$ 表示括号中函数的上端点值减去下端点值。
 
-(A-E05) · Derived neo-Hookean elastic resistance
+(A-E05) · Derived neo-Hookean elastic resistance / 推导得到的新胡克弹性阻力
+
 
 $$
 \begin{aligned}p_{\mathrm{el}}(R)&=2G_g\int_{R_{\mathrm{ref}}/R}^{1}(1+q^3)\,dq\\&=2G_g\left[q+\frac{q^4}{4}\right]_{R_{\mathrm{ref}}/R}^{1}\\&=2G_g\left[\frac54-\frac{R_{\mathrm{ref}}}{R}-\frac14\left(\frac{R_{\mathrm{ref}}}{R}\right)^4\right]\\&=\frac{G_g}{2}\left[5-4\frac{R_{\mathrm{ref}}}{R}-\left(\frac{R_{\mathrm{ref}}}{R}\right)^4\right].\end{aligned}
@@ -257,7 +262,8 @@ Each row uses, in order, Eq. (A-E04), the antiderivative of $1+q^3$, upper-minus
 
 **约定与条件。** $d/dR$ 表示半径导数（此处单位为 Pa m⁻¹）；$\lim$ 取正的大半径比极限；$\infty$ 表示比值无界。
 
-(A-E06) · Limiting-state and sign checks
+(A-E06) · Limiting-state and sign checks / 极限状态与符号检验
+
 
 $$
 \begin{aligned}p_{\mathrm{el}}(R_{\mathrm{ref}})&=\frac{G_g}{2}(5-4-1)=0,\\\frac{dp_{\mathrm{el}}}{dR}&=2G_g\left(\frac{R_{\mathrm{ref}}}{R^2}+\frac{R_{\mathrm{ref}}^4}{R^5}\right)>0,\\\lim_{R/R_{\mathrm{ref}}\to\infty}p_{\mathrm{el}}(R)&=\frac52G_g.\end{aligned}
@@ -293,7 +299,8 @@ Step 5 — integrate work against cavity volume. Pressure is conjugate to volume
 
 **约定与条件。** $[\ ]_{R_{\mathrm{ref}}}^{R}$ 表示端点相减。
 
-(A-E07) · Exact work integral within the elastic model
+(A-E07) · Exact work integral within the elastic model / 弹性模型内的精确功积分
+
 
 $$
 \begin{aligned}W_g(R)&=4\pi\int_{R_{\mathrm{ref}}}^{R}p_{\mathrm{el}}(\xi)\xi^2\,d\xi\\&=2\pi G_g\int_{R_{\mathrm{ref}}}^{R}\left(5\xi^2-4R_{\mathrm{ref}}\xi-R_{\mathrm{ref}}^4\xi^{-2}\right)d\xi\\&=2\pi G_g\left[\frac{5\xi^3}{3}-2R_{\mathrm{ref}}\xi^2+\frac{R_{\mathrm{ref}}^4}{\xi}\right]_{R_{\mathrm{ref}}}^{R}\\&=2\pi G_g\left[\frac{5R^3}{3}-2R_{\mathrm{ref}}R^2+\frac{R_{\mathrm{ref}}^4}{R}-\frac{2R_{\mathrm{ref}}^3}{3}\right].\end{aligned}
@@ -325,7 +332,8 @@ In the final row the lower endpoint contributes $(5/3-2+1)R_{\mathrm{ref}}^3=2R_
 
 **约定与条件。** $d/dR$ 表示对半径求导；$O$ 表示当该比值趋于零时，被某常数乘所示尺度界定的项。
 
-(A-E08) · Work-conjugacy and small-deformation checks
+(A-E08) · Work-conjugacy and small-deformation checks / 功共轭关系与小变形检验
+
 
 $$
 \begin{aligned}\frac{dW_g}{dR}&=2\pi G_g\left(5R^2-4R_{\mathrm{ref}}R-\frac{R_{\mathrm{ref}}^4}{R^2}\right)=4\pi R^2p_{\mathrm{el}}(R),\\R=R_{\mathrm{ref}}+\delta R\colon\qquad p_{\mathrm{el}}&=\frac{4G_g\delta R}{R_{\mathrm{ref}}}+O\!\left(G_g\frac{\delta R^2}{R_{\mathrm{ref}}^2}\right),\\W_g&=8\pi G_gR_{\mathrm{ref}}\delta R^2+O(G_g\delta R^3).\end{aligned}
@@ -369,7 +377,8 @@ Step 6 — choose a Kelvin–Voigt viscous contribution. Let the total stress ad
 
 **约定与条件。** $\partial/\partial r$ 为固定时刻的空间导数。
 
-(A-E09) · Kelvin–Voigt closure and exact radial kinematics
+(A-E09) · Kelvin–Voigt closure and exact radial kinematics / Kelvin–Voigt 闭合关系与精确径向运动学
+
 
 $$
 \begin{aligned}\mathbf T&=\mathbf T^e+2\eta_g\mathbf D,\qquad u_r(r,t)=\frac{R^2\dot R}{r^2},\\D_{rr}&=\frac{\partial u_r}{\partial r}=-\frac{2R^2\dot R}{r^3},\qquad D_{\theta\theta}=D_{\phi\phi}=\frac{u_r}{r}=\frac{R^2\dot R}{r^3},\\T_{\theta\theta}-T_{rr}&=T^e_{\theta\theta}-T^e_{rr}+\frac{6\eta_gR^2\dot R}{r^3}.\end{aligned}
@@ -403,7 +412,8 @@ Step 7 — integrate the radial momentum equation. The fixed-position time deriv
 
 **约定与条件。** $\partial$ 表示保持其他坐标不变的偏导，积分经外部材料到无穷远；积分后的加速度乘以密度的单位为 Pa。
 
-(A-E10) · Momentum law and explicitly evaluated integrals
+(A-E10) · Momentum law and explicitly evaluated integrals / 动量定律与明确求值的积分
+
 
 $$
 \begin{aligned}a_r&:=\frac{\partial u_r}{\partial t}+u_r\frac{\partial u_r}{\partial r}=\frac{2R\dot R^2+R^2\ddot R}{r^2}-\frac{2R^4\dot R^2}{r^5},\\\rho_g a_r&=\frac{\partial T_{rr}}{\partial r}+\frac{2}{r}(T_{rr}-T_{\theta\theta}),\\\rho_g\int_R^\infty a_r\,dr&=\rho_g\left[R\ddot R+2\dot R^2-\frac{\dot R^2}{2}\right]=\rho_g\left(R\ddot R+\frac32\dot R^2\right),\\2\int_R^\infty\frac{6\eta_gR^2\dot R}{r^4}\,dr&=12\eta_gR^2\dot R\left(\frac{1}{3R^3}\right)=\frac{4\eta_g\dot R}{R}.\end{aligned}
@@ -432,7 +442,8 @@ Integrating the material acceleration and the viscous stress difference gives th
 
 **约定与条件。** 每一项的单位均为 Pa。
 
-(A-E11) · Derived intact-medium radial control
+(A-E11) · Derived intact-medium radial control / 推导得到的完整介质径向对照模型
+
 
 $$
 \rho_g\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-p_{\mathrm{el}}(R)-\frac{4\eta_g\dot R}{R}.
@@ -471,7 +482,8 @@ Step 8 — multiply by the volume-change rate to check conservation. The medium 
 
 **约定与条件。** $d/dt$ 为全时间导数。
 
-(A-E12) · Derived mechanical energy balance
+(A-E12) · Derived mechanical energy balance / 推导得到的机械能平衡
+
 
 $$
 \begin{aligned}K_g&=2\pi\rho_gR^3\dot R^2,\qquad E_\sigma=4\pi\sigma R^2,\qquad \dot V=4\pi R^2\dot R,\\\frac{d}{dt}(K_g+W_g+E_\sigma)&=(p_b-p_\infty)\dot V-P_{\mathrm{dis}},\\P_{\mathrm{dis}}&=16\pi\eta_gR\dot R^2\geq0.\end{aligned}
@@ -506,7 +518,8 @@ All following numbers are declared teaching inputs, not measurements of a propos
 
 **约定与条件。** 半径比值中的数值 5 与 30 均采用 µm。幂表示数值指数；Pa 为帕斯卡，J 为焦耳，叉号表示乘法。。
 
-(A-E13) · Teaching-input substitution
+(A-E13) · Teaching-input substitution / 教学输入参数的代入
+
 
 $$
 \begin{aligned}p_{\mathrm{el}}&=\frac{20000}{2}\left[5-4\left(\frac5{30}\right)-\left(\frac5{30}\right)^4\right]=43325.6173\ \mathrm{Pa},\\W_g&=2\pi(20000)\left[\frac53(30\times10^{-6})^3-2(5\times10^{-6})(30\times10^{-6})^2\right.\\&\hspace{30mm}\left.+\frac{(5\times10^{-6})^4}{30\times10^{-6}}-\frac23(5\times10^{-6})^3\right]\\&=4.51603944\times10^{-9}\ \mathrm J.\end{aligned}
@@ -538,7 +551,8 @@ For comparison, prescribe a constant net pressure-work scale of 100 kPa over exa
 
 **约定与条件。** nJ 表示 $10^{-9}$ J。
 
-(A-E14) · Finite work-budget comparison
+(A-E14) · Finite work-budget comparison / 有限功预算的比较
+
 
 $$
 \begin{aligned}\Delta V&=\frac{4\pi}{3}(R^3-R_{\mathrm{ref}}^3)=1.12573737\times10^{-13}\ \mathrm{m^3},\\W_{100}&:=\Delta p_w\Delta V=11.2573737\ \mathrm{nJ},\\\frac{W_g}{W_{100}}&=0.401162791,\qquad W_{100}-W_g=6.74133424\ \mathrm{nJ}.\end{aligned}
@@ -569,7 +583,8 @@ A separate sign calculation uses an illustrative viscosity 0.010 Pa s, current r
 
 **约定与条件。** RHS 标记右侧；数值 100 为以 m² s⁻² 表示的速度平方。
 
-(A-E15) · Signed-pressure and positive-loss check
+(A-E15) · Signed-pressure and positive-loss check / 有符号压力与正耗散检验
+
 
 $$
 \begin{aligned}p_{\mathrm{visc,RHS}}&=-\frac{4\eta_g\dot R}{R}=-\frac{4(0.010)(-10)}{30\times10^{-6}}=13333.3333\ \mathrm{Pa},\\P_{\mathrm{dis}}&=16\pi\eta_gR\dot R^2=16\pi(0.010)(30\times10^{-6})(100)=1.50796447\times10^{-3}\ \mathrm W.\end{aligned}
@@ -603,7 +618,8 @@ Step 9 — compare network memory to event duration. The Deborah number uses an 
 
 **约定与条件。** 下标 rel、e 分别表示松弛与事件。
 
-(A-E16) · Response-time definition
+(A-E16) · Response-time definition / 响应时间的定义
+
 
 $$
 \mathrm{De}:=\frac{\tau_{\mathrm{rel}}}{\tau_e}.
@@ -635,7 +651,8 @@ Do not silently call $\eta_g/G_g$ a Kelvin–Voigt stress-relaxation time. In th
 
 **约定与条件。** sh 与 KV 是标签，不是乘法。
 
-(A-E17) · Linear constitutive check for the chosen dashpot
+(A-E17) · Linear constitutive check for the chosen dashpot / 所选黏性阻尼元件的线性本构检验
+
 
 $$
 \begin{aligned}T_{\mathrm{sh}}&=G_g\gamma+\eta_g\dot\gamma,\\T_{\mathrm{sh}}=0:\quad\dot\gamma&=-\frac{G_g}{\eta_g}\gamma,\qquad\gamma(t)=\gamma_0\exp(-t/\tau_{\mathrm{KV}}),\qquad\tau_{\mathrm{KV}}:=\frac{\eta_g}{G_g}.\end{aligned}
@@ -668,7 +685,8 @@ Step 10 — test spatial communication. A small-strain shear speed estimate conc
 
 **约定与条件。** 系数来自 Rayleigh 积分；liq 标记液体控制模型，$\simeq$ 表示估计，µs 表示 $10^{-6}$ s。
 
-(A-E18) · Teaching response-time comparison
+(A-E18) · Teaching response-time comparison / 响应时间的教学比较
+
 
 $$
 \begin{aligned}c_s&\simeq\sqrt{G_g/\rho_g}=4.47213595\ \mathrm{m\,s^{-1}},\qquad t_s:=L_g/c_s=6.70820393\ \mathrm{\mu s},\\t_{c,\mathrm{liq}}&=0.9146813565\,R_{\max}\sqrt{\rho_l/\Delta p_c}=2.74404407\ \mathrm{\mu s},\qquad\frac{t_s}{t_{c,\mathrm{liq}}}=2.44464147.\end{aligned}
@@ -701,7 +719,8 @@ Low shear modulus does not imply low rapid-compression resistance. In a small-st
 
 **约定与条件。** $|\ |$ 表示绝对值；$\simeq$ 表示估计。
 
-(A-E19) · Separate compressibility diagnostic
+(A-E19) · Separate compressibility diagnostic / 独立的可压缩性诊断
+
 
 $$
 c_L\simeq\sqrt{\frac{K_g^{\mathrm{bulk}}+4G_g/3}{\rho_g}},\qquad t_L:=\frac{L_g}{c_L},\qquad M_w:=\frac{|\dot R|}{c_L}.
@@ -734,7 +753,8 @@ Step 11 — derive the drainage estimate from a separate two-phase approximation
 
 **约定与条件。** $\nabla$、$\nabla\cdot$、$\nabla^2$ 为空间梯度、散度和 Laplace 算子；此处点号属于向量散度算子，不是方程分隔符；$\sim$ 表示尺度估计。
 
-(A-E20) · Darcy/storage approximation and derived diffusion
+(A-E20) · Darcy/storage approximation and derived diffusion / 达西流动与储存近似及所推导的扩散关系
+
 
 $$
 \begin{aligned}\mathbf j_l&=-\frac{k_{\mathrm{perm}}}{\mu_l}\nabla p_{\mathrm{pore}},\qquad\frac{1}{M_d}\frac{\partial p_{\mathrm{pore}}}{\partial t}+\nabla\cdot\mathbf j_l=0,\\\frac{\partial p_{\mathrm{pore}}}{\partial t}&=D_{\mathrm{poro}}\nabla^2p_{\mathrm{pore}},\qquad D_{\mathrm{poro}}:=\frac{k_{\mathrm{perm}}M_d}{\mu_l},\\t_{\mathrm{poro}}&\sim\frac{L_g^2}{D_{\mathrm{poro}}}=\frac{\mu_lL_g^2}{k_{\mathrm{perm}}M_d}.\end{aligned}
@@ -805,7 +825,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 这一引用的原始公式采用式（A-E11）的完整球形、无滑移假设。
 
-(A-E21) · Original radial control recalled
+(A-E21) · Original radial control recalled / 回顾原始径向对照模型
+
 
 $$
 \rho_g\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-p_{\mathrm{el}}(R)-\frac{4\eta_g\dot R}{R}.
@@ -864,7 +885,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 这些公式引用式（A-E05）与（A-E07），适用于完整、无限、不可压缩 neo-Hookean 介质。
 
-(A-E22) · Original pressure and work formulas recalled
+(A-E22) · Original pressure and work formulas recalled / 回顾原始压力与功公式
+
 
 $$
 \begin{aligned}p_{\mathrm{el}}(R)&=\frac{G_g}{2}\left[5-4\frac{R_{\mathrm{ref}}}{R}-\left(\frac{R_{\mathrm{ref}}}{R}\right)^4\right],\\W_g(R)&=2\pi G_g\left[\frac{5R^3}{3}-2R_{\mathrm{ref}}R^2+\frac{R_{\mathrm{ref}}^4}{R}-\frac{2R_{\mathrm{ref}}^3}{3}\right].\end{aligned}
@@ -926,7 +948,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** $\sim$ 表示尺度关系，平方根为小应变剪切波速估计；这些公式引用式（A-E16）、（A-E18）、（A-E20）。
 
-(A-E23) · Original event-response formulas recalled
+(A-E23) · Original event-response formulas recalled / 回顾原始事件响应公式
+
 
 $$
 \mathrm{De}=\frac{\tau_{\mathrm{rel}}}{\tau_e},\qquad t_s=\frac{L_g}{\sqrt{G_g/\rho_g}},\qquad t_{\mathrm{poro}}\sim\frac{\mu_lL_g^2}{k_{\mathrm{perm}}M_d}.
@@ -955,7 +978,8 @@ Three timescale comparisons constrain three different physical assumptions.
 
 **约定与条件。** 这两个积分都不能独自证明裂纹起始或完整落点。
 
-(A-E24) · Original load and interface-work accounting
+(A-E24) · Original load and interface-work accounting / 原始载荷与界面功的收支核算
+
 
 $$
 \mathbf J_{\mathrm{target}}=\int_{t_0}^{t_1}\int_{A_t}\mathbf t_{\mathrm{load}}\,dA\,dt,\qquad W_{\mathrm{sep,min}}=\int_{A_{\mathrm{rel}}}\Gamma_c\,dA.

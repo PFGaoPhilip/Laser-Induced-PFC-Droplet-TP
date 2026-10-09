@@ -9,6 +9,11 @@ html[data-theme=light]{color-scheme:light;--canvas:#eef3f2;--paper:#fffefa;--pan
 @media(max-width:1060px){.page-layout{grid-template-columns:180px minmax(0,1fr);gap:1.2rem;padding:1.2rem}.chapter-body,.chapter-header{padding:1.4rem}.math-display{font-size:.92rem}}
 @media(max-width:760px){html{font-size:16px}.page-layout{display:block;padding:.9rem}.sidebar{position:static;max-height:none;margin-bottom:1.2rem}.sidebar .toc{display:none}.sidebar nav:not(.toc){display:flex;flex-wrap:wrap;gap:.2rem}.sidebar a{padding:.35rem .45rem;border-left:none;border-bottom:1px solid var(--rule)}.chapter-body,.chapter-header{padding:1rem}.chapter-grid{grid-template-columns:1fr}.chapter-card:last-child{grid-column:auto}.hero h1{font-size:2.35rem}.hero h1.zh{font-size:1.6rem}.theme-tools{right:.6rem;bottom:.6rem}.symbols{font-size:.76rem}.defense{padding:.8rem}.topbar{padding:.85rem 1rem;gap:.8rem}.reference-content>main{padding:1rem}}
 @media print{:root,html[data-theme=dark]{color-scheme:light;--ink:#132b34;--muted:#405861;--paper:#fff;--panel:#f0f4f4;--rule:#bbb;--accent:#075f62;--canvas:#fff}html{font-size:10pt}body{background:#fff}.topbar,.sidebar,.theme-tools,.submission-panel,.chapter-navigation,textarea,.defense label{display:none}.page-layout,.home{display:block;padding:0;max-width:none}.reading{max-width:none}.chapter-header,.chapter-body{border:0;padding:0}.formula-figure img{filter:invert(1) hue-rotate(180deg)}.formula-figure{break-inside:avoid}.equation-unit{break-inside:auto}.chapter-grid{display:block}.chapter-card{box-shadow:none;margin-bottom:1rem}.defense{break-inside:auto}.answer{display:block}.site-footer{padding:1rem 0}.reference-content{padding:0}.reference-content>main{border:0;padding:0}}
+/* Equation titles share a line: English / Chinese, with natural narrow-screen wrapping. */
+.equation-heading.inline-pair > p,
+.equation-heading.inline-pair > p.zh { display: inline; margin: 0; font-size: 1em; color: inherit; }
+.equation-heading.inline-pair > p.zh { font-family: 'Microsoft YaHei', system-ui, sans-serif; }
+
 /* Keep each symbol and its SI unit readable in the individual glossary rows. */
 .symbol-glossary .symbol-cell { white-space: nowrap; }
 .symbol-glossary td:nth-child(3) { white-space: nowrap; }

@@ -68,7 +68,8 @@ A fair PFC comparison uses a PFC-free aqueous droplet with matched outer geometr
 
 **约定与条件。** $\exp$ 为自然指数函数。
 
-(C2-E01) · Prescribed optical profile
+(C2-E01) · Prescribed optical profile / 给定的光学分布
+
 
 $$
 F(r)=F_0\exp(-2r^2/w^2)
@@ -99,7 +100,8 @@ Fluence varies across the beam; the quoted radius fixes its definition.
 
 **约定与条件。** $e^x$ 为指数函数；$\int$ 与方括号表示积分及端点求值。
 
-(C2-E02) · Exact integral of the prescribed profile
+(C2-E02) · Exact integral of the prescribed profile / 给定分布的精确积分
+
 
 $$
 \begin{aligned}E_L&=2\pi F_0\int_0^\infty r e^{-2r^2/w^2}\,dr\\&=\frac{\pi w^2F_0}{2}\int_0^\infty e^{-x}\,dx\\&=\frac{\pi w^2F_0}{2}[-e^{-x}]_0^\infty=\frac{\pi w^2F_0}{2}.\end{aligned}
@@ -131,7 +133,8 @@ The Gaussian energy follows from summing annular contributions.
 
 **约定与条件。** $\exp$ 和 $\int$ 表示指数函数与积分。
 
-(C2-E03) · Derived interception fraction
+(C2-E03) · Derived interception fraction / 推导得到的截获比例
+
 
 $$
 f_{\mathrm{geo}}=\frac{\int_0^{b_a}F(r)2\pi r\,dr}{E_L}=1-\exp(-2b_a^2/w^2),\qquad 0\le f_{\mathrm{geo}}\le1
@@ -163,7 +166,8 @@ The aperture removes the outer annuli from the useful incident energy.
 
 **约定与条件。** $\int$ 为时间积分。
 
-(C2-E04) · Temporal profile definition
+(C2-E04) · Temporal profile definition / 时间分布的定义
+
 
 $$
 \int_{-\infty}^{\infty} f(t)\,dt=1,\qquad I(r,t)=F(r)f(t),\qquad I_{\mathrm{peak}}=F_0/\tau_L\quad\text{(rectangular pulse)}
@@ -195,7 +199,8 @@ A pulse waveform specifies when the energy is deposited.
 
 **约定与条件。** $\partial_z$ 表示对深度求导；$z$ 相同；$\int$ 表示积分；$e^x$ 表示指数函数；零输入时沉积恒为零，无须除以辐照度。
 
-(C2-E05) · Beer–Lambert constitutive model and solution
+(C2-E05) · Beer–Lambert constitutive model and solution / Beer–Lambert 本构模型及其解
+
 
 $$
 \begin{aligned}\partial_z I&=-\mu_a I,& Q_{\mathrm{abs}}&=\mu_a I,\\ \int_{I_{\mathrm{in}}}^{I(z)}\frac{dI^{\prime}}{I^{\prime}}&=-\int_0^z\mu_a\,dz^{\prime},&I(z)&=I_{\mathrm{in}}e^{-\mu_a z}.\end{aligned}
@@ -231,7 +236,8 @@ The absorber deposits heat over a finite optical depth.
 
 **约定与条件。** $\int$ 为积分；$e^x$ 为指数函数。
 
-(C2-E06) · Derived optical-energy balance
+(C2-E06) · Derived optical-energy balance / 推导得到的光能平衡
+
 
 $$
 \begin{aligned}\int_0^{h_a}Q_{\mathrm{abs}}\,dz&=I_{\mathrm{in}}(1-e^{-\mu_a h_a}),\\ A_\lambda&=(1-\mathcal R_\lambda)(1-e^{-\mu_a h_a}),\\ E_{\mathrm{abs}}&=f_{\mathrm{geo}}A_\lambda E_L=\int\!\int_{\Omega_a}Q_{\mathrm{abs}}\,dV\,dt.\end{aligned}
@@ -275,7 +281,8 @@ Optical activation has been observed in specified absorber-containing PFC formul
 
 **约定与条件。** $D/Dt$ 为物质导数；$\partial_t$ 为固定位置时间导数；$\nabla$ 与 $\nabla\cdot$ 为空间梯度和散度（m⁻¹）；式中的中心点表示向量缩并，不是标点。
 
-(C2-E07) · Reduced heat equation and Fourier constitutive law
+(C2-E07) · Reduced heat equation and Fourier constitutive law / 简化热传导方程与傅里叶本构定律
+
 
 $$
 \boldsymbol q=-k\nabla T,\qquad \rho c_p\frac{DT}{Dt}=\rho c_p(\partial_tT+\boldsymbol u\cdot\nabla T)=-\nabla\cdot\boldsymbol q+Q_{\mathrm{abs}}=\nabla\cdot(k\nabla T)+Q_{\mathrm{abs}}
@@ -307,7 +314,8 @@ Heating the absorber and heating the PFC are separate parts of the thermal path.
 
 **约定与条件。** $\cdot$ 表示向量点积。
 
-(C2-E08) · Thermal-contact boundary conditions
+(C2-E08) · Thermal-contact boundary conditions / 热接触边界条件
+
 
 $$
 q_n=\boldsymbol q_A\cdot\boldsymbol n_{AB}=\boldsymbol q_B\cdot\boldsymbol n_{AB},\qquad T_A-T_B=\mathcal R_T q_n
@@ -340,7 +348,8 @@ Contact resistance delays heat transfer even after the light has been absorbed.
 
 **约定与条件。** $\sim$ 表示量级尺度关系，不表示严格相等。
 
-(C2-E09) · Diffusive scaling derived from the heat equation
+(C2-E09) · Diffusive scaling derived from the heat equation / 由热传导方程推导的扩散尺度关系
+
 
 $$
 \alpha=\frac{k}{\rho c_p},\qquad \frac{\Delta T}{t_{\mathrm{th}}}\sim\alpha\frac{\Delta T}{L_h^2},\qquad t_{\mathrm{th}}\sim\frac{L_h^2}{\alpha},\qquad \delta_T\sim\sqrt{\alpha\tau_h}
@@ -370,7 +379,8 @@ Compare heat penetration with the distance to the PFC, not only with beam width.
 
 **约定与条件。** 分子 0.050 为导热系数，单位 W m⁻¹ K⁻¹；1630 为密度，单位 kg m⁻³；654 为比热容，单位 J kg⁻¹ K⁻¹；$5\times10^{-6}$ 为距离，单位 m；$10^{-8}$ 为时长，单位 s；幂为数值指数，$\sim$ 表示尺度估计。
 
-(C2-E10) · Declared-input thermal calculation
+(C2-E10) · Declared-input thermal calculation / 采用明确给定输入的热学计算
+
 
 $$
 \begin{aligned}\alpha_d&=\frac{0.050}{1630(654)}=4.69034\times10^{-8}\ \mathrm{m^2\,s^{-1}},\\t_{\mathrm{th}}&\sim\frac{(5\times10^{-6})^2}{4.69034\times10^{-8}}=5.33010\times10^{-4}\ \mathrm{s},\\\delta_T&\sim\sqrt{(4.69034\times10^{-8})(10^{-8})}=2.16572\times10^{-8}\ \mathrm{m}.\end{aligned}
@@ -409,7 +419,8 @@ The penetration estimate is only 0.00433 of the chosen heating distance. Without
 
 **约定与条件。** $\simeq$ 表示静态球形近似；数值界面张力 0.020 是教学输入，单位 N m⁻¹；半径单位为 m；1 kPa = 1000 Pa。
 
-(C2-E11) · Static capillary and shell-pressure control
+(C2-E11) · Static capillary and shell-pressure control / 静态毛细压力与壳层压力对照模型
+
 
 $$
 p_d\simeq p_c+\frac{2\sigma_{pc}}{a}+\Pi_{\mathrm{shell}},\qquad \frac{2(0.020)}{5\times10^{-6}}=8.00\ \mathrm{kPa},\qquad\frac{2(0.020)}{10^{-7}}=400\ \mathrm{kPa}
@@ -448,7 +459,8 @@ Use named compounds rather than a generic “PFC boiling point.” The following
 
 **约定与条件。** $\log_{10}$ 为常用对数；一巴等于 $10^5$ Pa；经验系数 4.2063 无量纲；1103.454 K 和 39.77 K 具有温度单位；所给范围内分母为正。
 
-(C2-E12) · Verified empirical PFP property correlation
+(C2-E12) · Verified empirical PFP property correlation / 已核验的 PFP 物性经验关联式
+
 
 $$
 \log_{10}\!\left(\frac{p_{\mathrm{sat,PFP}}(T)}{10^5\ \mathrm{Pa}}\right)=4.2063-\frac{1103.454\ \mathrm{K}}{T-39.77\ \mathrm{K}},\qquad282.82\ \mathrm{K}\le T\le337.94\ \mathrm{K}
@@ -478,7 +490,8 @@ Evaluating Eq. (C2-E12) gives 70.60 kPa at 293 K, 103.35 kPa at 303 K, and 204.3
 
 **约定与条件。** $\log_{10}$ 为相对于一巴（$10^5$ Pa）的压力比值的常用对数；首项系数无量纲；乘以 K 的系数具有温度单位；这两个分支未给出 303–304 K 间隙的值。
 
-(C2-E13) · Verified empirical water property correlations
+(C2-E13) · Verified empirical water property correlations / 已核验的水物性经验关联式
+
 
 $$
 \log_{10}\!\left(\frac{p_{\mathrm{sat,w}}(T)}{10^5\ \mathrm{Pa}}\right)=\begin{cases}5.40221-1838.675\ \mathrm{K}/(T-31.737\ \mathrm{K}),&273\le T/\mathrm{K}\le303,\\5.20389-1733.926\ \mathrm{K}/(T-39.485\ \mathrm{K}),&304\le T/\mathrm{K}\le333.\end{cases}
@@ -514,7 +527,8 @@ At 323 K and 100 kPa carrier pressure, the declared 5 μm shell-free PFP core ha
 
 **约定与条件。** 模型假设 $T_i,p_d$ 固定，且 $r_n$ 远小于 PFC 核心。
 
-(C2-E14) · Classical homogeneous capillarity approximation
+(C2-E14) · Classical homogeneous capillarity approximation / 经典均相成核的毛细近似
+
 
 $$
 \Delta p_n=p_{\mathrm{sat,PFC}}(T_i)-p_d,\qquad W(r_n)=4\pi\sigma_{vp}r_n^2-\frac{4\pi}{3}\Delta p_n r_n^3
@@ -545,7 +559,8 @@ The barrier belongs to creating a new internal vapor interface.
 
 **约定与条件。** $d/dr_n$ 为对半径求导，$|_{r_*}$ 表示在该点求值；一阶导数单位为 J m⁻¹，二阶导数为 J m⁻²。
 
-(C2-E15) · Derived critical radius and branch check
+(C2-E15) · Derived critical radius and branch check / 推导得到的临界半径与分支检验
+
 
 $$
 \begin{aligned}\frac{dW}{dr_n}&=8\pi\sigma_{vp}r_n-4\pi\Delta p_n r_n^2=4\pi r_n(2\sigma_{vp}-\Delta p_n r_n),\\r_*&=2\sigma_{vp}/\Delta p_n\quad(\Delta p_n>0),\\\left.\frac{d^2W}{dr_n^2}\right|_{r_*}&=8\pi\sigma_{vp}-8\pi\Delta p_n r_*=-8\pi\sigma_{vp}<0.\end{aligned}
@@ -575,7 +590,8 @@ The stationary point is a maximum, not a stable equilibrium nucleus.
 
 **约定与条件。** 上标 2、3 表示幂；该结果继承均匀成核、局部等温及小汽核假设。
 
-(C2-E16) · Derived homogeneous barrier height
+(C2-E16) · Derived homogeneous barrier height / 推导得到的均相成核势垒高度
+
 
 $$
 \begin{aligned}W_*&=4\pi\sigma_{vp}\frac{4\sigma_{vp}^2}{\Delta p_n^2}-\frac{4\pi}{3}\Delta p_n\frac{8\sigma_{vp}^3}{\Delta p_n^3}\\&=\left(16-\frac{32}{3}\right)\frac{\pi\sigma_{vp}^3}{\Delta p_n^2}=\frac{16\pi\sigma_{vp}^3}{3\Delta p_n^2}.\end{aligned}
@@ -612,7 +628,8 @@ The units check is $\mathrm{(N/m)^3/Pa^2=N\,m=J}$. The critical radius scales as
 
 **约定与条件。** $d/dt$、$\int$、$\ln$、$e^x$ 表示求导、积分、自然对数和指数函数；推导要求积分非负速率有限，且事件满足独立 Poisson 模型。
 
-(C2-E17) · Derived probability under a prescribed Poisson rate
+(C2-E17) · Derived probability under a prescribed Poisson rate / 给定泊松事件率下推导的概率
+
 
 $$
 \begin{aligned}\Lambda(t)&=\int_{V_d(t)}J(T, p)\,dV,\qquad\frac{dS}{dt}=-\Lambda(t)S,\qquad S(0)=1,\\\ln S(t)&=-\int_0^t\Lambda(t^{\prime})\,dt^{\prime},\qquad P_{\mathrm{act}}(t)=1-S(t)=1-e^{-\int_0^t\int_{V_d(t^{\prime})}J(T,p)\,dV\,dt^{\prime}}.\end{aligned}
@@ -648,7 +665,8 @@ Activation probability requires the rate and the time spent in the activating st
 
 **约定与条件。** l、v、diss、esc 分别标记这些部分；质量上界假设后续没有 PFC 供应。
 
-(C2-E18) · Exact compound-mass ledger under the stated closed supply
+(C2-E18) · Exact compound-mass ledger under the stated closed supply / 所述封闭供给条件下化合物质量的精确收支
+
 
 $$
 m_{\mathrm{PFC},0}=\frac{4\pi}{3}\rho_da_0^3,\qquad m_l+m_v+m_{\mathrm{diss}}+m_{\mathrm{esc}}=m_{\mathrm{PFC},0},\qquad 0\le m_v\le m_{\mathrm{PFC},0}
@@ -680,7 +698,8 @@ The compound ledger survives expansion, condensation, dissolution, and venting.
 
 **约定与条件。** 上点表示时间导数（kg s⁻¹）；phase 标记单独的相变贡献，不含逸出与溶解；$\int$ 为面积积分。
 
-(C2-E19) · Species phase-mass balance
+(C2-E19) · Species phase-mass balance / 组分的分相质量平衡
+
 
 $$
 \left.\dot m_{v,s}\right|_{\mathrm{phase}}=\int_{\Gamma_s}j_s\,dA,\qquad \left.\dot m_{v,s}\right|_{\mathrm{phase}}=4\pi R^2j_s\quad\text{only for uniform complete spherical contact}
@@ -714,7 +733,8 @@ A bubble surface and a PFC evaporation surface need not be identical.
 
 **约定与条件。** $\cdot$ 为向量点积。
 
-(C2-E20) · Exact single-component interface mass jump
+(C2-E20) · Exact single-component interface mass jump / 单组分界面的精确质量跃迁条件
+
 
 $$
 \begin{aligned}j_s&=\rho_l(\boldsymbol u_l-\boldsymbol v_\Gamma)\cdot\boldsymbol n=\rho_v(\boldsymbol u_v-\boldsymbol v_\Gamma)\cdot\boldsymbol n,\\\boldsymbol n&=-\boldsymbol e_r,\quad\boldsymbol v_\Gamma=\dot R\boldsymbol e_r,\quad j_s=\rho_l[\dot R-u_l(R)],\\u_l(R)&=\dot R-j_s/\rho_l.\end{aligned}
@@ -751,7 +771,8 @@ The phase-slip approximation requires $|j_s|/\rho_l$ small relative to the relev
 
 **约定与条件。** $\nabla$ 为空间梯度（m⁻¹）；$\cdot$ 为向量点积；热跳跃式各项单位均为 W m⁻²。
 
-(C2-E21) · Reduced interfacial energy jump and Fourier law
+(C2-E21) · Reduced interfacial energy jump and Fourier law / 简化界面能量跃迁条件与傅里叶定律
+
 
 $$
 L_{v,s}=h_{v,s}-h_{l,s}>0,\qquad j_sL_{v,s}=(\boldsymbol q_l-\boldsymbol q_v)\cdot\boldsymbol n,\qquad\boldsymbol q_\eta=-k_\eta\nabla T_\eta\quad(\eta=l,v)
@@ -788,7 +809,8 @@ For a separate single-component sign control, declare heat supply projected alon
 
 **约定与条件。** $\sum$ 为求和；上点为时间导数；不同流入／流出状态要求分别求和其边界项。
 
-(C2-E22) · Uniform-state open-bubble first-law model
+(C2-E22) · Uniform-state open-bubble first-law model / 均匀状态开放气泡的热力学第一定律模型
+
 
 $$
 \dot U_b=\dot Q_b-p_b\dot V_b+\sum_{s=1}^{N_s}h_{v,s}\dot m_{v,s},\qquad V_b=\frac{4\pi}{3}R^3,\qquad\dot V_b=4\pi R^2\dot R
@@ -822,7 +844,8 @@ Mass enthalpy and conductive heat are different terms in the bubble ledger.
 
 **约定与条件。** 上点表示时间导数；$d/dT_b$ 为温度求导；边界温度可不同于 $T_b$，此时 $h_{v,s}$ 必须使用边界温度。
 
-(C2-E23) · Product-rule derivation of thermal closure
+(C2-E23) · Product-rule derivation of thermal closure / 通过乘积求导法则推导热学闭合关系
+
 
 $$
 \begin{aligned}U_b&=\sum_{s=1}^{N_s}m_{v,s}e_s(T_b),\qquad c_{v,s}=de_s/dT_b,\\\dot U_b&=\left(\sum_s m_{v,s}c_{v,s}\right)\dot T_b+\sum_s e_s\dot m_{v,s},\\\left(\sum_s m_{v,s}c_{v,s}\right)\dot T_b&=\dot Q_b-p_b\dot V_b+\sum_s(h_{v,s}-e_s)\dot m_{v,s}.\end{aligned}
@@ -865,7 +888,8 @@ A post-nucleation uniform-bubble calculation also needs a nonzero seed volume, i
 
 **约定与条件。** $\sum$ 为求和；EOS 指状态方程。
 
-(C2-E24) · Ideal-mixture constitutive control and required refinement
+(C2-E24) · Ideal-mixture constitutive control and required refinement / 理想混合物本构对照模型与所需改进
+
 
 $$
 p_{v,s}V_b=\frac{m_{v,s}}{M_s}R_uT_b,\qquad p_b=\sum_{s=1}^{N_s}p_{v,s},\qquad p_b=\mathcal P(\rho_b,e_b,\boldsymbol Y)\quad\text{for a stated real-mixture EOS}
@@ -896,7 +920,8 @@ The pressure responds to species masses, temperature, and changing volume.
 
 **约定与条件。** 上点表示时间导数；各比值单位均为 s⁻¹；最后一个等式使用 $V_b=4\pi R^3/3$，仅限球形几何。
 
-(C2-E25) · Derived ideal-pressure evolution identity
+(C2-E25) · Derived ideal-pressure evolution identity / 推导得到的理想气体压力演化恒等式
+
 
 $$
 \frac{\dot p_{v,s}}{p_{v,s}}=\frac{\dot m_{v,s}}{m_{v,s}}+\frac{\dot T_b}{T_b}-\frac{\dot V_b}{V_b}=\frac{\dot m_{v,s}}{m_{v,s}}+\frac{\dot T_b}{T_b}-3\frac{\dot R}{R}\quad\text{(sphere)}
@@ -928,7 +953,8 @@ A radius-only gas law hides mass and thermal changes.
 
 **约定与条件。** 供应闭合且不溶解，并假设质量交换迅速；$\min$ 选择较小非负值。
 
-(C2-E26) · Finite-inventory equilibrium benchmark
+(C2-E26) · Finite-inventory equilibrium benchmark / 有限存量的平衡基准模型
+
 
 $$
 m_{v,\mathrm{eq}}=\min\!\left[m_{\mathrm{PFC},0},\frac{M_{\mathrm{PFC}}p_{\mathrm{sat,PFC}}(T_b)V_b}{R_uT_b}\right],\qquad p_{v,\mathrm{PFC,eq}}=\min\!\left[p_{\mathrm{sat,PFC}}(T_b),\frac{m_{\mathrm{PFC},0}R_uT_b}{M_{\mathrm{PFC}}V_b}\right]
@@ -965,7 +991,8 @@ Declare a 5 μm initial PFP-like liquid core at 293 K, final reference vapor tem
 
 **约定与条件。** 1630 为以 kg m⁻³ 计的密度；$5\times10^{-6}$ 为以 m 计的初始半径；立方表示幂；ng 为纳克；$1$ ng = $10^{-12}$ kg。
 
-(C2-E27) · Finite-mass worked calculation
+(C2-E27) · Finite-mass worked calculation / 有限质量的完整示例计算
+
 
 $$
 m_{\mathrm{PFC},0}=\frac{4\pi}{3}(1630)(5\times10^{-6})^3=8.534660\times10^{-13}\ \mathrm{kg}=0.853466\ \mathrm{ng}
@@ -997,7 +1024,8 @@ A mass ledger begins with the actual core volume.
 
 **约定与条件。** nJ 表示 $10^{-9}$ J；$\approx$ 表示常性质制备估计。
 
-(C2-E28) · Declared preparation-path enthalpy estimate
+(C2-E28) · Declared preparation-path enthalpy estimate / 给定制备路径的焓估算
+
 
 $$
 \begin{aligned}Q_{\mathrm{sens}}&\approx m_{\mathrm{PFC},0}c_{p,d}(T_*-T_0)=(8.534660\times10^{-13})(654)(323-293)=16.7450\ \mathrm{nJ},\\Q_{\mathrm{lat}}&\approx m_{\mathrm{PFC},0}L_v=(8.534660\times10^{-13})(95000)=81.0793\ \mathrm{nJ},\\Q_{\mathrm{prep}}&\approx Q_{\mathrm{sens}}+Q_{\mathrm{lat}}=97.8243\ \mathrm{nJ}.\end{aligned}
@@ -1030,7 +1058,8 @@ Most of this declared preparation estimate is latent enthalpy.
 
 **约定与条件。** $\int$ 为温度积分；未计入热损失或其他做功；压力功已包含在该焓路径中。
 
-(C2-E29) · Refined constant-pressure enthalpy path
+(C2-E29) · Refined constant-pressure enthalpy path / 细化的恒压焓变化路径
+
 
 $$
 Q_{\mathrm{iso}}=m_{\mathrm{PFC},0}\!\left[\int_{T_0}^{T_{\mathrm{sat}}}c_{p,l}(T,p)\,dT+L_v(T_{\mathrm{sat}},p)+\int_{T_{\mathrm{sat}}}^{T_*}c_{p,v}(T,p)\,dT\right],\qquad T_0<T_{\mathrm{sat}}\le T_*
@@ -1063,7 +1092,8 @@ A rigorous preparation path uses the heat capacity of each phase over its own in
 
 **约定与条件。** 幂 3 和 1/3 表示立方及正立方根；该比值无量纲。
 
-(C2-E30) · Derived ideal-vapor inventory radius
+(C2-E30) · Derived ideal-vapor inventory radius / 由理想蒸气存量推导的半径
+
 
 $$
 \begin{aligned}\frac{4\pi}{3}R_{b,\mathrm{inv}}^3&=\frac{m_{\mathrm{PFC},0}R_uT_*}{M_{\mathrm{PFC}}p_{v,\mathrm{PFC}}}=\frac{4\pi}{3}\rho_da_0^3\frac{R_uT_*}{M_{\mathrm{PFC}}p_{v,\mathrm{PFC}}},\\\left(\frac{R_{b,\mathrm{inv}}}{a_0}\right)^3&=\frac{\rho_dR_uT_*}{M_{\mathrm{PFC}}p_{v,\mathrm{PFC}}}=151.9778,\\R_{b,\mathrm{inv}}&=a_0(151.9778)^{1/3}=26.6827\ \mu\mathrm m.\end{aligned}
@@ -1098,7 +1128,8 @@ At 323 K, the 100 kPa PFC reference is below 204.33 kPa saturation. It is fully 
 
 **约定与条件。** 两者无量纲；10 和 20 是使用相同 μm 单位的窗口与光束半径；0.10 是反射比例；$2\times10^5$ 是以 m⁻¹ 计的吸收系数；$5\times10^{-6}$ 是以 m 计的厚度；μJ 与 nJ 分别为 $10^{-6}$ J 和 $10^{-9}$ J；$e^x$ 为指数函数。
 
-(C2-E31) · Declared optical-to-heat energy screen
+(C2-E31) · Declared optical-to-heat energy screen / 给定光能转热能过程的能量筛查
+
 
 $$
 \begin{aligned}f_{\mathrm{geo}}&=1-e^{-2(10/20)^2}=0.393469,\\A_\lambda&=(1-0.10)[1-e^{-(2\times10^5)(5\times10^{-6})}]=0.568909,\\E_{\mathrm{abs}}&=(0.393469)(0.568909)(1\ \mu\mathrm J)=223.848\ \mathrm{nJ},\\\eta_{\mathrm{th,min}}&=Q_{\mathrm{prep}}/E_{\mathrm{abs}}=97.8243/223.848=0.437012.\end{aligned}
@@ -1155,7 +1186,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** $\sim$ 表示尺度关系。
 
-(C2-E32) · Original formulas for Defense 1
+(C2-E32) · Original formulas for Defense 1 / 答辩问题 1 的原始公式
+
 
 $$
 E_L=\frac{\pi w^2F_0}{2},\qquad E_{\mathrm{abs}}=f_{\mathrm{geo}}A_\lambda E_L,\qquad t_{\mathrm{th}}\sim L_h^2/\alpha,\qquad\delta_T\sim\sqrt{\alpha\tau_h}
@@ -1217,7 +1249,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 星号标记临界值；$\simeq$ 表示静态核压力近似；临界公式假设均匀小汽核毛细模型。
 
-(C2-E33) · Original formulas for Defense 2
+(C2-E33) · Original formulas for Defense 2 / 答辩问题 2 的原始公式
+
 
 $$
 p_d\simeq p_c+2\sigma_{pc}/a+\Pi_{\mathrm{shell}},\quad \Delta p_n=p_{\mathrm{sat,PFC}}(T_i)-p_d,\quad r_*=2\sigma_{vp}/\Delta p_n,\quad W_*=16\pi\sigma_{vp}^3/(3\Delta p_n^2)\quad(\Delta p_n>0)
@@ -1245,7 +1278,8 @@ Original confinement and nucleation formulas used in the reference answer.
 
 **约定与条件。** $\int$ 为积分；$\exp$ 为自然指数函数；假设事件独立且积分速率有限。
 
-(C2-E34) · Original activation-probability formula
+(C2-E34) · Original activation-probability formula / 原始激活概率公式
+
 
 $$
 P_{\mathrm{act}}=1-\exp\!\left[-\int_0^t\int_{V_d(t^{\prime})}J(T,p)\,dV\,dt^{\prime}\right]
@@ -1308,7 +1342,8 @@ Explain this in your own words. Use assumptions, a physical argument, and a limi
 
 **约定与条件。** 0 表示初态，其余下标标记分区；不允许外部化合物供应。
 
-(C2-E35) · Original inventory and pressure formulas for Defense 3
+(C2-E35) · Original inventory and pressure formulas for Defense 3 / 答辩问题 3 的原始存量与压力公式
+
 
 $$
 m_{\mathrm{PFC},0}=\frac{4\pi}{3}\rho_da_0^3,\qquad m_l+m_v+m_{\mathrm{diss}}+m_{\mathrm{esc}}=m_{\mathrm{PFC},0},\qquad p_{v,\mathrm{PFC}}V_b=\frac{m_v}{M_{\mathrm{PFC}}}R_uT_b
@@ -1340,7 +1375,8 @@ Original finite-inventory formulas used in the reference answer.
 
 **约定与条件。** $\sum_s$ 对所有声明组分求和；上点表示时间导数，$\cdot$ 表示向量点积；界面热及滑移公式采用所声明单组分简化跳跃假设。
 
-(C2-E36) · Original phase-energy and velocity-slip formulas
+(C2-E36) · Original phase-energy and velocity-slip formulas / 原始相变能量与速度滑移公式
+
 
 $$
 j_sL_{v,s}=(\boldsymbol q_l-\boldsymbol q_v)\cdot\boldsymbol n,\qquad\dot U_b=\dot Q_b-p_b\dot V_b+\sum_s h_{v,s}\dot m_{v,s},\qquad u_l(R)=\dot R-j_s/\rho_l

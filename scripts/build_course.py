@@ -254,6 +254,9 @@ def defense_page(chapters,progress):
 
 def markdown_source(ch):
     soup=BeautifulSoup(ch['body'],'html.parser')
+    # Retain the same English / Chinese equation title in portable Markdown.
+    for heading in soup.select('.equation-heading.inline-pair'):
+        heading.replace_with(NavigableString('\n\n'+heading.get_text()+'\n\n'))
     for div in soup.select('.math-display[data-tex]'):div.replace_with(NavigableString('\n\n$$\n'+div['data-tex']+'\n$$\n\n'))
     for box in soup.select('textarea,label'):box.decompose()
     for summary in soup.select('summary'):summary.replace_with(NavigableString('\n\n**'+summary.get_text()+'**\n\n'))
