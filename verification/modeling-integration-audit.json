@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "html_pages": 12,
+  "local_dependencies_and_links_checked": 590,
+  "native_models": [
+    {
+      "file": "Model_A_Finite_Energy_Pressure_Jet.mph",
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a",
+      "matches_accepted_source": true
+    },
+    {
+      "file": "Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15",
+      "matches_accepted_source": true
+    }
+  ],
+  "errors": [],
+  "source_copy": "modeling/minimal-cavitation",
+  "scope": "Portable relative links, anchors, theme controls and byte-identical accepted native models. Scientific verification is preserved from the source delivery."
+}

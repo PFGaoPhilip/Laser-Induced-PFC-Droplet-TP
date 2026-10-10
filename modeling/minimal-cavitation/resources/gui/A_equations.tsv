@@ -1,0 +1,6 @@
+Name	f(u,ut,utt,t)	u_0	ut_0
+qq	tau*(qqt-outletOpen*U/Lbudget)	0	0
+vv	tau*(vvt-acc/Us)	0	0
+dd	tau*(ddt-Pdis/E0)	0	0
+ee	tau*(eet-Pout/E0)	0	0
+ii	tau*(iit-outletOpen*rho*A*U^2/Iscale)	0	0

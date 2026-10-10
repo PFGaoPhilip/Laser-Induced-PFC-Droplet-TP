@@ -1,0 +1,5 @@
+Expression	Stop if	Active	Description
+if(outletOpen>0.5,c.U,c.Uw)	Negative (<0)	Yes	First outward ejection ends, or first sealed wall turning point
+Lbudget-c.x	Negative (<0)	Yes	Connected chamber liquid inventory exhausted
+1.2-c.stretch	Negative (<0)	Yes	Declared 20% wall-stretch screen (not measured fracture)
+0.1-max(c.Mjet,c.Mwall)	Negative (<0)	Yes	Declared Mach 0.1 screen

@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "scope": "Updated bilingual ZIP extracted and regenerated at a new folder; unchanged native models are hash-checked, not re-solved for this interface-only work.",
+  "tested_location": "tmp/bilingual-portability/Minimal_Cavitation_Models",
+  "regeneration": "Both HTML readers and English/Chinese figures regenerated using included source translations and local KaTeX.",
+  "regenerated_byte_identical_files": 28,
+  "file_comparison_record": "BILINGUAL_REGENERATION_FILES.json",
+  "guide_steps_per_language": 53,
+  "theory_math_expressions_per_language": 257,
+  "theory_display_blocks_per_language": 29,
+  "static_local_dependencies": 115,
+  "translation_preservation": "PASS",
+  "moved_DOM_interaction": {
+    "status": "PASS",
+    "engine": "JSDOM 30.1.2",
+    "checks": 12,
+    "record": "READER_DOM_AUDIT.json"
+  },
+  "reference_palette": "Exact archived newer-reference stylesheet; only light-to-day selector and term padding adapted.",
+  "gui_inputs": [
+    {
+      "file": "A_equations.tsv",
+      "sha256": "2e995c8a70315a355bb35373d4708e63f128e01d0b7b739a98487d980a0a191d",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "A_parameters_import.txt",
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "A_variables_import.txt",
+      "sha256": "3287618b91326f830a9bd7b961cd3e80d536fe8a1a2c5a84318014716d50cec2",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "B_equations.tsv",
+      "sha256": "a4aa35ea918094d8a50e4929c404ee2ab5f512826d2e6cef58ca6bc43b8990c0",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "B_parameters_import.txt",
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "B_variables_import.txt",
+      "sha256": "ec5b6deb52003622221874d6a9b60fea310aef1d8b819c14901e9849c95baf11",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "B_variables_patch_import.txt",
+      "sha256": "2fc00458d10075d51080de603ba376cbab487ce25a7ea75a958dc8e99afbf4d8",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "global_evaluation.tsv",
+      "sha256": "5460e67784eb047538c2991404de9ed813b272bcc6c8f964477da53ecf64ba8c",
+      "matches_pre_bilingual_native_verified_input": true
+    },
+    {
+      "file": "stop_conditions.tsv",
+      "sha256": "932f90a08aa9c11ab11ed574b3900346bb3f18bd62763f85f03338d53e22fddb",
+      "matches_pre_bilingual_native_verified_input": true
+    }
+  ],
+  "native_models": [
+    {
+      "file": "Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "file": "Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    }
+  ],
+  "browser_visual_validation": "Not performed. CUA returned an empty browser inventory and Browser is not available: iab.",
+  "figure_inspection": "All four Chinese scientific plots and PNG renders of both Chinese guide schematics were inspected locally."
+}

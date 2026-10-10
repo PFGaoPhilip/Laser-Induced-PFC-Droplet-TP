@@ -5,7 +5,7 @@
   "url": "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/",
   "source_sha256": "cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0",
   "comparison_sha256": "e5462de2b8ca7e717a4e9f0a26cc5c2a9fc0e1d8c054f48d087cd2a27fc0d87f",
-  "prepared": "2026-10-09",
+  "prepared": "2026-10-11",
   "languages": [
     "en",
     "zh-CN"
@@ -207,5 +207,11 @@
   "maximum_reports": [
     "highest verified single-shot defined pressure or finite-mass speed",
     "repeatable intact-transfer envelope"
-  ]
+  ],
+  "modeling": {
+    "file": "modeling/minimal-cavitation/index.html",
+    "guide": "modeling/minimal-cavitation/STEP_BY_STEP.html",
+    "source": "20261010-minimal-cavitation",
+    "scope": "Initialized ideal-gas controls; expansion-driven discharge through an existing liquid outlet."
+  }
 }

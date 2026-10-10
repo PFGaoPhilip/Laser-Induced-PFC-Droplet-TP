@@ -335,5 +335,8 @@ def main():
     (ROOT/'COURSE_SETTINGS.json').write_text(json.dumps(settings(chapters),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (ROOT/'.nojekyll').write_text('',encoding='utf-8')
     print(json.dumps({'chapters':sum(not is_appendix(ch) for ch in chapters),'appendices':sum(is_appendix(ch) for ch in chapters),'equations':len(EQUATIONS),'questions':sum(len(c['question_ids']) for c in chapters),'offline_math':True,'mastery':'awaits learner evidence'}))
+    if not args.partial and not args.only:
+        from integrate_modeling import integrate
+        integrate()
 
 if __name__=='__main__':main()

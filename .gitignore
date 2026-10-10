@@ -20,6 +20,8 @@ verification/tmp-symbol-preview/
 *credential*.json
 *.pdf
 *.mph
+!modeling/minimal-cavitation/models/*.mph
+!modeling/minimal-cavitation/Minimal_Cavitation_Models_20261010.zip
 *.mphbin
 *.h5
 *.vtk

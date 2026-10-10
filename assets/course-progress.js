@@ -4,7 +4,9 @@
   var prefix='laser-pfc-tp-v1:';
   var status=document.getElementById('save-status');
   var responses=Array.from(document.querySelectorAll('textarea[data-response]'));
-  function tell(en,zh){if(status)status.textContent=en+' / '+zh;}
+  var lastMessage=null;
+  function tell(en,zh){lastMessage=[en,zh];if(status)status.textContent=document.documentElement.dataset.language==='zh'?zh:en;}
+  document.addEventListener('course-language-change',function(){if(lastMessage)tell(lastMessage[0],lastMessage[1]);});
   function read(key){try{return localStorage.getItem(prefix+key);}catch(e){return null;}}
   function get(key){
     var current=read(key);if(current!==null&&current!==undefined)return current;
@@ -21,9 +23,10 @@
     if(!root)return null;
     var missing=responses.filter(function(box){return !box.value.trim();});
     if(missing.length){tell('Complete all three responses before submitting for review.','请先完成三个回答，再提交审阅。');missing[0].focus();return null;}
-    var title=document.querySelector('h1[lang="en"]').textContent;
+    var language=document.documentElement.dataset.language==='zh'?'zh-CN':'en';
+    var title=document.querySelector('h1[lang="'+language+'"]').textContent;
     var appendix=root.dataset.unitKind==='appendix';
-    return title+'\n\n'+responses.map(function(box){var article=box.closest('.defense');return article.dataset.defense+' — '+article.querySelector('h3[lang="en"]').textContent+'\n'+box.value.trim();}).join('\n\n')+'\n\nPlease review these explanations and mark this '+(appendix?'appendix':'chapter')+' mastered if all three show understanding.\n请审阅这些解释；若三个回答均体现理解，请将'+(appendix?'本附录':'本章')+'标记为已掌握。\n';
+    return title+'\n\n'+responses.map(function(box){var article=box.closest('.defense');return article.dataset.defense+' — '+article.querySelector('h3[lang="'+language+'"]').textContent+'\n'+box.value.trim();}).join('\n\n')+'\n\n'+(language==='en'?'Please review these explanations and mark this '+(appendix?'appendix':'chapter')+' mastered if all three show understanding.':'请审阅这些解释；若三个回答均体现理解，请将'+(appendix?'本附录':'本章')+'标记为已掌握。')+'\n';
   }
   var copy=document.getElementById('copy-responses');
   if(copy)copy.addEventListener('click',async function(){var text=submission();if(!text)return;try{await navigator.clipboard.writeText(text);tell('Copied. Paste into the teaching chat for review.','已复制。请粘贴到教学对话中审阅。');}catch(e){

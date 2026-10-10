@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "check_count": 6532,
+  "check_count": 6568,
   "failures": [],
   "checks": [
     {
@@ -254,6 +254,16 @@
       "detail": null
     },
     {
+      "name": "index.html: local dependency assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "index.html: local dependency index.html",
       "passed": true,
       "detail": null
@@ -360,6 +370,16 @@
     },
     {
       "name": "index.html: anchor appendices/a-hydrogel-versus-liquid.html#A-Q1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -3309,7 +3329,7 @@
       "detail": null
     },
     {
-      "name": "C1-E01: inline slash between title translations",
+      "name": "C1-E01: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3354,7 +3374,7 @@
       "detail": null
     },
     {
-      "name": "C1-E02: inline slash between title translations",
+      "name": "C1-E02: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3399,7 +3419,7 @@
       "detail": null
     },
     {
-      "name": "C1-E03: inline slash between title translations",
+      "name": "C1-E03: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3444,7 +3464,7 @@
       "detail": null
     },
     {
-      "name": "C1-E04: inline slash between title translations",
+      "name": "C1-E04: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3489,7 +3509,7 @@
       "detail": null
     },
     {
-      "name": "C1-E05: inline slash between title translations",
+      "name": "C1-E05: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3534,7 +3554,7 @@
       "detail": null
     },
     {
-      "name": "C1-E06: inline slash between title translations",
+      "name": "C1-E06: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3579,7 +3599,7 @@
       "detail": null
     },
     {
-      "name": "C1-E07: inline slash between title translations",
+      "name": "C1-E07: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3624,7 +3644,7 @@
       "detail": null
     },
     {
-      "name": "C1-E08: inline slash between title translations",
+      "name": "C1-E08: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3669,7 +3689,7 @@
       "detail": null
     },
     {
-      "name": "C1-E09: inline slash between title translations",
+      "name": "C1-E09: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3714,7 +3734,7 @@
       "detail": null
     },
     {
-      "name": "C1-E10: inline slash between title translations",
+      "name": "C1-E10: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3759,7 +3779,7 @@
       "detail": null
     },
     {
-      "name": "C1-E11: inline slash between title translations",
+      "name": "C1-E11: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3804,7 +3824,7 @@
       "detail": null
     },
     {
-      "name": "C1-E12: inline slash between title translations",
+      "name": "C1-E12: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3849,7 +3869,7 @@
       "detail": null
     },
     {
-      "name": "C1-E13: inline slash between title translations",
+      "name": "C1-E13: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3894,7 +3914,7 @@
       "detail": null
     },
     {
-      "name": "C1-E14: inline slash between title translations",
+      "name": "C1-E14: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3939,7 +3959,7 @@
       "detail": null
     },
     {
-      "name": "C1-E15: inline slash between title translations",
+      "name": "C1-E15: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -3984,7 +4004,7 @@
       "detail": null
     },
     {
-      "name": "C1-E16: inline slash between title translations",
+      "name": "C1-E16: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4029,7 +4049,7 @@
       "detail": null
     },
     {
-      "name": "C1-E17: inline slash between title translations",
+      "name": "C1-E17: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4074,7 +4094,7 @@
       "detail": null
     },
     {
-      "name": "C1-E18: inline slash between title translations",
+      "name": "C1-E18: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4119,7 +4139,7 @@
       "detail": null
     },
     {
-      "name": "C1-E19: inline slash between title translations",
+      "name": "C1-E19: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4164,7 +4184,7 @@
       "detail": null
     },
     {
-      "name": "C1-E20: inline slash between title translations",
+      "name": "C1-E20: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4209,7 +4229,7 @@
       "detail": null
     },
     {
-      "name": "C1-E21: inline slash between title translations",
+      "name": "C1-E21: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4254,7 +4274,7 @@
       "detail": null
     },
     {
-      "name": "C1-E22: inline slash between title translations",
+      "name": "C1-E22: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4299,7 +4319,7 @@
       "detail": null
     },
     {
-      "name": "C1-E23: inline slash between title translations",
+      "name": "C1-E23: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4344,7 +4364,7 @@
       "detail": null
     },
     {
-      "name": "C1-E24: inline slash between title translations",
+      "name": "C1-E24: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4389,7 +4409,7 @@
       "detail": null
     },
     {
-      "name": "C1-E25: inline slash between title translations",
+      "name": "C1-E25: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4434,7 +4454,7 @@
       "detail": null
     },
     {
-      "name": "C1-E26: inline slash between title translations",
+      "name": "C1-E26: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4479,7 +4499,7 @@
       "detail": null
     },
     {
-      "name": "C1-E27: inline slash between title translations",
+      "name": "C1-E27: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4524,7 +4544,7 @@
       "detail": null
     },
     {
-      "name": "C1-E28: inline slash between title translations",
+      "name": "C1-E28: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4569,7 +4589,7 @@
       "detail": null
     },
     {
-      "name": "C1-E29: inline slash between title translations",
+      "name": "C1-E29: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4614,7 +4634,7 @@
       "detail": null
     },
     {
-      "name": "C1-E30: inline slash between title translations",
+      "name": "C1-E30: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4659,7 +4679,7 @@
       "detail": null
     },
     {
-      "name": "C1-E31: inline slash between title translations",
+      "name": "C1-E31: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4704,7 +4724,7 @@
       "detail": null
     },
     {
-      "name": "C1-E32: inline slash between title translations",
+      "name": "C1-E32: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4749,7 +4769,7 @@
       "detail": null
     },
     {
-      "name": "C1-E33: inline slash between title translations",
+      "name": "C1-E33: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4794,7 +4814,7 @@
       "detail": null
     },
     {
-      "name": "C1-E34: inline slash between title translations",
+      "name": "C1-E34: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -4855,6 +4875,16 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/course-language.js",
       "passed": true,
       "detail": null
     },
@@ -4980,6 +5010,16 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor #defense-questions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -8264,7 +8304,7 @@
       "detail": null
     },
     {
-      "name": "C2-E01: inline slash between title translations",
+      "name": "C2-E01: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8309,7 +8349,7 @@
       "detail": null
     },
     {
-      "name": "C2-E02: inline slash between title translations",
+      "name": "C2-E02: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8354,7 +8394,7 @@
       "detail": null
     },
     {
-      "name": "C2-E03: inline slash between title translations",
+      "name": "C2-E03: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8399,7 +8439,7 @@
       "detail": null
     },
     {
-      "name": "C2-E04: inline slash between title translations",
+      "name": "C2-E04: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8444,7 +8484,7 @@
       "detail": null
     },
     {
-      "name": "C2-E05: inline slash between title translations",
+      "name": "C2-E05: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8489,7 +8529,7 @@
       "detail": null
     },
     {
-      "name": "C2-E06: inline slash between title translations",
+      "name": "C2-E06: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8534,7 +8574,7 @@
       "detail": null
     },
     {
-      "name": "C2-E07: inline slash between title translations",
+      "name": "C2-E07: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8579,7 +8619,7 @@
       "detail": null
     },
     {
-      "name": "C2-E08: inline slash between title translations",
+      "name": "C2-E08: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8624,7 +8664,7 @@
       "detail": null
     },
     {
-      "name": "C2-E09: inline slash between title translations",
+      "name": "C2-E09: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8669,7 +8709,7 @@
       "detail": null
     },
     {
-      "name": "C2-E10: inline slash between title translations",
+      "name": "C2-E10: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8714,7 +8754,7 @@
       "detail": null
     },
     {
-      "name": "C2-E11: inline slash between title translations",
+      "name": "C2-E11: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8759,7 +8799,7 @@
       "detail": null
     },
     {
-      "name": "C2-E12: inline slash between title translations",
+      "name": "C2-E12: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8804,7 +8844,7 @@
       "detail": null
     },
     {
-      "name": "C2-E13: inline slash between title translations",
+      "name": "C2-E13: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8849,7 +8889,7 @@
       "detail": null
     },
     {
-      "name": "C2-E14: inline slash between title translations",
+      "name": "C2-E14: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8894,7 +8934,7 @@
       "detail": null
     },
     {
-      "name": "C2-E15: inline slash between title translations",
+      "name": "C2-E15: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8939,7 +8979,7 @@
       "detail": null
     },
     {
-      "name": "C2-E16: inline slash between title translations",
+      "name": "C2-E16: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -8984,7 +9024,7 @@
       "detail": null
     },
     {
-      "name": "C2-E17: inline slash between title translations",
+      "name": "C2-E17: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9029,7 +9069,7 @@
       "detail": null
     },
     {
-      "name": "C2-E18: inline slash between title translations",
+      "name": "C2-E18: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9074,7 +9114,7 @@
       "detail": null
     },
     {
-      "name": "C2-E19: inline slash between title translations",
+      "name": "C2-E19: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9119,7 +9159,7 @@
       "detail": null
     },
     {
-      "name": "C2-E20: inline slash between title translations",
+      "name": "C2-E20: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9164,7 +9204,7 @@
       "detail": null
     },
     {
-      "name": "C2-E21: inline slash between title translations",
+      "name": "C2-E21: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9209,7 +9249,7 @@
       "detail": null
     },
     {
-      "name": "C2-E22: inline slash between title translations",
+      "name": "C2-E22: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9254,7 +9294,7 @@
       "detail": null
     },
     {
-      "name": "C2-E23: inline slash between title translations",
+      "name": "C2-E23: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9299,7 +9339,7 @@
       "detail": null
     },
     {
-      "name": "C2-E24: inline slash between title translations",
+      "name": "C2-E24: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9344,7 +9384,7 @@
       "detail": null
     },
     {
-      "name": "C2-E25: inline slash between title translations",
+      "name": "C2-E25: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9389,7 +9429,7 @@
       "detail": null
     },
     {
-      "name": "C2-E26: inline slash between title translations",
+      "name": "C2-E26: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9434,7 +9474,7 @@
       "detail": null
     },
     {
-      "name": "C2-E27: inline slash between title translations",
+      "name": "C2-E27: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9479,7 +9519,7 @@
       "detail": null
     },
     {
-      "name": "C2-E28: inline slash between title translations",
+      "name": "C2-E28: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9524,7 +9564,7 @@
       "detail": null
     },
     {
-      "name": "C2-E29: inline slash between title translations",
+      "name": "C2-E29: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9569,7 +9609,7 @@
       "detail": null
     },
     {
-      "name": "C2-E30: inline slash between title translations",
+      "name": "C2-E30: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9614,7 +9654,7 @@
       "detail": null
     },
     {
-      "name": "C2-E31: inline slash between title translations",
+      "name": "C2-E31: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9659,7 +9699,7 @@
       "detail": null
     },
     {
-      "name": "C2-E32: inline slash between title translations",
+      "name": "C2-E32: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9704,7 +9744,7 @@
       "detail": null
     },
     {
-      "name": "C2-E33: inline slash between title translations",
+      "name": "C2-E33: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9749,7 +9789,7 @@
       "detail": null
     },
     {
-      "name": "C2-E34: inline slash between title translations",
+      "name": "C2-E34: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9794,7 +9834,7 @@
       "detail": null
     },
     {
-      "name": "C2-E35: inline slash between title translations",
+      "name": "C2-E35: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9839,7 +9879,7 @@
       "detail": null
     },
     {
-      "name": "C2-E36: inline slash between title translations",
+      "name": "C2-E36: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -9900,6 +9940,16 @@
     },
     {
       "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/course-language.js",
       "passed": true,
       "detail": null
     },
@@ -10015,6 +10065,16 @@
     },
     {
       "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: anchor #defense",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -14144,7 +14204,7 @@
       "detail": null
     },
     {
-      "name": "C3-E01: inline slash between title translations",
+      "name": "C3-E01: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14189,7 +14249,7 @@
       "detail": null
     },
     {
-      "name": "C3-E02: inline slash between title translations",
+      "name": "C3-E02: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14234,7 +14294,7 @@
       "detail": null
     },
     {
-      "name": "C3-E03: inline slash between title translations",
+      "name": "C3-E03: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14279,7 +14339,7 @@
       "detail": null
     },
     {
-      "name": "C3-E04: inline slash between title translations",
+      "name": "C3-E04: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14324,7 +14384,7 @@
       "detail": null
     },
     {
-      "name": "C3-E05: inline slash between title translations",
+      "name": "C3-E05: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14369,7 +14429,7 @@
       "detail": null
     },
     {
-      "name": "C3-E06: inline slash between title translations",
+      "name": "C3-E06: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14414,7 +14474,7 @@
       "detail": null
     },
     {
-      "name": "C3-E07: inline slash between title translations",
+      "name": "C3-E07: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14459,7 +14519,7 @@
       "detail": null
     },
     {
-      "name": "C3-E08: inline slash between title translations",
+      "name": "C3-E08: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14504,7 +14564,7 @@
       "detail": null
     },
     {
-      "name": "C3-E09: inline slash between title translations",
+      "name": "C3-E09: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14549,7 +14609,7 @@
       "detail": null
     },
     {
-      "name": "C3-E10: inline slash between title translations",
+      "name": "C3-E10: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14594,7 +14654,7 @@
       "detail": null
     },
     {
-      "name": "C3-E11: inline slash between title translations",
+      "name": "C3-E11: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14639,7 +14699,7 @@
       "detail": null
     },
     {
-      "name": "C3-E12: inline slash between title translations",
+      "name": "C3-E12: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14684,7 +14744,7 @@
       "detail": null
     },
     {
-      "name": "C3-E13: inline slash between title translations",
+      "name": "C3-E13: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14729,7 +14789,7 @@
       "detail": null
     },
     {
-      "name": "C3-E14: inline slash between title translations",
+      "name": "C3-E14: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14774,7 +14834,7 @@
       "detail": null
     },
     {
-      "name": "C3-E15: inline slash between title translations",
+      "name": "C3-E15: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14819,7 +14879,7 @@
       "detail": null
     },
     {
-      "name": "C3-E16: inline slash between title translations",
+      "name": "C3-E16: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14864,7 +14924,7 @@
       "detail": null
     },
     {
-      "name": "C3-E17: inline slash between title translations",
+      "name": "C3-E17: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14909,7 +14969,7 @@
       "detail": null
     },
     {
-      "name": "C3-E18: inline slash between title translations",
+      "name": "C3-E18: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14954,7 +15014,7 @@
       "detail": null
     },
     {
-      "name": "C3-E19: inline slash between title translations",
+      "name": "C3-E19: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -14999,7 +15059,7 @@
       "detail": null
     },
     {
-      "name": "C3-E20: inline slash between title translations",
+      "name": "C3-E20: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15044,7 +15104,7 @@
       "detail": null
     },
     {
-      "name": "C3-E21: inline slash between title translations",
+      "name": "C3-E21: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15089,7 +15149,7 @@
       "detail": null
     },
     {
-      "name": "C3-E22: inline slash between title translations",
+      "name": "C3-E22: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15134,7 +15194,7 @@
       "detail": null
     },
     {
-      "name": "C3-E23: inline slash between title translations",
+      "name": "C3-E23: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15179,7 +15239,7 @@
       "detail": null
     },
     {
-      "name": "C3-E24: inline slash between title translations",
+      "name": "C3-E24: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15224,7 +15284,7 @@
       "detail": null
     },
     {
-      "name": "C3-E25: inline slash between title translations",
+      "name": "C3-E25: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15269,7 +15329,7 @@
       "detail": null
     },
     {
-      "name": "C3-E26: inline slash between title translations",
+      "name": "C3-E26: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15314,7 +15374,7 @@
       "detail": null
     },
     {
-      "name": "C3-E27: inline slash between title translations",
+      "name": "C3-E27: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15359,7 +15419,7 @@
       "detail": null
     },
     {
-      "name": "C3-E28: inline slash between title translations",
+      "name": "C3-E28: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15404,7 +15464,7 @@
       "detail": null
     },
     {
-      "name": "C3-E29: inline slash between title translations",
+      "name": "C3-E29: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15449,7 +15509,7 @@
       "detail": null
     },
     {
-      "name": "C3-E30: inline slash between title translations",
+      "name": "C3-E30: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15494,7 +15554,7 @@
       "detail": null
     },
     {
-      "name": "C3-E31: inline slash between title translations",
+      "name": "C3-E31: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15539,7 +15599,7 @@
       "detail": null
     },
     {
-      "name": "C3-E32: inline slash between title translations",
+      "name": "C3-E32: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15584,7 +15644,7 @@
       "detail": null
     },
     {
-      "name": "C3-E33: inline slash between title translations",
+      "name": "C3-E33: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -15645,6 +15705,16 @@
     },
     {
       "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../assets/course-language.js",
       "passed": true,
       "detail": null
     },
@@ -15770,6 +15840,16 @@
     },
     {
       "name": "chapters/03-arrays-finite-jets-and-impact.html: anchor #defense",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -19244,7 +19324,7 @@
       "detail": null
     },
     {
-      "name": "C4-E01: inline slash between title translations",
+      "name": "C4-E01: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19289,7 +19369,7 @@
       "detail": null
     },
     {
-      "name": "C4-E02: inline slash between title translations",
+      "name": "C4-E02: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19334,7 +19414,7 @@
       "detail": null
     },
     {
-      "name": "C4-E03: inline slash between title translations",
+      "name": "C4-E03: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19379,7 +19459,7 @@
       "detail": null
     },
     {
-      "name": "C4-E04: inline slash between title translations",
+      "name": "C4-E04: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19424,7 +19504,7 @@
       "detail": null
     },
     {
-      "name": "C4-E40: inline slash between title translations",
+      "name": "C4-E40: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19469,7 +19549,7 @@
       "detail": null
     },
     {
-      "name": "C4-E05: inline slash between title translations",
+      "name": "C4-E05: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19514,7 +19594,7 @@
       "detail": null
     },
     {
-      "name": "C4-E06: inline slash between title translations",
+      "name": "C4-E06: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19559,7 +19639,7 @@
       "detail": null
     },
     {
-      "name": "C4-E41: inline slash between title translations",
+      "name": "C4-E41: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19604,7 +19684,7 @@
       "detail": null
     },
     {
-      "name": "C4-E07: inline slash between title translations",
+      "name": "C4-E07: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19649,7 +19729,7 @@
       "detail": null
     },
     {
-      "name": "C4-E08: inline slash between title translations",
+      "name": "C4-E08: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19694,7 +19774,7 @@
       "detail": null
     },
     {
-      "name": "C4-E09: inline slash between title translations",
+      "name": "C4-E09: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19739,7 +19819,7 @@
       "detail": null
     },
     {
-      "name": "C4-E10: inline slash between title translations",
+      "name": "C4-E10: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19784,7 +19864,7 @@
       "detail": null
     },
     {
-      "name": "C4-E11: inline slash between title translations",
+      "name": "C4-E11: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19829,7 +19909,7 @@
       "detail": null
     },
     {
-      "name": "C4-E12: inline slash between title translations",
+      "name": "C4-E12: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19874,7 +19954,7 @@
       "detail": null
     },
     {
-      "name": "C4-E13: inline slash between title translations",
+      "name": "C4-E13: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19919,7 +19999,7 @@
       "detail": null
     },
     {
-      "name": "C4-E14: inline slash between title translations",
+      "name": "C4-E14: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -19964,7 +20044,7 @@
       "detail": null
     },
     {
-      "name": "C4-E15: inline slash between title translations",
+      "name": "C4-E15: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20009,7 +20089,7 @@
       "detail": null
     },
     {
-      "name": "C4-E16: inline slash between title translations",
+      "name": "C4-E16: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20054,7 +20134,7 @@
       "detail": null
     },
     {
-      "name": "C4-E17: inline slash between title translations",
+      "name": "C4-E17: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20099,7 +20179,7 @@
       "detail": null
     },
     {
-      "name": "C4-E18: inline slash between title translations",
+      "name": "C4-E18: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20144,7 +20224,7 @@
       "detail": null
     },
     {
-      "name": "C4-E19: inline slash between title translations",
+      "name": "C4-E19: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20189,7 +20269,7 @@
       "detail": null
     },
     {
-      "name": "C4-E20: inline slash between title translations",
+      "name": "C4-E20: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20234,7 +20314,7 @@
       "detail": null
     },
     {
-      "name": "C4-E21: inline slash between title translations",
+      "name": "C4-E21: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20279,7 +20359,7 @@
       "detail": null
     },
     {
-      "name": "C4-E22: inline slash between title translations",
+      "name": "C4-E22: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20324,7 +20404,7 @@
       "detail": null
     },
     {
-      "name": "C4-E23: inline slash between title translations",
+      "name": "C4-E23: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20369,7 +20449,7 @@
       "detail": null
     },
     {
-      "name": "C4-E24: inline slash between title translations",
+      "name": "C4-E24: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20414,7 +20494,7 @@
       "detail": null
     },
     {
-      "name": "C4-E25: inline slash between title translations",
+      "name": "C4-E25: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20459,7 +20539,7 @@
       "detail": null
     },
     {
-      "name": "C4-E26: inline slash between title translations",
+      "name": "C4-E26: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20504,7 +20584,7 @@
       "detail": null
     },
     {
-      "name": "C4-E27: inline slash between title translations",
+      "name": "C4-E27: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20549,7 +20629,7 @@
       "detail": null
     },
     {
-      "name": "C4-E28: inline slash between title translations",
+      "name": "C4-E28: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20594,7 +20674,7 @@
       "detail": null
     },
     {
-      "name": "C4-E29: inline slash between title translations",
+      "name": "C4-E29: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20639,7 +20719,7 @@
       "detail": null
     },
     {
-      "name": "C4-E30: inline slash between title translations",
+      "name": "C4-E30: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20684,7 +20764,7 @@
       "detail": null
     },
     {
-      "name": "C4-E31: inline slash between title translations",
+      "name": "C4-E31: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20729,7 +20809,7 @@
       "detail": null
     },
     {
-      "name": "C4-E32: inline slash between title translations",
+      "name": "C4-E32: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20774,7 +20854,7 @@
       "detail": null
     },
     {
-      "name": "C4-E33: inline slash between title translations",
+      "name": "C4-E33: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20819,7 +20899,7 @@
       "detail": null
     },
     {
-      "name": "C4-E34: inline slash between title translations",
+      "name": "C4-E34: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20864,7 +20944,7 @@
       "detail": null
     },
     {
-      "name": "C4-E35: inline slash between title translations",
+      "name": "C4-E35: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20909,7 +20989,7 @@
       "detail": null
     },
     {
-      "name": "C4-E36: inline slash between title translations",
+      "name": "C4-E36: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20954,7 +21034,7 @@
       "detail": null
     },
     {
-      "name": "C4-E37: inline slash between title translations",
+      "name": "C4-E37: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -20999,7 +21079,7 @@
       "detail": null
     },
     {
-      "name": "C4-E38: inline slash between title translations",
+      "name": "C4-E38: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -21044,7 +21124,7 @@
       "detail": null
     },
     {
-      "name": "C4-E39: inline slash between title translations",
+      "name": "C4-E39: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -21105,6 +21185,16 @@
     },
     {
       "name": "chapters/04-fracture-and-transfer.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../assets/course-language.js",
       "passed": true,
       "detail": null
     },
@@ -21240,6 +21330,16 @@
     },
     {
       "name": "chapters/04-fracture-and-transfer.html: anchor #defenses",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -23824,7 +23924,7 @@
       "detail": null
     },
     {
-      "name": "A-E01: inline slash between title translations",
+      "name": "A-E01: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -23869,7 +23969,7 @@
       "detail": null
     },
     {
-      "name": "A-E02: inline slash between title translations",
+      "name": "A-E02: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -23914,7 +24014,7 @@
       "detail": null
     },
     {
-      "name": "A-E03: inline slash between title translations",
+      "name": "A-E03: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -23959,7 +24059,7 @@
       "detail": null
     },
     {
-      "name": "A-E04: inline slash between title translations",
+      "name": "A-E04: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24004,7 +24104,7 @@
       "detail": null
     },
     {
-      "name": "A-E05: inline slash between title translations",
+      "name": "A-E05: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24049,7 +24149,7 @@
       "detail": null
     },
     {
-      "name": "A-E06: inline slash between title translations",
+      "name": "A-E06: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24094,7 +24194,7 @@
       "detail": null
     },
     {
-      "name": "A-E07: inline slash between title translations",
+      "name": "A-E07: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24139,7 +24239,7 @@
       "detail": null
     },
     {
-      "name": "A-E08: inline slash between title translations",
+      "name": "A-E08: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24184,7 +24284,7 @@
       "detail": null
     },
     {
-      "name": "A-E09: inline slash between title translations",
+      "name": "A-E09: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24229,7 +24329,7 @@
       "detail": null
     },
     {
-      "name": "A-E10: inline slash between title translations",
+      "name": "A-E10: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24274,7 +24374,7 @@
       "detail": null
     },
     {
-      "name": "A-E11: inline slash between title translations",
+      "name": "A-E11: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24319,7 +24419,7 @@
       "detail": null
     },
     {
-      "name": "A-E12: inline slash between title translations",
+      "name": "A-E12: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24364,7 +24464,7 @@
       "detail": null
     },
     {
-      "name": "A-E13: inline slash between title translations",
+      "name": "A-E13: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24409,7 +24509,7 @@
       "detail": null
     },
     {
-      "name": "A-E14: inline slash between title translations",
+      "name": "A-E14: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24454,7 +24554,7 @@
       "detail": null
     },
     {
-      "name": "A-E15: inline slash between title translations",
+      "name": "A-E15: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24499,7 +24599,7 @@
       "detail": null
     },
     {
-      "name": "A-E16: inline slash between title translations",
+      "name": "A-E16: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24544,7 +24644,7 @@
       "detail": null
     },
     {
-      "name": "A-E17: inline slash between title translations",
+      "name": "A-E17: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24589,7 +24689,7 @@
       "detail": null
     },
     {
-      "name": "A-E18: inline slash between title translations",
+      "name": "A-E18: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24634,7 +24734,7 @@
       "detail": null
     },
     {
-      "name": "A-E19: inline slash between title translations",
+      "name": "A-E19: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24679,7 +24779,7 @@
       "detail": null
     },
     {
-      "name": "A-E20: inline slash between title translations",
+      "name": "A-E20: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24724,7 +24824,7 @@
       "detail": null
     },
     {
-      "name": "A-E21: inline slash between title translations",
+      "name": "A-E21: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24769,7 +24869,7 @@
       "detail": null
     },
     {
-      "name": "A-E22: inline slash between title translations",
+      "name": "A-E22: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24814,7 +24914,7 @@
       "detail": null
     },
     {
-      "name": "A-E23: inline slash between title translations",
+      "name": "A-E23: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24859,7 +24959,7 @@
       "detail": null
     },
     {
-      "name": "A-E24: inline slash between title translations",
+      "name": "A-E24: separate language title views",
       "passed": true,
       "detail": null
     },
@@ -24920,6 +25020,16 @@
     },
     {
       "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/course-language.js",
       "passed": true,
       "detail": null
     },
@@ -25055,6 +25165,16 @@
     },
     {
       "name": "appendices/a-hydrogel-versus-liquid.html: anchor #gel-defense",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -25409,6 +25529,16 @@
       "detail": null
     },
     {
+      "name": "reference/defense.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/defense.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/defense.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -25729,6 +25859,16 @@
       "detail": null
     },
     {
+      "name": "reference/defense.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/defense.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/notation.html: day/night component",
       "passed": true,
       "detail": null
@@ -25849,6 +25989,16 @@
       "detail": null
     },
     {
+      "name": "reference/notation.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/notation.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/notation.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -25885,6 +26035,16 @@
     },
     {
       "name": "reference/notation.html: local dependency ../text/course.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/notation.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/notation.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -26109,6 +26269,16 @@
       "detail": null
     },
     {
+      "name": "reference/sources.html: local dependency ../assets/course-language.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/sources.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -26145,6 +26315,16 @@
     },
     {
       "name": "reference/sources.html: local dependency ../sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -32942,60 +33122,60 @@
   "chapter_questions": 15,
   "displayed_equations": 168,
   "bilingual_paragraph_pairs": 3122,
-  "local_dependencies": 428,
+  "local_dependencies": 464,
   "local_math_fonts": 60,
   "pages": [
     {
       "file": "index.html",
-      "bytes": 20026,
+      "bytes": 22522,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1323715,
+      "bytes": 1330037,
       "equations": 34,
       "defenses": 3
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1566019,
+      "bytes": 1572382,
       "equations": 36,
       "defenses": 3
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2023870,
+      "bytes": 2030295,
       "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1874397,
+      "bytes": 1881447,
       "equations": 41,
       "defenses": 3
     },
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1276573,
+      "bytes": 1282208,
       "equations": 24,
       "defenses": 3
     },
     {
       "file": "reference/defense.html",
-      "bytes": 17793,
+      "bytes": 19657,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/notation.html",
-      "bytes": 22936,
+      "bytes": 24570,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/sources.html",
-      "bytes": 24236,
+      "bytes": 25870,
       "equations": 0,
       "defenses": 0
     }

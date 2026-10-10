@@ -64,10 +64,11 @@ def main():
                   and title_en.get_text()==f'({unit["id"]}) · {equation["kind"]}'
                   and title_zh.get_text()==equation.get('kind_zh')==TITLES_ZH[equation['kind']]
                   and bool(re.search(r'[\u4e00-\u9fff]',title_zh.get_text())))
-            check(unit['id']+': inline slash between title translations',
+            check(unit['id']+': separate language title views',
                   heading is not None and 'inline-pair' in heading.get('class',[])
                   and not heading.find('br')
-                  and ''.join(str(n) for n in heading.children if not getattr(n,'name',None))==' / ')
+                  and ''.join(str(n) for n in heading.children if not getattr(n,'name',None)).strip()==''
+                  and soup.select_one('link[href$="course-language.css"]') is not None)
             symbols=unit.select_one('.symbols')
             formula=unit.select_one('.math-display')
             ordered=[n for n in unit.children if getattr(n,'name',None)]

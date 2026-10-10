@@ -1,0 +1,28 @@
+English,中文,Note
+cavitation,空化,
+hydrogel,水凝胶,
+confinement,约束,
+jet,射流,
+outlet,出口,
+available work,可用功,Post-activation mechanical availability; not incident optical energy
+post-activation,激活后,
+source pressure,源压力,Absolute unless overpressure is stated
+overpressure,超压,Pressure relative to ambient
+dynamic pressure,动压,Outlet kinetic-energy scale; not target impact peak
+emitted energy,排出动能,Actual energy integrated from outlet flux
+emitted impulse,排出冲量,Actual axial impulse integrated from outlet momentum flux
+liquid inventory,液体存量,
+effective inertance,有效流体惯性,
+stored column energy,液柱储存动能,
+meniscus,弯月面,
+capillary resistance,毛细阻力,
+compliance,顺应性,
+neo-Hookean,新胡克,
+Kelvin–Voigt,Kelvin–Voigt,Keep constitutive model name unchanged
+hemisphere resultant,半球合力,One-hemisphere axial resultant; not net force on complete sphere
+first outward ejection,首次向外排出过程,
+pressure communication,压力均衡传播,Diagnostic only; no spatial wave-field solve
+energy residual,能量残差,
+Global Equations,全局方程,Retain English COMSOL menu names in code paths
+Global ODEs and DAEs,全局常微分方程与微分代数方程,Retain English interface name where required to find it
+Time Dependent,瞬态,Retain English COMSOL menu name in code paths

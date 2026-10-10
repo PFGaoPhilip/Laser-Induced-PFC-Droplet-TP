@@ -1,0 +1,11 @@
+# Generated intermediates and local practice copies.
+/build/
+/tmp/
+/practice/
+__pycache__/
+*.class
+*.pyc
+*.mph.lock
+*.mph.log
+*.mph.recovery
+*.zip

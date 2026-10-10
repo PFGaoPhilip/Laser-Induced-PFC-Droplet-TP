@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "file": "index.html",
+      "bytes": 1835539,
+      "sha256": "3e189340b2e4298c3304e7fe4920b1b4137db18b632ebef5ec2a5b2a7bec5a5b",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "STEP_BY_STEP.html",
+      "bytes": 214189,
+      "sha256": "776b0921e540b6839eb7e6842d982a9872cc11c7b220b1ccfddfcc9a29023b55",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "STEP_BY_STEP.md",
+      "bytes": 56081,
+      "sha256": "5a1494ce327ff529e6407fbdb98275462da5dcac175da46ca08324cda7d8e02b",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "STEP_BY_STEP.zh.md",
+      "bytes": 55656,
+      "sha256": "c27e80aa2b12c300c0a51f02980d9ddcfd9f6a41d57f25f00adcdbe142aa57ad",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "RESULTS.md",
+      "bytes": 4386,
+      "sha256": "91e3991284c0d10ae90d05dd2afae7162330378d48fbb02e71940599a77dd222",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "THEORY_DERIVATION.tex",
+      "bytes": 45612,
+      "sha256": "38a710cf0cc306f09f1a6d3e95d21a69d3bebc180de40438212c5330d69f614f",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/terms.css",
+      "bytes": 39085,
+      "sha256": "f1543416e6db94969f7ece609a7eec99588f6d333a0f522f94b8edec7e619b55",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/guide-mechanisms.svg",
+      "bytes": 2085,
+      "sha256": "602a484958aa5f075e25202b586a7172d8f04bc92d4586a66036555959324fb6",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/guide-mechanisms.zh.svg",
+      "bytes": 2294,
+      "sha256": "c81f6665303950d981e0d313b840faba2ca8ea891ac3c36c943c8d8dbbef7fe6",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/guide-interface.svg",
+      "bytes": 1656,
+      "sha256": "caa2b4fb47855074550eea7f1f8e402156a8b0545b497e9a93d883cefbc96fdd",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/guide-interface.zh.svg",
+      "bytes": 1993,
+      "sha256": "3a109f38dc653d3672d98fd2249399f9e63b0dbc8e04f4bbb6334dffd49835d9",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/A_equations.tsv",
+      "bytes": 191,
+      "sha256": "2e995c8a70315a355bb35373d4708e63f128e01d0b7b739a98487d980a0a191d",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/A_parameters_import.txt",
+      "bytes": 542,
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/A_variables_import.txt",
+      "bytes": 730,
+      "sha256": "3287618b91326f830a9bd7b961cd3e80d536fe8a1a2c5a84318014716d50cec2",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/B_equations.tsv",
+      "bytes": 245,
+      "sha256": "a4aa35ea918094d8a50e4929c404ee2ab5f512826d2e6cef58ca6bc43b8990c0",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/B_parameters_import.txt",
+      "bytes": 542,
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/B_variables_import.txt",
+      "bytes": 869,
+      "sha256": "ec5b6deb52003622221874d6a9b60fea310aef1d8b819c14901e9849c95baf11",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/B_variables_patch_import.txt",
+      "bytes": 309,
+      "sha256": "2fc00458d10075d51080de603ba376cbab487ce25a7ea75a958dc8e99afbf4d8",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/global_evaluation.tsv",
+      "bytes": 1120,
+      "sha256": "5460e67784eb047538c2991404de9ed813b272bcc6c8f964477da53ecf64ba8c",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "resources/gui/stop_conditions.tsv",
+      "bytes": 384,
+      "sha256": "932f90a08aa9c11ab11ed574b3900346bb3f18bd62763f85f03338d53e22fddb",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/conditional_velocity_envelope.png",
+      "bytes": 153126,
+      "sha256": "6d9b3f724c4dd5c569e58b7055ad66badcb5047be2d94ebfedc90f4d7b7b4cf9",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/conditional_velocity_envelope.zh.png",
+      "bytes": 154801,
+      "sha256": "a128b9831482338962e7a32a4e7dbbf9aeced490a496546eaec0831549c5ab5e",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/energy_and_transmission.png",
+      "bytes": 89257,
+      "sha256": "eeaee9f0c74ee50e653d94e24f76460c0dd39ca651969b37a2f8807a4c9a1088",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/energy_and_transmission.zh.png",
+      "bytes": 97431,
+      "sha256": "b2c16b4c458e866bde2ec0c4af5a29ab539a003d0d087124d818a11e95dbf3e9",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/first_event_histories.png",
+      "bytes": 139288,
+      "sha256": "2e109fb5521d20a5e8be85580a697dcfbb1845dc03968d49404ccf26efcfe3bb",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/first_event_histories.zh.png",
+      "bytes": 138075,
+      "sha256": "c78f1dbcdb0006af6772f83bd5e206f15d19191eb44891edf11f8eda2fac9496",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/gel_confinement.png",
+      "bytes": 121654,
+      "sha256": "ae3edab3fb41b694eaee77de6a25e8c2bf768ef009cc4f8cc6a14870c19a834a",
+      "regenerated_byte_identical": true
+    },
+    {
+      "file": "assets/gel_confinement.zh.png",
+      "bytes": 119230,
+      "sha256": "4d779535641077a074ca5d7984b51aac4dc504e87da98e30cff84a970d89d208",
+      "regenerated_byte_identical": true
+    }
+  ]
+}

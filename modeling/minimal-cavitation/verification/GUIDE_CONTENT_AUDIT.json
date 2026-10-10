@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "steps": 53,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "default_language": "zh",
+  "parameters_per_model": 32,
+  "variables_per_model": 33,
+  "state_counts": [
+    5,
+    7
+  ],
+  "changed_A_to_B_variables": [
+    "R",
+    "Uw",
+    "pEl",
+    "pRes",
+    "Wgel",
+    "Kgel",
+    "wallAcc",
+    "Pdis",
+    "communication"
+  ],
+  "native_models": [
+    {
+      "file": "Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "file": "Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    }
+  ],
+  "resources": [
+    "A_equations.tsv",
+    "A_parameters_import.txt",
+    "A_variables_import.txt",
+    "B_equations.tsv",
+    "B_parameters_import.txt",
+    "B_variables_import.txt",
+    "B_variables_patch_import.txt",
+    "global_evaluation.tsv",
+    "stop_conditions.tsv"
+  ],
+  "scope": "Exact table extraction and guide generation; native import/conversion check is separately recorded."
+}

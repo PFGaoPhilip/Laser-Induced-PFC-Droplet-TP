@@ -1,0 +1,31 @@
+Expression	Unit	Description
+t	s	Time after initialization
+c.x	m	Discharged volume / outlet area
+c.U	m/s	Outward outlet speed
+c.R	m	Chamber wall radius
+c.Uw	m/s	Wall expansion speed
+c.Vg	m^3	Gas source volume
+c.pb-pInf	Pa	Source gauge pressure
+c.pEl	Pa	Elastic gel pressure
+c.pRes	Pa	Elastic plus viscous gel resistance
+c.Fconf	N	Elastic hemisphere force
+c.qJet	Pa	Outlet dynamic-pressure scale
+c.Ijet	N*s	Effective column momentum
+c.Fflux	N	Momentum-flux scale
+c.Kjet	J	Stored column kinetic energy
+c.Kgel	J	Gel radial kinetic energy
+c.Wgel	J	Gel elastic work
+c.Esurf	J	Constant meniscus-load work
+c.Edis	J	Irreversible loss
+c.energyResidual	1	Normalized energy residual
+c.stroke	1	Liquid budget fraction
+c.stretch	1	Inner wall stretch
+c.Mjet	1	Liquid Mach diagnostic
+c.Mwall	1	Wall Mach diagnostic
+c.communication	1	Pressure communication screen
+c.acc	m/s^2	Outlet acceleration
+c.wallAcc	m/s^2	Wall acceleration
+c.pArrestBound	Pa	Declared mean arrest-pressure bound
+c.Eout	J	Actually emitted kinetic energy
+c.Iout	N*s	Actually emitted axial impulse
+c.Mout	kg	Actually emitted liquid mass

@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": "Static dependencies, complete math rendering and native-file integrity",
+  "html": [
+    {
+      "file": "index.html",
+      "rendered_display_equations": 58,
+      "day_night_button_present": true,
+      "language_button_present": true,
+      "numbered_step_checkboxes": 0
+    },
+    {
+      "file": "STEP_BY_STEP.html",
+      "rendered_display_equations": 0,
+      "day_night_button_present": true,
+      "language_button_present": true,
+      "numbered_step_checkboxes": 106
+    }
+  ],
+  "local_dependency_count": 115,
+  "external_links": [
+    "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_environment.18.43.html",
+    "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html",
+    "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_modeling.19.007.html",
+    "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html",
+    "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html",
+    "https://media.library.caltech.edu/CaltechBOOK:1995.001/chap2.htm",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/",
+    "https://pfgaophilip.github.io/cavitation-course/comsol/lessons/M1.html"
+  ],
+  "native_files": [
+    {
+      "file": "Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "file": "Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    }
+  ],
+  "guide_native_import_conversion": "Completed record included; see GUIDE_NATIVE_IMPORT_CHECK.txt. This static check does not rerun COMSOL.",
+  "browser_visual_validation": "Not performed. CUA returned an empty browser inventory and Browser is not available: iab.",
+  "moved_native_reload": "PASS: both MPH files opened from extracted location and stored results evaluated; scalar counts 5/7 and peak speeds unchanged. See MOVED_NATIVE_RELOAD.txt.",
+  "pre_bilingual_moved_folder_test": "PASS: updated ZIP extracted under tmp/guide-portability/Minimal_Cavitation_Models; both HTML readers, 53 guide cards, 29 displayed theory blocks and all local dependencies checked.",
+  "pre_bilingual_moved_reader_regeneration": "PASS: reader and plots regenerated at the new extracted location using included KaTeX; all 257 expressions rendered.",
+  "pre_bilingual_moved_guide_regeneration": "PASS: 53-step HTML/Markdown, diagrams and all nine GUI import/reference files regenerated at the extracted location; 15 guide/asset/input files byte-identical to originals. See GUIDE_RELOCATION_AUDIT.json.",
+  "bilingual_relocation": {
+    "status": "PASS",
+    "record": "BILINGUAL_RELOCATION_AUDIT.json"
+  }
+}

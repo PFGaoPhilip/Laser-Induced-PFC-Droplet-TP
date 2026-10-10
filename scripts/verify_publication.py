@@ -1,7 +1,7 @@
 """Compare deployed core pages and representative assets with the curated export."""
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from urllib.request import Request, urlopen
+from urllib.request import Request, build_opener, ProxyHandler
 import argparse
 import hashlib
 import json
@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def fetch(url):
     request=Request(url,headers={'User-Agent':'Laser-PFC-course-publication-check','Cache-Control':'no-cache'})
-    with urlopen(request,timeout=40) as response:
+    with build_opener(ProxyHandler({})).open(request,timeout=40) as response:
         return response.status,response.read()
 
 def main():
@@ -30,6 +30,15 @@ def main():
             'assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2',
             'assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2'}
     wanted.update(ch['file'] for ch in settings['chapters']+settings.get('appendices',[])+settings.get('legacy_routes',[]))
+    wanted.update({'assets/course-language.js','assets/course-language.css',
+        'modeling/minimal-cavitation/index.html','modeling/minimal-cavitation/STEP_BY_STEP.html',
+        'modeling/minimal-cavitation/assets/theme.js','modeling/minimal-cavitation/assets/first_event_histories.png',
+        'modeling/minimal-cavitation/assets/first_event_histories.zh.png',
+        'modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2',
+        'modeling/minimal-cavitation/MODEL_SPEC.md','modeling/minimal-cavitation/MODEL_SPEC.zh.md',
+        'modeling/minimal-cavitation/verification/NUMERICAL_AUDIT.json',
+        'modeling/minimal-cavitation/models/Model_A_Finite_Energy_Pressure_Jet.mph',
+        'modeling/minimal-cavitation/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph'})
     for kind in {eq['diagram']['type'] for eq in registry}:
         eq=next(eq for eq in registry if eq['diagram']['type']==kind)
         wanted.add('assets/figures/'+eq['id'].lower()+'.svg')
@@ -52,7 +61,7 @@ def main():
     report={'status':'passed' if passed else 'failed','repository':repo,'url':base,
             'expected_commit':args.commit,'remote_main_commit':remote_sha,
             'verified_at_unix':int(time.time()),'files_checked':len(rows),'files':rows,
-            'scope':'All nine canonical HTML pages and the legacy hydrogel route, settings, manifest, runtime/style assets, two math fonts and representative physical-variable SVGs match the curated export. Full ZIP contents have separate manifest/CRC checks. This verifies deployment, not physical material validation.'}
+            'scope':'All course HTML routes, both bilingual modeling readers, native model downloads, representative localized modeling plots, derivation sources, audit records, language/theme assets and local math fonts match the curated export. Full ZIP contents have separate manifest/CRC checks. This verifies deployment, not physical material validation.'}
     (ROOT/'verification/publication-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:report[k] for k in ['status','repository','url','remote_main_commit','files_checked']}))
     if not passed:print(json.dumps([r for r in rows if not r['matches_local_export']],ensure_ascii=False))

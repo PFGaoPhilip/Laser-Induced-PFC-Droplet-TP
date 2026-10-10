@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "JSDOM interaction and CSS visibility checks; layout/clipboard are not browser rendering.",
+  "checks": [
+    "index.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "chapters/01-cavity-pressure-inertia-and-directional-jets.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "chapters/02-optical-heating-and-finite-pfc-inventory.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "chapters/03-arrays-finite-jets-and-impact.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "chapters/04-fracture-and-transfer.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "appendices/a-hydrogel-versus-liquid.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "reference/notation.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "reference/sources.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "reference/defense.html: separate views, language/theme buttons, shared response state, unique anchors",
+    "modeling/minimal-cavitation/index.html: separate panes, course return link and shared preferences",
+    "modeling/minimal-cavitation/STEP_BY_STEP.html: separate panes, course return link and shared preferences"
+  ]
+}

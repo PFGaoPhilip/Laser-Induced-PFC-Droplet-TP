@@ -1,0 +1,3318 @@
+<!DOCTYPE html>
+<html data-language="zh" data-theme="night" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>简洁空化与水凝胶模型 · 53 步 COMSOL 教程</title><link href="assets/reader.css" rel="stylesheet"/><link href="assets/terms.css" rel="stylesheet"/><link href="assets/interface.css" rel="stylesheet"/><link href="assets/guide.css" rel="stylesheet"/></head><body class="guide-page"><div class="locale-pane" data-locale="en" hidden="" lang="en"><header><p class="eyebrow">COMSOL 6.4 · From a blank model · 53 numbered steps</p><h1>Build the two minimal models,<br/>step by step</h1><p>Exact entries, visible checks, saved checkpoints and defined outputs.</p><nav><a href="../../index.html?lang=en">Theory course</a><a href="index.html">Results &amp; full theory</a><a href="STEP_BY_STEP.md">Markdown guide</a><a href="Minimal_Cavitation_Models_20261010.zip">Input files</a><a href="#en-step-01">Start Step 01</a><a href="#en-step-32">Start <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">hydrogel</span></a><a href="#en-step-51">Troubleshooting</a><a href="Minimal_Cavitation_Models_20261010.zip">Download modeling folder</a></nav></header><div class="guide-toolbar"><div class="guide-toolbar-inner"><span data-guide-progress="" role="status">0 of 53 steps completed</span><progress aria-label="Completed steps" data-guide-progress-bar="" max="53" value="0"></progress><button data-reset-progress="" type="button">Reset checks</button></div><nav class="guide-section-nav"><a href="#en-section-a">A — Learn the interface and create the practice model</a><a href="#en-section-b">B — Enter every Model A input and expression</a><a href="#en-section-c">C — Plot, evaluate and answer Model A's question</a><a href="#en-section-d">D — Add <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">hydrogel</span> <span class="keyword technical-term" data-term="confinement" title="confinement / 约束">confinement</span> to obtain Model B</a><a href="#en-section-e">E — Verify, export and preserve the results</a><a href="#en-section-f">F — Fix common errors and report the correct claim</a></nav></div><main>
+<p>Keep this guide beside COMSOL and complete one numbered card at a time. The route is <strong>a blank 0D model → solved Model A → <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">hydrogel</span> Model B → sealed control → verified output tables</strong>. Every card identifies the node, the entry and a check before continuing. The checkpoints are your own practice files.</p>
+<p>Model A answers the conditional pressure/<span class="keyword technical-term" data-term="jet" title="jet / 射流">jet</span>-speed question for a finite post-activation source and a connected liquid outlet. Model B adds the spherical gel's <span class="keyword technical-term" data-term="confinement" title="confinement / 约束">confinement</span> and calculates how much emitted energy and impulse survives in the same outlet. A single nominal 10 ns laser pulse is represented by initial data after activation and pressure equilibration. Time zero in these studies is that initialized state. There is no subsequent source forcing.</p>
+<p><strong>Declared controls.</strong> The source is a closed adiabatic ideal gas, with uniform pressure, constant exponent greater than one and finite <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">available work</span>. Carrier density and effective outlet <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertance</span> are constant. The outlet is already open; its constant meniscus entry pressure is an approximation. Model B uses an intact, undrained incompressible <span class="keyword technical-term" data-term="neo-hookean" title="neo-Hookean / 新胡克">neo-Hookean</span> gel with Kelvin–Voigt loss, approximated as a spherical medium around the chamber. Initial mechanical velocities are zero; the chamber's reference wall is stress-free; the far-field pressure and outlet exit pressure are ambient. Outward liquid speed and expanding wall speed are positive. Later rebound, phase exchange, gel rupture and target impact are outside this first-ejection calculation. Actual <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span> and gel properties require calibration.</p>
+<p>The complete foundations, derivations, symbol glossary and validity audit are in <a href="MODEL_SPEC.md">MODEL_SPEC.md</a> and <a href="index.html#en-theory">the full offline report</a>. This guide translates those equations into concrete COMSOL entries; its expression tables use COMSOL syntax.</p>
+<p><img alt="Model mechanisms and defined outputs" src="assets/guide-mechanisms.svg"/></p>
+<p><em>A labeled mechanism schematic. Model A keeps the wall fixed. Model B allows the source volume to grow through both outlet discharge and gel-wall expansion. The diagram represents scalar balances, not spatial field maps.</em></p>
+<h2 class="guide-section" data-anchor="section-a" id="en-section-a">A — Learn the interface and create the practice model</h2>
+<article class="guide-step" data-anchor="step-01" id="en-step-01"><div class="step-heading"><input aria-label="Mark Step 01 complete" data-anchor="check-01" data-step="1" id="en-check-01" type="checkbox"/><span class="step-number">01</span><h3>Identify the three working areas</h3></div>
+<p class="guide-where"><strong>Where:</strong> COMSOL Desktop.</p>
+<p class="guide-do"><strong>Do:</strong> Identify <strong>Model Builder</strong> at the left, <strong>Settings</strong> for the selected node in the middle, and <strong>Graphics</strong> for plots at the right. Progress, Messages, Log and Results tables normally appear below. A node path such as <code>Global Definitions → Parameters 1</code> means expand the first node and select its child. A right-click creates a child of the node under the pointer. After editing a table cell, press Tab or click outside the cell to commit the entry.</p>
+<p class="guide-check"><strong>Check:</strong> You can select a node and see its Settings change before entering any equation.</p>
+<p><img alt="COMSOL working areas" src="assets/guide-interface.svg"/></p>
+<p><em>This is an interface schematic, not a screenshot. Positions depend on your window layout; the node and field names are the reference.</em></p>
+</article><article class="guide-step" data-anchor="step-02" id="en-step-02"><div class="step-heading"><input aria-label="Mark Step 02 complete" data-anchor="check-02" data-step="2" id="en-check-02" type="checkbox"/><span class="step-number">02</span><h3>Open a new model</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>File → New → Model Wizard</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Open COMSOL Multiphysics 6.4. Choose Model Wizard on the New page. Save any existing work in its own file before switching models. Work inside a new <code>practice/</code> folder beside this guide; create that folder in the Save As dialog when prompted later.</p>
+<p class="guide-check"><strong>Check:</strong> The wizard displays <strong>Select Space Dimension</strong>.</p>
+</article><article class="guide-step" data-anchor="step-03" id="en-step-03"><div class="step-heading"><input aria-label="Mark Step 03 complete" data-anchor="check-03" data-step="3" id="en-check-03" type="checkbox"/><span class="step-number">03</span><h3>Select the space dimension</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Model Wizard → Select Space Dimension</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Select <strong>0D</strong>.</p>
+<p class="guide-check"><strong>Check:</strong> The wizard advances to Select Physics. The unknowns will be time-dependent scalars. Chamber and outlet radii are parameters in those equations; no geometric sphere or cylinder is needed for this model.</p>
+</article><article class="guide-step" data-anchor="step-04" id="en-step-04"><div class="step-heading"><input aria-label="Mark Step 04 complete" data-anchor="check-04" data-step="4" id="en-check-04" type="checkbox"/><span class="step-number">04</span><h3>Add the scalar equation interface</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Select Physics → Mathematics → ODE and DAE Interfaces → Global ODEs and DAEs</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Select Global ODEs and DAEs and click <strong>Add</strong>. If the list is long, search for that complete interface name. Keep one copy of this interface.</p>
+<p class="guide-check"><strong>Check:</strong> Added physics interfaces contains Global ODEs and DAEs. This interface supplies the Global Equations table used below.</p>
+<p class="guide-if-stuck"><strong>If stuck:</strong> Clear the search filter and confirm 0D was selected. The delivered native files record only the base COMSOL license; their gel law is entered as scalar expressions.</p>
+</article><article class="guide-step" data-anchor="step-05" id="en-step-05"><div class="step-heading"><input aria-label="Mark Step 05 complete" data-anchor="check-05" data-step="5" id="en-check-05" type="checkbox"/><span class="step-number">05</span><h3>Add the time study</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Model Wizard → Study → General Studies</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Choose <strong>Time Dependent</strong>, then click <strong>Done</strong>.</p>
+<p class="guide-check"><strong>Check:</strong> Model Builder contains a Component, Global ODEs and DAEs, and <code>Study 1 → Step 1: Time Dependent</code>.</p>
+</article><article class="guide-step" data-anchor="step-06" id="en-step-06"><div class="step-heading"><input aria-label="Mark Step 06 complete" data-anchor="check-06" data-step="6" id="en-check-06" type="checkbox"/><span class="step-number">06</span><h3>Set the component namespace</h3></div>
+<p class="guide-where"><strong>Where:</strong> Click <code>Component 1</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Set <strong>Name</strong> to <code>c</code> and <strong>Label</strong> to <code>c: Model A practice</code>. Keep the SI unit system. Name supplies the namespace used in expressions such as <code>c.U</code>; Label changes the visible caption.</p>
+<p class="guide-check"><strong>Check:</strong> The component's Name is <code>c</code>. A label containing the letter c does not by itself change the namespace.</p>
+<p class="guide-if-stuck"><strong>If stuck:</strong> If Name remains <code>comp1</code>, correct it now. All result and stop expressions below use the <code>c.</code> prefix. <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_modeling.19.007.html">Component Name documentation</a>.</p>
+</article><article class="guide-step" data-anchor="step-07" id="en-step-07"><div class="step-heading"><input aria-label="Mark Step 07 complete" data-anchor="check-07" data-step="7" id="en-check-07" type="checkbox"/><span class="step-number">07</span><h3>Save the first checkpoint</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>File → Save As</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Save as <code>practice/A_01_setup.mph</code>. Subsequently use Ctrl+S; save a new checkpoint at the milestones identified below.</p>
+<p class="guide-check"><strong>Check:</strong> The title bar shows your practice filename. The accepted native files in <code>models/</code> remain available for comparison.</p>
+</article><h2 class="guide-section" data-anchor="section-b" id="en-section-b">B — Enter every Model A input and expression</h2>
+<article class="guide-step" data-anchor="step-08" id="en-step-08"><div class="step-heading"><input aria-label="Mark Step 08 complete" data-anchor="check-08" data-step="8" id="en-check-08" type="checkbox"/><span class="step-number">08</span><h3>Enter all 32 parameters</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Global Definitions → Parameters 1</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Enter all rows below, or click <strong>Load from File</strong> under the table and choose <a href="resources/gui/A_parameters_import.txt">A_parameters_import.txt</a>. That import has two tab-separated columns and no header. Import it once into the parameter table. Its descriptions are supplied by the table below. If you type manually, use the exact case of each name and the square brackets around units.</p>
+<p class="guide-check"><strong>Check:</strong> There are 32 parameter names and no duplicate names. Dependencies can be temporarily unresolved while the table is incomplete; finish all rows before assessing the Value column. <code>p0</code> is absolute pressure and <code>E0</code> is an expression derived from it.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Expression — enter exactly</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tauLaser</code></td>
+<td><code>10[ns]</code></td>
+<td>One optical pulse, replaced by a post-activation initial state; pulse onset is not solved</td>
+</tr>
+<tr>
+<td><code>Rg0</code></td>
+<td><code>15[um]</code></td>
+<td>Post-activation source radius; not a liquid <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span>-droplet radius</td>
+</tr>
+<tr>
+<td><code>Rc0</code></td>
+<td><code>30[um]</code></td>
+<td>Initially stress-free spherical chamber radius</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td><code>5.0E-6[m]</code></td>
+<td>Radius of the pre-existing liquid outlet</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td><code>50[um]</code></td>
+<td>Effective liquid-column <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertance</span> length</td>
+</tr>
+<tr>
+<td><code>Lbudget</code></td>
+<td><code>(Vc0-Vg0)/A</code></td>
+<td>Connected chamber liquid inventory divided by outlet area; separate from <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertance</span> length</td>
+</tr>
+<tr>
+<td><code>rho</code></td>
+<td><code>1000[kg/m^3]</code></td>
+<td>Stipulated water-like carrier density</td>
+</tr>
+<tr>
+<td><code>rhoG</code></td>
+<td><code>1000[kg/m^3]</code></td>
+<td>Stipulated undrained gel density</td>
+</tr>
+<tr>
+<td><code>pInf</code></td>
+<td><code>100[kPa]</code></td>
+<td>Absolute ambient pressure</td>
+</tr>
+<tr>
+<td><code>kap</code></td>
+<td><code>1.4</code></td>
+<td>Adiabatic ideal-gas control exponent; not a validated <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span>-vapor <span class="keyword technical-term" data-term="equation-of-state" title="equation of state / 状态方程">EOS</span></td>
+</tr>
+<tr>
+<td><code>p0</code></td>
+<td><code>379631.6312499547[Pa]</code></td>
+<td>Post-activation absolute source pressure, set from <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">available work</span> by the builder</td>
+</tr>
+<tr>
+<td><code>sigma</code></td>
+<td><code>0.072[N/m]</code></td>
+<td>Stipulated water-like <span class="keyword technical-term" data-term="surface-tension" title="surface tension / 表面张力">surface tension</span></td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td><code>20000.0[Pa]</code></td>
+<td>Intact incompressible <span class="keyword technical-term" data-term="neo-hookean" title="neo-Hookean / 新胡克">neo-Hookean</span> shear modulus</td>
+</tr>
+<tr>
+<td><code>etaG</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td>Kelvin-Voigt effective network <span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscosity</span></td>
+</tr>
+<tr>
+<td><code>Kloss</code></td>
+<td><code>0.0</code></td>
+<td>Conditional outlet minor-loss coefficient, dimensionless</td>
+</tr>
+<tr>
+<td><code>Rloss</code></td>
+<td><code>0[Pa*s/m]</code></td>
+<td>Measured/fitted pressure-to-speed resistance; not an instantaneous Poiseuille approximation</td>
+</tr>
+<tr>
+<td><code>outletOpen</code></td>
+<td><code>1</code></td>
+<td>1 for a pre-existing open liquid channel; 0 for sealed control</td>
+</tr>
+<tr>
+<td><code>cL</code></td>
+<td><code>1500[m/s]</code></td>
+<td>Reference communication speed used only for a validity diagnostic</td>
+</tr>
+<tr>
+<td><code>Us</code></td>
+<td><code>10[m/s]</code></td>
+<td>Velocity scale for dimensionless state variables</td>
+</tr>
+<tr>
+<td><code>tau</code></td>
+<td><code>Rc0/Us</code></td>
+<td>Numerical nondimensionalization time scale</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td><code>pi*a^2</code></td>
+<td>Liquid-plug cross-section</td>
+</tr>
+<tr>
+<td><code>Vg0</code></td>
+<td><code>4*pi*Rg0^3/3</code></td>
+<td>Initial finite gas source volume</td>
+</tr>
+<tr>
+<td><code>Vc0</code></td>
+<td><code>4*pi*Rc0^3/3</code></td>
+<td>Initial chamber volume</td>
+</tr>
+<tr>
+<td><code>Veq</code></td>
+<td><code>Vg0*(p0/pInf)^(1/kap)</code></td>
+<td>Gas volume at ambient pressure</td>
+</tr>
+<tr>
+<td><code>E0</code></td>
+<td><code>p0*Vg0/(kap-1)*(1-(Vg0/Veq)^(kap-1))-pInf*(Veq-Vg0)</code></td>
+<td>Available reversible source work above ambient</td>
+</tr>
+<tr>
+<td><code>mJet</code></td>
+<td><code>rho*A*L</code></td>
+<td>Effective liquid-column <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertia</span> mass, not emitted mass</td>
+</tr>
+<tr>
+<td><code>Iscale</code></td>
+<td><code>mJet*Us</code></td>
+<td>Scaling <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span> for the emitted-impulse accumulator</td>
+</tr>
+<tr>
+<td><code>Uceiling</code></td>
+<td><code>sqrt(2*E0/mJet)</code></td>
+<td>Energy-only peak outlet-speed bound from column <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertia</span>; not an achieved velocity</td>
+</tr>
+<tr>
+<td><code>qCeiling</code></td>
+<td><code>E0/(A*L)</code></td>
+<td>Energy-only liquid dynamic-pressure upper bound</td>
+</tr>
+<tr>
+<td><code>pCap</code></td>
+<td><code>2*sigma/a</code></td>
+<td>Pinned hemispherical-meniscus resistance</td>
+</tr>
+<tr>
+<td><code>tObs</code></td>
+<td><code>1[us]</code></td>
+<td>Declared averaging interval for an impulse-only arrest-pressure bound</td>
+</tr>
+<tr>
+<td><code>AObs</code></td>
+<td><code>A</code></td>
+<td>Declared pressure observer area</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-09" id="en-step-09"><div class="step-heading"><input aria-label="Mark Step 09 complete" data-anchor="check-09" data-step="9" id="en-check-09" type="checkbox"/><span class="step-number">09</span><h3>Check the initialized energy and geometry</h3></div>
+<p class="guide-where"><strong>Where:</strong> Stay in <code>Parameters 1</code>, looking at the Value column.</p>
+<p class="guide-check-against"><strong>Check against:</strong></p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Expected value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial gas volume <code>Vg0</code></td>
+<td>1.413716694e-14 m³</td>
+</tr>
+<tr>
+<td>Initial chamber volume <code>Vc0</code></td>
+<td>1.130973355e-13 m³</td>
+</tr>
+<tr>
+<td>Outlet area <code>A</code></td>
+<td>7.853981634e-11 m²</td>
+</tr>
+<tr>
+<td>Finite budget <code>Lbudget</code></td>
+<td>1260.000000 µm</td>
+</tr>
+<tr>
+<td><span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">Inertance</span> length <code>L</code></td>
+<td>50 µm</td>
+</tr>
+<tr>
+<td>Meniscus pressure <code>pCap</code></td>
+<td>28.8 kPa</td>
+</tr>
+<tr>
+<td>Time scale <code>tau</code></td>
+<td>3 µs</td>
+</tr>
+<tr>
+<td>Initial absolute <code>p0</code></td>
+<td>379.631631 kPa</td>
+</tr>
+<tr>
+<td><span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">Available work</span> <code>E0</code></td>
+<td>2 nJ</td>
+</tr>
+<tr>
+<td>Column-speed bound <code>Uceiling</code></td>
+<td>31.915382 m/s</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-why"><strong>Why:</strong> <code>L</code> defines liquid <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertia</span>. <code>Lbudget</code> defines how much connected liquid can leave; these have different meanings. The 2 nJ value is mechanical availability after activation. It is not incident laser energy. <code>tauLaser=10[ns]</code> records the short-pulse assumption; it is not a time-dependent forcing function and changing it alone will not change this solution.</p>
+<p class="guide-if-stuck"><strong>If stuck:</strong> A negative <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">available work</span> or invalid equilibrium volume usually indicates a pressure/unit error. Use the supplied absolute <code>p0</code>; do not replace it with the 279.632 kPa gauge value.</p>
+</article><article class="guide-step" data-anchor="step-10" id="en-step-10"><div class="step-heading"><input aria-label="Mark Step 10 complete" data-anchor="check-10" data-step="10" id="en-check-10" type="checkbox"/><span class="step-number">10</span><h3>Create Variables and enter the source geometry</h3></div>
+<p class="guide-where"><strong>Where:</strong> Right-click <code>Component c → Definitions → Variables</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Set the Label to <code>Source, outlet and accounting</code>. Enter the first seven rows below. For the whole 33-row table, you may instead use <strong>Load from File</strong> and select <a href="resources/gui/A_variables_import.txt">A_variables_import.txt</a>; then inspect the three groups in Steps 10–12. Use local names inside this component table, without adding <code>c.</code> to the Name column.</p>
+<p class="guide-check"><strong>Check:</strong> The chamber radius is fixed through <code>R=Rc0</code>; wall speed is exactly <code>0[m/s]</code>. The gas volume includes discharged liquid volume. <code>qq</code> and <code>vv</code> will become defined when you add the equation rows in Step 14.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Expression — enter exactly</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x</code></td>
+<td><code>Lbudget*qq</code></td>
+<td><code>m</code></td>
+<td>Discharged liquid volume divided by outlet area, m</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td><code>Us*vv</code></td>
+<td><code>m/s</code></td>
+<td>Outward liquid-plug speed, m/s</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td><code>Rc0</code></td>
+<td><code>m</code></td>
+<td>Chamber wall radius, m</td>
+</tr>
+<tr>
+<td><code>Uw</code></td>
+<td><code>0[m/s]</code></td>
+<td><code>m/s</code></td>
+<td>Chamber wall expansion speed, m/s</td>
+</tr>
+<tr>
+<td><code>Vg</code></td>
+<td><code>Vg0+A*x+4*pi*(R^3-Rc0^3)/3</code></td>
+<td><code>m^3</code></td>
+<td>Finite gas volume including expelled liquid and chamber expansion</td>
+</tr>
+<tr>
+<td><code>Vdot</code></td>
+<td><code>A*U+4*pi*R^2*Uw</code></td>
+<td><code>m^3/s</code></td>
+<td>Total source volume rate</td>
+</tr>
+<tr>
+<td><code>pb</code></td>
+<td><code>p0*(Vg0/Vg)^kap</code></td>
+<td><code>Pa</code></td>
+<td>Uniform absolute pressure of finite ideal-gas control source</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-11" id="en-step-11"><div class="step-heading"><input aria-label="Mark Step 11 complete" data-anchor="check-11" data-step="11" id="en-check-11" type="checkbox"/><span class="step-number">11</span><h3>Enter the resistance and stored-energy expressions</h3></div>
+<p class="guide-where"><strong>Where:</strong> The same Variables node.</p>
+<p class="guide-do"><strong>Do:</strong> Add the following seven rows if you are entering manually. Model A sets the gel-related terms to dimensioned zero. The loss expression permits later sensitivity controls; the baseline loss inputs are zero.</p>
+<p class="guide-check"><strong>Check:</strong> The column energy <code>Kjet</code> uses effective column <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertia</span>. It is distinct from the emitted energy <code>Eout</code> entered next. Meniscus work is the work of the declared constant entry-pressure control; its evolving free surface is not solved.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Expression — enter exactly</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pEl</code></td>
+<td><code>0[Pa]</code></td>
+<td><code>Pa</code></td>
+<td>Elastic resistance pressure at spherical gel wall</td>
+</tr>
+<tr>
+<td><code>pRes</code></td>
+<td><code>0[Pa]</code></td>
+<td><code>Pa</code></td>
+<td>Elastic plus <span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscous</span> gel wall resistance</td>
+</tr>
+<tr>
+<td><code>Wgel</code></td>
+<td><code>0[J]</code></td>
+<td><code>J</code></td>
+<td>Recoverable elastic gel work</td>
+</tr>
+<tr>
+<td><code>Kgel</code></td>
+<td><code>0[J]</code></td>
+<td><code>J</code></td>
+<td>Spherical gel radial <span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">kinetic energy</span></td>
+</tr>
+<tr>
+<td><code>Kjet</code></td>
+<td><code>mJet*U^2/2</code></td>
+<td><code>J</code></td>
+<td>Stored <span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">kinetic energy</span> of effective liquid-column <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertia</span>; not emitted energy</td>
+</tr>
+<tr>
+<td><code>Esurf</code></td>
+<td><code>pCap*A*x</code></td>
+<td><code>J</code></td>
+<td>Reversible meniscus work during outward motion</td>
+</tr>
+<tr>
+<td><code>ploss</code></td>
+<td><code>Rloss*U+rho*Kloss*U*abs(U)/2</code></td>
+<td><code>Pa</code></td>
+<td>Declared dissipative port pressure drop</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-12" id="en-step-12"><div class="step-heading"><input aria-label="Mark Step 12 complete" data-anchor="check-12" data-step="12" id="en-check-12" type="checkbox"/><span class="step-number">12</span><h3>Enter acceleration, emitted output and checks</h3></div>
+<p class="guide-where"><strong>Where:</strong> The same Variables node.</p>
+<p class="guide-do"><strong>Do:</strong> Add the remaining 19 rows. Keep the outgoing kinetic-head term <code>-rho*U^2/2</code> in <code>acc</code>, and keep <code>Eout</code> in <code>energyResidual</code>. These terms account for energy that actually leaves the outlet. Removing them changes the model.</p>
+<p class="guide-check"><strong>Check:</strong> The completed node has 33 names. <code>Eout</code>, <code>Iout</code> and <code>Mout</code> mean actual emitted energy, <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">axial impulse</span> and liquid mass. <code>Ijet</code> means instantaneous effective column <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span>. The communication ratio is a validity diagnostic calculated from scalar rates.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Expression — enter exactly</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>acc</code></td>
+<td><code>outletOpen*(pb-pInf-pCap-ploss-rho*U^2/2)/(rho*L)</code></td>
+<td><code>m/s^2</code></td>
+<td>Outlet acceleration from unsteady Bernoulli with discharged kinetic head</td>
+</tr>
+<tr>
+<td><code>wallAcc</code></td>
+<td><code>0[m/s^2]</code></td>
+<td><code>m/s^2</code></td>
+<td>Spherical gel wall acceleration</td>
+</tr>
+<tr>
+<td><code>Pdis</code></td>
+<td><code>outletOpen*A*(Rloss*U^2+rho*Kloss*abs(U)^3/2)</code></td>
+<td><code>W</code></td>
+<td>Nonnegative irreversible port and gel loss power</td>
+</tr>
+<tr>
+<td><code>Edis</code></td>
+<td><code>E0*dd</code></td>
+<td><code>J</code></td>
+<td>Accumulated irreversible loss</td>
+</tr>
+<tr>
+<td><code>Eout</code></td>
+<td><code>E0*ee</code></td>
+<td><code>J</code></td>
+<td><span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">Kinetic energy</span> actually discharged at the outlet</td>
+</tr>
+<tr>
+<td><code>Iout</code></td>
+<td><code>Iscale*ii</code></td>
+<td><code>N*s</code></td>
+<td>Axial <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span> actually discharged at the outlet</td>
+</tr>
+<tr>
+<td><code>Mout</code></td>
+<td><code>rho*A*x</code></td>
+<td><code>kg</code></td>
+<td>Finite emitted liquid mass</td>
+</tr>
+<tr>
+<td><code>Pout</code></td>
+<td><code>outletOpen*rho*A*U^3/2</code></td>
+<td><code>W</code></td>
+<td>Discharged kinetic power on the outward branch</td>
+</tr>
+<tr>
+<td><code>energyResidual</code></td>
+<td><code>(pb*Vg/(kap-1)-p0*Vg0/(kap-1)+pInf*(Vg-Vg0)+Kjet+Kgel+Wgel+Esurf+Edis+Eout)/E0</code></td>
+<td><code>1</code></td>
+<td>Normalized energy residual including actual outflow</td>
+</tr>
+<tr>
+<td><code>Fconf</code></td>
+<td><code>pi*R^2*pEl</code></td>
+<td><code>N</code></td>
+<td>Axial resultant on one gel hemisphere, not a net force on the whole sphere</td>
+</tr>
+<tr>
+<td><code>qJet</code></td>
+<td><code>rho*U^2/2</code></td>
+<td><code>Pa</code></td>
+<td>Liquid-plug dynamic-pressure scale, not an impact pressure</td>
+</tr>
+<tr>
+<td><code>Ijet</code></td>
+<td><code>mJet*U</code></td>
+<td><code>N*s</code></td>
+<td>Effective column <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span>; actual discharged impulse is Iout</td>
+</tr>
+<tr>
+<td><code>Fflux</code></td>
+<td><code>rho*A*U^2</code></td>
+<td><code>N</code></td>
+<td><span class="keyword technical-term" data-term="momentum" title="momentum / 动量">Momentum</span>-flux scale, not a resolved unsteady target force</td>
+</tr>
+<tr>
+<td><code>pArrestBound</code></td>
+<td><code>Iout/(AObs*tObs)</code></td>
+<td><code>Pa</code></td>
+<td>Mean arrest-pressure upper bound from <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">emitted impulse</span> on the declared observer</td>
+</tr>
+<tr>
+<td><code>stroke</code></td>
+<td><code>x/Lbudget</code></td>
+<td><code>1</code></td>
+<td>Fraction of the finite discharge-volume budget</td>
+</tr>
+<tr>
+<td><code>stretch</code></td>
+<td><code>R/Rc0</code></td>
+<td><code>1</code></td>
+<td>Gel inner-wall circumferential stretch</td>
+</tr>
+<tr>
+<td><code>Mjet</code></td>
+<td><code>abs(U)/cL</code></td>
+<td><code>1</code></td>
+<td>Liquid-speed <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> diagnostic</td>
+</tr>
+<tr>
+<td><code>Mwall</code></td>
+<td><code>abs(Uw)/cL</code></td>
+<td><code>1</code></td>
+<td>Wall-speed <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> diagnostic</td>
+</tr>
+<tr>
+<td><code>communication</code></td>
+<td><code>L/cL*kap*abs(Vdot)/Vg</code></td>
+<td><code>1</code></td>
+<td>Pressure-change communication ratio; no propagation field is solved</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-13" id="en-step-13"><div class="step-heading"><input aria-label="Mark Step 13 complete" data-anchor="check-13" data-step="13" id="en-check-13" type="checkbox"/><span class="step-number">13</span><h3>Set the equation quantities</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Component c → Global ODEs and DAEs → Global Equations 1</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Keep the equation group name <code>ODE1</code>. Set <strong>Dependent variable quantity</strong> to <strong>Dimensionless (1)</strong> and <strong>Source term quantity</strong> to <strong>Dimensionless (1)</strong>. Delete the default placeholder equation row before entering your five rows.</p>
+<p class="guide-check"><strong>Check:</strong> Both quantities are dimensionless. The factor <code>tau</code> in each equation converts a rate into a dimensionless residual.</p>
+<p class="guide-state-meanings-before-the-equation-entries"><strong>State meanings before the equation entries:</strong> <code>qq=x/Lbudget</code>; <code>vv=U/Us</code>; <code>dd=Edis/E0</code>; <code>ee=Eout/E0</code>; <code>ii=Iout/Iscale</code>. These are the five solved scalars. The Variables node supplies algebraic expressions, not additional independent unknowns.</p>
+</article><article class="guide-step" data-anchor="step-14" id="en-step-14"><div class="step-heading"><input aria-label="Mark Step 14 complete" data-anchor="check-14" data-step="14" id="en-check-14" type="checkbox"/><span class="step-number">14</span><h3>Enter all five Global Equations rows</h3></div>
+<p class="guide-where"><strong>Where:</strong> The Global Equations table from Step 13.</p>
+<p class="guide-do"><strong>Do:</strong> Enter every row below, including both initial-value columns. The table's equation field <code>f(u,ut,utt,t)</code> is a residual that COMSOL sets to zero. For a long row, select it and edit its fields below the table. <a href="resources/gui/A_equations.tsv">A_equations.tsv</a> is a headed copy/paste reference; the parameter/variable Load from File buttons do not import it into this equation table.</p>
+<p class="guide-check"><strong>Check:</strong> The only names are <code>qq</code>, <code>vv</code>, <code>dd</code>, <code>ee</code>, <code>ii</code>. Their initial values are all zero. The row for <code>ii</code> integrates <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span> flux, rather than assigning <code>mJet*U</code> to <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">emitted impulse</span>.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>f(u,ut,utt,t) — enter exactly</th>
+<th>u_0</th>
+<th>ut_0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qq</code></td>
+<td><code>tau*(qqt-outletOpen*U/Lbudget)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>vv</code></td>
+<td><code>tau*(vvt-acc/Us)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td><code>tau*(ddt-Pdis/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ee</code></td>
+<td><code>tau*(eet-Pout/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ii</code></td>
+<td><code>tau*(iit-outletOpen*rho*A*U^2/Iscale)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-15" id="en-step-15"><div class="step-heading"><input aria-label="Mark Step 15 complete" data-anchor="check-15" data-step="15" id="en-check-15" type="checkbox"/><span class="step-number">15</span><h3>Check derivative spelling and initial conditions</h3></div>
+<p class="guide-where"><strong>Where:</strong> The five equation rows and the Variables node.</p>
+<p class="guide-do"><strong>Do:</strong> Inspect <code>qqt</code>, <code>vvt</code>, <code>ddt</code>, <code>eet</code>, <code>iit</code>. They are COMSOL's first-time-derivative names: <code>vvt</code> is the derivative of <code>vv</code>. Do not type <code>vv*t</code>, which is multiplication. Initial value <code>ut_0=0</code> is retained from the accepted setup; the first-order equations calculate the evolving derivatives.</p>
+<p class="guide-check"><strong>Check:</strong> Zero initial speed does not mean zero initial acceleration. With the baseline pressure, <code>acc</code> starts positive. The source, volume and output expressions should now resolve through the five declared states. <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html">Global Equations documentation</a>.</p>
+</article><article class="guide-step" data-anchor="step-16" id="en-step-16"><div class="step-heading"><input aria-label="Mark Step 16 complete" data-anchor="check-16" data-step="16" id="en-check-16" type="checkbox"/><span class="step-number">16</span><h3>Enter the output time list</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Study 1 → Step 1: Time Dependent</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Keep Time unit <strong>s</strong> and replace Output times with:</p>
+<button class="copy-block" type="button">Copy text</button><pre><code class="language-text">range(0,1[ns],100[us])
+</code></pre>
+<p class="guide-check"><strong>Check:</strong> The requested list begins at zero and ends at 100 µs, with 1 ns output spacing. The stop conditions will terminate the first episode earlier. This list is numerical sampling, not the 10 ns optical pulse.</p>
+</article><article class="guide-step" data-anchor="step-17" id="en-step-17"><div class="step-heading"><input aria-label="Mark Step 17 complete" data-anchor="check-17" data-step="17" id="en-check-17" type="checkbox"/><span class="step-number">17</span><h3>Reveal the time solver</h3></div>
+<p class="guide-where"><strong>Where:</strong> Right-click <code>Study 1 → Show Default Solver</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Expand <code>Solver Configurations → Solution 1</code> and click <strong>Time-Dependent Solver 1</strong>. If these nodes are already present, expand them directly. Keep the generated Dependent Variables node; it connects the <code>ODE1</code> equation group to the solver.</p>
+<p class="guide-check"><strong>Check:</strong> Time-Dependent Solver 1 is visible and selected in Settings. You have not added a second study or a second physics interface.</p>
+</article><article class="guide-step" data-anchor="step-18" id="en-step-18"><div class="step-heading"><input aria-label="Mark Step 18 complete" data-anchor="check-18" data-step="18" id="en-check-18" type="checkbox"/><span class="step-number">18</span><h3>Match the accepted solver settings</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Solution 1 → Time-Dependent Solver 1</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Use the following General, Absolute Tolerance and Time Stepping settings. If General inherits from the study, choose <strong>User defined</strong> in <strong>Defined by study step</strong>. The solver's time list must match Step 16.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Section / field</th>
+<th>Set to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General → Defined by study step</td>
+<td>User defined</td>
+</tr>
+<tr>
+<td>General → Output times</td>
+<td><code>range(0,1[ns],100[us])</code></td>
+</tr>
+<tr>
+<td>General → Relative tolerance</td>
+<td><code>1e-9</code></td>
+</tr>
+<tr>
+<td>Absolute Tolerance → Global method</td>
+<td>Scaled</td>
+</tr>
+<tr>
+<td>Absolute Tolerance → Tolerance method</td>
+<td>Factor</td>
+</tr>
+<tr>
+<td>Absolute Tolerance → Tolerance factor</td>
+<td><code>0.1</code></td>
+</tr>
+<tr>
+<td>Absolute Tolerance → variable Method</td>
+<td>Use global</td>
+</tr>
+<tr>
+<td>Time Stepping → Solver type</td>
+<td>Implicit</td>
+</tr>
+<tr>
+<td>Time Stepping → Method</td>
+<td>BDF</td>
+</tr>
+<tr>
+<td>Time Stepping → Steps taken by solver</td>
+<td>Strict</td>
+</tr>
+<tr>
+<td>Time Stepping → Algebraic Variable Settings → Consistent initialization</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> BDF, Strict, <code>1e-9</code> and initialization Off are visible. Keep automatically selected initial steps, BDF orders and variable scaling. These are first-order ODEs; turning initialization Off preserves the prescribed zero velocities. Strict stepping reaches the listed times and can take extra internal steps when needed. <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html">Time solver documentation</a>.</p>
+</article><article class="guide-step" data-anchor="step-19" id="en-step-19"><div class="step-heading"><input aria-label="Mark Step 19 complete" data-anchor="check-19" data-step="19" id="en-check-19" type="checkbox"/><span class="step-number">19</span><h3>Add all four stopping rules</h3></div>
+<p class="guide-where"><strong>Where:</strong> Right-click <code>Time-Dependent Solver 1 → Stop Condition</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Add the four rows below. In <strong>every row</strong>, set <strong>Stop if</strong> to <strong>Negative (&lt;0)</strong> and select <strong>Active</strong>. Under Output at Stop, keep <strong>Add solution = No</strong>, matching the accepted files. Add warning can remain enabled.</p>
+<p class="guide-check"><strong>Check:</strong> Four active rows are present. Component expressions have the <code>c.</code> prefix because this solver node is outside the component namespace.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Stop expression</th>
+<th>Stop if</th>
+<th>Active</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if(outletOpen&gt;0.5,c.U,c.Uw)</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>First outward ejection ends, or first sealed wall turning point</td>
+</tr>
+<tr>
+<td><code>Lbudget-c.x</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>Connected chamber liquid inventory exhausted</td>
+</tr>
+<tr>
+<td><code>1.2-c.stretch</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>Declared 20% wall-stretch screen (not measured fracture)</td>
+</tr>
+<tr>
+<td><code>0.1-max(c.Mjet,c.Mwall)</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>Declared <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> 0.1 screen</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-why"><strong>Why:</strong> The first row stops after the first outward speed returns through zero. In a sealed case it instead checks wall speed. The other rows enforce liquid inventory, a declared stretch screen and a <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> screen. The initial zero speed is not negative, so the baseline can start. The communication screen is checked after solving in Step 28; it is not an online stop row. <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html">Stop Condition documentation</a>.</p>
+</article><article class="guide-step" data-anchor="step-20" id="en-step-20"><div class="step-heading"><input aria-label="Mark Step 20 complete" data-anchor="check-20" data-step="20" id="en-check-20" type="checkbox"/><span class="step-number">20</span><h3>Make the before-solve check</h3></div>
+<p class="guide-where"><strong>Where:</strong> Parameters, Variables, Global Equations, Time-Dependent study and its solver.</p>
+<p class="guide-check-each-item"><strong>Check each item:</strong> 32 parameters; 33 variables; 5 equation rows; both equation quantities Dimensionless; all initial states zero; study and solver both use the 1 ns list; BDF Strict; consistent initialization Off; four active Negative stop rules. Initial Values of Variables Solved For must come from the physics initial values, not a previous nonzero solution.</p>
+<p class="guide-do"><strong>Do:</strong> Save a checkpoint <code>practice/A_02_ready_to_solve.mph</code>. If an unknown-variable message names <code>comp1</code> or <code>c</code>, correct the namespace; if it names <code>qq</code> or <code>vv</code>, inspect the equation Name column.</p>
+</article><article class="guide-step" data-anchor="step-21" id="en-step-21"><div class="step-heading"><input aria-label="Mark Step 21 complete" data-anchor="check-21" data-step="21" id="en-check-21" type="checkbox"/><span class="step-number">21</span><h3>Compute the first ejection</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Study 1</code> toolbar, or right-click <code>Study 1 → Compute</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Click Compute. Watch Progress and Log. Let the solve finish before opening a result table. A warning stating that a stop condition was fulfilled is expected when its description matches one of the declared rules.</p>
+<p class="guide-check"><strong>Check:</strong> The stored episode ends around <strong>33.885 µs</strong>, before the requested 100 µs. The baseline emits outward, reaches a speed maximum and returns toward zero. Read the first causal error if a solve fails; do not continue to plot an old solution.</p>
+</article><h2 class="guide-section" data-anchor="section-c" id="en-section-c">C — Plot, evaluate and answer Model A's question</h2>
+<article class="guide-step" data-anchor="step-22" id="en-step-22"><div class="step-heading"><input aria-label="Mark Step 22 complete" data-anchor="check-22" data-step="22" id="en-check-22" type="checkbox"/><span class="step-number">22</span><h3>Plot outlet velocity</h3></div>
+<p class="guide-where"><strong>Where:</strong> Right-click <code>Results → 1D Plot Group</code>; right-click the new group → <strong>Global</strong>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Label the group <code>A outlet speed</code>. Choose the dataset for Study 1 / Solution 1. In Global's y-Axis Data table enter <code>c.U</code>, Unit <code>m/s</code>, Description <code>Outward outlet speed</code>. In x-Axis Data use <strong>Time</strong> as the axis source; select <code>us</code> as the time unit if available. Otherwise keep seconds and read the axis accordingly. Click <strong>Plot</strong>.</p>
+<p class="guide-check"><strong>Check:</strong> Speed begins at zero, peaks near <strong>15.3761 m/s</strong>, then decays toward zero. Do not use Surface or Volume plots for these scalar data.</p>
+</article><article class="guide-step" data-anchor="step-23" id="en-step-23"><div class="step-heading"><input aria-label="Mark Step 23 complete" data-anchor="check-23" data-step="23" id="en-check-23" type="checkbox"/><span class="step-number">23</span><h3>Plot the distinct pressure outputs</h3></div>
+<p class="guide-where"><strong>Where:</strong> Add another <code>1D Plot Group → Global</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Label it <code>A pressure definitions</code>. Use the same dataset and time axis; enter:</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.pb-pInf</code></td>
+<td><code>kPa</code></td>
+<td>Chamber source overpressure</td>
+</tr>
+<tr>
+<td><code>c.qJet</code></td>
+<td><code>kPa</code></td>
+<td>Outlet dynamic-pressure scale</td>
+</tr>
+<tr>
+<td><code>pInf</code></td>
+<td><code>kPa</code></td>
+<td>Ambient absolute pressure reference</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> Initial source overpressure is about <strong>279.632 kPa</strong>; maximum outlet dynamic pressure is about <strong>118.212 kPa</strong>. Absolute chamber pressure would be <code>c.pb</code>, including ambient. Dynamic pressure is an outlet kinetic-energy scale and does not calculate a target impact peak.</p>
+</article><article class="guide-step" data-anchor="step-24" id="en-step-24"><div class="step-heading"><input aria-label="Mark Step 24 complete" data-anchor="check-24" data-step="24" id="en-check-24" type="checkbox"/><span class="step-number">24</span><h3>Plot <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">energy accounting</span></h3></div>
+<p class="guide-where"><strong>Where:</strong> Add another <code>1D Plot Group → Global</code>, label <code>A energy accounting</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Plot the following dimensionless quantities against time, with Unit <code>1</code>:</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.Kjet/E0</code></td>
+<td>Energy stored in effective liquid-column motion</td>
+</tr>
+<tr>
+<td><code>c.Eout/E0</code></td>
+<td>Energy actually emitted in liquid discharge</td>
+</tr>
+<tr>
+<td><code>c.Esurf/E0</code></td>
+<td>Work of the constant meniscus-load control</td>
+</tr>
+<tr>
+<td><code>c.Edis/E0</code></td>
+<td>Accumulated irreversible loss</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td>Normalized first-law residual</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> <code>Eout</code> increases over the outward episode, while stored column energy rises and falls. Near the end, low <code>Kjet</code> can coexist with substantial emitted energy. The residual stays near zero. Remaining source availability explains energy not yet allocated to these four destinations.</p>
+</article><article class="guide-step" data-anchor="step-25" id="en-step-25"><div class="step-heading"><input aria-label="Mark Step 25 complete" data-anchor="check-25" data-step="25" id="en-check-25" type="checkbox"/><span class="step-number">25</span><h3>Create the complete history table</h3></div>
+<p class="guide-where"><strong>Where:</strong> Right-click <code>Results → Derived Values → Global Evaluation</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Label the node <code>A complete first-ejection history</code>. Select the Study 1 solution dataset and <strong>Time selection = All</strong>. Leave <strong>Data Series Operation → Transformation = None</strong>. Enter the complete expression table below and click <strong>Evaluate</strong>. <a href="resources/gui/global_evaluation.tsv">global_evaluation.tsv</a> is a headed copy/paste reference.</p>
+<p class="guide-check"><strong>Check:</strong> You obtain multiple time rows covering the solved episode, rather than one maximum or an assumed 100 µs endpoint. The emitted-output columns are included separately from stored column energy/<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span>.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>t</code></td>
+<td><code>s</code></td>
+<td>Time after initialization</td>
+</tr>
+<tr>
+<td><code>c.x</code></td>
+<td><code>m</code></td>
+<td>Discharged volume / outlet area</td>
+</tr>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>Outward <span class="keyword technical-term" data-term="jet-speed" title="jet speed / 射流速度">outlet speed</span></td>
+</tr>
+<tr>
+<td><code>c.R</code></td>
+<td><code>m</code></td>
+<td>Chamber wall radius</td>
+</tr>
+<tr>
+<td><code>c.Uw</code></td>
+<td><code>m/s</code></td>
+<td>Wall expansion speed</td>
+</tr>
+<tr>
+<td><code>c.Vg</code></td>
+<td><code>m^3</code></td>
+<td>Gas source volume</td>
+</tr>
+<tr>
+<td><code>c.pb-pInf</code></td>
+<td><code>Pa</code></td>
+<td>Source gauge pressure</td>
+</tr>
+<tr>
+<td><code>c.pEl</code></td>
+<td><code>Pa</code></td>
+<td>Elastic gel pressure</td>
+</tr>
+<tr>
+<td><code>c.pRes</code></td>
+<td><code>Pa</code></td>
+<td>Elastic plus <span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscous</span> gel resistance</td>
+</tr>
+<tr>
+<td><code>c.Fconf</code></td>
+<td><code>N</code></td>
+<td>Elastic hemisphere force</td>
+</tr>
+<tr>
+<td><code>c.qJet</code></td>
+<td><code>Pa</code></td>
+<td>Outlet dynamic-pressure scale</td>
+</tr>
+<tr>
+<td><code>c.Ijet</code></td>
+<td><code>N*s</code></td>
+<td>Effective column <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span></td>
+</tr>
+<tr>
+<td><code>c.Fflux</code></td>
+<td><code>N</code></td>
+<td><span class="keyword technical-term" data-term="momentum" title="momentum / 动量">Momentum</span>-flux scale</td>
+</tr>
+<tr>
+<td><code>c.Kjet</code></td>
+<td><code>J</code></td>
+<td>Stored column <span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">kinetic energy</span></td>
+</tr>
+<tr>
+<td><code>c.Kgel</code></td>
+<td><code>J</code></td>
+<td>Gel radial <span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">kinetic energy</span></td>
+</tr>
+<tr>
+<td><code>c.Wgel</code></td>
+<td><code>J</code></td>
+<td>Gel elastic work</td>
+</tr>
+<tr>
+<td><code>c.Esurf</code></td>
+<td><code>J</code></td>
+<td>Constant meniscus-load work</td>
+</tr>
+<tr>
+<td><code>c.Edis</code></td>
+<td><code>J</code></td>
+<td>Irreversible loss</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td><code>1</code></td>
+<td>Normalized energy residual</td>
+</tr>
+<tr>
+<td><code>c.stroke</code></td>
+<td><code>1</code></td>
+<td>Liquid budget fraction</td>
+</tr>
+<tr>
+<td><code>c.stretch</code></td>
+<td><code>1</code></td>
+<td>Inner wall stretch</td>
+</tr>
+<tr>
+<td><code>c.Mjet</code></td>
+<td><code>1</code></td>
+<td>Liquid <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> diagnostic</td>
+</tr>
+<tr>
+<td><code>c.Mwall</code></td>
+<td><code>1</code></td>
+<td>Wall <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> diagnostic</td>
+</tr>
+<tr>
+<td><code>c.communication</code></td>
+<td><code>1</code></td>
+<td>Pressure communication screen</td>
+</tr>
+<tr>
+<td><code>c.acc</code></td>
+<td><code>m/s^2</code></td>
+<td>Outlet acceleration</td>
+</tr>
+<tr>
+<td><code>c.wallAcc</code></td>
+<td><code>m/s^2</code></td>
+<td>Wall acceleration</td>
+</tr>
+<tr>
+<td><code>c.pArrestBound</code></td>
+<td><code>Pa</code></td>
+<td>Declared mean arrest-pressure bound</td>
+</tr>
+<tr>
+<td><code>c.Eout</code></td>
+<td><code>J</code></td>
+<td>Actually emitted <span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">kinetic energy</span></td>
+</tr>
+<tr>
+<td><code>c.Iout</code></td>
+<td><code>N*s</code></td>
+<td>Actually emitted <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">axial impulse</span></td>
+</tr>
+<tr>
+<td><code>c.Mout</code></td>
+<td><code>kg</code></td>
+<td>Actually emitted liquid mass</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-26" id="en-step-26"><div class="step-heading"><input aria-label="Mark Step 26 complete" data-anchor="check-26" data-step="26" id="en-check-26" type="checkbox"/><span class="step-number">26</span><h3>Evaluate temporal maxima correctly</h3></div>
+<p class="guide-where"><strong>Where:</strong> Add a separate <code>Derived Values → Global Evaluation</code> node.</p>
+<p class="guide-enter"><strong>Enter:</strong> Label it <code>A temporal maxima</code>. Dataset = Study 1 solution; Time selection = All; <strong>Data Series Operation → Transformation = Maximum</strong>. Enter the expressions below and Evaluate. If Data Series Operation is collapsed, expand it.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression</th>
+<th>Unit</th>
+<th>Baseline target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>about 15.37608</td>
+</tr>
+<tr>
+<td><code>c.pb-pInf</code></td>
+<td><code>kPa</code></td>
+<td>about 279.63163</td>
+</tr>
+<tr>
+<td><code>c.qJet</code></td>
+<td><code>kPa</code></td>
+<td>about 118.2119</td>
+</tr>
+<tr>
+<td><code>abs(c.energyResidual)</code></td>
+<td><code>1</code></td>
+<td>below <code>1e-6</code></td>
+</tr>
+<tr>
+<td><code>c.communication</code></td>
+<td><code>1</code></td>
+<td>below <code>0.1</code></td>
+</tr>
+<tr>
+<td><code>c.stroke</code></td>
+<td><code>1</code></td>
+<td>at most <code>1</code>, up to numerical tolerance</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> These are maxima over time for each listed scalar, not spatial maxima. The time of maximum source pressure need not equal the time of maximum speed.</p>
+</article><article class="guide-step" data-anchor="step-27" id="en-step-27"><div class="step-heading"><input aria-label="Mark Step 27 complete" data-anchor="check-27" data-step="27" id="en-check-27" type="checkbox"/><span class="step-number">27</span><h3>Evaluate the actual endpoint outputs</h3></div>
+<p class="guide-where"><strong>Where:</strong> Add another <code>Global Evaluation</code>, label <code>A endpoint output</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Dataset = Study 1 solution; <strong>Time selection = Last</strong>; <strong>Transformation = None</strong>. Enter <code>t</code>, <code>c.Eout</code>, <code>c.Iout</code>, <code>c.Mout</code>, <code>c.x</code>, <code>c.U</code>, and <code>c.energyResidual</code>, using the units in the table below.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression</th>
+<th>Unit</th>
+<th>Accepted last stored value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>t</code></td>
+<td><code>us</code></td>
+<td>33.8850</td>
+</tr>
+<tr>
+<td><code>c.Eout</code></td>
+<td><code>nJ</code></td>
+<td>1.391345448</td>
+</tr>
+<tr>
+<td><code>c.Iout</code></td>
+<td><code>N*s</code></td>
+<td>2.270809686e-10</td>
+</tr>
+<tr>
+<td><code>c.Mout</code></td>
+<td><code>ng</code></td>
+<td>20.9678882</td>
+</tr>
+<tr>
+<td><code>c.x</code></td>
+<td><code>um</code></td>
+<td>266.9714446</td>
+</tr>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>0.0001702102</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td><code>1</code></td>
+<td>-1.0350e-10</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> Last means the last stored time in this stopped solution, about 33.885 µs. It does not mean the nominal 100 µs final time. Stop Condition checks discrete solver steps; the exact zero-crossing time differs slightly from the final stored row. Use this same endpoint convention for emitted-output comparisons.</p>
+</article><article class="guide-step" data-anchor="step-28" id="en-step-28"><div class="step-heading"><input aria-label="Mark Step 28 complete" data-anchor="check-28" data-step="28" id="en-check-28" type="checkbox"/><span class="step-number">28</span><h3>Accept and save the baseline</h3></div>
+<p class="guide-where"><strong>Where:</strong> The plots, maxima and endpoint tables you just created.</p>
+<p class="guide-do"><strong>Do:</strong> Check zero initial liquid/wall velocities, positive gas volume/absolute pressure, outward speed throughout the reported episode, normalized residual below <code>1e-6</code>, communication below <code>0.1</code>, both <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> diagnostics below <code>0.1</code>, and stroke no greater than the finite liquid budget. Inspect the stop description. Then save <code>practice/A_baseline_my_rebuild.mph</code>.</p>
+<p class="guide-check"><strong>Check:</strong> The baseline peak agrees with 15.37608 m/s and endpoint emitted energy with about 1.391345 nJ. These check implementation of the stated controls. They do not calibrate the <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span> <span class="keyword technical-term" data-term="equation-of-state" title="equation of state / 状态方程">EOS</span> or laser conversion.</p>
+</article><article class="guide-step" data-anchor="step-29" id="en-step-29"><div class="step-heading"><input aria-label="Mark Step 29 complete" data-anchor="check-29" data-step="29" id="en-check-29" type="checkbox"/><span class="step-number">29</span><h3>Select source work through absolute pressure</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Global Definitions → Parameters 1</code>.</p>
+<p class="guide-do"><strong>Do:</strong> For the sampled source-work levels, use the absolute pressures below. They were obtained by inverting the finite adiabatic available-work relation at the same <code>Rg0</code>, <code>kap</code> and <code>pInf</code>. Edit <code>p0</code>; leave the <code>E0</code> expression in place. Keep all other inputs fixed for the source-work comparison.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th><span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">Available work</span></th>
+<th>Absolute p0 — enter exactly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5 nJ</td>
+<td><code>220113.1907789512[Pa]</code></td>
+</tr>
+<tr>
+<td>2 nJ</td>
+<td><code>379631.6312499268[Pa]</code></td>
+</tr>
+<tr>
+<td>5 nJ</td>
+<td><code>612212.3087264621[Pa]</code></td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> The Value column for <code>E0</code> evaluates to the intended <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">available work</span>. If you change source radius, ambient pressure or exponent, recalculate this map using Step 2 of <a href="MODEL_SPEC.md">MODEL_SPEC.md</a> or <code>source_pressure</code> in <a href="scripts/reference.py">reference.py</a>. This particular three-pressure table then no longer applies.</p>
+</article><article class="guide-step" data-anchor="step-30" id="en-step-30"><div class="step-heading"><input aria-label="Mark Step 30 complete" data-anchor="check-30" data-step="30" id="en-check-30" type="checkbox"/><span class="step-number">30</span><h3>Reproduce the nine-case conditional envelope</h3></div>
+<p class="guide-where"><strong>Where:</strong> Parameters, Study 1 Compute, and <code>A temporal maxima</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Perform each row of the following trial table: set <code>p0</code> and <code>a</code>; commit both cells; verify <code>E0</code>; recompute Study 1 from its initial values; Evaluate the maxima and endpoint nodes on the newly computed dataset; record peak speed, both defined pressures, emitted energy/impulse, and the validity diagnostics. Save each trial under its own practice filename if you want to preserve that solution. Repeat this entire sequence for every row.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Case</th>
+<th>E0 (nJ)</th>
+<th>p0</th>
+<th>a</th>
+<th>Expected peak U (m/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A_E0.5nJ_a3um</td>
+<td>0.5</td>
+<td><code>220113.1907789512[Pa]</code></td>
+<td><code>3[um]</code></td>
+<td>8.560117</td>
+</tr>
+<tr>
+<td>A_E0.5nJ_a5um</td>
+<td>0.5</td>
+<td><code>220113.1907789512[Pa]</code></td>
+<td><code>5[um]</code></td>
+<td>8.068346</td>
+</tr>
+<tr>
+<td>A_E0.5nJ_a10um</td>
+<td>0.5</td>
+<td><code>220113.1907789512[Pa]</code></td>
+<td><code>10[um]</code></td>
+<td>5.860144</td>
+</tr>
+<tr>
+<td>A_E2nJ_a3um</td>
+<td>2</td>
+<td><code>379631.6312499268[Pa]</code></td>
+<td><code>3[um]</code></td>
+<td>17.286430</td>
+</tr>
+<tr>
+<td>A_E2nJ_a5um</td>
+<td>2</td>
+<td><code>379631.6312499268[Pa]</code></td>
+<td><code>5[um]</code></td>
+<td>15.376078</td>
+</tr>
+<tr>
+<td>A_E2nJ_a10um</td>
+<td>2</td>
+<td><code>379631.6312499268[Pa]</code></td>
+<td><code>10[um]</code></td>
+<td>11.237538</td>
+</tr>
+<tr>
+<td>A_E5nJ_a3um</td>
+<td>5</td>
+<td><code>612212.3087264621[Pa]</code></td>
+<td><code>3[um]</code></td>
+<td>25.279819</td>
+</tr>
+<tr>
+<td>A_E5nJ_a5um</td>
+<td>5</td>
+<td><code>612212.3087264621[Pa]</code></td>
+<td><code>5[um]</code></td>
+<td>22.350558</td>
+</tr>
+<tr>
+<td>A_E5nJ_a10um</td>
+<td>5</td>
+<td><code>612212.3087264621[Pa]</code></td>
+<td><code>10[um]</code></td>
+<td>16.601975</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> The largest sampled speed is about <strong>25.27982 m/s</strong> at 5 nJ and a 3 µm outlet. Its source overpressure is about 512.212 kPa and dynamic-pressure scale about 319.535 kPa. The maximum is conditional on the declared family; raising <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">available work</span> or changing architecture changes the family.</p>
+</article><article class="guide-step" data-anchor="step-31" id="en-step-31"><div class="step-heading"><input aria-label="Mark Step 31 complete" data-anchor="check-31" data-step="31" id="en-check-31" type="checkbox"/><span class="step-number">31</span><h3>Interpret the pressure and speed limits</h3></div>
+<p class="guide-where"><strong>Where:</strong> Parameter values <code>Uceiling</code>, <code>qCeiling</code>, and the nine-case results.</p>
+<p class="guide-do"><strong>Do:</strong> Compare solved maximum speed with <code>Uceiling</code>, and solved dynamic pressure with <code>qCeiling</code>, case by case. These bounds allocate all <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">available work</span> to column motion and are consequently larger than the achieved peaks. Use the included <a href="assets/conditional_velocity_envelope.png">conditional envelope figure</a> for the accepted comparison.</p>
+<p class="guide-check"><strong>Check:</strong> At the baseline the energy-only speed bound is about <strong>31.9154 m/s</strong>, while solved speed is 15.3761 m/s. Record chamber pressure, outlet dynamic pressure and the energy-only bound in separate columns. The excluded activation transient and target impact have no pressure prediction in these models.</p>
+</article><h2 class="guide-section" data-anchor="section-d" id="en-section-d">D — Add <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">hydrogel</span> <span class="keyword technical-term" data-term="confinement" title="confinement / 约束">confinement</span> to obtain Model B</h2>
+<article class="guide-step" data-anchor="step-32" id="en-step-32"><div class="step-heading"><input aria-label="Mark Step 32 complete" data-anchor="check-32" data-step="32" id="en-check-32" type="checkbox"/><span class="step-number">32</span><h3>Return to the baseline and save a Model B copy</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>File → Open</code>, then <code>File → Save As</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Open your saved <code>A_baseline_my_rebuild.mph</code> from Step 28. Save a separate copy as <code>practice/B_01_from_A.mph</code>. Change the component Label to <code>c: Model B practice</code>; keep its Name <code>c</code>.</p>
+<p class="guide-check"><strong>Check:</strong> You are editing the Model B practice copy. <code>p0=379631.6312499547[Pa]</code>, <code>a=5[um]</code> or its equivalent in metres, <code>G=20[kPa]</code>, <code>etaG=0.010[Pa*s]</code>, <code>rhoG=1000[kg/m^3]</code>, <code>Kloss=0</code>, <code>Rloss=0[Pa*s/m]</code>, <code>outletOpen=1</code>. These are the matched baseline inputs. <a href="resources/gui/B_parameters_import.txt">B_parameters_import.txt</a> contains the full baseline table if you are building B in a separate blank model.</p>
+</article><article class="guide-step" data-anchor="step-33" id="en-step-33"><div class="step-heading"><input aria-label="Mark Step 33 complete" data-anchor="check-33" data-step="33" id="en-check-33" type="checkbox"/><span class="step-number">33</span><h3>Replace the nine gel-dependent expressions</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Component c → Definitions → Source, outlet and accounting</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Replace the nine existing rows below. Keep the other 24 expressions from Model A. You may use <a href="resources/gui/B_variables_patch_import.txt">B_variables_patch_import.txt</a> to update these names, or edit their Expression cells manually. <a href="resources/gui/B_variables_import.txt">B_variables_import.txt</a> contains all 33 B rows for a fresh Variables table.</p>
+<p class="guide-check"><strong>Check:</strong> Gas volume now depends on both expelled liquid and expanding wall radius. <code>pEl</code>, <code>Wgel</code>, <code>Kgel</code> and gel loss are active. <code>rr</code> and <code>ww</code> become defined in the next card.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Expression — enter exactly</th>
+<th>Unit</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R</code></td>
+<td><code>Rc0*rr</code></td>
+<td><code>m</code></td>
+<td>Chamber wall radius, m</td>
+</tr>
+<tr>
+<td><code>Uw</code></td>
+<td><code>Us*ww</code></td>
+<td><code>m/s</code></td>
+<td>Chamber wall expansion speed, m/s</td>
+</tr>
+<tr>
+<td><code>pEl</code></td>
+<td><code>G/2*(5-4*Rc0/R-(Rc0/R)^4)</code></td>
+<td><code>Pa</code></td>
+<td>Elastic resistance pressure at spherical gel wall</td>
+</tr>
+<tr>
+<td><code>pRes</code></td>
+<td><code>pEl+4*etaG*Uw/R</code></td>
+<td><code>Pa</code></td>
+<td>Elastic plus <span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscous</span> gel wall resistance</td>
+</tr>
+<tr>
+<td><code>Wgel</code></td>
+<td><code>2*pi*G*(5*R^3/3-2*Rc0*R^2+Rc0^4/R-2*Rc0^3/3)</code></td>
+<td><code>J</code></td>
+<td>Recoverable elastic gel work</td>
+</tr>
+<tr>
+<td><code>Kgel</code></td>
+<td><code>2*pi*rhoG*R^3*Uw^2</code></td>
+<td><code>J</code></td>
+<td>Spherical gel radial <span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">kinetic energy</span></td>
+</tr>
+<tr>
+<td><code>wallAcc</code></td>
+<td><code>((pb-pInf-pRes)/rhoG-1.5*Uw^2)/R</code></td>
+<td><code>m/s^2</code></td>
+<td>Spherical gel wall acceleration</td>
+</tr>
+<tr>
+<td><code>Pdis</code></td>
+<td><code>outletOpen*A*(Rloss*U^2+rho*Kloss*abs(U)^3/2)+16*pi*etaG*R*Uw^2</code></td>
+<td><code>W</code></td>
+<td>Nonnegative irreversible port and gel loss power</td>
+</tr>
+<tr>
+<td><code>communication</code></td>
+<td><code>max(L,2*Rc0)/cL*kap*abs(Vdot)/Vg</code></td>
+<td><code>1</code></td>
+<td>Pressure-change communication ratio; no propagation field is solved</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-34" id="en-step-34"><div class="step-heading"><input aria-label="Mark Step 34 complete" data-anchor="check-34" data-step="34" id="en-check-34" type="checkbox"/><span class="step-number">34</span><h3>Enter the seven Model B equation rows</h3></div>
+<p class="guide-where"><strong>Where:</strong> The existing <code>Global Equations 1</code> table.</p>
+<p class="guide-do"><strong>Do:</strong> Replace the five-row table with the complete seven-row table below; retain Dimensionless for both quantities. <code>rr=R/Rc0</code> is wall-radius ratio and <code>ww=Uw/Us</code> is normalized wall speed. All other state meanings remain those in Step 13. Set <code>rr</code>'s initial value to <strong>1</strong>. Initial values of the other six states, and every <code>ut_0</code> entry, are zero. <a href="resources/gui/B_equations.tsv">B_equations.tsv</a> is the headed copy/paste reference.</p>
+<p class="guide-check"><strong>Check:</strong> Names are <code>qq</code>, <code>vv</code>, <code>rr</code>, <code>ww</code>, <code>dd</code>, <code>ee</code>, <code>ii</code>. There are seven rows. A zero initial <code>rr</code> would give a zero-radius singularity and is incorrect.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>f(u,ut,utt,t) — enter exactly</th>
+<th>u_0</th>
+<th>ut_0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qq</code></td>
+<td><code>tau*(qqt-outletOpen*U/Lbudget)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>vv</code></td>
+<td><code>tau*(vvt-acc/Us)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>rr</code></td>
+<td><code>tau*(rrt-Uw/Rc0)</code></td>
+<td><code>1</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ww</code></td>
+<td><code>tau*(wwt-wallAcc/Us)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td><code>tau*(ddt-Pdis/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ee</code></td>
+<td><code>tau*(eet-Pout/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ii</code></td>
+<td><code>tau*(iit-outletOpen*rho*A*U^2/Iscale)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-35" id="en-step-35"><div class="step-heading"><input aria-label="Mark Step 35 complete" data-anchor="check-35" data-step="35" id="en-check-35" type="checkbox"/><span class="step-number">35</span><h3>Recheck the inherited study and solver</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Study 1 → Time Dependent</code>, then <code>Solution 1 → Time-Dependent Solver 1</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Keep the 1 ns output list in both nodes; match all fields from Step 18. Initial states must come from the updated physics table. The existing <code>ODE1</code> equation group now contains seven states; do not manually select the old final A solution as the new initial state.</p>
+<p class="guide-check"><strong>Check:</strong> The solver has one active Global ODEs and DAEs interface. Consistent initialization remains Off. If you regenerate the default solver after editing the physics, re-enter Step 18 and recreate Step 19's four stopping rules before computing.</p>
+</article><article class="guide-step" data-anchor="step-36" id="en-step-36"><div class="step-heading"><input aria-label="Mark Step 36 complete" data-anchor="check-36" data-step="36" id="en-check-36" type="checkbox"/><span class="step-number">36</span><h3>Check the Model B stopping logic</h3></div>
+<p class="guide-where"><strong>Where:</strong> The inherited <code>Time-Dependent Solver 1 → Stop Condition</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Compare all four rows with Step 19. Keep each Active and Negative. The first expression must still be <code>if(outletOpen&gt;0.5,c.U,c.Uw)</code>.</p>
+<p class="guide-check"><strong>Check:</strong> Open B ends at the first outlet-speed return, while sealed B ends at the first wall-speed return. The 20% stretch rule is a declared screen, not a measured gel-fracture threshold. Stop warnings identify which episode was retained.</p>
+</article><article class="guide-step" data-anchor="step-37" id="en-step-37"><div class="step-heading"><input aria-label="Mark Step 37 complete" data-anchor="check-37" data-step="37" id="en-check-37" type="checkbox"/><span class="step-number">37</span><h3>Compute the open-gel baseline</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Study 1 → Compute</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Save <code>practice/B_02_ready_to_solve.mph</code>, then Compute with <code>outletOpen=1</code>. After completion, reselect the current Study 1 dataset in inherited plots and evaluation nodes as needed. Relabel those nodes with B so you can distinguish their results from the saved A practice file.</p>
+<p class="guide-check"><strong>Check:</strong> Peak <span class="keyword technical-term" data-term="jet-speed" title="jet speed / 射流速度">outlet speed</span> is about <strong>1.62538 m/s</strong> and the retained outward episode ends around <strong>1.937 µs</strong>. These differ from A because wall expansion and gel loss provide additional destinations for source work.</p>
+</article><article class="guide-step" data-anchor="step-38" id="en-step-38"><div class="step-heading"><input aria-label="Mark Step 38 complete" data-anchor="check-38" data-step="38" id="en-check-38" type="checkbox"/><span class="step-number">38</span><h3>Plot wall motion and gel resistance</h3></div>
+<p class="guide-where"><strong>Where:</strong> Add <code>Results → 1D Plot Group → Global</code> nodes.</p>
+<p class="guide-enter"><strong>Enter:</strong> In one group plot <code>c.stretch</code> with Unit <code>1</code>, and in another group plot <code>c.Uw</code> with Unit <code>m/s</code>. In a pressure group plot <code>c.pEl</code>, <code>c.pRes</code>, <code>c.pb-pInf</code> and <code>c.qJet</code>, all in <code>kPa</code>. Use the current B dataset and Time x-axis.</p>
+<p class="guide-check"><strong>Check:</strong> Initial stretch is 1 and initial wall speed is zero. <code>pEl</code> is elastic resistance; <code>pRes</code> adds <span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscous</span> resistance. The chamber driving pressure also supplies wall <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertia</span>, so it is not interchangeable with either resistance curve. Maximum baseline elastic resistance is about <strong>9.143 kPa</strong>.</p>
+</article><article class="guide-step" data-anchor="step-39" id="en-step-39"><div class="step-heading"><input aria-label="Mark Step 39 complete" data-anchor="check-39" data-step="39" id="en-check-39" type="checkbox"/><span class="step-number">39</span><h3>Plot the defined <span class="keyword technical-term" data-term="confinement" title="confinement / 约束">confinement</span> force</h3></div>
+<p class="guide-where"><strong>Where:</strong> Add another <code>1D Plot Group → Global</code>, label <code>B hemisphere resistance</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Plot <code>c.Fconf</code> with Unit <code>uN</code>. Its definition is the axial resultant of elastic wall <span class="keyword technical-term" data-term="traction" title="traction / 牵引">traction</span> on one hemisphere. Optionally add <code>pi*c.R^2*c.pRes</code>, also in <code>uN</code>, labeled <code>Elastic plus viscous hemisphere resistance</code>.</p>
+<p class="guide-check"><strong>Check:</strong> Maximum elastic force is about <strong>33.77 µN</strong>. This is a defined hemisphere resultant. Spherically symmetric wall <span class="keyword technical-term" data-term="traction" title="traction / 牵引">traction</span> has zero net vector force on the complete sphere; this number is not a measured target force or a resolved planar-layer force.</p>
+</article><article class="guide-step" data-anchor="step-40" id="en-step-40"><div class="step-heading"><input aria-label="Mark Step 40 complete" data-anchor="check-40" data-step="40" id="en-check-40" type="checkbox"/><span class="step-number">40</span><h3>Evaluate Model B maxima</h3></div>
+<p class="guide-where"><strong>Where:</strong> Duplicate or create a <code>Global Evaluation</code> node; label <code>B temporal maxima</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Current B dataset; Time selection All; Transformation Maximum. Evaluate <code>c.U</code> in <code>m/s</code>, <code>c.qJet</code> and <code>c.pEl</code> in <code>kPa</code>, <code>c.Fconf</code> in <code>uN</code>, <code>c.stretch</code>, <code>c.communication</code>, both <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span> diagnostics and <code>abs(c.energyResidual)</code> in <code>1</code>.</p>
+<p class="guide-check"><strong>Check:</strong> Each maximum belongs to its own time history. Do not calculate <span class="keyword technical-term" data-term="confinement" title="confinement / 约束">confinement</span> force by multiplying the maximum pressure by the initial area if the wall radius changed; evaluate the full <code>Fconf</code> expression. The validity checks remain part of accepting the output.</p>
+</article><article class="guide-step" data-anchor="step-41" id="en-step-41"><div class="step-heading"><input aria-label="Mark Step 41 complete" data-anchor="check-41" data-step="41" id="en-check-41" type="checkbox"/><span class="step-number">41</span><h3>Evaluate Model B emitted output</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>Global Evaluation</code>, label <code>B endpoint output</code>.</p>
+<p class="guide-enter"><strong>Enter:</strong> Current B dataset; <strong>Time selection Last</strong>; <strong>Transformation None</strong>. Use the same endpoint expression list as Step 27.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression</th>
+<th>Unit</th>
+<th>Accepted last stored value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>t</code></td>
+<td><code>us</code></td>
+<td>1.9370</td>
+</tr>
+<tr>
+<td><code>c.Eout</code></td>
+<td><code>nJ</code></td>
+<td>0.000136295</td>
+</tr>
+<tr>
+<td><code>c.Iout</code></td>
+<td><code>N*s</code></td>
+<td>1.982567108e-13</td>
+</tr>
+<tr>
+<td><code>c.Mout</code></td>
+<td><code>ng</code></td>
+<td>0.1561203</td>
+</tr>
+<tr>
+<td><code>c.x</code></td>
+<td><code>um</code></td>
+<td>1.9877850</td>
+</tr>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>0.0007545839</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td><code>1</code></td>
+<td>-1.2237e-07</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> The very small emitted energy reflects the complete, short B discharge episode. <code>Kjet</code> is not a substitute for that emitted energy; <code>Ijet</code> is not a substitute for <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">emitted impulse</span>. A speed peak alone cannot supply the integrated output.</p>
+</article><article class="guide-step" data-anchor="step-42" id="en-step-42"><div class="step-heading"><input aria-label="Mark Step 42 complete" data-anchor="check-42" data-step="42" id="en-check-42" type="checkbox"/><span class="step-number">42</span><h3>Calculate matched transmission ratios</h3></div>
+<p class="guide-where"><strong>Where:</strong> Two additional Global Evaluation nodes in your B model.</p>
+<p class="guide-do"><strong>Do:</strong> First retain the matching A peak and endpoint values from Steps 26–27. For this baseline, the expressions below use those accepted A values as explicit denominators. If you change source state or geometry, replace every denominator with the corresponding value from your newly matched A control.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Expression (Unit 1)</th>
+<th>Time selection → Transformation</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.U/(15.376077990105143[m/s])</code></td>
+<td>All → Maximum</td>
+<td>Peak-speed ratio</td>
+</tr>
+<tr>
+<td><code>c.qJet/(118211.88717889792[Pa])</code></td>
+<td>All → Maximum</td>
+<td>Peak dynamic-pressure ratio</td>
+</tr>
+<tr>
+<td><code>c.Eout/(1.3913454479823484e-09[J])</code></td>
+<td>Last → None</td>
+<td>Emitted-energy ratio</td>
+</tr>
+<tr>
+<td><code>c.Iout/(2.2708096862657052e-10[N*s])</code></td>
+<td>Last → None</td>
+<td>Emitted-impulse ratio</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> Use All times + Maximum for peak-speed/dynamic-pressure ratios, and Last + None for emitted-energy/impulse ratios. Multiply a dimensionless ratio by 100 to report percent. Expected baseline results are about <strong>10.5709% speed</strong>, <strong>1.1174% dynamic pressure</strong>, <strong>0.00980% emitted energy</strong>, and <strong>0.08731% <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">emitted impulse</span></strong>. Only the dynamic-pressure ratio equals speed ratio squared at matched density. The episode-integrated energy and impulse ratios depend on the full discharge histories.</p>
+</article><article class="guide-step" data-anchor="step-43" id="en-step-43"><div class="step-heading"><input aria-label="Mark Step 43 complete" data-anchor="check-43" data-step="43" id="en-check-43" type="checkbox"/><span class="step-number">43</span><h3>Solve the sealed <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">hydrogel</span> control</h3></div>
+<p class="guide-where"><strong>Where:</strong> Parameters, then Study 1 Compute.</p>
+<p class="guide-do"><strong>Do:</strong> Save the open baseline as <code>practice/B_open_baseline_my_rebuild.mph</code>. Save a separate copy <code>practice/B_sealed_control_my_rebuild.mph</code>. Change only <code>outletOpen</code> to <code>0</code>, then recompute from the physics initial values. Leave the first stop expression's conditional switch intact.</p>
+<p class="guide-check"><strong>Check:</strong> <code>U</code>, <code>x</code>, <code>Mout</code>, <code>Eout</code> and <code>Iout</code> remain zero throughout. The wall can move and the gas pressure can change. The sealed control's maximum elastic pressure is about <strong>9.6259 kPa</strong>, maximum stretch about <strong>1.15252</strong>, and endpoint about <strong>2.452 µs</strong>. A sealed wall response is not an external liquid <span class="keyword technical-term" data-term="jet" title="jet / 射流">jet</span>.</p>
+</article><article class="guide-step" data-anchor="step-44" id="en-step-44"><div class="step-heading"><input aria-label="Mark Step 44 complete" data-anchor="check-44" data-step="44" id="en-check-44" type="checkbox"/><span class="step-number">44</span><h3>Run the gel and loss sensitivity controls</h3></div>
+<p class="guide-where"><strong>Where:</strong> Reopen <code>B_open_baseline_my_rebuild.mph</code>; edit Parameters and Compute for each trial.</p>
+<p class="guide-do"><strong>Do:</strong> Use the seven-case table below. For each row, restore the other baseline values, commit the changed cells, recompute from the same initial state and Evaluate the same maxima/endpoint/screen nodes. Save outputs under distinct practice names. You may use the accepted <a href="data/native_case_register.json">native case register</a> to compare the complete outputs.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Case</th>
+<th>G</th>
+<th>etaG</th>
+<th>Kloss</th>
+<th>outletOpen</th>
+<th>Expected peak U (m/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B_open_baseline</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.625385</td>
+</tr>
+<tr>
+<td>B_sealed_control</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>0</code></td>
+<td>0.000000</td>
+</tr>
+<tr>
+<td>B_open_loss_K1</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>1</code></td>
+<td><code>1</code></td>
+<td>1.615803</td>
+</tr>
+<tr>
+<td>B_open_G5kPa</td>
+<td><code>5[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.624346</td>
+</tr>
+<tr>
+<td>B_open_G100kPa</td>
+<td><code>100[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.631024</td>
+</tr>
+<tr>
+<td>B_open_eta0</td>
+<td><code>20[kPa]</code></td>
+<td><code>0[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.619889</td>
+</tr>
+<tr>
+<td>B_open_eta0p1</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.1[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.677217</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> Every trial remains a first-event result. A different modulus or <span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscosity</span> can change both the peak and discharge duration; inspect energy allocation and stopping reason before describing its effect. Do not assume that one stiffness trend proves a universal transmission law.</p>
+</article><h2 class="guide-section" data-anchor="section-e" id="en-section-e">E — Verify, export and preserve the results</h2>
+<article class="guide-step" data-anchor="step-45" id="en-step-45"><div class="step-heading"><input aria-label="Mark Step 45 complete" data-anchor="check-45" data-step="45" id="en-check-45" type="checkbox"/><span class="step-number">45</span><h3>Perform the 2 ns / 1 ns resolution check</h3></div>
+<p class="guide-where"><strong>Where:</strong> Time Dependent study and Time-Dependent Solver 1.</p>
+<p class="guide-do"><strong>Do:</strong> On a baseline copy, set both lists to <code>range(0,2[ns],100[us])</code>; Compute and record peak U, last Eout and last Iout. Change both lists back to <code>range(0,1[ns],100[us])</code>; Compute and record them again. Keep tolerances, inputs and stopping rules fixed. Compare relative changes using the 1 ns value as denominator.</p>
+<p class="guide-check"><strong>Check:</strong> Accepted peak-speed changes are about <code>1.4e-8</code> relative for A and <code>9.5e-7</code> for open B. A baseline rebuild should show peak change below <code>1e-4</code>. Endpoint quantities can vary with the discrete stop time; inspect those changes as well. Retain the final 1 ns baseline. Changing only a plot's interpolation is not a solver-resolution test.</p>
+</article><article class="guide-step" data-anchor="step-46" id="en-step-46"><div class="step-heading"><input aria-label="Mark Step 46 complete" data-anchor="check-46" data-step="46" id="en-check-46" type="checkbox"/><span class="step-number">46</span><h3>Apply the full acceptance checklist</h3></div>
+<p class="guide-where"><strong>Where:</strong> Global Evaluation of All times with Maximum or Minimum, and the endpoint table.</p>
+<p class="guide-do"><strong>Do:</strong> Check the following conditions individually. If a physical screen fails, record the failed regime rather than reporting that output as an accepted prediction.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Check</th>
+<th>Expression / method</th>
+<th>Acceptance for these controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial values</td>
+<td>First stored row</td>
+<td>U and Uw zero; B stretch 1</td>
+</tr>
+<tr>
+<td>First law</td>
+<td>Maximum <code>abs(c.energyResidual)</code></td>
+<td>below <code>1e-6</code></td>
+</tr>
+<tr>
+<td>Gas volume and absolute pressure</td>
+<td>Minimum <code>c.Vg</code>, minimum <code>c.pb</code></td>
+<td>both positive</td>
+</tr>
+<tr>
+<td>Finite liquid inventory</td>
+<td>Maximum <code>c.stroke</code></td>
+<td>no greater than 1, within numerical tolerance</td>
+</tr>
+<tr>
+<td>Wall stretch</td>
+<td>Maximum <code>c.stretch</code></td>
+<td>no greater than the declared 1.2 screen</td>
+</tr>
+<tr>
+<td>Liquid/wall <span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span></td>
+<td>Maximum of <code>c.Mjet</code>, <code>c.Mwall</code></td>
+<td>below 0.1</td>
+</tr>
+<tr>
+<td>Uniform-pressure regime</td>
+<td>Maximum <code>c.communication</code></td>
+<td>below 0.1</td>
+</tr>
+<tr>
+<td>Outward episode</td>
+<td>Inspect U and stop description</td>
+<td>no later rebound included</td>
+</tr>
+<tr>
+<td>Finite output</td>
+<td>Last Eout, Iout and Mout</td>
+<td>nonnegative; sealed outputs zero</td>
+</tr>
+<tr>
+<td>Implementation agreement</td>
+<td>Compare declared inputs and output tables</td>
+<td>agrees with accepted case and numerical audit</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> The supplied 17-case <a href="verification/NUMERICAL_AUDIT.json">NUMERICAL_AUDIT.json</a> has largest normalized first-law residual about <code>1.26e-7</code> and largest normalized native/reference waveform discrepancy about <code>1.15e-4</code>. These are implementation checks; material/phase calibration is separate.</p>
+</article><article class="guide-step" data-anchor="step-47" id="en-step-47"><div class="step-heading"><input aria-label="Mark Step 47 complete" data-anchor="check-47" data-step="47" id="en-check-47" type="checkbox"/><span class="step-number">47</span><h3>Export complete histories and reduced tables</h3></div>
+<p class="guide-where"><strong>Where:</strong> The Results table produced by each Global Evaluation.</p>
+<p class="guide-do"><strong>Do:</strong> Evaluate the full-history node with All times and Transformation None. In the resulting table's toolbar use Save/Export to save a CSV under <code>practice/</code>, for example <code>A_baseline_GUI_history.csv</code> or <code>B_open_GUI_history.csv</code>. Export maxima and endpoint tables separately so their meanings remain distinct. Include units in the table descriptions or retain COMSOL's unit-bearing header.</p>
+<p class="guide-check"><strong>Check:</strong> The history CSV has many time rows and contains emitted energy, impulse and mass. A maxima CSV is not a time history. Confirm that the endpoint CSV reports the actual stopped time. Native and independent comparison CSVs are already included under <code>data/</code>.</p>
+</article><article class="guide-step" data-anchor="step-48" id="en-step-48"><div class="step-heading"><input aria-label="Mark Step 48 complete" data-anchor="check-48" data-step="48" id="en-check-48" type="checkbox"/><span class="step-number">48</span><h3>Save the final practice copies</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>File → Save As</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Retain A baseline, B open baseline and B sealed control as separately named practice MPH files. Store each solved case with its matching input values and tables. Return to the open baseline after a sensitivity trial if you want that to be the main B practice file.</p>
+<p class="guide-check"><strong>Check:</strong> Reopen each practice file and verify the title, input values and stored plotted data. Both saved baselines use 1 ns output. Your own practice files are in <code>practice/</code>; the delivery ZIP excludes that folder.</p>
+</article><article class="guide-step" data-anchor="step-49" id="en-step-49"><div class="step-heading"><input aria-label="Mark Step 49 complete" data-anchor="check-49" data-step="49" id="en-check-49" type="checkbox"/><span class="step-number">49</span><h3>Inspect the delivered native models</h3></div>
+<p class="guide-where"><strong>Where:</strong> <code>File → Open</code>, selecting either native file in <code>models/</code>.</p>
+<p class="guide-do"><strong>Do:</strong> Inspect Parameters 1, the component's Variables node, Global Equations 1, Time-Dependent Solver 1, its Stop Condition, and the saved result plots/table. The interface labels in the delivered files describe the retained motion/accounting states; they may differ from the wizard's default caption. Use Global Equations 1 to identify the interface.</p>
+<p class="guide-check"><strong>Check:</strong> A has five state rows and B seven. Both have 32 parameters, 33 variables, a single Global Equations interface and stored solutions. The accepted baseline files were reloaded in a fresh COMSOL process and from an extracted package; numerical and portability evidence are linked in the report.</p>
+</article><article class="guide-step" data-anchor="step-50" id="en-step-50"><div class="step-heading"><input aria-label="Mark Step 50 complete" data-anchor="check-50" data-step="50" id="en-check-50" type="checkbox"/><span class="step-number">50</span><h3>Use the reproducible script route when needed</h3></div>
+<p class="guide-where"><strong>Where:</strong> Windows PowerShell in a separate working copy of this entire self-contained folder.</p>
+<p class="guide-do"><strong>Do:</strong> With COMSOL 6.4 installed, run:</p>
+<button class="copy-block" type="button">Copy text</button><pre><code class="language-powershell">.\Run-Rebuild.ps1
+.\Run-Verify.ps1
+.\Run-CheckGuide.ps1
+python -m pip install -r requirements.txt
+python scripts/reference.py
+python scripts/verify_results.py
+python scripts/build_guide.py
+</code></pre>
+<p><code>Run-Rebuild.ps1</code> constructs the 17-case family and writes its native files and histories. <code>Run-Verify.ps1</code> performs fresh-process and 2 ns / 1 ns checks and saves the refined baselines. The Python reference independently integrates the dimensional equations. Rebuild in a working copy because these commands replace its generated models/data. Use <code>-ComsolBin</code> on the PowerShell runners if COMSOL is installed elsewhere.</p>
+<p class="guide-check"><strong>Check:</strong> Native batch logs must show completed runs and no internal Java error; checking shell exit code alone is insufficient. Solver error details are under <code>build/</code>. This route reproduces the same equations as the GUI tables.</p>
+</article><h2 class="guide-section" data-anchor="section-f" id="en-section-f">F — Fix common errors and report the correct claim</h2>
+<article class="guide-step" data-anchor="step-51" id="en-step-51"><div class="step-heading"><input aria-label="Mark Step 51 complete" data-anchor="check-51" data-step="51" id="en-check-51" type="checkbox"/><span class="step-number">51</span><h3>Diagnose the first failure</h3></div>
+<p class="guide-where"><strong>Where:</strong> The first causal Messages/Log error or unexpected output, and the node named there.</p>
+<p class="guide-do"><strong>Do:</strong> Use the specific correction below before changing unrelated settings.</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Inspect</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unknown <code>c.U</code></td>
+<td>Component Name</td>
+<td>Set Name c, or replace the namespace everywhere consistently</td>
+</tr>
+<tr>
+<td>Unknown <code>qq</code>, <code>rr</code> or their derivatives</td>
+<td>Equation Name column</td>
+<td>Enter the exact five/seven names; finish B's new rows</td>
+</tr>
+<tr>
+<td>Six/eight equations instead of five/seven</td>
+<td>Placeholder row</td>
+<td>Delete the unused default row in your practice table</td>
+</tr>
+<tr>
+<td>Wrong residual units</td>
+<td>Equation quantities and <code>tau</code> factors</td>
+<td>Dimensionless for both quantities; retain each complete residual</td>
+</tr>
+<tr>
+<td>Wrong source work</td>
+<td><code>p0</code>, <code>pInf</code>, units</td>
+<td>Use absolute p0; keep E0's derived expression</td>
+</tr>
+<tr>
+<td>Zero-radius singularity in B</td>
+<td>Initial <code>rr</code></td>
+<td>Set rr to 1, not zero</td>
+</tr>
+<tr>
+<td>Nonzero initial velocity</td>
+<td>Initialization and reused solution</td>
+<td>Initialization Off; begin from physics initial values</td>
+</tr>
+<tr>
+<td>Immediate stop at time zero</td>
+<td>Stop if column</td>
+<td>All four rows use Negative (&lt;0), not the Boolean True default</td>
+</tr>
+<tr>
+<td>Later reversal or repeated episodes</td>
+<td>Missing/disabled Stop Condition</td>
+<td>Restore the first outward-return rule and all other rows</td>
+</tr>
+<tr>
+<td>Energy residual drifts</td>
+<td>Acceleration and output terms</td>
+<td>Retain outgoing kinetic head and Eout; use the full source volume</td>
+</tr>
+<tr>
+<td>False large “<span class="keyword technical-term" data-term="jet" title="jet / 射流">jet</span> energy”</td>
+<td>Chosen result expression</td>
+<td>Use Eout, not stored Kjet</td>
+</tr>
+<tr>
+<td>False <span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">emitted impulse</span></td>
+<td>Chosen result expression</td>
+<td>Use Iout, not column <span class="keyword technical-term" data-term="momentum" title="momentum / 动量">momentum</span> Ijet</td>
+</tr>
+<tr>
+<td>Old A result after solving B</td>
+<td>Result Dataset</td>
+<td>Select the current B solution and re-Evaluate</td>
+</tr>
+<tr>
+<td>Empty spatial plot</td>
+<td>Plot type</td>
+<td>Add 1D Plot Group → Global</td>
+</tr>
+<tr>
+<td>“Last” output assumed at 100 µs</td>
+<td>Actual stored time</td>
+<td>Evaluate t with Last; the stop truncates the requested list</td>
+</tr>
+<tr>
+<td>Gel trial exceeds a physical screen</td>
+<td>Communication/stretch/<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span></td>
+<td>Classify it outside the declared validity regime</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>Check:</strong> Recompute only after correcting the implicated input or node. If input changes, rerun conservation and validity checks; a previously accepted table may no longer apply.</p>
+</article><article class="guide-step" data-anchor="step-52" id="en-step-52"><div class="step-heading"><input aria-label="Mark Step 52 complete" data-anchor="check-52" data-step="52" id="en-check-52" type="checkbox"/><span class="step-number">52</span><h3>Connect the controls to an experiment</h3></div>
+<p class="guide-where"><strong>Where:</strong> Your experiment record and the Parameters table.</p>
+<p class="guide-do"><strong>Do:</strong> Supply an evidence-based post-activation gas/phase volume and pressure-volume path or supported available-work estimate; actual connected liquid volume and outlet <span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">inertance</span>; carrier properties; gel modulus/<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">viscosity</span> at the relevant rate; and whether the channel already exists. Measure cavity volume, wall motion and emitted speed/mass on the same shot where possible. Use those data to update the controls, then repeat the complete acceptance sequence.</p>
+<p class="guide-check"><strong>Check:</strong> A 5 nJ available-work input is not automatically a 5 nJ optical pulse. The spherical gel control is not an exact planar <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">hydrogel</span>-layer model. No external <span class="keyword technical-term" data-term="jet" title="jet / 射流">jet</span> is predicted through unbroken sealed gel. Keep those architecture and calibration statements with every reported maximum or transmission ratio.</p>
+</article><article class="guide-step" data-anchor="step-53" id="en-step-53"><div class="step-heading"><input aria-label="Mark Step 53 complete" data-anchor="check-53" data-step="53" id="en-check-53" type="checkbox"/><span class="step-number">53</span><h3>Complete the walkthrough</h3></div>
+<p class="guide-where"><strong>Where:</strong> Your saved practice files and output tables.</p>
+<p class="guide-check-that-you-can-independently-reproduce"><strong>Check that you can independently reproduce:</strong> the 15.3761 m/s A baseline; the 25.2798 m/s largest sampled family case; the 1.62538 m/s open-gel baseline; its 9.143 kPa elastic resistance and 33.77 µN hemisphere force; matched emitted-energy/impulse ratios; and zero emitted output in the sealed control. Verify the stopping rules and numerical/physical screens, rather than checking peak values alone.</p>
+<p class="guide-completion-record"><strong>Completion record:</strong> Note the software version, input case, source-state assumption, actual stored endpoint, peak definitions, emitted-output definitions, maximum conservation residual, communication/<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">Mach</span>/stretch checks and refinement comparison. The <a href="PUBLICATION.md">project log</a> and <a href="RESULTS.md">results report</a> provide the accepted record for the supplied controls.</p>
+</article><h2 class="guide-section" data-anchor="references" id="en-references">References and companion files</h2>
+<p>The requested <a href="https://pfgaophilip.github.io/cavitation-course/comsol/lessons/M1.html">M1 lesson</a> supplied the paced interface format. This guide's parameter, variable and equation tables were extracted from the current two solved native files, not from M1's separate model recipes. Its archived HTML/text are under <code>sources/reference-lesson/</code>; native metadata for the guide are under <code>sources/native-guide-evidence/</code>.</p>
+<ul>
+<li><a href="MODEL_SPEC.md">Full derivation and assumptions</a> · <a href="THEORY_DERIVATION.tex">Editable LaTeX</a> · <a href="index.html">Offline results</a>.</li>
+<li><a href="models/Model_A_Finite_Energy_Pressure_Jet.mph">Model A</a> · <a href="models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph">Model B</a>.</li>
+<li><a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_environment.18.43.html">COMSOL Model Wizard</a>, <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html">Global Equations</a>, <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html">Time solver</a>, <a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html">Stop Condition</a>.</li>
+</ul>
+<p>Verification scope: tables matched against the saved native equations; parameter/variable import and A-to-B conversion checked with COMSOL's native API; result targets come from the accepted solved controls. The diagrams are schematics. A live Desktop click-through is not claimed.</p></main><footer>All parameter, variable and equation tables come from the two accepted native files. Figures labeled schematic are not screenshots. This folder includes its reader assets and import files.</footer></div><div class="locale-pane" data-locale="zh" lang="zh-CN"><header><p class="eyebrow">COMSOL 6.4 · 从空白模型开始 · 53 个操作步骤</p><h1>一步步建立两个简洁模型</h1><p>明确输入、逐步检查、保存节点与结果定义。</p><nav><a href="../../index.html?lang=zh">理论课程</a><a href="index.html">结果与完整理论</a><a href="STEP_BY_STEP.zh.md">中文 Markdown</a><a href="Minimal_Cavitation_Models_20261010.zip">输入文件</a><a href="#zh-step-01">从步骤 01 开始</a><a href="#zh-step-32"><span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span>模型</a><a href="#zh-step-51">排错</a><a href="Minimal_Cavitation_Models_20261010.zip">下载完整建模文件夹</a></nav></header><div class="guide-toolbar"><div class="guide-toolbar-inner"><span data-guide-progress="" role="status">已完成 0 / 53 步</span><progress aria-label="已完成步骤" data-guide-progress-bar="" max="53" value="0"></progress><button data-reset-progress="" type="button">重置勾选</button></div><nav class="guide-section-nav"><a href="#zh-section-a">A — 熟悉界面并建立练习模型</a><a href="#zh-section-b">B — 输入模型 A 的全部参数与表达式</a><a href="#zh-section-c">C — 绘图、求值并回答模型 A 的问题</a><a href="#zh-section-d">D — 加入<span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span><span class="keyword technical-term" data-term="confinement" title="confinement / 约束">约束</span>，建立模型 B</a><a href="#zh-section-e">E — 验证、导出并保存结果</a><a href="#zh-section-f">F — 修正常见错误，并准确报告结论</a></nav></div><main>
+<p>将本指南放在 COMSOL 窗口旁，每次完成一个编号步骤。操作路线是：<strong>空白 0D 模型 → 求解模型 A → <span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span>模型 B → 密封对照 → 经验证的输出表格</strong>。每个步骤都指出需要选择的节点、需要输入的内容以及继续之前的检查项。各个检查点文件均为你自己建立的练习文件。</p>
+<p>模型 A 针对有限的激活后压力源和与其连通的液体出口，回答给定条件下的压力与<span class="keyword technical-term" data-term="jet-speed" title="jet speed / 射流速度">射流速度</span>问题。模型 B 加入球形凝胶的<span class="keyword technical-term" data-term="confinement" title="confinement / 约束">约束</span>，计算同一出口还能传递多少排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>和<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>。标称为 10 ns 的单次激光脉冲通过激活并完成压力均衡后的初始数据表示。本研究中的零时刻就是该初始化状态，此后不再施加源驱动。</p>
+<p><strong>声明的对照假设。</strong> 压力源为封闭的绝热理想气体，压力均匀，绝热指数恒定且大于一，<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>有限。载液密度和出口的有效<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">流体惯性</span>保持恒定。出口预先开放；恒定的弯月面入口压力是一项近似。模型 B 使用完整、不排水、不可压缩的<span class="keyword technical-term" data-term="neo-hookean" title="neo-Hookean / 新胡克">新胡克</span>凝胶，并加入 Kelvin–Voigt 损耗，将其近似为包围腔室的球形介质。初始机械速度为零，腔壁参考构形无应力，远场压力和出口端压力均为环境压力。液体向外运动和腔壁向外扩张的速度取正。后续回弹、相间交换、凝胶破裂和靶面冲击均不在本次首次向外排出过程的计算范围内。实际 <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span> 和凝胶的性质需要标定。</p>
+<p>完整的理论基础、推导、符号表和有效性审查见 <a href="MODEL_SPEC.zh.md">MODEL_SPEC.md</a> 与<a href="index.html#zh-theory">完整离线报告</a>。本指南将这些方程转化为可在 COMSOL 中直接输入的内容；表达式表采用 COMSOL 语法。</p>
+<p><img alt="模型机制及定义的输出量" src="assets/guide-mechanisms.zh.svg"/></p>
+<p><em>带标注的机制示意图。模型 A 固定腔壁。模型 B 允许压力源体积通过出口排液和凝胶腔壁扩张共同增加。图中表示标量平衡关系，不表示空间场分布。</em></p>
+<h2 class="guide-section" data-anchor="section-a" id="zh-section-a">A — 熟悉界面并建立练习模型</h2>
+<article class="guide-step" data-anchor="step-01" id="zh-step-01"><div class="step-heading"><input aria-label="标记步骤 01 已完成" data-anchor="check-01" data-step="1" id="zh-check-01" type="checkbox"/><span class="step-number">01</span><h3>识别三个工作区域</h3></div>
+<p class="guide-where"><strong>位置:</strong> COMSOL Desktop。</p>
+<p class="guide-do"><strong>操作:</strong> 找到左侧的 <strong>Model Builder</strong>（模型开发器）、中间显示所选节点设置的 <strong>Settings</strong>（设置），以及右侧用于绘图的 <strong>Graphics</strong>（图形）。Progress、Messages、Log 和 Results 表格通常位于下方。节点路径如 <code>Global Definitions → Parameters 1</code>，表示展开第一个节点并选中其子节点。右键操作会在鼠标所指节点下创建子节点。修改表格单元格后，按 Tab 或单击单元格外部，提交输入内容。</p>
+<p class="guide-check"><strong>检查:</strong> 在输入任何方程之前，你能够选中一个节点，并看到它对应的 Settings 内容发生变化。</p>
+<p><img alt="COMSOL 工作区域" src="assets/guide-interface.zh.svg"/></p>
+<p><em>这是界面示意图，并非屏幕截图。具体位置取决于窗口布局；定位时以节点名和字段名为准。</em></p>
+</article><article class="guide-step" data-anchor="step-02" id="zh-step-02"><div class="step-heading"><input aria-label="标记步骤 02 已完成" data-anchor="check-02" data-step="2" id="zh-check-02" type="checkbox"/><span class="step-number">02</span><h3>新建模型</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>File → New → Model Wizard</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 打开 COMSOL Multiphysics 6.4。在 New 页面选择 Model Wizard。切换模型之前，将已有工作保存到其自身文件中。在本指南旁新建一个 <code>practice/</code> 文件夹，用于练习；后续提示保存时，可在 Save As 对话框中创建该文件夹。</p>
+<p class="guide-check"><strong>检查:</strong> 向导显示 <strong>Select Space Dimension</strong>（选择空间维度）。</p>
+</article><article class="guide-step" data-anchor="step-03" id="zh-step-03"><div class="step-heading"><input aria-label="标记步骤 03 已完成" data-anchor="check-03" data-step="3" id="zh-check-03" type="checkbox"/><span class="step-number">03</span><h3>选择空间维度</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Model Wizard → Select Space Dimension</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 选择 <strong>0D</strong>。</p>
+<p class="guide-check"><strong>检查:</strong> 向导进入 Select Physics。未知量将是随时间变化的标量。腔室和出口半径作为参数出现在方程中；此模型无需创建球体或圆柱体几何。</p>
+</article><article class="guide-step" data-anchor="step-04" id="zh-step-04"><div class="step-heading"><input aria-label="标记步骤 04 已完成" data-anchor="check-04" data-step="4" id="zh-check-04" type="checkbox"/><span class="step-number">04</span><h3>添加标量方程接口</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Select Physics → Mathematics → ODE and DAE Interfaces → Global ODEs and DAEs</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 选择 Global ODEs and DAEs，并单击 <strong>Add</strong>。如果列表较长，可搜索该接口的完整名称。只保留一个该接口。</p>
+<p class="guide-check"><strong>检查:</strong> Added physics interfaces 中包含 Global ODEs and DAEs。该接口提供后面使用的 Global Equations（全局方程）表。</p>
+<p class="guide-if-stuck"><strong>排错:</strong> 清除搜索筛选条件，并确认已选择 0D。交付的原生文件仅记录基础 COMSOL 许可证；凝胶本构关系通过标量表达式输入。</p>
+</article><article class="guide-step" data-anchor="step-05" id="zh-step-05"><div class="step-heading"><input aria-label="标记步骤 05 已完成" data-anchor="check-05" data-step="5" id="zh-check-05" type="checkbox"/><span class="step-number">05</span><h3>添加瞬态研究</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Model Wizard → Study → General Studies</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 选择 <strong>Time Dependent</strong>（瞬态），然后单击 <strong>Done</strong>。</p>
+<p class="guide-check"><strong>检查:</strong> Model Builder 中包含一个 Component、Global ODEs and DAEs，以及 <code>Study 1 → Step 1: Time Dependent</code>。</p>
+</article><article class="guide-step" data-anchor="step-06" id="zh-step-06"><div class="step-heading"><input aria-label="标记步骤 06 已完成" data-anchor="check-06" data-step="6" id="zh-check-06" type="checkbox"/><span class="step-number">06</span><h3>设置组件命名空间</h3></div>
+<p class="guide-where"><strong>位置:</strong> 单击 <code>Component 1</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 将 <strong>Name</strong> 设为 <code>c</code>，将 <strong>Label</strong> 设为 <code>c: Model A practice</code>。保留 SI 单位制。Name 决定表达式（如 <code>c.U</code>）所用的命名空间；Label 仅改变界面显示的名称。</p>
+<p class="guide-check"><strong>检查:</strong> 组件的 Name 为 <code>c</code>。仅在 Label 中写入字母 c，并不会改变命名空间。</p>
+<p class="guide-if-stuck"><strong>排错:</strong> 如果 Name 仍为 <code>comp1</code>，现在就更正。下面所有结果表达式和停止表达式都使用 <code>c.</code> 前缀。参见<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_modeling.19.007.html">组件 Name 文档</a>。</p>
+</article><article class="guide-step" data-anchor="step-07" id="zh-step-07"><div class="step-heading"><input aria-label="标记步骤 07 已完成" data-anchor="check-07" data-step="7" id="zh-check-07" type="checkbox"/><span class="step-number">07</span><h3>保存第一个检查点</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>File → Save As</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 保存为 <code>practice/A_01_setup.mph</code>。此后使用 Ctrl+S 保存；在下面指定的阶段另存新的检查点文件。</p>
+<p class="guide-check"><strong>检查:</strong> 标题栏显示你的练习文件名。<code>models/</code> 中已经验收的原生文件仍可用于对照。</p>
+</article><h2 class="guide-section" data-anchor="section-b" id="zh-section-b">B — 输入模型 A 的全部参数与表达式</h2>
+<article class="guide-step" data-anchor="step-08" id="zh-step-08"><div class="step-heading"><input aria-label="标记步骤 08 已完成" data-anchor="check-08" data-step="8" id="zh-check-08" type="checkbox"/><span class="step-number">08</span><h3>输入全部 32 个参数</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Global Definitions → Parameters 1</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 输入下表的全部行，或单击表格下方的 <strong>Load from File</strong>，选择 <a href="resources/gui/A_parameters_import.txt">A_parameters_import.txt</a>。该导入文件包含两列，以制表符分隔，不含表头。将其一次性导入参数表即可。参数说明见下表。如果手动输入，请严格保留每个名称的大小写以及单位外的方括号。</p>
+<p class="guide-check"><strong>检查:</strong> 共计 32 个参数名，没有重复名称。表格尚未填完时，依赖关系可能暂时无法解析；应在全部行输入完成后再检查 Value 列。<code>p0</code> 为绝对压力，<code>E0</code> 是由该压力推得的表达式。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>表达式 — 原样输入</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tauLaser</code></td>
+<td><code>10[ns]</code></td>
+<td>单次光脉冲，以激活后的初始状态代替；不求解脉冲起始过程</td>
+</tr>
+<tr>
+<td><code>Rg0</code></td>
+<td><code>15[um]</code></td>
+<td>激活后的压力源半径；不是液态 <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span> 液滴半径</td>
+</tr>
+<tr>
+<td><code>Rc0</code></td>
+<td><code>30[um]</code></td>
+<td>初始无应力的球形腔室半径</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td><code>5.0E-6[m]</code></td>
+<td>预先存在的液体出口半径</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td><code>50[um]</code></td>
+<td>有效液柱<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>长度</td>
+</tr>
+<tr>
+<td><code>Lbudget</code></td>
+<td><code>(Vc0-Vg0)/A</code></td>
+<td>连通腔室的液体存量除以出口面积；与<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>长度不同</td>
+</tr>
+<tr>
+<td><code>rho</code></td>
+<td><code>1000[kg/m^3]</code></td>
+<td>指定的类水载液密度</td>
+</tr>
+<tr>
+<td><code>rhoG</code></td>
+<td><code>1000[kg/m^3]</code></td>
+<td>指定的不排<span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span>密度</td>
+</tr>
+<tr>
+<td><code>pInf</code></td>
+<td><code>100[kPa]</code></td>
+<td>环境绝对压力</td>
+</tr>
+<tr>
+<td><code>kap</code></td>
+<td><code>1.4</code></td>
+<td>绝热理想气体对照模型的指数；不是经过验证的 <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span> 蒸气<span class="keyword technical-term" data-term="equation-of-state" title="equation of state / 状态方程">状态方程</span></td>
+</tr>
+<tr>
+<td><code>p0</code></td>
+<td><code>379631.6312499547[Pa]</code></td>
+<td>激活后的压力源绝对压力，由构建程序根据<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>设定</td>
+</tr>
+<tr>
+<td><code>sigma</code></td>
+<td><code>0.072[N/m]</code></td>
+<td>指定的类水<span class="keyword technical-term" data-term="surface-tension" title="surface tension / 表面张力">表面张力</span></td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td><code>20000.0[Pa]</code></td>
+<td>完整、不可压缩的<span class="keyword technical-term" data-term="neo-hookean" title="neo-Hookean / 新胡克">新胡克</span>凝胶的剪切模量</td>
+</tr>
+<tr>
+<td><code>etaG</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td>Kelvin-Voigt 有效网络<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏度</span></td>
+</tr>
+<tr>
+<td><code>Kloss</code></td>
+<td><code>0.0</code></td>
+<td>给定条件下的出口局部损失系数，无量纲</td>
+</tr>
+<tr>
+<td><code>Rloss</code></td>
+<td><code>0[Pa*s/m]</code></td>
+<td>实测或拟合的压力与速度之比形式的阻力系数；不是瞬时 Poiseuille 近似</td>
+</tr>
+<tr>
+<td><code>outletOpen</code></td>
+<td><code>1</code></td>
+<td>1 表示预先存在的开放液体通道；0 表示密封对照</td>
+</tr>
+<tr>
+<td><code>cL</code></td>
+<td><code>1500[m/s]</code></td>
+<td>仅用于有效性诊断的参考压力均衡传播速度</td>
+</tr>
+<tr>
+<td><code>Us</code></td>
+<td><code>10[m/s]</code></td>
+<td>无量纲状态变量的速度尺度</td>
+</tr>
+<tr>
+<td><code>tau</code></td>
+<td><code>Rc0/Us</code></td>
+<td>数值无量纲化所用的时间尺度</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td><code>pi*a^2</code></td>
+<td>液塞横截面积</td>
+</tr>
+<tr>
+<td><code>Vg0</code></td>
+<td><code>4*pi*Rg0^3/3</code></td>
+<td>有限气体压力源的初始体积</td>
+</tr>
+<tr>
+<td><code>Vc0</code></td>
+<td><code>4*pi*Rc0^3/3</code></td>
+<td>初始腔室体积</td>
+</tr>
+<tr>
+<td><code>Veq</code></td>
+<td><code>Vg0*(p0/pInf)^(1/kap)</code></td>
+<td>环境压力下的气体体积</td>
+</tr>
+<tr>
+<td><code>E0</code></td>
+<td><code>p0*Vg0/(kap-1)*(1-(Vg0/Veq)^(kap-1))-pInf*(Veq-Vg0)</code></td>
+<td>相对于环境压力的压力源可用可逆功</td>
+</tr>
+<tr>
+<td><code>mJet</code></td>
+<td><code>rho*A*L</code></td>
+<td>有效液柱<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>质量，不是排出质量</td>
+</tr>
+<tr>
+<td><code>Iscale</code></td>
+<td><code>mJet*Us</code></td>
+<td><span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>累积量的<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>尺度</td>
+</tr>
+<tr>
+<td><code>Uceiling</code></td>
+<td><code>sqrt(2*E0/mJet)</code></td>
+<td>仅由能量和液柱<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>确定的出口峰值速度上界；不是已达到的速度</td>
+</tr>
+<tr>
+<td><code>qCeiling</code></td>
+<td><code>E0/(A*L)</code></td>
+<td>仅由能量确定的液体动压上界</td>
+</tr>
+<tr>
+<td><code>pCap</code></td>
+<td><code>2*sigma/a</code></td>
+<td>钉扎半球形弯月面的阻力</td>
+</tr>
+<tr>
+<td><code>tObs</code></td>
+<td><code>1[us]</code></td>
+<td>为仅基于冲量的制动压力上界所声明的平均时间区间</td>
+</tr>
+<tr>
+<td><code>AObs</code></td>
+<td><code>A</code></td>
+<td>所声明的压力观测面积</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-09" id="zh-step-09"><div class="step-heading"><input aria-label="标记步骤 09 已完成" data-anchor="check-09" data-step="9" id="zh-check-09" type="checkbox"/><span class="step-number">09</span><h3>检查初始能量与几何参数</h3></div>
+<p class="guide-where"><strong>位置:</strong> 仍在 <code>Parameters 1</code> 中，查看 Value 列。</p>
+<p class="guide-check"><strong>对照检查:</strong></p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>物理量</th>
+<th>预期值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初始气体体积 <code>Vg0</code></td>
+<td>1.413716694e-14 m³</td>
+</tr>
+<tr>
+<td>初始腔室体积 <code>Vc0</code></td>
+<td>1.130973355e-13 m³</td>
+</tr>
+<tr>
+<td>出口面积 <code>A</code></td>
+<td>7.853981634e-11 m²</td>
+</tr>
+<tr>
+<td>有限液体存量对应的长度 <code>Lbudget</code></td>
+<td>1260.000000 µm</td>
+</tr>
+<tr>
+<td><span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>长度 <code>L</code></td>
+<td>50 µm</td>
+</tr>
+<tr>
+<td>弯月面压力 <code>pCap</code></td>
+<td>28.8 kPa</td>
+</tr>
+<tr>
+<td>时间尺度 <code>tau</code></td>
+<td>3 µs</td>
+</tr>
+<tr>
+<td>初始绝对压力 <code>p0</code></td>
+<td>379.631631 kPa</td>
+</tr>
+<tr>
+<td><span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span> <code>E0</code></td>
+<td>2 nJ</td>
+</tr>
+<tr>
+<td>液柱速度上界 <code>Uceiling</code></td>
+<td>31.915382 m/s</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-why"><strong>原因:</strong> <code>L</code> 定义液体<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>。<code>Lbudget</code> 定义连通液体最多能排出多少；二者含义不同。2 nJ 表示激活后的机械<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>，不是入射激光能量。<code>tauLaser=10[ns]</code> 记录短脉冲假设；它不是随时间变化的驱动函数，仅改变它不会改变本解。</p>
+<p class="guide-if-stuck"><strong>排错:</strong> <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>为负或平衡体积无效，通常表明压力或单位输入有误。使用提供的绝对压力 <code>p0</code>，不要用 279.632 kPa 的表压替换它。</p>
+</article><article class="guide-step" data-anchor="step-10" id="zh-step-10"><div class="step-heading"><input aria-label="标记步骤 10 已完成" data-anchor="check-10" data-step="10" id="zh-check-10" type="checkbox"/><span class="step-number">10</span><h3>创建 Variables 并输入压力源几何表达式</h3></div>
+<p class="guide-where"><strong>位置:</strong> 右键选择 <code>Component c → Definitions → Variables</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 将 Label 设为 <code>Source, outlet and accounting</code>。输入下面的前七行。也可以通过 <strong>Load from File</strong> 选择 <a href="resources/gui/A_variables_import.txt">A_variables_import.txt</a>，一次导入完整的 33 行表格，再按步骤 10–12 检查三个分组。在此组件表内使用局部名称，不要在 Name 列添加 <code>c.</code>。</p>
+<p class="guide-check"><strong>检查:</strong> 通过 <code>R=Rc0</code> 固定腔室半径；腔壁速度严格为 <code>0[m/s]</code>。气体体积包含已经排出的液体所对应的体积。在步骤 14 添加方程行后，<code>qq</code> 和 <code>vv</code> 才会获得定义。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>表达式 — 原样输入</th>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x</code></td>
+<td><code>Lbudget*qq</code></td>
+<td><code>m</code></td>
+<td>已排出液体体积除以出口面积，m</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td><code>Us*vv</code></td>
+<td><code>m/s</code></td>
+<td>液塞向外运动速度，m/s</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td><code>Rc0</code></td>
+<td><code>m</code></td>
+<td>腔壁半径，m</td>
+</tr>
+<tr>
+<td><code>Uw</code></td>
+<td><code>0[m/s]</code></td>
+<td><code>m/s</code></td>
+<td>腔壁扩张速度，m/s</td>
+</tr>
+<tr>
+<td><code>Vg</code></td>
+<td><code>Vg0+A*x+4*pi*(R^3-Rc0^3)/3</code></td>
+<td><code>m^3</code></td>
+<td>包含排液和腔室扩张贡献的有限气体体积</td>
+</tr>
+<tr>
+<td><code>Vdot</code></td>
+<td><code>A*U+4*pi*R^2*Uw</code></td>
+<td><code>m^3/s</code></td>
+<td>压力源体积的总变化率</td>
+</tr>
+<tr>
+<td><code>pb</code></td>
+<td><code>p0*(Vg0/Vg)^kap</code></td>
+<td><code>Pa</code></td>
+<td>有限理想气体对照压力源的均匀绝对压力</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-11" id="zh-step-11"><div class="step-heading"><input aria-label="标记步骤 11 已完成" data-anchor="check-11" data-step="11" id="zh-check-11" type="checkbox"/><span class="step-number">11</span><h3>输入阻力与储存能量表达式</h3></div>
+<p class="guide-where"><strong>位置:</strong> 同一个 Variables 节点。</p>
+<p class="guide-do"><strong>操作:</strong> 如果手动输入，添加下面七行。模型 A 将凝胶相关项设为带单位的零。损耗表达式可用于后续敏感性对照；基准损耗输入为零。</p>
+<p class="guide-check"><strong>检查:</strong> 液柱能量 <code>Kjet</code> 使用有效液柱<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>。它与下一步输入的排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span> <code>Eout</code> 不同。弯月面功是所声明的恒定入口压力对照模型所做的功；本模型不求解自由表面的演变。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>表达式 — 原样输入</th>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pEl</code></td>
+<td><code>0[Pa]</code></td>
+<td><code>Pa</code></td>
+<td>球形凝胶腔壁处的弹性阻力压力</td>
+</tr>
+<tr>
+<td><code>pRes</code></td>
+<td><code>0[Pa]</code></td>
+<td><code>Pa</code></td>
+<td>凝胶腔壁的弹性与<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏性</span>阻力之和</td>
+</tr>
+<tr>
+<td><code>Wgel</code></td>
+<td><code>0[J]</code></td>
+<td><code>J</code></td>
+<td>可恢复的凝胶弹性功</td>
+</tr>
+<tr>
+<td><code>Kgel</code></td>
+<td><code>0[J]</code></td>
+<td><code>J</code></td>
+<td>球形凝胶的径向<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>Kjet</code></td>
+<td><code>mJet*U^2/2</code></td>
+<td><code>J</code></td>
+<td>有效液柱<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>储存的<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>；不是排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>Esurf</code></td>
+<td><code>pCap*A*x</code></td>
+<td><code>J</code></td>
+<td>向外运动期间的可逆弯月面功</td>
+</tr>
+<tr>
+<td><code>ploss</code></td>
+<td><code>Rloss*U+rho*Kloss*U*abs(U)/2</code></td>
+<td><code>Pa</code></td>
+<td>所声明的耗散性出口压降</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-12" id="zh-step-12"><div class="step-heading"><input aria-label="标记步骤 12 已完成" data-anchor="check-12" data-step="12" id="zh-check-12" type="checkbox"/><span class="step-number">12</span><h3>输入加速度、排出量及检查表达式</h3></div>
+<p class="guide-where"><strong>位置:</strong> 同一个 Variables 节点。</p>
+<p class="guide-do"><strong>操作:</strong> 添加剩余的 19 行。将排出流体的动压项 <code>-rho*U^2/2</code> 保留在 <code>acc</code> 中，并将 <code>Eout</code> 保留在 <code>energyResidual</code> 中。这些项计入真正离开出口的能量。删除它们会改变模型。</p>
+<p class="guide-check"><strong>检查:</strong> 完成后的节点包含 33 个名称。<code>Eout</code>、<code>Iout</code> 和 <code>Mout</code> 分别表示实际排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>、轴向<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>和排出液体质量。<code>Ijet</code> 表示瞬时有效液柱<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>。压力均衡传播比是根据标量变化率计算的有效性诊断量。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>表达式 — 原样输入</th>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>acc</code></td>
+<td><code>outletOpen*(pb-pInf-pCap-ploss-rho*U^2/2)/(rho*L)</code></td>
+<td><code>m/s^2</code></td>
+<td>由含排出流体动压项的非定常 Bernoulli 关系得到的出口加速度</td>
+</tr>
+<tr>
+<td><code>wallAcc</code></td>
+<td><code>0[m/s^2]</code></td>
+<td><code>m/s^2</code></td>
+<td>球形凝胶腔壁加速度</td>
+</tr>
+<tr>
+<td><code>Pdis</code></td>
+<td><code>outletOpen*A*(Rloss*U^2+rho*Kloss*abs(U)^3/2)</code></td>
+<td><code>W</code></td>
+<td>非负的出口与凝胶不可逆损耗功率</td>
+</tr>
+<tr>
+<td><code>Edis</code></td>
+<td><code>E0*dd</code></td>
+<td><code>J</code></td>
+<td>累积不可逆损耗</td>
+</tr>
+<tr>
+<td><code>Eout</code></td>
+<td><code>E0*ee</code></td>
+<td><code>J</code></td>
+<td>实际从出口排出的<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>Iout</code></td>
+<td><code>Iscale*ii</code></td>
+<td><code>N*s</code></td>
+<td>实际从出口排出的轴向<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span></td>
+</tr>
+<tr>
+<td><code>Mout</code></td>
+<td><code>rho*A*x</code></td>
+<td><code>kg</code></td>
+<td>有限的排出液体质量</td>
+</tr>
+<tr>
+<td><code>Pout</code></td>
+<td><code>outletOpen*rho*A*U^3/2</code></td>
+<td><code>W</code></td>
+<td>向外运动分支的排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>功率</td>
+</tr>
+<tr>
+<td><code>energyResidual</code></td>
+<td><code>(pb*Vg/(kap-1)-p0*Vg0/(kap-1)+pInf*(Vg-Vg0)+Kjet+Kgel+Wgel+Esurf+Edis+Eout)/E0</code></td>
+<td><code>1</code></td>
+<td>包含实际流出量的归一化能量残差</td>
+</tr>
+<tr>
+<td><code>Fconf</code></td>
+<td><code>pi*R^2*pEl</code></td>
+<td><code>N</code></td>
+<td>一个凝胶半球上的轴向合力，不是整个球体的净合力</td>
+</tr>
+<tr>
+<td><code>qJet</code></td>
+<td><code>rho*U^2/2</code></td>
+<td><code>Pa</code></td>
+<td>液塞动压尺度，不是冲击压力</td>
+</tr>
+<tr>
+<td><code>Ijet</code></td>
+<td><code>mJet*U</code></td>
+<td><code>N*s</code></td>
+<td>有效液柱<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>；实际<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>为 Iout</td>
+</tr>
+<tr>
+<td><code>Fflux</code></td>
+<td><code>rho*A*U^2</code></td>
+<td><code>N</code></td>
+<td><span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>通量尺度，不是经求解得到的非定常靶面作用力</td>
+</tr>
+<tr>
+<td><code>pArrestBound</code></td>
+<td><code>Iout/(AObs*tObs)</code></td>
+<td><code>Pa</code></td>
+<td>根据<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>和所声明观测条件得到的平均制动压力上界</td>
+</tr>
+<tr>
+<td><code>stroke</code></td>
+<td><code>x/Lbudget</code></td>
+<td><code>1</code></td>
+<td>已用排液体积占有限存量的比例</td>
+</tr>
+<tr>
+<td><code>stretch</code></td>
+<td><code>R/Rc0</code></td>
+<td><code>1</code></td>
+<td>凝胶内腔壁的周向伸长比</td>
+</tr>
+<tr>
+<td><code>Mjet</code></td>
+<td><code>abs(U)/cL</code></td>
+<td><code>1</code></td>
+<td>液体速度的<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>诊断量</td>
+</tr>
+<tr>
+<td><code>Mwall</code></td>
+<td><code>abs(Uw)/cL</code></td>
+<td><code>1</code></td>
+<td>腔壁速度的<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>诊断量</td>
+</tr>
+<tr>
+<td><code>communication</code></td>
+<td><code>L/cL*kap*abs(Vdot)/Vg</code></td>
+<td><code>1</code></td>
+<td>压力变化的均衡传播比；不求解传播场</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-13" id="zh-step-13"><div class="step-heading"><input aria-label="标记步骤 13 已完成" data-anchor="check-13" data-step="13" id="zh-check-13" type="checkbox"/><span class="step-number">13</span><h3>设置方程的物理量类型</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Component c → Global ODEs and DAEs → Global Equations 1</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 保留方程组名称 <code>ODE1</code>。将 <strong>Dependent variable quantity</strong>（因变量物理量）设为 <strong>Dimensionless (1)</strong>，将 <strong>Source term quantity</strong>（源项物理量）设为 <strong>Dimensionless (1)</strong>。输入五行方程之前，删除默认占位方程行。</p>
+<p class="guide-check"><strong>检查:</strong> 两个物理量均为无量纲。每个方程中的因子 <code>tau</code> 将变化率转化为无量纲残差。</p>
+<p class="guide-enter"><strong>输入方程之前明确状态量含义:</strong> <code>qq=x/Lbudget</code>；<code>vv=U/Us</code>；<code>dd=Edis/E0</code>；<code>ee=Eout/E0</code>；<code>ii=Iout/Iscale</code>。这五个标量是求解未知量。Variables 节点提供代数表达式，并不增加独立未知量。</p>
+</article><article class="guide-step" data-anchor="step-14" id="zh-step-14"><div class="step-heading"><input aria-label="标记步骤 14 已完成" data-anchor="check-14" data-step="14" id="zh-check-14" type="checkbox"/><span class="step-number">14</span><h3>输入全部五行全局方程</h3></div>
+<p class="guide-where"><strong>位置:</strong> 步骤 13 的 Global Equations 表。</p>
+<p class="guide-do"><strong>操作:</strong> 输入下表的每一行，包括两列初始值。表中的方程字段 <code>f(u,ut,utt,t)</code> 是由 COMSOL 设为零的残差。对于较长的行，选中该行并在表格下方编辑其字段。<a href="resources/gui/A_equations.tsv">A_equations.tsv</a> 是带表头的复制粘贴参考文件；参数和变量节点中的 Load from File 按钮不能将它导入本方程表。</p>
+<p class="guide-check"><strong>检查:</strong> 名称仅为 <code>qq</code>、<code>vv</code>、<code>dd</code>、<code>ee</code>、<code>ii</code>，初始值全部为零。<code>ii</code> 所在行对<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>通量进行积分，而不是将 <code>mJet*U</code> 赋给<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>f(u,ut,utt,t) — 原样输入</th>
+<th>u_0</th>
+<th>ut_0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qq</code></td>
+<td><code>tau*(qqt-outletOpen*U/Lbudget)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>vv</code></td>
+<td><code>tau*(vvt-acc/Us)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td><code>tau*(ddt-Pdis/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ee</code></td>
+<td><code>tau*(eet-Pout/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ii</code></td>
+<td><code>tau*(iit-outletOpen*rho*A*U^2/Iscale)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-15" id="zh-step-15"><div class="step-heading"><input aria-label="标记步骤 15 已完成" data-anchor="check-15" data-step="15" id="zh-check-15" type="checkbox"/><span class="step-number">15</span><h3>检查导数拼写与初始条件</h3></div>
+<p class="guide-where"><strong>位置:</strong> 五行方程及 Variables 节点。</p>
+<p class="guide-do"><strong>操作:</strong> 检查 <code>qqt</code>、<code>vvt</code>、<code>ddt</code>、<code>eet</code>、<code>iit</code>。它们是 COMSOL 的一阶时间导数名称：<code>vvt</code> 是 <code>vv</code> 的时间导数。不要输入 <code>vv*t</code>，后者表示乘法。初始值 <code>ut_0=0</code> 沿用已验收的设置；一阶方程负责计算随时间演变的导数。</p>
+<p class="guide-check"><strong>检查:</strong> 初始速度为零，不代表初始加速度为零。在基准压力下，<code>acc</code> 的初值为正。压力源、体积和输出表达式现在应能通过这五个已声明状态量解析。参见<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html">全局方程文档</a>。</p>
+</article><article class="guide-step" data-anchor="step-16" id="zh-step-16"><div class="step-heading"><input aria-label="标记步骤 16 已完成" data-anchor="check-16" data-step="16" id="zh-check-16" type="checkbox"/><span class="step-number">16</span><h3>输入输出时间列表</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Study 1 → Step 1: Time Dependent</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 保持 Time unit 为 <strong>s</strong>，将 Output times 替换为：</p>
+<button class="copy-block" type="button">复制文本</button><pre><code class="language-text">range(0,1[ns],100[us])
+</code></pre>
+<p class="guide-check"><strong>检查:</strong> 所请求的时间列表从零开始，到 100 µs 结束，输出间隔为 1 ns。停止条件会提前终止首次过程。这个列表用于数值采样，不代表 10 ns 光脉冲。</p>
+</article><article class="guide-step" data-anchor="step-17" id="zh-step-17"><div class="step-heading"><input aria-label="标记步骤 17 已完成" data-anchor="check-17" data-step="17" id="zh-check-17" type="checkbox"/><span class="step-number">17</span><h3>显示瞬态求解器</h3></div>
+<p class="guide-where"><strong>位置:</strong> 右键选择 <code>Study 1 → Show Default Solver</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 展开 <code>Solver Configurations → Solution 1</code>，单击 <strong>Time-Dependent Solver 1</strong>。如果这些节点已经存在，直接展开即可。保留自动生成的 Dependent Variables 节点；它将 <code>ODE1</code> 方程组连接到求解器。</p>
+<p class="guide-check"><strong>检查:</strong> 在 Settings 中可以看到并已选中 Time-Dependent Solver 1。没有添加第二个研究或第二个物理场接口。</p>
+</article><article class="guide-step" data-anchor="step-18" id="zh-step-18"><div class="step-heading"><input aria-label="标记步骤 18 已完成" data-anchor="check-18" data-step="18" id="zh-check-18" type="checkbox"/><span class="step-number">18</span><h3>按已验收的求解器设置逐项配置</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Solution 1 → Time-Dependent Solver 1</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 使用下表所列的 General、Absolute Tolerance 和 Time Stepping 设置。如果 General 继承研究设置，在 <strong>Defined by study step</strong> 中选择 <strong>User defined</strong>。求解器时间列表必须与步骤 16 相同。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>设置区域 / 字段</th>
+<th>设为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General → Defined by study step</td>
+<td>User defined</td>
+</tr>
+<tr>
+<td>General → Output times</td>
+<td><code>range(0,1[ns],100[us])</code></td>
+</tr>
+<tr>
+<td>General → Relative tolerance</td>
+<td><code>1e-9</code></td>
+</tr>
+<tr>
+<td>Absolute Tolerance → Global method</td>
+<td>Scaled</td>
+</tr>
+<tr>
+<td>Absolute Tolerance → Tolerance method</td>
+<td>Factor</td>
+</tr>
+<tr>
+<td>Absolute Tolerance → Tolerance factor</td>
+<td><code>0.1</code></td>
+</tr>
+<tr>
+<td>Absolute Tolerance → variable Method</td>
+<td>Use global</td>
+</tr>
+<tr>
+<td>Time Stepping → Solver type</td>
+<td>Implicit</td>
+</tr>
+<tr>
+<td>Time Stepping → Method</td>
+<td>BDF</td>
+</tr>
+<tr>
+<td>Time Stepping → Steps taken by solver</td>
+<td>Strict</td>
+</tr>
+<tr>
+<td>Time Stepping → Algebraic Variable Settings → Consistent initialization</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> 可见 BDF、Strict、<code>1e-9</code> 和初始化 Off。保留自动选定的初始步长、BDF 阶次及变量尺度。这些方程是一阶常微分方程；将初始化设为 Off 可保留指定的零初始速度。Strict 步进会到达所列时间，必要时还可采用额外内部步。参见<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html">瞬态求解器文档</a>。</p>
+</article><article class="guide-step" data-anchor="step-19" id="zh-step-19"><div class="step-heading"><input aria-label="标记步骤 19 已完成" data-anchor="check-19" data-step="19" id="zh-check-19" type="checkbox"/><span class="step-number">19</span><h3>添加全部四条停止规则</h3></div>
+<p class="guide-where"><strong>位置:</strong> 右键选择 <code>Time-Dependent Solver 1 → Stop Condition</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 添加下面四行。<strong>每一行</strong>都将 <strong>Stop if</strong> 设为 <strong>Negative (&lt;0)</strong>，并勾选 <strong>Active</strong>。在 Output at Stop 下，保持 <strong>Add solution = No</strong>，与已验收文件一致。Add warning 可以保持启用。</p>
+<p class="guide-check"><strong>检查:</strong> 存在四行启用的规则。由于此求解器节点位于组件命名空间之外，组件表达式需带 <code>c.</code> 前缀。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>停止表达式</th>
+<th>Stop if</th>
+<th>Active</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if(outletOpen&gt;0.5,c.U,c.Uw)</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>首次向外排出过程结束，或密封腔壁到达首次转向点</td>
+</tr>
+<tr>
+<td><code>Lbudget-c.x</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>连通腔室的液体存量耗尽</td>
+</tr>
+<tr>
+<td><code>1.2-c.stretch</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>声明的 20% 腔壁伸长筛选阈值（不是实测破裂阈值）</td>
+</tr>
+<tr>
+<td><code>0.1-max(c.Mjet,c.Mwall)</code></td>
+<td>Negative (&lt;0)</td>
+<td>Yes</td>
+<td>声明的<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span> 0.1 筛选阈值</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-why"><strong>原因:</strong> 第一行在首次向外速度回落并穿过零时停止。在密封情况下，它改为检查腔壁速度。其余各行限制液体存量、声明的伸长筛选阈值及<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>筛选阈值。初始零速度不为负，因此基准计算能够启动。压力均衡传播的筛选阈值在步骤 28 求解完成后检查；它不是在线停止规则。参见<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html">停止条件文档</a>。</p>
+</article><article class="guide-step" data-anchor="step-20" id="zh-step-20"><div class="step-heading"><input aria-label="标记步骤 20 已完成" data-anchor="check-20" data-step="20" id="zh-check-20" type="checkbox"/><span class="step-number">20</span><h3>完成求解前检查</h3></div>
+<p class="guide-where"><strong>位置:</strong> Parameters、Variables、Global Equations、Time-Dependent 研究及其求解器。</p>
+<p class="guide-check"><strong>逐项检查:</strong> 32 个参数；33 个变量；5 行方程；两个方程物理量均为 Dimensionless；全部状态初值为零；研究和求解器均使用 1 ns 时间列表；BDF Strict；一致初始化为 Off；四条已启用的 Negative 停止规则。Initial Values of Variables Solved For 必须来自物理场初始值，而不是此前的非零解。</p>
+<p class="guide-do"><strong>操作:</strong> 保存检查点 <code>practice/A_02_ready_to_solve.mph</code>。如果未知变量消息提到 <code>comp1</code> 或 <code>c</code>，更正命名空间；如果提到 <code>qq</code> 或 <code>vv</code>，检查方程的 Name 列。</p>
+</article><article class="guide-step" data-anchor="step-21" id="zh-step-21"><div class="step-heading"><input aria-label="标记步骤 21 已完成" data-anchor="check-21" data-step="21" id="zh-check-21" type="checkbox"/><span class="step-number">21</span><h3>计算首次向外排出过程</h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Study 1</code> 工具栏，或右键选择 <code>Study 1 → Compute</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 单击 Compute，观察 Progress 和 Log。求解完成后再打开结果表。当停止条件满足时出现警告是预期行为，但警告说明必须对应某一条已声明规则。</p>
+<p class="guide-check"><strong>检查:</strong> 储存的过程在约 <strong>33.885 µs</strong> 结束，早于所请求的 100 µs。基准情况下液体向外排出，速度达到峰值后逐渐回到零附近。若求解失败，应阅读最先导致失败的错误，不要继续绘制旧解。</p>
+</article><h2 class="guide-section" data-anchor="section-c" id="zh-section-c">C — 绘图、求值并回答模型 A 的问题</h2>
+<article class="guide-step" data-anchor="step-22" id="zh-step-22"><div class="step-heading"><input aria-label="标记步骤 22 已完成" data-anchor="check-22" data-step="22" id="zh-check-22" type="checkbox"/><span class="step-number">22</span><h3>绘制<span class="keyword technical-term" data-term="jet-speed" title="jet speed / 射流速度">出口速度</span></h3></div>
+<p class="guide-where"><strong>位置:</strong> 右键选择 <code>Results → 1D Plot Group</code>；再右键单击新建绘图组 → <strong>Global</strong>。</p>
+<p class="guide-enter"><strong>输入:</strong> 将组的 Label 设为 <code>A outlet speed</code>。选择 Study 1 / Solution 1 对应的数据集。在 Global 的 y-Axis Data 表中输入 <code>c.U</code>，Unit 为 <code>m/s</code>，Description 为 <code>Outward outlet speed</code>。在 x-Axis Data 中使用 <strong>Time</strong> 作为横轴来源；如果可选，将时间单位设为 <code>us</code>。否则保留秒，并按秒读取坐标轴。单击 <strong>Plot</strong>。</p>
+<p class="guide-check"><strong>检查:</strong> 速度从零开始，在约 <strong>15.3761 m/s</strong> 达到峰值，随后衰减至零附近。这些标量数据不应使用 Surface 或 Volume 绘图。</p>
+</article><article class="guide-step" data-anchor="step-23" id="zh-step-23"><div class="step-heading"><input aria-label="标记步骤 23 已完成" data-anchor="check-23" data-step="23" id="zh-check-23" type="checkbox"/><span class="step-number">23</span><h3>分别绘制各类压力输出</h3></div>
+<p class="guide-where"><strong>位置:</strong> 再添加一个 <code>1D Plot Group → Global</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 将 Label 设为 <code>A pressure definitions</code>。使用相同的数据集和时间横轴，输入：</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式</th>
+<th>单位</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.pb-pInf</code></td>
+<td><code>kPa</code></td>
+<td>腔室压力源超压</td>
+</tr>
+<tr>
+<td><code>c.qJet</code></td>
+<td><code>kPa</code></td>
+<td>出口动压尺度</td>
+</tr>
+<tr>
+<td><code>pInf</code></td>
+<td><code>kPa</code></td>
+<td>环境绝对压力参考值</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> 初始源超压约为 <strong>279.632 kPa</strong>；出口最大动压约为 <strong>118.212 kPa</strong>。腔室绝对压力为 <code>c.pb</code>，其中包含环境压力。动压是出口处的<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>尺度，并不计算靶面冲击峰值压力。</p>
+</article><article class="guide-step" data-anchor="step-24" id="zh-step-24"><div class="step-heading"><input aria-label="标记步骤 24 已完成" data-anchor="check-24" data-step="24" id="zh-check-24" type="checkbox"/><span class="step-number">24</span><h3>绘制<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">能量收支</span></h3></div>
+<p class="guide-where"><strong>位置:</strong> 再添加一个 <code>1D Plot Group → Global</code>，将 Label 设为 <code>A energy accounting</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 将下列无量纲量对时间绘图，Unit 均设为 <code>1</code>：</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.Kjet/E0</code></td>
+<td>有效液柱运动中储存的能量</td>
+</tr>
+<tr>
+<td><code>c.Eout/E0</code></td>
+<td>实际随排液排出的<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>c.Esurf/E0</code></td>
+<td>恒定弯月面载荷对照模型所做的功</td>
+</tr>
+<tr>
+<td><code>c.Edis/E0</code></td>
+<td>累积不可逆损耗</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td>归一化第一定律残差</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> <code>Eout</code> 在向外排出过程中增加，而液柱储存<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>先增大后减小。过程末端，较低的 <code>Kjet</code> 可以与显著的排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>同时存在。残差保持在零附近。尚未分配到这四个去向的能量，对应压力源剩余<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>。</p>
+</article><article class="guide-step" data-anchor="step-25" id="zh-step-25"><div class="step-heading"><input aria-label="标记步骤 25 已完成" data-anchor="check-25" data-step="25" id="zh-check-25" type="checkbox"/><span class="step-number">25</span><h3>创建完整时间历程表</h3></div>
+<p class="guide-where"><strong>位置:</strong> 右键选择 <code>Results → Derived Values → Global Evaluation</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> 将节点 Label 设为 <code>A complete first-ejection history</code>。选择 Study 1 的解数据集，并设置 <strong>Time selection = All</strong>。保持 <strong>Data Series Operation → Transformation = None</strong>。输入下面完整的表达式表，并单击 <strong>Evaluate</strong>。<a href="resources/gui/global_evaluation.tsv">global_evaluation.tsv</a> 是带表头的复制粘贴参考文件。</p>
+<p class="guide-check"><strong>检查:</strong> 获得覆盖已求解过程的多行时间数据，而不是单个最大值，也不是假定的 100 µs 末端值。排出量各列与液柱储存<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>及<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>分别列出。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式</th>
+<th>单位</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>t</code></td>
+<td><code>s</code></td>
+<td>初始化后的时间</td>
+</tr>
+<tr>
+<td><code>c.x</code></td>
+<td><code>m</code></td>
+<td>排出体积 / 出口面积</td>
+</tr>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>出口向外速度</td>
+</tr>
+<tr>
+<td><code>c.R</code></td>
+<td><code>m</code></td>
+<td>腔壁半径</td>
+</tr>
+<tr>
+<td><code>c.Uw</code></td>
+<td><code>m/s</code></td>
+<td>腔壁扩张速度</td>
+</tr>
+<tr>
+<td><code>c.Vg</code></td>
+<td><code>m^3</code></td>
+<td>气体压力源体积</td>
+</tr>
+<tr>
+<td><code>c.pb-pInf</code></td>
+<td><code>Pa</code></td>
+<td>源表压</td>
+</tr>
+<tr>
+<td><code>c.pEl</code></td>
+<td><code>Pa</code></td>
+<td>凝胶弹性压力</td>
+</tr>
+<tr>
+<td><code>c.pRes</code></td>
+<td><code>Pa</code></td>
+<td>凝胶弹性与<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏性</span>阻力之和</td>
+</tr>
+<tr>
+<td><code>c.Fconf</code></td>
+<td><code>N</code></td>
+<td>弹性半球合力</td>
+</tr>
+<tr>
+<td><code>c.qJet</code></td>
+<td><code>Pa</code></td>
+<td>出口动压尺度</td>
+</tr>
+<tr>
+<td><code>c.Ijet</code></td>
+<td><code>N*s</code></td>
+<td>有效液柱<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span></td>
+</tr>
+<tr>
+<td><code>c.Fflux</code></td>
+<td><code>N</code></td>
+<td><span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span>通量尺度</td>
+</tr>
+<tr>
+<td><code>c.Kjet</code></td>
+<td><code>J</code></td>
+<td>液柱储存<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>c.Kgel</code></td>
+<td><code>J</code></td>
+<td>凝胶径向<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>c.Wgel</code></td>
+<td><code>J</code></td>
+<td>凝胶弹性功</td>
+</tr>
+<tr>
+<td><code>c.Esurf</code></td>
+<td><code>J</code></td>
+<td>恒定弯月面载荷所做的功</td>
+</tr>
+<tr>
+<td><code>c.Edis</code></td>
+<td><code>J</code></td>
+<td>不可逆损耗</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td><code>1</code></td>
+<td>归一化能量残差</td>
+</tr>
+<tr>
+<td><code>c.stroke</code></td>
+<td><code>1</code></td>
+<td>已用液体存量的比例</td>
+</tr>
+<tr>
+<td><code>c.stretch</code></td>
+<td><code>1</code></td>
+<td>内腔壁伸长比</td>
+</tr>
+<tr>
+<td><code>c.Mjet</code></td>
+<td><code>1</code></td>
+<td>液体<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>诊断量</td>
+</tr>
+<tr>
+<td><code>c.Mwall</code></td>
+<td><code>1</code></td>
+<td>腔壁<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>诊断量</td>
+</tr>
+<tr>
+<td><code>c.communication</code></td>
+<td><code>1</code></td>
+<td>压力均衡传播筛选量</td>
+</tr>
+<tr>
+<td><code>c.acc</code></td>
+<td><code>m/s^2</code></td>
+<td>出口加速度</td>
+</tr>
+<tr>
+<td><code>c.wallAcc</code></td>
+<td><code>m/s^2</code></td>
+<td>腔壁加速度</td>
+</tr>
+<tr>
+<td><code>c.pArrestBound</code></td>
+<td><code>Pa</code></td>
+<td>声明的平均制动压力上界</td>
+</tr>
+<tr>
+<td><code>c.Eout</code></td>
+<td><code>J</code></td>
+<td>实际排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>c.Iout</code></td>
+<td><code>N*s</code></td>
+<td>实际轴向<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span></td>
+</tr>
+<tr>
+<td><code>c.Mout</code></td>
+<td><code>kg</code></td>
+<td>实际排出液体质量</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-26" id="zh-step-26"><div class="step-heading"><input aria-label="标记步骤 26 已完成" data-anchor="check-26" data-step="26" id="zh-check-26" type="checkbox"/><span class="step-number">26</span><h3>正确计算时间历程最大值</h3></div>
+<p class="guide-where"><strong>位置:</strong> 单独添加一个 <code>Derived Values → Global Evaluation</code> 节点。</p>
+<p class="guide-enter"><strong>输入:</strong> 将 Label 设为 <code>A temporal maxima</code>。Dataset = Study 1 的解；Time selection = All；<strong>Data Series Operation → Transformation = Maximum</strong>。输入下列表达式并执行 Evaluate。如果 Data Series Operation 处于折叠状态，先将其展开。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式</th>
+<th>单位</th>
+<th>基准目标值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>约 15.37608</td>
+</tr>
+<tr>
+<td><code>c.pb-pInf</code></td>
+<td><code>kPa</code></td>
+<td>约 279.63163</td>
+</tr>
+<tr>
+<td><code>c.qJet</code></td>
+<td><code>kPa</code></td>
+<td>约 118.2119</td>
+</tr>
+<tr>
+<td><code>abs(c.energyResidual)</code></td>
+<td><code>1</code></td>
+<td>小于 <code>1e-6</code></td>
+</tr>
+<tr>
+<td><code>c.communication</code></td>
+<td><code>1</code></td>
+<td>小于 <code>0.1</code></td>
+</tr>
+<tr>
+<td><code>c.stroke</code></td>
+<td><code>1</code></td>
+<td>不超过 <code>1</code>，允许数值容差</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> 这些值是所列各标量随时间的最大值，不是空间最大值。源压力达到最大值的时刻，不一定与速度达到最大值的时刻相同。</p>
+</article><article class="guide-step" data-anchor="step-27" id="zh-step-27"><div class="step-heading"><input aria-label="标记步骤 27 已完成" data-anchor="check-27" data-step="27" id="zh-check-27" type="checkbox"/><span class="step-number">27</span><h3>计算实际末端输出</h3></div>
+<p class="guide-where"><strong>位置:</strong> 再添加一个 <code>Global Evaluation</code>，将 Label 设为 <code>A endpoint output</code>。</p>
+<p class="guide-enter"><strong>输入:</strong> Dataset = Study 1 的解；<strong>Time selection = Last</strong>；<strong>Transformation = None</strong>。输入 <code>t</code>、<code>c.Eout</code>、<code>c.Iout</code>、<code>c.Mout</code>、<code>c.x</code>、<code>c.U</code> 和 <code>c.energyResidual</code>，单位使用下表所列值。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式</th>
+<th>单位</th>
+<th>已验收的最后储存值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>t</code></td>
+<td><code>us</code></td>
+<td>33.8850</td>
+</tr>
+<tr>
+<td><code>c.Eout</code></td>
+<td><code>nJ</code></td>
+<td>1.391345448</td>
+</tr>
+<tr>
+<td><code>c.Iout</code></td>
+<td><code>N*s</code></td>
+<td>2.270809686e-10</td>
+</tr>
+<tr>
+<td><code>c.Mout</code></td>
+<td><code>ng</code></td>
+<td>20.9678882</td>
+</tr>
+<tr>
+<td><code>c.x</code></td>
+<td><code>um</code></td>
+<td>266.9714446</td>
+</tr>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>0.0001702102</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td><code>1</code></td>
+<td>-1.0350e-10</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> Last 表示本次因停止条件而终止的解中，最后储存的时刻，约为 33.885 µs；它不是标称的 100 µs 结束时刻。Stop Condition 在离散求解步上检查，因此精确的过零时刻与最后储存行略有差异。比较排出量时，应统一使用这一末端约定。</p>
+</article><article class="guide-step" data-anchor="step-28" id="zh-step-28"><div class="step-heading"><input aria-label="标记步骤 28 已完成" data-anchor="check-28" data-step="28" id="zh-check-28" type="checkbox"/><span class="step-number">28</span><h3>验收并保存基准模型</h3></div>
+<p class="guide-where"><strong>位置:</strong> 刚刚创建的曲线、最大值表和末端表。</p>
+<p class="guide-do"><strong>操作:</strong> 检查初始液体与腔壁速度为零，气体体积和绝对压力为正，报告的整个过程均为向外速度，归一化残差小于 <code>1e-6</code>，压力均衡传播比小于 <code>0.1</code>，两个<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>诊断量均小于 <code>0.1</code>，且已用液体存量不超过有限存量上限。检查停止原因。然后保存为 <code>practice/A_baseline_my_rebuild.mph</code>。</p>
+<p class="guide-check"><strong>检查:</strong> 基准峰值与 15.37608 m/s 一致，末端排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>约为 1.391345 nJ。这些检查验证的是所声明对照模型的实现，不能用于标定 <span class="keyword technical-term" data-term="pfc" title="perfluorocarbon / 全氟碳">PFC</span> <span class="keyword technical-term" data-term="equation-of-state" title="equation of state / 状态方程">状态方程</span>或激光能量转换。</p>
+</article><article class="guide-step" data-anchor="step-29" id="zh-step-29"><div class="step-heading"><input aria-label="标记步骤 29 已完成" data-anchor="check-29" data-step="29" id="zh-check-29" type="checkbox"/><span class="step-number">29</span><h3>通过绝对压力选择压力源<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span></h3></div>
+<p class="guide-where"><strong>位置:</strong> <code>Global Definitions → Parameters 1</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 对于所采样的压力源<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>，使用下表绝对压力。这些压力是在相同的 <code>Rg0</code>、<code>kap</code> 和 <code>pInf</code> 下，通过反解有限绝热<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>关系得到的。修改 <code>p0</code>，保留 <code>E0</code> 表达式。比较压力源<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>时，其余输入保持不变。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th><span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span></th>
+<th>绝对压力 p0 — 原样输入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5 nJ</td>
+<td><code>220113.1907789512[Pa]</code></td>
+</tr>
+<tr>
+<td>2 nJ</td>
+<td><code>379631.6312499268[Pa]</code></td>
+</tr>
+<tr>
+<td>5 nJ</td>
+<td><code>612212.3087264621[Pa]</code></td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> <code>E0</code> 的 Value 列应求值得到目标<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>。如果改变压力源半径、环境压力或绝热指数，应使用 <a href="MODEL_SPEC.zh.md">MODEL_SPEC.md</a> 中的步骤 2，或 <a href="scripts/reference.py">reference.py</a> 中的 <code>source_pressure</code> 重新计算这一映射。此时，上述三组压力表不再适用。</p>
+</article><article class="guide-step" data-anchor="step-30" id="zh-step-30"><div class="step-heading"><input aria-label="标记步骤 30 已完成" data-anchor="check-30" data-step="30" id="zh-check-30" type="checkbox"/><span class="step-number">30</span><h3>复现九工况的条件包络</h3></div>
+<p class="guide-where"><strong>位置:</strong> Parameters、Study 1 的 Compute，以及 <code>A temporal maxima</code>。</p>
+<p class="guide-do"><strong>操作:</strong> 对下面试算表的每一行执行完整流程：设置 <code>p0</code> 和 <code>a</code>；提交两个单元格；核对 <code>E0</code>；从初始值重新计算 Study 1；针对新计算的数据集，对最大值和末端节点执行 Evaluate；记录峰值速度、两种已定义压力、排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>、<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>及有效性诊断量。如果需要保留该解，使用独立的练习文件名保存每次试算。对每一行都重复完整流程。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>工况</th>
+<th>E0 (nJ)</th>
+<th>p0</th>
+<th>a</th>
+<th>预期峰值 U (m/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A_E0.5nJ_a3um</td>
+<td>0.5</td>
+<td><code>220113.1907789512[Pa]</code></td>
+<td><code>3[um]</code></td>
+<td>8.560117</td>
+</tr>
+<tr>
+<td>A_E0.5nJ_a5um</td>
+<td>0.5</td>
+<td><code>220113.1907789512[Pa]</code></td>
+<td><code>5[um]</code></td>
+<td>8.068346</td>
+</tr>
+<tr>
+<td>A_E0.5nJ_a10um</td>
+<td>0.5</td>
+<td><code>220113.1907789512[Pa]</code></td>
+<td><code>10[um]</code></td>
+<td>5.860144</td>
+</tr>
+<tr>
+<td>A_E2nJ_a3um</td>
+<td>2</td>
+<td><code>379631.6312499268[Pa]</code></td>
+<td><code>3[um]</code></td>
+<td>17.286430</td>
+</tr>
+<tr>
+<td>A_E2nJ_a5um</td>
+<td>2</td>
+<td><code>379631.6312499268[Pa]</code></td>
+<td><code>5[um]</code></td>
+<td>15.376078</td>
+</tr>
+<tr>
+<td>A_E2nJ_a10um</td>
+<td>2</td>
+<td><code>379631.6312499268[Pa]</code></td>
+<td><code>10[um]</code></td>
+<td>11.237538</td>
+</tr>
+<tr>
+<td>A_E5nJ_a3um</td>
+<td>5</td>
+<td><code>612212.3087264621[Pa]</code></td>
+<td><code>3[um]</code></td>
+<td>25.279819</td>
+</tr>
+<tr>
+<td>A_E5nJ_a5um</td>
+<td>5</td>
+<td><code>612212.3087264621[Pa]</code></td>
+<td><code>5[um]</code></td>
+<td>22.350558</td>
+</tr>
+<tr>
+<td>A_E5nJ_a10um</td>
+<td>5</td>
+<td><code>612212.3087264621[Pa]</code></td>
+<td><code>10[um]</code></td>
+<td>16.601975</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查:</strong> 所采样工况中的最高速度约为 <strong>25.27982 m/s</strong>，对应 5 nJ <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>和 3 µm 出口半径。其源超压约为 512.212 kPa，动压尺度约为 319.535 kPa。该最大值以所声明的工况族为条件；提高<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>或改变结构，会改变工况族。</p>
+</article><article class="guide-step" data-anchor="step-31" id="zh-step-31"><div class="step-heading"><input aria-label="标记步骤 31 已完成" data-anchor="check-31" data-step="31" id="zh-check-31" type="checkbox"/><span class="step-number">31</span><h3>解读压力与速度上限</h3></div>
+<p class="guide-where"><strong>位置:</strong> 参数值 <code>Uceiling</code>、<code>qCeiling</code> 以及九工况结果。</p>
+<p class="guide-do"><strong>操作:</strong> 逐个工况将求解得到的最大速度与 <code>Uceiling</code> 比较，将求解得到的动压与 <code>qCeiling</code> 比较。这些上界将全部<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>分配给液柱运动，因此大于实际达到的峰值。使用所附<a href="assets/conditional_velocity_envelope.zh.png">条件速度包络图</a>查看已验收的比较结果。</p>
+<p class="guide-check"><strong>检查:</strong> 基准工况仅由能量确定的速度上界约为 <strong>31.9154 m/s</strong>，而求解得到的速度为 15.3761 m/s。将腔室压力、出口动压和仅由能量确定的上界分别记录在不同列中。本模型不预测已排除的激活瞬态过程和靶面冲击压力。</p>
+</article><h2 class="guide-section" data-anchor="section-d" id="zh-section-d">D — 加入<span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span><span class="keyword technical-term" data-term="confinement" title="confinement / 约束">约束</span>，建立模型 B</h2>
+<article class="guide-step" data-anchor="step-32" id="zh-step-32"><div class="step-heading"><input aria-label="标记步骤 32 已完成" data-anchor="check-32" data-step="32" id="zh-check-32" type="checkbox"/><span class="step-number">32</span><h3>返回基准模型，并另存模型 B 副本</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>File → Open</code>，然后选择 <code>File → Save As</code>。</p>
+<p class="guide-do"><strong>操作：</strong> 打开步骤 28 中保存的 <code>A_baseline_my_rebuild.mph</code>。将其另存为独立副本 <code>practice/B_01_from_A.mph</code>。把组件的 Label 改为 <code>c: Model B practice</code>；其 Name 保持为 <code>c</code>。</p>
+<p class="guide-check"><strong>检查：</strong> 当前编辑的是模型 B 的练习副本。确认 <code>p0=379631.6312499547[Pa]</code>、<code>a=5[um]</code> 或其以米表示的等价值、<code>G=20[kPa]</code>、<code>etaG=0.010[Pa*s]</code>、<code>rhoG=1000[kg/m^3]</code>、<code>Kloss=0</code>、<code>Rloss=0[Pa*s/m]</code>、<code>outletOpen=1</code>。这些是相互匹配的基准输入。如果在另一个空白模型中建立 B，<a href="resources/gui/B_parameters_import.txt">B_parameters_import.txt</a> 包含完整的基准参数表。</p>
+</article><article class="guide-step" data-anchor="step-33" id="zh-step-33"><div class="step-heading"><input aria-label="标记步骤 33 已完成" data-anchor="check-33" data-step="33" id="zh-check-33" type="checkbox"/><span class="step-number">33</span><h3>替换九个与凝胶有关的表达式</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>Component c → Definitions → Source, outlet and accounting</code>。</p>
+<p class="guide-do"><strong>操作：</strong> 替换下面列出的九个现有行。保留模型 A 的另外 24 个表达式。可使用 <a href="resources/gui/B_variables_patch_import.txt">B_variables_patch_import.txt</a> 更新这些名称对应的表达式，也可以手动编辑其 Expression 单元格。<a href="resources/gui/B_variables_import.txt">B_variables_import.txt</a> 包含全部 33 行 B 变量，适用于新建的 Variables 表。</p>
+<p class="guide-check"><strong>检查：</strong> 现在气体体积同时取决于排出的液体和扩张的腔壁半径。<code>pEl</code>、<code>Wgel</code>、<code>Kgel</code> 以及凝胶损耗均已启用。<code>rr</code> 和 <code>ww</code> 将在下一张步骤卡中得到定义。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>表达式 — 按原样输入</th>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>R</code></td>
+<td><code>Rc0*rr</code></td>
+<td><code>m</code></td>
+<td>腔壁半径，m</td>
+</tr>
+<tr>
+<td><code>Uw</code></td>
+<td><code>Us*ww</code></td>
+<td><code>m/s</code></td>
+<td>腔壁扩张速度，m/s</td>
+</tr>
+<tr>
+<td><code>pEl</code></td>
+<td><code>G/2*(5-4*Rc0/R-(Rc0/R)^4)</code></td>
+<td><code>Pa</code></td>
+<td>球形凝胶腔壁处的弹性阻力压力</td>
+</tr>
+<tr>
+<td><code>pRes</code></td>
+<td><code>pEl+4*etaG*Uw/R</code></td>
+<td><code>Pa</code></td>
+<td>凝胶腔壁的弹性与<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏性</span>阻力压力之和</td>
+</tr>
+<tr>
+<td><code>Wgel</code></td>
+<td><code>2*pi*G*(5*R^3/3-2*Rc0*R^2+Rc0^4/R-2*Rc0^3/3)</code></td>
+<td><code>J</code></td>
+<td>凝胶中可恢复的弹性功</td>
+</tr>
+<tr>
+<td><code>Kgel</code></td>
+<td><code>2*pi*rhoG*R^3*Uw^2</code></td>
+<td><code>J</code></td>
+<td>球形凝胶的径向<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span></td>
+</tr>
+<tr>
+<td><code>wallAcc</code></td>
+<td><code>((pb-pInf-pRes)/rhoG-1.5*Uw^2)/R</code></td>
+<td><code>m/s^2</code></td>
+<td>球形凝胶腔壁的加速度</td>
+</tr>
+<tr>
+<td><code>Pdis</code></td>
+<td><code>outletOpen*A*(Rloss*U^2+rho*Kloss*abs(U)^3/2)+16*pi*etaG*R*Uw^2</code></td>
+<td><code>W</code></td>
+<td>非负的出口与凝胶不可逆损耗功率</td>
+</tr>
+<tr>
+<td><code>communication</code></td>
+<td><code>max(L,2*Rc0)/cL*kap*abs(Vdot)/Vg</code></td>
+<td><code>1</code></td>
+<td>压力变化的均衡传播比；不求解传播场</td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-34" id="zh-step-34"><div class="step-heading"><input aria-label="标记步骤 34 已完成" data-anchor="check-34" data-step="34" id="zh-check-34" type="checkbox"/><span class="step-number">34</span><h3>输入模型 B 的七行方程</h3></div>
+<p class="guide-where"><strong>位置：</strong> 现有的 <code>Global Equations 1</code> 表。</p>
+<p class="guide-do"><strong>操作：</strong> 将五行表替换为下面完整的七行表；两个量的设置均保留为 Dimensionless。<code>rr=R/Rc0</code> 是腔壁半径比，<code>ww=Uw/Us</code> 是归一化腔壁速度。其余状态量的含义仍与步骤 13 相同。将 <code>rr</code> 的初始值设为 <strong>1</strong>。另外六个状态量的初始值以及每个 <code>ut_0</code> 条目均为零。<a href="resources/gui/B_equations.tsv">B_equations.tsv</a> 是带表头的复制／粘贴参考文件。</p>
+<p class="guide-check"><strong>检查：</strong> 名称依次为 <code>qq</code>、<code>vv</code>、<code>rr</code>、<code>ww</code>、<code>dd</code>、<code>ee</code>、<code>ii</code>，共七行。把 <code>rr</code> 的初始值设为零会产生零半径奇点，这是错误的。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>名称</th>
+<th>f(u,ut,utt,t) — 按原样输入</th>
+<th>u_0</th>
+<th>ut_0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qq</code></td>
+<td><code>tau*(qqt-outletOpen*U/Lbudget)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>vv</code></td>
+<td><code>tau*(vvt-acc/Us)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>rr</code></td>
+<td><code>tau*(rrt-Uw/Rc0)</code></td>
+<td><code>1</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ww</code></td>
+<td><code>tau*(wwt-wallAcc/Us)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td><code>tau*(ddt-Pdis/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ee</code></td>
+<td><code>tau*(eet-Pout/E0)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>ii</code></td>
+<td><code>tau*(iit-outletOpen*rho*A*U^2/Iscale)</code></td>
+<td><code>0</code></td>
+<td><code>0</code></td>
+</tr>
+</tbody>
+</table>
+</article><article class="guide-step" data-anchor="step-35" id="zh-step-35"><div class="step-heading"><input aria-label="标记步骤 35 已完成" data-anchor="check-35" data-step="35" id="zh-check-35" type="checkbox"/><span class="step-number">35</span><h3>重新核对继承的研究与求解器</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>Study 1 → Time Dependent</code>，然后选择 <code>Solution 1 → Time-Dependent Solver 1</code>。</p>
+<p class="guide-do"><strong>操作：</strong> 两个节点均保留 1 ns 输出时间列表；所有字段与步骤 18 的设置一致。初始状态必须来自更新后的物理场方程表。现有的 <code>ODE1</code> 方程组现在包含七个状态量；不要手动把旧的 A 末态解选作新的初始状态。</p>
+<p class="guide-check"><strong>检查：</strong> 求解器中启用的 Global ODEs and DAEs 接口只有一个。Consistent initialization 仍为 Off。如果编辑物理场后重新生成默认求解器，计算前需重新输入步骤 18 的设置，并重新建立步骤 19 的四条停止规则。</p>
+</article><article class="guide-step" data-anchor="step-36" id="zh-step-36"><div class="step-heading"><input aria-label="标记步骤 36 已完成" data-anchor="check-36" data-step="36" id="zh-check-36" type="checkbox"/><span class="step-number">36</span><h3>检查模型 B 的停止逻辑</h3></div>
+<p class="guide-where"><strong>位置：</strong> 继承的 <code>Time-Dependent Solver 1 → Stop Condition</code>。</p>
+<p class="guide-do"><strong>操作：</strong> 对照步骤 19 核对全部四行。每行均保持 Active，并设为 Negative。第一个表达式仍必须是 <code>if(outletOpen&gt;0.5,c.U,c.Uw)</code>。</p>
+<p class="guide-check"><strong>检查：</strong> 开放出口的 B 在<span class="keyword technical-term" data-term="jet-speed" title="jet speed / 射流速度">出口速度</span>首次回落至零时结束，密封的 B 则在腔壁速度首次回落至零时结束。20% 拉伸规则是预先声明的适用性筛查条件，不是实测的凝胶破裂阈值。停止警告会说明保留的是哪一次运动过程。</p>
+</article><article class="guide-step" data-anchor="step-37" id="zh-step-37"><div class="step-heading"><input aria-label="标记步骤 37 已完成" data-anchor="check-37" data-step="37" id="zh-check-37" type="checkbox"/><span class="step-number">37</span><h3>计算开放出口的凝胶基准模型</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>Study 1 → Compute</code>。</p>
+<p class="guide-do"><strong>操作：</strong> 保存为 <code>practice/B_02_ready_to_solve.mph</code>，然后在 <code>outletOpen=1</code> 时执行 Compute。完成后，如有需要，在继承的绘图与求值节点中重新选择当前的 Study 1 数据集。将这些节点的标签改为含 B 的名称，以便与已保存的 A 练习文件中的结果区分。</p>
+<p class="guide-check"><strong>检查：</strong> 出口峰值速度约为 <strong>1.62538 m/s</strong>，保留的向外排出过程在约 <strong>1.937 µs</strong> 时结束。这些结果与 A 不同，因为腔壁扩张和凝胶损耗为源<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>增加了其他去向。</p>
+</article><article class="guide-step" data-anchor="step-38" id="zh-step-38"><div class="step-heading"><input aria-label="标记步骤 38 已完成" data-anchor="check-38" data-step="38" id="zh-check-38" type="checkbox"/><span class="step-number">38</span><h3>绘制腔壁运动与凝胶阻力</h3></div>
+<p class="guide-where"><strong>位置：</strong> 添加 <code>Results → 1D Plot Group → Global</code> 节点。</p>
+<p class="guide-enter"><strong>输入：</strong> 在一个图组中绘制 <code>c.stretch</code>，Unit 为 <code>1</code>；在另一个图组中绘制 <code>c.Uw</code>，Unit 为 <code>m/s</code>。在一个压力图组中绘制 <code>c.pEl</code>、<code>c.pRes</code>、<code>c.pb-pInf</code> 和 <code>c.qJet</code>，单位全部为 <code>kPa</code>。使用当前 B 数据集，以 Time 为横轴。</p>
+<p class="guide-check"><strong>检查：</strong> 初始拉伸比为 1，初始腔壁速度为零。<code>pEl</code> 表示弹性阻力压力，<code>pRes</code> 还包含<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏性</span>阻力压力。腔室驱动压力也用于克服腔壁<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">惯性</span>，因此不能与任一阻力曲线互换。基准模型的最大弹性阻力压力约为 <strong>9.143 kPa</strong>。</p>
+</article><article class="guide-step" data-anchor="step-39" id="zh-step-39"><div class="step-heading"><input aria-label="标记步骤 39 已完成" data-anchor="check-39" data-step="39" id="zh-check-39" type="checkbox"/><span class="step-number">39</span><h3>绘制定义明确的<span class="keyword technical-term" data-term="confinement" title="confinement / 约束">约束</span>力</h3></div>
+<p class="guide-where"><strong>位置：</strong> 再添加一个 <code>1D Plot Group → Global</code>，标签设为 <code>B hemisphere resistance</code>。</p>
+<p class="guide-enter"><strong>输入：</strong> 绘制 <code>c.Fconf</code>，Unit 为 <code>uN</code>。该量定义为一个半球上的弹性腔壁<span class="keyword technical-term" data-term="traction" title="traction / 牵引">牵引</span>力沿轴向的合力。也可加入 <code>pi*c.R^2*c.pRes</code>，单位同样为 <code>uN</code>，标签设为 <code>Elastic plus viscous hemisphere resistance</code>。</p>
+<p class="guide-check"><strong>检查：</strong> 最大弹性力约为 <strong>33.77 µN</strong>。这是明确定义的半球合力。球对称的腔壁<span class="keyword technical-term" data-term="traction" title="traction / 牵引">牵引</span>力在整个球面上的净矢量合力为零；该数值不是实测的靶面作用力，也不是通过空间求解得到的平面层作用力。</p>
+</article><article class="guide-step" data-anchor="step-40" id="zh-step-40"><div class="step-heading"><input aria-label="标记步骤 40 已完成" data-anchor="check-40" data-step="40" id="zh-check-40" type="checkbox"/><span class="step-number">40</span><h3>求取模型 B 的最大值</h3></div>
+<p class="guide-where"><strong>位置：</strong> 复制或创建一个 <code>Global Evaluation</code> 节点；标签设为 <code>B temporal maxima</code>。</p>
+<p class="guide-enter"><strong>输入：</strong> 使用当前 B 数据集；Time selection 设为 All；Transformation 设为 Maximum。求值：<code>c.U</code>，单位 <code>m/s</code>；<code>c.qJet</code> 和 <code>c.pEl</code>，单位 <code>kPa</code>；<code>c.Fconf</code>，单位 <code>uN</code>；<code>c.stretch</code>、<code>c.communication</code>、两个<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>诊断量，以及 <code>abs(c.energyResidual)</code>，单位均为 <code>1</code>。</p>
+<p class="guide-check"><strong>检查：</strong> 每个最大值分别来自该量自身的时间历程。如果腔壁半径已经变化，不要把最大压力乘以初始面积来计算<span class="keyword technical-term" data-term="confinement" title="confinement / 约束">约束</span>力；应对完整的 <code>Fconf</code> 表达式求值。接受输出结果时仍必须包含适用性检查。</p>
+</article><article class="guide-step" data-anchor="step-41" id="zh-step-41"><div class="step-heading"><input aria-label="标记步骤 41 已完成" data-anchor="check-41" data-step="41" id="zh-check-41" type="checkbox"/><span class="step-number">41</span><h3>求取模型 B 的排出输出</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>Global Evaluation</code>，标签设为 <code>B endpoint output</code>。</p>
+<p class="guide-enter"><strong>输入：</strong> 使用当前 B 数据集；<strong>Time selection Last</strong>；<strong>Transformation None</strong>。使用与步骤 27 相同的末端表达式列表。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式</th>
+<th>单位</th>
+<th>已通过验证的最后存储值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>t</code></td>
+<td><code>us</code></td>
+<td>1.9370</td>
+</tr>
+<tr>
+<td><code>c.Eout</code></td>
+<td><code>nJ</code></td>
+<td>0.000136295</td>
+</tr>
+<tr>
+<td><code>c.Iout</code></td>
+<td><code>N*s</code></td>
+<td>1.982567108e-13</td>
+</tr>
+<tr>
+<td><code>c.Mout</code></td>
+<td><code>ng</code></td>
+<td>0.1561203</td>
+</tr>
+<tr>
+<td><code>c.x</code></td>
+<td><code>um</code></td>
+<td>1.9877850</td>
+</tr>
+<tr>
+<td><code>c.U</code></td>
+<td><code>m/s</code></td>
+<td>0.0007545839</td>
+</tr>
+<tr>
+<td><code>c.energyResidual</code></td>
+<td><code>1</code></td>
+<td>-1.2237e-07</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查：</strong> 很小的排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>对应 B 中完整但短暂的排出过程。不能用 <code>Kjet</code> 代替这项排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>，也不能用 <code>Ijet</code> 代替<span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>。仅有速度峰值无法得到全过程积分输出。</p>
+</article><article class="guide-step" data-anchor="step-42" id="zh-step-42"><div class="step-heading"><input aria-label="标记步骤 42 已完成" data-anchor="check-42" data-step="42" id="zh-check-42" type="checkbox"/><span class="step-number">42</span><h3>计算相互匹配的传导比</h3></div>
+<p class="guide-where"><strong>位置：</strong> 在 B 模型中再添加两个 Global Evaluation 节点。</p>
+<p class="guide-do"><strong>操作：</strong> 首先保留步骤 26–27 中与 B 匹配的 A 峰值和末端值。对于本基准，以下表达式把这些已验证的 A 值作为明确的分母。如果改变源状态或几何参数，就必须把每个分母替换为新匹配的 A 对照模型中对应的数值。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>表达式（单位 1）</th>
+<th>Time selection → Transformation</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c.U/(15.376077990105143[m/s])</code></td>
+<td>All → Maximum</td>
+<td>峰值速度比</td>
+</tr>
+<tr>
+<td><code>c.qJet/(118211.88717889792[Pa])</code></td>
+<td>All → Maximum</td>
+<td>峰值动压比</td>
+</tr>
+<tr>
+<td><code>c.Eout/(1.3913454479823484e-09[J])</code></td>
+<td>Last → None</td>
+<td>排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>比</td>
+</tr>
+<tr>
+<td><code>c.Iout/(2.2708096862657052e-10[N*s])</code></td>
+<td>Last → None</td>
+<td><span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>比</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查：</strong> 峰值速度／动压比使用 All times + Maximum；排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>／冲量比使用 Last + None。将无量纲比值乘以 100，即可报告百分比。预期基准结果约为：<strong>速度 10.5709%</strong>、<strong>动压 1.1174%</strong>、<strong>排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span> 0.00980%</strong>、<strong><span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span> 0.08731%</strong>。在密度相同时，只有动压比等于速度比的平方。对整个排出过程积分得到的能量比和冲量比取决于完整的排出时间历程。</p>
+</article><article class="guide-step" data-anchor="step-43" id="zh-step-43"><div class="step-heading"><input aria-label="标记步骤 43 已完成" data-anchor="check-43" data-step="43" id="zh-check-43" type="checkbox"/><span class="step-number">43</span><h3>求解密封<span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span>对照模型</h3></div>
+<p class="guide-where"><strong>位置：</strong> Parameters，然后执行 Study 1 的 Compute。</p>
+<p class="guide-do"><strong>操作：</strong> 将开放出口的基准模型保存为 <code>practice/B_open_baseline_my_rebuild.mph</code>。另存独立副本 <code>practice/B_sealed_control_my_rebuild.mph</code>。仅将 <code>outletOpen</code> 改为 <code>0</code>，然后从物理场初始值重新计算。保留第一个停止表达式中的条件切换。</p>
+<p class="guide-check"><strong>检查：</strong> <code>U</code>、<code>x</code>、<code>Mout</code>、<code>Eout</code> 和 <code>Iout</code> 在整个过程中保持为零。腔壁可以运动，气体压力也可以变化。密封对照的最大弹性压力约为 <strong>9.6259 kPa</strong>，最大拉伸比约为 <strong>1.15252</strong>，末端时间约为 <strong>2.452 µs</strong>。密封腔壁的响应不是外部液体<span class="keyword technical-term" data-term="jet" title="jet / 射流">射流</span>。</p>
+</article><article class="guide-step" data-anchor="step-44" id="zh-step-44"><div class="step-heading"><input aria-label="标记步骤 44 已完成" data-anchor="check-44" data-step="44" id="zh-check-44" type="checkbox"/><span class="step-number">44</span><h3>运行凝胶与损耗敏感性对照</h3></div>
+<p class="guide-where"><strong>位置：</strong> 重新打开 <code>B_open_baseline_my_rebuild.mph</code>；每次试算均编辑 Parameters 并执行 Compute。</p>
+<p class="guide-do"><strong>操作：</strong> 使用下面的七案例表。对于每一行，恢复其他基准值，提交已修改的单元格，从相同的初始状态重新计算，并对相同的最大值／末端值／适用性筛查节点执行 Evaluate。以不同的练习文件名保存各次输出。可使用已验证的<a href="data/native_case_register.json">原生案例登记表</a> 对照完整输出。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>案例</th>
+<th>G</th>
+<th>etaG</th>
+<th>Kloss</th>
+<th>outletOpen</th>
+<th>预期峰值 U（m/s）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B_open_baseline</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.625385</td>
+</tr>
+<tr>
+<td>B_sealed_control</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>0</code></td>
+<td>0.000000</td>
+</tr>
+<tr>
+<td>B_open_loss_K1</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>1</code></td>
+<td><code>1</code></td>
+<td>1.615803</td>
+</tr>
+<tr>
+<td>B_open_G5kPa</td>
+<td><code>5[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.624346</td>
+</tr>
+<tr>
+<td>B_open_G100kPa</td>
+<td><code>100[kPa]</code></td>
+<td><code>0.01[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.631024</td>
+</tr>
+<tr>
+<td>B_open_eta0</td>
+<td><code>20[kPa]</code></td>
+<td><code>0[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.619889</td>
+</tr>
+<tr>
+<td>B_open_eta0p1</td>
+<td><code>20[kPa]</code></td>
+<td><code>0.1[Pa*s]</code></td>
+<td><code>0.0</code></td>
+<td><code>1</code></td>
+<td>1.677217</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查：</strong> 每次试算仍仅取首次事件结果。改变模量或<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏度</span>可以同时改变峰值和排出持续时间；描述其影响前，先检查能量分配和停止原因。不要认为某一种刚度变化趋势就证明了普适的传导规律。</p>
+</article><h2 class="guide-section" data-anchor="section-e" id="zh-section-e">E — 验证、导出并保存结果</h2>
+<article class="guide-step" data-anchor="step-45" id="zh-step-45"><div class="step-heading"><input aria-label="标记步骤 45 已完成" data-anchor="check-45" data-step="45" id="zh-check-45" type="checkbox"/><span class="step-number">45</span><h3>执行 2 ns / 1 ns 分辨率检查</h3></div>
+<p class="guide-where"><strong>位置：</strong> Time Dependent 研究与 Time-Dependent Solver 1。</p>
+<p class="guide-do"><strong>操作：</strong> 在基准副本中，将两个时间列表均设为 <code>range(0,2[ns],100[us])</code>；执行 Compute，记录 U 峰值、最后的 Eout 和最后的 Iout。再将两个列表均改回 <code>range(0,1[ns],100[us])</code>；执行 Compute，并再次记录这些量。保持容差、输入和停止规则不变。以 1 ns 的数值为分母，比较相对变化。</p>
+<p class="guide-check"><strong>检查：</strong> 已验证的峰值速度相对变化约为：A 的 <code>1.4e-8</code>，开放出口 B 的 <code>9.5e-7</code>。重新建立的基准模型应得到低于 <code>1e-4</code> 的峰值变化。末端量可能随离散的停止时间而变化，也要检查这些变化。最终保留 1 ns 基准。只改变绘图插值并不构成求解器分辨率测试。</p>
+</article><article class="guide-step" data-anchor="step-46" id="zh-step-46"><div class="step-heading"><input aria-label="标记步骤 46 已完成" data-anchor="check-46" data-step="46" id="zh-check-46" type="checkbox"/><span class="step-number">46</span><h3>应用完整验收清单</h3></div>
+<p class="guide-where"><strong>位置：</strong> 对 All times 使用 Maximum 或 Minimum 的 Global Evaluation，以及末端结果表。</p>
+<p class="guide-do"><strong>操作：</strong> 分别检查下列条件。如果某项物理适用性筛查未通过，应记录该失效范围，而不能把对应输出报告为已接受的预测。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>检查项</th>
+<th>表达式／方法</th>
+<th>本组对照的验收条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初始值</td>
+<td>第一个存储行</td>
+<td>U 和 Uw 为零；B 的拉伸比为 1</td>
+</tr>
+<tr>
+<td>热力学第一定律</td>
+<td><code>abs(c.energyResidual)</code> 的最大值</td>
+<td>低于 <code>1e-6</code></td>
+</tr>
+<tr>
+<td>气体体积与绝对压力</td>
+<td><code>c.Vg</code> 的最小值、<code>c.pb</code> 的最小值</td>
+<td>两者均为正</td>
+</tr>
+<tr>
+<td>有限液体存量</td>
+<td><code>c.stroke</code> 的最大值</td>
+<td>在数值容差内不超过 1</td>
+</tr>
+<tr>
+<td>腔壁拉伸比</td>
+<td><code>c.stretch</code> 的最大值</td>
+<td>不超过预先声明的 1.2 筛查界限</td>
+</tr>
+<tr>
+<td>液体／腔壁<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span></td>
+<td><code>c.Mjet</code>、<code>c.Mwall</code> 的最大值</td>
+<td>低于 0.1</td>
+</tr>
+<tr>
+<td>均匀压力适用范围</td>
+<td><code>c.communication</code> 的最大值</td>
+<td>低于 0.1</td>
+</tr>
+<tr>
+<td>向外排出过程</td>
+<td>检查 U 和停止说明</td>
+<td>不包含后续回弹</td>
+</tr>
+<tr>
+<td>有限输出</td>
+<td>最后的 Eout、Iout 和 Mout</td>
+<td>非负；密封输出为零</td>
+</tr>
+<tr>
+<td>实现一致性</td>
+<td>对照已声明的输入和输出表</td>
+<td>与已验证案例及数值审计一致</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查：</strong> 随附的 17 案例 <a href="verification/NUMERICAL_AUDIT.json">NUMERICAL_AUDIT.json</a> 中，最大的归一化第一定律残差约为 <code>1.26e-7</code>，原生求解与独立参考解之间最大的归一化时间曲线差异约为 <code>1.15e-4</code>。这些是实现检查；材料／相态标定需另行完成。</p>
+</article><article class="guide-step" data-anchor="step-47" id="zh-step-47"><div class="step-heading"><input aria-label="标记步骤 47 已完成" data-anchor="check-47" data-step="47" id="zh-check-47" type="checkbox"/><span class="step-number">47</span><h3>导出完整时间历程与汇总表</h3></div>
+<p class="guide-where"><strong>位置：</strong> 各个 Global Evaluation 生成的 Results 表。</p>
+<p class="guide-do"><strong>操作：</strong> 使用 All times 和 Transformation None 对完整时间历程节点求值。在生成的表格工具栏中使用 Save/Export，将 CSV 保存到 <code>practice/</code>，例如 <code>A_baseline_GUI_history.csv</code> 或 <code>B_open_GUI_history.csv</code>。最大值表与末端表应分别导出，以保持其含义清楚。表格说明中应包含单位，或者保留 COMSOL 自带单位的表头。</p>
+<p class="guide-check"><strong>检查：</strong> 时间历程 CSV 有许多时间行，并包含排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>、冲量和质量。最大值 CSV 不是时间历程。确认末端 CSV 报告的是实际停止时间。原生求解与独立对照 CSV 已包含在 <code>data/</code> 中。</p>
+</article><article class="guide-step" data-anchor="step-48" id="zh-step-48"><div class="step-heading"><input aria-label="标记步骤 48 已完成" data-anchor="check-48" data-step="48" id="zh-check-48" type="checkbox"/><span class="step-number">48</span><h3>保存最终练习副本</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>File → Save As</code>。</p>
+<p class="guide-do"><strong>操作：</strong> 将 A 基准、B 开放出口基准和 B 密封对照保存为分别命名的练习 MPH 文件。每个已求解案例应连同匹配的输入值和结果表一起保存。如果希望 B 的主要练习文件是开放出口基准，应在敏感性试算后恢复到该基准。</p>
+<p class="guide-check"><strong>检查：</strong> 重新打开每个练习文件，核对标题、输入值和存储的绘图数据。两个已保存基准均使用 1 ns 输出间隔。你自己的练习文件放在 <code>practice/</code> 中；交付 ZIP 不包含该文件夹。</p>
+</article><article class="guide-step" data-anchor="step-49" id="zh-step-49"><div class="step-heading"><input aria-label="标记步骤 49 已完成" data-anchor="check-49" data-step="49" id="zh-check-49" type="checkbox"/><span class="step-number">49</span><h3>检查交付的原生模型</h3></div>
+<p class="guide-where"><strong>位置：</strong> <code>File → Open</code>，选择 <code>models/</code> 中任一原生文件。</p>
+<p class="guide-do"><strong>操作：</strong> 检查 Parameters 1、组件的 Variables 节点、Global Equations 1、Time-Dependent Solver 1、其 Stop Condition，以及已保存的结果图／表。交付文件中的接口标签描述的是保留的运动／收支统计状态量；它们可能与向导的默认标题不同。通过 Global Equations 1 识别该接口。</p>
+<p class="guide-check"><strong>检查：</strong> A 有五行状态量，B 有七行。两者均有 32 个参数、33 个变量、一个 Global Equations 接口及存储解。已通过验收的基准文件已在新的 COMSOL 进程中重新载入，也已从解压后的包中重新载入；报告中链接了数值与可移植性证据。</p>
+</article><article class="guide-step" data-anchor="step-50" id="zh-step-50"><div class="step-heading"><input aria-label="标记步骤 50 已完成" data-anchor="check-50" data-step="50" id="zh-check-50" type="checkbox"/><span class="step-number">50</span><h3>必要时使用可复现的脚本流程</h3></div>
+<p class="guide-where"><strong>位置：</strong> 在整个自包含文件夹的独立工作副本中打开 Windows PowerShell。</p>
+<p class="guide-do"><strong>操作：</strong> 安装 COMSOL 6.4 后运行：</p>
+<button class="copy-block" type="button">复制文本</button><pre><code class="language-powershell">.\Run-Rebuild.ps1
+.\Run-Verify.ps1
+.\Run-CheckGuide.ps1
+python -m pip install -r requirements.txt
+python scripts/reference.py
+python scripts/verify_results.py
+python scripts/build_guide.py
+</code></pre>
+<p><code>Run-Rebuild.ps1</code> 建立 17 案例组，并写入原生文件和时间历程。<code>Run-Verify.ps1</code> 执行新进程检查和 2 ns / 1 ns 检查，并保存采用更细输出时间间隔的基准解。Python 参考程序独立积分有量纲方程。由于这些命令会替换生成的模型／数据，请在工作副本中重建。如果 COMSOL 安装在其他位置，请在 PowerShell 运行脚本中使用 <code>-ComsolBin</code>。</p>
+<p class="guide-check"><strong>检查：</strong> 原生批处理日志必须显示运行完成，且没有内部 Java 错误；仅检查 shell 退出码并不足够。求解器错误详情位于 <code>build/</code>。此流程复现的方程与 GUI 表格中的方程相同。</p>
+</article><h2 class="guide-section" data-anchor="section-f" id="zh-section-f">F — 修正常见错误，并准确报告结论</h2>
+<article class="guide-step" data-anchor="step-51" id="zh-step-51"><div class="step-heading"><input aria-label="标记步骤 51 已完成" data-anchor="check-51" data-step="51" id="zh-check-51" type="checkbox"/><span class="step-number">51</span><h3>诊断首个故障</h3></div>
+<p class="guide-where"><strong>位置：</strong> Messages/Log 中首个构成原因的错误或异常输出，以及其中指出的节点。</p>
+<p class="guide-do"><strong>操作：</strong> 改动其他无关设置前，先使用下面对应的具体修正方法。</p>
+<table class="guide-table">
+<thead>
+<tr>
+<th>现象</th>
+<th>检查对象</th>
+<th>修正方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无法识别 <code>c.U</code></td>
+<td>组件 Name</td>
+<td>将 Name 设为 c，或在全部位置一致地替换命名空间</td>
+</tr>
+<tr>
+<td>无法识别 <code>qq</code>、<code>rr</code> 或其导数</td>
+<td>方程 Name 列</td>
+<td>准确输入五个／七个名称；完成 B 的新增行</td>
+</tr>
+<tr>
+<td>出现六／八个方程，而非五／七个</td>
+<td>占位行</td>
+<td>删除练习表中未使用的默认行</td>
+</tr>
+<tr>
+<td>残差单位错误</td>
+<td>方程量设置与 <code>tau</code> 因子</td>
+<td>两个量均设为 Dimensionless；保留每个完整残差表达式</td>
+</tr>
+<tr>
+<td>源<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>错误</td>
+<td><code>p0</code>、<code>pInf</code>、单位</td>
+<td>使用绝对压力 p0；保留 E0 的派生表达式</td>
+</tr>
+<tr>
+<td>B 出现零半径奇点</td>
+<td>初始 <code>rr</code></td>
+<td>将 rr 设为 1，而不是零</td>
+</tr>
+<tr>
+<td>初始速度非零</td>
+<td>初始化与复用的解</td>
+<td>初始化设为 Off；从物理场初始值开始</td>
+</tr>
+<tr>
+<td>在零时刻立即停止</td>
+<td>Stop if 列</td>
+<td>全部四行均使用 Negative (&lt;0)，而不是默认的 Boolean True</td>
+</tr>
+<tr>
+<td>出现后续反向运动或重复过程</td>
+<td>Stop Condition 缺失／禁用</td>
+<td>恢复首次向外运动返回规则和其他所有行</td>
+</tr>
+<tr>
+<td>能量残差漂移</td>
+<td>加速度与输出项</td>
+<td>保留流出的<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>水头和 Eout；使用完整的源体积</td>
+</tr>
+<tr>
+<td>得到错误的巨大“<span class="keyword technical-term" data-term="jet" title="jet / 射流">射流</span>能量”</td>
+<td>选取的结果表达式</td>
+<td>使用 Eout，而非存储的 Kjet</td>
+</tr>
+<tr>
+<td><span class="keyword technical-term" data-term="pressure-impulse" title="pressure impulse / 冲量">排出冲量</span>错误</td>
+<td>选取的结果表达式</td>
+<td>使用 Iout，而非液柱<span class="keyword technical-term" data-term="momentum" title="momentum / 动量">动量</span> Ijet</td>
+</tr>
+<tr>
+<td>求解 B 后仍显示旧 A 结果</td>
+<td>结果 Dataset</td>
+<td>选择当前 B 解，重新执行 Evaluate</td>
+</tr>
+<tr>
+<td>空间图为空</td>
+<td>绘图类型</td>
+<td>添加 1D Plot Group → Global</td>
+</tr>
+<tr>
+<td>误以为“Last”输出位于 100 µs</td>
+<td>实际存储时间</td>
+<td>使用 Last 对 t 求值；停止条件会截断所请求的时间列表</td>
+</tr>
+<tr>
+<td>凝胶试算超出物理筛查条件</td>
+<td>均衡传播／拉伸比／<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span></td>
+<td>将其归类为超出已声明的适用范围</td>
+</tr>
+</tbody>
+</table>
+<p class="guide-check"><strong>检查：</strong> 只有在修正了相关输入或节点后才重新计算。如果输入发生变化，应重新运行守恒与适用性检查；此前已接受的表格可能不再适用。</p>
+</article><article class="guide-step" data-anchor="step-52" id="zh-step-52"><div class="step-heading"><input aria-label="标记步骤 52 已完成" data-anchor="check-52" data-step="52" id="zh-check-52" type="checkbox"/><span class="step-number">52</span><h3>将对照模型与实验相联系</h3></div>
+<p class="guide-where"><strong>位置：</strong> 实验记录和 Parameters 表。</p>
+<p class="guide-do"><strong>操作：</strong> 提供有证据支持的激活后气体／相体积及压力—体积路径，或有依据的<span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>估计；实际连通液体体积与出口有效<span class="keyword technical-term" data-term="inertia" title="inertia / 惯性">流体惯性</span>；载液性质；相关速率下的凝胶模量／<span class="keyword technical-term" data-term="viscosity" title="viscosity / 黏度">黏度</span>；以及通道是否已存在。条件允许时，在同一次激光激发中测量空腔体积、腔壁运动以及排出速度／质量。利用这些数据更新对照模型，再重复完整验收流程。</p>
+<p class="guide-check"><strong>检查：</strong> 5 nJ <span class="keyword technical-term" data-term="energy-budget" title="energy budget / 能量预算">可用功</span>输入不自动等同于 5 nJ 光学脉冲。球形凝胶对照不是精确的平面<span class="keyword technical-term" data-term="hydrogel" title="hydrogel / 水凝胶">水凝胶</span>层模型。完整密封凝胶中不会预测出穿透凝胶的外部<span class="keyword technical-term" data-term="jet" title="jet / 射流">射流</span>。每次报告最大值或传导比时，都应同时保留这些结构与校准说明。</p>
+</article><article class="guide-step" data-anchor="step-53" id="zh-step-53"><div class="step-heading"><input aria-label="标记步骤 53 已完成" data-anchor="check-53" data-step="53" id="zh-check-53" type="checkbox"/><span class="step-number">53</span><h3>完成操作指南</h3></div>
+<p class="guide-where"><strong>位置：</strong> 您保存的练习模型文件与输出表。</p>
+<p class="guide-check"><strong>检查是否能够独立复现：</strong> 15.3761 m/s 的 A 基准；25.2798 m/s 的最大已采样案例；1.62538 m/s 的开放出口凝胶基准；其 9.143 kPa 弹性阻力压力和 33.77 µN 半球力；相互匹配的排出<span class="keyword technical-term" data-term="kinetic-energy" title="kinetic energy / 动能">动能</span>／冲量比；以及密封对照中为零的排出输出。核验停止规则、数值检查和物理适用性筛查，而不应只核对峰值。</p>
+<p class="guide-completion-record"><strong>完成记录：</strong> 记录软件版本、输入案例、源状态假设、实际存储的末端时间、峰值定义、排出输出定义、最大守恒残差、均衡传播／<span class="keyword technical-term" data-term="mach-number" title="Mach number / 马赫数">马赫数</span>／拉伸比检查以及分辨率加密对照。<a href="PUBLICATION.md">项目日志</a> 和<a href="RESULTS.zh.md">结果报告</a> 提供了随附对照模型已通过验收的记录。</p>
+</article><h2 class="guide-section" data-anchor="references" id="zh-references">参考文献与配套文件</h2>
+<p>本次参考的 <a href="https://pfgaophilip.github.io/cavitation-course/comsol/lessons/M1.html">M1 课程</a> 提供了循序渐进的界面说明格式。本指南的参数、变量和方程表取自当前两个已求解的原生文件，并非 M1 中其他模型的建模配方。归档的 HTML／文本位于 <code>sources/reference-lesson/</code>；本指南的原生模型元数据位于 <code>sources/native-guide-evidence/</code>。</p>
+<ul>
+<li><a href="MODEL_SPEC.zh.md">完整推导与假设</a> · <a href="THEORY_DERIVATION.tex">可编辑 LaTeX 源文件</a> · <a href="index.html">离线结果</a>。</li>
+<li><a href="models/Model_A_Finite_Energy_Pressure_Jet.mph">模型 A</a> · <a href="models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph">模型 B</a>。</li>
+<li><a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_environment.18.43.html">COMSOL 模型向导</a>、<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html">全局方程</a>、<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html">时间求解器</a>、<a href="https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html">停止条件</a>。</li>
+</ul>
+<p>验证范围：已将表格与保存的原生方程核对；已使用 COMSOL 原生 API 检查参数／变量导入及 A 到 B 的转换；目标结果来自已通过验收的求解对照模型。插图均为示意图。不宣称已完成实时 Desktop 界面逐项点击验证。</p></main><footer>参数、变量与方程表来自两个已通过验证的原生模型。插图为示意图。阅读资源与输入文件均包含在本文件夹内。</footer></div><div aria-label="阅读设置" class="reader-controls"><button aria-label="切换到 English" id="language" type="button">English</button><button aria-label="切换到日间模式" id="theme" type="button">日间模式</button></div><script src="assets/theme.js"></script><script src="assets/guide.js"></script></body></html>

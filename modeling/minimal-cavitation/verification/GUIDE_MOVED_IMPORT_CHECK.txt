@@ -1,0 +1,4 @@
+PASS_A_IMPORT parameters=32 variables=33 available_work_J=1.9999999999999985E-9
+PASS_B_PATCH_AND_CONVERSION states=[qq, vv, rr, ww, dd, ee, ii] peak_m_s=1.6253845827345195 maximum_energy_residual=1.259610662661914E-7 stored=[7, 1938]
+PASS_B_FULL_IMPORT parameters=32 variables=33 matches_converted_B
+GUIDE_NATIVE_IMPORT_CONVERSION_COMPLETE: models were tested in memory; no native model file was rewritten.

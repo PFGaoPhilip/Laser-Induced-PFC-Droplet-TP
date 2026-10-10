@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "location": "tmp/guide-portability/Minimal_Cavitation_Models",
+  "guide_files": [
+    {
+      "file": "STEP_BY_STEP.md",
+      "bytes": 56081,
+      "sha256": "5a1494ce327ff529e6407fbdb98275462da5dcac175da46ca08324cda7d8e02b"
+    },
+    {
+      "file": "STEP_BY_STEP.html",
+      "bytes": 93513,
+      "sha256": "63cbb60ff41cec6fb4c81c08a830e3a739e027c68c540be2f8bc68e2fe5d12b3"
+    },
+    {
+      "file": "assets/guide.css",
+      "bytes": 2750,
+      "sha256": "f2e7b487fe5ee8e2145bd3f875ab97f50e4a9512ce90d611cc0a921a57576bbf"
+    },
+    {
+      "file": "assets/guide.js",
+      "bytes": 1523,
+      "sha256": "caf2ffbaa7ea4fbf1ea21f5c9e93e197dcb75c88e86910c70ca5e3fa6d21d569"
+    },
+    {
+      "file": "assets/guide-mechanisms.svg",
+      "bytes": 2085,
+      "sha256": "602a484958aa5f075e25202b586a7172d8f04bc92d4586a66036555959324fb6"
+    },
+    {
+      "file": "assets/guide-interface.svg",
+      "bytes": 1656,
+      "sha256": "caa2b4fb47855074550eea7f1f8e402156a8b0545b497e9a93d883cefbc96fdd"
+    },
+    {
+      "file": "resources/gui/A_equations.tsv",
+      "bytes": 191,
+      "sha256": "2e995c8a70315a355bb35373d4708e63f128e01d0b7b739a98487d980a0a191d"
+    },
+    {
+      "file": "resources/gui/A_parameters_import.txt",
+      "bytes": 542,
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122"
+    },
+    {
+      "file": "resources/gui/A_variables_import.txt",
+      "bytes": 730,
+      "sha256": "3287618b91326f830a9bd7b961cd3e80d536fe8a1a2c5a84318014716d50cec2"
+    },
+    {
+      "file": "resources/gui/B_equations.tsv",
+      "bytes": 245,
+      "sha256": "a4aa35ea918094d8a50e4929c404ee2ab5f512826d2e6cef58ca6bc43b8990c0"
+    },
+    {
+      "file": "resources/gui/B_parameters_import.txt",
+      "bytes": 542,
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122"
+    },
+    {
+      "file": "resources/gui/B_variables_import.txt",
+      "bytes": 869,
+      "sha256": "ec5b6deb52003622221874d6a9b60fea310aef1d8b819c14901e9849c95baf11"
+    },
+    {
+      "file": "resources/gui/B_variables_patch_import.txt",
+      "bytes": 309,
+      "sha256": "2fc00458d10075d51080de603ba376cbab487ce25a7ea75a958dc8e99afbf4d8"
+    },
+    {
+      "file": "resources/gui/global_evaluation.tsv",
+      "bytes": 1120,
+      "sha256": "5460e67784eb047538c2991404de9ed813b272bcc6c8f964477da53ecf64ba8c"
+    },
+    {
+      "file": "resources/gui/stop_conditions.tsv",
+      "bytes": 384,
+      "sha256": "932f90a08aa9c11ab11ed574b3900346bb3f18bd62763f85f03338d53e22fddb"
+    }
+  ],
+  "html": [
+    {
+      "file": "index.html",
+      "rendered_display_equations": 29,
+      "day_night_button_present": true,
+      "numbered_step_checkboxes": 0
+    },
+    {
+      "file": "STEP_BY_STEP.html",
+      "rendered_display_equations": 0,
+      "day_night_button_present": true,
+      "numbered_step_checkboxes": 53
+    }
+  ],
+  "native_files": [
+    {
+      "file": "Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "file": "Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    }
+  ],
+  "native_guide_check": "GUIDE_MOVED_IMPORT_CHECK.txt",
+  "browser_click_through": false,
+  "scope": "Extracted-folder generation, local dependencies, native-file integrity and native API import/conversion; no Desktop click-through."
+}

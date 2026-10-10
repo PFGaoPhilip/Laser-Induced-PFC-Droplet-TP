@@ -12,6 +12,14 @@ A bilingual, project-centered theory course: four main chapters and Appendix A c
 ## The single learning route
 ## 单一学习主线
 
+Use the **中文 / English** button to show one language at a time. The day/night choice and saved defense answers remain available in both views.
+
+使用 **中文 / English** 按钮单独显示一种语言。日夜模式及已保存答辩草稿在两种语言视图中均可使用。
+
+The complete [modeling section](modeling/minimal-cavitation/index.html) connects this theory course to the accepted minimal finite-energy cavitation models: full derivation, bilingual 53-step COMSOL guide, two native MPH files, numerical histories, audit records and a downloadable folder. Its ideal-gas source and existing liquid outlet are declared controls; it does not simulate laser activation, PFC phase conversion, internal collapse jets or target impact. The source delivery was copied into `modeling/minimal-cavitation/`.
+
+完整的[建模部分](modeling/minimal-cavitation/index.html?lang=zh)将理论课程与已核验的有限能量简洁空化模型相连接：完整推导、双语 53 步 COMSOL 指南、两个原生 MPH 文件、数值历程、核验记录及可下载文件夹。理想气体源和已有液体出口是声明的对照条件；模型不模拟激光激活、PFC 相变、内部塌缩射流或靶面冲击。源文件已复制至 `modeling/minimal-cavitation/`。
+
 1. Cavity pressure, carrier inertia and directional jets.
 2. Laser heating, matched PFC comparisons and finite phase inventory.
 3. Bubble arrays, finite emitted jets, transport and defined impact loads.

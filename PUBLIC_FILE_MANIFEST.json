@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 561,
-      "sha256": "fd83920e7587df8bd6af77481de71f0fff98f74cff8a58773901d7a5f9335c08"
+      "bytes": 671,
+      "sha256": "e9c0dee547e8b75553ee8439e7fb6ce4c90394ffc28fc93fc71e29efd034047d"
     },
     {
       "path": ".nojekyll",
@@ -14,8 +14,8 @@
     },
     {
       "path": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1276573,
-      "sha256": "7f75a4b90521fedf88d3fb419e77c8b89b73d6dd571bf50493b4d633586fe662"
+      "bytes": 1282988,
+      "sha256": "3b48dd1bf525902aa5c0679a939b03901ec3900dc18032ffd31b6ebacffb3403"
     },
     {
       "path": "assets/bilingual-terms.css",
@@ -23,14 +23,24 @@
       "sha256": "47c8d9b9180faa838a2f198b8ca5fb3c64435d49e6ccab145be344dcb41e2591"
     },
     {
+      "path": "assets/course-language.css",
+      "bytes": 272,
+      "sha256": "a7e2d32950f58c35ed61c03bcc45b278ca1283f4f626b7c2b9097e02b628d8c8"
+    },
+    {
+      "path": "assets/course-language.js",
+      "bytes": 1781,
+      "sha256": "29f565209c8503fddede4cf596696ccaeab56f1afab655ae26f9e02081d68dc9"
+    },
+    {
       "path": "assets/course-progress.js",
-      "bytes": 3375,
-      "sha256": "369d5c70dd1b96ee9d2a650352a78165c4cee99e337f88667629bb611664fae2"
+      "bytes": 3706,
+      "sha256": "d6049defb9303aea4c9e55db4c3d1af7813c481041d811cccc6ccf684c80b00b"
     },
     {
       "path": "assets/course-theme.js",
-      "bytes": 2126,
-      "sha256": "942bb045ed744868e09cf4e6917f1625dee41ca76d99d0aae70f424b5c68d233"
+      "bytes": 2298,
+      "sha256": "094fc38e986753d55881a014c4ccd8b72be41f35976cfdb022e7f3ac4c461d6b"
     },
     {
       "path": "assets/course.css",
@@ -1419,28 +1429,28 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1323715,
-      "sha256": "70ca17bed2825b05ef03599ab7581b8ab69479b19e130b7db7b7c10587889db7"
+      "bytes": 1330663,
+      "sha256": "13251f05c8d574b1294938d9fa5ca6a4bce80b984c0312b903822db7d744d5be"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1566019,
-      "sha256": "1ee4070ee0ee429e3631b1fd64d89a727e99988daff878a24cb473100e2bd590"
+      "bytes": 1572920,
+      "sha256": "577e86de7e899fba22bbf871f23ec11e65517ea523831466370d3a3b1af401ff"
     },
     {
       "path": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2023870,
-      "sha256": "48024c4915f321e572abaf4288f20af87c273a5fa76b45e450bffa26cd054f77"
+      "bytes": 2031113,
+      "sha256": "aa4b0bacb7f69a72c11e10d92131eb461b5b166c987e66c183c804a8d2567751"
     },
     {
       "path": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1874397,
-      "sha256": "64640a57823bbfe38c46e9a1a9a7f8d8313d6799e98bf83d66071eefdb4cc8fd"
+      "bytes": 1882159,
+      "sha256": "95a4165196602fc45d430663174ac7978da66cb61004012ae2b76774e9a26d70"
     },
     {
       "path": "chapters/05-hydrogel-versus-liquid.html",
-      "bytes": 1276573,
-      "sha256": "7f75a4b90521fedf88d3fb419e77c8b89b73d6dd571bf50493b4d633586fe662"
+      "bytes": 1282988,
+      "sha256": "3b48dd1bf525902aa5c0679a939b03901ec3900dc18032ffd31b6ebacffb3403"
     },
     {
       "path": "content/chapter01.py",
@@ -1489,13 +1499,13 @@
     },
     {
       "path": "COURSE_SETTINGS.json",
-      "bytes": 6970,
-      "sha256": "016dea2fa3a3f9c3119675eb284e9f4389b305283208e1411c91305c123f0eda"
+      "bytes": 7267,
+      "sha256": "56b8d918d98dd73a42e04bf2aaeffe35ccb190aa614b761e9b940b8d3a91b2e8"
     },
     {
       "path": "index.html",
-      "bytes": 20026,
-      "sha256": "869e81c22b994b49436cdce06277fcab5ca5c526e00db76755e09bf13594f497"
+      "bytes": 22522,
+      "sha256": "0b28bb3c032b6fac4758c60c6df194b73bf153a1d889b21d27b7c2bb6dc563bf"
     },
     {
       "path": "MISSION.md",
@@ -1503,39 +1513,1079 @@
       "sha256": "c53df5cef7932cbf8b2560ee0b1b21a0ae5e8d2be5526fcb4395e6ac4c96308f"
     },
     {
-      "path": "NOTES.md",
-      "bytes": 2084,
-      "sha256": "1392369b662a3708639993792f68e668d83b22ffcc1e7960fe285a9ecca96c6d"
+      "path": "modeling/minimal-cavitation/.gitignore",
+      "bytes": 147,
+      "sha256": "6d946377ee61658cbadb4d9f9c4ae29db052b00a90952c059304c18f76ec8032"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/conditional_velocity_envelope.png",
+      "bytes": 153126,
+      "sha256": "6d9b3f724c4dd5c569e58b7055ad66badcb5047be2d94ebfedc90f4d7b7b4cf9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/conditional_velocity_envelope.svg",
+      "bytes": 74421,
+      "sha256": "3531238cb89598cab709ea41f8b4e908ff2a34215ed43cfa5ce5b04157fd271e"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/conditional_velocity_envelope.zh.png",
+      "bytes": 154801,
+      "sha256": "a128b9831482338962e7a32a4e7dbbf9aeced490a496546eaec0831549c5ab5e"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/conditional_velocity_envelope.zh.svg",
+      "bytes": 83101,
+      "sha256": "43133564af9c5d8b9fb951d594d5445a094e3d08da95997405a75f8b8fb9f631"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/energy_and_transmission.png",
+      "bytes": 89257,
+      "sha256": "eeaee9f0c74ee50e653d94e24f76460c0dd39ca651969b37a2f8807a4c9a1088"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/energy_and_transmission.svg",
+      "bytes": 69020,
+      "sha256": "c3595ebb74beb7c05e90eaccff8abaa5ee06b8e7df88fa28adeed40daab4a19f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/energy_and_transmission.zh.png",
+      "bytes": 97431,
+      "sha256": "b2c16b4c458e866bde2ec0c4af5a29ab539a003d0d087124d818a11e95dbf3e9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/energy_and_transmission.zh.svg",
+      "bytes": 95301,
+      "sha256": "f9d11f00a483427e449592ee3c8628fc1b12a5b560100922cfa68c06b44ed18f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/first_event_histories.png",
+      "bytes": 139288,
+      "sha256": "2e109fb5521d20a5e8be85580a697dcfbb1845dc03968d49404ccf26efcfe3bb"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/first_event_histories.svg",
+      "bytes": 74677,
+      "sha256": "19a08350826bca3e7339e2c2c26ff2378203e30a851bf09b39757ac89235038e"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/first_event_histories.zh.png",
+      "bytes": 138075,
+      "sha256": "c78f1dbcdb0006af6772f83bd5e206f15d19191eb44891edf11f8eda2fac9496"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/first_event_histories.zh.svg",
+      "bytes": 86397,
+      "sha256": "5c38f8cf4f4dd49c31edb8f2933e4c6148d621a5869110317a765c55ff0d4e9f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/gel_confinement.png",
+      "bytes": 121654,
+      "sha256": "ae3edab3fb41b694eaee77de6a25e8c2bf768ef009cc4f8cc6a14870c19a834a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/gel_confinement.svg",
+      "bytes": 70445,
+      "sha256": "923fea7d1f3643b937edcb002349311de8dfa0adb039c24d62c6a394567be928"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/gel_confinement.zh.png",
+      "bytes": 119230,
+      "sha256": "4d779535641077a074ca5d7984b51aac4dc504e87da98e30cff84a970d89d208"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/gel_confinement.zh.svg",
+      "bytes": 85189,
+      "sha256": "13014b2dcdd0aadb0f8520a6a6edecda3dae93b5fc22e5934efd29e015aff98b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/guide-interface.svg",
+      "bytes": 1656,
+      "sha256": "caa2b4fb47855074550eea7f1f8e402156a8b0545b497e9a93d883cefbc96fdd"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/guide-interface.zh.svg",
+      "bytes": 1993,
+      "sha256": "3a109f38dc653d3672d98fd2249399f9e63b0dbc8e04f4bbb6334dffd49835d9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/guide-mechanisms.svg",
+      "bytes": 2085,
+      "sha256": "602a484958aa5f075e25202b586a7172d8f04bc92d4586a66036555959324fb6"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/guide-mechanisms.zh.svg",
+      "bytes": 2294,
+      "sha256": "c81f6665303950d981e0d313b840faba2ca8ea891ac3c36c943c8d8dbbef7fe6"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/guide.css",
+      "bytes": 2750,
+      "sha256": "f2e7b487fe5ee8e2145bd3f875ab97f50e4a9512ce90d611cc0a921a57576bbf"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/guide.js",
+      "bytes": 1868,
+      "sha256": "e56bfb2da049c9425ff488126cf544b6a0e9db45974ea0ecb9be2f1ccd9a6ee9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/interface.css",
+      "bytes": 1219,
+      "sha256": "fca7f3f6fbc213271829d7a9c31d241951541eb139fcc7e8f8689a9a3c97d630"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/reader.css",
+      "bytes": 2341,
+      "sha256": "964890906f55ec8e064d2c01e3995c367f979d262897d8abdf5f0d1491a49a85"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/terms.css",
+      "bytes": 39085,
+      "sha256": "f1543416e6db94969f7ece609a7eec99588f6d333a0f522f94b8edec7e619b55"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/theme.js",
+      "bytes": 3677,
+      "sha256": "062bf57f7acf3063ac766e3c1b6c2475ad7ff0afb1447b845282e4c6ed581551"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf",
+      "bytes": 63632,
+      "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff",
+      "bytes": 33516,
+      "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+      "bytes": 12368,
+      "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "bytes": 7716,
+      "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+      "bytes": 12344,
+      "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "bytes": 7656,
+      "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+      "bytes": 19584,
+      "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "bytes": 13296,
+      "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+      "bytes": 19572,
+      "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "bytes": 13208,
+      "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Bold.ttf",
+      "bytes": 51336,
+      "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Bold.woff",
+      "bytes": 29912,
+      "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Bold.woff2",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+      "bytes": 32968,
+      "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "bytes": 19412,
+      "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Italic.ttf",
+      "bytes": 33580,
+      "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Italic.woff",
+      "bytes": 19676,
+      "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Italic.woff2",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Regular.ttf",
+      "bytes": 53580,
+      "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Regular.woff",
+      "bytes": 30772,
+      "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+      "bytes": 31196,
+      "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "bytes": 18668,
+      "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Math-Italic.ttf",
+      "bytes": 31308,
+      "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Math-Italic.woff",
+      "bytes": 18748,
+      "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+      "bytes": 24504,
+      "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "bytes": 14408,
+      "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+      "bytes": 22364,
+      "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "bytes": 14112,
+      "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+      "bytes": 19436,
+      "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "bytes": 12316,
+      "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Script-Regular.ttf",
+      "bytes": 16648,
+      "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Script-Regular.woff",
+      "bytes": 10588,
+      "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Script-Regular.woff2",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size1-Regular.ttf",
+      "bytes": 12228,
+      "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff",
+      "bytes": 6496,
+      "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size2-Regular.ttf",
+      "bytes": 11508,
+      "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff",
+      "bytes": 6188,
+      "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size3-Regular.ttf",
+      "bytes": 7588,
+      "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff",
+      "bytes": 4420,
+      "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size4-Regular.ttf",
+      "bytes": 10364,
+      "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff",
+      "bytes": 5980,
+      "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+      "bytes": 27556,
+      "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "bytes": 16028,
+      "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/katex.min.css",
+      "bytes": 24793,
+      "sha256": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/katex.min.js",
+      "bytes": 272868,
+      "sha256": "103a53763cc033bba8d175bf3f0ba597c3505c9b6747dd3f2c7bc2a6bfcc8ae7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/assets/vendor/katex/LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_baseline_native.csv",
+      "bytes": 15266734,
+      "sha256": "35cf73b628dcaa5bde48e6ba55f89ad9f68e944f047d407ff37397f1ebd16ed9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_baseline_reference.csv",
+      "bytes": 431474,
+      "sha256": "2c880231f620f7ad9758732cd04ec2ab280ad3236821b4bf50c124d2397d16c2"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E0.5nJ_a10um_native.csv",
+      "bytes": 1284643,
+      "sha256": "06c84c9d8c7473c0f9cb7768acf1e1e7d53023370450f2a9bf3cdd6c24603019"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E0.5nJ_a10um_reference.csv",
+      "bytes": 432092,
+      "sha256": "86f8da4fede8b8b63103374cce41474428140908814a5835cbeaea2b61d4a0b8"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E0.5nJ_a3um_native.csv",
+      "bytes": 3832835,
+      "sha256": "44bee73efc0576b9d153e67dcfb32d6ba3a2c9269040d0a09d02e00476dda271"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E0.5nJ_a3um_reference.csv",
+      "bytes": 431646,
+      "sha256": "5485755cd534ceb8d4013068406ba66fde9d6165a94e2c7835dc5c637460598c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E0.5nJ_a5um_native.csv",
+      "bytes": 2361944,
+      "sha256": "32b81ed421fca46b23305f2265c5546bd50370f3328eba81429c1b6e1b5398bc"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E0.5nJ_a5um_reference.csv",
+      "bytes": 431558,
+      "sha256": "e00002d771c2e0b71058b2611cebeede19af98b312b5fc4f28f3814d81bf855d"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E2nJ_a10um_native.csv",
+      "bytes": 1484892,
+      "sha256": "010a2917aea87e2ca607b715d4289d431b923b53169efe90a4b042229ad038b0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E2nJ_a10um_reference.csv",
+      "bytes": 431511,
+      "sha256": "92063f20d833fa57e99693dccc02c46818bbd8a653050b6e749420ea6f4c306a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E2nJ_a3um_native.csv",
+      "bytes": 5873068,
+      "sha256": "f6e1ab929139482b7fc12f788f53c2a13f81f12a35e8f0f55e8cfb1f4c939921"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E2nJ_a3um_reference.csv",
+      "bytes": 430892,
+      "sha256": "06c35704a0c979b91c9850a13a6c00edbf38c10663b20632e107ae6a38958dd5"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E2nJ_a5um_native.csv",
+      "bytes": 3003329,
+      "sha256": "b50730c11585520dca72d0fd1ca105dfdf9be699c3030a0e4c9ee5a584f8b440"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E2nJ_a5um_reference.csv",
+      "bytes": 431380,
+      "sha256": "dc2e1d148c34bc5a095abe358c6ad4acad19235028c51600117cb6f03d13e3f5"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E5nJ_a10um_native.csv",
+      "bytes": 1692166,
+      "sha256": "964581da8cb499404756e0d037ce34794902bed22433e4e5bd8ec0946364787f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E5nJ_a10um_reference.csv",
+      "bytes": 430525,
+      "sha256": "727cbebebceb253391bd00ab3f56372a4f91c9e4a8fcaae2eb4860e8fc98b3c0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E5nJ_a3um_native.csv",
+      "bytes": 8587296,
+      "sha256": "9ddca0e16a719d74c33d6997e31f38162b2a9ad6911510aae25896846fa14141"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E5nJ_a3um_reference.csv",
+      "bytes": 430071,
+      "sha256": "e3d94e517edb57f7db5803f42cc14f67ba2976694d77f3b6eec07e2215a8e4eb"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E5nJ_a5um_native.csv",
+      "bytes": 3944663,
+      "sha256": "2cca8d986227c14ba6dd04e1e8c19047e45dba09b78fda0d7e5cf7c54c60c2af"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/A_E5nJ_a5um_reference.csv",
+      "bytes": 430059,
+      "sha256": "be5dc893591eebbe7e1d0eb46e8e613ae55e880843e2fdf0d9de391824e89b65"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_baseline_native.csv",
+      "bytes": 1226020,
+      "sha256": "396950ebcdfdec0b1aac4052a6910b8c394bb2aa773040af197b094307eb8ac4"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_baseline_reference.csv",
+      "bytes": 619736,
+      "sha256": "1ad6cc0e4701a0fea48700fd45762ed98d662d87039e75520e730f25264dbbb5"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_eta0_native.csv",
+      "bytes": 1174099,
+      "sha256": "2a6f4cc1cbffdb7392f4037f3014c6735457e63cd4fb723487dbab3f88bff2ba"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_eta0_reference.csv",
+      "bytes": 600612,
+      "sha256": "236e6cee889cfcc3b712430682c1f02a7c3f2256e53c3cc9e250e83e7b1f276f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_eta0p1_native.csv",
+      "bytes": 1350925,
+      "sha256": "8f5f521626359e717bf2b58523187942b1808c477f4818976e379c2bada1ae77"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_eta0p1_reference.csv",
+      "bytes": 619994,
+      "sha256": "5424434417b3fe7c1691125a4cc9d850b106cf790d7671d2b31e5fa9e2257fba"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_G100kPa_native.csv",
+      "bytes": 1268501,
+      "sha256": "a598cd40755948c29590f5cb73d855e346a293e15832dc80d3ccf3d0b3426ef9"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_G100kPa_reference.csv",
+      "bytes": 620605,
+      "sha256": "91d31a35b3acccb90511d484491922852029c221090f1dd9ff49a762325dec1c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_G5kPa_native.csv",
+      "bytes": 1218304,
+      "sha256": "51123ba73d946375ad82c154ce784c9319ab2d30992eae43804bef1a44996e19"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_G5kPa_reference.csv",
+      "bytes": 620155,
+      "sha256": "1813742aadafa504f2edd13a8321d9a0bd058dd78cb14f0061cc9f5453d229a8"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_loss_K1_native.csv",
+      "bytes": 1217074,
+      "sha256": "675c378be9c4faedc57e5dd07bf1dc5be6b9f445cd5f89aa3de33e1361024433"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_open_loss_K1_reference.csv",
+      "bytes": 619236,
+      "sha256": "93ca3029eeb3786c55c9a242161e52d44be24c0de811ea50c62ee891c76556b1"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_sealed_control_native.csv",
+      "bytes": 896361,
+      "sha256": "718a708c8eb6e116642cbe6f9ace5442e5d9708d75c48b01993afd64b1fa4557"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/B_sealed_control_reference.csv",
+      "bytes": 392964,
+      "sha256": "2449a0e2c2f9208859f7e99ca1c73045d0c834b9d3117bdb1c38e75b084b35ab"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/case_inputs.json",
+      "bytes": 9143,
+      "sha256": "7cd6eb44fe24b7aa7d7dab55f5c4b439affe3c9242c34442c22d4a6362a38b72"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/native_case_register.json",
+      "bytes": 42908,
+      "sha256": "e194946f47ddcb041068330af0e000ddca96313252e9cc1ea2126057ccda31d5"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/reference_audit.json",
+      "bytes": 320,
+      "sha256": "fe798c89978e15ae3fb5ccb25b9c376958b306b8becf4e1ec07848d3ad076924"
+    },
+    {
+      "path": "modeling/minimal-cavitation/data/reference_summary.json",
+      "bytes": 48812,
+      "sha256": "9313eca6a6401ff939b3008e55ace3cffaae3dcd53fd65b02913e8ead6b0889c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/index.html",
+      "bytes": 1837328,
+      "sha256": "75a6e8cbc858bb50ca131b3247e00b14b2666b5873b547ab55eb950be2677e20"
+    },
+    {
+      "path": "modeling/minimal-cavitation/Minimal_Cavitation_Models_20261010.zip",
+      "bytes": 47205746,
+      "sha256": "ae4576f3f418d00a66cf87c660510e0ac8b380b08bc70a85e84999c2a13b5c0b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/MODEL_SPEC.md",
+      "bytes": 43081,
+      "sha256": "e5378fa3d135510ce420907e14c94e31d0c2066cc3185971aeecb7b4bd8851db"
+    },
+    {
+      "path": "modeling/minimal-cavitation/MODEL_SPEC.zh.md",
+      "bytes": 40870,
+      "sha256": "1e0943369974fb4298408df3eb7272dd0b494f579e8dd1fb3279861d6651a6db"
+    },
+    {
+      "path": "modeling/minimal-cavitation/models/Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    },
+    {
+      "path": "modeling/minimal-cavitation/PUBLICATION.md",
+      "bytes": 522,
+      "sha256": "b0d154e38472ecaba2b590eb9acab078c98e156218e6784469bb5bb2e3c4cc2c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/README.md",
+      "bytes": 11148,
+      "sha256": "7b560abaa7499637111e009181e4a8df943efe57665e4b8fea5b0e5e17315b47"
+    },
+    {
+      "path": "modeling/minimal-cavitation/requirements.txt",
+      "bytes": 96,
+      "sha256": "29374dff9bf268b1970f80745fa7b131d62d6961400a6504fc90ed9c6ac7f11c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/A_equations.tsv",
+      "bytes": 191,
+      "sha256": "2e995c8a70315a355bb35373d4708e63f128e01d0b7b739a98487d980a0a191d"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/A_parameters_import.txt",
+      "bytes": 542,
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/A_variables_import.txt",
+      "bytes": 730,
+      "sha256": "3287618b91326f830a9bd7b961cd3e80d536fe8a1a2c5a84318014716d50cec2"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/B_equations.tsv",
+      "bytes": 245,
+      "sha256": "a4aa35ea918094d8a50e4929c404ee2ab5f512826d2e6cef58ca6bc43b8990c0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/B_parameters_import.txt",
+      "bytes": 542,
+      "sha256": "0ff28c8a1064fae812fffa51a0f3319f45d5f99489463bbafd9be6633020d122"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/B_variables_import.txt",
+      "bytes": 869,
+      "sha256": "ec5b6deb52003622221874d6a9b60fea310aef1d8b819c14901e9849c95baf11"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/B_variables_patch_import.txt",
+      "bytes": 309,
+      "sha256": "2fc00458d10075d51080de603ba376cbab487ce25a7ea75a958dc8e99afbf4d8"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/global_evaluation.tsv",
+      "bytes": 1120,
+      "sha256": "5460e67784eb047538c2991404de9ed813b272bcc6c8f964477da53ecf64ba8c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/resources/gui/stop_conditions.tsv",
+      "bytes": 384,
+      "sha256": "932f90a08aa9c11ab11ed574b3900346bb3f18bd62763f85f03338d53e22fddb"
+    },
+    {
+      "path": "modeling/minimal-cavitation/RESULTS.md",
+      "bytes": 4386,
+      "sha256": "91e3991284c0d10ae90d05dd2afae7162330378d48fbb02e71940599a77dd222"
+    },
+    {
+      "path": "modeling/minimal-cavitation/RESULTS.zh.md",
+      "bytes": 4107,
+      "sha256": "a53ab9dfe5c9a0057583bd4aba3e9ed7711cb976313b537dbd27acac0f16f360"
+    },
+    {
+      "path": "modeling/minimal-cavitation/Run-CheckGuide.ps1",
+      "bytes": 1708,
+      "sha256": "da606aab1ddf567d7d1bedd3abbfab862c92aacf0a969c9a5ac2c52fb4437510"
+    },
+    {
+      "path": "modeling/minimal-cavitation/Run-Rebuild.ps1",
+      "bytes": 1206,
+      "sha256": "3bd974b2c31e258abbba843b007df60566164ad293a209eb0c97f50b2decb456"
+    },
+    {
+      "path": "modeling/minimal-cavitation/Run-Verify.ps1",
+      "bytes": 1397,
+      "sha256": "c7d9a8a5bcca4516cd55ad239f1e95cf979947a2ae536fbb74a3bfb0d13e0e90"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/bilingual_reader.py",
+      "bytes": 12699,
+      "sha256": "0d069b590b9fd3e0b36b97bff54f6f5a0c181a0342e947e32327360b296dc9a0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/build_guide.py",
+      "bytes": 16910,
+      "sha256": "57eaff04122eeddebc74040068fa02c9c2a3f1c70f06b254d5ff7959e9ddb827"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/check_portability.py",
+      "bytes": 7541,
+      "sha256": "db65f45420b91f39080e2d0521bf69f99f5e5116a95c6a4faf04fc0f5b5512ea"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/figure_labels.py",
+      "bytes": 6401,
+      "sha256": "606eb825f4300ee3eff973e4c90219d1e92d67291b29cf3661f979b4afc7feee"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/make_delivery.py",
+      "bytes": 21303,
+      "sha256": "2f1d934396818a02ffd7b1287750c00acc0493763deb0b6051c3349ddf1d92a6"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/MinimalCavitation.java",
+      "bytes": 14692,
+      "sha256": "21783ef5146a62c728a2b63a0e298a47cca830ce1cd08aaea34b06e52dccbff0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/package.py",
+      "bytes": 1655,
+      "sha256": "8d1f3adc304b9dbe3a87542073ee1e340bf8ab88d63464943bb3e9e9f399a7b4"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/prerender_math.cjs",
+      "bytes": 942,
+      "sha256": "220879a5871b73665b7121d05c22c3fbf3ba5ee4989448ffb308d68168017f34"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/reference.py",
+      "bytes": 10468,
+      "sha256": "3bfe96bfc203b407b97ef2f6ac6f960750d4ec408c2787c1f8f7ba62deffddc7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/test_reader_dom.cjs",
+      "bytes": 9974,
+      "sha256": "95ac3fa0ff8db6d3f4393ddeaa19146001b5ee1859eb98a5694a5a2ad8fb1829"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/verify_bilingual.py",
+      "bytes": 4756,
+      "sha256": "a0cef5cc6fc9057e492e3dd1b7095726adc6ad642db8301f32eca448239c4fc1"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/verify_results.py",
+      "bytes": 9236,
+      "sha256": "8f49cdce0181eb88e946f2197937d5ffa3d2199d34cd2a853b51432cf310ec61"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/VerifyGuideInputs.java",
+      "bytes": 3985,
+      "sha256": "0ae9b3dfbcd099b8954910f4517f5710218ce19ae7f5837e4d9b861257eb9919"
+    },
+    {
+      "path": "modeling/minimal-cavitation/scripts/VerifyMinimal.java",
+      "bytes": 2942,
+      "sha256": "6a5f8c574bd5f1ac38cb5aee925e0044219b0ba61afdc11b7065afb85471e284"
+    },
+    {
+      "path": "modeling/minimal-cavitation/SOURCE_MANIFEST.json",
+      "bytes": 31970,
+      "sha256": "b330a75cc8e4102f840f7fe1e12a2a6fe9e5cc90270659d36d838b0cf20a30e7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/guide/STEP_BY_STEP.template.md.txt",
+      "bytes": 43264,
+      "sha256": "0ab5993ee564da32c30f6cb088bcf629ff9d2a5c468a03ea745ddeebb4e666bc"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/guide-abc-peer-review.md",
+      "bytes": 4246,
+      "sha256": "02537941e530e3a3cb57498172c7f57c5a97c63a37e548b03d2ac5e84b345b92"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/guide-abc-review.md",
+      "bytes": 2011,
+      "sha256": "5d28e45da0593e87c84ddf6bb14de170de29642051ae5e48b2e2f19d2f55f314"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/guide-abc.zh.md",
+      "bytes": 32195,
+      "sha256": "2a2b202a37e177ff01e45a8e9f21bed00b4a157bfb77c2d2b73a72782e0f602e"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/guide-def-peer-review.md",
+      "bytes": 3545,
+      "sha256": "617ff8b2769870ee1ae502554f1ff1471d14903a9b748ef0406b50ed2a22882f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/guide-def-review.md",
+      "bytes": 2666,
+      "sha256": "6876e173d4dffc49ef762094668dbcd63b376330c17004c32d46599330a3462d"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/guide-def.zh.md",
+      "bytes": 22688,
+      "sha256": "4765c3ca28aadf2eefd06afd6608a77726df1977ff7707c6c9514e044a09194f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/TERMINOLOGY.csv",
+      "bytes": 1385,
+      "sha256": "2b9447f6ef10e4c3ca94c54a7ff33de77b59f64354ea408a94179130c8e04e6c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/theory-peer-review.md",
+      "bytes": 4948,
+      "sha256": "fa3051c9c2273bb603f3fb66c08df711d398dc11e9dad5f12dd29d1ae3a460c2"
+    },
+    {
+      "path": "modeling/minimal-cavitation/sources/i18n/theory-review.md",
+      "bytes": 4822,
+      "sha256": "1792a1922e4844d8cc9a28788b6e9b25af746771e55d975867c6a489e11cdec0"
+    },
+    {
+      "path": "modeling/minimal-cavitation/STEP_BY_STEP.html",
+      "bytes": 214514,
+      "sha256": "f8d8e4c00a8dbc79d741cfedc7ec25099ac77095e2f0031469083a27fa311c79"
+    },
+    {
+      "path": "modeling/minimal-cavitation/STEP_BY_STEP.md",
+      "bytes": 56081,
+      "sha256": "5a1494ce327ff529e6407fbdb98275462da5dcac175da46ca08324cda7d8e02b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/STEP_BY_STEP.zh.md",
+      "bytes": 55656,
+      "sha256": "c27e80aa2b12c300c0a51f02980d9ddcfd9f6a41d57f25f00adcdbe142aa57ad"
+    },
+    {
+      "path": "modeling/minimal-cavitation/THEORY_DERIVATION.tex",
+      "bytes": 45612,
+      "sha256": "38a710cf0cc306f09f1a6d3e95d21a69d3bebc180de40438212c5330d69f614f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_coarse_2ns.csv",
+      "bytes": 7614797,
+      "sha256": "f80e6e82b0c73f39848a6acb9667031970a1c760e90ca9be57cdb41f29610eda"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_fresh_process_1ns.csv",
+      "bytes": 2297014,
+      "sha256": "f8ea36cbecd683cf2c732dfcf3ac42e70e853073cd072482726751f545862640"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_fresh_process_2ns.csv",
+      "bytes": 892801,
+      "sha256": "e970f8186ae5405df3b414f9f2781f357476e3eb164480c09198bfed00a78ea7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_fresh_process_baseline.csv",
+      "bytes": 3003321,
+      "sha256": "e598468998941a930c8067362689ab2f208ef4c7aec5e5db2df2d6ee4c9cc0ea"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_original_1ns.csv",
+      "bytes": 2296992,
+      "sha256": "a2b8a2ec2aba877cc80afbfc4d2b61d5f631eb7bdb15763b3dde2aebdc4d8384"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_original_2ns.csv",
+      "bytes": 892779,
+      "sha256": "f24d2e8a86a7753c24adc632d5326fb02de66142d1c1f11c7f995a8ca31cee82"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/A_baseline_original_baseline.csv",
+      "bytes": 3003299,
+      "sha256": "56700256d28d81822fa34cf2e4c22def2adfad47ddc780d9b837a4913a90d922"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_coarse_2ns.csv",
+      "bytes": 612204,
+      "sha256": "380d088250c42108fb00ba7949f964c8d08ce0a25c9381c2cbb0a7866f47484a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_fresh_process_1ns.csv",
+      "bytes": 410561,
+      "sha256": "bff9b7a5c3c491a53d9226d458a7adbdf7fe01c29006f90033a65638a601573f"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_fresh_process_2ns.csv",
+      "bytes": 185353,
+      "sha256": "5d4c6f2322ea3b5f017fd905d25605470568a2995e54ff5eaa303d0971d60e66"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_fresh_process_baseline.csv",
+      "bytes": 1226020,
+      "sha256": "396950ebcdfdec0b1aac4052a6910b8c394bb2aa773040af197b094307eb8ac4"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_original_1ns.csv",
+      "bytes": 410528,
+      "sha256": "3d7766635795a07bca5d106d4ed0cac4553e5e86aa9bb81d2108e4a73027f1b7"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_original_2ns.csv",
+      "bytes": 185320,
+      "sha256": "cd45dd17e7674eaa240b6b34285ec6fed0aa4797d4ec381be72e6ac4a8f4a9af"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/B_open_baseline_original_baseline.csv",
+      "bytes": 1225987,
+      "sha256": "95d4b7133cf6209a70c08f23272cf9fe9d7a4a325c1b2dee5bae577ab9c2bdf8"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/BILINGUAL_CONTENT_AUDIT.json",
+      "bytes": 4674,
+      "sha256": "00fe201f5e7b3e49a2b056ae5e5030ef20d62200d20eb4f42b14bf5aacfb9e6a"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/BILINGUAL_REGENERATION_FILES.json",
+      "bytes": 5991,
+      "sha256": "08c793e5393b2270b758fb0b23a056a8d80cf7d139f3732313552e36d7346c93"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/BILINGUAL_RELOCATION_AUDIT.json",
+      "bytes": 3457,
+      "sha256": "b0d6b36a172aa062c2eb9495311076dcd6e4dfcc122d9b9e12375c3afdea0e58"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/guide-interface-preview.png",
+      "bytes": 57831,
+      "sha256": "83f17c747e8a268f6dccbc6cb4d38899ff226958d9a56e205ba7811bc48b3978"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/guide-interface.zh-preview.png",
+      "bytes": 45765,
+      "sha256": "ba4d9ff91f349b76cd30a0c34e559aee558e8c6854c54e11a920a40926f49697"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/guide-mechanisms-preview.png",
+      "bytes": 76823,
+      "sha256": "14ff038f220bbb4fb8d5fbefdf62bea7b201714c4963df454e4ffad427c52644"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/guide-mechanisms.zh-preview.png",
+      "bytes": 48148,
+      "sha256": "a9d18c88c80d6403a9bf2f62be2ea7314d9416a649bf6558d06752411ce5708c"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/GUIDE_CONTENT_AUDIT.json",
+      "bytes": 1186,
+      "sha256": "9f5e30fa9184878b96df44879687cb776b915568b0a762840210a7d8f55a7e90"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/GUIDE_MOVED_IMPORT_CHECK.txt",
+      "bytes": 411,
+      "sha256": "6883b6f6f5520cd5b192adb4b09e5f4e8e0a6e99435ceed83359e44d860cdea1"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/GUIDE_NATIVE_IMPORT_CHECK.txt",
+      "bytes": 411,
+      "sha256": "6883b6f6f5520cd5b192adb4b09e5f4e8e0a6e99435ceed83359e44d860cdea1"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/GUIDE_RELOCATION_AUDIT.json",
+      "bytes": 3628,
+      "sha256": "b53653f63d17116033f2488aba9e60c72cd45c9135e7880d141bf585bba973f6"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/MOVED_NATIVE_RELOAD.txt",
+      "bytes": 423,
+      "sha256": "c5257ea3e9088e93b92c242d9239ad63570b0ae56f2d8ba96b77c96c09fbf916"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/NUMERICAL_AUDIT.json",
+      "bytes": 2589,
+      "sha256": "fdc7c839c785fe63f24278836fbb2b0ad6f5ae651abcfd7f6d09bbfc740be6dd"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/PORTABILITY_AUDIT.json",
+      "bytes": 2899,
+      "sha256": "2a8cb7d516e8b88486c9da090126716fff23139499e0566d166bb8e5b593c18b"
+    },
+    {
+      "path": "modeling/minimal-cavitation/verification/READER_DOM_AUDIT.json",
+      "bytes": 1336,
+      "sha256": "ac2e40d7fc2ba05671826dc87ed1fb93bdccd9845228afa6c3c2c53c099c4ec3"
     },
     {
       "path": "README.md",
-      "bytes": 5387,
-      "sha256": "bb599e6301bb8736349d42dda291ee5958d27571c9cd912b241efa2981349492"
+      "bytes": 6669,
+      "sha256": "1114ad9ba731ffe2f47132454ce06562b917c6ee05183573dff4339736ed937d"
     },
     {
       "path": "reference/defense.html",
-      "bytes": 17793,
-      "sha256": "46cec9204216f7b609572d51cc6ada5316d20092478ba8904523bd04eff9c767"
+      "bytes": 19657,
+      "sha256": "4deafb125c1cc0dba6928366f22b11e636a511faf65d001e2585ac644f2c0428"
     },
     {
       "path": "reference/notation.html",
-      "bytes": 22936,
-      "sha256": "1be1fb10deb57ba55b19dcd3918f0a73512b046ad68f8486f694db446e159dad"
+      "bytes": 24570,
+      "sha256": "77c7f7668dd6b53d3c8336de37b84faa3f560a7dc2d2e837ab949fae9d7b4b7b"
     },
     {
       "path": "reference/sources.html",
-      "bytes": 24236,
-      "sha256": "069a51d9f2b500db5d4e63aaf8e8ad793f175cd0ac0d423dcaa5fccf6071d8b7"
+      "bytes": 25870,
+      "sha256": "45d72ae8743ac20921f490fe738722ebbcb08b140f39953258e11c58fe1a06c0"
     },
     {
       "path": "RESOURCES.md",
-      "bytes": 2068,
-      "sha256": "ef28e1fc79bb1777b4243f03971cdc71f7ac08873f234f015a6faedd35b0b9f7"
+      "bytes": 4844,
+      "sha256": "57d2182322de03ed59fc4a69deff35cbe63ac3bdf801cdde4bef4490c04c564c"
     },
     {
       "path": "scripts/build_course.py",
-      "bytes": 35603,
-      "sha256": "c5b1233446cf3a3cd0e567d00b0f47d6775f17096e736920df6ed9bda2f73658"
+      "bytes": 35715,
+      "sha256": "015d994d56b5ec752fbec206bc87590dd8ada847956578f55073dfd1930f026b"
     },
     {
       "path": "scripts/coursekit.py",
@@ -1563,9 +2613,14 @@
       "sha256": "fcedfc2648e01d161a6d5ccdfa3e60912a77ba1f115b8814d0d94d7c92add5d5"
     },
     {
+      "path": "scripts/integrate_modeling.py",
+      "bytes": 9463,
+      "sha256": "23618bffc55596d623933a40b6fce5ba17a704f4b653cef0b9628eb667648450"
+    },
+    {
       "path": "scripts/package_site.py",
-      "bytes": 5249,
-      "sha256": "b2a2caafda1db0228a62760a007a8dfb7911a190a5a435a3e040e0a33d4e42d9"
+      "bytes": 5646,
+      "sha256": "c1f2263110053a1ffa5e27c1482febe78e25b9b7f5c0d4ee6a743a879e6935b8"
     },
     {
       "path": "scripts/prepare_symbol_rows.py",
@@ -1593,14 +2648,24 @@
       "sha256": "dd7eaa55cb16c70cce322e958dd83bbd5ec499251e1bdc874497aca9534e6ecc"
     },
     {
+      "path": "scripts/test_language_views.cjs",
+      "bytes": 3939,
+      "sha256": "42dcc8790880ff34ceed3a69875529d184e29cf0d9e54a118154133a63fdee75"
+    },
+    {
       "path": "scripts/verify_course.py",
-      "bytes": 13594,
-      "sha256": "245b488866a531e630d7549fc2126b1ece8b8ad766ca83025608e9743de1f819"
+      "bytes": 13676,
+      "sha256": "81133f3fb5db05934d86d04f3901165c0e4dd436e0c14c70f929c98703fbb7a6"
+    },
+    {
+      "path": "scripts/verify_modeling_integration.py",
+      "bytes": 2451,
+      "sha256": "8c9a3b1b7310edcd3be0f8cc5a9dacf011ad8f521963a5aee73d49acadb8dca1"
     },
     {
       "path": "scripts/verify_publication.py",
-      "bytes": 3794,
-      "sha256": "84b372fa2676a7af39d30d40bd8d4424440422851d9289f7241ee9e0376a3d08"
+      "bytes": 4694,
+      "sha256": "0c2427b5543f266aaaaffbedd110ec98b40d467ee1b3f637a925c3d3391ef3dc"
     },
     {
       "path": "sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md",
@@ -1709,8 +2774,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 942993,
-      "sha256": "e2493f87d7b612fd2af8a57bc4c46014be2fbe95e42f6a475afff218e3867286"
+      "bytes": 947500,
+      "sha256": "c7abf8b8f401755d8ef3dc739dbc8b9c410bb8a1dffad1e68d4a224b244d2560"
     },
     {
       "path": "verification/cross-review-01-02.json",
@@ -1798,14 +2863,24 @@
       "sha256": "9516709f3532898a6f79a34bac7589e0cd8e94295bbd5943ed9dafd3ffeedbb8"
     },
     {
+      "path": "verification/language-views-audit.json",
+      "bytes": 1465,
+      "sha256": "a34b60d4f7485cbed4e6987ff50594d872ab83135042f0a7236b1d1adb1f53fe"
+    },
+    {
       "path": "verification/local-symbol-layout-audit.json",
       "bytes": 729,
       "sha256": "0f441194afbfa111871818501283e89de69fbdd0bbcf4f603d6b32b5e8a86f94"
     },
     {
+      "path": "verification/modeling-integration-audit.json",
+      "bytes": 763,
+      "sha256": "d082e56ff5a4fa1081a0d8793764533e3fb3401bee466cc3266366c916dc9d6c"
+    },
+    {
       "path": "verification/release-audit.json",
       "bytes": 556,
-      "sha256": "162bb6e4bbee80d8a9e7da1da05a9eeac53db8f112edcd0617497ac4b7388b46"
+      "sha256": "ce412d5c248ad37a2a214f2c1198dd21077e1a0944a342c5d0ccad9b65ae5ade"
     },
     {
       "path": "verification/scientific-audit.json",

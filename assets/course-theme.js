@@ -13,9 +13,10 @@
     try { localStorage.setItem(key, mode); } catch (e) { /* Query links carry the choice too. */ }
     var button = document.getElementById('theme-toggle');
     if (button) {
-      button.textContent = mode === 'dark' ? 'Day mode / 日间模式' : 'Night mode / 夜间模式';
+      var zh = root.dataset.language === 'zh';
+      button.textContent = zh ? (mode === 'dark' ? '日间模式' : '夜间模式') : (mode === 'dark' ? 'Day mode' : 'Night mode');
       button.setAttribute('aria-pressed', mode === 'light' ? 'true' : 'false');
-      button.setAttribute('aria-label', 'Switch between day and night modes / 切换日间与夜间模式');
+      button.setAttribute('aria-label', zh ? '切换日间与夜间模式' : 'Switch between day and night modes');
     }
     document.querySelectorAll('a[href]').forEach(function (a) {
       var href = a.getAttribute('href');
@@ -29,6 +30,7 @@
     });
   }
   apply(mode);
+  document.addEventListener('course-language-change', function () { apply(mode); });
   function ready() {
     var bar = document.createElement('div');
     bar.className = 'theme-tools';

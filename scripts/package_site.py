@@ -5,6 +5,7 @@ import hashlib
 import shutil
 import re
 import zipfile
+import subprocess
 from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -19,16 +20,18 @@ def main():
     assert audit['status']=='passed','Course gate failed'
     settings=json.loads((ROOT/'COURSE_SETTINGS.json').read_text(encoding='utf-8'))
     units=settings['chapters']+settings.get('appendices',[])
-    selected={Path('index.html'),Path('.nojekyll'),Path('.gitignore'),Path('README.md'),Path('MISSION.md'),Path('NOTES.md'),Path('RESOURCES.md'),Path('COURSE_SETTINGS.json')}
+    selected={Path('index.html'),Path('.nojekyll'),Path('.gitignore'),Path('README.md'),Path('MISSION.md'),Path('RESOURCES.md'),Path('COURSE_SETTINGS.json')}
     selected.update(Path(c['file']) for c in units+settings.get('legacy_routes',[]))
-    selected.update(p.relative_to(ROOT) for folder in ['assets','reference'] for p in (ROOT/folder).rglob('*') if p.is_file())
+    selected.update(p.relative_to(ROOT) for folder in ['assets','reference','modeling'] for p in (ROOT/folder).rglob('*') if p.is_file())
     selected.add(Path('text/course.md'))
     selected.update(Path('text')/Path(c['file']).with_suffix('.md').name for c in units)
     selected.update(Path('sources')/name for name in ['Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md','Cavitation_Course_Before_After_Comparison_EN_ZH.md'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'content').glob('*.py'))
     selected.add(Path('content/equation_symbol_rows.json'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'scripts').glob('*') if p.is_file() and p.suffix in ['.py','.cjs'])
-    selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if not any(tag in p.name for tag in ['publication','cleanup','package-audit']))
+    previous=json.loads(subprocess.check_output(['git','-C',str(DEST),'show','HEAD:PUBLIC_FILE_MANIFEST.json'],text=True,encoding='utf-8'))
+    public_verification={row['path'] for row in previous['files'] if row['path'].startswith('verification/')}
+    selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if p.relative_to(ROOT).as_posix() in public_verification or p.name in {'modeling-integration-audit.json','language-views-audit.json'})
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('chapter*-check.py'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.cjs'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('diagram-review-[0-9][0-9].png'))
@@ -43,7 +46,7 @@ def main():
     for relative in sorted(selected):
         p=ROOT/relative
         assert p.resolve().is_relative_to(ROOT.resolve()) and p.is_file(),p
-        if p.suffix.lower() in forbidden_ext:problems.append(str(relative))
+        if p.suffix.lower() in forbidden_ext and not (relative.parts[0]=='modeling' and p.suffix.lower() in {'.mph','.zip'}):problems.append(str(relative))
         if p.suffix.lower() in {'.html','.md','.json','.py','.js','.cjs','.css','.svg'}:
             text=p.read_text(encoding='utf-8')
             if secret.search(text):problems.append('credential pattern '+str(relative))

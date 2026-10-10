@@ -1,0 +1,9 @@
+R	Rc0*rr
+Uw	Us*ww
+pEl	G/2*(5-4*Rc0/R-(Rc0/R)^4)
+pRes	pEl+4*etaG*Uw/R
+Wgel	2*pi*G*(5*R^3/3-2*Rc0*R^2+Rc0^4/R-2*Rc0^3/3)
+Kgel	2*pi*rhoG*R^3*Uw^2
+wallAcc	((pb-pInf-pRes)/rhoG-1.5*Uw^2)/R
+Pdis	outletOpen*A*(Rloss*U^2+rho*Kloss*abs(U)^3/2)+16*pi*etaG*R*Uw^2
+communication	max(L,2*Rc0)/cL*kap*abs(Vdot)/Vg

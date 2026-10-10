@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "engine": "JSDOM 30.1.2",
+  "checks": [
+    "Chinese default, one complete visible edition, language above theme",
+    "Theme switches and its labels follow the selected language",
+    "Completion in Chinese is synchronized without doubling the 53-step count",
+    "Reading position is mapped to the corresponding step when switching",
+    "Language, theme and step completion persist across reload and both readers",
+    "Reset clears both editions and saved progress",
+    "Copy preserves the input block and provides Chinese feedback",
+    "Clipboard rejection selects the original input text for manual copying",
+    "Deep links map to the current edition and disclosure remains open after switching",
+    "Disabled or malformed storage does not prevent switching or progress",
+    "Controls have the fixed lower-right stack and term palette stays local",
+    "No application JavaScript errors occurred in the tested DOM scenarios"
+  ],
+  "scope": "DOM interaction tests of delivered HTML and JS; layout, scrolling and clipboard have explicit stubs.",
+  "browser_visual_validation": "Not performed. CUA returned an empty browser inventory and Browser is not available: iab.",
+  "figures": "Chinese scientific plots and schematic renders inspected separately; this audit makes no browser screenshot claim."
+}

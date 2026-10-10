@@ -1,0 +1,4 @@
+COMSOL 6.4 moved-folder native reload and stored-result evaluation
+PASS Model_A_Finite_Energy_Pressure_Jet.mph physics=GlobalEquations states=5 stored=[5, 33886] peak_m_s=15.376077990105143
+PASS Model_B_Hydrogel_Confinement_Jet_Transmission.mph physics=GlobalEquations states=7 stored=[7, 1938] peak_m_s=1.6253845827345195
+MOVED_NATIVE_RELOAD_COMPLETE: files read and stored results evaluated; no model file rewritten.
