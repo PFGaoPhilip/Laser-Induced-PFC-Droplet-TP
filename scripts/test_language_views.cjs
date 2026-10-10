@@ -23,9 +23,20 @@ for(const file of files) {
   const dom=load(file,'?lang=en'),w=dom.window,d=w.document;
   assert.equal(d.documentElement.dataset.language,'en');
   assert.equal(w.getComputedStyle(d.querySelector('body [lang="zh-CN"]')).display,'none');
+  for(const a of d.querySelectorAll('.toc a')) {
+    const en=a.querySelector(':scope > [lang="en"]'), zh=a.querySelector(':scope > [lang="zh-CN"]');
+    assert.equal(a.children.length,2);assert.ok(en&&zh);
+    const target=d.getElementById(a.hash.slice(1));
+    assert.equal(en.textContent,target.textContent);
+    assert.ok(!/[\u4e00-\u9fff]/.test(en.textContent));
+  }
+  const banner=d.querySelector('.hero .eyebrow [lang="en"]');
+  if(banner)assert.equal(banner.textContent,'PROJECT-CENTERED THEORY · FOUR CHAPTERS + APPENDIX A');
   d.getElementById('language-toggle').click();
   assert.equal(d.documentElement.lang,'zh-CN');
   assert.equal(w.getComputedStyle(d.querySelector('body [lang="en"]')).display,'none');
+  const toc=d.querySelector('.toc a');
+  if(toc){assert.equal(w.getComputedStyle(toc.querySelector('[lang="en"]')).display,'none');assert.notEqual(w.getComputedStyle(toc.querySelector('[lang="zh-CN"]')).display,'none');}
   assert.equal(w.localStorage.getItem('laser-pfc-tp-language'),'zh');
   assert.equal(d.getElementById('theme-toggle').textContent,'日间模式');
   d.getElementById('theme-toggle').click();assert.equal(d.documentElement.dataset.theme,'light');

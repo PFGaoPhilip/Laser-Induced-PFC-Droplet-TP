@@ -299,6 +299,16 @@
       "detail": null
     },
     {
+      "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=en",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "index.html: local dependency chapters/01-cavity-pressure-inertia-and-directional-jets.html",
       "passed": true,
       "detail": null
@@ -370,16 +380,6 @@
     },
     {
       "name": "index.html: anchor appendices/a-hydrogel-versus-liquid.html#A-Q1",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=en",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=zh",
       "passed": true,
       "detail": null
     },
@@ -33127,37 +33127,37 @@
   "pages": [
     {
       "file": "index.html",
-      "bytes": 22522,
+      "bytes": 22523,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1330037,
+      "bytes": 1330217,
       "equations": 34,
       "defenses": 3
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1572382,
+      "bytes": 1572606,
       "equations": 36,
       "defenses": 3
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2030295,
+      "bytes": 2030379,
       "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1881447,
+      "bytes": 1881584,
       "equations": 41,
       "defenses": 3
     },
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1282208,
+      "bytes": 1282311,
       "equations": 24,
       "defenses": 3
     },

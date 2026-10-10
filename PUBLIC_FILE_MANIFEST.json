@@ -14,8 +14,8 @@
     },
     {
       "path": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1282988,
-      "sha256": "3b48dd1bf525902aa5c0679a939b03901ec3900dc18032ffd31b6ebacffb3403"
+      "bytes": 1282311,
+      "sha256": "1bc23169c8a7c06d7a206185aaf02784e8f68024317f29f7b964654d8ca5bc2a"
     },
     {
       "path": "assets/bilingual-terms.css",
@@ -1429,28 +1429,28 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1330663,
-      "sha256": "13251f05c8d574b1294938d9fa5ca6a4bce80b984c0312b903822db7d744d5be"
+      "bytes": 1330217,
+      "sha256": "9e0db80f6680ba7cacf5e9b4637620f82b3df85352ed7b28f2774af51079d993"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1572920,
-      "sha256": "577e86de7e899fba22bbf871f23ec11e65517ea523831466370d3a3b1af401ff"
+      "bytes": 1572606,
+      "sha256": "be5f90b06e8eb147c110ed2f14f7fb997b1734d709e9f5766c3fec024c4ec8df"
     },
     {
       "path": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2031113,
-      "sha256": "aa4b0bacb7f69a72c11e10d92131eb461b5b166c987e66c183c804a8d2567751"
+      "bytes": 2030379,
+      "sha256": "a7134f7791ba8b8354a005ecbddb2b6f38e671a08a44e75b7735233e1ef08c6f"
     },
     {
       "path": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1882159,
-      "sha256": "95a4165196602fc45d430663174ac7978da66cb61004012ae2b76774e9a26d70"
+      "bytes": 1881584,
+      "sha256": "97777385255b8c3548294abf635c7ac716db9333c3ff65b2e9b2bb918a7f19b5"
     },
     {
       "path": "chapters/05-hydrogel-versus-liquid.html",
-      "bytes": 1282988,
-      "sha256": "3b48dd1bf525902aa5c0679a939b03901ec3900dc18032ffd31b6ebacffb3403"
+      "bytes": 1282311,
+      "sha256": "1bc23169c8a7c06d7a206185aaf02784e8f68024317f29f7b964654d8ca5bc2a"
     },
     {
       "path": "content/chapter01.py",
@@ -1504,8 +1504,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 22522,
-      "sha256": "0b28bb3c032b6fac4758c60c6df194b73bf153a1d889b21d27b7c2bb6dc563bf"
+      "bytes": 22523,
+      "sha256": "052d3636b8722f32d8e7989742500e31ec668d9d0b0a8395d90505b7daeab904"
     },
     {
       "path": "MISSION.md",
@@ -2614,13 +2614,13 @@
     },
     {
       "path": "scripts/integrate_modeling.py",
-      "bytes": 9592,
-      "sha256": "0230fbbf4d5e39fcc343b8207ee0ff8add92340338c2c8f7bed0caf91d272a42"
+      "bytes": 11572,
+      "sha256": "7f48b17e18c524d8565fd6e277b9233eb6e1e53d1b54a910446b55ba0c4b874c"
     },
     {
       "path": "scripts/package_site.py",
-      "bytes": 5902,
-      "sha256": "76def6e29b2cf84cefb41308819012718b701f1beb65cd488fb4f73b7ad487c4"
+      "bytes": 5931,
+      "sha256": "854731dab0bbca17d263980f3b8daf0873ecec8b2ed07e6e59f614e89147a101"
     },
     {
       "path": "scripts/prepare_symbol_rows.py",
@@ -2649,13 +2649,18 @@
     },
     {
       "path": "scripts/test_language_views.cjs",
-      "bytes": 3939,
-      "sha256": "42dcc8790880ff34ceed3a69875529d184e29cf0d9e54a118154133a63fdee75"
+      "bytes": 4696,
+      "sha256": "f5452fb23589cacf57efc50677f6c9f948a6ef99a776a7a70f2aef936592cca3"
     },
     {
       "path": "scripts/verify_course.py",
       "bytes": 13676,
       "sha256": "81133f3fb5db05934d86d04f3901165c0e4dd436e0c14c70f929c98703fbb7a6"
+    },
+    {
+      "path": "scripts/verify_language_labels.py",
+      "bytes": 2741,
+      "sha256": "c21ea08254a2888b09f07c827f713a333ed4cc926f81ce747572d253bfd0dcec"
     },
     {
       "path": "scripts/verify_modeling_integration.py",
@@ -2775,7 +2780,7 @@
     {
       "path": "verification/course-audit.json",
       "bytes": 947500,
-      "sha256": "c7abf8b8f401755d8ef3dc739dbc8b9c410bb8a1dffad1e68d4a224b244d2560"
+      "sha256": "ea76a35aeb1ef16d8fd878baf49aeea403e02a0f7e35a8939e913c453c9997bb"
     },
     {
       "path": "verification/cross-review-01-02.json",
@@ -2861,6 +2866,11 @@
       "path": "verification/interface-check.cjs",
       "bytes": 7486,
       "sha256": "9516709f3532898a6f79a34bac7589e0cd8e94295bbd5943ed9dafd3ffeedbb8"
+    },
+    {
+      "path": "verification/language-labels-audit.json",
+      "bytes": 296,
+      "sha256": "fc6da35d23390ca0fc3adca437b19ffd1fa6187051afed78ef2c5de0794c4568"
     },
     {
       "path": "verification/language-views-audit.json",

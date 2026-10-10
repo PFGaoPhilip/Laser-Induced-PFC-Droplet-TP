@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / 'LEARN_20260929/modeling/20261010-minimal-cavitation'
 TARGET = ROOT / 'modeling/minimal-cavitation'
 
-def integrate():
+def copy_modeling():
     # Copy the supplied, already verified delivery without changing the accepted models.
     records = []
     source_files=[]
@@ -66,11 +66,45 @@ def integrate():
         for f in sorted(TARGET.rglob('*')):
             if f.is_file() and f!=archive: z.write(f, 'Minimal_Cavitation_Models/'+f.relative_to(TARGET).as_posix())
 
+    return len(records)
+
+def language_label(soup, node, en, zh):
+    """Replace a label from authoritative text, never from a prior rendered label."""
+    node.clear()
+    for lang, text in [('en', en), ('zh-CN', zh)]:
+        span=soup.new_tag('span', lang=lang)
+        span.string=text
+        node.append(span)
+
+def integrate(include_modeling=True):
+    copied=copy_modeling() if include_modeling else 0
     settings = json.loads((ROOT/'COURSE_SETTINGS.json').read_text(encoding='utf-8'))
     pages = [ROOT/'index.html', *(ROOT/x['file'] for x in settings['chapters']+settings['appendices']+settings['legacy_routes']), *sorted((ROOT/'reference').glob('*.html'))]
     for p in pages:
         s = BeautifulSoup(p.read_text(encoding='utf-8'), 'html.parser')
         relative = '' if p.parent == ROOT else '../'
+        banner=s.select_one('.hero .eyebrow')
+        if banner:
+            language_label(s,banner,'PROJECT-CENTERED THEORY · FOUR CHAPTERS + APPENDIX A',
+                           '项目导向理论 · 四章 + 附录 A')
+        sidebar=s.select_one('.sidebar')
+        if sidebar:
+            for node, labels in zip(sidebar.find_all('h2',recursive=False),
+                                    [('Course','课程'),('In this unit','本单元内容')]):
+                language_label(s,node,*labels)
+            for a in sidebar.select('nav:not(.toc) a[href]'):
+                route=a['href'].split('?')[0].removeprefix('../')
+                unit=next((u for u in settings['chapters']+settings['appendices'] if u['file']==route),None)
+                if unit:
+                    language_label(s,a,unit['label']+' · '+unit['title'],unit['label_zh']+' · '+unit['title_zh'])
+        header=s.select_one('.chapter-header .eyebrow')
+        if header:
+            route=p.relative_to(ROOT).as_posix()
+            unit=next((u for u in settings['chapters']+settings['appendices'] if u['file']==route),None)
+            if not unit and route=='chapters/05-hydrogel-versus-liquid.html':unit=settings['appendices'][0]
+            if unit:
+                language_label(s,header,unit['label']+' · THEORY → DERIVATION → DEFENSE',
+                               unit['label_zh']+' · 理论 → 推导 → 答辩')
         if p==ROOT/'index.html' and s.select_one('[data-modeling-link]'):
             s.select_one('.hero').insert_after(s.select_one('[data-modeling-link]').extract())
         if not s.select_one('[data-modeling-link]'):
@@ -104,11 +138,9 @@ def integrate():
             node.replace_with(a, b)
         for a in s.select('.toc a[href^="#"]'):
             target = s.find(id=a['href'][1:])
-            if target and target.parent.select_one('[lang="zh-CN"]'):
-                en = a.get_text(); zh = target.parent.select_one('[lang="zh-CN"]').get_text()
-                a.clear()
-                for lang, value in [('en', en), ('zh-CN', zh)]:
-                    span = s.new_tag('span', lang=lang); span.string=value; a.append(span)
+            translation=target.parent.find(target.name,attrs={'lang':'zh-CN'},recursive=False) if target else None
+            if target and translation:
+                language_label(s,a,target.get_text(),translation.get_text())
         for heading in s.select('.equation-heading'):
             for n in list(heading.children):
                 if isinstance(n, NavigableString) and str(n).strip()=='/': n.extract()
@@ -120,6 +152,11 @@ def integrate():
     settings['modeling']={'file':'modeling/minimal-cavitation/index.html','guide':'modeling/minimal-cavitation/STEP_BY_STEP.html','source':'20261010-minimal-cavitation','scope':'Initialized ideal-gas controls; expansion-driven discharge through an existing liquid outlet.'}
     settings['prepared']='2026-10-11'
     (ROOT/'COURSE_SETTINGS.json').write_text(json.dumps(settings, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    print(f'Integrated modeling delivery: {len(records)} copied files; {len(pages)} localized course pages')
+    print(f'Integrated modeling delivery: {copied} copied files; {len(pages)} localized course pages')
 
-if __name__=='__main__': integrate()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--course-only',action='store_true',help='Update language views without recopying the accepted modeling delivery')
+    args=parser.parse_args()
+    integrate(include_modeling=not args.course_only)

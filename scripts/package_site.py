@@ -35,7 +35,7 @@ def main():
         prior=next((p for p in (ROOT/'PUBLIC_FILE_MANIFEST.json',DEST/'PUBLIC_FILE_MANIFEST.json') if p.is_file()),None)
         previous=json.loads(prior.read_text(encoding='utf-8')) if prior else {'files':[]}
     public_verification={row['path'] for row in previous['files'] if row['path'].startswith('verification/')}
-    selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if p.relative_to(ROOT).as_posix() in public_verification or p.name in {'modeling-integration-audit.json','language-views-audit.json'})
+    selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if p.relative_to(ROOT).as_posix() in public_verification or p.name in {'modeling-integration-audit.json','language-views-audit.json','language-labels-audit.json'})
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('chapter*-check.py'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.cjs'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('diagram-review-[0-9][0-9].png'))
