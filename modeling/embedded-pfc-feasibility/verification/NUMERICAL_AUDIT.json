@@ -1,0 +1,909 @@
+{
+  "status": "PASS",
+  "stationary_native_cases": 60,
+  "transient_native_cases": 6,
+  "equilibrium_checks": [
+    {
+      "case": "EQ_000_Perfluoropentane_r0.3_G5_L1.2",
+      "relative_errors": {
+        "T_K": 1.2332010217667467e-13,
+        "liquid_density_kg_m3": 1.083283712134611e-13,
+        "vapor_density_kg_m3": 8.46710833198175e-13,
+        "bubble_radius_m": 3.0135700094471946e-14,
+        "liquid_pressure_Pa": 9.381006609194027e-12,
+        "vapor_pressure_Pa": 8.61277819517515e-13,
+        "vapor_fraction": 7.562227410958784e-13,
+        "equilibrium_state_energy_J": 6.776514463110604e-13
+      }
+    },
+    {
+      "case": "EQ_001_Perfluoropentane_r0.3_G5_L1.5",
+      "relative_errors": {
+        "T_K": 7.918712715213883e-13,
+        "liquid_density_kg_m3": 5.453553448826079e-13,
+        "vapor_density_kg_m3": 7.37197805579754e-12,
+        "bubble_radius_m": 4.870854971120375e-11,
+        "liquid_pressure_Pa": 9.871702370590102e-11,
+        "vapor_pressure_Pa": 7.224983547354399e-12,
+        "vapor_fraction": 1.3875349019485146e-10,
+        "equilibrium_state_energy_J": 2.1306098341525655e-10
+      }
+    },
+    {
+      "case": "EQ_002_Perfluoropentane_r0.3_G5_L1.8",
+      "relative_errors": {
+        "T_K": 3.717481016589878e-14,
+        "liquid_density_kg_m3": 6.624861464920647e-14,
+        "vapor_density_kg_m3": 3.490632619746461e-13,
+        "bubble_radius_m": 2.3357547621690485e-12,
+        "liquid_pressure_Pa": 4.398279483996969e-11,
+        "vapor_pressure_Pa": 3.4625652922016284e-13,
+        "vapor_fraction": 6.6579979871698525e-12,
+        "equilibrium_state_energy_J": 1.935410699688662e-11
+      }
+    },
+    {
+      "case": "EQ_003_Perfluoropentane_r0.3_G5_L2.1",
+      "relative_errors": {
+        "T_K": 1.6854396067345714e-16,
+        "liquid_density_kg_m3": 4.66075663450781e-16,
+        "vapor_density_kg_m3": 3.8969943333356965e-16,
+        "bubble_radius_m": 1.7389395199332115e-16,
+        "liquid_pressure_Pa": 1.8210876738213888e-13,
+        "vapor_pressure_Pa": 5.633949081098201e-16,
+        "vapor_fraction": 2.955803767230762e-16,
+        "equilibrium_state_energy_J": 4.748706334344106e-15
+      }
+    },
+    {
+      "case": "EQ_004_Perfluoropentane_r0.3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 1.2498981703457872e-13,
+        "liquid_density_kg_m3": 1.2706886404467397e-13,
+        "vapor_density_kg_m3": 8.36383710911424e-13,
+        "bubble_radius_m": 4.895753041177976e-14,
+        "liquid_pressure_Pa": 5.6477145791653086e-12,
+        "vapor_pressure_Pa": 8.537532278009005e-13,
+        "vapor_fraction": 6.895044927607792e-13,
+        "equilibrium_state_energy_J": 7.046194119689959e-13
+      }
+    },
+    {
+      "case": "EQ_005_Perfluoropentane_r0.3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 3.650160360473292e-13,
+        "liquid_density_kg_m3": 2.743953334650917e-13,
+        "vapor_density_kg_m3": 3.390424515004019e-12,
+        "bubble_radius_m": 2.2546291260921865e-11,
+        "liquid_pressure_Pa": 3.7459386059413915e-11,
+        "vapor_pressure_Pa": 3.3101559628524955e-12,
+        "vapor_fraction": 6.424847196918991e-11,
+        "equilibrium_state_energy_J": 9.847841688453253e-11
+      }
+    },
+    {
+      "case": "EQ_006_Perfluoropentane_r0.3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 2.3528726785679998e-14,
+        "liquid_density_kg_m3": 1.4686901579114426e-14,
+        "vapor_density_kg_m3": 1.9791757502634643e-13,
+        "bubble_radius_m": 1.0250699213943966e-12,
+        "liquid_pressure_Pa": 1.4650708393052217e-11,
+        "vapor_pressure_Pa": 1.9867020569544034e-13,
+        "vapor_fraction": 2.8773923656474257e-12,
+        "equilibrium_state_energy_J": 8.569749520381587e-12
+      }
+    },
+    {
+      "case": "EQ_007_Perfluoropentane_r0.3_G100_L1.2",
+      "relative_errors": {
+        "T_K": 4.302576260837346e-14,
+        "liquid_density_kg_m3": 6.889638730791473e-14,
+        "vapor_density_kg_m3": 2.396009430184598e-13,
+        "bubble_radius_m": 1.211565948086793e-14,
+        "liquid_pressure_Pa": 2.578158774402771e-12,
+        "vapor_pressure_Pa": 2.5425793469456873e-13,
+        "vapor_fraction": 2.0348266866943144e-13,
+        "equilibrium_state_energy_J": 2.268439181914198e-13
+      }
+    },
+    {
+      "case": "EQ_008_Perfluoropentane_r0.3_G100_L1.5",
+      "relative_errors": {
+        "T_K": 3.886988397270658e-13,
+        "liquid_density_kg_m3": 4.197086042854631e-13,
+        "vapor_density_kg_m3": 3.5205210238721754e-12,
+        "bubble_radius_m": 2.4617741344200612e-11,
+        "liquid_pressure_Pa": 1.0887079512563208e-11,
+        "vapor_pressure_Pa": 3.373345244423349e-12,
+        "vapor_fraction": 7.03325269576198e-11,
+        "equilibrium_state_energy_J": 1.0596784514935869e-10
+      }
+    },
+    {
+      "case": "EQ_009_Perfluoropentane_r0.3_G100_L1.8",
+      "relative_errors": {
+        "T_K": 5.060023109088092e-13,
+        "liquid_density_kg_m3": 4.601565045949967e-13,
+        "vapor_density_kg_m3": 4.720458466298597e-12,
+        "bubble_radius_m": 4.623254612838733e-11,
+        "liquid_pressure_Pa": 3.030841344464454e-11,
+        "vapor_pressure_Pa": 4.527150362105779e-12,
+        "vapor_fraction": 1.3397719978377157e-10,
+        "equilibrium_state_energy_J": 3.819534295159271e-10
+      }
+    },
+    {
+      "case": "EQ_010_Perfluoropentane_r0.3_G100_L2.1",
+      "relative_errors": {
+        "T_K": 3.8334783331243435e-14,
+        "liquid_density_kg_m3": 1.0754426540818008e-13,
+        "vapor_density_kg_m3": 4.907543258903264e-13,
+        "bubble_radius_m": 1.1343955144051888e-11,
+        "liquid_pressure_Pa": 3.5883038701478103e-11,
+        "vapor_pressure_Pa": 4.5098691296976383e-13,
+        "vapor_fraction": 3.3540826566426226e-11,
+        "equilibrium_state_energy_J": 1.449679821061703e-10
+      }
+    },
+    {
+      "case": "EQ_011_Perfluoropentane_r3_G5_L1.2",
+      "relative_errors": {
+        "T_K": 1.2504326734392617e-12,
+        "liquid_density_kg_m3": 1.408513904236589e-12,
+        "vapor_density_kg_m3": 1.2625987414516758e-11,
+        "bubble_radius_m": 8.236162574774622e-13,
+        "liquid_pressure_Pa": 9.067031296995544e-10,
+        "vapor_pressure_Pa": 1.3144165924835198e-11,
+        "vapor_fraction": 1.0154768894462646e-11,
+        "equilibrium_state_energy_J": 2.3868697800916198e-11
+      }
+    },
+    {
+      "case": "EQ_012_Perfluoropentane_r3_G5_L1.5",
+      "relative_errors": {
+        "T_K": 9.158240735602803e-16,
+        "liquid_density_kg_m3": 1.0178517374893697e-15,
+        "vapor_density_kg_m3": 6.632169247980094e-16,
+        "bubble_radius_m": 2.1200016909249083e-16,
+        "liquid_pressure_Pa": 1.5638811965466932e-13,
+        "vapor_pressure_Pa": 4.342238890322013e-16,
+        "vapor_fraction": 1.333786126682851e-15,
+        "equilibrium_state_energy_J": 1.852274194480509e-14
+      }
+    },
+    {
+      "case": "EQ_013_Perfluoropentane_r3_G5_L1.8",
+      "relative_errors": {
+        "T_K": 4.738205236675105e-12,
+        "liquid_density_kg_m3": 4.451041562776599e-12,
+        "vapor_density_kg_m3": 5.1760594513681776e-11,
+        "bubble_radius_m": 2.3973517586526003e-10,
+        "liquid_pressure_Pa": 2.216207689430346e-09,
+        "vapor_pressure_Pa": 5.358707741925123e-11,
+        "vapor_fraction": 7.709663335768544e-10,
+        "equilibrium_state_energy_J": 9.48044174784927e-10
+      }
+    },
+    {
+      "case": "EQ_014_Perfluoropentane_r3_G5_L2.1",
+      "relative_errors": {
+        "T_K": 8.525525556680381e-13,
+        "liquid_density_kg_m3": 8.238495257766088e-13,
+        "vapor_density_kg_m3": 8.309299352328839e-12,
+        "bubble_radius_m": 1.2264379536941677e-10,
+        "liquid_pressure_Pa": 4.5914274263471773e-10,
+        "vapor_pressure_Pa": 8.717734551266792e-12,
+        "vapor_fraction": 3.5962142684552746e-10,
+        "equilibrium_state_energy_J": 7.636517954598045e-10
+      }
+    },
+    {
+      "case": "EQ_015_Perfluoropentane_r3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 1.0364350219564107e-12,
+        "liquid_density_kg_m3": 1.211491201972466e-12,
+        "vapor_density_kg_m3": 1.0301608968527792e-11,
+        "bubble_radius_m": 7.184950273728197e-13,
+        "liquid_pressure_Pa": 7.310328847898087e-10,
+        "vapor_pressure_Pa": 1.071449474859644e-11,
+        "vapor_fraction": 8.145768829826613e-12,
+        "equilibrium_state_energy_J": 1.8311447674074552e-11
+      }
+    },
+    {
+      "case": "EQ_016_Perfluoropentane_r3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 4.9837191842800216e-14,
+        "liquid_density_kg_m3": 3.574426206667142e-14,
+        "vapor_density_kg_m3": 4.997448233911394e-13,
+        "bubble_radius_m": 1.133019800325402e-11,
+        "liquid_pressure_Pa": 2.500769002442672e-13,
+        "vapor_pressure_Pa": 5.189646143641691e-13,
+        "vapor_fraction": 3.3490461233527524e-11,
+        "equilibrium_state_energy_J": 3.538387315475323e-11
+      }
+    },
+    {
+      "case": "EQ_017_Perfluoropentane_r3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 1.3950449388059061e-14,
+        "liquid_density_kg_m3": 9.963482085351966e-15,
+        "vapor_density_kg_m3": 1.4532664835056377e-13,
+        "bubble_radius_m": 5.53540664270105e-12,
+        "liquid_pressure_Pa": 6.2300853091682e-13,
+        "vapor_pressure_Pa": 1.5003066776072523e-13,
+        "vapor_fraction": 1.646062310716593e-11,
+        "equilibrium_state_energy_J": 3.1952357697034646e-11
+      }
+    },
+    {
+      "case": "EQ_018_Perfluoropentane_r3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 3.6231785830935357e-16,
+        "liquid_density_kg_m3": 5.861217526810747e-16,
+        "vapor_density_kg_m3": 9.876941077636181e-16,
+        "bubble_radius_m": 4.1814433110842184e-16,
+        "liquid_pressure_Pa": 2.4335188708271464e-13,
+        "vapor_pressure_Pa": 1.9315257903152818e-16,
+        "vapor_fraction": 2.559039359609138e-15,
+        "equilibrium_state_energy_J": 8.91169377206355e-15
+      }
+    },
+    {
+      "case": "EQ_019_Perfluoropentane_r3_G100_L1.2",
+      "relative_errors": {
+        "T_K": 4.396645888286322e-13,
+        "liquid_density_kg_m3": 6.24128179452254e-13,
+        "vapor_density_kg_m3": 4.088696326949258e-12,
+        "bubble_radius_m": 3.998021234189652e-13,
+        "liquid_pressure_Pa": 2.8057471515949697e-10,
+        "vapor_pressure_Pa": 4.228664401536741e-12,
+        "vapor_fraction": 2.8888451306017113e-12,
+        "equilibrium_state_energy_J": 5.952045243411791e-12
+      }
+    },
+    {
+      "case": "EQ_020_Perfluoropentane_r3_G100_L1.5",
+      "relative_errors": {
+        "T_K": 1.7942430012085347e-12,
+        "liquid_density_kg_m3": 2.1025235469351087e-12,
+        "vapor_density_kg_m3": 1.68023120080618e-11,
+        "bubble_radius_m": 3.3222276906617647e-10,
+        "liquid_pressure_Pa": 4.398998931811521e-10,
+        "vapor_pressure_Pa": 1.7171258090106315e-11,
+        "vapor_fraction": 9.798663115850614e-10,
+        "equilibrium_state_energy_J": 1.3745889907439776e-09
+      }
+    },
+    {
+      "case": "EQ_021_Perfluoropentane_r3_G100_L1.8",
+      "relative_errors": {
+        "T_K": 9.666746048265462e-13,
+        "liquid_density_kg_m3": 1.2878227992371776e-12,
+        "vapor_density_kg_m3": 9.075611887981445e-12,
+        "bubble_radius_m": 2.6563442673443955e-10,
+        "liquid_pressure_Pa": 2.8155630656601843e-10,
+        "vapor_pressure_Pa": 9.214241626920721e-12,
+        "vapor_fraction": 7.878279287075934e-10,
+        "equilibrium_state_energy_J": 2.1250281983288064e-09
+      }
+    },
+    {
+      "case": "EQ_022_Perfluoropentane_r3_G100_L2.1",
+      "relative_errors": {
+        "T_K": 1.7085694284348337e-15,
+        "liquid_density_kg_m3": 1.9947058589698715e-15,
+        "vapor_density_kg_m3": 3.1013021083367256e-15,
+        "bubble_radius_m": 1.3918596284662475e-16,
+        "liquid_pressure_Pa": 3.5443215069677875e-14,
+        "vapor_pressure_Pa": 4.2732768220365967e-16,
+        "vapor_fraction": 4.034356799105986e-15,
+        "equilibrium_state_energy_J": 1.213395871269995e-14
+      }
+    },
+    {
+      "case": "EQ_023_Perfluorohexane_r0.3_G5_L1.2",
+      "relative_errors": {
+        "T_K": 2.783998515552854e-15,
+        "liquid_density_kg_m3": 4.179637943916208e-15,
+        "vapor_density_kg_m3": 3.3249991225475586e-14,
+        "bubble_radius_m": 1.44376837678263e-13,
+        "liquid_pressure_Pa": 4.4346103952633045e-14,
+        "vapor_pressure_Pa": 2.9728766093097386e-14,
+        "vapor_fraction": 3.995509185580867e-13,
+        "equilibrium_state_energy_J": 1.0968099602105011e-13
+      }
+    },
+    {
+      "case": "EQ_024_Perfluorohexane_r0.3_G5_L1.5",
+      "relative_errors": {
+        "T_K": 8.032772041731765e-13,
+        "liquid_density_kg_m3": 3.7377980375082553e-13,
+        "vapor_density_kg_m3": 7.693737759830202e-12,
+        "bubble_radius_m": 3.971928004014833e-11,
+        "liquid_pressure_Pa": 1.4771340164522351e-10,
+        "vapor_pressure_Pa": 7.346405934512578e-12,
+        "vapor_fraction": 1.114642622138477e-10,
+        "equilibrium_state_energy_J": 1.1639708029717167e-10
+      }
+    },
+    {
+      "case": "EQ_025_Perfluorohexane_r0.3_G5_L1.8",
+      "relative_errors": {
+        "T_K": 2.7262718195621628e-14,
+        "liquid_density_kg_m3": 1.771113349591144e-14,
+        "vapor_density_kg_m3": 2.2513415461741234e-13,
+        "bubble_radius_m": 7.716925955717007e-13,
+        "liquid_pressure_Pa": 3.717280909294245e-12,
+        "vapor_pressure_Pa": 2.2402959853055398e-13,
+        "vapor_fraction": 2.089791013043779e-12,
+        "equilibrium_state_energy_J": 4.433967224142217e-12
+      }
+    },
+    {
+      "case": "EQ_026_Perfluorohexane_r0.3_G5_L2.1",
+      "relative_errors": {
+        "T_K": 1.8482981713436652e-15,
+        "liquid_density_kg_m3": 2.3655346522290298e-15,
+        "vapor_density_kg_m3": 3.1158819347856903e-15,
+        "bubble_radius_m": 1.741437067909355e-16,
+        "liquid_pressure_Pa": 4.067721608191619e-13,
+        "vapor_pressure_Pa": 0.0,
+        "vapor_fraction": 3.849147206353327e-15,
+        "equilibrium_state_energy_J": 8.227795564307784e-15
+      }
+    },
+    {
+      "case": "EQ_027_Perfluorohexane_r0.3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 2.9246914711785743e-15,
+        "liquid_density_kg_m3": 5.0290313461807395e-15,
+        "vapor_density_kg_m3": 3.555685893219743e-14,
+        "bubble_radius_m": 1.7611215752061925e-13,
+        "liquid_pressure_Pa": 1.5900097351165932e-13,
+        "vapor_pressure_Pa": 3.113366919749731e-14,
+        "vapor_fraction": 4.926886855261598e-13,
+        "equilibrium_state_energy_J": 1.311879606334718e-13
+      }
+    },
+    {
+      "case": "EQ_028_Perfluorohexane_r0.3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 1.0727863344647755e-12,
+        "liquid_density_kg_m3": 6.873150969389101e-13,
+        "vapor_density_kg_m3": 1.0301716342529793e-11,
+        "bubble_radius_m": 5.286339326299144e-11,
+        "liquid_pressure_Pa": 1.451637992081353e-10,
+        "vapor_pressure_Pa": 9.782434635051306e-12,
+        "vapor_fraction": 1.4828869225410583e-10,
+        "equilibrium_state_energy_J": 1.557720294234589e-10
+      }
+    },
+    {
+      "case": "EQ_029_Perfluorohexane_r0.3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 7.570706262874442e-14,
+        "liquid_density_kg_m3": 7.145633110578056e-14,
+        "vapor_density_kg_m3": 7.656965358644636e-13,
+        "bubble_radius_m": 5.5937449547228786e-12,
+        "liquid_pressure_Pa": 3.726214378656904e-12,
+        "vapor_pressure_Pa": 7.317822961088608e-13,
+        "vapor_fraction": 1.601536048700554e-11,
+        "equilibrium_state_energy_J": 3.198097072655338e-11
+      }
+    },
+    {
+      "case": "EQ_030_Perfluorohexane_r0.3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 2.785592926685535e-12,
+        "liquid_density_kg_m3": 2.33617337553093e-12,
+        "vapor_density_kg_m3": 2.932953853249878e-11,
+        "bubble_radius_m": 2.6616126046387903e-10,
+        "liquid_pressure_Pa": 2.2749225464140322e-10,
+        "vapor_pressure_Pa": 2.8188964100353692e-11,
+        "vapor_fraction": 7.691542666463388e-10,
+        "equilibrium_state_energy_J": 2.4008861252195895e-09
+      }
+    },
+    {
+      "case": "EQ_031_Perfluorohexane_r0.3_G100_L1.2",
+      "relative_errors": {
+        "T_K": 2.592788479187326e-11,
+        "liquid_density_kg_m3": 3.9744127484672076e-11,
+        "vapor_density_kg_m3": 1.3515618286863356e-10,
+        "bubble_radius_m": 1.7458635609410234e-11,
+        "liquid_pressure_Pa": 1.5375028572800106e-11,
+        "vapor_pressure_Pa": 1.4337248953611584e-10,
+        "vapor_fraction": 1.875318804316459e-10,
+        "equilibrium_state_energy_J": 7.6882109048119e-11
+      }
+    },
+    {
+      "case": "EQ_032_Perfluorohexane_r0.3_G100_L1.5",
+      "relative_errors": {
+        "T_K": 2.3283763013575268e-14,
+        "liquid_density_kg_m3": 2.1570747760781204e-14,
+        "vapor_density_kg_m3": 2.1595974904732326e-13,
+        "bubble_radius_m": 1.1811653618000918e-12,
+        "liquid_pressure_Pa": 1.6210696851164006e-12,
+        "vapor_pressure_Pa": 2.0043363437954756e-13,
+        "vapor_fraction": 3.3277085244716555e-12,
+        "equilibrium_state_energy_J": 3.525895210802935e-12
+      }
+    },
+    {
+      "case": "EQ_033_Perfluorohexane_r0.3_G100_L1.8",
+      "relative_errors": {
+        "T_K": 1.1933801191836365e-14,
+        "liquid_density_kg_m3": 1.0449117469576667e-14,
+        "vapor_density_kg_m3": 1.2234468336700112e-13,
+        "bubble_radius_m": 9.339365162229333e-13,
+        "liquid_pressure_Pa": 1.0296013963853512e-12,
+        "vapor_pressure_Pa": 1.1315467944616379e-13,
+        "vapor_fraction": 2.6793902705815676e-12,
+        "equilibrium_state_energy_J": 5.546446905862319e-12
+      }
+    },
+    {
+      "case": "EQ_034_Perfluorohexane_r0.3_G100_L2.1",
+      "relative_errors": {
+        "T_K": 4.3092041897355665e-13,
+        "liquid_density_kg_m3": 3.5622872776078715e-13,
+        "vapor_density_kg_m3": 5.065296707374591e-12,
+        "bubble_radius_m": 6.284318022097524e-11,
+        "liquid_pressure_Pa": 1.6297297449417585e-10,
+        "vapor_pressure_Pa": 4.590160781701172e-12,
+        "vapor_fraction": 1.8346432336564818e-10,
+        "equilibrium_state_energy_J": 5.986592338275819e-10
+      }
+    },
+    {
+      "case": "EQ_035_Perfluorohexane_r3_G5_L1.2",
+      "relative_errors": {
+        "T_K": 2.8363147652928375e-15,
+        "liquid_density_kg_m3": 7.067065430174407e-15,
+        "vapor_density_kg_m3": 4.832204101523512e-14,
+        "bubble_radius_m": 5.2400523080497544e-15,
+        "liquid_pressure_Pa": 7.255106491117989e-12,
+        "vapor_pressure_Pa": 4.767410715519269e-14,
+        "vapor_fraction": 3.249683800702247e-14,
+        "equilibrium_state_energy_J": 3.1083360245541974e-14
+      }
+    },
+    {
+      "case": "EQ_036_Perfluorohexane_r3_G5_L1.5",
+      "relative_errors": {
+        "T_K": 1.4968067928468184e-13,
+        "liquid_density_kg_m3": 9.831003174501205e-14,
+        "vapor_density_kg_m3": 1.5311743249223663e-12,
+        "bubble_radius_m": 2.669804903861072e-11,
+        "liquid_pressure_Pa": 1.7060031194171174e-11,
+        "vapor_pressure_Pa": 1.5838316581373615e-12,
+        "vapor_fraction": 7.856343179032206e-11,
+        "equilibrium_state_energy_J": 2.997603100195778e-11
+      }
+    },
+    {
+      "case": "EQ_037_Perfluorohexane_r3_G5_L1.8",
+      "relative_errors": {
+        "T_K": 2.448881528472079e-13,
+        "liquid_density_kg_m3": 1.143692608046873e-13,
+        "vapor_density_kg_m3": 2.723502795974996e-12,
+        "bubble_radius_m": 5.756948562336569e-11,
+        "liquid_pressure_Pa": 1.0306952891475298e-10,
+        "vapor_pressure_Pa": 2.795690256415776e-12,
+        "vapor_fraction": 1.6998475184161117e-10,
+        "equilibrium_state_energy_J": 1.1437565679928045e-10
+      }
+    },
+    {
+      "case": "EQ_038_Perfluorohexane_r3_G5_L2.1",
+      "relative_errors": {
+        "T_K": 1.4349836812676413e-12,
+        "liquid_density_kg_m3": 1.533265390250532e-12,
+        "vapor_density_kg_m3": 1.3959103801961378e-11,
+        "bubble_radius_m": 1.6745271671493033e-10,
+        "liquid_pressure_Pa": 8.283516007106602e-10,
+        "vapor_pressure_Pa": 1.4558632721765718e-11,
+        "vapor_fraction": 4.883988353651292e-10,
+        "equilibrium_state_energy_J": 5.06269883956962e-10
+      }
+    },
+    {
+      "case": "EQ_039_Perfluorohexane_r3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 3.31787137231848e-15,
+        "liquid_density_kg_m3": 7.097073560567816e-15,
+        "vapor_density_kg_m3": 3.5571509366206385e-14,
+        "bubble_radius_m": 5.251559503427661e-15,
+        "liquid_pressure_Pa": 6.140679929951431e-12,
+        "vapor_pressure_Pa": 3.6200696552821713e-14,
+        "vapor_fraction": 1.9655720344218452e-14,
+        "equilibrium_state_energy_J": 3.2863786480886886e-14
+      }
+    },
+    {
+      "case": "EQ_040_Perfluorohexane_r3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 2.788273703139445e-13,
+        "liquid_density_kg_m3": 2.102696373251239e-13,
+        "vapor_density_kg_m3": 2.840494180218528e-12,
+        "bubble_radius_m": 4.903091705979024e-11,
+        "liquid_pressure_Pa": 2.3453969651462158e-12,
+        "vapor_pressure_Pa": 2.9229836856956233e-12,
+        "vapor_fraction": 1.442529467734142e-10,
+        "equilibrium_state_energy_J": 7.171023021956404e-11
+      }
+    },
+    {
+      "case": "EQ_041_Perfluorohexane_r3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 4.8098137137920395e-15,
+        "liquid_density_kg_m3": 3.401181896067123e-15,
+        "vapor_density_kg_m3": 3.5653485985497084e-14,
+        "bubble_radius_m": 9.235083879878652e-13,
+        "liquid_pressure_Pa": 9.296563824358727e-13,
+        "vapor_pressure_Pa": 3.8403191794539466e-14,
+        "vapor_fraction": 2.735209065596584e-12,
+        "equilibrium_state_energy_J": 2.658716692726001e-12
+      }
+    },
+    {
+      "case": "EQ_042_Perfluorohexane_r3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 9.951601915291029e-16,
+        "liquid_density_kg_m3": 4.436217455350046e-16,
+        "vapor_density_kg_m3": 1.6291634877964888e-15,
+        "bubble_radius_m": 4.189099172114572e-16,
+        "liquid_pressure_Pa": 1.687489544379338e-12,
+        "vapor_pressure_Pa": 3.84113800406575e-16,
+        "vapor_fraction": 0.0,
+        "equilibrium_state_energy_J": 3.392650044889965e-15
+      }
+    },
+    {
+      "case": "EQ_043_Perfluorohexane_r3_G100_L1.2",
+      "relative_errors": {
+        "T_K": 6.463911529642662e-16,
+        "liquid_density_kg_m3": 2.867759621617096e-15,
+        "vapor_density_kg_m3": 1.0138719638166818e-14,
+        "bubble_radius_m": 2.654646311317655e-15,
+        "liquid_pressure_Pa": 2.3271291336002573e-12,
+        "vapor_pressure_Pa": 9.817383813896435e-15,
+        "vapor_fraction": 2.2337927717434625e-15,
+        "equilibrium_state_energy_J": 7.531012000299847e-15
+      }
+    },
+    {
+      "case": "EQ_044_Perfluorohexane_r3_G100_L1.5",
+      "relative_errors": {
+        "T_K": 1.7241984688192463e-12,
+        "liquid_density_kg_m3": 2.0574125835128175e-12,
+        "vapor_density_kg_m3": 1.6505595077082796e-11,
+        "bubble_radius_m": 3.3982092892327216e-10,
+        "liquid_pressure_Pa": 3.144092221103384e-10,
+        "vapor_pressure_Pa": 1.663825523114706e-11,
+        "vapor_fraction": 1.0029573844476823e-09,
+        "equilibrium_state_energy_J": 8.093954237597725e-10
+      }
+    },
+    {
+      "case": "EQ_045_Perfluorohexane_r3_G100_L1.8",
+      "relative_errors": {
+        "T_K": 1.778577218756186e-14,
+        "liquid_density_kg_m3": 2.7640393965010713e-14,
+        "vapor_density_kg_m3": 1.7628366625936807e-13,
+        "bubble_radius_m": 3.966384328542452e-12,
+        "liquid_pressure_Pa": 5.855446730411312e-12,
+        "vapor_pressure_Pa": 1.7583422412835203e-13,
+        "vapor_fraction": 1.1723106261411465e-11,
+        "equilibrium_state_energy_J": 1.9809935423404393e-11
+      }
+    },
+    {
+      "case": "EQ_046_Perfluorohexane_r3_G100_L2.1",
+      "relative_errors": {
+        "T_K": 4.695957150134287e-16,
+        "liquid_density_kg_m3": 1.2416197055195072e-15,
+        "vapor_density_kg_m3": 1.2125711607572498e-15,
+        "bubble_radius_m": 1.3941594754798843e-16,
+        "liquid_pressure_Pa": 6.548350101287404e-14,
+        "vapor_pressure_Pa": 4.2598651231703933e-16,
+        "vapor_fraction": 2.249897403143509e-15,
+        "equilibrium_state_energy_J": 4.0689693126575995e-15
+      }
+    },
+    {
+      "case": "EQ_047_Perfluoropentane_r0.3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 2.294395508181405e-12,
+        "liquid_density_kg_m3": 5.345748806913206e-12,
+        "vapor_density_kg_m3": 2.157408686185958e-11,
+        "bubble_radius_m": 3.5565417026470017e-12,
+        "liquid_pressure_Pa": 4.515917048068267e-09,
+        "vapor_pressure_Pa": 2.2188611177089798e-11,
+        "vapor_fraction": 1.0904157533506799e-11,
+        "equilibrium_state_energy_J": 3.4767190450378014e-11
+      }
+    },
+    {
+      "case": "EQ_048_Perfluoropentane_r0.3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 1.2865730475326087e-12,
+        "liquid_density_kg_m3": 9.385177421673886e-13,
+        "vapor_density_kg_m3": 1.2538821115723426e-11,
+        "bubble_radius_m": 3.75805147422069e-11,
+        "liquid_pressure_Pa": 8.541304825196492e-11,
+        "vapor_pressure_Pa": 1.2912120456029481e-11,
+        "vapor_fraction": 1.0020306845325945e-10,
+        "equilibrium_state_energy_J": 1.5555230701260452e-10
+      }
+    },
+    {
+      "case": "EQ_049_Perfluoropentane_r0.3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 1.39100939131226e-11,
+        "liquid_density_kg_m3": 1.0029108564275165e-11,
+        "vapor_density_kg_m3": 1.3647352464565569e-10,
+        "bubble_radius_m": 5.333107459078419e-10,
+        "liquid_pressure_Pa": 8.641226852464406e-10,
+        "vapor_pressure_Pa": 1.4076137365819457e-10,
+        "vapor_fraction": 1.463458574531067e-09,
+        "equilibrium_state_energy_J": 3.846226795411985e-09
+      }
+    },
+    {
+      "case": "EQ_050_Perfluoropentane_r0.3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 8.666119028931983e-14,
+        "liquid_density_kg_m3": 4.2400424953513494e-14,
+        "vapor_density_kg_m3": 8.773370188486684e-13,
+        "bubble_radius_m": 5.108598569407017e-12,
+        "liquid_pressure_Pa": 3.2160551278827375e-11,
+        "vapor_pressure_Pa": 9.027985094564406e-13,
+        "vapor_fraction": 1.444856782009781e-11,
+        "equilibrium_state_energy_J": 5.411525035794561e-11
+      }
+    },
+    {
+      "case": "EQ_051_Perfluoropentane_r0.3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 4.535375253028381e-13,
+        "liquid_density_kg_m3": 1.9560461870854845e-12,
+        "vapor_density_kg_m3": 3.778519399026471e-12,
+        "bubble_radius_m": 1.4877286961504983e-12,
+        "liquid_pressure_Pa": 1.0788480669533943e-09,
+        "vapor_pressure_Pa": 3.87794133175215e-12,
+        "vapor_fraction": 6.84936816762206e-13,
+        "equilibrium_state_energy_J": 7.269167106279638e-12
+      }
+    },
+    {
+      "case": "EQ_052_Perfluoropentane_r0.3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 5.568429656645836e-14,
+        "liquid_density_kg_m3": 4.340644580966364e-14,
+        "vapor_density_kg_m3": 5.160295569523418e-13,
+        "bubble_radius_m": 2.040369820555833e-12,
+        "liquid_pressure_Pa": 3.819553875868046e-12,
+        "vapor_pressure_Pa": 5.261298054822015e-13,
+        "vapor_fraction": 5.605150847057367e-12,
+        "equilibrium_state_energy_J": 8.904284997322405e-12
+      }
+    },
+    {
+      "case": "EQ_053_Perfluoropentane_r0.3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 1.8936829895837456e-13,
+        "liquid_density_kg_m3": 1.3694254638366848e-13,
+        "vapor_density_kg_m3": 1.8600996826711195e-12,
+        "bubble_radius_m": 1.0374552566186601e-11,
+        "liquid_pressure_Pa": 1.90583222119202e-11,
+        "vapor_pressure_Pa": 1.891676459090282e-12,
+        "vapor_fraction": 2.926365366175939e-11,
+        "equilibrium_state_energy_J": 8.168330936155951e-11
+      }
+    },
+    {
+      "case": "EQ_054_Perfluoropentane_r0.3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 5.202966220990984e-12,
+        "liquid_density_kg_m3": 2.7979415390915987e-12,
+        "vapor_density_kg_m3": 5.075884084493858e-11,
+        "bubble_radius_m": 3.805149796866592e-10,
+        "liquid_pressure_Pa": 1.3805903007862403e-09,
+        "vapor_pressure_Pa": 5.184616470743202e-11,
+        "vapor_fraction": 1.0907860136755273e-09,
+        "equilibrium_state_energy_J": 4.494099222191321e-09
+      }
+    },
+    {
+      "case": "EQ_055_Perfluoropentane_r0.3_G20_L1.2",
+      "relative_errors": {
+        "T_K": 1.2498981703457872e-13,
+        "liquid_density_kg_m3": 1.2706886404467397e-13,
+        "vapor_density_kg_m3": 8.36383710911424e-13,
+        "bubble_radius_m": 4.895753041177976e-14,
+        "liquid_pressure_Pa": 5.6477145791653086e-12,
+        "vapor_pressure_Pa": 8.537532278009005e-13,
+        "vapor_fraction": 6.895044927607792e-13,
+        "equilibrium_state_energy_J": 7.046194119689959e-13
+      }
+    },
+    {
+      "case": "EQ_056_Perfluoropentane_r0.3_G20_L1.5",
+      "relative_errors": {
+        "T_K": 3.650160360473292e-13,
+        "liquid_density_kg_m3": 2.743953334650917e-13,
+        "vapor_density_kg_m3": 3.390424515004019e-12,
+        "bubble_radius_m": 2.2546291260921865e-11,
+        "liquid_pressure_Pa": 3.7459386059413915e-11,
+        "vapor_pressure_Pa": 3.3101559628524955e-12,
+        "vapor_fraction": 6.424847196918991e-11,
+        "equilibrium_state_energy_J": 9.847841688453253e-11
+      }
+    },
+    {
+      "case": "EQ_057_Perfluoropentane_r0.3_G20_L1.8",
+      "relative_errors": {
+        "T_K": 2.3528726785679998e-14,
+        "liquid_density_kg_m3": 1.4686901579114426e-14,
+        "vapor_density_kg_m3": 1.9791757502634643e-13,
+        "bubble_radius_m": 1.0250699213943966e-12,
+        "liquid_pressure_Pa": 1.4650708393052217e-11,
+        "vapor_pressure_Pa": 1.9867020569544034e-13,
+        "vapor_fraction": 2.8773923656474257e-12,
+        "equilibrium_state_energy_J": 8.569749520381587e-12
+      }
+    },
+    {
+      "case": "EQ_058_Perfluoropentane_r0.3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 1.6728858785033992e-16,
+        "liquid_density_kg_m3": 3.129040605687281e-16,
+        "vapor_density_kg_m3": 9.07153785037651e-16,
+        "bubble_radius_m": 1.7382862878861324e-16,
+        "liquid_pressure_Pa": 1.6795115863589814e-13,
+        "vapor_pressure_Pa": 5.247640167872072e-16,
+        "vapor_fraction": 1.2371140135128325e-15,
+        "equilibrium_state_energy_J": 2.3726857269753135e-15
+      }
+    },
+    {
+      "case": "EQ_059_Perfluoropentane_r0.3_G20_L2.1",
+      "relative_errors": {
+        "T_K": 1.6728858785033992e-16,
+        "liquid_density_kg_m3": 3.129040605687281e-16,
+        "vapor_density_kg_m3": 9.07153785037651e-16,
+        "bubble_radius_m": 1.7382862878861324e-16,
+        "liquid_pressure_Pa": 1.6795115863589814e-13,
+        "vapor_pressure_Pa": 5.247640167872072e-16,
+        "vapor_fraction": 1.2371140135128325e-15,
+        "equilibrium_state_energy_J": 2.3726857269753135e-15
+      }
+    }
+  ],
+  "transient_checks": [
+    {
+      "case": "PFP_r0.3um_eta0",
+      "waveform_errors": {
+        "stretch": 3.366049418032513e-08,
+        "radial_speed_m_s": 7.133215289936377e-08,
+        "T_K": 2.4690604919246984e-09,
+        "vapor_fraction": 5.7453544679325764e-08,
+        "bubble_radius_m": 6.57975316694574e-08,
+        "dissipated_J": 0.0
+      },
+      "energy_residual": 3.57860961247177e-09,
+      "mass_residual": 5.7051545709896345e-09,
+      "entropy_drift_over_mass_Rspec": 2.7919345980910648e-08,
+      "native_end_s": 6.66e-08,
+      "reference_end_s": 6.687278179218887e-08
+    },
+    {
+      "case": "PFP_r0.3um_eta0.01",
+      "waveform_errors": {
+        "stretch": 1.432944282807655e-07,
+        "radial_speed_m_s": 2.3944135197453347e-05,
+        "T_K": 9.2104629203419e-09,
+        "vapor_fraction": 2.3827930435196694e-07,
+        "bubble_radius_m": 2.919061207117527e-07,
+        "dissipated_J": 2.3229030205910745e-07
+      },
+      "energy_residual": 4.971485798042538e-09,
+      "mass_residual": 9.41132394238764e-09,
+      "entropy_drift_over_mass_Rspec": 4.4851099963065765e-08,
+      "native_end_s": 3.384e-07,
+      "reference_end_s": 3.3843205010905646e-07
+    },
+    {
+      "case": "PFP_r0.3um_eta0.1",
+      "waveform_errors": {
+        "stretch": 3.983172102421919e-09,
+        "radial_speed_m_s": 1.5755320498231694e-06,
+        "T_K": 2.2680124967833458e-10,
+        "vapor_fraction": 1.3107137300624111e-08,
+        "bubble_radius_m": 3.989779342702973e-09,
+        "dissipated_J": 1.625529495487359e-08
+      },
+      "energy_residual": 4.038779762050107e-09,
+      "mass_residual": 5.851566120540497e-09,
+      "entropy_drift_over_mass_Rspec": 3.1473510745336395e-08,
+      "native_end_s": 1.5e-06,
+      "reference_end_s": 1.4999999999999998e-06
+    },
+    {
+      "case": "PFP_r3um_eta0",
+      "waveform_errors": {
+        "stretch": 7.544729814446512e-08,
+        "radial_speed_m_s": 1.9881587525859389e-07,
+        "T_K": 2.3959819274658895e-09,
+        "vapor_fraction": 1.0291820246942702e-07,
+        "bubble_radius_m": 1.4740086415553062e-07,
+        "dissipated_J": 0.0
+      },
+      "energy_residual": 3.5725487071859736e-09,
+      "mass_residual": 9.621595298270336e-09,
+      "entropy_drift_over_mass_Rspec": 1.2699352082717633e-08,
+      "native_end_s": 8.460000000000001e-07,
+      "reference_end_s": 8.469873633979384e-07
+    },
+    {
+      "case": "PFP_r3um_eta0.01",
+      "waveform_errors": {
+        "stretch": 5.216454982256583e-08,
+        "radial_speed_m_s": 5.582997143630612e-07,
+        "T_K": 2.105533066453559e-09,
+        "vapor_fraction": 9.076127753352211e-08,
+        "bubble_radius_m": 8.32850945820881e-08,
+        "dissipated_J": 1.3835038555248615e-07
+      },
+      "energy_residual": 3.5346770313850153e-09,
+      "mass_residual": 9.274605972109384e-09,
+      "entropy_drift_over_mass_Rspec": 1.2759512563115265e-08,
+      "native_end_s": 1.2000000000000002e-06,
+      "reference_end_s": 1.2021736200078735e-06
+    },
+    {
+      "case": "PFP_r3um_eta0.1",
+      "waveform_errors": {
+        "stretch": 6.440149598792762e-08,
+        "radial_speed_m_s": 2.9578205616492796e-05,
+        "T_K": 2.4079078793568144e-09,
+        "vapor_fraction": 1.0002945532467156e-07,
+        "bubble_radius_m": 1.6518370714013446e-07,
+        "dissipated_J": 2.834224568070323e-07
+      },
+      "energy_residual": 3.4890598585822324e-09,
+      "mass_residual": 1.1256060417075275e-08,
+      "entropy_drift_over_mass_Rspec": 1.1813286112886195e-08,
+      "native_end_s": 8.562e-06,
+      "reference_end_s": 8.562001363709398e-06
+    }
+  ],
+  "reference_refinements": [
+    {
+      "radius_m": 3e-07,
+      "DOP853": 0.9595626560319993,
+      "Radau": 0.9595626560321555,
+      "speed_relative_difference": 1.6279122429661363e-13,
+      "event_time_relative_difference": 2.262873617152037e-11
+    },
+    {
+      "radius_m": 3e-06,
+      "DOP853": 2.7231135478783712,
+      "Radau": 2.723113547945956,
+      "speed_relative_difference": 2.4818871263046636e-11,
+      "event_time_relative_difference": 1.0453568530104092e-11
+    }
+  ],
+  "maximum_stationary_relative_error": 4.515917048068267e-09,
+  "maximum_transient_normalized_waveform_error": 2.9578205616492796e-05,
+  "maximum_native_energy_residual": 4.971485798042538e-09,
+  "symbolic_identities": [
+    "dEgel/dR=4pi R^2 pEl",
+    "dKhost/dt=4pi R^2 W rho(R acceleration+1.5 W^2)"
+  ],
+  "physical_validation": "NOT PERFORMED: target activation, geometry, interfaces, rate properties and fracture data are missing."
+}

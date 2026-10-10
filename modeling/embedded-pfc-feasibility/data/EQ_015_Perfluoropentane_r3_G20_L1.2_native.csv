@@ -1,0 +1,6 @@
+% Model,equilibrium_identity.mph
+% Version,COMSOL 6.4.0.429
+% Date,"Oct 11 2026, 04:59"
+% Table,Table - 
+% time_s (s),stretch (1),T_K (K),liquid_density_kg_m3 (kg/m^3),vapor_density_kg_m3 (kg/m^3),bubble_radius_m (m),liquid_pressure_Pa (Pa),vapor_pressure_Pa (Pa),vapor_fraction (1),equilibrium_state_energy_J (N*m),gel_pressure_Pa (Pa),shell_thickness_m (m),mass_relative_residual (1),chemical_residual_J_kg (J/kg),inner_traction_residual_Pa (N/m^2),outer_static_residual_Pa (N/m^2),radial_speed_m_s (m/s),dissipated_J (J),host_kinetic_J (J),total_energy_residual (1),exterior_emitted_mass_kg (kg)
+0,1.2,313.4399474234644,1552.8711950627765,17.78390024667907,2.653111817300443E-6,141844.13580236895,148937.69283888134,0.00758563758752192,4.058285307377696E-9,11844.135802469133,9.468881826995568E-7,0,1.312514541496057E-10,1.0015446605393663E-7,-1.0017538443207741E-7,0,0,0,1.8311447674074552E-11,0

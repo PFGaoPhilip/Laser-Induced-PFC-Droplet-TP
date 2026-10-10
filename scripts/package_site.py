@@ -35,13 +35,13 @@ def main():
         prior=next((p for p in (ROOT/'PUBLIC_FILE_MANIFEST.json',DEST/'PUBLIC_FILE_MANIFEST.json') if p.is_file()),None)
         previous=json.loads(prior.read_text(encoding='utf-8')) if prior else {'files':[]}
     public_verification={row['path'] for row in previous['files'] if row['path'].startswith('verification/')}
-    selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if p.relative_to(ROOT).as_posix() in public_verification or p.name in {'modeling-integration-audit.json','language-views-audit.json','language-labels-audit.json'})
+    selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.json') if p.relative_to(ROOT).as_posix() in public_verification or p.name in {'modeling-integration-audit.json','language-views-audit.json','language-labels-audit.json','embedded-pfc-publication-audit.json','embedded-pfc-browser-audit.json'})
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('chapter*-check.py'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('*.cjs'))
     selected.update(p.relative_to(ROOT) for p in (ROOT/'verification').glob('diagram-review-[0-9][0-9].png'))
     selected.update(Path('verification')/name for name in ['symbol-layout-desktop.png','symbol-layout-mobile.png'])
     selected.update(Path('verification')/name for name in ['equation-heading-desktop.png','equation-heading-mobile.png'])
-    selected={p for p in selected if '__pycache__' not in p.parts}
+    selected={p for p in selected if not {'__pycache__','build','tmp','.tools'}.intersection(p.parts)}
     # These are authored public sources, local dependencies and evidence, not private PDFs or response records.
     forbidden_ext={'.pdf','.zip','.mph','.docx','.pptx','.pem','.key','.sqlite','.db','.exe','.dll'}
     secret=re.compile(r'gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----')
@@ -50,7 +50,9 @@ def main():
     for relative in sorted(selected):
         p=ROOT/relative
         assert p.resolve().is_relative_to(ROOT.resolve()) and p.is_file(),p
-        if p.suffix.lower() in forbidden_ext and not (relative.parts[0]=='modeling' and p.suffix.lower() in {'.mph','.zip'}):problems.append(str(relative))
+        public_model_file=relative.parts[0]=='modeling' and p.suffix.lower() in {'.mph','.zip'}
+        authored_study_pdf=relative.as_posix()=='modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf'
+        if p.suffix.lower() in forbidden_ext and not (public_model_file or authored_study_pdf):problems.append(str(relative))
         if p.suffix.lower() in {'.html','.md','.json','.py','.js','.cjs','.css','.svg'}:
             text=p.read_text(encoding='utf-8')
             if secret.search(text):problems.append('credential pattern '+str(relative))
@@ -69,7 +71,7 @@ def main():
     with zipfile.ZipFile(ZIP) as z:
         assert z.testzip() is None
         for row in manifest['files']:assert hashlib.sha256(z.read(row['path'])).hexdigest()==row['sha256']
-    report={'status':'passed','files':len(selected)+1,'bytes':ZIP.stat().st_size,'zip_sha256':sha(ZIP),'zip_crc':'passed','manifest_hashes':'passed','excluded':'Original PDFs, private learner responses/evidence, personal skill files, operational authoring briefs, machine-specific runtime data and credentials.','essential_offline_assets':True}
+    report={'status':'passed','files':len(selected)+1,'bytes':ZIP.stat().st_size,'zip_sha256':sha(ZIP),'zip_crc':'passed','manifest_hashes':'passed','excluded':'Third-party paper PDFs, private learner responses/evidence, personal skill files, operational authoring briefs, machine-specific runtime data and credentials. The authored finite-PFC derivation PDF is included.','essential_offline_assets':True}
     (ROOT/'verification/package-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(report))
 

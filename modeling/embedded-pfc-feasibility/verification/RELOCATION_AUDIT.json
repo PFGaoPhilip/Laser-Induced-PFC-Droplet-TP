@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "test_location": "tmp/relocation-_4ftn45q",
+  "extracted_manifest_files_verified": 223,
+  "regenerated_essential_files_byte_identical": 21,
+  "reader_regeneration": "PASS without dependency cache; 32 display equations and local KaTeX",
+  "relocated_reader_logic": {
+    "status": "PASS",
+    "scenarios": 38,
+    "selector_states": 30,
+    "theme_and_document_events": true,
+    "scope": "Pure JavaScript/event logic with a minimal DOM test double; no CSS/layout or real-browser rendering claim.",
+    "browser_inspection": "Unavailable: cua inventory returned no enabled apps or browsers."
+  },
+  "relocated_native_reload": {
+    "status": "PASS",
+    "speed_relative_difference": 1.1184563723153673e-08,
+    "stored_endpoint_relative_difference": 0.0,
+    "refined_energy_residual": 1.3077573768382232e-09,
+    "refined_mass_residual": 2.4186985747576273e-09,
+    "scope": "Fresh-process reload of both saved native models; transient output/step tau/100 versus tau/200 with tighter tolerance; saved MPH files not overwritten."
+  },
+  "local_dependencies": 91,
+  "saved_model_hashes_unchanged": true,
+  "actual_browser_layout": "Not inspected; no enabled browser surface"
+}

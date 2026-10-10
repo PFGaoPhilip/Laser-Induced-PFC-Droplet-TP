@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "check_count": 6568,
+  "check_count": 6586,
   "failures": [],
   "checks": [
     {
@@ -305,6 +305,16 @@
     },
     {
       "name": "index.html: local dependency modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency modeling/embedded-pfc-feasibility/index.html",
       "passed": true,
       "detail": null
     },
@@ -5020,6 +5030,16 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
       "passed": true,
       "detail": null
     },
@@ -10075,6 +10095,16 @@
     },
     {
       "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
       "passed": true,
       "detail": null
     },
@@ -15854,6 +15884,16 @@
       "detail": null
     },
     {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../assets/figures/c3-e01.svg",
       "passed": true,
       "detail": null
@@ -21344,6 +21384,16 @@
       "detail": null
     },
     {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/04-fracture-and-transfer.html: local dependency ../assets/figures/c4-e01.svg",
       "passed": true,
       "detail": null
@@ -25179,6 +25229,16 @@
       "detail": null
     },
     {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../reference/sources.html#r11",
       "passed": true,
       "detail": null
@@ -25869,6 +25929,16 @@
       "detail": null
     },
     {
+      "name": "reference/defense.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/defense.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/notation.html: day/night component",
       "passed": true,
       "detail": null
@@ -26045,6 +26115,16 @@
     },
     {
       "name": "reference/notation.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/notation.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/notation.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
       "passed": true,
       "detail": null
     },
@@ -26325,6 +26405,16 @@
     },
     {
       "name": "reference/sources.html: local dependency ../modeling/minimal-cavitation/index.html?lang=zh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../modeling/embedded-pfc-feasibility/index.html",
       "passed": true,
       "detail": null
     },
@@ -33122,60 +33212,60 @@
   "chapter_questions": 15,
   "displayed_equations": 168,
   "bilingual_paragraph_pairs": 3122,
-  "local_dependencies": 464,
+  "local_dependencies": 482,
   "local_math_fonts": 60,
   "pages": [
     {
       "file": "index.html",
-      "bytes": 22523,
+      "bytes": 24006,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1330217,
+      "bytes": 1331706,
       "equations": 34,
       "defenses": 3
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1572606,
+      "bytes": 1574095,
       "equations": 36,
       "defenses": 3
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2030379,
+      "bytes": 2031868,
       "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1881584,
+      "bytes": 1883073,
       "equations": 41,
       "defenses": 3
     },
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1282311,
+      "bytes": 1283800,
       "equations": 24,
       "defenses": 3
     },
     {
       "file": "reference/defense.html",
-      "bytes": 19657,
+      "bytes": 21146,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/notation.html",
-      "bytes": 24570,
+      "bytes": 26059,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/sources.html",
-      "bytes": 25870,
+      "bytes": 27359,
       "equations": 0,
       "defenses": 0
     }

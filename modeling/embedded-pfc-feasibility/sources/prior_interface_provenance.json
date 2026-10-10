@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "purpose": "Follow-up primary evidence for nanoscale PFP/PFH capillarity and optical onset; source research, not model validation",
+  "sources": {
+    "K2010": {
+      "title": "Rheology and interfacial tension of biopolymers",
+      "author": "Madhuvanthi A. Kandadai",
+      "year": 2010,
+      "doi": "10.1021/la100307r",
+      "doi_relationship": "Chapter 5 contains the source experiments reported in the Langmuir article; this is the author dissertation, not the journal PDF.",
+      "url": "https://collections.lib.utah.edu/dl_files/40/6e/406e61ce35554485df3ea659a68ff430277482b7.pdf",
+      "pages_used": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        133
+      ],
+      "relative_path": "sources/Kandadai_2010_Rheology_and_Interfacial_Tension_of_Biopolymers_Utah_Dissertation.pdf",
+      "sha256": "ef4238dccdebafa9abdd7bf14ae344d06b781ef8558d44bdf7b5580ba32baab7",
+      "original_pdf_included_in_public_package": false
+    },
+    "R2023": {
+      "title": "Acoustic Droplet Vaporization of Perfluorohexane Emulsions Induced by Heterogeneous Nucleation at an Ultrasonic Frequency of 1.1 MHz",
+      "year": 2023,
+      "doi": "10.1021/acs.langmuir.3c02272",
+      "url": "https://doi.org/10.1021/acs.langmuir.3c02272",
+      "version": "49-page author manuscript; PDF page equals manuscript numbered page",
+      "pages_used": [
+        7,
+        21,
+        22,
+        31,
+        32,
+        33
+      ],
+      "relative_path": "sources/Acoustic Droplet Vaporization of Perfluorohexane Emulsions Induced by Heterogeneous Nucleation at an Ultrasonic Frequenc__10.1021_acs.langmuir.3c02272.pdf",
+      "sha256": "4155c50cc7564e9fb13c5fa6ecff8fba734cf768a486adb641d4d79cd61b36d2",
+      "original_pdf_included_in_public_package": false
+    },
+    "Z2019": {
+      "title": "Phase-Transition Temperature of Gold-Nanorod-Coated Nanodroplets to Microbubbles by Pulsed Laser",
+      "year": 2019,
+      "doi": "10.1021/acs.jpca.9b02566",
+      "url": "https://doi.org/10.1021/acs.jpca.9b02566",
+      "version": "24-page Just Accepted manuscript with publisher cover; PDF page is printed manuscript page plus 1",
+      "pages_used": [
+        5,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        18
+      ],
+      "relative_path": "sources/Zhang_2019_Phase_Transition_Temperature_of_Gold_Nanorod_Coated_Nanodroplets_to_Microbubbles_by_Pulsed_Laser__10_1021_acs_jpca_9b02566.pdf",
+      "sha256": "2e42a8ed3497f57e694d5cf5d87eedf85e5731b4d3b2ef6b40e832a48e65b718",
+      "original_pdf_included_in_public_package": false
+    },
+    "Z2023": {
+      "title": "Factors Influencing the Repeated Transient Optical Droplet Vaporization Threshold and Lifetimes of Phase Change, Perfluorocarbon Nanodroplets",
+      "year": 2023,
+      "doi": "10.3390/nano13152238",
+      "url": "https://doi.org/10.3390/nano13152238",
+      "version": "Published 16-page OA article",
+      "pages_used": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "relative_path": "sources/Zhao_2023_Factors_Influencing_the_Repeated_Transient_Optical_Droplet_Vaporization_Threshold_and_Lifetimes_of_Phase__10_3390_nano13152238.pdf",
+      "sha256": "41cfb2d913a1e0efa0e03b900881370f038ac1a00f9c0126f81ea447a7bcb877",
+      "original_pdf_included_in_public_package": false
+    },
+    "H2014": {
+      "title": "Photoacoustic and ultrasound imaging using dual contrast perfluorocarbon nanodroplets triggered by laser",
+      "year": 2014,
+      "doi": "10.1364/BOE.5.003042",
+      "url": "https://doi.org/10.1364/BOE.5.003042",
+      "pages_used": [
+        6,
+        8
+      ],
+      "relative_path": "sources/Hannah_2014_Photoacoustic_and_ultrasound_imaging_using_dual_contrast_perfluorocarbon_nanodroplets_triggered_by_laser__10_1364_boe_5_003042.pdf",
+      "sha256": "4128059d20f51fa9f1c424956e03868f02fd51780ac0f45e3266a437e2bd61af",
+      "original_pdf_included_in_public_package": false
+    },
+    "S2011": {
+      "title": "Vaporization of perfluorocarbon droplets using optical irradiation",
+      "year": 2011,
+      "doi": "10.1364/BOE.2.001432",
+      "url": "https://doi.org/10.1364/BOE.2.001432",
+      "pages_used": [
+        4,
+        5,
+        10
+      ],
+      "relative_path": "sources/Strohm_2011_Vaporization_of_perfluorocarbon_droplets_using_optical_irradiation__10_1364_boe_2_001432.pdf",
+      "sha256": "a8210be242ae72d889992ca967eb7b58ba5086cab193d76087151d688bffc83f",
+      "original_pdf_included_in_public_package": false
+    }
+  },
+  "capillarity": [
+    {
+      "id": "PFP_LV_room_reference",
+      "pfc": "PFP",
+      "interface": "liquid PFP / saturated air (liquid-gas measurement)",
+      "surface_tension_N_m": 0.00941,
+      "temperature_K": 297.15,
+      "temperature_tolerance_K": 1,
+      "source": "K2010",
+      "location": "PDF p. 130, printed p. 116, Table 5.2; method PDF pp. 127\u2013128, printed pp. 113\u2013114",
+      "measurement": "99%-pure PFP pendant drop; images 4\u20135 s after formation; equilibrium table",
+      "uncertainty": "Table gives average standard deviation of 0.001 N/m over measured surface tensions, not a PFP-specific uncertainty.",
+      "applicability": "Declared near-room-temperature internal PFP liquid-gas reference; pure-PFP-vapor composition, elevated T, nanoscale curvature and coated interfaces are not calibrated."
+    },
+    {
+      "id": "PFP_LL_water_uncoated",
+      "pfc": "PFP",
+      "interface": "liquid PFP / distilled liquid water",
+      "surface_tension_N_m": 0.054,
+      "temperature_K": 297.15,
+      "source": "K2010",
+      "location": "PDF pp. 131/133, printed pp. 117/119, Table 5.3",
+      "uncertainty": "Table labels interfacial measurements \u00b10.001\u20130.004 N/m; no PFP-water-specific interval.",
+      "applicability": "Outer uncoated PFP/aqueous liquid interface reference; not gas/gel tension."
+    },
+    {
+      "id": "PFP_LL_PBS_uncoated",
+      "pfc": "PFP",
+      "interface": "liquid PFP / 0.15 M PBS",
+      "surface_tension_N_m": 0.049,
+      "temperature_K": 297.15,
+      "source": "K2010",
+      "location": "PDF pp. 131/133, Table 5.3",
+      "applicability": "Outer uncoated PFP/PBS liquid interface reference."
+    },
+    {
+      "id": "PFP_LL_lipid_double_emulsion",
+      "pfc": "PFP",
+      "interface": "first water/PFP/Krytox emulsion / aqueous liposome dispersion",
+      "surface_tension_N_m": 0.00114,
+      "reported_plus_minus_N_m": 0.00025,
+      "temperature": "room temperature, unspecified numerical value",
+      "source": "Z2019",
+      "location": "PDF pp. 5/11, manuscript pp. 4/10, Methods 2.2 / Results 3.2",
+      "measurement": "0.5 microliter macroscopic pendant drop; n=3; double-emulsion formulation with DPPC:DSPE-PEG5K:stearylamine 50:15:35 molar, Krytox and 10 x 59 nm AuNR",
+      "applicability": "Formulation-specific outer liquid-liquid interface; not internal PFP vapor nucleus and not post-expansion gas/gel shell stress."
+    },
+    {
+      "id": "PFH_LL_lipid_double_emulsion",
+      "pfc": "PFH",
+      "interface": "first water/PFH/Krytox emulsion / aqueous liposome dispersion",
+      "surface_tension_N_m": 0.00159,
+      "reported_plus_minus_N_m": 0.00016,
+      "source": "Z2019",
+      "location": "PDF pp. 5/11, Methods 2.2 / Results 3.2",
+      "applicability": "Same formulation-specific outer liquid-liquid interface; do not transfer to PFP or to gel-gas."
+    },
+    {
+      "pfc": "PFH",
+      "interface": "PFH liquid / gaseous PFH",
+      "surface_tension_N_m": 0.012,
+      "reported_error_N_m": 0.002,
+      "temperature_K": 293.15,
+      "surfactant": "none",
+      "source": "R2023",
+      "location": "manuscript/PDF pp. 7/21/22, Table 2",
+      "measurement": "Equilibrium macroscopic pendant or spinning drop/bubble with Young-Laplace shape fit; notation follows source.",
+      "applicability": "Demonstrates interface and surfactant distinction; no PAAm gas-cavity stress measurement or PFP-specific transfer."
+    },
+    {
+      "pfc": "PFH",
+      "interface": "PFH liquid / water",
+      "surface_tension_N_m": 0.018,
+      "reported_error_N_m": 0.002,
+      "temperature_K": 293.15,
+      "surfactant": "5% Krytox 157 FSL in PFH",
+      "source": "R2023",
+      "location": "manuscript/PDF pp. 7/21/22, Table 2",
+      "measurement": "Equilibrium macroscopic pendant or spinning drop/bubble with Young-Laplace shape fit; notation follows source.",
+      "applicability": "Demonstrates interface and surfactant distinction; no PAAm gas-cavity stress measurement or PFP-specific transfer."
+    },
+    {
+      "pfc": "PFH",
+      "interface": "PFH liquid / water",
+      "surface_tension_N_m": 0.025,
+      "reported_error_N_m": 0.002,
+      "temperature_K": 293.15,
+      "surfactant": "0.1 wt% F8-TAC13 in water",
+      "source": "R2023",
+      "location": "manuscript/PDF pp. 7/21/22, Table 2",
+      "measurement": "Equilibrium macroscopic pendant or spinning drop/bubble with Young-Laplace shape fit; notation follows source.",
+      "applicability": "Demonstrates interface and surfactant distinction; no PAAm gas-cavity stress measurement or PFP-specific transfer."
+    },
+    {
+      "pfc": "PFH",
+      "interface": "gaseous PFH / water",
+      "surface_tension_N_m": 0.066,
+      "reported_error_N_m": 0.002,
+      "temperature_K": 293.15,
+      "surfactant": "Krytox 157 FSL",
+      "source": "R2023",
+      "location": "manuscript/PDF pp. 7/21/22, Table 2",
+      "measurement": "Equilibrium macroscopic pendant or spinning drop/bubble with Young-Laplace shape fit; notation follows source.",
+      "applicability": "Demonstrates interface and surfactant distinction; no PAAm gas-cavity stress measurement or PFP-specific transfer."
+    },
+    {
+      "pfc": "PFH",
+      "interface": "gaseous PFH / water",
+      "surface_tension_N_m": 0.038,
+      "reported_error_N_m": 0.002,
+      "temperature_K": 293.15,
+      "surfactant": "F8-TAC13",
+      "source": "R2023",
+      "location": "manuscript/PDF pp. 7/21/22, Table 2",
+      "measurement": "Equilibrium macroscopic pendant or spinning drop/bubble with Young-Laplace shape fit; notation follows source.",
+      "applicability": "Demonstrates interface and surfactant distinction; no PAAm gas-cavity stress measurement or PFP-specific transfer."
+    },
+    {
+      "pfc": "PFH",
+      "interface": "gaseous PFH / water",
+      "surface_tension_N_m": 0.072,
+      "reported_error_N_m": 0.002,
+      "temperature_K": 293.15,
+      "surfactant": "none",
+      "source": "R2023",
+      "location": "manuscript/PDF pp. 7/21/22, Table 2",
+      "measurement": "Equilibrium macroscopic pendant or spinning drop/bubble with Young-Laplace shape fit; notation follows source.",
+      "applicability": "Demonstrates interface and surfactant distinction; no PAAm gas-cavity stress measurement or PFP-specific transfer."
+    }
+  ],
+  "optical_onset": [
+    {
+      "id": "Zhao_PFP_309nm",
+      "source": "Z2023",
+      "pfc": "PFP",
+      "mean_size_nm": 309.0,
+      "size_convention": "z-average diameter, initial distribution, not 309 nm radius or monodisperse single droplet",
+      "absorber": "Epolight 3072 dye in lipid formulation",
+      "shell": "DSPE-PEG2000:DSPC 9:1 by mass",
+      "temperature_K": 273.15,
+      "environment": "polyacrylamide phantom",
+      "wavelength_nm": 1064,
+      "pulse_width_s": 5e-09,
+      "repetition_rate_Hz": 10,
+      "concentration_mL_inverse": 5000000000.0,
+      "fluence_unit": "mJ/cm^2 incident at optical fiber output",
+      "onset_fluence_approx_mJ_cm2": [
+        18,
+        19.2
+      ],
+      "onset_value_kind": "approximate visual reading of Figure 6A after conditioned cycles, not exact tabulated datum",
+      "mean_approx_mJ_cm2": 18.6,
+      "mean_value_kind": "visual reading of Figure 6B, do not treat as raw-data precision",
+      "protocol": "10 initial pulses at 75 mJ/cm^2; 3 pulses per ramp fluence approximately 10\u201375 mJ/cm^2; repeated ramps interleaved with further 75 mJ/cm^2 pulses; threshold fitted from population differential-US contrast",
+      "location": "pp. 3\u20136/12, Methods 2.1/2.3/2.4 and Figure 6",
+      "absorbed_energy_per_droplet_J": null,
+      "droplet_absorption_cross_section_m2": null,
+      "pure_PFP_absorption_coefficient_m_inverse": null,
+      "limitations": [
+        "0 C core comparison permits PFP recondensation; not an unconditioned room-temperature threshold",
+        "Dye and shell formulation matters",
+        "Preconditioning changes size and concentration; starting DLS size is not guaranteed at threshold",
+        "Output-plane fluence, spatial attenuation, number and loading of absorbers per inclusion are not calibrated for current model"
+      ]
+    },
+    {
+      "id": "Hannah_PFP_population",
+      "source": "H2014",
+      "pfc": "PFP",
+      "diameter_range_nm": [
+        200,
+        800
+      ],
+      "absorber": "fluorinated gold nanorods",
+      "shell": "Zonyl FSO",
+      "environment": "polyacrylamide",
+      "temperature_K": 310.15,
+      "wavelength_nm": 1064,
+      "pulse_width_s": null,
+      "minimum_detectable_population_fluence_mJ_cm2": 4,
+      "location": "PDF pp. 6/8, Methods 2.2/2.3 and Results 3.1",
+      "absorbed_energy_per_droplet_J": null,
+      "limitation": "Largest droplets vaporize first; threshold is detectable population US contrast, not a measured threshold for one 300 nm inclusion; paper does not state pulse width."
+    },
+    {
+      "id": "Strohm_PFP_PbS_bulk",
+      "source": "S2011",
+      "pfc": "PFP",
+      "absorber": "silica-coated PbS nanoparticles loaded into PFP",
+      "wavelength_nm": 1064,
+      "pulse_width_s": 7e-10,
+      "droplet_diameter_range_um": [
+        2,
+        7
+      ],
+      "temperature_K": 309.15,
+      "loaded_solution_absorption_coefficient_m_inverse": [
+        207,
+        431
+      ],
+      "minimum_vaporization_fluence_J_cm2": [
+        1.8,
+        1.4
+      ],
+      "average_vaporization_fluence_J_cm2": [
+        2.8,
+        2.7
+      ],
+      "average_reported_plus_minus_J_cm2": [
+        0.5,
+        0.6
+      ],
+      "location": "PDF pp. 4/5/10",
+      "absorbed_energy_per_droplet_J": null,
+      "applicability": "Measured bulk PbS-loaded PFP solution absorption only; do not assign to pure PFP, Epolight lipid droplets, AuNR droplets or a single 300 nm PFP core."
+    },
+    {
+      "id": "Zhang_AuNR_double_emulsion",
+      "source": "Z2019",
+      "pfc": "PFP and PFH",
+      "diameter_nm": [
+        300,
+        500
+      ],
+      "environment": "water/PFC/water double emulsion, glycerol immobilized optical sample",
+      "wavelength_nm": 800,
+      "pulse_width_s": 1e-13,
+      "repetition_rate_Hz": 80000000.0,
+      "PFP_observed_activation_average_power_W": 0.052,
+      "PFH_observed_activation_average_power_W": 0.175,
+      "PFP_thermal_transition_reported_above_C": 60,
+      "PFH_thermal_transition_reported_above_C": 80,
+      "location": "PDF pp. 5/8/11\u201314/18",
+      "absorbed_energy_per_droplet_J": null,
+      "limitation": "Average incident powers and modeling of individual-AuNR heating do not determine total absorbed energy of a current inclusion; loaded W1/O/W2 formulation, laser scanning and multiple pulses differ from 1064 nm 5 ns experiment."
+    }
+  ],
+  "derived_geometry_examples": [
+    {
+      "radius_m": 1.5e-07,
+      "diameter_nm": 300.0,
+      "laplace_jump_Pa": {
+        "PFP_liquid_gas_reference": 125466.66666666667,
+        "PFP_liquid_water_uncoated": 720000.0,
+        "coated_PFP_outer_reference": 15200.0,
+        "aqueous_gas_reference": 960000.0
+      },
+      "geometric_incident_interception_pJ": {
+        "4_mJ_cm2": 2.827433388230814,
+        "18.6_mJ_cm2": 13.147565255273282
+      },
+      "meaning": "Geometry calculation only; F*pi*a^2 is incident fluence over a geometric projected disk, not measured absorbed energy, not a bound on plasmonic absorption, not bubble mechanical energy."
+    },
+    {
+      "radius_m": 3e-07,
+      "diameter_nm": 600.0,
+      "laplace_jump_Pa": {
+        "PFP_liquid_gas_reference": 62733.333333333336,
+        "PFP_liquid_water_uncoated": 360000.0,
+        "coated_PFP_outer_reference": 7600.0,
+        "aqueous_gas_reference": 480000.0
+      },
+      "geometric_incident_interception_pJ": {
+        "4_mJ_cm2": 11.309733552923255,
+        "18.6_mJ_cm2": 52.59026102109313
+      },
+      "meaning": "Geometry calculation only; F*pi*a^2 is incident fluence over a geometric projected disk, not measured absorbed energy, not a bound on plasmonic absorption, not bubble mechanical energy."
+    }
+  ],
+  "recommended_declared_inputs": {
+    "PFP_internal_liquid_gas_room_reference_N_m": 0.00941,
+    "PFP_liquid_water_uncoated_room_reference_N_m": 0.054,
+    "PFP_liquid_PBS_uncoated_room_reference_N_m": 0.049,
+    "PFP_LV_sensitivity_bracket_N_m": [
+      0.008,
+      0.014
+    ],
+    "bracket_status": "Parent-proposed modeling sensitivity interval, not measured PFP confidence interval and not valid temperature law",
+    "effective_gel_gas_surface_stress_N_m": null,
+    "absorbed_laser_energy_per_300nm_inclusion_J": null,
+    "laser_to_mechanical_bubble_efficiency": null
+  },
+  "unknowns": [
+    "Actual 300 nm convention: current parent model must declare radius or diameter. Literature nanodroplet sizes here are diameters.",
+    "PFP internal liquid-vapor tension as a temperature function at the predicted heated phase-equilibrium states.",
+    "Nanometre vapor-nucleus curvature correction and heterogeneous nucleation contact angle or shell-specific barrier.",
+    "Actual coating identity, absorber loading, loading distribution, optical cross section and laser attenuation at inclusion.",
+    "Effective post-expansion PAAm/gas surface stress, shell redistribution, dilation, rupture or surfactant retention.",
+    "Single-inclusion unconditioned onset at the parent model temperature; external source population onset cannot calibrate it."
+  ]
+}

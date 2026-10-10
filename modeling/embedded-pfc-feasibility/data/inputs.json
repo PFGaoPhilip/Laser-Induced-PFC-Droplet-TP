@@ -1,0 +1,18 @@
+[
+  {
+    "name": "PFP_r0p3um_G20kPa",
+    "fluid": "n-Perfluoropentane",
+    "radius": 3e-07,
+    "shear": 20000.0,
+    "viscosity": 0.01,
+    "sigma_outer": 0.054,
+    "sigma_inner": 0.00941,
+    "ambient": 100000.0,
+    "initial_temperature": 293.15,
+    "host_density": 1000.0,
+    "sound_speed": 1500.0,
+    "seed_stretch": 1.2,
+    "seed_overpressure": 50000.0,
+    "intact_stretch_limit": 2.1
+  }
+]

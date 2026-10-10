@@ -39,6 +39,23 @@ def main():
         'modeling/minimal-cavitation/verification/NUMERICAL_AUDIT.json',
         'modeling/minimal-cavitation/models/Model_A_Finite_Energy_Pressure_Jet.mph',
         'modeling/minimal-cavitation/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph'})
+    if settings.get('embedded_pfc'):
+        study='modeling/embedded-pfc-feasibility/'
+        wanted.update(study+name for name in [
+            'index.html','REPORT.md','DERIVATION.md','DERIVATION.tex','SOURCES.md',
+            'IMPLEMENTATION_HANDOFF.md','README.md','PUBLICATION.md','COPY_MANIFEST.json',
+            'MANIFEST.json','PUBLICATION_AUDIT.json','data/reader_states.json',
+            'assets/reader.css','assets/reader.js',
+            'assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2',
+            'assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2',
+            'assets/size_species_comparison.svg','assets/radial_viscosity_controls.svg',
+            'assets/radial_stability.svg','assets/fracture_budget.svg',
+            'output/pdf/FINITE_PFC_DERIVATION.pdf',
+            'models/Embedded_PFC_Curved_Equilibrium.mph',
+            'models/Embedded_PFC_PostNucleation_Intact_Gel.mph',
+            'verification/NUMERICAL_AUDIT.json','verification/PARAMETER_AUDIT.json',
+            'verification/NATIVE_RELOAD_AUDIT.json'])
+        wanted.add(settings['embedded_pfc']['archive'])
     for kind in {eq['diagram']['type'] for eq in registry}:
         eq=next(eq for eq in registry if eq['diagram']['type']==kind)
         wanted.add('assets/figures/'+eq['id'].lower()+'.svg')
@@ -46,13 +63,16 @@ def main():
         wanted.add('assets/figures/'+identifier.lower()+'.svg')
     def verify(relative):
         expected=(dest/relative).read_bytes()
-        try:
-            status,data=fetch(base+relative+'?v='+args.commit[:12])
-            digest=hashlib.sha256(data).hexdigest()
-            return {'file':relative,'http_status':status,'bytes':len(data),'sha256':digest,
-                    'matches_local_export':status==200 and digest==hashlib.sha256(expected).hexdigest()}
-        except Exception as error:
-            return {'file':relative,'matches_local_export':False,'error':str(error)}
+        for attempt in range(3):
+            try:
+                status,data=fetch(base+relative+'?v='+args.commit[:12])
+                digest=hashlib.sha256(data).hexdigest()
+                row={'file':relative,'http_status':status,'bytes':len(data),'sha256':digest,
+                     'matches_local_export':status==200 and digest==hashlib.sha256(expected).hexdigest()}
+                if row['matches_local_export'] or attempt==2:return row
+            except Exception as error:
+                if attempt==2:return {'file':relative,'matches_local_export':False,'error':str(error)}
+            time.sleep(2)
     with ThreadPoolExecutor(max_workers=6) as executor:
         rows=list(executor.map(verify,sorted(wanted)))
     status,commit_data=fetch('https://api.github.com/repos/'+repo+'/commits/main')
@@ -61,7 +81,7 @@ def main():
     report={'status':'passed' if passed else 'failed','repository':repo,'url':base,
             'expected_commit':args.commit,'remote_main_commit':remote_sha,
             'verified_at_unix':int(time.time()),'files_checked':len(rows),'files':rows,
-            'scope':'All course HTML routes, both bilingual modeling readers, native model downloads, representative localized modeling plots, derivation sources, audit records, language/theme assets and local math fonts match the curated export. Full ZIP contents have separate manifest/CRC checks. This verifies deployment, not physical material validation.'}
+            'scope':'All course HTML routes, both bilingual ideal-gas modeling readers, the finite-PFC reader/PDF/native models/public ZIP and core study records, representative plots, language/theme assets and local math fonts match the curated export. Full ZIP contents have separate manifest/CRC checks. This verifies deployment, not physical material validation.'}
     (ROOT/'verification/publication-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:report[k] for k in ['status','repository','url','remote_main_commit','files_checked']}))
     if not passed:print(json.dumps([r for r in rows if not r['matches_local_export']],ensure_ascii=False))

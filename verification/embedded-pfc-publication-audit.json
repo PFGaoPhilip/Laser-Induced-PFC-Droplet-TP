@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scientific_files_unchanged": 96,
+  "public_payload_files_checked": 212,
+  "local_dependencies_checked": 87,
+  "zip_crc_and_payload_hashes": "PASS",
+  "zip_relative_dependency_closure": 86,
+  "reader_logic_scenarios": 38,
+  "computed_selector_states": 30,
+  "scope": "Copied scientific payload, moved public-folder dependencies, ZIP integrity/relative closure and executable reader events. No new numerical solve, experimental validation or real-browser layout claim."
+}

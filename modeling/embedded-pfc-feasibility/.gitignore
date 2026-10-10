@@ -1,0 +1,14 @@
+.tools/
+build/
+tmp/
+__pycache__/
+*.pyc
+*.class
+*.class.status
+*.mph.lock
+*.mph.status
+*.mph.recovery
+*.log
+!verification/*.log
+.env*
+

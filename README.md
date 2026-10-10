@@ -20,6 +20,10 @@ The complete [modeling section](modeling/minimal-cavitation/index.html) connects
 
 完整的[建模部分](modeling/minimal-cavitation/index.html?lang=zh)将理论课程与已核验的有限能量简洁空化模型相连接：完整推导、双语 53 步 COMSOL 指南、两个原生 MPH 文件、数值历程、核验记录及可下载文件夹。理想气体源和已有液体出口是声明的对照条件；模型不模拟激光激活、PFC 相变、内部塌缩射流或靶面冲击。源文件已复制至 `modeling/minimal-cavitation/`。
 
+The new [embedded-PFC feasibility study](modeling/embedded-pfc-feasibility/index.html) compares PFP/PFH, initial liquid size, gel modulus and viscosity using finite real-fluid PFC and a surviving liquid shell. It includes a 32-equation derivation, printable PDF, two native COMSOL models, raw data, stability and fracture-budget screens, and a measured validation plan. Sixty native stationary and six supplied-seed transient comparisons pass. These are conditional intact-gel controls: the new velocities are radial wall speeds and exterior emission is zero. Target laser activation, rupture/channel formation, collapse jets and impact pressure remain unvalidated. The public study was copied into `modeling/embedded-pfc-feasibility/`; original-source scholarly links replace third-party paper PDFs.
+
+新增的[嵌入式 PFC 可行性研究](modeling/embedded-pfc-feasibility/index.html)采用有限存量真实流体 PFC 与剩余液体壳层，对比 PFP／PFH、初始液体尺寸、凝胶模量及黏度。提供 32 个公式的完整推导、可打印 PDF、两个原生 COMSOL 模型、原始数据、稳定性与断裂能预算筛选及实测验证计划。60 个原生稳态和 6 个预设成核后种子瞬态对照已通过。这些是条件性的完整凝胶对照：新增速度是径向壁面速度，外部排出量为零。目标系统的激光激活、破裂／通道形成、塌缩射流及冲击压力仍未验证。公开研究已复制至 `modeling/embedded-pfc-feasibility/`；第三方论文 PDF 以原始来源链接代替。
+
 1. Cavity pressure, carrier inertia and directional jets.
 2. Laser heating, matched PFC comparisons and finite phase inventory.
 3. Bubble arrays, finite emitted jets, transport and defined impact loads.
@@ -64,6 +68,8 @@ python -B scripts/highlight_bilingual_terms.py
 python -B scripts/verify_course.py
 python -B scripts/package_site.py
 ```
+
+After rebuilding course pages, run `python -B scripts/integrate_modeling.py --course-only` and `python -B scripts/integrate_embedded_pfc.py` in the authoring workspace to restore the modeling entry points before packaging. The integration scripts use the completed local study deliveries. Public study files and their bundled numerical recipes are usable independently; `python -B scripts/verify_embedded_publication.py --study-directory modeling/embedded-pfc-feasibility` checks the curated study's integrity and relative assets.
 
 Teaching numbers declare their assumptions and are not project measurements. Target-specific activation laws, jet-conversion efficiency, spatial flow/fracture solutions and hydrogel benefits remain research questions. Report the highest verified single-shot output separately from repeatable intact transfer.
 

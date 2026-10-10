@@ -213,5 +213,12 @@
     "guide": "modeling/minimal-cavitation/STEP_BY_STEP.html",
     "source": "20261010-minimal-cavitation",
     "scope": "Initialized ideal-gas controls; expansion-driven discharge through an existing liquid outlet."
+  },
+  "embedded_pfc": {
+    "file": "modeling/embedded-pfc-feasibility/index.html",
+    "pdf": "modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf",
+    "archive": "modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip",
+    "source": "20261011-embedded-pfc-feasibility",
+    "scope": "Finite real-fluid PFC equilibrium and supplied post-nucleation seed in intact spherical gel; target laser/fracture/jet/impact not validated."
   }
 }

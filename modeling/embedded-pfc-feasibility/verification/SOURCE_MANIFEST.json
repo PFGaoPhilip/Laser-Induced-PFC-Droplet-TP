@@ -1,0 +1,214 @@
+[
+  {
+    "file": "sources/accepted_control/assets/conditional_velocity_envelope.png",
+    "bytes": 153126,
+    "sha256": "6d9b3f724c4dd5c569e58b7055ad66badcb5047be2d94ebfedc90f4d7b7b4cf9",
+    "origin_project": "20261010-minimal-cavitation/assets/conditional_velocity_envelope.png",
+    "origin_sha256": "6d9b3f724c4dd5c569e58b7055ad66badcb5047be2d94ebfedc90f4d7b7b4cf9",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "6d9b3f724c4dd5c569e58b7055ad66badcb5047be2d94ebfedc90f4d7b7b4cf9"
+  },
+  {
+    "file": "sources/accepted_control/assets/energy_and_transmission.png",
+    "bytes": 89257,
+    "sha256": "eeaee9f0c74ee50e653d94e24f76460c0dd39ca651969b37a2f8807a4c9a1088",
+    "origin_project": "20261010-minimal-cavitation/assets/energy_and_transmission.png",
+    "origin_sha256": "eeaee9f0c74ee50e653d94e24f76460c0dd39ca651969b37a2f8807a4c9a1088",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "eeaee9f0c74ee50e653d94e24f76460c0dd39ca651969b37a2f8807a4c9a1088"
+  },
+  {
+    "file": "sources/accepted_control/assets/first_event_histories.png",
+    "bytes": 139288,
+    "sha256": "2e109fb5521d20a5e8be85580a697dcfbb1845dc03968d49404ccf26efcfe3bb",
+    "origin_project": "20261010-minimal-cavitation/assets/first_event_histories.png",
+    "origin_sha256": "2e109fb5521d20a5e8be85580a697dcfbb1845dc03968d49404ccf26efcfe3bb",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "2e109fb5521d20a5e8be85580a697dcfbb1845dc03968d49404ccf26efcfe3bb"
+  },
+  {
+    "file": "sources/accepted_control/assets/gel_confinement.png",
+    "bytes": 121654,
+    "sha256": "ae3edab3fb41b694eaee77de6a25e8c2bf768ef009cc4f8cc6a14870c19a834a",
+    "origin_project": "20261010-minimal-cavitation/assets/gel_confinement.png",
+    "origin_sha256": "ae3edab3fb41b694eaee77de6a25e8c2bf768ef009cc4f8cc6a14870c19a834a",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "ae3edab3fb41b694eaee77de6a25e8c2bf768ef009cc4f8cc6a14870c19a834a"
+  },
+  {
+    "file": "sources/accepted_control/data/native_case_register.json",
+    "bytes": 42908,
+    "sha256": "e194946f47ddcb041068330af0e000ddca96313252e9cc1ea2126057ccda31d5",
+    "origin_project": "20261010-minimal-cavitation/data/native_case_register.json",
+    "origin_sha256": "e194946f47ddcb041068330af0e000ddca96313252e9cc1ea2126057ccda31d5",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "e194946f47ddcb041068330af0e000ddca96313252e9cc1ea2126057ccda31d5"
+  },
+  {
+    "file": "sources/accepted_control/MODEL_SPEC.md",
+    "bytes": 43081,
+    "sha256": "e5378fa3d135510ce420907e14c94e31d0c2066cc3185971aeecb7b4bd8851db",
+    "origin_project": "20261010-minimal-cavitation/MODEL_SPEC.md",
+    "origin_sha256": "e5378fa3d135510ce420907e14c94e31d0c2066cc3185971aeecb7b4bd8851db",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "e5378fa3d135510ce420907e14c94e31d0c2066cc3185971aeecb7b4bd8851db"
+  },
+  {
+    "file": "sources/accepted_control/models/Model_A_Finite_Energy_Pressure_Jet.mph",
+    "bytes": 21573738,
+    "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a",
+    "origin_project": "20261010-minimal-cavitation/models/Model_A_Finite_Energy_Pressure_Jet.mph",
+    "origin_sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+  },
+  {
+    "file": "sources/accepted_control/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+    "bytes": 5210174,
+    "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15",
+    "origin_project": "20261010-minimal-cavitation/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+    "origin_sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+  },
+  {
+    "file": "sources/accepted_control/verification/NUMERICAL_AUDIT.json",
+    "bytes": 2589,
+    "sha256": "fdc7c839c785fe63f24278836fbb2b0ad6f5ae651abcfd7f6d09bbfc740be6dd",
+    "origin_project": "20261010-minimal-cavitation/verification/NUMERICAL_AUDIT.json",
+    "origin_sha256": "fdc7c839c785fe63f24278836fbb2b0ad6f5ae651abcfd7f6d09bbfc740be6dd",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "fdc7c839c785fe63f24278836fbb2b0ad6f5ae651abcfd7f6d09bbfc740be6dd"
+  },
+  {
+    "file": "sources/accepted_ideal_gas_results.md",
+    "bytes": 4652,
+    "sha256": "740a5ac64620de4d278ca5d70820a3c4d327f4266bdb6c0539b718e06d458c4a",
+    "origin_project": "20261010-minimal-cavitation/RESULTS.md",
+    "origin_sha256": "91e3991284c0d10ae90d05dd2afae7162330378d48fbb02e71940599a77dd222",
+    "exact_copy": false,
+    "adaptation": "Relative dependency links and archival note adjusted; scientific text retained.",
+    "included_in_public_package": true,
+    "public_sha256": "740a5ac64620de4d278ca5d70820a3c4d327f4266bdb6c0539b718e06d458c4a"
+  },
+  {
+    "file": "sources/accepted_ideal_gas_summary.json",
+    "bytes": 48812,
+    "sha256": "9313eca6a6401ff939b3008e55ace3cffaae3dcd53fd65b02913e8ead6b0889c",
+    "origin_project": "20261010-minimal-cavitation/data/reference_summary.json",
+    "origin_sha256": "9313eca6a6401ff939b3008e55ace3cffaae3dcd53fd65b02913e8ead6b0889c",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "9313eca6a6401ff939b3008e55ace3cffaae3dcd53fd65b02913e8ead6b0889c"
+  },
+  {
+    "file": "sources/Acoustic Droplet Vaporization of Perfluorohexane Emulsions Induced by Heterogeneous Nucleation at an Ultrasonic Frequenc__10.1021_acs.langmuir.3c02272.pdf",
+    "bytes": 3686282,
+    "sha256": "4155c50cc7564e9fb13c5fa6ecff8fba734cf768a486adb641d4d79cd61b36d2",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/sources/Acoustic Droplet Vaporization of Perfluorohexane Emulsions Induced by Heterogeneous Nucleation at an Ultrasonic Frequenc__10.1021_acs.langmuir.3c02272.pdf",
+    "origin_sha256": "4155c50cc7564e9fb13c5fa6ecff8fba734cf768a486adb641d4d79cd61b36d2",
+    "exact_copy": true,
+    "included_in_public_package": false
+  },
+  {
+    "file": "sources/Hannah_2014_Photoacoustic_and_ultrasound_imaging_using_dual_contrast_perfluorocarbon_nanodroplets_triggered_by_laser__10_1364_boe_5_003042.pdf",
+    "bytes": 1278360,
+    "sha256": "4128059d20f51fa9f1c424956e03868f02fd51780ac0f45e3266a437e2bd61af",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/sources/Hannah_2014_Photoacoustic_and_ultrasound_imaging_using_dual_contrast_perfluorocarbon_nanodroplets_triggered_by_laser__10_1364_boe_5_003042.pdf",
+    "origin_sha256": "4128059d20f51fa9f1c424956e03868f02fd51780ac0f45e3266a437e2bd61af",
+    "exact_copy": true,
+    "included_in_public_package": false
+  },
+  {
+    "file": "sources/Kandadai_2010_Rheology_and_Interfacial_Tension_of_Biopolymers_Utah_Dissertation.pdf",
+    "bytes": 1046601,
+    "sha256": "ef4238dccdebafa9abdd7bf14ae344d06b781ef8558d44bdf7b5580ba32baab7",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/sources/Kandadai_2010_Rheology_and_Interfacial_Tension_of_Biopolymers_Utah_Dissertation.pdf",
+    "origin_sha256": "ef4238dccdebafa9abdd7bf14ae344d06b781ef8558d44bdf7b5580ba32baab7",
+    "exact_copy": true,
+    "included_in_public_package": false
+  },
+  {
+    "file": "sources/n-Perfluorohexane_CoolProp8_HEOS.json",
+    "bytes": 69547,
+    "sha256": "2d14b644405a2267764497db60ec3ae79baec823d3132a63cbbea9bde5fd1fa0",
+    "origin": "CoolProp 8.0.0 archived HEOS coefficient JSON, Gao et al. EOS; bundled without network dependency.",
+    "included_in_public_package": true,
+    "public_sha256": "2d14b644405a2267764497db60ec3ae79baec823d3132a63cbbea9bde5fd1fa0"
+  },
+  {
+    "file": "sources/n-Perfluoropentane_CoolProp8_HEOS.json",
+    "bytes": 71665,
+    "sha256": "aa3d8d038875a8b512587f43655cf4073e94cb898750613758669cd74c68c456",
+    "origin": "CoolProp 8.0.0 archived HEOS coefficient JSON, Gao et al. EOS; bundled without network dependency.",
+    "included_in_public_package": true,
+    "public_sha256": "aa3d8d038875a8b512587f43655cf4073e94cb898750613758669cd74c68c456"
+  },
+  {
+    "file": "sources/prior_interface_evidence.md",
+    "bytes": 10640,
+    "sha256": "20e2e08f876bdf8ec2e05cd226f1425b5525a544acd32bf35dfb988429299cf9",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/laser_pfc_capillarity_followup.md",
+    "origin_sha256": "e0d4578c480b083f59123c3861ae5345440de2f96fc5478290b0f93d9cb5bc87",
+    "exact_copy": false,
+    "adaptation": "Relative dependency links and archival note adjusted; scientific text retained.",
+    "included_in_public_package": true,
+    "public_sha256": "82892bc2e759909a940747698582613b35aeca999f16a158f7b8da10e116f498"
+  },
+  {
+    "file": "sources/prior_interface_provenance.json",
+    "bytes": 20542,
+    "sha256": "b3ad69ca2f1fc461df49f5ed4e10f0713696afffae8c6aa3b8435b10995f3e48",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/laser_pfc_capillarity_followup.json",
+    "origin_sha256": "b3ad69ca2f1fc461df49f5ed4e10f0713696afffae8c6aa3b8435b10995f3e48",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "5b5d1599e6d628f80c4c8226acc68f5167f3c2c561d603c8ed7be06f45305d56"
+  },
+  {
+    "file": "sources/Strohm_2011_Vaporization_of_perfluorocarbon_droplets_using_optical_irradiation__10_1364_boe_2_001432.pdf",
+    "bytes": 893523,
+    "sha256": "a8210be242ae72d889992ca967eb7b58ba5086cab193d76087151d688bffc83f",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/sources/Strohm_2011_Vaporization_of_perfluorocarbon_droplets_using_optical_irradiation__10_1364_boe_2_001432.pdf",
+    "origin_sha256": "a8210be242ae72d889992ca967eb7b58ba5086cab193d76087151d688bffc83f",
+    "exact_copy": true,
+    "included_in_public_package": false
+  },
+  {
+    "file": "sources/Zhang_2019_Phase_Transition_Temperature_of_Gold_Nanorod_Coated_Nanodroplets_to_Microbubbles_by_Pulsed_Laser__10_1021_acs_jpca_9b02566.pdf",
+    "bytes": 1463603,
+    "sha256": "2e42a8ed3497f57e694d5cf5d87eedf85e5731b4d3b2ef6b40e832a48e65b718",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/sources/Zhang_2019_Phase_Transition_Temperature_of_Gold_Nanorod_Coated_Nanodroplets_to_Microbubbles_by_Pulsed_Laser__10_1021_acs_jpca_9b02566.pdf",
+    "origin_sha256": "2e42a8ed3497f57e694d5cf5d87eedf85e5731b4d3b2ef6b40e832a48e65b718",
+    "exact_copy": true,
+    "included_in_public_package": false
+  },
+  {
+    "file": "sources/Zhao_2023_Factors_Influencing_the_Repeated_Transient_Optical_Droplet_Vaporization_Threshold_and_Lifetimes_of_Phase__10_3390_nano13152238.pdf",
+    "bytes": 2900452,
+    "sha256": "41cfb2d913a1e0efa0e03b900881370f038ac1a00f9c0126f81ea447a7bcb877",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/resources/sources/Zhao_2023_Factors_Influencing_the_Repeated_Transient_Optical_Droplet_Vaporization_Threshold_and_Lifetimes_of_Phase__10_3390_nano13152238.pdf",
+    "origin_sha256": "41cfb2d913a1e0efa0e03b900881370f038ac1a00f9c0126f81ea447a7bcb877",
+    "exact_copy": true,
+    "included_in_public_package": false
+  },
+  {
+    "file": "scripts/NativePfcEOS.java",
+    "bytes": 18788,
+    "sha256": "bab00b793f7bc3e5e5a849438b9a528c5cfbc7ccb7683e40fa7df96202cea110",
+    "origin_project": "20261008-comsol-plan/two_theories_3d/scripts/NativePfcEOS.java",
+    "origin_sha256": "bab00b793f7bc3e5e5a849438b9a528c5cfbc7ccb7683e40fa7df96202cea110",
+    "exact_copy": true,
+    "included_in_public_package": true,
+    "public_sha256": "bab00b793f7bc3e5e5a849438b9a528c5cfbc7ccb7683e40fa7df96202cea110"
+  }
+]

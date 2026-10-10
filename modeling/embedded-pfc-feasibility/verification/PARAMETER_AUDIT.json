@@ -1,0 +1,13 @@
+{
+  "equilibrium_states": 132,
+  "stability_states": 132,
+  "fracture_screens": 96,
+  "closed_energy_unstable_states": 36,
+  "fixed_bath_unstable_states": 94,
+  "core_phase_fixed_T_V_m_unstable_states": 0,
+  "min_core_phase_bulk_to_capillary_Hessian_ratio": 20.452553607078272,
+  "max_closed_energy_slope_step_relative_change": 3.204685744398509e-05,
+  "max_fixed_bath_slope_step_relative_change": 8.78320507280042e-06,
+  "closed_energy_slope_sign_changes": 0,
+  "note": "Local reduced-radial restoration and fixed-(T,V,m) internal Hessian do not prove global stability, morphology, or nucleation accessibility."
+}

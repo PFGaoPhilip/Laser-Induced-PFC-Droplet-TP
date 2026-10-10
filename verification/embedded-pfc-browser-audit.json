@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "Real Chrome offline/file-protocol publication reader checks; this audits the public presentation, not the scientific mechanism.",
+  "selector_states_checked": 30,
+  "document_tabs": [
+    "comparison",
+    "derivation",
+    "handoff",
+    "sources"
+  ],
+  "theme_toggles": 2,
+  "display_equations": 32,
+  "missing_scientific_images": 0,
+  "decoded_figures": [
+    "size_species_comparison.svg",
+    "radial_viscosity_controls.svg",
+    "radial_stability.svg",
+    "fracture_budget.svg"
+  ],
+  "fonts_status": "loaded",
+  "console_errors_or_warnings": 0,
+  "desktop": {
+    "viewport_width": 1280,
+    "page_width": 1265,
+    "visual_review": "Day selector, comparison and complete math rendering inspected."
+  },
+  "mobile": {
+    "viewport_width": 390,
+    "page_width": 390,
+    "theme": "night",
+    "visual_review": "Night layout inspected; no page-level horizontal overflow. Navigation scrolls within its row."
+  },
+  "scientific_payload": "Original accepted derivation, data and model hashes retained; target laser/fracture/jet/impact not validated.",
+  "original_source_browser_audit": "The archived source study did not have a browser connection. This publication UI check is additional evidence.",
+  "relocated_public_folder": {
+    "status": "PASS",
+    "network": "Offline",
+    "selector_states": 30,
+    "fonts": "loaded",
+    "theme": "night",
+    "viewport_width": 390,
+    "page_width": 390,
+    "optional_course_link": "Public website URL; reader assets remain relative and local."
+  },
+  "course_entry_point": {
+    "english_and_chinese_visibility": "PASS",
+    "new_study_route": "PASS",
+    "mobile_page_overflow": "none"
+  }
+}

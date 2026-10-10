@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "native_case_count": 17,
+  "physics": "GlobalEquations only, verified by fresh COMSOL reload",
+  "periodic_loading": false,
+  "optical_pulse_marker_ns": 10,
+  "mathematical_displays": 29,
+  "local_symbol_declarations": 29,
+  "maximum_native_energy_residual": 1.2598593443418983e-07,
+  "maximum_native_reference_normalized_waveform_error": 0.00011522828138011965,
+  "maximum_communication_screen": 0.08355982151973534,
+  "first_event_velocity_transmission": 0.10570865885178857,
+  "first_event_dynamic_pressure_transmission": 0.011174320556243818,
+  "first_event_emitted_energy_transmission": 9.795884889698477e-05,
+  "first_event_emitted_impulse_transmission": 0.0008730661665603859,
+  "temporal_and_fresh_process_checks": [
+    {
+      "name": "A_baseline",
+      "fresh_process_peak_relative_error": 0.0,
+      "2ns_to_1ns_peak_relative_change": 1.3952310357519962e-08,
+      "refined_zero_initial_liquid_velocity": 0.0,
+      "refined_zero_initial_wall_velocity": 0.0,
+      "status": "PASS"
+    },
+    {
+      "name": "B_open_baseline",
+      "fresh_process_peak_relative_error": 0.0,
+      "2ns_to_1ns_peak_relative_change": 9.484768358069686e-07,
+      "refined_zero_initial_liquid_velocity": 0.0,
+      "refined_zero_initial_wall_velocity": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "symbolic_algebra_checks": {
+    "gel_traction_work_identity": "0",
+    "reference_elastic_work": "0",
+    "reference_elastic_pressure": "0",
+    "small_strain_pressure_slope": "4*G/R0",
+    "gel_large_expansion_pressure_limit": "5*G/2",
+    "gas_adiabatic_first_law": "0"
+  },
+  "native_files": [
+    {
+      "file": "Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "file": "Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    }
+  ],
+  "independent_peer_review": "Not performed; independent numerical integration and self-audit are distinguished from peer review.",
+  "unresolved_calibration": [
+    "PFC EOS / phase inventory",
+    "post-activation source-state and laser conversion calibration",
+    "rate-dependent gel properties",
+    "actual outlet geometry / fracture / focusing / target pressure"
+  ],
+  "post_verification_reader_change": "Updated column-storage and speed-bound descriptions and the native energy plot; governing equations and stored solver data unchanged."
+}

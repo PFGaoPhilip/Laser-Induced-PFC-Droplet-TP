@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 671,
-      "sha256": "e9c0dee547e8b75553ee8439e7fb6ce4c90394ffc28fc93fc71e29efd034047d"
+      "bytes": 944,
+      "sha256": "0924954edfd84fbf1cd937b99c87a345dd7215d32da70833273a6eeeb88e90c8"
     },
     {
       "path": ".nojekyll",
@@ -14,8 +14,8 @@
     },
     {
       "path": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1282311,
-      "sha256": "1bc23169c8a7c06d7a206185aaf02784e8f68024317f29f7b964654d8ca5bc2a"
+      "bytes": 1283800,
+      "sha256": "7dd63260faafee6d5916aec2f22e07f36821a95864eca97ca3f99bc658db0e49"
     },
     {
       "path": "assets/bilingual-terms.css",
@@ -1429,28 +1429,28 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1330217,
-      "sha256": "9e0db80f6680ba7cacf5e9b4637620f82b3df85352ed7b28f2774af51079d993"
+      "bytes": 1331706,
+      "sha256": "6e2c8a4d1c328195b8e665a78d1319a6cae55d0c55fc47e7c0e0fe4bbaeb0b88"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1572606,
-      "sha256": "be5f90b06e8eb147c110ed2f14f7fb997b1734d709e9f5766c3fec024c4ec8df"
+      "bytes": 1574095,
+      "sha256": "72a8f88c39193bebcaf832c47be530aa76118a5dc291f8dc99453b73b748942a"
     },
     {
       "path": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 2030379,
-      "sha256": "a7134f7791ba8b8354a005ecbddb2b6f38e671a08a44e75b7735233e1ef08c6f"
+      "bytes": 2031868,
+      "sha256": "cf209eaa49b52eff651af763810cb57ce7af77fcc2e377626e9a66afd38c84e2"
     },
     {
       "path": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1881584,
-      "sha256": "97777385255b8c3548294abf635c7ac716db9333c3ff65b2e9b2bb918a7f19b5"
+      "bytes": 1883073,
+      "sha256": "0aa766bcffd512fd5ab0f40bfcce0ba0211705c463a6db3b94c2c6035cfda0dd"
     },
     {
       "path": "chapters/05-hydrogel-versus-liquid.html",
-      "bytes": 1282311,
-      "sha256": "1bc23169c8a7c06d7a206185aaf02784e8f68024317f29f7b964654d8ca5bc2a"
+      "bytes": 1283800,
+      "sha256": "7dd63260faafee6d5916aec2f22e07f36821a95864eca97ca3f99bc658db0e49"
     },
     {
       "path": "content/chapter01.py",
@@ -1499,18 +1499,1103 @@
     },
     {
       "path": "COURSE_SETTINGS.json",
-      "bytes": 7267,
-      "sha256": "56b8d918d98dd73a42e04bf2aaeffe35ccb190aa614b761e9b940b8d3a91b2e8"
+      "bytes": 7748,
+      "sha256": "f38b028585d29660319f5d24c6f44676befc0cdda022a6e64a4746db39db4dbb"
     },
     {
       "path": "index.html",
-      "bytes": 22523,
-      "sha256": "052d3636b8722f32d8e7989742500e31ec668d9d0b0a8395d90505b7daeab904"
+      "bytes": 24006,
+      "sha256": "a264a295e01be2f48d3372e58f92f9fdd6f3c4fea5f33ed009e6dda45f6d2ba4"
     },
     {
       "path": "MISSION.md",
       "bytes": 2178,
       "sha256": "c53df5cef7932cbf8b2560ee0b1b21a0ae5e8d2be5526fcb4395e6ac4c96308f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/.gitignore",
+      "bytes": 148,
+      "sha256": "1b9f47d00417b164a7f2b6eafe3001f0faed6adceb365950854d5c62559b6bc0"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/fracture_budget.png",
+      "bytes": 197737,
+      "sha256": "428460b62b6bf6b366eb7963a0df88c1552f8f15adc1ecdea12514e9d37a1270"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/fracture_budget.svg",
+      "bytes": 83995,
+      "sha256": "fb6143b0272e6c4dc36382041824146a4f788dc77108bcfb339cfb571e008c59"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/radial_stability.png",
+      "bytes": 133530,
+      "sha256": "d9a22e6ab66e9ee59374a1e79e62775e780ba6063be32b23ce78735cc57745ba"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/radial_stability.svg",
+      "bytes": 40109,
+      "sha256": "11f2b60f1eb7e8c2a7664fbf65a4a5c5d671765bfee3fbdd73aebb76a611e0bf"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/radial_viscosity_controls.png",
+      "bytes": 184245,
+      "sha256": "dd1a040f7a08eae83d485cf5d50f7a9a462424180ff274257bf4c76be164ef3f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/radial_viscosity_controls.svg",
+      "bytes": 60329,
+      "sha256": "11890617e1c346f088a719434ceaae9530460bbb0058eef61b367a1bc227aae6"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/reader.css",
+      "bytes": 3219,
+      "sha256": "c922e014bac4d3b5e3950ccb84782765455526b7012775ea255256bf0b4433dd"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/reader.js",
+      "bytes": 2413,
+      "sha256": "74abbeaa80c85da2c9dd25f0dcd85d21511b9f4b24ded40ae9e0c57cc901284d"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/size_species_comparison.png",
+      "bytes": 133134,
+      "sha256": "3a2d965821e76beb6d316065def5fafe924cb83ad9f5c8c6e9fc0263a283fdf1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/size_species_comparison.svg",
+      "bytes": 43345,
+      "sha256": "6027b85584ce470f7f44ca81ca32de62766a6b458bc6eb4e261c051dc19b235a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf",
+      "bytes": 63632,
+      "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff",
+      "bytes": 33516,
+      "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+      "bytes": 12368,
+      "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "bytes": 7716,
+      "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+      "bytes": 12344,
+      "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "bytes": 7656,
+      "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+      "bytes": 19584,
+      "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "bytes": 13296,
+      "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+      "bytes": 19572,
+      "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "bytes": 13208,
+      "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Bold.ttf",
+      "bytes": 51336,
+      "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Bold.woff",
+      "bytes": 29912,
+      "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Bold.woff2",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+      "bytes": 32968,
+      "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "bytes": 19412,
+      "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Italic.ttf",
+      "bytes": 33580,
+      "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Italic.woff",
+      "bytes": 19676,
+      "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Italic.woff2",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Regular.ttf",
+      "bytes": 53580,
+      "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Regular.woff",
+      "bytes": 30772,
+      "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+      "bytes": 31196,
+      "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "bytes": 18668,
+      "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Math-Italic.ttf",
+      "bytes": 31308,
+      "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Math-Italic.woff",
+      "bytes": 18748,
+      "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+      "bytes": 24504,
+      "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "bytes": 14408,
+      "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+      "bytes": 22364,
+      "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "bytes": 14112,
+      "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+      "bytes": 19436,
+      "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "bytes": 12316,
+      "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Script-Regular.ttf",
+      "bytes": 16648,
+      "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Script-Regular.woff",
+      "bytes": 10588,
+      "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Script-Regular.woff2",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size1-Regular.ttf",
+      "bytes": 12228,
+      "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff",
+      "bytes": 6496,
+      "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size2-Regular.ttf",
+      "bytes": 11508,
+      "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff",
+      "bytes": 6188,
+      "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size3-Regular.ttf",
+      "bytes": 7588,
+      "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff",
+      "bytes": 4420,
+      "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size4-Regular.ttf",
+      "bytes": 10364,
+      "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff",
+      "bytes": 5980,
+      "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+      "bytes": 27556,
+      "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "bytes": 16028,
+      "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/katex.min.css",
+      "bytes": 24793,
+      "sha256": "d4ab5b8ee16989b070cdb0ea24bd6ad48fc8df1b787f280f29d3ae4f959f2c00"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/katex.min.js",
+      "bytes": 272868,
+      "sha256": "103a53763cc033bba8d175bf3f0ba597c3505c9b6747dd3f2c7bc2a6bfcc8ae7"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/assets/vendor/katex/LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/COPY_MANIFEST.json",
+      "bytes": 62728,
+      "sha256": "92d00f928d8ac063b8a6187083571671ae70117df773e4b1bd0e4c567ae571f4"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_000_Perfluoropentane_r0.3_G5_L1.2_native.csv",
+      "bytes": 924,
+      "sha256": "e0054375380ec709a73ac48ff7a15c1e910eb0d172d8f767be9f7277a12d464c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_001_Perfluoropentane_r0.3_G5_L1.5_native.csv",
+      "bytes": 926,
+      "sha256": "3869d3999e7af8aa0d0e306c73291e80aa3916d7d9b550f69854cedac4cb7b29"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_002_Perfluoropentane_r0.3_G5_L1.8_native.csv",
+      "bytes": 928,
+      "sha256": "823324b02e18dd6ea5407f3ed2886e6bb87033dd2c7b7abc8dd7210ede161596"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_003_Perfluoropentane_r0.3_G5_L2.1_native.csv",
+      "bytes": 929,
+      "sha256": "a71d90275f701d11e5e12154a6a39f11a11fa7ca475018804f3f936a90b7b4f0"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_004_Perfluoropentane_r0.3_G20_L1.2_native.csv",
+      "bytes": 927,
+      "sha256": "3df31e027ed33c9de16c987dcf23b0368c81eb5343bf377a7e611f8051a05f6f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_005_Perfluoropentane_r0.3_G20_L1.5_native.csv",
+      "bytes": 927,
+      "sha256": "a35334a4b37ab3e5b3c7884f5759f31050fd22eb08b9aecc9e64990a9e2c3769"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_006_Perfluoropentane_r0.3_G20_L1.8_native.csv",
+      "bytes": 927,
+      "sha256": "7503f2947057be25cca8893fa6b90cde373312da15a4d087cb50d3db8311fa9b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_007_Perfluoropentane_r0.3_G100_L1.2_native.csv",
+      "bytes": 924,
+      "sha256": "be17b050dbbfdf99438ed4cc87441b41d9b7528a470af31e21e4b9e5e6073b70"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_008_Perfluoropentane_r0.3_G100_L1.5_native.csv",
+      "bytes": 931,
+      "sha256": "6be156806e8f3131c3f71b198c13346fa687b583114284229e4dade6e20a5aaa"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_009_Perfluoropentane_r0.3_G100_L1.8_native.csv",
+      "bytes": 904,
+      "sha256": "a3ba9fc577ba8783800de49b8eb5bfb22843bc9e8671560704efa303dc7b2757"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_010_Perfluoropentane_r0.3_G100_L2.1_native.csv",
+      "bytes": 928,
+      "sha256": "1a0bdb92f6be014faf62443f2673112927b912b4944d8b8b2947d85eab4930be"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_011_Perfluoropentane_r3_G5_L1.2_native.csv",
+      "bytes": 905,
+      "sha256": "2301c030908fd834259fddad1b1640b5b550265fdeb7a6f06f2cbc1fdb1f2bb3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_012_Perfluoropentane_r3_G5_L1.5_native.csv",
+      "bytes": 923,
+      "sha256": "ae25f571434199e645720d5013dc46467d4d06bea57c76c32e08c2599179c46b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_013_Perfluoropentane_r3_G5_L1.8_native.csv",
+      "bytes": 923,
+      "sha256": "94bf8cb4833c64cb77a4b106b62fae7b10872d91fca5c71caf79c7c699e569c2"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_014_Perfluoropentane_r3_G5_L2.1_native.csv",
+      "bytes": 926,
+      "sha256": "c9347ded1dff6543dc09e681593c5b1d71283d2c9d06eb09f6abe4b323e7e93f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_015_Perfluoropentane_r3_G20_L1.2_native.csv",
+      "bytes": 906,
+      "sha256": "3e1482fcf34c0cb5630f6146d3150b6ff6bfdaf7faf354b5e57d5afe450bde86"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_016_Perfluoropentane_r3_G20_L1.5_native.csv",
+      "bytes": 930,
+      "sha256": "92ad41ffe0ddf474cb48b8229ba5f02670048b27363d918f3b31c56eb2b49d94"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_017_Perfluoropentane_r3_G20_L1.8_native.csv",
+      "bytes": 926,
+      "sha256": "8730e619ab5eaa5d75b6dd34c636b02fec140304a707aecebff231eb02fd03eb"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_018_Perfluoropentane_r3_G20_L2.1_native.csv",
+      "bytes": 925,
+      "sha256": "4196d35d51cf2506cc1c57c846e10c7b2ffbe2ef6b83f5b7df700ad035685e10"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_019_Perfluoropentane_r3_G100_L1.2_native.csv",
+      "bytes": 900,
+      "sha256": "22bfd3960eb1668a86f8b025d4d6ccaddd10077e2a4f642d710c465ed06415cc"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_020_Perfluoropentane_r3_G100_L1.5_native.csv",
+      "bytes": 925,
+      "sha256": "79662093f8c798b00252fc75f0807f8948d354a53d21c4ec7b8a664fac56fd3c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_021_Perfluoropentane_r3_G100_L1.8_native.csv",
+      "bytes": 926,
+      "sha256": "684575941ffa8abec0e22c857b81615d035dc8baebc1647c78beafb763498fd9"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_022_Perfluoropentane_r3_G100_L2.1_native.csv",
+      "bytes": 928,
+      "sha256": "5d0e176f6d64223976ba436912dccfb8894f38008c55dff9f4fbe1b8507ed58a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_023_Perfluorohexane_r0.3_G5_L1.2_native.csv",
+      "bytes": 926,
+      "sha256": "7abf15acb43a9cb062857b93d1e37cd240850c839d0c6a2f0b3d4f99b7c293b8"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_024_Perfluorohexane_r0.3_G5_L1.5_native.csv",
+      "bytes": 930,
+      "sha256": "1518138c5dca6d83f3d64fd66cc39bff031962893aa0ca8c02958ddfe8fcd9c4"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_025_Perfluorohexane_r0.3_G5_L1.8_native.csv",
+      "bytes": 927,
+      "sha256": "888ef42a548ae0cdf2852a83da2ee127f74676420bef4bb7abdd6fb0561b6af4"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_026_Perfluorohexane_r0.3_G5_L2.1_native.csv",
+      "bytes": 925,
+      "sha256": "cac7186b6d90d707f2fac393e79a2cf37ddb82f408d55facfb5ee5457cc8129e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_027_Perfluorohexane_r0.3_G20_L1.2_native.csv",
+      "bytes": 907,
+      "sha256": "0fb7794d57bfb9a0e620e2e3516031815a869f12d6b4f17a592720a81731e970"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_028_Perfluorohexane_r0.3_G20_L1.5_native.csv",
+      "bytes": 908,
+      "sha256": "1dcf2f16751c2e524f1bb41dd5e1ba4d9794bc2c0eecf7f95ed7b7f748163cda"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_029_Perfluorohexane_r0.3_G20_L1.8_native.csv",
+      "bytes": 907,
+      "sha256": "889d13d3584ff6917f68fa610188661d428cd758f633b24e0601e8617b1cadc3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_030_Perfluorohexane_r0.3_G20_L2.1_native.csv",
+      "bytes": 929,
+      "sha256": "50d612e4e930d8969352769a2604e15d309fb4574b9580c75f24b81429db0b53"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_031_Perfluorohexane_r0.3_G100_L1.2_native.csv",
+      "bytes": 923,
+      "sha256": "61784ed408f1e12027a065f91f6f6665864b273a9cc5d4580a7bdcafb7caed96"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_032_Perfluorohexane_r0.3_G100_L1.5_native.csv",
+      "bytes": 928,
+      "sha256": "13a3da1a21ce9c3989dc0ef35f74631d9bcb33396bd27d9db029ecbbc9177efd"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_033_Perfluorohexane_r0.3_G100_L1.8_native.csv",
+      "bytes": 925,
+      "sha256": "886185cd5b3775db122157ccd2a458c77ac13ca07ae94afb1c6c7b5494cb37a7"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_034_Perfluorohexane_r0.3_G100_L2.1_native.csv",
+      "bytes": 925,
+      "sha256": "d22107c1bef6581bbdc0a8c499d9a750dc9c1eafcbe1b281db158e33af44d60a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_035_Perfluorohexane_r3_G5_L1.2_native.csv",
+      "bytes": 929,
+      "sha256": "ffe45d0cb27c2131ee1993f8686f959b2405c8b19605c32b9ff78d609456aa0e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_036_Perfluorohexane_r3_G5_L1.5_native.csv",
+      "bytes": 926,
+      "sha256": "93aa101da55ad856258468c34422ad9fb1e7f59ef6b9abf59b24d7ac6170f3c0"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_037_Perfluorohexane_r3_G5_L1.8_native.csv",
+      "bytes": 928,
+      "sha256": "27f1e504dc0960f973947e33ce0f67820b3fe47713cee040431a6880805f1fc7"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_038_Perfluorohexane_r3_G5_L2.1_native.csv",
+      "bytes": 926,
+      "sha256": "97fdfc9b9f38a08a0f9660213272b47ffc9ff1670467fa3bf32272f603632a03"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_039_Perfluorohexane_r3_G20_L1.2_native.csv",
+      "bytes": 932,
+      "sha256": "5ad55f83f8a31ce4241e0a47466aa06e503647c5514a5cfcc158be0cb46de7e2"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_040_Perfluorohexane_r3_G20_L1.5_native.csv",
+      "bytes": 927,
+      "sha256": "1a69d0e134787d652fb93ec7a6529629d57c515aaf86ffbb95d62d319693f8ce"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_041_Perfluorohexane_r3_G20_L1.8_native.csv",
+      "bytes": 929,
+      "sha256": "785822ee7cb1055848ad5df42a18316e75d86bf87d4ec80bf6fd5451decd8859"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_042_Perfluorohexane_r3_G20_L2.1_native.csv",
+      "bytes": 929,
+      "sha256": "507c9096bb35dd448fc408416f0c00ae3601bee20cc4470f4f4697bfce55c560"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_043_Perfluorohexane_r3_G100_L1.2_native.csv",
+      "bytes": 927,
+      "sha256": "c8ffb3e967466111f2da93bfb0f8e9e926c658d502e0167cccfac4f440c45941"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_044_Perfluorohexane_r3_G100_L1.5_native.csv",
+      "bytes": 925,
+      "sha256": "8a8f9e94318ceaeec8c89d0b74910ebdd398eeac1b3bd33f7b3aa3f2c1ac49d3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_045_Perfluorohexane_r3_G100_L1.8_native.csv",
+      "bytes": 926,
+      "sha256": "9981b7ff672d0d6c1506035cead07ec6909d3757c5fbe6efe5bae8504757500a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_046_Perfluorohexane_r3_G100_L2.1_native.csv",
+      "bytes": 925,
+      "sha256": "89347d091486e69b5c83db9abd797a372eaa0d3c1217ef87b425840f837933a3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_047_Perfluoropentane_r0.3_G20_L1.2_native.csv",
+      "bytes": 928,
+      "sha256": "d308990f37bb60221be0211f685cf906b3f1e3c755e97167c39168b54dd24706"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_048_Perfluoropentane_r0.3_G20_L1.5_native.csv",
+      "bytes": 931,
+      "sha256": "2a497868ed298be224c6209024d6515645dc285890e6b91a37063e0e3e9ffa72"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_049_Perfluoropentane_r0.3_G20_L1.8_native.csv",
+      "bytes": 926,
+      "sha256": "ef3d4ed5e54d31f830718f25f580af42d111fbcbf46a9ee65ff67468481a65ca"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_050_Perfluoropentane_r0.3_G20_L2.1_native.csv",
+      "bytes": 933,
+      "sha256": "c327ceeb41a546e61743d2f4e4cb6706ff4bef9ac08c21048be7f1a286e0caf1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_051_Perfluoropentane_r0.3_G20_L1.2_native.csv",
+      "bytes": 906,
+      "sha256": "511e14d3c782362e55c200f52985d6d97fd7bb42b51babd654e48bc95295bc14"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_052_Perfluoropentane_r0.3_G20_L1.5_native.csv",
+      "bytes": 931,
+      "sha256": "3dc2bed38c805492dbb211aff7c567d12887dde03ba52bf64633663e6cd52cbb"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_053_Perfluoropentane_r0.3_G20_L1.8_native.csv",
+      "bytes": 925,
+      "sha256": "444c239577be4958286c92c120d7972556f9db8ef8edbf54118a220dbba5a724"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_054_Perfluoropentane_r0.3_G20_L2.1_native.csv",
+      "bytes": 925,
+      "sha256": "7cca6dbad233f78d222820caafccc59ce318c02f78056734bf02f927469a111d"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_055_Perfluoropentane_r0.3_G20_L1.2_native.csv",
+      "bytes": 927,
+      "sha256": "3df31e027ed33c9de16c987dcf23b0368c81eb5343bf377a7e611f8051a05f6f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_056_Perfluoropentane_r0.3_G20_L1.5_native.csv",
+      "bytes": 927,
+      "sha256": "a35334a4b37ab3e5b3c7884f5759f31050fd22eb08b9aecc9e64990a9e2c3769"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_057_Perfluoropentane_r0.3_G20_L1.8_native.csv",
+      "bytes": 927,
+      "sha256": "7503f2947057be25cca8893fa6b90cde373312da15a4d087cb50d3db8311fa9b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_058_Perfluoropentane_r0.3_G20_L2.1_native.csv",
+      "bytes": 930,
+      "sha256": "e85f43c4a2bbade425867259f874bca3c610126e4822d2e55ba170df9a47659d"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/EQ_059_Perfluoropentane_r0.3_G20_L2.1_native.csv",
+      "bytes": 930,
+      "sha256": "e85f43c4a2bbade425867259f874bca3c610126e4822d2e55ba170df9a47659d"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/equilibrium_comparison.csv",
+      "bytes": 80331,
+      "sha256": "1c9c5e15b64b5428bed0388f6ebc17a72309d8ead570097df947f257b9d07fed"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/excluded_cases.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/fracture_energy_screen.csv",
+      "bytes": 22287,
+      "sha256": "22c0bb1340fd4e4390f88264ecaa3502ff39928c6796b451d2748262bceafba1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/inputs.json",
+      "bytes": 422,
+      "sha256": "6448d3650f84d732155fb7066812fc13036aa00881bec0920fd8a4cdcf5a7b94"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/native_case_inputs.json",
+      "bytes": 131069,
+      "sha256": "d6c9dd59f4ee4ac5103a29996d180acc9e5b11ea95bd47e2f1ee6e51a6eb5d10"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/optical_energy_screen.csv",
+      "bytes": 8692,
+      "sha256": "937bcc938cf7df82380ca2bc87db8fe33483881ef08cd4af9343197b9b91df3c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r0.3um_eta0.01_native.csv",
+      "bytes": 459743,
+      "sha256": "5e1a92106d6dac0419c37e83e33d0f22267cbe7303ffbf9403bb7f9a8467310e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r0.3um_eta0.01_reference.csv",
+      "bytes": 654207,
+      "sha256": "dbf2dbe569aabfda81eac295b6bda68ae86775ce54d979755113a13bb8f4fb4e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r0.3um_eta0.1_native.csv",
+      "bytes": 2045717,
+      "sha256": "f3779ee73d89a2a16ce5c1206d334e7e0db47295f4a7cbb503f86c72bed3501a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r0.3um_eta0.1_reference.csv",
+      "bytes": 652000,
+      "sha256": "08ef85907a9755611969b9cc87eff7a54c1eba509cd50b8e94507b2b83b8c3a7"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r0.3um_eta0_native.csv",
+      "bytes": 86533,
+      "sha256": "e2699b4b7d2cd4777384dee7cd1fbd19bfe5b2fff6f9446e72d8c24eead0a946"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r0.3um_eta0_reference.csv",
+      "bytes": 633791,
+      "sha256": "4083e9cfc01399ed58d065e561487eb4fa90034091f95ca9b00cceb895945928"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r3um_eta0.01_native.csv",
+      "bytes": 171834,
+      "sha256": "ad3ee2b529aaad7ab4d6ac42353263265b8fdb404360b5100f435e13d059a06d"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r3um_eta0.01_reference.csv",
+      "bytes": 654221,
+      "sha256": "8f29456a5735603d54eae208f33b7ffe44e831e0cabc23e05b0062744c9bde0b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r3um_eta0.1_native.csv",
+      "bytes": 1222028,
+      "sha256": "ca181008fef15dac0829b8a9da16102a4fcb0e95d594595671c307b2684c9a3f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r3um_eta0.1_reference.csv",
+      "bytes": 655138,
+      "sha256": "5725d84cf049a5b33240614246bad5b0b0285ef953b0b77c8e2134472c5f6585"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r3um_eta0_native.csv",
+      "bytes": 115795,
+      "sha256": "d634f1276719979e34a6600edbcebe6d758adbdb5face175fb23fbcdc79da034"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/PFP_r3um_eta0_reference.csv",
+      "bytes": 634380,
+      "sha256": "28415ac2075d90107d04762a82aeb22c5286d887203af2787acc56b6f8d6db1f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/reader_states.json",
+      "bytes": 5712,
+      "sha256": "42b3b0af0d18bfc822f4ecc863c8508e47612343b85569f54e80468c6bb62aa3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/stability_comparison.csv",
+      "bytes": 33772,
+      "sha256": "d0e6b997a21104b5e8d226e0ba9206222524608b8a2b70faf7324ec1c3d56b35"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/data/transient_summary.json",
+      "bytes": 22926,
+      "sha256": "ad583027252fefce6d78f4cf028af565ad4c6c06b0af35957c1ae8ab9e69f25a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/DERIVATION.md",
+      "bytes": 47654,
+      "sha256": "73c7ef032aaaeed09df3c04ec39771b81880733fe89441184dc5a16c9a18532b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/DERIVATION.tex",
+      "bytes": 57444,
+      "sha256": "fc7383a97a8cb4f55fe3c0bdec5d9815cb8f2e31eaa684ea6fd9721390af4ebf"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip",
+      "bytes": 17522916,
+      "sha256": "526e277cc2709a48a51e2039e2287deaaf2e6672eafebf4d54429d361e414135"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/IMPLEMENTATION_HANDOFF.md",
+      "bytes": 9537,
+      "sha256": "05485fea610a2718e1481c520f868a9b9b04e9df68a4e48e22918dd44e26c2f3"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/index.html",
+      "bytes": 1040500,
+      "sha256": "1307ed7562cb2f8e37462015a696e3839f5079c2a160d79013cff9d57e55d173"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/MANIFEST.json",
+      "bytes": 39311,
+      "sha256": "159bf7b19bd6d77b9652a75a35e1d0865e683895bc89bcb18cba2080a0f1bb2e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/models/Embedded_PFC_Curved_Equilibrium.mph",
+      "bytes": 760879,
+      "sha256": "6f4a0d4853e7043359dac6d36b5ad39922ecf4474d750b24ca96c1babd3d2a33"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/models/Embedded_PFC_PostNucleation_Intact_Gel.mph",
+      "bytes": 1432498,
+      "sha256": "0055ee13a180468305246109ad6bc042541b4cd974a9edc49eda9d76da7cac1b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf",
+      "bytes": 374027,
+      "sha256": "615d4a070b92f201bb3fb8134b67065b40325b96519d17618989b20adff978c9"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/PUBLICATION.md",
+      "bytes": 1750,
+      "sha256": "86848880a7b0407f9ddb277528adbb4b7dd9b395f3cf417a8e5c4c97a6ee862b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/PUBLICATION_AUDIT.json",
+      "bytes": 506,
+      "sha256": "99cf7c841e5c633c36100a067109323a6d351ab6fd020a09e0d7642d23015291"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/README.md",
+      "bytes": 4042,
+      "sha256": "e5d151b5e618e37cfee21c99394ecfde753eea63f9065e0256411e99adce518c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/REPORT.md",
+      "bytes": 17054,
+      "sha256": "d2f8b9513d74b68778c3b238ecc19f0f7bc08ace59fb62d5a81652fde5d530d4"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/requirements.txt",
+      "bytes": 123,
+      "sha256": "51b7dab51a67ccdc75c4b7a82be684e4459a8f7355a44e759c05ea634b742d59"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/Run-Native.ps1",
+      "bytes": 1294,
+      "sha256": "5e5b4338c6cd8ab9648a52d7bd87f7f2c0ff29537325291589d225d1975853b9"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/audit_parameters.py",
+      "bytes": 7352,
+      "sha256": "fbf0ae7724172842e68b7851210e29980bc9d8f0fcaaef3422b69788acb72cb1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/build_comparison.py",
+      "bytes": 24357,
+      "sha256": "fd40c85b3bd6eec2a6560baedba40d02c0d0664c75ee9998e8da1e15b9540774"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/build_reader.py",
+      "bytes": 11773,
+      "sha256": "6ece3964ef57d643be905d95eb0943aedad9c50f76407bb22415b9bf3f5c7e22"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/EmbeddedPfc.java",
+      "bytes": 12056,
+      "sha256": "20a2b20ba00d8a2c03c1c9d967e4f1f0e4d823a023c7218b8795ce22dff5317f"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/NativeCases.java",
+      "bytes": 15158,
+      "sha256": "84d345aa610e8ace1af1006415bcf1dded375ae6338cf64667f426efd65d9b37"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/NativePfcEOS.java",
+      "bytes": 18788,
+      "sha256": "bab00b793f7bc3e5e5a849438b9a528c5cfbc7ccb7683e40fa7df96202cea110"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/pfc_model.py",
+      "bytes": 14497,
+      "sha256": "e1da304b10c5afd692a21b016b5a8dbdb2aa85386f09299a26ae8c4008adbbda"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/prepare_native.py",
+      "bytes": 3100,
+      "sha256": "990e0af4328bbe1d50967c0e3b1e3e6a43f18137433f6a39f4d0810b710c0bba"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/prerender_math.cjs",
+      "bytes": 629,
+      "sha256": "84961e52392532a98becc70bfca2ef3e669fd37e93f1fd9dec0fd5e9052929ff"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/test_reader_logic.cjs",
+      "bytes": 3113,
+      "sha256": "6d883b0e4d5f9fce155ab7ddf3b6576939310fc9c92c2ee83d6b57b2305b3135"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/verify_delivery.py",
+      "bytes": 4497,
+      "sha256": "c6b14f7ea021cd3e42b38563c0a7329015d94bf1ed83f44a787e01c8b505655c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/verify_pdf.py",
+      "bytes": 2407,
+      "sha256": "bd050f1f9a2661f8b983445995728a0aa139637bd1449cb4a97585c1493188ec"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/verify_results.py",
+      "bytes": 5645,
+      "sha256": "a91a5b8c67c063cf2a858e6068383d85ebb4fcee43f3d5bc920c5d0440beb477"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/scripts/VerifyEmbedded.java",
+      "bytes": 2523,
+      "sha256": "2fbeaa2c334acfc34701da89021bc975b944e9f1ac7ccf33ed8ddfb78db990a4"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/assets/conditional_velocity_envelope.png",
+      "bytes": 153126,
+      "sha256": "6d9b3f724c4dd5c569e58b7055ad66badcb5047be2d94ebfedc90f4d7b7b4cf9"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/assets/energy_and_transmission.png",
+      "bytes": 89257,
+      "sha256": "eeaee9f0c74ee50e653d94e24f76460c0dd39ca651969b37a2f8807a4c9a1088"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/assets/first_event_histories.png",
+      "bytes": 139288,
+      "sha256": "2e109fb5521d20a5e8be85580a697dcfbb1845dc03968d49404ccf26efcfe3bb"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/assets/gel_confinement.png",
+      "bytes": 121654,
+      "sha256": "ae3edab3fb41b694eaee77de6a25e8c2bf768ef009cc4f8cc6a14870c19a834a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/data/native_case_register.json",
+      "bytes": 42908,
+      "sha256": "e194946f47ddcb041068330af0e000ddca96313252e9cc1ea2126057ccda31d5"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/MODEL_SPEC.md",
+      "bytes": 43081,
+      "sha256": "e5378fa3d135510ce420907e14c94e31d0c2066cc3185971aeecb7b4bd8851db"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/models/Model_A_Finite_Energy_Pressure_Jet.mph",
+      "bytes": 21573738,
+      "sha256": "5ee6d23b98545311177b841895c886e9ac7752b9a031547bdd0651dfa330cb8a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph",
+      "bytes": 5210174,
+      "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_control/verification/NUMERICAL_AUDIT.json",
+      "bytes": 2589,
+      "sha256": "fdc7c839c785fe63f24278836fbb2b0ad6f5ae651abcfd7f6d09bbfc740be6dd"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_ideal_gas_results.md",
+      "bytes": 4652,
+      "sha256": "740a5ac64620de4d278ca5d70820a3c4d327f4266bdb6c0539b718e06d458c4a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/accepted_ideal_gas_summary.json",
+      "bytes": 48812,
+      "sha256": "9313eca6a6401ff939b3008e55ace3cffaae3dcd53fd65b02913e8ead6b0889c"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/n-Perfluorohexane_CoolProp8_HEOS.json",
+      "bytes": 69547,
+      "sha256": "2d14b644405a2267764497db60ec3ae79baec823d3132a63cbbea9bde5fd1fa0"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/n-Perfluoropentane_CoolProp8_HEOS.json",
+      "bytes": 71665,
+      "sha256": "aa3d8d038875a8b512587f43655cf4073e94cb898750613758669cd74c68c456"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/prior_interface_evidence.md",
+      "bytes": 9323,
+      "sha256": "82892bc2e759909a940747698582613b35aeca999f16a158f7b8da10e116f498"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/sources/prior_interface_provenance.json",
+      "bytes": 18392,
+      "sha256": "5b5d1599e6d628f80c4c8226acc68f5167f3c2c561d603c8ed7be06f45305d56"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/SOURCES.md",
+      "bytes": 5704,
+      "sha256": "29d18a776ffd1155df66e0a6dea413c0b53c32bb93e8970e4e932d25ee7de7cb"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/ACCEPTED_CONTROL_PRESERVATION.json",
+      "bytes": 658,
+      "sha256": "b4c07e93cb86cd4ed2d28a550483d2151c7a11966c0481f5c52a31317dbb8af5"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/DELIVERY_AUDIT.json",
+      "bytes": 6117,
+      "sha256": "1f03349a5a6fb15b521096edd68d0499655eefedd01e2377e8ec5651b938b88e"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/DOCUMENT_BUILD.json",
+      "bytes": 596,
+      "sha256": "109604b13d7e1ec65c7ed3ba0f9ddad6955568f195defad82eca09dc92724117"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/equilibrium_fresh_reload.csv",
+      "bytes": 941,
+      "sha256": "c3cd5752288b4c9058667b0ba56ec678e71dbe5a08013777ba93df9ea957a1a1"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/INDEPENDENT_REVIEW.md",
+      "bytes": 3086,
+      "sha256": "eb62b824e508668e1b5a75e1ae5454eecf34ff7ea6a3076882a9a8ae971de904"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/NATIVE_RELOAD_AUDIT.json",
+      "bytes": 400,
+      "sha256": "583817919eaadf77659e247039b1c81ca2f0f03d96514b4bbcc919f667d767b5"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/NUMERICAL_AUDIT.json",
+      "bytes": 36483,
+      "sha256": "42ac422c723ffec0eb984ebd1c2890c2f35bbeaeec41cc25700dc050394377cd"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/PARAMETER_AUDIT.json",
+      "bytes": 626,
+      "sha256": "70ea8f2a09fc2b24dd323bb029e950f653638c33c73c4c28c6c08a648c36d334"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/PDF_AUDIT.json",
+      "bytes": 2863,
+      "sha256": "43050ac8d0e4c2761f01297743af760b48c2705e0efedcc87f6cec1edcb713ca"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/READER_LOGIC_AUDIT.json",
+      "bytes": 316,
+      "sha256": "08f4f5b9948eb7301c435d300b3e1a8543450f976dc037a644c53bd68f612ced"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/RELOCATION_AUDIT.json",
+      "bytes": 1223,
+      "sha256": "d4a0071b9b3fde9e451b45dba7ae5b9a5631457dc6e39489465f22cbeecfff7b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/SAVED_MODEL_HASHES.json",
+      "bytes": 359,
+      "sha256": "702e824ebe55e1b86f185b769162c83cee4bc6f9e4e02f24b9fe8f93fe51fe6a"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/SOURCE_MANIFEST.json",
+      "bytes": 12108,
+      "sha256": "586727ad134948cb0d46310d02473b2afb156b77a18b947bdc486cf9acab31be"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/transient_fresh_reload.csv",
+      "bytes": 459763,
+      "sha256": "3a0e4b0aa5ba40a07b3f31a6a97d7cf83b14f9c10d24b1277ee99846b1224a11"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/verification/transient_native_half_step.csv",
+      "bytes": 920583,
+      "sha256": "a8e19a4439fc7dcec226377fca8fcdbb9e9515b794224cbfdf2b17934cf12e9b"
+    },
+    {
+      "path": "modeling/embedded-pfc-feasibility/Verify-Native.ps1",
+      "bytes": 1178,
+      "sha256": "b84e7db1ba5631e461e3672bc0558fdb7ddec0cc739c14cf532044bdfd41f57b"
     },
     {
       "path": "modeling/minimal-cavitation/.gitignore",
@@ -2559,23 +3644,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 6669,
-      "sha256": "1114ad9ba731ffe2f47132454ce06562b917c6ee05183573dff4339736ed937d"
+      "bytes": 8752,
+      "sha256": "48e77b2757b223c527647619aa68bf9b2c383540a2e3f50a83cbfa8753a3a7a5"
     },
     {
       "path": "reference/defense.html",
-      "bytes": 19657,
-      "sha256": "4deafb125c1cc0dba6928366f22b11e636a511faf65d001e2585ac644f2c0428"
+      "bytes": 21146,
+      "sha256": "2d58ce5f2cc280a3085d2053a839a545febf3ee7539e57d932b7e1257d24b053"
     },
     {
       "path": "reference/notation.html",
-      "bytes": 24570,
-      "sha256": "77c7f7668dd6b53d3c8336de37b84faa3f560a7dc2d2e837ab949fae9d7b4b7b"
+      "bytes": 26059,
+      "sha256": "6ba0b6f71380eeb5cc9d8a090d289d7b25f0965c511f65fd70f9e9594e063a0f"
     },
     {
       "path": "reference/sources.html",
-      "bytes": 25870,
-      "sha256": "45d72ae8743ac20921f490fe738722ebbcb08b140f39953258e11c58fe1a06c0"
+      "bytes": 27359,
+      "sha256": "389f418458ef14a6a557a7d5eaa0a49ec307023afe5e04d06f428cff81f6da19"
     },
     {
       "path": "RESOURCES.md",
@@ -2613,14 +3698,19 @@
       "sha256": "fcedfc2648e01d161a6d5ccdfa3e60912a77ba1f115b8814d0d94d7c92add5d5"
     },
     {
+      "path": "scripts/integrate_embedded_pfc.py",
+      "bytes": 14754,
+      "sha256": "e21ddc2865552a75735dcff2c6f325639575558bdeaf92875a794778f8a233c8"
+    },
+    {
       "path": "scripts/integrate_modeling.py",
       "bytes": 11572,
       "sha256": "7f48b17e18c524d8565fd6e277b9233eb6e1e53d1b54a910446b55ba0c4b874c"
     },
     {
       "path": "scripts/package_site.py",
-      "bytes": 5931,
-      "sha256": "854731dab0bbca17d263980f3b8daf0873ecec8b2ed07e6e59f614e89147a101"
+      "bytes": 6287,
+      "sha256": "9d15ff6a6caacd7074b4d1561d50770a4918761075a4dc1fb3b645d9215953c9"
     },
     {
       "path": "scripts/prepare_symbol_rows.py",
@@ -2658,19 +3748,24 @@
       "sha256": "81133f3fb5db05934d86d04f3901165c0e4dd436e0c14c70f929c98703fbb7a6"
     },
     {
+      "path": "scripts/verify_embedded_publication.py",
+      "bytes": 6543,
+      "sha256": "a3e388bf2f4090588b2e65333ab22d0c722bde6ccf7c542c63bfa1f3a958601e"
+    },
+    {
       "path": "scripts/verify_language_labels.py",
       "bytes": 2741,
       "sha256": "c21ea08254a2888b09f07c827f713a333ed4cc926f81ce747572d253bfd0dcec"
     },
     {
       "path": "scripts/verify_modeling_integration.py",
-      "bytes": 2451,
-      "sha256": "8c9a3b1b7310edcd3be0f8cc5a9dacf011ad8f521963a5aee73d49acadb8dca1"
+      "bytes": 2627,
+      "sha256": "b1c3ee0816890c48e3cf3b2a17f37043a6fb2f1de1e2e7bbc61d4a4e5e6f8a66"
     },
     {
       "path": "scripts/verify_publication.py",
-      "bytes": 4694,
-      "sha256": "0c2427b5543f266aaaaffbedd110ec98b40d467ee1b3f637a925c3d3391ef3dc"
+      "bytes": 5972,
+      "sha256": "587383d07a309c4ef0b1336fef4ef53812202e32f7df0bd6cea9710dedbbcc05"
     },
     {
       "path": "sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md",
@@ -2779,8 +3874,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 947500,
-      "sha256": "ea76a35aeb1ef16d8fd878baf49aeea403e02a0f7e35a8939e913c453c9997bb"
+      "bytes": 950742,
+      "sha256": "c5a5d2d1da175ed62523ac75a3c39e62912a9e445f58ce13e716dbd6f6a0c230"
     },
     {
       "path": "verification/cross-review-01-02.json",
@@ -2826,6 +3921,16 @@
       "path": "verification/diagram-review.json",
       "bytes": 1047,
       "sha256": "a2ac12a463e1d859ce44f3283fab154e8dd669db00b1760f2a8c1b75064dd2db"
+    },
+    {
+      "path": "verification/embedded-pfc-browser-audit.json",
+      "bytes": 1732,
+      "sha256": "1595630bfdd9c876cd41a7fa0171daa60360457f8fe0a898e8477cc77332e604"
+    },
+    {
+      "path": "verification/embedded-pfc-publication-audit.json",
+      "bytes": 506,
+      "sha256": "99cf7c841e5c633c36100a067109323a6d351ab6fd020a09e0d7642d23015291"
     },
     {
       "path": "verification/equation-heading-audit.json",
@@ -2885,7 +3990,7 @@
     {
       "path": "verification/modeling-integration-audit.json",
       "bytes": 763,
-      "sha256": "d082e56ff5a4fa1081a0d8793764533e3fb3401bee466cc3266366c916dc9d6c"
+      "sha256": "46658e0c93b6a6a1f1c0154b6d8e47c42b574ea03c8e1ad1a33e21475d4704ca"
     },
     {
       "path": "verification/release-audit.json",

@@ -22,6 +22,10 @@ verification/tmp-symbol-preview/
 *.mph
 !modeling/minimal-cavitation/models/*.mph
 !modeling/minimal-cavitation/Minimal_Cavitation_Models_20261010.zip
+!modeling/embedded-pfc-feasibility/models/*.mph
+!modeling/embedded-pfc-feasibility/sources/accepted_control/models/*.mph
+!modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf
+!modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip
 *.mphbin
 *.h5
 *.vtk
