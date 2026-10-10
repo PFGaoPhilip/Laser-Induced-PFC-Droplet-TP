@@ -45,7 +45,7 @@ def integrate():
         for pane in s.select('.locale-pane'):
             locale = pane['data-locale']
             nav = pane.select_one('header nav')
-            if nav:
+            if nav and not nav.select_one('a[href^="../../index.html"]'):
                 a = s.new_tag('a', href='../../index.html?lang='+locale)
                 a.string = 'Theory course' if locale == 'en' else '理论课程'
                 nav.insert(0, a)
@@ -53,7 +53,7 @@ def integrate():
         for a in s.select('a[href="models/"], a[href="resources/gui/"]'): a['href']='Minimal_Cavitation_Models_20261010.zip'
         for pane in s.select('.locale-pane'):
             nav=pane.select_one('header nav')
-            if nav:
+            if nav and not nav.select_one('a[href="Minimal_Cavitation_Models_20261010.zip"]'):
                 a=s.new_tag('a',href='Minimal_Cavitation_Models_20261010.zip')
                 a.string='Download modeling folder' if pane['data-locale']=='en' else '下载完整建模文件夹'
                 nav.append(a)
