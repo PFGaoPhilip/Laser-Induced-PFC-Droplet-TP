@@ -1,0 +1,399 @@
+{
+  "accepted_source_date": "2026-10-11",
+  "revision_date": "2026-10-14",
+  "scope": "English/Chinese editorial revision and canonical frontend unification. Accepted equations, numerical payload, original PDF and LaTeX preserved.",
+  "revised_files": [
+    {
+      "file": "REPORT.md",
+      "accepted_source_sha256": "d2f8b9513d74b68778c3b238ecc19f0f7bc08ace59fb62d5a81652fde5d530d4",
+      "public_sha256": "ce082baf634937a61ea25662e30adefe3f1a9b5ca326322a1076db437b58a6b0",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "DERIVATION.md",
+      "accepted_source_sha256": "73c7ef032aaaeed09df3c04ec39771b81880733fe89441184dc5a16c9a18532b",
+      "public_sha256": "f3438968380e85b23d1e9e1723301219019152fa0fe72244e475588ff577bc62",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "IMPLEMENTATION_HANDOFF.md",
+      "accepted_source_sha256": "05485fea610a2718e1481c520f868a9b9b04e9df68a4e48e22918dd44e26c2f3",
+      "public_sha256": "3fbe86371e1a6c62354cc02ccb13e7fb3513bc9e60bd4a233c1e0a5ce6fcce05",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "SOURCES.md",
+      "accepted_source_sha256": "d628cc61871a204834c679d2247ebf84f6a742719f344c3b2fee3a7fb335db8b",
+      "public_sha256": "753848e39fcb0e9a5865363c24c2a6df33b004a361cdbeb60b5548272ef69363",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "README.md",
+      "accepted_source_sha256": "4df56f33e6f505c63aa222ad28aa9fd4233bc74f2d6979fc4797194ca6759e47",
+      "public_sha256": "0baa53e3923525e4e981eb2f1f411d51b018aee56d989efa8e3cf9c5fde76d4f",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "PUBLICATION.md",
+      "accepted_source_sha256": null,
+      "public_sha256": "33778eaf5497fed1bf17d6f505108144903abfcfdbcb792c9af1bd3e10c1fba6",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "index.html",
+      "accepted_source_sha256": "f35af020279613c2596b32dd788b9ad30cf875df9961a116b6929a6beca117e1",
+      "public_sha256": "cd47d38e8b963388a0f9f31607c9a9e2078dbf81389a322adeaceb4ec9801b4b",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "scripts/build_reader.py",
+      "accepted_source_sha256": "6e237bac7cd3999359a75efbdf023f959f93060de26d20e22498a2ac569d38f1",
+      "public_sha256": "76c4099e52f303a838d4aeda5cd2329473417b5fde0c9c2b113597efeeddd5e7",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "scripts/reader_text.py",
+      "accepted_source_sha256": null,
+      "public_sha256": "08f5ec72fe9324056c748d559cfea7f78eb633143abfd36ed702b7536438e981",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "scripts/reader_figures.py",
+      "accepted_source_sha256": null,
+      "public_sha256": "9decd7be28a09eae5d53b1e2151f4be97b9202583f55e7aa2f8326c5cf275161",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "scripts/audit_reader_revision.py",
+      "accepted_source_sha256": null,
+      "public_sha256": "2e510bdc9732e18058695ed5c4dc08b582ebc813ab332ff51f717bb892dfa051",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "assets/reader.js",
+      "accepted_source_sha256": "74abbeaa80c85da2c9dd25f0dcd85d21511b9f4b24ded40ae9e0c57cc901284d",
+      "public_sha256": "2c99cc159ff058e4dd1ddad4131b306ea135c48cd73899482b045cb397d71803",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "assets/reader.css",
+      "accepted_source_sha256": "17d4923b3791f6301f8ed6ed77df690ec6a2d9cf594b078ff4cff7866ca5d11f",
+      "public_sha256": "d4bda338aa39e1c0c77b55b5c8d6d69efa65fd0d7a24d46ce951a5e93a4f3f45",
+      "unchanged": false,
+      "change": "Edited bilingual reader/source; accepted equations and numerical inputs preserved."
+    },
+    {
+      "file": "REPORT.zh.md",
+      "accepted_source_sha256": null,
+      "public_sha256": "4d5013283859c4ab544d69300883ebb3f8e61118d9c0b585dde5973cb2c174e6",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "DERIVATION.zh.md",
+      "accepted_source_sha256": null,
+      "public_sha256": "6d892fd5f0ddc4958286169c76762d11f51d32fd54eb44b05c4b0f2e01b0cd0a",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "IMPLEMENTATION_HANDOFF.zh.md",
+      "accepted_source_sha256": null,
+      "public_sha256": "3ba1181070200f768847ee976c56abc37ac0d14faaa79861e4ef901ab4b53393",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "SOURCES.zh.md",
+      "accepted_source_sha256": null,
+      "public_sha256": "5bd6e92ce1f6c556dadd9007dfa311d955b7e75d5abb0fa834986d1cc061fcd4",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "assets/size_species_comparison.zh.svg",
+      "accepted_source_sha256": null,
+      "public_sha256": "243f077240884cf2ac8eda05bd865230b72456ede5bae198c0cc7225e12386a2",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "assets/radial_viscosity_controls.zh.svg",
+      "accepted_source_sha256": null,
+      "public_sha256": "6f47b0868caea5926d765977c38c7d6359796b924cf2e529c8ae9fc358885155",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "assets/radial_stability.zh.svg",
+      "accepted_source_sha256": null,
+      "public_sha256": "13ee6525f27d0e40a64091e10bce33db8ad6cc1afe9c4f5aaf4fc6b2bcf11764",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "assets/fracture_budget.zh.svg",
+      "accepted_source_sha256": null,
+      "public_sha256": "d6c1b810eb5a162c0db747b1fea30dc8ca925c7c204842bdf3ed87eb6ccfa72f",
+      "unchanged": false,
+      "change": "New translated source, label copy, or reader build/audit support."
+    },
+    {
+      "file": "verification/BILINGUAL_DOCUMENT_BUILD_20261014.json",
+      "accepted_source_sha256": null,
+      "public_sha256": "1d5c8705e74d3accb6dac018080691bed37b4640b975b182659e9a360507697d",
+      "unchanged": false,
+      "change": "New bilingual build record; original accepted DOCUMENT_BUILD.json preserved."
+    },
+    {
+      "file": "scripts/test_reader_logic.cjs",
+      "accepted_source_sha256": "6d883b0e4d5f9fce155ab7ddf3b6576939310fc9c92c2ee83d6b57b2305b3135",
+      "public_sha256": "114a2c0ceb9fd28ea0d465ed585a55621a92ed28a744cebd6a255d35b1ea2991",
+      "unchanged": false,
+      "change": "Browser API stubs updated for language/theme/query behavior. Original 38 numerical/tab scenarios retained; 14 interface scenarios added."
+    },
+    {
+      "file": "verification/READER_LOGIC_REVISION_20261014.json",
+      "accepted_source_sha256": null,
+      "public_sha256": "789ff48d406b01e6f5f0b93964df5283d8d19698c650442ebb417dacae8f4e8e",
+      "unchanged": false,
+      "change": "New 52-case reader event audit. Accepted READER_LOGIC_AUDIT.json preserved."
+    },
+    {
+      "file": "verification/TERMINOLOGY_REVISION_20261014.json",
+      "accepted_source_sha256": null,
+      "public_sha256": "211640e27e95b2c97733ba11eb4c33ca8aa2a62439feadafa12088f5317c6709",
+      "unchanged": false,
+      "change": "Narrow Chinese terminology alignment; original scientific payload unchanged."
+    },
+    {
+      "file": "assets/course.css",
+      "accepted_source_sha256": null,
+      "public_sha256": "b4378032c56718486aaa79895dd8c17bd5b4a30e7a74b11a4fb6d2df4cd0ff3a",
+      "unchanged": false,
+      "change": "Portable canonical frontend copy or frontend verification evidence.",
+      "source_project_file": "assets/course.css",
+      "source_project_sha256": "b4378032c56718486aaa79895dd8c17bd5b4a30e7a74b11a4fb6d2df4cd0ff3a"
+    },
+    {
+      "file": "assets/course-language.css",
+      "accepted_source_sha256": null,
+      "public_sha256": "a7e2d32950f58c35ed61c03bcc45b278ca1283f4f626b7c2b9097e02b628d8c8",
+      "unchanged": false,
+      "change": "Portable canonical frontend copy or frontend verification evidence.",
+      "source_project_file": "assets/course-language.css",
+      "source_project_sha256": "a7e2d32950f58c35ed61c03bcc45b278ca1283f4f626b7c2b9097e02b628d8c8"
+    },
+    {
+      "file": "assets/bilingual-terms.css",
+      "accepted_source_sha256": null,
+      "public_sha256": "6e97c3072ac2cceeed2dc709c9c25d44bf1396516013e18343e1943e341a6b83",
+      "unchanged": false,
+      "change": "Portable canonical frontend copy or frontend verification evidence.",
+      "source_project_file": "assets/bilingual-terms.css",
+      "source_project_sha256": "6e97c3072ac2cceeed2dc709c9c25d44bf1396516013e18343e1943e341a6b83"
+    },
+    {
+      "file": "assets/course-navigation.json",
+      "accepted_source_sha256": null,
+      "public_sha256": "c9ef9a977a9726518589ba4fad6a8058611a98a56060c67d8cbc713d622db92f",
+      "unchanged": false,
+      "change": "Portable canonical frontend copy or frontend verification evidence."
+    },
+    {
+      "file": "verification/FRONTEND_REVISION_20261014.json",
+      "accepted_source_sha256": null,
+      "public_sha256": "bac1bea97e030c440046e6d0c857a0da1bce6ee14dd23b0794901aba7522c025",
+      "unchanged": false,
+      "change": "Portable canonical frontend copy or frontend verification evidence."
+    }
+  ],
+  "equation_preservation": {
+    "count": 32,
+    "identifiers": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25",
+      "E26",
+      "E27",
+      "E28",
+      "E29",
+      "E30",
+      "E31",
+      "E32"
+    ],
+    "hashes": [
+      "e1a352b37110120faa7d8fea1ff14351d657f27a9f3f9a30a079aa2701977d2a",
+      "878bd55ab0c2596c8318cc6e4caa0fb70ff01451a288e264d5df3b2623b64b78",
+      "2c3a1355f3899bf7ab741befd50c53ea95e80639c0e786d2e344bdcf10a2a14f",
+      "33c2a7836d353e4ed5240cb30d21975d8c8f8cbc666cca3137dcbe89dbb3a77f",
+      "4c0e4d20aaba39139081f72b2e3eb30afed42a6f273a328cfd7b929ded1729dc",
+      "e699b37347f4a540aa3a9fc5f236929e99aa40a49649e49d590f74f074880691",
+      "6f87c13e88a44abf0008dec493f33d81eeea755a418c7032ed2f572251ac31f4",
+      "878adee807db5888a951bfa2a72119651dc9f70018c29f40612114eebd930ceb",
+      "080271e20a1e4740b3b401b9d6fa904c19b4af4b56600af396097250c5d67af1",
+      "f086e54ae6a1bc5b78bdcdeb1f9c7ebb5d224c84215930f0bd50b04c1f81d5a7",
+      "7dcdc21dbdb4205eabdd84addb4f10a36527e34144b62d6b1e36adf99f4773df",
+      "6a8c5515e1c6bb99d7614d832db75c28e09cf0c20300a6f44aa123cbd0b885ac",
+      "291255a4f011e73bf61489f18cf5d7ed38e320feef0bd35d007ead62b1326839",
+      "88279734a304bb1e647c4847dcdd9169e6cd31e9ecdec224d0ff6ab8c339909f",
+      "9a8a69e71fa16e90e9e0d98ad1cb73d0485975833158849f66c6c071bb7638e3",
+      "5cac9c09742fe3fe5f36b7b5dcd060439ec6b93fc219c765220a2347dcc307ea",
+      "7fda8a2a70096597adcaf45b116ae2b10eaa6f4d917f93e51f0b54c0b1a3e4c3",
+      "37156e2c7f2fb29baa5eb9522fd35a0b9e2217f345d531ce9f02754e289ea46d",
+      "5ecf1ea5ac8b22a6e7e59de3e4d476d9337db420278d4ad5fdf13386b7f5cd0b",
+      "4657f0037a76a4a3c9252bf346649961f6daab4a636f8770660924cc242624f3",
+      "aa3d6f8bf0c8586449f168433676c537111f3837a246ea5327d09615785f1210",
+      "f1c1ceb3a5c03e76c6fc89b484ad95cba3ea4a9f99c46057516c94b082948858",
+      "353aeda037356f83399f9cc3a3fd8d7444208c72e06a85670ee9572fe6dd2006",
+      "6d5211fa3d71fef8a659160df33c8f5737a96af0d4d35ece496fa235ffb56ee2",
+      "e43cfa3aef0cf8fa809a2ba04d96d24d3243f988b26d5812042544eb2e60705e",
+      "41848b128821c493ce4150a4fdf8358b1dab9fcd0f15b283dcac46c5cffce4b3",
+      "393855562f5494c5a241568924f621f73d9cb63a17205b6e79149cf0584eaca1",
+      "deffc6057984290a8aa847f381ef599f395eefb557151cfcf4f23890fd492f83",
+      "4f3fbb3ecde12c771781f430835ca5de61e49d3c03ab8fbdf38405015a734769",
+      "21c03ff163503354d978dcb480fc903c279ee66bae1dee6968f463cc7026a68c",
+      "6f13fa7afc584c3c6cbf9d5562982cc7900f3357f42204c8cde304e38805bf51",
+      "b9314e481d3e168b830a532fabed583ccaca68ee369caee81499c66973c47dfb"
+    ],
+    "match_prior_archive": true
+  },
+  "protected_payload": {
+    "files": 90,
+    "unchanged": true
+  },
+  "bilingual_coverage": {
+    "REPORT.md": {
+      "blocks": 46,
+      "translated": 46
+    },
+    "DERIVATION.md": {
+      "blocks": 123,
+      "translated": 91
+    },
+    "IMPLEMENTATION_HANDOFF.md": {
+      "blocks": 24,
+      "translated": 24
+    },
+    "SOURCES.md": {
+      "blocks": 4,
+      "translated": 4
+    }
+  },
+  "controls": {
+    "language_button": "#language-toggle",
+    "language_values": [
+      "bilingual",
+      "en",
+      "zh"
+    ],
+    "language_cycle": [
+      "bilingual",
+      "en",
+      "zh",
+      "bilingual"
+    ],
+    "theme_button": "#theme-toggle",
+    "theme_values": [
+      "light",
+      "dark"
+    ],
+    "query_theme_aliases": [
+      "day",
+      "night",
+      "light",
+      "dark"
+    ],
+    "shared_theme_key": "laser-pfc-tp-theme",
+    "shared_theme_values": [
+      "light",
+      "dark"
+    ],
+    "tabs": [
+      "comparison",
+      "derivation",
+      "handoff",
+      "sources"
+    ],
+    "toolbar": ".theme-tools",
+    "toolbar_buttons": 2,
+    "toolbar_position": "fixed lower-right",
+    "theme_aria_pressed": "light"
+  },
+  "model_or_numeric_inputs_changed": false,
+  "simulations_rerun": false,
+  "accepted_pdf_regenerated": false,
+  "local_declaration_repairs": [
+    "E15 core radius",
+    "E19/E20 grouped units",
+    "E28 absolute-value and square-root convention",
+    "E30/E31/E32 full local declarations",
+    "circle constant recalled locally"
+  ],
+  "browser_audit": "verification/READER_REVISION_AUDIT.json",
+  "visual_review": "PASS. Canonical desktop/mobile typography, lower-right two-button toolbar and reader/plot screenshots inspected.",
+  "review_corrections": [
+    "Required equilibrium state energy replaces inferred laser energy.",
+    "Both seed speed and accumulated loss start at zero.",
+    "Absorption cross section is divided by geometric area.",
+    "Self-archive download removed from standalone reader."
+  ],
+  "accepted_build_record_preserved": true,
+  "event_logic_audit": {
+    "file": "verification/READER_LOGIC_REVISION_20261014.json",
+    "status": "PASS",
+    "original_scenarios": 38,
+    "interface_scenarios": 14,
+    "total_scenarios": 52,
+    "scientific_expectations_preserved": true,
+    "control_revision": "Two buttons; canonical light/dark dataset; all 52 scenarios pass.",
+    "canonical_aria_pressed_verified": true
+  },
+  "terminology_revision": {
+    "audit": "verification/TERMINOLOGY_REVISION_20261014.json",
+    "PFC_vapor": "蒸气",
+    "surviving_liquid_shell": "剩余液体壳层",
+    "static_tests": "PASS",
+    "event_cases_passed": 52
+  },
+  "frontend_revision": "verification/FRONTEND_REVISION_20261014.json",
+  "portable_browser_helper": {
+    "file": "scripts/audit_reader_revision.py",
+    "sha256": "2e510bdc9732e18058695ed5c4dc08b582ebc813ab332ff51f717bb892dfa051",
+    "change": "Discover Chrome through CHROME_BINARY, PATH or PROGRAMFILES; scientific payload unchanged."
+  }
+}

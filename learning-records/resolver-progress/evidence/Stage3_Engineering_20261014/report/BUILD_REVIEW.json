@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "tool": "pdfLaTeX",
+  "passes": 3,
+  "errors": 0,
+  "undefined_references": 0,
+  "overfull_boxes": 0,
+  "ledger_sha256": "36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f",
+  "pdf_sha256": "127cf1ac428f4e66762a5261dc00f164882486729ba7d32bdc94043b6b8726cc",
+  "fixed_SOURCE_DATE_EPOCH": 1791936000,
+  "authoring_marker": "NOT_AVAILABLE: supplied container_tools marker absent in Windows runtime; attempted once and recorded",
+  "solver_run": false
+}

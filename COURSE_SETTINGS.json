@@ -5,7 +5,7 @@
   "url": "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/",
   "source_sha256": "cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0",
   "comparison_sha256": "e5462de2b8ca7e717a4e9f0a26cc5c2a9fc0e1d8c054f48d087cd2a27fc0d87f",
-  "prepared": "2026-10-11",
+  "prepared": "2026-10-14",
   "languages": [
     "en",
     "zh-CN"
@@ -57,8 +57,8 @@
       "label": "Chapter 2",
       "label_zh": "第 2 章",
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "title": "From laser absorption to a finite PFC bubble",
-      "title_zh": "从激光吸收到有限 PFC 气泡",
+      "title": "Optical heating and finite PFC inventory",
+      "title_zh": "光学加热与有限 PFC 物质量",
       "defense_ids": [
         "C2-Q1",
         "C2-Q2",
@@ -70,12 +70,12 @@
           "第2章：PFC与普通液滴对比"
         ],
         [
-          "Laser energy deposition, nucleation, heat and mass transfer, PFC material properties, and finite-inventory phase thermodynamics.",
-          "激光能量沉积、成核、传热传质、PFC物性与有限存量相变热力学。"
+          "Laser heating, nucleation, heat and mass transfer, material properties, and finite phase inventory.",
+          "激光加热、成核、传热传质、物性与有限相存量。"
         ],
         [
-          "Under matched conditions, what does PFC actually change—and what does it not guarantee?",
-          "在匹配条件下，PFC究竟改变了什么，又不能保证什么？"
+          "What changes when PFC replaces an ordinary droplet?",
+          "用 PFC 替代普通液滴会改变什么？"
         ]
       ]
     },
@@ -94,16 +94,16 @@
       ],
       "unit_map_row": [
         [
-          "Chapter 3: Arrays and preliminary calculations",
-          "第3章：阵列与初步计算"
+          "Chapter 3: Arrays and calculations",
+          "第3章：阵列与计算"
         ],
         [
-          "Jet formation, transport and impact; bubble-array coupling, energy allocation, and finite pressure/velocity limits.",
-          "射流形成、输运与冲击；气泡阵列耦合、能量分配及有限压力／速度极限。"
+          "Array coupling, energy allocation, finite jets, impact, and the three-stage resolver.",
+          "阵列耦合、能量分配、有限射流、冲击与三阶段求解器。"
         ],
         [
-          "How do individual sites combine into a finite, physically consistent mechanical output?",
-          "单个位点如何共同形成有限且符合物理约束的力学输出？"
+          "How do array sites produce a finite mechanical output?",
+          "阵列位点如何产生有限力学输出？"
         ]
       ]
     },
@@ -156,16 +156,21 @@
           "附录A：水凝胶与液体平台"
         ],
         [
-          "Hydrogel confinement, constitutive resistance, response times, and architecture comparison.",
-          "水凝胶约束、本构阻力、响应时间与结构方案比较。"
+          "Gel confinement, response times, finite-energy models, and embedded-PFC comparisons.",
+          "凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。"
         ],
         [
-          "Does the gel improve the complete transfer process, or merely change the mechanism?",
-          "凝胶是在改善完整转印过程，还是仅仅改变了致动机制？"
+          "How does gel confinement change transfer?",
+          "凝胶约束如何改变转印？"
         ]
       ]
     }
   ],
+  "resource_ownership": {
+    "resolver": "C03",
+    "minimal_cavitation": "A",
+    "embedded_pfc": "A"
+  },
   "unit_order": [
     "C01",
     "C02",
@@ -209,16 +214,36 @@
     "repeatable intact-transfer envelope"
   ],
   "modeling": {
+    "parent_unit": "A",
     "file": "modeling/minimal-cavitation/index.html",
     "guide": "modeling/minimal-cavitation/STEP_BY_STEP.html",
     "source": "20261010-minimal-cavitation",
     "scope": "Initialized ideal-gas controls; expansion-driven discharge through an existing liquid outlet."
   },
   "embedded_pfc": {
+    "parent_unit": "A",
     "file": "modeling/embedded-pfc-feasibility/index.html",
     "pdf": "modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf",
     "archive": "modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip",
     "source": "20261011-embedded-pfc-feasibility",
     "scope": "Finite real-fluid PFC equilibrium and supplied post-nucleation seed in intact spherical gel; target laser/fracture/jet/impact not validated."
+  },
+  "resolver_progress": {
+    "file": "learning-records/resolver-progress/index.html",
+    "record": "learning-records/resolver-progress/PROGRESS.json",
+    "parent_unit": "C03",
+    "publication_status": "OWNER_AUTHORIZED_GITHUB_RELEASE",
+    "published": true,
+    "stages": {
+      "Stage1": "CLOSED_LOOSENED",
+      "Stage2": "STAGE2_LOOSENED_CLOSED",
+      "Stage3": "STAGE3_ENGINEERING_DOCUMENTATION_COMPLETE"
+    },
+    "strict_acceptance": false
+  },
+  "publication_authorization": {
+    "record": "verification/GITHUB_PUBLICATION_AUTHORIZATION_20261014.json",
+    "owner_instruction": "Update to GitHub.",
+    "date": "2026-10-14"
   }
 }

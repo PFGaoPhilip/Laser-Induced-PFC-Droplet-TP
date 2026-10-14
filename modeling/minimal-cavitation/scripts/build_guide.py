@@ -201,7 +201,7 @@ def main():
     if any(ord(c)<32 and c not in '\n\r\t' for c in source): raise AssertionError('Nonprinting source character')
     (ROOT/'STEP_BY_STEP.md').write_text(source,encoding='utf-8')
     schematic_files();make_html(source)
-    manifest={'status':'PASS','steps':53,'languages':['en','zh'],'default_language':'zh','parameters_per_model':32,'variables_per_model':33,'state_counts':[5,7],
+    manifest={'status':'PASS','steps':53,'languages':['en','zh'],'default_language':'en','parameters_per_model':32,'variables_per_model':33,'state_counts':[5,7],
               'changed_A_to_B_variables':[r['name'] for r in patch],'native_models':audit['native_files'],
               'resources':sorted(p.name for p in GUI.iterdir() if p.is_file()),
               'scope':'Exact table extraction and guide generation; native import/conversion check is separately recorded.'}

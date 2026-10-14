@@ -1,16 +1,16 @@
 # Step-by-step COMSOL 6.4: two minimal single-pulse models
 
-Keep this guide beside COMSOL and complete one numbered card at a time. The route is **a blank 0D model → solved Model A → hydrogel Model B → sealed control → verified output tables**. Every card identifies the node, the entry and a check before continuing. The checkpoints are your own practice files.
+Open COMSOL beside this guide. Complete one step at a time. The route is **a blank 0D model → solved Model A → hydrogel Model B → sealed control → verified output tables**. Each step gives a node, input and check. Save checkpoints in your practice folder.
 
-Model A answers the conditional pressure/jet-speed question for a finite post-activation source and a connected liquid outlet. Model B adds the spherical gel's confinement and calculates how much emitted energy and impulse survives in the same outlet. A single nominal 10 ns laser pulse is represented by initial data after activation and pressure equilibration. Time zero in these studies is that initialized state. There is no subsequent source forcing.
+Model A calculates pressure and outlet speed for a finite source. Model B adds spherical gel confinement, emitted energy and impulse. The nominal 10 ns pulse supplies post-activation initial data. Time zero follows pressure equilibration. There is no later forcing.
 
-**Declared controls.** The source is a closed adiabatic ideal gas, with uniform pressure, constant exponent greater than one and finite available work. Carrier density and effective outlet inertance are constant. The outlet is already open; its constant meniscus entry pressure is an approximation. Model B uses an intact, undrained incompressible neo-Hookean gel with Kelvin–Voigt loss, approximated as a spherical medium around the chamber. Initial mechanical velocities are zero; the chamber's reference wall is stress-free; the far-field pressure and outlet exit pressure are ambient. Outward liquid speed and expanding wall speed are positive. Later rebound, phase exchange, gel rupture and target impact are outside this first-ejection calculation. Actual PFC and gel properties require calibration.
+**Declared controls.** The source is a closed adiabatic ideal gas, with uniform pressure, constant exponent greater than one and finite available work. Carrier density and effective outlet inertance are constant. The outlet is already open. Its constant meniscus entry pressure is an approximation. Model B uses an intact, undrained incompressible neo-Hookean gel with Kelvin–Voigt loss, approximated as a spherical medium around the chamber. Initial mechanical velocities are zero. The chamber's reference wall is stress-free. The far-field pressure and outlet exit pressure are ambient. Outward liquid speed and expanding wall speed are positive. Later rebound, phase exchange, gel rupture and target impact are outside this first-ejection calculation. Actual PFC and gel properties require calibration.
 
-The complete foundations, derivations, symbol glossary and validity audit are in [MODEL_SPEC.md](MODEL_SPEC.md) and [the full offline report](index.html#theory). This guide translates those equations into concrete COMSOL entries; its expression tables use COMSOL syntax.
+Find the derivation, symbols and validity checks in [MODEL_SPEC.md](MODEL_SPEC.md) and [the full offline report](index.html#theory). The tables below use COMSOL syntax for those equations.
 
 ![Model mechanisms and defined outputs](assets/guide-mechanisms.svg)
 
-*A labeled mechanism schematic. Model A keeps the wall fixed. Model B allows the source volume to grow through both outlet discharge and gel-wall expansion. The diagram represents scalar balances, not spatial field maps.*
+*Mechanism schematic. Model A fixes the wall. Model B permits outlet discharge and wall expansion. Both increase source volume.*
 
 ## A — Learn the interface and create the practice model
 
@@ -20,17 +20,17 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Do:** Identify **Model Builder** at the left, **Settings** for the selected node in the middle, and **Graphics** for plots at the right. Progress, Messages, Log and Results tables normally appear below. A node path such as `Global Definitions → Parameters 1` means expand the first node and select its child. A right-click creates a child of the node under the pointer. After editing a table cell, press Tab or click outside the cell to commit the entry.
 
-**Check:** You can select a node and see its Settings change before entering any equation.
+**Check:** Select a node. Confirm that Settings changes.
 
 ![COMSOL working areas](assets/guide-interface.svg)
 
-*This is an interface schematic, not a screenshot. Positions depend on your window layout; the node and field names are the reference.*
+*Interface schematic. Layout varies with your window. Use the node and field names.*
 
 ### Step 02 — Open a new model
 
 **Where:** `File → New → Model Wizard`.
 
-**Do:** Open COMSOL Multiphysics 6.4. Choose Model Wizard on the New page. Save any existing work in its own file before switching models. Work inside a new `practice/` folder beside this guide; create that folder in the Save As dialog when prompted later.
+**Do:** Open COMSOL Multiphysics 6.4. Choose Model Wizard on the New page. Save existing work before switching models. Work inside a new `practice/` folder beside this guide. Create that folder in the Save As dialog when prompted later.
 
 **Check:** The wizard displays **Select Space Dimension**.
 
@@ -40,17 +40,17 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Enter:** Select **0D**.
 
-**Check:** The wizard advances to Select Physics. The unknowns will be time-dependent scalars. Chamber and outlet radii are parameters in those equations; no geometric sphere or cylinder is needed for this model.
+**Check:** The wizard advances to Select Physics. The unknowns are time-dependent scalars. Chamber and outlet radii enter as parameters. This model needs no spatial geometry.
 
 ### Step 04 — Add the scalar equation interface
 
 **Where:** `Select Physics → Mathematics → ODE and DAE Interfaces → Global ODEs and DAEs`.
 
-**Do:** Select Global ODEs and DAEs and click **Add**. If the list is long, search for that complete interface name. Keep one copy of this interface.
+**Do:** Select Global ODEs and DAEs and click **Add**. Search the full interface name if needed. Add one interface.
 
-**Check:** Added physics interfaces contains Global ODEs and DAEs. This interface supplies the Global Equations table used below.
+**Check:** Added physics interfaces contains Global ODEs and DAEs. It supplies the Global Equations table.
 
-**If stuck:** Clear the search filter and confirm 0D was selected. The delivered native files record only the base COMSOL license; their gel law is entered as scalar expressions.
+**If stuck:** Clear the search filter and confirm 0D was selected. The native files use the base COMSOL license. Gel mechanics enters as scalar expressions.
 
 ### Step 05 — Add the time study
 
@@ -64,9 +64,9 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Where:** Click `Component 1`.
 
-**Enter:** Set **Name** to `c` and **Label** to `c: Model A practice`. Keep the SI unit system. Name supplies the namespace used in expressions such as `c.U`; Label changes the visible caption.
+**Enter:** Set **Name** to `c` and **Label** to `c: Model A practice`. Keep the SI unit system. Name sets the namespace, as in `c.U`. Label sets the visible caption.
 
-**Check:** The component's Name is `c`. A label containing the letter c does not by itself change the namespace.
+**Check:** The component's Name is `c`. Label does not change the namespace.
 
 **If stuck:** If Name remains `comp1`, correct it now. All result and stop expressions below use the `c.` prefix. [Component Name documentation](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_modeling.19.007.html).
 
@@ -74,7 +74,7 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Where:** `File → Save As`.
 
-**Enter:** Save as `practice/A_01_setup.mph`. Subsequently use Ctrl+S; save a new checkpoint at the milestones identified below.
+**Enter:** Save as `practice/A_01_setup.mph`. Use Ctrl+S afterward. Save new checkpoints at the milestones below.
 
 **Check:** The title bar shows your practice filename. The accepted native files in `models/` remain available for comparison.
 
@@ -84,9 +84,9 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Where:** `Global Definitions → Parameters 1`.
 
-**Do:** Enter all rows below, or click **Load from File** under the table and choose [A_parameters_import.txt](resources/gui/A_parameters_import.txt). That import has two tab-separated columns and no header. Import it once into the parameter table. Its descriptions are supplied by the table below. If you type manually, use the exact case of each name and the square brackets around units.
+**Do:** Enter all rows below, or click **Load from File** under the table and choose [A_parameters_import.txt](resources/gui/A_parameters_import.txt). Import its two tab-separated columns once. The file has no header. Descriptions appear below. If you type manually, use the exact case of each name and the square brackets around units.
 
-**Check:** There are 32 parameter names and no duplicate names. Dependencies can be temporarily unresolved while the table is incomplete; finish all rows before assessing the Value column. `p0` is absolute pressure and `E0` is an expression derived from it.
+**Check:** There are 32 parameter names and no duplicate names. Finish all rows before checking unresolved dependencies in Value. `p0` is absolute pressure and `E0` is an expression derived from it.
 
 | Name | Expression — enter exactly | Meaning |
 | --- | --- | --- |
@@ -142,17 +142,17 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 | Available work `E0` | 2 nJ |
 | Column-speed bound `Uceiling` | 31.915382 m/s |
 
-**Why:** `L` defines liquid inertia. `Lbudget` defines how much connected liquid can leave; these have different meanings. The 2 nJ value is mechanical availability after activation. It is not incident laser energy. `tauLaser=10[ns]` records the short-pulse assumption; it is not a time-dependent forcing function and changing it alone will not change this solution.
+**Why:** `L` defines liquid inertia. `Lbudget` defines how much connected liquid can leave. These have different meanings. The 2 nJ value is mechanical availability after activation. It is not incident laser energy. `tauLaser=10[ns]` records the short-pulse assumption. It is not a time-dependent forcing function and changing it alone will not change this solution.
 
-**If stuck:** A negative available work or invalid equilibrium volume usually indicates a pressure/unit error. Use the supplied absolute `p0`; do not replace it with the 279.632 kPa gauge value.
+**If stuck:** A negative available work or invalid equilibrium volume usually indicates a pressure/unit error. Use the supplied absolute `p0`. Do not replace it with the 279.632 kPa gauge value.
 
 ### Step 10 — Create Variables and enter the source geometry
 
 **Where:** Right-click `Component c → Definitions → Variables`.
 
-**Do:** Set the Label to `Source, outlet and accounting`. Enter the first seven rows below. For the whole 33-row table, you may instead use **Load from File** and select [A_variables_import.txt](resources/gui/A_variables_import.txt); then inspect the three groups in Steps 10–12. Use local names inside this component table, without adding `c.` to the Name column.
+**Do:** Set the Label to `Source, outlet and accounting`. Enter the first seven rows below. For the whole 33-row table, you may instead use **Load from File** and select [A_variables_import.txt](resources/gui/A_variables_import.txt). Then inspect the three groups in Steps 10–12. Use local names inside this component table, without adding `c.` to the Name column.
 
-**Check:** The chamber radius is fixed through `R=Rc0`; wall speed is exactly `0[m/s]`. The gas volume includes discharged liquid volume. `qq` and `vv` will become defined when you add the equation rows in Step 14.
+**Check:** The chamber radius is fixed through `R=Rc0`. Wall speed is exactly `0[m/s]`. The gas volume includes discharged liquid volume. `qq` and `vv` will become defined when you add the equation rows in Step 14.
 
 | Name | Expression — enter exactly | Unit | Meaning |
 | --- | --- | --- | --- |
@@ -168,9 +168,9 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Where:** The same Variables node.
 
-**Do:** Add the following seven rows if you are entering manually. Model A sets the gel-related terms to dimensioned zero. The loss expression permits later sensitivity controls; the baseline loss inputs are zero.
+**Do:** Add the following seven rows if you are entering manually. Model A sets the gel-related terms to dimensioned zero. The loss expression permits later sensitivity controls. The baseline loss inputs are zero.
 
-**Check:** The column energy `Kjet` uses effective column inertia. It is distinct from the emitted energy `Eout` entered next. Meniscus work is the work of the declared constant entry-pressure control; its evolving free surface is not solved.
+**Check:** The column energy `Kjet` uses effective column inertia. The emitted energy is `Eout`, entered next. Meniscus work is the work of the declared constant entry-pressure control. Its evolving free surface is not solved.
 
 | Name | Expression — enter exactly | Unit | Meaning |
 | --- | --- | --- | --- |
@@ -186,7 +186,7 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Where:** The same Variables node.
 
-**Do:** Add the remaining 19 rows. Keep the outgoing kinetic-head term `-rho*U^2/2` in `acc`, and keep `Eout` in `energyResidual`. These terms account for energy that actually leaves the outlet. Removing them changes the model.
+**Do:** Add the remaining 19 rows. Keep the outgoing kinetic-head term `-rho*U^2/2` in `acc`, and keep `Eout` in `energyResidual`. These terms account for energy leaving the outlet. Retain both.
 
 **Check:** The completed node has 33 names. `Eout`, `Iout` and `Mout` mean actual emitted energy, axial impulse and liquid mass. `Ijet` means instantaneous effective column momentum. The communication ratio is a validity diagnostic calculated from scalar rates.
 
@@ -220,13 +220,13 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Check:** Both quantities are dimensionless. The factor `tau` in each equation converts a rate into a dimensionless residual.
 
-**State meanings before the equation entries:** `qq=x/Lbudget`; `vv=U/Us`; `dd=Edis/E0`; `ee=Eout/E0`; `ii=Iout/Iscale`. These are the five solved scalars. The Variables node supplies algebraic expressions, not additional independent unknowns.
+**State meanings before the equation entries:** `qq=x/Lbudget`; `vv=U/Us`; `dd=Edis/E0`; `ee=Eout/E0`; `ii=Iout/Iscale`. These are the five solved scalars. The Variables node supplies algebraic expressions. The equation rows supply independent states.
 
 ### Step 14 — Enter all five Global Equations rows
 
 **Where:** The Global Equations table from Step 13.
 
-**Do:** Enter every row below, including both initial-value columns. The table's equation field `f(u,ut,utt,t)` is a residual that COMSOL sets to zero. For a long row, select it and edit its fields below the table. [A_equations.tsv](resources/gui/A_equations.tsv) is a headed copy/paste reference; the parameter/variable Load from File buttons do not import it into this equation table.
+**Do:** Enter every row below, including both initial-value columns. COMSOL sets the residual `f(u,ut,utt,t)` to zero. Select a long row to edit its fields below. [A_equations.tsv](resources/gui/A_equations.tsv) is a headed copy/paste reference. The parameter/variable Load from File buttons do not import it into this equation table.
 
 **Check:** The only names are `qq`, `vv`, `dd`, `ee`, `ii`. Their initial values are all zero. The row for `ii` integrates momentum flux, rather than assigning `mJet*U` to emitted impulse.
 
@@ -242,7 +242,7 @@ The complete foundations, derivations, symbol glossary and validity audit are in
 
 **Where:** The five equation rows and the Variables node.
 
-**Do:** Inspect `qqt`, `vvt`, `ddt`, `eet`, `iit`. They are COMSOL's first-time-derivative names: `vvt` is the derivative of `vv`. Do not type `vv*t`, which is multiplication. Initial value `ut_0=0` is retained from the accepted setup; the first-order equations calculate the evolving derivatives.
+**Do:** Inspect `qqt`, `vvt`, `ddt`, `eet`, `iit`. They are COMSOL's first-time-derivative names: `vvt` is the derivative of `vv`. Do not type `vv*t`, which is multiplication. Initial value `ut_0=0` is retained from the accepted setup. The first-order equations calculate the evolving derivatives.
 
 **Check:** Zero initial speed does not mean zero initial acceleration. With the baseline pressure, `acc` starts positive. The source, volume and output expressions should now resolve through the five declared states. [Global Equations documentation](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html).
 
@@ -262,7 +262,7 @@ range(0,1[ns],100[us])
 
 **Where:** Right-click `Study 1 → Show Default Solver`.
 
-**Do:** Expand `Solver Configurations → Solution 1` and click **Time-Dependent Solver 1**. If these nodes are already present, expand them directly. Keep the generated Dependent Variables node; it connects the `ODE1` equation group to the solver.
+**Do:** Expand `Solver Configurations → Solution 1` and click **Time-Dependent Solver 1**. If these nodes are already present, expand them directly. Keep the generated Dependent Variables node. It connects the `ODE1` equation group to the solver.
 
 **Check:** Time-Dependent Solver 1 is visible and selected in Settings. You have not added a second study or a second physics interface.
 
@@ -286,7 +286,7 @@ range(0,1[ns],100[us])
 | Time Stepping → Steps taken by solver | Strict |
 | Time Stepping → Algebraic Variable Settings → Consistent initialization | Off |
 
-**Check:** BDF, Strict, `1e-9` and initialization Off are visible. Keep automatically selected initial steps, BDF orders and variable scaling. These are first-order ODEs; turning initialization Off preserves the prescribed zero velocities. Strict stepping reaches the listed times and can take extra internal steps when needed. [Time solver documentation](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html).
+**Check:** BDF, Strict, `1e-9` and initialization Off are visible. Keep automatically selected initial steps, BDF orders and variable scaling. These are first-order ODEs. Turning initialization Off preserves the prescribed zero velocities. Strict stepping reaches the listed times and can take extra internal steps when needed. [Time solver documentation](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html).
 
 ### Step 19 — Add all four stopping rules
 
@@ -303,15 +303,15 @@ range(0,1[ns],100[us])
 | `1.2-c.stretch` | Negative (<0) | Yes | Declared 20% wall-stretch screen (not measured fracture) |
 | `0.1-max(c.Mjet,c.Mwall)` | Negative (<0) | Yes | Declared Mach 0.1 screen |
 
-**Why:** The first row stops after the first outward speed returns through zero. In a sealed case it instead checks wall speed. The other rows enforce liquid inventory, a declared stretch screen and a Mach screen. The initial zero speed is not negative, so the baseline can start. The communication screen is checked after solving in Step 28; it is not an online stop row. [Stop Condition documentation](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html).
+**Why:** The first row stops after the first outward speed returns through zero. In a sealed case it instead checks wall speed. The other rows enforce liquid inventory, a declared stretch screen and a Mach screen. The initial zero speed is not negative, so the baseline can start. The communication screen is checked after solving in Step 28. It is not an online stop row. [Stop Condition documentation](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html).
 
 ### Step 20 — Make the before-solve check
 
 **Where:** Parameters, Variables, Global Equations, Time-Dependent study and its solver.
 
-**Check each item:** 32 parameters; 33 variables; 5 equation rows; both equation quantities Dimensionless; all initial states zero; study and solver both use the 1 ns list; BDF Strict; consistent initialization Off; four active Negative stop rules. Initial Values of Variables Solved For must come from the physics initial values, not a previous nonzero solution.
+**Check each item:** 32 parameters; 33 variables; 5 equation rows. Both equation quantities Dimensionless. All initial states zero. Study and solver both use the 1 ns list; BDF Strict. Consistent initialization Off. Four active Negative stop rules. Initial Values of Variables Solved For must come from the physics initial values, not a previous nonzero solution.
 
-**Do:** Save a checkpoint `practice/A_02_ready_to_solve.mph`. If an unknown-variable message names `comp1` or `c`, correct the namespace; if it names `qq` or `vv`, inspect the equation Name column.
+**Do:** Save a checkpoint `practice/A_02_ready_to_solve.mph`. If an unknown-variable message names `comp1` or `c`, correct the namespace. If it names `qq` or `vv`, inspect the equation Name column.
 
 ### Step 21 — Compute the first ejection
 
@@ -319,15 +319,15 @@ range(0,1[ns],100[us])
 
 **Do:** Click Compute. Watch Progress and Log. Let the solve finish before opening a result table. A warning stating that a stop condition was fulfilled is expected when its description matches one of the declared rules.
 
-**Check:** The stored episode ends around **33.885 µs**, before the requested 100 µs. The baseline emits outward, reaches a speed maximum and returns toward zero. Read the first causal error if a solve fails; do not continue to plot an old solution.
+**Check:** The stored episode ends around **33.885 µs**, before the requested 100 µs. The baseline emits outward, reaches a speed maximum and returns toward zero. Read the first causal error if a solve fails. Do not continue to plot an old solution.
 
 ## C — Plot, evaluate and answer Model A's question
 
 ### Step 22 — Plot outlet velocity
 
-**Where:** Right-click `Results → 1D Plot Group`; right-click the new group → **Global**.
+**Where:** Right-click `Results → 1D Plot Group`. Right-click the new group → **Global**.
 
-**Enter:** Label the group `A outlet speed`. Choose the dataset for Study 1 / Solution 1. In Global's y-Axis Data table enter `c.U`, Unit `m/s`, Description `Outward outlet speed`. In x-Axis Data use **Time** as the axis source; select `us` as the time unit if available. Otherwise keep seconds and read the axis accordingly. Click **Plot**.
+**Enter:** Label the group `A outlet speed`. Choose the dataset for Study 1 / Solution 1. In Global's y-Axis Data table enter `c.U`, Unit `m/s`, Description `Outward outlet speed`. In x-Axis Data use **Time** as the axis source. Select `us` as the time unit if available. Otherwise keep seconds and read the axis accordingly. Click **Plot**.
 
 **Check:** Speed begins at zero, peaks near **15.3761 m/s**, then decays toward zero. Do not use Surface or Volume plots for these scalar data.
 
@@ -335,7 +335,7 @@ range(0,1[ns],100[us])
 
 **Where:** Add another `1D Plot Group → Global`.
 
-**Enter:** Label it `A pressure definitions`. Use the same dataset and time axis; enter:
+**Enter:** Label it `A pressure definitions`. Use the same dataset and time axis. Enter:
 
 | Expression | Unit | Description |
 |---|---|---|
@@ -343,7 +343,7 @@ range(0,1[ns],100[us])
 | `c.qJet` | `kPa` | Outlet dynamic-pressure scale |
 | `pInf` | `kPa` | Ambient absolute pressure reference |
 
-**Check:** Initial source overpressure is about **279.632 kPa**; maximum outlet dynamic pressure is about **118.212 kPa**. Absolute chamber pressure would be `c.pb`, including ambient. Dynamic pressure is an outlet kinetic-energy scale and does not calculate a target impact peak.
+**Check:** Initial source overpressure is about **279.632 kPa**. Maximum outlet dynamic pressure is about **118.212 kPa**. Absolute chamber pressure would be `c.pb`, including ambient. Dynamic pressure is an outlet kinetic-energy scale and does not calculate a target impact peak.
 
 ### Step 24 — Plot energy accounting
 
@@ -435,7 +435,7 @@ range(0,1[ns],100[us])
 | `c.U` | `m/s` | 0.0001702102 |
 | `c.energyResidual` | `1` | -1.0350e-10 |
 
-**Check:** Last means the last stored time in this stopped solution, about 33.885 µs. It does not mean the nominal 100 µs final time. Stop Condition checks discrete solver steps; the exact zero-crossing time differs slightly from the final stored row. Use this same endpoint convention for emitted-output comparisons.
+**Check:** Last means the last stored time in this stopped solution, about 33.885 µs. It does not mean the nominal 100 µs final time. Stop Condition checks discrete solver steps. The exact zero-crossing time differs slightly from the final stored row. Use this same endpoint convention for emitted-output comparisons.
 
 ### Step 28 — Accept and save the baseline
 
@@ -449,7 +449,7 @@ range(0,1[ns],100[us])
 
 **Where:** `Global Definitions → Parameters 1`.
 
-**Do:** For the sampled source-work levels, use the absolute pressures below. They were obtained by inverting the finite adiabatic available-work relation at the same `Rg0`, `kap` and `pInf`. Edit `p0`; leave the `E0` expression in place. Keep all other inputs fixed for the source-work comparison.
+**Do:** For the sampled source-work levels, use the absolute pressures below. They were obtained by inverting the finite adiabatic available-work relation at the same `Rg0`, `kap` and `pInf`. Edit `p0`. Leave the `E0` expression in place. Keep all other inputs fixed for the source-work comparison.
 
 | Available work | Absolute p0 — enter exactly |
 | --- | --- |
@@ -463,7 +463,7 @@ range(0,1[ns],100[us])
 
 **Where:** Parameters, Study 1 Compute, and `A temporal maxima`.
 
-**Do:** Perform each row of the following trial table: set `p0` and `a`; commit both cells; verify `E0`; recompute Study 1 from its initial values; Evaluate the maxima and endpoint nodes on the newly computed dataset; record peak speed, both defined pressures, emitted energy/impulse, and the validity diagnostics. Save each trial under its own practice filename if you want to preserve that solution. Repeat this entire sequence for every row.
+**Do:** Perform each row of the following trial table: set `p0` and `a`. Commit both cells. Verify `E0`. Recompute Study 1 from its initial values; Evaluate the maxima and endpoint nodes on the newly computed dataset. Record peak speed, both defined pressures, emitted energy/impulse, and the validity diagnostics. Save each trial under its own practice filename if you want to preserve that solution. Repeat this entire sequence for every row.
 
 | Case | E0 (nJ) | p0 | a | Expected peak U (m/s) |
 | --- | --- | --- | --- | --- |
@@ -477,7 +477,7 @@ range(0,1[ns],100[us])
 | A_E5nJ_a5um | 5 | `612212.3087264621[Pa]` | `5[um]` | 22.350558 |
 | A_E5nJ_a10um | 5 | `612212.3087264621[Pa]` | `10[um]` | 16.601975 |
 
-**Check:** The largest sampled speed is about **25.27982 m/s** at 5 nJ and a 3 µm outlet. Its source overpressure is about 512.212 kPa and dynamic-pressure scale about 319.535 kPa. The maximum is conditional on the declared family; raising available work or changing architecture changes the family.
+**Check:** The largest sampled speed is about **25.27982 m/s** at 5 nJ and a 3 µm outlet. Its source overpressure is about 512.212 kPa and dynamic-pressure scale about 319.535 kPa. The maximum is conditional on the declared family. Raising available work or changing architecture changes the family.
 
 ### Step 31 — Interpret the pressure and speed limits
 
@@ -493,7 +493,7 @@ range(0,1[ns],100[us])
 
 **Where:** `File → Open`, then `File → Save As`.
 
-**Do:** Open your saved `A_baseline_my_rebuild.mph` from Step 28. Save a separate copy as `practice/B_01_from_A.mph`. Change the component Label to `c: Model B practice`; keep its Name `c`.
+**Do:** Open your saved `A_baseline_my_rebuild.mph` from Step 28. Save a separate copy as `practice/B_01_from_A.mph`. Change the component Label to `c: Model B practice`. Keep its Name `c`.
 
 **Check:** You are editing the Model B practice copy. `p0=379631.6312499547[Pa]`, `a=5[um]` or its equivalent in metres, `G=20[kPa]`, `etaG=0.010[Pa*s]`, `rhoG=1000[kg/m^3]`, `Kloss=0`, `Rloss=0[Pa*s/m]`, `outletOpen=1`. These are the matched baseline inputs. [B_parameters_import.txt](resources/gui/B_parameters_import.txt) contains the full baseline table if you are building B in a separate blank model.
 
@@ -521,7 +521,7 @@ range(0,1[ns],100[us])
 
 **Where:** The existing `Global Equations 1` table.
 
-**Do:** Replace the five-row table with the complete seven-row table below; retain Dimensionless for both quantities. `rr=R/Rc0` is wall-radius ratio and `ww=Uw/Us` is normalized wall speed. All other state meanings remain those in Step 13. Set `rr`'s initial value to **1**. Initial values of the other six states, and every `ut_0` entry, are zero. [B_equations.tsv](resources/gui/B_equations.tsv) is the headed copy/paste reference.
+**Do:** Replace the five-row table with the complete seven-row table below. Retain Dimensionless for both quantities. `rr=R/Rc0` is wall-radius ratio and `ww=Uw/Us` is normalized wall speed. All other state meanings remain those in Step 13. Set `rr`'s initial value to **1**. Initial values of the other six states, and every `ut_0` entry, are zero. [B_equations.tsv](resources/gui/B_equations.tsv) is the headed copy/paste reference.
 
 **Check:** Names are `qq`, `vv`, `rr`, `ww`, `dd`, `ee`, `ii`. There are seven rows. A zero initial `rr` would give a zero-radius singularity and is incorrect.
 
@@ -539,7 +539,7 @@ range(0,1[ns],100[us])
 
 **Where:** `Study 1 → Time Dependent`, then `Solution 1 → Time-Dependent Solver 1`.
 
-**Do:** Keep the 1 ns output list in both nodes; match all fields from Step 18. Initial states must come from the updated physics table. The existing `ODE1` equation group now contains seven states; do not manually select the old final A solution as the new initial state.
+**Do:** Keep the 1 ns output list in both nodes. Match all fields from Step 18. Initial states must come from the updated physics table. The existing `ODE1` equation group now contains seven states. Do not manually select the old final A solution as the new initial state.
 
 **Check:** The solver has one active Global ODEs and DAEs interface. Consistent initialization remains Off. If you regenerate the default solver after editing the physics, re-enter Step 18 and recreate Step 19's four stopping rules before computing.
 
@@ -573,15 +573,15 @@ range(0,1[ns],100[us])
 
 **Enter:** Plot `c.Fconf` with Unit `uN`. Its definition is the axial resultant of elastic wall traction on one hemisphere. Optionally add `pi*c.R^2*c.pRes`, also in `uN`, labeled `Elastic plus viscous hemisphere resistance`.
 
-**Check:** Maximum elastic force is about **33.77 µN**. This is a defined hemisphere resultant. Spherically symmetric wall traction has zero net vector force on the complete sphere; this number is not a measured target force or a resolved planar-layer force.
+**Check:** Maximum elastic force is about **33.77 µN**. This is a defined hemisphere resultant. Spherically symmetric wall traction has zero net vector force on the complete sphere. This number is not a measured target force or a resolved planar-layer force.
 
 ### Step 40 — Evaluate Model B maxima
 
-**Where:** Duplicate or create a `Global Evaluation` node; label `B temporal maxima`.
+**Where:** Duplicate or create a `Global Evaluation` node. Label `B temporal maxima`.
 
 **Enter:** Current B dataset; Time selection All; Transformation Maximum. Evaluate `c.U` in `m/s`, `c.qJet` and `c.pEl` in `kPa`, `c.Fconf` in `uN`, `c.stretch`, `c.communication`, both Mach diagnostics and `abs(c.energyResidual)` in `1`.
 
-**Check:** Each maximum belongs to its own time history. Do not calculate confinement force by multiplying the maximum pressure by the initial area if the wall radius changed; evaluate the full `Fconf` expression. The validity checks remain part of accepting the output.
+**Check:** Each maximum belongs to its own time history. Do not calculate confinement force by multiplying the maximum pressure by the initial area if the wall radius changed. Evaluate the full `Fconf` expression. The validity checks remain part of accepting the output.
 
 ### Step 41 — Evaluate Model B emitted output
 
@@ -626,7 +626,7 @@ range(0,1[ns],100[us])
 
 ### Step 44 — Run the gel and loss sensitivity controls
 
-**Where:** Reopen `B_open_baseline_my_rebuild.mph`; edit Parameters and Compute for each trial.
+**Where:** Reopen `B_open_baseline_my_rebuild.mph`. Edit Parameters and Compute for each trial.
 
 **Do:** Use the seven-case table below. For each row, restore the other baseline values, commit the changed cells, recompute from the same initial state and Evaluate the same maxima/endpoint/screen nodes. Save outputs under distinct practice names. You may use the accepted [native case register](data/native_case_register.json) to compare the complete outputs.
 
@@ -640,7 +640,7 @@ range(0,1[ns],100[us])
 | B_open_eta0 | `20[kPa]` | `0[Pa*s]` | `0.0` | `1` | 1.619889 |
 | B_open_eta0p1 | `20[kPa]` | `0.1[Pa*s]` | `0.0` | `1` | 1.677217 |
 
-**Check:** Every trial remains a first-event result. A different modulus or viscosity can change both the peak and discharge duration; inspect energy allocation and stopping reason before describing its effect. Do not assume that one stiffness trend proves a universal transmission law.
+**Check:** Every trial remains a first-event result. A different modulus or viscosity can change both the peak and discharge duration. Inspect energy allocation and stopping reason before describing its effect. Do not assume that one stiffness trend proves a universal transmission law.
 
 ## E — Verify, export and preserve the results
 
@@ -650,7 +650,7 @@ range(0,1[ns],100[us])
 
 **Do:** On a baseline copy, set both lists to `range(0,2[ns],100[us])`; Compute and record peak U, last Eout and last Iout. Change both lists back to `range(0,1[ns],100[us])`; Compute and record them again. Keep tolerances, inputs and stopping rules fixed. Compare relative changes using the 1 ns value as denominator.
 
-**Check:** Accepted peak-speed changes are about `1.4e-8` relative for A and `9.5e-7` for open B. A baseline rebuild should show peak change below `1e-4`. Endpoint quantities can vary with the discrete stop time; inspect those changes as well. Retain the final 1 ns baseline. Changing only a plot's interpolation is not a solver-resolution test.
+**Check:** Accepted peak-speed changes are about `1.4e-8` relative for A and `9.5e-7` for open B. A baseline rebuild should show peak change below `1e-4`. Endpoint quantities can vary with the discrete stop time. Inspect those changes as well. Retain the final 1 ns baseline. Changing only a plot's interpolation is not a solver-resolution test.
 
 ### Step 46 — Apply the full acceptance checklist
 
@@ -671,7 +671,7 @@ range(0,1[ns],100[us])
 | Finite output | Last Eout, Iout and Mout | nonnegative; sealed outputs zero |
 | Implementation agreement | Compare declared inputs and output tables | agrees with accepted case and numerical audit |
 
-**Check:** The supplied 17-case [NUMERICAL_AUDIT.json](verification/NUMERICAL_AUDIT.json) has largest normalized first-law residual about `1.26e-7` and largest normalized native/reference waveform discrepancy about `1.15e-4`. These are implementation checks; material/phase calibration is separate.
+**Check:** The supplied 17-case [NUMERICAL_AUDIT.json](verification/NUMERICAL_AUDIT.json) has largest normalized first-law residual about `1.26e-7` and largest normalized native/reference waveform discrepancy about `1.15e-4`. These are implementation checks. Material/phase calibration is separate.
 
 ### Step 47 — Export complete histories and reduced tables
 
@@ -687,15 +687,15 @@ range(0,1[ns],100[us])
 
 **Do:** Retain A baseline, B open baseline and B sealed control as separately named practice MPH files. Store each solved case with its matching input values and tables. Return to the open baseline after a sensitivity trial if you want that to be the main B practice file.
 
-**Check:** Reopen each practice file and verify the title, input values and stored plotted data. Both saved baselines use 1 ns output. Your own practice files are in `practice/`; the delivery ZIP excludes that folder.
+**Check:** Reopen each practice file and verify the title, input values and stored plotted data. Both saved baselines use 1 ns output. Your own practice files are in `practice/`. The delivery ZIP excludes that folder.
 
 ### Step 49 — Inspect the delivered native models
 
 **Where:** `File → Open`, selecting either native file in `models/`.
 
-**Do:** Inspect Parameters 1, the component's Variables node, Global Equations 1, Time-Dependent Solver 1, its Stop Condition, and the saved result plots/table. The interface labels in the delivered files describe the retained motion/accounting states; they may differ from the wizard's default caption. Use Global Equations 1 to identify the interface.
+**Do:** Inspect Parameters 1, the component's Variables node, Global Equations 1, Time-Dependent Solver 1, its Stop Condition, and the saved result plots/table. The interface labels in the delivered files describe the retained motion/accounting states. They may differ from the wizard's default caption. Use Global Equations 1 to identify the interface.
 
-**Check:** A has five state rows and B seven. Both have 32 parameters, 33 variables, a single Global Equations interface and stored solutions. The accepted baseline files were reloaded in a fresh COMSOL process and from an extracted package; numerical and portability evidence are linked in the report.
+**Check:** A has five state rows and B seven. Both have 32 parameters, 33 variables, a single Global Equations interface and stored solutions. The accepted baseline files were reloaded in a fresh COMSOL process and from an extracted package. Numerical and portability evidence are linked in the report.
 
 ### Step 50 — Use the reproducible script route when needed
 
@@ -715,7 +715,7 @@ python scripts/build_guide.py
 
 `Run-Rebuild.ps1` constructs the 17-case family and writes its native files and histories. `Run-Verify.ps1` performs fresh-process and 2 ns / 1 ns checks and saves the refined baselines. The Python reference independently integrates the dimensional equations. Rebuild in a working copy because these commands replace its generated models/data. Use `-ComsolBin` on the PowerShell runners if COMSOL is installed elsewhere.
 
-**Check:** Native batch logs must show completed runs and no internal Java error; checking shell exit code alone is insufficient. Solver error details are under `build/`. This route reproduces the same equations as the GUI tables.
+**Check:** Native batch logs must show completed runs and no internal Java error. Checking shell exit code alone is insufficient. Solver error details are under `build/`. This route reproduces the same equations as the GUI tables.
 
 ## F — Fix common errors and report the correct claim
 
@@ -744,13 +744,13 @@ python scripts/build_guide.py
 | “Last” output assumed at 100 µs | Actual stored time | Evaluate t with Last; the stop truncates the requested list |
 | Gel trial exceeds a physical screen | Communication/stretch/Mach | Classify it outside the declared validity regime |
 
-**Check:** Recompute only after correcting the implicated input or node. If input changes, rerun conservation and validity checks; a previously accepted table may no longer apply.
+**Check:** Recompute only after correcting the implicated input or node. If input changes, rerun conservation and validity checks. A previously accepted table may no longer apply.
 
 ### Step 52 — Connect the controls to an experiment
 
 **Where:** Your experiment record and the Parameters table.
 
-**Do:** Supply an evidence-based post-activation gas/phase volume and pressure-volume path or supported available-work estimate; actual connected liquid volume and outlet inertance; carrier properties; gel modulus/viscosity at the relevant rate; and whether the channel already exists. Measure cavity volume, wall motion and emitted speed/mass on the same shot where possible. Use those data to update the controls, then repeat the complete acceptance sequence.
+**Do:** Supply an evidence-based post-activation gas/phase volume and pressure-volume path or supported available-work estimate. Actual connected liquid volume and outlet inertance. Carrier properties. Gel modulus/viscosity at the relevant rate. And whether the channel already exists. Measure cavity volume, wall motion and emitted speed/mass on the same shot where possible. Use those data to update the controls, then repeat the complete acceptance sequence.
 
 **Check:** A 5 nJ available-work input is not automatically a 5 nJ optical pulse. The spherical gel control is not an exact planar hydrogel-layer model. No external jet is predicted through unbroken sealed gel. Keep those architecture and calibration statements with every reported maximum or transmission ratio.
 
@@ -758,16 +758,16 @@ python scripts/build_guide.py
 
 **Where:** Your saved practice files and output tables.
 
-**Check that you can independently reproduce:** the 15.3761 m/s A baseline; the 25.2798 m/s largest sampled family case; the 1.62538 m/s open-gel baseline; its 9.143 kPa elastic resistance and 33.77 µN hemisphere force; matched emitted-energy/impulse ratios; and zero emitted output in the sealed control. Verify the stopping rules and numerical/physical screens, rather than checking peak values alone.
+**Check that you can independently reproduce:** the 15.3761 m/s A baseline. The 25.2798 m/s largest sampled family case. The 1.62538 m/s open-gel baseline. Its 9.143 kPa elastic resistance and 33.77 µN hemisphere force. Matched emitted-energy/impulse ratios. And zero emitted output in the sealed control. Verify the stopping rules and numerical/physical screens, rather than checking peak values alone.
 
-**Completion record:** Note the software version, input case, source-state assumption, actual stored endpoint, peak definitions, emitted-output definitions, maximum conservation residual, communication/Mach/stretch checks and refinement comparison. The [project log](WORK_LOG.md) and [results report](RESULTS.md) provide the accepted record for the supplied controls.
+**Completion record:** Note the software version, input case, source-state assumption, actual stored endpoint, peak definitions, emitted-output definitions, maximum conservation residual, communication/Mach/stretch checks and refinement comparison. The [project log](PUBLICATION.md) and [results report](RESULTS.md) provide the accepted record for the supplied controls.
 
 ## References and companion files
 
-The requested [M1 lesson](https://pfgaophilip.github.io/cavitation-course/comsol/lessons/M1.html) supplied the paced interface format. This guide's parameter, variable and equation tables were extracted from the current two solved native files, not from M1's separate model recipes. Its archived HTML/text are under `sources/reference-lesson/`; native metadata for the guide are under `sources/native-guide-evidence/`.
+The requested [M1 lesson](https://pfgaophilip.github.io/cavitation-course/comsol/lessons/M1.html) supplied the paced interface format. This guide's parameter, variable and equation tables were extracted from the current two solved native files, not from M1's separate model recipes. Its archived HTML/text are under `sources/reference-lesson/`. Native metadata for the guide are under `sources/native-guide-evidence/`.
 
 - [Full derivation and assumptions](MODEL_SPEC.md) · [Editable LaTeX](THEORY_DERIVATION.tex) · [Offline results](index.html).
 - [Model A](models/Model_A_Finite_Energy_Pressure_Jet.mph) · [Model B](models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph).
 - [COMSOL Model Wizard](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_environment.18.43.html), [Global Equations](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html), [Time solver](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.139.html), [Stop Condition](https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html).
 
-Verification scope: tables matched against the saved native equations; parameter/variable import and A-to-B conversion checked with COMSOL's native API; result targets come from the accepted solved controls. The diagrams are schematics. A live Desktop click-through is not claimed.
+Verification scope: tables matched against the saved native equations. Parameter/variable import and A-to-B conversion checked with COMSOL's native API. Result targets come from the accepted solved controls. The diagrams are schematics. A live Desktop click-through is not claimed.

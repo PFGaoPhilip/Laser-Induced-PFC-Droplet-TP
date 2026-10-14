@@ -1,0 +1,1235 @@
+{
+  "schema": "stage3_engineering_results_v2",
+  "verdict": "DOCUMENTATION_COMPLETE_SCIENTIFIC_MAXIMUM_UNRESOLVED",
+  "strict_acceptance": false,
+  "scope": {
+    "species": [
+      "PFP",
+      "PFH"
+    ],
+    "initial_unheated_diameter_um": 6,
+    "gamma_min": 1.25,
+    "gamma_max": null,
+    "alpha_c": [
+      0,
+      1
+    ],
+    "whole_water_mass_pg": [
+      1,
+      3,
+      10,
+      30,
+      100
+    ],
+    "pressure_disk_radius_um": [
+      2,
+      10
+    ],
+    "pressure_window_ns": [
+      2,
+      20
+    ],
+    "coordinates": "axisymmetric (r,z), receiver z=0, w=-u_z; absolute pressure except explicitly gauge observers",
+    "radius_definition": "gamma=h/R_m using free-field maximum radius of the SAME activated-droplet model; R_m/gamma qualification unresolved",
+    "observer_event_definitions_source": {
+      "path": "inputs/full_closure/PROBLEM_STATEMENT.md",
+      "record": "P02-P06 and event amendment002",
+      "sha256": "d3fcba29b203f6a1238461d61d41058cb21385c5140414640df372634871097a"
+    },
+    "model_identity": "candidate030 with inherited018-030 soft-passes",
+    "certificate_targets": {
+      "velocity_gap": 0.05,
+      "pressure_gap": 0.1,
+      "numerical_error_fraction_of_epsilon": 0.3333333333333333,
+      "domain_sensitivity_fraction_of_epsilon": 0.1
+    }
+  },
+  "objective_results": [
+    {
+      "id": "PFP_U_1pg",
+      "units": "m/s",
+      "water_mass_pg": 1,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_1pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_3pg",
+      "units": "m/s",
+      "water_mass_pg": 3,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_3pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_10pg",
+      "units": "m/s",
+      "water_mass_pg": 10,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_10pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_30pg",
+      "units": "m/s",
+      "water_mass_pg": 30,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_30pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_100pg",
+      "units": "m/s",
+      "water_mass_pg": 100,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_100pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_2um_2ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_2um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_2um_20ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_2um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_10um_2ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_10um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_10um_20ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_10um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_1pg",
+      "units": "m/s",
+      "water_mass_pg": 1,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_1pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_3pg",
+      "units": "m/s",
+      "water_mass_pg": 3,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_3pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_10pg",
+      "units": "m/s",
+      "water_mass_pg": 10,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_10pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_30pg",
+      "units": "m/s",
+      "water_mass_pg": 30,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_30pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_100pg",
+      "units": "m/s",
+      "water_mass_pg": 100,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_100pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_2um_2ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_2um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_2um_20ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_2um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_10um_2ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_10um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_10um_20ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_10um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "PFP_ENERGY_CEILING_1pg",
+      "species": "PFP",
+      "mass_pg": 1,
+      "value": 2333.4834077846103,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 2.722572407203039e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFP.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFP_ENERGY_CEILING_3pg",
+      "species": "PFP",
+      "mass_pg": 3,
+      "value": 1347.23727363397,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 2.722572407203039e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFP.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFP_ENERGY_CEILING_10pg",
+      "species": "PFP",
+      "mass_pg": 10,
+      "value": 737.9122450810853,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 2.722572407203039e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFP.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFP_ENERGY_CEILING_30pg",
+      "species": "PFP",
+      "mass_pg": 30,
+      "value": 426.03383333588573,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 2.722572407203039e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFP.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFP_ENERGY_CEILING_100pg",
+      "species": "PFP",
+      "mass_pg": 100,
+      "value": 233.34834077846102,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 2.722572407203039e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFP.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFH_ENERGY_CEILING_1pg",
+      "species": "PFH",
+      "mass_pg": 1,
+      "value": 3040.4350230314553,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 4.622122564638143e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFH.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFH_ENERGY_CEILING_3pg",
+      "species": "PFH",
+      "mass_pg": 3,
+      "value": 1755.3959790007766,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 4.622122564638143e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFH.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFH_ENERGY_CEILING_10pg",
+      "species": "PFH",
+      "mass_pg": 10,
+      "value": 961.4699750525903,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 4.622122564638143e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFH.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFH_ENERGY_CEILING_30pg",
+      "species": "PFH",
+      "mass_pg": 30,
+      "value": 555.1049489143558,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 4.622122564638143e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFH.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    },
+    {
+      "id": "PFH_ENERGY_CEILING_100pg",
+      "species": "PFH",
+      "mass_pg": 100,
+      "value": 304.04350230314554,
+      "units": "m/s",
+      "tier": "R|A",
+      "available_work_J": 4.622122564638143e-09,
+      "formula": "sqrt(2*Phi_a/(mass_pg*1e-15))",
+      "source": {
+        "path": "inputs/full_closure/data/accepted_preparation.json",
+        "record": "fluids.PFH.activated_budget.Phi_J",
+        "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+      },
+      "validity": "Conditional whole-water mass-qualified ceiling only if full-vector water kinetic energy never exceeds the available-work budget and all remaining availability terms are nonnegative. Not established for the loosened trajectory and not an attained objective."
+    }
+  ],
+  "linear_example": {
+    "values": {
+      "availableWork_J": 5e-09,
+      "density_kg_m3": 1000.0,
+      "soundSpeed_m_s": 1500.0,
+      "jetRadius_m": 3e-06,
+      "jetLength_m": 5e-05,
+      "jetMass_kg": 1.4137166941154071e-12,
+      "energyVelocity_m_s": 84.10441740067199,
+      "Mach": 0.056069611600447995,
+      "rigidPressure_Pa": 126156626.10100798,
+      "equalImpedancePressure_Pa": 63078313.05050399,
+      "PFP_10pgEnergyVelocity_m_s": 737.563556583431,
+      "PFH_10pgEnergyVelocity_m_s": 961.2491872558332
+    },
+    "tier": "R",
+    "source": {
+      "path": "inputs/conditional_termtex/verification.json",
+      "record": "numericalChecks",
+      "sha256": "b83ab006b2875ebbf4c75c4f7e7774e4a0b5b988be635a708c593dc91ab9e50e"
+    },
+    "validity": "Prescribed illustrative plug; lossless conversion, normal planar small-compression contact before lateral release. Distinct from solved finite-disk/time-averaged receiver pressure."
+  },
+  "historical": [
+    {
+      "id": "PFP_slow_in_screen",
+      "species": "PFP",
+      "group": "slow_in_screen",
+      "value": 65.27421173639833,
+      "units": "m/s",
+      "tier": "P",
+      "gamma": 1.25,
+      "closure": "frozen",
+      "profile_mass_pg": 330.39770089962883,
+      "mach": 0.04404467728501912,
+      "sampled_axial_energy_J": 3.1809796897101686e-10,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[2].U",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFP_fast_in_screen",
+      "species": "PFP",
+      "group": "fast_in_screen",
+      "value": 360.1701334004048,
+      "units": "m/s",
+      "tier": "P",
+      "gamma": 4.0,
+      "closure": "km_alpha1",
+      "profile_mass_pg": 6.144311334556436,
+      "mach": 0.24302977962240538,
+      "sampled_axial_energy_J": 4.834883581391e-10,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[19].U",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFP_beyond_screen",
+      "species": "PFP",
+      "group": "beyond_screen",
+      "value": 481.5315814884905,
+      "units": "m/s",
+      "tier": "E",
+      "gamma": 4.0,
+      "closure": "isoeq",
+      "profile_mass_pg": 4.730570691988738,
+      "mach": 0.3249200954713161,
+      "sampled_axial_energy_J": 6.777959785605899e-10,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[16].U",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFP_internal_contact_in_screen",
+      "species": "PFP",
+      "group": "internal_contact_in_screen",
+      "value": 292318024.1469137,
+      "units": "Pa",
+      "tier": "E",
+      "gamma": 4.0,
+      "closure": "km_alpha1",
+      "profile_mass_pg": 6.144311334556436,
+      "mach": 0.24302977962240538,
+      "sampled_axial_energy_J": 4.834883581391e-10,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[19].p_h",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFP_receiver_estimate_in_screen",
+      "species": "PFP",
+      "group": "receiver_estimate_in_screen",
+      "value": 21025716.016783834,
+      "units": "Pa",
+      "tier": "E",
+      "gamma": 1.25,
+      "closure": "frozen",
+      "profile_mass_pg": 330.39770089962883,
+      "mach": 0.04404467728501912,
+      "sampled_axial_energy_J": 3.1809796897101686e-10,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[2].p_rec",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFH_slow_in_screen",
+      "species": "PFH",
+      "group": "slow_in_screen",
+      "value": 186.94886705402996,
+      "units": "m/s",
+      "tier": "P",
+      "gamma": 4.0,
+      "closure": "km_alpha0.1",
+      "profile_mass_pg": 14.623683280124053,
+      "mach": 0.12614633404455464,
+      "sampled_axial_energy_J": 1.4458625252730887e-10,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[33].U",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFH_fast_in_screen",
+      "species": "PFH",
+      "group": "fast_in_screen",
+      "value": 377.5100767066484,
+      "units": "m/s",
+      "tier": "P",
+      "gamma": 3.0,
+      "closure": "isoeq",
+      "profile_mass_pg": 11.209700293139194,
+      "mach": 0.25473014622580864,
+      "sampled_axial_energy_J": 1.0852128749180828e-09,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[29].U",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFH_beyond_screen",
+      "species": "PFH",
+      "group": "beyond_screen",
+      "value": 715.4791050096972,
+      "units": "m/s",
+      "tier": "E",
+      "gamma": 4.0,
+      "closure": "isoeq",
+      "profile_mass_pg": 3.4947002625302037,
+      "mach": 0.4827794230834664,
+      "sampled_axial_energy_J": 1.0824587988977879e-09,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[32].U",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFH_internal_contact_in_screen",
+      "species": "PFH",
+      "group": "internal_contact_in_screen",
+      "value": 307470795.61558753,
+      "units": "Pa",
+      "tier": "E",
+      "gamma": 3.0,
+      "closure": "isoeq",
+      "profile_mass_pg": 11.209700293139194,
+      "mach": 0.25473014622580864,
+      "sampled_axial_energy_J": 1.0852128749180828e-09,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[29].p_h",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    },
+    {
+      "id": "PFH_receiver_estimate_in_screen",
+      "species": "PFH",
+      "group": "receiver_estimate_in_screen",
+      "value": 22368558.15501231,
+      "units": "Pa",
+      "tier": "E",
+      "gamma": 1.25,
+      "closure": "isoeq",
+      "profile_mass_pg": 227.48468570089744,
+      "mach": 0.06488630934189095,
+      "sampled_axial_energy_J": 1.007487803588697e-09,
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "record": "[20].p_rec",
+        "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731"
+      },
+      "validity": "Largest stored historical group sample; incompressible/spherical-content reduced model, geometric sampled profile and a 0.3 Mach working screen. Speeds are not current whole-water mass quantiles. E_j is sampled axial kinetic energy, a lower bound on the sampled-region full-vector kinetic energy. Pressure values are mixed-contact/spreading estimates, not solved registered wall observers. No continuous optimum/certificate."
+    }
+  ],
+  "historical_processed_row_count": 35,
+  "historical_count_caveat": "The envelope_rows.json processed table has35 rows; older prose describes40 sampled cases. This document reports stored table rows and does not infer40 valid completed cases.",
+  "diagnostics": [
+    {
+      "id": "candidate030_last_transferred_accepted_snapshot",
+      "tier": "engineering_diagnostic",
+      "time_s": 4.3000000000000027e-10,
+      "steps": 43,
+      "source": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv",
+      "source_sha256": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+      "source_line": 432,
+      "raw_record": "accepted,4.3000000000000027e-10,43,6.5766026012734005e-09,1.833751399525869e-13,1.8054733127753962e-08,5.2455115392796843e-11,1.5623098472214495e-10,0,4.4408920985006262e-16,9.3995881603424758e-33,4.9910062564022277e-13,4.0616622617656263e-15,0,2.6189228832978029e-16,-9.4982409387744469e-17,-6.0282824617136356e-17,9.718387421966966e-19,1.9813941880038832e-16,378736,697690,196,1088,1.6061585933619321e-19,2.46028298563410027283e-22,4.2555993800074513683e-21,0,0,2.61765727810519095641e-20,9.17852260044650909463e-19,-7.24778231138475773776e-25,3.69641555991247104866e-29,155130,174494,255",
+      "validity": "Partial transferred snapshot only; no full-cycle event or completed exit established"
+    }
+  ],
+  "metadata_caveats": [
+    "meta.json is copied legacy candidate028 100 fs execution metadata; its exit_code=0 and completion status are not candidate030 completion evidence. Preserve unchanged.",
+    "pilot_run_meta.txt identifies candidate030 and amendment006 but has no finished timestamp or completed simulation exit receipt.",
+    "Expert reports external pilot still running; local snapshot cannot establish current remote state."
+  ],
+  "exit_waivers": [
+    "Full-cycle pilot to impact/first volume minimum/rebound and 20 ns horizon",
+    "108-case coverage and all 18 objectives",
+    "Same-model free-field R_m and gamma qualification",
+    "PFH route",
+    "Registered whole-water quantile and wall-pressure disk/window observers",
+    "Hold-outs, refinement, and global certificate suite",
+    "Production C4 without inherited soft-passes"
+  ],
+  "waiver_authority": {
+    "path": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+    "record": "B. Stage2 exit-gate waivers",
+    "sha256": "fdf793485a7297b27708c8e89fb7af9dac33dafba77fbc9ea6da6eb0011f2bf8"
+  },
+  "certified_maximum_available": false,
+  "device_maximum_resolved": false,
+  "engineering_envelope_supplied": false,
+  "source_version_policy": "Dated closeout/waiver records and verified receipt002 control Stage3 entry; historic draft/incomplete wording remains provenance, not an entry gate. Original candidate030 metadata remains unchanged.",
+  "historical_failure_timeline": [
+    {
+      "id": "candidate028_pilot_failure",
+      "time_s": 4.400000000000003e-10,
+      "accepted_steps": 44,
+      "exit_code": 136,
+      "tier": "diagnostic",
+      "source": {
+        "path": "inputs/full_closure/verification/STAGE2_PILOT_FAILURE_001.md",
+        "record": "Exact failure",
+        "sha256": "99514c56614024869c7256b238a3b7b57c33d2956e23dcf9955a2972bcc9ce7a"
+      },
+      "validity": "Historical failure, not an objective event or a physical screen."
+    },
+    {
+      "id": "candidate029_heat_abort",
+      "time_s": 3.7e-10,
+      "heat_status": 4,
+      "integrator_status": 11,
+      "tier": "diagnostic",
+      "source": {
+        "path": "inputs/full_closure/verification/STAGE2_PREREG_AMENDMENT_006_CANDIDATE030.json",
+        "record": "parent_failure",
+        "sha256": "322d8825c966c02ba65306796e352a25fc54997c0e4e30e954371eebd5f7f3c8"
+      },
+      "validity": "Recorded prior abort; no completed trajectory inferred."
+    }
+  ],
+  "claim_map": {
+    "accepted_T_route": "linear_example and inputs/conditional_termtex/equations.json E01-E24",
+    "preparation_constants_and_available_work": "scope, ceilings and inputs/full_closure/data/accepted_preparation.json",
+    "speed_allowance_table": "ceilings",
+    "historical_group_table": "historical",
+    "processed_row_count": "historical_processed_row_count",
+    "eighteen_objective_slots": "objective_results",
+    "conditional_domain_and_observers": "scope",
+    "diagnostic_endpoint_line_and_step": "diagnostics",
+    "earlier_failures": "historical_failure_timeline",
+    "metadata_caveats_and_waiver_inventory": "metadata_caveats, exit_waivers, waiver_authority",
+    "error_gap_targets": "scope.certificate_targets",
+    "absence_of_certified_or_device_maximum": "certified_maximum_available, device_maximum_resolved, engineering_envelope_supplied"
+  },
+  "accepted_preparation_records": {
+    "values": {
+      "schema": "accepted_preparation_copy_v1",
+      "captured_utc": "2026-10-11T17:23:16.543035+00:00",
+      "source_original": "../expert_resolution/data/thermo_ceilings.json",
+      "source_sha256": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b",
+      "script_sha256": "11036e5c67174e37ad5990a181b2d8aea5ce786b0ec4287be584ec01bec82c48",
+      "T0_K": 293.15,
+      "p_infinity_Pa": 101325.0,
+      "coolprop_version_of_original": "8.0.0",
+      "fluids": {
+        "PFP": {
+          "activated_budget": {
+            "fluid": "PFP",
+            "d0_um": 6.0,
+            "a0_m": 3e-06,
+            "mass_kg": 1.8337513994824743e-13,
+            "tau_s": 5e-09,
+            "T_kin_K": 386.48623647227214,
+            "psat_Tkin_Pa": 1033024.2737097268,
+            "p_relax_Pa": 1070092.5425902638,
+            "T_relax_K": 388.1511623159836,
+            "q_act_J_kg": 108285.96646221059,
+            "Q_act_J": 1.9856954254439094e-08,
+            "psi_J_kg": 14847.009294560921,
+            "Phi_J": 2.722572407203039e-09,
+            "eta_II": 0.1371092652134402,
+            "flash_fraction": 1.087105887758557,
+            "w_adiabatic_J_kg": 12022.88882190482,
+            "W_adiabatic_J": 2.204698920299016e-09,
+            "R_over_adiabatic_m": 2.3721537477592837e-05,
+            "R_over_over_a0": 7.907179159197612,
+            "R_bound_exergy_m": 2.3782042920415665e-05,
+            "R_bound_over_a0": 7.927347640138555,
+            "T_at_overexpansion_K": 282.0712825376743,
+            "p_at_overexpansion_Pa": 26232.935664590925,
+            "R_all_vapour_sat_T0_m": 1.7082588677762166e-05
+          },
+          "name": "n-Perfluoropentane",
+          "molar_mass_kg_mol": 0.288034,
+          "EOS_temperature_max_K": 500.0,
+          "EOS_pressure_max_Pa": 10000000.0,
+          "critical_temperature_K": 421.0000013150284,
+          "source_record": "fluids.PFP.droplet_table[d0_um=6]"
+        },
+        "PFH": {
+          "activated_budget": {
+            "fluid": "PFH",
+            "d0_um": 6.0,
+            "a0_m": 3e-06,
+            "mass_kg": 1.912192981884642e-13,
+            "tau_s": 5e-09,
+            "T_kin_K": 415.2367593324791,
+            "psat_Tkin_Pa": 919239.4421264498,
+            "p_relax_Pa": 950444.6621448337,
+            "T_relax_K": 416.8824277094319,
+            "q_act_J_kg": 141865.95269754203,
+            "Q_act_J": 2.7127507911661847e-08,
+            "psi_J_kg": 24171.841484757548,
+            "Phi_J": 4.622122564638143e-09,
+            "eta_II": 0.17038507848526468,
+            "flash_fraction": 1.209909465704808,
+            "w_adiabatic_J_kg": 11578.225786372743,
+            "W_adiabatic_J": 2.2139802091377748e-09,
+            "R_over_adiabatic_m": 2.380616810559274e-05,
+            "R_over_over_a0": 7.935389368530914,
+            "R_bound_exergy_m": 2.4219111556180373e-05,
+            "R_bound_over_a0": 8.073037185393458,
+            "T_at_overexpansion_K": 323.6564689317322,
+            "p_at_overexpansion_Pa": 26485.626312691373,
+            "R_all_vapour_sat_T0_m": 2.3929920603791486e-05
+          },
+          "name": "n-Perfluorohexane",
+          "molar_mass_kg_mol": 0.33804199999999995,
+          "EOS_temperature_max_K": 450.0,
+          "EOS_pressure_max_Pa": 40000000.0,
+          "critical_temperature_K": 448.000000604543,
+          "source_record": "fluids.PFH.droplet_table[d0_um=6]"
+        }
+      },
+      "scope": "Verbatim accepted preparation inputs, not attained outputs or a new ceiling computation."
+    },
+    "tier": "R|A / adopted-state inputs",
+    "source": {
+      "path": "inputs/full_closure/data/accepted_preparation.json",
+      "record": "all accepted preparation fields",
+      "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0"
+    },
+    "fresh_EOS_validation": "NOT_RUN"
+  },
+  "accepted_eos_quotations": [
+    {
+      "species": "PFP",
+      "quantity": "expansion_source_pressure",
+      "value": 1265385.6995210948,
+      "units": "Pa absolute",
+      "tier": "R|A",
+      "fresh_validation_status": "NOT_RUN",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "record": "fluids.PFP.p_relax_spinodal",
+        "sha256": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b"
+      },
+      "validity": "Quoted accepted EOS evaluation under its original assumptions/sign conditions. Expansion source pressure does not cap collapse/contact pressure; cavity radius bound is not same-model R_m qualification. No fresh EOS/sign-path audit or production adoption."
+    },
+    {
+      "species": "PFP",
+      "quantity": "cavity_radius_availability_bound",
+      "value": 2.3782042920415665e-05,
+      "units": "m",
+      "tier": "R|A",
+      "fresh_validation_status": "NOT_RUN",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "record": "fluids.PFP.droplet_table[d0_um=6].R_bound_exergy_m",
+        "sha256": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b"
+      },
+      "validity": "Quoted accepted EOS evaluation under its original assumptions/sign conditions. Expansion source pressure does not cap collapse/contact pressure; cavity radius bound is not same-model R_m qualification. No fresh EOS/sign-path audit or production adoption."
+    },
+    {
+      "species": "PFH",
+      "quantity": "expansion_source_pressure",
+      "value": 1084910.493438774,
+      "units": "Pa absolute",
+      "tier": "R|A",
+      "fresh_validation_status": "NOT_RUN",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "record": "fluids.PFH.p_relax_spinodal",
+        "sha256": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b"
+      },
+      "validity": "Quoted accepted EOS evaluation under its original assumptions/sign conditions. Expansion source pressure does not cap collapse/contact pressure; cavity radius bound is not same-model R_m qualification. No fresh EOS/sign-path audit or production adoption."
+    },
+    {
+      "species": "PFH",
+      "quantity": "cavity_radius_availability_bound",
+      "value": 2.4219111556180373e-05,
+      "units": "m",
+      "tier": "R|A",
+      "fresh_validation_status": "NOT_RUN",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "record": "fluids.PFH.droplet_table[d0_um=6].R_bound_exergy_m",
+        "sha256": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b"
+      },
+      "validity": "Quoted accepted EOS evaluation under its original assumptions/sign conditions. Expansion source pressure does not cap collapse/contact pressure; cavity radius bound is not same-model R_m qualification. No fresh EOS/sign-path audit or production adoption."
+    }
+  ],
+  "historical_pressure_model_inputs": {
+    "values": {
+      "rho0": 998.2,
+      "c_tait": 1478.3126220543968,
+      "n": 7.15,
+      "B": 305000000.0,
+      "Z_water": 1475651.659334699
+    },
+    "tier": "E adopted Tait/mixed contact inputs",
+    "source": {
+      "path": "inputs/expert_resolution/data/receiver_table.json",
+      "record": "rho0,c_tait,n,B,Z_water",
+      "sha256": "4bb508d9050a617b01e14a2e9ef9b067dc1a7213459554a3a534ce910bed5049"
+    },
+    "validity": "Historical isentrope/mixed contact estimate, not a verified caloric Hugoniot or solved wall observer."
+  },
+  "soft_pass_inventory": {
+    "inherited018_028": [
+      {
+        "candidate": "018",
+        "description": "Negative viscous intrinsic increment clamped to zero before the energy update."
+      },
+      {
+        "candidate": "019",
+        "description": "Relaxation soft-pass hook added; it did not clear the then-active status21."
+      },
+      {
+        "candidate": "020",
+        "description": "Density-conversion underflow soft-passed at +/-1e-300."
+      },
+      {
+        "candidate": "021",
+        "description": "Residual near-zero water/PFC geometry floored into a pure-material early exit."
+      },
+      {
+        "candidate": "022",
+        "description": "Near-zero negative depletion complement snapped (reported scale about1e-66)."
+      },
+      {
+        "candidate": "023",
+        "description": "Tiny negative water mass snapped before geometry."
+      },
+      {
+        "candidate": "024",
+        "description": "Tiny negative water mass/energy snapped, followed by EOS retry."
+      },
+      {
+        "candidate": "025",
+        "description": "Residual water fraction snapped to zero / PFC fraction to one."
+      },
+      {
+        "candidate": "026",
+        "description": "MW floor1e-25 and EW floor1e-20 when aW is near zero; caloric consumer treats the water as absent."
+      },
+      {
+        "candidate": "027",
+        "description": "Water energy/fraction/auxiliary momentum co-cleared with water-mass snap; nonpositive-density guards applied."
+      },
+      {
+        "candidate": "028",
+        "description": "Nonfinite or oversized geometric capacity ratios clamped to HUGE; SEPS added in the capacity factor."
+      }
+    ],
+    "source": {
+      "path": "inputs/full_closure/verification/STAGE1_CANDIDATE028_VERIFIED_LOOSENED_ACCEPTANCE_20261014.json",
+      "record": "soft_pass_inventory",
+      "sha256": "c455be9ff168689d4d068fe8d8df1d664a6ea571b14b3d581e81cfaa35a91a5f"
+    },
+    "candidate029_source": {
+      "path": "inputs/full_closure/verification/STAGE2_PREREG_AMENDMENT_005_CANDIDATE029.json",
+      "record": "repair.soft_passes_added",
+      "sha256": "7ea4189751abccd500cb10e50a9c0328a5b8cdf85675f9ed821169cffaa6a87c"
+    },
+    "candidate030_source": {
+      "path": "inputs/full_closure/verification/STAGE2_PREREG_AMENDMENT_006_CANDIDATE030.json",
+      "record": "repair.soft_passes",
+      "sha256": "322d8825c966c02ba65306796e352a25fc54997c0e4e30e954371eebd5f7f3c8"
+    },
+    "status": "INHERITED_ENGINEERING_ASSUMPTIONS; strict production admission remains FAIL"
+  },
+  "available_review_diagnostics": {
+    "values": {
+      "source": "inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv",
+      "source_sha256": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+      "last_accepted_line": 432,
+      "accepted_record_count": 43,
+      "last_accepted": {
+        "time_s": 4.3000000000000027e-10,
+        "steps": 43.0,
+        "water_mass_kg": 6.5766026012734005e-09,
+        "PFC_mass_kg": 1.833751399525869e-13,
+        "bulk_energy_J": 1.8054733127753962e-08,
+        "entropy_J_K": 5.2455115392796843e-11,
+        "area_m2": 1.5623098472214495e-10,
+        "min_fraction": 0.0,
+        "fraction_sum_error": 4.440892098500626e-16,
+        "uncovered_mass_kg": 9.399588160342476e-33,
+        "pressure_residual": 4.991006256402228e-13,
+        "phase_HKS_entropy_J_K": 4.061662261765626e-15,
+        "phase_bulk_entropy_J_K": 0.0,
+        "interface_heat_entropy_J_K": 2.618922883297803e-16,
+        "capillary_work_J": -9.498240938774447e-17,
+        "interface_heat_energy_defect_J": -6.028282461713636e-17,
+        "water_geometry_volume_defect_m3": 9.718387421966966e-19,
+        "pressure_work_defect_J": 1.9813941880038832e-16,
+        "phase_evaluations": 378736.0,
+        "spinodal_warm": 697690.0,
+        "spinodal_global": 196.0,
+        "heat_evaluations": 1088.0,
+        "mechanical_entropy_J_K": 1.606158593361932e-19,
+        "water_Fourier_entropy_J_K": 2.4602829856341005e-22,
+        "viscous_entropy_J_K": 4.255599380007451e-21,
+        "water_Fourier_boundary_energy_out_J": 0.0,
+        "viscous_boundary_energy_out_J": 0.0,
+        "water_Fourier_energy_defect_J": 2.617657278105191e-20,
+        "viscous_intrinsic_work_defect_J": 9.17852260044651e-19,
+        "converted_transport_energy_roundoff_J": -7.247782311384758e-25,
+        "converted_transport_momentum_roundoff_kg_m_s": 3.696415559912471e-29,
+        "water_Fourier_edges": 155130.0,
+        "viscous_faces": 174494.0,
+        "water_Fourier_iterations": 255.0
+      },
+      "time_ns": 0.43000000000000027,
+      "max_relative_mass_drift": {
+        "water_mass_kg": 3.7732884106127866e-16,
+        "PFC_mass_kg": 2.3402317923312148e-15
+      },
+      "objective_event_established": false,
+      "completion_established": false,
+      "ledger_residual_recomputed": null,
+      "reason": "history contains diagnostics, not a complete exergy ledger, registered observers, or objective event; legacy meta exit is not candidate030 completion"
+    },
+    "arithmetic_check_count": 239,
+    "maximum_relative_arithmetic_difference": 7.270960063791253e-14,
+    "source": {
+      "path": "review/INDEPENDENT_RECOMPUTE.json",
+      "record": "candidate030_diagnostics; checks; max_arithmetic_relative_difference",
+      "sha256": "2ad7046c83806ad2ab7e56e48573ca30420642edf82fc7643a0ef96538991771"
+    },
+    "validity": "Narrow arithmetic/source review, not full-cycle G2/G5. Fresh EOS and certificate recomputation remain NOT_RUN."
+  }
+}

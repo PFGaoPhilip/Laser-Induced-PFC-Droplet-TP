@@ -1,0 +1,62 @@
+% ---------------------------------------------------------------------------
+\section*{Decision summary}
+\addcontentsline{toc}{section}{Decision summary}
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+\item \textbf{No universal cavitation-specific maximum; conditional answers.} ``Highest pressure or jet speed'' has
+an application-specific finite answer only after fixing the activation mechanism, the observable (seven are distinguished, O1--O7) and,
+for speeds, the participating mass. This report fixes them for a declared benchmark (one fully activated
+PFP or PFH droplet in water near a rigid receiver). It connects an assumed activation state to
+exergy, expansion, reduced collapse dynamics and an internal directed microjet. Laser deposition
+and receiver loading are respectively an adopted preparation and an order-of-magnitude wave estimate;
+they are not resolved end-to-end device calculations.
+\item \textbf{Conditional thermodynamic ceilings.} Under the stated dead-state and no-external-work
+assumptions, only the exergy $\Phi_{\mathrm a}$ of the
+activated droplet can become work, cavity energy, jet kinetic energy or fracture work. For homogeneous
+activation (CNT kinetic limit $T_{\mathrm k}=\PFPTkSix$\,K PFP, $\PFHTkSix$\,K PFH, $\approx0.92T_{\mathrm c}$)
+$\Phi_{\mathrm a}/Q=\PFPetaSix$ (PFP) and $\PFHetaSix$ (PFH): at most about one seventh of the activation heat is
+mechanically available. Under H0, H2 and the equilibrium/no-overshoot hypothesis H5, the cavity
+pressure cannot exceed $\PFPpsrcSp$\,MPa (PFP) or $\PFHpsrcSp$\,MPa (PFH) absolute during expansion
+(Prop.~\ref{prop:psrc}); its extension to finite-rate HKS content is unproved. Under the stable-EOS
+and reference-state hypotheses, the cavity radius cannot exceed $\PFPRratioSix\,a_0$ (PFP; Eq.~\ref{eq:vmax}),
+which the inviscid dynamics attains to within $\PFPRsharpDyn$\%.
+\item \textbf{Collapse is controlled by one unmeasured parameter.} Spherical real-fluid simulations (216 cases) show
+that the PFC-vapour condensation coefficient $\alpha_{\mathrm c}$ decides whether the collapse is cushioned
+($\alpha_{\mathrm c}\le0.1$: wall speeds $\sim$12--14\,m/s) or reaches the compressible regime
+(6\,$\mu$m water samples: PFP at $\alpha_{\mathrm c}=0.5$, PFH already at $0.3$).
+Thermal refinement leaves this classification unchanged but the transitional PFP
+$\alpha_{\mathrm c}=0.3$ speed changes $\kmRefineMaxUncensoredDeltaU$\% from 160 to 320 nodes;
+all six refined cases carry an ideal-vapour warning.
+Gels arrest the expansion of small PFP droplets before full vaporisation (3 and 6\,$\mu$m at 20\,kPa, 3\,$\mu$m at
+5\,kPa), removing the violent collapse in this model.
+\item \textbf{Directed microjets (benchmarked boundary-integral solver).} For sampled stand-offs of a 6\,$\mu$m droplet at
+$1.25\le\gamma\le4$ the predicted microjet speeds are $\PFPenvUmin$--$\PFPenvUmax$\,m/s (PFP) and
+$\PFHenvUmin$--$\PFHenvUmax$\,m/s (PFH) within the Mach-0.3 validity screen, carrying $\PFPenvEfmin$--$\PFPenvEfmax$\% of
+$\Phi_{\mathrm a}$ (PFP). With slow condensation the largest sampled speeds are $\PFPenvSlowUmax$\,m/s (PFP) and
+$\PFHenvSlowUmax$\,m/s (PFH) on the original $N=64$ grid; selected $N=96$ controls give
+$\PFPbimRefinedSlowSample$ and $\PFHbimRefinedSlowSample$\,m/s.
+Three requested unchanged-cap spatial attempts abort; four separate smaller-cap $N=96$
+follow-ups succeed, while the finer $N=128$ attempt aborts before impact.
+Mass/profile-energy sensitivity is larger than speed sensitivity (Section~\ref{sec:bim_refine}).
+Fast-condensation samples straddle the adopted incompressible-model
+screen $0.3c_{\mathrm w}=\Ulim$\,m/s inside the design range (interpolated $\gamma\approx\PFPcrossIsog$ PFP,
+$\PFHcrossIsog$ PFH). This is a \emph{reduced-model validity crossing}, not a demonstrated physical
+lower bound or global maximum. Out-of-screen incompressible estimates are $\PFPenvOverMach$ (PFP)
+and $\PFHenvOverMach$\,m/s (PFH) at $\gamma=4$. The local
+liquid--liquid hammer pressure at jet impact reaches $\sim\PFPenvPhMax$\,MPa (PFP) and $\sim\PFHenvPhMax$\,MPa (PFH) for
+$\sim$1\,ns in the adopted mixed-contact estimate (nonlinear jet-side Tait, linear opposing
+impedance); the receiver-wave estimate is of order
+$\PFPenvPrecMin$--$\PFHenvPrecMax$\,MPa, without a resolved propagation or sensor calculation.
+\item \textbf{Audit corrections to prior work.} Limits E02 (budget must be exergy, not undefined availability),
+E19 (empty-bubble radius bound is not a bound for a vapour cavity), E10 (linear water hammer underestimates by
+up to $2.1\times$ at 850\,m/s within the adopted Tait extrapolation) and E25 (the sourced interpolated
+heat capacity is replaced by the EOS-consistent value; a data/model discrepancy remains).
+Homogeneous CNT activation is superheat to $\approx0.92T_{\mathrm c}$,
+not boiling at 303\,K. The finite-PFC study's CNT gate is evaluated and its seeds have negligible
+homogeneous-nucleation probability under the adopted capillarity/rate assumptions.
+\item \textbf{Remaining gap (honestly unresolved).} The actual device maximum needs: the absorbed energy and
+heating distribution, the nucleation route (heterogeneous sites lower $T_{\mathrm k}$ and $\Phi_{\mathrm a}$), the
+condensation coefficient, the geometry/stand-off and the receiver/sensor. A seven-item measurement program
+(Section~\ref{sec:program}) targets each gap; compressible focusing, gel fracture and receiver/sensor
+models must also be completed where their reduced approximations fail. Optical breakdown and
+near-contact needle jets are different mechanisms outside this benchmark.
+\end{enumerate}

@@ -1,0 +1,180 @@
+{
+  "schema": "stage3_every_page_visual_qa_v1",
+  "status": "PASS",
+  "page_count": 17,
+  "all_pages_inspected": true,
+  "pdf": "report/STAGE3_ENGINEERING_REPORT.pdf",
+  "pdf_sha256": "127cf1ac428f4e66762a5261dc00f164882486729ba7d32bdc94043b6b8726cc",
+  "source_sha256": "48902950d0415a01dfb9f4eb37b9e2afa68b805cd9b0d7ad6a3d961792da4f85",
+  "method": "Poppler pdftoppm 90 dpi PNG; native image view of EACH final rendered page; semantic Math-Rigor review separately acceptance_expert",
+  "checks": [
+    "headers/footers/page sequence",
+    "no overlap or clipping",
+    "readable equation structures and units",
+    "complete tables within margins",
+    "local source locators and caveats",
+    "no orphan final paragraph"
+  ],
+  "repairs": [
+    "long-source/claim breaks with xurl; zero overfull boxes",
+    "fixed escaped integral measures and upright example units",
+    "isolated Rayleigh radius renamed R_s, distinct from accepted R_m",
+    "ragged-right objective status column",
+    "traceability table compacted so closing caveat fits final page"
+  ],
+  "pages": [
+    {
+      "physical_page": 1,
+      "printed_page": null,
+      "image": "report/qa_pages/page-01.png",
+      "image_sha256": "cb799630b13f9112b892298b94ff71b0de9ffef9df0fe5db19bb1cb2164ba660",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Cover: direct unresolved answer, conditional rounding and policy caveats clearly visible; no clipping."
+    },
+    {
+      "physical_page": 2,
+      "printed_page": 1,
+      "image": "report/qa_pages/page-02.png",
+      "image_sha256": "1586989d2762585a18fbf18fdd1b000cccb0657a4867003705a11107dc9fa29f",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Contents: all fifteen sections and page references aligned; evidence/status tier legend readable."
+    },
+    {
+      "physical_page": 3,
+      "printed_page": 2,
+      "image": "report/qa_pages/page-03.png",
+      "image_sha256": "e3fa5924783cda4be77dc18c16b8d69e324a5411f19895f8d7f617b00a787c12",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Inherited problem: stand-off domain and full activation premise intact; equation 1 and locators readable."
+    },
+    {
+      "physical_page": 4,
+      "printed_page": 3,
+      "image": "report/qa_pages/page-04.png",
+      "image_sha256": "dce8d58b37dad897634816ea56e1bf2b4d572ea1ceacaae43b37270f7612cb24",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Governing model: conservation equations, initial/boundary conditions and validity text legible."
+    },
+    {
+      "physical_page": 5,
+      "printed_page": 4,
+      "image": "report/qa_pages/page-05.png",
+      "image_sha256": "9f97fff863c8916c755d7fa5b97fd523d2338c9ade451c4af6f3a043cfd24b33",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Observers: whole-water measure and event cases, disk/window formulas fit and retain correct symbols."
+    },
+    {
+      "physical_page": 6,
+      "printed_page": 5,
+      "image": "report/qa_pages/page-06.png",
+      "image_sha256": "d2e5a455b32fea8927b0e0bcf1dfb3f0d36fcb4bc03a5022879235b1bcdcea8e",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Energy proof: all nonnegative-integral steps and mass division shown; no broken fractions or symbols."
+    },
+    {
+      "physical_page": 7,
+      "printed_page": 6,
+      "image": "report/qa_pages/page-07.png",
+      "image_sha256": "afaea3509e767c04546273263671da4e3c989f4dafc0e770decadf1b8cb26418",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Availability table: five exact-input ceilings per species aligned; rounded T route and caveat distinguished."
+    },
+    {
+      "physical_page": 8,
+      "printed_page": 7,
+      "image": "report/qa_pages/page-08.png",
+      "image_sha256": "7398d55d2393c53577a98e1acec6f0d45b2a4b8250a1f7dbc7f1eb80f06793bf",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Linear contact: matching algebra and receiver limits correctly typeset; symbols and model labels readable."
+    },
+    {
+      "physical_page": 9,
+      "printed_page": 8,
+      "image": "report/qa_pages/page-09.png",
+      "image_sha256": "605573aa851b45c8f2f81ac9b2df6fa640bae174bc840842b2b397543c6fa2bd",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Example: kg, m/s and MPa upright units repaired and visibly correct; numerical values and Mach check legible."
+    },
+    {
+      "physical_page": 10,
+      "printed_page": 9,
+      "image": "report/qa_pages/page-10.png",
+      "image_sha256": "401886f1302955c30dc42e4d773ff066055df67c7fdd0b3db496c072e1432baf",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Spherical derivation: distinct R_s initial spherical radius used; chain rule, product rule and definite integrals readable."
+    },
+    {
+      "physical_page": 11,
+      "printed_page": 10,
+      "image": "report/qa_pages/page-11.png",
+      "image_sha256": "47219c6fd6dac1c2693330ac15ec60b951781ede161f15c4158172cb7cd93022",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Cutoff audit: root, derivative/substitution and conditional source ceilings readable; R_m qualification distinguished."
+    },
+    {
+      "physical_page": 12,
+      "printed_page": 11,
+      "image": "report/qa_pages/page-12.png",
+      "image_sha256": "26e5039097d25dbdb5215782171aaaf92103e8b6b9c5be4c24c5cff495bb8e44",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Historical table: P/E tiers, speed and pressure units aligned; thirty-five retained-row caveat visible."
+    },
+    {
+      "physical_page": 13,
+      "printed_page": 12,
+      "image": "report/qa_pages/page-13.png",
+      "image_sha256": "67fc2170014758a662b18b7927a51db1175610d59b0b5ab4399a81b572758c52",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Soft-passes: all018-030 entries visible; status11 tolerance and legacy028 metadata caveats readable."
+    },
+    {
+      "physical_page": 14,
+      "printed_page": 13,
+      "image": "report/qa_pages/page-14.png",
+      "image_sha256": "07e07f749dcbe32b791aa2ea4e2ffde98e4a2141c0d903834f41905e8be167b3",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Waivers: all seven rows complete and within margins; identity PASS separate from strict scientific requirements."
+    },
+    {
+      "physical_page": 15,
+      "printed_page": 14,
+      "image": "report/qa_pages/page-15.png",
+      "image_sha256": "8f0897d32e4696e41c43bdc69dc03569cbe4f7ee98130078eac8b2511c3116a9",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Objective register: all eighteen null rows visible; NOT_RUN / WAIVED status consistently ragged right."
+    },
+    {
+      "physical_page": 16,
+      "printed_page": 15,
+      "image": "report/qa_pages/page-16.png",
+      "image_sha256": "c115844a2938bfdc0c2036675a496a23fe09da2c1ec6e30780f322404f3a76cf",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Independent review: all ten numbered answers visible;239PASS arithmetic and strict scientific failures qualified."
+    },
+    {
+      "physical_page": 17,
+      "printed_page": 16,
+      "image": "report/qa_pages/page-17.png",
+      "image_sha256": "3ef705ee3a336b847c91dc8a56d8b3db3a4166e9d588fb17b7ba56e80ddf211c",
+      "visually_inspected": true,
+      "status": "PASS",
+      "notes": "Traceability: ten source selectors readable; rebuild command space correct; preservation and delivery caveats complete with no orphan page."
+    }
+  ]
+}

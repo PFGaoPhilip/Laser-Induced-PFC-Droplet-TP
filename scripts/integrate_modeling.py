@@ -57,7 +57,7 @@ def copy_modeling():
                 a=s.new_tag('a',href='Minimal_Cavitation_Models_20261010.zip')
                 a.string='Download modeling folder' if pane['data-locale']=='en' else '下载完整建模文件夹'
                 nav.append(a)
-        p.write_text(str(s), encoding='utf-8')
+        p.write_text(str(s), encoding='utf-8', newline='\n')
     (TARGET/'PUBLICATION.md').write_text('# Modeling publication\n\nCopied from the accepted 20261010 minimal-cavitation delivery on 2026-10-11. The two native MPH files and all scientific inputs, equations and results are unchanged. Reader navigation and language/theme preferences were adapted for the surrounding course. SOURCE_MANIFEST.json records the source hashes. Operational logs, reference-site snapshots and build dependencies are excluded from the public package. The native numerical and translation audits apply to the unchanged scientific content.\n', encoding='utf-8')
     old_log=TARGET/'WORK_LOG.md'
     if old_log.exists(): old_log.unlink()
@@ -70,6 +70,11 @@ def copy_modeling():
 
 def language_label(soup, node, en, zh):
     """Replace a label from authoritative text, never from a prior rendered label."""
+    spans=node.find_all('span',recursive=False)
+    if (len(spans)==2 and [n.get('lang') for n in spans]==['en','zh-CN']
+            and [n.get_text() for n in spans]==[en,zh]
+            and not any(isinstance(n,NavigableString) and str(n).strip() for n in node.children)):
+        return
     node.clear()
     for lang, text in [('en', en), ('zh-CN', zh)]:
         span=soup.new_tag('span', lang=lang)
@@ -83,7 +88,7 @@ def integrate(include_modeling=True):
     for p in pages:
         s = BeautifulSoup(p.read_text(encoding='utf-8'), 'html.parser')
         relative = '' if p.parent == ROOT else '../'
-        banner=s.select_one('.hero .eyebrow')
+        banner=s.select_one('.home-header .eyebrow, .hero .eyebrow')
         if banner:
             language_label(s,banner,'PROJECT-CENTERED THEORY · FOUR CHAPTERS + APPENDIX A',
                            '项目导向理论 · 四章 + 附录 A')
@@ -105,22 +110,8 @@ def integrate(include_modeling=True):
             if unit:
                 language_label(s,header,unit['label']+' · THEORY → DERIVATION → DEFENSE',
                                unit['label_zh']+' · 理论 → 推导 → 答辩')
-        if p==ROOT/'index.html' and s.select_one('[data-modeling-link]'):
-            s.select_one('.hero').insert_after(s.select_one('[data-modeling-link]').extract())
-        if not s.select_one('[data-modeling-link]'):
-            block = s.new_tag('section', attrs={'class':'modeling-link callout', 'data-modeling-link':'true'})
-            for lang, heading, body in [
-                ('en', 'Modeling: finite-energy cavitation and gel confinement', 'Follow the complete worked derivation, 53-step COMSOL guide, two native models and numerical audits. At matched 2 nJ source work and a 5 µm outlet, rigid/open-gel peak speeds are 15.376/1.625 m/s; the sealed control emits no liquid. These are initialized ideal-gas controls for expansion-driven discharge through an existing channel. Laser activation, PFC phase change, internal collapse jets, gel rupture and target impact are outside this model.'),
-                ('zh-CN', '建模：有限能量空化与凝胶约束', '阅读完整推导、53 步 COMSOL 指南、两个原生模型及数值核验。在相同的 2 nJ 源功与 5 µm 出口条件下，刚性／开口凝胶的峰值速度为 15.376／1.625 m/s；密闭对照不排出液体。这些模型是以初态代表激活后气源的理想气体对照，描述经已有通道的膨胀驱动排液。激光激活、PFC 相变、内部塌缩射流、凝胶破裂及靶面冲击不在模型范围内。')]:
-                div = s.new_tag('div', lang=lang)
-                h = s.new_tag('h2'); h.string = heading; div.append(h)
-                para = s.new_tag('p'); para.string = body; div.append(para)
-                a = s.new_tag('a', href=relative+'modeling/minimal-cavitation/index.html?lang='+('en' if lang=='en' else 'zh'))
-                a.string = 'Open modeling report →' if lang=='en' else '打开建模报告 →'; div.append(a)
-                block.append(div)
-            container = s.select_one('.chapter-header') or s.select_one('main')
-            if p.name=='index.html' and s.select_one('.hero'): s.select_one('.hero').insert_after(block)
-            else: container.append(block)
+        for block in s.select('[data-modeling-link], [data-embedded-pfc-link], [data-resolver-progress]'):
+            block.decompose()
         # Language-tag bilingual UI text without disturbing math or scientific prose.
         for node in list(s.find_all(string=True)):
             if not node.parent or any(x.name in ('script','style','math','svg') or (x.has_attr('lang') and x.name!='html') for x in node.parents):
@@ -148,9 +139,9 @@ def integrate(include_modeling=True):
         if not s.select_one('script[src$="course-language.js"]'):
             s.head.append(s.new_tag('link', rel='stylesheet', href=relative+'assets/course-language.css'))
             s.head.append(s.new_tag('script', src=relative+'assets/course-language.js', defer=''))
-        p.write_text(str(s), encoding='utf-8')
-    settings['modeling']={'file':'modeling/minimal-cavitation/index.html','guide':'modeling/minimal-cavitation/STEP_BY_STEP.html','source':'20261010-minimal-cavitation','scope':'Initialized ideal-gas controls; expansion-driven discharge through an existing liquid outlet.'}
-    settings['prepared']='2026-10-11'
+        p.write_text(str(s), encoding='utf-8', newline='\n')
+    settings['modeling']={'parent_unit':'A','file':'modeling/minimal-cavitation/index.html','guide':'modeling/minimal-cavitation/STEP_BY_STEP.html','source':'20261010-minimal-cavitation','scope':'Initialized ideal-gas controls; expansion-driven discharge through an existing liquid outlet.'}
+    settings['prepared']='2026-10-14'
     (ROOT/'COURSE_SETTINGS.json').write_text(json.dumps(settings, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(f'Integrated modeling delivery: {copied} copied files; {len(pages)} localized course pages')
 
@@ -158,5 +149,6 @@ if __name__=='__main__':
     import argparse
     parser=argparse.ArgumentParser()
     parser.add_argument('--course-only',action='store_true',help='Update language views without recopying the accepted modeling delivery')
+    parser.add_argument('--refresh-source',action='store_true',help='Explicitly replace the local study with its accepted source delivery')
     args=parser.parse_args()
-    integrate(include_modeling=not args.course_only)
+    integrate(include_modeling=args.refresh_source and not args.course_only)

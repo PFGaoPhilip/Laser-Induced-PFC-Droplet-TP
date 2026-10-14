@@ -1,18 +1,18 @@
-# Finite-PFC embedding: full reduced-model derivation and validation gates
+# Finite PFC in hydrogel: derivation and validation requirements
 
 ## 1. Problem, objective and scope
 
-The question is whether a liquid PFC inclusion inside an initially intact aqueous hydrogel can absorb enough laser energy to form and expand a vapor core, what load and energy the gel receives, and what additional conditions are needed for an exterior jet or collapse-pressure prediction.
+Determine the state energy needed to expand a PFC vapor core inside intact hydrogel. Calculate gel load and energy. Identify the additional conditions for exterior ejection and collapse pressure.
 
-This project completes a **conditional feasibility and numerical verification study**. Its new solved controls contain a finite PFC mass, a concentric vapor core and surviving liquid shell, real-fluid thermodynamics, distinct interface energies, spherical gel elasticity and host viscosity. They do not start from an arbitrarily prescribed ideal-gas pocket. The transient still starts from a **supplied post-nucleation seed**, whose retained energy relative to the all-liquid reference is calculated. The actual laser heating and nucleation event are not inferred from that seed.
+This **conditional study** solves finite PFC mass, concentric vapor and liquid phases, real-fluid thermodynamics, separate interfaces, gel elasticity and host viscosity. The transient starts from a **supplied post-nucleation seed**. Its retained energy is calculated relative to an all-liquid reference. Laser heating and seed formation remain unresolved.
 
-The two retained architectures are: (i) prescribed-radius curved phase equilibria and their local stability; (ii) insulated radial expansion from a prescribed seed until the first turning point, a declared intact-gel screen, or the finite time window. No outlet exists in either. The physical system has finite PFC inventory but an effectively infinite undrained gel host; radial gel inertia is retained. Liquid-shell inertia, shell temperature gradients, phase-transfer kinetics, network damage, water vapor production, gas diffusion and acoustic radiation are omitted. The pressure jump at the inner interface is quasistatic. These omissions delimit the current calculations; a small conservation residual does not remove them.
+Two models are retained. The first solves prescribed-radius curved equilibrium and local stability. The second solves insulated radial expansion from a prescribed seed. It stops at first turning, the declared stretch screen or the time cutoff. Both have zero outlet flow. The effectively infinite, undrained gel has radial inertia. Omitted effects are liquid-shell inertia, thermal gradients, phase-transfer kinetics, damage, water vapor, gas diffusion and acoustic radiation. Inner traction is quasistatic. These assumptions bound every result.
 
-Coordinates are spherical, with increasing radial coordinate pointing outward from the inclusion center. The inclusion's outer radius and vapor-core radius are positive. Radial speed is positive during expansion. All thermodynamic pressures are **absolute**; gel resistance and pressure differences are signed excesses. The initially all-liquid droplet is stress-free relative to ambient except for its outer interfacial traction. At infinity, radial displacement and velocity tend to zero and stress tends to minus ambient pressure. The PFC is closed to mass exchange with the gel. No external fluid exits. The two phases share a uniform temperature and, in the controls, equal chemical potential; this is a post-activation equilibrium approximation, not nanosecond thermal homogenization.
+Use spherical coordinates directed outward from the inclusion center. Both radii are positive. Expansion has positive radial speed. Thermodynamic pressures are **absolute**. Resistance and pressure differences are signed excesses. The initial liquid has outer capillary traction and ambient loading. At infinity, displacement and speed vanish; stress approaches minus ambient pressure. PFC mass is closed and exterior mass flux is zero. Both phases have uniform temperature and equal chemical potential. This is a post-activation equilibrium approximation. Nanosecond thermal homogenization is **not established**.
 
-Initial conditions for the all-liquid energy reference are room-temperature liquid PFC, its specified radius, and the initial Laplace pressure. The transient seed instead starts at 1.2 times that radius, zero radial speed, zero cumulative host dissipation and 50 kPa liquid-pressure excess over static host traction. The retained seed storage and ambient work are included. Seed preparation is assumed lossless; pre-seed viscous/acoustic losses and conducted heat are not calculated. The host law is assumed reversible until the selected stretch screen; the viscosity dissipates energy outside the PFC. A fixed 2.1 stretch limit is a **declared screen**, not an experimentally measured failure strain.
+The all-liquid reference starts at room temperature, prescribed radius and Laplace pressure. The seed starts at stretch 1.2 with zero speed and zero accumulated loss. Its liquid pressure exceeds static host traction by 50 kPa. Include seed storage and ambient work. Preparation is lossless here; pre-seed heat, viscous and acoustic losses are omitted. Gel elasticity remains reversible up to the selected screen. Viscosity heats the host. Stretch 2.1 is a **declared stopping screen**. Measured failure strain is **not established**.
 
-Governing foundations: conservation of mass; the first law; real-fluid Helmholtz constitutive functions [S2](SOURCES.md); continuum surface-energy/traction assumptions; incompressible neo-Hookean and Kelvin–Voigt host assumptions; spherical radial inertia [S6, S8](SOURCES.md). The finite-core/shell construction and parameter/stability comparisons below are this project's reduced model. Full mechanism validation requires independent observations of activation, radius histories, damage, exterior mass flux and pressure at a defined sensor.
+Foundations: mass conservation; the first law; Helmholtz EOS [S2](SOURCES.md); continuum interface energy and traction; incompressible neo-Hookean elasticity; Kelvin–Voigt viscosity; spherical inertia [S6, S8](SOURCES.md). The core/shell closure and comparisons are original reduced-model calculations. Physical validation requires activation data, radius histories, damage, exterior mass flux and pressure at a defined sensor.
 
 ## 2. Symbol glossary and conventions
 
@@ -52,7 +52,7 @@ All scalars are real. Pi is the dimensionless circle constant. Superscripts on l
 | $d,\lambda_{surface}$ | Center-to-initial-free-surface distance and initial-plane encounter stretch | m, dimensionless |
 | $c_h,k_p,M_p,\mu_w,\alpha_h,\tau_p$ | Sound speed; gel permeability; poroelastic modulus; pore-fluid viscosity; host thermal diffusivity; pulse duration | m/s, m², Pa, Pa s, m²/s, s |
 
-No numerical gel modulus, viscosity, optical cross section, cover thickness, cohesive strength or fracture energy in this study is a measured value for the user's formulation. The source ledger states what interface and EOS data actually support.
+Gel modulus, viscosity, optical cross section, cover, cohesive strength and toughness are stipulated. They are unmeasured for the target formulation. [The source ledger](SOURCES.md) states the support for interface and EOS inputs.
 
 ## 3. Numbered derivation
 
@@ -157,7 +157,7 @@ $$
 
 Integrating Eq. (E07) with the far stress condition gives the first row. Eq. (E06) gives the variable transformation and its Jacobian. At the inner boundary the ratio is the initial/current inclusion radius; at infinity it tends to one. Factoring the numerator as the product of one minus the cube and one plus the cube permits cancellation for every finite radius in expansion; the endpoint integral has a removable limiting value. The final row evaluates both endpoints. This derivation makes the geometry assumption visible; it is not a planar-layer fracture law.
 
-**Symbols before Eq. (E09):** $E_{gel}$ is recoverable gel strain energy (J); $p_{el}$ is resistance (Pa); $R,a_0,\xi$ are current, initial and dummy radii (m); $G$ is shear modulus (Pa); $dE_{gel}/dR$ is the radius derivative. All integrals are along the reversible intact branch.
+**Symbols before Eq. (E09):** $E_{gel}$ is recoverable gel strain energy (J); $p_{el}$ is resistance (Pa); $R,a_0,\xi$ are current, initial and dummy radii (m); $G$ is shear modulus (Pa); $dE_{gel}/dR$ is the radius derivative. All integrals are along the reversible intact branch. $\pi$ is the dimensionless circle constant.
 
 $$
 \begin{aligned}
@@ -172,7 +172,7 @@ $$
 
 The first row defines work as pressure times incremental cavity volume. The second substitutes Eq. (E08) and expands. Integrating each power gives the third row; evaluating the initial endpoint yields the constant in the fourth. Differentiation verifies the last identity independently and is also checked symbolically by the audit script.
 
-**Symbols before Eq. (E10):** $\lambda=R/a_0$ is stretch; $\epsilon$ is small dimensionless stretch excess; $p_{el}$ is resistance (Pa); $E_{gel}$ is strain energy (J); $G$ is modulus (Pa); $a_0$ is radius (m); $O$ denotes the asymptotic remainder order as excess tends to zero.
+**Symbols before Eq. (E10):** $\lambda=R/a_0$ is stretch; $\epsilon$ is small dimensionless stretch excess; $p_{el}$ is resistance (Pa); $E_{gel}$ is strain energy (J); $G$ is modulus (Pa); $a_0$ is radius (m); $O$ denotes the asymptotic remainder order as excess tends to zero. $\pi$ is the dimensionless circle constant.
 
 $$
 \begin{aligned}
@@ -187,7 +187,7 @@ The zero-stretch results follow by direct substitution into Eqs. (E08)–(E09). 
 
 ### Step 4 — Obtain host inertia and viscous dissipation
 
-**Symbols before Eq. (E11):** $u_h(r,t)$ is radial host speed (m/s); $R,r$ are inclusion and host radii (m); $W$ is inner-wall speed (m/s); $\rho_h$ is host density (kg/m³); $K_h$ is host kinetic energy (J); $\int$ is spatial integration over an effectively infinite incompressible host.
+**Symbols before Eq. (E11):** $u_h(r,t)$ is radial host speed (m/s); $R,r$ are inclusion and host radii (m); $W$ is inner-wall speed (m/s); $\rho_h$ is host density (kg/m³); $K_h$ is host kinetic energy (J); $\int$ is spatial integration over an effectively infinite incompressible host. $\pi$ is the dimensionless circle constant.
 
 $$
 \begin{aligned}
@@ -200,7 +200,7 @@ $$
 
 Incompressibility gives the first flux relation; division by positive area gives velocity. Substituting velocity squared in kinetic energy cancels two radius powers. The antiderivative of inverse squared radius is minus inverse radius, whose far endpoint is zero and inner endpoint contributes inverse inclusion radius. This retains host inertia but omits liquid-shell inertia, which must be tested in the full spatial model.
 
-**Symbols before Eq. (E12):** $D_{rr},D_{\theta\theta}$ are host radial/tangential deformation rates (1/s); $u_h$ is radial speed (m/s); $r,R$ are radii (m); $W$ is wall speed (m/s); $\eta$ is effective viscosity (Pa s); $P_{dis}$ is viscous-loss power (W); $p_{vis}$ is viscous wall resistance (Pa). There are two equal tangential components.
+**Symbols before Eq. (E12):** $D_{rr},D_{\theta\theta}$ are host radial/tangential deformation rates (1/s); $u_h$ is radial speed (m/s); $r,R$ are radii (m); $W$ is wall speed (m/s); $\eta$ is effective viscosity (Pa s); $P_{dis}$ is viscous-loss power (W); $p_{vis}$ is viscous wall resistance (Pa). There are two equal tangential components. $\pi$ is the dimensionless circle constant.
 
 $$
 \begin{aligned}
@@ -231,7 +231,7 @@ The first row collects static ambient, elastic and outer capillary resistance. T
 
 ### Step 5 — Account for PFC internal, interface, gel, ambient and kinetic energy
 
-**Symbols before Eq. (E14):** $U_{PFC},E_{surf},E_{amb}$ are internal energy, interface-energy change and ambient work (J); $m_l,m_v$ are phase masses (kg); $u_l,u_v$ are phase internal energies (J/kg); $\gamma_o,\gamma_i$ are distinct constant tensions (N/m); $R,a_0,b$ are radii (m); $p_\infty$ is ambient pressure (Pa); $V,V_0$ are inclusion volumes (m³). Initial internal energy is referenced separately below.
+**Symbols before Eq. (E14):** $U_{PFC},E_{surf},E_{amb}$ are internal energy, interface-energy change and ambient work (J); $m_l,m_v$ are phase masses (kg); $u_l,u_v$ are phase internal energies (J/kg); $\gamma_o,\gamma_i$ are distinct constant tensions (N/m); $R,a_0,b$ are radii (m); $p_\infty$ is ambient pressure (Pa); $V,V_0$ are inclusion volumes (m³). Initial internal energy is referenced separately below. $\pi$ is the dimensionless circle constant.
 
 $$
 U_{PFC}=m_lu_l+m_vu_v,\qquad
@@ -241,7 +241,7 @@ $$
 
 Internal energy includes phase conversion through the actual phase energies. Adding a second independent latent-heat term would double count it. The initial state has the outer liquid surface but no vapor core; the inner surface energy is therefore all new. Both surface terms have units N/m times m², or J. Constant tension assumes negligible interface entropy and ignores shell/coating rearrangement.
 
-**Symbols before Eq. (E15):** $U_{PFC}$ is PFC internal energy (J); $T$ is common phase temperature (K); $S$ is total PFC entropy (J/K); $g_l,g_v$ are phase chemical potentials (J/kg); $m_l,m_v$ are masses (kg); $p_l,p_v$ are pressures (Pa); $V_l,V_b,V$ are phase/total volumes (m³); $\gamma_i$ is constant inner tension (N/m); $A_i=4\pi b^2$ is core area (m²); $d$ is a differential along an admissible equilibrium trajectory.
+**Symbols before Eq. (E15):** $U_{PFC}$ is PFC internal energy (J); $T$ is common phase temperature (K); $S$ is total PFC entropy (J/K); $g_l,g_v$ are phase chemical potentials (J/kg); $m_l,m_v$ are masses (kg); $p_l,p_v$ are pressures (Pa); $V_l,V_b,V$ are phase/total volumes (m³); $\gamma_i$ is constant inner tension (N/m); $A_i=4\pi b^2$ is core area (m²); $d$ is a differential along an admissible equilibrium trajectory. $b$ is the positive core radius (m).
 
 $$
 \begin{aligned}
@@ -267,7 +267,7 @@ $$
 
 The first row defines cumulative host loss. The second is the retained-seed-energy balance relative to the all-liquid reference. The last defines its numerical residual for positive retained seed energy. Equality with experimentally absorbed laser energy would additionally require accounting for pre-seed conduction, host dissipation, acoustic emission, and heat delivered to other materials. They are absent from the preparation control; the calculated budget is not an activation threshold. Gel dissipation is included as energy transferred into unrecovered host heating; it is not also fed back into PFC heat. These controls neglect heat conduction between host and PFC.
 
-**Symbols before Eq. (E17):** $K_h$ is host kinetic energy (J); $\rho_h$ is density (kg/m³); $R,W$ are radius and speed (m, m/s); $p_l,p_\infty,p_{el},p_{vis}$ are pressures (Pa); $\gamma_o$ is outer tension (N/m); dots indicate time derivatives. The power calculation applies along Eq. (E13).
+**Symbols before Eq. (E17):** $K_h$ is host kinetic energy (J); $\rho_h$ is density (kg/m³); $R,W$ are radius and speed (m, m/s); $p_l,p_\infty,p_{el},p_{vis}$ are pressures (Pa); $\gamma_o$ is outer tension (N/m); dots indicate time derivatives. The power calculation applies along Eq. (E13). $\pi$ is the dimensionless circle constant.
 
 $$
 \begin{aligned}
@@ -292,9 +292,9 @@ g(T,\rho_l)-g(T,\rho_v)=0,\\
 \end{cases} \tag{E18}
 $$
 
-At a prescribed stretch these four equations determine temperature, densities and core radius. They establish existence of a static state, not its stability or the energy needed to cross a nucleation barrier. Energy of that state follows by Eq. (E16) with zero kinetic energy and cumulative loss. The new native stationary solver starts from slightly perturbed guesses and solves these equations; it does not merely display imported reference results.
+These four equations determine temperature, densities and core radius at prescribed stretch. They establish a static phase root. Stability and nucleation-barrier crossing require separate tests. Eq. (E16) gives state energy with zero kinetic energy and loss. Native stationary solves use perturbed initial guesses and solve all four equations.
 
-**Symbols before Eq. (E19):** $R,W,D_h$ are three differential states (m, m/s, J); $T,\rho_l,\rho_v,b$ are four algebraic unknowns (K, kg/m³, kg/m³, m); $p_l,p_{need}$ are pressures (Pa); $\eta,\rho_h,\gamma_i$ are viscosity, host density and inner tension (Pa s, kg/m³, N/m); $p,g$ are EOS functions; $V,V_b,m$ are volumes and mass; $U_{PFC},u_{l0},E_{gel},E_{surf},E_{amb},K_h,E_{seed}$ are the energies/specific reference already defined (J, J/kg). Dots are time derivatives.
+**Symbols before Eq. (E19):** $R,W,D_h$ are radius, speed and accumulated loss (m, m/s, J). Dots denote time derivatives. $T$ is temperature (K); $\rho_l,\rho_v,\rho_h$ are liquid, vapor and host densities (kg/m³); $b$ is core radius (m). $p_l,p_{need}$ are pressures (Pa); $\eta$ is viscosity (Pa s); $\gamma_i$ is inner tension (N/m). $p(T,\rho)$ and $g(T,\rho)$ are EOS pressure (Pa) and chemical potential (J/kg), with $\rho$ the density argument (kg/m³). $V,V_b$ are inclusion/core volumes (m³); $m$ is fixed mass (kg). $U_{PFC},E_{gel},E_{surf},E_{amb},K_h,E_{seed}$ are internal, gel, surface, ambient, kinetic and seed energies (J). $u_{l0}$ is initial liquid specific internal energy (J/kg). $\pi$ is the dimensionless circle constant. $R,b,\rho_h$ are positive; phases remain admissible.
 
 $$
 \begin{aligned}
@@ -311,7 +311,7 @@ $$
 
 The first three equations are radius, momentum and cumulative loss. Inner traction, phase equilibrium, mass and total energy supply four algebraic conditions. The native model has seven normalized Global Equations variables. The Python solver independently eliminates the four algebraic unknowns with a thermodynamic root and integrates three differential states. This is a solver-formulation comparison on the same constitutive assumptions; it is not an independent empirical theory.
 
-**Symbols before Eq. (E20):** $p_s,U_s,\tau,E_s$ are positive pressure, speed, time and energy scales (Pa, m/s, s, J); $\rho_h,a_0,m$ are density, initial radius and mass; $\theta,\lambda,\widehat W,\widehat D$ are normalized time, radius, speed and loss; $t,R,W,D_h$ are their dimensional values; $p_l,p_{need},G,\eta$ are pressures/modulus/viscosity. Hats indicate dimensionless quantities, not powers.
+**Symbols before Eq. (E20):** $p_s,U_s,\tau,E_s$ are positive pressure, speed, time and energy scales (Pa, m/s, s, J). $\rho_h,a_0,m$ are positive host density, initial radius and PFC mass (kg/m³, m, kg). $\theta,\lambda,\widehat W,\widehat D$ are dimensionless time, radius, speed and loss; hats label normalized quantities. $t,R,W,D_h$ are dimensional time, radius, speed and loss (s, m, m/s, J). $p_l,p_{need}$ are pressures (Pa); $\eta$ is viscosity (Pa s). $d/d\theta$ is differentiation in normalized time. The square root is the positive branch; $\lambda>0$ permits division.
 
 $$
 \begin{aligned}
@@ -336,7 +336,7 @@ k_E=-\left.\frac{d[p_l(\lambda;E)-p_{need}(\lambda)]}{d\lambda}\right|_E
 \approx-\frac{[p_l-p_{need}]_{\lambda+\epsilon,E}-[p_l-p_{need}]_{\lambda-\epsilon,E}}{2\epsilon}. \tag{E21}
 $$
 
-A positive derivative restores an increased radius with an inward pressure imbalance and a decreased radius with an outward imbalance. A negative value is locally unstable in this radial model. The finite-difference approximation uses 0.0001 stretch increments, repeats at half that increment, and solves phase and energy conditions again at each side. This is reduced radial-branch restoration, not proof against nonspherical perturbations or all internal phase variations; the separate core/phase Hessian test follows in Step 11. The fixed-bath derivative, denoted $k_T$ (same units), holds temperature instead of total energy; it describes a different experiment. Merely converging Eq. (E18) does not distinguish these thermal constraints. The reported 36 closed-energy unstable and 94 fixed-bath unstable states count the declared sampled controls.
+A positive slope restores radial perturbations. Increased radius receives inward imbalance; decreased radius receives outward imbalance. A negative slope is locally unstable. Recompute phase and energy roots at stretch offsets 0.0001 and 0.00005. Keep both neighboring states admissible. Step 11 tests internal phase/core variations separately. Nonspherical stability is **not established**. The fixed-temperature derivative $k_T$ (Pa per stretch) holds temperature instead of energy. Of 132 sampled states, 36 are non-restoring at closed energy and 94 at fixed temperature.
 
 ### Step 8 — Keep optical heating and nucleation as separate measurable gates
 
@@ -350,7 +350,7 @@ $$
 
 Substitute the power expression in the energy integral and take the fixed fluence/cross section outside the integral. The normalization gives the final identity. A projected-disk comparison divides cross section by the positive area $\pi a_0^2$ (m²); it is an effective geometric ratio, not automatically an absorption fraction bounded by one. Absorber cross section, loading, heat delivered to PFC versus water, and fluence attenuation with embedding depth must be measured. The seed's retained energy cannot replace these measurements.
 
-**Symbols before Eq. (E23):** $\Delta\mathcal G(r_n)$ is nucleus formation free energy (J); $r_n$ is trial vapor-nucleus radius (m); $\gamma_i$ is liquid/vapor tension (N/m); $\Delta p>0$ is the pressure driving difference for a metastable-liquid nucleation approximation (Pa); $r_*$ is critical nucleus radius (m); $\Delta\mathcal G_*$ is critical barrier (J). This is the classical homogeneous, spherical, constant-tension approximation; it does not describe an absorber's heterogeneous nucleation site.
+**Symbols before Eq. (E23):** $\Delta\mathcal G(r_n)$ is nucleus formation free energy (J); $r_n$ is trial vapor-nucleus radius (m); $\gamma_i$ is liquid/vapor tension (N/m); $\Delta p>0$ is the pressure driving difference for a metastable-liquid nucleation approximation (Pa); $r_*$ is critical nucleus radius (m); $\Delta\mathcal G_*$ is critical barrier (J). This is the classical homogeneous, spherical, constant-tension approximation; it does not describe an absorber's heterogeneous nucleation site. $\pi$ is the dimensionless circle constant.
 
 $$
 \begin{aligned}
@@ -376,7 +376,7 @@ $$
 \end{aligned}
 $$
 
-The hazard integral is dimensionless and nonnegative, so probability stays between zero and one. A heterogeneous model needs a site/area hazard with corresponding units. **Unresolved:** the target absorber/site distribution, kinetic prefactor and temperature history. Therefore no optical activation threshold is reported as validated. Experimental activation fractions across fluence, including no-droplet/no-absorber controls, supply this gate.
+The hazard is dimensionless and nonnegative. Probability therefore lies between zero and one. Heterogeneous nucleation needs a site or area hazard with matching units. **Unresolved:** absorber/site distribution, kinetic prefactor and temperature history. Activation thresholds are **not established**. Measure activation fractions versus fluence with no-droplet and no-absorber controls.
 
 ### Step 9 — Require fracture work and a hydraulic connection before exterior ejection
 
@@ -387,7 +387,7 @@ $$
 \mathcal G_f\ge G_c\quad\hbox{is an energetic propagation condition}. \tag{E25}
 $$
 
-This energetic condition does not by itself determine crack initiation, path, aperture or fluid filling. The correct loading constraint matters: fixed pressure and finite closed energy have different release rates. A modulus or intact cavitation-pressure limit cannot replace toughness and strength. The new native models impose no damage law and do not claim to solve this inequality.
+The energy condition leaves crack initiation, path, aperture and filling unresolved. Fixed-pressure and closed-energy loading give different release rates. Measure toughness and strength independently of modulus. These native controls contain no damage law.
 
 **Symbols before Eq. (E26):** $t_c(\delta)$ is cohesive normal traction (Pa); $\delta$ is opening (m); $t_m>0$ is peak traction (Pa); $0<\delta_0<\delta_f$ are opening at peak and final separation (m); $G_c$ is fracture energy per projected crack area including both fracture faces (J/m²); $d\delta$ is the opening measure. This is an example bilinear cohesive constitutive law, requiring calibration.
 
@@ -416,11 +416,11 @@ E_{seed}<E_{cr}&\ \Longrightarrow\ \hbox{slit work exceeds retained seed energy 
 \end{aligned}
 $$
 
-Multiplying length by slit width gives projected area; multiplying area by toughness gives work. This compares a specified path's work with a stipulated allocation of retained seed energy. It does **not** prove energetic impossibility: PFC internal energy can decrease on cooling and the initial interface can release energy when topology changes. A true upper bound also requires all remaining reference-subtracted energy changes to be nonnegative, or an explicit available-energy calculation for the permitted fracture endpoints. Neither is established for a newly opened crack here. Pre-existing flaws, shorter paths, other crack widths, prestress and later heat supply also change the comparison. Passing the screen does not prove initiation, connectivity, aperture or liquid supply. Damaged material is not automatically a fluid-filled channel. Cover is varied only to compare stipulated slit costs; it is not coupled to the infinite-host trajectories. Define center-to-surface distance $d=a_0+h$ (m) and encounter stretch $\lambda_{surface}=d/a_0$ (dimensionless). Once $R\ge d$, an interior spherical inclusion intersects the original free-surface plane. Even smaller standoff needs finite-domain convergence. For the 3 µm-radius case and 1 µm cover, encounter stretch is 1.333, before the 2.1 screen.
+Slit length times width gives projected area. Area times toughness gives work. Compare that work with the assigned retained seed energy. Fracture impossibility is **not established**. Cooling can reduce PFC internal energy; changing topology can release interface energy. An upper bound needs all other reference-energy changes to be nonnegative, or an endpoint-specific available-energy calculation. Neither condition is established here. Flaws, path length, width, prestress and later heat also affect the budget. Passing this screen leaves initiation, connection, aperture and liquid supply unresolved. Cover affects the assumed slit cost; the trajectory still uses an infinite host. Define center-to-surface distance $d=a_0+h$ (m). Define encounter stretch $\lambda_{surface}=d/a_0$ (dimensionless). At $R\ge d$, the inclusion intersects the initial surface plane. Smaller standoff still requires finite-domain convergence. A 3 µm radius under 1 µm cover gives encounter stretch 1.333, below 2.1.
 
 ### Step 10 — Check length/time regimes and distinguish velocities/pressures
 
-**Symbols before Eq. (E28):** $G,\eta$ are shear modulus and viscosity (Pa, Pa s); $a_0$ is initial radius (m); $\gamma_o$ is outer tension (N/m); $\rho_h,p_s$ are host density and pressure scale; $\alpha_h$ is host thermal diffusivity (m²/s); $\tau_p$ is laser duration (s); $W,c_h$ are radial speed and sound speed (m/s). Each ratio below is dimensionless and applies to its stated scale.
+**Symbols before Eq. (E28):** $G,\eta$ are shear modulus and viscosity (Pa, Pa s); $a_0$ is positive initial radius (m); $\gamma_o$ is positive outer tension (N/m); $\rho_h,p_s$ are positive host density and pressure scale (kg/m³, Pa); $\alpha_h$ is host thermal diffusivity (m²/s); $\tau_p$ is pulse duration (s); $W,c_h$ are radial speed and positive sound speed (m/s). Vertical bars mean absolute value. The square root takes its positive branch. Every ratio is dimensionless.
 
 $$
 \frac{Ga_0}{\gamma_o},\qquad
@@ -443,7 +443,7 @@ Radial wall speed, liquid velocity in a connected outlet, and an internal collap
 
 ### Step 11 — Check internal core/phase stability at fixed temperature, volume and mass
 
-This is a separate local test. Fix uniform temperature $T$ (K), whole-inclusion volume $V$ (m³), and PFC mass $m$ (kg). Let $q=V_b$ (m³) and $n=m_v$ (kg) be independent vapor-volume and vapor-mass coordinates; $V_l=V-q$ and $m_l=m-n$ are liquid volume and mass. Define $\rho_l=m_l/V_l$ and $\rho_v=n/q$ (kg/m³), and $b=(3q/(4\pi))^{1/3}$ (m). Let $F$ be the internal Helmholtz energy including the core surface (J), $a_H$ the specific Helmholtz function (J/kg), and $\gamma_i$ constant tension (N/m). Outer surface, gel and ambient terms are constant at fixed outer volume.
+**Symbols before Eq. (E30):** $T$ is fixed uniform temperature (K); $V$ is fixed inclusion volume (m³); $m$ is fixed PFC mass (kg). Independent coordinates are vapor volume $q=V_b$ (m³) and vapor mass $n=m_v$ (kg), with $0<q<V$ and $0<n<m$. Liquid volume is $V_l=V-q$ (m³); liquid mass is $m_l=m-n$ (kg). Phase densities are $\rho_l=m_l/V_l$ and $\rho_v=n/q$ (kg/m³). Core radius is $b=(3q/(4\pi))^{1/3}$ (m). $F$ is internal Helmholtz energy including the core surface (J); $a_H(T,\rho)$ is specific Helmholtz energy (J/kg); $\gamma_i$ is constant inner tension (N/m); $\pi$ is the circle constant. Outer surface, gel and ambient terms are constant at fixed outer volume.
 
 $$
 F(q,n)=m_l a_H(T,\rho_l)+n a_H(T,\rho_v)+4\pi\gamma_i b^2. \tag{E30}
@@ -451,7 +451,7 @@ $$
 
 For each phase, the fixed-temperature differential is chemical potential times mass change minus pressure times volume change. Define $g_l,g_v$ (J/kg) and $p_l,p_v$ (Pa) as phase chemical potentials and pressures; subscripts $n,q$ on $F$ denote partial derivatives with respect to those coordinates at fixed other coordinates. Liquid mass and volume changes are the negatives of the vapor changes. Therefore $F_n=g_v-g_l$ (J/kg) and $F_q=p_l-p_v+2\gamma_i/b$ (Pa). Both vanish at the adopted curved-equilibrium root.
 
-Before Eq. (E31), define $K_l=(\partial p_l/\partial\rho_l)_T$ and $K_v=(\partial p_v/\partial\rho_v)_T$ (Pa m³/kg), and $\kappa_l=K_l/V_l$, $\kappa_v=K_v/q$ (Pa/kg). At fixed temperature $dg=dp/\rho$. Differentiating the phase densities gives $\partial_n\rho_l=-1/V_l$, $\partial_n\rho_v=1/q$, $\partial_q\rho_l=\rho_l/V_l$, and $\partial_q\rho_v=-\rho_v/q$; their units follow from differentiating density by kg or m³.
+**Symbols before Eq. (E31):** $F$ is internal Helmholtz energy (J); subscripts $n,q$ denote partial derivatives in vapor mass $n$ (kg) and volume $q$ (m³), holding other coordinates fixed. $T$ is fixed temperature (K). $p_l,p_v$ are phase pressures (Pa); $\rho_l,\rho_v$ are phase densities (kg/m³); $V_l=V-q$ is liquid volume (m³). $K_l=(\partial p_l/\partial\rho_l)_T$ and $K_v=(\partial p_v/\partial\rho_v)_T$ are positive pressure-density slopes (Pa m³/kg). $\kappa_l=K_l/V_l$ and $\kappa_v=K_v/q$ are scaled slopes (Pa/kg). $\gamma_i$ is inner tension (N/m); $b$ is core radius (m); $\pi$ is the circle constant. At fixed temperature, $dg=dp/\rho$. Density derivatives are $\partial_n\rho_l=-1/V_l$, $\partial_n\rho_v=1/q$, $\partial_q\rho_l=\rho_l/V_l$ and $\partial_q\rho_v=-\rho_v/q$. Mass derivatives have units m^-3. Volume derivatives have units kg/m^6.
 
 $$
 \begin{aligned}
@@ -463,7 +463,7 @@ F_{qq}&=\rho_l\kappa_l+\rho_v\kappa_v-\frac{\gamma_i}{2\pi b^4},
 \end{aligned}
 $$
 
-The surface derivative uses $dq/db=4\pi b^2$. Positive phase pressure-density slopes make $F_{nn}>0$. Its units are J/kg²; mixed curvature has units Pa/kg; volume curvature has units Pa/m³. The Hessian is positive definite precisely when its Schur complement is positive. Before Eq. (E32), define $H_{core}$ as that complement (Pa/m³).
+The surface derivative uses $dq/db=4\pi b^2$. Positive pressure-density slopes give $F_{nn}>0$. Mass curvature has units J/kg²; mixed curvature has units Pa/kg; volume curvature has units Pa/m³. For a symmetric Hessian with positive mass curvature, positive definiteness requires a positive Schur complement. **Symbols before Eq. (E32):** $H_{core}$ is that complement (Pa/m³); $F_{qq},F_{nq},F_{nn}$ are volume, mixed and mass curvatures (Pa/m³, Pa/kg, J/kg²). $\kappa_l,\kappa_v$ are positive scaled pressure-density slopes (Pa/kg); $\rho_l,\rho_v$ are phase densities (kg/m³); $\gamma_i$ is inner tension (N/m); $b$ is positive core radius (m); $\pi$ is the dimensionless circle constant. The test holds temperature, total volume and total mass fixed.
 
 $$
 \begin{aligned}
@@ -476,11 +476,10 @@ H_{core}&=F_{qq}-\frac{F_{nq}^2}{F_{nn}}\\
 \end{aligned}
 $$
 
-To obtain the last row, multiply the first two bulk terms by their positive common denominator. The squared $\kappa_l$ and $\kappa_v$ contributions cancel the matching mixed-curvature terms, leaving $\kappa_l\kappa_v(\rho_l^2-2\rho_l\rho_v+\rho_v^2)$. Capillarity destabilizes this internal-volume variation, whereas positive bulk compressibilities stabilize it. All 132 retained roots have positive mass curvature and core complement; the minimum bulk-to-capillary ratio is 20.4526. This proves a local minimum only for internal core/phase variations at fixed $(T,V,m)$. It does not establish global accessibility, nucleation probability, nonspherical stability, or full finite-depth dynamics.
+Use the positive common denominator for the bulk terms. Squared $\kappa_l$ and $\kappa_v$ terms cancel the mixed-curvature terms. The numerator becomes $\kappa_l\kappa_v(\rho_l^2-2\rho_l\rho_v+\rho_v^2)$. Bulk compressibility stabilizes this volume variation; capillarity destabilizes it. All 132 roots have positive mass curvature and Schur complement. The minimum bulk-to-capillary ratio is 20.4526. This establishes a local internal minimum at fixed $(T,V,m)$. Global accessibility, nucleation probability, shape stability and finite-depth dynamics are **not established**.
 
 ## 4. Audit and unresolved links
 
-The second pass checks local symbol declarations, units, equations, branch restrictions and reference alignment. Automated checks reconstruct strain-energy and kinetic-power derivatives, finite phase inventory, interface traction, chemical equilibrium, retained-seed-energy accounting, independent solver waveforms and thermodynamic entropy drift. Stability is checked separately from phase root existence. These are numerical/mathematical checks of the stated controls.
+The audit checks local symbols, units, algebra, branches and references. Automated calculations reconstruct gel-energy and kinetic-power derivatives, phase inventory, traction, chemical equilibrium and seed-energy accounting. Independent waveforms and entropy drift are compared. Stability is tested separately from root existence. These checks verify the declared equations and their implementation.
 
-**Unresolved links to the actual embedded experiment:** optical energy distribution and heat delivered to PFC/water; metastable/heterogeneous nucleation and its probability; transient temperature gradients and phase-transfer rate; liquid-shell inertia; target rate-dependent gel rheology and fracture; free-surface geometry and crack fluid connectivity; water-vapor/noncondensable content; nonspherical collapse, jet breakup and resolved shock/impact pressure. The implementation handoff states the measurements and acceptance criteria needed for each. Their absence does not prevent completing the present feasibility study, but prevents declaring the full embedded mechanism physically validated.
-
+**Unresolved:** optical heat distribution; metastable and heterogeneous nucleation probability; temperature gradients and phase-transfer rates; shell inertia; target high-rate rheology and fracture; surface geometry and crack filling; water vapor and noncondensable gas; nonspherical collapse, breakup and shock/impact pressure. [The implementation plan](IMPLEMENTATION_HANDOFF.md) lists the required measurements. Full target-mechanism validation is **not established**.

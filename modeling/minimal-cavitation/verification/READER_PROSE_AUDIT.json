@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "baseline": "Minimal_Cavitation_Models_20261010.zip before 2026-10-14 prose revision",
+  "scope": "Exact formula, code, numeric token and recorded local symbol declaration preservation; CRLF/LF normalization permitted.",
+  "reader_checks": [
+    {
+      "file": "MODEL_SPEC.md",
+      "formula_expressions": 257,
+      "code_entries": 15,
+      "numeric_tokens": 445,
+      "status": "PASS"
+    },
+    {
+      "file": "MODEL_SPEC.zh.md",
+      "formula_expressions": 257,
+      "code_entries": 15,
+      "numeric_tokens": 445,
+      "status": "PASS"
+    },
+    {
+      "file": "RESULTS.md",
+      "formula_expressions": 0,
+      "code_entries": 0,
+      "numeric_tokens": 53,
+      "status": "PASS"
+    },
+    {
+      "file": "RESULTS.zh.md",
+      "formula_expressions": 0,
+      "code_entries": 0,
+      "numeric_tokens": 53,
+      "status": "PASS"
+    },
+    {
+      "file": "STEP_BY_STEP.md",
+      "formula_expressions": 0,
+      "code_entries": 679,
+      "numeric_tokens": 642,
+      "status": "PASS"
+    },
+    {
+      "file": "STEP_BY_STEP.zh.md",
+      "formula_expressions": 0,
+      "code_entries": 679,
+      "numeric_tokens": 642,
+      "status": "PASS"
+    }
+  ],
+  "protected_native_data_GUI_files": 49,
+  "semantic_review": "Self-review of revised bilingual prose; assumptions, branches and limitations retained. No new independent expert review.",
+  "equation_derivation": "Existing derivation retained; this script does not prove it.",
+  "new_COMSOL_runs": "NOT_RUN",
+  "new_physical_validation": "NOT_ESTABLISHED"
+}

@@ -25,6 +25,13 @@
   }
   var button = document.createElement('button'); button.id = 'language-toggle'; button.type = 'button';
   button.addEventListener('click', function () { apply(mode === 'en' ? 'zh' : 'en'); });
-  (document.querySelector('.theme-tools') || document.body).appendChild(button);
+  var bar = document.querySelector('.theme-tools');
+  if (!bar) {
+    bar = document.createElement('div'); bar.className = 'theme-tools';
+    bar.setAttribute('role', 'group');
+    bar.setAttribute('aria-label', 'Reading controls / 阅读控制');
+    document.body.insertBefore(bar, document.body.firstChild);
+  }
+  bar.appendChild(button);
   apply(mode);
 })();

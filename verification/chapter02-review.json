@@ -9,7 +9,7 @@
     "C2-Q2",
     "C2-Q3"
   ],
-  "english_prose_word_count_excluding_local_symbols": 4782,
+  "english_prose_word_count_excluding_local_symbols": 4087,
   "supplied_source": "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md, Chapter 2 and three final defense questions",
   "organization_reference": "sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md; one integrated route",
   "checks": [
@@ -481,7 +481,7 @@
       "passed": true,
       "detail": {
         "display_count": 36,
-        "inline_count": 702,
+        "inline_count": 783,
         "error": ""
       },
       "method": "content/structure inspection"

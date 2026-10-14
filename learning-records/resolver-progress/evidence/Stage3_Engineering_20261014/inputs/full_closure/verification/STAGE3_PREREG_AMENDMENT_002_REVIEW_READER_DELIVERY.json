@@ -1,0 +1,21 @@
+{
+  "id": "STAGE3_PREREG_AMENDMENT_002_REVIEW_READER_DELIVERY",
+  "frozen_utc": "2026-10-13T20:14:38.123950+00:00",
+  "parent_preregistration_sha256": "dc8fe3b86e744eddb6c5f6119a4ce849b96c0d20eb55e637c80b2161e49a7ce2",
+  "input_manifest_sha256": "24d67b9d21b74c936fa79ed3dc1e7993dc5c2c1ba3a4c9ed578d91927eca62e2",
+  "scope": [
+    "Independent standalone Python recomputation of available conditional ceiling arithmetic, historical records, partial diagnostics; all ten red-team answers; no missing-objective computation",
+    "LaTeX PDF and every-page visual inspection",
+    "Offline reader with inline/local assets and day/night toggle; browser and moved-folder checks",
+    "Selective self-contained package, Python/TeX relocation rebuild, output comparison, ZIP CRC/SHA256 and preservation checks"
+  ],
+  "tools": [
+    "Python standard library, installed scientific/PDF libraries",
+    "Existing TeX Live; no administrative installs",
+    "Browser UI or installed browser automation",
+    "Git read-only status/HEAD only"
+  ],
+  "claim_policy": "All 18 objectives null; accepted ceilings remain conditional; historical P/E tiers retained; seven waivers and 018-030 preserved; no scientific gate upgrades or new solver runs",
+  "package_root": "delivery/Stage3_Engineering_20261014",
+  "reporting_inputs_frozen": true
+}

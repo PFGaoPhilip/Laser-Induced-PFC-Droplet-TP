@@ -1,0 +1,29 @@
+{
+  "schema": "stage2_preregistration_amendment_v1",
+  "amendment_id": "STAGE2_PREREG_AMENDMENT_002_NOSPACE_BUILDER",
+  "recorded_utc": "2026-10-13T19:04:37Z",
+  "parent_preregistration_sha256": "40a37b2667941f2237ce26620caf145a3cad2e0497d3c15ad041fa37a137a67f",
+  "changes": "Toolchain build procedure only; model source, Stage2 scope, pilot physics, runtime inputs, and outcome claims are unchanged.",
+  "failed_attempt": {
+    "record": "verification/STAGE2_TOOLCHAIN_BUILD_FAILURE_001.md",
+    "sha256": "8ee15209753809d3755c82b28caa86d91bc354bf4dfae18a139be9bceab14b6a",
+    "status": "BUILD_FAILED_BEFORE_SIMULATION",
+    "cause": "Basilisk Makefile split a BASILISK macro path containing spaces."
+  },
+  "superseded_build_script": {
+    "path": "verification/stage2_loosened_build_028_local_001.sh",
+    "sha256": "88485284c009ca754fe5563d49674d61439ab504c49065285c8355cb25ffa06c",
+    "retained_as": "failed historical build attempt"
+  },
+  "replacement_build_script": {
+    "path": "verification/stage2_loosened_build_028_local_002_nospace.sh",
+    "sha256": "441dc692a399d2c6c81ec892896a753f222806543ffd591bb09501c89f4c6a84",
+    "method": "Build into a new project-local directory exposed through a no-space WSL /tmp symlink; preserve same archived Basilisk source and GCC 9.4; no admin installation."
+  },
+  "simulation_runs_since_parent_freeze": 0,
+  "stage_boundary": {
+    "stage1_status": "CLOSED_LOOSENED",
+    "stage2_status": "STAGE2_LOOSENED_PILOT_PRE_RUN",
+    "stage3_started": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "status": "PASS_WITH_PREEXISTING_ADDITIONS",
+  "trees": {
+    "E": {
+      "expected": "fdf43940e66fd1523cd4a41f1daecf81004e5b3d2fa9e4983ff6b99475409179",
+      "actual": "fdf43940e66fd1523cd4a41f1daecf81004e5b3d2fa9e4983ff6b99475409179",
+      "files": 233,
+      "match": true
+    },
+    "T": {
+      "expected": "ae4ce8389d78e4bbe5012853c18cdbd36b72359bf28d8fc0913107133112979c",
+      "actual": "ae4ce8389d78e4bbe5012853c18cdbd36b72359bf28d8fc0913107133112979c",
+      "files": 23,
+      "match": true
+    },
+    "A": {
+      "expected": "2386614dbdca6d622fcb7fd6ae352d952eee4aa1c948ca09492aff90ac09ca38",
+      "actual": "2386614dbdca6d622fcb7fd6ae352d952eee4aa1c948ca09492aff90ac09ca38",
+      "files": 15,
+      "match": true
+    },
+    "R_rest": {
+      "expected": "89c5db2d73e5b09086845d37ba061750fe6a1fcffc9b2379d770efabd409aba0",
+      "actual": "2a4134756f444de44b5f2a7c7d407547f2d86811caa9585f17d9f4c6b5d70413",
+      "files": 509,
+      "match": false
+    }
+  },
+  "logs": [
+    {
+      "path": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\full_closure\\WORK_LOG.md",
+      "initial_size": 800586,
+      "final_size": 802264,
+      "prefix_sha256": "0459c6742d912d38af6293c5ee52ff86ff31154fc64d1d97a3a603a890aae165",
+      "expected_prefix_sha256": "0459c6742d912d38af6293c5ee52ff86ff31154fc64d1d97a3a603a890aae165",
+      "append_only": true
+    },
+    {
+      "path": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\WORK_LOG.md",
+      "initial_size": 828083,
+      "final_size": 829761,
+      "prefix_sha256": "1e2e07d5baf16dc5d2ba697144f0a618a9acb3837953729f06ca56ad764b3675",
+      "expected_prefix_sha256": "1e2e07d5baf16dc5d2ba697144f0a618a9acb3837953729f06ca56ad764b3675",
+      "append_only": true
+    },
+    {
+      "path": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\WORK_LOG.md",
+      "initial_size": 909360,
+      "final_size": 911038,
+      "prefix_sha256": "4102f20ae4b99c3fd68d59d0c445b1ef2624bc2aee456b460126caceefb63c5b",
+      "expected_prefix_sha256": "4102f20ae4b99c3fd68d59d0c445b1ef2624bc2aee456b460126caceefb63c5b",
+      "append_only": true
+    },
+    {
+      "path": "C:\\L. Jay Guo\\WORK_LOG.md",
+      "initial_size": 969367,
+      "final_size": 971045,
+      "prefix_sha256": "6a2c7540afa63e0479b7aa32e076ac6cff8bcad60ef359058e1d1a675047a37e",
+      "expected_prefix_sha256": "6a2c7540afa63e0479b7aa32e076ac6cff8bcad60ef359058e1d1a675047a37e",
+      "append_only": true
+    }
+  ],
+  "protected_binding_changes": [],
+  "git_head": "04112243d9ed9e2eee693a592a1f7ba09ecc5851",
+  "expected_head": "04112243d9ed9e2eee693a592a1f7ba09ecc5851",
+  "scope": "Final delivery integrity audit; reuses Stage2 entry scientific verification without rerunning it. Task changes are confined to F, appended four logs, final ZIP and explicit unrelated relocation test directory.",
+  "R_rest_reconciliation": {
+    "original_baseline_literal_match": false,
+    "baseline_preserved_after_identifying_preexisting_additions": true,
+    "original_file_count": 507,
+    "reconstructed_original_tree_sha256": "89c5db2d73e5b09086845d37ba061750fe6a1fcffc9b2379d770efabd409aba0",
+    "retained_additions": [
+      {
+        "path": "STAGE1_BOX_RETURN_20261013.tar.gz",
+        "sha256": "c9549a3974aece4c411f9d8e79c107bd452162146f1c232ea89876058d1cd042",
+        "size": 2061911,
+        "last_write_utc": "2026-10-13T17:38:07.125317+00:00"
+      },
+      {
+        "path": "STAGE1_BOX_RETURN_20261013.sha256",
+        "sha256": "f19db0a7e466b273d9987a5ae1075d180c7ff1295a6810026e46e6a4b4897c07",
+        "size": 65,
+        "last_write_utc": "2026-10-13T17:38:00.658380+00:00"
+      }
+    ],
+    "meaning": "Two transferred Stage1 archive/receipt files predate this Stage3 work. They remain untouched. No baseline was rewritten, no files deleted, and the exact original507-file set matches. Raw historical G0 tree equality remains FAIL, while scoped Stage3 evidence preservation passes."
+  },
+  "strict_G0_status": "FAIL_RAW_R_REST_HAS_TWO_PREEXISTING_TRANSFER_ADDITIONS"
+}

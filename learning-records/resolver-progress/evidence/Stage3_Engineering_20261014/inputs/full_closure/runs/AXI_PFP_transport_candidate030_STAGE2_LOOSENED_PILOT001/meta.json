@@ -1,0 +1,29 @@
+{
+  "schema": "candidate028_native_execution_001",
+  "started_utc": "2026-10-13T17:24:36.261002+00:00",
+  "finished_utc": "2026-10-13T17:24:36.261622+00:00",
+  "status": "NATIVE_COMPLETED_AWAITING_AUDIT",
+  "exit_code": 0,
+  "preregistration_sha256": "ff44f27f1edace285138cd58268be1cca7a642d67fd760c6761b51b29a1371f9",
+  "freeze_record_sha256": "d9a3a8456f2295a64ffe8ab64f13e95581802002ca64924a55d7d658c455cc55",
+  "arguments": [
+    "PFP",
+    "/workspace/stage1/full_closure/data/water_mg/prototype001/cold_energy_N1025.bin",
+    "386.48623647227214",
+    "1.8337513994824743e-13",
+    "3.3495599259759347e-06",
+    "0.000128",
+    "3.2e-05",
+    "4",
+    "8",
+    "8e-06",
+    "0.3",
+    "1e-13",
+    "5e-15",
+    "0.2",
+    "1"
+  ],
+  "scope": "Authorized repair of 027 SIGFPE in geometric capacity boundary after viscous_first. Retains 018-027. NEW: clamp Inf/overflow capacity ratios in closure_geometric_advection.h; SEPS in capacity factor. NOT production. PFP args unchanged. 011-027 immutable.",
+  "is_production_pfc": false,
+  "note": "Executed on box under /workspace/stage1/full_closure; sim already completed exit=0 before meta write"
+}

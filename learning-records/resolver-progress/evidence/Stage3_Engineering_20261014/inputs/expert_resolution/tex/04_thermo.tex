@@ -1,0 +1,313 @@
+% ---------------------------------------------------------------------------
+\section{Real-fluid thermodynamic ceilings for PFC activation}\label{sec:thermo}
+This section derives the results that do not depend on unknown kinetics or geometry. They answer
+handoff priorities 2 (which energy is available) and 3 (which states are reachable).
+
+\subsection{Step T1 --- Exergy supplies the thermodynamic work budget}\label{sec:exergy}
+\emph{Symbols.} $\Sigma$ is the system (PFC, absorber, carrier, gel and receiver near field); $\mathcal U,\mathcal S,V$
+its internal energy (J), entropy (J/K) and volume (m$^3$); $K$ the kinetic energy (J) of its bulk motion; subscript 0 the
+dead state (everything at rest at $T_0,\pinf$ in its stable phase). During an infinitesimal step,
+$\delta Q$ is heat received from the environment (at $T_0$), $\delta W_{\mathrm{tot}}$ the total work done
+by $\Sigma$ on its surroundings, $\delta W_{\mathrm u}=\delta W_{\mathrm{tot}}-\pinf\,\dd V$ the useful work
+(work in excess of displacing the far field at $\pinf$), $\delta E_{\mathrm L}$ the absorbed optical energy and
+$\delta S_{\mathrm L}\ge0$ the entropy delivered with it (J/K). Temperatures $T_0>0$ are in K,
+pressures $\pinf$ in Pa, and every energy/work/heat increment is in J. Define the exergy $\Phi$ (J):
+\begin{equation}
+\Phi\coloneqq (\mathcal U-\mathcal U_0)+\pinf (V-V_0)-T_0(\mathcal S-\mathcal S_0)+K .\label{eq:exergy}
+\end{equation}
+\textbf{Derivation.} (i) First law: $\dd\mathcal U+\dd K=\delta Q-\delta W_{\mathrm{tot}}+\delta E_{\mathrm L}$.
+(ii) Second law for a system exchanging heat only with a reservoir at $T_0$ (H3):
+$\dd\mathcal S\ge \delta Q/T_0+\delta S_{\mathrm L}\ge\delta Q/T_0$. (iii) Differentiate \eqref{eq:exergy} and substitute.
+For the next identity, $\dd\Phi,\dd\mathcal U,\dd K,\delta Q,\delta E_{\mathrm L},\delta W_{\mathrm u}$ are
+energy increments (J); $\dd V$ is a volume increment (m$^3$), $\dd\mathcal S$ an entropy increment (J/K),
+and $\pinf,T_0$ the fixed environment pressure (Pa) and temperature (K):
+\begin{align}
+\dd\Phi&=\dd\mathcal U+\dd K+\pinf\dd V-T_0\,\dd\mathcal S
+\le \delta Q-\delta W_{\mathrm u}-\pinf\dd V+\delta E_{\mathrm L}+\pinf\dd V-\delta Q
+=\delta E_{\mathrm L}-\delta W_{\mathrm u}.\label{eq:dphi}
+\end{align}
+(iv) First allow a general initial state with availability $\Phi_{\mathrm{ini}}\ge0$ (J).
+Let $W_{\mathrm u}^{\mathrm{ini}\to f}$ and $W_{\mathrm u}^{\mathrm{ini}\to a}$ be the useful work
+exported during the labelled intervals (J), $\Phi_f,\Phia$ final/activated exergies (J), and
+$\Eabs$ energy absorbed during preparation (J). Integration of Eq.~\eqref{eq:dphi} gives
+\begin{equation}
+\Phi_f+W_{\mathrm u}^{\mathrm{ini}\to f}\le\Phi_{\mathrm{ini}}+\Eabs,\qquad
+\Phia\le\Phi_{\mathrm{ini}}+\Eabs-W_{\mathrm u}^{\mathrm{ini}\to a}.
+\label{eq:initial_availability}
+\end{equation}
+The absorbed-energy-only cap therefore requires an initial dead state and no useful-work input.
+For that specialization, integrate from the dead state ($\Phi=0$) through deposition to state ``a''
+and then to any later state ``f''. Using $\Phi\ge0$ for every state (thermodynamic stability of the
+environment; the minimum-work theorem of Landau \& Lifshitz, \emph{Statistical Physics} I, \S\S20--21).
+Here $W_{\mathrm u}^{0\to f},W_{\mathrm u}^{a\to f},W_{\mathrm u}^{0\to a}$ are useful works between
+the labelled states (J), $\Phi_f,\Phia$ their exergies (J), and $\Eabs$ absorbed optical energy (J).
+The benchmark has no useful-work input, and preparation work $W_{\mathrm u}^{0\to a}\ge0$:
+\begin{align}
+W_{\mathrm u}^{0\to f}&\le \Eabs-\Phi_f\le \Eabs,\label{eq:Wu}\\
+W_{\mathrm u}^{a\to f}&\le \Phia-\Phi_f\le\Phia,\qquad \Phia\le \Eabs-W_{\mathrm u}^{0\to a}\le\Eabs .\label{eq:Wua}
+\end{align}
+(v) Any kinetic energy $K_{\mathrm j}$ of a designated jet belonging to $\Sigma$ is part of $\Phi$ through $K$, and
+the remaining thermodynamic part is nonnegative under the declared stable dead-state and stress-free
+reference assumptions. Any initial absorber, gel, interface or carrier availability must be included
+in $\Phia$ if present; the reported numerical benchmark allocates the activated PFC exergy only.
+Its numerical ceilings require that no additional initial availability is accessible and that
+the omitted reference contributions are nonnegative; otherwise the total budget must be enlarged.
+For every time $t$ (s) after deposition, $K_{\mathrm j}(t)$ is jet kinetic energy (J),
+$\Phi(t)$ total exergy (J), $\Phia$ activated exergy (J), $\Phi_{\mathrm{ini}}$ initial availability
+(J), and $\Eabs$ absorbed energy (J). With nonnegative preparation work:
+\begin{equation}
+K_{\mathrm j}(t)\le\Phi(t)\le\Phia\le\Phi_{\mathrm{ini}}+\Eabs .\label{eq:Kj}
+\end{equation}
+\textbf{Consequences.} Every energy-based speed bound of the limits report (Limits E03--E07, E10, E31)
+remains valid with $E_{\mathrm{av}}$ replaced by $\Phia$, the thermodynamic work budget once
+the deposited state is known; it is generally tighter than $\Eabs$. Kinematic and constitutive
+constraints can impose stricter bounds. Exergy is destroyed (strictly decreases)
+by heat conduction between unequal temperatures, viscous dissipation, non-equilibrium phase change and
+shock formation; only the exergy present when the working fluid starts to expand can drive the cavity.
+\emph{Dimensions:} every term in \eqref{eq:exergy} is J. \emph{Limit:} for a deposition that only
+heats matter, $\Phi\to0$ as the temperature rise $\to0$ (shown in Step T5).
+
+\subsection{Step T2 --- Reference equation of state and metastable states}
+\emph{Symbols.} $a_{\mathrm H}(T,\rho)$ specific Helmholtz energy (J/kg) of the Gao et al.\ (2021) reference
+equations for PFP and PFH, evaluated with CoolProp 8.0.0; $\rho$ density (kg/m$^3$); $g_{\mathrm F}$ specific Gibbs
+energy (J/kg). In the next display, $p$ is pressure (Pa), $s$ specific entropy (J/(kg\,K)),
+$u$ specific internal energy (J/kg), $h_{\mathrm F}$ specific PFC enthalpy (J/kg), and
+$g_{\mathrm F}$ specific Gibbs energy (J/kg); partial derivatives hold the subscript variable fixed:
+\begin{equation}
+p=\rho^2\Bigl(\frac{\partial a_{\mathrm H}}{\partial\rho}\Bigr)_T,\quad
+s=-\Bigl(\frac{\partial a_{\mathrm H}}{\partial T}\Bigr)_\rho,\quad u=a_{\mathrm H}+Ts,\quad
+h_{\mathrm F}=u+\frac p\rho,\quad g_{\mathrm F}=a_{\mathrm H}+\frac p\rho .\label{eq:helm}
+\end{equation}
+Metastable (superheated) liquid states are evaluated by imposing the liquid branch, i.e.\ by evaluating
+\eqref{eq:helm} at $(T,\rho)$ without a phase-equilibrium flash; stable two-phase states are obtained by
+the equilibrium flash. Validity domain stated by the EOS implementation: PFP $T\le\PFPTmax$\,K,
+$p\le\PFPpmax$\,MPa; PFH $T\le\PFHTmax$\,K, $p\le\PFHpmax$\,MPa. Critical points: PFP
+$T_{\mathrm c}=\PFPTc$\,K, $p_{\mathrm c}=\PFPpc$\,MPa; PFH $T_{\mathrm c}=\PFHTc$\,K,
+$p_{\mathrm c}=\PFHpc$\,MPa. At $T_0$: $\psat=\PFPpsatZero$\,kPa (PFP), $\PFHpsatZero$\,kPa (PFH).
+\textbf{Audit consequence:} the EOS liquid isobaric heat capacity of PFP at $T_0$ is
+$\PFPcp$\,J/(kg\,K) ($\PFPcpMol$\,J/(mol\,K)), differing from the $653.74$\,J/(kg\,K) ($188.3$\,J/(mol\,K), NIST
+``interpolated'' datum) used in Limits E25 (Section~\ref{sec:audit}). The ideal-gas heat-capacity ratio of
+the vapours is $k_{\mathrm v}=\PFPgammav$ (PFP) and $\PFHgammav$ (PFH): PFC vapour is nearly isothermal under
+compression, not a $\kappa=1.4$ gas.
+
+\subsection{Step T3 --- Spinodal: the absolute limit of a superheated liquid}
+\emph{Symbols.} $\rho_{\mathrm{sp}}(T)$ liquid-branch density where the isothermal stiffness vanishes;
+$p_{\mathrm{sp}}(T)=p(T,\rho_{\mathrm{sp}})$ (Pa); $\Tsp(p)$ the temperature (K) at which
+$p_{\mathrm{sp}}=p$; $T$ is temperature (K), $\rho$ density (kg/m$^3$), and $p(T,\rho)$ the EOS
+pressure (Pa). The derivative is taken at fixed $T$ on the metastable liquid branch:
+\begin{equation}
+\Bigl(\frac{\partial p}{\partial\rho}\Bigr)_T\Big|_{\rho_{\mathrm{sp}}(T)}=0,\qquad
+p_{\mathrm{sp}}\bigl(\Tsp(p)\bigr)=p .\label{eq:spinodal}
+\end{equation}
+For $\rho$ between the vapour and liquid spinodals the liquid is mechanically unstable; a liquid held at
+pressure $p$ cannot be heated above $\Tsp(p)$ without phase separation. The isotherms of the Gao EOS were
+checked to have a single van der Waals loop across the dome (no spurious oscillation), so
+\eqref{eq:spinodal} has one root. Results at $p=\pinf$: PFP $\Tsp=\PFPTsp$\,K
+($\PFPTspRatio\,T_{\mathrm c}$), PFH $\Tsp=\PFHTsp$\,K ($\PFHTspRatio\,T_{\mathrm c}$).
+\emph{Caveat:} the spinodal of a multiparameter EOS is an extrapolation into a region without data; it
+is used only as an upper bound for the kinetic limit below, which lies 5--6\,K lower.
+
+\subsection{Step T4 --- Kinetic superheat limit from classical nucleation theory}\label{sec:cnt}
+\emph{Symbols.} $r_{\mathrm n}$ nucleus radius (m); $\sigma_{\mathrm F}(T)$ PFC liquid--vapour tension (N/m);
+$p_\ell$ liquid pressure (Pa); $p_{\mathrm v}^*$ pressure of vapour whose chemical potential equals that of the
+liquid at $(T,p_\ell)$ (Pa); $W(r_{\mathrm n})$ reversible formation work (J); $k_{\mathrm B}$ Boltzmann constant;
+$N_\ell=\rho_\ell/m_1$ molecular number density (m$^{-3}$), with $m_1=M/N_{\mathrm A}$ the molecular
+mass (kg), $M$ molar mass (kg/mol), $N_{\mathrm A}$ Avogadro's constant (mol$^{-1}$), and $\rho_\ell$
+liquid density (kg/m$^3$); $J$ nucleation rate (m$^{-3}$s$^{-1}$); $V_{\mathrm d}$ droplet volume
+(m$^3$); $\tau_{\mathrm h}>0$ hot-state hazard interval (s). Here $T>0$ is temperature (K),
+$k_{\mathrm B}$ has unit J/K, $r_*>0$ is critical nucleus radius (m), $W_*$ the barrier (J), and
+$g_{\mathrm v},g_\ell$ specific Gibbs energies (J/kg) of vapour and liquid.
+$p_{\mathrm v}^*>p_\ell$ and $\sigma_{\mathrm F}>0$ are required for the nonzero critical-radius branch:
+\textbf{Derivation.} In the capillarity approximation, forming a vapour sphere at $p_{\mathrm v}^*$ inside
+the liquid costs surface work and gains volume work:
+\begin{align}
+W(r_{\mathrm n})&=4\pi r_{\mathrm n}^2\sigma_{\mathrm F}-\tfrac{4\pi}{3}r_{\mathrm n}^3\,(p_{\mathrm v}^*-p_\ell),\qquad
+g_{\mathrm v}(T,p_{\mathrm v}^*)=g_\ell(T,p_\ell),\label{eq:Wn}\\
+\frac{\dd W}{\dd r_{\mathrm n}}&=4\pi r_{\mathrm n}\bigl[2\sigma_{\mathrm F}-r_{\mathrm n}(p_{\mathrm v}^*-p_\ell)\bigr]=0
+\ \Rightarrow\ r_*=\frac{2\sigma_{\mathrm F}}{p_{\mathrm v}^*-p_\ell},\quad
+W_*=\frac{16\pi\sigma_{\mathrm F}^3}{3(p_{\mathrm v}^*-p_\ell)^2},\label{eq:Wstar}
+\end{align}
+where $W_*$ follows by substituting $r_*$: $4\pi\sigma_{\mathrm F}\,4\sigma_{\mathrm F}^2/\Delta^2-\frac{4\pi}{3}\,8\sigma_{\mathrm F}^3/\Delta^2
+=\frac{16\pi}{3}\sigma_{\mathrm F}^3/\Delta^2$ with $\Delta=p_{\mathrm v}^*-p_\ell$; $\dd^2W/\dd r_{\mathrm n}^2=-8\pi\sigma_{\mathrm F}<0$ at $r_*$
+(a maximum); $r_{\mathrm n}=0$ is the other stationary endpoint and is not a critical nucleus.
+For the next rate, $J$ is in m$^{-3}$s$^{-1}$, $N_\ell$ in m$^{-3}$, $\sigma_{\mathrm F}$ in
+N/m, $m_1$ in kg, $W_*$ in J, $k_{\mathrm B}$ in J/K, and $T,\Tk>0$ in K. Volume
+$V_{\mathrm d}>0$ is in m$^3$ and interval $\tau_{\mathrm h}>0$ in s; $\exp$ is the exponential.
+The steady homogeneous rate (Blander \& Katz form) and kinetic limit are
+\begin{equation}
+J=N_\ell\sqrt{\frac{2\sigma_{\mathrm F}}{\pi m_1}}\exp\Bigl(-\frac{W_*}{k_{\mathrm B}T}\Bigr),\qquad
+J(\Tk)\,V_{\mathrm d}\,\tau_{\mathrm h}=1 .\label{eq:cnt}
+\end{equation}
+The second relation states that one nucleation event is expected in the droplet during the hot-state hazard
+interval; the Poisson event probability at unit expected count is $1-\exp(-1)\approx0.632$,
+so this is not a deterministic activation temperature. For a transient history, define
+$\mathcal H_{\mathrm n}$ as expected event count (dimensionless), $P_{\mathrm n}$ as event probability,
+$T(t)$ the actual temperature (K), $T_{\mathrm{peak}}$ its maximum, and $V_{\mathrm d}$ a fixed
+droplet volume (m$^3$) over an interval $\tau_{\mathrm h}$ (s). A nonstationary Poisson assumption gives
+\begin{equation}
+\mathcal H_{\mathrm n}=V_{\mathrm d}\int_0^{\tau_{\mathrm h}}J(T(t))\,\dd t,
+\qquad P_{\mathrm n}=1-e^{-\mathcal H_{\mathrm n}},\qquad
+\mathcal H_{\mathrm n}\le V_{\mathrm d}\tau_{\mathrm h}J(T_{\mathrm{peak}}),\label{eq:cnt_hazard}
+\end{equation}
+where the inequality requires that the rate is no larger than its peak-temperature value along
+the path. Thus a ramp of the same duration that spends time below its peak can require a higher
+peak temperature than the constant-hot-state criterion; the steady $\Tk$ is not a universal
+upper bound on homogeneous transient onset. A changing pressure or volume must be included in
+the actual hazard integral. $p_{\mathrm v}^*$ is computed from the EOS by solving the chemical-potential equality on the vapour
+branch, and $\rho_\ell$ from the metastable liquid branch at $p_\ell=\pinf$. The tension is extrapolated
+from its room-temperature value with a corresponding-states law,
+$\sigma_{\mathrm F}(T)=\sigma_{\mathrm{ref}}[(T_{\mathrm c}-T)/(T_{\mathrm c}-T_{\mathrm{ref}})]^{1.26}$, with
+$\sigma_{\mathrm{ref}}=9.5$ (PFP) and $12.2$ (PFH)\,mN/m at 298.15\,K (Aliabouzar et al.\ 2023, Table 1); this
+extrapolation is an assumption and is varied by $\pm20\%$.
+\emph{Units:} $W_*$ in J since $(\mathrm N/\mathrm m)^3/\mathrm{Pa}^2=\mathrm N\,\mathrm m=\mathrm J$; the prefactor in
+$\mathrm m^{-3}\,(\mathrm{N\,m^{-1}\,kg^{-1}})^{1/2}=\mathrm m^{-3}\mathrm s^{-1}$.
+
+\textbf{Results.} For $d_0=6\,\mu$m and $\tau_{\mathrm h}=5$\,ns, $\Tk=\PFPTkSix$\,K (PFP) and $\PFHTkSix$\,K
+(PFH), i.e.\ $\approx0.92$--$0.93\,T_{\mathrm c}$; the critical radius is 4--6\,nm and $W_*/k_{\mathrm B}T\approx30$.
+Over $d_0=0.6$--$12\,\mu$m and $\tau_{\mathrm h}=1$\,ns--1\,ms, $\Tk$ changes by only
+$\PFPTkSpread$\,K (PFP); a $\pm20\%$ tension change moves it by $\PFPTkSigmaLo$ to $\PFPTkSigmaHi$\,K. The
+corresponding saturation pressures are $\psat(\Tk)\approx\PFPpsatTkSix$\,MPa (PFP) and $\PFHpsatTkSix$\,MPa (PFH).
+\emph{Validity:} the capillarity approximation at nanometre radii, homogeneous nucleation, and a steady
+rate during a nanosecond ramp are approximations. Heterogeneous nucleation at an absorber, coating or
+dissolved gas commonly lowers onset under a comparable protocol. The $\Tk$ state and its availability
+below are adopted homogeneous, constant-hot-state benchmark values, not a universal pulse-trajectory
+ceiling. The EOS spinodal supplies the separate conditional mechanical limit under H2.
+
+\subsection{Step T5 --- Source-pressure ceiling of the thermal route}\label{sec:psrc}
+\emph{Additional hypothesis.} \textbf{H5}: after the pulse the cavity content receives no energy except heat
+from its (colder) surroundings ($\delta q\le0$), its pressure is the equilibrium pressure $p_{\mathrm{eq}}(u,v)$ of
+its mean specific state (homobaric, internally equilibrated content), and the metastable liquid relaxes to
+equilibrium without overshoot.
+\begin{proposition}[Thermal-route source-pressure ceiling]\label{prop:psrc}
+Under H0, H2, H4 and H5 with preparation isobar $p_\ell=\pinf$, while the cavity expands
+($\dd V/\dd t\ge0$), and on an EOS branch
+with the sign/monotonicity conditions used in the proof, the following conditional ceiling holds.
+Here $p_b,p_{\mathrm{eq}},p_{\mathrm{src}}^{\max}$ are pressures (Pa), $t$ time (s), $V$ cavity
+volume (m$^3$), and $(u_{\mathrm a},v_{\mathrm a}),(u_{\mathrm{sp}},v_{\mathrm{sp}})$ the activated and
+spinodal specific internal energies (J/kg) and volumes (m$^3$/kg):
+\begin{equation}
+p_b(t)\le p_{\mathrm{eq}}(u_{\mathrm a},v_{\mathrm a})\le p_{\mathrm{eq}}\bigl(u_{\mathrm{sp}},v_{\mathrm{sp}}\bigr)\eqqcolon p_{\mathrm{src}}^{\max},\label{eq:psrc}
+\end{equation}
+where $(u_{\mathrm a},v_{\mathrm a})$ is the activated liquid state and $(u_{\mathrm{sp}},v_{\mathrm{sp}})$ the metastable liquid at
+its spinodal on the $\pinf$ isobar.
+\end{proposition}
+\emph{Proof.} (a) First law of the closed content after the pulse: $\dd u=\delta q-p_b\,\dd v\le-p_b\,\dd v$.
+(b) With $p_b=p_{\mathrm{eq}}(u,v)$ and $(\partial p/\partial u)_v>0$,
+$\dd p_b=(\partial p/\partial u)_v\dd u+(\partial p/\partial v)_u\dd v\le\bigl[(\partial p/\partial v)_u-p(\partial p/\partial u)_v\bigr]\dd v
+=(\partial p/\partial v)_s\,\dd v$; the last equality follows by evaluating the same differential along an isentrope
+($\dd u=-p\,\dd v$). (c) Thermodynamic stability gives $(\partial p/\partial v)_s<0$ (also for the two-phase equilibrium
+mixture), so $\dd p_b\le0$ whenever $\dd v\ge0$: the pressure can only fall during expansion, from its initial
+equilibrium value $p_{\mathrm{eq}}(u_{\mathrm a},v_{\mathrm a})$ (no overshoot, H5). (d) Under H2 the activated liquid lies on the
+$\pinf$ isobar at $T_{\mathrm a}\le\Tsp(\pinf)$, and $p_{\mathrm{eq}}$ along that isobar increases monotonically with
+$T$. $\square$
+
+The sign conditions used in (b)--(d) were verified numerically on the Gao EOS: $(\partial p/\partial u)_v>0$ and
+$(\partial p/\partial v)_s<0$ at 200 states along the expansion isentrope from the spinodal state, and $p_{\mathrm{eq}}$ is
+monotonic at 80 temperatures on the isobar (\texttt{verification/psrc\_checks.json}).
+These finite-grid checks support the adopted EOS signs; they do not prove global monotonicity
+between all sampled states, nor establish H5 for a non-equilibrium activation transient.
+\textbf{Values.} $p_{\mathrm{src}}^{\max}=\PFPpsrcSp$\,MPa (PFP) and $\PFHpsrcSp$\,MPa (PFH) absolute; at the kinetic limit
+(6\,$\mu$m, 5\,ns) $p_{\mathrm{eq}}(u_{\mathrm a},v_{\mathrm a})=\PFPprelaxSix$\,MPa and $\PFHprelaxSix$\,MPa. Relaxation at fixed
+$(u,v)$ \emph{raises} the temperature above the activation temperature (to $\PFPTrelaxSp$\,K from the PFP spinodal),
+because the stretched metastable liquid releases energy; the ceiling therefore lies slightly above
+$\psat(\Tsp)=\PFPpsatTsp$\,MPa. For comparison the prior initialised ideal-gas source used 0.612\,MPa absolute.
+\emph{What it does not bound:} (i) collapse pressures ($\dd V<0$); (ii) stress-confined (isochoric) deposition
+(Section~\ref{sec:isochoric}); (iii) heating of the vapour after nucleation (violates H5); (iv) optical breakdown
+(violates H0). \emph{Unproven extension:} if the content is not in internal equilibrium (finite-rate evaporation), the
+Hertz--Knudsen--Schrage law limits the vapour pressure at an evaporating interface to $\psat(T_i)\sqrt{T_{\mathrm v}/T_i}$;
+we expect, but have not proved, that this keeps $p_b$ below the equilibrium value.
+
+\subsection{Step T6 --- Specific exergy of the activated PFC and second-law efficiency}
+\emph{Symbols.} $q_{\mathrm h}(T)=h_{\mathrm F}(T,\pinf)-h_{\mathrm F}(T_0,\pinf)$ heat that raises metastable liquid from $T_0$ to $T$ at
+$\pinf$ (J/kg); $\psi(T)$ its specific exergy; $\eta_{\mathrm{II}}=\psi/q_{\mathrm h}$.
+At constant pressure $\pinf$, $(u-u_0)+\pinf(v-v_0)=h_{\mathrm F}-h_{\mathrm F,0}$.
+In the next display, $T,T_0>0$ are temperatures (K), $\pinf$ pressure (Pa), $s$ specific entropy
+(J/(kg\,K)), $q_{\mathrm h}(T)>0$ heat per mass (J/kg), $\psi(T)$ specific exergy (J/kg), and
+$\eta_{\mathrm{II}}$ its dimensionless heat ratio. At $T=T_0$ the ratio is defined by its zero-rise limit:
+\begin{equation}
+\psi(T)=q_{\mathrm h}(T)-T_0\,[s(T,\pinf)-s(T_0,\pinf)],\qquad \eta_{\mathrm{II}}(T)=\frac{\psi(T)}{q_{\mathrm h}(T)} .\label{eq:psi}
+\end{equation}
+\emph{Limit check.} With a constant heat capacity $c_p$: $q_{\mathrm h}=c_p\Delta T$,
+$s-s_0=c_p\ln(1+\Delta T/T_0)$, hence $\psi=c_p[\Delta T-T_0\ln(1+\Delta T/T_0)]=c_p\Delta T^2/(2T_0)+O(\Delta T^3)$
+and $\eta_{\mathrm{II}}\approx\Delta T/(2T_0)\to0$ as $\Delta T\to0$ (heat at a temperature barely above the
+environment is worthless), consistent with the Carnot factor averaged over the heating path.
+\textbf{EOS results} for full uniform activation to $\Tk$ (6\,$\mu$m, 5\,ns): PFP
+$q_{\mathrm h}=\PFPqSix$\,kJ/kg, $\psi=\PFPpsiSix$\,kJ/kg, $\eta_{\mathrm{II}}=\PFPetaSix$; PFH $q_{\mathrm h}=\PFHqSix$\,kJ/kg,
+$\psi=\PFHpsiSix$\,kJ/kg, $\eta_{\mathrm{II}}=\PFHetaSix$. \textbf{Interpretation:} at most about one seventh
+(PFP) to one sixth (PFH) of the heat that activates a PFC droplet can ever become mechanical work,
+cavity energy, jet kinetic energy or radiated sound. For water heated by an absorber to its own kinetic
+limit ($\WTk$\,K) the fraction is $\Weta$ and the exergy density is $\WpsiVolRatio$ times larger, at the
+price of a heat density $\WqVolRatio$ times larger. The PFC advantage is a low activation \emph{threshold},
+not a high efficiency or a high energy density.
+
+\textbf{Adiabatic flash.} The isenthalpic flash fraction from $(\Tk,\pinf)$ to saturation at $\pinf$
+exceeds unity for both species (PFP $\PFPflashSix$, PFH $\PFHflashSix$) because the latent heat is small
+($\PFPhfgTb$\,kJ/kg at the normal boiling point of PFP, versus 2257\,kJ/kg for water) and the liquid heat
+capacity is large: a droplet activated at its kinetic limit vaporises completely and the vapour is
+superheated. A ``surviving liquid shell'' therefore only exists for activation well below $\Tk$.
+
+\subsection{Step T7 --- A rigorous maximum-cavity-volume bound}\label{sec:vmax}
+\begin{lemma}\label{lem:helm}
+At fixed specific volume $v$, the function $u-T_0s$ is minimised at $T=T_0$, so
+$\psi(T,v)\ge\psi_{\min}(v)\coloneqq\int_{v_0}^{v}\bigl[\pinf-p_{\mathrm{eq}}(T_0,v')\bigr]\dd v'$, where
+$p_{\mathrm{eq}}(T_0,\cdot)$ is the equilibrium (two-phase where applicable) isotherm.
+\end{lemma}
+\emph{Proof.} $\partial(u-T_0s)/\partial T|_v=c_v(1-T_0/T)$ vanishes only at $T_0$, is negative below and
+positive above (stability, $c_v>0$), so $T_0$ is the minimum. At $T=T_0$, $u-T_0s=a_{\mathrm H}$ and
+$(\partial a_{\mathrm H}/\partial v)_T=-p$; using the stable (convex-hull) Helmholtz function gives the
+equilibrium isotherm, which lies below any metastable value. Adding $\pinf(v-v_0)$ gives $\psi_{\min}$. $\square$
+
+\emph{Symbols.} $V_{\max}$ maximum cavity volume; $E_{\mathrm s}$, $E_{\mathrm{gel}}$ surface and gel energies
+stored at $V_{\max}$ ($\ge0$, J). At $V_{\max}$ radial kinetic energy vanishes in a spherical
+control; any residual asymmetric kinetic energy is retained as a nonnegative contribution.
+All non-PFC reference contributions are assumed nonnegative. Here $\mF>0$ is PFC mass (kg),
+$\psi_{\min}$ minimum specific exergy (J/kg), $\Phi(t_{\max}),\Phia$ total and activated exergies (J),
+$t_{\max}$ maximum-volume time (s), and $V^*$ the volume (m$^3$) solving the right equality.
+By \eqref{eq:Wua} and Lemma~\ref{lem:helm}
+\begin{equation}
+\mF\,\psi_{\min}\!\bigl(V_{\max}/\mF\bigr)+E_{\mathrm s}+E_{\mathrm{gel}}\le\Phi(t_{\max})\le\Phia
+\ \Longrightarrow\ V_{\max}\le V^*,\quad \mF\,\psi_{\min}(V^*/\mF)=\Phia .\label{eq:vmax}
+\end{equation}
+On the expansion branch $v\ge v_0$, equilibrium pressure decreases from
+$p_{\mathrm{eq}}(T_0,v_0)=\pinf$, so $\psi'_{\min}=\pinf-p_{\mathrm{eq}}\ge0$ and is positive
+for $v>v_0$ under the stable EOS. After reaching saturation,
+$\pinf>\psat(T_0)\ge p_{\mathrm{eq}}$. Thus for $\Phia>0$ the expansion root $V^*$ is unique.
+For an ideal unsaturated vapour beyond the saturated volume $V_{\mathrm{sat}}=\mF/\rho_{\mathrm v,sat}(T_0)$,
+the next expression uses PFC mass $\mF$ (kg), minimum specific exergy $\psi_{\min}$ (J/kg),
+ambient pressure $\pinf$ and saturation pressure $\psat=\psat(T_0)$ (Pa), volumes
+$V\ge V_{\mathrm{sat}}>V_0>0$ (m$^3$), and the logarithm of a dimensionless positive ratio:
+\begin{equation}
+\mF\psi_{\min}=(\pinf-\psat)(V_{\mathrm{sat}}-V_0)+\pinf(V-V_{\mathrm{sat}})-\psat V_{\mathrm{sat}}\ln\frac{V}{V_{\mathrm{sat}}},\label{eq:psimin_ideal}
+\end{equation}
+obtained by integrating $\pinf-\psat V_{\mathrm{sat}}/V'$ from $V_{\mathrm{sat}}$ and treating the
+initial liquid as incompressible at the saturation-volume plateau. That analytic expression neglects
+the short liquid-decompression segment between the dead state and saturated liquid;
+the numerical bound uses the complete real-EOS integral instead.
+\textbf{Result:} with $\Phia=\mF\psi(\Tk)$, $R^*/a_0=\PFPRratioSix$ (PFP) and $\PFHRratioSix$ (PFH) for
+$d_0=6\,\mu$m, i.e.\ $R^*=\PFPRboundSix$ and $\PFHRboundSix\,\mu$m. \emph{Sharpness check:} the equilibrium
+isentropic over-expansion of a free cavity (inviscid, incompressible carrier, no tension) reaches
+$\PFPRoverSix\,\mu$m (PFP), $\PFPRsharpIsen$\% below the bound, and the time-resolved inviscid,
+tension-free simulation reaches $\PFPRdynFree\,\mu$m ($\PFPRsharpDyn$\% below; PFH $\PFHRsharpDyn$\%). The adiabatic
+expansion of an activated PFC droplet is nearly reversible and the bound is nearly attained.
+\textbf{Correction to Limits E19:} $R_{\max}\le(3E/4\pi\Delta p)^{1/3}$ bounds only the stated empty-bubble channel.
+For a finite-inventory vapour cavity with $E=\Phia$ it is violated if $\Delta p=\pinf$ (it gives
+$\PFPRemptySix\,\mu$m while $\PFPRdynFree\,\mu$m is computed) and is loose if $\Delta p=\pinf-\psat(T_0)$
+($\PFPRemptySatSix\,\mu$m), because the vapour becomes unsaturated as it expands; \eqref{eq:vmax} replaces it.
+
+\subsection{Step T8 --- Stress-confined (isochoric) deposition and EOS validity}\label{sec:isochoric}
+If heat is deposited uniformly inside the PFC faster than the acoustic transit time
+$a_0/c_{\mathrm F}$ ($c_{\mathrm F}=\PFPcl$\,m/s for PFP; 6.2\,ns for $d_0=6\,\mu$m), the liquid is heated at
+fixed density $\rho_0$. \emph{Symbols:} $e$ specific energy added (J/kg); $T(e)$ from
+$u(T,\rho_0)-u_0=e$; $p(e)=p(T(e),\rho_0)$. The pressure rises by the thermoelastic coefficient
+$(\partial p/\partial T)_\rho\approx\PFPdpdT$\,MPa/K: $e=20$\,kJ/kg already gives $p=\PFPisoPtwenty$\,MPa,
+beyond the 10\,MPa validity limit of the PFP EOS (the PFH EOS, valid to 40\,MPa, gives
+$\PFHisoPtwenty$\,MPa at the same $e$). Two conclusions follow. (i) The stress-confined EOS calculation
+estimates pressures of tens of megapascals, but the corresponding \emph{state is outside the validated EOS for PFP}; its pressure
+history cannot be certified here (unresolved, Section~\ref{sec:validity}). (ii) The mechanical
+(elastic) part of the exergy of such a state is only $\approx p^2/(2\rho_0^2c_{\mathrm F}^2)$ per unit mass
+($\PFHisoWmech$\,J/kg for PFH at $e=40$\,kJ/kg, against $\psi=\PFHisoPsi$\,J/kg); it is emitted mainly as
+a short photoacoustic transient in this interpretation. The general exergy inequality still applies
+to the full activated state if its reference availability is known; the H2-dependent source-pressure
+ceiling of Step T5 does not apply to this stress-confined route.
+
+\input{generated/table_thermo.tex}

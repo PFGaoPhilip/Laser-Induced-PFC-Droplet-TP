@@ -17,7 +17,7 @@
       "numbered_step_checkboxes": 106
     }
   ],
-  "local_dependency_count": 115,
+  "local_dependency_count": 114,
   "external_links": [
     "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_environment.18.43.html",
     "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_equationbased.32.089.html",
@@ -26,6 +26,15 @@
     "https://doc.comsol.com/6.4/doc/com.comsol.help.comsol/comsol_ref_solver.36.212.html",
     "https://media.library.caltech.edu/CaltechBOOK:1995.001/chap2.htm",
     "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/appendices/a-hydrogel-versus-liquid.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/chapters/01-cavity-pressure-inertia-and-directional-jets.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/chapters/02-optical-heating-and-finite-pfc-inventory.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/chapters/03-arrays-finite-jets-and-impact.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/chapters/04-fracture-and-transfer.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/index.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/reference/defense.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/reference/notation.html",
+    "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/reference/sources.html",
     "https://pfgaophilip.github.io/cavitation-course/comsol/lessons/M1.html"
   ],
   "native_files": [
@@ -41,13 +50,15 @@
     }
   ],
   "guide_native_import_conversion": "Completed record included; see GUIDE_NATIVE_IMPORT_CHECK.txt. This static check does not rerun COMSOL.",
-  "browser_visual_validation": "Not performed. CUA returned an empty browser inventory and Browser is not available: iab.",
+  "browser_visual_validation": "NOT_RUN_BY_THIS_SCRIPT. Current real-browser checks are recorded separately by the course revision.",
+  "historical_DOM_browser_note": "Not performed by this DOM test. Real-browser verification is recorded separately by the course revision.",
   "moved_native_reload": "PASS: both MPH files opened from extracted location and stored results evaluated; scalar counts 5/7 and peak speeds unchanged. See MOVED_NATIVE_RELOAD.txt.",
   "pre_bilingual_moved_folder_test": "PASS: updated ZIP extracted under tmp/guide-portability/Minimal_Cavitation_Models; both HTML readers, 53 guide cards, 29 displayed theory blocks and all local dependencies checked.",
   "pre_bilingual_moved_reader_regeneration": "PASS: reader and plots regenerated at the new extracted location using included KaTeX; all 257 expressions rendered.",
   "pre_bilingual_moved_guide_regeneration": "PASS: 53-step HTML/Markdown, diagrams and all nine GUI import/reference files regenerated at the extracted location; 15 guide/asset/input files byte-identical to originals. See GUIDE_RELOCATION_AUDIT.json.",
-  "bilingual_relocation": {
+  "historical_bilingual_relocation": {
     "status": "PASS",
-    "record": "BILINGUAL_RELOCATION_AUDIT.json"
+    "record": "BILINGUAL_RELOCATION_AUDIT.json",
+    "scope": "Earlier edition; current relocation is checked separately."
   }
 }

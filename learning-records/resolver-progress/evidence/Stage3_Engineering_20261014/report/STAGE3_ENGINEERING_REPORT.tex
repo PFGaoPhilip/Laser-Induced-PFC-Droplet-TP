@@ -1,0 +1,410 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,longtable,array}
+\usepackage[a4paper,margin=24mm,headheight=14pt]{geometry}
+\usepackage{xcolor,fancyhdr,enumitem,microtype}
+\usepackage[hyphens]{url}
+\usepackage{xurl}
+\usepackage[hidelinks,pdfauthor={Stage3 engineering documentation},pdftitle={Conditional PFC cavitation: evidence and limitations}]{hyperref}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\pdfsuppressptexinfo=15
+\definecolor{navy}{HTML}{18384D}
+\definecolor{teal}{HTML}{117479}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{navy}Conditional PFC cavitation}
+\fancyhead[R]{\small Stage3 / experimental reference}
+\fancyfoot[L]{\small Loosened closure; objectives uncomputed}
+\fancyfoot[R]{\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist{nosep,leftmargin=*}
+\setlength{\emergencystretch}{2em}
+\newcommand{\symbols}[1]{\par\textbf{Symbols before this equation.} #1\par}
+\newcommand{\source}[1]{\par{\small\textbf{Bundled source:} \path{#1}.}\par}
+\newcommand{\nextsection}[1]{\clearpage\section{#1}}
+\newcommand{\gauge}{\Delta p}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{18mm}
+{\Large\color{teal}STAGE3 ENGINEERING DOCUMENTATION}\par
+\vspace{8mm}
+{\Huge\bfseries\color{navy}Conditional PFC cavitation}\par
+\vspace{4mm}
+{\LARGE Evidence, ceilings and unresolved objectives}\par
+\vspace{12mm}
+\textbf{Experimental-reference edition / 14 October 2026}
+
+\textbf{Direct answer.} No attained or certified pressure or velocity maximum is available for the accepted conditional problem. All eighteen declared objectives remain uncomputed. No maximizing design, certified lower/upper interval or current engineering envelope was supplied.
+
+The retained energy route gives a conditional speed allowance when a strictly positive participating mass and available mechanical work are specified. A prescribed uniform 10 pg jet with rounded PFP/PFH availability 2.72/4.62 nJ has energy-admissible speeds approximately 738/961 m/s. These are energetic ceilings, whose attainment is unresolved. Applying a linear impact formula at these speeds would require compressible validation.
+
+Historical reduced-model predictions and contact/spreading estimates are retained at their original evidence tiers. The candidate030 partial trajectory supports solver-path diagnostics through 0.43 ns and 43 accepted steps; it does not establish an event-complete trajectory or a registered objective.
+
+\vfill
+\textbf{Controlling policy.} Stage1 and Stage2 are closed under the owner's accepted loosened policy. This report preserves the candidate018--030 assumptions, seven Stage2 exit waivers, strict production failures and missing qualifications. It does not reopen those stages or equate reporting completion with strict scientific acceptance.
+
+\textbf{Portable package.} Editable source, ledger, copied evidence, independent review and offline reader are delivered together. All source locators below are relative to the package root.
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+\section*{How to read this report}
+The first pages specify the inherited problem and observer definitions. The middle pages derive the available conditional routes and separate them from historical predictions and solver diagnostics. The final pages record every unresolved objective, waiver and reporting check.
+
+\textbf{Status language.} PASS means a measured check met its stated scope; FAIL means an applicable strict check failed; WAIVED means owner-authorized exit treatment; NOT\_RUN means no computation or review for that particular requirement. A waived requirement is not a passed scientific check. NOT\_COMPUTED is the data state of all eighteen objective values. The ledger stores absent results as JSON null, never as numerical zero.
+
+\textbf{Tier language.} R denotes a derived bound under explicit premises; A denotes an adopted preparation or constitutive assumption; P denotes a historical prediction inside its working screen; E denotes an estimate or extrapolation. R$|$A marks a mathematical consequence contingent on adopted inputs and an applicable work budget. No tier in this report establishes an actual-device maximum.
+
+\tableofcontents
+
+\nextsection{Inherited problem, preparation and sign conventions}
+The objective is to document the greatest directed water-carrier speed at five participating masses and greatest solved rigid-wall pressure at four disk/window combinations, separately for PFP (perfluoropentane) and PFH (perfluorohexane). These greatest values have not been computed. Reporting therefore concerns definitions, conditional ceilings, historical predictions and limits of available evidence.
+
+\textbf{Preparation assumptions H0--H4.} Deposition is thermal and excludes optical breakdown. The entire PFC droplet is uniformly activated before modeled motion. Preparation is isobaric at ambient pressure; the finite-droplet Laplace correction is neglected in the preparation EOS. No further useful work or energy is supplied after activation. Continuum equations and the stated thermodynamic/transport closures are adopted. These are conditional premises, not measured device properties.
+
+The initial unheated diameter is 6 $\mu$m. Ambient temperature is 293.15 K and absolute ambient pressure is 101325 Pa. The carrier is air-free water without gel above an impermeable rigid planar receiver. Accepted activated temperatures are 386.4862365 K (PFP) and 415.2367593 K (PFH). Accepted PFC inventories are $1.8337513995\times10^{-13}$ kg and $1.9121929819\times10^{-13}$ kg. The adopted available work is 2.7225724072 nJ and 4.6221225646 nJ. These supplied EOS evaluations have not been freshly recalculated in Stage3.
+
+The coordinates are axisymmetric cylindrical radius $r\ge0$, height $z$ and time $t\ge0$, in metres and seconds. The receiver is $z=0$; the initial droplet centre is at height $h>0$. Velocity toward the wall is positive. Pressure is absolute unless an explicit ambient subtraction denotes gauge pressure. Numerical superscripts denote powers; material/event subscripts are labels. Integrals use physical volume or area including the axisymmetric Jacobian. Arithmetic uses real-valued quantities; square roots denote nonnegative roots. Supremum means least upper bound and does not require attainment.
+
+\symbols{$\gamma$ is stand-off (dimensionless), $h>0$ is centre height (m), $R_m>0$ is the free-field maximum outer radius of the same activated-droplet model (m), $\alpha_c$ is the adopted condensation accommodation coefficient (dimensionless), and $\mathcal D$ is the design set.}
+\begin{equation}
+\gamma=\frac{h}{R_m},\qquad
+\mathcal D=\{(\alpha_c,\gamma):0\le\alpha_c\le1,\quad\gamma\ge1.25\}.
+\label{eq:domain}
+\end{equation}
+No finite upper application bound on stand-off is imposed. A finite scan, a radius ceiling, or a historical spherical radius does not determine the required same-model $R_m$. That qualification was waived for Stage2 exit and remains unresolved. Detached geometry must also be checked from the solved liquid film.
+\source{inputs/full_closure/PROBLEM_STATEMENT.md}
+\source{inputs/full_closure/data/accepted_preparation.json}
+
+\nextsection{Governing model and validity obligations}
+This section documents the inherited continuum class; it is not a new solver specification. Each material obeys mass, momentum and total-energy conservation with a caloric equation of state (EOS). The selected water model is a one-potential caloric Mie--Gr\"uneisen completion. Its principal Hugoniot calibration does not validate off-Hugoniot release, thermal response or the complete coupled trajectory. Its adopted metastable tensile premise and source-domain restrictions remain conditional.
+
+\symbols{$\rho>0$ is material density (kg/m$^3$), $\boldsymbol u$ velocity (m/s), $p$ pressure (Pa), $e$ specific internal energy (J/kg), $E=e+|\boldsymbol u|^2/2$ specific total energy (J/kg), $\boldsymbol\tau$ viscous stress (Pa), $\boldsymbol q$ conductive flux (W/m$^2$), $t$ time (s). $\partial_t$ is a partial time derivative, $\nabla$ the physical gradient, $\nabla\cdot$ divergence and $\otimes$ tensor product; $\boldsymbol I$ is the dimensionless identity tensor. These equations hold within each smooth material region; interfacial/capillary terms enter through interface conditions.}
+\begin{align}
+\partial_t\rho+\nabla\cdot(\rho\boldsymbol u)&=0,\label{eq:mass}\\
+\partial_t(\rho\boldsymbol u)+\nabla\cdot(\rho\boldsymbol u\otimes\boldsymbol u+p\boldsymbol I-\boldsymbol\tau)&=0,\label{eq:mom}\\
+\partial_t(\rho E)+\nabla\cdot[(\rho E+p)\boldsymbol u-\boldsymbol\tau\boldsymbol u+\boldsymbol q]&=0.\label{eq:energy}
+\end{align}
+These are conservation principles, not proof that a soft-passed implementation satisfies them. Phase conversion and heat exchange must conserve total energy. Latent energy already encoded in the EOS is not a second heat source.
+
+The resolved PFC material has spatial inertia and pressure. Its local liquid/vapour mixture shares local pressure and temperature with a frozen-composition Gibbs potential. Local common pressure is distinct from uniform pressure over the whole cavity. The HKS-scaled conditional phase law fixes evaporation accommodation at one and applies the design coefficient on the condensation-sign branch; an independently declared bulk conversion remains possible at zero accommodation. The phase area uses the conserved PFC mass and actual outer interface area as a nonlocal homogenized-area premise. It does not resolve internal phase area or microscopic nucleation.
+
+\textbf{Initial/boundary conditions.} The activated PFC and ambient water initially rest; vapour mass initially vanishes. Fixed PFC inventory and activated energy/entropy are preserved by geometric initialization. No spherical restart or real/ideal EOS reference switch is permitted. The rigid wall is stationary no-slip and thermally insulating. Far-field boundaries must be sufficiently remote or verified nonreflecting. Mechanical/thermal interface work and actual outer surface energy belong in the ledger. The preparation Laplace imbalance creates an initial adjustment that cannot be removed by a hidden reset.
+
+Native component checks do not establish complete geometric, wall, AMR, source-domain and transport qualification. Actual contact regions lack a selected wetting/contact-line law. Critical/cooling paths, detached films and reached-state sensitivities remain obligations when pursuing a future certificate.
+\source{inputs/full_closure/PROBLEM_STATEMENT.md, sections 3 and 6}
+
+\nextsection{Exact whole-water and wall-pressure observers}
+The velocity observer uses every aqueous material fraction in the domain, including interfacial fractions; PFC mass is distinct. A geometric jet selection and a near-interface exclusion would change the accepted objective.
+
+\symbols{$u_z$ is axial velocity and $w=-u_z$ directed velocity (m/s); $U\ge0$ is a speed threshold (m/s); $t$ is time (s); $f_w\in[0,1]$ is water volume fraction, $\rho_w>0$ intrinsic water density (kg/m$^3$), $dV$ physical volume (m$^3$), $m_{\ge U}$ superlevel water mass and $m_*>0$ prescribed mass (kg). $\mathbf1$ is the indicator function; the integral spans the whole liquid domain and $\sup$ means supremum.}
+\begin{align}
+w&=-u_z,\qquad m_{\ge U}(t)=\int f_w\rho_w\mathbf1[w\ge U]\,dV,\label{eq:massobserver}\\
+U(m_*,t)&=\sup\{U\ge0:m_{\ge U}(t)\ge m_*\}.\label{eq:quantile}
+\end{align}
+Only a defined empty threshold set gives observer speed zero. Missing fields, absent events and uncomputed optimization values remain null.
+
+\symbols{$J_U$ is the event-window velocity objective (m/s); $U(m_*,t)$ is mass-qualified speed (m/s); $m_*>0$ is prescribed water mass (kg); $t,t_U,t_{\rm imp},t_{\min}$ are time, velocity-window end, first internal impact and first post-growth collapse minimum (s). $\max$ requires attainment on the closed defined interval.}
+\begin{equation}
+J_U(m_*)=\max_{0\le t\le t_U}U(m_*,t),\qquad
+t_U=\begin{cases}t_{\rm imp},&\text{impact precedes collapse minimum},\\
+t_{\min},&\text{otherwise, if that minimum exists}.
+\end{cases}\label{eq:JU}
+\end{equation}
+The first growth maximum is the first positive-to-negative total-PFC-volume-rate crossing after sustained growth. The first subsequent negative-to-positive crossing defines the main collapse minimum. An early preparation compression extremum is recorded separately. Internal impact means axial carrier-liquid contact inside the cavity, not impact on the wall. Time zero and early energy transfers are retained; an arbitrary stop is not an event.
+
+\symbols{$r_o>0$ is observer radius and $r$ dummy radius (m); $t,t'$ are time and dummy time, $\tau_o>0$ duration and $t_{\rm end}$ end time (s); $p_{\rm wall}$ and $p_\infty$ are wall and ambient pressure (Pa); $P$ is disk gauge average and $J_P$ window objective (Pa); $\pi$ is the dimensionless circle constant. The maximum spans only fully contained windows.}
+\begin{align}
+P(r_o,t)&=\frac{1}{\pi r_o^2}\int_0^{r_o}[p_{\rm wall}(r,t)-p_\infty]2\pi r\,dr,\label{eq:disk}\\
+J_P(r_o,\tau_o)&=\max_{0\le t\le t_{\rm end}-\tau_o}\frac1{\tau_o}\int_t^{t+\tau_o}P(r_o,t')\,dt'.\label{eq:JP}
+\end{align}
+The end is the first rebound maximum after the main collapse minimum. It must exist and exceed the duration. Wall viscous normal stress is a separate diagnostic whose negligibility is unestablished. Pointwise and internal-impact pressure are not these registered averages.
+\source{inputs/full_closure/PROBLEM_STATEMENT.md, P03--P06 and event clarification}
+
+\nextsection{Energy ceiling: complete mass-qualified argument}
+\textbf{Foundation and hypothesis.} Full-vector kinetic energy is a mechanical-energy identity. Constraining it by activated availability additionally requires a valid work balance with all other reference contributions nonnegative. This hypothesis has not been established across the loosened candidate030 trajectory; the derivation is a conditional bound, not a measured inequality for that run.
+
+\textbf{Step 1: isolate moving superlevel mass.}
+\symbols{$K_w$ is full-vector water kinetic energy (J); $f_w$ water fraction, $\rho_w$ intrinsic density (kg/m$^3$), $\boldsymbol u$ full velocity, $w$ directed component and $U\ge0$ threshold (m/s); $dV$ volume (m$^3$); $S_U$ is the set where $w\ge U$, $m_{\ge U}$ its water mass (kg), and $t$ time (s). Integrals use nonnegative water mass measure.}
+\begin{align}
+K_w(t)&=\frac12\int f_w\rho_w|\boldsymbol u|^2\,dV\nonumber\\
+&\ge\frac12\int_{S_U}f_w\rho_w|\boldsymbol u|^2\,dV\nonumber\\
+&\ge\frac12\int_{S_U}f_w\rho_w w^2\,dV\nonumber\\
+&\ge\frac12 U^2\int_{S_U}f_w\rho_w\,dV
+=\frac12 U^2m_{\ge U}(t).\label{eq:superlevelbound}
+\end{align}
+The first inequality restricts a nonnegative integral; the second uses squared component no greater than squared vector magnitude; the third uses the defining nonnegative threshold on the superlevel set. If its mass is at least the prescribed mass, the last expression bounds the kinetic energy from below by one-half that mass times threshold squared.
+
+\textbf{Step 2: insert the budget and take the supremum.}
+\symbols{$m_*>0$ is prescribed mass (kg); $U\ge0$ any threshold with $m_{\ge U}\ge m_*$, $U(m_*,t)$ its supremum and $J_U$ event-window maximum (m/s); $K_w(t)$ kinetic energy and $\Phi_a\ge0$ activated available work (J); $t$ time (s). The budget $K_w(t)\le\Phi_a$ is an additional hypothesis over the complete objective interval.}
+\begin{align}
+\frac12m_*U^2&\le K_w(t)\le\Phi_a,\nonumber\\
+U^2&\le\frac{2\Phi_a}{m_*},\qquad
+U\le\sqrt{\frac{2\Phi_a}{m_*}},\nonumber\\
+U(m_*,t)&\le\sqrt{\frac{2\Phi_a}{m_*}},\qquad
+J_U(m_*)\le\sqrt{\frac{2\Phi_a}{m_*}}.\label{eq:massceiling}
+\end{align}
+Multiplication by two and division by strictly positive mass preserve inequality. Taking the monotone nonnegative square root is valid. A common bound on every admissible threshold bounds its supremum, and a common bound at every event time bounds the event maximum. If the budget is uniform over all admissible designs, it also bounds the design supremum; it supplies no feasible attained lower value or maximizing design.
+
+\textbf{Checks.} J/kg equals m$^2$/s$^2$, so the square root is a speed. Zero availability gives zero admissible speed, and increasing mass lowers the bound. As prescribed mass tends to zero, the bound diverges; finite energy alone does not bound a point-tip speed. Nonzero transverse motion and other energy stores generally prevent equality. No finite-disk/window pressure follows from this mass argument without an additional propagation/contact model.
+\source{inputs/conditional_termtex/CONDITIONAL_SOLUTION.md, E01--E03}
+\source{inputs/full_closure/PROBLEM_STATEMENT.md, P03--P05}
+
+\nextsection{Available-work numbers and the preserved ceiling route}
+The source thermodynamic allowance differs from activation heat. Accepted activation heat is 19.8569542544 nJ for PFP and 27.1275079117 nJ for PFH; accepted availability is 2.7225724072 and 4.6221225646 nJ. Substitution of heat for available work would silently change the ceiling.
+
+\begin{center}
+\input{generated/ceiling_table.tex}
+\end{center}
+\textbf{Table interpretation.} Each value is independently reproducible arithmetic from the accepted availability and exact pg-to-kg conversion. Values are conditional R$|$A allowances under Eq.~\eqref{eq:massceiling}; none is an objective, a certificate or a claim of physical attainment. The finite mass requirement applies to the whole-water superlevel observer, provided the budget hypothesis holds.
+
+\textbf{Preserved T route.} The unchanged accepted conditional solution prescribes a separate uniform 10 pg jet, uses rounded budgets 2.72/4.62 nJ, and gives 737.5635566/961.2491873 m/s (approximately 738/961 m/s). The table uses full supplied availability digits, yielding 737.9122451/961.4699751 m/s. The difference comes only from input rounding. The current full-digit table does not overwrite T or redefine the actual mass of a historical fastest jet.
+
+\textbf{Availability basis.} Specific availability is a dead-state thermodynamic quantity. At fixed ambient preparation pressure it is enthalpy rise minus ambient temperature times entropy rise. This source premise is retained rather than reconstructed with a different EOS reference.
+\symbols{$\psi_a$ is activated specific availability (J/kg), $h_a,h_0$ activated/dead-state enthalpies (J/kg), $s_a,s_0$ corresponding entropies (J/(kg K)), $T_0>0$ ambient temperature (K), $M_F>0$ fixed PFC mass (kg), and $\Phi_a$ total activated availability (J). Subscripts $a,0,F$ denote activation, dead state and PFC.}
+\begin{equation}
+\psi_a=(h_a-h_0)-T_0(s_a-s_0),\qquad\Phi_a=M_F\psi_a.\label{eq:availability}
+\end{equation}
+\textbf{Checks and limits.} Entropy times temperature is specific energy, and multiplying by mass gives joules. For a constant positive heat capacity, a small temperature rise gives availability of second order in the rise, rather than all deposited heat. This thermodynamic identity does not establish the validity of every adopted EOS evaluation or of a soft-passed discrete exergy ledger.
+
+\textbf{Boundary of the claim.} The candidate030 heat final energy/entropy gate was waived. Numerical defects cannot become inferred physical destruction. Inherited surface-reference, radiation-flux and other availability terms must be audited before treating the ceiling as a trajectory-wide certified result. No such certification was supplied.
+\source{RESULTS_LEDGER.json, ceilings and linear_example}
+\source{inputs/conditional_termtex/resources/evidence/04_thermo.tex, Step T6}
+
+\nextsection{Linear first-contact pressure: retained derivation}
+\textbf{Setup.} Prescribe a uniform planar incoming jet, normal impact, initially resting receiver, small compressions and a time before lateral release. Jet velocity is positive into the receiver; excess compression pressure is positive. Continuity of interface pressure and normal velocity is imposed. This linear-acoustic contact calculation is independent of the registered finite-disk/time-window wall-pressure objective.
+
+\textbf{Step 1: interface matching.}
+\symbols{$Z_j=\rho c>0$ is jet acoustic impedance (Pa s/m), $\rho>0$ jet density (kg/m$^3$), $c>0$ sound speed (m/s), $Z_t\ge0$ receiver impedance (Pa s/m), $U_j\ge0$ incoming velocity and $v$ interface velocity (m/s), and $\Delta p_c$ contact gauge pressure (Pa). Subscripts $j,t,c$ label jet, target and contact.}
+\begin{equation}
+Z_j=\rho c,\qquad\Delta p_c=Z_j(U_j-v)=Z_t v.\label{eq:contactpremise}
+\end{equation}
+These are adopted acoustic relations. Expand the first product and move its interface-velocity term to the receiver side.
+
+\symbols{$Z_j>0,Z_t\ge0$ are impedances (Pa s/m), $U_j\ge0,v$ velocities (m/s); $Z_j+Z_t>0$ makes division valid.}
+\begin{align}
+Z_jU_j-Z_jv&=Z_tv,\nonumber\\
+Z_jU_j&=(Z_j+Z_t)v,\nonumber\\
+v&=\frac{Z_j}{Z_j+Z_t}U_j.\label{eq:interfacevelocity}
+\end{align}
+\textbf{Step 2: contact pressure and energetic allowance.}
+\symbols{$\Delta p_c$ and $\Delta p_{c,\max}^{\rm linear}$ are contact pressure and its linear-model energy ceiling (Pa); $Z_j>0,Z_t\ge0$ are impedances (Pa s/m); $U_j\ge0$ incoming speed (m/s), $E_{\rm av}\ge0$ specified available work (J), and $m_j>0$ prescribed uniform jet mass (kg). Superscript linear labels the contact model.}
+\begin{align}
+\Delta p_c&=Z_t\left(\frac{Z_j}{Z_j+Z_t}U_j\right)
+=\frac{Z_jZ_t}{Z_j+Z_t}U_j,\nonumber\\
+\Delta p_{c,\max}^{\rm linear}&=\frac{Z_jZ_t}{Z_j+Z_t}\sqrt{\frac{2E_{\rm av}}{m_j}}.\label{eq:linearceiling}
+\end{align}
+The coefficient is nonnegative, so substituting the energy speed bound preserves order. Attainment requires lossless conversion and the prescribed plug/contact conditions, which a particular cavity need not realize.
+
+\textbf{Step 3: receiver limits.} Dividing effective impedance numerator and denominator by positive receiver impedance gives jet impedance over one plus its ratio to receiver impedance. Letting the receiver impedance diverge therefore gives the rigid limit. Equal impedances give one-half jet impedance.
+\symbols{$\Delta p_{c,\max}^{\rm rigid}$ and $\Delta p_{c,\max}^{\rm equal}$ are gauge-pressure ceilings (Pa); $\rho>0$ density (kg/m$^3$), $c>0$ sound speed (m/s), $E_{\rm av}\ge0$ work (J), $m_j>0$ mass (kg). Superscripts rigid/equal label receiver conditions.}
+\begin{equation}
+\Delta p_{c,\max}^{\rm rigid}=\rho c\sqrt{\frac{2E_{\rm av}}{m_j}},\qquad
+\Delta p_{c,\max}^{\rm equal}=\frac12\rho c\sqrt{\frac{2E_{\rm av}}{m_j}}.\label{eq:contactlimits}
+\end{equation}
+\source{inputs/conditional_termtex/CONDITIONAL_SOLUTION.md, E04--E09}
+
+\nextsection{Pressure example, checks and application limits}
+The unchanged T illustration specifies available work 5 nJ, cylindrical water-jet radius 3 $\mu$m, length 50 $\mu$m, density 1000 kg/m$^3$ and sound speed 1500 m/s. These are illustrative inputs, not experimental measurements.
+
+\symbols{$m_j$ is cylindrical jet mass (kg), $\rho=1000$ kg/m$^3$ density, $a=3\times10^{-6}$ m radius, $L=5\times10^{-5}$ m length, and $\pi$ dimensionless circle constant.}
+\begin{align}
+m_j&=\rho\pi a^2L\nonumber\\
+&=1000\pi(3\times10^{-6})^2(5\times10^{-5})\,\mathrm{kg}
+=1.4137166941\times10^{-12}\,\mathrm{kg}.\label{eq:examplemass}
+\end{align}
+One pg is $10^{-15}$ kg and one ng is $10^{-12}$ kg. This example mass is approximately 1.414 ng; it is not the separately prescribed 10 pg mass.
+
+\symbols{$U_{j,\max}^{\rm energy}$ is energy-admissible speed (m/s), $E_{\rm av}=5\times10^{-9}$ J work, $m_j=1.4137166941\times10^{-12}$ kg prescribed mass; superscript energy labels the lossless budget model.}
+\begin{equation}
+U_{j,\max}^{\rm energy}=\sqrt{\frac{2E_{\rm av}}{m_j}}
+=\sqrt{\frac{10^{-8}}{1.4137166941\times10^{-12}}}\,\mathrm{m/s}
+=84.1044174\,\mathrm{m/s}.\label{eq:examplespeed}
+\end{equation}
+\symbols{$\Delta p_{\rm rigid},\Delta p_{\rm equal}$ are contact gauge pressures (Pa), $\rho=1000$ kg/m$^3$ density, $c=1500$ m/s sound speed, $U_j=84.1044174$ m/s speed, $M$ dimensionless Mach number; receiver subscripts label rigid/equal acoustic conditions.}
+\begin{align}
+\Delta p_{\rm rigid}&=\rho cU_j=126.1566261\,\mathrm{MPa},\nonumber\\
+\Delta p_{\rm equal}&=\tfrac12\rho cU_j=63.0783131\,\mathrm{MPa},\nonumber\\
+M&=U_j/c=84.1044174/1500=0.0560696.\label{eq:examplepressures}
+\end{align}
+\textbf{Checks.} Impedance times velocity has units Pa. Substituting Eq.~\eqref{eq:interfacevelocity} into both sides of Eq.~\eqref{eq:contactpremise} gives the same pressure. Zero receiver impedance yields zero compression and interface velocity equal to the incoming velocity. A rigid receiver gives zero interface velocity; equal impedances give one-half incoming velocity. The rigid excess pressure divided by density times squared sound speed equals Mach number. Small Mach supports weak compression in the illustrative jet, conditional on a linear receiver response.
+
+For the rounded 10 pg PFP/PFH allowance, Mach numbers at 1500 m/s are approximately 0.492 and 0.641. A linear-acoustic pressure substitution at those speeds is insufficiently justified. Strong shock pressure requires a compatible caloric EOS and shock conservation with reached-state validity, not an extrapolated acoustic line. This report therefore supplies no certified numerical PFC pressure ceiling for the registered disks/windows.
+
+Propagation, finite contact area, impact duration, spreading, reflections and wall viscous stress can change measured receiver loads. The illustrative first-contact pressure neither establishes the peak internal collapse pressure nor evaluates a 2/10 $\mu$m disk averaged over 2/20 ns.
+\source{inputs/conditional_termtex/verification.json, numericalChecks}
+
+\nextsection{Spherical-collapse cutoff route: derivation}
+\textbf{Setup.} Adopt an isolated spherical bubble in an infinite inviscid, incompressible liquid, constant positive collapse drive, negligible surface tension and no gas cushioning. Radius is positive outward; radial velocity is negative during monotone collapse. At maximum radius the bubble rests. Its initial radius is denoted $R_s$, a separately prescribed spherical-model radius, distinct from the same-model activated-droplet free-field radius $R_m$. This is a spherical wall-speed model, not the directed jet or rigid-wall observer.
+
+\textbf{Step 1: governing premise and variable change.}
+\symbols{$R>0$ is radius (m), $\dot R$ and $\ddot R$ its first and second time derivatives (m/s and m/s$^2$); $\Delta p>0$ constant collapse-pressure difference (Pa), $\rho>0$ density (kg/m$^3$), $t$ time (s), and $q(R)$ squared radial speed (m$^2$/s$^2$). Dots denote time derivatives; $d/dR$ is radius differentiation.}
+\begin{align}
+R\ddot R+\frac32\dot R^2&=-\frac{\Delta p}{\rho},\label{eq:Rayleigh}\\
+q(R)=\dot R^2,\qquad \frac{dq}{dR}&=\frac{dq/dt}{dR/dt}
+=\frac{2\dot R\ddot R}{\dot R}=2\ddot R.\label{eq:qchange}
+\end{align}
+The quotient holds where collapse is monotone and radial velocity nonzero; the integrated result extends continuously to the initial-rest endpoint. The governing premise is the retained Rayleigh equation; the transformation uses the chain rule.
+
+\textbf{Step 2: transform and apply the product rule.}
+\symbols{$R>0$ is radius (m), $q(R)$ squared wall speed (m$^2$/s$^2$), $dq/dR$ its derivative (m/s$^2$), $\Delta p>0$ drive (Pa), $\rho>0$ density (kg/m$^3$).}
+\begin{align}
+\frac{R}{2}\frac{dq}{dR}+\frac32q&=-\frac{\Delta p}{\rho},\nonumber\\
+R\frac{dq}{dR}+3q&=-\frac{2\Delta p}{\rho},\nonumber\\
+\frac{d(R^3q)}{dR}&=3R^2q+R^3\frac{dq}{dR}
+=R^2\left(3q+R\frac{dq}{dR}\right)
+=-\frac{2\Delta p}{\rho}R^2.\label{eq:qproduct}
+\end{align}
+Substitution replaces acceleration, multiplication by two removes halves, and the derivative identity factors a positive squared radius.
+
+\textbf{Step 3: integrate with initial rest.}
+\symbols{$R_s>0$ is the initial maximum radius of this spherical model (m), $0<R\le R_s$ current radius (m), $x$ dummy radius (m), $q(x)$ squared speed (m$^2$/s$^2$), $\Delta p>0$ drive (Pa), $\rho>0$ density (kg/m$^3$); $q(R_s)=0$ expresses initial rest. The integral is definite with reversed radius limits during collapse.}
+\begin{align}
+\int_{R_s}^{R}\frac{d[x^3q(x)]}{dx}\,dx
+&=-\frac{2\Delta p}{\rho}\int_{R_s}^{R}x^2\,dx,\nonumber\\
+R^3q(R)-R_s^3q(R_s)&=-\frac{2\Delta p}{3\rho}(R^3-R_s^3),\nonumber\\
+q(R)&=\frac{2\Delta p}{3\rho}\left[\left(\frac{R_s}{R}\right)^3-1\right].\label{eq:Rayleighspeed}
+\end{align}
+The fundamental theorem evaluates the first integral; the antiderivative of squared radius is cubed radius divided by three. Initial rest removes the second left endpoint. Reversing the subtraction and dividing by positive cubed current radius gives the last row.
+\source{inputs/conditional_termtex/CONDITIONAL_SOLUTION.md, E13--E19}
+
+\nextsection{Cutoff checks and thermodynamic ceiling boundaries}
+\textbf{Step 4: impose a positive cutoff.}
+\symbols{$U_{\rm wall,max}$ is maximum inward wall-speed magnitude (m/s); $R_s>0$ initial maximum spherical radius, $0<R_{\min}\le R_s$ prescribed cutoff radius (m); $\Delta p>0$ constant drive (Pa), $\rho>0$ density (kg/m$^3$). The subscript min is a cutoff label, not a proved physical radius.}
+\begin{equation}
+U_{\rm wall,max}=\sqrt{\frac{2\Delta p}{3\rho}
+\left[\left(\frac{R_s}{R_{\min}}\right)^3-1\right]}.\label{eq:wallcutoff}
+\end{equation}
+The bracket increases as radius falls, so the largest inward magnitude over the prescribed positive-radius interval occurs at the cutoff. The formula concerns a spherical wall; directional focusing requires asymmetric dynamics.
+
+\textbf{Step 5: substitute back into the governing equation.}
+\symbols{$R>0,R_s>0$ are current/initial radius (m), $q(R)$ squared speed (m$^2$/s$^2$), $q'(R)$ its radius derivative (m/s$^2$), $\Delta p>0$ drive (Pa), $\rho>0$ density (kg/m$^3$); prime denotes $d/dR$.}
+\begin{align}
+q'(R)&=-\frac{2\Delta pR_s^3}{\rho R^4},\nonumber\\
+\frac{R}{2}q'(R)+\frac32q(R)
+&=-\frac{\Delta p}{\rho}\left(\frac{R_s}{R}\right)^3
++\frac{\Delta p}{\rho}\left[\left(\frac{R_s}{R}\right)^3-1\right]
+=-\frac{\Delta p}{\rho}.\label{eq:Rayleighcheck}
+\end{align}
+The derivative of inverse cubed radius supplies a minus-three factor. Substitution cancels the radius-ratio terms and recovers the transformed Rayleigh equation. Drive divided by density has units m$^2$/s$^2$. At the initial radius, squared speed is zero. A cutoff equal to maximum radius gives zero speed; taking the cutoff to zero produces a divergence, signaling an invalid physical singular endpoint. Compressibility, cushioning and surface effects break the assumptions before a physical infinite speed.
+
+\textbf{Retained thermodynamic boundaries.} The accepted finite-inventory cavity radius bound uses the complete real-EOS minimum-availability integral. It is not the empty-cavity cube-root energy formula, and it is not the same-model free-field radius required by Eq.~\eqref{eq:domain}. The inherited accepted thermodynamic ceiling radii, approximately 23.7820 $\mu$m PFP and 24.2191 $\mu$m PFH, are source-only evaluations; fresh EOS reconstruction is NOT\_RUN. They do not identify candidate030 stand-off.
+
+The retained thermal source-pressure ceiling assumes homobaric internally equilibrated content, cooling/no useful post-pulse input, expansion and EOS sign/monotonicity conditions. Accepted spinodal-route values approximately 1.26539 MPa PFP and 1.08491 MPa PFH are absolute source pressures. They do not bound compression during collapse, stress-confined deposition, optical breakdown or solved receiver impact. A spatial, nonequilibrium candidate030 pressure field is outside the additional homobaric premise unless separately justified. Source-only EOS values are distinguished from independently recomputed arithmetic.
+\source{inputs/conditional_termtex/resources/evidence/04_thermo.tex, T5 and T7}
+\source{inputs/expert_resolution/data/thermo_ceilings.json}
+
+\nextsection{Historical predictions: exact tier and observer distinctions}
+The historical processed envelope contains 35 stored rows. Older prose describes forty sampled cases; this report does not infer forty valid completed cases. Historical closure labels frozen, km\_alpha0.1, km\_alpha1 and isoeq denote that source's reduced-model controls. They do not certify all finite-rate transfer histories in the current two-dimensional domain.
+
+\input{generated/historical_table.tex}
+\textbf{Speed interpretation.} Slow and fast rows are largest stored group samples inside the historical incompressible working screen, not continuous optima. Their original tier is P. Beyond-screen rows retain tier E because a compressible continuation is unresolved. None of these speeds is a current whole-water mass quantile.
+
+The largest stored slow PFP sample occurs at stand-off 1.25 with frozen content, whereas the slow PFH sample uses km\_alpha0.1 at stand-off 4. Fast PFP uses km\_alpha1 at stand-off 4; fast PFH uses isoeq at stand-off 3. Beyond-screen rows use isoeq at stand-off 4. These historical stand-off values belong to the source model, not a qualified candidate030 maximum design.
+
+\textbf{Pressure interpretation.} Internal contact estimates (roughly 292/307 MPa) concern a jet striking the opposite cavity interface. Historical receiver estimates (roughly 21.0/22.4 MPa) add contact/spreading assumptions. Both are E estimates, not solved wall-pressure disk/time averages. The largest historical receiver estimate can arise from a different sampled design than the largest internal-contact estimate or speed. Reporting them as one attained design would be incorrect.
+
+\textbf{Energy erratum retained.} Historical profile energy is sampled axial kinetic energy. It is a lower bound on the sampled-region full-vector kinetic energy, not total jet kinetic energy. PFP/PFH selected fast samples carry sampled axial energies approximately 0.4835/1.0852 nJ; these do not determine the whole-domain kinetic budget and must not be substituted into the full-vector observer proof.
+
+The historical working screen uses Mach 0.3, approximately 445 m/s for that carrier model. A screen is a model-validity boundary, not a physical maximum. Larger extrapolated values must not be accepted merely because they lie on a plotted curve. The current species preparations and EOS assumptions also differ from a universal pulse trajectory; these numbers remain historical reference evidence.
+\source{inputs/expert_resolution/data/envelope_rows.json}
+\source{RESULTS_LEDGER.json, historical and historical_count_caveat}
+
+\nextsection{Candidate030 diagnostics and all inherited soft-passes}
+The current run identity is candidate030 with inherited candidate018--029 interventions. The transferred last accepted history record is $4.3000000000000027\times10^{-10}$ s, step 43, on source line 432: 0.43 ns. This is a partial static snapshot. It neither reaches a registered event horizon nor proves advancement beyond the historical candidate028 failure near 0.44 ns.
+
+\begin{longtable}{rp{.80\linewidth}}\toprule
+Candidate & Inherited intervention / documentary consequence\\\midrule\endhead
+018 & Negative viscous intrinsic increment clamped to zero before the energy update.\\
+019 & Relaxation soft-pass hook added; did not clear then-active status21.\\
+020 & Density-conversion underflow soft-passed at code-level scale $\pm10^{-300}$; this inherited numeric guard is not a sourced density threshold.\\
+021 & Near-zero water/PFC geometry floored into pure-material early exit.\\
+022 & Near-zero negative depletion complement snapped (reported scale about $10^{-66}$).\\
+023 & Tiny negative water mass snapped before geometry.\\
+024 & Tiny negative water mass/energy snapped, followed by EOS retry.\\
+025 & Residual water fraction snapped to zero and PFC fraction to one.\\
+026 & Near-zero-water mass/energy floors $10^{-25}$ kg/$10^{-20}$ J; caloric consumer treats water as absent.\\
+027 & Water energy/fraction/auxiliary momentum co-cleared with the mass snap; nonpositive-density guards.\\
+028 & Nonfinite/oversized geometric capacity clamped to HUGE; SEPS added in capacity factor.\\
+029 & SEPS on cell-metric denominators; sanitize nonfinite gradients, fluxes, capacity and fractions before boundary operations; refuse nonfinite concentration gradients.\\
+030 & Waive heat integrator final status11 energy/entropy gate with logged defect; energy tolerance $10^{-11}$ to $10^{-9}$ and entropy roundoff $2\times10^{-11}$ to $2\times10^{-9}$.\\\bottomrule
+\end{longtable}
+The inventory describes inherited behavior, not proof that every branch fired in the transferred run. Such interventions alter accepted discrete trajectories and prevent claiming strict production C4 admission on the basis of a logged domain-status zero.
+
+\textbf{Metadata caveat.} The run-folder \path{meta.json} is copied legacy candidate028 100 fs metadata. Its zero exit code is not candidate030 completion evidence. \path{pilot_run_meta.txt} identifies candidate030/amendment006 but has no finished timestamp or completed simulation exit receipt. The static transfer does not determine present remote runtime state.
+
+Candidate028 SIGFPE near 0.44 ns and candidate029 heat integrator failure near 0.37 ns remain historical failures. No new solver execution was authorized or performed in this reporting scope. Omitted live-growing fields and debug binaries are unnecessary here; future field analysis would require a separately frozen, hash-bound snapshot.
+\source{inputs/full_closure/verification/STAGE1_CANDIDATE028_VERIFIED_LOOSENED_ACCEPTANCE_20261014.json}
+\source{inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md}
+
+\nextsection{Seven exit waivers and strict scientific status}
+Owner-authorized loosened closure controls entry. The seven Stage2 exit waivers below are carried unchanged in meaning. The missing evidence is not converted into a PASS by completing this report.
+
+\begin{longtable}{rp{.36\linewidth}p{.48\linewidth}}\toprule
+No. & Waived requirement & Preserved consequence\\\midrule\endhead
+1 & Full-cycle pilot through impact, main minimum, rebound and stated 20 ns horizon & Partial 0.43 ns diagnostic only; events and objective windows unestablished.\\
+2 & 108-case coverage / all eighteen objectives & Coverage and attainable values uncomputed; no global envelope.\\
+3 & Same-model free-field radius / stand-off qualification & Candidate030 physical stand-off cannot be inferred from historic radius or a thermodynamic ceiling.\\
+4 & PFH route & Candidate030 PFP partial path does not qualify PFH production dynamics.\\
+5 & Registered whole-water and wall-pressure observers & Pilot output does not evaluate the accepted quantiles or disk/window loads.\\
+6 & Hold-outs, refinement and global certificate suite & No attained/global interval, no refinement error, no unsampled-tail bound.\\
+7 & Production C4 without inherited soft-passes & Strict production failure retained; candidate030 accepted only for diagnostic exit.\\\bottomrule
+\end{longtable}
+
+\textbf{Distinct status axes.} Candidate030 source-transfer identity was already verified: six transferred hashes matched frozen amendments005/006. This is a PASS for transferred identity. It does not establish full-run completion, event resolution, absence of numerical interventions or a certified optimum. The accepted entry audit is not repeated unless evidence changes.
+
+The strict original certificate requirements remain unestablished: relative velocity gap at most 5\%, pressure gap at most 10\%, numerical error at most one-third tolerance and domain sensitivity at most one-tenth tolerance. Waived exit treatment preserves those targets as targets; it supplies no measured gap.
+
+Stage1 strict C4 admission failure and incomplete V1--V6 production qualification remain in copied records. Component/source checks cannot replace full activation-to-rebound calibration, actual-source domain admission and complete-path conservation. This report does not restore waived gates as new entry conditions or request renewed owner authorization.
+
+\source{inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md, B}
+\source{inputs/full_closure/verification/STAGE2_LOOSENED_CLOSE_VERIFY_STAGE3_ENTRY_20261014_002.json}
+
+\nextsection{All eighteen objectives: explicit null result register}
+There are five velocity masses plus four radius/window pressure combinations per species. The mass set is 1, 3, 10, 30 and 100 pg. Pressure pairs are radius 2/10 $\mu$m crossed with duration 2/20 ns. Every row below retains null attained value, null lower/upper certificate values, null maximizing design, null numerical error, null domain sensitivity and null certificate gap in the ledger.
+
+\input{generated/objectives_table.tex}
+\textbf{Meaning of null.} No event-complete registered observer trajectory, feasible attained design, refinement or global certificate was supplied. The observation definition's mathematical empty-set fallback is not applicable to an absent computation. No row is assigned zero. A future numerical ceiling alone would still not supply an attained lower design.
+
+The design domain has an infinite stand-off tail. A finite grid through stand-off eight cannot establish global coverage; directed speed can retain a nonzero spherical free-field limit. Regime changes (impact, no impact, no growth or no rebound) require explicit event definitions or absence proofs. An unobserved event regime cannot silently be discarded from the feasible set. Existence and attainment over that domain are unresolved.
+\source{RESULTS_LEDGER.json, objective_results}
+\source{inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json}
+
+\nextsection{Independent arithmetic and ten red-team answers}
+Independent review uses separate standard-library arithmetic and CSV/JSON reading, not a new production simulation. All 239 available arithmetic comparisons PASS, maximum relative discrepancy $7.2709601\times10^{-14}$. Checks include T illustration, exact-input speed ceilings, historical Tait/mixed-contact and receiver estimates, legacy growth bookkeeping and partial-history diagnostics. Fresh EOS reconstruction, fields-based observer evaluation, new campaign and certificate construction are NOT\_RUN. \input{generated/independent_review_presence.tex}
+
+\begin{enumerate}[label=\textbf{\arabic*.},itemsep=6pt]
+\item \textbf{Unsampled or failed domain?} Yes; no current coverage or enclosure exists. Infinite stand-off tail/free-field endpoint and failed regimes may contain a larger supremum; bound-minus-sample gaps remain null.
+\item \textbf{Model-validity boundary and maximizing design?} There is no maximizing design to classify or retest. Historical Mach screens are validity screens, and their violations remain E extrapolations.
+\item \textbf{Numerical maximum or insufficient tip resolution?} Unknown. No current three-level refinement, step halving or domain doubling exists. Forty-three accepted steps do not establish event resolution or numerical error.
+\item \textbf{Fast cells or physically significant moving mass?} Unknown for the current quantile. Every fractional water mass must be included. Finest-level above-threshold masses and fields-based observer histories were not supplied and remain null.
+\item \textbf{Ledger closes for the wrong reason?} The risk remains. Historical PFP bookkeeping remainders are negative, about -1.98\% to -2.68\% of availability, so cannot be physical destruction. Current full-reference reconstruction is absent and soft-pass030 accepts heat defects.
+\item \textbf{Ceiling or activation-budget exceedance?} Complete full-vector all-time comparison is NOT\_RUN. Source-pressure expansion ceilings do not cap collapse/contact pressure. Linear contact is not a nonlinear shock cap; no hidden energy-fraction reset is made.
+\item \textbf{Accommodation monotonicity?} Unestablished over the relevant domain. Discrete historical controls do not prove derivative signs or transition behavior; no reduction to accommodation one is justified.
+\item \textbf{Content uniformity/P9 at a maximizing design?} NOT\_RUN: there is no design or matched resolved/perturbed comparison. Older uniform-content evidence does not qualify asymmetric current optimal events.
+\item \textbf{Skeptical receiver-pressure review?} Historical contact plus spreading estimates cannot be accepted as registered pressure. Disk cells, time-step/window adequacy, full event horizon and wall viscous stress lack the required evidence.
+\item \textbf{Most influential physical assumption?} No sensitivity ranking of an attained optimum is possible. Activation/budget, reference, phase transfer, compressibility, content uniformity and wall geometry are plausible influential choices, but none is assigned an invented largest effect.
+\end{enumerate}
+The controlling independent review records the exact red-team scope and measured dispositions. Its unchanged strict verdict is NOT\_RESOLVED: G1 FAIL follows from unresolved model/domain/event links explicitly listed in the accepted problem; G2 FAIL retains historical nonphysical remainders; current G9 complete qualification is absent. Report delivery checks can PASS while scientific gates remain FAIL, WAIVED or NOT\_RUN.
+\source{inputs/full_closure/ACCEPTANCE_CRITERIA.md, internal review protocol}
+\source{review/INDEPENDENT_REVIEW.md and review/INDEPENDENT_RECOMPUTE.json}
+
+\nextsection{Claim-to-source traceability and reproducibility}
+Every numerical result is tied to a bundled record through \path{RESULTS_LEDGER.json}, including SHA-256 identity and a validity statement. Decimal display rounding is editorial; the ledger stores the original full precision. The accepted frozen preregistration and dated waiver/closeout records control interpretation over older draft-status prose. The original sources remain unchanged.
+
+{\small\input{generated/claim_table.tex}}
+
+The speed ceiling table maps to \path{inputs/full_closure/data/accepted_preparation.json}, species activated-budget availability. T rounded examples map to \path{inputs/conditional_termtex/verification.json}, numericalChecks. Historic row indexes above map to \path{inputs/expert_resolution/data/envelope_rows.json}. The partial history endpoint maps to the copied candidate030 \path{history.csv}, line 432. Null objectives map to the inherited Stage3 result ledger. The same-model observer/event definitions map to the accepted problem statement.
+
+\textbf{Rebuild.} From the package root, run \texttt{python scripts/build\_report.py}. The script generates tables from the bundled root ledger, invokes pdfLaTeX three times with a fixed source-date epoch, suppresses volatile PDF metadata, checks errors/undefined references/overfull boxes, and removes only its temporary compilation directory. It does not run a solver. The editable source is \path{report/STAGE3_ENGINEERING_REPORT.tex}. No absolute workspace path is required by the build.
+
+\textbf{Requirements and reproducibility limit.} Python 3.9 or later and an installed pdfLaTeX/TeX Live environment are required. This package is self-contained in evidence/assets, not a vendored operating system or TeX installation. Exact byte equivalence is checked by the root relocation rebuild in the same runtime; different font/TeX versions may alter typesetting without changing claims. The report's build review and numbered every-page visual QA are retained. The supplied PDF authoring marker was unavailable in this Windows runtime; the attempted command and limitation are recorded, and no administrative installation was performed.
+
+\textbf{Preservation caveat.} The original E/T/A evidence trees and the 507 originally declared protected R files match. The broader raw R\_rest tree comparison differs in two pre-existing Stage1 transfer files; this discrepancy predates current Stage3 work and remains a raw strict G0 FAIL, alongside PASS for scoped current preservation. The root record identifies the paths and hashes; no preserved evidence was repaired to hide the mismatch.
+\source{review/PRESERVATION.json}
+
+\textbf{Delivery verdict boundary.} Stage3 reporting can complete under accepted loosened closure with applicable delivery checks passing. Neither that completion nor a matching archive grants strict acceptance, a certified PFC maximum, a numerical engineering envelope or an actual-device maximum. Those four claims remain unsupported by the transferred evidence.
+\end{document}

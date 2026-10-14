@@ -1,0 +1,69 @@
+{
+  "schema": "stage3-reader-qa-v1",
+  "status": "PASS",
+  "browser": "Installed Chrome via Chrome DevTools MCP",
+  "transport": "file://",
+  "fallback": "CUA inventory and createBrowserTab both failed nodeRepl.fetch; purpose-built DevTools connector used",
+  "day": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"title\":\"Stage3 · Conditional cavitation engineering reference\",\"theme\":\"day\",\"button\":\"Switch to night\",\"bg\":\"rgb(246, 245, 241)\",\"sections\":[\"answer\",\"scope\",\"conditional\",\"allowances\",\"history\",\"objectives\",\"diagnostics\",\"waivers\"],\"math\":[{\"label\":\"Jet speed is at most square root of twice available work divided by participating mass. Contact pressure ceiling is impedance factor times this speed.\",\"width\":384,\"height\":70.67708587646484},{\"label\":\"One half prescribed mass times directed mass-qualified speed squared is at most water kinetic energy, which is at most activation available work; hence the speed bound.\",\"width\":384,\"height\":70.67708587646484}],\"objectives\":18,\"allNull\":true,\"viewport\":{\"width\":1281,\"docWidth\":1266},\"resources\":[],\"hashLinksValid\":true,\"externalLinks\":[]}\n```"
+      }
+    ]
+  },
+  "night": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"theme\":\"night\",\"bg\":\"rgb(18, 30, 39)\",\"button\":\"Switch to day\",\"ariaPressed\":\"true\"}\n```"
+      }
+    ]
+  },
+  "mobile": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"theme\":\"night\",\"button\":\"Switch to day\",\"viewport\":{\"width\":390,\"docWidth\":390},\"tables\":[{\"width\":339,\"scroll\":528},{\"width\":339,\"scroll\":710},{\"width\":339,\"scroll\":785}],\"math\":[{\"height\":63.85416793823242,\"width\":384},{\"height\":63.85416793823242,\"width\":384}],\"resources\":[],\"offline\":false}\n```"
+      }
+    ]
+  },
+  "offline": {
+    "method": "DevTools networkConditions Offline then reload local file",
+    "requests": "Only READER.html file:// GET200; no HTTP(S), scripts, fonts, styles, images or fetch resources",
+    "console": "No messages",
+    "navigator_onLine": "Not used as criterion; Chrome reported true under protocol network throttling"
+  },
+  "actual_link_navigation": {
+    "target": "FINAL_ANSWER.md",
+    "expected_claim_visible": true
+  },
+  "visual_review": {
+    "day": "PASS: header, answer and navigation readable",
+    "night": "PASS: readable contrast, toggle accurately labelled",
+    "math": "PASS: stacked fractions and radical bars visually render correctly, symbols defined before equations",
+    "mobile": "PASS:390px documentwidth390; tables and equations scroll within containers"
+  },
+  "screenshots": [
+    "day.jpg",
+    "night.jpg",
+    "mobile.jpg",
+    "math.jpg"
+  ],
+  "relocation": "recorded separately in RELOCATION_BROWSER_QA.json",
+  "reader_sha256": "705e3aadbf7ad1f92844aaab2c44bc8c99baa10930886d86553026d110b177eb",
+  "ledger_sha256": "36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f",
+  "theme_status": "PASS",
+  "offline_status": "PASS",
+  "mobile_status": "PASS",
+  "links": {
+    "status": "PASS",
+    "total45": 45,
+    "unique": 23,
+    "missing": [],
+    "hashNavigation": "PASS",
+    "finalAnswerRealClick": "PASS",
+    "pdfRealClick": "PASS local file200 opens built-in ChromePDF viewer; browserinternal chrome:// assets require no externalnetwork"
+  },
+  "captureProvenance": "Screenshots capture same substantive reader content/layout before final ledgerfooter hash update; final browserreload checked ledger hash36b77221... and18nullrows."
+}

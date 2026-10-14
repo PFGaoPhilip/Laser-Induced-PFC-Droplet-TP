@@ -23,27 +23,38 @@ def compare(english,chinese):
             raise AssertionError(f'{english}: {label} mismatch at {at}: {a[at:at+2]} != {b[at:at+2]}')
     return {'english':english,'chinese':chinese,'mathematical_expressions':len(mathematical_expressions(en)),
             'numeric_tokens':len(numeric_tokens(en)),'code_entries':len(code_tokens(en)),
-            'scope':'Exact ordered tokens; semantic review recorded separately in sources/i18n/.'}
+            'scope':'Exact ordered tokens. Current prose self-review is recorded in verification/READER_PROSE_AUDIT.json.'}
 
 def main():
     translations=[compare(a,b) for a,b in [('STEP_BY_STEP.md','STEP_BY_STEP.zh.md'),('MODEL_SPEC.md','MODEL_SPEC.zh.md'),('RESULTS.md','RESULTS.zh.md')]]
     pages=[]
     css=(ROOT/'assets/terms.css').read_text(encoding='utf-8')
-    reference=(ROOT/'sources/interface-reference/theory-4-bilingual-terms.css.txt').read_text(encoding='utf-8')
-    expected=reference.replace('html[data-theme="light"]','html[data-theme="day"]')+'\n.technical-term{border-radius:3px;padding:0 .1em;font-weight:600}\n'
-    assert css==expected,'Reference semantic palette differs beyond the documented selector/padding adaptation.'
+    reference_path=ROOT/'sources/interface-reference/theory-4-bilingual-terms.css.txt'
+    if reference_path.is_file():
+        reference=reference_path.read_text(encoding='utf-8')
+        expected=reference.replace('html[data-theme="light"]','html[data-theme="day"]')+'\n.technical-term{border-radius:3px;padding:0 .1em;font-weight:600}\n'
+        assert css==expected,'Reference semantic palette differs beyond the documented selector/padding adaptation.'
+    else:
+        manifest=json.loads((ROOT/'SOURCE_MANIFEST.json').read_text(encoding='utf-8'))
+        original=next(row for row in manifest['copied_files'] if row['path']=='assets/terms.css')
+        assert hashlib.sha256((ROOT/'assets/terms.css').read_bytes()).hexdigest()==original['sha256'], 'Bundled accepted palette changed.'
     for name in ('index.html','STEP_BY_STEP.html'):
         soup=BeautifulSoup((ROOT/name).read_text(encoding='utf-8'),'html.parser')
         ids=[node['id'] for node in soup.find_all(id=True)]
         assert len(ids)==len(set(ids)),name+' duplicate IDs'
-        assert soup.html['lang']=='zh-CN' and soup.html['data-language']=='zh'
-        assert len(soup.select('.reader-controls'))==1
-        assert [n['id'] for n in soup.select('.reader-controls button')]==['language','theme']
-        assert soup.select_one('[data-locale="en"]').has_attr('hidden')
-        assert not soup.select_one('[data-locale="zh"]').has_attr('hidden')
+        assert soup.html['lang']=='en' and soup.html['data-language']=='en'
+        assert len(soup.select('.theme-tools'))==1
+        assert [n['id'] for n in soup.select('.theme-tools button')]==['theme-toggle','language-toggle']
+        assert soup.select_one('nav.topbar')
+        assert soup.select_one('link[href="assets/course.css"]')
+        assert not soup.select('link[href="assets/reader.css"],link[href="assets/terms.css"]')
+        assert not soup.select_one('[data-locale="en"]').has_attr('hidden')
+        assert soup.select_one('[data-locale="zh"]').has_attr('hidden')
         editions=[]
         for locale in ('en','zh'):
             pane=soup.select_one(f'[data-locale="{locale}"]')
+            for selector in ('.page-layout','.sidebar','.reading','.chapter-header h1','.chapter-body'):
+                assert len(pane.select(selector))==1,(name,locale,selector)
             math_count=len(pane.select('.katex-display'))
             steps=[int(node['data-step']) for node in pane.select('input[data-step]')]
             assert math_count==(29 if name=='index.html' else 0)
@@ -57,14 +68,14 @@ def main():
         if name=='STEP_BY_STEP.html':
             code=lambda locale:[n.get_text() for n in soup.select(f'[data-locale="{locale}"] main code')]
             assert code('en')==code('zh')
-        pages.append({'file':name,'unique_ids':len(ids),'editions':editions,'default_language':'zh'})
+        pages.append({'file':name,'unique_ids':len(ids),'editions':editions,'default_language':'en'})
     audit=json.loads((ROOT/'verification/NUMERICAL_AUDIT.json').read_text(encoding='utf-8'))
     for row in audit['native_files']:
         assert hashlib.sha256((ROOT/'models'/row['file']).read_bytes()).hexdigest()==row['sha256']
     result={'status':'PASS','translations':translations,'pages':pages,'native_models':audit['native_files'],
-            'term_palette':'Exact archived newer-reference stylesheet; only light-to-day selector and term padding adapted.',
+            'term_palette':'Archived term stylesheet is retained. Current readers use the canonical course keyword appearance.',
             'interaction_verification':'Recorded separately; these checks do not replace browser interaction.',
-            'semantic_review':'Chapter peer-review files under sources/i18n/.'}
+            'semantic_review':'Current prose self-review: verification/READER_PROSE_AUDIT.json. Original peer-review files under sources/i18n/ remain historical evidence.'}
     (ROOT/'verification/BILINGUAL_CONTENT_AUDIT.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

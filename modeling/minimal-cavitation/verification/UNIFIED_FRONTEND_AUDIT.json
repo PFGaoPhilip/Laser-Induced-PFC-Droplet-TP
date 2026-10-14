@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Canonical frontend structure, bundled asset equality and protected scientific content; function behavior uses the updated JSDOM audit.",
+  "readers": [
+    "learning-records/resolver-progress/index.html",
+    "modeling/minimal-cavitation/index.html",
+    "modeling/minimal-cavitation/STEP_BY_STEP.html"
+  ],
+  "canonical_reference": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
+  "body_layout": [
+    "topbar",
+    "page-layout",
+    "sidebar",
+    "reading",
+    "chapter-header",
+    "chapter-body",
+    "site-footer"
+  ],
+  "controls": [
+    "theme-toggle",
+    "language-toggle"
+  ],
+  "toolbar": "Single fixed lower-right theme-tools group; canonical order and CSS.",
+  "DOM_scenarios": 16,
+  "browser": "Parent independent Chrome audit passed desktop 1280x900 and mobile 390x844. See course verification/unified-frontend-browser-audit.json.",
+  "scientific_preservation": "PASS: 257 theory expressions, 679 guide code entries per language, 49 scientific files, 284 resolver inputs.",
+  "frozen_source_link": "READER.html uses download=\"STAGE3_FROZEN_READER_SOURCE.html\" with bilingual original-source labels.",
+  "new_simulation": "NOT_RUN"
+}

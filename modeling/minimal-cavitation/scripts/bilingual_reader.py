@@ -2,6 +2,9 @@
 from __future__ import annotations
 import html
 import re
+import json
+import shutil
+import hashlib
 from pathlib import Path
 import markdown
 from bs4 import BeautifulSoup, Comment, NavigableString
@@ -58,13 +61,103 @@ def highlight_terms(markup):
     return str(soup)
 
 def copy_term_style():
-    css=(ROOT/'sources/interface-reference/theory-4-bilingual-terms.css.txt').read_text(encoding='utf-8')
+    reference=ROOT/'sources/interface-reference/theory-4-bilingual-terms.css.txt'
+    if not reference.is_file():
+        # The course copy already includes the accepted, adapted palette.
+        # Keeping it avoids a dependency on excluded website snapshots.
+        if not (ROOT/'assets/terms.css').is_file():
+            raise FileNotFoundError('Missing bundled term palette: assets/terms.css')
+        return
+    css=reference.read_text(encoding='utf-8')
     css=css.replace('html[data-theme="light"]','html[data-theme="day"]')
     css+='\n.technical-term{border-radius:3px;padding:0 .1em;font-weight:600}\n'
     (ROOT/'assets/terms.css').write_text(css,encoding='utf-8')
 
+def copy_course_assets():
+    """Keep the canonical course frontend portable with this standalone folder."""
+    course=ROOT.parents[1]
+    records=[]
+    for name in ('course.css','course-language.css','bilingual-terms.css'):
+        source=course/'assets'/name
+        target=ROOT/'assets'/name
+        if source.is_file():shutil.copy2(source,target)
+        if not target.is_file():raise FileNotFoundError('Missing canonical frontend: '+name)
+        records.append({'path':'assets/'+name,'sha256':hashlib.sha256(target.read_bytes()).hexdigest()})
+    settings=course/'COURSE_SETTINGS.json'
+    nav=ROOT/'assets/course-navigation.json'
+    if settings.is_file():
+        units=json.loads(settings.read_text(encoding='utf-8'))
+        nav.write_text(json.dumps(units['chapters']+units['appendices'],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    if not nav.is_file():raise FileNotFoundError('Missing bundled course navigation')
+    (ROOT/'verification/CANONICAL_FRONTEND.json').write_text(json.dumps({'source':'First course chapter frontend; bundled copies support standalone regeneration.','files':records},indent=2)+'\n',encoding='utf-8')
+
+def course_link(soup, route, label):
+    link=soup.new_tag('a',href='https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/'+route,attrs={'data-course-path':route})
+    link.string=label
+    return link
+
+def canonical_layout(soup, locale):
+    zh=locale=='zh'
+    header=soup.find('header');main=soup.find('main');footer=soup.find('footer')
+    header['class']='chapter-header';main['class']='chapter-body'
+    header.find('h1')['lang']='zh-CN' if zh else 'en'
+    if footer:footer['class']='site-footer'
+    for node in main.find_all('h1'):node.name='h2'
+    if zh:
+        for node in soup.find_all(['h1','h2','h3','h4','p']):
+            node['class']=list(node.get('class',[]))+['zh']
+    for heading in list(main.find_all(['h2','h3','h4'])):
+        wrapper=soup.new_tag('div',attrs={'class':'heading-pair'})
+        heading.wrap(wrapper)
+    for table in list(main.find_all('table')):
+        wrapper=soup.new_tag('div',attrs={'class':'table-wrap'})
+        table.wrap(wrapper)
+    for formula in main.select('.math.display'):
+        formula['class']=list(formula.get('class',[]))+['math-display']
+    for detail in main.find_all('details'):
+        detail['class']=list(detail.get('class',[]))+['answer']
+    toolbar=soup.select_one('.guide-toolbar')
+    if toolbar:
+        toolbar['class']=['guide-toolbar','scope']
+        header.append(toolbar.extract())
+    for article in main.select('.guide-step'):
+        article['class']=['guide-step','equation-unit']
+        badge=article.select_one('.step-number')
+        if badge:badge['class']=['step-number','eyebrow']
+        for paragraph in article.select('.guide-check,.guide-check-against'):
+            paragraph['class']=list(paragraph.get('class',[]))+['audit']
+        location=article.select_one('.guide-where')
+        if location:location['class']=list(location.get('class',[]))+['symbols']
+    header_nav=header.find('nav')
+    if header_nav:header_nav['class']='resource-nav'
+    aside=soup.new_tag('aside',attrs={'class':'sidebar'})
+    heading=soup.new_tag('h2');heading.string='课程' if zh else 'Course';aside.append(heading)
+    course_nav=soup.new_tag('nav',attrs={'aria-label':'Chapters and appendix'})
+    for unit in json.loads((ROOT/'assets/course-navigation.json').read_text(encoding='utf-8')):
+        label=unit['label_zh']+' · '+unit['title_zh'] if zh else unit['label']+' · '+unit['title']
+        course_nav.append(course_link(soup,unit['file'],label))
+    aside.append(course_nav)
+    heading=soup.new_tag('h2');heading.string='本页内容' if zh else 'In this unit';aside.append(heading)
+    toc=soup.new_tag('nav',attrs={'class':'toc','aria-label':'In this unit'})
+    links=header.select('.guide-section-nav a[href^="#"]') or header.select('nav a[href^="#"]')
+    for original in links:
+        link=soup.new_tag('a',href=original['href']);link.string=original.get_text(' ',strip=True);toc.append(link)
+    aside.append(toc)
+    guide_sections=header.select_one('.guide-section-nav')
+    if guide_sections:guide_sections.decompose()
+    reading=soup.new_tag('div',attrs={'class':'reading'})
+    reading.append(header.extract());reading.append(main.extract())
+    layout=soup.new_tag('div',attrs={'class':'page-layout'})
+    layout.append(aside);layout.append(reading);soup.insert(0,layout)
+
 def edition(markup,locale):
     soup=BeautifulSoup(highlight_terms(markup),'html.parser');mapping={};outline=0
+    nav=soup.select_one('header nav')
+    if nav:
+        link=soup.new_tag('a',href='https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/appendices/a-hydrogel-versus-liquid.html',attrs={'data-course-return':'appendix-a'})
+        link.string='Appendix A' if locale=='en' else '附录 A'
+        nav.insert(0,link)
+    canonical_layout(soup,locale)
     for node in soup.find_all(id=True):
         old=node['id'];canonical=old
         if node.name in ('h1','h2','h3') and not re.fullmatch(r'(section-[a-f]|references)',old):
@@ -72,6 +165,7 @@ def edition(markup,locale):
         mapping[old]=f'{locale}-{canonical}';node['id']=mapping[old];node['data-anchor']=canonical
     for node in soup.find_all('a',href=True):
         href=node['href']
+        if href=='WORK_LOG.md':node['href']='PUBLICATION.md';href='PUBLICATION.md'
         if href.startswith('#'): node['href']='#'+mapping.get(href[1:],f'{locale}-{href[1:]}')
         elif re.match(r'(?:index|STEP_BY_STEP)\.html#',href):
             path,anchor=href.split('#',1);node['href']=path+'#'+locale+'-'+anchor
@@ -85,16 +179,20 @@ def edition(markup,locale):
             if target.startswith('assets/') and target.endswith(('.png','.svg')):
                 candidate=Path(target).with_name(Path(target).stem+'.zh'+Path(target).suffix)
                 if (ROOT/candidate).is_file():node[key]=candidate.as_posix()
-    hidden=' hidden' if locale=='en' else '';language='en' if locale=='en' else 'zh-CN' 
+    hidden=' hidden' if locale=='zh' else '';language='en' if locale=='en' else 'zh-CN' 
     return f'<div class="locale-pane" data-locale="{locale}" lang="{language}"{hidden}>'+str(soup)+'</div>'
 
 def page(filename,title,english,chinese,css=(),scripts=()):
-    copy_term_style()
-    head=''.join(f'<link rel="stylesheet" href="{p}">' for p in ['assets/reader.css','assets/terms.css','assets/interface.css',*css])
+    copy_course_assets()
+    head=''.join(f'<link rel="stylesheet" href="{p}">' for p in ['assets/vendor/katex/katex.min.css','assets/course.css','assets/course-language.css','assets/bilingual-terms.css','assets/interface.css',*(p for p in css if p!='assets/vendor/katex/katex.min.css')])
     js=''.join(f'<script src="{p}"></script>' for p in ['assets/theme.js',*scripts])
-    controls='<div class="reader-controls" aria-label="阅读设置"><button id="language" type="button" aria-label="切换到 English">English</button><button id="theme" type="button" aria-label="切换到日间模式">日间模式</button></div>'
+    controls='<div class="theme-tools" role="group" aria-label="Reading controls / 阅读控制"><button id="theme-toggle" type="button" aria-label="Switch between day and night modes">Day mode</button><button id="language-toggle" type="button" aria-label="Switch to Chinese">中文</button></div>'
     body_class='guide-page' if filename=='STEP_BY_STEP.html' else 'report-page'
-    doc='<!doctype html><html lang="zh-CN" data-language="zh" data-theme="night"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+html.escape(title)+'</title>'+head+'</head><body class="'+body_class+'">'+edition(english,'en')+edition(chinese,'zh')+controls+js+'</body></html>'
+    topbar='<nav class="topbar" aria-label="Main navigation"><a class="brand" data-course-path="index.html" href="https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/index.html"><span lang="en">Laser PFC TP</span><span lang="zh-CN">激光 PFC 转印</span></a>'
+    for route,en,zh in [('reference/defense.html','Defense &amp; mastery','答辩与掌握'),('reference/notation.html','Notation','符号'),('reference/sources.html','Sources','来源')]:
+        topbar+='<a data-course-path="'+route+'" href="https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/'+route+'"><span lang="en">'+en+'</span><span lang="zh-CN">'+zh+'</span></a>'
+    topbar+='</nav>'
+    doc='<!doctype html><html lang="en" data-language="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+html.escape(title)+'</title>'+head+'</head><body class="'+body_class+'">'+topbar+edition(english,'en')+edition(chinese,'zh')+controls+js+'</body></html>'
     (ROOT/filename).write_text(doc,encoding='utf-8')
 
 def guide_body(source,locale):

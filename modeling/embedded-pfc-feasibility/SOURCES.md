@@ -1,6 +1,6 @@
-# Sources and claim boundaries
+# Sources and supported claims
 
-Primary and official sources were checked on 2026-10-11. Calculated comparison values in this project are original conditional results, not measurements from these sources.
+Primary and official sources were checked on 2026-10-11. This project’s calculated values are conditional model results. They are separate from literature measurements.
 
 | ID | Source | What it supports; what it does not establish |
 |---|---|---|
@@ -15,5 +15,4 @@ Primary and official sources were checked on 2026-10-11. Calculated comparison v
 | S9 | COMSOL 6.4, [Damage](https://doc.comsol.com/6.4/doc/com.comsol.help.sme/sme_ug_solid.07.040.html), [Damage Models](https://doc.comsol.com/6.4/doc/com.comsol.help.sme/sme_ug_theory.06.036.html) | Hyperelastic phase-field damage and fracture-energy/length-scale inputs exist in appropriate licensed products. A damage field alone does not define an open, fluid-filled hydraulic path. |
 | S10 | COMSOL 6.4, [Mixed-Mode Debonding of a Laminated Composite](https://doc.comsol.com/6.4/doc/com.comsol.help.models.sme.cohesive_zone_debonding/cohesive_zone_debonding.html) | Official cohesive traction–separation example and Adhesion/Decohesion setup under Interior Contact. It is a software implementation reference, not a gel-specific calibration or validation. |
 
-The prior source-context file is copied as `sources/prior_interface_evidence.md`. This public edition links scholarly papers to their original repositories or DOI pages; third-party paper PDFs and operational logs are excluded. Archived EOS coefficients, the worked derivation, model/data files and scientific audit records are bundled. The printable PDF preserves the accepted local study and its original source ledger; this page and `PUBLICATION.md` describe the public package contents.
-
+Prior source context is in `sources/prior_interface_evidence.md`. Scholarly links lead to original repositories or DOI pages. EOS coefficients, derivation, models, data and audit records are bundled. The accepted English PDF retains its original source ledger. `PUBLICATION.md` records the current package provenance.

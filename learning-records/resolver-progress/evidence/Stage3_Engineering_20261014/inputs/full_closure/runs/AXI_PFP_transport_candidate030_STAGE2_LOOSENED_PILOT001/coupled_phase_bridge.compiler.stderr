@@ -1,0 +1,5 @@
+In file included from pfc_reaction.h:9,
+                 from coupled_phase_bridge.c:2:
+pfc_helmholtz.h:234:12: warning: ‘closure_pfc_invert’ defined but not used [-Wunused-function]
+  234 | static int closure_pfc_invert(const ClosurePFCFluid * f,double rho,double u,
+      |            ^~~~~~~~~~~~~~~~~~

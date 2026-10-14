@@ -1,0 +1,1038 @@
+{
+  "git_head": "04112243d9ed9e2eee693a592a1f7ba09ecc5851",
+  "baseline_head": "04112243d9ed9e2eee693a592a1f7ba09ecc5851",
+  "logs": [
+    {
+      "path": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\full_closure\\WORK_LOG.md",
+      "size": 800586,
+      "sha256": "0459c6742d912d38af6293c5ee52ff86ff31154fc64d1d97a3a603a890aae165"
+    },
+    {
+      "path": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\WORK_LOG.md",
+      "size": 828083,
+      "sha256": "1e2e07d5baf16dc5d2ba697144f0a618a9acb3837953729f06ca56ad764b3675"
+    },
+    {
+      "path": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\WORK_LOG.md",
+      "size": 909360,
+      "sha256": "4102f20ae4b99c3fd68d59d0c445b1ef2624bc2aee456b460126caceefb63c5b"
+    },
+    {
+      "path": "C:\\L. Jay Guo\\WORK_LOG.md",
+      "size": 969367,
+      "sha256": "6a2c7540afa63e0479b7aa32e076ac6cff8bcad60ef359058e1d1a675047a37e"
+    }
+  ],
+  "protected": [
+    {
+      "path": "../conditional_termtex/CONDITIONAL_SOLUTION.md",
+      "sha256": "d17a919ac368bc80d20a18d1cade96b6eaa9cb3a32774519d409b682b0784cd9",
+      "size": 21582
+    },
+    {
+      "path": "../conditional_termtex/equations.json",
+      "sha256": "3c57d202d3037feb0fe376e1c1116cc43d79e3ebfbceeaa95f820a529597031d",
+      "size": 33597
+    },
+    {
+      "path": "../conditional_termtex/FORMULAS.md",
+      "sha256": "fa2ee64a1afdc93bed1e97be7061f6bf9994dcaf5ff292fbf020960e2ea8c4cc",
+      "size": 5011
+    },
+    {
+      "path": "../conditional_termtex/INDEPENDENT_REVIEW.md",
+      "sha256": "bf2b776c9e16242be35ccb9dbc6f9ae9b35f97700d055a9634d32e13c2b24bb9",
+      "size": 1613
+    },
+    {
+      "path": "../conditional_termtex/resources/evidence/04_thermo.tex",
+      "sha256": "2eb38748f78d78bdc529c7d3b8c814da79c3b9913c2b3cc034d01123416ecf45",
+      "size": 26408
+    },
+    {
+      "path": "../conditional_termtex/resources/evidence/07_receiver.tex",
+      "sha256": "3d9e15f6285e1fdaafbc4d92846000eadb5f87697ed54b446b8e7b0959438673",
+      "size": 8594
+    },
+    {
+      "path": "../conditional_termtex/resources/evidence/09_envelope.tex",
+      "sha256": "eb7815f9e75f7ac15fefc1e229a236989d0cb4d93ce08f03de029411ee03b6f4",
+      "size": 8289
+    },
+    {
+      "path": "../conditional_termtex/resources/evidence/table_envelope.tex",
+      "sha256": "69d4b2ddc5a5a2a1fd3144af7cba575e0b108093c19af17edd37845544246dd5",
+      "size": 2389
+    },
+    {
+      "path": "../conditional_termtex/verification.json",
+      "sha256": "b83ab006b2875ebbf4c75c4f7e7774e4a0b5b988be635a708c593dc91ab9e50e",
+      "size": 8012
+    },
+    {
+      "path": "../expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md",
+      "sha256": "d59c5a008524c28cad049948f6c538e9f84aa01cb0954391bdf01d67f5c81524",
+      "size": 32416
+    },
+    {
+      "path": "../expert_resolution/data/droplet_ceilings.csv",
+      "sha256": "0c0fa9504fb82fd5849ecf1e1307c542d9d7c9aa9ff5e3d37c9cd8d3ca179713",
+      "size": 3652
+    },
+    {
+      "path": "../expert_resolution/data/envelope_rows.json",
+      "sha256": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731",
+      "size": 18822
+    },
+    {
+      "path": "../expert_resolution/data/km_sweep.json",
+      "sha256": "aea81875bf8ae62d011ba8b122f1922a51555bb6964f28f66859aea7d2c0f587",
+      "size": 542387
+    },
+    {
+      "path": "../expert_resolution/data/receiver_table.json",
+      "sha256": "4bb508d9050a617b01e14a2e9ef9b067dc1a7213459554a3a534ce910bed5049",
+      "size": 6136
+    },
+    {
+      "path": "../expert_resolution/data/thermo_ceilings.json",
+      "sha256": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b",
+      "size": 121451
+    },
+    {
+      "path": "../expert_resolution/README.md",
+      "sha256": "cd68e96d4aafa8ceeb3610bdc03894ac912e51417d6a99a63c3c5f1cb138997f",
+      "size": 11493
+    },
+    {
+      "path": "../expert_resolution/RESULTS_LEDGER.json",
+      "sha256": "9315fa009d3c857a9e07eb977a54c5ee7ef6e8b86637aa5c7d92c36b4a5975db",
+      "size": 37728
+    },
+    {
+      "path": "../expert_resolution/tex/00_summary.tex",
+      "sha256": "40837d8a224c0c6f32188baa1c237b8baaa15710d2afabc295cdf8e4d4f42b72",
+      "size": 5664
+    },
+    {
+      "path": "../expert_resolution/tex/01_setup.tex",
+      "sha256": "33dbac5c466de10addfe011ed0f1915347b9f07e641d548311c740061ff473e9",
+      "size": 11489
+    },
+    {
+      "path": "../expert_resolution/tex/02_audit.tex",
+      "sha256": "1705595eed8a1a67eae2b0e4eb31b4a64bfbaddf68be5e2d6f2f4eba4c7a2940",
+      "size": 9510
+    },
+    {
+      "path": "../expert_resolution/tex/03_ledger.tex",
+      "sha256": "be27af73a6eb9262e59bd04b1b242168980f5016e882e4684593804af900a321",
+      "size": 4550
+    },
+    {
+      "path": "../expert_resolution/tex/04_thermo.tex",
+      "sha256": "2eb38748f78d78bdc529c7d3b8c814da79c3b9913c2b3cc034d01123416ecf45",
+      "size": 26408
+    },
+    {
+      "path": "../expert_resolution/tex/05_spherical.tex",
+      "sha256": "1b3f038749e8e494d8d63f977116682e591a3e9ff5e4a97078f6e88f87e3b603",
+      "size": 18391
+    },
+    {
+      "path": "../expert_resolution/tex/06_jet.tex",
+      "sha256": "c38a042ed819df6d5144f3e0c144b624c65a203adcdedbb8c0ea57b7761e0a5b",
+      "size": 17831
+    },
+    {
+      "path": "../expert_resolution/tex/07_receiver.tex",
+      "sha256": "3d9e15f6285e1fdaafbc4d92846000eadb5f87697ed54b446b8e7b0959438673",
+      "size": 8594
+    },
+    {
+      "path": "../expert_resolution/tex/08_gel.tex",
+      "sha256": "f0cf83d4ee7b22e2d586df8bcddcb2690c8d880cd8432e81b102fc57c7510783",
+      "size": 4682
+    },
+    {
+      "path": "../expert_resolution/tex/09_envelope.tex",
+      "sha256": "eb7815f9e75f7ac15fefc1e229a236989d0cb4d93ce08f03de029411ee03b6f4",
+      "size": 8289
+    },
+    {
+      "path": "../expert_resolution/tex/10_program.tex",
+      "sha256": "b046ce053536ed85b8d5b24e47813a017414a2f847a3c583d5632be71cd0d7bc",
+      "size": 7909
+    },
+    {
+      "path": "../expert_resolution/tex/12_references.tex",
+      "sha256": "3ec176853d93bc62f794ee6bb062a7a172ace7d05858854a7da6fc0d4b92687c",
+      "size": 6677
+    },
+    {
+      "path": "../expert_resolution/tex/A_kernels.tex",
+      "sha256": "500a9edd5e62adb0f95f8dddf1023e0b2d455fe56a80bc85d9fce36f1dbcd84f",
+      "size": 8553
+    },
+    {
+      "path": "ACCEPTANCE_CRITERIA.md",
+      "sha256": "8e81ad2d63eada9001567b0d571a92200e3ea118f8167980aa52769acd031fd7",
+      "size": 14029
+    },
+    {
+      "path": "BASELINE_HASHES.json",
+      "sha256": "e6f94d58e4c47fa3dfcd70d7c2640cbec83fba164af262ce932db67439f4ca2e",
+      "size": 2960
+    },
+    {
+      "path": "data\\accepted_preparation.json",
+      "sha256": "8dc8a2fc88008694ec3c2d83d07040b5072f5fc04239537008050664839c55a0",
+      "size": 3285
+    },
+    {
+      "path": "data\\STAGE2_CASE_REGISTER_001.csv",
+      "sha256": "edb3c77c2a0536e5454c07c7dba0a7c5499033563c36fdb17392ad99ca052f5c",
+      "size": 24678
+    },
+    {
+      "path": "data\\STAGE2_LOOSENED_CASE_STATUS_SNAPSHOT_001.csv",
+      "sha256": "1b4e06361e77523088bbc16918999f6ce9a95c10332218e77b3fb65463248d0c",
+      "size": 41469
+    },
+    {
+      "path": "data\\STAGE2_LOOSENED_OBJECTIVE_STATUS_001.csv",
+      "sha256": "c3aff015bbf22d314aaccd07bed3cec32eeaad309bbe36119dd4b01e8034e82a",
+      "size": 4634
+    },
+    {
+      "path": "data\\STAGE2_LOOSENED_PILOT_REGISTER_001.csv",
+      "sha256": "1809c6c3b33f13f1748f93672aa8201ce517594e40bec17fc3796d50dba33dc1",
+      "size": 425
+    },
+    {
+      "path": "data\\STAGE3_RESULTS_LEDGER_001.json",
+      "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9",
+      "size": 7345
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "82dbe550ef1eeead001c8dbd7cfd186179d2675a55c1c4f3f476c21d53a36de2",
+      "size": 17597
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "916d1d41c9ef30e1de4128ed6a6a3334be61e5cdc87170a4f517766e4616761b",
+      "size": 18738
+    },
+    {
+      "path": "PREREGISTRATION.json",
+      "sha256": "bcab9f558eb00b91c939b999d016dd0cd42c34bd88024d764c7b26dd89258a90",
+      "size": 11110
+    },
+    {
+      "path": "PROBLEM_STATEMENT.md",
+      "sha256": "d3fcba29b203f6a1238461d61d41058cb21385c5140414640df372634871097a",
+      "size": 28034
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate011.c",
+      "sha256": "7357a8787a746d0978e21f2e944702363e1c9893c0310825e24919835e86ee3d",
+      "size": 19272
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate012.c",
+      "sha256": "f93d55277ea01aed2e69b8f93b0762cee9ce95059dab4902d609ee8eea30baeb",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate013.c",
+      "sha256": "f93d55277ea01aed2e69b8f93b0762cee9ce95059dab4902d609ee8eea30baeb",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate014.c",
+      "sha256": "f93d55277ea01aed2e69b8f93b0762cee9ce95059dab4902d609ee8eea30baeb",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate015.c",
+      "sha256": "f93d55277ea01aed2e69b8f93b0762cee9ce95059dab4902d609ee8eea30baeb",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate016.c",
+      "sha256": "f93d55277ea01aed2e69b8f93b0762cee9ce95059dab4902d609ee8eea30baeb",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate017.c",
+      "sha256": "fd1e70d43a1908255da254aff9fd9cfff91f8e91912bdfe8011255d4b274e210",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate018.c",
+      "sha256": "fd1e70d43a1908255da254aff9fd9cfff91f8e91912bdfe8011255d4b274e210",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate019.c",
+      "sha256": "6ef0c89738c52a0a91240260bc5d705ff105fde8a30e6004f911c5b636bc47dc",
+      "size": 18990
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate020.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate021.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate022.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate023.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate024.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate025.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate026.c",
+      "sha256": "51e3cbdf3d53c4e3209a046d12342fdf152685228b3d9f8617cb49af0e736798",
+      "size": 19228
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate027.c",
+      "sha256": "8f3baf50dcbcb81546885c10c171c2accd978ff69c5ed8098dca769049bced8f",
+      "size": 19564
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate028.c",
+      "sha256": "a8224c0f893b3882348907575d76fe88a935d14694b421954610ba0ab606c5a5",
+      "size": 19657
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate029.c",
+      "sha256": "afd19794f1cd9f09ef5c3b049c88281780a6eff92bf77af605d7f8a86bddf5bc",
+      "size": 19698
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_activation_core_candidate030.c",
+      "sha256": "f8da754d9b1b5a4198c2a703866c98e225eaefe9f214e08643060b16545f1413",
+      "size": 19673
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_coupled_core.h",
+      "sha256": "8ec490d5d3f9f87a176891e0d0cdaabd45e1a46507bb6e830c0ff191ebceb617",
+      "size": 13631
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_coupled_core_candidate011.h",
+      "sha256": "1cedded5b7d9a29005950164328606bf287bb0c53a8c4a70cf0e8520efc7950e",
+      "size": 13896
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_coupled_core_candidate012.h",
+      "sha256": "1cedded5b7d9a29005950164328606bf287bb0c53a8c4a70cf0e8520efc7950e",
+      "size": 13896
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_coupled_core_candidate019.h",
+      "sha256": "6aa472ba07457095fa065f1b8915c60fec5aa87815e84bbc31de634b3ff7db6b",
+      "size": 14834
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.c",
+      "sha256": "f1f2d24caa30b442bbff2b4d311534537d4fc8af96fe0d710cd763a715b7763f",
+      "size": 10624
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.compiler.stderr",
+      "sha256": "3248e067abb17e1eaa605b0166482210171127ee902d8170719ed51afbb1fd33",
+      "size": 1644
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.h",
+      "sha256": "6beb0e9b822f08fade4ca57a97cf9542d05330ff3c6d33c355b2463591c36027",
+      "size": 1940
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.o",
+      "sha256": "e5ba582ffed8027031d218a971200afb6e7fc54d041b215c89d0bcf08623b4ed",
+      "size": 9680
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_native_output_collector.h",
+      "sha256": "af555b42fed28891a67346d2c80a2f022cd6b7cccb54c66ef13937d3eefe2ef6",
+      "size": 6021
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_snapshot_properties.h",
+      "sha256": "f77a102af77477b998b66c58cb39302c6cd1d95c3069f65bcaed5e31e4b57b06",
+      "size": 3695
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transaction.h",
+      "sha256": "aae6964eb0dd735f4f4216214670dabf481874120b85d18f21a6f2dd8cefc2fc",
+      "size": 6471
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_collector.h",
+      "sha256": "d44358d050e17b914d37b816178c6ef46a9c2f123387f63daeed4cb7e303ec98",
+      "size": 6372
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_collector_candidate011.h",
+      "sha256": "dd28f48fff30dd6d14fe8eac71fea9e1116cee1f48df474a0cd23ee0d64a2b4b",
+      "size": 6398
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_collector_candidate012.h",
+      "sha256": "dd28f48fff30dd6d14fe8eac71fea9e1116cee1f48df474a0cd23ee0d64a2b4b",
+      "size": 6398
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_collector_candidate017.h",
+      "sha256": "c25593c2ca4606d8e5f5a8f36a6f3b0eb3cf90b2d25e9819eba535d6c206688e",
+      "size": 6464
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_collector_candidate020.h",
+      "sha256": "437b5447738b1e29e83dd9503230e93ed8159c2cd5653bc4086794fad039ff8a",
+      "size": 7332
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.c",
+      "sha256": "efd1e85dd8e4ebf11332e7515332e574f338eb5056f579467112c72f9fc3f932",
+      "size": 16647
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.compiler.stderr",
+      "sha256": "e769db583af01c0ac209910ea4fad25636da11074a86c804a1376eb25bbda74e",
+      "size": 1165
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.h",
+      "sha256": "e33f017eed0b8d2f836503386d34899572e5b10f15ce20cb301c0163f80fe715",
+      "size": 2707
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.o",
+      "sha256": "e07556033b9dd04bfad66a98206f833366da6ebf87e224f8c367a70d27357a44",
+      "size": 15976
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.c",
+      "sha256": "eeb6c3b421bd839661356b02dd45ca2432d57963f748300a4a2758f8aaa247b6",
+      "size": 11450
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.compiler.stderr",
+      "sha256": "f6138b3ff5f1a5ab26062807904ef4c95c883fa5230e469bc54fa28db033788b",
+      "size": 2048
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.h",
+      "sha256": "ea0806d3fe3938fad078ec5e076242a0e6b42ae451e17a6d4e22a0f4e177e7a6",
+      "size": 1815
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.o",
+      "sha256": "490c8e64d59e3f37bdd32c8e934a4a56d143bd2f5078279591dfe347fce8b54f",
+      "size": 8544
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\binary_sha256.txt",
+      "sha256": "32116459c5efc52d0dc6ca241e80e03798492b173f00b458370be5d053fda0d1",
+      "size": 77
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\closure_geometric_advection.h",
+      "sha256": "17e6c4d34fb67f89c6e1856e167d8215e08ad5e9b9db1920ef2766872779485b",
+      "size": 25772
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\conservative_hllc.h",
+      "sha256": "aafa7cb5143925969402d37d0989e5bc8d63e901af9e3f7232fae55eafd7d955",
+      "size": 6794
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_event_probe.h",
+      "sha256": "a0c5d51a180356c049fb657b3230c6574d77ee4565ba66c3dc4ef885d1ed54df",
+      "size": 3198
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.c",
+      "sha256": "155db6a739a23c2c273879e9703472e93d9653ea93a494580e698a5f98da2e56",
+      "size": 5120
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.compiler.stderr",
+      "sha256": "9205473482df76cf84e667b761b1cfb0aa9e0096b9a4a6651b65da5511ed715a",
+      "size": 310
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.h",
+      "sha256": "09f14d1117a708348af6c0bbde08d01654de38f86d13468d9ba86f3ab1f5fd8c",
+      "size": 1844
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.o",
+      "sha256": "f3ed2e9610be9e4b4d4c3090c80ce846517ac2dee5a82fa9e86cee02c3334061",
+      "size": 44856
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_raw_output.h",
+      "sha256": "21f68c56cb3d584a058d947b2079e8a806c7166f0f659c3b030d0e208af2b8b3",
+      "size": 2669
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.c",
+      "sha256": "f3e089f56f5af49154a5239800f40c336ee9df2be298e0999bafed326f387b07",
+      "size": 10549
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.compiler.stderr",
+      "sha256": "896d2c50455b8e65f1eec29dd86fd8d3f3e0b35000d192109e20a26de7b8674b",
+      "size": 339
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.h",
+      "sha256": "b2112038854304514ba6b14e41c81d80a03323a8d87b33ff407284bb5aa417ae",
+      "size": 4477
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.o",
+      "sha256": "10d2d2c0eeff7b42d69687281158646a8647dc1b93d30d526f8f29701fece8e1",
+      "size": 26280
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\eos_diagnostic_api.h",
+      "sha256": "063cf078379752d3fac1da11db65aed494f3f8239fd3c9f29384731606c92ab2",
+      "size": 4057
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\eos_diagnostic_dump.h",
+      "sha256": "561a0c0047da95298edf20dfbe6bea46135228ee655433ec4f3a8f64d3383e8a",
+      "size": 1541
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\eos_nasg.h",
+      "sha256": "254e2c5eab0330e9615fb6a90cec01e3ef6cc525ced8d6d81c1f49f6e174f686",
+      "size": 2118
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\expected_toolchain_sha256.txt",
+      "sha256": "b27c8d705c32e7d1db7a1670a4cdb7e215ffaa084f90165e1ad62ad26bc5e50e",
+      "size": 222
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\geometric_flow.h",
+      "sha256": "9873b2c07fda8c2dcb3fd8928e27e1ef9d5f5a6709bb704818cc7602424c6788",
+      "size": 19546
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\gibbs_io.h",
+      "sha256": "449f5c2c43ee0b003a555d6f580c0a95a9221e48046a8b3e0a1be91270484cea",
+      "size": 3303
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\gibbs_potential.h",
+      "sha256": "b257f0da246312ae2e3eaa7b2579614336e9ab5e51e4c2b44e3a73cdb3ae78ae",
+      "size": 9874
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\history.csv",
+      "sha256": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+      "size": 245839
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\input\\cold_energy_N1025.bin",
+      "sha256": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2",
+      "size": 24676
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\local_toolchain_identity.txt",
+      "sha256": "1959a8f9ecfc1e00e3b059fdcb0ce5f38a7caf71c8dcadef803acea5445f1565",
+      "size": 374
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.c",
+      "sha256": "290b801f3a57758b7aa60e4d1a0fbedaa6b5e57486ed46d43151b4080daeb7c9",
+      "size": 11899
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.compiler.stderr",
+      "sha256": "4f75e3980dd1f52e3e465149ec9b383688d8432fe3e4986616a1d0c6ebcf6bc3",
+      "size": 1065
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.h",
+      "sha256": "78068af53ea0f520449496572d8381922c9d4edb75d1fcfb1aa23b39307d9f9d",
+      "size": 1926
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.o",
+      "sha256": "eb9c51448a4635af9593055e31a11d299095fe2dc908ae946c631e44eb75f7ee",
+      "size": 52904
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge_wide.h",
+      "sha256": "a38da0fc9dfd79c266c3ea35d788e3f7aa5d45458678f0f2358e5f85281fe4dc",
+      "size": 1051
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\mechanical_relaxation.h",
+      "sha256": "127f0dbeabd6d6f7d3a7aeba403c24611b7e2c8cf5c1721251428d03a2b7e3e8",
+      "size": 7665
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\mechanical_wide_representation.h",
+      "sha256": "d413ee339b1600755f5b1dbc4b20c2e70e6cc9df4e49f8e05656842dcd6ca7bb",
+      "size": 7744
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\meta.json",
+      "sha256": "5528e25753aee331d179e1d06c3ade28ae1a5608002a73103f0262d10b3c0463",
+      "size": 1151
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\nasg_basilisk.h",
+      "sha256": "8887d2f9a6fd319fcaa19348c3f63821b3648cecc8a3048904a228c134cd3932",
+      "size": 2436
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\nonlocal_thermal.h",
+      "sha256": "152d3fc658dee63d3188dc914ef28880fd5deaa799ce4dcfbf39077195d86338",
+      "size": 9476
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\nonlocal_thermal_integrator.h",
+      "sha256": "5bde04a5dbb3068f2f359b038a08429149af0373efc129d6e0fa9c55304bed9d",
+      "size": 24243
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\nonlocal_thermal_integrator_probe.h",
+      "sha256": "01f7e69bbc0a17fe3b02a78878b382c4f82f807e872d034daea5304e309d8cb9",
+      "size": 23757
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_coefficients.h",
+      "sha256": "afdc5effa7fdd92a7d5a08e4a545c00acc703f919408580be4b832c2e58dc81b",
+      "size": 3487
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_conserved_inverse.h",
+      "sha256": "568c7996997ed5196b09e7b68b61e4284628cfe3d8ac4914461db7d8a92dfaa7",
+      "size": 10095
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_conserved_inverse_eos_diagnostic.h",
+      "sha256": "2c9bd480a003389e82f5556938e6d4b12e7b344fb2e46a7684e84b76e126ae2e",
+      "size": 13967
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_helmholtz.h",
+      "sha256": "f8e6cf09bb20d23b26762eeb7977bc44244dd362a314751f9f78c446843b4610",
+      "size": 17278
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_helmholtz_eos_diagnostic.h",
+      "sha256": "de9577b9d1ea138541800f1b53148e86d70c093729da7d740680ef3558857aa5",
+      "size": 23168
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_reaction.h",
+      "sha256": "25eaf9fd179ba8608fb19843ae778f4d870128d25bd52f11389bf111117c6fc1",
+      "size": 22436
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_reaction_eos_diagnostic.h",
+      "sha256": "6467fa0174b078fcd0d855bb9e31479b2f98187f8ed84e38a9836adaaed7c8d2",
+      "size": 23774
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_reaction_profiled.h",
+      "sha256": "d549765d0504c06e1f1ca26ee3f8818b990998fa408cfb874009d601249491db",
+      "size": 26310
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_reaction_warm_candidate.h",
+      "sha256": "5c9ff0b9b6b05d6a83a3f487ee9bdea17c4db557fe1157122d70cfd0000c8543",
+      "size": 26635
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_spinodal_cache.h",
+      "sha256": "c3bc4349616b30ced4d7914927bc11f259fbc755ba0a275a0875c5ac3f7e4b24",
+      "size": 6757
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_spinodal_cache_eos_diagnostic.h",
+      "sha256": "99a3b18ce924a8f86947025d9f77cd31a8f26b0a69f076eb8736754d42f12a24",
+      "size": 8740
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_temperature_inverse.h",
+      "sha256": "b15dc48855776fe4b606a9e906c940b1e54e98e5d7e2d05fdc9a628411a5feae",
+      "size": 3650
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pfc_temperature_inverse_eos_diagnostic.h",
+      "sha256": "224d252cb7ff8f70a08bf155c15a9f8b425f317aa152d8a4e18286e484f65c53",
+      "size": 4552
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pilot_run_meta.txt",
+      "sha256": "0315a4ff9eab8b3f22f29d97db02e70b92d493cfb45cfba3ca213ab6004d28c9",
+      "size": 260
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\pressure_work_fv.h",
+      "sha256": "fa7fbebf3d75f81eb9861f1d1809f9c58eea08ee53095be33eabc438b5c4189a",
+      "size": 6119
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\qcc.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\qcc.compiler.stderr",
+      "sha256": "9d73f3a113c13deadbcda4f58d139d8d1a4db65974039413d597037c7a3464cb",
+      "size": 1738
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\qcc.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\reaction_profile_api.h",
+      "sha256": "a96d88f83f3c296f1b29e11fda76b740cf583dcabfa1b33426aa49835ed5030b",
+      "size": 598
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\reaction_warm_api.h",
+      "sha256": "466b5914649477f7fcf3fcc60c8149a2efe50ed0d85f4ef7e4f8d54594982811",
+      "size": 252
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.c",
+      "sha256": "cffb86d9e17c2c4fa7cf7aa352b8562ec40dbaff4247f77db46b8a17adbc3d01",
+      "size": 9051
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.compiler.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.compiler.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.compiler.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.h",
+      "sha256": "71bb84a9c3e23c76a0cc25425e220d13eae66cda1d939f8eab4428bc64fc2652",
+      "size": 2094
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.o",
+      "sha256": "eda23369ebcd2d323065002d6f67928c328459f5b117b1c528064460d451caa3",
+      "size": 7960
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\simulation",
+      "sha256": "446d68a329389bc2a1f63b2c7bcacf39f525c5eaaff44998379a78b6e6f6db01",
+      "size": 733544
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\simulation.pid",
+      "sha256": "63ffdc631dd1a6bc19bff5e49ad336e825605999dcf272bb429370d411fef858",
+      "size": 6
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\simulation.stderr.raw",
+      "sha256": "9807ccb9b518ff85ebe56cdaf6dffaf8b9595ffe488f8cae0202b2ebe3959c34",
+      "size": 193971
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\simulation.stdout.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\transport_fv.h",
+      "sha256": "824a871e627824c4643b3a2538fb57728523d1a0d2139886fb92fc70380ce2d7",
+      "size": 10074
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\v1_cartesian1D.h",
+      "sha256": "2040f5243abcdbec09d72c11669aacf6a2c7bb5bd509834ba767d6871259fa4a",
+      "size": 5657
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\water_mg.h",
+      "sha256": "af77a10f746bf9f743fa0c87162ff32a1437fca60b5a5340bf9a323c7af3de6e",
+      "size": 4430
+    },
+    {
+      "path": "runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\water_mg_eos_diagnostic.h",
+      "sha256": "3eb8bc0075d7dd6ffbc4c4e3441885c8407977e386776b6c7c13c73365753e48",
+      "size": 6167
+    },
+    {
+      "path": "verification\\STAGE1_C4_PRODUCTION_ADMISSION_REFUSAL_CANDIDATE028_20261013.json",
+      "sha256": "ed5ffb7cb6ac3c305a6f84b9856f9e189dd17bf1eddb521575996d00d1a13ab5",
+      "size": 2372
+    },
+    {
+      "path": "verification\\STAGE1_C4_PRODUCTION_ADMISSION_REFUSAL_CANDIDATE028_20261013.md",
+      "sha256": "846808714ecfaa8f8562e77ade89b2d51e7576a479f196dac956f6cc818e5d94",
+      "size": 1196
+    },
+    {
+      "path": "verification\\STAGE1_CANDIDATE028_VERIFIED_LOOSENED_ACCEPTANCE_20261014.json",
+      "sha256": "c455be9ff168689d4d068fe8d8df1d664a6ea571b14b3d581e81cfaa35a91a5f",
+      "size": 7222
+    },
+    {
+      "path": "verification\\STAGE1_LOOSENED_CLOSE_ACCEPTED_20261014.md",
+      "sha256": "f88f9ab1c514ee7d6f32513bcd09f31d3c59e23e18fe1305982f4abc7ae0b0ef",
+      "size": 4649
+    },
+    {
+      "path": "verification\\STAGE1_LOOSENED_CLOSED_20261013.md",
+      "sha256": "901d11a041fd9a4c1b79b12894923dc272f9b967d32a5063236cd62cdcdaa815",
+      "size": 4580
+    },
+    {
+      "path": "verification\\STAGE2_CANDIDATE029_REPAIR_001.md",
+      "sha256": "8fde40ea0cadd9ce721d36acb26d5375b0b324d0bf9952f71ecfc4a8d5725d0b",
+      "size": 1254
+    },
+    {
+      "path": "verification\\STAGE2_CANDIDATE030_REPAIR_001.md",
+      "sha256": "8e1a1fa266d149b17e78ab15b9c9183d2a3c7404464507a45914c81df78bafd2",
+      "size": 331
+    },
+    {
+      "path": "verification\\STAGE2_CLOSED_20261013.md",
+      "sha256": "b8e3ad20da4eba6efe824db75de16e135b98323d65787ed9fa78c7c6a7e97fd6",
+      "size": 715
+    },
+    {
+      "path": "verification\\STAGE2_EXPERT_HANDOFF_PILOT_RESOLVER_FAILURE_001.md",
+      "sha256": "53a9251d18130fb3af72ed5e7397a5250cbc3df3986b44a89a762b29ed7ec841",
+      "size": 6829
+    },
+    {
+      "path": "verification\\stage2_loosened_build_028_local_001.sh",
+      "sha256": "88485284c009ca754fe5563d49674d61439ab504c49065285c8355cb25ffa06c",
+      "size": 1758
+    },
+    {
+      "path": "verification\\stage2_loosened_build_028_local_002_nospace.sh",
+      "sha256": "441dc692a399d2c6c81ec892896a753f222806543ffd591bb09501c89f4c6a84",
+      "size": 2266
+    },
+    {
+      "path": "verification\\stage2_loosened_build_028_local_003_linux_tmp.sh",
+      "sha256": "b173d87cf08be491d388af7ba0b6a5f0c99e2736990e934882297a8639a56c36",
+      "size": 3601
+    },
+    {
+      "path": "verification\\STAGE2_LOOSENED_CLOSE_VERIFY_STAGE3_ENTRY_20261014_001.json",
+      "sha256": "a3527051309db30ac89a392c3056a1a29b82d9a623dc185619bd026ad6473987",
+      "size": 4893
+    },
+    {
+      "path": "verification\\STAGE2_LOOSENED_CLOSE_VERIFY_STAGE3_ENTRY_20261014_002.json",
+      "sha256": "17c6d3842036ff77cf12e77085db1b4bb820541349d35ff27c1ec2855ddbc548",
+      "size": 5512
+    },
+    {
+      "path": "verification\\STAGE2_LOOSENED_CLOSED_20261013.md",
+      "sha256": "fdf793485a7297b27708c8e89fb7af9dac33dafba77fbc9ea6da6eb0011f2bf8",
+      "size": 3831
+    },
+    {
+      "path": "verification\\STAGE2_LOOSENED_PROGRESS_STATUS_001.md",
+      "sha256": "61e6d3273d8b13d648501514a4bfe5a5a27537180e3cc47591497e366f59d0bf",
+      "size": 3366
+    },
+    {
+      "path": "verification\\STAGE2_LOOSENED_PROGRESS_STATUS_002_CLOSE.md",
+      "sha256": "442f5e1e16f9328aa4e68d485a615d50fe5b85f9c48915d11da66d102ccb9d9b",
+      "size": 335
+    },
+    {
+      "path": "verification\\stage2_loosened_run_028_pilot_001.sh",
+      "sha256": "20bfc804c123e2e92c91f0ec4f3ec5185944aceac1bb057a947e32e2539aa560",
+      "size": 2053
+    },
+    {
+      "path": "verification\\STAGE2_NEXT_AGENT_HANDOFF_VERIFY_AND_STAGE3_20261013.md",
+      "sha256": "e8b236354fdf0f0321e0c631b84c9cd1935b74fd48a6157b7d8316b3514db675",
+      "size": 2088
+    },
+    {
+      "path": "verification\\STAGE2_NEXT_AGENT_PROMPT_STAGE3_20261013.md",
+      "sha256": "82953d9b3e5ad2cc715caf0166b03c3db83ff256790f1e981b44dafb78e0def5",
+      "size": 1425
+    },
+    {
+      "path": "verification\\STAGE2_PILOT_FAILURE_001.md",
+      "sha256": "99514c56614024869c7256b238a3b7b57c33d2956e23dcf9955a2972bcc9ce7a",
+      "size": 4201
+    },
+    {
+      "path": "verification\\STAGE2_PILOT_RUN_RECEIPT_SUPPLEMENT_001.md",
+      "sha256": "db420e2524a5ee3087ac29bbccaf3f7e6d1eab05d9663ba3dde8a561f049e730",
+      "size": 1949
+    },
+    {
+      "path": "verification\\STAGE2_PILOT_SOURCE_BINDINGS_001.json",
+      "sha256": "7192224f58dc300250c09ab93faa413d89098be8619d3617a6f47161e6c09fd4",
+      "size": 20300
+    },
+    {
+      "path": "verification\\STAGE2_PREREG_AMENDMENT_001_HISTORICAL_FAILURE.json",
+      "sha256": "e3e33d971a1be08cde3fc4e92f50b9ff0be78c5bc9ab41c7c809ccfff468b575",
+      "size": 3459
+    },
+    {
+      "path": "verification\\STAGE2_PREREG_AMENDMENT_002_NOSPACE_BUILDER.json",
+      "sha256": "d87f8650ec75b8651da186d8051d2bf5da2f753ebe2a100b2b7af6a881e9aabd",
+      "size": 1541
+    },
+    {
+      "path": "verification\\STAGE2_PREREG_AMENDMENT_003_LINUX_TMP_BUILDER.json",
+      "sha256": "9eb9377072161b8280e8103bbbe2d26110c02b015d79b878e4591fd13f44e082",
+      "size": 1890
+    },
+    {
+      "path": "verification\\STAGE2_PREREG_AMENDMENT_004_PILOT_TOOLCHAIN_FREEZE.json",
+      "sha256": "b05d4e67d2b9518ee73b324fcec1e8b3faa353b73c80bf2fefa0d203365db20f",
+      "size": 4451
+    },
+    {
+      "path": "verification\\STAGE2_PREREG_AMENDMENT_005_CANDIDATE029.json",
+      "sha256": "7ea4189751abccd500cb10e50a9c0328a5b8cdf85675f9ed821169cffaa6a87c",
+      "size": 2307
+    },
+    {
+      "path": "verification\\STAGE2_PREREG_AMENDMENT_006_CANDIDATE030.json",
+      "sha256": "322d8825c966c02ba65306796e352a25fc54997c0e4e30e954371eebd5f7f3c8",
+      "size": 1276
+    },
+    {
+      "path": "verification\\STAGE2_PREREGISTRATION_001.json",
+      "sha256": "3375a081f86fac5d5a21b5700787497db7f3f7985699b1e517d2d09724d207a3",
+      "size": 21059
+    },
+    {
+      "path": "verification\\STAGE2_PREREGISTRATION_002_LOOSENED_PILOT.json",
+      "sha256": "40a37b2667941f2237ce26620caf145a3cad2e0497d3c15ad041fa37a137a67f",
+      "size": 20771
+    },
+    {
+      "path": "verification\\STAGE2_TOOLCHAIN_BUILD_FAILURE_001.md",
+      "sha256": "8ee15209753809d3755c82b28caa86d91bc354bf4dfae18a139be9bceab14b6a",
+      "size": 1372
+    },
+    {
+      "path": "verification\\STAGE2_TOOLCHAIN_BUILD_FAILURE_002.md",
+      "sha256": "3eb4780311e7666eef39c75e2cf834f5d6b14594bf4fa9e3f1370e80c5cd2c39",
+      "size": 1354
+    },
+    {
+      "path": "verification\\STAGE3_NEXT_AGENT_HANDOFF_FROM_VERIFIED_STAGE2_20261014_001.md",
+      "sha256": "0128cfb2d0370ea2fbed3c0ff0754a3cb4ac49f9825c23a33465096148328be1",
+      "size": 9205
+    },
+    {
+      "path": "verification\\STAGE3_PREREGISTRATION_001_LOOSENED_WRITEUP.json",
+      "sha256": "dc8fe3b86e744eddb6c5f6119a4ce849b96c0d20eb55e637c80b2161e49a7ce2",
+      "size": 7427
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "schema": "stage3_results_ledger_v1",
+  "recorded_utc": "2026-10-13T20:05:08.4099587Z",
+  "stage": "STAGE3_LOOSENED_WRITEUP_IN_PROGRESS",
+  "preregistration_sha256": "dc8fe3b86e744eddb6c5f6119a4ce849b96c0d20eb55e637c80b2161e49a7ce2",
+  "objective_results": [
+    {
+      "id": "PFP_U_1pg",
+      "units": "m/s",
+      "water_mass_pg": 1,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_U_3pg",
+      "units": "m/s",
+      "water_mass_pg": 3,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_U_10pg",
+      "units": "m/s",
+      "water_mass_pg": 10,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_U_30pg",
+      "units": "m/s",
+      "water_mass_pg": 30,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_U_100pg",
+      "units": "m/s",
+      "water_mass_pg": 100,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_P_2um_2ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_P_2um_20ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_P_10um_2ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFP_P_10um_20ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_U_1pg",
+      "units": "m/s",
+      "water_mass_pg": 1,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_U_3pg",
+      "units": "m/s",
+      "water_mass_pg": 3,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_U_10pg",
+      "units": "m/s",
+      "water_mass_pg": 10,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_U_30pg",
+      "units": "m/s",
+      "water_mass_pg": 30,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_U_100pg",
+      "units": "m/s",
+      "water_mass_pg": 100,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_P_2um_2ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_P_2um_20ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_P_10um_2ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    },
+    {
+      "id": "PFH_P_10um_20ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "candidate030_last_transferred_accepted_snapshot",
+      "tier": "engineering_diagnostic",
+      "time_s": 4.3000000000000027E-10,
+      "steps": 43,
+      "source": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv",
+      "source_sha256": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+      "source_line": 432,
+      "raw_record": "accepted,4.3000000000000027e-10,43,6.5766026012734005e-09,1.833751399525869e-13,1.8054733127753962e-08,5.2455115392796843e-11,1.5623098472214495e-10,0,4.4408920985006262e-16,9.3995881603424758e-33,4.9910062564022277e-13,4.0616622617656263e-15,0,2.6189228832978029e-16,-9.4982409387744469e-17,-6.0282824617136356e-17,9.718387421966966e-19,1.9813941880038832e-16,378736,697690,196,1088,1.6061585933619321e-19,2.46028298563410027283e-22,4.2555993800074513683e-21,0,0,2.61765727810519095641e-20,9.17852260044650909463e-19,-7.24778231138475773776e-25,3.69641555991247104866e-29,155130,174494,255",
+      "validity": "Partial transferred snapshot only; no full-cycle event or completed exit established"
+    }
+  ],
+  "metadata_caveats": [
+    "meta.json is copied legacy candidate028 100 fs execution metadata; its exit_code=0 and completion status are not candidate030 completion evidence. Preserve unchanged.",
+    "pilot_run_meta.txt identifies candidate030 and amendment006 but has no finished timestamp or completed simulation exit receipt.",
+    "Expert reports external pilot still running; local snapshot cannot establish current remote state."
+  ],
+  "exit_waivers": [
+    "Full-cycle pilot to impact/first volume minimum/rebound and 20 ns horizon",
+    "108-case coverage and all 18 objectives",
+    "Same-model free-field R_m and gamma qualification",
+    "PFH route",
+    "Registered whole-water quantile and wall-pressure disk/window observers",
+    "Hold-outs, refinement, and global certificate suite",
+    "Production C4 without inherited soft-passes"
+  ],
+  "certified_maximum_available": false,
+  "device_maximum_resolved": false
+}

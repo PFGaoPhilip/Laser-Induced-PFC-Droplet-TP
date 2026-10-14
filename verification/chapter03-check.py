@@ -250,7 +250,7 @@ check("Public citation links contain no local computer paths",
       not any(re.search(r"(?i)^(file:|[A-Z]:[\\/])", x.get("href",""))
               for x in soup.find_all("a")))
 check("Separate patterned illumination explicitly declared",
-      "Ideal patterned/addressed illumination" in chapter.CHAPTER["body"])
+      "ideal patterned/addressed illumination" in chapter.CHAPTER["body"].lower())
 check("Per-jet and total mass labels use ng rather than pg",
       "3.926991 ng" in source and "98.17477 ng" in source
       and "3.926991 pg" not in source)

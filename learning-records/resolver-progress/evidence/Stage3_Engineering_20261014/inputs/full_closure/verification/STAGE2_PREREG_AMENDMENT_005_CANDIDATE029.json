@@ -1,0 +1,45 @@
+{
+  "id": "STAGE2_PREREG_AMENDMENT_005_CANDIDATE029_GEOMETRIC_SOFTPASS",
+  "written_utc": "2026-10-13T19:23:04.393212+00:00",
+  "interpretation": "STAGE2_LOOSENED",
+  "parent_pilot_failure": "AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001",
+  "parent_exit": 136,
+  "parent_t_s": 4.400000000000003e-10,
+  "diagnosis": {
+    "last_marker": "DIAG advect before geometric_advection",
+    "028_capacity_clamp": "already active earlier in failed pilot (stderr soft-pass printed)",
+    "hypothesis": "new Inf/NaN reaching a Basilisk boundary() inside geometric_advection after 0.44 ns (cm denominator, non-finite flux/gradient/capacity, or residual Inf\u00b1Inf), not a Stage1 reopen",
+    "evidence_level": "marker-bounded; no FE stack captured on historical pilot"
+  },
+  "repair": {
+    "candidate": "029",
+    "files": [
+      "closure_geometric_advection.h",
+      "axisymmetric_activation_core_candidate029.c"
+    ],
+    "soft_passes_added": [
+      "SEPS on all cm[] denominators in geometric sweep factor",
+      "sanitize non-finite gradients/fluxes/capacity/fractions before boundary()",
+      "refuse non-finite concentration gradients",
+      "mid-sweep DIAG markers for next failure localization"
+    ],
+    "retained": "018-028 soft-pass stack as declared STAGE2_LOOSENED model",
+    "hashes": {
+      "closure_geometric_advection.h": "17e6c4d34fb67f89c6e1856e167d8215e08ad5e9b9db1920ef2766872779485b",
+      "axisymmetric_activation_core_candidate029.c": "afd19794f1cd9f09ef5c3b049c88281780a6eff92bf77af605d7f8a86bddf5bc",
+      "simulation": "58c987b074367788a45995113bd40f1c2c8e754f007bd3834f9470081ff421bb",
+      "input_cold_energy_N1025.bin": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2"
+    }
+  },
+  "validation_plan": {
+    "case": "AXI_PFP_transport_candidate029_STAGE2_LOOSENED_PILOT001",
+    "args": "PFP input/cold_energy_N1025.bin 386.48623647227214 1.8337513994824743e-13 3.3495599259759347e-06 0.000128 3.2e-05 4 8 8e-06 0.3 2e-08 1e-11 0.2 1",
+    "success": "sim exit 0 OR reach objective events / t_end=20ns without SIGFPE; retain STAGE2_LOOSENED label",
+    "failure": "preserve run; new-named candidate if another Inf site appears",
+    "not_claimed": [
+      "certified maximum",
+      "strict ACCEPTANCE_CRITERIA PASS",
+      "Stage3"
+    ]
+  }
+}

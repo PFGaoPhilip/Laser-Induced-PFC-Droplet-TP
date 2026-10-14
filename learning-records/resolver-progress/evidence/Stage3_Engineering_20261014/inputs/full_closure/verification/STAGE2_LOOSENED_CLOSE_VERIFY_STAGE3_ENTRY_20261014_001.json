@@ -1,0 +1,93 @@
+{
+  "schema": "stage2_loosened_close_stage3_entry_verification_v1",
+  "recorded_utc": "2026-10-13T19:58:57.6667821Z",
+  "verdict": "ACCEPTED_LOOSENED_CLOSE_RECORDS_PRESENT_CANDIDATE030_HASH_VERIFICATION_PENDING",
+  "stage1_status": "CLOSED_LOOSENED_UNCHANGED",
+  "stage2_status": "STAGE2_LOOSENED_CLOSED_AS_DECLARED",
+  "strict_stage2_pass": false,
+  "controlling_records": [
+    {
+      "path": "verification/STAGE2_NEXT_AGENT_HANDOFF_VERIFY_AND_STAGE3_20261013.md",
+      "sha256": "e8b236354fdf0f0321e0c631b84c9cd1935b74fd48a6157b7d8316b3514db675"
+    },
+    {
+      "path": "verification/STAGE2_CLOSED_20261013.md",
+      "sha256": "b8e3ad20da4eba6efe824db75de16e135b98323d65787ed9fa78c7c6a7e97fd6"
+    },
+    {
+      "path": "verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "sha256": "fdf793485a7297b27708c8e89fb7af9dac33dafba77fbc9ea6da6eb0011f2bf8"
+    },
+    {
+      "path": "verification/STAGE2_PREREG_AMENDMENT_005_CANDIDATE029.json",
+      "sha256": "7ea4189751abccd500cb10e50a9c0328a5b8cdf85675f9ed821169cffaa6a87c"
+    },
+    {
+      "path": "verification/STAGE2_PREREG_AMENDMENT_006_CANDIDATE030.json",
+      "sha256": "322d8825c966c02ba65306796e352a25fc54997c0e4e30e954371eebd5f7f3c8"
+    }
+  ],
+  "candidate030_checks": [
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/simulation",
+      "expected_sha256": "446d68a329389bc2a1f63b2c7bcacf39f525c5eaaff44998379a78b6e6f6db01",
+      "actual_sha256": null,
+      "status": "MISSING_LOCAL_FILE"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/closure_geometric_advection.h",
+      "expected_sha256": "17e6c4d34fb67f89c6e1856e167d8215e08ad5e9b9db1920ef2766872779485b",
+      "actual_sha256": null,
+      "status": "MISSING_LOCAL_FILE"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/nonlocal_thermal_integrator.h",
+      "expected_sha256": "5bde04a5dbb3068f2f359b038a08429149af0373efc129d6e0fa9c55304bed9d",
+      "actual_sha256": null,
+      "status": "MISSING_LOCAL_FILE"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/coupled_thermal_bridge.c",
+      "expected_sha256": "f3e089f56f5af49154a5239800f40c336ee9df2be298e0999bafed326f387b07",
+      "actual_sha256": null,
+      "status": "MISSING_LOCAL_FILE"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/axisymmetric_activation_core_candidate030.c",
+      "expected_sha256": "f8da754d9b1b5a4198c2a703866c98e225eaefe9f214e08643060b16545f1413",
+      "actual_sha256": null,
+      "status": "MISSING_LOCAL_FILE"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/input/cold_energy_N1025.bin",
+      "expected_sha256": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2",
+      "actual_sha256": null,
+      "status": "MISSING_LOCAL_FILE"
+    }
+  ],
+  "soft_pass_stack": {
+    "declared": "018-030",
+    "inherited": "018-028",
+    "candidate029": "SEPS on cm denominators; nonfinite gradient/flux/capacity/fraction handling before boundary; refuse nonfinite concentration gradients",
+    "candidate030": "Heat final status 11 energy/entropy gate accepted with logged defects; energy_tolerance 1e-11 to 1e-9; entropy_roundoff 2e-11 to 2e-9",
+    "source_level_confirmation": "PENDING_MISSING_CANDIDATE030_BUNDLE"
+  },
+  "stage2_exit_waivers": [
+    "Full-cycle pilot to impact/first volume minimum/rebound and 20 ns horizon",
+    "108-case coverage and all 18 objectives",
+    "Same-model free-field R_m and gamma qualification",
+    "PFH route",
+    "Registered whole-water quantile and wall-pressure disk/window observers",
+    "Hold-outs, refinement, and global certificate suite",
+    "Production C4 without inherited soft-passes"
+  ],
+  "evidence_caveat": "Closeout records candidate030 at 0.39 ns with RUNNING=True on the external box. This snapshot does not demonstrate advancement beyond the prior 0.44 ns failure or completed trajectory. Do not repeat that advancement claim without later evidence.",
+  "stage3_entry_authorized_under_loosened_policy": true,
+  "stage3_started": false,
+  "stage3_preregistration_created": false,
+  "pending_prerequisite": "Transfer the exact candidate030 run/source/input/build bundle from the external Expert box to the stated local run directory, then compare hashes once. No Stage1/Stage2 reruns or restoration of waived strict gates is required for this entry verification.",
+  "stage3_scope": "PLAN S8-S9: report, final answer, provenance/results ledger, review and delivery of actual available evidence; preserve absent objectives/certificates as unresolved; no invented maximum.",
+  "new_simulations_run": 0,
+  "git_history_changed": false,
+  "historical_artifacts_modified": false
+}

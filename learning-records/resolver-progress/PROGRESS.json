@@ -1,0 +1,46 @@
+{
+  "schema": "local_three_stage_resolver_progress_v1",
+  "recorded_utc": "2026-10-13T21:55:32.023132+00:00",
+  "publication_status": "HELD_NOT_PUBLISHED",
+  "published": false,
+  "owner_instruction": "Update lesson progress; teach formulas and key code; preserve bilingual/theme controls; do not publish.",
+  "strict_acceptance": false,
+  "stages": [
+    {
+      "id": "Stage1",
+      "status": "CLOSED_LOOSENED",
+      "meaning": "Owner-accepted model engineering closure.",
+      "missing": "Strict production qualification; full calibration and whole-path consistency.",
+      "evidence": "receipts/STAGE1_LOOSENED_CLOSE_ACCEPTED_20261014.md"
+    },
+    {
+      "id": "Stage2",
+      "status": "STAGE2_LOOSENED_CLOSED",
+      "meaning": "Owner-accepted diagnostic/campaign closure.",
+      "missing": "18 computed objectives; completed observer trajectories; global certificates.",
+      "evidence": "receipts/STAGE2_LOOSENED_CLOSED_20261013.md"
+    },
+    {
+      "id": "Stage3",
+      "status": "STAGE3_ENGINEERING_DOCUMENTATION_COMPLETE",
+      "meaning": "Independent arithmetic, engineering reporting, reader and package delivered.",
+      "delivery_checks_passed": 12,
+      "PDF_pages_checked": 17,
+      "evidence": "receipts/STAGE3_FINAL_SEAL_20261014.json"
+    }
+  ],
+  "all_objective_values_null": true,
+  "objective_count": 18,
+  "model_identity": "candidate030; inherited018-030 assumptions",
+  "history_endpoint": {
+    "time_ns": 0.43,
+    "accepted_steps": 43,
+    "completion_established": false,
+    "legacy_meta_caveat": "Transferred meta.json belongs to candidate028."
+  },
+  "same_model_radius_qualification": "NOT_ESTABLISHED",
+  "maximum": "Cannot compute maximum: missing event-complete observers, feasible designs, refinement and global bounds.",
+  "mastery": "Research closure does not change learner mastery.",
+  "preserved_source_archive_SHA256": "de851a91712aa83b0592e1e1ae8f7d7e2ffe1ade0266433434700f8c313fbed4",
+  "sealed_delivery_archive_sha256": "1fcafbd31713a25342633d6b516be356db382623332926481c43920f76e1101c"
+}

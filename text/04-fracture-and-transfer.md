@@ -2,17 +2,17 @@
 
 # 第 4 章：断裂与转印
 
-## 1 · The question is release of the intended interface
+## 1. Intended-interface release
 
-## 1 · 问题在于释放目标界面
+## 1. 目标界面释放
 
-A useful transfer event begins with a finite arriving liquid jet and ends with an intact object attached at its intended receiving location. Our objective is to connect the liquid load to film deformation, crack advance and departure. The input from Chapter 3 is a velocity field, liquid mass, momentum, kinetic energy, footprint and arrival history at a specified exposed surface. The output is an opening and fracture history at the actual donor/release interface. These two surfaces can occupy different positions in the stack.
+Connect the arriving jet to film deformation, crack growth and departure. Useful transfer ends with intact attachment at the intended receiver location. Chapter 3 supplies velocity, mass, momentum, energy, footprint and arrival history. Specify the exposed surface carrying that load. The output is opening and fracture at the release interface. These surfaces can lie at different stack positions.
 
-一次有效转印从有限的到达液体射流开始，以完整对象附着在预定接收位置结束。本章目标是将液体载荷连接到薄膜变形、裂纹扩展及离开供体。第3章的输入，是指定外露表面处的速度场、液体质量、动量、动能、作用范围与到达历程。本章输出，是实际供体／释放界面处的张开与断裂历程。这两个表面可能位于结构叠层中的不同位置。
+本章将到达射流连接至薄膜变形、裂纹增长及离开。有效转印以完整对象附着于目标位置结束。第三章提供速度、质量、动量、能量、作用面积及到达历程。须注明承受该载荷的外露表面。输出是释放界面的张开与断裂，两表面可位于叠层不同位置。
 
-Use Cartesian coordinates with the film initially in the horizontal plane. The positive vertical direction is the intended payload departure direction. The film starts at rest with its actual initial adhesion and any explicitly stated pre-existing delamination. The reduced plate examples use a stationary donor reference face; a moving donor requires its own momentum and power balances. Liquid pressure is a compressive normal stress; an opening traction is defined by relative separation of the two interface faces. They are not interchangeable signs. A prescribed fluid traction is an input boundary condition; a resolved fluid–solid calculation instead enforces compatible velocities and equal, opposite tractions. Never apply both as independent loads.
+Use Cartesian coordinates with the initial film horizontal. Positive vertical points along intended departure. Start the film at rest with specified adhesion and pre-existing delamination. Plate examples fix the donor reference face. A moving donor needs momentum and power balances. Pressure compresses the exposed face. Interface opening depends on relative face separation. Either prescribe fluid traction or resolve compatible fluid–solid velocities and opposite tractions. Count the interface load once.
 
-采用笛卡尔坐标，薄膜初始位于水平面。正竖直方向定义为对象预定的离开方向。薄膜初始静止，并具有实际初始黏附状态，以及明确声明的任何预存脱层。降阶薄板算例采用静止供体参考面；运动供体需要自身的动量与功率平衡。液体压力是压缩法向应力；张开牵引则由界面两面的相对分离定义。二者的正负号不能互换。给定流体牵引时，它是输入边界条件；若解析求解流固耦合，则应满足速度相容与大小相等、方向相反的牵引。不能将两者作为独立载荷同时施加。
+采用笛卡尔坐标，初始薄膜水平。竖直正方向为预期离开方向。薄膜初始静止，给定粘附及已有脱层。板示例固定供体参考面。运动供体需动量与功率平衡。压力压缩外露面，界面张开取决于两面的相对分离。可给定流体牵引，或解析相容流固速度及相反牵引。界面载荷计入一次。
 
 | Architecture<br>结构方案 | Force path<br>传力路径 | What must be solved<br>需要求解的内容 |
 | --- | --- | --- |
@@ -20,13 +20,13 @@ Use Cartesian coordinates with the film initially in the horizontal plane. The p
 | Intact PVC-mediated actuation<br>完整PVC层介导致动 | Liquid or jet → PVC → contact or bond → film → release interface.<br>液体或射流 → PVC → 接触或粘接层 → 薄膜 → 释放界面。 | PVC inertia, thickness, compliance, reflections, contact and the transmitted traction.<br>PVC的惯性、厚度、柔顺性、反射、接触及传递牵引。 |
 | Sealed cavity<br>封闭腔体 | Finite vapor source → cavity wall or stamp → release interface.<br>有限蒸气源 → 腔壁或印章 → 释放界面。 | Coupled cavity thermodynamics, bulging and fracture; an outgoing jet need not exist.<br>耦合腔体热力学、鼓起与断裂；不一定存在出射射流。 |
 
-An intact PVC sheet blocks liquid passage. A jet incident on PVC cannot also be assigned directly to the film behind it without an actual opening or rupture. A sealed cavity and an open liquid pocket are also different actuators. Appendix A compares those hydrogel architectures; the same load-path discipline applies here.
+Intact PVC blocks liquid passage. An incident jet first loads PVC. Direct film loading requires an actual opening or rupture. Sealed cavities and open pockets have different force paths. Appendix A compares these hydrogel architectures.
 
-完整PVC片层阻挡液体穿过。射流冲击PVC后，若没有真实开口或破裂，就不能同时假设它直接冲击后方薄膜。封闭腔体与开放液体口袋也是不同致动器。附录 A 比较这些水凝胶结构；本章同样必须明确传力路径。
+完整 PVC 阻挡液体穿透，入射射流首先加载 PVC。直接加载薄膜需要实际开口或破裂。密闭空腔与开放液腔具有不同传力路径。附录 A 比较这些水凝胶结构。
 
-### Working glossary and restrictions
+### Symbols and model limits
 
-### 基本符号与限制
+### 符号与模型范围
 
 | Symbol<br>符号 | Physical meaning<br>物理意义 | SI units<br>SI 单位 | Role and convention<br>作用与约定 |
 | --- | --- | --- | --- |
@@ -50,13 +50,13 @@ An intact PVC sheet blocks liquid passage. A jet incident on PVC cannot also be 
 | $t$ | Time<br>时间 | s | Independent coordinate for pulse loading, inertia and fracture evolution.<br>脉冲受载、惯性及断裂演化的独立坐标。 |
 | $\nabla_\parallel$ | Film-plane spatial gradient<br>薄膜平面空间梯度 | m⁻¹ | Differentiates within the plate plane; it is an operator rather than a material parameter.<br>在薄板平面内求导；是算子，而非材料参数。 |
 
-## 2 · Derive the solid load from fluid stress
+## 2. Fluid stress and solid loading
 
-## 2 · 从流体应力得到固体载荷
+## 2. 流体应力与固体加载
 
-Step 1 — Adopt a Newtonian liquid constitutive law. Take the surface normal outward from the solid into the liquid. With that choice, the liquid stress contracted with this normal is the traction exerted by the liquid on the solid. For liquid below a horizontal film, that normal points downward and positive pressure pushes the film upward. It remains compressive stress on the exposed face; opening of a different bonded interface requires the film’s deformation and relative motion.
+Step 1 — Adopt Newtonian liquid stress. Orient the normal from solid into liquid. Stress contracted with this normal gives liquid traction on solid. For liquid below a film, the normal points down. Positive pressure pushes the film up while compressing its exposed face. Opening another interface requires deformation and relative motion.
 
-步骤1——采用牛顿液体本构关系。表面法向取从固体指向液体的外法向。此时，液体应力与该法向收缩，得到液体施加在固体上的牵引。若液体位于水平薄膜下方，该法向向下，正压力会将薄膜向上推动。这仍是外露表面上的压缩应力；另一个粘接界面是否张开，取决于薄膜变形与相对运动。
+步骤 1——采用牛顿液体应力。法向由固体指向液体，应力与该法向收缩给出液体对固体的牵引。液体位于薄膜下方时，法向向下，正压力将薄膜向上推，同时压缩外露面。另一个界面的张开需要变形及相对运动。
 
 **Symbols before Eq. (C4-E01).**
 
@@ -88,9 +88,9 @@ Pressure and shear act at the exposed film face; the drawn normal fixes the trac
 
 压力与剪切作用于薄膜外露面；所画法向决定牵引符号。
 
-Step 2 — Integrate the traction in space to obtain force. Integrate force in time to obtain impulse. To obtain work, project traction onto the surface velocity before integrating. Pressure in Pa, impulse in N s and work in J cannot be equated. A nearly rigid surface can receive a substantial short stress and impulse while its displacement, hence deformation work, remains small.
+Step 2 — Integrate traction over area for force. Integrate force over time for impulse. Dot traction with surface velocity before integrating work. Pressure, impulse and work have units Pa, N s and J. A nearly rigid surface can receive high stress and impulse with little displacement work.
 
-步骤2——对牵引作空间积分得到力，再对力作时间积分得到冲量。求功时，则必须先将牵引投影到表面速度上再积分。单位分别为Pa的压力、N s的冲量与J的功不能相等。近刚性表面可能承受显著短时应力与冲量，但位移很小，因此变形功仍很小。
+步骤 2——对面积积分牵引得到力，对时间积分力得到冲量。求功时先将牵引与表面速度点乘。压力、冲量与功单位分别为 Pa、N s 和 J。近刚性表面可承受大应力及冲量，同时位移功很小。
 
 **Symbols before Eq. (C4-E02).**
 
@@ -123,13 +123,13 @@ The same footprint supplies force and impulse, but surface motion is additionall
 
 同一作用范围决定力与冲量，而求功还需要表面运动信息。
 
-## 3 · Retain the minimum transient film mechanics
+## 3. Transient film mechanics
 
-## 3 · 保留最必要的薄膜瞬态力学
+## 3. 瞬态薄膜力学
 
-Step 3 — Adopt a homogeneous isotropic Kirchhoff–Love plate with linear elastic plane stress, small strains, small slopes and thickness small compared with its deformation length. Integrating density through thickness gives areal mass. Integrating the bending stress moment through the symmetric thickness gives bending stiffness: the second moment integral is the thickness cubed divided by twelve. A bonded multilayer requires its own laminate stiffness; two films’ stiffnesses cannot be added without locating the common neutral surface.
+Step 3 — Adopt a homogeneous isotropic Kirchhoff–Love plate. Assume elastic plane stress, small strain, small slope and thinness relative to deformation length. Through-thickness density integration gives areal mass. Bending stress integration gives stiffness with thickness moment thickness³/12. A bonded laminate needs a common neutral surface and laminate stiffness.
 
-步骤3——采用均匀各向同性Kirchhoff–Love薄板，假设线弹性平面应力、小应变、小斜率，且厚度远小于变形长度。沿厚度积分密度得到面密度；沿对称厚度积分弯曲应力矩得到弯曲刚度，其中二阶矩积分为厚度立方除以十二。粘接多层结构需要自身的层合刚度；若未确定共同中性面，不能简单相加两层薄膜的刚度。
+步骤 3——采用均匀各向同性 Kirchhoff–Love 板。假设弹性平面应力、小应变、小斜率，厚度远小于变形长度。沿厚度积分密度得到面质量。积分弯曲应力得到刚度，其中厚度矩为厚度³／12。粘接叠层需共同中性面及叠层刚度。
 
 **Symbols before Eq. (C4-E03).**
 
@@ -160,9 +160,9 @@ Areal inertia and bending stiffness come from different thickness integrals.
 
 面惯性与弯曲刚度来自不同的厚度积分。
 
-Step 4 — Form the kinetic, bending and prescribed-pretension energies. Curvature is the second spatial derivative of displacement in this linear plate model. The two in-plane curvature directions and twist couple through Poisson’s ratio. Pretension is held uniform; its energy penalizes slope. These expressions distinguish the energy stored by shape from the kinetic energy carried by motion.
+Step 4 — Write kinetic, bending and pretension energies. Curvature is the displacement’s second spatial derivative. Poisson ratio couples the two curvature directions and twist. Hold pretension uniform; its energy penalizes slope. Shape stores elastic energy, while velocity carries kinetic energy.
 
-步骤4——写出动能、弯曲能与给定预张力能。在此线性薄板模型中，曲率由位移的二阶空间导数给出。两个面内方向的曲率及扭曲通过泊松比耦合。预张力假定均匀，其储能与斜率有关。这些表达式区分形状储能与运动动能。
+步骤 4——写出动能、弯曲能及预张力能。曲率为位移空间二阶导数。泊松比耦合两方向曲率与扭曲。预张力保持均匀，其能量随斜率增加。形状储存弹性能，速度携带动能。
 
 **Symbols before Eq. (C4-E04).**
 
@@ -196,9 +196,9 @@ Bending energy is stored by curvature; inertia depends on velocity.
 
 曲率储存弯曲能，速度决定惯性动能。
 
-Step 5 — Vary displacement while holding a clamped boundary fixed. Two integrations by parts convert each bending second derivative to a fourth derivative acting on displacement; the boundary terms vanish because both the displacement variation and its normal slope vanish. One integration by parts converts the tension term to a negative Laplacian. The resulting transverse virtual-work balance has pressure units in every term.
+Step 5 — Vary displacement at a fixed clamped boundary. Integrate bending terms by parts twice. Displacement variation and its normal slope vanish at the clamp, eliminating boundary terms. Integrate tension once to obtain minus the Laplacian. Every transverse-balance term has pressure units.
 
-步骤5——在固定夹持边界的条件下对位移作变分。对弯曲的各二阶导数作两次分部积分，转为作用于位移的四阶导数；由于位移变分及其法向斜率变分均为零，边界项消失。对张力项作一次分部积分，得到负拉普拉斯算子。所得横向虚功平衡中，每一项均具有压力单位。
+步骤 5——在固定夹持边界下变分位移。弯曲项分部积分两次。夹持处位移变分及其法向斜率为零，消去边界项。张力项分部积分一次，得到负拉普拉斯。横向平衡各项均为压力单位。
 
 **Symbols before Eq. (C4-E40).**
 
@@ -295,9 +295,9 @@ Film acceleration balances applied traction, elastic restoring forces and cohesi
 
 薄膜加速度由外加牵引、弹性恢复力与内聚阻力的平衡决定。
 
-A fixed clamp also has zero boundary velocity and zero normal velocity slope. Multiply the plate balance by velocity and integrate over its plane. The inertia term differentiates kinetic energy; the same two spatial integrations by parts now differentiate bending energy, and one differentiates pretension energy. Thus the transient balance has a direct work check. Cohesive power is the work rate taken from plate motion; its recoverable and irreversible parts must be assigned by the interface law.
+The fixed clamp also has zero velocity and normal velocity slope. Multiply the plate equation by velocity and integrate. Inertia differentiates kinetic energy. Two bending integrations by parts differentiate bending energy. One tension integration differentiates pretension energy. Cohesive power removes energy from plate motion. The interface law partitions recoverable and irreversible parts.
 
-固定夹持边界还具有零边界速度及零法向速度斜率。将薄板平衡乘以速度，再在平面上积分。惯性项成为动能的导数；同样两次空间分部积分使弯曲项成为弯曲能导数，一次分部积分使张力项成为预张力能导数。因此，瞬态平衡具有直接的功检验。内聚功率是从板运动中取出的功率，其可恢复与不可逆部分必须由界面关系分配。
+固定夹持处速度及法向速度斜率也为零。将板方程乘速度并积分。惯性项给出动能导数。弯曲项两次分部积分给出弯曲能导数，张力项一次积分给出预张力能导数。内聚功率从板运动取走能量。界面规律区分可恢复与不可逆部分。
 
 **Symbols before Eq. (C4-E41).**
 
@@ -331,13 +331,13 @@ The transient plate equation conserves power between applied work, motion, shape
 
 瞬态薄板方程在外加功、运动、形状与界面响应之间保持功率守恒。
 
-This equation is an exact balance inside an adopted reduced plate model, not an exact description of every payload. Its bending and tension terms have units N m × m⁻³ and N m⁻¹ × m⁻¹, respectively, both Pa. Setting mass to zero recovers quasistatic balance; setting stiffness, tension and cohesion to zero recovers free areal acceleration. Large slope, significant stretching, plasticity, crystal anisotropy, finite thickness or evolving contact requires a refined structural model. The static clamped-plate law is independently documented in the MIT plate notes; the derivation here retains transient inertia. [MIT plate benchmark](https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/resources/mit2_080jf13_lecture7/)
+This is an exact balance within the reduced plate assumptions. Bending units are N m × m⁻³ = Pa. Tension units are N m⁻¹ × m⁻¹ = Pa. Zero mass gives quasistatic balance. Zero stiffness, tension and cohesion gives free areal acceleration. Large slope, stretching, plasticity, anisotropy, finite thickness or contact needs refinement. The cited static benchmark agrees with the stiffness formulation. This derivation retains inertia. [MIT plate benchmark](https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/resources/mit2_080jf13_lecture7/)
 
-此方程是在所采用降阶薄板模型内部的严格平衡，而非所有对象的精确描述。弯曲项与张力项的单位分别为N m × m⁻³及N m⁻¹ × m⁻¹，均为Pa。将质量设为零得到准静态平衡；将刚度、张力及内聚力设为零则得到无约束面质量的自由加速。大斜率、显著拉伸、塑性、晶体各向异性、有限厚度或变化接触需要更完善的结构模型。静态夹持薄板关系可由MIT薄板讲义独立核对；本章推导保留瞬态惯性。[MIT薄板基准](https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/resources/mit2_080jf13_lecture7/)
+这是约化板假设内的精确平衡。弯曲单位为 N m × m⁻³ = Pa，张力单位为 N m⁻¹ × m⁻¹ = Pa。质量取零得到准静态平衡，刚度、张力及内聚力取零得到自由面加速度。大斜率、拉伸、塑性、各向异性、有限厚度或接触需细化。所引静态基准与刚度形式一致，本推导保留惯性。[MIT 板基准](https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/resources/mit2_080jf13_lecture7/)
 
-Step 6 — Keep the intermediate PVC sheet as a mechanical participant. As a simple transverse two-sheet model, assign each layer its own areal inertia, stiffness and support. The unknown transmitted traction acts with opposite signs on the two sheets by Newton’s third law. A contact or bond law must determine it. This model does not describe a fully bonded laminate’s in-plane composite bending; such a laminate needs compatibility and the appropriate laminate stiffness instead.
+Step 6 — Include PVC mechanics. Give each sheet its own areal mass, stiffness and support. Transmitted traction acts oppositely on the sheets by Newton’s third law. Determine it through contact or bond closure. A fully bonded laminate additionally requires in-plane compatibility and composite stiffness.
 
-步骤6——将中间PVC片层保留为独立力学环节。作为简单横向双片层模型，给每层指定各自面惯性、刚度与支承。根据牛顿第三定律，未知传递牵引对两片层的作用符号相反，必须由接触或粘接关系确定。此模型不描述完全粘接层合结构的面内组合弯曲；后者应满足相容条件并采用相应层合刚度。
+步骤 6——计入 PVC 力学。各片层具有独立面质量、刚度和支撑。根据牛顿第三定律，传递牵引在两片层上方向相反。须通过接触或粘接规律确定牵引。完全粘接叠层还需要面内相容性及复合刚度。
 
 **Symbols before Eq. (C4-E07).**
 
@@ -370,9 +370,9 @@ The PVC-to-film load follows intermediate-sheet motion and contact.
 
 PVC传向薄膜的载荷由中间片层运动与接触决定。
 
-Step 7 — Integrate the transient film equation through a finite pulse. The exact reduced balance includes the time-integrated restoring and cohesive forces. Only when those impulses are small compared with the applied impulse does a free velocity jump follow. A film clamped to a rigid donor over the entire loaded region does not meet that condition. Spatially resolved fluid inertia must not be counted again as an independently added fluid mass.
+Step 7 — Integrate the film equation over the pulse. Retain restoring and cohesive impulses. A free velocity jump requires both small relative to applied impulse. A film bonded to rigid donor across the footprint fails that condition. Count resolved fluid inertia once.
 
-步骤7——在有限脉冲期间积分薄膜瞬态方程。降阶模型的严格积分平衡包含恢复力与内聚力的时间积分。只有这些冲量相较外加冲量很小时，才可得到自由速度跃变。若整个受载区都被刚性供体约束，就不满足这一条件。已经在流体求解中解析的惯性，也不能再以独立附加液体质量重复计入。
+步骤 7——在脉冲期间积分薄膜方程，保留恢复力与内聚力冲量。自由速度跃变要求两者相对外加冲量较小。整个作用区粘接于刚性供体的薄膜不满足该条件。解析流体惯性计入一次。
 
 **Symbols before Eq. (C4-E08).**
 
@@ -433,9 +433,9 @@ Impulse creates film kinetic energy that may subsequently feed deformation and f
 
 冲量产生薄膜动能，之后才可能转入变形与断裂。
 
-For a deformation varying over a lateral length, compare the pulse duration with bending and tension response scales obtained by balancing inertia with the corresponding restoring term. A small-opening cohesive stiffness supplies a third scale. These are transient comparisons, not an invitation to a harmonic-resonance curriculum. A slow pulse alone is also insufficient to claim equilibrium if its shape is abrupt or its crack is rapidly propagating.
+Balance inertia with bending and tension over the deformation length. Compare the resulting response times with pulse duration. Small-opening cohesive stiffness gives a third time. Slow duration alone leaves equilibrium unresolved when pulse edges or crack growth are rapid.
 
-对在某一横向长度上变化的变形，将脉冲持续时间与惯性和相应恢复项平衡所得的弯曲、张力响应尺度比较。小张开内聚刚度还提供第三个尺度。这是瞬态比较，不需要另设简谐共振知识主线。若脉冲形状突变或裂纹高速扩展，仅仅持续时间较长也不足以宣称平衡。
+在变形长度上分别平衡惯性与弯曲、张力。比较所得响应时间与脉冲时长。小张开内聚刚度给出第三种时间。脉冲边缘或裂纹增长快速时，单凭长时长仍未确立平衡。
 
 **Symbols before Eq. (C4-E10).**
 
@@ -466,13 +466,13 @@ Pulse duration must be compared with the response scales of the actual load path
 
 脉冲持续时间须与实际传力路径的响应尺度比较。
 
-## 4 · Separate strength from fracture work
+## 4. Interface strength and fracture work
 
-## 4 · 区分强度与断裂功
+## 4. 界面强度与断裂功
 
-Step 8 — Define crack driving force under an explicit loading control. Peak tensile cohesive traction is a local strength in Pa. Reversible work of adhesion is a thermodynamic surface-energy difference. Practical fracture energy includes the dissipation required to advance the real interface and has units J m⁻². For a quasistatic conservative mechanical system, differentiate its potential with respect to crack area while holding the stated source control fixed. Opening/shear mixture, temperature and crack speed can change the resistance.
+Step 8 — Specify loading control before crack driving force. Peak tensile traction is local strength in Pa. Reversible adhesion work is a surface-energy difference. Practical fracture energy includes dissipation and has units J m⁻². For quasistatic conservative mechanics, differentiate potential by crack area at fixed source control. Mode mixture, temperature and crack speed can change resistance.
 
-步骤8——在明确加载控制方式下定义裂纹驱动力。峰值拉伸内聚牵引是单位为Pa的局部强度。可逆黏附功是热力学表面能差；实际断裂能还包含真实界面扩展所需耗散，单位为J m⁻²。对准静态保守力学系统，应在保持所述源控制量不变时，按裂纹面积对势能求导。张开／剪切混合、温度与裂纹速度均可能改变断裂阻力。
+步骤 8——计算裂纹驱动力前规定加载控制。峰值拉伸牵引是 Pa 单位局部强度。可逆粘附功是表面能差。实际断裂能包含耗散，单位为 J m⁻²。准静态保守力学中，在固定源控制下对裂纹面积求势能导数。模态混合、温度及裂纹速度可改变阻力。
 
 **Symbols before Eq. (C4-E11).**
 
@@ -503,13 +503,13 @@ A crack is driven by energy per newly separated area, under a specified load con
 
 裂纹由每单位新分离面积的可用能量驱动，且加载控制必须明确。
 
-The fluid pressure cannot be compared directly with fracture energy without a deformation length and mechanical relation. Transfer also involves competing fracture paths: the intended donor interface may release, an unintended bond may fail, or the payload may tear. Feng and colleagues studied how interface kinetics alter that competition in transfer printing; their result motivates measuring the actual rate and temperature dependence, not importing their PDMS values into a new PFC stack. [[R10]](../reference/sources.html#r10)
+Comparing pressure with fracture energy requires a deformation length and mechanical law. Competing paths include intended release, another bond’s failure and payload tearing. Feng et al. show how interface kinetics alter path competition. Measure rate and temperature dependence for the actual PFC stack. Their PDMS values require separate justification before reuse. [[R10]](../reference/sources.html#r10)
 
-若没有变形长度和力学关系，流体压力就不能直接与断裂能比较。转印还涉及竞争断裂路径：可能是目标供体界面释放，也可能是错误粘接界面失效，或对象自身撕裂。Feng等研究了界面动力学如何改变转印中的竞争关系；该结果说明应测量实际速率和温度依赖性，而非将其PDMS参数直接用于新PFC叠层。[[R10]](../reference/sources.html#r10)
+压力与断裂能比较需要变形长度及力学规律。竞争路径包括目标释放、其他粘接失效及载荷撕裂。Feng 等说明界面动力学如何改变路径竞争。实际 PFC 叠层须测量速率及温度依赖性。复用其 PDMS 数值需要独立依据。 [[R10]](../reference/sources.html#r10)
 
-During rapid fracture, retain kinetic energy. For a specified crack-front model, the instantaneous solid power balance contains elastic storage, inertia, fracture consumption and other dissipation. This expression assumes that the chosen fracture energy accounts for the cohesive dissipation once; do not add a second copy of the same dissipation. It does not determine the crack path without the structural and interface equations.
+Retain kinetic energy during rapid fracture. The chosen crack-front balance includes elastic storage, inertia, fracture consumption and other loss. Count cohesive dissipation once through the selected fracture energy. Crack path still requires structural and interface equations.
 
-快速断裂时必须保留动能。对指定裂纹前沿模型，固体瞬时功率平衡包含弹性储能、惯性、断裂消耗与其他耗散。下式假设所选断裂能已经计入一次内聚耗散，不能再重复加入同一耗散。若没有结构及界面方程，它仍不能确定裂纹路径。
+快速断裂时保留动能。所选裂纹前沿平衡包括弹性储存、惯性、断裂消耗及其他损失。所选断裂能中的内聚耗散计入一次。裂纹路径仍需结构与界面方程。
 
 **Symbols before Eq. (C4-E12).**
 
@@ -542,13 +542,13 @@ Dynamic loading can store kinetic energy before or during crack advance.
 
 动态载荷可在裂纹扩展前或扩展中储存动能。
 
-## 5 · Derive the circular blister benchmark completely
+## 5. Circular blister benchmark
 
-## 5 · 完整推导圆形鼓泡基准
+## 5. 圆形鼓泡基准
 
-Step 9 — Specify a solvable pressure-controlled limit. A circular pre-existing delamination lies beneath a thin isotropic plate; the bonded outer region clamps its edge. An external reservoir maintains a uniform positive pressure difference while the crack radius varies. Neglect inertia, pretension and membrane stretching. At the centre there is no point force or singular bending moment; displacement and curvature remain regular. This is a separate benchmark, not the 25-jet transient load.
+Step 9 — Define pressure-controlled delamination. A pre-existing circular crack lies beneath a thin isotropic plate. The bonded region clamps its edge. A reservoir maintains uniform positive pressure as radius varies. Omit inertia, pretension and stretching. Center displacement and curvature are regular without point force or singular moment. This benchmark has different loading from the transient jet array.
 
-步骤9——指定可解的恒压控制极限。薄各向同性板下方具有圆形预存脱层，其外部粘接区夹持边缘。在裂纹半径变化时，外部储库保持均匀正压差。忽略惯性、预张力及膜拉伸。中心没有点力或奇异弯矩，位移与曲率保持正则。这是独立基准，并非25射流瞬态载荷。
+步骤 9——定义压力控制脱层。薄各向同性板下已有圆形裂纹，粘接外区夹持其边缘。半径变化时，储库维持均匀正压差。忽略惯性、预张力及拉伸。中心无点力或奇异弯矩，位移和曲率正则。该基准加载不同于瞬态射流阵列。
 
 **Symbols before Eq. (C4-E13).**
 
@@ -579,9 +579,9 @@ Uniform pressure loads a clamped circular delamination with regular central fiel
 
 均匀压力作用于边缘夹持的圆形脱层，中心场必须正则。
 
-Step 10 — First solve for the curvature sum. Multiply its radial Laplacian equation by radius, integrate once, and divide by radius only away from the centre. Regularity of the curvature gradient eliminates the inverse-radius term. Integrating again leaves a constant curvature offset, which the edge slope will later fix.
+Step 10 — Solve the curvature sum. Multiply its radial Laplacian equation by radius and integrate. Divide by radius away from the center. Regular curvature gradient excludes the inverse-radius term. Integrate again for the constant curvature offset. The edge slope will determine it.
 
-步骤10——先求曲率和。将其径向拉普拉斯方程乘以半径，积分一次，仅在离开中心时除以半径。曲率梯度的正则性排除反比于半径的项。再积分一次留下恒定曲率偏移，之后由边缘斜率确定。
+步骤 10——求曲率和。将径向拉普拉斯方程乘半径并积分。中心之外除以半径。曲率梯度正则性排除半径反比项。再次积分得到常曲率偏置，随后由边缘斜率确定。
 
 **Symbols before Eq. (C4-E14).**
 
@@ -613,9 +613,9 @@ Regularity removes the singular integration constant before edge conditions are 
 
 在使用边缘条件之前，正则性先排除奇异积分常数。
 
-Step 11 — Integrate the curvature sum to obtain displacement. The first integral gives a possible inverse-radius slope, excluded by central regularity. The second produces a quartic particular solution plus quadratic and constant terms. Apply zero slope at the edge to find the curvature offset, then zero edge displacement to find the remaining constant.
+Step 11 — Integrate curvature to displacement. Center regularity removes the inverse-radius slope. Integration leaves quartic, quadratic and constant terms. Zero edge slope fixes curvature offset. Zero edge displacement fixes the remaining constant.
 
-步骤11——对曲率和积分得到位移。第一次积分可能产生反比于半径的斜率，中心正则性将其排除。第二次积分得到四次特解，以及二次项和常数项。先使用边缘零斜率求曲率偏移，再使用边缘零位移求剩余常数。
+步骤 11——由曲率积分至位移。中心正则性消去半径反比斜率。积分留下四次、二次及常数项。边缘零斜率确定曲率偏置，边缘零位移确定剩余常数。
 
 **Symbols before Eq. (C4-E15).**
 
@@ -676,9 +676,9 @@ Applying both edge conditions fixes the unique regular blister profile.
 
 同时应用两个边缘条件，确定唯一正则鼓泡轮廓。
 
-Step 12 — Check the solution by substitution, not only by its shape. The radial Laplacian of radius squared is four; that of radius to the fourth is sixteen times radius squared. Applying it twice gives a constant sixty-four. The edge displacement and slope vanish. Positive pressure gives positive centre opening, and stiffness tending upward suppresses displacement. The dimensions are Pa × m⁴ /(N m) = m. This agrees with the clamped circular solution in MIT Lecture 7, Eq. 7.24.
+Step 12 — Substitute the solution to check it. Radial Laplacian of radius² is four. That of radius⁴ is sixteen × radius². Applying twice gives sixty-four. Edge displacement and slope vanish. Positive pressure opens the center; larger stiffness reduces opening. Units are Pa × m⁴/(N m) = m. MIT Lecture 7, Eq. 7.24 gives the same clamped-circle solution.
 
-步骤12——通过代入检验解，而不仅仅观察轮廓。半径平方的径向拉普拉斯为四；半径四次方的径向拉普拉斯为十六倍半径平方。再作用一次得到常数六十四。边缘位移与斜率均为零。正压力给出正中心张开，刚度增大则抑制位移。量纲为Pa × m⁴ /(N m) = m。结果与MIT第7讲式7.24的夹持圆板解一致。
+步骤 12——代回解进行检验。半径²的径向拉普拉斯为四，半径⁴的结果为十六 × 半径²，作用两次得六十四。边缘位移和斜率为零。正压使中心张开，刚度增大使张开减小。单位为 Pa × m⁴／（N m）= m。MIT 第 7 讲式 7.24 给出相同夹持圆板解。
 
 **Symbols before Eq. (C4-E17).**
 
@@ -709,9 +709,9 @@ Direct radial differentiation verifies the pressure balance and regular clamped 
 
 直接径向求导可检验压力平衡及正则夹持轮廓。
 
-Step 13 — Integrate displacement to obtain added cavity volume. The axisymmetric surface element contains radius times radial increment, so this is not merely centre displacement times area. Expand the square, integrate each power, and evaluate the limits. The first two endpoint contributions cancel; the final sixth-power contribution remains.
+Step 13 — Integrate opening for cavity volume. The axisymmetric area element includes radius × radial increment. Expand the profile square and integrate each power. Evaluate both limits. The first two endpoint terms cancel, leaving the sixth-power term.
 
-步骤13——积分位移得到新增腔体体积。轴对称表面积微元包含半径乘径向增量，因此不能简单用中心位移乘面积。展开平方，逐项积分各次幂，再代入上下限。前两项的端点贡献相消，只剩最后的六次幂贡献。
+步骤 13——积分张开位移求空腔体积。轴对称面积微元包含半径 × 径向增量。展开轮廓平方并积分各幂。计算上下限，前两端点项相消，留下六次幂项。
 
 **Symbols before Eq. (C4-E18).**
 
@@ -742,9 +742,9 @@ Blister volume sums the opening of all concentric annuli.
 
 鼓泡体积等于各同心圆环张开贡献之和。
 
-Step 14 — Include the maintained-pressure source in potential energy. At a fixed crack radius, displacement and volume scale linearly with pressure. The elastic energy is the area under the pressure–volume loading curve, one half pressure times volume. The pressure reservoir’s potential contribution is negative pressure times volume. Subtracting it leaves a negative half-product. Using only stored plate energy would give the wrong sign for pressure-controlled crack driving force.
+Step 14 — Include reservoir work in potential. At fixed crack radius, volume is linear in pressure. Elastic storage is half pressure × volume. Reservoir potential is minus pressure × volume. Their sum is minus the half-product. Omitting reservoir work reverses the pressure-controlled driving-force sign.
 
-步骤14——将恒压源计入势能。在固定裂纹半径时，位移与体积都随压力线性变化。弹性能为压力—体积加载曲线下的面积，即压力乘体积的一半。压力储库的势能贡献是负压力乘体积。将其扣除后，总势能为负的一半乘积。若只用板的储能，就会得到恒压裂纹驱动力的错误符号。
+步骤 14——在势能中计入储库功。裂纹半径固定时，体积随压力线性变化。弹性储存为压力 × 体积的一半，储库势能为压力 × 体积的负值。总和为负半积。省略储库功会反转压力控制驱动力符号。
 
 **Symbols before Eq. (C4-E19).**
 
@@ -776,9 +776,9 @@ Source work changes the sign of the relevant total potential.
 
 压力源做功改变相关总势能的符号。
 
-Step 15 — Differentiate the total potential with respect to radius and divide by the corresponding area derivative. Both derivatives retain their numerical factors. A positive pressure produces a positive energy-release rate because increasing delamination compliance lowers the plate-plus-reservoir potential. Doubling crack radius at the same pressure increases the driving force sixteenfold in this bending limit.
+Step 15 — Differentiate potential by crack radius. Divide by the area derivative, retaining numerical factors. Positive pressure gives positive release rate. Growing compliance lowers plate-plus-reservoir potential. Doubling radius at fixed pressure multiplies driving force by sixteen.
 
-步骤15——按半径对总势能求导，再除以相应面积导数。两次求导都必须保留数值系数。正压力给出正能量释放率，因为脱层柔度增大会降低板与储库的总势能。在此弯曲极限内，相同压力下裂纹半径加倍，驱动力增至十六倍。
+步骤 15——对裂纹半径求势能导数，再除以面积导数，并保留数值系数。正压给出正能量释放率。柔顺性增加降低板与储库总势能。压力固定时，半径加倍使驱动力增至十六倍。
 
 **Symbols before Eq. (C4-E20).**
 
@@ -837,9 +837,9 @@ The pressure threshold depends on crack geometry and fracture resistance, not pr
 
 压力阈值取决于裂纹几何及断裂阻力，而非压力本身。
 
-Step 16 — Change the loading control explicitly. Hold the added volume fixed, with no continuing pressure-reservoir work. Eliminate pressure using volume compliance, differentiate plate storage at fixed volume, and substitute the instantaneous pressure back. The instantaneous expression matches the pressure-controlled value at the same state, but the evolution differs: increasing radius raises the constant-pressure driving force and lowers the constant-volume driving force. For constant resistance this distinguishes destabilizing pressure control from stabilizing volume control in the adopted model. A sealed laser-heated cavity has finite mass and evolving temperature, so neither simple control is automatically its trajectory.
+Step 16 — Change to fixed volume. Remove continuing reservoir work and eliminate pressure through compliance. Differentiate plate storage at fixed volume. Reinsert instantaneous pressure for comparison. The same state gives the same instantaneous expression. Radius growth increases fixed-pressure driving and decreases fixed-volume driving. Constant resistance therefore gives different stability under these controls. A sealed PFC cavity has evolving mass and temperature. Its trajectory needs a thermodynamic closure.
 
-步骤16——明确改变加载控制。固定新增体积，且不再由恒压储库持续做功。利用体积柔度消去压力，在固定体积下对板储能求导，再代回瞬时压力。在相同状态处，瞬时表达式与恒压情况一致，但演化不同：半径增大会提高恒压驱动力，却降低恒容驱动力。对于恒定阻力，在所采用模型中，这区分了趋于失稳的恒压控制与趋于稳定的恒容控制。封闭激光加热腔体具有有限质量和变化温度，因此不能自动将任一简单控制当作其演化路径。
+步骤 16——改为固定体积。取消持续储库功，通过柔顺性消去压力。在固定体积下对板储能求导，再代回瞬时压力进行比较。同一状态给出相同瞬时形式。半径增长使定压驱动增加、定容驱动减小。阻力恒定时，两类控制具有不同稳定性。密闭 PFC 空腔质量和温度会演化，其轨迹需要热力学闭合。
 
 **Symbols before Eq. (C4-E22).**
 
@@ -871,13 +871,13 @@ Fixed pressure and fixed volume lead to opposite changes in driving force as the
 
 裂纹扩展时，恒压与恒容控制使驱动力发生相反变化。
 
-### Worked blister calculation
+### Blister calculation
 
-### 鼓泡已解算例
+### 鼓泡计算
 
-Use the source course’s illustrative plate: modulus 2 GPa, thickness 10 μm, Poisson’s ratio 0.35, pre-existing crack radius 100 μm and constant fracture energy 0.10 J m⁻². These are teaching inputs, not properties of the later 1 μm payload or of an identified PVC formulation. Substitute the thickness in metres before cubing, then evaluate stiffness and the positive onset root.
+Prescribe modulus 2 GPa, thickness 10 μm, Poisson ratio 0.35, crack radius 100 μm and fracture energy 0.10 J m⁻². These source-course inputs describe the illustrative plate. They do not specify the later 1 μm payload or PVC formulation. Convert thickness to meters before cubing. Evaluate stiffness and the positive onset root.
 
-采用源课程的示例薄板：模量2 GPa、厚度10 μm、泊松比0.35、预裂纹半径100 μm、恒定断裂能0.10 J m⁻²。这些是教学输入，并非后续1 μm对象或某一已确认PVC配方的物性。先将厚度换算为米再求立方，然后求刚度与正的起始阈值根。
+规定模量 2 GPa、厚度 10 μm、泊松比 0.35、裂纹半径 100 μm、断裂能 0.10 J m⁻²。这些源课程输入描述示例板，未指定后续 1 μm 载荷或 PVC 配方。厚度先换算为米再取三次方。计算刚度及正起始根。
 
 **Symbols before Eq. (C4-E23).**
 
@@ -905,9 +905,9 @@ The stated plate and interface yield a conditional 156 kPa maintained-pressure t
 
 所给薄板与界面产生约156 kPa的条件性恒压阈值。
 
-At that pressure, check deflection, volume and payload stress. For the clamped circular profile, the radial edge bending moment magnitude is pressure times radius squared divided by eight. Linear bending stress at the outer thickness surface is six times moment divided by thickness squared. Thus propagation of the intended interface also demands that approximately 11.7 MPa edge bending stress is acceptable for this hypothetical plate; no allowable material strength was supplied. The thickness-to-radius ratio is 0.10, so the thin-plate idealization is a benchmark with finite-thickness error to assess, not certified accuracy.
+Check opening, volume and stress at onset. Edge moment magnitude is pressure × radius²/8. Outer-surface bending stress is six × moment/thickness². The hypothetical plate reaches about 11.7 MPa edge stress. Allowable strength is missing. Thickness/radius is 0.10. Finite-thickness error requires assessment before claiming accuracy.
 
-在该压力下，检验挠度、体积与对象应力。夹持圆板轮廓的边缘径向弯矩幅值为压力乘半径平方除以八；厚度外表面的线性弯曲应力为六倍弯矩除以厚度平方。因此，目标界面能够扩展，还要求此假设薄板可以承受约11.7 MPa的边缘弯曲应力；材料许用强度尚未给定。厚径比为0.10，因此薄板理想化是仍需评估有限厚度误差的基准，而非已认证的精度。
+在起始点检查张开、体积及应力。边缘弯矩大小为压力 × 半径²／8，外表面弯曲应力为六 × 弯矩／厚度²。假想板边缘应力约 11.7 MPa。缺失允许强度。厚度／半径为 0.10，声称精度前须评估有限厚度误差。
 
 **Symbols before Eq. (C4-E24).**
 
@@ -939,13 +939,13 @@ A fracture threshold must be checked against deflection validity and payload ben
 
 断裂阈值必须同时检验挠度适用性与对象弯曲应力。
 
-## 6 · A cohesive law joins local strength to separation work
+## 6. Cohesive strength and separation work
 
-## 6 · 内聚关系连接局部强度与分离功
+## 6. 内聚强度与分离功
 
-Step 17 — Adopt a monotonic triangular tensile traction–separation law at the actual release interface. The initial slope sets reversible opening stiffness, the peak sets initiation strength, and the final opening sets complete tensile separation. The following law is a declared model, not a measured universal interface property. Compression needs a contact branch; unloading needs recoverable response and irreversible damage history; mixed-mode loading needs its own coupling.
+Step 17 — Adopt triangular tensile traction–separation behavior. Initial slope sets opening stiffness, peak sets initiation strength, and final opening completes separation. This is a declared interface model. Compression needs contact closure. Unloading needs elastic recovery and damage history. Mixed modes need a coupling law.
 
-步骤17——在实际释放界面采用单调三角形拉伸牵引—分离关系。初始斜率决定可逆张开刚度，峰值决定损伤起始强度，最终张开决定完全拉伸分离。下式是明确采用的模型，而非实测的通用界面性质。压缩需要接触分支；卸载需要可恢复响应与不可逆损伤历史；混合模态加载需要自身的耦合关系。
+步骤 17——采用三角形拉伸牵引—分离规律。初始斜率规定张开刚度，峰值规定起始强度，最终张开完成分离。这是给定界面模型。压缩需要接触闭合，卸载需要弹性恢复和损伤历程，混合模态需要耦合规律。
 
 **Symbols before Eq. (C4-E25).**
 
@@ -975,9 +975,9 @@ The traction–separation curve contains strength, stiffness and a finite separa
 
 牵引—分离曲线包含强度、刚度及有限分离距离。
 
-Step 18 — Integrate both branches to obtain fracture work per area. The first branch forms the ascending triangle; the second forms the descending triangle. Their sum is independent of where the peak occurs, provided the ordering of openings is admissible. Traction times separation has units Pa m = J m⁻², as required. This does not mean stiffness is irrelevant to initiation dynamics; it means only that the total area of this particular triangular law is fixed by peak traction and final opening.
+Step 18 — Integrate ascending and descending branches. Each contributes one triangle area. With admissible opening order, their sum depends on peak traction and final opening. Units are Pa m = J m⁻². Peak location still affects stiffness and initiation dynamics.
 
-步骤18——积分两个分支，得到单位面积断裂功。第一分支形成上升三角形，第二分支形成下降三角形。只要张开顺序满足要求，两者之和不依赖峰值出现位置。牵引乘分离距离的单位为Pa m = J m⁻²，符合要求。这并不意味着刚度与损伤起始动力学无关，只表示此特定三角形关系的总面积由峰值牵引及最终张开决定。
+步骤 18——积分上升与下降分支。每段贡献一个三角形面积。张开顺序允许时，总面积取决于峰值牵引及最终张开。单位为 Pa m = J m⁻²。峰值位置仍影响刚度及起始动力学。
 
 **Symbols before Eq. (C4-E26).**
 
@@ -1036,13 +1036,13 @@ The example has distinct peak and final separation openings.
 
 本例具有不同的峰值张开与最终分离张开。
 
-## 7 · Close the PFC-inventory → array → film calculation
+## 7. Array-to-film calculation
 
-## 7 · 完成PFC存量 → 阵列 → 薄膜的贯穿计算
+## 7. 阵列至薄膜计算
 
-Step 19 — Carry the same finite source forward. The Chapter 2 core inventory feeds each of the 25 independently supplied cells in Chapter 3. The optical example declares patterned/addressed illumination with equal site allocation. Their total absorbed optical energy is 10 μJ; the declared emitted-jet conversion is 0.005, giving 50 nJ of total jet kinetic energy. Each jet uses carrier-liquid density 1000 kg m⁻³, diameter 10 μm and length 50 μm. No interacting-bubble multiplier is added. Recompute the incoming mass and momentum without rounded intermediate speeds.
+Step 19 — Carry forward the finite source. Chapter 2’s inventory feeds 25 independent Chapter 3 cells. Patterned/addressed illumination gives equal prescribed allocation. Total absorbed energy is 10 μJ. Declared jet conversion 0.005 gives 50 nJ kinetic energy. Each jet has density 1000 kg m⁻³, diameter 10 μm and length 50 μm. Recompute mass and momentum without rounded speed. Separate cells carry no interacting-bubble multiplier.
 
-步骤19——继续沿用同一个有限源。第2章液核存量为第3章25个独立供给液体单元中的各单元提供相变物质。光学算例声明采用图案化／逐点定址照明，等量分配至各位点。总吸收光能为10 μJ；明确假设出射射流转换率为0.005，因此总射流动能为50 nJ。每股射流使用载液密度1000 kg m⁻³、直径10 μm、长度50 μm。不加入任何相互作用气泡倍增系数。重新计算入射质量与动量，并避免中间速度舍入。
+步骤 19——继续使用有限源。第二章物质量供给第三章二十五个独立单元。图案／寻址照明给定相等分配。总吸收能量为 10 μJ，给定射流转换率 0.005 得到 50 nJ 动能。各射流密度 1000 kg m⁻³、直径 10 μm、长度 50 μm。用未舍入速率重算质量和动量。独立单元不采用相互作用倍数。
 
 **Symbols before Eq. (C4-E28).**
 
@@ -1074,9 +1074,9 @@ Finite jet energy and aligned momentum provide the input to solid coupling.
 
 有限射流能量与同向动量提供固体耦合输入。
 
-Step 20 — State solid-coupling assumptions separately. Take a payload of area 1 mm², thickness 1 μm and density 2330 kg m⁻³, initially at rest, with no initially stored recoverable energy source. Suppose 20% of the incoming jet energy becomes available for solid deformation, release and departure, and the net opening-direction impulse on the payload after load-path reactions is 50% of incoming aligned momentum. These fractions require measurement or a coupled calculation; neither follows from the PFC boiling point or the 47.23 MPa rigid-contact scale.
+Step 20 — Declare solid coupling. Payload area is 1 mm², thickness 1 μm and density 2330 kg m⁻³. It starts at rest without stored recoverable energy. Assign 20% jet energy to deformation, release and departure. Assign 50% aligned momentum as net opening-direction payload impulse after reactions. Both fractions require measurement or coupled calculation. Boiling point and rigid-contact pressure leave them unresolved.
 
-步骤20——独立声明固体耦合假设。取对象面积1 mm²、厚度1 μm、密度2330 kg m⁻³，初始静止，且没有初始储存的可恢复能量源。假设入射射流能量的20%可用于固体变形、释放及离开；考虑传力路径反作用后，作用于对象的净张开方向冲量为入射同向动量的50%。这些比例需要测量或耦合计算；均不能由PFC沸点或47.23 MPa刚性接触尺度推出。
+步骤 20——规定固体耦合。载荷面积为 1 mm²、厚度 1 μm、密度 2330 kg m⁻³，初始静止且无可恢复储能。分配 20% 射流能量用于变形、释放及离开。传力反作用之后，将 50% 同向动量分配为净张开方向载荷冲量。两比例均需测量或耦合计算。沸点与刚性接触压力不能确定它们。
 
 **Symbols before Eq. (C4-E29).**
 
@@ -1108,9 +1108,9 @@ Declared coupling converts incoming jet budgets into conditional payload budgets
 
 明确声明的耦合将入射射流预算转换为条件性对象预算。
 
-Step 21 — Apply necessary global screens. Constant fracture energy over the entire intended area requires fracture energy times area. Translating the initially resting payload at a minimum specified speed requires one half mass times speed squared. Net impulse must supply at least mass times that minimum speed. These screens omit residual bending, rotation, other dissipation and unintended fracture, so failure excludes the assumed transfer, while passing does not prove it. If the impulse quoted is the exact total actual impulse and no later force acts, final centre-of-mass speed is fixed by equality, not independently selectable.
+Step 21 — Apply global necessary conditions. Separation costs fracture energy × intended area. Minimum translation costs half mass × minimum speed². Net impulse must reach mass × minimum speed. Residual bending, rotation, loss and competing fracture add demands. Failure excludes this assumed case. Passing leaves full transfer unresolved. Exact complete impulse from rest fixes final center-of-mass speed.
 
-步骤21——应用必要的整体筛选。若整个目标面积上的断裂能恒定，则释放需要断裂能乘面积。将初始静止对象平动到指定最低速度，需要质量乘速度平方的一半。净冲量至少要提供质量乘该最低速度。这些筛选忽略残余弯曲、转动、其他耗散及错误断裂，因此不通过可排除所假设转印，而通过并不能证明成功。若所给冲量是精确总实际冲量，且之后没有其他力，则最终质心速度由等式确定，不能独立任意选择。
+步骤 21——应用整体必要条件。分离消耗断裂能 × 目标面积。最低平动消耗质量 × 最低速率²的一半。净冲量须达到质量 × 最低速率。残余弯曲、旋转、损失及竞争断裂会增加需求。失败可排除该假设情形，通过仍未确立完整转印。静止开始的精确总冲量决定最终质心速率。
 
 **Symbols before Eq. (C4-E30).**
 
@@ -1168,9 +1168,9 @@ The assigned source cannot release the whole interface even before departure ene
 
 即使尚未计入离开动能，所指定源也无法释放整个界面。
 
-That failure is already decisive under the stated budget. The 47.23 MPa number is a short-time compressive rigid-contact scale on tiny footprints; it does not create additional energy, spread automatically across 1 mm², or persist for the full emitted-jet duration. It may instead cause local damage. Change only the illustrative release fracture energy to 0.005 J m⁻², and require a minimum departure speed of 0.50 m s⁻¹. Re-evaluate both screens, retaining the same incoming jets and coupling assumptions.
+The stated energy failure excludes that case. The 47.23 MPa local transient creates no extra energy. Its footprint cannot automatically cover 1 mm² or sustain full-duration loading. Local damage is possible. Now change fracture energy to 0.005 J m⁻². Require minimum departure speed 0.50 m s⁻¹. Keep incoming jets and coupling fixed, then repeat both screens.
 
-在所述预算下，上述失败已经具有决定性。47.23 MPa是微小作用范围上的短时压缩刚性接触尺度；它不会创造额外能量，不会自动覆盖1 mm²，也不会持续整个射流发射时间。它反而可能造成局部损伤。现在仅将教学释放断裂能改为0.005 J m⁻²，并要求最低离开速度0.50 m s⁻¹。保持入射射流和耦合假设不变，重新计算两项筛选。
+给定能量条件失败，排除该情形。47.23 MPa 局部瞬态不会产生额外能量，其作用区不会自动覆盖 1 mm² 或维持整个加载时长，并可能造成局部损伤。现将断裂能改为 0.005 J m⁻²，要求最低离开速率 0.50 m s⁻¹。保持入射射流及耦合不变，重算两类筛选。
 
 **Symbols before Eq. (C4-E32).**
 
@@ -1201,9 +1201,9 @@ Reducing the assumed fracture cost allows the necessary budgets to pass.
 
 降低假设断裂消耗后，必要预算可以通过。
 
-Step 22 — Check mutual consistency of the energy and impulse allocations. If the assigned net impulse is the complete actual impulse from rest, its final centre-of-mass speed is 0.67238 m s⁻¹, above the requested minimum. The associated kinetic energy is 0.52669 nJ, not the 0.29125 nJ minimum-speed value. Including it still leaves the low-fracture-energy case below the 10 nJ budget. If a design demands exactly 0.50 m s⁻¹ instead, later counter-impulse or a different coupling allocation must be identified. Energy and momentum cannot be tuned independently without a physical load path.
+Step 22 — Match energy to exact impulse. Complete assigned impulse gives final speed 0.67238 m s⁻¹. This exceeds the 0.50 m s⁻¹ minimum. Its kinetic energy is 0.52669 nJ; minimum-speed energy is 0.29125 nJ. Adding actual kinetic energy still fits the 10 nJ low-fracture budget. Exact 0.50 m s⁻¹ would require counter-impulse or different coupling. Energy and momentum must share a physical force path.
 
-步骤22——检验能量与冲量分配是否相容。若指定净冲量是对象从静止开始受到的全部实际冲量，则其最终质心速度为0.67238 m s⁻¹，高于所需最低值。对应动能为0.52669 nJ，而非最低速度的0.29125 nJ。将该动能计入后，低断裂能情况仍低于10 nJ预算。若设计要求速度恰好为0.50 m s⁻¹，就必须明确后续反向冲量或不同耦合分配。若无物理传力路径，能量与动量不能独立调节。
+步骤 22——使能量与精确冲量一致。完整分配冲量给出最终速率 0.67238 m s⁻¹，高于 0.50 m s⁻¹ 最低要求。对应动能为 0.52669 nJ，最低速率动能为 0.29125 nJ。计入实际动能后仍满足 10 nJ 低断裂能预算。精确 0.50 m s⁻¹ 需反向冲量或不同耦合。能量和动量须对应同一实际传力路径。
 
 **Symbols before Eq. (C4-E33).**
 
@@ -1234,17 +1234,17 @@ The stated impulse and low-fracture-energy budget are mutually consistent at the
 
 所给冲量与低断裂能预算在其决定的速度处相互相容。
 
-Unresolved project link: neither coupling fraction, fracture energy, local cohesive strength nor the transmitted PVC load is calibrated for the proposed stack. The screens therefore establish conditional feasibility or exclusion, not a project prediction. Next resolve crack coverage, footprint-induced puncture/bending, torque, unintended interface failure, and intact arrival.
+**Missing stack calibration.** Coupling fractions, fracture energy, cohesive strength and PVC transmission remain unmeasured. The screens give conditional feasibility or exclusion. Resolve crack coverage, puncture, bending, torque, competing release and intact arrival.
 
-尚未闭合的项目环节：两个耦合比例、断裂能、局部内聚强度及PVC传递载荷，都尚未针对拟议叠层标定。因此，这些筛选只建立条件性可行或排除，而非项目预测。下一步须解析裂纹覆盖、作用范围引起的穿孔／弯曲、转矩、错误界面失效及完整到达。
+**缺失叠层标定。** 耦合比例、断裂能、内聚强度及 PVC 传递尚未测量。筛选给出有条件可行性或排除。须解析裂纹覆盖、穿刺、弯曲、扭矩、竞争释放及完整到达。
 
-## 8 · Placement and reset complete the useful operating window
+## 8. Placement and reset
 
-## 8 · 落位与复位完成有效运行窗口
+## 8. 落位与复位
 
-Step 23 — Follow the payload beyond release. During a short ballistic flight with negligible drag and gravity, its lateral offset equals its normal flight gap times the tangent of departure angle. This uses the payload trajectory, not the earlier liquid-jet flight gap. A nonuniform array can create torque and rotation even when its net impulse is sufficient. The receiver must arrest the object without damaging it or causing rebound and must supply adequate final adhesion.
+Step 23 — Track payload flight after release. With negligible drag and gravity, lateral offset equals normal gap × tangent of departure angle. Use payload gap rather than liquid-jet gap. Array nonuniformity can add torque despite sufficient net impulse. The receiver must arrest motion, avoid damage and rebound, and provide final adhesion.
 
-步骤23——继续追踪释放后的对象。在阻力与重力可忽略的短时弹道飞行中，横向偏移等于法向飞行间隙乘离开角的正切。这使用对象轨迹，而非之前液体射流的飞行间隙。即使净冲量足够，不均匀阵列也可能产生转矩和转动。接收表面必须使对象停下而不损伤或反弹，并提供足够最终黏附。
+步骤 23——追踪释放后的载荷飞行。阻力与重力可忽略时，横向偏移等于法向间隙 × 离开角正切。采用载荷间隙而非液体射流间隙。阵列不均匀可在净冲量足够时增加扭矩。受载体须停止运动、避免损伤及反弹，并提供最终粘附。
 
 **Symbols before Eq. (C4-E34).**
 
@@ -1273,25 +1273,25 @@ A finite receiving gap converts angular error into placement error.
 
 有限接收间隙将角度误差转换为落位误差。
 
-Reset is part of repeatability. Cooling, condensation, remaining PFC and carrier inventory, shell integrity and trapped gas determine the next shot’s state. A persistent cavity can alter absorption, wetting and mechanical transmission. The complete operating window therefore requires intended activation, useful finite output, correct-interface release, payload survival, acceptable landing and reproducible reset. A record single-shot pressure maximum and a repeatable intact-transfer envelope must be reported separately.
+Cooling, condensation, remaining inventory, shell integrity and trapped gas set the next shot. Persistent cavities can change absorption, wetting and transmission. Repeatable transfer requires activation, useful output, selective release, survival, landing and reset. Report single-shot pressure records separately from the repeatable transfer window.
 
-复位属于重复性的一部分。冷却、冷凝、剩余PFC与载液存量、壳层完整性及滞留气体决定下一次的状态。持续腔体可能改变吸收、润湿与力学传递。因此，完整运行窗口要求目标激活、有效有限输出、正确界面释放、对象存活、合格落位及可重复复位。单次最高压力记录与可重复完整转印范围必须分开报告。
+冷却、凝结、剩余物质量、壳层完整性及滞留气体决定下一次发射。残留空腔可改变吸收、润湿和传递。可重复转印需要激活、有用输出、选择性释放、完整存续、落位及复位。单发压力纪录与可重复转印窗口分别报告。
 
-The discriminating evidence is specific: deposited energy and activation statistics; cavity shape and lifetime; finite arriving jet mass, speed and direction; exposed-surface and buried-interface load histories; PVC and film motion; crack progression; final integrity, location and next-shot state. Maximum bubble radius alone cannot identify all those links. Each additional model should close a measured or explicitly missing link rather than rebuild a separate general mechanics curriculum.
+Measure deposited energy and activation statistics. Track cavity shape, lifetime and arriving jet mass, speed and direction. Record exposed and buried load histories, PVC/film motion and crack growth. Verify final integrity, position and next-shot state. Each missing link needs its corresponding measurement or model.
 
-能够区分机制的证据是具体的：沉积能量与激活统计；腔体形状及寿命；有限到达射流质量、速度与方向；外露表面与埋藏界面载荷历程；PVC和薄膜运动；裂纹扩展；最终完整性、位置及下一次状态。仅凭最大气泡半径无法识别全部环节。新增模型应闭合已测量或明确缺失的环节，而非另建一套广泛力学知识主线。
+测量沉积能量及激活统计。追踪空腔形状、寿命及到达射流质量、速率、方向。记录外露与埋藏载荷历程、PVC／薄膜运动及裂纹增长。核验最终完整性、位置与下一发状态。每个缺失环节需对应测量或模型。
 
-## Three graduation-defense explanations
+## Oral questions
 
-## 三个毕业答辩式解释题
+## 口头问题
 
-### A 47 MPa impact is observed. Why can transfer still fail, and how does intact PVC change the explanation?
+### Trace a 47 MPa impact through the film/PVC stack. What limits release?
 
-### 观测到47 MPa冲击。为什么转印仍可能失败？完整PVC层如何改变解释？
+### 追踪 47 MPa 撞击在薄膜／PVC 叠层中的传递。什么限制释放？
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -1354,13 +1354,13 @@ Reference answer: finite energy and net impulse must reach the intended interfac
 
 参考答案：有限能量与净冲量必须到达目标界面。
 
-A 47.23 MPa peak only characterizes the earliest local compressive contact under a rigid-receiver approximation. Its footprint, duration and load-path transmission are still needed. Twenty-five jets carry 50 nJ, and the assumed useful solid fraction supplies only 10 nJ. Releasing 1 mm² at 0.020 J m⁻² already costs 20 nJ, so the declared budget fails before translation is paid. Direct impact first loads the film; with intact PVC it first loads PVC, whose motion and contact determine what reaches the film. A pressure trace at PVC is not automatically an opening traction at the release interface. Failure of this necessary energy screen is decisive for the stated assumptions; passing a lower-energy case still requires crack coverage and intactness.
+The 47.23 MPa scale describes initial local compression at a rigid receiver. Footprint, duration and transmission still require calculation. Twenty-five jets carry 50 nJ; assigned useful solid energy is 10 nJ. Releasing 1 mm² at 0.020 J m⁻² costs 20 nJ before translation. This case fails its energy condition. Direct impact first loads film; intact PVC first carries the load. Film loading follows PVC motion and contact. A lower-fracture case still needs crack coverage and payload integrity.
 
-47.23 MPa峰值只是在刚性接收体近似下，最早局部压缩接触的特征。还需要作用范围、持续时间及传力路径中的传递情况。25股射流携带50 nJ，假设有效固体比例只提供10 nJ。在0.020 J m⁻²断裂能下释放1 mm²已经需要20 nJ，因此尚未支付平动能，所述预算就失败了。直接冲击首先加载薄膜；完整PVC情况下首先加载PVC，其运动与接触决定到达薄膜的载荷。PVC处压力历程并非自动等于释放界面张开牵引。在所述假设下，必要能量筛选失败具有决定性；低能耗情况通过筛选后，仍需检验裂纹覆盖与完整性。
+47.23 MPa 尺度描述刚性受载体初始局部压缩。作用面积、时长及传递仍需计算。二十五束射流携带 50 nJ，分配有用固体能量为 10 nJ。以 0.020 J m⁻² 释放 1 mm²，在平动之前已需 20 nJ。该情形能量条件失败。直接撞击先加载薄膜，完整 PVC 则先承载。薄膜载荷取决于 PVC 运动与接触。低断裂能情形仍需裂纹覆盖及载荷完整性。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Distinguish local compressive pressure from opening traction, impulse and delivered work.
 
@@ -1372,13 +1372,13 @@ A 47.23 MPa peak only characterizes the earliest local compressive contact under
 
   追踪直接及PVC介导传力路径，指出未知传递关系，并保留空间／竞争失效检验。
 
-### Can the 156 kPa blister threshold be used as a jet-transfer threshold? Defend the answer using geometry and loading control.
+### When does the 156 kPa blister threshold apply?
 
-### 能否把156 kPa鼓泡阈值用作射流转印阈值？请依据几何和加载控制进行论证。
+### 156 kPa 鼓泡阈值适用于哪些条件？
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -1411,13 +1411,13 @@ Reference answer: this pressure threshold follows a particular geometry and load
 
 参考答案：此压力阈值源于特定几何及加载控制。
 
-The blister threshold comes from solving a uniformly loaded clamped plate, integrating its displacement to volume, including the maintained-pressure reservoir’s work, then differentiating total potential with crack area. It applies to a pre-existing circular crack under slow bending with negligible stretching, pretension and inertia. A brief localized jet generally supplies neither that uniform field nor that maintained source, and an intact PVC layer changes the exposed structure. The same instantaneous pressure is not enough: at fixed pressure the driving force increases with crack radius; at fixed volume pressure falls and the driving force decreases. A sealed finite PFC cavity needs its evolving pressure–volume–temperature state. For a rapid jet, use the actual transmitted traction, film inertia, crack kinetics and energy conservation. Check payload stress as well as desired-interface release.
+The blister threshold follows from the clamped-plate solution, volume integration and reservoir work. Differentiate total potential by crack area. Assume an existing circular crack, slow uniform bending, negligible stretching, pretension and inertia. A brief local jet needs a different loading history. Intact PVC also changes the loaded structure. Fixed pressure increases driving with crack radius. Fixed volume lowers pressure and driving during growth. A sealed PFC cavity needs evolving pressure, volume and temperature. Rapid release needs transmitted traction, inertia, crack kinetics and energy balance. Check payload stress alongside interface release.
 
-鼓泡阈值来自求解均匀加载的夹持薄板，将位移积分为体积，计入恒压储库的功，再按裂纹面积对总势能求导。它适用于预存圆裂纹、慢速弯曲，以及拉伸、预张力与惯性可忽略的情况。短暂局部射流通常既不提供该均匀载荷场，也不提供该恒定源；完整PVC层还会改变外露结构。仅瞬时压力相同是不够的：恒压时驱动力随裂纹半径增加，恒容时压力下降且驱动力减小。有限封闭PFC腔体需要自身变化的压力—体积—温度状态。对快速射流，应使用实际传递牵引、薄膜惯性、裂纹动力学及能量守恒，并同时检验对象应力与目标界面释放。
+鼓泡阈值来自夹持板解、体积积分及储库功，再对裂纹面积求总势能导数。假设已有圆裂纹、缓慢均匀弯曲、拉伸、预张力及惯性可忽略。短局部射流需要不同加载历程。完整 PVC 也会改变受载结构。固定压力时，驱动随裂纹半径增加；固定体积时，增长使压力与驱动降低。密闭 PFC 空腔需演化压力、体积和温度。快速释放需传递牵引、惯性、裂纹动力学及能量平衡。界面释放同时须检查载荷应力。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Reconstruct pressure → plate opening → volume → source-inclusive potential → energy-release rate.
 
@@ -1429,13 +1429,13 @@ The blister threshold comes from solving a uniformly loaded clamped plate, integ
 
   解释短时／局部载荷、恒容、封闭热力学或PVC传递为什么需要另一计算。
 
-### Both global screens pass. What must still be established before claiming a useful, repeatable intact-transfer window?
+### Both global screens pass. What measurements establish repeatable intact transfer?
 
-### 两项整体筛选均通过。宣称有效且可重复的完整转印窗口之前，还需要建立哪些证据？
+### 两项整体筛选均通过。哪些测量能确立可重复完整转印？
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -1499,13 +1499,13 @@ Reference answer: passing global budgets starts, rather than completes, the tran
 
 参考答案：通过整体预算是转印论证的起点，而非终点。
 
-The lower-fracture-energy case has enough assigned energy and net impulse for the requested minimum speed, but it does not yet prove complete transfer. Local loading must initiate the intended interface and supply its full separation work; compression alone is not tensile damage. The crack must cover the intended area before another bond releases or the payload punctures, tears or bends excessively. An exact actual net impulse also fixes outgoing centre-of-mass motion, so the energy allocation must remain consistent. Then check tilt, rotation, flight, landing adhesion and arrest without rebound. Verify those links with synchronized solid motion, crack progression and final integrity rather than a pressure maximum alone. Finally test cooling, condensation and remaining inventory over repeated shots. Record the largest single-shot output separately from the repeatable intact-transfer window.
+The low-fracture case passes assigned energy and minimum-impulse conditions. Complete transfer: Not established. Missing: local initiation, full crack coverage and payload survival. Compression needs conversion into relative interface opening. Exclude unintended release, puncture, tearing and excessive bending. Keep exact impulse consistent with final translation. Then check tilt, flight, landing adhesion and rebound. Synchronize solid motion, crack growth and integrity measurements. Repeated shots require cooling, condensation and remaining-inventory checks. Report single-shot output separately from repeatable intact transfer.
 
-低断裂能情况在指定能量和净冲量下，可以达到所需最低速度，但还不能证明完整转印。局部载荷必须使目标界面起始，并提供全部分离功；单纯压缩不是拉伸损伤。裂纹必须在错误粘接界面释放，或对象穿孔、撕裂、过度弯曲之前覆盖目标面积。精确实际净冲量还会确定出射质心运动，因此能量分配必须保持相容。之后要检验倾斜、转动、飞行、落位黏附及无反弹停下。应通过同步固体运动、裂纹扩展和最终完整性验证这些环节，而非只看压力峰值。最后在重复脉冲中检验冷却、冷凝及剩余存量，并将最高单次输出与可重复完整转印窗口分开记录。
+低断裂能情形通过分配能量及最低冲量条件。完整转印尚未确立。缺失：局部起始、完整裂纹覆盖及载荷存续。压缩载荷须转化为界面相对张开。须排除意外释放、穿刺、撕裂及过度弯曲。精确冲量与最终平动保持一致。再检查倾斜、飞行、落位粘附及反弹。同步测量固体运动、裂纹增长和完整性。重复发射需检查冷却、凝结及剩余物质量。单发输出与可重复完整转印分别报告。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Distinguish local strength initiation, full separation work and competing fracture paths.
 

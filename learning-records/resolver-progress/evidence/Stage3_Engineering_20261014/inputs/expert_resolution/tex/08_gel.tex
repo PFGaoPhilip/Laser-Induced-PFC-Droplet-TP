@@ -1,0 +1,57 @@
+% ---------------------------------------------------------------------------
+\section{Gel-embedded droplets: rupture gate and fluid path}\label{sec:gel}
+Handoff priority 5 (can an internal event reach the receiver?). Benchmark B2.
+
+\subsection{Step G1 --- Pressure gates}
+\emph{Symbols.} $G$ shear modulus ($E=3G$ for an incompressible gel); $\sigma$ cavity tension; $a$ defect or
+droplet radius; $G_{\mathrm c}$ fracture energy. Two quasi-static thresholds (Barney et al.\ 2020, PNAS, Eqs.~3--4,
+verified; neo-Hookean cavity, penny-shaped crack). Before these thresholds,
+$p_{\mathrm{cav}},p_{\mathrm f}$ are gauge pressures (Pa), $E=3G>0$ Young's and shear moduli (Pa),
+$\sigma$ tension (N/m), $a>0$ defect radius (m), and $G_{\mathrm c}>0$ fracture energy (J/m$^2$):
+\begin{equation}
+p_{\mathrm{cav}}=\frac{5E}{6}+\frac{2\sigma}{a}=\frac{5G}{2}+\frac{2\sigma}{a},\qquad
+p_{\mathrm f}=\sqrt{\frac{\pi G_{\mathrm c}E}{3a}}=\sqrt{\frac{\pi G_{\mathrm c}G}{a}} .\label{eq:gates}
+\end{equation}
+The first is the unbounded-expansion pressure of the intact neo-Hookean host (the large-stretch limit of
+Finite-PFC E10, $5G/2$, plus capillarity); the second is the linear-elastic fracture initiation pressure.
+The elasto-fracture number $G_{\mathrm c}/(Ga)$ indicates which occurs first (large: elastic cavitation). With
+the adopted gauge scale $p_{\mathrm{sat}}(T_{\mathrm k})-\pinf\approx\PFPpsrcGaugeSix$\,MPa
+(6\,$\mu$m PFP), that scale lies
+above the elastic-cavitation threshold for the tabulated $G\le100$\,kPa controls, and above the fracture screen unless
+$G_{\mathrm c}\gtrsim10$\,J/m$^2$ at $G\ge20$\,kPa (Table~\ref{tab:gel}). Both are quasi-static, rate-independent
+screens. The saturation scale is not the source ceiling: the H5-conditioned spinodal expansion
+ceiling of Proposition~\ref{prop:psrc} is $\PFPpsrcSpinodalGauge$\,MPa gauge. Neither comparison
+proves that a trajectory exceeds a threshold or creates an aperture. High-rate strengthening is not included.
+
+\subsection{Step G2 --- A rigorous fracture-area ceiling}
+Griffith propagation requires the work $G_{\mathrm c}\,\dd A_{\mathrm c}$ per crack area. This work is part of the
+useful work $W_{\mathrm u}$, and all other reference contributions are assumed nonnegative at the
+end state, with no external work or prestress release outside the activated budget.
+Before the ceiling, $G_{\mathrm c}>0$ is fracture energy (J/m$^2$), $A_{\mathrm c}$ new crack area
+(m$^2$, using the same area convention as $G_{\mathrm c}$), $W_{\mathrm u},\Phia$ useful work and
+activated exergy (J), $a_{\mathrm c}>0$ slit half-width (m), and $h$ cover depth (m).
+The slit screen uses the adopted crack-area geometry $A_{\mathrm c}=2a_{\mathrm c}h$;
+alternate surface conventions must adjust both geometry and $G_{\mathrm c}$ consistently.
+By Eq.~\eqref{eq:Wua}:
+\begin{equation}
+G_{\mathrm c}A_{\mathrm c}\le W_{\mathrm u}\le\Phia\quad\Longrightarrow\quad A_{\mathrm c}\le\frac{\Phia}{G_{\mathrm c}},\qquad
+h\le\frac{\Phia}{2a_{\mathrm c}G_{\mathrm c}}\ \text{for a slit of half-width }a_{\mathrm c}\text{ through a cover }h .\label{eq:crack}
+\end{equation}
+This replaces the ``retained seed energy'' comparison that the finite-PFC review correctly rejected as a bound:
+$\Phia$ \emph{is} an upper bound on fracture work because it already accounts for every reference-state
+contribution (Step T1). For the 6\,$\mu$m PFP droplet $A_{\mathrm c}\le\crackAreaOne\,\mu$m$^2$ at
+$G_{\mathrm c}=1$\,J/m$^2$ and $\le\crackAreaHundred\,\mu$m$^2$ at $100$\,J/m$^2$; with $a_{\mathrm c}=a_0=3\,\mu$m a
+connected slit is energetically impossible through more than $\approx450\,\mu$m of cover at 1\,J/m$^2$ and
+$\approx4.5\,\mu$m at 100\,J/m$^2$. These are necessary, not sufficient, conditions.
+
+\input{generated/table_gel.tex}
+
+\subsection{Step G3 --- Dynamics in an intact gel}
+The spherical runs (Section~\ref{sec:km_results}) show that an intact 20\,kPa gel arrests the expansion of a
+6\,$\mu$m PFP droplet at $R=\gelArrestR\,\mu$m while two-phase, after which no violent collapse occurs; a 5\,kPa
+gel strongly attenuates the collapse of a 6\,$\mu$m droplet, but 12\,$\mu$m droplets and PFH droplets still collapse
+violently for fast condensation. Consequently, in an intact stiff gel the collapse-jet mechanism of
+Section~\ref{sec:jet} is unlikely to produce a fast jet; exterior transfer then depends on fracture and on a
+fluid-filled path, i.e.\ on $G_{\mathrm c}$, rate-dependent strength and cover depth, none of which is measured.
+A damaged region is not automatically a fluid channel (Finite-PFC Step 9). Directed jets inside or out of a gel
+are \textbf{not computed} here.

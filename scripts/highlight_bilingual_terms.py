@@ -578,7 +578,11 @@ def apply_to_course(root, report_path=None):
         def refs(soup):
             return [(n.name, n.get('href'), n.get('src'), n.get('id')) for n in soup.find_all(['a', 'img', 'link', 'script']) if not n.get('href', '').endswith('bilingual-terms.css')]
         assert refs(before) == refs(after), path
-        assert highlight_html(result) == result, f'Non-idempotent highlight: {path}'
+        # Match the course localizer's serialization before writing or hashing.
+        # This keeps subsequent localization passes byte-identical.
+        result = str(after)
+        repeated = str(BeautifulSoup(highlight_html(result), 'html.parser'))
+        assert repeated == result, f'Non-idempotent highlight: {path}'
         marks = after.select('.technical-term')
         assert not after.select('.technical-term .technical-term'), path
         counts = Counter(n['data-term'] for n in marks)

@@ -1,0 +1,112 @@
+{
+  "schema": "stage3_report_math_review_v1",
+  "scope": "New authored LaTeX mathematics/setup/events/claim qualifications only; no new upstream or arithmetic recomputation",
+  "reviewer": "acceptance_expert",
+  "source": "report/STAGE3_ENGINEERING_REPORT.tex",
+  "reviewed_source_sha256": "48902950d0415a01dfb9f4eb37b9e2afa68b805cd9b0d7ad6a3d961792da4f85",
+  "status": "PASS_WITH_QUALIFICATIONS",
+  "strict_scientific_verdict": "NOT_RESOLVED",
+  "waivers_reset": false,
+  "checks": [
+    {
+      "id": "M1",
+      "status": "PASS",
+      "description": "All-water superlevel inequality: nonnegative measure restriction, component bound, threshold bound, positive-mass division, nonnegative square root and uniform supremum bound; no attainment inferred"
+    },
+    {
+      "id": "M2",
+      "status": "PASS",
+      "description": "Linear acoustic contact algebra: nonzero impedance denominator, interface velocity, pressure elimination, rigid/equal/free-surface limits; explicitly linear premise and noncertified high-Mach PFC substitution"
+    },
+    {
+      "id": "M3",
+      "status": "PASS",
+      "description": "Rayleigh chain rule on monotone positive-radius collapse, initial-rest extension, product rule, definite integration and transformed-equation substitution; dimensional/endpoint/singular-limit checks"
+    },
+    {
+      "id": "M4",
+      "status": "PASS",
+      "description": "Problem inputs, coordinate signs, same-model stand-off, whole-water and disk-window event definitions preserved; no nominal horizon substitution"
+    },
+    {
+      "id": "M5",
+      "status": "PASS",
+      "description": "EOS radius/source ceilings retained as source-only conditional evaluations; historical observer/tier differences and all18nulls retained"
+    },
+    {
+      "id": "M6",
+      "status": "PASS",
+      "description": "Allten red-team paragraphs correspond to independent review and missing quantities remain unestablished"
+    },
+    {
+      "id": "M7",
+      "status": "PASS",
+      "description": "Candidate0300.43ns/43steps and legacy028meta caveat; no beyond0.44ns or full-cycle inference"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "required_documentation_repair",
+      "status": "RESOLVED",
+      "description": "Six literal newline unit blocks print extra italic m (kg,m/s,MPa) because TeX rm escaped through carriage return. Replace with explicit mathrm unit tokens.",
+      "resolution": "Specialist source correction verified narrowly from disk; unchanged premise/algebra."
+    },
+    {
+      "id": "F2",
+      "severity": "required_documentation_repair",
+      "status": "RESOLVED",
+      "description": "Seven physical integrals show comma immediately before measure instead of thin spacing. Replace with backslash-comma dV/dr/dt without changing objective formulas.",
+      "resolution": "Specialist source correction verified narrowly from disk; unchanged premise/algebra."
+    },
+    {
+      "id": "F3",
+      "severity": "required_symbol_contract_repair",
+      "status": "RESOLVED",
+      "description": "Generic spherical-cutoff radius reuses R_m already defined for current same-model activated-droplet free-field radius. Rename illustrative sphere radius only to R_s; retain original stand-off R_m.",
+      "resolution": "Specialist source correction verified narrowly from disk; unchanged premise/algebra."
+    }
+  ],
+  "source_records": [
+    "inputs/full_closure/PROBLEM_STATEMENT.md",
+    "inputs/conditional_termtex/CONDITIONAL_SOLUTION.md",
+    "inputs/conditional_termtex/verification.json",
+    "inputs/conditional_termtex/resources/evidence/04_thermo.tex",
+    "inputs/expert_resolution/data/envelope_rows.json",
+    "review/INDEPENDENT_REVIEW.md"
+  ],
+  "limitations": [
+    "No physical EOS validation, new solver run, refined observer history, certificate or actual device inference",
+    "Every-page visual QA belongs to report_pdf; this is semantic/math source review"
+  ],
+  "initial_reviewed_source_sha256": "31a7b5236cad009f58ce41ebe590d3c4eae7a209a5d835b65fd0bca7b9f174f4",
+  "repair_confirmation": {
+    "corrupted_unit_blocks": 0,
+    "unescaped_comma_measures": 0,
+    "isolated_radius": "R_s",
+    "accepted_standoff_radius": "R_m",
+    "math_recompute_repeated": false,
+    "scope": "Only three original repairs rechecked; no upstream audit or source changes by reviewer"
+  },
+  "previous_reviewed_source_sha256": "35099953d02aba6dbabd5fb66bb6e05ca497d7220863db3ee8ceeb78363fb0a8",
+  "final_typography_reconciliation": {
+    "status": "PASS",
+    "source_bytes": 48750,
+    "previous_bytes": 48739,
+    "reverse_edit_sha256": "35099953d02aba6dbabd5fb66bb6e05ca497d7220863db3ee8ceeb78363fb0a8",
+    "changes": [
+      {
+        "before": "\\input{generated/claim_table.tex}",
+        "after": "{\\small\\input{generated/claim_table.tex}}",
+        "purpose": "table font size"
+      },
+      {
+        "before": "\\path{python scripts/build_report.py}",
+        "after": "\\texttt{python scripts/build\\_report.py}",
+        "purpose": "preserve visible command space/underscore"
+      }
+    ],
+    "proof": "Reversing only these two exact substitutions in memory reconstructs previously reviewed source byte-for-byte by SHA256; all equations and scientific text unchanged",
+    "math_audit_repeated": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "stage2_preregistration_amendment_v1",
+  "amendment_id": "STAGE2_PREREG_AMENDMENT_004_PILOT_TOOLCHAIN_FREEZE",
+  "recorded_local_date": "2026-10-14",
+  "parent_preregistration_sha256": "40a37b2667941f2237ce26620caf145a3cad2e0497d3c15ad041fa37a137a67f",
+  "preceding_build_amendment": {
+    "path": "verification/STAGE2_PREREG_AMENDMENT_003_LINUX_TMP_BUILDER.json",
+    "sha256": "9eb9377072161b8280e8103bbbe2d26110c02b015d79b878e4591fd13f44e082",
+    "build_script_sha256": "b173d87cf08be491d388af7ba0b6a5f0c99e2736990e934882297a8639a56c36",
+    "build_status": "SUCCESS; BUILD ONLY; NO SIMULATION LAUNCHED"
+  },
+  "changes": "Freezes the actual Linux-built qcc and candidate028-lineage pilot executable, source/input binding check, compiler identity, and the already frozen pilot runner before its first execution. The scientific model, declared 018-028 assumptions, parameters, scope, and engineering-only interpretation are unchanged.",
+  "pilot": {
+    "case_id": "AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001",
+    "species": "PFP",
+    "alpha_c": 0.3,
+    "initial_cavity_height_m": 3.2e-5,
+    "same_model_free_field_R_m": "UNRESOLVED; this diagnostic case is excluded from gamma-qualified coverage and objective envelopes until same-model R_m is established.",
+    "gamma": "UNRESOLVED; do not assign a qualified gamma.",
+    "domain_length_m": 1.28e-4,
+    "inner_mesh_level": 4,
+    "outer_mesh_level": 8,
+    "fine_radius_m": 8.0e-6,
+    "end_time_s": 2.0e-8,
+    "maximum_step_s": 1.0e-11,
+    "cfl": 0.2,
+    "exact_argument_vector": [
+      "PFP",
+      "input/cold_energy_N1025.bin",
+      "386.48623647227214",
+      "1.8337513994824743e-13",
+      "3.3495599259759347e-06",
+      "0.000128",
+      "3.2e-05",
+      "4",
+      "8",
+      "8e-06",
+      "0.3",
+      "2e-08",
+      "1e-11",
+      "0.2",
+      "1"
+    ],
+    "interpretation": "STAGE2_LOOSENED engineering diagnostic only. It is not an activation-to-rebound objective result, production qualification, or certified maximum. Retain missing events and early termination as failed/incomplete; do not substitute synthetic evidence."
+  },
+  "identity": {
+    "preregistration_path": "verification/STAGE2_PREREGISTRATION_002_LOOSENED_PILOT.json",
+    "preregistration_sha256": "40a37b2667941f2237ce26620caf145a3cad2e0497d3c15ad041fa37a137a67f",
+    "source_binding_manifest_path": "verification/STAGE2_PILOT_SOURCE_BINDINGS_001.json",
+    "source_binding_manifest_sha256": "7192224f58dc300250c09ab93faa413d89098be8619d3617a6f47161e6c09fd4",
+    "source_bindings_checked": 83,
+    "source_binding_mismatches": 0,
+    "input_path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/input/cold_energy_N1025.bin",
+    "input_sha256": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2",
+    "main_source_path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/axisymmetric_activation_core_candidate028.c",
+    "main_source_sha256": "a8224c0f893b3882348907575d76fe88a935d14694b421954610ba0ab606c5a5",
+    "simulation_path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/simulation",
+    "simulation_sha256": "27beffe3b107ba5c37d833d42f46241e0d722052030e3beb4b479d21abf412bc",
+    "qcc_path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/qcc",
+    "qcc_sha256": "0fefc45538c67727deb666452731d686bf38fb78c94f9d1daf60b997eed80fb5",
+    "qcc_source_sha256": "c1109463ef8702c033b53243c126f85b933976f86c99ef52123c0a1cb6949335",
+    "basilisk_archive_sha256": "de851a91712aa83b0592e1e1ae8f7d7e2ffe1ade0266433434700f8c313fbed4",
+    "gcc_version": "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+    "gcc_sha256": "6cb2d84ccd9fd3485d4e47ba032e626be65692601c38fad46866a6b565f3100f",
+    "glibc": "2.31",
+    "qcc_compile_exit_status": 0,
+    "compile_notes": "Build succeeded. Compiler emitted existing Basilisk goto-safety and unused-code warnings; no compiler error. Full stderr is retained beside the executable."
+  },
+  "runner": {
+    "path": "verification/stage2_loosened_run_028_pilot_001.sh",
+    "sha256": "20bfc804c123e2e92c91f0ec4f3ec5185944aceac1bb057a947e32e2539aa560",
+    "runner_requires_preregistration_toolchain_simulation_and_input_hashes": true
+  },
+  "simulation_runs_since_parent_freeze": 0,
+  "pre_run_freeze": true,
+  "stage_boundary": {
+    "stage1_status": "CLOSED_LOOSENED",
+    "stage2_status": "STAGE2_LOOSENED_PILOT_READY_TO_RUN",
+    "stage3_started": false
+  }
+}

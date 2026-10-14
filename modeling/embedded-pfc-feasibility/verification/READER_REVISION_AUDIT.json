@@ -1,0 +1,366 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "static": {
+    "coverage": {
+      "REPORT.md": {
+        "blocks": 46,
+        "translated": 46
+      },
+      "DERIVATION.md": {
+        "blocks": 123,
+        "translated": 91
+      },
+      "IMPLEMENTATION_HANDOFF.md": {
+        "blocks": 24,
+        "translated": 24
+      },
+      "SOURCES.md": {
+        "blocks": 4,
+        "translated": 4
+      }
+    },
+    "displayed_equations": 32,
+    "equation_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25",
+      "E26",
+      "E27",
+      "E28",
+      "E29",
+      "E30",
+      "E31",
+      "E32"
+    ],
+    "equations_match_prior_archive": true,
+    "unchanged_protected_files": 90,
+    "missing_assets": [],
+    "translated_plot_geometry_unchanged": {
+      "size_species_comparison": 28,
+      "radial_viscosity_controls": 66,
+      "radial_stability": 74,
+      "fracture_budget": 35
+    },
+    "canonical_styles_identical": true,
+    "canonical_navigation_titles": true,
+    "canonical_chapter_wrappers": true,
+    "single_toolbar_outside_header": true
+  },
+  "browser": {
+    "appendix_entry_and_return": {
+      "language": "zh",
+      "theme": "dark",
+      "returnLink": "../../appendices/a-hydrogel-versus-liquid.html?lang=zh&theme=dark",
+      "sharedTheme": "dark"
+    },
+    "language_modes": [
+      {
+        "language": "bilingual",
+        "en": 175,
+        "zh": 174
+      },
+      {
+        "language": "en",
+        "en": 175,
+        "zh": 0
+      },
+      {
+        "language": "zh",
+        "en": 0,
+        "zh": 175
+      }
+    ],
+    "theme_states": [
+      "dark",
+      "light"
+    ],
+    "document_tabs": [
+      {
+        "visible": [
+          "comparison"
+        ],
+        "selectorHidden": false
+      },
+      {
+        "visible": [
+          "derivation"
+        ],
+        "selectorHidden": true
+      },
+      {
+        "visible": [
+          "handoff"
+        ],
+        "selectorHidden": true
+      },
+      {
+        "visible": [
+          "sources"
+        ],
+        "selectorHidden": true
+      }
+    ],
+    "selector_states_checked": 30,
+    "mobile_width": {
+      "viewport": 390,
+      "document": 390
+    },
+    "relocated_reader": {
+      "mode": "zh",
+      "states": 4,
+      "returnLink": "https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/appendices/a-hydrogel-versus-liquid.html?lang=zh&theme=light",
+      "brokenImages": [],
+      "math": 0
+    },
+    "language_persistence": true,
+    "canonical_typography_desktop": {
+      "body": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "29.7px",
+        "letterSpacing": "normal"
+      },
+      "h1": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "40.5px",
+        "fontWeight": "500",
+        "lineHeight": "49.41px",
+        "letterSpacing": "-1.0125px"
+      },
+      "chineseH1": {
+        "fontFamily": "\"Microsoft YaHei\", \"Noto Serif CJK SC\", SimSun, serif",
+        "fontSize": "28.8px",
+        "fontWeight": "500",
+        "lineHeight": "35.136px",
+        "letterSpacing": "-0.72px"
+      },
+      "topbar": {
+        "fontFamily": "system-ui, sans-serif",
+        "fontSize": "14.4px",
+        "fontWeight": "600",
+        "lineHeight": "21.6px",
+        "letterSpacing": "normal"
+      },
+      "paragraph": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "29.7px",
+        "letterSpacing": "normal"
+      },
+      "chineseParagraph": {
+        "fontFamily": "\"Microsoft YaHei\", \"Noto Serif CJK SC\", SimSun, serif",
+        "fontSize": "16.92px",
+        "fontWeight": "400",
+        "lineHeight": "27.918px",
+        "letterSpacing": "normal"
+      },
+      "h2": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "27.36px",
+        "fontWeight": "500",
+        "lineHeight": "33.3792px",
+        "letterSpacing": "normal"
+      },
+      "h3": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "20.7px",
+        "fontWeight": "500",
+        "lineHeight": "25.254px",
+        "letterSpacing": "normal"
+      },
+      "h4": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "21.96px",
+        "letterSpacing": "normal"
+      },
+      "table": {
+        "fontFamily": "system-ui, sans-serif",
+        "fontSize": "14.4px",
+        "fontWeight": "400",
+        "lineHeight": "20.88px",
+        "letterSpacing": "normal"
+      },
+      "code": {
+        "fontFamily": "monospace",
+        "fontSize": "15.3px",
+        "fontWeight": "400",
+        "lineHeight": "25.245px",
+        "letterSpacing": "normal"
+      },
+      "math": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "19.08px",
+        "fontWeight": "400",
+        "lineHeight": "31.482px",
+        "letterSpacing": "normal"
+      },
+      "katex": {
+        "fontFamily": "KaTeX_Main, math, \"Times New Roman\", serif",
+        "fontSize": "23.0868px",
+        "fontWeight": "400",
+        "lineHeight": "27.7042px",
+        "letterSpacing": "normal"
+      }
+    },
+    "canonical_typography_mobile": {
+      "body": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "26.4px",
+        "letterSpacing": "normal"
+      },
+      "h1": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "36px",
+        "fontWeight": "500",
+        "lineHeight": "43.92px",
+        "letterSpacing": "-0.9px"
+      },
+      "chineseH1": {
+        "fontFamily": "\"Microsoft YaHei\", \"Noto Serif CJK SC\", SimSun, serif",
+        "fontSize": "25.6px",
+        "fontWeight": "500",
+        "lineHeight": "31.232px",
+        "letterSpacing": "-0.64px"
+      },
+      "topbar": {
+        "fontFamily": "system-ui, sans-serif",
+        "fontSize": "12.8px",
+        "fontWeight": "600",
+        "lineHeight": "19.2px",
+        "letterSpacing": "normal"
+      },
+      "paragraph": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "26.4px",
+        "letterSpacing": "normal"
+      },
+      "chineseParagraph": {
+        "fontFamily": "\"Microsoft YaHei\", \"Noto Serif CJK SC\", SimSun, serif",
+        "fontSize": "15.04px",
+        "fontWeight": "400",
+        "lineHeight": "24.816px",
+        "letterSpacing": "normal"
+      },
+      "h2": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "24.32px",
+        "fontWeight": "500",
+        "lineHeight": "29.6704px",
+        "letterSpacing": "normal"
+      },
+      "h3": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "18.4px",
+        "fontWeight": "500",
+        "lineHeight": "22.448px",
+        "letterSpacing": "normal"
+      },
+      "h4": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "lineHeight": "19.52px",
+        "letterSpacing": "normal"
+      },
+      "table": {
+        "fontFamily": "system-ui, sans-serif",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "lineHeight": "18.56px",
+        "letterSpacing": "normal"
+      },
+      "code": {
+        "fontFamily": "monospace",
+        "fontSize": "13.6px",
+        "fontWeight": "400",
+        "lineHeight": "22.44px",
+        "letterSpacing": "normal"
+      },
+      "math": {
+        "fontFamily": "Georgia, \"Times New Roman\", \"Microsoft YaHei\", serif",
+        "fontSize": "14.72px",
+        "fontWeight": "400",
+        "lineHeight": "24.288px",
+        "letterSpacing": "normal"
+      },
+      "katex": {
+        "fontFamily": "KaTeX_Main, math, \"Times New Roman\", serif",
+        "fontSize": "17.8112px",
+        "fontWeight": "400",
+        "lineHeight": "21.3734px",
+        "letterSpacing": "normal"
+      }
+    },
+    "typography_matches_first_chapter": true,
+    "toolbar_desktop": {
+      "position": "fixed",
+      "right": 21.59375,
+      "bottom": 21.59375,
+      "left": 1199.546875,
+      "top": 932.359375,
+      "width": 203.859375,
+      "height": 46.046875,
+      "themeInside": true,
+      "languageInside": true,
+      "buttonCount": 2,
+      "selectCount": 0,
+      "headerControls": 0
+    },
+    "toolbar_mobile": {
+      "position": "fixed",
+      "right": 9.59375,
+      "bottom": 9.59375,
+      "left": 137.21875,
+      "top": 793.25,
+      "width": 243.1875,
+      "height": 41.15625,
+      "themeInside": true,
+      "languageInside": true,
+      "buttonCount": 2,
+      "selectCount": 0,
+      "headerControls": 0
+    },
+    "screenshots": [
+      "embedded-reader-bilingual-day.png",
+      "embedded-reader-chinese-night.png",
+      "embedded-reader-derivation-night.png",
+      "embedded-reader-mobile.png",
+      "embedded-reader-size_species_comparison-chinese.png",
+      "embedded-reader-radial_viscosity_controls-chinese.png",
+      "embedded-reader-radial_stability-chinese.png",
+      "embedded-reader-fracture_budget-chinese.png"
+    ]
+  },
+  "simulations_rerun": false
+}

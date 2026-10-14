@@ -1,0 +1,152 @@
+{
+  "schema": "stage3_loosened_writeup_preregistration_v1",
+  "id": "STAGE3_PREREGISTRATION_001_LOOSENED_WRITEUP",
+  "recorded_utc": "2026-10-13T20:03:39.8337548Z",
+  "status": "FROZEN_BEFORE_STAGE3_PROCESSING_OR_BUILD",
+  "entry_verification": {
+    "path": "verification/STAGE2_LOOSENED_CLOSE_VERIFY_STAGE3_ENTRY_20261014_002.json",
+    "sha256": "17c6d3842036ff77cf12e77085db1b4bb820541349d35ff27c1ec2855ddbc548",
+    "verdict": "ACCEPTED_LOOSENED_CLOSE_SIX_CANDIDATE030_HASHES_MATCH"
+  },
+  "inherited_stage_status": {
+    "stage1": "CLOSED_LOOSENED",
+    "stage2": "STAGE2_LOOSENED_CLOSED",
+    "strict_acceptance_pass": false,
+    "model_identity": "candidate030; soft-pass stack 018-030",
+    "waivers": [
+      "Full-cycle pilot to impact/first volume minimum/rebound and 20 ns horizon",
+      "108-case coverage and all 18 objectives",
+      "Same-model free-field R_m and gamma qualification",
+      "PFH route",
+      "Registered whole-water quantile and wall-pressure disk/window observers",
+      "Hold-outs, refinement, and global certificate suite",
+      "Production C4 without inherited soft-passes"
+    ]
+  },
+  "scope": {
+    "plan_sections": [
+      "S8 write-up",
+      "S9 review and delivery"
+    ],
+    "purpose": "Documentation and packaging of conditional engineering evidence for later experimental reference",
+    "species": [
+      "PFP",
+      "PFH"
+    ],
+    "gamma_domain": "[1.25,infinity)",
+    "alpha_c_domain": "[0,1]",
+    "whole_water_mass_pg": [
+      1,
+      3,
+      10,
+      30,
+      100
+    ],
+    "pressure_disk_radius_um": [
+      2,
+      10
+    ],
+    "pressure_window_ns": [
+      2,
+      20
+    ],
+    "same_model_Rmax_standoff_definition": "Inherited unchanged; current diagnostic gamma remains unresolved without same-model free-field R_m",
+    "new_solver_simulations_planned": false,
+    "completed_upstream_research_repeated": false
+  },
+  "bound_model_files": [
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/simulation",
+      "expected_sha256": "446d68a329389bc2a1f63b2c7bcacf39f525c5eaaff44998379a78b6e6f6db01",
+      "actual_sha256": "446d68a329389bc2a1f63b2c7bcacf39f525c5eaaff44998379a78b6e6f6db01",
+      "status": "MATCH"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/closure_geometric_advection.h",
+      "expected_sha256": "17e6c4d34fb67f89c6e1856e167d8215e08ad5e9b9db1920ef2766872779485b",
+      "actual_sha256": "17e6c4d34fb67f89c6e1856e167d8215e08ad5e9b9db1920ef2766872779485b",
+      "status": "MATCH"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/nonlocal_thermal_integrator.h",
+      "expected_sha256": "5bde04a5dbb3068f2f359b038a08429149af0373efc129d6e0fa9c55304bed9d",
+      "actual_sha256": "5bde04a5dbb3068f2f359b038a08429149af0373efc129d6e0fa9c55304bed9d",
+      "status": "MATCH"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/coupled_thermal_bridge.c",
+      "expected_sha256": "f3e089f56f5af49154a5239800f40c336ee9df2be298e0999bafed326f387b07",
+      "actual_sha256": "f3e089f56f5af49154a5239800f40c336ee9df2be298e0999bafed326f387b07",
+      "status": "MATCH"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/axisymmetric_activation_core_candidate030.c",
+      "expected_sha256": "f8da754d9b1b5a4198c2a703866c98e225eaefe9f214e08643060b16545f1413",
+      "actual_sha256": "f8da754d9b1b5a4198c2a703866c98e225eaefe9f214e08643060b16545f1413",
+      "status": "MATCH"
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/input/cold_energy_N1025.bin",
+      "expected_sha256": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2",
+      "actual_sha256": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2",
+      "status": "MATCH"
+    }
+  ],
+  "transferred_output_snapshots": [
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv",
+      "sha256": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+      "interpretation": "Transferred static snapshot; no completed full-cycle trajectory implied."
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/meta.json",
+      "sha256": "5528e25753aee331d179e1d06c3ade28ae1a5608002a73103f0262d10b3c0463",
+      "interpretation": "Transferred static snapshot; no completed full-cycle trajectory implied."
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/pilot_run_meta.txt",
+      "sha256": "0315a4ff9eab8b3f22f29d97db02e70b92d493cfb45cfba3ca213ab6004d28c9",
+      "interpretation": "Transferred static snapshot; no completed full-cycle trajectory implied."
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/simulation.stderr.raw",
+      "sha256": "9807ccb9b518ff85ebe56cdaf6dffaf8b9595ffe488f8cae0202b2ebe3959c34",
+      "interpretation": "Transferred static snapshot; no completed full-cycle trajectory implied."
+    }
+  ],
+  "planned_deliverables": [
+    "Source-bound results/status ledger",
+    "Engineering final answer and explicit absent objectives/certificates",
+    "LaTeX report with inherited ceiling route preserved and traceable",
+    "Internal review distinguishing measured PASS, waived gates, failed gates, and uncompleted checks",
+    "README and self-contained reproducible delivery package"
+  ],
+  "claim_policy": [
+    "Never invent objective values, maximizing designs, zero-fill failed/undefined objectives, or infer bounds from sampled values",
+    "Preserve Stage2 exit waivers without converting them into scientific passes",
+    "No certified PFC maximum or actual-device maximum unless corresponding evidence passes applicable gates",
+    "Live pilot snapshots are partial diagnostics; do not claim completion or passage beyond a failure time without actual records",
+    "Preserve historical failures and originals; use new-named artifacts"
+  ],
+  "certificate_targets": {
+    "velocity_gap": 0.05,
+    "pressure_gap": 0.1,
+    "numerical_error_fraction_of_epsilon": 0.3333333333333333,
+    "domain_sensitivity_fraction_of_epsilon": 0.1,
+    "status": "Targets inherited; no Stage2 objective/certificate evidence exists to establish them"
+  },
+  "review_plan": [
+    "Trace every reported numerical value to frozen source records and units",
+    "Check scope, waiver inventory, and claim strength",
+    "Compile and visually inspect all report pages",
+    "Relocation rebuild and archive integrity review at delivery",
+    "Report actual outcomes; never manufacture strict PASS"
+  ],
+  "omitted_assets": {
+    "fields_csv": "Live-growing external file omitted; not needed for entry or documentation of available evidence; require a frozen source-bound snapshot if future field analysis is authorized",
+    "debug_binaries": "Not needed for current write-up"
+  },
+  "amendment_rule": "Freeze and log a new amendment before affected computation if scope, model, inputs, observer processing, source evidence, or interpretation changes",
+  "next_work": "Extract static history diagnostics into a provenance ledger; initialize Stage3 evidence-status write-up",
+  "stage3_complete": false
+}

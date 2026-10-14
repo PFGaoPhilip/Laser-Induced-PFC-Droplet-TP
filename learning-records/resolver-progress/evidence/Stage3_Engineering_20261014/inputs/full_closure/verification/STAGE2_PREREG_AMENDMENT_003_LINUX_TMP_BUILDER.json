@@ -1,0 +1,30 @@
+{
+  "schema": "stage2_preregistration_amendment_v1",
+  "amendment_id": "STAGE2_PREREG_AMENDMENT_003_LINUX_TMP_BUILDER",
+  "recorded_local_date": "2026-10-14",
+  "parent_preregistration_sha256": "40a37b2667941f2237ce26620caf145a3cad2e0497d3c15ad041fa37a137a67f",
+  "prior_amendment": {
+    "path": "verification/STAGE2_PREREG_AMENDMENT_002_NOSPACE_BUILDER.json",
+    "sha256": "d87f8650ec75b8651da186d8051d2bf5da2f753ebe2a100b2b7af6a881e9aabd",
+    "disposition": "Builder 002 failure is retained; its /tmp symlink resolved to the project path containing spaces."
+  },
+  "changes": "Build procedure only. Model source, Stage2 scope, pilot physics, runtime inputs, and outcome claims are unchanged.",
+  "failed_attempt": {
+    "record": "verification/STAGE2_TOOLCHAIN_BUILD_FAILURE_002.md",
+    "sha256": "3eb4780311e7666eef39c75e2cf834f5d6b14594bf4fa9e3f1370e80c5cd2c39",
+    "status": "BUILD_FAILED_BEFORE_SIMULATION",
+    "cause": "GNU make resolved the project-local /tmp symlink to the physical workspace path containing spaces; compiler arguments were split."
+  },
+  "replacement_build_script": {
+    "path": "verification/stage2_loosened_build_028_local_003_linux_tmp.sh",
+    "sha256": "b173d87cf08be491d388af7ba0b6a5f0c99e2736990e934882297a8639a56c36",
+    "method": "Copy the bound source/input bundle into Linux /tmp, extract the unchanged archived Basilisk source there, build qcc and the candidate028-lineage executable entirely on the Linux filesystem, then copy build products and logs to the registered pilot folder. No symlinks, admin installation, or simulation execution."
+  },
+  "source_archive_sha256": "de851a91712aa83b0592e1e1ae8f7d7e2ffe1ade0266433434700f8c313fbed4",
+  "simulation_runs_since_parent_freeze": 0,
+  "stage_boundary": {
+    "stage1_status": "CLOSED_LOOSENED",
+    "stage2_status": "STAGE2_LOOSENED_PILOT_BUILD_PRE_RUN",
+    "stage3_started": false
+  }
+}

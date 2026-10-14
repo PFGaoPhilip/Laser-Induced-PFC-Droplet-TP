@@ -1,0 +1,63 @@
+{
+  "schema": "stage2_preregistration_amendment_v1",
+  "amendment_id": "STAGE2_PREREG_AMENDMENT_001_HISTORICAL_FAILURE",
+  "recorded_utc": "2026-10-14",
+  "purpose": "Classify one pre-freeze historical failure found during the readiness audit. This amendment does not change campaign scope, case design, acceptance, or run eligibility.",
+  "frozen_parent_preregistration_sha256": "3375a081f86fac5d5a21b5700787497db7f3f7985699b1e517d2d09724d207a3",
+  "case_register_sha256": "edb3c77c2a0536e5454c07c7dba0a7c5499033563c36fdb17392ad99ca052f5c",
+  "campaign_runs_authorized_or_started_since_freeze": 0,
+  "historical_attempt": {
+    "path": "runs/AXI_PFP_global_refusal_stage2_attempt003",
+    "started_utc": "2026-10-12T12:01:38Z",
+    "finished_utc": "2026-10-12T12:02:12Z",
+    "classification": "Pre-freeze exploratory/incomplete engineering diagnostic; not a preregistered S6-S7 campaign case and excluded from objectives, maxima, holdouts, coverage, and certification.",
+    "purpose": "Frozen100fs incomplete AXI phase/interfaceheat/advection/combinedcapillarypressure join; no physical transport/G4/optimum",
+    "status": "FAILED",
+    "exit_code": 92,
+    "observed_failure": "At t=0, zero accepted macrosteps; rejected trial status 92; rollback restored scalar, geometry, and statistics state; final physical_domain_status=92. The archived log does not identify a more specific root cause. No resolver defect is asserted.",
+    "inputs": {
+      "source": "axisymmetric_activation_core.c",
+      "source_sha256": "3deeebd2530046719ed681bb40549ade46aaf0f900add22bc05af3a663bf7966",
+      "invocation_sha256": "b751aec24a0067325be28d63631c5107a2290869d16f3fffca2a04e22fca3f30",
+      "initial_water_state": "data/water_mg/prototype001/cold_energy_N1025.bin",
+      "initial_water_state_sha256": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2",
+      "run_arguments": [
+        "PFP",
+        "cold_energy_N1025.bin",
+        386.48623647227214,
+        1.8337513994824743e-13,
+        3.3495599259759347e-06,
+        0.000128,
+        3.2e-05,
+        4,
+        8,
+        8e-06,
+        0.3,
+        1e-13,
+        1e-14,
+        0.2,
+        1,
+        2
+      ]
+    },
+    "outputs": {
+      "meta_json_sha256": "47ff3cf65fa7a597bc94a1ee73aeb5af6a41f9d5508ebe0dde2011c5a5b6af4f",
+      "solver_log_sha256": "599115504e1d6b17d6f210a9bf50ebd22fbb151c69610f37d6a4ef39856eb279",
+      "fields_csv_sha256": "784cdecbe59b271a9a555bb70a9665500adaecfa84290c0867391db4a593078a",
+      "history_csv_sha256": "427bbe2fda4ff231c7258a63d3681411cac2e05621ca3bee2294a3a0c586b709",
+      "simulation_binary": "Not retained in the archived attempt directory; hash unavailable."
+    },
+    "limitations": [
+      "The archived attempt identifies itself as an incomplete phase/interface-heat/advection/combined-capillary-pressure join with no physical transport, G4, or optimum.",
+      "It is not the selected candidate028 source/build and cannot supply Stage2 objective observations.",
+      "The status code and rollback are preserved; the underlying status-92 cause remains unresolved.",
+      "This is historical, not a new failure produced by Stage2 work. No local repair or Expert transfer is initiated."
+    ]
+  },
+  "stage_boundary": {
+    "stage1_status": "CLOSED_LOOSENED",
+    "stage2_preregistration_status": "FROZEN_PLAN_EXECUTION_PREREQUISITES_UNRESOLVED",
+    "stage2_campaign_runs_since_freeze": 0,
+    "stage3_started": false
+  }
+}

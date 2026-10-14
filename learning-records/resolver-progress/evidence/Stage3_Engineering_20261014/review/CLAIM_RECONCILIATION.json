@@ -1,0 +1,356 @@
+{
+  "schema": "stage3_root_claim_reconciliation_v1",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "independent_arithmetic",
+      "status": "PASS",
+      "details": {
+        "checks": 239,
+        "maximum_relative_discrepancy": 7.270960063791253e-14,
+        "meaning": "Stored-input arithmetic agreement, not scientific feasibility."
+      }
+    },
+    {
+      "id": "ten_exact_input_allowances",
+      "status": "PASS",
+      "details": {
+        "compared": 10,
+        "independent_source": "Independent reviewer computes from original E thermo table; root builder uses accepted_preparation copy."
+      }
+    },
+    {
+      "id": "historical_rows_and_tiers",
+      "status": "PASS",
+      "details": {
+        "groups": 10,
+        "interpretation": "Max of stored historical group only, never a continuous or current-model optimum."
+      }
+    },
+    {
+      "id": "all_eighteen_objectives_remain_null",
+      "status": "PASS",
+      "details": {
+        "slots": 18,
+        "fields": [
+          "value",
+          "attained_lower",
+          "global_upper",
+          "maximizing_design",
+          "numerical_error",
+          "domain_sensitivity",
+          "certificate_gap"
+        ]
+      }
+    },
+    {
+      "id": "ledger_sources_match_bytes",
+      "status": "PASS",
+      "details": [
+        {
+          "path": "inputs/full_closure/PROBLEM_STATEMENT.md",
+          "record": "P02-P06 and event amendment002",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_U_1pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_U_3pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_U_10pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_U_30pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_U_100pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_P_2um_2ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_P_2um_20ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_P_10um_2ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFP_P_10um_20ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_U_1pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_U_3pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_U_10pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_U_30pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_U_100pg]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_P_2um_2ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_P_2um_20ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_P_10um_2ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+          "record": "objective_results[id=PFH_P_10um_20ns]",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFP.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFP.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFP.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFP.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFP.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFH.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFH.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFH.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFH.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "fluids.PFH.activated_budget.Phi_J",
+          "matches": true
+        },
+        {
+          "path": "inputs/conditional_termtex/verification.json",
+          "record": "numericalChecks",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[2].U",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[19].U",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[16].U",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[19].p_h",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[2].p_rec",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[33].U",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[29].U",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[32].U",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[29].p_h",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/envelope_rows.json",
+          "record": "[20].p_rec",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+          "record": "B. Stage2 exit-gate waivers",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/verification/STAGE2_PILOT_FAILURE_001.md",
+          "record": "Exact failure",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/verification/STAGE2_PREREG_AMENDMENT_006_CANDIDATE030.json",
+          "record": "parent_failure",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/data/accepted_preparation.json",
+          "record": "all accepted preparation fields",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+          "record": "fluids.PFP.p_relax_spinodal",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+          "record": "fluids.PFP.droplet_table[d0_um=6].R_bound_exergy_m",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+          "record": "fluids.PFH.p_relax_spinodal",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+          "record": "fluids.PFH.droplet_table[d0_um=6].R_bound_exergy_m",
+          "matches": true
+        },
+        {
+          "path": "inputs/expert_resolution/data/receiver_table.json",
+          "record": "rho0,c_tait,n,B,Z_water",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/verification/STAGE1_CANDIDATE028_VERIFIED_LOOSENED_ACCEPTANCE_20261014.json",
+          "record": "soft_pass_inventory",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/verification/STAGE2_PREREG_AMENDMENT_005_CANDIDATE029.json",
+          "record": "repair.soft_passes_added",
+          "matches": true
+        },
+        {
+          "path": "inputs/full_closure/verification/STAGE2_PREREG_AMENDMENT_006_CANDIDATE030.json",
+          "record": "repair.soft_passes",
+          "matches": true
+        },
+        {
+          "path": "review/INDEPENDENT_RECOMPUTE.json",
+          "record": "candidate030_diagnostics; checks; max_arithmetic_relative_difference",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "final_answer_numeric_table_rounding",
+      "status": "PASS",
+      "details": {
+        "unmatched_ids": [],
+        "rounding": "Two decimal places from ledger; original T illustrated values stated separately."
+      }
+    },
+    {
+      "id": "original_ceiling_examples_preserved",
+      "status": "PASS",
+      "details": {
+        "source": "inputs/conditional_termtex/verification.json numericalChecks",
+        "input_rounding_explicit": true
+      }
+    },
+    {
+      "id": "candidate030_claim_boundary",
+      "status": "PASS",
+      "details": {
+        "raw_record_line": 432,
+        "no_completion_or_progress_inferred": true
+      }
+    },
+    {
+      "id": "original_science_claim_strength",
+      "status": "PASS",
+      "details": {
+        "maxima_null": true,
+        "waiver_is_not_pass": true,
+        "claim_scan_method": "Contextual root review with source/rounding checks; not a forbidden-word-only scan."
+      }
+    }
+  ],
+  "root_review_notes": [
+    "Independently reviewed reviewer algebra: rho*pi*a^2*L, sqrt(2E/m), impedance limits, Tait mass/momentum compression-ratio equation and historical spreading arithmetic; these are computations in adopted models, not validated shock/wall pressures.",
+    "The original507-file tree claim is assessed separately in PRESERVATION.json; no scientific acceptance upgrade.",
+    "No current full-trajectory exergy residual can be reconstructed from bulk_energy alone; certificate review remains NOT_RUN."
+  ]
+}

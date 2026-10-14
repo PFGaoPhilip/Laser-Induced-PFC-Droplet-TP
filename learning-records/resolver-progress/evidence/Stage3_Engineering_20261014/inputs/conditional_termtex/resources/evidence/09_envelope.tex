@@ -1,0 +1,97 @@
+% ---------------------------------------------------------------------------
+\section{Conditional ceilings, sampled envelope and attainability}\label{sec:envelope}
+\subsection{Hierarchy}
+Handoff priority 7 asks to distinguish rigorous ceilings, reachable predictions, sampled maxima and a global
+supremum. Table~\ref{tab:envelope} does this for benchmark B1; Fig.~\ref{fig:envelope} shows the mass-resolved
+picture.
+\begin{description}[leftmargin=0.6cm]
+\item[R --- rigorous conditional ceilings] Energy, cavity volume and fracture ceilings require the
+stable dead-state, nonnegative residual contributions and no useful-work input of H3--H4:
+jet kinetic energy and total useful work $\le\Phia$, cavity volume $\le V^*$, fracture area
+$\le\Phia/G_{\mathrm c}$. The expansion source ceiling
+$p_b\le p_{\mathrm{eq}}(u_{\mathrm{sp}},v_{\mathrm{sp}})$ additionally requires H0, H2, H5 and the
+EOS sign conditions of Proposition~\ref{prop:psrc}; H5 is not proved for the non-equilibrium HKS route.
+The cavity bound is nearly sharp in the declared spherical control: the inviscid, tension-free
+simulation reaches the cavity-radius ceiling to within $\PFPRsharpDyn$\% (PFP) and $\PFHRsharpDyn$\% (PFH).
+\item[P --- reduced-model predictions] Verified/benchmarked components with explicit closures give expansion,
+internal microjet speeds and profile masses at each \emph{sampled} stand-off. Largest samples and trends
+do not establish a continuous supremum, even when the observed samples increase with $\gamma$.
+Sampling, numerical refinement, closure, viscosity and compressibility uncertainties remain distinct.
+\item[E --- estimates] mixed-contact pressure scales, receiver pressures from Eq.~\eqref{eq:prec},
+screen interpolations and out-of-screen incompressible extrapolations.
+\item[U --- unresolved] listed in Section~\ref{sec:validity}.
+\end{description}
+\input{generated/table_envelope.tex}
+
+\subsection{The answer for benchmark B1}
+\begin{benchmark}[Sampled envelope, B1]\label{prop:B1}
+For one fully and homogeneously activated 6\,$\mu$m droplet in water near a rigid receiver
+($1.25\le\gamma\le4$), using the adopted incompressible working screen $U\le0.3c_{\mathrm w}$
+(a modelling cutoff, not an error certificate):
+\begin{enumerate}[leftmargin=*]
+\item under H0, H2, H4, H5 and the EOS sign conditions, the cavity \emph{expansion} pressure is at most
+$\PFPpsrcSp$\,MPa (PFP) or $\PFHpsrcSp$\,MPa (PFH) absolute \textup{[R, conditional]};
+the assumed equilibrium relaxation pressures are $\PFPprelaxSix$ / $\PFHprelaxSix$\,MPa \textup{[P]};
+\item for the sampled slow-condensation closures (frozen and KM $\alpha_{\mathrm c}=0.1$), the largest sampled speeds are
+$\PFPenvSlowUmax$\,m/s (PFP) and $\PFHenvSlowUmax$\,m/s (PFH) \textup{[P]};
+\item fast-condensation samples (KM $\alpha_{\mathrm c}=1$ or isothermal equilibrium) straddle the
+incompressible screen $\Ulim$\,m/s. Log-linear interpolation gives model-screen locations
+$\gamma\approx\PFPcrossIsog$ for PFP isoeq and $\PFHcrossIsog$ for PFH isoeq,
+with interpolated profile masses $\approx\PFPcrossIsomj$ and $\PFHcrossIsomj$\,pg.
+These are reduced-model interpolation estimates; they do not establish a physical
+$U_{\mathrm j,\max}\ge\Ulim$ lower bound or an optimum of the continuous design set.
+Out-of-screen incompressible values at $\gamma=4$ are $\PFPenvOverMach$\,m/s (PFP) and
+$\PFHenvOverMach$\,m/s (PFH) \textup{[E, extrapolation]}, while the largest sampled in-screen speeds
+are $\PFPenvUmax$\,m/s (PFP) and $\PFHenvUmax$\,m/s (PFH) \textup{[P]};
+\item the jet carries $\PFPenvEfmin$--$\PFPenvEfmax$\% (PFP) and $\PFHenvEfmin$--$\PFHenvEfmax$\% (PFH) of the activation
+exergy, inside the rigorous ceiling $K_{\mathrm j}\le\Phia$ \textup{[R]}; at the jet mass of the fastest case ($\PFPenvMaxmj$\,pg) the energy
+mass-averaged ceiling would allow $\PFPenvMaxUceil$\,m/s. This is a permissive energetic comparison,
+not a bound on the far-pole speed without its profile; the simulated kinetic energy is below the budget;
+\item the local liquid--liquid hammer pressure at jet impact reaches $\PFPenvPhMax$\,MPa (PFP) and $\PFHenvPhMax$\,MPa
+(PFH) among the sampled admissible cases in the mixed nonlinear/linear contact estimate;
+substitution of the model screen into that closure gives $\approx\phUlim$\,MPa
+\textup{[E, adopted contact scale]}, not an observed pressure.
+The release-time estimate is $\approx\PFPenvMaxtrel$\,ns over a jet radius of $\approx\PFPenvMaxaj\,\mu$m; the pressure
+reaching the receiver is of order $\PFPenvPrecMin$--$\PFPenvPrecMax$\,MPa (PFP) and $\PFHenvPrecMin$--$\PFHenvPrecMax$\,MPa
+(PFH), largest at the smallest stand-off \textup{[E]}.
+\end{enumerate}
+Resolving the fast-condensation maximum beyond $\Ulim$\,m/s requires a compressible jet calculation (unresolved item U2).
+\end{benchmark}
+\emph{Status.} The source and energy inequalities in items 1 and 4 are rigorous only under their
+stated hypotheses. The remaining numbers are sampling-qualified reduced-model predictions,
+screen interpolations or pressure estimates, not an analytic maximum theorem. The unknown closure
+is bracketed by four controls; those controls are not certified bounds on all possible phase-transfer histories.
+The actual device maximum remains unresolved because the absorbed state, nucleation route,
+condensation coefficient, geometry and receiver of the actual experiment are not specified
+(Section~\ref{sec:program}).
+
+\subsection{Scaling to other droplet sizes and to the general question}
+In inviscid, tension-free potential flow with the frozen or isoeq closure, the speeds of Benchmark statement~\ref{prop:B1}
+are independent of droplet size at fixed $\gamma$ (no intrinsic length; the weak logarithmic size dependence of
+$\Tk$ aside), while masses and energies scale with $d_0^3$ and the hammer-pressure duration with $d_0$. The KM
+closures are not size-invariant, because finite-rate condensation introduces its own time scale. Surface tension raises the collapse drive at small sizes
+($\mathrm{We}\propto d_0$) and viscosity lowers it (not computed); both break the invariance below a few
+micrometres. The benchmark suggests a speed scale of $10^2$\,m/s and a contact-pressure scale of
+$10^2$\,MPa at order-one stand-off for full uniform activation. That scaling is not independent of
+the activated state, nor a guarantee for different pulse energy, droplet heating, inventory or geometry.
+
+For the general question (any laser-induced cavitation) the hierarchy is: (a) optical breakdown violates H0
+and is not bounded by Proposition~\ref{prop:psrc}; its initial plasma-rim pressures reach the GPa range (Vogel et
+al.\ 1996, as verified in the limits report, S3); (b) near-contact annular-collision ``needle'' jets exceed
+850\,m/s (Reuter \& Ohl 2021, measured average, mm bubbles at $\gamma=0.053$, verified) and $\sim1000$\,m/s in
+viscous compressible simulations (Lechner et al.\ 2020, verified); (c) capillary-focused jets from laser-induced
+vaporisation in a tube reach 850\,m/s (Tagawa et al.\ 2012, abstract verified). None of these is a PFC-droplet
+thermal-route result. They demonstrate different mechanisms outside the B1 control assumptions.
+No application-specific numerical maximum follows without fixing the mechanism, observable,
+energy/inventory and regularizing length/time scales. The present framework supplies conditional
+ceilings and reduced-model envelopes; an attainable global maximum requires further physical closure.
+
+\begin{figure}[ht]\centering
+\includegraphics[width=0.85\textwidth]{figures/envelope.pdf}
+\caption{Mass-resolved speed for the 6\,$\mu$m benchmark. Lines: rigorous energy ceiling
+$U_{\mathrm j}(m_*)\le\sqrt{2\Phi_{\mathrm a}/m_*}$. Markers: far-pole speeds plotted against the
+total sampled profile mass, for energetic comparison rather than a point-tip theorem (square frozen, down-triangle KM
+$\alpha_{\mathrm c}=0.1$, up-triangle KM $\alpha_{\mathrm c}=1$, circle isoeq; open = beyond Mach 0.3). Thin curves:
+computed distributions $m_{\mathrm j}(\ge U)$ for the isoeq runs at $\gamma=2$ and 3. The gap between markers and
+ceiling is the part of the problem controlled by collapse dynamics rather than by energy.}\label{fig:envelope}
+\end{figure}

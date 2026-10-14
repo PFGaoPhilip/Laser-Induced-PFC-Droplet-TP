@@ -1,0 +1,496 @@
+{
+  "schema": "stage3_independent_review_v1",
+  "review_type": "independent_specialist_source_bound_arithmetic_and_claim_review",
+  "verdict_proposed": "ENGINEERING_DOCUMENTATION_REVIEWED_SCIENTIFIC_MAXIMUM_UNRESOLVED",
+  "strict_verdict": "NOT_RESOLVED",
+  "strict_verdict_reason": "unchanged strict rule: G1 FAIL",
+  "stage1_status": "CLOSED_LOOSENED",
+  "stage2_status": "STAGE2_LOOSENED_CLOSED",
+  "upstream_campaigns_reopened": false,
+  "gates": {
+    "G0": {
+      "status": "NOT_RUN",
+      "strict_status": "NOT_RUN",
+      "notes": "Root final preservation audit; raw original gate and scoped delivery preservation must remain distinct.",
+      "evidence": [
+        "inputs/full_closure/BASELINE_HASHES.json"
+      ],
+      "measured": {}
+    },
+    "G1": {
+      "status": "FAIL",
+      "strict_status": "FAIL",
+      "notes": "Problem itself says unresolved assembly, paths, event existence and global tail links prevent G1 PASS. Domain remains gamma>=1.25 with no finite upper bound.",
+      "evidence": [
+        "inputs/full_closure/PROBLEM_STATEMENT.md"
+      ],
+      "measured": {}
+    },
+    "G2": {
+      "status": "FAIL",
+      "strict_status": "FAIL",
+      "notes": "Historical PFP negative bookkeeping remainder; candidate030 complete exergy ledger/event switch audit unavailable. Partial mass arithmetic is not full G2.",
+      "evidence": [
+        "review/INDEPENDENT_RECOMPUTE.json",
+        "inputs/expert_resolution/data/km_sweep.json",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "available_arithmetic_status": "PASS",
+        "complete_trajectory_residual": null
+      }
+    },
+    "G3": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "Registered current whole-water quantiles and wall-pressure disk/window observers absent; original definitions/errata scope preserved.",
+      "evidence": [
+        "inputs/full_closure/PROBLEM_STATEMENT.md",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {}
+    },
+    "G4": {
+      "status": "WAIVED",
+      "strict_status": "FAIL",
+      "notes": "Stage1 V1-V6 exit verification waived and strict production C4 not admitted; narrower tests do not establish full-suite pass.",
+      "evidence": [
+        "inputs/full_closure/verification/STAGE1_LOOSENED_CLOSE_ACCEPTED_20261014.md",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {}
+    },
+    "G5": {
+      "status": "WAIVED",
+      "strict_status": "FAIL",
+      "notes": "No evidence trajectory reaches registered objective event; local partial candidate030 ends0.43ns/43steps.",
+      "evidence": [
+        "review/INDEPENDENT_RECOMPUTE.json",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "last_time_ns": 0.43000000000000027,
+        "steps": 43,
+        "completion": false
+      }
+    },
+    "G6": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "No x-star/nearby competitors or current three-mesh step-halving domain-doubling suite.",
+      "evidence": [
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "delta_num": null,
+        "domain_sensitivity": null
+      }
+    },
+    "G7": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "No attained design, global enclosure, current holdouts or certificate;18 pairs null.",
+      "evidence": [
+        "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "attained_lower": null,
+        "global_upper": null,
+        "gap": null
+      }
+    },
+    "G8": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "Historical contact/spreading estimates are not solved wall histories or registered J_P.",
+      "evidence": [
+        "inputs/full_closure/PROBLEM_STATEMENT.md",
+        "inputs/expert_resolution/tex/07_receiver.tex",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {}
+    },
+    "G9": {
+      "status": "WAIVED",
+      "strict_status": "FAIL",
+      "notes": "Inherited whole-path source/critical route and sign qualification waived; current physical consistency, P9 and sensitivity unestablished. Conditional ceilings remain source-bound arithmetic.",
+      "evidence": [
+        "inputs/full_closure/verification/STAGE1_LOOSENED_CLOSE_ACCEPTED_20261014.md",
+        "inputs/full_closure/PROBLEM_STATEMENT.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ],
+      "measured": {}
+    },
+    "G10": {
+      "status": "NOT_RUN",
+      "strict_status": "FAIL",
+      "notes": "Root owns final source/claim/PDF inspection. Strict requested J-star+-epsilon/design answer cannot be supplied; loosened documentation checks assessed separately.",
+      "evidence": [
+        "FINAL_ANSWER.md",
+        "RESULTS_LEDGER.json",
+        "review/INDEPENDENT_REVIEW.md"
+      ],
+      "measured": {}
+    },
+    "G11": {
+      "status": "NOT_RUN",
+      "strict_status": "NOT_RUN",
+      "notes": "Root owns relocation/CRC/fourlog/cleanup checks.",
+      "evidence": [
+        "README.md"
+      ],
+      "measured": {}
+    }
+  },
+  "red_team": [
+    {
+      "q": 1,
+      "answer": "**1. Unsampled or failed domain:** Yes. No current coverage or global enclosure exists. Gamma spans [1.25,infinity) without a finite upper application bound, and accommodation spans [0,1]. The unsampled tail/free-field endpoint and failed regimes may contain a supremum. There is no certified bound-minus-sample gap to rank; it is null. A finite historical scan cannot establish tail decay, particularly because directed free-field water speed need not vanish. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), P02 and domain discussion; [objective ledger](../inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 2,
+      "answer": "**2. Model-validity limit and x-star:** No x-star exists. Classification or movement under relaxed indicators is NOT_RUN. Mach 0.3 historical stops are model working screens; beyond-screen samples are estimates rather than admitted optima. Same-model radius qualification remains waived. Evidence: [historical rows](../inputs/expert_resolution/data/envelope_rows.json), [expert acceptance](../inputs/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md), [accepted waiver receipt](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSE_VERIFY_STAGE3_ENTRY_20261014_002.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 3,
+      "answer": "**3. Numerical maximum or tip resolution:** Unknown. No x-star, three-level current refinement, step halving or domain doubling is available. The historical suite retained aborted attempts and nontrivial sensitivities; its previous refinement does not transfer to candidate030. Forty-three accepted time steps establish neither event-time resolution nor numerical error. Evidence: [historical verification ledger](../inputs/expert_resolution/RESULTS_LEDGER.json), numerical_verification; [candidate030 history](../inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 4,
+      "answer": "**4. Fast cells or physical mass:** Unknown for current J_U. Whole-water masses must be {1,3,10,30,100} pg with fractional water mass, no jet-region mask. No fields/registered quantile outputs or finest-level above-threshold mass are supplied; that mass remains null. Partial total mass conservation does not show physical quantile coverage or exclude fast-cell artifacts. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), P03–P04; [recompute diagnostics](INDEPENDENT_RECOMPUTE.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 5,
+      "answer": "**5. Ledger closes for wrong reason:** This risk remains. The historical growth remainder is computed by difference and is not independent destruction; its PFP negativity is a physical warning. The current history records positive entropy terms, mass and operator defects, but lacks sufficient full-reference terms to reconstruct the complete exergy residual independently. Soft-pass030 accepts heat energy/entropy gate defects; small mass drift or a pressure solver residual does not remove that qualification. Evidence: [historical raw ledger](../inputs/expert_resolution/data/km_sweep.json), energy_ledger; [candidate030 history](../inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv); [Stage2 close](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 6,
+      "answer": "**6. Ceiling or activation-availability exceedance:** The independently checked reported historical sampled axial energy ratios do not establish a full-vector all-time comparison. No current complete water-energy/radiation/destruction history is available, so the requested all-time check is NOT_RUN. Contact/collapse pressure can exceed the 1.265/1.085 MPa absolute expansion-source ceilings without contradicting those expansion-only premises. The linear-contact formula is not a universal nonlinear shock cap. Exact-input mass ceilings remain conditional on a complete nonnegative availability budget; no energy fraction is silently reset. Evidence: [thermodynamic source](../inputs/expert_resolution/tex/04_thermo.tex), [pressure source](../inputs/expert_resolution/tex/07_receiver.tex), [recomputation](INDEPENDENT_RECOMPUTE.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 7,
+      "answer": "**7. Accommodation monotonicity:** Not established over the declared relevant gamma domain. Historical discrete closures do not prove a derivative sign, regime-transition behaviour or global monotonicity. Alpha_c stays in [0,1]; there is no justified reduction to alpha_c=1. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), [historical rows](../inputs/expert_resolution/data/envelope_rows.json), [waived certificate suite](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 8,
+      "answer": "**8. Content uniformity/P9 at x-star:** NOT_RUN because there is no x-star and no matched resolved/perturbed comparison. The live candidate030 model assumptions are preserved; the old spherical uniform-content comparison does not validate current asymmetric optimal events. No quantitative P9 sensitivity is invented. Evidence: [acceptance P9 requirement](../inputs/full_closure/ACCEPTANCE_CRITERIA.md), G9/red-team8; [model/problem](../inputs/full_closure/PROBLEM_STATEMENT.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 9,
+      "answer": "**9. Receiver pressure:** A skeptical expert cannot accept the current historical estimate as registered J_P. Disk radii {2,10} micrometres and windows {2,20} ns need solved rigid-plane pressure histories with the prescribed event horizon. There are no registered histories, covered-cell counts or window/time-step adequacy results. A Tait internal contact model plus linear spreading/reflection is tier E, not solved wall stress. Wall viscous normal stress must also be checked before pressure alone is called complete loading. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), P05–P06; [historical pressure source](../inputs/expert_resolution/tex/07_receiver.tex); [observer waiver](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 10,
+      "answer": "**10. Most influential assumption:** No sensitivity ranking of an attainable optimum is possible because neither the optimum nor a matched sensitivity suite exists. Uniform activation/budget, reference consistency, condensation model, compressibility, content uniformity and wall/contact geometry are plausible material choices; none is assigned a fabricated largest effect. This limitation is stated beside the answer in [FINAL_ANSWER.md](../FINAL_ANSWER.md). The accepted thermal/continuum/receiver model excludes optical-breakdown and device-transfer conclusions. Evidence: [problem H0–H4](../inputs/full_closure/PROBLEM_STATEMENT.md), [historical acceptance qualifications](../inputs/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    }
+  ],
+  "waiver_dispositions": [
+    {
+      "id": 1,
+      "status": "WAIVED",
+      "description": "Full-cycle pilot to impact/first volume minimum/rebound and 20 ns horizon",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 2,
+      "status": "WAIVED",
+      "description": "108-case coverage and all 18 objectives",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 3,
+      "status": "WAIVED",
+      "description": "Same-model free-field R_m and gamma qualification",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 4,
+      "status": "WAIVED",
+      "description": "PFH route",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 5,
+      "status": "WAIVED",
+      "description": "Registered whole-water quantile and wall-pressure disk/window observers",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 6,
+      "status": "WAIVED",
+      "description": "Hold-outs, refinement, and global certificate suite",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 7,
+      "status": "WAIVED",
+      "description": "Production C4 without inherited soft-passes",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    }
+  ],
+  "independent_recompute": {
+    "seed": 20261014,
+    "checks": 239,
+    "failed_checks": 0,
+    "max_relative_difference": 7.270960063791253e-14,
+    "script": "scripts/independent_recompute.py",
+    "result": "review/INDEPENDENT_RECOMPUTE.json",
+    "objective_run_audit_status": "NOT_RUN",
+    "fresh_EOS_status": "NOT_RUN",
+    "solver_rerun": false,
+    "production_imports": false
+  },
+  "objectives": [
+    {
+      "id": "PFP_U_1pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_3pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_10pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_30pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_100pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_2um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_2um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_10um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_10um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_1pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_3pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_10pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_30pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_100pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_2um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_2um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_10um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_10um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    }
+  ],
+  "fix_loop": [
+    {
+      "iteration": 1,
+      "issue": "Initial naive historical remainder formula omitted recorded mechanical closure mismatch",
+      "change": "Independently sum stored surface/gel/viscous/acoustic terms; initial differences retained in result",
+      "affected_checks": "18 legacy arithmetic remainders",
+      "result": "PASS arithmetic; historical physical failure retained"
+    }
+  ],
+  "open_issues": [
+    "All18 attainable objectives and certified pairs uncomputed",
+    "No same-model candidate030 free-field R_m/gamma qualification",
+    "No completed candidate030 event/PFH trajectory/registered observers",
+    "No x-star current refinement,tail enclosure,holdouts,certificate,P9,sensitivity ranking",
+    "Fresh EOS integral/source-pressure validation not repeated; accepted quotations remain conditional",
+    "G0/G10/G11 root integration pending"
+  ],
+  "source_reconciliation": [
+    {
+      "issue": "Historic40 cases vs35 retained envelope rows",
+      "resolution": "Report35 processed rows; no claim40 successful trajectories"
+    },
+    {
+      "issue": "Candidate030 stronger closeout progress prose vs0.43ns transferred endpoint",
+      "resolution": "Accepted close preserved; advancement beyond0.44ns unsupported"
+    },
+    {
+      "issue": "T roundedPhi vs exactE Phi ten-pg speed",
+      "resolution": "Both retained with distinct inputs; not upstream defect"
+    }
+  ]
+}

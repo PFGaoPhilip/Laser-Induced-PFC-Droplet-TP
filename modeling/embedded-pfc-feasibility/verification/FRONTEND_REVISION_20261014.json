@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "canonical_page": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
+  "canonical_styles": {
+    "course.css": "b4378032c56718486aaa79895dd8c17bd5b4a30e7a74b11a4fb6d2df4cd0ff3a",
+    "course-language.css": "a7e2d32950f58c35ed61c03bcc45b278ca1283f4f626b7c2b9097e02b628d8c8",
+    "bilingual-terms.css": "6e97c3072ac2cceeed2dc709c9c25d44bf1396516013e18343e1943e341a6b83"
+  },
+  "wrappers": [
+    "topbar",
+    "page-layout",
+    "sidebar",
+    "reading",
+    "chapter-header",
+    "chapter-body",
+    "site-footer"
+  ],
+  "controls": {
+    "language_button": "#language-toggle",
+    "language_values": [
+      "bilingual",
+      "en",
+      "zh"
+    ],
+    "language_cycle": [
+      "bilingual",
+      "en",
+      "zh",
+      "bilingual"
+    ],
+    "theme_button": "#theme-toggle",
+    "theme_values": [
+      "light",
+      "dark"
+    ],
+    "query_theme_aliases": [
+      "day",
+      "night",
+      "light",
+      "dark"
+    ],
+    "shared_theme_key": "laser-pfc-tp-theme",
+    "shared_theme_values": [
+      "light",
+      "dark"
+    ],
+    "tabs": [
+      "comparison",
+      "derivation",
+      "handoff",
+      "sources"
+    ],
+    "toolbar": ".theme-tools",
+    "toolbar_buttons": 2,
+    "toolbar_position": "fixed lower-right",
+    "theme_aria_pressed": "light"
+  },
+  "desktop_toolbar": {
+    "position": "fixed",
+    "right": 21.59375,
+    "bottom": 21.59375,
+    "left": 1199.546875,
+    "top": 932.359375,
+    "width": 203.859375,
+    "height": 46.046875,
+    "themeInside": true,
+    "languageInside": true,
+    "buttonCount": 2,
+    "selectCount": 0,
+    "headerControls": 0
+  },
+  "mobile_toolbar": {
+    "position": "fixed",
+    "right": 9.59375,
+    "bottom": 9.59375,
+    "left": 137.21875,
+    "top": 793.25,
+    "width": 243.1875,
+    "height": 41.15625,
+    "themeInside": true,
+    "languageInside": true,
+    "buttonCount": 2,
+    "selectCount": 0,
+    "headerControls": 0
+  },
+  "typography_matches_first_chapter_desktop_and_mobile": true,
+  "canonical_sidebar_titles": true,
+  "event_cases": 52,
+  "displayed_equations_unchanged": 32,
+  "protected_payload_unchanged": 90,
+  "relocated_offline_reader": "PASS",
+  "browser_evidence": "verification/READER_REVISION_AUDIT.json",
+  "publication_hold_preserved": true
+}

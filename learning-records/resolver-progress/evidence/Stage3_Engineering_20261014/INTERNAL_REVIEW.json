@@ -1,0 +1,903 @@
+{
+  "schema": "stage3_integrated_internal_review_v2",
+  "verdict": "ENGINEERING_DOCUMENTATION_DELIVERED_SCIENTIFIC_MAXIMUM_UNRESOLVED",
+  "reporting_complete": true,
+  "strict_acceptance": false,
+  "strict_scientific_verdict": "NOT_RESOLVED",
+  "strict_verdict_reason": "G1/G2 full attainability obligations unresolved; no admitted current evidence trajectory passesG2/G5. LiteralG0 also retains preexisting-addition mismatch. Accepted ceiling route retained.",
+  "frozen_preregistration_sha256": "dc8fe3b86e744eddb6c5f6119a4ce849b96c0d20eb55e637c80b2161e49a7ce2",
+  "gates": {
+    "G0": {
+      "status": "FAIL",
+      "strict_status": "FAIL",
+      "reporting_preservation_status": "PASS",
+      "notes": "FAIL_RAW_R_REST_HAS_TWO_PREEXISTING_TRANSFER_ADDITIONS; exact original files, HEAD and protected inputs preserved. No baseline reset.",
+      "evidence": [
+        "review/PRESERVATION.json"
+      ],
+      "measured": {
+        "E": {
+          "expected": "fdf43940e66fd1523cd4a41f1daecf81004e5b3d2fa9e4983ff6b99475409179",
+          "actual": "fdf43940e66fd1523cd4a41f1daecf81004e5b3d2fa9e4983ff6b99475409179",
+          "files": 233,
+          "match": true
+        },
+        "T": {
+          "expected": "ae4ce8389d78e4bbe5012853c18cdbd36b72359bf28d8fc0913107133112979c",
+          "actual": "ae4ce8389d78e4bbe5012853c18cdbd36b72359bf28d8fc0913107133112979c",
+          "files": 23,
+          "match": true
+        },
+        "A": {
+          "expected": "2386614dbdca6d622fcb7fd6ae352d952eee4aa1c948ca09492aff90ac09ca38",
+          "actual": "2386614dbdca6d622fcb7fd6ae352d952eee4aa1c948ca09492aff90ac09ca38",
+          "files": 15,
+          "match": true
+        },
+        "R_rest": {
+          "expected": "89c5db2d73e5b09086845d37ba061750fe6a1fcffc9b2379d770efabd409aba0",
+          "actual": "2a4134756f444de44b5f2a7c7d407547f2d86811caa9585f17d9f4c6b5d70413",
+          "files": 509,
+          "match": false
+        }
+      }
+    },
+    "G1": {
+      "status": "FAIL",
+      "strict_status": "FAIL",
+      "notes": "Problem itself says unresolved assembly, paths, event existence and global tail links prevent G1 PASS. Domain remains gamma>=1.25 with no finite upper bound.",
+      "evidence": [
+        "inputs/full_closure/PROBLEM_STATEMENT.md"
+      ],
+      "measured": {}
+    },
+    "G2": {
+      "status": "FAIL",
+      "strict_status": "FAIL",
+      "notes": "Historical PFP negative bookkeeping remainder; candidate030 complete exergy ledger/event switch audit unavailable. Partial mass arithmetic is not full G2.",
+      "evidence": [
+        "review/INDEPENDENT_RECOMPUTE.json",
+        "inputs/expert_resolution/data/km_sweep.json",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "available_arithmetic_status": "PASS",
+        "complete_trajectory_residual": null
+      }
+    },
+    "G3": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "Registered current whole-water quantiles and wall-pressure disk/window observers absent; original definitions/errata scope preserved.",
+      "evidence": [
+        "inputs/full_closure/PROBLEM_STATEMENT.md",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {}
+    },
+    "G4": {
+      "status": "WAIVED",
+      "strict_status": "FAIL",
+      "notes": "Stage1 V1-V6 exit verification waived and strict production C4 not admitted; narrower tests do not establish full-suite pass.",
+      "evidence": [
+        "inputs/full_closure/verification/STAGE1_LOOSENED_CLOSE_ACCEPTED_20261014.md",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {}
+    },
+    "G5": {
+      "status": "WAIVED",
+      "strict_status": "FAIL",
+      "notes": "No evidence trajectory reaches registered objective event; local partial candidate030 ends0.43ns/43steps.",
+      "evidence": [
+        "review/INDEPENDENT_RECOMPUTE.json",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "last_time_ns": 0.43000000000000027,
+        "steps": 43,
+        "completion": false
+      }
+    },
+    "G6": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "No x-star/nearby competitors or current three-mesh step-halving domain-doubling suite.",
+      "evidence": [
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "delta_num": null,
+        "domain_sensitivity": null
+      }
+    },
+    "G7": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "No attained design, global enclosure, current holdouts or certificate;18 pairs null.",
+      "evidence": [
+        "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {
+        "attained_lower": null,
+        "global_upper": null,
+        "gap": null
+      }
+    },
+    "G8": {
+      "status": "WAIVED",
+      "strict_status": "NOT_RUN",
+      "notes": "Historical contact/spreading estimates are not solved wall histories or registered J_P.",
+      "evidence": [
+        "inputs/full_closure/PROBLEM_STATEMENT.md",
+        "inputs/expert_resolution/tex/07_receiver.tex",
+        "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md"
+      ],
+      "measured": {}
+    },
+    "G9": {
+      "status": "WAIVED",
+      "strict_status": "FAIL",
+      "notes": "Inherited whole-path source/critical route and sign qualification waived; current physical consistency, P9 and sensitivity unestablished. Conditional ceilings remain source-bound arithmetic.",
+      "evidence": [
+        "inputs/full_closure/verification/STAGE1_LOOSENED_CLOSE_ACCEPTED_20261014.md",
+        "inputs/full_closure/PROBLEM_STATEMENT.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ],
+      "measured": {}
+    },
+    "G10": {
+      "status": "PASS",
+      "strict_status": "FAIL",
+      "notes": "Reporting document checks assessed under owner-accepted experimental-reference scope; numerical J-star/design clause remains unsatisfied.",
+      "evidence": [
+        "FINAL_ANSWER.md",
+        "RESULTS_LEDGER.json",
+        "report/BUILD_REVIEW.json",
+        "report/PAGE_VISUAL_QA.json",
+        "qa/reader/BROWSER_QA.json",
+        "review/REPORT_MATH_REVIEW.json"
+      ],
+      "measured": {
+        "all18_objectives_null": true
+      }
+    },
+    "G11": {
+      "status": "PASS",
+      "strict_status": "PASS",
+      "notes": "Applicable engineering package delivery, not certification of upstream science.",
+      "evidence": [
+        "review/RELOCATION_REBUILD.json",
+        "qa/reader/RELOCATION_BROWSER_QA.json",
+        "review/FINAL_ARCHIVE_VERIFICATION.json"
+      ],
+      "measured": {}
+    }
+  },
+  "delivery_checks": {
+    "D1_source_bound_claims": {
+      "status": "PASS",
+      "evidence": [
+        "RESULTS_LEDGER.json",
+        "review/CLAIM_RECONCILIATION.json"
+      ],
+      "notes": "All objective nulls, source-byte hashes, exact vs rounded budgets and historic P/E selections checked."
+    },
+    "D2_independent_available_arithmetic": {
+      "status": "PASS",
+      "evidence": [
+        "review/INDEPENDENT_RECOMPUTE.json",
+        "scripts/independent_recompute.py"
+      ],
+      "notes": "239 stored-input comparisons; maximum relative discrepancy7.270960063791253e-14. Current objective/certificate/full-cycle recomputation NOT_RUN."
+    },
+    "D3_ten_red_team_and_waivers": {
+      "status": "PASS",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_REVIEW.json"
+      ],
+      "notes": "All ten answered; absent evidence explicitly unresolved; seven exit waivers remain nonscientific passes."
+    },
+    "D4_protected_evidence": {
+      "status": "PASS",
+      "evidence": [
+        "review/PRESERVATION.json"
+      ],
+      "notes": "Original E/T/A and507 historical files unchanged. Two pre-existing Stage1 transfer additions cause literal strictG0 baseline mismatch. HEAD/log prefixes/protected bindings preserved."
+    },
+    "D5_pdf_compile": {
+      "status": "PASS",
+      "evidence": [
+        "report/BUILD_REVIEW.json"
+      ],
+      "notes": "Zero compile errors, undefined references and overfull boxes."
+    },
+    "D6_every_pdf_page_visual_QA": {
+      "status": "PASS",
+      "evidence": [
+        "report/PAGE_VISUAL_QA.json"
+      ],
+      "notes": "Every final PDF page visually inspected; QA hash must match final PDF."
+    },
+    "D7_offline_browser": {
+      "status": "PASS",
+      "evidence": [
+        "qa/reader/BROWSER_QA.json"
+      ],
+      "notes": "Actual browser day/night/offline/math/mobile/link checks, separate from static parse."
+    },
+    "D8_relocated_reader": {
+      "status": "PASS",
+      "evidence": [
+        "qa/reader/RELOCATION_BROWSER_QA.json"
+      ],
+      "notes": "Actual browser reader QA after unrelated-path extraction."
+    },
+    "D9_relocation_rebuild": {
+      "status": "PASS",
+      "evidence": [
+        "review/RELOCATION_REBUILD.json"
+      ],
+      "notes": "Tables, ledger, certificate absence record, independent arithmetic JSON, reader and PDF compared byte-for-byte."
+    },
+    "D10_final_archive": {
+      "status": "PASS",
+      "evidence": [
+        "review/FINAL_ARCHIVE_VERIFICATION.json",
+        "FILE_MANIFEST.json"
+      ],
+      "notes": "CRC, path safety, case-unique names, manifest hashes and final archive-member bytes; external ZIP hash receipt avoids circular digest."
+    },
+    "D11_logs_and_cleanup": {
+      "status": "PASS",
+      "evidence": [
+        "review/PRESERVATION.json",
+        "review/CLEANUP.json",
+        "review/WORK_UNIT_LOG.md"
+      ],
+      "notes": "Four shared logs appended after units; originals/build evidence retained. Only verified task-created intermediates removed."
+    },
+    "D12_independent_report_mathematics": {
+      "status": "PASS",
+      "evidence": [
+        "review/REPORT_MATH_REVIEW.md",
+        "review/REPORT_MATH_REVIEW.json"
+      ],
+      "notes": "Fresh authored-report derivations reviewed independently; three Stage3 notation/unit repairs verified. Conditional premises and strict scientific NOT_RESOLVED retained."
+    }
+  },
+  "red_team": [
+    {
+      "q": 1,
+      "answer": "**1. Unsampled or failed domain:** Yes. No current coverage or global enclosure exists. Gamma spans [1.25,infinity) without a finite upper application bound, and accommodation spans [0,1]. The unsampled tail/free-field endpoint and failed regimes may contain a supremum. There is no certified bound-minus-sample gap to rank; it is null. A finite historical scan cannot establish tail decay, particularly because directed free-field water speed need not vanish. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), P02 and domain discussion; [objective ledger](../inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 2,
+      "answer": "**2. Model-validity limit and x-star:** No x-star exists. Classification or movement under relaxed indicators is NOT_RUN. Mach 0.3 historical stops are model working screens; beyond-screen samples are estimates rather than admitted optima. Same-model radius qualification remains waived. Evidence: [historical rows](../inputs/expert_resolution/data/envelope_rows.json), [expert acceptance](../inputs/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md), [accepted waiver receipt](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSE_VERIFY_STAGE3_ENTRY_20261014_002.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 3,
+      "answer": "**3. Numerical maximum or tip resolution:** Unknown. No x-star, three-level current refinement, step halving or domain doubling is available. The historical suite retained aborted attempts and nontrivial sensitivities; its previous refinement does not transfer to candidate030. Forty-three accepted time steps establish neither event-time resolution nor numerical error. Evidence: [historical verification ledger](../inputs/expert_resolution/RESULTS_LEDGER.json), numerical_verification; [candidate030 history](../inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 4,
+      "answer": "**4. Fast cells or physical mass:** Unknown for current J_U. Whole-water masses must be {1,3,10,30,100} pg with fractional water mass, no jet-region mask. No fields/registered quantile outputs or finest-level above-threshold mass are supplied; that mass remains null. Partial total mass conservation does not show physical quantile coverage or exclude fast-cell artifacts. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), P03–P04; [recompute diagnostics](INDEPENDENT_RECOMPUTE.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 5,
+      "answer": "**5. Ledger closes for wrong reason:** This risk remains. The historical growth remainder is computed by difference and is not independent destruction; its PFP negativity is a physical warning. The current history records positive entropy terms, mass and operator defects, but lacks sufficient full-reference terms to reconstruct the complete exergy residual independently. Soft-pass030 accepts heat energy/entropy gate defects; small mass drift or a pressure solver residual does not remove that qualification. Evidence: [historical raw ledger](../inputs/expert_resolution/data/km_sweep.json), energy_ledger; [candidate030 history](../inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv); [Stage2 close](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 6,
+      "answer": "**6. Ceiling or activation-availability exceedance:** The independently checked reported historical sampled axial energy ratios do not establish a full-vector all-time comparison. No current complete water-energy/radiation/destruction history is available, so the requested all-time check is NOT_RUN. Contact/collapse pressure can exceed the 1.265/1.085 MPa absolute expansion-source ceilings without contradicting those expansion-only premises. The linear-contact formula is not a universal nonlinear shock cap. Exact-input mass ceilings remain conditional on a complete nonnegative availability budget; no energy fraction is silently reset. Evidence: [thermodynamic source](../inputs/expert_resolution/tex/04_thermo.tex), [pressure source](../inputs/expert_resolution/tex/07_receiver.tex), [recomputation](INDEPENDENT_RECOMPUTE.json).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 7,
+      "answer": "**7. Accommodation monotonicity:** Not established over the declared relevant gamma domain. Historical discrete closures do not prove a derivative sign, regime-transition behaviour or global monotonicity. Alpha_c stays in [0,1]; there is no justified reduction to alpha_c=1. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), [historical rows](../inputs/expert_resolution/data/envelope_rows.json), [waived certificate suite](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 8,
+      "answer": "**8. Content uniformity/P9 at x-star:** NOT_RUN because there is no x-star and no matched resolved/perturbed comparison. The live candidate030 model assumptions are preserved; the old spherical uniform-content comparison does not validate current asymmetric optimal events. No quantitative P9 sensitivity is invented. Evidence: [acceptance P9 requirement](../inputs/full_closure/ACCEPTANCE_CRITERIA.md), G9/red-team8; [model/problem](../inputs/full_closure/PROBLEM_STATEMENT.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 9,
+      "answer": "**9. Receiver pressure:** A skeptical expert cannot accept the current historical estimate as registered J_P. Disk radii {2,10} micrometres and windows {2,20} ns need solved rigid-plane pressure histories with the prescribed event horizon. There are no registered histories, covered-cell counts or window/time-step adequacy results. A Tait internal contact model plus linear spreading/reflection is tier E, not solved wall stress. Wall viscous normal stress must also be checked before pressure alone is called complete loading. Evidence: [problem](../inputs/full_closure/PROBLEM_STATEMENT.md), P05–P06; [historical pressure source](../inputs/expert_resolution/tex/07_receiver.tex); [observer waiver](../inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    },
+    {
+      "q": 10,
+      "answer": "**10. Most influential assumption:** No sensitivity ranking of an attainable optimum is possible because neither the optimum nor a matched sensitivity suite exists. Uniform activation/budget, reference consistency, condensation model, compressibility, content uniformity and wall/contact geometry are plausible material choices; none is assigned a fabricated largest effect. This limitation is stated beside the answer in [FINAL_ANSWER.md](../FINAL_ANSWER.md). The accepted thermal/continuum/receiver model excludes optical-breakdown and device-transfer conclusions. Evidence: [problem H0–H4](../inputs/full_closure/PROBLEM_STATEMENT.md), [historical acceptance qualifications](../inputs/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md).",
+      "status": "ANSWERED_WITH_UNRESOLVED_EVIDENCE",
+      "evidence": [
+        "review/INDEPENDENT_REVIEW.md",
+        "review/INDEPENDENT_RECOMPUTE.json"
+      ]
+    }
+  ],
+  "waiver_dispositions": [
+    {
+      "id": 1,
+      "status": "WAIVED",
+      "description": "Full-cycle pilot to impact/first volume minimum/rebound and 20 ns horizon",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 2,
+      "status": "WAIVED",
+      "description": "108-case coverage and all 18 objectives",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 3,
+      "status": "WAIVED",
+      "description": "Same-model free-field R_m and gamma qualification",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 4,
+      "status": "WAIVED",
+      "description": "PFH route",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 5,
+      "status": "WAIVED",
+      "description": "Registered whole-water quantile and wall-pressure disk/window observers",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 6,
+      "status": "WAIVED",
+      "description": "Hold-outs, refinement, and global certificate suite",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    },
+    {
+      "id": 7,
+      "status": "WAIVED",
+      "description": "Production C4 without inherited soft-passes",
+      "authority": "inputs/full_closure/verification/STAGE2_LOOSENED_CLOSED_20261013.md",
+      "scientific_pass": false
+    }
+  ],
+  "independent_recompute": {
+    "seed": 20261014,
+    "checks": 239,
+    "failed_checks": 0,
+    "max_relative_difference": 7.270960063791253e-14,
+    "script": "scripts/independent_recompute.py",
+    "result": "review/INDEPENDENT_RECOMPUTE.json",
+    "objective_run_audit_status": "NOT_RUN",
+    "fresh_EOS_status": "NOT_RUN",
+    "solver_rerun": false,
+    "production_imports": false
+  },
+  "objective_results": [
+    {
+      "id": "PFP_U_1pg",
+      "units": "m/s",
+      "water_mass_pg": 1,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_1pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_3pg",
+      "units": "m/s",
+      "water_mass_pg": 3,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_3pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_10pg",
+      "units": "m/s",
+      "water_mass_pg": 10,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_10pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_30pg",
+      "units": "m/s",
+      "water_mass_pg": 30,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_30pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_U_100pg",
+      "units": "m/s",
+      "water_mass_pg": 100,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_U_100pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_2um_2ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_2um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_2um_20ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_2um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_10um_2ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_10um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFP_P_10um_20ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFP",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFP_P_10um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_1pg",
+      "units": "m/s",
+      "water_mass_pg": 1,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_1pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_3pg",
+      "units": "m/s",
+      "water_mass_pg": 3,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_3pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_10pg",
+      "units": "m/s",
+      "water_mass_pg": 10,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_10pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_30pg",
+      "units": "m/s",
+      "water_mass_pg": 30,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_30pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_U_100pg",
+      "units": "m/s",
+      "water_mass_pg": 100,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.05,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_U_100pg]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_2um_2ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_2um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_2um_20ns",
+      "units": "Pa",
+      "disk_um": 2,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_2um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_10um_2ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 2,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_10um_2ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    },
+    {
+      "id": "PFH_P_10um_20ns",
+      "units": "Pa",
+      "disk_um": 10,
+      "window_ns": 20,
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "status": "NOT_COMPUTED",
+      "certified": false,
+      "species": "PFH",
+      "relative_gap_target": 0.1,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "execution_status": "NOT_RUN",
+      "exit_disposition": "WAIVED",
+      "source": {
+        "path": "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json",
+        "record": "objective_results[id=PFH_P_10um_20ns]",
+        "sha256": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+      },
+      "missing_evidence_consequence": "No event-complete registered observer trajectory, feasible attained design, refinement or global certificate; no numerical optimum or certified interval can be supplied."
+    }
+  ],
+  "fix_loop": [
+    {
+      "iteration": 1,
+      "issue": "Initial naive historical remainder formula omitted recorded mechanical closure mismatch",
+      "change": "Independently sum stored surface/gel/viscous/acoustic terms; initial differences retained in result",
+      "affected_checks": "18 legacy arithmetic remainders",
+      "result": "PASS arithmetic; historical physical failure retained"
+    },
+    {
+      "issue": "R_rest tool statted excluded WSL symlink; literal historical baseline includes two preexisting transfer additions",
+      "change": "Stage3 exclusion-before-stat wrapper; retain raw mismatch and reconstruct original507-file hash separately. No historical tool/baseline modified.",
+      "affected_scope": "Preservation documentation only"
+    }
+  ],
+  "open_issues": [
+    "All18 attainable objectives and certified pairs uncomputed",
+    "No same-model candidate030 free-field R_m/gamma qualification",
+    "No completed candidate030 event/PFH trajectory/registered observers",
+    "No x-star current refinement,tail enclosure,holdouts,certificate,P9,sensitivity ranking",
+    "Fresh EOS integral/source-pressure validation not repeated; accepted quotations remain conditional"
+  ],
+  "source_reconciliation": [
+    {
+      "issue": "Historic40 cases vs35 retained envelope rows",
+      "resolution": "Report35 processed rows; no claim40 successful trajectories"
+    },
+    {
+      "issue": "Candidate030 stronger closeout progress prose vs0.43ns transferred endpoint",
+      "resolution": "Accepted close preserved; advancement beyond0.44ns unsupported"
+    },
+    {
+      "issue": "T roundedPhi vs exactE Phi ten-pg speed",
+      "resolution": "Both retained with distinct inputs; not upstream defect"
+    }
+  ]
+}

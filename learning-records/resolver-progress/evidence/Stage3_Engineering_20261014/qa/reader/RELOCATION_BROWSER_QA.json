@@ -1,0 +1,58 @@
+{
+  "schema": "stage3-relocation-reader-qa-v1",
+  "status": "PASS",
+  "root": "C:/Users/carl_/AppData/Local/Temp/Stage3_Relocation_20261014_Engineering/Stage3_Engineering_20261014",
+  "reader_sha256": "705e3aadbf7ad1f92844aaab2c44bc8c99baa10930886d86553026d110b177eb",
+  "ledger_sha256": "36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f",
+  "browser": "InstalledChrome via ChromeDevTools MCP",
+  "day": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"url\":\"file:///C:/Users/carl_/AppData/Local/Temp/Stage3_Relocation_20261014_Engineering/Stage3_Engineering_20261014/READER.html\",\"theme\":\"day\",\"ledgerHash\":\"36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f\",\"mathCount\":2,\"mathSize\":[{\"width\":384,\"height\":70.67708587646484},{\"width\":384,\"height\":70.67708587646484}],\"nullObjectives\":18,\"resources\":[],\"anchorTargetsValid\":true}\n```"
+      }
+    ]
+  },
+  "night": {
+    "status": "PASS",
+    "theme": "night",
+    "bg": "rgb(18,30,39)",
+    "button": "Switch to day",
+    "ariaPressed": true
+  },
+  "offline": {
+    "status": "PASS",
+    "method": "DevTools Offline applied before localfile reload",
+    "network": "Only localREADER.html200; resources[]; noHTTP(S)",
+    "console": "No messages"
+  },
+  "math": {
+    "status": "PASS",
+    "rendered": "NativeMathML radicals/fractions visually inspected, correct",
+    "screenshot": "relocation_math.jpg"
+  },
+  "links": {
+    "status": "PASS",
+    "staticUniqueTargets": 23,
+    "missing": [],
+    "anchorTargets": true,
+    "sourceRealClick": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Script ran on page and returned:\n```json\n{\"url\":\"file:///C:/Users/carl_/AppData/Local/Temp/Stage3_Relocation_20261014_Engineering/Stage3_Engineering_20261014/inputs/conditional_termtex/verification.json\",\"containsNumericalChecks\":true,\"containsEnergyVelocity\":true}\n```"
+        }
+      ]
+    },
+    "finalAnswerRealClick": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Script ran on page and returned:\n```json\n{\"url\":\"file:///C:/Users/carl_/AppData/Local/Temp/Stage3_Relocation_20261014_Engineering/Stage3_Engineering_20261014/FINAL_ANSWER.md\",\"hasAnswer\":true,\"hasNull\":true}\n```"
+        }
+      ]
+    }
+  },
+  "rebuild_verdict": "Owned by root; this record establishes relocated reader functionality only",
+  "pdf_provenance": "Existing extracted PDF link target present. Root is refreshing PDF after separatenotation fixes; this readerQA does not certify PDFcontent/rebuild."
+}

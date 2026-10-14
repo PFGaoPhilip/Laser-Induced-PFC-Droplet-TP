@@ -2,17 +2,17 @@
 
 ## Problem, architecture and scope
 
-Model A asks: **for a declared post-activation cavity energy, cavity volume, and finite liquid discharge, what source pressure and first-event jet velocity can this architecture produce, and what energy ceiling must it obey?** Model B asks: **with the same source and liquid inventory, how much load does a hydrogel carry and how much outlet and emitted-jet output survives its compliance and loss?**
+Model A calculates source pressure and first-ejection outlet speed. It uses specified source work, gas volume and liquid inventory. It also derives their energy ceilings. Model B adds hydrogel compliance and loss. It calculates gel load and the remaining emitted output.
 
-The architecture is an initially spherical chamber containing a finite gas pocket and carrier liquid, with a pre-existing liquid outlet. The default discharge budget is the entire initially connected chamber liquid inventory; it is separate from the effective channel inertance. In Model A the chamber wall is rigid. In Model B the wall is surrounded by an intact, effectively undrained spherical hydrogel medium. Gas expansion can either increase chamber volume or displace liquid through the outlet. A sealed Model B control sets outlet motion to zero. This is an expansion-driven external-ejection model. An internal collapse jet and a jet that must tear through intact gel are different architectures.
+An initially spherical chamber contains gas and carrier liquid. A liquid outlet already connects it to the surroundings. Initially connected chamber liquid sets the finite discharge budget. Effective channel inertance is a separate input. Model A fixes the chamber wall. Model B surrounds it with intact, undrained spherical hydrogel. Gas expansion enlarges the chamber or displaces liquid through the outlet. The sealed control fixes outlet motion at zero. This architecture describes expansion-driven external ejection. Collapse jets and gel penetration require different models.
 
-A **single 10 ns optical pulse** is represented by the state immediately after activation and initial pressure equilibration. The model does not integrate the optical pulse, nucleation, early pressure equilibration, or optical-to-mechanical conversion. No periodic loading occurs. Interpretation covers the complete first outward ejection, ending when outlet speed returns to zero, connected chamber liquid is exhausted, or a declared validity screen is reached. The sealed control ends at its first wall turning point. Speed maxima are evaluated inside these episodes. Later collapse and rebound are outside this first-event calculation.
+A **single 10 ns optical pulse** is represented by post-activation initial data. Time zero follows activation and pressure equilibration. Optical heating, nucleation and energy conversion are excluded. There is no periodic load. Follow the first outward ejection until speed returns to zero. Stop sooner if liquid exhausts or a validity screen triggers. The sealed control stops at its first wall turning point. Evaluate speed maxima within these episodes. Later collapse and rebound are excluded.
 
-Time increases from this post-activation state. Outlet velocity is positive outward; the discharge coordinate is emitted volume divided by outlet area, not one particle position. The radial coordinate increases from the chamber center into the gel; positive wall velocity means expansion. Ambient pressure is absolute and constant. The initial chamber wall is stress-free relative to ambient, and all mechanical velocities are zero. The chamber pressure is uniform. Internal gas/liquid interfacial tension and gas-pocket shape are neglected in this source control; capillary resistance is retained at the external meniscus. At the far gel boundary, radial stress tends to minus ambient pressure and displacement decays. The outlet terminates at ambient with a specified meniscus pressure. The open-channel result requires an existing channel; the sealed case emits no external liquid.
+Time starts at the initialized post-activation state. Positive outlet velocity points outward. Discharge coordinate means emitted volume divided by outlet area. Positive radial direction runs from chamber center into gel. Positive wall velocity means expansion. Ambient pressure is constant and absolute. Initially, the wall is stress-free relative to ambient. All initial mechanical velocities are zero. Chamber pressure is uniform. Gas-pocket shape and internal gas/liquid tension are neglected. The external meniscus supplies capillary resistance. Far-field radial stress tends to negative ambient pressure. Far-field displacement decays. The outlet exits at ambient with the specified meniscus pressure. An open case requires an existing channel. The sealed case emits zero liquid.
 
-**Constitutive controls, not fitted material predictions.** The finite source is a closed, adiabatic ideal-gas control with constant exponent. It is not a PFC-vapor equation of state. Liquid and undrained gel densities are constant; the liquid column has a fixed effective inertance over a separate finite discharge-volume budget. Hydrogel elasticity is incompressible neo-Hookean, with Kelvin–Voigt viscosity. The port may have a fitted linear resistance and a declared quadratic loss. Outlet focusing, nonuniform free-surface shape, fracture, phase exchange and diffusion are unresolved. The spherical gel law is an approximation for a small outlet in an otherwise spherical chamber, not the exact mechanics of a planar hydrogel layer.
+**Constitutive assumptions.** The source is a closed adiabatic ideal gas. Its exponent is constant. A PFC-vapor EOS is outside this control. Liquid and undrained gel densities are constant. The column has fixed effective inertance and a finite discharge budget. Gel elasticity is incompressible neo-Hookean with Kelvin–Voigt viscosity. Optional port losses are linear and quadratic. Outlet focusing, free-surface shape, fracture, phase exchange and diffusion remain unresolved. The spherical gel law approximates a chamber with a small outlet. Planar-layer mechanics requires a separate model. Material predictions require calibration.
 
-The governing foundations are the first law, volume conservation, lumped unsteady Bernoulli, the declared source EOS, and the appendix's spherical gel constitutive control. The current [course](https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/) supplies the mechanism distinctions and finite-energy framework. Its Chapters 1–3 and Appendix A support the retained blocks; [Brennen, Chapter 2](https://media.library.caltech.edu/CaltechBOOK:1995.001/chap2.htm) describes the spherical momentum and polytropic control assumptions. The coupling through total gas volume, finite-stroke rule and diagnostic implementation below are this model's reduced-order construction.
+Start from the first law, volume conservation and unsteady Bernoulli. Add the specified source EOS and spherical gel constitutive model. The [course](https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/) explains mechanisms and finite-energy budgets. Chapters 1–3 and Appendix A supply these model blocks. [Brennen, Chapter 2](https://media.library.caltech.edu/CaltechBOOK:1995.001/chap2.htm) discusses spherical momentum and polytropic assumptions. The gas-volume coupling, finite-stroke rule and diagnostics are derived here.
 
 ## Symbol glossary and conventions
 
@@ -67,7 +67,7 @@ V_g&=V_{g0}+Ax+\frac{4\pi}{3}(R^3-R_{\mathrm{ref}}^3),\qquad L_b=(V_{c0}-V_{g0})
 \end{aligned}
 $$
 
-The second row is conservation of chamber liquid volume: gas gains the displaced liquid volume and the added chamber volume. These are distinct destinations. Model A fixes the second destination to zero. Initial chamber liquid volume must exceed discharged volume; the calculation stops at its separate finite discharge budget.
+The second row conserves chamber liquid volume. Gas gains discharged liquid volume and chamber expansion volume. Model A fixes chamber expansion at zero. Stop when the finite liquid discharge budget is exhausted.
 
 **Eq. (E02) — initial data and admissible outward stroke.**
 
@@ -78,7 +78,7 @@ x(0)=0,\quad U(0)=0,\quad R(0)=R_{\mathrm{ref}},\quad W(0)=0,
 \qquad 0\le x\le L_b,\qquad Ax<V_{c0}-V_{g0}.
 $$
 
-Zero velocities are prescribed post-activation control data. They are not calculated nucleation outcomes. The stroke limit prevents assigning an unlimited jet mass to a finite source.
+Zero initial speeds are specified post-activation inputs. Nucleation is excluded. The finite stroke bounds discharged mass.
 
 **Eq. (E03) — adopted ideal-gas energy and adiabatic first law.**
 
@@ -90,7 +90,7 @@ d\mathcal U_g=-p_b\,dV_g,\qquad
 V_g\,dp_b+p_b\,dV_g=-(\kappa-1)p_b\,dV_g.
 $$
 
-The first relation is the source constitutive assumption. The second is its first-law balance with no heat or mass exchange after initialization. Differentiate the first and multiply by the constant exponent minus one to obtain the third. This control cannot describe condensation or ongoing PFC vapor production.
+The first relation defines the source constitutive model. The second applies its adiabatic first-law balance. Heat and mass exchange vanish after initialization. Differentiate the first relation. Multiply by the exponent minus one to obtain the third. Condensation and further PFC vapor production are excluded.
 
 **Eq. (E04) — integrate the pressure law.**
 
@@ -105,9 +105,9 @@ p_b&=p_0\left(\frac{V_{g0}}{V_g}\right)^\kappa.
 \end{aligned}
 $$
 
-The first row collects the differential terms in Eq. (E03). The second divides by positive pressure and volume. The third integrates from the initial state, fixing the integration constant. Exponentiation gives the fourth. Increasing gas volume lowers absolute pressure; there is no prescribed periodic pressure source.
+Collect the differential terms in Eq. (E03). Divide by positive pressure and volume. Integrate from the initial state to fix the constant. Exponentiation gives the pressure law. Expansion lowers pressure. No periodic source is prescribed.
 
-## Step 2 — Compute the finite work budget, rather than an arbitrary pressure pulse
+## Step 2 — Compute the finite work budget
 
 **Eq. (E05) — ambient equilibrium and available expansion work.**
 
@@ -127,9 +127,9 @@ E_0&=\int_{V_{g0}}^{V_{\mathrm{eq}}}
 \end{aligned}
 $$
 
-The first row uses Eq. (E04) at ambient pressure and takes the positive root. The next row defines work delivered above ambient. Integrate the power of volume for the third row, excluding exponent one. Evaluate both endpoints and factor the initial volume for the last row. Every pressure times volume has units J. The builder inverts this monotone work relation numerically to choose initial pressure from each declared work budget. Changing available energy therefore changes one finite initial state, rather than adding ongoing work.
+Apply Eq. (E04) at ambient pressure. Take the positive root to find equilibrium volume. Integrate overpressure to define available work. Integrate the volume power, whose exponent differs from one. Evaluate both endpoints and factor the initial volume. Pressure times volume has units J. Numerically invert this monotone relation for initial pressure. Changing the work budget changes the initial state. It adds no later work.
 
-The available work is **post-activation mechanical availability**, not incident optical energy. To use the models for an experiment, determine it from a measured pressure-volume path, or from measured absorbed energy and a separately supported conversion/phase model. Source mass and phase composition must also support the initialized pressure and volume. None of those efficiencies or a PFC EOS are inferred here.
+Available work means **post-activation mechanical availability**. Incident optical energy is a separate quantity. Determine available work from a measured pressure-volume path. Alternatively, use absorbed energy with a supported conversion and phase model. Source mass and phase composition must support the initialized state. Conversion efficiency and PFC EOS remain unspecified.
 
 
 **Eq. (E05a) — uniqueness of the finite-work inversion.**
@@ -146,7 +146,7 @@ E_0\big|_{p_0=p_\infty}&=0,\qquad \lim_{p_0\to\infty}\frac{E_0}{p_0}=\frac{V_{g0
 \end{aligned}
 $$
 
-Leibniz differentiation gives the first row. The endpoint term vanishes because its pressure equals ambient. Integrate the remaining positive power for the second row. Equal initial and ambient pressures give zero work. At large initial pressure, the equilibrium-volume terms grow sublinearly, giving the final limit. Positive available work therefore selects one initial pressure in this control.
+Apply Leibniz differentiation in the first row. The endpoint pressure equals ambient, so its term vanishes. Integrate the remaining positive power for the second row. Equal source and ambient pressures give zero work. Equilibrium-volume terms grow sublinearly at large source pressure. This gives the final limit. Positive available work therefore selects a unique initial pressure.
 
 ## Step 3 — Accelerate an outlet flow and retain actual emitted output
 
@@ -159,9 +159,9 @@ m_c=\rho AL,\qquad p_{\mathrm{cap}}=2\sigma/a,\qquad
 p_{\mathrm{loss}}=\mathcal R U+\rho K_oU|U|/2.
 $$
 
-Column inertia is defined separately from emitted mass. The meniscus control assumes a pinned hemisphere; another measured curvature requires another entry pressure. Linear resistance is an input to measure or fit. A steady Poiseuille coefficient is not silently substituted for short-event shear dynamics. The odd-in-speed loss always removes energy.
+Column inertia and emitted mass are separate quantities. The meniscus model assumes a pinned hemisphere. Different curvature requires different entry pressure. Measure or fit the linear resistance. Steady Poiseuille resistance needs justification for this short event. The odd-in-speed loss dissipates energy in either direction.
 
-The meniscus pressure is held constant throughout the modeled episode. Its integrated work is bookkeeping for that conservative constant-load control, not a calculated evolving free-surface energy. Maintaining hemispherical curvature during a real emerging jet has not been established here. Changing curvature, contact-line motion or breakup requires replacing this entry-pressure approximation.
+Meniscus pressure stays constant during this episode. Its integral is work against a constant conservative load. The model excludes evolving free-surface energy. Persistent hemispherical curvature during jet formation is not established. Changing curvature, contact-line motion or breakup requires a revised entry model.
 
 **Eq. (E06a) — derive inertance and the outgoing kinetic head.**
 
@@ -178,7 +178,7 @@ u(z,t)&=f(z)U(t),\quad f(z)=A/\mathcal A(z),\quad L=\int_{z_i}^{z_o}f(z)dz,\\
 \end{aligned}
 $$
 
-Fixed-geometry volume continuity supplies the first profile. The second row is inviscid streamline Euler momentum. Integration gives inertance from the fixed profile and endpoint kinetic heads from the convective derivative. The reservoir inlet speed is neglected; outlet head remains. In the final row substitute area from continuity to obtain the same inertance length in stored kinetic energy. This is a lumped approximation to an existing channel. It does not calculate free-surface focusing or transverse kinetic energy; effective inertance and loss should be calibrated for the real geometry.
+Fixed-geometry continuity gives the first velocity profile. The second row applies inviscid streamline Euler momentum. Integrate the fixed profile to obtain inertance. Integrate convection to obtain endpoint kinetic heads. Neglect reservoir inlet speed and retain outlet head. Substitute the continuity area relation in the energy integral. This yields the same inertance length. The approximation represents an existing channel. Free-surface focusing and transverse kinetic energy are excluded. Calibrate effective inertance and loss for the actual geometry.
 
 **Eq. (E07) — unsteady Bernoulli and the explicit outlet flag.**
 
@@ -192,7 +192,7 @@ p_b-p_\infty-p_{\mathrm{cap}}-p_{\mathrm{loss}}&=\rho L\dot U+\rho U^2/2\quad(b_
 \end{aligned}
 $$
 
-Integrate the pressure gradient in Eq. (E06a) and include the specified meniscus and dissipative drops. Divide by positive density and inertance length to obtain acceleration. The outlet flag defines a sealed control whose zero initial speed stays zero. The kinetic-head term is essential to conserve energy that actually leaves the outlet.
+Integrate the pressure gradient in Eq. (E06a). Add the specified meniscus and dissipative pressure drops. Divide by positive density and inertance length. This gives outlet acceleration. A sealed outlet retains its zero initial speed. The kinetic-head term accounts for energy leaving the outlet.
 
 **Eq. (E08) — column storage and dissipative power.**
 
@@ -206,7 +206,7 @@ P_{\mathrm{port}}&=b_oA(\mathcal R U^2+\rho K_o|U|^3/2)\ge0,\\
 \end{aligned}
 $$
 
-Differentiate the stored energy, insert Eq. (E07), and add meniscus work. The meniscus term cancels in the motion equation. Dissipative pressure times flow rate gives the second row. The final kinetic-head term is discharged power, distinct from column storage and irreversible loss.
+Differentiate stored energy and insert Eq. (E07). Add meniscus work to cancel the meniscus pressure term. Dissipative pressure times flow rate gives dissipative power. The final kinetic-head term gives emitted power. Column storage and irreversible loss remain separate.
 
 **Eq. (E08a) — finite emitted mass, energy and impulse.**
 
@@ -217,7 +217,7 @@ m_j=\rho Ax,\quad \dot E_j=b_o\rho AU^3/2,\quad
 \dot I_j=b_o\rho AU^2,\quad E_j(0)=I_j(0)=0.
 $$
 
-Multiply instantaneous mass flow by specific kinetic energy or axial speed to obtain the last two rates. Their time integrals are actual discharged observables. Column kinetic energy must not be substituted for emitted energy, and column momentum must not be substituted for emitted impulse.
+Multiply mass flow by specific kinetic energy for emitted power. Multiply it by axial speed for emitted impulse rate. Integrate each rate over time. Column energy and momentum describe instantaneous storage. Emitted energy and impulse describe discharged output.
 
 ## Step 4 — Retain only the gel mechanics needed for confinement
 
@@ -234,7 +234,7 @@ r^3-R^3&=s^3-R_{\mathrm{ref}}^3,\\
 \end{aligned}
 $$
 
-The first row equates the reference and current material volume outside the wall. Differentiation gives the second, and radial/tangential length ratios give the third. Their product confirms local volume preservation.
+Equate reference and current material volumes outside the wall. Differentiate that mapping for the second row. Use radial and tangential length ratios for the third. Their product checks local volume conservation.
 
 **Eq. (E10) — declared neo-Hookean stress and radial equilibrium.**
 
@@ -248,7 +248,7 @@ T_{tt}-T_{rr}&=G[(r/s)^2-(s/r)^4],\\
 \end{aligned}
 $$
 
-The first row is the material law. Subtraction removes the unknown constraint pressure. The third is elastic spherical equilibrium. Integrating that equilibrium supplies the elastic contribution even when radial inertia and viscosity are retained separately below.
+The first row is the adopted constitutive law. Subtract the stresses to eliminate constraint pressure. The third row states spherical elastic equilibrium. Its integral gives elastic resistance. Radial inertia and viscosity are added separately below.
 
 **Eq. (E11) — evaluate the spherical elastic resistance.**
 
@@ -267,7 +267,7 @@ p_{\mathrm{el}}&=2G\int_{R_{\mathrm{ref}}/R}^{1}(1+\beta^3)d\beta
 \end{aligned}
 $$
 
-The first row integrates the stress difference in Eq. (E10). The second follows from the volume mapping and its differential at fixed wall radius. Substitution gives the third; factor the difference of squares in powers of the ratio to cancel the common factor. The ratio equals reference-to-current wall radius at the wall and tends to one at infinity. Integrating the polynomial and applying those endpoints gives the last two rows. This reproduces Appendix A, Eq. (A-E05), without any wave field.
+Integrate the stress difference in Eq. (E10). Differentiate the volume mapping at fixed wall radius. Substitute it to obtain the third row. Factor the difference of squares and cancel the common factor. The wall endpoint is reference radius divided by current radius. The far-field endpoint is one. Integrate the polynomial and evaluate both endpoints. The last two rows recover Appendix A, Eq. (A-E05). No wave field is required.
 
 **Eq. (E12) — integrate the recoverable gel work.**
 
@@ -283,7 +283,7 @@ W_g&=4\pi\int_{R_{\mathrm{ref}}}^{R}p_{\mathrm{el}}(\xi)\xi^2d\xi\\
 \end{aligned}
 $$
 
-The first row is traction work against incremental spherical volume. Insert Eq. (E11), integrate each power, and evaluate both endpoints. The lower endpoint is two-thirds of the reference-radius cube. Multiplying modulus by volume verifies units J. This work is recoverable storage, not a pressure threshold and not a dissipative term.
+The first row integrates traction against spherical volume change. Insert Eq. (E11) and integrate each power. Evaluate both endpoints. The lower endpoint is two-thirds of the reference-radius cube. Modulus times volume gives J. This energy is recoverable elastic storage.
 
 **Eq. (E13) — gel resistance checks.**
 
@@ -300,9 +300,9 @@ W_g(R_{\mathrm{ref}}+\delta R)&=8\pi G R_{\mathrm{ref}}\delta R^2+O(G\delta R^3)
 \end{aligned}
 $$
 
-Substitution verifies the unstressed state. Direct differentiation verifies the traction-work derivative. Taylor expansion about the unstressed radius gives the positive small-strain stiffness and quadratic stored work. Taking the radius ratio to infinity gives a pressure plateau, while work continues growing with volume. The plateau does not establish damage tolerance or a useful jet.
+Substitute the unstressed radius to check the reference state. Differentiate work to check traction. Taylor expansion gives positive small-strain stiffness and quadratic stored work. Infinite radius ratio gives a pressure plateau. Work still grows with volume. Damage tolerance and useful jet formation are not established.
 
-## Step 5 — Add radial inertia and loss; do not add oscillation physics
+## Step 5 — Add radial inertia and viscous loss
 
 **Eq. (E14) — spherical radial kinetic energy and Newtonian gel loss.**
 
@@ -318,7 +318,7 @@ P_{\mathrm{gel}}=16\pi\eta_gRW^2\ge0.
 \end{aligned}
 $$
 
-The radial velocity follows the spherical volume mapping. Squaring it leaves the convergent reciprocal-square radial integral. The stress and dissipation coefficients are the appendix's Kelvin–Voigt spherical control, Eqs. (A-E09)–(A-E12). The viscosity resists either direction of wall motion and its power is nonnegative. No additional radiation or wave-field loss is inserted.
+The volume mapping gives radial velocity. Squaring it produces a convergent reciprocal-square radial integral. Use the appendix Kelvin–Voigt coefficients, Eqs. (A-E09)–(A-E12). Viscosity opposes both directions of wall motion. Its dissipated power is nonnegative. Radiation and wave-field losses are excluded.
 
 **Eq. (E15) — radial motion and its energy identity.**
 
@@ -334,7 +334,7 @@ $$
 \end{aligned}
 $$
 
-The first row is the declared undrained spherical momentum control with a pressure-free initial elastic state. Differentiate the kinetic energy in Eq. (E14), using the product rule and wall kinematics, to obtain the second. Multiply the first row by volume rate; use Eq. (E13) for elastic work and Eq. (E14) for viscous power to obtain the third. This includes necessary transient inertia, not a separately forced oscillation model. In Model A the wall radius is fixed and both radial kinetic energy and elastic storage are absent.
+The first row adopts undrained spherical momentum balance. Initial elastic overpressure is zero. Differentiate kinetic energy in Eq. (E14) using the product rule. Substitute wall kinematics to obtain the second row. Multiply the first row by volume rate. Insert elastic work from Eq. (E13). Insert viscous power from Eq. (E14) for the third row. Model A fixes radius, eliminating radial kinetic and elastic storage.
 
 **Eq. (E16) — a defined confinement force.**
 
@@ -346,7 +346,7 @@ F_{\mathrm{hem}}=\int_0^{\pi/2}p_{\mathrm{el}}\cos\theta\,2\pi R^2\sin\theta\,d\
 =\pi R^2p_{\mathrm{el}}.
 $$
 
-This is a meaningful directional resultant on a specified surface. The vector sum on the complete sphere is zero by symmetry. An integral of pressure magnitude over the whole sphere must not be mislabeled as a net confinement force. A measured target patch needs its own specified area and load path.
+This force is the directional resultant on one hemisphere. The complete sphere has zero resultant by symmetry. Integrating pressure magnitude over a sphere gives a different quantity. A target patch requires its own area and load path.
 
 ## Step 6 — Close and audit the combined energy balance
 
@@ -359,7 +359,7 @@ $$
 \dot D=P_{\mathrm{port}}+P_{\mathrm{gel}},\qquad D(0)=0.
 $$
 
-Differentiate Eq. (E01) and substitute the two kinematic relations. The two dissipative powers add because they belong to distinct port and gel motions.
+Differentiate Eq. (E01) and insert both kinematic relations. Add port and gel dissipation from their separate motions.
 
 **Eq. (E18) — explicit cancellation of source-to-receiver work.**
 
@@ -373,7 +373,7 @@ $$
 \end{aligned}
 $$
 
-Use the source first law from Eq. (E03), the plug identity from Eq. (E08), the radial identity from Eq. (E15), and the loss accumulator from Eq. (E17). The two dissipative powers cancel their matching loss accumulator contributions, and outgoing kinetic power cancels the emitted-energy accumulator from Eq. (E08a). Substitute the volume rate for the final cancellation. The mechanical exchange uses one evolving source pressure; prescribing a second independent radius history would break this closure.
+Combine the source first law, Eq. (E03), with column storage, Eq. (E08). Add radial storage, Eq. (E15), and accumulated loss, Eq. (E17). Each dissipative power cancels its loss accumulator. Emitted kinetic power cancels Eq. (E08a). Substitute volume rate to cancel the remaining source exchange. One evolving source pressure closes this balance. An independently prescribed radius history would break it.
 
 **Eq. (E19) — numerical acceptance residual.**
 
@@ -384,7 +384,7 @@ $$
 \frac{p_bV_g/(\kappa-1)-p_0V_{g0}/(\kappa-1)+p_\infty(V_g-V_{g0})+K_c+K_g+W_g+E_{\mathrm{cap}}+D+E_j}{E_0}.
 $$
 
-Subtract the initial stored energy from Eq. (E18) and normalize. This residual must stay near zero, including the gel kinetic and elastic energies. It is a numerical conservation test for this model, not evidence that the EOS or geometry has been calibrated.
+Subtract initial stored energy from Eq. (E18), then normalize. Include gel kinetic and elastic storage. A near-zero residual checks numerical conservation. EOS and geometry calibration require separate evidence.
 
 ## Step 7 — Map the equations to native COMSOL states
 
@@ -400,7 +400,7 @@ $$
 \end{aligned}
 $$
 
-These change scale without adding physics. Native names are `qq`, `vv`, `rr`, `ww`, `dd`, `ee`, `ii`. Model A omits the two radial motion states: five scalar states remain. Model B uses seven. Three states simply accumulate loss and useful output.
+Normalization changes scales without changing the model. Native states are `qq`, `vv`, `rr`, `ww`, `dd`, `ee`, `ii`. Model A excludes two radial states, leaving five scalars. Model B uses seven. Three accumulate loss, emitted energy and emitted impulse.
 
 **Eq. (E21) — dimensionless residuals integrated in physical time.**
 
@@ -418,7 +418,7 @@ $$
 \end{aligned}
 $$
 
-Insert Eq. (E20) into the motion and accounting equations; divide physical speed derivatives by the speed scale and accumulated quantities by their scales, then multiply every row by the time scale. Every residual is dimensionless. Model A fixes the wall and omits the radial rows. Algebraic source pressure remains determined by total gas volume.
+Insert Eq. (E20) into motion and accounting equations. Divide speed derivatives and accumulated quantities by their respective scales. Multiply each row by the time scale. Every residual is dimensionless. Model A fixes the wall and excludes radial rows. Total gas volume determines algebraic source pressure.
 
 ## Step 8 — Bound defined velocities, emitted output and pressure observers
 
@@ -433,7 +433,7 @@ $$
 \mathcal F(V_{g0})-\mathcal F(V_{\mathrm{eq}})=E_0.
 $$
 
-The source first law gives the first derivative; differentiate Eq. (E04) for the second. Strict convexity makes the ambient-pressure state the unique global minimum along the control path. Evaluating the potential difference gives Eq. (E05), completing the work-budget justification.
+The source first law gives the first derivative. Differentiate Eq. (E04) for the second. Strict convexity gives a unique global minimum at ambient pressure. Evaluate the potential difference to obtain Eq. (E05). This establishes the work budget within the adopted control.
 
 **Eq. (E22) — separate outlet-speed and emitted-RMS ceilings.**
 
@@ -447,9 +447,9 @@ q_j&=\rho U^2/2\le E_0/(AL).
 \end{aligned}
 $$
 
-On the retained outward branch, gel elastic work, meniscus work, losses, radial kinetic energy and emitted energy are nonnegative. Combine Eq. (E18) with the potential minimum in Eq. (E22a) to bound their sum. Isolate column kinetic energy and divide by effective mass for the first speed bound. Define emitted RMS speed from its actual energy and mass for the second. Substitute effective column mass from Eq. (E06) for the dynamic-pressure bound. The outlet bound relies on this inertance model; the finite emitted-RMS bound relies on conservation alone. The actual trajectory may end at its liquid budget before approaching either ceiling.
+Every listed receiver energy is nonnegative on the outward branch. Combine Eq. (E18) with the minimum in Eq. (E22a). Isolate column kinetic energy and divide by positive effective mass. This gives the outlet-speed ceiling. Emitted energy and positive emitted mass define the RMS ceiling. Insert column mass from Eq. (E06) for the dynamic-pressure ceiling. The outlet ceiling depends on effective inertance. The emitted-RMS ceiling follows from conservation and specified mass. Liquid exhaustion may stop the trajectory before either ceiling.
 
-No lower bound on emitted mass means no finite universal RMS-speed limit from laser energy alone. No declared area, duration or compression/contact model means no universal pointwise pressure peak. Source pressure is the evolving initialized control pressure; dynamic pressure is a kinetic scale; an observer pressure requires a stated load path.
+A finite energy budget needs a positive mass lower bound. Without it, a universal RMS-speed maximum cannot be computed. A pointwise pressure maximum needs a contact or compression model. Missing: area, duration and load path. Source pressure, outlet dynamic pressure and observer pressure are distinct quantities.
 
 **Eq. (E23) — finite emitted impulse and a mean arrest-pressure bound.**
 
@@ -464,7 +464,7 @@ I_j^2&=\left(\int_0^{m_j}U(m)dm\right)^2
 \end{aligned}
 $$
 
-Cauchy–Schwarz applies to the integrable finite speed history. The two integrals are emitted mass and twice emitted kinetic energy. If all emitted parcels stop without reversal and there is no extra actuator, received impulse cannot exceed their incoming impulse. Divide by a specified area and interval for the second bound. This is not a target-pressure simulation or an instantaneous impact maximum. Defaults are the outlet area and one microsecond. No propagation field or water-hammer pressure is calculated.
+Apply Cauchy–Schwarz to the integrable finite speed history. Its two integrals are emitted mass and twice emitted energy. Assume parcels stop without reversal and receive no extra actuation. Their received impulse is then bounded by incoming impulse. Divide by specified area and duration for mean pressure. Defaults are outlet area and one microsecond. Instantaneous impact pressure remains uncomputed. Propagation and water hammer are excluded.
 
 **Eq. (E24) — matched single-event transmission measures.**
 
@@ -476,7 +476,7 @@ T_E=E_{j,B}/E_{j,A},\quad T_I=I_{j,B}/I_{j,A},\quad
 T_q=q_{j,B,\max}/q_{j,A,\max}=T_U^2.
 $$
 
-Only the dynamic-pressure ratio is necessarily the speed ratio squared at the same density. Emitted energy and impulse depend on the complete speed and discharge histories; they are calculated independently, not inferred from a peak. Each open-case episode ends at its first outlet-speed return through zero, liquid-inventory limit or declared validity screen, so matched cases can have different endpoints. These are per-shot finite-output comparisons, not frequency-domain transfer functions. A sealed channel has zero in every emitted-output measure.
+At equal density, dynamic-pressure ratio equals speed ratio squared. Integrate full histories for emitted energy and impulse. A peak speed cannot determine these integrals. Stop each open case at speed return, inventory exhaustion or validity screen. Matched cases may therefore have different endpoints. These ratios compare finite outputs per shot. They are distinct from frequency-domain transfer functions. Every emitted-output ratio is zero for a sealed channel.
 
 ## Step 9 — Declare the regime and check its communication rate
 
@@ -490,14 +490,14 @@ $$
 M_j=\frac{|U|}{c_L},\qquad M_w=\frac{|W|}{c_L}.
 $$
 
-Differentiate Eq. (E04) logarithmically to obtain the second communication expression. It compares pressure-change time with the excluded pressure-communication time, without solving a propagation field. The baseline is selected to keep its open-channel diagnostic below 0.1; this is a declared screening criterion, not a certified error bound. Mach numbers must also remain below the declared 0.1 screen.
+Logarithmically differentiate Eq. (E04) for the second communication expression. Compare pressure-change and pressure-communication times. No propagation field is solved. The open baseline communication diagnostic stays below 0.1. This is a stipulated screen, whose error bound remains unvalidated. Both Mach diagnostics must also stay below 0.1.
 
-The closed, undrained network approximation requires event time far shorter than solvent-drainage time. The course's illustrative 30 micrometer drainage estimate is 1.5 s, far longer than these microsecond events, but actual permeability and rate-dependent moduli remain unmeasured here. The small-outlet approximation, positive remaining chamber liquid, no gas breakthrough before the finite stroke, and intact material assumptions must all be checked. The 20% stretch stop is only a declared small-deformation screening rule; it is not measured fracture strain.
+Undrained behavior requires events much shorter than solvent drainage. The course uses an illustrative 30 micrometer drainage scale. Its estimated drainage time is 1.5 s. These events last microseconds. Actual permeability and rate-dependent moduli remain unmeasured. Check small-outlet geometry, positive liquid inventory and intact gel. Check gas breakthrough before the finite stroke ends. The 20% stretch stop is a stipulated deformation screen. Measured fracture strain is missing.
 
-The sealed case may require stronger constraints than the open baseline and is classified separately by its communication ratio. A numerically conserved sealed result is not automatically an accepted pressure-history prediction if its communication criterion fails.
+Check the sealed case communication ratio separately. Energy conservation cannot resolve failed pressure communication. A pressure-history prediction requires that screen to pass.
 
 ## What the completed models can establish
 
-They establish native solutions and conditional first-event maxima for the specified finite-state controls, a rigorous energy ceiling within that model, the spherical gel resistance and recoverable work, and matched channel-output ratios. They do not establish the absolute highest output attainable by every laser-induced cavitation system, a calibrated PFC material limit, the peak pressure during the excluded 10 ns activation transient, an internal collapse-jet maximum, or transmission through unbroken gel without a channel.
+The models provide conditional first-event solutions and maxima. They derive energy ceilings, spherical gel resistance and recoverable work. They also calculate matched finite-output ratios. A universal cavitation maximum is not established. Calibrated PFC limits and the excluded 10 ns activation pressure remain unresolved. Collapse-jet maxima and transmission through intact gel also remain unresolved.
 
-For experimental verification, supply the post-activation gas/phase volume and pressure or pressure-volume path; the absorbed pulse energy and conversion evidence; the finite moving liquid mass and outlet geometry; gel modulus and viscosity at the event's strain rate; and whether the path is already open. Measure cavity volume, emitted speed/mass, and wall deformation on the same shot. Compare source pressure and outlet dynamic pressure at a declared location and averaging interval, and compare the four matched finite-output ratios. Those inputs make the two small models testable without adding a vibration or pressure-wave field.
+Experimental validation requires post-activation phase volume and pressure. A measured pressure-volume path can supply the source work. Record absorbed pulse energy and conversion evidence. Specify moving liquid mass, outlet geometry and channel status. Measure gel modulus and viscosity at the event strain rate. Measure cavity volume, emitted speed, mass and wall deformation together. Declare comparison locations and averaging intervals. Compare source pressure, dynamic pressure and all four finite-output ratios.

@@ -1,0 +1,53 @@
+{
+  "id": "STAGE3_PREREG_AMENDMENT_003_LICENSE_FAILURE_RECORDS",
+  "frozen_utc": "2026-10-13T20:21:27.881379+00:00",
+  "parent_sha256": "d96adf37da0350b8beb475da15a41a82d40c3d5a0969f2ab6108a589015c9b6c",
+  "scope": "Bundling existing license notices and retained historical failure/strict refusal records only; no upstream audit, computation, solver runs or gate reset",
+  "bindings": [
+    {
+      "path": "solver/vendor/basilisk/src/COPYING",
+      "sha256": "5f6bc79a5d29d49eaa17cc29bedd9c25d572adb648c52f3186b508aec12aaea4",
+      "size": 35031
+    },
+    {
+      "path": "solver/vendor/coolprop/LICENSE",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2",
+      "size": 1103
+    },
+    {
+      "path": "verification/STAGE1_C4_PRODUCTION_ADMISSION_REFUSAL_CANDIDATE028_20261013.md",
+      "sha256": "846808714ecfaa8f8562e77ade89b2d51e7576a479f196dac956f6cc818e5d94",
+      "size": 1196
+    },
+    {
+      "path": "verification/STAGE1_C3_D1_D6_EXECUTION_BLOCKED_20261013.md",
+      "sha256": "205329b1dab9cd62c6d7c8246b6efe969cf3a9fbb0e318d2975c54ebe0d3a983",
+      "size": 2948
+    },
+    {
+      "path": "verification/STAGE1_LOOSENED_CLOSED_20261013.md",
+      "sha256": "901d11a041fd9a4c1b79b12894923dc272f9b967d32a5063236cd62cdcdaa815",
+      "size": 4580
+    },
+    {
+      "path": "verification/STAGE1_CLOSED_20261013.md",
+      "sha256": "8147e1fd9edf4b2c203946e30bc5307dc3fb79540f6afc00039c087317b6f5da",
+      "size": 785
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/history.csv",
+      "sha256": "aa9733fee3daa94b2d9408903857834e7ed9ec1ad9131fd316f4882a9c55bd58",
+      "size": 253520
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/simulation.exit_status",
+      "sha256": "748ea33db356501af68a9e37a1583cfa57192a894aab2a692c5475f031d1e81a",
+      "size": 4
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_STAGE2_LOOSENED_PILOT001/simulation.stderr.raw",
+      "sha256": "5b5095d9ccaec65e5c174b9713224bcb11d99d636516b82aaf04bb42a6874509",
+      "size": 177026
+    }
+  ]
+}

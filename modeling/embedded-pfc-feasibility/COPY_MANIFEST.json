@@ -1,6 +1,6 @@
 {
   "source_study": "20261011-embedded-pfc-feasibility",
-  "scope": "Public curation and integrity; numerical results and models remain accepted conditional controls.",
+  "scope": "Public curation and bilingual editorial revision; accepted numerical payload and displayed equations preserved.",
   "files": [
     {
       "file": ".gitignore",
@@ -47,14 +47,16 @@
     {
       "file": "assets/reader.css",
       "accepted_source_sha256": "17d4923b3791f6301f8ed6ed77df690ec6a2d9cf594b078ff4cff7866ca5d11f",
-      "public_sha256": "c922e014bac4d3b5e3950ccb84782765455526b7012775ea255256bf0b4433dd",
-      "unchanged": false
+      "public_sha256": "d4bda338aa39e1c0c77b55b5c8d6d69efa65fd0d7a24d46ce951a5e93a4f3f45",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "assets/reader.js",
       "accepted_source_sha256": "74abbeaa80c85da2c9dd25f0dcd85d21511b9f4b24ded40ae9e0c57cc901284d",
-      "public_sha256": "74abbeaa80c85da2c9dd25f0dcd85d21511b9f4b24ded40ae9e0c57cc901284d",
-      "unchanged": true
+      "public_sha256": "2c99cc159ff058e4dd1ddad4131b306ea135c48cd73899482b045cb397d71803",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "assets/size_species_comparison.png",
@@ -935,8 +937,9 @@
     {
       "file": "DERIVATION.md",
       "accepted_source_sha256": "73c7ef032aaaeed09df3c04ec39771b81880733fe89441184dc5a16c9a18532b",
-      "public_sha256": "73c7ef032aaaeed09df3c04ec39771b81880733fe89441184dc5a16c9a18532b",
-      "unchanged": true
+      "public_sha256": "f3438968380e85b23d1e9e1723301219019152fa0fe72244e475588ff577bc62",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "DERIVATION.tex",
@@ -947,14 +950,16 @@
     {
       "file": "IMPLEMENTATION_HANDOFF.md",
       "accepted_source_sha256": "05485fea610a2718e1481c520f868a9b9b04e9df68a4e48e22918dd44e26c2f3",
-      "public_sha256": "05485fea610a2718e1481c520f868a9b9b04e9df68a4e48e22918dd44e26c2f3",
-      "unchanged": true
+      "public_sha256": "3fbe86371e1a6c62354cc02ccb13e7fb3513bc9e60bd4a233c1e0a5ce6fcce05",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "index.html",
       "accepted_source_sha256": "f35af020279613c2596b32dd788b9ad30cf875df9961a116b6929a6beca117e1",
-      "public_sha256": "1307ed7562cb2f8e37462015a696e3839f5079c2a160d79013cff9d57e55d173",
-      "unchanged": false
+      "public_sha256": "cd47d38e8b963388a0f9f31607c9a9e2078dbf81389a322adeaceb4ec9801b4b",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "models/Embedded_PFC_Curved_Equilibrium.mph",
@@ -977,14 +982,16 @@
     {
       "file": "README.md",
       "accepted_source_sha256": "4df56f33e6f505c63aa222ad28aa9fd4233bc74f2d6979fc4797194ca6759e47",
-      "public_sha256": "e5d151b5e618e37cfee21c99394ecfde753eea63f9065e0256411e99adce518c",
-      "unchanged": false
+      "public_sha256": "0baa53e3923525e4e981eb2f1f411d51b018aee56d989efa8e3cf9c5fde76d4f",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "REPORT.md",
       "accepted_source_sha256": "d2f8b9513d74b68778c3b238ecc19f0f7bc08ace59fb62d5a81652fde5d530d4",
-      "public_sha256": "d2f8b9513d74b68778c3b238ecc19f0f7bc08ace59fb62d5a81652fde5d530d4",
-      "unchanged": true
+      "public_sha256": "ce082baf634937a61ea25662e30adefe3f1a9b5ca326322a1076db437b58a6b0",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "requirements.txt",
@@ -1013,8 +1020,9 @@
     {
       "file": "scripts/build_reader.py",
       "accepted_source_sha256": "6e237bac7cd3999359a75efbdf023f959f93060de26d20e22498a2ac569d38f1",
-      "public_sha256": "6ece3964ef57d643be905d95eb0943aedad9c50f76407bb22415b9bf3f5c7e22",
-      "unchanged": false
+      "public_sha256": "76c4099e52f303a838d4aeda5cd2329473417b5fde0c9c2b113597efeeddd5e7",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "scripts/EmbeddedPfc.java",
@@ -1055,8 +1063,9 @@
     {
       "file": "scripts/test_reader_logic.cjs",
       "accepted_source_sha256": "6d883b0e4d5f9fce155ab7ddf3b6576939310fc9c92c2ee83d6b57b2305b3135",
-      "public_sha256": "6d883b0e4d5f9fce155ab7ddf3b6576939310fc9c92c2ee83d6b57b2305b3135",
-      "unchanged": true
+      "public_sha256": "114a2c0ceb9fd28ea0d465ed585a55621a92ed28a744cebd6a255d35b1ea2991",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "scripts/verify_delivery.py",
@@ -1175,8 +1184,9 @@
     {
       "file": "SOURCES.md",
       "accepted_source_sha256": "d628cc61871a204834c679d2247ebf84f6a742719f344c3b2fee3a7fb335db8b",
-      "public_sha256": "29d18a776ffd1155df66e0a6dea413c0b53c32bb93e8970e4e932d25ee7de7cb",
-      "unchanged": false
+      "public_sha256": "753848e39fcb0e9a5865363c24c2a6df33b004a361cdbeb60b5548272ef69363",
+      "unchanged": false,
+      "editorial_revision": "2026-10-14"
     },
     {
       "file": "verification/ACCEPTED_CONTROL_PRESERVATION.json",
@@ -1274,5 +1284,6 @@
       "public_sha256": "b84e7db1ba5631e461e3672bc0558fdb7ddec0cc739c14cf532044bdfd41f57b",
       "unchanged": true
     }
-  ]
+  ],
+  "editorial_revision_file": "verification/EDITORIAL_REVISION_20261014.json"
 }

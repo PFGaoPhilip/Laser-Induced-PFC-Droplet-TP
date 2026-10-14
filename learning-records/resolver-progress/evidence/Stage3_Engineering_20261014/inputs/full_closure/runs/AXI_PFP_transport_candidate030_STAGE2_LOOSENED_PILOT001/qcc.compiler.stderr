@@ -1,0 +1,17 @@
+./axisymmetric_transport_collector_candidate020.h:103: warning: goto statements are unsafe in Basilisk C (and are bad programming style)
+./axisymmetric_transport_collector_candidate020.h:104: warning: goto statements are unsafe in Basilisk C (and are bad programming style)
+./axisymmetric_transport_collector_candidate020.h:105: warning: goto statements are unsafe in Basilisk C (and are bad programming style)
+./axisymmetric_transport_collector_candidate020.h:109: warning: goto statements are unsafe in Basilisk C (and are bad programming style)
+./axisymmetric_transport_collector_candidate020.h:114: warning: goto statements are unsafe in Basilisk C (and are bad programming style)
+./closure_geometric_advection.h: In function ‘closure_geometric_sweep_x’:
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h: In function ‘closure_geometric_sweep_y’:
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./closure_geometric_advection.h:165:14: warning: unused variable ‘fi’ [-Wunused-variable]
+./geometric_flow.h: At top level:
+./geometric_flow.h:271:12: warning: ‘closure_geometric_component’ defined but not used [-Wunused-function]

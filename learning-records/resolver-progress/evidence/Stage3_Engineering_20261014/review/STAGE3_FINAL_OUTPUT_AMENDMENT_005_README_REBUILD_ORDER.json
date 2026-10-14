@@ -1,0 +1,7 @@
+{
+  "id": "STAGE3_FINAL_OUTPUT_AMENDMENT_005_README_REBUILD_ORDER",
+  "frozen_utc": "2026-10-13T20:52:03.286791+00:00",
+  "parent_output_freeze_sha256": "5a1b770fdfc77ec0fe25a89319cf83afb4e2ade2a0d4dde548795be1ae5d4528",
+  "scope": "README workflow-order correction only: run immutable-package verification before rebuild, because compiler logs regenerate. No numerical/scientific/report/reader changes. Prior freeze004 retained.",
+  "original_README_sha256": "d0a0de3219292cc3dbe511eac34065afda3ea69ea3def5de3025d6337aa087af"
+}

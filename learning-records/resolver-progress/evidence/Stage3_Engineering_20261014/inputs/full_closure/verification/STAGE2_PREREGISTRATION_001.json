@@ -1,0 +1,195 @@
+{
+  "schema": "conditional_pfc_stage2_preregistration_v1",
+  "preregistration_id": "STAGE2_PREREGISTRATION_001",
+  "frozen_utc": "2026-10-13T18:09:44Z",
+  "status": "FROZEN_PLAN_EXECUTION_PREREQUISITES_UNRESOLVED",
+  "stage_boundary": {
+    "stage1_status": "CLOSED_LOOSENED",
+    "strict_stage1_acceptance_pass": false,
+    "stage1_waiver_scope": "Workflow entry only; no production qualification, trajectory, event, observer, coverage, physical-validity, or certificate gate is waived.",
+    "stage2_started": true,
+    "stage2_campaign_runs_at_freeze": 0,
+    "stage2_complete": false,
+    "stage3_started": false
+  },
+  "purpose": "Stage2 S6-S7 search, refinement, sensitivity, domain study, and conditional global certification plan for the already declared conditional PFC problem. This file freezes the plan and readiness findings; it is not a solver/model qualification and supplies no synthetic or sampled objective evidence.",
+  "fixed_scope": {
+    "species": ["PFP", "PFH"],
+    "gamma": {
+      "definition": "gamma = h / R_m(species, alpha_c), where h is initial cavity-centre height and R_m is the same-model free-field first post-activation growth maximum radius.",
+      "lower_bound": 1.25,
+      "upper_bound": null,
+      "domain": "[1.25, infinity); no finite upper gamma is an application constraint",
+      "bound_type": "owner-approved application lower bound; infinite upper tail remains part of the domain"
+    },
+    "alpha_c": {"lower_bound": 0.0, "upper_bound": 1.0, "domain": "closed interval [0,1]"},
+    "velocity_mass_thresholds_pg": [1, 3, 10, 30, 100],
+    "pressure_observers": [
+      {"disk_radius_um": 2, "window_ns": 2},
+      {"disk_radius_um": 2, "window_ns": 20},
+      {"disk_radius_um": 10, "window_ns": 2},
+      {"disk_radius_um": 10, "window_ns": 20}
+    ],
+    "same_model_free_field_radius_required": true,
+    "preparation_and_constitutive_choices": "Unchanged from PROBLEM_STATEMENT.md and the accepted preparation/inventories/EOS references. No EOS, mass, reference-state, activation, or tolerance reset is allowed. Any route change requires a separately named, pre-run amendment with bound sources and inputs."
+  },
+  "objectives_and_events": {
+    "velocity": {
+      "definition": "For each saved time, compute the inclusive whole-liquid water mass above directed velocity w=-u_z; U(m*,t)=sup{U>=0: integral_water rho*1[w>=U] dV >= m*}, with empty set assigned zero. J_U(m*) is the maximum over t from zero through t_imp if genuine first internal liquid-liquid axial contact occurs before the first post-growth volume minimum, otherwise through that volume minimum.",
+      "diagnostic_energy": "Any energy diagnostic uses the complete velocity vector. Directed or axial energy is labelled separately."
+    },
+    "pressure": {
+      "definition": "P(r_o,t)=(pi*r_o^2)^-1 integral_0^r_o [p_wall(r,t)-p_infinity] 2*pi*r dr. J_P(r_o,tau_o) is the greatest complete-window average tau_o^-1 integral_t^(t+tau_o) P(r_o,t') dt' over windows contained in [0,t_end], where t_end is the first rebound maximum after the first post-growth volume minimum.",
+      "measurement": "Solved receiver wall pressure/stress only; no impact-pressure, contact, spreading, or linear-acoustic substitute. If viscosity is active, retain wall-normal viscous stress and demonstrate its effect."
+    },
+    "cycle_events": {
+      "growth_maximum": "First strict positive-to-negative crossing of total outer PFC volume rate after an interval of positive growth.",
+      "collapse_minimum": "First strict negative-to-positive crossing after that growth maximum.",
+      "rebound_maximum": "First strict positive-to-negative crossing after that collapse minimum.",
+      "internal_impact": "First actual liquid-liquid axial contact inside the cavity; a clearance interval, mesh proximity, or numerical tolerance crossing is not contact.",
+      "free_field_R_m": "Same selected model, species, alpha_c, activation history, and first-growth-cycle convention in a separately solved free-field trajectory. No finite run endpoint or reduced-model radius may substitute.",
+      "missing_event_policy": "Missing, ambiguous, tangent, or unresolved events remain undefined/failed regimes. Never assign zero, a stop time, or a synthetic event. Preserve the complete early history and all roots."
+    }
+  },
+  "readiness_audit": {
+    "available_executable_model": {
+      "identity": "Basilisk axisymmetric_activation_core_candidate028.c with run-local candidate018-028 changes; PFP only.",
+      "scope": "Single 100 fs coupled engineering diagnostic. z=0 no-slip receiver wall; distant faces are closed slip for this short diagnostic. Full nonreflecting/radiative boundaries and their ledgers are pending.",
+      "run_path": "runs/AXI_PFP_transport_candidate028_100fs",
+      "driver_python": "verification/candidate028_native_runner_001.py",
+      "driver_shell": "verification/candidate028_native_runner_001.sh",
+      "driver_limit": "Fixed source-bound Stage1 invocation and fixed 1e-13 s target; it is not a species/alpha/gamma campaign driver and has no free-field trajectory mode.",
+      "recorded_outcome": "Compiler exit 0, simulation exit 0, 20 accepted steps to exactly 1e-13 s. This is not a growth/collapse/impact/rebound trajectory.",
+      "raw_fields": "fields.csv is absent from the transferred candidate028 run. The source declares a per-leaf snapshot schema, but no full field history is retained for objective recomputation.",
+      "objective_observers": "No executed whole-water mass-quantile/time-max observer or solved receiver disk-pressure/window observer is present in the candidate028 result. The raw snapshot schema is not either objective observer."
+    },
+    "event_path": {
+      "project_definitions": "The exact intended event definitions above are recorded in PROBLEM_STATEMENT.md and the accepted WEB_B event/tail review.",
+      "available_component": "coupled_event_probe.c/.h and verification/event_geometry_acceptance001.json; represented topology, bracket-candidate, median, and film arithmetic component only.",
+      "component_limits": "The probe does not prove root uniqueness, its unique_root_proved output remains zero, and it is not integrated into an activation-to-rebound campaign driver. It does not supply any candidate028 objective event."
+    },
+    "free_field_reference": "No same-model free-field R_m(alpha_c) campaign is bound to candidate028. Existing spherical/reduced references are not substitutes for the selected spatially resolved near-wall model.",
+    "species_coverage": "No matching PFH candidate028 trajectory or Stage2-ready PFH executable route is bound.",
+    "build_identity": {
+      "compiler_command": "Basilisk qcc -O2 -Wall axisymmetric_activation_core_candidate028.c <seven GCC -O2 -Wall support objects> -o simulation -lm; run invocation is stored in verification/candidate028_native_runner_001.sh.",
+      "runner_hashes": {
+        "verification/candidate028_native_runner_001.py": "f8b601cd0421ad591d4f9146883c625dca3bc6a6958089971df4b53df47df8c7",
+        "verification/candidate028_native_runner_001.sh": "9c49a04b2845db8fb80ca74945e4b22bfb3566b0354e52cbbcdc2bcb32c459b9"
+      },
+      "principal_artifacts": {
+        "simulation_binary_sha256": "b9bd675b2963b6cd49ca8607c9e6eb889e8ffb455c3dd3bb539e5717fd057c76",
+        "axisymmetric_activation_core_candidate028.c_sha256": "a8224c0f893b3882348907575d76fe88a935d14694b421954610ba0ab606c5a5",
+        "axisymmetric_native_output_collector.h_sha256": "af555b42fed28891a67346d2c80a2f022cd6b7cccb54c66ef13937d3eefe2ef6",
+        "closure_geometric_advection.h_sha256": "bf4037f05aaafe285ecba69a4f604a28a33ddfad8e53f79f4af059441efe4a1a",
+        "coupled_event_probe.h_sha256": "a0c5d51a180356c049fb657b3230c6574d77ee4565ba66c3dc4ef885d1ed54df",
+        "pfc_helmholtz.h_sha256": "f8e6cf09bb20d23b26762eeb7977bc44244dd362a314751f9f78c446843b4610",
+        "pfc_reaction.h_sha256": "25eaf9fd179ba8608fb19843ae778f4d870128d25bd52f11389bf111117c6fc1",
+        "water_mg.h_sha256": "af77a10f746bf9f743fa0c87162ff32a1437fca60b5a5340bf9a323c7af3de6e"
+      },
+      "source_freeze": {
+        "root_preregistration": "verification/AXI_CANDIDATE028_ROOT_EXECUTION_PREREGISTRATION_001.json",
+        "root_preregistration_sha256": "ff44f27f1edace285138cd58268be1cca7a642d67fd760c6761b51b29a1371f9",
+        "root_freeze_record_sha256": "d9a3a8456f2295a64ffe8ab64f13e95581802002ca64924a55d7d658c455cc55",
+        "verified_source_bindings": 83,
+        "verified_copied_file_bindings": 82,
+        "candidate028_acceptance_receipt_sha256": "c455be9ff168689d4d068fe8d8df1d664a6ea571b14b3d581e81cfaa35a91a5f"
+      },
+      "toolchain_limitation": "The source-bound shell declares /usr/bin/gcc and the bundled Basilisk qcc path, and records -O2 -Wall. The transferred candidate run lacks gcc_version.txt and actual toolchain_sha256.txt; expected_toolchain_sha256.txt is present but is not proof of the actual compiler hashes. Candidate metadata therefore does not fully fingerprint the build platform/toolchain. This remains a provenance gap.",
+      "binary_status_files": {"qcc_exit": 0, "simulation_exit": 0, "history_sha256": "89c9d6f513af8d262c0bf13f80e8266e5fb6e9cb75f2a600cdf8d9c17744f24d"}
+    },
+    "stage2_execution_readiness": "NOT_READY_FOR_OBJECTIVE_RUNS: missing full-duration trajectory driver; missing same-model free-field R_m values; missing PFH route; missing retained full field history and objective observers; event probe not integrated and cannot certify unique roots; candidate028 distant boundaries are closed slip; candidate028 build-toolchain fingerprint is incomplete; production C4/V1-V6, C3 whole-path G9, and C5 calibrations remain unestablished under the strict contract."
+  },
+  "inherited_engineering_soft_passes": [
+    {"candidate": "018", "behavior": "Clamp negative viscous intrinsic increment to zero before energy update; retain raw defect diagnostics."},
+    {"candidate": "019", "behavior": "Relaxation soft-pass hook returns success after equilibrate/state-guard failure rather than refusing the diagnostic path."},
+    {"candidate": "020", "behavior": "Promote nonzero density-conversion underflow to signed 1e-300."},
+    {"candidate": "021", "behavior": "Residual near-zero water/PFC geometry thresholds select a pure-material early exit; thresholds include fraction 1e-30 and mass 1e-45 kg, with the declared special water-fraction 1e-20 case."},
+    {"candidate": "022", "behavior": "Snap near-zero negative geometric depletion complements to zero and reassign the residual channel."},
+    {"candidate": "023", "behavior": "Snap tiny negative water or PFC masses in (-1e-45,0) kg to zero before geometry validation."},
+    {"candidate": "024", "behavior": "Snap tiny negative water mass/energy and retry the geometric EOS; co-clear water auxiliary momentum in the declared branch."},
+    {"candidate": "025", "behavior": "Snap residual water fraction to zero and PFC fraction to one for the declared pure-PFC residual branch."},
+    {"candidate": "026", "behavior": "Use water mass/energy floors 1e-25 kg and 1e-20 J near zero water fraction; caloric consumer treats that water as absent."},
+    {"candidate": "027", "behavior": "Co-clear water energy/fraction/auxiliary momentum on the water-mass snap and apply nonpositive-density guards using 1e-300."},
+    {"candidate": "028", "behavior": "Clamp nonfinite/oversized geometric capacity ratios to HUGE and include SEPS in the capacity factor."}
+  ],
+  "inherited_stage1_exit_waivers": [
+    {"gate": "C4 production admission", "strict_disposition": "FAIL_PRODUCTION_ADMISSION retained"},
+    {"gate": "V1-V6 production package", "strict_disposition": "Unestablished; V3/V6 NOT_RUN and V4 incomplete"},
+    {"gate": "C5 activation-to-rebound calibrations", "strict_disposition": "Not started"},
+    {"gate": "C3 whole-path G9/D1-D6 qualification", "strict_disposition": "Not proved"},
+    {"gate": "Independent Stage1 self-audit", "strict_disposition": "Not run"}
+  ],
+  "campaign_design": {
+    "objective_count": 18,
+    "initial_coarse_coverage": {
+      "gamma_nodes": [1.25, 1.5, 2, 2.5, 3, 4, 5, 6, 8],
+      "alpha_c_nodes": [0, 0.03, 0.1, 0.3, 0.5, 1],
+      "species": ["PFP", "PFH"],
+      "planned_cases": 108,
+      "case_register": "data/STAGE2_CASE_REGISTER_001.csv",
+      "case_register_sha256": "edb3c77c2a0536e5454c07c7dba0a7c5499033563c36fdb17392ad99ca052f5c",
+      "interpretation": "Planned coverage coordinates only. They are not solver results, and the finite grid does not cover the continuous domain or infinite gamma tail."
+    },
+    "alpha_coverage": "Adaptively subdivide [0,1] in every regime that could contain an objective maximum. Reduction to alpha_c=1 is allowed only after a proved monotonicity result or S6.2 sign tests at at least three gamma values spanning the maximum region, with each consecutive objective difference exceeding combined numerical error. Otherwise retain two-dimensional optimization.",
+    "gamma_and_tail_coverage": {
+      "additional_tail_anchors": [16, 32],
+      "reserved_tail_holdout_gamma": [12, 24],
+      "apply_to": "Both species and all six initial alpha_c levels, then adapt alpha_c until uniformity over [0,1] is independently supported.",
+      "extension_rule": "Extend controls geometrically (48, 64, ...) if the conditional tail upper bound does not meet the remaining objective error budget. The final certificate must cover every finite gamma beyond the last control and the gamma-to-infinity limit uniformly over alpha_c.",
+      "tail_premises": "Require a same-model free-field velocity baseline and justified uniform event-horizon, R_m lower/upper, complete-water quantile, moving-water comparison, source-area/source-volume stability, and pressure-trace remainder premises as applicable. No objective is assumed to vanish at large gamma. Missing any premise leaves the corresponding tail region unresolved and G7 failing."
+    },
+    "independent_holdouts": {
+      "fixed_tail_holdouts": "Gamma 12 and 24 are reserved from fitting and bound construction; before each run freeze the training-only prediction, error bound, source/input hashes, and holdout coordinates. Evaluate at all six alpha levels for each species.",
+      "near_competitor_holdouts": "For each of the 18 objectives, use training data only to identify the maximizing box and the strongest competing box within 2*epsilon. Before evaluating hold-outs, freeze the predicted interval and reserve one interior point in each box using a deterministic midpoint rule. Do not use hold-out outcomes to fit that prediction; any miss fails the current bound and triggers expanded coverage/refit with the miss retained.",
+      "independence_rule": "Hold-outs are new actual solver trajectories excluded from model fitting, interpolation-constant selection, and certificate construction until their prediction check is recorded. No fixture or synthetic trajectory counts."
+    },
+    "adaptive_search": "Keep every objective and every validity regime. Refine parameter boxes near candidate maxima, competitors, branch/event transitions, failed cells, and boxes whose upper bounds remain competitive. Every run computes all five J_U thresholds and all four J_P observers if the required complete histories exist.",
+    "failed_region_handling": "Retain input/source/output/status hashes and exact failure. A potentially maximizing region must be rerun through a separately source-bound, preregistered route or covered by a justified upper bound. A persistent failure, missing event, validity stop, or unbounded error leaves that region unresolved and prevents global certification; never drop it or assign zero. New resolver failures are transferred to the external Expert with a focused handoff/start prompt; do not repair that resolver locally."
+  },
+  "stage7_plan": {
+    "refinement": "At each objective-specific x_star and each competitor within 2*epsilon, run at least three spatial mesh levels and one time-step halving. Estimate delta_num by the declared Richardson procedure, retain nonmonotone cases, and include the full estimate in the upper bound.",
+    "domain_sensitivity": "At each certificate-critical point compare the declared outer domain with a doubled domain. Require absolute objective change divided by the protected attained objective <= epsilon/10. Include boundary/reflection and truncation errors; a closed-slip diagnostic is not a domain-converged campaign boundary.",
+    "p9": "At each velocity/pressure critical point report vapour-side Mach. If M_v>0.3 while bubble pressure exceeds 5% of liquid driving pressure, run a resolved-vapour or registered perturbed-content variant and require objective change <= epsilon/3.",
+    "constitutive_sensitivity": "At each objective-specific x_star report variation under EOS constants plus/minus their cited source uncertainty, surface tension, viscosity on/off, and the carrier thermal model. These are declared model sensitivities, reported separately from numerical error and not used to widen epsilon silently."
+  },
+  "certificate_and_error_budget": {
+    "velocity_relative_gap_target": 0.05,
+    "pressure_relative_gap_target": 0.10,
+    "numerical_error_max_fraction_of_epsilon": 0.3333333333333333,
+    "domain_sensitivity_max_fraction_of_epsilon": 0.1,
+    "relative_error_allocations": {
+      "numerical_discretization": "epsilon/3",
+      "domain_sensitivity": "epsilon/10",
+      "interpolation_and_parameter_coverage": "epsilon/4",
+      "event_and_time_localization": "epsilon/12",
+      "source_integration_and_coupling": "epsilon/12",
+      "geometry_and_observer_quadrature": "epsilon/12",
+      "unallocated_safety_reserve": "epsilon/15",
+      "aggregation_rule": "Conservative sum of independently supported one-sided relative bounds must not exceed the applicable epsilon. Constitutive sensitivity is tabulated separately. Do not double count a term or omit a required term."
+    },
+    "global_bound_method": {
+      "tier": "Conditional numerical certificate (tier P only); not a rigorous interval proof.",
+      "finite_domain": "Cover the compactified coordinate chi=1/gamma in [0,0.8] (chi=0 is the gamma-to-infinity limit) and alpha_c in [0,1] by objective-specific boxes. Each box upper bound must use a documented Lipschitz estimate or second-difference curvature estimate with safety factor at least 2, plus the complete local error budget and independent hold-out checks.",
+      "regularity_requirement": "Finite sampled differences alone do not establish a uniform Lipschitz/curvature constant. The constant and event/branch regularity premises must be independently supported on each continuous regime before use.",
+      "tail_requirement": "Bound the entire unsampled gamma tail for each species/objective and all alpha_c, including its limiting value, with the same-model comparison/trace premises stated above. Do not infer a zero tail or a global bound from sampled maxima.",
+      "acceptance": "For every one of the 18 objectives produce an attained feasible J_low, a justified J_up over the full declared domain, and (J_up-J_low)/J_low <= the applicable epsilon. If J_low<=0, an event is undefined, any box is uncovered, or any premise is unsupported, report no global certificate."
+    },
+    "engineering_prediction_policy": "Any value computed using inherited Stage1 soft-passes or an unqualified route remains explicitly engineering/uncertified. Stage1 waivers do not establish physics validity or satisfy any applicable global maximum gate."
+  },
+  "freeze_and_amendment_rules": {
+    "plan_freeze_hash_is_appended_to_all_four_logs_before_any_stage2_run": true,
+    "first_stage2_run_at_freeze": null,
+    "first_case_run_authorized_by_this_plan": false,
+    "reason": "The only identified executable is candidate028's fixed 100 fs PFP diagnostic; it lacks the objective-reaching trajectory, free-field R_m, PFH route, retained full fields, integrated event path, and solved observers needed for a Stage2 sample.",
+    "model_or_driver_update": "Before any future campaign run, create a new-named candidate/amendment binding every source, input, compiler/build/platform artifact, event/observer implementation, output destination, and error contribution. Preserve all 11 inherited soft-passes and state changes in that identity/ledger, or isolate/remove them only in a separately named and independently preregistered route. Never overwrite the original or historical failure.",
+    "prohibited": ["synthetic evidence", "silent EOS/mass/reference reset", "unregistered source or tolerance changes", "local repair of a newly failed resolver", "Stage3 work"]
+  },
+  "existing_evidence_limits": {
+    "stage1_candidate028_receipt": "verification/STAGE1_CANDIDATE028_VERIFIED_LOOSENED_ACCEPTANCE_20261014.json",
+    "no_stage2_sample_or_holdout_exists": true,
+    "no_attained_objective_trajectory_exists": true,
+    "no_global_certificate_exists": true,
+    "certified_pfc_cavitation_maximum": false,
+    "actual_device_maximum": "UNRESOLVED"
+  }
+}

@@ -1,0 +1,231 @@
+<!doctype html><html lang="en" data-theme="dark" data-language="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Three-stage resolver: theory to code</title><link rel="stylesheet" href="assets/vendor/katex/katex.min.css"><link rel="stylesheet" href="assets/course.css"><link rel="stylesheet" href="assets/course-language.css"></head><body><nav class="topbar" aria-label="Main navigation"><a class="brand" href="../../index.html"><span lang="en">Laser PFC TP</span><span lang="zh-CN">激光 PFC 转印</span></a><a href="../../reference/defense.html"><span lang="en">Defense &amp; mastery</span><span lang="zh-CN">答辩与掌握</span></a><a href="../../reference/notation.html"><span lang="en">Notation</span><span lang="zh-CN">符号</span></a><a href="../../reference/sources.html"><span lang="en">Sources</span><span lang="zh-CN">来源</span></a></nav><div class="page-layout"><aside class="sidebar"><h2><span lang="en">Course</span><span lang="zh-CN">课程</span></h2><nav aria-label="Chapters and appendix"><a href="../../chapters/01-cavity-pressure-inertia-and-directional-jets.html"><span lang="en">Chapter 1 · Cavity pressure, carrier inertia and directional jets</span><span lang="zh-CN">第 1 章 · 空腔压力、载液惯性与定向射流</span></a><a href="../../chapters/02-optical-heating-and-finite-pfc-inventory.html"><span lang="en">Chapter 2 · Optical heating and finite PFC inventory</span><span lang="zh-CN">第 2 章 · 光学加热与有限 PFC 物质量</span></a><a href="../../chapters/03-arrays-finite-jets-and-impact.html"><span lang="en">Chapter 3 · Arrays, finite jets and measurable impact</span><span lang="zh-CN">第 3 章 · 阵列、有限射流与可测冲击</span></a><a href="../../chapters/04-fracture-and-transfer.html"><span lang="en">Chapter 4 · Fracture and transfer</span><span lang="zh-CN">第 4 章 · 断裂与转印</span></a><a href="../../appendices/a-hydrogel-versus-liquid.html"><span lang="en">Appendix A · Hydrogel versus liquid platforms</span><span lang="zh-CN">附录 A · 水凝胶与液体平台</span></a></nav><h2><span lang="en">In this unit</span><span lang="zh-CN">本单元内容</span></h2><nav class="toc" aria-label="In this unit"><a href="#three-stage-status"><span lang="en">Three-stage status</span><span lang="zh-CN">三个阶段的状态</span></a><a href="#1-physical-problem-and-prerequisites"><span lang="en">1. Physical problem and prerequisites</span><span lang="zh-CN">1. 物理问题与准备</span></a><a href="#2-state-variables-and-geometry"><span lang="en">2. State variables and geometry</span><span lang="zh-CN">2. 状态变量与几何</span></a><a href="#3-thermodynamics-and-conservative-evolution"><span lang="en">3. Thermodynamics and conservative evolution</span><span lang="zh-CN">3. 热力学与守恒演化</span></a><a href="#4-operator-splitting-and-rollback"><span lang="en">4. Operator splitting and rollback</span><span lang="zh-CN">4. 算子分裂与回滚</span></a><a href="#5-reproduce-the-implementation"><span lang="en">5. Reproduce the implementation</span><span lang="zh-CN">5. 复现实现</span></a><a href="#command-line-input-contract"><span lang="en">Command-line input contract</span><span lang="zh-CN">命令行输入约定</span></a><a href="#6-output-readers-events-and-objectives"><span lang="en">6. Output readers, events and objectives</span><span lang="zh-CN">6. 输出读取、事件和目标</span></a><a href="#7-conditional-energy-ceilings-and-the-quoted-example"><span lang="en">7. Conditional energy ceilings and the quoted example</span><span lang="zh-CN">7. 条件能量上限与引用示例</span></a><a href="#8-independent-checks-and-unresolved-production-work"><span lang="en">8. Independent checks and unresolved production work</span><span lang="zh-CN">8. 独立检查及未完成生产工作</span></a><a href="#sources-and-further-implementation-study"><span lang="en">Sources and further implementation study</span><span lang="zh-CN">来源与进一步实现学习</span></a></nav></aside><div class="reading"><header class="chapter-header"><div class="lang-pair"><p lang="en">Chapter 3 · Resolver implementation</p><p class="zh" lang="zh-CN">第 3 章 · 求解器实现</p></div><div class="heading-pair"><h1 lang="en">Three-stage resolver: theory to simulation code</h1><h1 class="zh" lang="zh-CN">三阶段求解：从理论到仿真代码</h1></div><nav class="resource-nav"><div class="lang-pair"><p lang="en"><a href="../../chapters/03-arrays-finite-jets-and-impact.html">Chapter 3</a></p><p class="zh" lang="zh-CN"><a href="../../chapters/03-arrays-finite-jets-and-impact.html">第 3 章</a></p></div></nav></header><main class="chapter-body"><section id="three-stage-status"><div class="heading-pair"><h2 lang="en">Three-stage status</h2><h2 class="zh" lang="zh-CN">三个阶段的状态</h2></div><div class="lang-pair"><p lang="en">Stage1: CLOSED_LOOSENED. Stage2: STAGE2_LOOSENED_CLOSED. Both retain accepted waivers. Stage3: STAGE3_ENGINEERING_DOCUMENTATION_COMPLETE. Strict acceptance: false. All 18 objective values remain null. Cannot compute maximum: missing completed observers, feasible maximizing designs, refinement and global certificates. Candidate030 reaches 0.43 ns in 43 accepted steps. Its transferred meta.json belongs to candidate028.</p><p class="zh" lang="zh-CN">阶段一：CLOSED_LOOSENED。阶段二：STAGE2_LOOSENED_CLOSED。两阶段保留已接受豁免。阶段三：STAGE3_ENGINEERING_DOCUMENTATION_COMPLETE。严格验收：false。全部 18 项目标值仍为 null。无法计算最大值：缺少完整观测、可行最优设计、细化与全局证书。candidate030 经 43 个接受步到达 0.43 ns。转移的 meta.json 属于 candidate028。</p></div></section>
+<section id="1-physical-problem-and-prerequisites"><div class="heading-pair"><h2 lang="en">1. Physical problem and prerequisites</h2><h2 class="zh" lang="zh-CN">1. 物理问题与准备</h2></div><div class="lang-pair"><p lang="en">Model activated PFC in water near a rigid wall. Compute phase conversion, heat transfer, compressible flow and interface motion. The domain is axisymmetric. Basilisk x maps to axial z; y maps to radial r. Positive z points away from the wall at z=0. Positive r points away from the axis. Initial velocity is zero and PFC is liquid. Initial pressure is 101325 Pa. Temperature and inventory are specified inputs. This pilot uses closed slip far boundaries. Nonreflecting production boundaries remain unqualified. Read Sections 2–7 before compiling with Basilisk C and qcc.</p><p class="zh" lang="zh-CN">模拟刚性壁面附近水中的受激 PFC。计算相变、传热、可压缩流动及界面运动。采用轴对称域。Basilisk 的 x 对应轴向 z，y 对应径向 r。正 z 离开 z=0 的壁面。正 r 离开对称轴。初始速度为零，PFC 为液体。初始压力为 101325 Pa。温度与物质总量为给定输入。该试算采用封闭滑移远边界。非反射生产边界尚未合格。使用 Basilisk C 和 qcc 编译前，阅读第 2–7 节。</p></div></section>
+<section id="2-state-variables-and-geometry"><div class="heading-pair"><h2 lang="en">2. State variables and geometry</h2><h2 class="zh" lang="zh-CN">2. 状态变量与几何</h2></div><div class="lang-pair"><p lang="en">M_PFC and M_water store partial mass densities in kg/m³. E_PFC and E_water store total energy densities in J/m³. Shared momentum density q has units kg/(m²·s). Z_PFC stores PFC vapour mass density in kg/m³. f_PFC and a_water are volume fractions. Recover specific internal energy before calling the EOS. Physical integrals require the axisymmetric metric. Basilisk dv() includes radial weighting. Multiply by 2π once. Adjust radius to match the fixed inventory on the mesh.</p><p class="zh" lang="zh-CN">M_PFC、M_water 保存部分质量密度，单位 kg/m³。E_PFC、E_water 保存总能量密度，单位 J/m³。共享动量密度 q 的单位为 kg/(m²·s)。Z_PFC 保存 PFC 蒸汽质量密度，单位 kg/m³。f_PFC、a_water 是体积分数。调用状态方程前先恢复比内能。物理积分需要轴对称度量。Basilisk 的 dv() 已含径向权重。2π 乘一次。调整半径以匹配网格上的固定物质总量。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 1: V: physical cell volume (m³); dv(): Basilisk metric cell volume (m³ per radian); π: circle constant; m: cell mass (kg); M: partial mass density (kg/m³).</p><p class="zh" lang="zh-CN">公式 1 前的符号：V：物理单元体积（m³）；dv()：含度量单元体积（每弧度 m³）；π：圆周率；m：单元质量（kg）；M：部分质量密度（kg/m³）。</p></div></div><div class="math-display" data-tex="V=2\pi\,\mathrm{dv}(),\qquad m=MV"></div><div class="lang-pair"><p lang="en">(1) Definition. Multiplication gives kg/m³ × m³ = kg.</p><p class="zh" lang="zh-CN">(1) 定义。kg/m³ × m³ = kg。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 2: ξ: vapour mass fraction (dimensionless); Z: vapour mass density (kg/m³); M: PFC mass density >0 (kg/m³); e: internal energy (J/kg); E: total energy density (J/m³); u: velocity (m/s); |u|: Euclidean speed.</p><p class="zh" lang="zh-CN">公式 2 前的符号：ξ：蒸汽质量分数（无量纲）；Z：蒸汽质量密度（kg/m³）；M：PFC 质量密度，>0（kg/m³）；e：比内能（J/kg）；E：总能量密度（J/m³）；u：速度（m/s）；|u|：欧氏速率。</p></div></div><div class="math-display" data-tex="\xi=Z/M,\qquad e=E/M-\tfrac12|\boldsymbol u|^2"></div><div class="lang-pair"><p lang="en">(2) Subtract kinetic energy from total specific energy. Vacuum requires separate handling.</p><p class="zh" lang="zh-CN">(2) 从比总能中减去比动能。真空需单独处理。</p></div></section>
+<section id="3-thermodynamics-and-conservative-evolution"><div class="heading-pair"><h2 lang="en">3. Thermodynamics and conservative evolution</h2><h2 class="zh" lang="zh-CN">3. 热力学与守恒演化</h2></div><div class="lang-pair"><p lang="en">Use the bundled material bridge and thermodynamic coefficients. One potential determines water pressure, entropy and temperature. PFC inversion enforces common pressure, mixture volume and mixture energy. Retain branch selection and admissibility checks. Constant sound speed, Tait water or ideal gas would change this closure. The balances below describe the continuum model. Native split operators supply the discrete closure. Material exchange sources must cancel. Check geometry and energy closure together.</p><p class="zh" lang="zh-CN">使用随附材料桥接代码和热力学系数。同一势函数确定水的压力、熵和温度。PFC 反演满足共同压力、混合体积和混合能量约束。保留分支选择与可接受性检查。常声速、Tait 水或理想气体会改变该闭合。下式描述连续模型。原生分裂算子提供离散闭合。材料交换源必须抵消。几何与能量闭合共同检查。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 3: ρ: total density (kg/m³); u: velocity (m/s); t: time (s); ∂t: time derivative; ∇·: spatial divergence (1/m); ⊗: tensor product; I: dimensionless identity tensor; p: pressure (Pa); τ: viscous stress (Pa); fσ: capillary force density (N/m³).</p><p class="zh" lang="zh-CN">公式 3 前的符号：ρ：总密度（kg/m³）；u：速度（m/s）；t：时间（s）；∂t：时间导数；∇·：空间散度（1/m）；⊗：张量积；I：无量纲单位张量；p：压力（Pa）；τ：黏性应力（Pa）；fσ：毛细力密度（N/m³）。</p></div></div><div class="math-display" data-tex="\partial_t\rho+\nabla\!\cdot(\rho\boldsymbol u)=0,\quad \partial_t(\rho\boldsymbol u)+\nabla\!\cdot(\rho\boldsymbol u\otimes\boldsymbol u+pI)=\nabla\!\cdot\tau+\boldsymbol f_\sigma"></div><div class="lang-pair"><p lang="en">(3) Mass and momentum laws. Momentum terms have units N/m³. Axisymmetric divergence includes radial metric terms.</p><p class="zh" lang="zh-CN">(3) 质量与动量定律。动量各项单位均为 N/m³。轴对称散度含径向度量项。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 4: v: target PFC specific volume (m³/kg); e: target internal energy (J/kg); ξ: vapour mass fraction [0,1]; subscripts L,V: liquid,vapour; phase vL,vV: specific volumes (m³/kg); eL,eV: phase internal energies (J/kg); pL,pV: phase pressures (Pa).</p><p class="zh" lang="zh-CN">公式 4 前的符号：v：PFC 目标比体积（m³/kg）；e：目标比内能（J/kg）；ξ：蒸汽质量分数 [0,1]；下标 L,V：液相、汽相；vL,vV：相比体积（m³/kg）；eL,eV：相比内能（J/kg）；pL,pV：相压力（Pa）。</p></div></div><div class="math-display" data-tex="p_L=p_V,\quad v=(1-\xi)v_L+\xi v_V,\quad e=(1-\xi)e_L+\xi e_V"></div><div class="lang-pair"><p lang="en">(4) Adopted local equilibrium inverse constraints. The native Newton solve also enforces branch admissibility. ξ=0 and ξ=1 recover pure-phase mixtures.</p><p class="zh" lang="zh-CN">(4) 采用的局部平衡反演约束。原生牛顿求解还检查分支可接受性。ξ=0、1 恢复纯相。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 5: A: liquid-minus-vapour specific Gibbs energy (J/kg); gL,gV: phase specific Gibbs energies (J/kg); T: absolute temperature >0 (K); ξdot: time rate of vapour fraction (1/s); sdot: reaction specific entropy rate (J/(kg·K·s)); dot: time derivative.</p><p class="zh" lang="zh-CN">公式 5 前的符号：A：液相减汽相比 Gibbs 能（J/kg）；gL,gV：相比 Gibbs 能（J/kg）；T：绝对温度 >0（K）；ξdot：蒸汽质量分数变化率（1/s）；sdot：反应比熵变化率（J/(kg·K·s)）；上点：时间导数。</p></div></div><div class="math-display" data-tex="A=g_L-g_V,\qquad \dot s_{\rm reaction}=A\dot\xi/T\geq0"></div><div class="lang-pair"><p lang="en">(5) Model admissibility test. The implemented mobility, birth and spinodal terms remain in pfc_reaction.h. αc=0 does not disable every evaporation mechanism.</p><p class="zh" lang="zh-CN">(5) 模型可接受性检查。具体迁移率、成核与自旋分解项保留于 pfc_reaction.h。αc=0 并不关闭所有蒸发机制。</p></div></section>
+<section id="4-operator-splitting-and-rollback"><div class="heading-pair"><h2 lang="en">4. Operator splitting and rollback</h2><h2 class="zh" lang="zh-CN">4. 算子分裂与回滚</h2></div><div class="lang-pair"><p lang="en">Save all fields, geometry and diagnostic counters before each trial. Choose the smallest remaining-time, maximum-step and acoustic CFL limit. Apply half steps for phase, interface heat, water conduction and viscosity. Reconstruct faces and advect conserved fields. Apply pressure and capillarity, then reverse the half-step sequence. Rebuild geometry after each modifying operator. Advance time and iteration after success. On refusal, restore every saved quantity and check restoration. Candidate018–030 interventions remain documented numerical assumptions. Retain soft-accepted heat diagnostics. Second-order convergence is not established. Missing: refinement evidence.</p><p class="zh" lang="zh-CN">每次试算前保存全部场、几何及诊断计数。时间步取剩余时间、最大步长和声学 CFL 限值中的最小值。依次执行半步相变、界面传热、水导热及黏性。重建面速度，输运守恒量。施加压力与毛细作用，再反向执行半步序列。每个修改算子后重建几何。成功后更新时间和步数。拒绝时恢复全部保存量，再检查恢复。candidate018–030 干预保留为已记录数值假设。保留软接受传热诊断。二阶收敛尚未建立。缺少：细化证据。</p></div></section>
+<section><div class="lang-pair"><p lang="en">Read the includes, fields and boundary declarations first.</p><p class="zh" lang="zh-CN">先阅读头文件、场和边界声明。</p></div><p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/axisymmetric_activation_core_candidate030.c">axisymmetric_activation_core_candidate030.c, lines 1–95</a></p><pre><code>   1  #include &quot;grid/quadtree.h&quot;
+   2  #include &quot;axi.h&quot;
+   3  #include &quot;axisymmetric_coupled_core_candidate019.h&quot;
+   4  #include &quot;axisymmetric_transaction.h&quot;
+   5  #include &quot;axisymmetric_snapshot_properties.h&quot;
+   6  #include &quot;axisymmetric_transport_collector_candidate020.h&quot;
+   7  #include &lt;time.h&gt;
+   8  /* CANDIDATE030 STAGE2_LOOSENED: retains 018-029; heat integrator status=11 energy/entropy gate soft-pass */
+   9  /* All shared AND auxiliary momentum boundary conditions are explicit.
+  10   * z=0 receiving wall: no-slip; r=0 axis: odd radial/even axial velocity.
+  11   * Distant faces are closed slip solely for this short assembly diagnostic.
+  12   * Full nonreflecting/radiative boundaries and their ledgers remain pending. */
+  13  q.x[left]=dirichlet(0);
+  14  q.y[left]=dirichlet(0);
+  15  q_PFC.x[left]=dirichlet(0);
+  16  q_PFC.y[left]=dirichlet(0);
+  17  q_water.x[left]=dirichlet(0);
+  18  q_water.y[left]=dirichlet(0);
+  19  q_adv.x[left]=dirichlet(0);
+  20  q_adv.y[left]=dirichlet(0);
+  21  q.x[right]=dirichlet(0);
+  22  q.y[right]=neumann(0);
+  23  q_PFC.x[right]=dirichlet(0);
+  24  q_PFC.y[right]=neumann(0);
+  25  q_water.x[right]=dirichlet(0);
+  26  q_water.y[right]=neumann(0);
+  27  q_adv.x[right]=dirichlet(0);
+  28  q_adv.y[right]=neumann(0);
+  29  q.y[bottom]=dirichlet(0);
+  30  q.x[bottom]=neumann(0);
+  31  q_PFC.y[bottom]=dirichlet(0);
+  32  q_PFC.x[bottom]=neumann(0);
+  33  q_water.y[bottom]=dirichlet(0);
+  34  q_water.x[bottom]=neumann(0);
+  35  q_adv.y[bottom]=dirichlet(0);
+  36  q_adv.x[bottom]=neumann(0);
+  37  q.y[top]=dirichlet(0);
+  38  q.x[top]=neumann(0);
+  39  q_PFC.y[top]=dirichlet(0);
+  40  q_PFC.x[top]=neumann(0);
+  41  q_water.y[top]=dirichlet(0);
+  42  q_water.x[top]=neumann(0);
+  43  q_adv.y[top]=dirichlet(0);
+  44  q_adv.x[top]=neumann(0);
+  45  uf.x[left]=dirichlet(0);
+  46  uf.x[right]=dirichlet(0);
+  47  uf.y[bottom]=dirichlet(0);
+  48  uf.y[top]=dirichlet(0);
+  49  
+  50  static void core_history(FILE * stream,const ClosureAxisSnapshotCell * properties,
+  51      const char * stage,double time,int steps) {
+  52    double mw,mf,E,S,minimum,error,uncovered;
+  53    closure_flow_integrals(&amp;mw,&amp;mf,&amp;E,&amp;S,&amp;minimum,&amp;error,&amp;uncovered);
+  54    S=0.;foreach(serial) {
+  55      const ClosureAxisSnapshotCell * s=properties+(int)leaf_index[];
+  56      S+=(M_water[]*s-&gt;water.s+M_PFC[]*s-&gt;pfc.s)*dv();
+  57    }
+  58    fprintf(stream,&quot;%s,%.17g,%d,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%.17g,%lu,%lu,%lu,%lu,%.17g,%.21Lg,%.21Lg,%.21Lg,%.21Lg,%.21Lg,%.21Lg,%.21Lg,%.21Lg,%lu,%lu,%lu\n&quot;,
+  59      stage,time,steps,2.*pi*mw,2.*pi*mf,2.*pi*E,2.*pi*S,axis_statistics.area_m2,
+  60      minimum,error,2.*pi*uncovered,geometric_statistics.final_pressure_residual,
+  61      axis_statistics.phase_entropy_HKS_J_K,axis_statistics.phase_entropy_bulk_J_K,
+  62      axis_statistics.heat_entropy_J_K,axis_statistics.capillary_work_J,
+  63      axis_statistics.heat_energy_defect_J,axis_statistics.geometry_water_volume_defect_m3,
+  64      geometric_statistics.work_defect,axis_statistics.phase_evaluations,
+  65      axis_statistics.spinodal_warm,axis_statistics.spinodal_global,axis_statistics.heat_evaluations,
+  66      axis_statistics.mechanical_entropy_J_K+geometric_statistics.mechanical_entropy,
+  67      axis_statistics.water_Fourier_entropy_J_K,axis_statistics.viscous_entropy_J_K,
+  68      axis_statistics.water_Fourier_boundary_energy_out_J,axis_statistics.viscous_boundary_energy_out_J,
+  69      axis_statistics.water_Fourier_energy_defect_J,axis_statistics.viscous_intrinsic_work_defect_J,
+  70      axis_statistics.converted_transport_energy_roundoff_J,axis_statistics.converted_transport_momentum_roundoff_kg_m_s,
+  71      axis_statistics.water_Fourier_faces,axis_statistics.viscous_faces,axis_statistics.water_Fourier_iterations);
+  72    fflush(stream);
+  73    fprintf(stderr,&quot;CORE STAGE PROFILE: stage=%s time=%.17g steps=%d cpu_process_seconds=%.9g raw_queries=%lu inverse_iterations=%lu inverse_fallbacks=%lu global_phase_queries=%lu phase_evaluations=%lu heat_evaluations=%lu\n&quot;,
+  74      stage,time,steps,(double)clock()/CLOCKS_PER_SEC,geometric_statistics.raw_queries,
+  75      geometric_statistics.inverse_iterations,geometric_statistics.inverse_fallbacks,
+  76      geometric_statistics.global_phase_queries,axis_statistics.phase_evaluations,
+  77      axis_statistics.heat_evaluations);
+  78    fprintf(stderr,&quot;CORE READONLY PROFILE: W_calls=%lu F_calls=%lu W_only=%lu F_only=%lu mixed=%lu W_CPU_s=%.9g F_CPU_s=%.9g\n&quot;,
+  79      axis_snapshot_water_calls,axis_snapshot_PFC_calls,axis_snapshot_W_only,axis_snapshot_F_only,
+  80      axis_snapshot_mixed,axis_snapshot_water_cpu,axis_snapshot_PFC_cpu);
+  81  }
+  82  
+  83  /* Selected conditional TS transport integration for candidate011. Each call
+  84   * is a physical source half-step; the surrounding whole-macrostep transaction
+  85   * restores both fields and axis_statistics if any later operation refuses. */
+  86  static int core_transport_candidate011(ClosureAxisSnapshotCell * properties,
+  87      double interval,double length,int finest,int viscosity) {
+  88    ClosureAxisTransportCommitStats report;
+  89    int status=closure_axis_transport_source(interval,length,finest,viscosity,properties,&amp;report);
+  90    if(status)return status;
+  91    if(viscosity) {
+  92      axis_statistics.viscous_entropy_J_K+=report.physical.viscous_entropy_J_K;
+  93      axis_statistics.viscous_boundary_energy_out_J+=report.physical.viscous_energy_boundary_out_J;
+  94      axis_statistics.viscous_intrinsic_work_defect_J+=report.physical.viscous_intrinsic_work_defect_J;
+  95      axis_statistics.converted_transport_energy_roundoff_J+=report.converted_energy_roundoff_J;</code></pre></section>
+<section><div class="lang-pair"><p lang="en">Trace initialization, split operators, acceptance and refusal directly. The numbered source is authoritative.</p><p class="zh" lang="zh-CN">直接跟踪初始化、分裂算子、接受与拒绝。带行号源代码为权威记录。</p></div><p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/axisymmetric_activation_core_candidate030.c">axisymmetric_activation_core_candidate030.c, lines 190–343</a></p><pre><code> 190    }
+ 191    if(!(fabs(mass_error)&lt;1.e-6))return 5;
+ 192    foreach() {
+ 193      a_water[]=1.-f_PFC[];M_water[]=a_water[]*water.rho;M_PFC[]=f_PFC[]*pfc.rho;
+ 194      E_water[]=M_water[]*water.e;E_PFC[]=M_PFC[]*pfc.e;Z_PFC[]=0.;
+ 195  q.x[]=q.y[]=0.;
+ 196      closure_store_cell_cache(point,initial);
+ 197    }
+ 198    boundary({f_PFC,a_water,M_water,M_PFC,E_water,E_PFC,Z_PFC,q,
+ 199      rhoL_cache,rhoV_cache,p_cache,T_cache,validL_cache,validV_cache});
+ 200    if(closure_equilibrate_fields(1,p) || closure_axisymmetric_state_guard(p) ||
+ 201       closure_axisymmetric_geometry(geometry))return 6;
+ 202    closure_save_advected_targets();
+ 203    foreach() {
+ 204      p_trial[]=p[];p_EOS[]=p[];
+ 205      foreach_dimension(){q_PFC.x[]=0.;q_water.x[]=0.;}
+ 206    }
+ 207    boundary({p_trial,p_EOS,q_PFC,q_water});
+ 208    closure_advective_face_velocity();
+ 209    FILE * history=fopen(&quot;history.csv&quot;,&quot;w&quot;),* fields=fopen(&quot;fields.csv&quot;,&quot;w&quot;);
+ 210    if(!history || !fields)return 7;
+ 211    fprintf(stderr,&quot;CANDIDATE011 COMPONENT ONLY: selected viscous/Fourier half-steps enabled; full production admission absent; physicalV=2pi*dv; leaves=%lu initial_radius=%.17g activated_nominal_radius=%.17g mass_relative_error=%.17g\n&quot;,
+ 212      axis_leaf_count,chosen,radius,mass_error);
+ 213    fprintf(history,&quot;stage,time_s,steps,water_mass_kg,PFC_mass_kg,bulk_energy_J,entropy_J_K,area_m2,min_fraction,fraction_sum_error,uncovered_mass_kg,pressure_residual,phase_HKS_entropy_J_K,phase_bulk_entropy_J_K,interface_heat_entropy_J_K,capillary_work_J,interface_heat_energy_defect_J,water_geometry_volume_defect_m3,pressure_work_defect_J,phase_evaluations,spinodal_warm,spinodal_global,heat_evaluations,mechanical_entropy_J_K,water_Fourier_entropy_J_K,viscous_entropy_J_K,water_Fourier_boundary_energy_out_J,viscous_boundary_energy_out_J,water_Fourier_energy_defect_J,viscous_intrinsic_work_defect_J,converted_transport_energy_roundoff_J,converted_transport_momentum_roundoff_kg_m_s,water_Fourier_edges,viscous_faces,water_Fourier_iterations\n&quot;);
+ 214    fprintf(fields,&quot;stage,time_s,level,z_m,r_m,Delta_m,volume_m3,a_F,a_W,M_F_kg_m3,M_W_kg_m3,E_F_J_m3,E_W_J_m3,u_z_m_s,u_r_m_s,m_F_kg,m_W_kg,E_F_J,E_W_J,xi,p_Pa,T_W_K,T_F_K,s_W_J_kg_K,s_F_J_kg_K,e_W_J_kg,e_F_J_kg,p_F_Pa,steps,leaf_id,area_m2,PFC_raw_volume_m3,water_raw_volume_m3,PFC_geometry_volume_m3,water_geometry_volume_m3,distance_water_m,water_conductance_W_K,water_geometry_volume_defect_m3,PFC_geometry_volume_defect_m3,has_interface,rounded_primary_complement,p_W_actual_Pa,water_caloric_status,PFC_caloric_status&quot;);
+ 215    for(int field=0;field&lt;transaction.fields;field++)fprintf(fields,&quot;,rollback_field_%d&quot;,field);
+ 216    fputc(&#x27;\n&#x27;,fields);
+ 217    if(core_snapshot(history,fields,geometry,properties,&quot;initial&quot;,0.,0))return 17;
+ 218    double time=0.,macrostep_start_time=0.;int iteration=0,status=0,macrostep_start_iteration=0;
+ 219    while(time&lt;end_time) {
+ 220      macrostep_start_time=time;macrostep_start_iteration=iteration;
+ 221      if(closure_axisymmetric_transaction_capture(&amp;transaction,geometry)){status=18;break;}
+ 222      double step=fmin(end_time-time,fmin(maximum_step,closure_acoustic_timestep(courant)));
+ 223      if(!(step&gt;0. &amp;&amp; isfinite(step))){status=8;break;}
+ 224      if(closure_axisymmetric_phase(.5*step,axis_statistics.area_m2) ||
+ 225         closure_axisymmetric_geometry(geometry)){status=9;break;}
+ 226      if(core_snapshot(history,fields,geometry,properties,&quot;phase_first&quot;,time,iteration)){status=17;break;}
+ 227      if(diagnostic_refusal==1){status=91;break;}
+ 228      if(with_heat &amp;&amp; (closure_axisymmetric_heat(.5*step,geometry) ||
+ 229         closure_axisymmetric_geometry(geometry))){status=10;break;}
+ 230      if(core_snapshot(history,fields,geometry,properties,&quot;thermal_first&quot;,time,iteration)){status=17;break;}
+ 231      if(diagnostic_refusal==2){status=92;break;}
+ 232      if(core_transport_candidate011(properties,.5*step,length,fine,0) ||
+ 233         closure_axisymmetric_geometry(geometry)){status=20;break;}
+ 234      if(core_snapshot(history,fields,geometry,properties,&quot;water_Fourier_first&quot;,time,iteration)){status=17;break;}
+ 235      {
+ 236        int transport_status=core_transport_candidate011(properties,.5*step,length,fine,1);
+ 237        int geometry_status=transport_status?0:closure_axisymmetric_geometry(geometry);
+ 238        if(transport_status || geometry_status){
+ 239          fprintf(stderr,&quot;AXI status=21 detail transport=%d geometry=%d\n&quot;,transport_status,geometry_status);
+ 240          status=21;break;
+ 241        }
+ 242      }
+ 243      if(core_snapshot(history,fields,geometry,properties,&quot;viscous_first&quot;,time,iteration)){status=17;break;}
+ 244      fprintf(stderr,&quot;DIAG before face_velocity t=%.17g steps=%d\n&quot;,time,iteration);fflush(stderr);
+ 245      closure_advective_face_velocity();
+ 246      fprintf(stderr,&quot;DIAG after face_velocity before advect\n&quot;);fflush(stderr);
+ 247      if(closure_advect_conserved(step,iteration)){status=11;break;}
+ 248      fprintf(stderr,&quot;DIAG after advect before geometry\n&quot;);fflush(stderr);
+ 249      if(closure_axisymmetric_geometry(geometry)){status=16;break;}
+ 250      fprintf(stderr,&quot;DIAG after geometry before advected snapshot\n&quot;);fflush(stderr);
+ 251      if(core_snapshot(history,fields,geometry,properties,&quot;advected&quot;,time,iteration)){status=17;break;}
+ 252      if(diagnostic_refusal==3){status=93;break;}
+ 253      if(closure_axisymmetric_pressure_capillary(step) ||
+ 254         closure_axisymmetric_geometry(geometry)){status=12;break;}
+ 255      if(core_snapshot(history,fields,geometry,properties,&quot;pressure_capillary&quot;,time+step,iteration)){status=17;break;}
+ 256      if(diagnostic_refusal==4){status=94;break;}
+ 257      if(core_transport_candidate011(properties,.5*step,length,fine,1) ||
+ 258         closure_axisymmetric_geometry(geometry)){status=22;break;}
+ 259      if(core_snapshot(history,fields,geometry,properties,&quot;viscous_last&quot;,time+step,iteration)){status=17;break;}
+ 260      if(core_transport_candidate011(properties,.5*step,length,fine,0) ||
+ 261         closure_axisymmetric_geometry(geometry)){status=23;break;}
+ 262      if(core_snapshot(history,fields,geometry,properties,&quot;water_Fourier_last&quot;,time+step,iteration)){status=17;break;}
+ 263      if(with_heat &amp;&amp; (closure_axisymmetric_heat(.5*step,geometry) ||
+ 264         closure_axisymmetric_geometry(geometry))){status=13;break;}
+ 265      if(core_snapshot(history,fields,geometry,properties,&quot;thermal_last&quot;,time+step,iteration)){status=17;break;}
+ 266      if(diagnostic_refusal==5){status=95;break;}
+ 267      if(closure_axisymmetric_phase(.5*step,axis_statistics.area_m2) ||
+ 268         closure_axisymmetric_geometry(geometry)){status=14;break;}
+ 269      if(diagnostic_refusal==6){status=96;break;}
+ 270      time+=step;iteration++;if(core_snapshot(history,fields,geometry,properties,&quot;accepted&quot;,time,iteration)){status=17;break;}
+ 271      if(iteration&gt;100000){status=15;break;}
+ 272    }
+ 273    if(status &amp;&amp; transaction.valid) {
+ 274      core_snapshot(history,fields,geometry,properties,&quot;rejected_trial&quot;,time,iteration);
+ 275      fprintf(stderr,&quot;CORE REJECTED TRIAL: status=%d raw_queries=%lu phase_evaluations=%lu heat_evaluations=%lu before_macrostep_restore\n&quot;,
+ 276        status,geometric_statistics.raw_queries,axis_statistics.phase_evaluations,axis_statistics.heat_evaluations);
+ 277      int restored=closure_axisymmetric_transaction_restore(&amp;transaction,geometry);
+ 278      if(!restored)restored=closure_axisymmetric_transaction_matches(&amp;transaction,geometry);
+ 279      fprintf(stderr,&quot;CORE MACROSTEP RESTORE: status=%d exact_all_scalar_geometry_statistics=%d fields=%d leaves=%lu\n&quot;,
+ 280        restored,restored==0,transaction.fields,transaction.leaf_count);
+ 281      if(restored){fprintf(stderr,&quot;AXI global restore failed status=%d\n&quot;,restored);status=19;}
+ 282      else {time=macrostep_start_time;iteration=macrostep_start_iteration;}
+ 283      core_snapshot(history,fields,geometry,properties,&quot;failed_rolled_back&quot;,time,iteration);
+ 284    } else core_snapshot(history,fields,geometry,properties,status?&quot;failed&quot;:&quot;final&quot;,time,iteration);
+ 285    fprintf(stderr,&quot;CORE PROFILE: cpu_seconds=%.9g raw_queries=%lu inverse_iterations=%lu inverse_fallbacks=%lu global_phase_queries=%lu phase_evaluations=%lu heat_evaluations=%lu physical_domain_status=%d\n&quot;,
+ 286      (double)(clock()-cpu_started)/CLOCKS_PER_SEC,geometric_statistics.raw_queries,
+ 287      geometric_statistics.inverse_iterations,geometric_statistics.inverse_fallbacks,
+ 288      geometric_statistics.global_phase_queries,axis_statistics.phase_evaluations,
+ 289      axis_statistics.heat_evaluations,status);
+ 290    fclose(history);fclose(fields);free(geometry);free(properties);closure_axisymmetric_transaction_free(&amp;transaction);
+ 291    closure_coupled_phase_caches_free(axis_spinodal_caches);
+ 292    free(f_PFC.closure_tracers);f_PFC.closure_tracers=NULL;closure_bridge_cleanup();return status;
+ 293  }</code></pre></section>
+<section id="5-reproduce-the-implementation"><div class="heading-pair"><h2 lang="en">5. Reproduce the implementation</h2><h2 class="zh" lang="zh-CN">5. 复现实现</h2></div><div class="lang-pair"><p lang="en">The evidence folder contains candidate030 dependencies and the water table. native/basilisk.tar.gz contains the frozen compiler source. Use Linux/WSL with gcc, GNU make and tar. Copy this folder there and run native/build.sh. The script creates a fresh output directory. qcc requires paths without spaces. This recipe compiles an executable. It starts no campaign. Inspect warnings and record the executable hash. Cross-platform build certification remains incomplete.</p><p class="zh" lang="zh-CN">evidence 文件夹含 candidate030 依赖及水表。native/basilisk.tar.gz 含冻结编译器源。使用带 gcc、GNU make、tar 的 Linux/WSL。复制本文件夹后运行 native/build.sh。脚本创建新的输出目录。qcc 路径不得含空格。该配方编译可执行文件，不启动计算活动。检查警告并记录可执行文件哈希。跨平台编译认证尚未完成。</p></div></section>
+<p><a href="native/build.sh">native/build.sh</a> · <a href="examples/ceilings.py">examples/ceilings.py</a></p>
+<section id="command-line-input-contract"><div class="heading-pair"><h2 lang="en">Command-line input contract</h2><h2 class="zh" lang="zh-CN">命令行输入约定</h2></div><div class="lang-pair"><p lang="en">Inputs, in order: species; water table; activated temperature (K); PFC mass (kg); nominal radius (m); domain length (m); center height (m); base level; fine level; refinement radius (m); accommodation coefficient; end time (s); maximum step (s); Courant number; heat flag; optional refusal diagnostic. Center height is a length, while γ is dimensionless. Require height>radius and height+radius<domain length. Require αc in [0,1] and γ≥1.25. No finite upper application bound is specified for γ. Determine γ using the same-model free-field maximum radius. That radius qualification is missing. See native/README.md for a historical command. Run in a separate writable directory. It receives history.csv and fields.csv.</p><p class="zh" lang="zh-CN">依次输入：物种；水表；受激温度（K）；PFC 质量（kg）；名义半径（m）；域长度（m）；中心高度（m）；基础层级；细化层级；细化半径（m）；调节系数；结束时间（s）；最大步长（s）；Courant 数；传热开关；可选拒绝诊断。中心高度是长度，γ 无量纲。要求 height>radius 且 height+radius<domain length。要求 αc 在 [0,1]，γ≥1.25。γ 没有给定有限应用上界。用同模型自由场最大半径确定 γ。该半径资格仍缺失。历史命令见 native/README.md。在独立可写目录运行。history.csv、fields.csv 写入该目录。</p></div></section>
+<section id="6-output-readers-events-and-objectives"><div class="heading-pair"><h2 lang="en">6. Output readers, events and objectives</h2><h2 class="zh" lang="zh-CN">6. 输出读取、事件和目标</h2></div><div class="lang-pair"><p lang="en">Read the raw-reader contract before parsing snapshots. Group cells by stage and time. Exclude rejected_trial and failed_rolled_back from accepted trajectories. Keep distinct times and intermediate operators separate. Recompute mass as density times physical volume. Preserve leaf IDs and units. A complete event requires expansion, contraction and collapse. The 0.43 ns trace lacks that cycle. Selected whole-water masses are {1,3,10,30,100} pg. Let u_z denote axial water velocity (m/s). Let w denote directed water speed toward z=0 (m/s). Define w=-u_z=-u.x in Basilisk. Positive w points toward the wall. Sort accepted water cells by w and accumulate water mass. This gives mass-selected upper-tail diagnostics. Define a reconstruction rule for partial cells. Integrate gauge pressure over disk radii {2,10} µm. Use averaging windows {2,20} ns. Cell-center peaks are different observables. Missing samples remain null.</p><p class="zh" lang="zh-CN">解析快照前阅读原始读取约定。按 stage 和时间分组。接受轨迹排除 rejected_trial、failed_rolled_back。不同时刻与中间算子分别保留。质量按密度乘物理体积重算。保留单元 ID 和单位。完整事件需要扩张、收缩与塌缩。0.43 ns 轨迹缺少该周期。选择的全水质量为 {1,3,10,30,100} pg。u_z 表示水的轴向速度（m/s）。w 表示水指向 z=0 的定向速率（m/s）。在 Basilisk 中，w=-u_z=-u.x。w 为正时指向壁面。按 w 排序接受水单元，再累计水质量。由此得到质量选择的上尾诊断。部分单元需指定重建规则。表压积分采用半径 {2,10} µm 的圆盘及 {2,20} ns 平均窗。单元中心峰值是不同观测量。缺失样本保持 null。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 6: pbar: disk/window mean gauge pressure (Pa); p(r,t): wall pressure (Pa); p0: reference pressure (Pa); a: disk radius >0 (m); Δt: window duration >0 (s); t0: window start (s); r: radius (m); t: time (s); integrals: area/time integration; π: dimensionless circle constant.</p><p class="zh" lang="zh-CN">公式 6 前的符号：pbar：圆盘及时间窗平均表压（Pa）；p(r,t)：壁面压力（Pa）；p0：参考压力（Pa）；a：圆盘半径 >0（m）；Δt：时间窗 >0（s）；t0：开始时间（s）；r：半径（m）；t：时间（s）；积分：面积与时间积分；π：无量纲圆周率。</p></div></div><div class="math-display" data-tex="\bar p={1\over\pi a^2\Delta t}\int_{t_0}^{t_0+\Delta t}\!\int_0^a[p(r,t)-p_0]2\pi r\,dr\,dt"></div><div class="lang-pair"><p lang="en">(6) Divide pressure-area-time integral by disk area and duration. Constant gauge pressure returns itself. Native complete wall samples are missing.</p><p class="zh" lang="zh-CN">(6) 将压力-面积-时间积分除以面积及时间。恒定表压会返回自身。缺少完整原生壁面样本。</p></div></section>
+<section id="7-conditional-energy-ceilings-and-the-quoted-example"><div class="heading-pair"><h2 lang="en">7. Conditional energy ceilings and the quoted example</h2><h2 class="zh" lang="zh-CN">7. 条件能量上限与引用示例</h2></div><div class="lang-pair"><p lang="en">Assume positive selected water mass and a consistent work budget. Other energy terms must be nonnegative. No later useful energy enters. The resulting bounds are conditional. Attaining them requires separate trajectory evidence. The sealed report gives available work for a 6 µm droplet. PFP: 2.722572407203039 nJ. PFH: 4.622122564638143 nJ. A separate example assigns 5 nJ to a uniform water jet. Its radius is 3 µm; length is 50 µm. Density is 1000 kg/m³; sound speed is 1500 m/s. Incoming speed is 84.10 m/s. Estimated contact pressure is 63.08–126.16 MPa. These are illustrative inputs and contact estimates. A candidate030 maximum is not established.</p><p class="zh" lang="zh-CN">假定所选水质量为正，且功预算自洽。其他能量项必须非负，后续无有效能量输入。所得界限具有条件性。达到界限需要独立轨迹证据。封存报告给出 6 µm 液滴的可用功。PFP：2.722572407203039 nJ。PFH：4.622122564638143 nJ。另一个示例为均匀水射流指定 5 nJ。半径为 3 µm，长度为 50 µm。密度为 1000 kg/m³，声速为 1500 m/s。入射速率为 84.10 m/s。接触压力估计为 63.08–126.16 MPa。这些是示例输入及接触估计。candidate030 最大值尚未建立。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 7: W: available work ≥0 (J); K: selected-water kinetic energy ≥0 (J); m: selected water mass >0 (kg); U: selected wall-directed speed lower threshold ≥0 (m/s); square root: nonnegative branch.</p><p class="zh" lang="zh-CN">公式 7 前的符号：W：可用功 ≥0（J）；K：所选水的动能 ≥0（J）；m：水质量 >0（kg）；U：所选壁面定向速率下阈值 ≥0（m/s）；平方根：非负分支。</p></div></div><div class="math-display" data-tex="\tfrac12mU^2\leq K\leq W\ \Longrightarrow\ U^2\leq{2W\over m}\ \Longrightarrow\ U\leq\sqrt{2W/m}"></div><div class="lang-pair"><p lang="en">(7) Each selected parcel has a wall-directed component at least U. Total speed exceeds that nonnegative component. Sum their kinetic energies. Divide by positive m/2; take the nonnegative root. J/kg=m²/s². W=0 gives U=0; m→0 makes the bound diverge. A finite energy budget alone supplies no mass-free speed maximum.</p><p class="zh" lang="zh-CN">(7) 每个所选流体元的壁面定向分量至少为 U。总速率不小于该非负分量。累加动能，除以正数 m/2，再取非负平方根。J/kg=m²/s²。W=0 得 U=0；m→0 时界限发散。有限能量预算不能单独给出无质量约束的速率最大值。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 8: m: uniform jet mass (kg); ρ: water density >0 (kg/m³); a: jet radius >0 (m); L: jet length >0 (m); W: jet kinetic energy ≥0 (J); U: incoming jet speed ≥0 (m/s); π: circle constant.</p><p class="zh" lang="zh-CN">公式 8 前的符号：m：均匀射流质量（kg）；ρ：水密度 >0（kg/m³）；a：射流半径 >0（m）；L：长度 >0（m）；W：射流动能 ≥0（J）；U：入射速率 ≥0（m/s）；π：圆周率。</p></div></div><div class="math-display" data-tex="m=\rho\pi a^2L=1.4137166941\times10^{-12}\ {\rm kg},\quad U=\sqrt{2W/m}=84.1044174\ {\rm m/s}"></div><div class="lang-pair"><p lang="en">(8) Cylinder volume times density; substitute this positive mass into Eq. 7 with all work converted to jet kinetic energy.</p><p class="zh" lang="zh-CN">(8) 圆柱体积乘密度；将正质量代入公式 7，假定全部功转为射流动能。</p></div></section>
+<section class="equation-unit"><div class="symbols"><div class="lang-pair"><p lang="en">Symbols before Eq. 9: Δp: contact gauge pressure (Pa); Z1,Z2: incident/receiver acoustic impedances >0 (kg/(m²·s)); ρ: incident density (kg/m³); c: incident sound speed (m/s); U: incoming speed (m/s); u*: contact velocity (m/s); subscripts 1,2 label media; * labels contact.</p><p class="zh" lang="zh-CN">公式 9 前的符号：Δp：接触表压（Pa）；Z1,Z2：入射及接收介质声阻抗 >0（kg/(m²·s)）；ρ：入射密度（kg/m³）；c：声速（m/s）；U：入射速率 ≥0（m/s）；u*：接触速度（m/s）；下标 1,2 表示介质；* 表示接触。</p></div></div><div class="math-display" data-tex="Z_1=\rho c,\quad Z_1(U-u_*)=Z_2u_*,\quad u_*={Z_1U\over Z_1+Z_2},\quad\Delta p={Z_1Z_2\over Z_1+Z_2}U"></div><div class="lang-pair"><p lang="en">(9) Linear planar acoustic contact: match pressure and interface velocity. Add Z1u* to both sides, divide by positive Z1+Z2, then substitute. Equal impedance gives ρcU/2; rigid limit gives ρcU. Weak compression and times before lateral release are required. These are contact estimates, not averaged receiver objectives.</p><p class="zh" lang="zh-CN">(9) 线性平面声学接触：匹配压力与界面速度。两边加 Z1u*，除以正数 Z1+Z2，再代入压力。相等阻抗得 ρcU/2；刚性极限得 ρcU。要求弱压缩且早于横向卸载。它们为接触估计，并非接收圆盘平均目标。</p></div></section>
+<section id="8-independent-checks-and-unresolved-production-work"><div class="heading-pair"><h2 lang="en">8. Independent checks and unresolved production work</h2><h2 class="zh" lang="zh-CN">8. 独立检查及未完成生产工作</h2></div><div class="lang-pair"><p lang="en">Run examples/ceilings.py with Python 3. It checks mass, speed ceilings, contact pressure and disk/window averaging. Assertions check scaling and limiting cases. Stage3 passed 239 independent arithmetic comparisons. Keep PASS, FAIL, WAIVED and NOT_RUN distinct. All 18 objectives remain null. Seven Stage2 waivers remain: full cycle; coverage/objectives; radius/γ; PFH route; registered observers; hold-outs/refinement/certification; production C4. The original R_rest membership check failed. Two pre-existing transfer files caused that failure. Scoped protected evidence passed. Read the final answer for historical prediction qualifications. Strict scientific acceptance remains unresolved.</p><p class="zh" lang="zh-CN">用 Python 3 运行 examples/ceilings.py。它检查质量、速率上限、接触压力及圆盘时间窗平均。断言检查尺度关系与极限。阶段三通过 239 项独立算术比较。PASS、FAIL、WAIVED、NOT_RUN 分别保留。全部 18 项目标仍为 null。保留七项阶段二豁免：完整周期；覆盖/目标；半径/γ；PFH 路径；注册观测；留出/细化/认证；生产 C4。原 R_rest 成员检查失败，原因是两个既有转移文件。限定保护范围内的证据通过。历史预测限定见最终答案。严格科学验收尚未解决。</p></div></section>
+<section id="sources-and-further-implementation-study"><div class="heading-pair"><h2 lang="en">Sources and further implementation study</h2><h2 class="zh" lang="zh-CN">来源与进一步实现学习</h2></div><div class="lang-pair"><p lang="en">The sealed report contains the derivation, bibliography and source reconciliation. Read material_bridge.c for EOS calls. Read pfc_conserved_inverse.h for inversion and pfc_reaction.h for kinetics. Read axisymmetric_coupled_core_candidate019.h for geometry and split operators. Read axisymmetric_transaction.h for rollback. Inspect every dependency before changing a closure. Retain rejected diagnostics. Check conservation, positive states, mesh refinement and event continuity. A new production campaign requires a separately frozen scope. This teaching revision preserves the sealed scientific verdict.</p><p class="zh" lang="zh-CN">封存报告含推导、参考文献及来源核对。material_bridge.c 给出状态方程调用。pfc_conserved_inverse.h 给出反演，pfc_reaction.h 给出动力学。axisymmetric_coupled_core_candidate019.h 给出几何与分裂算子。axisymmetric_transaction.h 给出回滚。修改闭合前检查全部依赖。保留拒绝诊断。检查守恒、正状态、网格细化与事件连续性。新生产活动需要单独冻结范围。本次教学修订保留封存科学判定。</p></div></section>
+<p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/material_bridge.c">material_bridge.c</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/pfc_conserved_inverse.h">pfc_conserved_inverse.h</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/pfc_reaction.h">pfc_reaction.h</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/axisymmetric_coupled_core_candidate019.h">axisymmetric_coupled_core_candidate019.h</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/axisymmetric_transaction.h">axisymmetric_transaction.h</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/FINAL_ANSWER.md">Final answer</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/report/STAGE3_ENGINEERING_REPORT.pdf">Engineering PDF</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/report/STAGE3_ENGINEERING_REPORT.tex">Editable LaTeX</a></p>
+<p><a href="evidence/Stage3_Engineering_20261014/RESULTS_LEDGER.json">Results ledger</a></p>
+<div class="lang-pair"><p lang="en"><a href="evidence/Stage3_Engineering_20261014/READER.html" download="STAGE3_FROZEN_READER_SOURCE.html" data-frozen-source="true">Download original frozen source</a></p><p class="zh" lang="zh-CN"><a href="evidence/Stage3_Engineering_20261014/READER.html" download="STAGE3_FROZEN_READER_SOURCE.html" data-frozen-source="true">下载原始封存来源</a></p></div>
+<p><a href="PROGRESS.json">PROGRESS.json</a> · <a href="INPUT_MANIFEST.json">INPUT_MANIFEST.json</a> · <a href="receipts/NATIVE_RAW_READER_CONTRACT.md">Raw reader contract</a></p></main></div></div><footer class="site-footer"><div class="lang-pair"><p lang="en">Chapter 3 · Resolver implementation</p><p class="zh" lang="zh-CN">第 3 章 · 求解器实现</p></div></footer><script defer src="assets/course-theme.js"></script><script defer src="assets/course-language.js"></script><script src="assets/vendor/katex/katex.min.js"></script><script>document.querySelectorAll('[data-tex]').forEach(e=>katex.render(e.dataset.tex,e,{displayMode:true,throwOnError:true}));</script></body></html>

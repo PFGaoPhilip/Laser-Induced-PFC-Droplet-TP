@@ -1,0 +1,35 @@
+{
+  "schema": "c4_production_admission_attempt_028_001",
+  "utc": "2026-10-13T17:26:38.334167+00:00",
+  "candidate_lineage": "AXI_PFP_transport_candidate028_100fs",
+  "attempt": "Promote/re-evaluate 028 100fs PFP under production C4 criteria",
+  "result": "FAIL_PRODUCTION_ADMISSION",
+  "qcc_exit": 0,
+  "simulation_exit": 0,
+  "reached_end_time_1e-13": true,
+  "accepted_microsteps": 20,
+  "physical_domain_status": 0,
+  "engineering_diagnostic_status": "PASS_SCOPED_100FS_ENGINEERING_SOFT_PASS_STACK",
+  "production_admission": false,
+  "reasons": [
+    "Multiple engineering soft-passes remain active in the run-local 028 stack (capacity Inf clamp, MW/EW/aW snap floors, caloric orphan soft-pass, density \u00b11e-300 underflow, depletion complement soft-pass, residual PLIC floors, etc.). ACCEPTANCE_CRITERIA and exit review forbid calling these production.",
+    "No production native harness with observer/event/error/accepted-endpoint exporter is wired to this lineage (exporter candidate011 compile FAIL retained; C5 owner checkpoint BLOCKED_ON_INTEGRATED_C4_OBSERVER_EVENT_OUTPUT_ERROR_PATH).",
+    "V3 and V6 remain NOT_RUN in solver/SOLVER_IDENTITY.json; full G4 / V1\u2013V6 production package is not established by this 100fs diagnostic.",
+    "Binary and sources are labeled engineering-only in freeze/prereg; promoting without removing soft-passes and completing production operators would be a false PASS."
+  ],
+  "soft_pass_markers_observed": [
+    "AXI geometric EOS engineering soft-pass: tiny water mass/energy/fraction snapped floor=1e-25 (027 co-clear EW/q)",
+    "AXI geometric capacity engineering soft-pass: Inf/overflow capacity ratio clamped to HUGE",
+    "AXI caloric engineering soft-pass: tiny MW with aW=0 treated absent",
+    "AXI density-conversion engineering soft-pass underflow->+/-1e-300"
+  ],
+  "binary_sha256": "b9bd675b2963b6cd49ca8607c9e6eb889e8ffb455c3dd3bb539e5717fd057c76",
+  "preregistration_sha256": "ff44f27f1edace285138cd58268be1cca7a642d67fd760c6761b51b29a1371f9",
+  "freeze_entry_sha256": "f2e56bf7bc747ce76594d9caa3ad98d04085146f4da5c7be2cf273666ed6eff9",
+  "run_path": "runs/AXI_PFP_transport_candidate028_100fs",
+  "C4_production_qualified": false,
+  "V1_V6_qualified": false,
+  "Stage1_complete": false,
+  "stopped_on_first_hard_refusal": true,
+  "refusal": "production_admission_denied_engineering_soft_pass_stack"
+}

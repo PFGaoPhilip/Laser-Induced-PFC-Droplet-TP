@@ -32,14 +32,19 @@
   apply(mode);
   document.addEventListener('course-language-change', function () { apply(mode); });
   function ready() {
-    var bar = document.createElement('div');
-    bar.className = 'theme-tools';
-    var button = document.createElement('button');
+    var bar = document.querySelector('.theme-tools');
+    if (!bar) {
+      bar = document.createElement('div');
+      bar.className = 'theme-tools';
+      document.body.insertBefore(bar, document.body.firstChild);
+    }
+    bar.setAttribute('role', 'group');
+    bar.setAttribute('aria-label', 'Reading controls / 阅读控制');
+    var button = document.getElementById('theme-toggle') || document.createElement('button');
     button.id = 'theme-toggle';
     button.type = 'button';
     button.addEventListener('click', function () { apply(mode === 'dark' ? 'light' : 'dark'); });
-    bar.appendChild(button);
-    document.body.insertBefore(bar, document.body.firstChild);
+    bar.insertBefore(button, bar.firstChild);
     apply(mode);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready);

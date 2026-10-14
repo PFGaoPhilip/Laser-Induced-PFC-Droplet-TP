@@ -39,6 +39,14 @@ def main():
         'modeling/minimal-cavitation/verification/NUMERICAL_AUDIT.json',
         'modeling/minimal-cavitation/models/Model_A_Finite_Energy_Pressure_Jet.mph',
         'modeling/minimal-cavitation/models/Model_B_Hydrogel_Confinement_Jet_Transmission.mph'})
+    wanted.update({'learning-records/resolver-progress/index.html',
+                   'learning-records/resolver-progress/PROGRESS.json',
+                   'learning-records/resolver-progress/INPUT_MANIFEST.json',
+                   'learning-records/resolver-progress/assets/course.css',
+                   'learning-records/resolver-progress/assets/course-theme.js',
+                   'learning-records/resolver-progress/assets/course-language.js',
+                   'learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/report/STAGE3_ENGINEERING_REPORT.pdf',
+                   'verification/GITHUB_PUBLICATION_AUTHORIZATION_20261014.json'})
     if settings.get('embedded_pfc'):
         study='modeling/embedded-pfc-feasibility/'
         wanted.update(study+name for name in [

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-14",
+  "chapters": [
+    {
+      "source": "content/chapter01.py",
+      "import_success": true,
+      "equation_blocks": 34,
+      "bilingual_blocks": 571,
+      "defense_ids": [
+        "C1-Q1",
+        "C1-Q2",
+        "C1-Q3"
+      ],
+      "formula_and_symbol_definition_calls_unchanged": true,
+      "existing_line_endings_preserved": true
+    },
+    {
+      "source": "content/chapter02.py",
+      "import_success": true,
+      "equation_blocks": 36,
+      "bilingual_blocks": 562,
+      "defense_ids": [
+        "C2-Q1",
+        "C2-Q2",
+        "C2-Q3"
+      ],
+      "formula_and_symbol_definition_calls_unchanged": true,
+      "existing_line_endings_preserved": true
+    },
+    {
+      "source": "content/chapter03.py",
+      "import_success": true,
+      "equation_blocks": 33,
+      "bilingual_blocks": 742,
+      "defense_ids": [
+        "C3-Q1",
+        "C3-Q2",
+        "C3-Q3"
+      ],
+      "formula_and_symbol_definition_calls_unchanged": true,
+      "existing_line_endings_preserved": true
+    },
+    {
+      "source": "content/chapter04.py",
+      "import_success": true,
+      "equation_blocks": 41,
+      "bilingual_blocks": 626,
+      "defense_ids": [
+        "C4-Q1",
+        "C4-Q2",
+        "C4-Q3"
+      ],
+      "formula_and_symbol_definition_calls_unchanged": true,
+      "existing_line_endings_preserved": true
+    },
+    {
+      "source": "content/chapter05.py",
+      "import_success": true,
+      "equation_blocks": 24,
+      "bilingual_blocks": 452,
+      "defense_ids": [
+        "A-Q1",
+        "A-Q2",
+        "A-Q3"
+      ],
+      "formula_and_symbol_definition_calls_unchanged": true,
+      "existing_line_endings_preserved": true
+    }
+  ],
+  "total_equations": 168,
+  "all_equation_ids_unique": true,
+  "rewritten_explanatory_blocks": 259,
+  "metadata_and_prompts_revised": true,
+  "audit_scope": "Prose and authoring source. Formula preservation is exact AST equality. This is not a new physical validation.",
+  "prose_counts": [
+    {
+      "chapter": 1,
+      "blocks": 55,
+      "changed": 55,
+      "english_words_before": 3022,
+      "english_words_after": 2203
+    },
+    {
+      "chapter": 2,
+      "blocks": 63,
+      "changed": 63,
+      "english_words_before": 4032,
+      "english_words_after": 2864
+    },
+    {
+      "chapter": 3,
+      "blocks": 46,
+      "changed": 46,
+      "english_words_before": 3652,
+      "english_words_after": 2426
+    },
+    {
+      "chapter": 4,
+      "blocks": 51,
+      "changed": 51,
+      "english_words_before": 3161,
+      "english_words_after": 2115
+    },
+    {
+      "chapter": 5,
+      "blocks": 44,
+      "changed": 44,
+      "english_words_before": 2462,
+      "english_words_after": 1646
+    }
+  ]
+}

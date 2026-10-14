@@ -1,22 +1,22 @@
-# Chapter 2: From laser absorption to a finite PFC bubble
+# Chapter 2: Optical heating and finite PFC inventory
 
-# 第 2 章：从激光吸收到有限 PFC 气泡
+# 第 2 章：光学加热与有限 PFC 物质量
 
-## 2. From laser absorption to a finite PFC bubble
+## 2. Optical heating and finite PFC inventory
 
-## 2. 从激光吸收到有限 PFC 气泡
+## 2. 光学加热与有限 PFC 物质量
 
-The objective is to determine what pressure history one laser-heated PFC inclusion can supply to the carrier liquid. Chapter 1 supplied the mechanical response to a prescribed bubble pressure; this chapter supplies the optical, thermal, activation, mass, and energy equations needed to calculate that pressure. The useful jet is usually predominantly carrier liquid. PFC density belongs to the core inventory; carrier density belongs to the surrounding inertia. A lower activation threshold is a possible benefit, but it does not establish a larger emitted momentum or a more repeatable transfer.
+Calculate the pressure history of one laser-heated PFC inclusion. Chapter 1 derived the response to prescribed internal pressure. This chapter supplies absorption, heating, activation, mass and energy balances. The emitted jet usually consists mainly of carrier liquid. Use PFC density for core inventory and carrier density for inertia. Lower activation threshold leaves emitted momentum and transfer repeatability unresolved.
 
-本章目标是确定一个激光加热的 PFC 夹杂能向载液提供怎样的压力历程。第一章给出了已知气泡压力下的力学响应；本章补充计算该压力所需的光学、热学、激活、质量和能量方程。有用射流通常主要由载液组成。PFC 密度用于核心库存，载液密度用于周围惯性。较低激活阈值可能有益，却不能据此证明喷出动量更大或转印更可重复。
+本章计算单个激光加热 PFC 夹杂的压力历程。第一章推导给定内压下的响应，本章补充吸收、加热、激活、质量和能量平衡。喷出射流通常主要由载液组成。核心物质量采用 PFC 密度，惯性采用载液密度。较低激活阈值仍不能确定喷出动量与转印重复性。
 
-**System and conventions.** Start with a spherical, initially liquid PFC core in an aqueous carrier, initially at temperature $T_0$ (K) and carrier pressure $p_c$ (Pa). The beam travels in the positive depth direction $z$ (m); transverse distance from its axis is $r$ (m). Time $t=0$ (s) precedes the pulse. Optical intensity entering an absorber is prescribed, the initial temperature field is prescribed, the sphere center has zero radial heat flux by symmetry, and the outer thermal boundary is a stated reservoir or an explicitly resolved carrier. At each material contact, enforce flux continuity and the declared contact law. All thermodynamic pressures are absolute. At a liquid–vapor interface, the dimensionless unit normal $\boldsymbol n$ points from liquid into vapor; evaporation flux is positive in this direction. For a bubble inside liquid this normal points inward, opposite the dimensionless outward radial unit vector $\boldsymbol e_r$.
+**System and conventions.** Place an initially liquid spherical PFC core in aqueous carrier. Initial temperature is $T_0$ (K); carrier pressure is $p_c$ (Pa). Beam depth $z$ (m) increases along propagation. Transverse radius $r$ (m) measures distance from its axis. Time $t=0$ (s) precedes the pulse. Prescribe entering intensity and initial temperature field. Symmetry gives zero center heat flux. Specify an outer reservoir or resolve the surrounding carrier. Enforce contact flux continuity and the chosen contact law. Thermodynamic pressures are absolute. Unit normal $\boldsymbol n$ points from liquid into vapor. Positive flux denotes evaporation. Inside a bubble, this normal opposes outward radial unit vector $\boldsymbol e_r$.
 
-**系统与约定。** 从水性载液中的球形液态 PFC 核心开始，初始温度为 $T_0$（K），载液压力为 $p_c$（Pa）。光束沿正深度方向 $z$（m）传播；离光轴的横向距离为 $r$（m）。$t=0$（s）位于脉冲之前。给定进入吸收体的光强与初始温度场，球心因对称性满足零径向热通量，外热边界设为明确的恒温环境或显式解析的载液。材料接触处满足热通量连续及所声明的接触定律。所有热力学压力均为绝对压力。液–汽界面的无量纲单位法向量 $\boldsymbol n$ 从液体指向蒸汽；沿此方向的蒸发通量为正。对于液体内部的气泡，此法向指向内侧，与无量纲向外径向单位向量 $\boldsymbol e_r$ 相反。
+**体系与约定。** 初始液态球形 PFC 核位于水相载液中。初温为 $T_0$（K），载液压力为 $p_c$（Pa）。光束深度 $z$（m）沿传播方向增加。横向半径 $r$（m）为距光轴距离。$t=0$（s）位于脉冲之前。给定入射强度与初始温度场。中心对称性给出零热通量。外边界采用指定热库，或解析周围载液。材料接触处满足通量连续及所选接触规律。热力学压力均为绝对压力。单位法向 $\boldsymbol n$ 从液体指向蒸气，正通量表示蒸发。气泡内部的该法向与向外径向单位矢量 $\boldsymbol e_r$ 相反。
 
-**Assumptions are introduced in stages.** The first optical control neglects scattering and nonlinear absorption. The pre-phase heat equation assumes negligible pressure-work and viscous heating within each nearly incompressible phase. The nucleation calculation adopts a locally isothermal capillarity model with a nucleus much smaller than its available liquid core. The final uniform-bubble closure assumes a common bulk temperature and uses an ideal mixture only when dilute. These are different approximations, not a single universally valid PFC model. A micron-scale teaching core is not a nanodroplet.
+**Approximation sequence.** The optical model neglects scattering and nonlinear absorption. Pre-phase heating omits pressure work and viscous heat in nearly incompressible phases. Nucleation assumes local isothermality and a nucleus much smaller than the liquid core. Uniform-bubble closure assumes common temperature and a dilute ideal mixture. Each approximation has its own validity range. The micron-sized teaching core does not represent a nanodroplet.
 
-**逐步引入假设。** 首个光学参照忽略散射和非线性吸收。相变前的热方程假设每个近不可压缩相内的压力功与黏性生热可忽略。成核计算采用局部等温毛细模型，且汽核远小于可用液核。最后的均匀气泡闭合假设共同的体相温度，仅在稀薄条件下使用理想混合物。这些是不同近似，不能合并为普适 PFC 模型。微米级教学核心也不是纳米液滴。
+**近似顺序。** 光学模型忽略散射与非线性吸收。相变前的近不可压缩相加热忽略压力功和黏性热。成核假设局部等温且汽核远小于液核。均匀气泡闭合假设共同温度及稀薄理想混合物。每项近似均有独立适用范围。微米教学核心不代表纳米液滴。
 
 | Symbol<br>符号 | Physical meaning<br>物理意义 | SI units<br>SI 单位 | Role and convention<br>作用与约定 |
 | --- | --- | --- | --- |
@@ -43,17 +43,17 @@ The objective is to determine what pressure history one laser-heated PFC inclusi
 | $L_{v,s}$ | Species-specific latent heat of vaporization<br>组分汽化比潜热 | J kg⁻¹ | Phase-change energy per converted species mass; the interface state and approximation are specified.<br>单位转化组分质量的相变能量；需指定界面状态与近似。 |
 | $R_u$ | Universal molar gas constant<br>通用摩尔气体常数 | J mol⁻¹ K⁻¹ | Used with amount of substance, not silently with mass-specific variables.<br>与物质的量共同使用，不能默默代入质量比形式。 |
 
-A fair PFC comparison uses a PFC-free aqueous droplet with matched outer geometry, absorber location, absorbed energy, initial temperature, pressure, outlet, and target load path. Changing absorber concentration or spot size simultaneously cannot isolate a material benefit. Compare activation probability, emitted mass and velocity, useful impulse, intact-transfer yield, and reset. A persistently vapor-filled inclusion can activate readily while cushioning the subsequent collapse.
+Match a PFC-free aqueous control to the PFC case. Keep outer geometry, absorber location, absorbed energy and initial state comparable. Also match outlet and target load path. Simultaneous absorber or spot-size changes confound the material comparison. Measure activation, emitted mass and speed, useful impulse, intact yield and reset. Retained vapor can ease activation while cushioning later collapse.
 
-公平的 PFC 对比应使用不含 PFC 的水性液滴，并匹配外部几何、吸收体位置、吸收能量、初始温度、压力、出口及目标受力路径。同时改变吸收体浓度或光斑大小，就不能分离材料优势。应比较激活概率、喷出质量与速度、有用冲量、完整转印成功率及复位。长期充满蒸汽的夹杂可能易于激活，却缓冲后续塌缩。
+将不含 PFC 的水相对照与 PFC 情形匹配。保持外部几何、吸收体位置、吸收能量和初态可比，并匹配出口及目标传力路径。同时改变吸收体或光斑会混淆材料比较。测量激活、喷出质量与速率、有用冲量、完整转印率及复位。残留蒸气可促进激活，同时缓冲后续塌缩。
 
-## 2.1 Count incident and absorbed energy correctly
+## 2.1 Incident and absorbed energy
 
-## 2.1 正确计算入射与吸收能量
+## 2.1 入射与吸收能量
 
-**Step 1 — prescribe a Gaussian fluence.** Fluence is the time integral of irradiance. Specify the transverse profile first, with the beam radius defined by the $e^{-2}$ level. This convention must accompany a quoted spot size.
+**Step 1 — Define Gaussian fluence.** Fluence integrates irradiance over time. Specify its transverse profile. Define beam radius at the $e^{-2}$ level whenever quoting spot size.
 
-**步骤 1——给定高斯能量密度。** 能量密度是辐照度的时间积分。先给定横向分布，将光束半径定义为 $e^{-2}$ 水平对应的半径。引用光斑尺寸时必须同时说明该约定。
+**步骤 1——定义高斯能量面密度。** 能量面密度为辐照度的时间积分。先规定横向分布。标注光斑尺寸时，采用 $e^{-2}$ 水平定义光束半径。
 
 **Symbols before Eq. (C2-E01).**
 
@@ -82,9 +82,9 @@ Fluence varies across the beam; the quoted radius fixes its definition.
 
 能量密度沿光束横向变化；所给半径明确其定义。
 
-**Step 2 — integrate over the illuminated plane.** Annuli have area $2\pi r\,dr$. Set the dimensionless integration variable $x=2r^2/w^2$, so $dx=4r\,dr/w^2$ and both limits remain zero and infinity. The positive exponential is integrable; the upper endpoint vanishes.
+**Step 2 — Integrate the beam plane.** The annular area is $2\pi r\,dr$. Substitute $x=2r^2/w^2$, giving $dx=4r\,dr/w^2$. Limits remain zero and infinity. The integral converges. The exponential decays to zero at infinity.
 
-**步骤 2——在照射平面上积分。** 环带面积为 $2\pi r\,dr$。令无量纲积分变量 $x=2r^2/w^2$，于是 $dx=4r\,dr/w^2$，上下限仍为零与无穷。正的指数函数可积，且上端点项趋于零。
+**步骤 2——积分光束平面。** 环形面积为 $2\pi r\,dr$。令 $x=2r^2/w^2$，则 $dx=4r\,dr/w^2$。积分限仍为零与无穷远。积分收敛，指数函数在无穷远趋零。
 
 **Symbols before Eq. (C2-E02).**
 
@@ -114,9 +114,9 @@ The Gaussian energy follows from summing annular contributions.
 
 高斯光束能量来自环带贡献之和。
 
-**Step 3 — calculate interception rather than assuming all light hits the actuator.** For a centered circular absorber aperture of radius $b_a$ (m), terminate the same integral at that radius and divide by total beam energy. An off-axis droplet or irregular layer needs its actual area integral.
+**Step 3 — Calculate intercepted energy.** End the same integral at centered aperture radius $b_a$ (m). Divide by total beam energy. Off-axis or irregular absorbers require their actual area integral.
 
-**步骤 3——计算截获比例，不假定全部光能照到驱动器。** 对半径为 $b_a$（m）的同轴圆形吸收体窗口，将同一积分截断于该半径，再除以光束总能量。偏轴液滴或不规则层需要对其实际面积积分。
+**步骤 3——计算截获能量。** 将同一积分上限取为居中孔径半径 $b_a$（m），再除以总光束能量。偏轴或不规则吸收体须按实际区域积分。
 
 **Symbols before Eq. (C2-E03).**
 
@@ -147,9 +147,9 @@ The aperture removes the outer annuli from the useful incident energy.
 
 窗口使外侧环带不再计入有用入射能量。
 
-**Step 4 — restore time.** Normalize the temporal pulse shape so that its integral is one. A rectangular pulse has a shape equal to the reciprocal pulse duration while the pulse is on. Thus a shorter pulse raises irradiance at the same fluence; it does not increase incident energy.
+**Step 4 — Include pulse duration.** Normalize the temporal pulse shape to unit integral. A rectangular pulse has height equal to reciprocal duration. Shorter duration raises irradiance at fixed fluence. Incident energy stays fixed.
 
-**步骤 4——恢复时间变量。** 将时间脉冲形状归一化，使其积分为一。矩形脉冲在开启时的形状值等于脉冲时长的倒数。因此，在能量密度相同时，缩短脉冲会提高辐照度，却不会提高入射能量。
+**步骤 4——加入脉冲时长。** 将时间脉冲形状归一化为单位积分。矩形脉冲高度等于时长的倒数。能量面密度固定时，缩短时长会提高辐照度，入射能量保持不变。
 
 **Symbols before Eq. (C2-E04).**
 
@@ -180,9 +180,9 @@ A pulse waveform specifies when the energy is deposited.
 
 脉冲波形规定能量何时沉积。
 
-**Step 5 — solve absorption-only transport.** Conservation of beam power in a thin slab says that the decrement of irradiance equals deposited heat per unit volume times thickness. With constant positive absorption coefficient, separate the irradiance differential, integrate from the entry face to depth, and exponentiate. The optical transit is treated as instantaneous on the thermal timescale.
+**Step 5 — Solve absorption transport.** Irradiance loss across a slab equals deposited heat per volume × thickness. Assume constant positive absorption coefficient. Separate and integrate from entry face to depth, then exponentiate. Optical transit is instantaneous relative to thermal evolution.
 
-**步骤 5——求解仅有吸收的光传输。** 薄层内光功率守恒说明，辐照度减少量等于单位体积沉积热量乘以厚度。取正常数吸收系数，分离辐照度微分，从入口面到指定深度积分，再取指数。在热学时间尺度上将光传播视为瞬时。
+**步骤 5——求解吸收输运。** 薄层辐照度损失等于单位体积沉积热量乘以厚度。假设吸收系数为正常数。分离变量，从入射面积分至指定深度，再取指数。相对于热演化，将光传播视为瞬时过程。
 
 **Symbols before Eq. (C2-E05).**
 
@@ -213,9 +213,9 @@ The absorber deposits heat over a finite optical depth.
 
 吸收体在有限光学深度内沉积热量。
 
-**Step 6 — integrate deposited heat.** Integrating in depth turns the volumetric source back into absorbed power per area. Integrating the normalized pulse and then the intercepted area gives the total energy. With one front-face reflected fraction, multiply the fraction entering the slab once. The effective absorptance below already includes this reflection; it must not be multiplied by a second reflection correction.
+**Step 6 — Integrate deposited heat.** Integrate the volume source over depth to obtain absorbed power/area. Integrate pulse time and intercepted area to obtain energy. Apply the entering fraction from front-face reflection once. The defined effective absorptance already contains that reflection.
 
-**步骤 6——积分沉积热量。** 对深度积分，将体积热源变回单位面积吸收功率；再对归一化脉冲和截获面积积分，得到总能量。若存在一个前表面反射比例，将进入薄层的比例乘入一次。下式的有效吸收率已包含该反射，不能再次乘上反射修正。
+**步骤 6——积分沉积热。** 对体积源沿深度积分，得到单位面积吸收功率。再对脉冲时间及截获面积积分，得到能量。前表面反射造成的入射比例计入一次。所定义有效吸收率已包含该反射。
 
 **Symbols before Eq. (C2-E06).**
 
@@ -250,21 +250,21 @@ Interception, reflection, and internal absorption each act once.
 
 截获、反射与内部吸收各作用一次。
 
-Checks are physical: absorptance tends to zero as optical thickness tends to zero, and tends to the entering fraction for an optically thick layer. $Q_{\mathrm{abs}}$ has units W m⁻³ because absorption coefficient multiplies W m⁻². Its volume–time integral has units J. The model fails when scattering, multiple reflections, saturation, or plasma formation matters. A boundary heat source may replace the resolved layer if it represents the same energy; adding both counts that energy twice.
+Absorptance approaches zero at zero optical thickness. At large thickness, it approaches the entering fraction. $Q_{\mathrm{abs}}$ has units W m⁻³; its volume–time integral has units J. Scattering, multiple reflection, saturation and plasma formation require other models. A boundary source can replace an equivalent resolved layer. Including both duplicates the deposited energy.
 
-物理检验如下：光学厚度趋于零时吸收率趋于零；薄层光学足够厚时，吸收率趋于进入薄层的比例。吸收系数乘以 W m⁻²，使 $Q_{\mathrm{abs}}$ 的单位为 W m⁻³；其体积–时间积分的单位为 J。散射、多次反射、饱和或等离子体形成重要时，该模型失效。若边界热源代表相同能量，可以替代解析薄层；同时添加两者会重复计能。
+光学厚度趋零时，吸收率趋零。厚度很大时，吸收率趋于进入比例。$Q_{\mathrm{abs}}$ 单位为 W m⁻³，其体积—时间积分为 J。散射、多次反射、饱和及等离子体形成需其他模型。等效边界热源可替代解析层，同时加入两者会重复计入能量。
 
-Optical activation has been observed in specified absorber-containing PFC formulations. Strohm et al. used PbS-loaded PFP and a 1064 nm laser; Wei et al. used gold-containing PFH nanoemulsion. These primary studies establish optical routes, not a universal optical threshold, a liquid-jet speed, or a transfer yield. Absorber position and formulation remain experimental inputs. [[R6]](../reference/sources.html#r6) [[R7]](../reference/sources.html#r7)
+Strohm et al. optically activated PbS-loaded PFP at 1064 nm. Wei et al. used gold-containing PFH nanoemulsion. These studies establish formulation-specific optical activation routes. Universal threshold, jet speed and transfer yield remain unestablished. Absorber placement and formulation require experimental inputs. [[R6]](../reference/sources.html#r6) [[R7]](../reference/sources.html#r7)
 
-在明确的含吸收体 PFC 配方中，已观测到光激活。Strohm 等使用含 PbS 的 PFP 与 1064 nm 激光；Wei 等使用含金颗粒的 PFH 纳米乳液。这些原始研究确立了光学激活途径，却没有提供普适光阈值、液体射流速度或转印成功率。吸收体位置和配方仍是实验输入。[[R6]](../reference/sources.html#r6) [[R7]](../reference/sources.html#r7)
+Strohm 等用 1064 nm 激光激活含 PbS 的 PFP。Wei 等采用含金 PFH 纳米乳液。这些研究确立了特定配方的光学激活路径。通用阈值、射流速率及转印率尚未确立。吸收体位置与配方须由实验给定。 [[R6]](../reference/sources.html#r6) [[R7]](../reference/sources.html#r7)
 
-## 2.2 Heat must reach the core on the event timescale
+## 2.2 Heat delivery and event time
 
-## 2.2 热量必须在事件时间尺度内到达核心
+## 2.2 热输送与事件时间
 
-**Step 7 — apply thermal-energy conservation.** Before phase change, a material parcel gains sensible enthalpy through conduction and optical deposition. In a nearly incompressible phase with constant properties, negligible viscous heating and negligible pressure-work, use heat capacity at nearly constant pressure. Moving fluid contributes material advection; a solid absorber uses zero velocity. The divergence term is heat influx because conductive flux points down the temperature gradient.
+**Step 7 — Conserve thermal energy.** Before phase change, conduction and absorption change sensible enthalpy. Assume constant properties in nearly incompressible phases. Omit viscous heating and pressure work. Use near-constant-pressure heat capacity. Moving liquid advects heat; a solid absorber has zero velocity. Conductive flux points down the temperature gradient. Its negative divergence supplies heat influx.
 
-**步骤 7——应用热能守恒。** 相变前，物质微团通过传导与光沉积获得显热焓。对于性质为常数、黏性生热及压力功可忽略的近不可压缩相，使用近恒压比热容。流动液体产生物质对流项；固体吸收层的速度取零。传导热流指向温度下降方向，因此散度项表示热量流入。
+**步骤 7——热能守恒。** 相变前，传导与吸收改变显焓。近不可压缩相采用常物性，忽略黏性热与压力功，使用近恒压热容。运动液体对流输热，固体吸收体速度为零。传导热通量指向温度降低方向，其负散度表示热流入。
 
 **Symbols before Eq. (C2-E07).**
 
@@ -295,9 +295,9 @@ Heating the absorber and heating the PFC are separate parts of the thermal path.
 
 加热吸收体与加热 PFC 是热路径中的不同环节。
 
-**Step 8 — close material contacts.** At an absorber–core contact, take the normal from material A into material B. Positive normal heat flux travels from A to B. With no interfacial thermal storage, the flux is continuous; a nonnegative contact resistance permits a temperature jump. A zero resistance gives continuous temperature. This contact is not the liquid–vapor Stefan interface below.
+**Step 8 — Close thermal contacts.** Orient the normal from material A into B. Positive normal heat flux travels from A to B. Without surface heat storage, flux is continuous. Nonnegative contact resistance permits a temperature jump. Zero resistance gives temperature continuity. This contact differs from the phase-change interface below.
 
-**步骤 8——闭合材料接触条件。** 在吸收体–核心接触面，将法向从材料 A 指向材料 B。正法向热通量从 A 流向 B。无界面热储存时，热通量连续；非负接触热阻允许温度跳跃。热阻为零时温度连续。该接触面不同于后文的液–汽 Stefan 界面。
+**步骤 8——闭合热接触。** 法向从材料 A 指向 B，正法向热通量由 A 流向 B。无界面热储存时，通量连续。非负接触热阻允许温度跳跃，零热阻给出温度连续。该接触不同于下文相变界面。
 
 **Symbols before Eq. (C2-E08).**
 
@@ -328,9 +328,9 @@ Contact resistance delays heat transfer even after the light has been absorbed.
 
 即使光已被吸收，接触热阻仍会延迟热传递。
 
-**Step 9 — derive diffusion scales.** In a motionless constant-property region, divide the heat equation by volumetric heat capacity. Substitute a temperature change over time and a second spatial derivative over heating distance. Equating those orders gives a diffusion time; solving it for distance gives penetration during a specified heating duration. These are scaling estimates, not a sharp thermal-front solution. The heating duration can include post-pulse conduction and need not equal the optical pulse width.
+**Step 9 — Derive diffusion scales.** Divide the motionless heat equation by volumetric heat capacity. Estimate its time derivative and spatial second derivative over the heating distance. Balance them to obtain diffusion time and penetration length. These are scales rather than sharp thermal fronts. Heating duration may include conduction after the optical pulse.
 
-**步骤 9——推导扩散尺度。** 在静止、常性质区域，将热方程除以体积热容。分别用时间内温度变化和加热距离上的二阶空间导数估计项量级。平衡这些量级得到扩散时间；反解距离得到指定加热时长内的渗透尺度。这是尺度估计，不是具有锐利热前沿的精确解。加热时长可包括脉冲后的传导，不必等于光脉冲宽度。
+**步骤 9——推导扩散尺度。** 将静止介质热方程除以体积热容。按加热距离估算时间导数与空间二阶导数。平衡两者，得到扩散时间和渗透长度。它们是尺度估计，并非尖锐热前沿。加热时长可包含光脉冲之后的传导。
 
 **Symbols before Eq. (C2-E09).**
 
@@ -362,9 +362,9 @@ Compare heat penetration with the distance to the PFC, not only with beam width.
 
 应比较热渗透尺度与到达 PFC 的距离，而不只是光束宽度。
 
-**Worked thermal control.** Declare PFP-like teaching coefficients: density 1630 kg m⁻³, heat capacity 654 J kg⁻¹ K⁻¹, and conductivity 0.050 W m⁻¹ K⁻¹. Only the rounded near-293 K heat capacity is tied to the cited NIST datum; the other constants are supplied teaching inputs. Use a 5 μm heating distance and a 10 ns heating duration.
+**Thermal example.** Prescribe density 1630 kg m⁻³, heat capacity 654 J kg⁻¹ K⁻¹, and conductivity 0.050 W m⁻¹ K⁻¹. The rounded near-293 K heat capacity uses the cited NIST datum. Density and conductivity are teaching inputs. Heating distance is 5 μm; duration is 10 ns.
 
-**热学参照计算。** 声明近似 PFP 的教学系数：密度 1630 kg m⁻³、比热容 654 J kg⁻¹ K⁻¹、导热系数 0.050 W m⁻¹ K⁻¹。只有取整的近 293 K 比热容对应所引 NIST 数据；其余常数是给定教学输入。取加热距离为 5 μm，加热时长为 10 ns。
+**热学示例。** 规定密度 1630 kg m⁻³、热容 654 J kg⁻¹ K⁻¹、导热率 0.050 W m⁻¹ K⁻¹。近 293 K 的舍入热容采用所引 NIST 数据。密度与导热率为教学输入。加热距离为 5 μm，时长为 10 ns。
 
 **Symbols before Eq. (C2-E10).**
 
@@ -393,17 +393,17 @@ A short pulse does not imply uniform temperature in a micron-scale core.
 
 短脉冲不意味着微米级核心内温度均匀。
 
-The penetration estimate is only 0.00433 of the chosen heating distance. Without distributed heat deposition, the 10 ns pulse cannot justify uniform core temperature. Reducing distance to 100 nm reduces this constant-coefficient diffusion scale to 0.213 μs, still longer than 10 ns. Hotspots, aggregation, and shell contact can matter more than a bulk-average temperature. Optical breakdown is a distinct source mechanism and requires optical conditions and observations that support it; it is not added to a thermal-vaporization model by default.
+Penetration is 0.00433 of the heating distance. Uniform core temperature requires distributed heating or additional diffusion time. At 100 nm, the diffusion estimate falls to 0.213 μs. That still exceeds 10 ns. Hotspots, aggregation and shell contact can dominate local heating. Optical breakdown requires its own optical conditions and observations.
 
-渗透尺度仅为所选加热距离的 0.00433。若无分布式热沉积，10 ns 脉冲不足以支持核心温度均匀的假设。将距离降为 100 nm，会使该常系数扩散尺度降为 0.213 μs，仍长于 10 ns。热点、聚集及壳层接触可能比体平均温度更重要。光学击穿是不同的源机制，需要相应光学条件及观测支持，不能默认添加到热汽化模型中。
+渗透长度为加热距离的 0.00433 倍。核心均温需要分布式加热或额外扩散时间。距离降至 100 nm 时，扩散估计降至 0.213 μs，仍长于 10 ns。热点、团聚和壳层接触可主导局部加热。光学击穿需独立的光学条件及观测依据。
 
-## 2.3 Volatility, confinement, and activation are different
+## 2.3 Vapor pressure, confinement and activation
 
-## 2.3 挥发性、约束与激活并不相同
+## 2.3 蒸气压、约束与激活
 
-**Step 10 — distinguish initial liquid pressure from ambient pressure.** A spherical PFC–carrier interface carries capillary stress. Add a declared shell-supported excess pressure when the shell has one. This static reference ignores rapid acceleration and shell-rate effects, which need a dynamic constitutive law.
+**Step 10 — Set initial core pressure.** A spherical PFC–carrier interface creates capillary pressure. Add shell-supported overpressure when present. This static reference omits acceleration and shell-rate effects. Those require a dynamic constitutive law.
 
-**步骤 10——区分初始液体压力与环境压力。** 球形 PFC–载液界面承受毛细应力；若壳层能承压，还应加上明确的壳层支撑超压。该静态参照忽略快速加速度与壳层速率效应；这些需要动态本构定律。
+**步骤 10——规定初始核心压力。** 球形 PFC—载液界面产生毛细压力。存在壳层承压时，加上壳层过压。静态参照忽略加速度与壳层速率效应，后者需动力学本构规律。
 
 **Symbols before Eq. (C2-E11).**
 
@@ -433,9 +433,9 @@ The smaller inclusion has a larger capillary contribution at the same tension.
 
 界面张力相同时，较小夹杂的毛细压力贡献更大。
 
-Use named compounds rather than a generic “PFC boiling point.” The following NIST entries refer to neat compounds. The displayed boiling ranges are different tabulated datasets, not uncertainty bands for a formulation. Convert molar heat capacity or enthalpy to mass-specific values by dividing by the stated molar mass. [[R8]](../reference/sources.html#r8) [[R9]](../reference/sources.html#r9) [[R15]](../reference/sources.html#r15)
+Specify the compound for every quoted boiling point. NIST entries below describe neat compounds. Tabulated boiling ranges represent different datasets, not formulation uncertainty. Divide molar heat capacity or enthalpy by molar mass for mass-specific values. [[R8]](../reference/sources.html#r8) [[R9]](../reference/sources.html#r9) [[R15]](../reference/sources.html#r15)
 
-应使用明确化合物，而不是笼统的“PFC 沸点”。下列 NIST 条目指纯化合物。列出的沸点范围来自不同数据集，不是某配方的不确定性区间。摩尔热容或焓除以所给摩尔质量，才得到质量比性质。[[R8]](../reference/sources.html#r8) [[R9]](../reference/sources.html#r9) [[R15]](../reference/sources.html#r15)
+每个沸点须注明具体化合物。下列 NIST 条目描述纯物质。表中沸点范围来自不同数据集，并非配方不确定度。摩尔热容或焓除以摩尔质量，得到质量比值。 [[R8]](../reference/sources.html#r8) [[R9]](../reference/sources.html#r9) [[R15]](../reference/sources.html#r15)
 
 | Compound and identity<br>化合物与身份 | Bulk reference<br>体相参照 | Proper scope<br>正确用途 |
 | --- | --- | --- |
@@ -443,9 +443,9 @@ Use named compounds rather than a generic “PFC boiling point.” The following
 | PFH: C₆F₁₄; CAS 355-42-0; molar mass 0.3380418 kg mol⁻¹<br>PFH：C₆F₁₄；CAS 355-42-0；摩尔质量 0.3380418 kg mol⁻¹ | Normal-boiling entries 330.3–333 K; vaporization enthalpy 31.5 kJ mol⁻¹ at 316 K, giving 93.18 kJ kg⁻¹.<br>正常沸点条目 330.3–333 K；316 K 汽化焓为 31.5 kJ mol⁻¹，对应 93.18 kJ kg⁻¹。 | Retain temperature and dataset; do not transfer this value to every PFC.<br>保留温度及数据集；不能将此值套用到所有 PFC。 |
 | Water: H₂O; molar mass 0.0180153 kg mol⁻¹<br>水：H₂O；摩尔质量 0.0180153 kg mol⁻¹ | Normal-boiling compilation approximately 373.17 K.<br>正常沸点汇编约为 373.17 K。 | PFC-free thermal comparison at matched temperature and pressure.<br>在相同温度与压力下的不含 PFC 热学参照。 |
 
-**Step 11 — calculate equilibrium vapor pressure within the correlation domain.** NIST tabulates the Barber–Cady Antoine fit for PFP. The logarithm acts on pressure divided by one bar, so its argument is dimensionless. The fit coefficients are empirical, not derived from the optical heating model. [[R8]](../reference/sources.html#r8)
+**Step 11 — Evaluate equilibrium vapor pressure.** Use the NIST Barber–Cady Antoine fit within its temperature range. Pressure divided by one bar makes the logarithm dimensionless. The coefficients are empirical inputs. [[R8]](../reference/sources.html#r8)
 
-**步骤 11——在关联式适用域内计算平衡蒸汽压。** NIST 列出了 PFP 的 Barber–Cady Antoine 拟合。对压力除以一巴后的比值取对数，故对数自变量无量纲。拟合系数是经验数据，并非由光加热模型推导。[[R8]](../reference/sources.html#r8)
+**步骤 11——计算平衡蒸气压。** 在温度适用范围内采用 NIST Barber–Cady Antoine 拟合。压力除以一 bar，使对数自变量无量纲。系数为经验输入。 [[R8]](../reference/sources.html#r8)
 
 **Symbols before Eq. (C2-E12).**
 
@@ -473,9 +473,9 @@ The saturation curve concerns an equilibrium state, not automatic activation.
 
 饱和曲线描述平衡状态，而不是自动激活。
 
-Evaluating Eq. (C2-E12) gives 70.60 kPa at 293 K, 103.35 kPa at 303 K, and 204.33 kPa at 323 K. For water use its stated temperature interval, rather than extrapolating one coefficient set. The NIST water coefficients below produce 2.315 kPa at 293 K and 12.248 kPa at 323 K. These are calculated comparisons, not project measurements. [[R15]](../reference/sources.html#r15)
+Eq. (C2-E12) gives PFP pressures of 70.60 kPa at 293 K, 103.35 kPa at 303 K, and 204.33 kPa at 323 K. Use water coefficients within their stated interval. They give 2.315 kPa at 293 K and 12.248 kPa at 323 K. These are calculated reference values. [[R15]](../reference/sources.html#r15)
 
-式（C2-E12）给出 293 K 时 70.60 kPa、303 K 时 103.35 kPa、323 K 时 204.33 kPa。水应使用对应温区的系数，不能外推同一组系数。下列 NIST 水系数给出 293 K 时 2.315 kPa、323 K 时 12.248 kPa。这些是计算对比，不是项目测量。[[R15]](../reference/sources.html#r15)
+式（C2-E12）给出 PFP 蒸气压：293 K 时 70.60 kPa，303 K 时 103.35 kPa，323 K 时 204.33 kPa。水系数须在注明温区内使用。所得值为 293 K 时 2.315 kPa、323 K 时 12.248 kPa。这些是计算参照值。 [[R15]](../reference/sources.html#r15)
 
 **Symbols before Eq. (C2-E13).**
 
@@ -504,13 +504,13 @@ Water provides a matched-temperature reference, not a guaranteed vapor reservoir
 
 水提供同温参照，却不是有保证的蒸汽库。
 
-At 323 K and 100 kPa carrier pressure, the declared 5 μm shell-free PFP core has initial liquid pressure 108 kPa, below the 204.33 kPa equilibrium PFP reference. The 100 nm core has 500 kPa liquid pressure, above it. Thus the same temperature can provide positive bulk driving for the larger core and no positive driving in this smaller-core control. This conclusion uses the stated constant tension and neglects shell stress; neither temperature is a measured onset threshold.
+At 323 K and 100 kPa carrier pressure, the 5 μm core has 108 kPa liquid pressure. This is below the 204.33 kPa PFP equilibrium reference. The 100 nm core has 500 kPa liquid pressure, above that reference. Bulk driving is positive for the larger core and nonpositive for the smaller core. This control assumes constant tension and zero shell stress. Measured onset temperatures remain unestablished.
 
-在 323 K、载液压力 100 kPa 下，所声明的无壳 5 μm PFP 核初始液体压力为 108 kPa，低于 204.33 kPa 的 PFP 平衡参照；100 nm 核的液体压力为 500 kPa，高于该值。因此，同一温度可能对较大核心提供正体相驱动力，却在此较小核心参照中没有正驱动力。此结论使用声明的常界面张力并忽略壳层应力；这两个温度都不是测得的起始阈值。
+在 323 K、载液压力 100 kPa 下，5 μm 核心液压为 108 kPa，低于 204.33 kPa 的 PFP 平衡参照。100 nm 核心液压为 500 kPa，高于该参照。大核心体相驱动为正，小核心驱动不为正。此对照假设张力恒定、壳层应力为零。实测起始温度尚未确立。
 
-**Step 12 — construct the capillarity free energy.** Define a vapor nucleus inside the liquid PFC, not a whole-core interface. Under the local isothermal, bulk-reservoir approximation, forming the new interface costs tension times area; replacing liquid by favorable vapor gains driving pressure times volume. The vapor–PFC tension is not the PFC–carrier tension in Eq. (C2-E11).
+**Step 12 — Construct nucleus free energy.** Place a vapor nucleus inside liquid PFC. Assume local isothermality and a bulk liquid reservoir. New interface costs tension × area. Favorable vapor gains driving pressure × volume. Use vapor–PFC tension for this internal interface. Eq. (C2-E11) uses PFC–carrier tension at the outer interface.
 
-**步骤 12——构造毛细自由能。** 在液态 PFC 内定义汽核，而非整个核心的外界面。在局部等温、体相库近似下，产生新界面的代价是界面张力乘面积；有利蒸汽替代液体的收益是驱动压差乘体积。蒸汽–PFC 张力不同于式（C2-E11）中的 PFC–载液张力。
+**步骤 12——建立汽核自由能。** 汽核位于液态 PFC 内部。假设局部等温与体相液体储库。新界面消耗张力 × 面积，有利蒸气获得驱动压差 × 体积。内部界面采用蒸气—PFC 张力。式（C2-E11）外界面采用 PFC—载液张力。
 
 **Symbols before Eq. (C2-E14).**
 
@@ -541,9 +541,9 @@ The barrier belongs to creating a new internal vapor interface.
 
 势垒来自生成新的内部蒸汽界面。
 
-**Step 13 — find the stationary point and its branch.** Differentiate the two powers of nucleus radius. For positive driving pressure, the nonzero stationary radius is obtained by dividing the bracket by positive radius and driving pressure. The second derivative there is negative, so it is a barrier maximum. For nonpositive driving pressure, the derivative is positive for every positive radius and there is no positive critical-radius branch in this model.
+**Step 13 — Find the critical branch.** Differentiate both radius powers. For positive driving, divide the nonzero-radius bracket by positive driving pressure. The second derivative is negative at the critical radius. It is a barrier maximum. For nonpositive driving, the derivative stays positive at positive radius. No positive critical-radius branch exists in that case.
 
-**步骤 13——求驻点并区分分支。** 对汽核半径的两个幂求导。驱动压差为正时，除以正半径与正压差，可得到非零驻点半径。在该点二阶导数为负，因此是势垒最大值。驱动压差非正时，每个正半径处的导数均为正，在本模型中不存在正临界半径分支。
+**步骤 13——求临界分支。** 对两个半径幂求导。正驱动时，将非零半径括号除以正驱动压差。临界半径处二阶导数为负，对应势垒最大值。驱动不为正时，所有正半径处导数为正，因此不存在正临界半径分支。
 
 **Symbols before Eq. (C2-E15).**
 
@@ -573,9 +573,9 @@ The stationary point is a maximum, not a stable equilibrium nucleus.
 
 该驻点是最大值，不是稳定平衡汽核。
 
-**Step 14 — substitute the critical radius explicitly.** Square and cube the positive radius, then subtract the two coefficients. The barrier falls as driving pressure increases, but remains positive at any finite positive driving pressure and positive tension.
+**Step 14 — Evaluate the barrier.** Substitute the squared and cubed critical radius. Subtract the coefficients explicitly. Increasing driving pressure lowers the barrier. Finite positive driving and tension leave a positive barrier.
 
-**步骤 14——显式代入临界半径。** 对正半径平方、立方，再将两项系数相减。随驱动压差增加，势垒降低；但对有限正驱动压差及正张力，势垒仍为正。
+**步骤 14——计算势垒。** 代入临界半径的平方与三次方，并明确相减系数。增大驱动压差会降低势垒。有限正驱动与正张力仍给出正势垒。
 
 **Symbols before Eq. (C2-E16).**
 
@@ -604,13 +604,13 @@ Positive superheat driving does not make the nucleation barrier vanish.
 
 正的过热驱动力并不会使成核势垒消失。
 
-The units check is $\mathrm{(N/m)^3/Pa^2=N\,m=J}$. The critical radius scales as tension divided by pressure, hence has units m. If the computed nucleus is comparable to the core radius, the reservoir approximation fails. Absorber surfaces, shell defects, dissolved gas, and wetting can replace homogeneous nucleation by a heterogeneous route. A seed imposed after the pulse defines a post-nucleation calculation; it is not a prediction of onset.
+The barrier unit is $\mathrm{(N/m)^3/Pa^2=N\,m=J}$. Tension/pressure gives critical-radius units m. A nucleus comparable to core size violates the reservoir approximation. Surfaces, defects, dissolved gas and wetting can favor heterogeneous nucleation. An imposed seed defines post-nucleation dynamics. Onset prediction then remains unestablished.
 
-单位检验为 $\mathrm{(N/m)^3/Pa^2=N\,m=J}$。临界半径按张力除以压力缩放，故单位为 m。若计算得到的汽核与核心半径相当，体相库近似失效。吸收体表面、壳层缺陷、溶解气体及润湿可能使均匀成核转为异质成核。脉冲后人为给定的种子仅定义成核后计算，不是起始预测。
+势垒单位为 $\mathrm{(N/m)^3/Pa^2=N\,m=J}$。张力／压力给出临界半径单位 m。汽核接近核心尺寸时，储库近似失效。表面、缺陷、溶解气体与润湿可促进异质成核。人为种子规定成核后的动力学，起始预测仍未确立。
 
-**Step 15 — turn a rate into a probability only under a stated stochastic model.** For independent Poisson nucleation events, survival over a small interval loses the expected number of events times its current value. Integrate its logarithmic derivative with initial survival one. The result applies even when the rate varies in space and time; it does not determine that rate. A formulation-specific empirical activation law is preferable when the homogeneous premise is false.
+**Step 15 — Derive activation probability.** Assume independent Poisson events. In a short interval, survival loses event expectation × current survival. Integrate the logarithmic derivative from initial survival one. Spatially and temporally varying rates fit this model. The rate itself requires a separate law. Use measured activation behavior when homogeneous nucleation is unsuitable.
 
-**步骤 15——只有明确随机模型，才能将速率变为概率。** 对独立 Poisson 成核事件，短时间内的未成核概率减少量等于当前值乘以预期事件数。以初始未成核概率为一，积分其对数导数。即使速率随时空变化，该结果仍适用；但它不提供速率本身。均匀成核前提不成立时，更应采用特定配方的经验激活定律。
+**步骤 15——推导激活概率。** 假设独立 Poisson 事件。短时间内，存活概率减少量为事件期望数乘当前存活概率。从初始存活概率一积分对数导数。模型允许速率随时空变化。速率本身需独立规律。均质成核不适用时，应采用测量激活规律。
 
 **Symbols before Eq. (C2-E17).**
 
@@ -642,13 +642,13 @@ Activation probability requires the rate and the time spent in the activating st
 
 激活概率需要速率及处于可激活状态的时长。
 
-## 2.4 Close phase mass and energy without an infinite reservoir
+## 2.4 Phase mass and energy balances
 
-## 2.4 用有限库存闭合相质量与能量
+## 2.4 相质量与能量平衡
 
-**Step 16 — conserve compound inventory.** Initial PFC mass is liquid density times core volume. Later liquid, vapor, dissolved, and escaped PFC exhaust that same initial mass when there is no external supply. Escaped mass is a cumulative ledger, not vapor remaining inside the bubble. The water carrier cannot replenish PFC.
+**Step 16 — Conserve PFC inventory.** Initial mass equals liquid density × core volume. Without external supply, liquid, vapor, dissolved and escaped PFC sum to that mass. Escaped mass is cumulative. It differs from vapor retained inside the bubble. Water supplies no additional PFC.
 
-**步骤 16——守恒化合物库存。** 初始 PFC 质量等于液体密度乘以核心体积。无外部供应时，后续液体、蒸汽、溶解及逸出 PFC 的总和就是该初始质量。逸出质量是累计账目，不是气泡内的剩余蒸汽。水性载液不能补充 PFC。
+**步骤 16——PFC 物质量守恒。** 初始质量等于液体密度 × 核心体积。无外部供给时，液体、蒸气、溶解及逸出 PFC 之和等于初始质量。逸出质量按累计记账，与气泡内保留蒸气不同。水不能补充 PFC。
 
 **Symbols before Eq. (C2-E18).**
 
@@ -679,9 +679,9 @@ The compound ledger survives expansion, condensation, dissolution, and venting.
 
 化合物账目在膨胀、凝结、溶解及排气过程中均成立。
 
-**Step 17 — locate the actual phase-change surface.** Integrate species flux over the interface that this species contacts. The full spherical area is available only if that species contacts the complete surface and its flux is uniform. A residual PFC inclusion in water may instead provide a much smaller vaporization surface.
+**Step 17 — Identify the phase-change surface.** Integrate species flux over its contacted interface. Full spherical area requires full species contact and uniform flux. Residual PFC in water can have a smaller vaporization surface.
 
-**步骤 17——定位实际相变表面。** 应在该组分接触的界面上积分其通量。只有该组分接触整个球面且通量均匀，才可使用全球面积。水中残余 PFC 夹杂可能只提供更小的汽化表面。
+**步骤 17——确定相变表面。** 在组分实际接触的界面上积分通量。采用完整球面面积需该组分接触全表面且通量均匀。水中残留 PFC 可具有更小汽化表面。
 
 **Symbols before Eq. (C2-E19).**
 
@@ -712,9 +712,9 @@ A bubble surface and a PFC evaporation surface need not be identical.
 
 气泡表面与 PFC 蒸发表面未必相同。
 
-**Step 18 — derive the phase-change velocity slip.** At a single-component interface, fluid crosses the moving interface at the same mass flux on each side. In a bubble, the liquid-to-vapor normal is inward. Taking its dot product with radial liquid velocity minus interface velocity gives radius speed minus liquid speed. Solve that signed equality for the liquid speed. A velocity potential using interface speed as liquid speed inherits the small-slip approximation.
+**Step 18 — Derive velocity slip.** A single-component phase boundary has equal mass flux on both sides. Inside a bubble, the liquid-to-vapor normal points inward. Project liquid velocity minus interface velocity onto that normal. The result is wall speed minus radial liquid speed. Solve for liquid speed. Equating potential-flow speed to wall speed then assumes small slip.
 
-**步骤 18——推导相变速度滑移。** 单组分界面两侧，流体穿过运动界面的质量通量相同。对气泡，液到汽法向指向内侧；径向液速减去界面速度，再与该法向点乘，得到半径速度减液体速度。解这个带符号等式得到液速。若速度势将界面速度当作液速，就继承了小滑移近似。
+**步骤 18——推导速度滑移。** 单组分相界面两侧质量通量相等。气泡内液体指向蒸气的法向朝内。将液体速度减界面速度投影至该法向，得到壁面速度减径向液速。由此求液速。将势流液速等同壁速需要小滑移假设。
 
 **Symbols before Eq. (C2-E20).**
 
@@ -747,13 +747,13 @@ The interface need not move at the same speed as the adjacent liquid.
 
 界面不必以邻接液体的速度运动。
 
-The phase-slip approximation requires $|j_s|/\rho_l$ small relative to the relevant liquid or interface velocity scale. At a turning point, division by zero radius speed cannot be a useful criterion; choose a finite event velocity scale and check absolute slip. Strong evaporation can also contribute recoil stress through the momentum jump. Reusing Chapter 1’s simple spherical stress relation requires that recoil be negligible or explicitly added. Mixtures require species diffusion and composition boundary conditions, not the pure-component jump applied independently without a common mass balance.
+Require $|j_s|/\rho_l$ below a relevant liquid or interface speed scale. At a turning point, use finite event speed instead of zero wall speed. Strong evaporation can add recoil stress. Check it before reusing Chapter 1’s simple wall stress. Mixtures require species diffusion, composition conditions and common mass balance.
 
-相变滑移近似要求 $|j_s|/\rho_l$ 相对于相关液体或界面速度尺度足够小。在转折点，除以零半径速度不能形成有效判据；应选有限事件速度尺度并检查绝对滑移。强蒸发还可通过动量跳跃产生反冲应力。复用第一章的简单球形应力关系，要求反冲可忽略或显式补入。混合物需要组分扩散与组成边界条件，不能无共同质量守恒而对每个组分独立套用纯组分跳跃式。
+要求 $|j_s|/\rho_l$ 小于相关液体或界面速率尺度。转折点处采用有限事件速率，避免除以零壁速。强蒸发可增加反冲应力。复用第一章简单壁面应力前须检验反冲。混合物需要组分扩散、组成条件和共同质量平衡。
 
-**Step 19 — derive the Stefan sign from interfacial energy conservation.** With no surface heat storage and negligible kinetic and mechanical jump corrections, conductive heat arriving from the liquid, minus that leaving toward vapor, pays the enthalpy needed to change phase. The enthalpy difference uses the same temperature and reference convention on both sides. Reverse the heat supply and flux becomes negative: condensation releases latent enthalpy.
+**Step 19 — Derive the Stefan sign.** Omit surface heat storage and kinetic/mechanical jump corrections. Liquid-side conductive influx minus vapor-side outflux supplies phase-change enthalpy. Evaluate both enthalpies at matching temperature and reference conventions. Reversing heat supply gives negative flux. Condensation then releases latent enthalpy.
 
-**步骤 19——由界面能量守恒确定 Stefan 符号。** 无表面热储存、且动能及力学跳跃修正可忽略时，从液体到达的传导热减去流向蒸汽的热，为相变所需焓提供能量。焓差在两侧采用相同温度与参考约定。热供应反向时，通量为负：凝结释放潜焓。
+**步骤 19——推导 Stefan 符号。** 忽略界面热储存及动能、力学跳跃修正。液侧传导流入减汽侧流出，供给相变焓。两侧焓采用一致温度与参考约定。反转供热会产生负通量，凝结释放潜焓。
 
 **Symbols before Eq. (C2-E21).**
 
@@ -785,13 +785,13 @@ The liquid-to-vapor normal fixes the signs of heat and phase flux.
 
 液到汽法向确定热通量及相变通量符号。
 
-For a separate single-component sign control, declare heat supply projected along the liquid-to-vapor normal of 0.95 MW m⁻², zero projected vapor-side conductive loss, and latent enthalpy 95 kJ kg⁻¹. The Stefan flux is 10 kg m⁻² s⁻¹. A stipulated adjacent liquid density of 1000 kg m⁻³ gives liquid velocity slip 0.010 m s⁻¹. This density belongs to the evaporating liquid in this control, not automatically to the aqueous carrier or the PFC interface. With the teaching PFC density 1630 kg m⁻³, the same flux instead gives 0.006135 m s⁻¹ slip at that PFC interface. Reversing the heat supply reverses both flux and slip. This check establishes units and sign; it does not establish actual interface temperature or rate in a PFC nanoemulsion.
+For a sign control, prescribe normal heat supply 0.95 MW m⁻², zero vapor-side loss, and latent enthalpy 95 kJ kg⁻¹. Stefan flux is 10 kg m⁻² s⁻¹. With adjacent density 1000 kg m⁻³, slip is 0.010 m s⁻¹. With PFC density 1630 kg m⁻³, slip is 0.006135 m s⁻¹. Density belongs to the actual evaporating phase. Reversing heat reverses flux and slip. This checks units and sign. Actual nanoemulsion interface state remains unestablished.
 
-对单独的单组分符号对照，声明沿液到汽法向的热供应为 0.95 MW m⁻²、蒸汽侧投影传导损失为零、潜焓为 95 kJ kg⁻¹。Stefan 通量为 10 kg m⁻² s⁻¹。指定相邻液相密度为 1000 kg m⁻³，可得液体速度滑移 0.010 m s⁻¹。此密度属于该对照中发生汽化的液体，并非自动属于水载液或 PFC 界面。若采用教学 PFC 密度 1630 kg m⁻³，同一通量在该 PFC 界面对应的滑移为 0.006135 m s⁻¹。反转热供应，通量及滑移均反向。该检验只确立单位与符号，没有确立 PFC 纳米乳液的真实界面温度或速率。
+符号对照给定法向供热 0.95 MW m⁻²、汽侧损失为零、潜焓 95 kJ kg⁻¹。Stefan 通量为 10 kg m⁻² s⁻¹。邻接密度取 1000 kg m⁻³ 时，滑移为 0.010 m s⁻¹。PFC 密度取 1630 kg m⁻³ 时，滑移为 0.006135 m s⁻¹。密度应属于实际蒸发相。反转供热会反转通量与滑移。这检验单位与符号。实际纳米乳液界面状态尚未确立。
 
-**Step 20 — apply the first law to the moving bubble.** Choose the vapor domain as a uniform-state open control. Incoming mass carries enthalpy, including the flow work required to enter. Expansion performs pressure work on the surroundings. Conductive heat input is separately counted. The scalar equation below omits resolved internal kinetic energy and surface storage; outgoing mass carries its actual outgoing enthalpy. It requires a consistent boundary state, not one enthalpy assigned indiscriminately to all fluxes.
+**Step 20 — Apply the bubble first law.** Use a uniform-state open vapor control volume. Incoming mass carries enthalpy, including entry flow work. Expansion performs work on the surroundings. Count conductive heat separately. Omit resolved internal kinetic energy and surface storage. Outgoing mass carries its own boundary enthalpy. Each flux requires a consistent boundary state.
 
-**步骤 20——对运动气泡应用第一定律。** 选择蒸汽域作为均匀状态的开放控制体。流入质量携带焓，包括进入所需的流动功；膨胀对周围做压力功；传导热输入单独计入。下式标量方程忽略显式内部动能及表面储能；流出质量携带实际流出焓。它要求一致的边界状态，不能对所有通量不加区别地赋予同一个焓。
+**步骤 20——应用气泡第一定律。** 将蒸气作为均匀状态开放控制体。流入质量携带焓，包括进入所需流动功。膨胀对外做功，传导热单独计入。忽略解析内部动能和界面储存。流出质量携带其边界焓。各通量均需一致边界状态。
 
 **Symbols before Eq. (C2-E22).**
 
@@ -823,9 +823,9 @@ Mass enthalpy and conductive heat are different terms in the bubble ledger.
 
 质量焓与传导热是气泡账目中的不同项。
 
-**Step 21 — expose the temperature derivative.** For a common bulk temperature and ideal species energies depending only on temperature, differentiate every mass–specific-energy product. The specific heat at constant volume is the derivative of specific internal energy. Subtract the bulk specific internal energy from the boundary specific enthalpy. The difference is pure pressure flow work only when both refer to the same thermodynamic state; when entry temperature differs from bulk temperature, it also includes the boundary-to-bulk sensible internal-energy difference. This expansion makes changing vapor mass visible instead of hiding it in a fitted polytropic exponent.
+**Step 21 — Expand the temperature derivative.** Assume common temperature and ideal species energies dependent on temperature. Differentiate each mass × specific-energy product. Constant-volume specific heat is the specific-energy derivative. Subtract bulk internal energy from boundary enthalpy. This gives pressure flow work when both states match. Different entry temperature adds a sensible internal-energy difference. The expansion retains changing vapor mass explicitly.
 
-**步骤 21——展开温度导数。** 对共同体相温度、且理想组分内能只依赖温度的情形，对每个质量乘比内能的乘积求导。定容比热是比内能对温度的导数。从边界比焓中减去体相比内能。只有两者对应同一热力学状态时，差值才纯粹是压力流动功；若流入温度与体相温度不同，差值还包括边界与体相之间的显热内能差。该展开明确显示蒸汽质量变化，而不是将其藏入拟合多方指数。
+**步骤 21——展开温度导数。** 假设共同温度，理想组分内能随温度变化。对各质量 × 比内能乘积求导。定容比热等于比内能温度导数。边界焓减去体相比内能，在状态一致时给出压力流动功。入口温度不同时，还包含显内能差。展开式明确保留蒸气质量变化。
 
 **Symbols before Eq. (C2-E23).**
 
@@ -858,17 +858,17 @@ A variable vapor mass makes a fixed-mass polytropic shortcut conditional.
 
 蒸汽质量变化，使固定质量多方捷径只能有条件成立。
 
-The Stefan interface balance and bubble first law must share enthalpy references. The interface heat pays for converting liquid enthalpy into vapor enthalpy; that vapor then enters with its already specified enthalpy. Adding an independent latent source to Eq. (C2-E22) counts the conversion twice. With fixed mass, no conductive heat, and positive expansion rate, the bubble energy decreases. Condensation and cooling can reduce its pressure; if mass exchange is too slow, retained vapor can cushion collapse. Dissolution, permanent gas, and escape each need their own balances.
+Use consistent enthalpy references in Stefan and bubble balances. Interface heat creates the specified incoming vapor enthalpy. Adding another latent source to Eq. (C2-E22) duplicates that conversion. Fixed-mass adiabatic expansion lowers bubble energy. Cooling and condensation can lower pressure. Slow mass exchange can retain vapor and cushion collapse. Dissolution, permanent gas and escape need separate balances.
 
-Stefan 界面平衡与气泡第一定律必须使用共同焓参考。界面热将液体焓转为蒸汽焓，随后蒸汽携带已指定的焓进入气泡。在式（C2-E22）中再添加独立潜热源，会将该转化重复计算。质量固定、无传导热且膨胀速率为正时，气泡能量降低。凝结及冷却可降低压力；若质量交换过慢，保留蒸汽可缓冲塌缩。溶解、永久气体和逸出各需独立守恒式。
+Stefan 与气泡平衡采用一致焓参考。界面热产生指定的流入蒸气焓。再向式（C2-E22）加入潜热源会重复计入转化。固定质量绝热膨胀降低气泡能量。冷却与凝结可降低压力。质量交换慢时可保留蒸气并缓冲塌缩。溶解、非凝结气体及逸出需独立平衡。
 
-A post-nucleation uniform-bubble calculation also needs a nonzero seed volume, initial species masses and temperature, and initial interface shape and velocity. Those inputs must satisfy the original inventory and energy ledger. A fitted probability of onset does not determine them. With no vapor yet present, the liquid heating and activation description applies; do not divide by zero vapor heat capacity to start the uniform-bubble temperature equation.
+Specify nonzero seed volume, species masses and temperature after nucleation. Also specify initial interface shape and velocity. All seeds must satisfy inventory and energy balances. Onset probability leaves these states unresolved. Before vapor appears, use liquid heating and activation equations. Zero vapor heat capacity excludes starting with the bubble temperature equation.
 
-成核后的均匀气泡计算还需要非零种子体积、初始组分质量与温度、以及初始界面形状与速度。这些输入必须满足原始库存与能量账目。拟合的起始概率并不确定这些量。尚无蒸汽时，应使用液体加热及激活描述；不能除以零蒸汽热容来启动均匀气泡温度方程。
+成核后须指定非零种子体积、组分质量和温度，以及初始界面形状和速度。所有种子均须满足物质与能量平衡。起始概率不能确定这些状态。蒸气出现前采用液体加热及激活方程。蒸气热容为零时，不能用气泡温度方程启动。
 
-**Step 22 — close pressure with a finite mass and an equation of state.** In a dilute ideal mixture, each partial pressure follows from that species mole number, common temperature, and volume. Sum partial pressures, including noncondensable gas. A real-fluid or mixture equation of state must replace this approximation during high-density compression; neither an Antoine curve nor a fixed polytropic exponent supplies that missing closure.
+**Step 22 — Close pressure with an EOS.** In a dilute ideal mixture, each partial pressure follows species moles, common temperature and volume. Sum all species, including permanent gas. High-density compression requires a real-fluid or mixture EOS. Antoine saturation and a fixed polytropic exponent leave that state closure unresolved.
 
-**步骤 22——用有限质量与状态方程闭合压力。** 在稀薄理想混合物中，每种分压由该组分摩尔数、共同温度及体积决定。各分压求和时包含不可凝气体。高密度压缩时，必须用真实流体或混合物状态方程替代理想近似；Antoine 曲线或固定多方指数均不能补足该缺失闭合。
+**步骤 22——用状态方程闭合压力。** 稀薄理想混合物中，各分压由组分摩尔数、共同温度和体积决定。求和所有组分，包括非凝结气体。高密度压缩需要真实流体或混合物状态方程。Antoine 饱和关系与固定多方指数不能闭合该状态。
 
 **Symbols before Eq. (C2-E24).**
 
@@ -902,9 +902,9 @@ The pressure responds to species masses, temperature, and changing volume.
 
 压力响应组分质量、温度及体积变化。
 
-**Step 23 — display the three causes of changing partial pressure.** For positive species mass, temperature, pressure, and volume, take the logarithm of the ideal equation and differentiate. The mass, temperature, and compression terms then appear separately. At zero species mass use Eq. (C2-E24) directly instead of taking a logarithm.
+**Step 23 — Separate pressure-change terms.** Require positive species mass, temperature, pressure and volume. Take the ideal-law logarithm and differentiate. The terms represent mass change, temperature change and compression. At zero species mass, use Eq. (C2-E24) directly.
 
-**步骤 23——明确分压变化的三个原因。** 当组分质量、温度、压力和体积为正时，对理想方程取对数并求导。质量、温度和压缩项便分别显现。组分质量为零时直接使用式（C2-E24），不要取对数。
+**步骤 23——分离压力变化项。** 要求组分质量、温度、压力及体积为正。对理想定律取对数并求导，分离质量变化、温度变化及压缩项。组分质量为零时，直接采用式（C2-E24）。
 
 **Symbols before Eq. (C2-E25).**
 
@@ -934,9 +934,9 @@ A radius-only gas law hides mass and thermal changes.
 
 仅由半径决定的气体定律会隐藏质量与热变化。
 
-**Step 24 — cap an equilibrium control by available inventory.** For a closed, nondissolving PFC supply at prescribed temperature and free vapor volume, the saturated vapor mass is pressure times volume divided by the species gas constant and temperature. If that required mass exceeds the original supply, all PFC is vapor and the ideal partial pressure falls below saturation. This algebraic control assumes fast phase equilibration, negligible curved-interface corrections, and thermodynamic coexistence conditions; it is not a nonequilibrium evaporation-rate law.
+**Step 24 — Limit saturation by inventory.** Prescribe temperature and free vapor volume in a closed nondissolving control. Saturated mass equals pressure × volume/(gas constant × temperature). If it exceeds supply, all PFC vaporizes and partial pressure falls below saturation. Assume rapid equilibrium, negligible curvature corrections and coexistence conditions. This algebra supplies an equilibrium control, not a rate law.
 
-**步骤 24——以可用库存限制平衡参照。** 对闭合、不溶解的 PFC 供应，在给定温度与自由蒸汽体积下，饱和蒸汽质量等于压力乘体积，再除以组分气体常数与温度。若所需质量超过原供应，PFC 全部成为蒸汽，理想分压低于饱和。该代数参照假设相平衡迅速、曲面界面修正可忽略并满足热力学共存条件；它不是非平衡蒸发速率定律。
+**步骤 24——用物质量限制饱和。** 在封闭、无溶解对照中给定温度及自由蒸气体积。饱和质量等于压力 × 体积／（气体常数 × 温度）。所需质量超过供给时，PFC 全部汽化，分压低于饱和。假设快速平衡、曲率修正可忽略并满足共存条件。该代数关系是平衡对照，并非速率规律。
 
 **Symbols before Eq. (C2-E26).**
 
@@ -967,17 +967,17 @@ The saturation branch ends when the finite liquid inventory is exhausted.
 
 有限液体库存耗尽时，饱和分支终止。
 
-## 2.5 A complete single-core numerical benchmark
+## 2.5 Single-core numerical example
 
-## 2.5 完整单核心数值参照
+## 2.5 单核心数值示例
 
-Declare a 5 μm initial PFP-like liquid core at 293 K, final reference vapor temperature 323 K, density 1630 kg m⁻³, constant liquid heat capacity 654 J kg⁻¹ K⁻¹, and constant latent enthalpy 95 kJ kg⁻¹. The molar mass is the named PFP value. The size, density, constant transport model, latent value, and final state are teaching inputs. They do not describe a verified nanodroplet formulation. The constant latent enthalpy is not presented as a NIST value at 323 K.
+Prescribe a 5 μm PFP-like liquid core at 293 K. Final vapor reference temperature is 323 K. Use density 1630 kg m⁻³, liquid heat capacity 654 J kg⁻¹ K⁻¹, and latent enthalpy 95 kJ kg⁻¹. Molar mass is the named PFP value. Size, density, constant coefficients and final state are teaching inputs. The latent value is not a 323 K NIST datum. Verified nanoformulation properties remain unestablished.
 
-声明一个初始温度 293 K、半径 5 μm 的近似 PFP 液核，最终参照蒸汽温度为 323 K，密度为 1630 kg m⁻³，常液相比热容为 654 J kg⁻¹ K⁻¹，常潜焓为 95 kJ kg⁻¹。摩尔质量采用明确的 PFP 数值。尺寸、密度、常系数传输模型、潜焓值与最终状态都是教学输入，不代表已验证的纳米液滴配方。此常潜焓并未被表述为 323 K 下的 NIST 数值。
+规定 293 K、半径 5 μm 的类 PFP 液核。最终蒸气参照温度为 323 K。采用密度 1630 kg m⁻³、液体热容 654 J kg⁻¹ K⁻¹、潜焓 95 kJ kg⁻¹。摩尔质量采用具名 PFP 数值。尺寸、密度、常系数及最终状态为教学输入。潜焓并非 323 K 的 NIST 数据。已验证纳米配方物性尚未确立。
 
-**Step 25 — evaluate initial mass.** Cube the radius in meters, multiply by density, and use the sphere-volume factor. One nanogram is $10^{-12}$ kg, not $10^{-9}$ kg.
+**Step 25 — Calculate initial mass.** Cube radius in meters. Multiply by density and the sphere-volume factor. One nanogram equals $10^{-12}$ kg.
 
-**步骤 25——计算初始质量。** 将以米计的半径立方，乘密度及球体积系数。一纳克是 $10^{-12}$ kg，而不是 $10^{-9}$ kg。
+**步骤 25——计算初始质量。** 将以米计的半径取三次方，乘以密度和球体积系数。一纳克等于 $10^{-12}$ kg。
 
 **Symbols before Eq. (C2-E27).**
 
@@ -1005,9 +1005,9 @@ A mass ledger begins with the actual core volume.
 
 质量账目从实际核心体积开始。
 
-**Step 26 — estimate preparation enthalpy.** A declared near-constant-pressure path first heats liquid and then converts it to the chosen vapor reference, using constant coefficients. The sensible term is mass times heat capacity times temperature rise; the latent term is mass times latent enthalpy. This is a preparation-energy screen. It omits the detailed pressure path, carrier heating, shell work, gradients, and losses, and is not automatically an activation threshold or jet energy.
+**Step 26 — Estimate preparation enthalpy.** Prescribe heating followed by vaporization near constant pressure. Use constant heat capacity and latent enthalpy. Sensible energy equals mass × heat capacity × temperature rise. Latent energy equals mass × latent enthalpy. This screen omits pressure-path detail, carrier heat, shell work, gradients and losses. Activation threshold and jet energy remain unestablished.
 
-**步骤 26——估计制备焓。** 声明一个近恒压路径，先加热液体，再用常系数将其转为所选蒸汽参照。显热项为质量乘比热容乘温升；潜热项为质量乘潜焓。这是制备能量筛选，忽略详细压力路径、载液加热、壳层做功、梯度及损失，不能自动等同于激活阈值或射流能量。
+**步骤 26——估算制备焓。** 规定近恒压下先加热再汽化，采用恒定热容和潜焓。显热等于质量 × 热容 × 温升，潜热等于质量 × 潜焓。该筛选省略详细压力路径、载液加热、壳层功、梯度及损失。激活阈值与射流能量尚未确立。
 
 **Symbols before Eq. (C2-E28).**
 
@@ -1038,9 +1038,9 @@ Most of this declared preparation estimate is latent enthalpy.
 
 该制备估计中的大部分能量是潜焓。
 
-**Refinement of the preparation path.** For an equilibrium near-isobaric path with initial subcooled liquid and final superheated vapor, liquid heats only to the saturation temperature at that pressure, then vaporizes, then the vapor heats to its final temperature. Integrate the appropriate phase heat capacities over those separate intervals. The 97.82 nJ screen replaces this full enthalpy path by a constant liquid heat capacity over the whole 30 K rise plus a fixed latent value; it is therefore not an exact endpoint enthalpy. Vapor heat capacity and the actual pressure path are needed to refine it.
+**Refine the enthalpy path.** At near-constant pressure, heat subcooled liquid to saturation. Vaporize it, then heat vapor to the final temperature. Integrate each phase heat capacity over its own interval. The 97.82 nJ screen instead applies liquid heat capacity over 30 K plus fixed latent enthalpy. Exact endpoint enthalpy requires vapor heat capacity and the actual pressure path.
 
-**制备路径的改进。** 对初始过冷液体、最终过热蒸汽的近平衡等压路径，液体仅加热到该压力下的饱和温度，随后汽化，最后将蒸汽加热到最终温度。应分别在这些区间积分对应相的比热容。97.82 nJ 筛选用全程 30 K 温升中的常液相比热及固定潜焓替代完整焓路径，因此并非精确端态焓。进一步改进需要蒸汽比热容与实际压力路径。
+**细化焓路径。** 近恒压下先将过冷液体加热至饱和，再汽化，然后将蒸气加热至最终温度。分别在各温区积分对应相热容。97.82 nJ 筛选则在整个 30 K 温升使用液体热容，再加固定潜焓。精确终态焓需要蒸气热容及实际压力路径。
 
 **Symbols before Eq. (C2-E29).**
 
@@ -1072,9 +1072,9 @@ A rigorous preparation path uses the heat capacity of each phase over its own in
 
 严谨制备路径在各相自身温区使用对应比热容。
 
-**Step 27 — find a radius associated with a specified vapor state.** As a separate mass-conservation test, fully vaporize that supply at 323 K and 100 kPa PFC partial pressure using the ideal-vapor control. Equate bubble volume from the gas law to core mass divided by original density times the expansion factor. Cancel the positive sphere factor and cube-root the positive ratio. This computes a state-associated inventory radius; it does not solve the dynamics or give maximum radius.
+**Step 27 — Calculate an inventory radius.** Fully vaporize the supply at 323 K and 100 kPa PFC partial pressure. Use the ideal-vapor control. Equate gas-law volume to initial volume × expansion factor. Cancel the positive sphere factor and take the positive cube root. The resulting radius belongs to the prescribed state. Dynamical maximum remains unestablished.
 
-**步骤 27——求指定蒸汽状态对应的半径。** 作为独立质量守恒检验，采用理想蒸汽参照，将该库存全部汽化至 323 K、PFC 分压 100 kPa。将气体定律的气泡体积与核心质量除以初始密度再乘膨胀倍数相等。约去正的球体积系数，对正比值开立方根。该计算得到状态对应的库存半径，并未求解动力学或最大半径。
+**步骤 27——计算物质量对应半径。** 在 323 K、PFC 分压 100 kPa 下完全汽化该供给，采用理想蒸气对照。令气体定律体积等于初始体积乘膨胀倍数。约去正球体系数并取正立方根。所得半径属于指定状态。动力学最大值尚未确立。
 
 **Symbols before Eq. (C2-E30).**
 
@@ -1106,13 +1106,13 @@ The expansion ratio follows from mass conservation at a stated pressure and temp
 
 膨胀比来自指定压力与温度下的质量守恒。
 
-At 323 K, the 100 kPa PFC reference is below 204.33 kPa saturation. It is fully vaporized and unsaturated, not coexistence with an unlimited liquid reservoir. Its ideal gas law can be checked by inserting the computed radius and recovering 100 kPa. At a larger 30 μm radius and the same temperature, even placing the entire supply in vapor gives only 70.36 kPa PFC partial pressure. Maintaining saturation there would require more PFC than the original core contains. Added water vapor or gas can alter total pressure, but requires its own inventory and energy accounting.
+At 323 K, 100 kPa lies below PFP saturation at 204.33 kPa. The control is fully vaporized and unsaturated. Substituting its computed radius into the ideal law recovers 100 kPa. At 30 μm, the entire inventory supplies 70.36 kPa PFC pressure. Sustained saturation there requires more PFC. Water vapor or gas adds pressure with separate mass and energy balances.
 
-323 K 时，100 kPa 的 PFC 参照低于 204.33 kPa 饱和压力。它是完全汽化、未饱和状态，不是与无限液体库共存。将计算半径代回理想气体定律，可恢复 100 kPa，完成检验。在更大的 30 μm 半径及同温度下，即使全部库存均在蒸汽中，PFC 分压也仅为 70.36 kPa。此时维持饱和将需要超过原核心的 PFC。额外水蒸汽或气体可改变总压力，但必须有各自的库存与能量账目。
+323 K 时，100 kPa 低于 PFP 饱和压 204.33 kPa。对照完全汽化且未饱和。将所得半径代回理想定律可恢复 100 kPa。30 μm 时，全部物质量提供 70.36 kPa PFC 分压。维持该尺寸饱和需要更多 PFC。水蒸气或气体可增加压力，但需独立质量与能量平衡。
 
-**Step 28 — connect the optical and thermal energy screens without claiming an activation threshold.** Declare incident energy 1 μJ, beam radius 20 μm, centered aperture radius 10 μm, absorber thickness 5 μm, absorption coefficient $2\times10^5$ m⁻¹, and reflected fraction 0.10. Calculate the intercepted fraction and absorptance before comparing energy. These values specify a hypothetical slab and are independent of the optical studies cited earlier.
+**Step 28 — Compare absorbed and preparation energies.** Prescribe incident energy 1 μJ and beam radius 20 μm. Use centered aperture radius 10 μm, thickness 5 μm, absorption coefficient $2\times10^5$ m⁻¹, and reflection 0.10. Calculate interception and absorptance first. This hypothetical slab is independent of the cited activation experiments.
 
-**步骤 28——连接光学与热学能量筛选，不将其声称为激活阈值。** 声明入射能量 1 μJ、光束半径 20 μm、同轴窗口半径 10 μm、吸收层厚度 5 μm、吸收系数 $2\times10^5$ m⁻¹、反射比例 0.10。比较能量前先计算截获比例与吸收率。这些值定义假想薄层，与此前引用的光学研究相互独立。
+**步骤 28——比较吸收与制备能量。** 规定入射能量 1 μJ、光束半径 20 μm。居中孔径半径为 10 μm，厚度 5 μm，吸收系数 $2\times10^5$ m⁻¹，反射比例 0.10。先计算截获与吸收率。该假想薄层独立于所引激活实验。
 
 **Symbols before Eq. (C2-E31).**
 
@@ -1142,29 +1142,29 @@ The preparation estimate demands at least 43.7% of the declared absorbed energy.
 
 该制备估计要求至少 43.7% 的所声明吸收能量。
 
-If only 20% of this absorbed energy reaches the chosen core, the delivered heat is 44.77 nJ, below the declared 97.82 nJ full-preparation estimate. If 50% reaches it, the 111.92 nJ budget clears that estimate but still does not demonstrate nucleation, spatial uniformity, shell opening, or useful pressure work. With unchanged coefficients and reference states, halving core radius divides mass and preparation enthalpy by eight while preserving the ideal volume expansion factor; its capillary pressure doubles. Thus small size simultaneously changes inventory, heating distance, and confinement.
+At 20% delivery, core heat is 44.77 nJ, below 97.82 nJ. At 50%, 111.92 nJ clears that screen. Nucleation, uniformity, shell opening and useful work remain unestablished. With fixed coefficients and states, halving radius reduces mass and preparation enthalpy eightfold. Ideal expansion factor stays fixed; capillary pressure doubles. Size changes inventory, diffusion distance and confinement together.
 
-若仅 20% 吸收能量到达所选核心，所送热量为 44.77 nJ，低于声明的 97.82 nJ 完全制备估计。若达到 50%，111.92 nJ 的预算超过该估计，却仍不能证明成核、空间均温、壳层开启或有用压力功。在系数与参照状态不变时，核心半径减半会使质量与制备焓降为八分之一，同时保持理想体积膨胀倍数；毛细压力却加倍。因此，小尺寸会同时改变库存、加热距离及约束。
+20% 输送时，核心热量为 44.77 nJ，低于 97.82 nJ。50% 时，111.92 nJ 超过筛选值。成核、均温、壳层开启及有用功尚未确立。系数与状态固定时，半径减半使质量与制备焓降至八分之一。理想膨胀倍数不变，毛细压力加倍。尺寸同时改变物质量、扩散距离与约束。
 
-**Handoff to the connected calculation.** Chapter 3 repeats this exact 5 μm teaching-core inventory across 25 sites: total PFC mass is 21.3367 ng and the summed preparation screen is 2.44561 μJ. Those totals are a source mass/enthalpy ledger. They are not a freely available 2.44561 μJ jet budget, and the hypothetical optical slab above is not a calibration of those cells. Chapter 3 states the separate-cell assumption and declares any mechanical-conversion fraction before calculating finite emitted liquid mass and energy.
+**Use in Chapter 3.** Twenty-five identical 5 μm cores contain 21.3367 ng PFC. Their preparation screens sum to 2.44561 μJ. These totals describe source mass and enthalpy. Available jet energy requires a separate conversion calculation. The optical slab above does not calibrate those cells. Chapter 3 states cell separation and conversion assumptions before calculating output.
 
-**贯穿算例的交接。** 第三章在 25 个位点重复使用此相同的 5 μm 教学核心库存：PFC 总质量为 21.3367 ng，制备筛选之和为 2.44561 μJ。这些总量是源质量／焓账目，不能当作可自由使用的 2.44561 μJ 射流预算；上面的假想光学薄层也不是这些单元的标定。第三章将明确独立单元假设，并在计算有限喷出液体质量与能量之前声明任何力学转换比例。
+**第三章的应用。** 二十五个相同 5 μm 核心含 21.3367 ng PFC，制备筛选值合计 2.44561 μJ。这些总量描述源质量和焓。可用射流能量需另算转换。上文光学薄层没有标定这些单元。第三章先规定单元分隔及转换假设，再计算输出。
 
-**Unresolved project inputs.** To predict a target formulation, identify its PFC compound and purity; size distribution; shell and interfacial laws; absorber spectrum, loading, and location; carrier transport; thermal contact; nucleation or activation statistics; phase kinetics; permanent gas; and a valid high-state EOS. This chapter establishes a consistent theory and verified teaching controls. It does not establish the project’s laser threshold, pressure maximum, or jet velocity. Chapter 3 uses site-specific source histories to analyze arrays and useful output.
+**Missing formulation inputs.** Specify compound, purity, size distribution, shell and interface laws. Measure absorber spectrum, loading, location and thermal contact. Supply carrier transport, activation statistics, phase kinetics, permanent gas and high-state EOS. Project threshold, pressure maximum and jet velocity: Not established. Chapter 3 uses specified site histories for array calculations.
 
-**尚未解决的项目输入。** 预测目标配方需要明确 PFC 化合物与纯度、尺寸分布、壳层及界面定律、吸收体光谱／载量／位置、载液传输、热接触、成核或激活统计、相变动力学、永久气体及有效高状态 EOS。本章建立一致理论及已核验教学参照，尚未确立项目激光阈值、最高压力或射流速度。第三章将使用各位点源历程分析阵列及有用输出。
+**缺失配方输入。** 须规定化合物、纯度、尺寸分布、壳层及界面规律。测量吸收体光谱、载量、位置及热接触。给出载液输运、激活统计、相变动力学、非凝结气体及高状态状态方程。项目阈值、最高压力和射流速率尚未确立。第三章采用规定的位点历程计算阵列。
 
-## 2.6 Three research-defense questions
+## 2.6 Oral questions
 
-## 2.6 三道研究答辩题
+## 2.6 口头问题
 
-### A PFC formulation absorbs a stronger laser pulse but produces no useful jet. How would you explain and investigate the missing links?
+### Absorption increases, but no useful jet forms. Which links would you investigate?
 
-### PFC 配方吸收了更强激光脉冲，却没有产生有用射流。你会如何解释并查明缺失环节？
+### 吸收增加，却未形成有用射流。你会检验哪些环节？
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -1200,17 +1200,17 @@ Original optical and thermal formulas used in the reference answer.
 
 参考答案使用的原始光学与热学公式。
 
-First identify where light is actually absorbed. At fixed pulse energy, a smaller spot raises local fluence; at fixed fluence, a shorter pulse raises irradiance. Neither operation proves that the PFC receives the heat. The intercepted area, absorption spectrum and thickness, reflection, and absorber location determine the absorber budget. Next compare the distance to the core with thermal penetration during the available event time and account for contact resistance and carrier loss. The 5 μm, 10 ns control has only about 22 nm penetration, so surface heating cannot be declared uniform-core heating. A dispersed absorber changes that geometry and must be resolved or justified.
+Locate the absorber first. A smaller spot raises fluence at fixed energy. A shorter pulse raises irradiance at fixed fluence. Heat reaching PFC depends on interception, spectrum, thickness, reflection and absorber position. Compare core distance with thermal penetration and include contact resistance. The 5 μm, 10 ns control penetrates about 22 nm. Surface heating leaves uniform core temperature unestablished. Distributed absorbers require their actual deposition geometry.
 
-首先确定光实际在哪里吸收。脉冲能量固定时，较小光斑提高局部能量密度；能量密度固定时，较短脉冲提高辐照度。两者都不能证明 PFC 收到热量。截获面积、吸收光谱与厚度、反射及吸收体位置决定吸收体预算。随后比较到核心的距离与可用事件时长内的热渗透，并考虑接触热阻及载液损失。5 μm、10 ns 参照只有约 22 nm 的渗透，因此不能将表面加热声明为核心均温加热。分散吸收体改变该几何，需要解析或论证。
+先确定吸收体位置。能量固定时，小光斑提高能量面密度；面密度固定时，短脉冲提高辐照度。到达 PFC 的热取决于截获、光谱、厚度、反射和吸收体位置。比较核心距离与热渗透，并计入接触热阻。5 μm、10 ns 对照渗透约 22 nm。表面加热下核心均温尚未确立。分布吸收体需采用实际沉积几何。
 
-In the declared example 223.85 nJ is absorbed and about 97.82 nJ is the selected preparation estimate; at least 43.7% heat delivery would be required even before the omitted losses. Passing that screen is not onset proof. Activation, finite phase inventory, pressure work, and directional jet formation follow as separate causal stages. A matched PFC-free control must keep these optical and geometric inputs comparable, rather than attribute an absorber change to PFC chemistry.
+The example absorbs 223.85 nJ against a 97.82 nJ preparation screen. Delivery must exceed 43.7% before additional losses. Passing this screen leaves onset unresolved. Activation, phase inventory, pressure work and jet direction require separate calculations. Match optical and geometric inputs in the PFC-free control.
 
-在声明示例中，吸收 223.85 nJ，所选制备估计约 97.82 nJ；即使还未计入省略损失，也至少需要 43.7% 热输送。通过该筛选不是起始证明。激活、有限相库存、压力功及定向射流形成是后续独立因果阶段。匹配的不含 PFC 参照必须使这些光学及几何输入可比，不能将吸收体改变归因于 PFC 化学。
+示例吸收 223.85 nJ，制备筛选为 97.82 nJ。未计额外损失时，输送比例已须超过 43.7%。通过筛选仍未确定起始。激活、相变物质量、压力功及射流方向需分别计算。不含 PFC 对照须匹配光学与几何输入。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Distinguishes incident energy, absorbed energy, irradiance, and heat delivered to PFC; traces absorber location and heat-transfer time.
 
@@ -1222,13 +1222,13 @@ In the declared example 223.85 nJ is absorbed and about 97.82 nJ is the selected
 
   指出激活与依赖几何的压力到射流转化是额外阶段，并给出公平的不含 PFC 对照。
 
-### Why can a low-boiling PFC nanodroplet remain liquid during laser heating, and why is one failed activation not evidence of impossibility?
+### Explain confinement and activation probability in a low-boiling nanodroplet.
 
-### 为什么低沸点 PFC 纳米液滴在激光加热时仍可能保持液态？为什么一次激活失败不能证明不可能？
+### 解释低沸点纳米液滴中的约束及激活概率。
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -1292,17 +1292,17 @@ The probability formula does not replace the missing material-specific rate.
 
 概率公式不能替代缺失的材料特定速率。
 
-A low bulk boiling point means bulk liquid and vapor coexist at relatively low temperature and specified pressure. A small coated core has a different liquid pressure because capillarity scales as inverse radius and the shell may add resistance. At 323 K, the declared 5 μm control is at 108 kPa and has positive PFP reference driving, but the 100 nm control is at 500 kPa and does not. Even positive driving leaves a barrier: the internal vapor–PFC tension sets the critical nucleus and must not be replaced by the outer tension. The rate and time in the hot state determine event probability; heterogeneity may require a measured activation law.
+Bulk boiling describes coexistence at specified pressure. Core pressure also includes inverse-radius capillarity and shell stress. At 323 K, the 5 μm control has positive PFP driving at 108 kPa. The 100 nm control has nonpositive driving at 500 kPa. Positive driving still leaves a nucleation barrier. Internal vapor–PFC tension sets that barrier. Rate and hot-state duration determine activation probability. Heterogeneous systems may need measured activation laws.
 
-低体相沸点意味着在明确压力下，体相液体和蒸汽能在较低温度共存。小包覆核心的液体压力不同，因为毛细压力与半径成反比，且壳层可能增加阻力。323 K 时，声明的 5 μm 参照位于 108 kPa，具有正 PFP 参照驱动力；100 nm 参照位于 500 kPa，则没有。即使驱动力为正，势垒仍存在：内部蒸汽–PFC 张力决定临界汽核，不能由外界面张力替换。速率及热状态持续时间决定事件概率；异质过程可能需要测量激活定律。
+体相沸腾描述指定压力下的共存。核心压力还包含反半径毛细压力及壳层应力。323 K 时，5 μm 对照在 108 kPa 具有正 PFP 驱动，100 nm 对照在 500 kPa 的驱动不为正。正驱动仍有成核势垒，势垒由内部蒸气—PFC 张力决定。速率与热态时长决定激活概率。异质系统可能需测量激活规律。
 
-No activation in one exposure can mean insufficient heat, unfavorable confinement, a low probability, or an unsuitable nucleation site, not necessarily impossibility. A simulation seeded after onset answers what follows that seed and must not be described as predicting the optical threshold. Useful tests separately observe absorbed energy, onset statistics, core or shell state, and bubble evolution under the same exposure.
+One failed exposure can reflect insufficient heat, confinement, low probability or unsuitable nucleation sites. A seeded simulation predicts evolution from its prescribed seed. Optical onset remains unestablished. Measure absorbed energy, onset statistics, shell/core state and bubble evolution under matched exposure.
 
-一次照射未激活，可能意味着热量不足、约束不利、概率低或成核位点不合适，不一定意味着不可能。起始后给种子的模拟只回答该种子后续怎样，不能称为预测光学阈值。有用检验应在同样照射下分别观测吸收能量、起始统计、核心或壳层状态及气泡演化。
+单次失败可由热量不足、约束、低概率或不合适成核位点导致。种子模拟预测从指定种子开始的演化。光学起始仍未确立。应在匹配照射下测量吸收能量、起始统计、壳层／核心状态及气泡演化。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Explains bulk saturation versus the pressure inside a finite core, including inverse-radius capillarity and shell stress.
 
@@ -1314,13 +1314,13 @@ No activation in one exposure can mean insufficient heat, unfavorable confinemen
 
   适当时以统计过程看待激活，并区分种子后的动力学与已证明的起始预测。
 
-### How would you build a mass- and energy-consistent PFC pressure history, and why is its inventory radius neither a maximum bubble radius nor a jet-speed prediction?
+### Build a conserving pressure history. What does an inventory radius establish?
 
-### 你会如何建立质量与能量一致的 PFC 压力历程？为什么库存半径既不是最大气泡半径，也不是射流速度预测？
+### 建立守恒的压力历程。物质量对应半径能确立什么？
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -1389,17 +1389,17 @@ Original conservation formulas prevent unlimited vapor and duplicated latent ene
 
 原始守恒公式防止无限蒸汽及重复潜热计入。
 
-Begin with the measured or declared core mass and conserve it across liquid, vapor, dissolved, and escaped compartments. The ideal PFC partial pressure follows from vapor mass, temperature, and volume; total pressure also includes water vapor and permanent gas. Saturation is only an equilibrium branch when enough liquid and fast heat/mass exchange sustain it. Once all PFC has vaporized, expansion lowers its pressure at fixed temperature. The 5 μm control contains only 0.8535 ng and gives a 26.68 μm inventory radius at 323 K and 100 kPa, not a dynamical maximum. At 30 μm it can supply only 70.36 kPa PFC partial pressure in that ideal control.
+Conserve measured or declared PFC across liquid, vapor, dissolved and escaped compartments. Ideal PFC pressure follows vapor mass, temperature and volume. Total pressure also includes water vapor and permanent gas. Sustained saturation needs liquid supply and rapid heat/mass exchange. Once fully vaporized, fixed-temperature expansion lowers PFC pressure. The 5 μm core contains 0.8535 ng. Its 323 K, 100 kPa inventory radius is 26.68 μm. At 30 μm, its ideal PFC pressure is 70.36 kPa. Dynamical maximum remains unestablished.
 
-应从测得或声明的核心质量出发，在液体、蒸汽、溶解与逸出分区间守恒。理想 PFC 分压由蒸汽质量、温度及体积决定；总压力还包含水蒸汽与永久气体。只有液体足够、热质交换快速时，饱和才是可维持的平衡分支。PFC 全部汽化后，在温度固定时膨胀使其压力降低。5 μm 参照仅含 0.8535 ng，在 323 K、100 kPa 下得到 26.68 μm 库存半径，而不是动力学最大值。在 30 μm 时，该理想参照仅能提供 70.36 kPa PFC 分压。
+在液体、蒸气、溶解及逸出分区间守恒测得或声明的 PFC。理想 PFC 压力由蒸气质量、温度和体积决定。总压还含水蒸气及非凝结气体。持续饱和需液体供给和快速传热传质。全部汽化后，恒温膨胀降低 PFC 压力。5 μm 核心含 0.8535 ng。323 K、100 kPa 下物质量对应半径为 26.68 μm。30 μm 时理想 PFC 分压为 70.36 kPa。动力学最大值尚未确立。
 
-Next use the Stefan balance to determine signed evaporation or condensation from interface heat, and use the open first law for pressure work and transported enthalpy. Do not add latent heating a second time. Phase change can make wall speed differ from liquid speed; a simple RP closure must check slip and recoil. Rapid compression can retain nonequilibrium vapor, and permanent gas persists after condensation. A high-state real EOS, thermal transport, and resolved geometry are necessary refinements. The useful jet remains predominantly carrier liquid and requires Chapter 1/3’s mechanical and directional closure; an inventory expansion ratio is not a jet-speed prediction.
+Use Stefan balance for signed phase flux. Use the open first law for work and transported enthalpy. Count phase conversion once. Check slip and recoil before using simple Rayleigh–Plesset closure. Rapid compression can retain vapor; permanent gas persists after condensation. Refine high-state EOS, thermal transport and geometry as needed. Chapters 1 and 3 determine directional carrier motion. Inventory expansion leaves jet speed unresolved.
 
-随后用 Stefan 平衡根据界面热确定带符号蒸发或凝结，用开放第一定律计入压力功及输运焓；不能再计一次潜热。相变可使壁速不同于液速，简单 RP 闭合必须检查滑移与反冲。快速压缩可保留非平衡蒸汽，凝结后永久气体仍在。高状态真实 EOS、热传输及解析几何是必要改进。有用射流仍主要是载液，需要第一／三章的力学与方向闭合；库存膨胀比不是射流速度预测。
+采用 Stefan 平衡计算带符号相变通量，用开放第一定律计入功和输运焓。相变转化计入一次。使用简单 Rayleigh–Plesset 闭合前须检查滑移与反冲。快速压缩可保留蒸气，凝结后非凝结气体仍存在。按需细化高状态状态方程、热输运与几何。第一、三章确定载液定向运动。物质量膨胀仍未确定射流速率。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Conserves finite PFC across all relevant compartments and explains when saturation can and cannot be sustained.
 

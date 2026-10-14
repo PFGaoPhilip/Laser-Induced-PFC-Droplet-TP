@@ -1,0 +1,27 @@
+axisymmetric_transport_manifest.c: In function ‘axis_add_manifest_face’:
+axisymmetric_transport_manifest.c:92:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   92 |     if(!newface)return 2;out->face=newface;
+      |     ^~
+axisymmetric_transport_manifest.c:92:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   92 |     if(!newface)return 2;out->face=newface;
+      |                          ^~~
+axisymmetric_transport_manifest.c:94:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   94 |     if(!newgeometry)return 2;out->geometry=newgeometry;*capacity=next;
+      |     ^~
+axisymmetric_transport_manifest.c:94:30: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   94 |     if(!newgeometry)return 2;out->geometry=newgeometry;*capacity=next;
+      |                              ^~~
+axisymmetric_transport_manifest.c: In function ‘closure_axis_transport_manifest_build’:
+axisymmetric_transport_manifest.c:148:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  148 |   if(!out)return 1;memset(out,0,sizeof(*out));
+      |   ^~
+axisymmetric_transport_manifest.c:148:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  148 |   if(!out)return 1;memset(out,0,sizeof(*out));
+      |                    ^~~~~~
+axisymmetric_transport_manifest.c: In function ‘closure_axis_transport_manifest_free’:
+axisymmetric_transport_manifest.c:198:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  198 |   if(!out)return;free(out->face);free(out->geometry);memset(out,0,sizeof(*out));
+      |   ^~
+axisymmetric_transport_manifest.c:198:18: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  198 |   if(!out)return;free(out->face);free(out->geometry);memset(out,0,sizeof(*out));
+      |                  ^~~~

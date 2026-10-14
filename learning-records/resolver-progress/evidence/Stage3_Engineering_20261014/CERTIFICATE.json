@@ -1,0 +1,206 @@
+{
+  "schema": "stage3_certificate_absence_record_v1",
+  "status": "NOT_RUN",
+  "is_certificate": false,
+  "reason": "No attained objectives, maximizing designs, refinement, hold-outs or global upper values supplied; exit waived for documentation only.",
+  "objective_results": [
+    {
+      "id": "PFP_U_1pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_U_3pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_U_10pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_U_30pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_U_100pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_P_2um_2ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_P_2um_20ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_P_10um_2ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFP_P_10um_20ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_U_1pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_U_3pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_U_10pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_U_30pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_U_100pg",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_P_2um_2ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_P_2um_20ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_P_10um_2ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    },
+    {
+      "id": "PFH_P_10um_20ns",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "numerical_error": null,
+      "domain_sensitivity": null,
+      "certificate_gap": null,
+      "certified": false
+    }
+  ]
+}

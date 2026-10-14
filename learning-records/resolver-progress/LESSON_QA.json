@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "copied_input_hashes": 284,
+  "relocated_files": 380,
+  "broken_lesson_links": [],
+  "browser": {
+    "original_four_language_theme_combinations": "PASS",
+    "relocated_query_and_both_buttons": "PASS",
+    "rendered_equations": 9,
+    "katex_errors": 0,
+    "external_rendering_requests": 0
+  },
+  "analytical_examples": "PASS",
+  "native_build": "NOT_RUN",
+  "new_simulation": "NOT_RUN",
+  "publication": "HELD_NOT_PUBLISHED"
+}

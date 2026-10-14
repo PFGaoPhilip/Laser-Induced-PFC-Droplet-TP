@@ -1,0 +1,204 @@
+{
+  "nodeVersion": "v24.16.0",
+  "termtexVersions": [
+    "0.9.8"
+  ],
+  "equationCount": 24,
+  "rendererPassCount": 24,
+  "maxWidthCells": 53,
+  "scripts": {
+    "subscripts": "normal",
+    "superscripts": "normal"
+  },
+  "numericalChecks": {
+    "availableWork_J": 5e-09,
+    "density_kg_m3": 1000.0,
+    "soundSpeed_m_s": 1500.0,
+    "jetRadius_m": 3e-06,
+    "jetLength_m": 5e-05,
+    "jetMass_kg": 1.4137166941154071e-12,
+    "energyVelocity_m_s": 84.10441740067199,
+    "Mach": 0.056069611600447995,
+    "rigidPressure_Pa": 126156626.10100798,
+    "equalImpedancePressure_Pa": 63078313.05050399,
+    "PFP_10pgEnergyVelocity_m_s": 737.563556583431,
+    "PFH_10pgEnergyVelocity_m_s": 961.2491872558332
+  },
+  "copiedSkillResources": [
+    {
+      "path": "resources/Math-TermTex/SKILL.md",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\SKILL.md",
+      "sha256": "dbbe07535f616c9b46101c255f49643a139c0ea77b0b405618fa35ea26589b15"
+    },
+    {
+      "path": "resources/Math-TermTex/scripts/render_formula.mjs",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\scripts\\render_formula.mjs",
+      "sha256": "a4763fac68fd0a361291c410ebace8f216fe7dfe5383d4a49be74d71ba664b5b"
+    },
+    {
+      "path": "resources/Math-TermTex/references/termtex-rendering.md",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\references\\termtex-rendering.md",
+      "sha256": "1a3c9a67ff96e0e1397ababa106eb3390489416fd6e0ae430300dd271c2ea504"
+    },
+    {
+      "path": "resources/Math-TermTex/references/unicode-rendering.md",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\references\\unicode-rendering.md",
+      "sha256": "29867b692b9ef28310cdef4c84b9076b2fd0d2da4ebbc1c65cd65c9460eb1297"
+    },
+    {
+      "path": "resources/Math-TermTex/references/rigorous-derivation-unicode.md",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\references\\rigorous-derivation-unicode.md",
+      "sha256": "5046ad08d4dc48012ed84a87d534a87cbf4b1864694db0675660bf73d839dabe"
+    },
+    {
+      "path": "resources/Math-TermTex/references/extended-glyphs.md",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\references\\extended-glyphs.md",
+      "sha256": "4e4b340e0c42b888e54f47b46aa4d2b56cf073a8692400e9bd8e8e2e1a658bb4"
+    },
+    {
+      "path": "resources/Math-TermTex/scripts/render_preview.py",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\scripts\\render_preview.py",
+      "sha256": "8a582b99bca030818c5479d1bba85226e74fcc1de0cd00f86ff02a9c0d8d80d5"
+    },
+    {
+      "path": "resources/Math-TermTex/scripts/render_typeset.mjs",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\scripts\\render_typeset.mjs",
+      "sha256": "e888f9677aff8005582331a869dc9c240334bdd4c9e892bfa1c181a647008730"
+    },
+    {
+      "path": "resources/Math-TermTex/assets/pressure-balance-record.json",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\assets\\pressure-balance-record.json",
+      "sha256": "033c21b71281bb6d8ee3464b9c7023a84d90c58329dc8311a36a19a15a519f31"
+    },
+    {
+      "path": "resources/Math-TermTex/assets/pressure-balance-input.tex",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\assets\\pressure-balance-input.tex",
+      "sha256": "1ff6887853cc429cf682c74ccf1d5f6bfb747b47e54b1fcf953b5e287bec2787"
+    },
+    {
+      "path": "resources/Math-TermTex/assets/pressure-balance-preview.png",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\assets\\pressure-balance-preview.png",
+      "sha256": "ef19c2c7f2572ca520583e5a4fc4ebe35e8cc68d9f9c0a6ecd3e0912049a77b0"
+    },
+    {
+      "path": "resources/Math-TermTex/agents/openai.yaml",
+      "source": "C:\\Users\\carl_\\.codex\\skills\\Math-TermTex\\agents\\openai.yaml",
+      "sha256": "c77e6fb15e63d0623d828041d27d705c2aeed64de919155f66778e2f1b08a403"
+    }
+  ],
+  "semanticReview": "All24 rendered grids compared with sources: indices, powers, fractions, radical spans, derivative accents, signs and integral bounds pass.",
+  "receivingChatUIVerified": false,
+  "acceptedExpertPackageChanged": false,
+  "independentAgentAudit": {
+    "reviewer": "/root/convergence",
+    "result": "qualified mathematical pass",
+    "scope": "read-only mathematics and arithmetic; no physical/external-expert validation",
+    "record": "INDEPENDENT_REVIEW.md"
+  },
+  "evidenceCopies": [
+    {
+      "source": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\expert_resolution\\tex\\09_envelope.tex",
+      "copy": "resources/evidence/09_envelope.tex",
+      "sha256": "eb7815f9e75f7ac15fefc1e229a236989d0cb4d93ce08f03de029411ee03b6f4"
+    },
+    {
+      "source": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\expert_resolution\\generated\\table_envelope.tex",
+      "copy": "resources/evidence/table_envelope.tex",
+      "sha256": "69d4b2ddc5a5a2a1fd3144af7cba575e0b108093c19af17edd37845544246dd5"
+    },
+    {
+      "source": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\expert_resolution\\tex\\04_thermo.tex",
+      "copy": "resources/evidence/04_thermo.tex",
+      "sha256": "2eb38748f78d78bdc529c7d3b8c814da79c3b9913c2b3cc034d01123416ecf45"
+    },
+    {
+      "source": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011\\expert_resolution\\tex\\07_receiver.tex",
+      "copy": "resources/evidence/07_receiver.tex",
+      "sha256": "3d9e15f6285e1fdaafbc4d92846000eadb5f87697ed54b446b8e7b0959438673"
+    }
+  ],
+  "messageCoverageChecks": {
+    "expectedEquations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24"
+    ],
+    "actualLocalDeclarations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24"
+    ],
+    "renderedBlocks": 24,
+    "allGridsExact": true,
+    "compactScriptGlyphs": 0
+  },
+  "readingSha256": "d17a919ac368bc80d20a18d1cade96b6eaa9cb3a32774519d409b682b0784cd9",
+  "cleanup": "No temporary/compile/cache intermediates created; Python invoked with -B.",
+  "environmentNotes": "UTF-8 stdout avoids Windows GBK failures; the reading copy explicitly uses LF newlines for an exact archive/text round trip.",
+  "acceptedOriginalArtifactHashes": {
+    "output/EXPERT_REPORT.pdf": "75b4b431c34cf82eb7b0a3f52cbc200602caadba47b38ed92d55d5d4630a7aad",
+    "READER.html": "f3d2f2694b8068105916258e2a422545040459881cb4fee5442ea10fb1881001",
+    "Expert_Resolution_20261011.zip": "fdac79287090709f77e063d223765491094cb529b03ac1764bb804845da4a749"
+  },
+  "acceptedOriginalArtifactsUnchanged": true,
+  "portableCitationCheck": {
+    "localCitationCount": 4,
+    "allTargetsInsideArchive": true,
+    "scope": "Standalone Markdown content and relative resource paths; no receiving-chat UI claim."
+  },
+  "primaryRayleighSource": {
+    "authors": [
+      "D. Obreschkow",
+      "M. Bruderer",
+      "M. Farhat"
+    ],
+    "title": "Analytical approximations for the collapse of an empty spherical bubble",
+    "journal": "Physical Review E 85, 066303 (2012)",
+    "doi": "10.1103/PhysRevE.85.066303",
+    "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.85.066303",
+    "verified": "2026-10-11",
+    "supports": "Adopted Rayleigh premise and initial rest; integration and checks are derived locally."
+  }
+}

@@ -163,7 +163,7 @@ def package_study():
                       and not {'build', 'tmp', '__pycache__', '.tools'}.intersection(p.relative_to(TARGET).parts)
                       and p.name not in {ARCHIVE, 'MANIFEST.json', 'PUBLICATION_AUDIT.json'})
     records = [{'file': p.relative_to(TARGET).as_posix(), 'bytes': p.stat().st_size, 'sha256': digest(p)} for p in selected]
-    (TARGET / 'MANIFEST.json').write_text(json.dumps({'date': '2026-10-11',
+    (TARGET / 'MANIFEST.json').write_text(json.dumps({'date': '2026-10-14', 'accepted_source_date': '2026-10-11',
         'scope': 'Public conditional finite-PFC study; target embedded mechanism not physically validated.',
         'files': records}, indent=2) + '\n', encoding='utf-8')
     selected.append(TARGET / 'MANIFEST.json')
@@ -188,27 +188,8 @@ def integrate_links():
         old = soup.select_one('[data-embedded-pfc-link]')
         if old:
             old.decompose()
-        relative = '' if page.parent == ROOT else '../'
-        block = soup.new_tag('section', attrs={'class': 'modeling-link callout', 'data-embedded-pfc-link': 'true'})
-        for language, heading, body, label in [
-            ('en', 'New study: PFC droplets embedded in hydrogel',
-             'Compare PFP/PFH, initial liquid size, gel modulus and viscosity using finite real-fluid PFC with a surviving liquid shell. The conditional models pass 60 native stationary and six supplied-seed transient comparisons. Read the complete derivation, phase/stability/fracture-budget screens and measured validation plan; download the PDF, two native models and data. The new velocities are radial wall speeds, with zero exterior emission. Target laser activation, rupture/channel formation, collapse jets and impact pressure remain unvalidated.',
-             'Open feasibility study and parameter comparison →'),
-            ('zh-CN', '新增研究：PFC 液滴嵌入水凝胶',
-             '采用有限存量真实流体 PFC 与剩余液体壳层，对比 PFP／PFH、初始液体尺寸、凝胶模量及黏度。条件模型已通过 60 个原生稳态及 6 个预设成核后种子瞬态对照。阅读完整推导、相态／稳定性／断裂能预算筛选及实测验证计划，下载 PDF、两个原生模型和数据。新增速度为径向壁面速度，外部排出量为零。目标系统的激光激活、破裂／通道形成、塌缩射流及冲击压力仍未验证。',
-             '打开可行性研究与参数比较 →')]:
-            pane = soup.new_tag('div', lang=language)
-            h = soup.new_tag('h2'); h.string = heading; pane.append(h)
-            p = soup.new_tag('p'); p.string = body; pane.append(p)
-            a = soup.new_tag('a', href=relative + 'modeling/embedded-pfc-feasibility/index.html'); a.string = label; pane.append(a)
-            block.append(pane)
-        control = soup.select_one('[data-modeling-link]')
-        if control:
-            control.insert_after(block)
-        else:
-            soup.select_one('main').insert(0, block)
-        page.write_text(str(soup), encoding='utf-8')
-    settings['embedded_pfc'] = {'file': 'modeling/embedded-pfc-feasibility/index.html',
+        page.write_text(str(soup), encoding='utf-8', newline='\n')
+    settings['embedded_pfc'] = {'parent_unit': 'A', 'file': 'modeling/embedded-pfc-feasibility/index.html',
         'pdf': 'modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf',
         'archive': 'modeling/embedded-pfc-feasibility/' + ARCHIVE,
         'source': '20261011-embedded-pfc-feasibility',
@@ -218,7 +199,12 @@ def integrate_links():
 
 
 def main():
-    files = copy_study()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--refresh-source', action='store_true',
+                        help='Explicitly replace the local reader with its accepted source delivery')
+    args = parser.parse_args()
+    files = copy_study() if args.refresh_source else 0
     pages = integrate_links()
     print(json.dumps({'copied_files': files, 'linked_course_pages': pages,
                       'study': TARGET.relative_to(ROOT).as_posix()}))

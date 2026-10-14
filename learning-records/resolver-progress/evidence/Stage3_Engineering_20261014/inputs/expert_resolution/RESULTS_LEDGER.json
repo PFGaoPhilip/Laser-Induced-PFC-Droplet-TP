@@ -1,0 +1,1051 @@
+{
+  "schema_version": 1,
+  "claim_tiers": {
+    "R": "rigorous under explicit hypotheses",
+    "P": "model prediction",
+    "E": "estimate",
+    "U": "unresolved",
+    "R|A": "conditional rigorous result evaluated at an assumed state"
+  },
+  "actual_device_maximum_resolved": false,
+  "independent_external_review": false,
+  "experimental_validation": false,
+  "entries": [
+    {
+      "fluid": "PFP",
+      "quantity": "T_kin_K",
+      "value": 386.48623647227214,
+      "unit": "K",
+      "tier": "P",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFP",
+          "d0_um": 6.0
+        },
+        "field": "T_kin_K"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "Q_act_J",
+      "value": 1.9856954254439094e-08,
+      "unit": "J",
+      "tier": "P",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFP",
+          "d0_um": 6.0
+        },
+        "field": "Q_act_J"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "Phi_J",
+      "value": 2.722572407203039e-09,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFP",
+          "d0_um": 6.0
+        },
+        "field": "Phi_J"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "eta_II",
+      "value": 0.1371092652134402,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFP",
+          "d0_um": 6.0
+        },
+        "field": "eta_II"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "R_bound_exergy_m",
+      "value": 2.3782042920415665e-05,
+      "unit": "m",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFP",
+          "d0_um": 6.0
+        },
+        "field": "R_bound_exergy_m"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "thermal_expansion_source_ceiling",
+      "value": 1265385.6995210948,
+      "unit": "Pa absolute",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "json_pointer": "/fluids/PFP/p_relax_spinodal"
+      },
+      "validity": "Proposition 1 requires H0,H2,H5 and EOS sign conditions; expansion only, no unproved HKS extension."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "largest_sampled_slow_closure_microjet_speed",
+      "value": 65.27421173639833,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "file": "data/envelope_rows.json",
+        "record_match": {
+          "fluid": "PFP",
+          "closure": "frozen",
+          "gamma": 1.25
+        },
+        "field": "U"
+      },
+      "validity": "Nominal N64 model output; numerical refinement uncertainty must be read alongside it. Not a proven continuous/global/device maximum."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "largest_sampled_internal_liquid_contact_scale",
+      "value": 292318024.1469137,
+      "unit": "Pa compression above ambient",
+      "tier": "E",
+      "source": {
+        "file": "data/envelope_rows.json",
+        "record_match": {
+          "fluid": "PFP",
+          "closure": "km_alpha1",
+          "gamma": 4.0
+        },
+        "field": "p_h"
+      },
+      "validity": "The contact scale uses a nonlinear jet-side Tait jump against a linear target impedance Zt=Zw; it is not an exact symmetric nonlinear two-water shock solution. External receiver-wave spreading is a separate estimate, not resolved/measured target pressure."
+    },
+    {
+      "fluid": "PFP",
+      "quantity": "largest_sampled_receiver_wave_estimate",
+      "value": 21025716.016783834,
+      "unit": "Pa compression above ambient",
+      "tier": "E",
+      "source": {
+        "file": "data/envelope_rows.json",
+        "record_match": {
+          "fluid": "PFP",
+          "closure": "frozen",
+          "gamma": 1.25
+        },
+        "field": "p_rec"
+      },
+      "validity": "The contact scale uses a nonlinear jet-side Tait jump against a linear target impedance Zt=Zw; it is not an exact symmetric nonlinear two-water shock solution. External receiver-wave spreading is a separate estimate, not resolved/measured target pressure."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "T_kin_K",
+      "value": 415.2367593324791,
+      "unit": "K",
+      "tier": "P",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFH",
+          "d0_um": 6.0
+        },
+        "field": "T_kin_K"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "Q_act_J",
+      "value": 2.7127507911661847e-08,
+      "unit": "J",
+      "tier": "P",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFH",
+          "d0_um": 6.0
+        },
+        "field": "Q_act_J"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "Phi_J",
+      "value": 4.622122564638143e-09,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFH",
+          "d0_um": 6.0
+        },
+        "field": "Phi_J"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "eta_II",
+      "value": 0.17038507848526468,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFH",
+          "d0_um": 6.0
+        },
+        "field": "eta_II"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "R_bound_exergy_m",
+      "value": 2.4219111556180373e-05,
+      "unit": "m",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "record_match": {
+          "fluid": "PFH",
+          "d0_um": 6.0
+        },
+        "field": "R_bound_exergy_m"
+      },
+      "validity": "Adopted homogeneous activated state/EOS; rigorous identities are conditioned on that state and total-reference assumptions."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "thermal_expansion_source_ceiling",
+      "value": 1084910.493438774,
+      "unit": "Pa absolute",
+      "tier": "R|A",
+      "source": {
+        "file": "data/thermo_ceilings.json",
+        "json_pointer": "/fluids/PFH/p_relax_spinodal"
+      },
+      "validity": "Proposition 1 requires H0,H2,H5 and EOS sign conditions; expansion only, no unproved HKS extension."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "largest_sampled_slow_closure_microjet_speed",
+      "value": 186.94886705402996,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "file": "data/envelope_rows.json",
+        "record_match": {
+          "fluid": "PFH",
+          "closure": "km_alpha0.1",
+          "gamma": 4.0
+        },
+        "field": "U"
+      },
+      "validity": "Nominal N64 model output; numerical refinement uncertainty must be read alongside it. Not a proven continuous/global/device maximum."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "largest_sampled_internal_liquid_contact_scale",
+      "value": 307470795.61558753,
+      "unit": "Pa compression above ambient",
+      "tier": "E",
+      "source": {
+        "file": "data/envelope_rows.json",
+        "record_match": {
+          "fluid": "PFH",
+          "closure": "isoeq",
+          "gamma": 3.0
+        },
+        "field": "p_h"
+      },
+      "validity": "The contact scale uses a nonlinear jet-side Tait jump against a linear target impedance Zt=Zw; it is not an exact symmetric nonlinear two-water shock solution. External receiver-wave spreading is a separate estimate, not resolved/measured target pressure."
+    },
+    {
+      "fluid": "PFH",
+      "quantity": "largest_sampled_receiver_wave_estimate",
+      "value": 22368558.15501231,
+      "unit": "Pa compression above ambient",
+      "tier": "E",
+      "source": {
+        "file": "data/envelope_rows.json",
+        "record_match": {
+          "fluid": "PFH",
+          "closure": "isoeq",
+          "gamma": 1.25
+        },
+        "field": "p_rec"
+      },
+      "validity": "The contact scale uses a nonlinear jet-side Tait jump against a linear target impedance Zt=Zw; it is not an exact symmetric nonlinear two-water shock solution. External receiver-wave spreading is a separate estimate, not resolved/measured target pressure."
+    },
+    {
+      "quantity": "jet_model_screen_velocity",
+      "value": 444.59999999999997,
+      "unit": "m/s",
+      "tier": "U",
+      "source": {
+        "file": "scripts/common.py",
+        "expression": "0.3*C_W"
+      },
+      "validity": "Fast-closure potential-flow envelope approaches this screen; physical maximum beyond it remains unresolved."
+    }
+  ],
+  "numerical_verification": {
+    "BIM_requested_results_complete": true,
+    "KM_requested_results_complete": true,
+    "BIM_max_spatial_tip_speed_change_percent": 4.737586719969458,
+    "BIM_max_step_halving_tip_speed_change_percent": 0.306540771447597,
+    "BIM_all_requested_speed_pairs_within_two_percent": false,
+    "BIM_aborted_requested_runs": 3,
+    "BIM_targeted_attempts_complete": true,
+    "BIM_targeted_attempt_count": 5,
+    "BIM_aborted_targeted_runs": 1,
+    "BIM_targeted_solutions_all_valid": false,
+    "BIM_crossing_estimates": [
+      {
+        "fluid": "PFP",
+        "closure": "isoeq",
+        "U_screen_m_s": 444.59999999999997,
+        "stand_off_sampling_bracket": [
+          3.0,
+          4.0
+        ],
+        "gamma_estimates_by_resolution": {
+          "baseline": 3.8736420712973088,
+          "spatial_N96": 3.8790077295244587,
+          "dt_halved": 3.874708757390797
+        },
+        "best_available_N96_gamma_estimate": 3.8790077295244587,
+        "best_available_N96_endpoint_dphi": [
+          0.02,
+          0.02
+        ],
+        "N96_step_setting_caution": null,
+        "empirical_endpoint_envelope": [
+          3.873318304946838,
+          3.8790077295244587
+        ],
+        "interval_interpretation": "Endpoint discretization envelope, not confidence interval; log-linear interpolation model error is unquantified",
+        "status": "reduced-model validity-screen crossing estimate; physical maximum unresolved"
+      },
+      {
+        "fluid": "PFH",
+        "closure": "isoeq",
+        "U_screen_m_s": 444.59999999999997,
+        "stand_off_sampling_bracket": [
+          3.0,
+          4.0
+        ],
+        "gamma_estimates_by_resolution": {
+          "baseline": 3.255848012050693,
+          "spatial_N96": null,
+          "dt_halved": 3.2584495986954956,
+          "stabilized_N96_dt_halved": 3.2573280300608447
+        },
+        "best_available_N96_gamma_estimate": 3.2573280300608447,
+        "best_available_N96_endpoint_dphi": [
+          0.01,
+          0.01
+        ],
+        "N96_step_setting_caution": null,
+        "empirical_endpoint_envelope": [
+          3.255795143711262,
+          3.2586204150349816
+        ],
+        "interval_interpretation": "Endpoint discretization envelope, not confidence interval; log-linear interpolation model error is unquantified",
+        "status": "reduced-model validity-screen crossing estimate; physical maximum unresolved"
+      },
+      {
+        "fluid": "PFH",
+        "closure": "km_alpha1",
+        "U_screen_m_s": 444.59999999999997,
+        "stand_off_sampling_bracket": [
+          3.0,
+          4.0
+        ],
+        "gamma_estimates_by_resolution": {
+          "baseline": 3.432952782352286,
+          "spatial_N96": null,
+          "dt_halved": 3.4362624241355304,
+          "stabilized_N96_dt_halved": 3.4347197458226497
+        },
+        "best_available_N96_gamma_estimate": 3.4347197458226497,
+        "best_available_N96_endpoint_dphi": [
+          0.01,
+          0.01
+        ],
+        "N96_step_setting_caution": null,
+        "empirical_endpoint_envelope": [
+          3.432952782352286,
+          3.471072265671093
+        ],
+        "interval_interpretation": "Endpoint discretization envelope, not confidence interval; log-linear interpolation model error is unquantified",
+        "status": "reduced-model validity-screen crossing estimate; physical maximum unresolved"
+      }
+    ],
+    "BIM_matched_smaller_step_comparisons": [
+      {
+        "fluid": "PFH",
+        "closure": "isoeq",
+        "gamma": 3.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": -0.014686168614887724,
+            "jet_mass_pg": 1.1146562219383607,
+            "jet_energy_nJ": 1.220909875032778,
+            "jet_E_over_Phi_percent": 1.2209098750327911,
+            "jet_mass_coverage": 1.0354338590616623,
+            "recorded_last_total_K_nJ": -0.03417637332284849,
+            "R_max_equiv": 0.0003858113917194526,
+            "gap02_U_m_s": 0.018105184837869263,
+            "gap05_U_m_s": 0.08391567595168378
+          },
+          "U_change_abs_percent": 0.014686168614887724,
+          "U_within_2_percent": true,
+          "solver_flags_same": true,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": true,
+          "terminal_state_caution": null
+        }
+      },
+      {
+        "fluid": "PFH",
+        "closure": "isoeq",
+        "gamma": 4.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": 0.32073918259790357,
+            "jet_mass_pg": 1.3972377978512718,
+            "jet_energy_nJ": 1.4779933233032714,
+            "jet_E_over_Phi_percent": 1.4779933233032763,
+            "jet_mass_coverage": 1.1360351629975391,
+            "recorded_last_total_K_nJ": 0.004693781054284113,
+            "R_max_equiv": 0.0014258232152968126,
+            "gap02_U_m_s": 0.48172450779985404,
+            "gap05_U_m_s": 0.6114761684359631
+          },
+          "U_change_abs_percent": 0.32073918259790357,
+          "U_within_2_percent": true,
+          "solver_flags_same": true,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": true,
+          "terminal_state_caution": null
+        }
+      },
+      {
+        "fluid": "PFH",
+        "closure": "km_alpha1",
+        "gamma": 3.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": -0.012882399644212571,
+            "jet_mass_pg": 1.3378278247974857,
+            "jet_energy_nJ": 1.456630241977714,
+            "jet_E_over_Phi_percent": 1.4566302419777202,
+            "jet_mass_coverage": 1.1479397168312064,
+            "recorded_last_total_K_nJ": -0.04647631879879481,
+            "R_max_equiv": 0.0003858113917194526,
+            "gap02_U_m_s": -0.05800399313468655,
+            "gap05_U_m_s": -0.015720396938282425
+          },
+          "U_change_abs_percent": 0.012882399644212571,
+          "U_within_2_percent": true,
+          "solver_flags_same": true,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": true,
+          "terminal_state_caution": null
+        }
+      },
+      {
+        "fluid": "PFH",
+        "closure": "km_alpha1",
+        "gamma": 4.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": 0.23659872472937887,
+            "jet_mass_pg": 1.5274007724668965,
+            "jet_energy_nJ": 1.4959526277606447,
+            "jet_E_over_Phi_percent": 1.4959526277606487,
+            "jet_mass_coverage": 1.330746690355726,
+            "recorded_last_total_K_nJ": -0.032623115582318514,
+            "R_max_equiv": 0.0014258232152968126,
+            "gap02_U_m_s": 0.3632257916311953,
+            "gap05_U_m_s": 0.5566940016082876
+          },
+          "U_change_abs_percent": 0.23659872472937887,
+          "U_within_2_percent": true,
+          "solver_flags_same": true,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": true,
+          "terminal_state_caution": null
+        }
+      }
+    ],
+    "BIM_N96_step_sensitivity": [
+      {
+        "fluid": "PFH",
+        "closure": "isoeq",
+        "gamma": 3.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": null,
+            "jet_mass_pg": null,
+            "jet_energy_nJ": null,
+            "jet_E_over_Phi_percent": null,
+            "jet_mass_coverage": null,
+            "recorded_last_total_K_nJ": 2384.7595771028605,
+            "R_max_equiv": 1.4697155948649308,
+            "gap02_U_m_s": null,
+            "gap05_U_m_s": null
+          },
+          "U_change_abs_percent": null,
+          "U_within_2_percent": false,
+          "solver_flags_same": false,
+          "Mach_screen_classification_same": false,
+          "valid_comparable_solutions": false,
+          "terminal_state_caution": "At least one run has no completed impact; retained last-state energy/radius differences are abort diagnostics, not paired impact errors"
+        }
+      },
+      {
+        "fluid": "PFH",
+        "closure": "isoeq",
+        "gamma": 4.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": null,
+            "jet_mass_pg": null,
+            "jet_energy_nJ": null,
+            "jet_E_over_Phi_percent": null,
+            "jet_mass_coverage": null,
+            "recorded_last_total_K_nJ": 0.5683791909400114,
+            "R_max_equiv": 0.0006385485979192966,
+            "gap02_U_m_s": null,
+            "gap05_U_m_s": null
+          },
+          "U_change_abs_percent": null,
+          "U_within_2_percent": false,
+          "solver_flags_same": false,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": false,
+          "terminal_state_caution": "At least one run has no completed impact; retained last-state energy/radius differences are abort diagnostics, not paired impact errors"
+        }
+      },
+      {
+        "fluid": "PFH",
+        "closure": "km_alpha1",
+        "gamma": 3.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": null,
+            "jet_mass_pg": null,
+            "jet_energy_nJ": null,
+            "jet_E_over_Phi_percent": null,
+            "jet_mass_coverage": null,
+            "recorded_last_total_K_nJ": 2035.9159738844235,
+            "R_max_equiv": 1.4697155948649308,
+            "gap02_U_m_s": null,
+            "gap05_U_m_s": null
+          },
+          "U_change_abs_percent": null,
+          "U_within_2_percent": false,
+          "solver_flags_same": false,
+          "Mach_screen_classification_same": false,
+          "valid_comparable_solutions": false,
+          "terminal_state_caution": "At least one run has no completed impact; retained last-state energy/radius differences are abort diagnostics, not paired impact errors"
+        }
+      },
+      {
+        "fluid": "PFH",
+        "closure": "km_alpha1",
+        "gamma": 4.0,
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": 4.910715901322126,
+            "jet_mass_pg": 0.07136906808164367,
+            "jet_energy_nJ": 8.866364783893,
+            "jet_E_over_Phi_percent": 8.86636478389297,
+            "jet_mass_coverage": 4.659604785134658,
+            "recorded_last_total_K_nJ": 0.40893999675321674,
+            "R_max_equiv": 0.0006385485979192966,
+            "gap02_U_m_s": 4.222885175847251,
+            "gap05_U_m_s": 2.686672879932146
+          },
+          "U_change_abs_percent": 4.910715901322126,
+          "U_within_2_percent": false,
+          "solver_flags_same": true,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": true,
+          "terminal_state_caution": null
+        }
+      }
+    ],
+    "BIM_N96_to_N128_at_smaller_step": [
+      {
+        "fluid": "PFH",
+        "closure": "km_alpha1",
+        "gamma": 4.0,
+        "run": {
+          "N": 128,
+          "dphi": 0.01,
+          "impacted": false,
+          "aborted": true,
+          "error": null,
+          "jet_profile_error": null,
+          "wall_time_s": 1092.2718901634216,
+          "R_max_equiv": 0.9612528611697337,
+          "V_impact_over_Vmax": 0.9940667994472709,
+          "steps": 2069,
+          "U_m_s": null,
+          "raw_reported_U_m_s": 133.7733964461887,
+          "mach": null,
+          "solver_complete": false,
+          "inside_Mach_screen": false,
+          "claim_tier": "unresolved",
+          "jet_mass_pg": null,
+          "jet_energy_nJ": null,
+          "jet_E_over_Phi_percent": null,
+          "jet_mass_coverage": null,
+          "recorded_last_total_K_nJ": 0.0706977571060048,
+          "gap02_U_m_s": null,
+          "gap05_U_m_s": null,
+          "abort_diagnostic": {
+            "t_end_nondimensional": 1.1488169102751211,
+            "t_volume_max_nondimensional": 1.0852840930610421,
+            "min_final_surface_radius_nondimensional": -0.00011063336305305069,
+            "note": "No completed impact; raw speed is diagnostic only and excluded from envelopes"
+          }
+        },
+        "comparison": {
+          "complete": true,
+          "signed_relative_changes_percent": {
+            "U_m_s": null,
+            "jet_mass_pg": null,
+            "jet_energy_nJ": null,
+            "jet_E_over_Phi_percent": null,
+            "jet_mass_coverage": null,
+            "recorded_last_total_K_nJ": -98.0967871311335,
+            "R_max_equiv": 0.007452959991792251,
+            "gap02_U_m_s": null,
+            "gap05_U_m_s": null
+          },
+          "U_change_abs_percent": null,
+          "U_within_2_percent": false,
+          "solver_flags_same": false,
+          "Mach_screen_classification_same": true,
+          "valid_comparable_solutions": false,
+          "terminal_state_caution": "At least one run has no completed impact; retained last-state energy/radius differences are abort diagnostics, not paired impact errors"
+        }
+      }
+    ],
+    "KM_max_uncensored_N160_to_N320_speed_change_percent": 2.593712846808221,
+    "interpretation": "Completion means requested records are retained and analyzed, not that all models or profile observables converge. Read failed/stabilized cases and pre-screen quantities; screen event speeds are imposed, not physical peaks.",
+    "thermochemical_conservation_validated": false,
+    "mechanical_identity_checks": {
+      "PFP": {
+        "max_rel_energy_drift": 0.00018387255380183045,
+        "R_max": 2.368251085225372e-05,
+        "R_min": 7.188039633539852e-06,
+        "U_collapse_max": 14.587082495134291
+      },
+      "PFH": {
+        "max_rel_energy_drift": 0.00014741697021954727,
+        "R_max": 2.3606120282663913e-05,
+        "R_min": 6.945284320104095e-06,
+        "U_collapse_max": 15.144883547782245
+      }
+    },
+    "six_micrometre_phase_reference_bookkeeping": [
+      {
+        "fluid": "PFP",
+        "mode": "frozen",
+        "alpha_c": 0.0,
+        "exergy_destroyed_or_unaccounted_J": -7.173389243921819e-11,
+        "residual_percent_of_Phi": -2.634783642463785,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "frozen",
+            "alpha_c": 0.0
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 0.01,
+        "exergy_destroyed_or_unaccounted_J": -5.3960538494023825e-11,
+        "residual_percent_of_Phi": -1.981968903793406,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.01
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 0.5,
+        "exergy_destroyed_or_unaccounted_J": -5.3889671940811064e-11,
+        "residual_percent_of_Phi": -1.9793659774938055,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.5
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 0.03,
+        "exergy_destroyed_or_unaccounted_J": -5.395590410807921e-11,
+        "residual_percent_of_Phi": -1.9817986829415255,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.03
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "isoeq",
+        "alpha_c": 0.0,
+        "exergy_destroyed_or_unaccounted_J": -7.298501009731953e-11,
+        "residual_percent_of_Phi": -2.680737155207516,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "isoeq",
+            "alpha_c": 0.0
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 1.0,
+        "exergy_destroyed_or_unaccounted_J": -5.380393074570445e-11,
+        "residual_percent_of_Phi": -1.9762167060591957,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 1.0
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 0.1,
+        "exergy_destroyed_or_unaccounted_J": -5.3944702058779516e-11,
+        "residual_percent_of_Phi": -1.9813872320184918,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.1
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 0.2,
+        "exergy_destroyed_or_unaccounted_J": -5.3928986632632396e-11,
+        "residual_percent_of_Phi": -1.9808100049039605,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.2
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFP",
+        "mode": "kinetic",
+        "alpha_c": 0.3,
+        "exergy_destroyed_or_unaccounted_J": -5.391424624983316e-11,
+        "residual_percent_of_Phi": -1.980268591101329,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFP",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.3
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "frozen",
+        "alpha_c": 0.0,
+        "exergy_destroyed_or_unaccounted_J": 3.4301198945567795e-10,
+        "residual_percent_of_Phi": 7.4210924669093385,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "frozen",
+            "alpha_c": 0.0
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 0.3,
+        "exergy_destroyed_or_unaccounted_J": 1.1033816692863373e-09,
+        "residual_percent_of_Phi": 23.87175272520535,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.3
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 0.01,
+        "exergy_destroyed_or_unaccounted_J": 4.0699090309443504e-10,
+        "residual_percent_of_Phi": 8.805281500065492,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.01
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "isoeq",
+        "alpha_c": 0.0,
+        "exergy_destroyed_or_unaccounted_J": 1.4068250382437872e-09,
+        "residual_percent_of_Phi": 30.436774849001104,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "isoeq",
+            "alpha_c": 0.0
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 1.0,
+        "exergy_destroyed_or_unaccounted_J": 1.4767253197488965e-09,
+        "residual_percent_of_Phi": 31.949073160601195,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 1.0
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 0.5,
+        "exergy_destroyed_or_unaccounted_J": 1.278743515820905e-09,
+        "residual_percent_of_Phi": 27.66572062809449,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.5
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 0.03,
+        "exergy_destroyed_or_unaccounted_J": 5.068008707004167e-10,
+        "residual_percent_of_Phi": 10.964678318522544,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.03
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 0.1,
+        "exergy_destroyed_or_unaccounted_J": 7.487499741904531e-10,
+        "residual_percent_of_Phi": 16.19926697571403,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.1
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      },
+      {
+        "fluid": "PFH",
+        "mode": "kinetic",
+        "alpha_c": 0.2,
+        "exergy_destroyed_or_unaccounted_J": 9.615251701847804e-10,
+        "residual_percent_of_Phi": 20.802675756393672,
+        "source": {
+          "file": "data/km_sweep.json",
+          "record_match": {
+            "fluid": "PFH",
+            "d0": 6e-06,
+            "G": 0,
+            "x_air": 0,
+            "mode": "kinetic",
+            "alpha_c": 0.2
+          },
+          "field": "energy_ledger.exergy_destroyed_or_unaccounted"
+        },
+        "interpretation": "Bookkeeping diagnostic, not a thermodynamic validation or a demonstrated exergy-destruction measurement."
+      }
+    ]
+  },
+  "convergence_evidence": [
+    "verification/pfc_bim_convergence.json",
+    "verification/km_refine_summary.json"
+  ]
+}

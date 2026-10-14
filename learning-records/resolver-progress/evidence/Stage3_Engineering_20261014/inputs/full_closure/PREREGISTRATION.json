@@ -1,0 +1,254 @@
+{
+  "schema": "full_closure_preregistration_draft_v1",
+  "status": "UNFROZEN_SPECIFICATION_IN_PROGRESS",
+  "campaign_started": false,
+  "frozen_sha256": null,
+  "question": "Attained, energy-consistent and globally certified conditional PFC carrier-velocity and rigid-wall averaged-pressure optima",
+  "preparation_source": "data/accepted_preparation.json",
+  "species": [
+    "PFP",
+    "PFH"
+  ],
+  "initial_unheated_diameter_um": 6,
+  "T0_K": 293.15,
+  "p_infinity_Pa": 101325,
+  "air_free": true,
+  "gel": false,
+  "decisions": {
+    "D1": "Species PFP and PFH, optimized separately",
+    "D2": "Accepted full uniform isobaric activation; initially at rest with zero vapour",
+    "D3": "Axisymmetric water above rigid plane",
+    "D4": "Selected sourced-Hugoniot one-potential caloric Mie-Gruneisen water; native/transport/coupled verification pending",
+    "D5": "Selected entropy-admissible sign-dependent HKS-scaled interface mobility plus continuous affinity birth/spinodal completion; original hypotheses with explicit sensitivities; native/coupled domain verification pending",
+    "D6": {
+      "classification": "USER_APPROVED_APPLICATION",
+      "gamma_min": 1.25,
+      "exact_user_answer": "Detached cavity: γ ≥ 1.25; confirm the listed masses and pressure averages (recommended)."
+    },
+    "D7": {
+      "mass_pg": [
+        1,
+        3,
+        10,
+        30,
+        100
+      ],
+      "material": "All aqueous liquid carrier, including interfacial water fractions; no geometric mask"
+    },
+    "D8": {
+      "observer_radius_um": [
+        2,
+        10
+      ],
+      "observer_duration_ns": [
+        2,
+        20
+      ]
+    },
+    "D9": {
+      "epsilon_U_relative": 0.05,
+      "epsilon_P_relative": 0.1,
+      "numerical_fraction_of_epsilon_max": 0.3333333333333333,
+      "domain_fraction_of_epsilon_max": 0.1,
+      "ledger_fraction_Phi_a_max": 0.01,
+      "PFC_mass_relative_error_max": 1e-06,
+      "water_mass_relative_error_max": 0.0001
+    },
+    "D10": "No user-approved upper gamma; begin scan at8 and enclose remaining tail",
+    "D11": "Errata only, frozen originals unchanged"
+  },
+  "design": {
+    "alpha_c_min": 0,
+    "alpha_c_max": 1,
+    "alpha_c_bound_class": "PHYSICAL",
+    "gamma_min": 1.25,
+    "gamma_min_bound_class": "USER_APPROVED_APPLICATION",
+    "gamma_max": null,
+    "initial_computational_scan_gamma_max": 8
+  },
+  "proposed_scan": {
+    "gamma": [
+      1.25,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5,
+      6,
+      8
+    ],
+    "alpha_c": [
+      0,
+      0.03,
+      0.1,
+      0.3,
+      0.5,
+      1
+    ],
+    "note": "No campaign permitted until S1-S5 and this preregistration are finalized; all runs share all nine objectives"
+  },
+  "observables": {
+    "JU": "PROBLEM_STATEMENT.md P03-P04; event window must exist",
+    "JP": "PROBLEM_STATEMENT.md P06; solved water wall pressure through first rebound",
+    "kinetic": "Full vector water plus full vector PFC energy, P05",
+    "legacy_geometric_jet": "Diagnostic only",
+    "events": "Main collapse minimum follows first growth maximum; first rebound follows that minimum; all observations/ledgers begin at0. See S2 amendment002."
+  },
+  "verification_matrix": "verification/S2_PREREGISTRATION.json",
+  "model": {
+    "water_EOS": {
+      "selection": "verification/PRODUCTION_WATER_SELECTION_001.json",
+      "sha256": "16869cecb4c4569e6335e7dec21e69606dee30cd6abad310eb6c6b0d3ef49557",
+      "type": "Original caloric Mie-Gruneisen completion",
+      "native_implementation_verified": false,
+      "constitutive_accuracy": "Principal Hugoniot calibration; off-Hugoniot thermal/rarefaction premises require sensitivity",
+      "source_qualification": "verification/WATER_MG_SOURCE_QUALIFICATION_001.json",
+      "native_property_component": "verification/Water_MG_native_attempt002.json",
+      "native_property_component_verified": true
+    },
+    "water_transport": {
+      "selection": "verification/TRANSPORT_SELECTION_001.json",
+      "sha256": "739e182551501ff2a55ebad5869fd5a1a987e1f396cbd11f49aee667370cdec0",
+      "derivation": "TRANSPORT_AND_SURFACE_WORK.md",
+      "native_coupled_verified": false,
+      "tension_minimum_absolute_pressure_Pa": -100000000.0
+    },
+    "PFC_potential_tables": {
+      "selection": "Exact native defining Helmholtz potential; no independently interpolated thermodynamic property tables",
+      "native_header": "solver/pfc_helmholtz.h",
+      "native_coupled_verified": false
+    },
+    "PFC_phase_kinetics": {
+      "status": "SELECTED_CONSTITUTIVE_FORM_NATIVE_FINITE_OPERATOR_CHECKS_IN_PROGRESS",
+      "law": "j = 2/sqrt(2*pi*R_s*T) * (beta_e*[f_l-f_v]+ - beta_c*[f_v-f_l]+)",
+      "verification_amendment": "verification/S2_PREREGISTRATION_AMENDMENT_001.json",
+      "verification_amendment_sha256": "a0fd8aa45eb03727b6a40ee9b8f3d40d1c4199bbdc1b33ac6617708eb47bd3cf",
+      "evaporation_accommodation": 1,
+      "condensation_accommodation_range": [
+        0,
+        1
+      ],
+      "classification": "Original conditional constitutive premise; see CONTENT_THERMODYNAMICS.md CT03-CT04"
+    },
+    "spinodal_completion": {
+      "selection": "verification/PRODUCTION_PHASE_SELECTION_001.json",
+      "sha256": "6f1d0253b0d2b4b382c355af3498c382d60bdb67920618372cdaee75297245c2",
+      "documentary_addenda": [
+        "verification/PRODUCTION_PHASE_PATH_AMENDMENT_001.json",
+        "verification/PHASE_DOCUMENTARY_CLARIFICATION_001.json",
+        "verification/PHASE_DOCUMENTARY_CLARIFICATION_002.json"
+      ],
+      "classification": "Conditional continuous constitutive hypothesis, no uniform critical invariant-domain proof"
+    },
+    "wall_conditions": {
+      "selection": "verification/TRANSPORT_SELECTION_001.json",
+      "velocity": "Stationary no-slip",
+      "thermal": "Zero normal conductive flux",
+      "contact_model": null,
+      "detached_full_domain_verified": false,
+      "contact_failures_cannot_be_removed_from_domain": true
+    },
+    "initial_surface_energy": "Explicit baseline-subtracted actual area; no hidden capillary store",
+    "exact_exergy_conventions": "SYSTEM_EXERGY_CONVENTIONS.md",
+    "native_PFC_gas_constant": {
+      "universal_J_mol_K": 8.314462618,
+      "species_formula": "universal/M",
+      "pre_coupling_convention_sha256": "ee892165eb3f0bd4562a0929d8e3b71681127763c81032e9bbd5d8890b7878d6"
+    },
+    "PFC_phase_area": {
+      "selection": "Candidate A",
+      "source": "verification/PRODUCTION_CONVENTIONS_001.json",
+      "sha256": "ee892165eb3f0bd4562a0929d8e3b71681127763c81032e9bbd5d8890b7878d6",
+      "formula": "a_phase=f_F*rho_F*A_outer/M_F",
+      "nonlocal_geometry_assumption": true,
+      "actual_outer_surface_energy_retained": true
+    },
+    "thermal_interface": {
+      "selection": "verification/THERMAL_INTERFACE_SELECTION_001.json",
+      "sha256": "42a2c649bcd7b8dfde5177edb6a36a6b1259a69b74308bab745c65bdf127b48a",
+      "exact_function_component": "verification/thermal_network_component001.json",
+      "native_component_verified": true,
+      "coupled_verified": false,
+      "native_component": "verification/native_thermal_component002.json",
+      "native_independent_field_audit": "verification/native_thermal_fields_audit002.json"
+    },
+    "PFC_EOS": {
+      "implementation": "Exact native Helmholtz potential with conservative density-coordinate warm inversion and physical branch discovery",
+      "native_property_component": "verification/Native_HEOS_attempt007.json",
+      "consecutive_history_component": "verification/Native_HEOS_history_attempt002.json",
+      "spatial_PFC_pressure_resolved": true,
+      "coupled_verified": false
+    },
+    "pressure_work": {
+      "derivation": "PRESSURE_WORK_AND_PROJECTION.md",
+      "native_core": "solver/DESIGN.md",
+      "partition": "DeltaEi=a_i*DeltaE_pressure+(Y_i-a_i)*DeltaK_pressure",
+      "closure": "Final actual conserved-state EOS pressure residual; no pressure-based conserved-state reset",
+      "component_reference": "verification/pressure_work_component001.json",
+      "full_PDE_verified": false,
+      "ideal_material_flow_core": "verification/Pressure_flow_attempt003.json",
+      "ideal_material_flow_core_verified": true,
+      "selected_material_full_PDE_verified": false
+    },
+    "PFC_transport": {
+      "selection": "verification/TRANSPORT_SELECTION_001.json",
+      "sha256": "739e182551501ff2a55ebad5869fd5a1a987e1f396cbd11f49aee667370cdec0",
+      "classification": "Original positive conditional viscosity proxy, not measured PFC transport fit",
+      "native_coupled_verified": false
+    }
+  },
+  "production_settings": null,
+  "certificate": {
+    "method": "Justified global enclosure including numerical errors and all event regimes",
+    "proof_enclosures": null,
+    "tail_enclosure": null,
+    "heuristic_second_difference_is_proof": false
+  },
+  "open_S1_items": [
+    "Assembled conservative transport/capillary/thermal/reaction/geometric operators",
+    "Critical/cooling/endpoints and full conserved native trajectory checks",
+    "Detached-film coverage or complete contact model across all relevant domain regimes",
+    "Event existence/no-event treatment over entire design",
+    "Declared supported uniform-domain and tail premises"
+  ],
+  "amendment_policy": "Freeze SHA before earliest campaign run; record any later amendment before affected reruns; never retrofit tolerances",
+  "verification_amendments": [
+    {
+      "file": "verification/S2_PREREGISTRATION_AMENDMENT_001.json",
+      "sha256": "a0fd8aa45eb03727b6a40ee9b8f3d40d1c4199bbdc1b33ac6617708eb47bd3cf"
+    },
+    {
+      "file": "verification/S2_PREREGISTRATION_AMENDMENT_002.json",
+      "sha256": "5938d2f3b091469d15bf088616b8f851b1b968f4888ffb4483e612d112d4a465"
+    },
+    {
+      "file": "verification/PRODUCTION_CONVENTIONS_001.json",
+      "sha256": "ee892165eb3f0bd4562a0929d8e3b71681127763c81032e9bbd5d8890b7878d6"
+    },
+    {
+      "file": "verification/PRODUCTION_WATER_SELECTION_001.json",
+      "sha256": "16869cecb4c4569e6335e7dec21e69606dee30cd6abad310eb6c6b0d3ef49557"
+    },
+    {
+      "file": "verification/PRODUCTION_PHASE_SELECTION_001.json",
+      "sha256": "6f1d0253b0d2b4b382c355af3498c382d60bdb67920618372cdaee75297245c2"
+    },
+    {
+      "file": "verification/PRODUCTION_PHASE_PATH_AMENDMENT_001.json",
+      "sha256": "87bcd32d421d8cb2cb1aa8d999aa8d6592af353db8133cc12b51d0c422835cd5"
+    },
+    {
+      "file": "verification/THERMAL_INTERFACE_SELECTION_001.json",
+      "sha256": "42a2c649bcd7b8dfde5177edb6a36a6b1259a69b74308bab745c65bdf127b48a"
+    },
+    {
+      "file": "verification/WATER_MG_SOURCE_QUALIFICATION_001.json",
+      "sha256": "3c6d830943b114e923ac6d8ca5790caaf277de6814704dd9df6c95fd0df5b9e8"
+    },
+    {
+      "file": "verification/TRANSPORT_SELECTION_001.json",
+      "sha256": "739e182551501ff2a55ebad5869fd5a1a987e1f396cbd11f49aee667370cdec0"
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 """Portable, pre-rendered equation reader and complete editable LaTeX source."""
-import hashlib,html,json,re,subprocess
+import hashlib,html,json,re,shutil,subprocess,tempfile
 from pathlib import Path
+from reader_text import translated_block
+from reader_figures import translate_figures
 ROOT=Path(__file__).resolve().parents[1]
+COURSE=ROOT.parents[1]
 REQUESTS=[]
 TOKENS=re.compile(r'(\$[^$\n]+\$|`[^`]+`|\*\*.+?\*\*|!?\[[^\]]+\]\([^\)]+\))')
 
@@ -134,35 +137,127 @@ def render(source,target):
     return '\n'.join(out)
 
 
+def source_block(kind, value):
+    """Serialize editable English/Chinese source without changing equations."""
+    if kind=='heading': return '#' * value[0] + ' ' + value[1]
+    if kind=='paragraph': return value
+    if kind=='equation': return '$$\n'+value+'\n$$'
+    if kind=='list': return '\n'.join('- '+item for item in value)
+    if kind=='table':
+        rows=['| '+' | '.join(row)+' |' for row in value]
+        rows.insert(1,'|'+'|'.join('---' for _ in value[0])+'|')
+        return '\n'.join(rows)
+    raise ValueError(kind)
+
+
+def pair(english,chinese,tag='span'):
+    if english == chinese:
+        return inline(english,'html')
+    return ('<'+tag+' lang="en">'+inline(english,'html')+'</'+tag+'>'
+            '<'+tag+' lang="zh-CN" class="zh">'+inline(chinese,'html')+'</'+tag+'>')
+
+
+def render_bilingual(document,source):
+    output=[];english_source=[];chinese_source=[];counts={'blocks':0,'paired':0,'tables':0}
+    source_blocks=list(blocks(source))
+    for index,(kind,value) in enumerate(source_blocks):
+        en,zh=translated_block(document,index,kind,value)
+        if (kind=='paragraph' and index+1<len(source_blocks)
+                and source_blocks[index+1][0]=='equation'):
+            formula=source_blocks[index+1][1]
+            if r'\pi' in formula and not re.search(r'\bpi\b|\\pi',en,re.I):
+                en+=' $\\pi$ is the dimensionless circle constant.'
+            if r'\pi' in formula and '$\\pi$' not in zh and '圆周率' not in zh:
+                zh+=' $\\pi$ 为无量纲圆周率。'
+            if r'\tag{E15}' in formula:
+                if '$b$ is the positive core radius' not in en:
+                    en+=' $b$ is the positive core radius (m).'
+                if '$b$ 为正蒸气核半径' not in zh:
+                    zh+=' $b$ 为正蒸气核半径（m）。'
+        english_source.append(source_block(kind,en));chinese_source.append(source_block(kind,zh))
+        counts['blocks']+=1
+        marker=f'data-source-block="{document}:{index}"'
+        if kind=='equation':
+            output.append('<div class="math-display equation" '+marker+'>'+math_html(value,True)+'</div>')
+            continue
+        counts['paired']+=1
+        if kind=='heading':
+            level,title=en
+            level=min(level+1,6)
+            output.append(f'<div class="heading-pair" {marker}>'+pair(title,zh[1],f'h{level}')+'</div>')
+        elif kind=='paragraph':
+            images=[re.fullmatch(r'!\[([^\]]+)\]\(([^\)]+)\)',text) for text in [en,zh]]
+            if all(images):
+                output.append('<figure '+marker+'>'+''.join(
+                    '<img class="figure" lang="'+lang+'" loading="lazy" src="'+html.escape(image[2],quote=True)+'" alt="'+html.escape(image[1],quote=True)+'">'
+                    for lang,image in zip(['en','zh-CN'],images))+'<figcaption>'+pair(images[0][1],images[1][1])+'</figcaption></figure>')
+            else:
+                output.append('<div class="lang-pair" '+marker+'>'+pair(en,zh,'p')+'</div>')
+        elif kind=='list':
+            output.append('<ul '+marker+'>'+''.join('<li>'+pair(a,b)+'</li>' for a,b in zip(en,zh))+'</ul>')
+        elif kind=='table':
+            counts['tables']+=1
+            header=''.join('<th scope="col">'+pair(a,b)+'</th>' for a,b in zip(en[0],zh[0]))
+            rows=''.join('<tr>'+''.join('<td>'+pair(a,b)+'</td>' for a,b in zip(aa,bb))+'</tr>' for aa,bb in zip(en[1:],zh[1:]))
+            output.append('<div class="table-wrap" '+marker+'><table><thead><tr>'+header+'</tr></thead><tbody>'+rows+'</tbody></table></div>')
+    return '\n'.join(output),'\n\n'.join(english_source)+'\n','\n\n'.join(chinese_source)+'\n',counts
+
+
 def main():
-    REQUESTS.clear();build=ROOT/'build';build.mkdir(exist_ok=True)
+    REQUESTS.clear()
+    canonical_styles={}
+    for name in ['course.css','course-language.css','bilingual-terms.css']:
+        origin=COURSE/'assets'/name;destination=ROOT/'assets'/name
+        if (COURSE/'chapters/01-cavity-pressure-inertia-and-directional-jets.html').is_file():
+            shutil.copy2(origin,destination)
+        if not destination.is_file():
+            raise FileNotFoundError('Missing bundled canonical stylesheet: '+name)
+        canonical_styles[name]=hashlib.sha256(destination.read_bytes()).hexdigest()
+    figure_translations=translate_figures(ROOT)
     documents=[('comparison','REPORT.md'),('derivation','DERIVATION.md'),('handoff','IMPLEMENTATION_HANDOFF.md'),('sources','SOURCES.md')]
-    sections=[];sources={}
+    sections=[];sources={};coverage={}
     for name,path in documents:
-        source=(ROOT/path).read_text(encoding='utf8');sources[path]=hashlib.sha256(source.encode()).hexdigest()
-        sections.append(f'<section id="{name}" class="document"'+('' if name=='comparison' else ' hidden')+'>'+render(source,'html')+'</section>')
-    tex=PREAMBLE+render((ROOT/'DERIVATION.md').read_text(encoding='utf8'),'tex')+'\n\\newpage\n'+render((ROOT/'SOURCES.md').read_text(encoding='utf8'),'tex')+'\n\\end{document}\n'
-    (ROOT/'DERIVATION.tex').write_text(tex,encoding='utf8')
-    (build/'math_requests.json').write_text(json.dumps(REQUESTS),encoding='utf8')
-    result=subprocess.run(['node',str(ROOT/'scripts/prerender_math.cjs'),str(build/'math_requests.json'),str(build/'math_rendered.json')],capture_output=True,text=True,check=True)
-    rendered=json.loads((build/'math_rendered.json').read_text(encoding='utf8'))
+        source=(ROOT/path).read_text(encoding='utf8')
+        rendered_document,en,zh,coverage[path]=render_bilingual(path,source)
+        (ROOT/path).write_text(en,encoding='utf8')
+        (ROOT/Path(path).with_suffix('.zh.md')).write_text(zh,encoding='utf8')
+        sources[path]=hashlib.sha256(en.encode()).hexdigest()
+        sources[str(Path(path).with_suffix('.zh.md'))]=hashlib.sha256(zh.encode()).hexdigest()
+        sections.append(f'<section id="{name}" class="document"'+('' if name=='comparison' else ' hidden')+'>'+rendered_document+'</section>')
+    # Keep the accepted original English PDF and its matching LaTeX untouched.
+    # Temporary equation requests are removed after the static rendering step.
+    with tempfile.TemporaryDirectory(prefix='embedded-reader-') as temp:
+        build=Path(temp)
+        (build/'math_requests.json').write_text(json.dumps(REQUESTS),encoding='utf8')
+        result=subprocess.run(['node',str(ROOT/'scripts/prerender_math.cjs'),str(build/'math_requests.json'),str(build/'math_rendered.json')],capture_output=True,text=True,check=True)
+        rendered=json.loads((build/'math_rendered.json').read_text(encoding='utf8'))
     body='\n'.join(sections)
     for item in rendered:body=body.replace(item['token'],item['html'])
     states=(ROOT/'data/reader_states.json').read_text(encoding='utf8')
-    page='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Embedded PFC feasibility and parameters</title>
-<link rel="stylesheet" href="assets/vendor/katex/katex.min.css"><link rel="stylesheet" href="assets/reader.css"></head><body>
-<header><a class="brand" href="#comparison">PFC / Hydrogel</a><nav aria-label="Documents"><a href="https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/">Theory course</a><button data-doc="comparison" aria-pressed="true">Comparison</button><button data-doc="derivation" aria-pressed="false">Derivation</button><button data-doc="handoff" aria-pressed="false">Implementation</button><button data-doc="sources" aria-pressed="false">Sources</button></nav><button id="theme-toggle" type="button">Night mode</button></header>
-<main><div class="status">Conditional finite-PFC controls numerically verified. Target laser activation, fracture/channel formation, collapse jets and impact pressure remain unvalidated.</div>
-<div class="downloads"><a href="Embedded_PFC_Feasibility_Public_20261011.zip">Download study folder</a><a href="output/pdf/FINITE_PFC_DERIVATION.pdf">Printable derivation</a><a href="DERIVATION.tex">LaTeX source</a><a href="REPORT.md">Report source</a><a href="README.md">Reproduce</a></div>
-<section id="selector"><h2>Compare a calculated phase/mechanical state</h2><p>Choose among the solved equilibrium controls at stretch 2.1 and stipulated outer tension 54 mN/m. These state energies are not optical activation thresholds.</p>
-<div class="controls"><label>PFC species<select id="fluid"><option value="n-Perfluoropentane">PFP</option><option value="n-Perfluorohexane">PFH</option></select></label><label>Initial liquid diameter (µm)<select id="diameter"><option>0.3</option><option selected>0.6</option><option>3</option><option>6</option><option>12</option></select></label><label>Stipulated shear modulus (kPa)<select id="modulus"><option>5</option><option selected>20</option><option>100</option></select></label></div><div id="state-output" aria-live="polite"></div>
-<p class="small">Uniform-temperature, curved-equilibrium PFC; finite mass and surviving liquid shell; infinite intact gel. No nucleation, fracture or outlet is inferred.</p></section>
-@@BODY@@<footer>Offline equations, plots, fonts and selector data are bundled. Scientific source links are optional external references. Numerical verification and specimen-level physical validation are distinct.</footer></main>
+    navigation_file=ROOT/'assets/course-navigation.json'
+    if (COURSE/'COURSE_SETTINGS.json').is_file():
+        settings=json.loads((COURSE/'COURSE_SETTINGS.json').read_text(encoding='utf8'))
+        navigation=dict(url=settings['url'],units=[{key:unit[key] for key in ['file','label','label_zh','title','title_zh']} for unit in settings['chapters']+settings['appendices']])
+        navigation_file.write_text(json.dumps(navigation,indent=2,ensure_ascii=False)+'\n',encoding='utf8')
+    navigation=json.loads(navigation_file.read_text(encoding='utf8'))
+    site=navigation['url']
+    course_nav=''.join('<a data-course-path="'+unit['file']+'" href="'+site+unit['file']+'"><span lang="en">'+inline(unit['label']+' · '+unit['title'],'html')+'</span><span lang="zh-CN">'+inline(unit['label_zh']+' · '+unit['title_zh'],'html')+'</span></a>' for unit in navigation['units'])
+    page='''<!doctype html><html lang="en" data-language="bilingual" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PFC droplets in hydrogel · Appendix A</title>
+<link rel="stylesheet" href="assets/vendor/katex/katex.min.css"><link rel="stylesheet" href="assets/course.css"><link rel="stylesheet" href="assets/course-language.css"><link rel="stylesheet" href="assets/bilingual-terms.css"><link rel="stylesheet" href="assets/reader.css"></head><body>
+<div class="theme-tools" role="toolbar" aria-label="Reading controls / 阅读设置"><button id="theme-toggle" type="button"><span lang="en">Day mode</span><span lang="zh-CN">日间</span></button><button id="language-toggle" type="button" aria-label="Switch reading language">English</button></div>
+<nav class="topbar" aria-label="Main navigation"><a class="brand" data-course-path="index.html" href="https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/index.html"><span lang="en">Laser PFC TP</span><span lang="zh-CN">激光 PFC 转印</span></a><a id="appendix-return" data-course-path="appendices/a-hydrogel-versus-liquid.html" href="https://pfgaophilip.github.io/Laser-Induced-PFC-Droplet-TP/appendices/a-hydrogel-versus-liquid.html"><span lang="en">Appendix A</span><span lang="zh-CN">附录 A</span></a></nav>
+<div class="page-layout"><aside class="sidebar"><h2><span lang="en">Course</span><span lang="zh-CN">课程</span></h2><nav aria-label="Chapters and appendix">@@COURSE_NAV@@</nav><h2><span lang="en">In this study</span><span lang="zh-CN">本研究内容</span></h2><nav class="reader-doc-nav" aria-label="Study documents / 研究文档"><button data-doc="comparison" aria-pressed="true"><span lang="en">Comparison</span><span lang="zh-CN">比较</span></button><button data-doc="derivation" aria-pressed="false"><span lang="en">Derivation</span><span lang="zh-CN">推导</span></button><button data-doc="handoff" aria-pressed="false"><span lang="en">Validation plan</span><span lang="zh-CN">验证计划</span></button><button data-doc="sources" aria-pressed="false"><span lang="en">Sources</span><span lang="zh-CN">来源</span></button></nav></aside>
+<div class="reading"><header class="chapter-header"><p class="eyebrow"><span lang="en">Appendix A · Finite PFC study</span><span lang="zh-CN">附录 A · 有限 PFC 研究</span></p><h1 lang="en">PFC droplets in hydrogel</h1><h1 class="zh" lang="zh-CN">水凝胶中的 PFC 液滴</h1><div class="scope lang-pair"><p lang="en">Finite-PFC models pass numerical checks. Target laser activation, fracture, jets and impact pressure remain unresolved.</p><p class="zh" lang="zh-CN">有限 PFC 模型通过数值检验。目标激光激活、断裂、射流与冲击压力仍未解决。</p></div>
+<div class="downloads resource-nav unit-resources"><a href="output/pdf/FINITE_PFC_DERIVATION.pdf"><span lang="en">Original English PDF</span><span lang="zh-CN">原始英文 PDF</span></a><a href="DERIVATION.tex"><span lang="en">Original LaTeX</span><span lang="zh-CN">原始 LaTeX</span></a><a href="REPORT.md"><span lang="en">English source</span><span lang="zh-CN">英文源文件</span></a><a href="REPORT.zh.md"><span lang="en">Chinese source</span><span lang="zh-CN">中文源文件</span></a><a href="README.md"><span lang="en">Reproduce</span><span lang="zh-CN">复现</span></a></div></header>
+<main class="chapter-body"><section id="selector" class="worked"><div class="heading-pair"><h2 lang="en">Compare solved equilibrium states</h2><h2 class="zh" lang="zh-CN">比较已求解平衡状态</h2></div><div class="lang-pair"><p lang="en">Select a state at stretch 2.1 and outer tension 54 mN/m. State energy does not establish an optical activation threshold.</p><p class="zh" lang="zh-CN">选择伸长比 2.1、外张力 54 mN/m 的状态。状态能量无法确立光学激活阈值。</p></div>
+<div class="controls"><label><span lang="en">PFC species</span><span lang="zh-CN">PFC 种类</span><select id="fluid"><option value="n-Perfluoropentane">PFP</option><option value="n-Perfluorohexane">PFH</option></select></label><label><span lang="en">Initial liquid diameter (µm)</span><span lang="zh-CN">初始液态直径 (µm)</span><select id="diameter"><option>0.3</option><option selected>0.6</option><option>3</option><option>6</option><option>12</option></select></label><label><span lang="en">Stipulated shear modulus (kPa)</span><span lang="zh-CN">预设剪切模量 (kPa)</span><select id="modulus"><option>5</option><option selected>20</option><option>100</option></select></label></div><div id="state-output" aria-live="polite"></div>
+<div class="lang-pair small"><p lang="en">Finite PFC mass; surviving liquid shell; uniform temperature; curved phase equilibrium; infinite intact gel. Nucleation, fracture and outlets remain outside this control.</p><p class="zh" lang="zh-CN">有限 PFC 质量、剩余液体壳层、均匀温度、曲面相平衡及无限完整凝胶。成核、断裂与出口仍在该对照范围之外。</p></div></section>
+@@BODY@@</main></div></div><footer class="site-footer"><div class="lang-pair"><p lang="en">Equations, plots, fonts and state data work offline. Move the entire study folder. Scholarly links are external references.</p><p class="zh" lang="zh-CN">方程、图表、字体与状态数据支持离线阅读。移动时请保留整个研究文件夹。论文链接为外部参考。</p></div></footer>
 <script type="application/json" id="state-data">@@DATA@@</script><script src="assets/reader.js"></script></body></html>'''
-    (ROOT/'index.html').write_text(page.replace('@@BODY@@',body).replace('@@DATA@@',states),encoding='utf8')
-    audit=dict(source_hashes=sources,rendered_expressions=len(rendered),display_equations=sum(x['display'] for x in REQUESTS),katex_errors=0,offline_dependencies=True,renderer=json.loads(result.stdout))
+    (ROOT/'index.html').write_text(page.replace('@@BODY@@',body).replace('@@DATA@@',states).replace('@@COURSE_NAV@@',course_nav),encoding='utf8')
+    audit=dict(source_hashes=sources,rendered_expressions=len(rendered),display_equations=sum(x['display'] for x in REQUESTS),katex_errors=0,offline_dependencies=True,renderer=json.loads(result.stdout),bilingual_coverage=coverage,languages=['bilingual','en','zh'],accepted_english_pdf_preserved=True,figure_translations=figure_translations,canonical_styles=canonical_styles,frontend='canonical chapter layout; fixed lower-right theme-tools')
     assert audit['display_equations']==32
-    (ROOT/'verification/DOCUMENT_BUILD.json').write_text(json.dumps(audit,indent=2),encoding='utf8')
+    (ROOT/'verification/BILINGUAL_DOCUMENT_BUILD_20261014.json').write_text(json.dumps(audit,indent=2),encoding='utf8')
     print(json.dumps(audit))
 
 if __name__=='__main__':main()

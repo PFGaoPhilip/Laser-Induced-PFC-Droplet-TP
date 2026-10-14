@@ -2,13 +2,13 @@
 
 # 附录 A：水凝胶与液体平台
 
-## The question is whether gel improves complete transfer
+## Hydrogel support and transfer performance
 
-## 问题在于凝胶是否改善完整转印过程
+## 水凝胶支撑与转印性能
 
-A hydrogel can preserve the position of PFC droplets, support a patterned liquid reservoir, and conform to a payload at small preload. It also adds a polymer network that stores energy, dissipates motion, changes heat and mass transport, and may tear. This appendix evaluates those changes through the same chain as the preceding chapters: absorbed energy → finite phase source → mechanical motion → intended interface release → intact placement and reset. A smaller cavity or a larger pressure peak alone does not establish improvement.
+Hydrogel can locate PFC droplets, support liquid patterns and conform under small preload. Its network also stores energy, dissipates motion and changes transport. It can tear. Compare absorbed energy, phase source, motion, selective release, intact placement and reset. Smaller cavities or higher pressure leave overall improvement unresolved.
 
-水凝胶可以保持 PFC 液滴的位置、支撑图案化液体储库，并在小预载下贴合被转印对象。它同时引入聚合物网络，该网络会储存能量、耗散运动、改变传热传质，并可能撕裂。本附录沿用前面各章的链条评估这些变化：吸收能量 → 有限相变源 → 力学运动 → 目标界面释放 → 完整定位与复位。仅凭腔体更小或压力峰值更大，不能证明性能改善。
+水凝胶可定位 PFC 液滴、支撑液体图案，并在小预载下贴合。其网络也储存能量、耗散运动、改变输运，并可能撕裂。应比较吸收能量、相变源、运动、选择性释放、完整落位及复位。空腔更小或压力更高仍未确定整体改善。
 
 | Architecture<br>结构方案 | Where displaced material can go<br>被排开材料的去向 | Benefit to test; new cost<br>待检验的收益与新增代价 |
 | --- | --- | --- |
@@ -17,21 +17,21 @@ A hydrogel can preserve the position of PFC droplets, support a patterned liquid
 | PFC embedded directly in bulk gel<br>PFC 直接嵌入体相凝胶 | Initially into network deformation; an external liquid path must exist or be created.<br>起初转化为网络变形；必须已有或形成通往外部的液体路径。 | Stable inclusion locations; large strain, trapped vapor, network rupture and solid contamination.<br>稳定的夹杂位置；大应变、滞留蒸气、网络破裂及固体污染。 |
 | Sealed cavity under a gel/composite stamp<br>凝胶／复合印章下的密封腔体 | Boundary bulging and pressure transmission rather than an open liquid outlet.<br>通过边界鼓起与压力传递，而不是开放液体出口。 | Distributed deformation and local peeling; this can be a blister actuator with a different release mechanism.<br>分布式变形与局部剥离；它可以是具有不同释放机制的鼓泡致动器。 |
 
-Li and colleagues demonstrated a sealed hydrogel-composite stamp in which laser heating creates a water-vapor cavity, deforms covering layers, and releases a platelet. It supports the pressure–deformation–fracture route; it does not verify a coherent jet from PFC embedded in bulk gel. Its millisecond heating event must not supply a microsecond PFC constitutive law by analogy. [[R11]](../reference/sources.html#r11)
+Li et al. demonstrated a sealed hydrogel-composite stamp. Laser heating formed water vapor, deformed covering layers and released a platelet. This establishes a pressure–deformation–fracture route. External PFC jetting from bulk gel remains unestablished. The millisecond event requires separate justification before informing microsecond material laws. [[R11]](../reference/sources.html#r11)
 
-Li 等人展示了密封水凝胶复合印章：激光加热产生水蒸气腔体，使覆盖层变形并释放片状对象。该研究支持压力—变形—断裂路径，却没有验证体相凝胶中嵌入 PFC 后产生相干射流。不能仅凭类比，用其毫秒级加热事件提供微秒级 PFC 过程的本构规律。[[R11]](../reference/sources.html#r11)
+Li 等展示了密闭水凝胶复合印章。激光加热形成水蒸气，使覆盖层变形并释放片状对象。这确立了压力—变形—断裂路径。体相凝胶中的 PFC 外部喷射尚未确立。毫秒事件用于微秒材料规律前，须另给依据。 [[R11]](../reference/sources.html#r11)
 
-## 1. Declare the intact spherical control
+## 1. Intact spherical model
 
-## 1. 明确完整球形控制模型
+## 1. 完整球形模型
 
-The analytical control is an infinite, homogeneous, isotropic, incompressible medium with a continuous unbroken neo-Hookean network. An existing spherical cavity has stress-free reference radius $R_{\mathrm{ref}}>0$ and current radius $R(t)>0$. Material occupies the exterior of the cavity. Far-field total radial stress is $-p_\infty(t)$, the gas/liquid cavity pressure is spatially uniform $p_b(t)$, and the interfacial tension is constant $\sigma$. Tensile Cauchy stress is positive. The radial coordinate points from the cavity center outward; positive wall speed means expansion. No gravity, nearby boundary, outlet, solvent drainage, damage, shell stress or material phase slip is resolved.
+Use an infinite homogeneous isotropic incompressible neo-Hookean medium. Its network remains continuous and intact. Existing cavity radii are stress-free $R_{\mathrm{ref}}>0$ and current $R(t)>0$. Material lies outside the cavity. Far-field radial stress is $-p_\infty(t)$. Internal pressure $p_b(t)$ is spatially uniform. Interface tension $\sigma$ is constant. Tensile Cauchy stress is positive. Radius points outward; positive speed means expansion. Omit gravity, nearby boundaries, outlets, drainage, damage, shell stress and phase slip.
 
-解析控制模型采用无限、均匀、各向同性、不可压缩介质，包含连续且未破坏的 neo-Hookean 网络。已有球形空腔的无应力参考半径为 $R_{\mathrm{ref}}>0$，当前半径为 $R(t)>0$。材料位于空腔外部。远场总径向应力为 $-p_\infty(t)$，腔内气体／液体压力 $p_b(t)$ 在空间上均匀，界面张力 $\sigma$ 为常数。拉伸 Cauchy 应力取正。径向坐标从空腔中心向外，泡壁速度为正表示膨胀。模型不解析重力、附近边界、出口、溶剂排水、损伤、壳层应力或材料相间滑移。
+采用无限、均匀、各向同性、不可压缩 neo-Hookean 介质，网络连续且完整。已有空腔无应力半径为 $R_{\mathrm{ref}}>0$，当前半径为 $R(t)>0$。材料位于空腔外。远场径向应力为 $-p_\infty(t)$，内压 $p_b(t)$ 空间均匀，界面张力 $\sigma$ 恒定。拉伸 Cauchy 应力取正。径向向外，正速率表示膨胀。忽略重力、附近边界、出口、排水、损伤、壳层应力及相变滑移。
 
-At initial time $t=0$, take $R=R_{\mathrm{ref}}$, $\dot R=0$ and an unstretched network. A constant-tension interface requires $p_b(0)-p_\infty(0)=2\sigma/R_{\mathrm{ref}}$ for this initial mechanical equilibrium. A subsequent laser/phase calculation supplies $p_b(t)$; the elastic calculation does not derive it. If the network was polymerized around a loaded inclusion, the stress-free configuration may differ from its observed initial shape. The initial liquid-PFC core radius $a_0$ is an inventory variable and is not silently identified with $R_{\mathrm{ref}}$ or with the evolving vapor-cavity radius.
+Initially $t=0$, $R=R_{\mathrm{ref}}$, $\dot R=0$, and the network is unstretched. Mechanical equilibrium requires $p_b(0)-p_\infty(0)=2\sigma/R_{\mathrm{ref}}$. Laser and phase dynamics must supply later $p_b(t)$. Polymerization around a loaded inclusion can create a different stress-free shape. Initial liquid-core radius $a_0$ defines PFC inventory. Determine it separately from reference and vapor-cavity radii.
 
-初始时刻 $t=0$ 取 $R=R_{\mathrm{ref}}$、$\dot R=0$，网络没有伸长。若界面张力为常数，该初始力学平衡要求 $p_b(0)-p_\infty(0)=2\sigma/R_{\mathrm{ref}}$。后续激光／相变计算提供 $p_b(t)$；弹性计算不会推导这个压力。若网络围绕受载夹杂进行聚合，其无应力构形可能不同于观测到的初始形状。初始液态 PFC 核半径 $a_0$ 是描述物质量的变量，不能默默将其等同于 $R_{\mathrm{ref}}$ 或不断演化的蒸气空腔半径。
+初始 $t=0$、$R=R_{\mathrm{ref}}$、$\dot R=0$，网络未伸长。力学平衡要求 $p_b(0)-p_\infty(0)=2\sigma/R_{\mathrm{ref}}$。后续 $p_b(t)$ 由激光及相变动力学提供。围绕受载夹杂聚合可产生不同无应力形状。初始液核半径 $a_0$ 定义 PFC 物质量，应与参考半径及蒸气空腔半径分别确定。
 
 | Symbol<br>符号 | Physical meaning<br>物理意义 | SI units<br>SI 单位 | Role and convention<br>作用与约定 |
 | --- | --- | --- | --- |
@@ -71,17 +71,17 @@ At initial time $t=0$, take $R=R_{\mathrm{ref}}$, $\dot R=0$ and an unstretched 
 | $t_s$ | Shear communication time<br>剪切传播时间 | s | Small-disturbance elastic communication scale over Lg; not a universal cavity-collapse time.<br>跨越 Lg 的小扰动弹性传播尺度；不是通用腔体塌缩时间。 |
 | $t_{\mathrm{poro}}$ | Poroelastic drainage time scale<br>孔弹性排水时间尺度 | s | Diffusion-scale solvent/network pressure equilibration under the stated linear approximation.<br>在指定线性近似下溶剂／网络压力平衡的扩散时间尺度。 |
 
-Ordinary powers, scalar products and comparisons use their usual meanings; subscripts name directions, materials or states. $d/dr$ is a derivative in current radius, $\partial/\partial$ holds other independent coordinates fixed, $\int$ is a definite integral with its written limits, $\lim$ is a limit, and $\pi$ is the dimensionless circle constant. All local symbol declarations below repeat the quantities actually displayed. Gaudron, Warnez and Johnsen provide the nonlinear-elastic cavity framework; the intermediate transformations and work evaluation here are derived explicitly for this stated control. [[R13]](../reference/sources.html#r13)
+Powers, products and comparisons use ordinary meanings. Subscripts label directions, materials or states. $d/dr$ differentiates current radius. Partial derivatives fix other coordinates. $\int$ uses the stated limits; $\lim$ denotes limits; $\pi$ is dimensionless. Each display defines all visible symbols. Gaudron, Warnez and Johnsen supply the nonlinear-elastic cavity framework. The transformations and work calculation below follow the stated spherical assumptions. [[R13]](../reference/sources.html#r13)
 
-普通幂、标量乘积和比较沿用通常意义；下标表示方向、材料或状态。$d/dr$ 表示对当前径向位置求导，$\partial/\partial$ 表示保持其他独立坐标不变的偏导，$\int$ 表示采用所写上下限的定积分，$\lim$ 表示极限，$\pi$ 为无量纲圆周率。下文每处局部符号声明都重复定义实际显示的量。Gaudron、Warnez 和 Johnsen 提供了非线性弹性空腔的理论框架；这里针对已声明的控制模型，显式推导中间变换及功的计算。[[R13]](../reference/sources.html#r13)
+幂、乘积及比较采用通常意义。下标表示方向、材料或状态。$d/dr$ 对当前半径求导，偏导固定其他坐标。$\int$ 采用所写积分限，$\lim$ 表示极限，$\pi$ 为无量纲常数。每个公式前定义全部符号。Gaudron、Warnez 与 Johnsen 提供非线性弹性空腔框架。下文变换与功计算基于已声明球形假设。 [[R13]](../reference/sources.html#r13)
 
-## 2. Derive the elastic pressure rather than inserting it
+## 2. Elastic pressure derivation
 
-## 2. 推导弹性压力，而不是直接代入
+## 2. 弹性压力推导
 
-Step 1 — exact volume conservation. Follow one material shell from its reference radius to its present radius. Incompressibility equates the material volume between the cavity and that shell. Differentiate at fixed time to obtain the radial stretch; divide only by strictly positive radii.
+Step 1 — Conserve material volume. Follow a shell from reference to current radius. Incompressibility preserves volume between shell and cavity. Differentiate at fixed time for radial stretch. Every divided radius is strictly positive.
 
-步骤 1——精确的体积守恒。跟踪一个材料球壳从参考位置到当前位置。不可压缩性要求腔体与球壳之间的材料体积相等。在固定时刻求导即可得到径向伸长；只有严格为正的半径才进行除法。
+步骤 1——材料体积守恒。跟踪球壳从参考半径至当前半径。不可压缩性保持球壳与空腔之间的体积。在固定时间求导，得到径向伸长。所有被除半径均严格为正。
 
 **Symbols before Eq. (A-E01).**
 
@@ -113,9 +113,9 @@ The same network shell moves outward while thinning radially and stretching tang
 
 同一网络球壳向外移动，同时径向变薄、切向伸长。
 
-Step 2 — declared constitutive law. In principal directions the neo-Hookean Cauchy stress is a common incompressibility multiplier plus a stretch-dependent part. Subtract radial from tangential stress to eliminate that unknown multiplier. This is a material model, not a universal hydrogel law.
+Step 2 — Apply neo-Hookean stress. Each principal stress contains a common incompressibility multiplier and stretch contribution. Subtract radial from tangential stress to remove the multiplier. This constitutive assumption requires material validation.
 
-步骤 2——明确采用的本构规律。在主方向上，neo-Hookean Cauchy 应力由共同的不可压缩约束乘子及依赖伸长的部分组成。用切向应力减去径向应力，消除未知约束乘子。这是材料模型，不是普适的水凝胶定律。
+步骤 2——应用 neo-Hookean 应力。各主应力包含共同不可压缩乘子及伸长项。切向减径向应力，消去乘子。该本构假设需要材料验证。
 
 **Symbols before Eq. (A-E02).**
 
@@ -149,9 +149,9 @@ Radial and tangential stretches produce different network stresses around the ca
 
 空腔周围的径向与切向伸长产生不同的网络应力。
 
-Step 3 — integrate the elastic contribution. For a static spherical field, radial equilibrium places twice the tangential–radial stress difference over radius in the radial stress derivative. The wall traction and the far-field traction then identify the pressure needed to support the elastic deformation. The same stress-difference integral will reappear as a resistance in the dynamic balance; setting the whole dynamic field quasistatic is not required there.
+Step 3 — Integrate spherical elastic balance. Radial stress derivative equals twice tangential-minus-radial stress divided by radius. Wall and far-field tractions determine elastic resistance. The same stress-difference integral enters dynamic balance later. That use retains the separate dynamic inertia.
 
-步骤 3——积分弹性贡献。对静态球形应力场，径向平衡使径向应力导数等于切向—径向应力差的两倍除以半径。壁面牵引与远场牵引由此确定维持弹性变形所需的压力。同一应力差积分还会作为阻力出现在动力学平衡中；后者并不要求整个动态场处于准静态。
+步骤 3——积分球形弹性平衡。径向应力导数等于切向减径向应力的两倍除以半径。壁面及远场牵引确定弹性阻力。同一应力差积分随后进入动力学平衡，同时保留独立动力学惯性。
 
 **Symbols before Eq. (A-E03).**
 
@@ -183,9 +183,9 @@ The wall pressure supports capillary traction and the accumulated elastic resist
 
 壁面压力同时支撑毛细牵引与积分后的弹性阻力。
 
-Step 4 — change variables with its Jacobian. During expansion $R>R_{\mathrm{ref}}$, set the dimensionless ratio $q=r_0/r$. The mapping makes it increase from $R_{\mathrm{ref}}/R$ at the wall to one at infinity. Differentiate its cube, cancel its positive square, and use the positive factor $1-q^3$ for finite exterior positions. Exactly at the undeformed state the transformation is degenerate; evaluate zero resistance directly instead of dividing by zero.
+Step 4 — Transform radius with its Jacobian. For $R>R_{\mathrm{ref}}$, set $q=r_0/r$. It rises from $R_{\mathrm{ref}}/R$ to one. Differentiate its cube and cancel the positive square. Finite exterior positions have positive $1-q^3$. The undeformed transformation is degenerate. Evaluate its zero resistance directly.
 
-步骤 4——带雅可比地变换变量。膨胀时 $R>R_{\mathrm{ref}}$，定义无量纲比值 $q=r_0/r$。由构形映射，它从壁面处的 $R_{\mathrm{ref}}/R$ 增大到无穷远处的 1。对其三次方求导，约去正的平方，并对有限外部位置使用正因子 $1-q^3$。在恰好未变形的状态，这个变换退化；此时直接求得零阻力，而不是除以零。
+步骤 4——连同雅可比变换半径。$R>R_{\mathrm{ref}}$ 时令 $q=r_0/r$，它从 $R_{\mathrm{ref}}/R$ 增至一。对其三次方求导并约去正平方。有限外域位置满足 $1-q^3>0$。未变形时换元退化，直接计算零阻力。
 
 **Symbols before Eq. (A-E04).**
 
@@ -245,9 +245,9 @@ Elastic resistance follows from the full stretch field, not from a guessed const
 
 弹性阻力来自完整伸长场，而不是猜测的恒定压力。
 
-Each row uses, in order, Eq. (A-E04), the antiderivative of $1+q^3$, upper-minus-lower endpoint evaluation, and scalar multiplication. The result matches the neo-Hookean elastic term reported in Gaudron et al., Eq. (2.18). The constitutive large-expansion limit is a plateau in pressure resistance, not a material fracture threshold. A fractured, finite, prestressed or strain-stiffening gel can depart from this result. [[R13]](../reference/sources.html#r13)
+The rows apply Eq. (A-E04), integrate $1+q^3$, evaluate endpoints, then multiply. This reproduces Gaudron et al., Eq. (2.18). Large expansion approaches a constitutive pressure plateau. Fracture threshold remains unestablished. Finite geometry, prestress, stiffening or rupture can change the response. [[R13]](../reference/sources.html#r13)
 
-各行依次使用式（A-E04）、$1+q^3$ 的原函数、上端点减下端点，以及标量乘法。该结果与 Gaudron 等人式（2.18）报告的 neo-Hookean 弹性项一致。本构模型的大膨胀极限是压力阻力的平台值，不是材料断裂阈值。已破裂、有限尺寸、预应力或具有应变硬化的凝胶都可能偏离这一结果。[[R13]](../reference/sources.html#r13)
+各行依次应用式（A-E04）、积分 $1+q^3$、计算端点并相乘。这恢复 Gaudron 等式（2.18）。大膨胀趋于本构压力平台。断裂阈值尚未确立。有限几何、预应力、硬化或破裂可改变响应。 [[R13]](../reference/sources.html#r13)
 
 **Symbols before Eq. (A-E06).**
 
@@ -276,13 +276,13 @@ Zero deformation gives zero elastic resistance, and positive expansion raises it
 
 零变形给出零弹性阻力，正向膨胀使阻力单调增大。
 
-## 3. Close the elastic work calculation
+## 3. Elastic work
 
-## 3. 完整计算弹性功
+## 3. 弹性功
 
-Step 5 — integrate work against cavity volume. Pressure is conjugate to volume change, not to radius change alone. Multiply by the spherical area, insert Eq. (A-E05), and integrate each power of the dummy radius. The last term uses the antiderivative $-1/\xi$ of $\xi^{-2}$; retain both endpoints so that the reference work is zero.
+Step 5 — Integrate pressure against volume change. Multiply elastic pressure by spherical area. Insert Eq. (A-E05) and integrate each dummy-radius power. The antiderivative of $\xi^{-2}$ is $-1/\xi$. Keep both endpoints to enforce zero reference work.
 
-步骤 5——对腔体体积积分功。压力与体积变化共轭，而不是单独与半径变化共轭。乘以球面面积，代入式（A-E05），再逐项积分虚拟半径的各次幂。最后一项使用 $\xi^{-2}$ 的原函数 $-1/\xi$；保留两个端点，保证参考状态的功为零。
+步骤 5——对体积变化积分压力功。将弹性压力乘球面面积，代入式（A-E05），积分各哑半径幂。$\xi^{-2}$ 的原函数为 $-1/\xi$。保留两端点，使参考功为零。
 
 **Symbols before Eq. (A-E07).**
 
@@ -313,9 +313,9 @@ The area factor converts radius increments into cavity volume increments before 
 
 先用面积因子将半径增量转化为腔体体积增量，再积分功。
 
-In the final row the lower endpoint contributes $(5/3-2+1)R_{\mathrm{ref}}^3=2R_{\mathrm{ref}}^3/3$, which is subtracted. A pressure plateau therefore still allows work to grow approximately in proportion to cavity volume. The units are Pa m³ = J. Differentiating the closed form gives exactly pressure times area; this is a stronger check than comparing pressure magnitudes alone.
+The lower endpoint is $(5/3-2+1)R_{\mathrm{ref}}^3=2R_{\mathrm{ref}}^3/3$. Subtract it in the final row. Pressure can plateau while work grows with volume. Units are Pa m³ = J. Differentiating work recovers pressure × area.
 
-最后一行中，下端点贡献为 $(5/3-2+1)R_{\mathrm{ref}}^3=2R_{\mathrm{ref}}^3/3$，需将其减去。因此，即使压力出现平台，功仍可近似随腔体体积增长。单位为 Pa m³ = J。对闭式结果求导恰好得到压力乘面积；这个核查比单独比较压力大小更有力。
+下端点为 $(5/3-2+1)R_{\mathrm{ref}}^3=2R_{\mathrm{ref}}^3/3$，在末行减去。压力可形成平台而功随体积增加。单位为 Pa m³ = J。对功求导可恢复压力 × 面积。
 
 **Symbols before Eq. (A-E08).**
 
@@ -346,17 +346,17 @@ Near the reference cavity, pressure is linear in radius change and stored work i
 
 在参考腔体附近，压力与半径变化呈线性关系，储存功则呈二次关系。
 
-The linear term follows by differentiating Eq. (A-E05) at the reference radius; integrate $4\pi R_{\mathrm{ref}}^2$ times that term to obtain the quadratic work. An independent volume-integral check sums the neo-Hookean strain-energy density throughout the reference material and reproduces Eq. (A-E07). Energy storage is reversible in this intact hyperelastic law. Returning that energy to useful jet motion is conditional on timing and geometry; it is not guaranteed, and stored work should not automatically be counted as irreversible heat loss.
+Differentiate Eq. (A-E05) at reference radius for the linear term. Integrate it with area $4\pi R_{\mathrm{ref}}^2$ for quadratic work. A reference-volume strain-energy integral also recovers Eq. (A-E07). Intact hyperelastic storage is reversible. Its useful return depends on timing and geometry. Distinguish stored energy from irreversible heat loss.
 
-线性项来自在参考半径处对式（A-E05）求导；将其乘以 $4\pi R_{\mathrm{ref}}^2$ 后积分，得到二次功项。独立的体积积分核查对参考材料中的 neo-Hookean 应变能密度求和，重现式（A-E07）。该完整超弹性规律中的能量储存可逆。能量能否返还给有效射流运动，取决于时序和几何，并不保证发生；储存功也不应自动计作不可逆热损失。
+在参考半径对式（A-E05）求导，得到线性项。乘面积 $4\pi R_{\mathrm{ref}}^2$ 后积分，得到二次功。参考体积应变能积分也恢复式（A-E07）。完整超弹性储能可逆，其有用返还取决于时序和几何。应区分储能与不可逆热损失。
 
-## 4. Add inertia and loss without double counting
+## 4. Inertia and viscous loss
 
-## 4. 加入惯性与损耗，避免重复计算
+## 4. 惯性与黏性损失
 
-Step 6 — choose a Kelvin–Voigt viscous contribution. Let the total stress add $2\eta_g\mathbf D$ to the elastic stress, where $\mathbf D$ is the symmetric velocity gradient. Incompressibility and no wall/material slip supply the radial speed field. Its radial gradient is negative during outward motion, while tangential extension is positive.
+Step 6 — Add Kelvin–Voigt viscosity. Total stress adds $2\eta_g\mathbf D$ to elastic stress. $\mathbf D$ is symmetric velocity gradient. Incompressibility and equal material/wall normal velocity give the radial field. Expansion produces negative radial gradient and positive tangential extension.
 
-步骤 6——选择 Kelvin–Voigt 黏性贡献。令总应力在弹性应力上加入 $2\eta_g\mathbf D$，其中 $\mathbf D$ 为对称速度梯度。不可压缩性及壁面／材料无滑移给出径向速度场。向外运动时，其径向梯度为负，切向拉伸为正。
+步骤 6——加入 Kelvin–Voigt 黏性。总应力在弹性应力上加入 $2\eta_g\mathbf D$，其中 $\mathbf D$ 为对称速度梯度。不可压缩性及材料／壁面法向速度相等给出径向流场。膨胀产生负径向梯度及正切向伸长。
 
 **Symbols before Eq. (A-E09).**
 
@@ -391,9 +391,9 @@ The viscous term derives from the surrounding-medium strain rate, not from bubbl
 
 黏性项来自周围介质的应变率，而不是气泡质量。
 
-Step 7 — integrate the radial momentum equation. The fixed-position time derivative and the convective derivative must both be retained. Substitution of Eq. (A-E09) leaves an integrable acceleration field. The total wall stress is $-p_b+2\sigma/R$, and total far-field stress is $-p_\infty$; integrate the stress difference instead of guessing its sign.
+Step 7 — Integrate radial momentum. Retain fixed-position and convective acceleration. Eq. (A-E09) gives an integrable acceleration field. Wall total stress is $-p_b+2\sigma/R$; far-field stress is $-p_\infty$. Integrate their difference to fix the signs.
 
-步骤 7——积分径向动量方程。必须同时保留固定位置的时间偏导和对流导数。代入式（A-E09）后得到可积的加速度场。总壁面应力为 $-p_b+2\sigma/R$，总远场应力为 $-p_\infty$；应积分应力差，而不是猜测其符号。
+步骤 7——积分径向动量。保留固定位置及对流加速度。式（A-E09）给出可积加速度场。壁面总应力为 $-p_b+2\sigma/R$，远场为 $-p_\infty$。积分两者之差以确定符号。
 
 **Symbols before Eq. (A-E10).**
 
@@ -456,13 +456,13 @@ The spherical control quantifies cavity work and wall motion before any directio
 
 球形控制模型先量化腔体功与泡壁运动，再进行定向流动计算。
 
-The stress derivative integrates to far-field minus wall stress; subtracting the two stress-difference integrals yields Eq. (A-E11). Setting $G_g=0$ recovers the corresponding liquid radial model. For expansion the viscous term is negative; during inward motion it is positive and opposes collapse. Do not add a separate solvent viscosity if the fitted $\eta_g$ already represents the same dissipation. A separate solvent/network model needs its own relative motion and constitutive partition. Phase transfer that gives appreciable material/wall velocity slip also changes the kinematic premise.
+Integrating the stress derivative gives far-field minus wall stress. Subtract both stress-difference integrals for Eq. (A-E11). Setting $G_g=0$ recovers the liquid model. Viscosity resists expansion and collapse with opposite pressure signs. If fitted $\eta_g$ includes solvent loss, count that dissipation once. Separate solvent/network models need relative-motion closure. Appreciable phase slip changes the wall-kinematic assumption.
 
-应力导数积分得到远场应力减去壁面应力；再减去两个应力差积分，便得到式（A-E11）。取 $G_g=0$ 可恢复相应的液体径向模型。膨胀时黏性项为负；向内运动时为正，抵抗塌缩。若拟合的 $\eta_g$ 已描述同一耗散，不应再另加溶剂黏度。独立的溶剂／网络模型需要各自的相对运动及本构分配。若相变传递造成明显的材料／壁面速度滑移，也会改变运动学前提。
+积分应力导数得到远场减壁面应力。减去两种应力差积分，得到式（A-E11）。取 $G_g=0$ 恢复液体模型。黏性以相反压力符号阻碍膨胀与塌缩。拟合 $\eta_g$ 已包含溶剂损失时，该耗散计入一次。独立溶剂／网络模型需要相对运动闭合。显著相变滑移会改变壁面运动假设。
 
-Step 8 — multiply by the volume-change rate to check conservation. The medium kinetic energy follows the radial field, and the elastic work derivative was already checked. The viscous pressure has signed effects on acceleration but always removes mechanical energy because the dissipation contains the square of speed.
+Step 8 — Multiply by volume-change rate. The radial field gives kinetic energy. The checked elastic-work derivative supplies storage rate. Viscosity changes signed acceleration but always dissipates mechanical energy. Its loss contains squared speed.
 
-步骤 8——乘以体积变化率，核查能量守恒。介质动能由径向速度场确定，弹性功导数已完成核查。黏性压力对加速度的作用具有符号，但它总会移除机械能，因为耗散包含速度平方。
+步骤 8——乘体积变化率。径向流场给出动能，已检验弹性功导数给出储能率。黏性改变带符号加速度，但始终耗散机械能，损失包含速度平方。
 
 **Symbols before Eq. (A-E12).**
 
@@ -496,13 +496,13 @@ Pressure work divides into inertia, recoverable network energy, surface energy a
 
 压力功分配到惯性、可恢复的网络能、表面能和黏性损耗。
 
-## 5. Worked benchmark: pressure is not the work budget
+## 5. Pressure and work example
 
-## 5. 计算示例：压力并不等于功预算
+## 5. 压力与功示例
 
-All following numbers are declared teaching inputs, not measurements of a proposed PFC gel. Choose network shear modulus 20 kPa, stress-free radius 5 µm, current radius 30 µm and density 1000 kg m⁻³. First calculate the wall resistance and stored work. The sixfold wall stretch is large; assuming an intact neo-Hookean network there is an explicit hypothesis that needs material validation.
+Prescribe shear modulus 20 kPa, reference radius 5 µm, current radius 30 µm and density 1000 kg m⁻³. These are teaching inputs. Calculate resistance and stored work first. Sixfold wall stretch assumes an intact neo-Hookean network. Validate that assumption for any proposed gel.
 
-以下数值均为明确设定的教学输入，并非所提出 PFC 凝胶的实测值。取网络剪切模量 20 kPa、无应力半径 5 µm、当前半径 30 µm，以及密度 1000 kg m⁻³。先计算壁面阻力和储存功。壁面伸长六倍属于大变形；此时假设 neo-Hookean 网络保持完整，是需要材料验证的明确假设。
+规定剪切模量 20 kPa、参考半径 5 µm、当前半径 30 µm、密度 1000 kg m⁻³。这些为教学输入。先计算阻力及储存功。六倍壁面伸长假设 neo-Hookean 网络保持完整。用于实际凝胶前须验证该假设。
 
 **Symbols before Eq. (A-E13).**
 
@@ -532,9 +532,9 @@ This soft network still stores several nanojoules when the cavity radius expands
 
 腔体半径膨胀六倍时，即使这个柔软网络也会储存数纳焦耳能量。
 
-For comparison, prescribe a constant net pressure-work scale of 100 kPa over exactly the same displaced volume. This is a work scale, not a solved gas-pressure history. It gives 11.2574 nJ, of which the calculated network storage is 40.1163%. The remaining 6.74133 nJ is an upper residual for kinetic and surface increments plus losses in this artificial expansion ledger; it is not a predicted external jet energy. Initial surface energy cancels only after its increment is treated consistently.
+Prescribe net work pressure 100 kPa over the same volume increase. This gives 11.2574 nJ. Network storage consumes 40.1163%. Residual 6.74133 nJ bounds kinetic, surface and loss increments in this artificial ledger. External jet energy remains unestablished. Use the surface-energy increment so initial energy cancels consistently.
 
-作为比较，对完全相同的排开体积指定恒定净压力功尺度 100 kPa。这是功的尺度，而不是求解得到的气体压力历程。它给出 11.2574 nJ，其中计算出的网络储存占 40.1163%。余下 6.74133 nJ 是这个人为膨胀账本中，动能与表面能增量加损耗的剩余上限；它不是外部射流能量的预测值。只有一致地处理表面能增量后，初始表面能才能消去。
+在相同体积增量上规定净做功压力 100 kPa，得到 11.2574 nJ。网络储存占 40.1163%。剩余 6.74133 nJ 是该人工账目中动能、表面能及损失增量的上界。外部射流能量尚未确立。采用表面能增量，使初始能量一致相消。
 
 **Symbols before Eq. (A-E14).**
 
@@ -565,9 +565,9 @@ The elastic cost occupies a finite fraction of the work budget even though its p
 
 即使弹性压力低于 100 kPa，其能量代价也占据功预算的有限份额。
 
-A separate sign calculation uses an illustrative viscosity 0.010 Pa s, current radius 30 µm and inward wall speed −10 m s⁻¹. Its signed right-hand-side pressure contribution is +13.3333 kPa, but its irreversible power remains +1.50796 mW. A positive resistance during collapse is not energy generation. These instantaneous values require a time history before integrating total dissipation.
+Prescribe viscosity 0.010 Pa s, radius 30 µm and inward speed −10 m s⁻¹. The signed momentum contribution is +13.3333 kPa. Dissipative power is +1.50796 mW. Positive collapse resistance still removes energy. Total dissipation requires integration over the velocity history.
 
-另一个符号计算采用示例黏度 0.010 Pa s、当前半径 30 µm，以及向内泡壁速度 −10 m s⁻¹。其方程右侧带符号压力贡献为 +13.3333 kPa，但不可逆功率仍为 +1.50796 mW。塌缩时阻力为正不代表产生能量。这些瞬时值需要结合时间历程，才能积分总耗散。
+规定黏度 0.010 Pa s、半径 30 µm、向内速度 −10 m s⁻¹。带符号动量项为 +13.3333 kPa，耗散功率为 +1.50796 mW。正塌缩阻力仍消耗能量。总耗散需对速度历程积分。
 
 **Symbols before Eq. (A-E15).**
 
@@ -597,13 +597,13 @@ Inward motion changes the pressure sign but leaves dissipated power positive.
 
 向内运动改变压力项符号，但耗散功率仍为正。
 
-## 6. Use event times, not a separate vibration curriculum
+## 6. Material memory and transport times
 
-## 6. 使用事件时间尺度，不另设振荡课程
+## 6. 材料记忆与输运时间
 
-Step 9 — compare network memory to event duration. The Deborah number uses an independently identified stress-relaxation time. A large value means stress memory persists during the event; it does not mean an infinitely stiff wall. A small value allows relaxation but does not remove geometric confinement or prove rapid solvent drainage. A relaxation spectrum may require several times rather than one.
+Step 9 — Compare measured relaxation time with event duration. Large Deborah number means stress memory persists during the event. Infinite stiffness remains unestablished. Small Deborah number permits relaxation. Confinement and solvent drainage remain separate questions. A relaxation spectrum can require several times.
 
-步骤 9——比较网络记忆与事件持续时间。Deborah 数使用独立确定的应力松弛时间。数值大表示应力记忆在事件期间持续存在，并不表示壁面无限刚硬。数值小允许发生松弛，但不会消除几何约束，也不能证明溶剂迅速排出。若存在松弛谱，可能需要多个时间而不是一个。
+步骤 9——比较实测松弛时间与事件时长。大 Deborah 数表示应力记忆在事件期间持续，无限刚度尚未确立。小 Deborah 数允许松弛。约束与溶剂排水是独立问题。松弛谱可需要多个时间尺度。
 
 **Symbols before Eq. (A-E16).**
 
@@ -632,9 +632,9 @@ The event duration determines which part of the network response can act before 
 
 事件持续时间决定网络响应的哪一部分能在射流或载荷到达前发挥作用。
 
-Do not silently call $\eta_g/G_g$ a Kelvin–Voigt stress-relaxation time. In the linear shear version, held strain gives constant elastic stress after the rate term vanishes. Releasing the imposed stress instead gives exponential strain recovery with a retardation time. This distinction prevents fitting an invented relaxation mechanism to the spherical dashpot model.
+In Kelvin–Voigt shear, held strain leaves constant elastic stress after strain rate vanishes. Releasing stress instead gives exponential strain recovery. Its retardation time is $\eta_g/G_g$. Distinguish this recovery time from stress relaxation.
 
-不要默默把 $\eta_g/G_g$ 称作 Kelvin–Voigt 应力松弛时间。在其线性剪切版本中，保持应变不变时，速率项消失后弹性应力保持恒定。若解除外加应力，才会产生指数式应变恢复，其时间为迟滞时间。这一区分可避免给球形黏壶模型拟合一个凭空假设的松弛机制。
+Kelvin–Voigt 剪切中，保持应变时，应变率消失后弹性应力恒定。释放应力则产生指数应变恢复，其迟滞时间为 $\eta_g/G_g$。应区分恢复时间与应力松弛。
 
 **Symbols before Eq. (A-E17).**
 
@@ -665,9 +665,9 @@ Kelvin–Voigt strain recovery illustrates what its parameter ratio means and wh
 
 Kelvin–Voigt 应变恢复说明其参数比值的意义及不能代表的意义。
 
-Step 10 — test spatial communication. A small-strain shear speed estimate concerns network/shear deformation over a stated length. The ideal liquid-collapse reference concerns radial liquid inertia over a stated maximum radius. Use the same 30 µm comparison length but keep the two physical models distinct. The resulting ratio is 2.44464: global support shear equilibration is not automatically rapid on that liquid-collapse timescale. This is a flag for nonradial support motion, not a proof that the derived spherical model has omitted all inertia.
+Step 10 — Compare spatial communication times. Shear speed estimates small-strain network motion. Ideal liquid collapse estimates radial carrier inertia. Use comparison length 30 µm for both. Their time ratio is 2.44464. Global shear equilibration can therefore be slow relative to liquid collapse. Check nonradial support dynamics. The spherical equation already retains radial inertia.
 
-步骤 10——检验空间传播。小应变剪切波速估计涉及指定长度上的网络／剪切变形；理想液体塌缩参考则涉及指定最大半径上的液体径向惯性。比较时采用相同的 30 µm 长度，但保持两个物理模型的区别。所得比值为 2.44464：整个支撑体的剪切平衡并不自动比该液体塌缩过程快。这提示需关注非径向支撑运动，而不是证明所推导球形模型完全忽略了惯性。
+步骤 10——比较空间通信时间。剪切波速估算小应变网络运动，理想液体塌缩估算径向载液惯性。两者采用比较长度 30 µm。时间比为 2.44464，整体剪切平衡可慢于液体塌缩。须检查非径向支撑动力学。球形方程已经保留径向惯性。
 
 **Symbols before Eq. (A-E18).**
 
@@ -699,9 +699,9 @@ The gel communication estimate exceeds the ideal liquid-collapse reference for t
 
 对已声明输入，凝胶传播时间估计大于理想液体塌缩参考时间。
 
-Low shear modulus does not imply low rapid-compression resistance. In a small-strain compressible extension, longitudinal motion also samples the bulk modulus. Compressibility must be restored when acoustic travel or high wall speed becomes central. The incompressible spherical control takes that longitudinal propagation idealization to its limit; it cannot predict shock peaks or finite arrival times by itself.
+Low shear modulus leaves rapid compression resistance unresolved. Longitudinal motion also depends on bulk modulus. Restore compressibility for finite acoustic travel or high wall speed. The incompressible spherical control idealizes that propagation. Shock pressure and arrival time require a compressible model.
 
-低剪切模量不意味着快速压缩阻力小。在小应变可压缩扩展中，纵向运动还涉及体积模量。当声传播时间或较高泡壁速度变得关键时，必须恢复可压缩性。不可压缩球形控制模型采用了纵向传播的极限理想化；它自身不能预测冲击波峰值或有限传播到达时间。
+低剪切模量仍未确定快速压缩阻力。纵向运动还取决于体积模量。有限声传播或高壁速时须恢复可压缩性。不可压缩球形对照将传播理想化。激波压力及到达时间需要可压缩模型。
 
 **Symbols before Eq. (A-E19).**
 
@@ -733,9 +733,9 @@ Shear and longitudinal propagation test different aspects of a water-rich gel's 
 
 剪切与纵向传播检验富水凝胶瞬态响应的不同方面。
 
-Step 11 — derive the drainage estimate from a separate two-phase approximation. For small perturbations in a uniform gel, adopt Darcy relative solvent flux and a constant storage modulus. Solvent conservation then produces a diffusion equation. This does not extend the large-strain intact-cavity law automatically to porous flow near the vapor interface.
+Step 11 — Derive drainage in a separate two-phase model. Assume small perturbations in uniform gel. Adopt Darcy relative solvent flux and constant storage modulus. Solvent conservation gives pressure diffusion. Large-strain interface drainage requires additional coupling.
 
-步骤 11——从独立的两相近似推导排水估计。对均匀凝胶中的小扰动，采用 Darcy 相对溶剂通量和恒定储存模量。溶剂守恒随后给出扩散方程。这并不会自动将大应变完整腔体规律扩展到蒸气界面附近的多孔流动。
+步骤 11——在独立两相模型中推导排水。假设均匀凝胶的小扰动，采用 Darcy 相对溶剂通量及恒定储存模量。溶剂守恒给出压力扩散。大应变界面排水需要额外耦合。
 
 **Symbols before Eq. (A-E20).**
 
@@ -767,21 +767,21 @@ Pressure gradients drive solvent through the network, producing a length-depende
 
 压力梯度驱动溶剂通过网络，产生依赖长度的排水时间。
 
-Substitute the first row's Darcy flux into conservation to obtain the second row; constant coefficients allow them outside the derivatives. Balance a time derivative against a spatial second derivative over $L_g$ for the third row. This scaling agrees with primary poroelastic gel measurements; the actual permeability and storage modulus still need characterization. For a deliberately illustrative permeability $10^{-17}$ m², modulus 60 kPa, solvent viscosity 0.001 Pa s and length 30 µm, the estimate is 1.5 s. A 3 µs event is then approximately undrained at that length, not proof that no local solvent movement occurs. [Primary drainage study](https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h).
+Insert Darcy flux into conservation. Constant coefficients factor out of the derivatives. Balance time and second spatial derivatives over $L_g$ for drainage time. Primary measurements support this scaling; actual permeability and modulus require characterization. Prescribe permeability $10^{-17}$ m², modulus 60 kPa, viscosity 0.001 Pa s and length 30 µm. Drainage time is 1.5 s. A 3 µs event is approximately undrained at that length. Local solvent motion remains possible. [Primary drainage study](https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h).
 
-将第一行的 Darcy 通量代入守恒式即可得到第二行；常系数可移到导数外。用 $L_g$ 尺度上的空间二阶导数与时间导数平衡，得到第三行。该尺度关系与原始研究中的凝胶孔弹性测量一致；实际渗透率与储存模量仍需表征。若明确采用示例渗透率 $10^{-17}$ m²、模量 60 kPa、溶剂黏度 0.001 Pa s、长度 30 µm，估计时间为 1.5 s。此时 3 µs 事件在该长度上近似不排水，但这不证明完全不存在局部溶剂运动。[原始排水研究](https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h)。
+将 Darcy 通量代入守恒，常系数移出导数。按 $L_g$ 平衡时间导数与空间二阶导数，得到排水时间。原始测量支持该尺度，实际渗透率与模量须表征。规定渗透率 $10^{-17}$ m²、模量 60 kPa、黏度 0.001 Pa s、长度 30 µm，排水时间为 1.5 s。该长度上的 3 µs 事件近似不排水，局部溶剂运动仍可能发生。[原始排水研究](https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h)。
 
-## 7. Test mechanisms and compare complete operating windows
+## 7. Architecture tests and operating windows
 
-## 7. 检验机制，并比较完整工作窗口
+## 7. 结构检验与工作窗口
 
-The hypothesis that compliant confinement stabilizes a PFC-driven jet remains unresolved. Elastic-boundary experiments by Brujan and colleagues show that deformation and recoil can accompany jets in either direction and ejection of boundary material; their reported maximum liquid-jet speed was 960 m s⁻¹ in a particular laser-bubble/gel geometry. That observation defeats a universal stabilization claim and is not a performance limit or calibration for PFC transfer. [[R12]](../reference/sources.html#r12)
+Gel stabilization of PFC jets: Not established. Brujan et al. observed deformation, recoil, both jet directions and boundary-material ejection. Their reported 960 m s⁻¹ maximum belongs to one laser-bubble/gel geometry. It supplies a counterexample to universal stabilization. PFC transfer limits require their own measurements. [[R12]](../reference/sources.html#r12)
 
-柔顺约束能够稳定 PFC 驱动射流这一假设仍未解决。Brujan 等人的弹性边界实验表明，变形与回弹可伴随向两个方向的射流，以及边界材料喷出；他们在特定激光气泡／凝胶几何中报告的最高液体射流速度为 960 m s⁻¹。该观察否定普适的稳定化主张，却不是 PFC 转印的性能极限或标定。[[R12]](../reference/sources.html#r12)
+凝胶稳定 PFC 射流尚未确立。Brujan 等观测到变形、回弹、双向射流及边界材料喷出。其报告的 960 m s⁻¹ 最大值属于特定激光气泡／凝胶几何，可反驳普遍稳定化判断。PFC 转印极限需要独立测量。 [[R12]](../reference/sources.html#r12)
 
-Keep all four architectures available for experiments. In a liquid pocket, resolve liquid momentum, moving-wall traction and outlet shape together. In bulk embedding, successful vaporization is only the source step: identify the route through which a finite carrier-liquid mass exits, or show that the actuator works by solid deformation instead. In a sealed cavity, use pressure–layer-motion–fracture coupling directly. For the film/PVC concept, retain both direct liquid/film loading and loading transmitted through an intact PVC layer. The intended release interface and payload stress must be identified in either route.
+Test all four architectures. Open pockets need coupled liquid momentum, wall traction and outlet shape. Bulk embedding needs an existing or rupture-created liquid path. Alternatively, identify solid deformation as the actuator. Sealed cavities need pressure–layer–fracture coupling. In film/PVC stacks, distinguish direct film loading from transmission through intact PVC. Specify release interface and payload stress for each route.
 
-保留全部四种结构方案供实验使用。在液腔中，需要联合解析液体动量、运动壁面牵引与出口形状。对体相嵌入，成功汽化只是源环节：应明确有限载液质量离开的路径，或证明致动器其实通过固体变形工作。对密封腔体，直接采用压力—层运动—断裂耦合。对薄膜／PVC 概念，保留液体直接加载薄膜，以及载荷经完整 PVC 层传递这两条路径。两条路径都必须确定目标释放界面及被转印对象的应力。
+检验四种结构。开放液腔需耦合液体动量、壁面牵引及出口形状。体相嵌入需已有或破裂形成的液体通路，也可明确固体变形作为致动机制。密闭空腔需压力—层运动—断裂耦合。薄膜／PVC 叠层中，区分直接薄膜加载与完整 PVC 传递。各路径均须规定释放界面及载荷应力。
 
 | Control or observation<br>控制或观测 | What it discriminates<br>可区分的机制 |
 | --- | --- |
@@ -791,21 +791,61 @@ Keep all four architectures available for experiments. In a liquid pocket, resol
 | Across independent events, compare angular spread, mass/speed variation, breakup, release success, damage and placement error.<br>在独立事件间比较角度分散、质量／速度变异、破碎、释放成功率、损伤及定位误差。 | Tests repeatability at a useful delivered load; a lower speed variation with insufficient release is not an improved process.<br>在有用的实际传递载荷下检验重复性；若载荷不足以释放，仅速度变异降低不代表工艺改善。 |
 | Measure cooling, retained vapor, swelling, residue, network damage and reset before repeated pulses.<br>重复脉冲前测量冷却、滞留蒸气、溶胀、残留物、网络损伤及复位。 | Tests whether positional benefits survive reuse and whether activation/geometry drift accumulates.<br>检验定位优势能否在复用中持续，以及激活／几何漂移是否累积。 |
 
-Report two different outcomes separately: the largest verified single-event pressure or finite-mass jet speed under stated conditions, and the repeatable intact-transfer window. A favorable gel may trade peak speed for controlled peeling and lower placement scatter, or may improve alignment while reducing useful impulse. Neither trade is decidable from the radial resistance formula. The unresolved inputs are event-rate material laws, actual inclusion/reference geometry, damage and phase kinetics, outlet evolution, and the measured release/landing interface laws.
+Report verified single-event pressure or finite-mass speed separately from repeatable intact transfer. Gel can trade peak speed for peeling control or lower scatter. Improved alignment can coexist with reduced useful impulse. The radial formula leaves these tradeoffs unresolved. Missing: rate laws, inclusion/reference geometry, phase and damage kinetics, outlet evolution, release and landing laws.
 
-分别报告两个不同结果：指定条件下经验证的最大单次压力或有限质量射流速度，以及可重复的完整转印窗口。有利的凝胶可能以降低峰值速度换取可控剥离和较小定位离散，也可能改善对准却降低有效冲量。这两类取舍都不能由径向阻力公式决定。尚未解决的输入包括事件速率下的材料规律、实际夹杂／参考几何、损伤及相变动力学、出口演化，以及实测释放／落点界面规律。
+已验证单事件压力或有限质量速率，与可重复完整转印分别报告。凝胶可用峰值速率换取剥离控制或更小离散。更好对准可与更低有用冲量共存。径向公式仍未确定这些权衡。缺失：速率规律、夹杂／参考几何、相变和损伤动力学、出口演化、释放与落位规律。
 
-## 8. Three defense questions: explain the chain in your own words
+## Finite-energy cavitation models
 
-## 8. 三道答辩题：用自己的话解释物理链条
+## 有限能量空化模型
 
-### Why are an open pocket, bulk-embedded PFC and a sealed hydrogel stamp different actuators?
+Compare an existing outlet in rigid and gel-confined cavities. At 2 nJ source work and a 5 μm outlet radius, peak speeds are 15.376 and 1.625 m/s. The sealed control emits zero liquid.
 
-### 为什么开放液腔、体相嵌入 PFC 和密封水凝胶印章是不同致动器？
+比较刚性腔体与凝胶约束腔体中的已有出口。源功为 2 nJ，出口半径为 5 μm 时，峰值速度分别为 15.376 与 1.625 m/s。密闭对照排液量为零。
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+These initialized ideal-gas controls describe expansion through an existing channel. Laser activation, PFC phase change, rupture, collapse jets, and impact remain outside their scope.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+这些给定初态的理想气体对照描述经已有通道的膨胀排液。激光激活、PFC 相变、破裂、塌缩射流与冲击不在其范围内。
+
+[Read the model derivation](../modeling/minimal-cavitation/index.html) · [53-step COMSOL guide](../modeling/minimal-cavitation/STEP_BY_STEP.html)
+
+[阅读模型推导](../modeling/minimal-cavitation/index.html?lang=zh) · [53 步 COMSOL 指南](../modeling/minimal-cavitation/STEP_BY_STEP.html?lang=zh)
+
+[Download model files](../modeling/minimal-cavitation/Minimal_Cavitation_Models_20261010.zip)
+
+[下载模型文件](../modeling/minimal-cavitation/Minimal_Cavitation_Models_20261010.zip)
+
+## PFC droplets in hydrogel
+
+## 水凝胶中的 PFC 液滴
+
+Compare PFP and PFH across droplet size, gel modulus, and viscosity. The model retains finite PFC mass and a liquid shell. Sixty stationary and six seeded transient comparisons pass.
+
+按液滴尺寸、凝胶模量与黏度比较 PFP 和 PFH。模型保留有限 PFC 质量与液体壳层。60 项稳态及 6 项预设种子瞬态对照通过。
+
+Reported velocities are radial wall speeds. Exterior emission is zero. Target activation, rupture, collapse jets, and impact pressure remain unvalidated.
+
+报告速度为径向壁面速度。外部排出量为零。目标系统的激活、破裂、塌缩射流与冲击压力仍未验证。
+
+[Read the bilingual study and parameter comparison](../modeling/embedded-pfc-feasibility/index.html)
+
+[阅读双语研究与参数比较](../modeling/embedded-pfc-feasibility/index.html?lang=zh)
+
+[Download study files](../modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip)
+
+[下载研究文件](../modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip)
+
+## 8. Oral questions
+
+## 8. 口头问题
+
+### Trace matter and force paths in the three gel actuators.
+
+### 追踪三种凝胶致动器中的物质与传力路径。
+
+Explain the mechanism, assumptions, and limits in your own words.
+
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -839,17 +879,17 @@ A radial model describes expansion and resistance; it does not manufacture an ou
 
 径向模型描述膨胀及阻力，不会凭空产生出口。
 
-A defensible explanation begins with where matter can move. A liquid site or open gel-supported pocket can emit carrier liquid through a meniscus/outlet if asymmetric pressure-driven flow develops. A buried inclusion can expand a cavity yet produce no external liquid jet; network rupture or a channel is an additional mechanism with contamination and damage consequences. A sealed composite cavity can instead bend a cover and drive an interfacial crack without any liquid jet leaving the stamp. The hydrogel paper demonstrates this pressure–deformation–release mechanism, not all four architectures.
+Identify where displaced matter can go. Liquid sites and open pockets can emit carrier through an outlet. Bulk inclusions may inflate without external liquid emission. Rupture or channels add damage and contamination mechanisms. Sealed cavities can bend covers and drive cracks without an emitted jet. The hydrogel stamp paper establishes this sealed pressure–deformation–release route.
 
-可成立的解释应从材料能向哪里运动开始。液体位点或开放的凝胶支撑液腔，如果形成非对称的压力驱动流动，就可以通过液面／出口喷出载液。埋入的夹杂可以使腔体膨胀，却不产生外部液体射流；网络破裂或通道属于额外机制，会带来污染与损伤后果。密封复合腔体则可使覆盖层弯曲并驱动界面裂纹，而无需任何液体射流离开印章。水凝胶论文展示的是这种压力—变形—释放机制，并非全部四种结构。
+先确定排开材料的去向。液体位点与开放液腔可经出口喷出载液。体相夹杂可能膨胀而无外部液体喷出。破裂或通道会增加损伤及污染机制。密闭空腔可弯曲覆盖层并驱动裂纹，而无需喷出射流。水凝胶印章论文确立了该密闭压力—变形—释放路径。
 
-The spherical equation supplies an intact-medium pressure/work control but cannot determine jet direction or release on its own. Use a spatial moving-interface calculation for an outlet, and a solid/interface calculation for a blister or intact PVC force path. A correct answer may retain all candidates while specifying their different missing closure. Successful PFC activation does not prove a carrier jet or selective transfer.
+The spherical model gives intact-medium pressure and work. Jet direction needs a spatial moving-interface model. Blisters and intact PVC paths need solid/interface mechanics. State the required closure for each architecture. Activation leaves carrier emission and selective transfer unresolved.
 
-球形方程提供完整介质的压力／功控制关系，但自身不能确定射流方向或释放。对出口需要空间运动界面计算；对鼓泡或完整 PVC 载荷路径，需要固体／界面计算。正确回答可以保留所有候选方案，同时指出各自缺少的不同闭合关系。PFC 成功激活不证明载液射流或选择性转印。
+球形模型给出完整介质中的压力和功。射流方向需空间运动界面模型，鼓泡与完整 PVC 路径需固体／界面力学。各结构须注明所需闭合。激活仍未确定载液喷出与选择性转印。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Identifies the displaced-material path and distinguishes external liquid flow from solid deformation or damage.
 
@@ -861,13 +901,13 @@ The spherical equation supplies an intact-medium pressure/work control but canno
 
   将水凝胶论文作为特定结构的证据，保留其他条件性可能，而不是排除它们。
 
-### Why does the 5Gg/2 pressure plateau neither prove stabilization nor replace an energy calculation?
+### Explain the 5Gg/2 plateau and its work requirement.
 
-### 为什么 5Gg/2 压力平台既不能证明稳定化，也不能代替能量计算？
+### 解释 5Gg/2 平台及其功需求。
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -899,17 +939,17 @@ Pressure resistance and elastic work answer different parts of the feasibility c
 
 压力阻力与弹性功回答可行性计算中的不同部分。
 
-At the declared 20 kPa modulus and 5 → 30 µm expansion, resistance is 43.3256 kPa and network work is 4.51604 nJ. A constant 100 kPa net-pressure scale supplies 11.2574 nJ over the same displaced volume, so 40.1163% is stored in the model network. Comparing only 43.3 kPa with 100 kPa misses this integral and the remaining surface, viscous and kinetic demands. The 5 µm reference is a cavity/network reference, not an automatically inherited PFC liquid core size.
+At modulus 20 kPa and 5 → 30 µm expansion, resistance is 43.3256 kPa. Network work is 4.51604 nJ. Constant net pressure 100 kPa supplies 11.2574 nJ over the same volume. Storage is 40.1163%. Remaining surface, viscous and kinetic demands require the full work balance. Reference 5 µm describes the cavity/network state. PFC core size needs separate identification.
 
-对设定的 20 kPa 模量和 5 → 30 µm 膨胀，阻力为 43.3256 kPa，网络功为 4.51604 nJ。恒定 100 kPa 净压力尺度在同一排开体积上提供 11.2574 nJ，因此模型网络储存 40.1163%。仅比较 43.3 kPa 与 100 kPa，会漏掉这个积分及剩余的表面、黏性和动能需求。5 µm 参考值属于腔体／网络参考，不是自动沿用的 PFC 液态核尺寸。
+模量 20 kPa、5 → 30 µm 膨胀时，阻力为 43.3256 kPa，网络功为 4.51604 nJ。同一体积上恒定净压 100 kPa 提供 11.2574 nJ，储存占 40.1163%。其余表面、黏性及动能需求须用完整功平衡检查。5 µm 参考描述空腔／网络状态。PFC 核心尺寸须单独辨认。
 
-The plateau $5G_g/2$ belongs to a selected intact constitutive model. It neither limits fracture nor proves jet stability. Work continues to grow with volume, real material can stiffen or tear, and directional flow is absent from this radial model. Stored elastic energy can return on recoil but may return too late, in another direction, or into damage. Viscous loss, by contrast, is nonnegative in both expansion and collapse. The useful conversion needs the actual phase-pressure history, moving geometry and energy partition, not an assumed efficiency pasted onto the pressure formula.
+The $5G_g/2$ plateau follows the intact constitutive model. Fracture and jet stability remain unestablished. Work still grows with volume; real networks can stiffen or tear. Recoil may return storage late, sideways or into damage. Viscous dissipation stays nonnegative. Useful conversion requires phase-pressure history, moving geometry and energy partition.
 
-平台值 $5G_g/2$ 属于选定的完整本构模型。它既不限定断裂，也不证明射流稳定。功仍随体积增长，真实材料可能硬化或撕裂，而且该径向模型没有定向流动。储存弹性能可在回弹时返还，但返还可能太晚、朝另一个方向，或进入损伤。相反，黏性损耗在膨胀与塌缩时都非负。有效转换需要实际相变压力历程、运动几何和能量分配，不能把假定效率直接贴到压力公式上。
+$5G_g/2$ 平台来自完整本构模型。断裂与射流稳定性尚未确立。功仍随体积增长，实际网络可硬化或撕裂。回弹可能将储能延迟、侧向或通过损伤返还。黏性耗散保持非负。有用转换需要相变压力历程、运动几何及能量分配。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Explains the stretch-based elastic origin, zero reference resistance, and constitutive rather than fracture meaning of the plateau.
 
@@ -921,13 +961,13 @@ The plateau $5G_g/2$ belongs to a selected intact constitutive model. It neither
 
   区分可恢复储存与不可逆黏性，指出损伤、时序和非球形流动仍是未闭合环节。
 
-### What evidence would establish that a hydrogel improves this PFC transfer process, rather than merely changing its mechanism?
+### Which matched measurements establish improved PFC transfer with gel?
 
-### 什么证据能证明水凝胶改善了该 PFC 转印过程，而不只是改变其机制？
+### 哪些匹配测量能确立凝胶改善 PFC 转印？
 
-Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.
+Explain the mechanism, assumptions, and limits in your own words.
 
-请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。
+用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
@@ -992,17 +1032,17 @@ A fair comparison follows the delivered load into the intended interface and the
 
 公平比较要跟踪实际载荷进入目标界面及最终定位。
 
-I would preserve all architectures and match the PFC batch/inventory, absorber location, absorbed energy, initial temperature, outlet definition and release interface where physically possible. When an architecture changes a matched condition, I would measure that change and report the comparison as conditional. I would characterize network behavior at the event strain, rate and temperature, test shell survival and heat deposition, and distinguish the 6.7082 µs shear estimate from the 2.7440 µs empty-liquid reference. Those times do not predict the actual gel-cavity event or longitudinal shock load.
+Compare all architectures with matched PFC inventory, absorber, absorbed energy and initial temperature. Match outlet and release interface where possible. Measure unavoidable architecture changes and report conditional comparisons. Characterize network response at event strain, rate and temperature. Test shell survival and heat deposition. Shear estimate 6.7082 µs differs from liquid-collapse reference 2.7440 µs. Actual gel-cavity time and longitudinal load remain unresolved.
 
-我会保留所有结构方案，并在物理允许范围内匹配 PFC 批次／物质量、吸收体位置、吸收能量、初始温度、出口定义及释放界面。若某一结构改变了匹配条件，就测量该变化，并将比较报告为有条件的比较。我会在事件的应变、速率和温度下表征网络行为，检验壳层存活及热沉积，并区分 6.7082 µs 剪切时间估计与 2.7440 µs 空液体参考。这两个时间不能预测实际凝胶腔体事件或纵向冲击载荷。
+比较各结构时匹配 PFC 物质量、吸收体、吸收能量及初温。条件允许时匹配出口及释放界面。测量不可避免的结构变化，并报告有条件比较。在事件应变、速率及温度下表征网络。检验壳层存续和热沉积。剪切估计 6.7082 µs 不同于液体塌缩参照 2.7440 µs。实际凝胶空腔时间及纵向载荷仍未确定。
 
-Then I would synchronize cavity, jet/composition, solid motion, calibrated load and crack images; compare independent-shot distributions and intact placement, contamination and reset. Stabilization means lower relevant angle/speed/mass/footprint variability at sufficient useful load, not one slower or smaller bubble. I would report the largest verified single-event output separately from the repeatable intact-transfer envelope. Missing rate-dependent mechanics, permeability, phase kinetics or fracture data leave a stated uncertainty instead of being replaced by the published hydrogel stamp's parameters.
+Synchronize cavity, liquid composition, solid motion, calibrated load and crack images. Compare independent-shot distributions, intact placement, contamination and reset. Stabilization means reduced angle, speed, mass or footprint variability at sufficient load. One smaller bubble leaves that result unestablished. Report single-event maxima separately from repeatable transfer. Missing rate mechanics, permeability, phase kinetics or fracture data remain explicit inputs.
 
-随后，我会同步记录腔体、射流／成分、固体运动、标定载荷和裂纹影像；比较独立事件的分布，以及完整定位、污染和复位。稳定化意味着在足够的有效载荷下，相关角度／速度／质量／载荷范围变异降低，而不是一次更慢或更小的气泡。我会分别报告经验证的最大单次输出与可重复的完整转印范围。若缺少速率相关力学、渗透率、相变动力学或断裂数据，就明确保留不确定性，而不是用已发表水凝胶印章的参数代替。
+同步记录空腔、液体组成、固体运动、标定载荷及裂纹图像。比较独立发射分布、完整落位、污染和复位。稳定化意味着载荷足够时角度、速率、质量或面积变异降低。单个更小气泡仍未确立该结果。单事件最大值与可重复转印分别报告。速率力学、渗透率、相变动力学或断裂数据仍列为明确缺失输入。
 
-#### What a mastered answer demonstrates
+#### Review criteria
 
-#### 掌握后的回答应体现
+#### 审阅标准
 
 * Defines a fair absorbed-energy/material/geometry comparison while retaining each architecture and both film/PVC load paths.
 

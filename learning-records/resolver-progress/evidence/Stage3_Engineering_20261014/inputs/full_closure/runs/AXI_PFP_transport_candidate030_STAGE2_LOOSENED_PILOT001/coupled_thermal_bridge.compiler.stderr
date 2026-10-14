@@ -1,0 +1,5 @@
+In file included from nonlocal_thermal_integrator.h:10,
+                 from coupled_thermal_bridge.c:6:
+nonlocal_thermal.h:147:12: warning: ‘closure_heat_backward_euler’ defined but not used [-Wunused-function]
+  147 | static int closure_heat_backward_euler(const ClosureHeatModel * m,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~

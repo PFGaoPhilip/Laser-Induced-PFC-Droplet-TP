@@ -1,0 +1,1255 @@
+AXI geometry engineering floor: residual PFC snapped for PLIC (100fs diagnostic only)
+CANDIDATE011 COMPONENT ONLY: selected viscous/Fourier half-steps enabled; full production admission absent; physicalV=2pi*dv; leaves=970 initial_radius=3.3558511449405311e-06 activated_nominal_radius=3.3495599259759347e-06 mass_relative_error=2.3664699206000624e-11
+CORE STAGE PROFILE: stage=initial time=0 steps=0 cpu_process_seconds=0.034872 raw_queries=1180 inverse_iterations=112 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=0 heat_evaluations=0
+CORE READONLY PROFILE: W_calls=910 F_calls=86 W_only=884 F_only=60 mixed=26 W_CPU_s=0.001161 F_CPU_s=0.001152
+CORE STAGE PROFILE: stage=phase_first time=0 steps=0 cpu_process_seconds=3.414495 raw_queries=53480 inverse_iterations=7876 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=0
+CORE READONLY PROFILE: W_calls=1820 F_calls=172 W_only=1768 F_only=120 mixed=52 W_CPU_s=0.002344 F_CPU_s=0.001446
+CORE STAGE PROFILE: stage=thermal_first time=0 steps=0 cpu_process_seconds=3.487628 raw_queries=73588 inverse_iterations=11782 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=2730 F_calls=258 W_only=2652 F_only=180 mixed=78 W_CPU_s=0.003489 F_CPU_s=0.001742
+CORE STAGE PROFILE: stage=water_Fourier_first time=0 steps=0 cpu_process_seconds=3.533937 raw_queries=78368 inverse_iterations=12910 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=4550 F_calls=430 W_only=4420 F_only=300 mixed=130 W_CPU_s=0.005869 F_CPU_s=0.002329
+CORE STAGE PROFILE: stage=viscous_first time=0 steps=0 cpu_process_seconds=3.575743 raw_queries=78540 inverse_iterations=13022 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=6370 F_calls=602 W_only=6188 F_only=420 mixed=182 W_CPU_s=0.008169 F_CPU_s=0.002908
+DIAG before face_velocity t=0 steps=0
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=0 steps=0 cpu_process_seconds=3.621568 raw_queries=78540 inverse_iterations=13022 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=7280 F_calls=688 W_only=7072 F_only=480 mixed=208 W_CPU_s=0.009423 F_CPU_s=0.003215
+CORE STAGE PROFILE: stage=pressure_capillary time=9.9999999999999994e-12 steps=0 cpu_process_seconds=3.659336 raw_queries=79556 inverse_iterations=13288 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=8190 F_calls=774 W_only=7956 F_only=540 mixed=234 W_CPU_s=0.01061 F_CPU_s=0.003502
+AXI transport candidate018: clamping negative viscous intrinsic (first cell)
+CORE STAGE PROFILE: stage=viscous_last time=9.9999999999999994e-12 steps=0 cpu_process_seconds=3.702733 raw_queries=79728 inverse_iterations=13400 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=10010 F_calls=946 W_only=9724 F_only=660 mixed=286 W_CPU_s=0.012969 F_CPU_s=0.004111
+CORE STAGE PROFILE: stage=water_Fourier_last time=9.9999999999999994e-12 steps=0 cpu_process_seconds=3.749133 raw_queries=84540 inverse_iterations=14556 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=6
+CORE READONLY PROFILE: W_calls=11830 F_calls=1118 W_only=11492 F_only=780 mixed=338 W_CPU_s=0.015236 F_CPU_s=0.004697
+CORE STAGE PROFILE: stage=thermal_last time=9.9999999999999994e-12 steps=0 cpu_process_seconds=3.823806 raw_queries=104648 inverse_iterations=18462 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=10492 heat_evaluations=12
+CORE READONLY PROFILE: W_calls=12740 F_calls=1204 W_only=12376 F_only=840 mixed=364 W_CPU_s=0.016422 F_CPU_s=0.004983
+CORE STAGE PROFILE: stage=accepted time=9.9999999999999994e-12 steps=1 cpu_process_seconds=6.021872 raw_queries=154548 inverse_iterations=25790 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=17936 heat_evaluations=12
+CORE READONLY PROFILE: W_calls=13650 F_calls=1290 W_only=13260 F_only=900 mixed=390 W_CPU_s=0.017575 F_CPU_s=0.005269
+CORE STAGE PROFILE: stage=phase_first time=9.9999999999999994e-12 steps=1 cpu_process_seconds=7.465605 raw_queries=203168 inverse_iterations=33038 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=12
+CORE READONLY PROFILE: W_calls=14560 F_calls=1376 W_only=14144 F_only=960 mixed=416 W_CPU_s=0.018704 F_CPU_s=0.005554
+CORE STAGE PROFILE: stage=thermal_first time=9.9999999999999994e-12 steps=1 cpu_process_seconds=7.53883 raw_queries=222828 inverse_iterations=36812 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=15470 F_calls=1462 W_only=15028 F_only=1020 mixed=442 W_CPU_s=0.019833 F_CPU_s=0.00585
+CORE STAGE PROFILE: stage=water_Fourier_first time=9.9999999999999994e-12 steps=1 cpu_process_seconds=7.584709 raw_queries=228568 inverse_iterations=38104 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=17290 F_calls=1634 W_only=16796 F_only=1140 mixed=494 W_CPU_s=0.022147 F_CPU_s=0.006454
+CORE STAGE PROFILE: stage=viscous_first time=9.9999999999999994e-12 steps=1 cpu_process_seconds=7.62527 raw_queries=228740 inverse_iterations=38216 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=19110 F_calls=1806 W_only=18564 F_only=1260 mixed=546 W_CPU_s=0.024422 F_CPU_s=0.007044
+DIAG before face_velocity t=9.9999999999999994e-12 steps=1
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+AXI geometric capacity engineering soft-pass: Inf/overflow capacity ratio clamped to HUGE (100fs diagnostic only; not production admission)
+AXI geometric capacity engineering soft-pass: Inf/overflow capacity ratio clamped to HUGE (100fs diagnostic only; not production admission)
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=9.9999999999999994e-12 steps=1 cpu_process_seconds=7.666511 raw_queries=228740 inverse_iterations=38216 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=20027 F_calls=1895 W_only=19445 F_only=1313 mixed=582 W_CPU_s=0.025591 F_CPU_s=0.00883
+CORE STAGE PROFILE: stage=pressure_capillary time=1.9999999999999999e-11 steps=1 cpu_process_seconds=7.775741 raw_queries=289176 inverse_iterations=49943 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=20944 F_calls=1984 W_only=20326 F_only=1366 mixed=618 W_CPU_s=0.026776 F_CPU_s=0.009126
+CORE STAGE PROFILE: stage=viscous_last time=1.9999999999999999e-11 steps=1 cpu_process_seconds=7.818199 raw_queries=289354 inverse_iterations=50068 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=22778 F_calls=2162 W_only=22088 F_only=1472 mixed=690 W_CPU_s=0.029192 F_CPU_s=0.00974
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.9999999999999999e-11 steps=1 cpu_process_seconds=7.86853 raw_queries=295804 inverse_iterations=51898 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=18
+CORE READONLY PROFILE: W_calls=24612 F_calls=2340 W_only=23850 F_only=1578 mixed=762 W_CPU_s=0.031567 F_CPU_s=0.010366
+CORE STAGE PROFILE: stage=thermal_last time=1.9999999999999999e-11 steps=1 cpu_process_seconds=7.950412 raw_queries=318062 inverse_iterations=57342 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=24020 heat_evaluations=24
+CORE READONLY PROFILE: W_calls=25529 F_calls=2429 W_only=24731 F_only=1631 mixed=798 W_CPU_s=0.03272 F_CPU_s=0.0107
+CORE STAGE PROFILE: stage=accepted time=1.9999999999999999e-11 steps=2 cpu_process_seconds=9.187114 raw_queries=374800 inverse_iterations=66709 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=29452 heat_evaluations=24
+CORE READONLY PROFILE: W_calls=26446 F_calls=2518 W_only=25612 F_only=1684 mixed=834 W_CPU_s=0.033876 F_CPU_s=0.011066
+CORE STAGE PROFILE: stage=phase_first time=1.9999999999999999e-11 steps=2 cpu_process_seconds=10.381135 raw_queries=430530 inverse_iterations=75922 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=24
+CORE READONLY PROFILE: W_calls=27363 F_calls=2607 W_only=26493 F_only=1737 mixed=870 W_CPU_s=0.035032 F_CPU_s=0.011397
+CORE STAGE PROFILE: stage=thermal_first time=1.9999999999999999e-11 steps=2 cpu_process_seconds=10.459249 raw_queries=452788 inverse_iterations=81340 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=28280 F_calls=2696 W_only=27374 F_only=1790 mixed=906 W_CPU_s=0.036189 F_CPU_s=0.011698
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.9999999999999999e-11 steps=2 cpu_process_seconds=10.509911 raw_queries=460198 inverse_iterations=83698 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=30114 F_calls=2874 W_only=29136 F_only=1896 mixed=978 W_CPU_s=0.038541 F_CPU_s=0.012308
+CORE STAGE PROFILE: stage=viscous_first time=1.9999999999999999e-11 steps=2 cpu_process_seconds=10.551296 raw_queries=460376 inverse_iterations=83823 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=31948 F_calls=3052 W_only=30898 F_only=2002 mixed=1050 W_CPU_s=0.040811 F_CPU_s=0.012937
+DIAG before face_velocity t=1.9999999999999999e-11 steps=2
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.9999999999999999e-11 steps=2 cpu_process_seconds=10.594833 raw_queries=460376 inverse_iterations=83823 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=32868 F_calls=3144 W_only=31776 F_only=2052 mixed=1092 W_CPU_s=0.041958 F_CPU_s=0.015017
+AXI geometric EOS engineering soft-pass: tiny water mass/energy/fraction snapped floor=1e-25 (027 co-clear EW/q) (100fs diagnostic only; not production admission)
+CORE STAGE PROFILE: stage=pressure_capillary time=3e-11 steps=2 cpu_process_seconds=10.768386 raw_queries=574576 inverse_iterations=105368 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=33788 F_calls=3236 W_only=32654 F_only=2102 mixed=1134 W_CPU_s=0.043124 F_CPU_s=0.015318
+CORE STAGE PROFILE: stage=viscous_last time=3e-11 steps=2 cpu_process_seconds=10.811281 raw_queries=574760 inverse_iterations=105502 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=35628 F_calls=3420 W_only=34410 F_only=2202 mixed=1218 W_CPU_s=0.045501 F_CPU_s=0.015965
+CORE STAGE PROFILE: stage=water_Fourier_last time=3e-11 steps=2 cpu_process_seconds=10.862035 raw_queries=582128 inverse_iterations=107502 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=30
+CORE READONLY PROFILE: W_calls=37468 F_calls=3604 W_only=36166 F_only=2302 mixed=1302 W_CPU_s=0.047856 F_CPU_s=0.016592
+CORE STAGE PROFILE: stage=thermal_last time=3e-11 steps=2 cpu_process_seconds=10.944597 raw_queries=606824 inverse_iterations=113835 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=34752 heat_evaluations=36
+CORE READONLY PROFILE: W_calls=38388 F_calls=3696 W_only=37044 F_only=2352 mixed=1344 W_CPU_s=0.049107 F_CPU_s=0.016908
+CORE STAGE PROFILE: stage=accepted time=3e-11 steps=3 cpu_process_seconds=12.204683 raw_queries=669792 inverse_iterations=124445 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=40260 heat_evaluations=36
+CORE READONLY PROFILE: W_calls=39308 F_calls=3788 W_only=37922 F_only=2402 mixed=1386 W_CPU_s=0.050324 F_CPU_s=0.017216
+CORE STAGE PROFILE: stage=phase_first time=3e-11 steps=3 cpu_process_seconds=13.287598 raw_queries=732440 inverse_iterations=135035 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=36
+CORE READONLY PROFILE: W_calls=40228 F_calls=3880 W_only=38800 F_only=2452 mixed=1428 W_CPU_s=0.051531 F_CPU_s=0.017519
+CORE STAGE PROFILE: stage=thermal_first time=3e-11 steps=3 cpu_process_seconds=13.369519 raw_queries=757104 inverse_iterations=141301 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=41148 F_calls=3972 W_only=39678 F_only=2502 mixed=1470 W_CPU_s=0.052684 F_CPU_s=0.017822
+CORE STAGE PROFILE: stage=water_Fourier_first time=3e-11 steps=3 cpu_process_seconds=13.421264 raw_queries=765176 inverse_iterations=143501 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=42988 F_calls=4156 W_only=41434 F_only=2602 mixed=1554 W_CPU_s=0.055159 F_CPU_s=0.018448
+CORE STAGE PROFILE: stage=viscous_first time=3e-11 steps=3 cpu_process_seconds=13.464362 raw_queries=765360 inverse_iterations=143635 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=44828 F_calls=4340 W_only=43190 F_only=2702 mixed=1638 W_CPU_s=0.057567 F_CPU_s=0.019076
+DIAG before face_velocity t=3e-11 steps=3
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3e-11 steps=3 cpu_process_seconds=13.507686 raw_queries=765360 inverse_iterations=143635 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=45748 F_calls=4432 W_only=44068 F_only=2752 mixed=1680 W_CPU_s=0.05875 F_CPU_s=0.021099
+CORE STAGE PROFILE: stage=pressure_capillary time=3.9999999999999998e-11 steps=3 cpu_process_seconds=13.695153 raw_queries=890552 inverse_iterations=165750 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=46668 F_calls=4524 W_only=44946 F_only=2802 mixed=1722 W_CPU_s=0.059925 F_CPU_s=0.021418
+AXI density-conversion engineering soft-pass underflow->+/-1e-300 (100fs diagnostic only; not production admission)
+CORE STAGE PROFILE: stage=viscous_last time=3.9999999999999998e-11 steps=3 cpu_process_seconds=13.738714 raw_queries=890736 inverse_iterations=165884 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=48508 F_calls=4708 W_only=46702 F_only=2902 mixed=1806 W_CPU_s=0.062302 F_CPU_s=0.022043
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.9999999999999998e-11 steps=3 cpu_process_seconds=13.791893 raw_queries=898984 inverse_iterations=168095 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=42
+CORE READONLY PROFILE: W_calls=50348 F_calls=4892 W_only=48458 F_only=3002 mixed=1890 W_CPU_s=0.064643 F_CPU_s=0.022666
+CORE STAGE PROFILE: stage=thermal_last time=3.9999999999999998e-11 steps=3 cpu_process_seconds=13.874809 raw_queries=923680 inverse_iterations=174363 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=45080 heat_evaluations=48
+CORE READONLY PROFILE: W_calls=51268 F_calls=4984 W_only=49336 F_only=3052 mixed=1932 W_CPU_s=0.065806 F_CPU_s=0.022974
+CORE STAGE PROFILE: stage=accepted time=3.9999999999999998e-11 steps=4 cpu_process_seconds=14.940384 raw_queries=985208 inverse_iterations=184467 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=49852 heat_evaluations=48
+CORE READONLY PROFILE: W_calls=52188 F_calls=5076 W_only=50214 F_only=3102 mixed=1974 W_CPU_s=0.066977 F_CPU_s=0.023281
+CORE STAGE PROFILE: stage=phase_first time=3.9999999999999998e-11 steps=4 cpu_process_seconds=16.004017 raw_queries=1045968 inverse_iterations=194523 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=48
+CORE READONLY PROFILE: W_calls=53108 F_calls=5168 W_only=51092 F_only=3152 mixed=2016 W_CPU_s=0.068172 F_CPU_s=0.023622
+CORE STAGE PROFILE: stage=thermal_first time=3.9999999999999998e-11 steps=4 cpu_process_seconds=16.087701 raw_queries=1070664 inverse_iterations=200765 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=54028 F_calls=5260 W_only=51970 F_only=3202 mixed=2058 W_CPU_s=0.06935 F_CPU_s=0.023926
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.9999999999999998e-11 steps=4 cpu_process_seconds=16.141164 raw_queries=1079120 inverse_iterations=202989 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=55868 F_calls=5444 W_only=53726 F_only=3302 mixed=2142 W_CPU_s=0.071721 F_CPU_s=0.024553
+CORE STAGE PROFILE: stage=viscous_first time=3.9999999999999998e-11 steps=4 cpu_process_seconds=16.184052 raw_queries=1079304 inverse_iterations=203123 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=57708 F_calls=5628 W_only=55482 F_only=3402 mixed=2226 W_CPU_s=0.074046 F_CPU_s=0.025181
+DIAG before face_velocity t=3.9999999999999998e-11 steps=4
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.9999999999999998e-11 steps=4 cpu_process_seconds=16.227556 raw_queries=1079304 inverse_iterations=203123 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=58628 F_calls=5720 W_only=56360 F_only=3452 mixed=2268 W_CPU_s=0.07522 F_CPU_s=0.02739
+CORE STAGE PROFILE: stage=pressure_capillary time=4.9999999999999995e-11 steps=4 cpu_process_seconds=16.422508 raw_queries=1211840 inverse_iterations=226555 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=59548 F_calls=5812 W_only=57238 F_only=3502 mixed=2310 W_CPU_s=0.076384 F_CPU_s=0.027707
+CORE STAGE PROFILE: stage=viscous_last time=4.9999999999999995e-11 steps=4 cpu_process_seconds=16.466298 raw_queries=1212024 inverse_iterations=226689 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=61388 F_calls=5996 W_only=58994 F_only=3602 mixed=2394 W_CPU_s=0.078894 F_CPU_s=0.028336
+CORE STAGE PROFILE: stage=water_Fourier_last time=4.9999999999999995e-11 steps=4 cpu_process_seconds=16.519403 raw_queries=1220512 inverse_iterations=228902 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=54
+CORE READONLY PROFILE: W_calls=63228 F_calls=6180 W_only=60750 F_only=3702 mixed=2478 W_CPU_s=0.081221 F_CPU_s=0.028963
+CORE STAGE PROFILE: stage=thermal_last time=4.9999999999999995e-11 steps=4 cpu_process_seconds=16.603243 raw_queries=1245208 inverse_iterations=235144 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=54624 heat_evaluations=60
+CORE READONLY PROFILE: W_calls=64148 F_calls=6272 W_only=61628 F_only=3752 mixed=2520 W_CPU_s=0.082502 F_CPU_s=0.029275
+CORE STAGE PROFILE: stage=accepted time=4.9999999999999995e-11 steps=5 cpu_process_seconds=17.678222 raw_queries=1305792 inverse_iterations=245189 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=59478 heat_evaluations=60
+CORE READONLY PROFILE: W_calls=65068 F_calls=6364 W_only=62506 F_only=3802 mixed=2562 W_CPU_s=0.083661 F_CPU_s=0.029587
+CORE STAGE PROFILE: stage=phase_first time=4.9999999999999995e-11 steps=5 cpu_process_seconds=18.752988 raw_queries=1365976 inverse_iterations=255209 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=60
+CORE READONLY PROFILE: W_calls=65988 F_calls=6456 W_only=63384 F_only=3852 mixed=2604 W_CPU_s=0.08486 F_CPU_s=0.029894
+CORE STAGE PROFILE: stage=thermal_first time=4.9999999999999995e-11 steps=5 cpu_process_seconds=18.836331 raw_queries=1390672 inverse_iterations=261438 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=66908 F_calls=6548 W_only=64262 F_only=3902 mixed=2646 W_CPU_s=0.086035 F_CPU_s=0.030206
+CORE STAGE PROFILE: stage=water_Fourier_first time=4.9999999999999995e-11 steps=5 cpu_process_seconds=18.88934 raw_queries=1399224 inverse_iterations=263668 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=68748 F_calls=6732 W_only=66018 F_only=4002 mixed=2730 W_CPU_s=0.088355 F_CPU_s=0.030874
+CORE STAGE PROFILE: stage=viscous_first time=4.9999999999999995e-11 steps=5 cpu_process_seconds=18.934225 raw_queries=1399408 inverse_iterations=263802 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=70588 F_calls=6916 W_only=67774 F_only=4102 mixed=2814 W_CPU_s=0.090785 F_CPU_s=0.031494
+DIAG before face_velocity t=4.9999999999999995e-11 steps=5
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=4.9999999999999995e-11 steps=5 cpu_process_seconds=18.980169 raw_queries=1399408 inverse_iterations=263802 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=71508 F_calls=7008 W_only=68652 F_only=4152 mixed=2856 W_CPU_s=0.091989 F_CPU_s=0.034159
+CORE STAGE PROFILE: stage=pressure_capillary time=6e-11 steps=5 cpu_process_seconds=19.181797 raw_queries=1536968 inverse_iterations=287743 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=72428 F_calls=7100 W_only=69530 F_only=4202 mixed=2898 W_CPU_s=0.093172 F_CPU_s=0.034484
+CORE STAGE PROFILE: stage=viscous_last time=6e-11 steps=5 cpu_process_seconds=19.225693 raw_queries=1537152 inverse_iterations=287877 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=74268 F_calls=7284 W_only=71286 F_only=4302 mixed=2982 W_CPU_s=0.095539 F_CPU_s=0.035103
+CORE STAGE PROFILE: stage=water_Fourier_last time=6e-11 steps=5 cpu_process_seconds=19.279198 raw_queries=1545688 inverse_iterations=290093 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=66
+CORE READONLY PROFILE: W_calls=76108 F_calls=7468 W_only=73042 F_only=4402 mixed=3066 W_CPU_s=0.097886 F_CPU_s=0.03574
+CORE STAGE PROFILE: stage=thermal_last time=6e-11 steps=5 cpu_process_seconds=19.363139 raw_queries=1570416 inverse_iterations=296311 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=64332 heat_evaluations=72
+CORE READONLY PROFILE: W_calls=77028 F_calls=7560 W_only=73920 F_only=4452 mixed=3108 W_CPU_s=0.099059 F_CPU_s=0.036106
+CORE STAGE PROFILE: stage=accepted time=6e-11 steps=6 cpu_process_seconds=20.413985 raw_queries=1630568 inverse_iterations=306329 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=69130 heat_evaluations=72
+CORE READONLY PROFILE: W_calls=77948 F_calls=7652 W_only=74798 F_only=4502 mixed=3150 W_CPU_s=0.100225 F_CPU_s=0.036419
+CORE STAGE PROFILE: stage=phase_first time=6e-11 steps=6 cpu_process_seconds=21.458434 raw_queries=1690528 inverse_iterations=316335 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=72
+CORE READONLY PROFILE: W_calls=78868 F_calls=7744 W_only=75676 F_only=4552 mixed=3192 W_CPU_s=0.101405 F_CPU_s=0.036755
+CORE STAGE PROFILE: stage=thermal_first time=6e-11 steps=6 cpu_process_seconds=21.543246 raw_queries=1715224 inverse_iterations=322551 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=79788 F_calls=7836 W_only=76554 F_only=4602 mixed=3234 W_CPU_s=0.102608 F_CPU_s=0.037062
+CORE STAGE PROFILE: stage=water_Fourier_first time=6e-11 steps=6 cpu_process_seconds=21.597019 raw_queries=1723792 inverse_iterations=324769 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=81628 F_calls=8020 W_only=78310 F_only=4702 mixed=3318 W_CPU_s=0.10504 F_CPU_s=0.037696
+CORE STAGE PROFILE: stage=viscous_first time=6e-11 steps=6 cpu_process_seconds=21.640901 raw_queries=1723976 inverse_iterations=324903 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=83468 F_calls=8204 W_only=80066 F_only=4802 mixed=3402 W_CPU_s=0.107346 F_CPU_s=0.038362
+DIAG before face_velocity t=6e-11 steps=6
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=6e-11 steps=6 cpu_process_seconds=21.685589 raw_queries=1723976 inverse_iterations=324903 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=84388 F_calls=8296 W_only=80944 F_only=4852 mixed=3444 W_CPU_s=0.108578 F_CPU_s=0.040714
+CORE STAGE PROFILE: stage=pressure_capillary time=7.0000000000000004e-11 steps=6 cpu_process_seconds=21.88443 raw_queries=1858912 inverse_iterations=348680 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=85308 F_calls=8388 W_only=81822 F_only=4902 mixed=3486 W_CPU_s=0.109727 F_CPU_s=0.041022
+CORE STAGE PROFILE: stage=viscous_last time=7.0000000000000004e-11 steps=6 cpu_process_seconds=21.929068 raw_queries=1859096 inverse_iterations=348814 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=87148 F_calls=8572 W_only=83578 F_only=5002 mixed=3570 W_CPU_s=0.112125 F_CPU_s=0.041646
+CORE STAGE PROFILE: stage=water_Fourier_last time=7.0000000000000004e-11 steps=6 cpu_process_seconds=21.983448 raw_queries=1867696 inverse_iterations=351034 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=78
+CORE READONLY PROFILE: W_calls=88988 F_calls=8756 W_only=85334 F_only=5102 mixed=3654 W_CPU_s=0.114479 F_CPU_s=0.042287
+CORE STAGE PROFILE: stage=thermal_last time=7.0000000000000004e-11 steps=6 cpu_process_seconds=22.067883 raw_queries=1892392 inverse_iterations=357250 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=73908 heat_evaluations=84
+CORE READONLY PROFILE: W_calls=89908 F_calls=8848 W_only=86212 F_only=5152 mixed=3696 W_CPU_s=0.115633 F_CPU_s=0.04262
+CORE STAGE PROFILE: stage=accepted time=7.0000000000000004e-11 steps=7 cpu_process_seconds=23.121056 raw_queries=1952224 inverse_iterations=367248 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=78689 heat_evaluations=84
+CORE READONLY PROFILE: W_calls=90828 F_calls=8940 W_only=87090 F_only=5202 mixed=3738 W_CPU_s=0.116821 F_CPU_s=0.042949
+CORE STAGE PROFILE: stage=phase_first time=7.0000000000000004e-11 steps=7 cpu_process_seconds=24.010358 raw_queries=2012008 inverse_iterations=377243 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=84
+CORE READONLY PROFILE: W_calls=91748 F_calls=9032 W_only=87968 F_only=5252 mixed=3780 W_CPU_s=0.117988 F_CPU_s=0.043257
+CORE STAGE PROFILE: stage=thermal_first time=7.0000000000000004e-11 steps=7 cpu_process_seconds=24.094145 raw_queries=2036704 inverse_iterations=383407 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=92668 F_calls=9124 W_only=88846 F_only=5302 mixed=3822 W_CPU_s=0.119226 F_CPU_s=0.04359
+CORE STAGE PROFILE: stage=water_Fourier_first time=7.0000000000000004e-11 steps=7 cpu_process_seconds=24.148273 raw_queries=2045320 inverse_iterations=385628 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=94508 F_calls=9308 W_only=90602 F_only=5402 mixed=3906 W_CPU_s=0.12159 F_CPU_s=0.044229
+CORE STAGE PROFILE: stage=viscous_first time=7.0000000000000004e-11 steps=7 cpu_process_seconds=24.193069 raw_queries=2045504 inverse_iterations=385762 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=96348 F_calls=9492 W_only=92358 F_only=5502 mixed=3990 W_CPU_s=0.12396 F_CPU_s=0.044852
+DIAG before face_velocity t=7.0000000000000004e-11 steps=7
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=7.0000000000000004e-11 steps=7 cpu_process_seconds=24.238579 raw_queries=2045504 inverse_iterations=385762 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=97268 F_calls=9584 W_only=93236 F_only=5552 mixed=4032 W_CPU_s=0.125123 F_CPU_s=0.047364
+CORE STAGE PROFILE: stage=pressure_capillary time=8.0000000000000008e-11 steps=7 cpu_process_seconds=24.437984 raw_queries=2180680 inverse_iterations=409632 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=98188 F_calls=9676 W_only=94114 F_only=5602 mixed=4074 W_CPU_s=0.12634 F_CPU_s=0.047699
+CORE STAGE PROFILE: stage=viscous_last time=8.0000000000000008e-11 steps=7 cpu_process_seconds=24.482472 raw_queries=2180864 inverse_iterations=409766 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=100028 F_calls=9860 W_only=95870 F_only=5702 mixed=4158 W_CPU_s=0.128756 F_CPU_s=0.048323
+CORE STAGE PROFILE: stage=water_Fourier_last time=8.0000000000000008e-11 steps=7 cpu_process_seconds=24.536309 raw_queries=2189448 inverse_iterations=411985 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=90
+CORE READONLY PROFILE: W_calls=101868 F_calls=10044 W_only=97626 F_only=5802 mixed=4242 W_CPU_s=0.131156 F_CPU_s=0.048951
+CORE STAGE PROFILE: stage=thermal_last time=8.0000000000000008e-11 steps=7 cpu_process_seconds=24.620082 raw_queries=2214192 inverse_iterations=418152 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=82817 heat_evaluations=96
+CORE READONLY PROFILE: W_calls=102788 F_calls=10136 W_only=98504 F_only=5852 mixed=4284 W_CPU_s=0.132332 F_CPU_s=0.049284
+CORE STAGE PROFILE: stage=accepted time=8.0000000000000008e-11 steps=8 cpu_process_seconds=25.515031 raw_queries=2273832 inverse_iterations=428138 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=86945 heat_evaluations=96
+CORE READONLY PROFILE: W_calls=103708 F_calls=10228 W_only=99382 F_only=5902 mixed=4326 W_CPU_s=0.133505 F_CPU_s=0.049608
+CORE STAGE PROFILE: stage=phase_first time=8.0000000000000008e-11 steps=8 cpu_process_seconds=26.398548 raw_queries=2333472 inverse_iterations=438124 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=96
+CORE READONLY PROFILE: W_calls=104628 F_calls=10320 W_only=100260 F_only=5952 mixed=4368 W_CPU_s=0.134657 F_CPU_s=0.049919
+CORE STAGE PROFILE: stage=thermal_first time=8.0000000000000008e-11 steps=8 cpu_process_seconds=26.482348 raw_queries=2358216 inverse_iterations=444291 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=105548 F_calls=10412 W_only=101138 F_only=6002 mixed=4410 W_CPU_s=0.135812 F_CPU_s=0.050224
+CORE STAGE PROFILE: stage=water_Fourier_first time=8.0000000000000008e-11 steps=8 cpu_process_seconds=26.536638 raw_queries=2366928 inverse_iterations=446518 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=107388 F_calls=10596 W_only=102894 F_only=6102 mixed=4494 W_CPU_s=0.138115 F_CPU_s=0.050854
+CORE STAGE PROFILE: stage=viscous_first time=8.0000000000000008e-11 steps=8 cpu_process_seconds=26.581129 raw_queries=2367112 inverse_iterations=446652 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=109228 F_calls=10780 W_only=104650 F_only=6202 mixed=4578 W_CPU_s=0.140452 F_CPU_s=0.051507
+DIAG before face_velocity t=8.0000000000000008e-11 steps=8
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=8.0000000000000008e-11 steps=8 cpu_process_seconds=26.626753 raw_queries=2367112 inverse_iterations=446652 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=110148 F_calls=10872 W_only=105528 F_only=6252 mixed=4620 W_CPU_s=0.141649 F_CPU_s=0.053992
+CORE STAGE PROFILE: stage=pressure_capillary time=9.0000000000000012e-11 steps=8 cpu_process_seconds=26.827161 raw_queries=2503776 inverse_iterations=470771 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=111068 F_calls=10964 W_only=106406 F_only=6302 mixed=4662 W_CPU_s=0.142811 F_CPU_s=0.054299
+CORE STAGE PROFILE: stage=viscous_last time=9.0000000000000012e-11 steps=8 cpu_process_seconds=26.871778 raw_queries=2503960 inverse_iterations=470905 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=112908 F_calls=11148 W_only=108162 F_only=6402 mixed=4746 W_CPU_s=0.145241 F_CPU_s=0.05492
+CORE STAGE PROFILE: stage=water_Fourier_last time=9.0000000000000012e-11 steps=8 cpu_process_seconds=26.925973 raw_queries=2513008 inverse_iterations=473192 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=102
+CORE READONLY PROFILE: W_calls=114748 F_calls=11332 W_only=109918 F_only=6502 mixed=4830 W_CPU_s=0.147649 F_CPU_s=0.055572
+CORE STAGE PROFILE: stage=thermal_last time=9.0000000000000012e-11 steps=8 cpu_process_seconds=27.009911 raw_queries=2537752 inverse_iterations=479359 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=91073 heat_evaluations=108
+CORE READONLY PROFILE: W_calls=115668 F_calls=11424 W_only=110796 F_only=6552 mixed=4872 W_CPU_s=0.148822 F_CPU_s=0.055884
+CORE STAGE PROFILE: stage=accepted time=9.0000000000000012e-11 steps=9 cpu_process_seconds=27.893588 raw_queries=2597072 inverse_iterations=489325 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=95201 heat_evaluations=108
+CORE READONLY PROFILE: W_calls=116588 F_calls=11516 W_only=111674 F_only=6602 mixed=4914 W_CPU_s=0.150012 F_CPU_s=0.056189
+CORE STAGE PROFILE: stage=phase_first time=9.0000000000000012e-11 steps=9 cpu_process_seconds=28.780395 raw_queries=2655928 inverse_iterations=499262 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=108
+CORE READONLY PROFILE: W_calls=117508 F_calls=11608 W_only=112552 F_only=6652 mixed=4956 W_CPU_s=0.151231 F_CPU_s=0.056512
+CORE STAGE PROFILE: stage=thermal_first time=9.0000000000000012e-11 steps=9 cpu_process_seconds=28.863654 raw_queries=2679872 inverse_iterations=505288 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=118428 F_calls=11700 W_only=113430 F_only=6702 mixed=4998 W_CPU_s=0.152417 F_CPU_s=0.056825
+CORE STAGE PROFILE: stage=water_Fourier_first time=9.0000000000000012e-11 steps=9 cpu_process_seconds=28.917998 raw_queries=2688648 inverse_iterations=507519 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=120268 F_calls=11884 W_only=115186 F_only=6802 mixed=5082 W_CPU_s=0.154723 F_CPU_s=0.05748
+CORE STAGE PROFILE: stage=viscous_first time=9.0000000000000012e-11 steps=9 cpu_process_seconds=28.962899 raw_queries=2688832 inverse_iterations=507653 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=122108 F_calls=12068 W_only=116942 F_only=6902 mixed=5166 W_CPU_s=0.157168 F_CPU_s=0.058103
+DIAG before face_velocity t=9.0000000000000012e-11 steps=9
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=9.0000000000000012e-11 steps=9 cpu_process_seconds=29.00788 raw_queries=2688832 inverse_iterations=507653 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=123028 F_calls=12160 W_only=117820 F_only=6952 mixed=5208 W_CPU_s=0.158331 F_CPU_s=0.060693
+CORE STAGE PROFILE: stage=pressure_capillary time=1.0000000000000002e-10 steps=9 cpu_process_seconds=29.213947 raw_queries=2830264 inverse_iterations=532538 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=123948 F_calls=12252 W_only=118698 F_only=7002 mixed=5250 W_CPU_s=0.159525 F_CPU_s=0.061
+CORE STAGE PROFILE: stage=viscous_last time=1.0000000000000002e-10 steps=9 cpu_process_seconds=29.258649 raw_queries=2830448 inverse_iterations=532672 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=125788 F_calls=12436 W_only=120454 F_only=7102 mixed=5334 W_CPU_s=0.162006 F_CPU_s=0.061668
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.0000000000000002e-10 steps=9 cpu_process_seconds=29.312616 raw_queries=2839256 inverse_iterations=534905 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=114
+CORE READONLY PROFILE: W_calls=127628 F_calls=12620 W_only=122210 F_only=7202 mixed=5418 W_CPU_s=0.164348 F_CPU_s=0.062322
+CORE STAGE PROFILE: stage=thermal_last time=1.0000000000000002e-10 steps=9 cpu_process_seconds=29.396033 raw_queries=2863232 inverse_iterations=540933 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=99329 heat_evaluations=120
+CORE READONLY PROFILE: W_calls=128548 F_calls=12712 W_only=123088 F_only=7252 mixed=5460 W_CPU_s=0.165534 F_CPU_s=0.062631
+CORE STAGE PROFILE: stage=accepted time=1.0000000000000002e-10 steps=10 cpu_process_seconds=30.275646 raw_queries=2922088 inverse_iterations=550870 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=103457 heat_evaluations=120
+CORE READONLY PROFILE: W_calls=129468 F_calls=12804 W_only=123966 F_only=7302 mixed=5502 W_CPU_s=0.16674 F_CPU_s=0.062942
+CORE STAGE PROFILE: stage=phase_first time=1.0000000000000002e-10 steps=10 cpu_process_seconds=31.159221 raw_queries=2980576 inverse_iterations=560784 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=120
+CORE READONLY PROFILE: W_calls=130388 F_calls=12896 W_only=124844 F_only=7352 mixed=5544 W_CPU_s=0.167914 F_CPU_s=0.063265
+CORE STAGE PROFILE: stage=thermal_first time=1.0000000000000002e-10 steps=10 cpu_process_seconds=31.242367 raw_queries=3003992 inverse_iterations=566712 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=131308 F_calls=12988 W_only=125722 F_only=7402 mixed=5586 W_CPU_s=0.169084 F_CPU_s=0.063573
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.0000000000000002e-10 steps=10 cpu_process_seconds=31.2971 raw_queries=3012896 inverse_iterations=568951 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=133148 F_calls=13172 W_only=127478 F_only=7502 mixed=5670 W_CPU_s=0.17148 F_CPU_s=0.064197
+CORE STAGE PROFILE: stage=viscous_first time=1.0000000000000002e-10 steps=10 cpu_process_seconds=31.341716 raw_queries=3013080 inverse_iterations=569085 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=134988 F_calls=13356 W_only=129234 F_only=7602 mixed=5754 W_CPU_s=0.173951 F_CPU_s=0.064834
+DIAG before face_velocity t=1.0000000000000002e-10 steps=10
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.0000000000000002e-10 steps=10 cpu_process_seconds=31.387547 raw_queries=3013080 inverse_iterations=569085 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=135908 F_calls=13448 W_only=130112 F_only=7652 mixed=5796 W_CPU_s=0.175188 F_CPU_s=0.067428
+CORE STAGE PROFILE: stage=pressure_capillary time=1.1000000000000002e-10 steps=10 cpu_process_seconds=31.596834 raw_queries=3156240 inverse_iterations=594156 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=136828 F_calls=13540 W_only=130990 F_only=7702 mixed=5838 W_CPU_s=0.176392 F_CPU_s=0.067741
+CORE STAGE PROFILE: stage=viscous_last time=1.1000000000000002e-10 steps=10 cpu_process_seconds=31.641244 raw_queries=3156424 inverse_iterations=594290 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=138668 F_calls=13724 W_only=132746 F_only=7802 mixed=5922 W_CPU_s=0.178806 F_CPU_s=0.068359
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.1000000000000002e-10 steps=10 cpu_process_seconds=31.695676 raw_queries=3165408 inverse_iterations=596534 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=126
+CORE READONLY PROFILE: W_calls=140508 F_calls=13908 W_only=134502 F_only=7902 mixed=6006 W_CPU_s=0.18118 F_CPU_s=0.068987
+CORE STAGE PROFILE: stage=thermal_last time=1.1000000000000002e-10 steps=10 cpu_process_seconds=31.778534 raw_queries=3188984 inverse_iterations=602485 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=107585 heat_evaluations=132
+CORE READONLY PROFILE: W_calls=141428 F_calls=14000 W_only=135380 F_only=7952 mixed=6048 W_CPU_s=0.182366 F_CPU_s=0.069294
+CORE STAGE PROFILE: stage=accepted time=1.1000000000000002e-10 steps=11 cpu_process_seconds=32.674548 raw_queries=3246624 inverse_iterations=612294 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=111713 heat_evaluations=132
+CORE READONLY PROFILE: W_calls=142348 F_calls=14092 W_only=136258 F_only=8002 mixed=6090 W_CPU_s=0.183559 F_CPU_s=0.069627
+CORE STAGE PROFILE: stage=phase_first time=1.1000000000000002e-10 steps=11 cpu_process_seconds=33.561305 raw_queries=3303944 inverse_iterations=622044 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=132
+CORE READONLY PROFILE: W_calls=143268 F_calls=14184 W_only=137136 F_only=8052 mixed=6132 W_CPU_s=0.184718 F_CPU_s=0.069978
+CORE STAGE PROFILE: stage=thermal_first time=1.1000000000000002e-10 steps=11 cpu_process_seconds=33.644194 raw_queries=3327184 inverse_iterations=627935 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=144188 F_calls=14276 W_only=138014 F_only=8102 mixed=6174 W_CPU_s=0.185999 F_CPU_s=0.070294
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.1000000000000002e-10 steps=11 cpu_process_seconds=33.698909 raw_queries=3336664 inverse_iterations=630262 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=146028 F_calls=14460 W_only=139770 F_only=8202 mixed=6258 W_CPU_s=0.188397 F_CPU_s=0.07092
+CORE STAGE PROFILE: stage=viscous_first time=1.1000000000000002e-10 steps=11 cpu_process_seconds=33.74362 raw_queries=3336848 inverse_iterations=630396 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=147868 F_calls=14644 W_only=141526 F_only=8302 mixed=6342 W_CPU_s=0.190775 F_CPU_s=0.071578
+DIAG before face_velocity t=1.1000000000000002e-10 steps=11
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.1000000000000002e-10 steps=11 cpu_process_seconds=33.789008 raw_queries=3336848 inverse_iterations=630396 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=148788 F_calls=14736 W_only=142404 F_only=8352 mixed=6384 W_CPU_s=0.191943 F_CPU_s=0.074377
+CORE STAGE PROFILE: stage=pressure_capillary time=1.2000000000000003e-10 steps=11 cpu_process_seconds=33.998856 raw_queries=3481288 inverse_iterations=655820 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=149708 F_calls=14828 W_only=143282 F_only=8402 mixed=6426 W_CPU_s=0.193167 F_CPU_s=0.074689
+CORE STAGE PROFILE: stage=viscous_last time=1.2000000000000003e-10 steps=11 cpu_process_seconds=34.044267 raw_queries=3481600 inverse_iterations=655962 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=151548 F_calls=15012 W_only=145038 F_only=8502 mixed=6510 W_CPU_s=0.195588 F_CPU_s=0.075321
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.2000000000000003e-10 steps=11 cpu_process_seconds=34.099276 raw_queries=3491064 inverse_iterations=658275 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=138
+CORE READONLY PROFILE: W_calls=153388 F_calls=15196 W_only=146794 F_only=8602 mixed=6594 W_CPU_s=0.198002 F_CPU_s=0.075948
+CORE STAGE PROFILE: stage=thermal_last time=1.2000000000000003e-10 steps=11 cpu_process_seconds=34.181865 raw_queries=3514304 inverse_iterations=664166 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=115841 heat_evaluations=144
+CORE READONLY PROFILE: W_calls=154308 F_calls=15288 W_only=147672 F_only=8652 mixed=6636 W_CPU_s=0.199231 F_CPU_s=0.076259
+CORE STAGE PROFILE: stage=accepted time=1.2000000000000003e-10 steps=12 cpu_process_seconds=35.054644 raw_queries=3571560 inverse_iterations=673912 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=119937 heat_evaluations=144
+CORE READONLY PROFILE: W_calls=155228 F_calls=15380 W_only=148550 F_only=8702 mixed=6678 W_CPU_s=0.200385 F_CPU_s=0.076564
+CORE STAGE PROFILE: stage=phase_first time=1.2000000000000003e-10 steps=12 cpu_process_seconds=35.919983 raw_queries=3628496 inverse_iterations=683638 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=144
+CORE READONLY PROFILE: W_calls=156148 F_calls=15472 W_only=149428 F_only=8752 mixed=6720 W_CPU_s=0.201581 F_CPU_s=0.076932
+CORE STAGE PROFILE: stage=thermal_first time=1.2000000000000003e-10 steps=12 cpu_process_seconds=36.001943 raw_queries=3651704 inverse_iterations=689527 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=157068 F_calls=15564 W_only=150306 F_only=8802 mixed=6762 W_CPU_s=0.202741 F_CPU_s=0.077242
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.2000000000000003e-10 steps=12 cpu_process_seconds=36.057276 raw_queries=3661248 inverse_iterations=691858 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=158908 F_calls=15748 W_only=152062 F_only=8902 mixed=6846 W_CPU_s=0.205181 F_CPU_s=0.077888
+CORE STAGE PROFILE: stage=viscous_first time=1.2000000000000003e-10 steps=12 cpu_process_seconds=36.102071 raw_queries=3661560 inverse_iterations=692000 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=160748 F_calls=15932 W_only=153818 F_only=9002 mixed=6930 W_CPU_s=0.207591 F_CPU_s=0.078508
+DIAG before face_velocity t=1.2000000000000003e-10 steps=12
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.2000000000000003e-10 steps=12 cpu_process_seconds=36.147766 raw_queries=3661560 inverse_iterations=692000 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=161668 F_calls=16024 W_only=154696 F_only=9052 mixed=6972 W_CPU_s=0.208757 F_CPU_s=0.081532
+CORE STAGE PROFILE: stage=pressure_capillary time=1.3000000000000002e-10 steps=12 cpu_process_seconds=36.360026 raw_queries=3806656 inverse_iterations=717543 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=162588 F_calls=16116 W_only=155574 F_only=9102 mixed=7014 W_CPU_s=0.209973 F_CPU_s=0.08184
+CORE STAGE PROFILE: stage=viscous_last time=1.3000000000000002e-10 steps=12 cpu_process_seconds=36.404973 raw_queries=3807064 inverse_iterations=717691 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=164428 F_calls=16300 W_only=157330 F_only=9202 mixed=7098 W_CPU_s=0.212351 F_CPU_s=0.082506
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.3000000000000002e-10 steps=12 cpu_process_seconds=36.460132 raw_queries=3816640 inverse_iterations=720024 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=150
+CORE READONLY PROFILE: W_calls=166268 F_calls=16484 W_only=159086 F_only=9302 mixed=7182 W_CPU_s=0.2147 F_CPU_s=0.083173
+CORE STAGE PROFILE: stage=thermal_last time=1.3000000000000002e-10 steps=12 cpu_process_seconds=36.542265 raw_queries=3839880 inverse_iterations=725915 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=124009 heat_evaluations=156
+CORE READONLY PROFILE: W_calls=167188 F_calls=16576 W_only=159964 F_only=9352 mixed=7224 W_CPU_s=0.215861 F_CPU_s=0.083491
+CORE STAGE PROFILE: stage=accepted time=1.3000000000000002e-10 steps=13 cpu_process_seconds=37.40777 raw_queries=3896384 inverse_iterations=735575 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=128159 heat_evaluations=156
+CORE READONLY PROFILE: W_calls=168108 F_calls=16668 W_only=160842 F_only=9402 mixed=7266 W_CPU_s=0.217056 F_CPU_s=0.083802
+CORE STAGE PROFILE: stage=phase_first time=1.3000000000000002e-10 steps=13 cpu_process_seconds=38.275764 raw_queries=3952648 inverse_iterations=745220 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=156
+CORE READONLY PROFILE: W_calls=169028 F_calls=16760 W_only=161720 F_only=9452 mixed=7308 W_CPU_s=0.218495 F_CPU_s=0.084111
+CORE STAGE PROFILE: stage=thermal_first time=1.3000000000000002e-10 steps=13 cpu_process_seconds=38.358277 raw_queries=3975872 inverse_iterations=751110 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=169948 F_calls=16852 W_only=162598 F_only=9502 mixed=7350 W_CPU_s=0.219664 F_CPU_s=0.084447
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.3000000000000002e-10 steps=13 cpu_process_seconds=38.412895 raw_queries=3985416 inverse_iterations=753441 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=171788 F_calls=17036 W_only=164354 F_only=9602 mixed=7434 W_CPU_s=0.222006 F_CPU_s=0.085078
+CORE STAGE PROFILE: stage=viscous_first time=1.3000000000000002e-10 steps=13 cpu_process_seconds=38.457383 raw_queries=3985824 inverse_iterations=753589 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=173628 F_calls=17220 W_only=166110 F_only=9702 mixed=7518 W_CPU_s=0.224448 F_CPU_s=0.085712
+DIAG before face_velocity t=1.3000000000000002e-10 steps=13
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.3000000000000002e-10 steps=13 cpu_process_seconds=38.503354 raw_queries=3985824 inverse_iterations=753589 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=174548 F_calls=17312 W_only=166988 F_only=9752 mixed=7560 W_CPU_s=0.225613 F_CPU_s=0.088584
+CORE STAGE PROFILE: stage=pressure_capillary time=1.4000000000000001e-10 steps=13 cpu_process_seconds=38.71423 raw_queries=4131688 inverse_iterations=779219 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=175468 F_calls=17404 W_only=167866 F_only=9802 mixed=7602 W_CPU_s=0.226795 F_CPU_s=0.088898
+CORE STAGE PROFILE: stage=viscous_last time=1.4000000000000001e-10 steps=13 cpu_process_seconds=38.758831 raw_queries=4132224 inverse_iterations=779375 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=177308 F_calls=17588 W_only=169622 F_only=9902 mixed=7686 W_CPU_s=0.229223 F_CPU_s=0.089523
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.4000000000000001e-10 steps=13 cpu_process_seconds=38.813695 raw_queries=4141800 inverse_iterations=781708 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=162
+CORE READONLY PROFILE: W_calls=179148 F_calls=17772 W_only=171378 F_only=10002 mixed=7770 W_CPU_s=0.231591 F_CPU_s=0.090148
+CORE STAGE PROFILE: stage=thermal_last time=1.4000000000000001e-10 steps=13 cpu_process_seconds=38.895659 raw_queries=4165024 inverse_iterations=787598 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=132313 heat_evaluations=168
+CORE READONLY PROFILE: W_calls=180068 F_calls=17864 W_only=172256 F_only=10052 mixed=7812 W_CPU_s=0.232782 F_CPU_s=0.090459
+CORE STAGE PROFILE: stage=accepted time=1.4000000000000001e-10 steps=14 cpu_process_seconds=39.759198 raw_queries=4221240 inverse_iterations=797240 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=136444 heat_evaluations=168
+CORE READONLY PROFILE: W_calls=180988 F_calls=17956 W_only=173134 F_only=10102 mixed=7854 W_CPU_s=0.233975 F_CPU_s=0.090771
+CORE STAGE PROFILE: stage=phase_first time=1.4000000000000001e-10 steps=14 cpu_process_seconds=40.625613 raw_queries=4277328 inverse_iterations=806874 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=168
+CORE READONLY PROFILE: W_calls=181908 F_calls=18048 W_only=174012 F_only=10152 mixed=7896 W_CPU_s=0.235158 F_CPU_s=0.091079
+CORE STAGE PROFILE: stage=thermal_first time=1.4000000000000001e-10 steps=14 cpu_process_seconds=40.70806 raw_queries=4300552 inverse_iterations=812764 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=182828 F_calls=18140 W_only=174890 F_only=10202 mixed=7938 W_CPU_s=0.236354 F_CPU_s=0.091391
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.4000000000000001e-10 steps=14 cpu_process_seconds=40.763575 raw_queries=4310096 inverse_iterations=815095 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=184668 F_calls=18324 W_only=176646 F_only=10302 mixed=8022 W_CPU_s=0.238777 F_CPU_s=0.092035
+CORE STAGE PROFILE: stage=viscous_first time=1.4000000000000001e-10 steps=14 cpu_process_seconds=40.810153 raw_queries=4310632 inverse_iterations=815251 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=186508 F_calls=18508 W_only=178402 F_only=10402 mixed=8106 W_CPU_s=0.241125 F_CPU_s=0.092654
+DIAG before face_velocity t=1.4000000000000001e-10 steps=14
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.4000000000000001e-10 steps=14 cpu_process_seconds=40.8562 raw_queries=4310632 inverse_iterations=815251 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=187428 F_calls=18600 W_only=179280 F_only=10452 mixed=8148 W_CPU_s=0.242302 F_CPU_s=0.095569
+CORE STAGE PROFILE: stage=pressure_capillary time=1.5e-10 steps=14 cpu_process_seconds=41.071739 raw_queries=4458800 inverse_iterations=841025 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=188348 F_calls=18692 W_only=180158 F_only=10502 mixed=8190 W_CPU_s=0.243461 F_CPU_s=0.095882
+CORE STAGE PROFILE: stage=viscous_last time=1.5e-10 steps=14 cpu_process_seconds=41.117234 raw_queries=4459368 inverse_iterations=841183 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=190188 F_calls=18876 W_only=181914 F_only=10602 mixed=8274 W_CPU_s=0.245782 F_CPU_s=0.096504
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.5e-10 steps=14 cpu_process_seconds=41.17268 raw_queries=4468944 inverse_iterations=843516 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=174
+CORE READONLY PROFILE: W_calls=192028 F_calls=19060 W_only=183670 F_only=10702 mixed=8358 W_CPU_s=0.248202 F_CPU_s=0.097155
+CORE STAGE PROFILE: stage=thermal_last time=1.5e-10 steps=14 cpu_process_seconds=41.255275 raw_queries=4492168 inverse_iterations=849406 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=140581 heat_evaluations=180
+CORE READONLY PROFILE: W_calls=192948 F_calls=19152 W_only=184548 F_only=10752 mixed=8400 W_CPU_s=0.249359 F_CPU_s=0.097494
+CORE STAGE PROFILE: stage=accepted time=1.5e-10 steps=15 cpu_process_seconds=42.121889 raw_queries=4548080 inverse_iterations=859029 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=144718 heat_evaluations=180
+CORE READONLY PROFILE: W_calls=193868 F_calls=19244 W_only=185426 F_only=10802 mixed=8442 W_CPU_s=0.250579 F_CPU_s=0.097807
+CORE STAGE PROFILE: stage=phase_first time=1.5e-10 steps=15 cpu_process_seconds=42.985145 raw_queries=4603880 inverse_iterations=868645 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=180
+CORE READONLY PROFILE: W_calls=194788 F_calls=19336 W_only=186304 F_only=10852 mixed=8484 W_CPU_s=0.251744 F_CPU_s=0.098118
+CORE STAGE PROFILE: stage=thermal_first time=1.5e-10 steps=15 cpu_process_seconds=43.067095 raw_queries=4627104 inverse_iterations=874522 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=195708 F_calls=19428 W_only=187182 F_only=10902 mixed=8526 W_CPU_s=0.252891 F_CPU_s=0.098478
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.5e-10 steps=15 cpu_process_seconds=43.12313 raw_queries=4636648 inverse_iterations=876853 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=197548 F_calls=19612 W_only=188938 F_only=11002 mixed=8610 W_CPU_s=0.255276 F_CPU_s=0.099107
+CORE STAGE PROFILE: stage=viscous_first time=1.5e-10 steps=15 cpu_process_seconds=43.168337 raw_queries=4637216 inverse_iterations=877011 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=199388 F_calls=19796 W_only=190694 F_only=11102 mixed=8694 W_CPU_s=0.257688 F_CPU_s=0.099724
+DIAG before face_velocity t=1.5e-10 steps=15
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.5e-10 steps=15 cpu_process_seconds=43.213725 raw_queries=4637216 inverse_iterations=877011 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=200308 F_calls=19888 W_only=191572 F_only=11152 mixed=8736 W_CPU_s=0.258867 F_CPU_s=0.102639
+CORE STAGE PROFILE: stage=pressure_capillary time=1.5999999999999999e-10 steps=15 cpu_process_seconds=43.42963 raw_queries=4785688 inverse_iterations=902687 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=201228 F_calls=19980 W_only=192450 F_only=11202 mixed=8778 W_CPU_s=0.260058 F_CPU_s=0.102955
+CORE STAGE PROFILE: stage=viscous_last time=1.5999999999999999e-10 steps=15 cpu_process_seconds=43.474796 raw_queries=4786336 inverse_iterations=902850 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=203068 F_calls=20164 W_only=194206 F_only=11302 mixed=8862 W_CPU_s=0.262414 F_CPU_s=0.103582
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.5999999999999999e-10 steps=15 cpu_process_seconds=43.529766 raw_queries=4795912 inverse_iterations=905183 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=186
+CORE READONLY PROFILE: W_calls=204908 F_calls=20348 W_only=195962 F_only=11402 mixed=8946 W_CPU_s=0.264794 F_CPU_s=0.104215
+CORE STAGE PROFILE: stage=thermal_last time=1.5999999999999999e-10 steps=15 cpu_process_seconds=43.612902 raw_queries=4819136 inverse_iterations=911060 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=148855 heat_evaluations=192
+CORE READONLY PROFILE: W_calls=205828 F_calls=20440 W_only=196840 F_only=11452 mixed=8988 W_CPU_s=0.265994 F_CPU_s=0.104522
+CORE STAGE PROFILE: stage=accepted time=1.5999999999999999e-10 steps=16 cpu_process_seconds=44.481782 raw_queries=4874840 inverse_iterations=920670 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=152992 heat_evaluations=192
+CORE READONLY PROFILE: W_calls=206748 F_calls=20532 W_only=197718 F_only=11502 mixed=9030 W_CPU_s=0.267236 F_CPU_s=0.104835
+CORE STAGE PROFILE: stage=phase_first time=1.5999999999999999e-10 steps=16 cpu_process_seconds=45.350965 raw_queries=4930608 inverse_iterations=930284 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=192
+CORE READONLY PROFILE: W_calls=207668 F_calls=20624 W_only=198596 F_only=11552 mixed=9072 W_CPU_s=0.268441 F_CPU_s=0.105142
+CORE STAGE PROFILE: stage=thermal_first time=1.5999999999999999e-10 steps=16 cpu_process_seconds=45.43433 raw_queries=4953816 inverse_iterations=936147 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=208588 F_calls=20716 W_only=199474 F_only=11602 mixed=9114 W_CPU_s=0.269636 F_CPU_s=0.105452
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.5999999999999999e-10 steps=16 cpu_process_seconds=45.489436 raw_queries=4963456 inverse_iterations=938484 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=210428 F_calls=20900 W_only=201230 F_only=11702 mixed=9198 W_CPU_s=0.272089 F_CPU_s=0.10608
+CORE STAGE PROFILE: stage=viscous_first time=1.5999999999999999e-10 steps=16 cpu_process_seconds=45.534311 raw_queries=4964088 inverse_iterations=938646 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=212268 F_calls=21084 W_only=202986 F_only=11802 mixed=9282 W_CPU_s=0.274509 F_CPU_s=0.106701
+DIAG before face_velocity t=1.5999999999999999e-10 steps=16
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.5999999999999999e-10 steps=16 cpu_process_seconds=45.579323 raw_queries=4964088 inverse_iterations=938646 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=213188 F_calls=21176 W_only=203864 F_only=11852 mixed=9324 W_CPU_s=0.275688 F_CPU_s=0.10959
+CORE STAGE PROFILE: stage=pressure_capillary time=1.6999999999999998e-10 steps=16 cpu_process_seconds=45.795033 raw_queries=5114432 inverse_iterations=964439 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=214108 F_calls=21268 W_only=204742 F_only=11902 mixed=9366 W_CPU_s=0.276903 F_CPU_s=0.109902
+CORE STAGE PROFILE: stage=viscous_last time=1.6999999999999998e-10 steps=16 cpu_process_seconds=45.839898 raw_queries=5115128 inverse_iterations=964605 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=215948 F_calls=21452 W_only=206498 F_only=12002 mixed=9450 W_CPU_s=0.279341 F_CPU_s=0.110551
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.6999999999999998e-10 steps=16 cpu_process_seconds=45.896353 raw_queries=5124768 inverse_iterations=966942 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=198
+CORE READONLY PROFILE: W_calls=217788 F_calls=21636 W_only=208254 F_only=12102 mixed=9534 W_CPU_s=0.281686 F_CPU_s=0.111241
+CORE STAGE PROFILE: stage=thermal_last time=1.6999999999999998e-10 steps=16 cpu_process_seconds=45.978647 raw_queries=5147944 inverse_iterations=972803 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=157129 heat_evaluations=204
+CORE READONLY PROFILE: W_calls=218708 F_calls=21728 W_only=209132 F_only=12152 mixed=9576 W_CPU_s=0.282852 F_CPU_s=0.111578
+CORE STAGE PROFILE: stage=accepted time=1.6999999999999998e-10 steps=17 cpu_process_seconds=46.845122 raw_queries=5203680 inverse_iterations=982415 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=161269 heat_evaluations=204
+CORE READONLY PROFILE: W_calls=219628 F_calls=21820 W_only=210010 F_only=12202 mixed=9618 W_CPU_s=0.284084 F_CPU_s=0.111884
+CORE STAGE PROFILE: stage=phase_first time=1.6999999999999998e-10 steps=17 cpu_process_seconds=47.722094 raw_queries=5259128 inverse_iterations=992009 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=204
+CORE READONLY PROFILE: W_calls=220548 F_calls=21912 W_only=210888 F_only=12252 mixed=9660 W_CPU_s=0.285271 F_CPU_s=0.112213
+CORE STAGE PROFILE: stage=thermal_first time=1.6999999999999998e-10 steps=17 cpu_process_seconds=47.80595 raw_queries=5282256 inverse_iterations=997841 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=221468 F_calls=22004 W_only=211766 F_only=12302 mixed=9702 W_CPU_s=0.286477 F_CPU_s=0.112529
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.6999999999999998e-10 steps=17 cpu_process_seconds=47.863132 raw_queries=5291896 inverse_iterations=1000178 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=223308 F_calls=22188 W_only=213522 F_only=12402 mixed=9786 W_CPU_s=0.288817 F_CPU_s=0.113157
+CORE STAGE PROFILE: stage=viscous_first time=1.6999999999999998e-10 steps=17 cpu_process_seconds=47.908642 raw_queries=5292592 inverse_iterations=1000344 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=225148 F_calls=22372 W_only=215278 F_only=12502 mixed=9870 W_CPU_s=0.291132 F_CPU_s=0.114113
+DIAG before face_velocity t=1.6999999999999998e-10 steps=17
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.6999999999999998e-10 steps=17 cpu_process_seconds=47.954876 raw_queries=5292592 inverse_iterations=1000344 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=226068 F_calls=22464 W_only=216156 F_only=12552 mixed=9912 W_CPU_s=0.292299 F_CPU_s=0.117094
+CORE STAGE PROFILE: stage=pressure_capillary time=1.7999999999999997e-10 steps=17 cpu_process_seconds=48.175046 raw_queries=5444152 inverse_iterations=1026213 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=226988 F_calls=22556 W_only=217034 F_only=12602 mixed=9954 W_CPU_s=0.293526 F_CPU_s=0.1174
+CORE STAGE PROFILE: stage=viscous_last time=1.7999999999999997e-10 steps=17 cpu_process_seconds=48.221679 raw_queries=5444944 inverse_iterations=1026385 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=228828 F_calls=22740 W_only=218790 F_only=12702 mixed=10038 W_CPU_s=0.295948 F_CPU_s=0.118025
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.7999999999999997e-10 steps=17 cpu_process_seconds=48.277725 raw_queries=5454616 inverse_iterations=1028711 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=210
+CORE READONLY PROFILE: W_calls=230668 F_calls=22924 W_only=220546 F_only=12802 mixed=10122 W_CPU_s=0.298311 F_CPU_s=0.118657
+CORE STAGE PROFILE: stage=thermal_last time=1.7999999999999997e-10 steps=17 cpu_process_seconds=48.360247 raw_queries=5477776 inverse_iterations=1034532 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=165409 heat_evaluations=216
+CORE READONLY PROFILE: W_calls=231588 F_calls=23016 W_only=221424 F_only=12852 mixed=10164 W_CPU_s=0.299514 F_CPU_s=0.118968
+CORE STAGE PROFILE: stage=accepted time=1.7999999999999997e-10 steps=18 cpu_process_seconds=49.226022 raw_queries=5533304 inverse_iterations=1044131 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=169549 heat_evaluations=216
+CORE READONLY PROFILE: W_calls=232508 F_calls=23108 W_only=222302 F_only=12902 mixed=10206 W_CPU_s=0.300689 F_CPU_s=0.119279
+CORE STAGE PROFILE: stage=phase_first time=1.7999999999999997e-10 steps=18 cpu_process_seconds=50.094302 raw_queries=5588448 inverse_iterations=1053394 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=216
+CORE READONLY PROFILE: W_calls=233428 F_calls=23200 W_only=223180 F_only=12952 mixed=10248 W_CPU_s=0.30197 F_CPU_s=0.119583
+CORE STAGE PROFILE: stage=thermal_first time=1.7999999999999997e-10 steps=18 cpu_process_seconds=50.177208 raw_queries=5611560 inverse_iterations=1059212 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=234348 F_calls=23292 W_only=224058 F_only=13002 mixed=10290 W_CPU_s=0.303207 F_CPU_s=0.119926
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.7999999999999997e-10 steps=18 cpu_process_seconds=50.232198 raw_queries=5621200 inverse_iterations=1061549 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=236188 F_calls=23476 W_only=225814 F_only=13102 mixed=10374 W_CPU_s=0.305587 F_CPU_s=0.120591
+CORE STAGE PROFILE: stage=viscous_first time=1.7999999999999997e-10 steps=18 cpu_process_seconds=50.277418 raw_queries=5621992 inverse_iterations=1061721 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=238028 F_calls=23660 W_only=227570 F_only=13202 mixed=10458 W_CPU_s=0.30805 F_CPU_s=0.121228
+DIAG before face_velocity t=1.7999999999999997e-10 steps=18
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.7999999999999997e-10 steps=18 cpu_process_seconds=50.323403 raw_queries=5621992 inverse_iterations=1061721 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=238948 F_calls=23752 W_only=228448 F_only=13252 mixed=10500 W_CPU_s=0.309205 F_CPU_s=0.12417
+CORE STAGE PROFILE: stage=pressure_capillary time=1.8999999999999996e-10 steps=18 cpu_process_seconds=50.542151 raw_queries=5774096 inverse_iterations=1087624 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=239868 F_calls=23844 W_only=229326 F_only=13302 mixed=10542 W_CPU_s=0.310435 F_CPU_s=0.124508
+CORE STAGE PROFILE: stage=viscous_last time=1.8999999999999996e-10 steps=18 cpu_process_seconds=50.587299 raw_queries=5775064 inverse_iterations=1087820 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=241708 F_calls=24028 W_only=231082 F_only=13402 mixed=10626 W_CPU_s=0.312806 F_CPU_s=0.125133
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.8999999999999996e-10 steps=18 cpu_process_seconds=50.642313 raw_queries=5784736 inverse_iterations=1090146 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=222
+CORE READONLY PROFILE: W_calls=243548 F_calls=24212 W_only=232838 F_only=13502 mixed=10710 W_CPU_s=0.315201 F_CPU_s=0.12582
+CORE STAGE PROFILE: stage=thermal_last time=1.8999999999999996e-10 steps=18 cpu_process_seconds=50.724665 raw_queries=5807912 inverse_iterations=1095968 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=173689 heat_evaluations=228
+CORE READONLY PROFILE: W_calls=244468 F_calls=24304 W_only=233716 F_only=13552 mixed=10752 W_CPU_s=0.316364 F_CPU_s=0.126196
+CORE STAGE PROFILE: stage=accepted time=1.8999999999999996e-10 steps=19 cpu_process_seconds=51.594445 raw_queries=5862400 inverse_iterations=1105138 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=177829 heat_evaluations=228
+CORE READONLY PROFILE: W_calls=245388 F_calls=24396 W_only=234594 F_only=13602 mixed=10794 W_CPU_s=0.317535 F_CPU_s=0.126504
+CORE STAGE PROFILE: stage=phase_first time=1.8999999999999996e-10 steps=19 cpu_process_seconds=52.466193 raw_queries=5916488 inverse_iterations=1114231 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=228
+CORE READONLY PROFILE: W_calls=246308 F_calls=24488 W_only=235472 F_only=13652 mixed=10836 W_CPU_s=0.318725 F_CPU_s=0.126814
+CORE STAGE PROFILE: stage=thermal_first time=1.8999999999999996e-10 steps=19 cpu_process_seconds=52.548615 raw_queries=5939632 inverse_iterations=1120038 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=247228 F_calls=24580 W_only=236350 F_only=13702 mixed=10878 W_CPU_s=0.319911 F_CPU_s=0.127151
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.8999999999999996e-10 steps=19 cpu_process_seconds=52.603746 raw_queries=5949272 inverse_iterations=1122362 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=249068 F_calls=24764 W_only=238106 F_only=13802 mixed=10962 W_CPU_s=0.322373 F_CPU_s=0.12778
+CORE STAGE PROFILE: stage=viscous_first time=1.8999999999999996e-10 steps=19 cpu_process_seconds=52.648983 raw_queries=5950128 inverse_iterations=1122538 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=250908 F_calls=24948 W_only=239862 F_only=13902 mixed=11046 W_CPU_s=0.32486 F_CPU_s=0.128446
+DIAG before face_velocity t=1.8999999999999996e-10 steps=19
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.8999999999999996e-10 steps=19 cpu_process_seconds=52.695164 raw_queries=5950128 inverse_iterations=1122538 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=251828 F_calls=25040 W_only=240740 F_only=13952 mixed=11088 W_CPU_s=0.326057 F_CPU_s=0.131413
+CORE STAGE PROFILE: stage=pressure_capillary time=1.9999999999999996e-10 steps=19 cpu_process_seconds=52.914262 raw_queries=6103256 inverse_iterations=1148622 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=252748 F_calls=25132 W_only=241618 F_only=14002 mixed=11130 W_CPU_s=0.327269 F_CPU_s=0.131727
+CORE STAGE PROFILE: stage=viscous_last time=1.9999999999999996e-10 steps=19 cpu_process_seconds=52.960054 raw_queries=6104112 inverse_iterations=1148798 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=254588 F_calls=25316 W_only=243374 F_only=14102 mixed=11214 W_CPU_s=0.329713 F_CPU_s=0.132348
+CORE STAGE PROFILE: stage=water_Fourier_last time=1.9999999999999996e-10 steps=19 cpu_process_seconds=53.014924 raw_queries=6113784 inverse_iterations=1151124 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=234
+CORE READONLY PROFILE: W_calls=256428 F_calls=25500 W_only=245130 F_only=14202 mixed=11298 W_CPU_s=0.332087 F_CPU_s=0.132992
+CORE STAGE PROFILE: stage=thermal_last time=1.9999999999999996e-10 steps=19 cpu_process_seconds=53.096806 raw_queries=6136944 inverse_iterations=1156932 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=181969 heat_evaluations=240
+CORE READONLY PROFILE: W_calls=257348 F_calls=25592 W_only=246008 F_only=14252 mixed=11340 W_CPU_s=0.333265 F_CPU_s=0.133329
+CORE STAGE PROFILE: stage=accepted time=1.9999999999999996e-10 steps=20 cpu_process_seconds=53.970221 raw_queries=6190984 inverse_iterations=1166022 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=186109 heat_evaluations=240
+CORE READONLY PROFILE: W_calls=258268 F_calls=25684 W_only=246886 F_only=14302 mixed=11382 W_CPU_s=0.334463 F_CPU_s=0.133759
+CORE STAGE PROFILE: stage=phase_first time=1.9999999999999996e-10 steps=20 cpu_process_seconds=54.841469 raw_queries=6244800 inverse_iterations=1175098 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=240
+CORE READONLY PROFILE: W_calls=259188 F_calls=25776 W_only=247764 F_only=14352 mixed=11424 W_CPU_s=0.335672 F_CPU_s=0.13407
+CORE STAGE PROFILE: stage=thermal_first time=1.9999999999999996e-10 steps=20 cpu_process_seconds=54.925132 raw_queries=6267944 inverse_iterations=1180905 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=260108 F_calls=25868 W_only=248642 F_only=14402 mixed=11466 W_CPU_s=0.336836 F_CPU_s=0.134385
+CORE STAGE PROFILE: stage=water_Fourier_first time=1.9999999999999996e-10 steps=20 cpu_process_seconds=54.982202 raw_queries=6277584 inverse_iterations=1183229 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=261948 F_calls=26052 W_only=250398 F_only=14502 mixed=11550 W_CPU_s=0.339361 F_CPU_s=0.13501
+CORE STAGE PROFILE: stage=viscous_first time=1.9999999999999996e-10 steps=20 cpu_process_seconds=55.02881 raw_queries=6278440 inverse_iterations=1183405 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=263788 F_calls=26236 W_only=252154 F_only=14602 mixed=11634 W_CPU_s=0.341847 F_CPU_s=0.135639
+DIAG before face_velocity t=1.9999999999999996e-10 steps=20
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=1.9999999999999996e-10 steps=20 cpu_process_seconds=55.075065 raw_queries=6278440 inverse_iterations=1183405 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=264708 F_calls=26328 W_only=253032 F_only=14652 mixed=11676 W_CPU_s=0.343099 F_CPU_s=0.138665
+CORE STAGE PROFILE: stage=pressure_capillary time=2.0999999999999995e-10 steps=20 cpu_process_seconds=55.295601 raw_queries=6431920 inverse_iterations=1209511 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=265628 F_calls=26420 W_only=253910 F_only=14702 mixed=11718 W_CPU_s=0.344294 F_CPU_s=0.139007
+CORE STAGE PROFILE: stage=viscous_last time=2.0999999999999995e-10 steps=20 cpu_process_seconds=55.341246 raw_queries=6432952 inverse_iterations=1209711 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=267468 F_calls=26604 W_only=255666 F_only=14802 mixed=11802 W_CPU_s=0.346655 F_CPU_s=0.139664
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.0999999999999995e-10 steps=20 cpu_process_seconds=55.396286 raw_queries=6442720 inverse_iterations=1212043 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=246
+CORE READONLY PROFILE: W_calls=269308 F_calls=26788 W_only=257422 F_only=14902 mixed=11886 W_CPU_s=0.349027 F_CPU_s=0.140295
+CORE STAGE PROFILE: stage=thermal_last time=2.0999999999999995e-10 steps=20 cpu_process_seconds=55.479047 raw_queries=6465864 inverse_iterations=1217850 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=190249 heat_evaluations=252
+CORE READONLY PROFILE: W_calls=270228 F_calls=26880 W_only=258300 F_only=14952 mixed=11928 W_CPU_s=0.3502 F_CPU_s=0.140635
+CORE STAGE PROFILE: stage=accepted time=2.0999999999999995e-10 steps=21 cpu_process_seconds=56.349892 raw_queries=6519664 inverse_iterations=1226925 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=194389 heat_evaluations=252
+CORE READONLY PROFILE: W_calls=271148 F_calls=26972 W_only=259178 F_only=15002 mixed=11970 W_CPU_s=0.351397 F_CPU_s=0.140978
+CORE STAGE PROFILE: stage=phase_first time=2.0999999999999995e-10 steps=21 cpu_process_seconds=57.221638 raw_queries=6573448 inverse_iterations=1235999 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=252
+CORE READONLY PROFILE: W_calls=272068 F_calls=27064 W_only=260056 F_only=15052 mixed=12012 W_CPU_s=0.352596 F_CPU_s=0.141292
+CORE STAGE PROFILE: stage=thermal_first time=2.0999999999999995e-10 steps=21 cpu_process_seconds=57.304672 raw_queries=6596608 inverse_iterations=1241807 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=272988 F_calls=27156 W_only=260934 F_only=15102 mixed=12054 W_CPU_s=0.353781 F_CPU_s=0.141632
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.0999999999999995e-10 steps=21 cpu_process_seconds=57.360201 raw_queries=6606344 inverse_iterations=1244137 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=274828 F_calls=27340 W_only=262690 F_only=15202 mixed=12138 W_CPU_s=0.356174 F_CPU_s=0.142269
+CORE STAGE PROFILE: stage=viscous_first time=2.0999999999999995e-10 steps=21 cpu_process_seconds=57.40702 raw_queries=6607264 inverse_iterations=1244317 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=276668 F_calls=27524 W_only=264446 F_only=15302 mixed=12222 W_CPU_s=0.358522 F_CPU_s=0.142909
+DIAG before face_velocity t=2.0999999999999995e-10 steps=21
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.0999999999999995e-10 steps=21 cpu_process_seconds=57.454496 raw_queries=6607264 inverse_iterations=1244317 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=277588 F_calls=27616 W_only=265324 F_only=15352 mixed=12264 W_CPU_s=0.35975 F_CPU_s=0.146165
+CORE STAGE PROFILE: stage=pressure_capillary time=2.1999999999999994e-10 steps=21 cpu_process_seconds=57.679686 raw_queries=6761416 inverse_iterations=1270504 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=278508 F_calls=27708 W_only=266202 F_only=15402 mixed=12306 W_CPU_s=0.360976 F_CPU_s=0.146476
+CORE STAGE PROFILE: stage=viscous_last time=2.1999999999999994e-10 steps=21 cpu_process_seconds=57.727688 raw_queries=6762368 inverse_iterations=1270686 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=280348 F_calls=27892 W_only=267958 F_only=15502 mixed=12390 W_CPU_s=0.363486 F_CPU_s=0.147118
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.1999999999999994e-10 steps=21 cpu_process_seconds=57.78543 raw_queries=6772136 inverse_iterations=1273018 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=258
+CORE READONLY PROFILE: W_calls=282188 F_calls=28076 W_only=269714 F_only=15602 mixed=12474 W_CPU_s=0.365918 F_CPU_s=0.147749
+CORE STAGE PROFILE: stage=thermal_last time=2.1999999999999994e-10 steps=21 cpu_process_seconds=57.871245 raw_queries=6795280 inverse_iterations=1278825 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=198529 heat_evaluations=264
+CORE READONLY PROFILE: W_calls=283108 F_calls=28168 W_only=270592 F_only=15652 mixed=12516 W_CPU_s=0.367149 F_CPU_s=0.148085
+CORE STAGE PROFILE: stage=accepted time=2.1999999999999994e-10 steps=22 cpu_process_seconds=58.749297 raw_queries=6849048 inverse_iterations=1287898 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=202669 heat_evaluations=264
+CORE READONLY PROFILE: W_calls=284028 F_calls=28260 W_only=271470 F_only=15702 mixed=12558 W_CPU_s=0.368339 F_CPU_s=0.148397
+CORE STAGE PROFILE: stage=phase_first time=2.1999999999999994e-10 steps=22 cpu_process_seconds=59.616412 raw_queries=6902240 inverse_iterations=1296935 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=264
+CORE READONLY PROFILE: W_calls=284948 F_calls=28352 W_only=272348 F_only=15752 mixed=12600 W_CPU_s=0.369531 F_CPU_s=0.148746
+CORE STAGE PROFILE: stage=thermal_first time=2.1999999999999994e-10 steps=22 cpu_process_seconds=59.698301 raw_queries=6925384 inverse_iterations=1302742 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=285868 F_calls=28444 W_only=273226 F_only=15802 mixed=12642 W_CPU_s=0.370706 F_CPU_s=0.149095
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.1999999999999994e-10 steps=22 cpu_process_seconds=59.753914 raw_queries=6935456 inverse_iterations=1305132 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=287708 F_calls=28628 W_only=274982 F_only=15902 mixed=12726 W_CPU_s=0.373039 F_CPU_s=0.149725
+CORE STAGE PROFILE: stage=viscous_first time=2.1999999999999994e-10 steps=22 cpu_process_seconds=59.800287 raw_queries=6936408 inverse_iterations=1305314 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=289548 F_calls=28812 W_only=276738 F_only=16002 mixed=12810 W_CPU_s=0.375417 F_CPU_s=0.15035
+DIAG before face_velocity t=2.1999999999999994e-10 steps=22
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.1999999999999994e-10 steps=22 cpu_process_seconds=59.845925 raw_queries=6936408 inverse_iterations=1305314 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=290468 F_calls=28904 W_only=277616 F_only=16052 mixed=12852 W_CPU_s=0.376703 F_CPU_s=0.153612
+CORE STAGE PROFILE: stage=pressure_capillary time=2.2999999999999993e-10 steps=22 cpu_process_seconds=60.067085 raw_queries=7090944 inverse_iterations=1331525 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=291388 F_calls=28996 W_only=278494 F_only=16102 mixed=12894 W_CPU_s=0.377941 F_CPU_s=0.15395
+CORE STAGE PROFILE: stage=viscous_last time=2.2999999999999993e-10 steps=22 cpu_process_seconds=60.113443 raw_queries=7091896 inverse_iterations=1331707 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=293228 F_calls=29180 W_only=280250 F_only=16202 mixed=12978 W_CPU_s=0.38028 F_CPU_s=0.154632
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.2999999999999993e-10 steps=22 cpu_process_seconds=60.168329 raw_queries=7101664 inverse_iterations=1334039 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=270
+CORE READONLY PROFILE: W_calls=295068 F_calls=29364 W_only=282006 F_only=16302 mixed=13062 W_CPU_s=0.382657 F_CPU_s=0.155254
+CORE STAGE PROFILE: stage=thermal_last time=2.2999999999999993e-10 steps=22 cpu_process_seconds=60.249895 raw_queries=7124792 inverse_iterations=1339845 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=206809 heat_evaluations=276
+CORE READONLY PROFILE: W_calls=295988 F_calls=29456 W_only=282884 F_only=16352 mixed=13104 W_CPU_s=0.383856 F_CPU_s=0.155563
+CORE STAGE PROFILE: stage=accepted time=2.2999999999999993e-10 steps=23 cpu_process_seconds=61.14906 raw_queries=7178112 inverse_iterations=1348890 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=210949 heat_evaluations=276
+CORE READONLY PROFILE: W_calls=296908 F_calls=29548 W_only=283762 F_only=16402 mixed=13146 W_CPU_s=0.385058 F_CPU_s=0.155875
+CORE STAGE PROFILE: stage=phase_first time=2.2999999999999993e-10 steps=23 cpu_process_seconds=62.020607 raw_queries=7231432 inverse_iterations=1357935 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=276
+CORE READONLY PROFILE: W_calls=297828 F_calls=29640 W_only=284640 F_only=16452 mixed=13188 W_CPU_s=0.386238 F_CPU_s=0.156211
+CORE STAGE PROFILE: stage=thermal_first time=2.2999999999999993e-10 steps=23 cpu_process_seconds=62.102841 raw_queries=7254560 inverse_iterations=1363741 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=298748 F_calls=29732 W_only=285518 F_only=16502 mixed=13230 W_CPU_s=0.387461 F_CPU_s=0.156521
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.2999999999999993e-10 steps=23 cpu_process_seconds=62.158594 raw_queries=7264632 inverse_iterations=1366131 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=300588 F_calls=29916 W_only=287274 F_only=16602 mixed=13314 W_CPU_s=0.389847 F_CPU_s=0.157192
+CORE STAGE PROFILE: stage=viscous_first time=2.2999999999999993e-10 steps=23 cpu_process_seconds=62.203862 raw_queries=7265584 inverse_iterations=1366313 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=302428 F_calls=30100 W_only=289030 F_only=16702 mixed=13398 W_CPU_s=0.392261 F_CPU_s=0.157836
+DIAG before face_velocity t=2.2999999999999993e-10 steps=23
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.2999999999999993e-10 steps=23 cpu_process_seconds=62.249548 raw_queries=7265584 inverse_iterations=1366313 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=303348 F_calls=30192 W_only=289908 F_only=16752 mixed=13440 W_CPU_s=0.39348 F_CPU_s=0.160691
+CORE STAGE PROFILE: stage=pressure_capillary time=2.3999999999999995e-10 steps=23 cpu_process_seconds=62.473277 raw_queries=7421080 inverse_iterations=1392701 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=304268 F_calls=30284 W_only=290786 F_only=16802 mixed=13482 W_CPU_s=0.394661 F_CPU_s=0.161042
+CORE STAGE PROFILE: stage=viscous_last time=2.3999999999999995e-10 steps=23 cpu_process_seconds=62.518579 raw_queries=7422032 inverse_iterations=1392883 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=306108 F_calls=30468 W_only=292542 F_only=16902 mixed=13566 W_CPU_s=0.39702 F_CPU_s=0.161663
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.3999999999999995e-10 steps=23 cpu_process_seconds=62.57426 raw_queries=7431800 inverse_iterations=1395215 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=282
+CORE READONLY PROFILE: W_calls=307948 F_calls=30652 W_only=294298 F_only=17002 mixed=13650 W_CPU_s=0.399459 F_CPU_s=0.162278
+CORE STAGE PROFILE: stage=thermal_last time=2.3999999999999995e-10 steps=23 cpu_process_seconds=62.656633 raw_queries=7454928 inverse_iterations=1401021 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=215089 heat_evaluations=288
+CORE READONLY PROFILE: W_calls=308868 F_calls=30744 W_only=295176 F_only=17052 mixed=13692 W_CPU_s=0.400627 F_CPU_s=0.162594
+CORE STAGE PROFILE: stage=accepted time=2.3999999999999995e-10 steps=24 cpu_process_seconds=63.536945 raw_queries=7508104 inverse_iterations=1410057 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=219229 heat_evaluations=288
+CORE READONLY PROFILE: W_calls=309788 F_calls=30836 W_only=296054 F_only=17102 mixed=13734 W_CPU_s=0.401941 F_CPU_s=0.162903
+CORE STAGE PROFILE: stage=phase_first time=2.3999999999999995e-10 steps=24 cpu_process_seconds=64.401444 raw_queries=7561296 inverse_iterations=1419094 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=288
+CORE READONLY PROFILE: W_calls=310708 F_calls=30928 W_only=296932 F_only=17152 mixed=13776 W_CPU_s=0.403114 F_CPU_s=0.163234
+CORE STAGE PROFILE: stage=thermal_first time=2.3999999999999995e-10 steps=24 cpu_process_seconds=64.483661 raw_queries=7584424 inverse_iterations=1424900 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=311628 F_calls=31020 W_only=297810 F_only=17202 mixed=13818 W_CPU_s=0.404318 F_CPU_s=0.163545
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.3999999999999995e-10 steps=24 cpu_process_seconds=64.539307 raw_queries=7594496 inverse_iterations=1427290 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=313468 F_calls=31204 W_only=299566 F_only=17302 mixed=13902 W_CPU_s=0.406716 F_CPU_s=0.164158
+CORE STAGE PROFILE: stage=viscous_first time=2.3999999999999995e-10 steps=24 cpu_process_seconds=64.585627 raw_queries=7595448 inverse_iterations=1427472 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=315308 F_calls=31388 W_only=301322 F_only=17402 mixed=13986 W_CPU_s=0.409132 F_CPU_s=0.164789
+DIAG before face_velocity t=2.3999999999999995e-10 steps=24
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.3999999999999995e-10 steps=24 cpu_process_seconds=64.631865 raw_queries=7595448 inverse_iterations=1427472 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=316228 F_calls=31480 W_only=302200 F_only=17452 mixed=14028 W_CPU_s=0.41033 F_CPU_s=0.167667
+CORE STAGE PROFILE: stage=pressure_capillary time=2.4999999999999996e-10 steps=24 cpu_process_seconds=64.854801 raw_queries=7751936 inverse_iterations=1454078 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=317148 F_calls=31572 W_only=303078 F_only=17502 mixed=14070 W_CPU_s=0.411563 F_CPU_s=0.168008
+CORE STAGE PROFILE: stage=viscous_last time=2.4999999999999996e-10 steps=24 cpu_process_seconds=64.900791 raw_queries=7752888 inverse_iterations=1454260 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=318988 F_calls=31756 W_only=304834 F_only=17602 mixed=14154 W_CPU_s=0.413952 F_CPU_s=0.168776
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.4999999999999996e-10 steps=24 cpu_process_seconds=64.956275 raw_queries=7762992 inverse_iterations=1456652 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=294
+CORE READONLY PROFILE: W_calls=320828 F_calls=31940 W_only=306590 F_only=17702 mixed=14238 W_CPU_s=0.416441 F_CPU_s=0.169453
+CORE STAGE PROFILE: stage=thermal_last time=2.4999999999999996e-10 steps=24 cpu_process_seconds=65.038302 raw_queries=7786120 inverse_iterations=1462458 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=223369 heat_evaluations=300
+CORE READONLY PROFILE: W_calls=321748 F_calls=32032 W_only=307468 F_only=17752 mixed=14280 W_CPU_s=0.417719 F_CPU_s=0.169791
+CORE STAGE PROFILE: stage=accepted time=2.4999999999999996e-10 steps=25 cpu_process_seconds=65.907509 raw_queries=7839120 inverse_iterations=1471483 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=227509 heat_evaluations=300
+CORE READONLY PROFILE: W_calls=322668 F_calls=32124 W_only=308346 F_only=17802 mixed=14322 W_CPU_s=0.418889 F_CPU_s=0.170106
+CORE STAGE PROFILE: stage=phase_first time=2.4999999999999996e-10 steps=25 cpu_process_seconds=66.796287 raw_queries=7892168 inverse_iterations=1480511 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=300
+CORE READONLY PROFILE: W_calls=323588 F_calls=32216 W_only=309224 F_only=17852 mixed=14364 W_CPU_s=0.420081 F_CPU_s=0.170426
+CORE STAGE PROFILE: stage=thermal_first time=2.4999999999999996e-10 steps=25 cpu_process_seconds=66.878075 raw_queries=7915296 inverse_iterations=1486317 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=324508 F_calls=32308 W_only=310102 F_only=17902 mixed=14406 W_CPU_s=0.421262 F_CPU_s=0.170735
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.4999999999999996e-10 steps=25 cpu_process_seconds=66.933889 raw_queries=7925368 inverse_iterations=1488707 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=326348 F_calls=32492 W_only=311858 F_only=18002 mixed=14490 W_CPU_s=0.423675 F_CPU_s=0.171395
+CORE STAGE PROFILE: stage=viscous_first time=2.4999999999999996e-10 steps=25 cpu_process_seconds=66.979379 raw_queries=7926320 inverse_iterations=1488889 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=328188 F_calls=32676 W_only=313614 F_only=18102 mixed=14574 W_CPU_s=0.426053 F_CPU_s=0.172064
+DIAG before face_velocity t=2.4999999999999996e-10 steps=25
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.4999999999999996e-10 steps=25 cpu_process_seconds=67.025083 raw_queries=7926320 inverse_iterations=1488889 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=329108 F_calls=32768 W_only=314492 F_only=18152 mixed=14616 W_CPU_s=0.427272 F_CPU_s=0.174895
+CORE STAGE PROFILE: stage=pressure_capillary time=2.5999999999999998e-10 steps=25 cpu_process_seconds=67.249261 raw_queries=8083544 inverse_iterations=1515619 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=330028 F_calls=32860 W_only=315370 F_only=18202 mixed=14658 W_CPU_s=0.428431 F_CPU_s=0.175231
+CORE STAGE PROFILE: stage=viscous_last time=2.5999999999999998e-10 steps=25 cpu_process_seconds=67.295224 raw_queries=8084832 inverse_iterations=1515861 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=331868 F_calls=33044 W_only=317126 F_only=18302 mixed=14742 W_CPU_s=0.430824 F_CPU_s=0.175858
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.5999999999999998e-10 steps=25 cpu_process_seconds=67.351755 raw_queries=8094936 inverse_iterations=1518253 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=306
+CORE READONLY PROFILE: W_calls=333708 F_calls=33228 W_only=318882 F_only=18402 mixed=14826 W_CPU_s=0.433235 F_CPU_s=0.176495
+CORE STAGE PROFILE: stage=thermal_last time=2.5999999999999998e-10 steps=25 cpu_process_seconds=67.433261 raw_queries=8118096 inverse_iterations=1524061 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=231649 heat_evaluations=312
+CORE READONLY PROFILE: W_calls=334628 F_calls=33320 W_only=319760 F_only=18452 mixed=14868 W_CPU_s=0.434446 F_CPU_s=0.176839
+CORE STAGE PROFILE: stage=accepted time=2.5999999999999998e-10 steps=26 cpu_process_seconds=68.302802 raw_queries=8170888 inverse_iterations=1533073 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=235789 heat_evaluations=312
+CORE READONLY PROFILE: W_calls=335548 F_calls=33412 W_only=320638 F_only=18502 mixed=14910 W_CPU_s=0.435658 F_CPU_s=0.177153
+CORE STAGE PROFILE: stage=phase_first time=2.5999999999999998e-10 steps=26 cpu_process_seconds=69.170652 raw_queries=8223648 inverse_iterations=1542083 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=312
+CORE READONLY PROFILE: W_calls=336468 F_calls=33504 W_only=321516 F_only=18552 mixed=14952 W_CPU_s=0.436823 F_CPU_s=0.177457
+CORE STAGE PROFILE: stage=thermal_first time=2.5999999999999998e-10 steps=26 cpu_process_seconds=69.251968 raw_queries=8246808 inverse_iterations=1547891 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=337388 F_calls=33596 W_only=322394 F_only=18602 mixed=14994 W_CPU_s=0.438024 F_CPU_s=0.177777
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.5999999999999998e-10 steps=26 cpu_process_seconds=69.307523 raw_queries=8256880 inverse_iterations=1550281 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=339228 F_calls=33780 W_only=324150 F_only=18702 mixed=15078 W_CPU_s=0.440535 F_CPU_s=0.178411
+CORE STAGE PROFILE: stage=viscous_first time=2.5999999999999998e-10 steps=26 cpu_process_seconds=69.35286 raw_queries=8257832 inverse_iterations=1550463 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=341068 F_calls=33964 W_only=325906 F_only=18802 mixed=15162 W_CPU_s=0.442923 F_CPU_s=0.179079
+DIAG before face_velocity t=2.5999999999999998e-10 steps=26
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.5999999999999998e-10 steps=26 cpu_process_seconds=69.398923 raw_queries=8257832 inverse_iterations=1550463 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=341988 F_calls=34056 W_only=326784 F_only=18852 mixed=15204 W_CPU_s=0.444178 F_CPU_s=0.182123
+CORE STAGE PROFILE: stage=pressure_capillary time=2.7e-10 steps=26 cpu_process_seconds=69.62461 raw_queries=8416896 inverse_iterations=1577503 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=342908 F_calls=34148 W_only=327662 F_only=18902 mixed=15246 W_CPU_s=0.445412 F_CPU_s=0.182457
+CORE STAGE PROFILE: stage=viscous_last time=2.7e-10 steps=26 cpu_process_seconds=69.670452 raw_queries=8417848 inverse_iterations=1577685 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=344748 F_calls=34332 W_only=329418 F_only=19002 mixed=15330 W_CPU_s=0.447808 F_CPU_s=0.183086
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.7e-10 steps=26 cpu_process_seconds=69.726312 raw_queries=8427952 inverse_iterations=1580077 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=318
+CORE READONLY PROFILE: W_calls=346588 F_calls=34516 W_only=331174 F_only=19102 mixed=15414 W_CPU_s=0.450181 F_CPU_s=0.183764
+CORE STAGE PROFILE: stage=thermal_last time=2.7e-10 steps=26 cpu_process_seconds=69.808334 raw_queries=8451112 inverse_iterations=1585885 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=239929 heat_evaluations=324
+CORE READONLY PROFILE: W_calls=347508 F_calls=34608 W_only=332052 F_only=19152 mixed=15456 W_CPU_s=0.451398 F_CPU_s=0.184071
+CORE STAGE PROFILE: stage=accepted time=2.7e-10 steps=27 cpu_process_seconds=70.679979 raw_queries=8503584 inverse_iterations=1594877 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=244069 heat_evaluations=324
+CORE READONLY PROFILE: W_calls=348428 F_calls=34700 W_only=332930 F_only=19202 mixed=15498 W_CPU_s=0.4526 F_CPU_s=0.184407
+CORE STAGE PROFILE: stage=phase_first time=2.7e-10 steps=27 cpu_process_seconds=71.558364 raw_queries=8555976 inverse_iterations=1603864 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=324
+CORE READONLY PROFILE: W_calls=349348 F_calls=34792 W_only=333808 F_only=19252 mixed=15540 W_CPU_s=0.453815 F_CPU_s=0.184713
+CORE STAGE PROFILE: stage=thermal_first time=2.7e-10 steps=27 cpu_process_seconds=71.639574 raw_queries=8579136 inverse_iterations=1609672 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=350268 F_calls=34884 W_only=334686 F_only=19302 mixed=15582 W_CPU_s=0.455012 F_CPU_s=0.185022
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.7e-10 steps=27 cpu_process_seconds=71.694823 raw_queries=8589208 inverse_iterations=1612062 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=352108 F_calls=35068 W_only=336442 F_only=19402 mixed=15666 W_CPU_s=0.45738 F_CPU_s=0.185644
+CORE STAGE PROFILE: stage=viscous_first time=2.7e-10 steps=27 cpu_process_seconds=71.740586 raw_queries=8590160 inverse_iterations=1612244 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=353948 F_calls=35252 W_only=338198 F_only=19502 mixed=15750 W_CPU_s=0.45983 F_CPU_s=0.186268
+DIAG before face_velocity t=2.7e-10 steps=27
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.7e-10 steps=27 cpu_process_seconds=71.785938 raw_queries=8590160 inverse_iterations=1612244 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=354868 F_calls=35344 W_only=339076 F_only=19552 mixed=15792 W_CPU_s=0.46109 F_CPU_s=0.189126
+CORE STAGE PROFILE: stage=pressure_capillary time=2.8000000000000002e-10 steps=27 cpu_process_seconds=72.013177 raw_queries=8750056 inverse_iterations=1639336 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=355788 F_calls=35436 W_only=339954 F_only=19602 mixed=15834 W_CPU_s=0.462291 F_CPU_s=0.189467
+CORE STAGE PROFILE: stage=viscous_last time=2.8000000000000002e-10 steps=27 cpu_process_seconds=72.058598 raw_queries=8751008 inverse_iterations=1639518 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=357628 F_calls=35620 W_only=341710 F_only=19702 mixed=15918 W_CPU_s=0.46473 F_CPU_s=0.190129
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.8000000000000002e-10 steps=27 cpu_process_seconds=72.113937 raw_queries=8761112 inverse_iterations=1641910 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=330
+CORE READONLY PROFILE: W_calls=359468 F_calls=35804 W_only=343466 F_only=19802 mixed=16002 W_CPU_s=0.467115 F_CPU_s=0.190792
+CORE STAGE PROFILE: stage=thermal_last time=2.8000000000000002e-10 steps=27 cpu_process_seconds=72.195232 raw_queries=8784272 inverse_iterations=1647718 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=248209 heat_evaluations=336
+CORE READONLY PROFILE: W_calls=360388 F_calls=35896 W_only=344344 F_only=19852 mixed=16044 W_CPU_s=0.468375 F_CPU_s=0.19114
+CORE STAGE PROFILE: stage=accepted time=2.8000000000000002e-10 steps=28 cpu_process_seconds=73.060937 raw_queries=8836488 inverse_iterations=1656694 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=252349 heat_evaluations=336
+CORE READONLY PROFILE: W_calls=361308 F_calls=35988 W_only=345222 F_only=19902 mixed=16086 W_CPU_s=0.469573 F_CPU_s=0.191487
+CORE STAGE PROFILE: stage=phase_first time=2.8000000000000002e-10 steps=28 cpu_process_seconds=73.931184 raw_queries=8888768 inverse_iterations=1665674 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=336
+CORE READONLY PROFILE: W_calls=362228 F_calls=36080 W_only=346100 F_only=19952 mixed=16128 W_CPU_s=0.470749 F_CPU_s=0.191813
+CORE STAGE PROFILE: stage=thermal_first time=2.8000000000000002e-10 steps=28 cpu_process_seconds=74.013933 raw_queries=8911928 inverse_iterations=1671482 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=363148 F_calls=36172 W_only=346978 F_only=20002 mixed=16170 W_CPU_s=0.471947 F_CPU_s=0.192123
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.8000000000000002e-10 steps=28 cpu_process_seconds=74.069576 raw_queries=8922000 inverse_iterations=1673872 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=364988 F_calls=36356 W_only=348734 F_only=20102 mixed=16254 W_CPU_s=0.47435 F_CPU_s=0.192745
+CORE STAGE PROFILE: stage=viscous_first time=2.8000000000000002e-10 steps=28 cpu_process_seconds=74.115179 raw_queries=8923176 inverse_iterations=1674094 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=366828 F_calls=36540 W_only=350490 F_only=20202 mixed=16338 W_CPU_s=0.476705 F_CPU_s=0.193411
+DIAG before face_velocity t=2.8000000000000002e-10 steps=28
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.8000000000000002e-10 steps=28 cpu_process_seconds=74.160686 raw_queries=8923176 inverse_iterations=1674094 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=367748 F_calls=36632 W_only=351368 F_only=20252 mixed=16380 W_CPU_s=0.47791 F_CPU_s=0.196308
+CORE STAGE PROFILE: stage=pressure_capillary time=2.9000000000000003e-10 steps=28 cpu_process_seconds=74.388325 raw_queries=9083536 inverse_iterations=1701215 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=368668 F_calls=36724 W_only=352246 F_only=20302 mixed=16422 W_CPU_s=0.47911 F_CPU_s=0.196613
+CORE STAGE PROFILE: stage=viscous_last time=2.9000000000000003e-10 steps=28 cpu_process_seconds=74.433459 raw_queries=9084488 inverse_iterations=1701397 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=370508 F_calls=36908 W_only=354002 F_only=20402 mixed=16506 W_CPU_s=0.481626 F_CPU_s=0.197267
+CORE STAGE PROFILE: stage=water_Fourier_last time=2.9000000000000003e-10 steps=28 cpu_process_seconds=74.488906 raw_queries=9094592 inverse_iterations=1703789 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=342
+CORE READONLY PROFILE: W_calls=372348 F_calls=37092 W_only=355758 F_only=20502 mixed=16590 W_CPU_s=0.484021 F_CPU_s=0.197918
+CORE STAGE PROFILE: stage=thermal_last time=2.9000000000000003e-10 steps=28 cpu_process_seconds=74.569288 raw_queries=9117752 inverse_iterations=1709597 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=256489 heat_evaluations=348
+CORE READONLY PROFILE: W_calls=373268 F_calls=37184 W_only=356636 F_only=20552 mixed=16632 W_CPU_s=0.485266 F_CPU_s=0.198253
+CORE STAGE PROFILE: stage=accepted time=2.9000000000000003e-10 steps=29 cpu_process_seconds=75.447953 raw_queries=9170016 inverse_iterations=1718576 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=260629 heat_evaluations=348
+CORE READONLY PROFILE: W_calls=374188 F_calls=37276 W_only=357514 F_only=20602 mixed=16674 W_CPU_s=0.486456 F_CPU_s=0.19856
+CORE STAGE PROFILE: stage=phase_first time=2.9000000000000003e-10 steps=29 cpu_process_seconds=76.31749 raw_queries=9222280 inverse_iterations=1727555 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=348
+CORE READONLY PROFILE: W_calls=375108 F_calls=37368 W_only=358392 F_only=20652 mixed=16716 W_CPU_s=0.487691 F_CPU_s=0.198874
+CORE STAGE PROFILE: stage=thermal_first time=2.9000000000000003e-10 steps=29 cpu_process_seconds=76.397681 raw_queries=9245440 inverse_iterations=1733363 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=376028 F_calls=37460 W_only=359270 F_only=20702 mixed=16758 W_CPU_s=0.488901 F_CPU_s=0.199204
+CORE STAGE PROFILE: stage=water_Fourier_first time=2.9000000000000003e-10 steps=29 cpu_process_seconds=76.451934 raw_queries=9255512 inverse_iterations=1735753 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=377868 F_calls=37644 W_only=361026 F_only=20802 mixed=16842 W_CPU_s=0.491289 F_CPU_s=0.199828
+CORE STAGE PROFILE: stage=viscous_first time=2.9000000000000003e-10 steps=29 cpu_process_seconds=76.496517 raw_queries=9256688 inverse_iterations=1735975 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=379708 F_calls=37828 W_only=362782 F_only=20902 mixed=16926 W_CPU_s=0.49372 F_CPU_s=0.200454
+DIAG before face_velocity t=2.9000000000000003e-10 steps=29
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=2.9000000000000003e-10 steps=29 cpu_process_seconds=76.541237 raw_queries=9256688 inverse_iterations=1735975 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=380628 F_calls=37920 W_only=363660 F_only=20952 mixed=16968 W_CPU_s=0.494895 F_CPU_s=0.203312
+CORE STAGE PROFILE: stage=pressure_capillary time=3.0000000000000005e-10 steps=29 cpu_process_seconds=76.767253 raw_queries=9417336 inverse_iterations=1763114 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=381548 F_calls=38012 W_only=364538 F_only=21002 mixed=17010 W_CPU_s=0.496092 F_CPU_s=0.20362
+CORE STAGE PROFILE: stage=viscous_last time=3.0000000000000005e-10 steps=29 cpu_process_seconds=76.811061 raw_queries=9418288 inverse_iterations=1763296 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=383388 F_calls=38196 W_only=366294 F_only=21102 mixed=17094 W_CPU_s=0.498525 F_CPU_s=0.204247
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.0000000000000005e-10 steps=29 cpu_process_seconds=76.86498 raw_queries=9428392 inverse_iterations=1765688 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=354
+CORE READONLY PROFILE: W_calls=385228 F_calls=38380 W_only=368050 F_only=21202 mixed=17178 W_CPU_s=0.500965 F_CPU_s=0.204866
+CORE STAGE PROFILE: stage=thermal_last time=3.0000000000000005e-10 steps=29 cpu_process_seconds=76.944559 raw_queries=9451552 inverse_iterations=1771496 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=264769 heat_evaluations=360
+CORE READONLY PROFILE: W_calls=386148 F_calls=38472 W_only=368928 F_only=21252 mixed=17220 W_CPU_s=0.502131 F_CPU_s=0.205172
+CORE STAGE PROFILE: stage=accepted time=3.0000000000000005e-10 steps=30 cpu_process_seconds=77.815883 raw_queries=9503752 inverse_iterations=1780471 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=268911 heat_evaluations=360
+CORE READONLY PROFILE: W_calls=387068 F_calls=38564 W_only=369806 F_only=21302 mixed=17262 W_CPU_s=0.503384 F_CPU_s=0.205482
+CORE STAGE PROFILE: stage=phase_first time=3.0000000000000005e-10 steps=30 cpu_process_seconds=78.685506 raw_queries=9555968 inverse_iterations=1789447 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=360
+CORE READONLY PROFILE: W_calls=387988 F_calls=38656 W_only=370684 F_only=21352 mixed=17304 W_CPU_s=0.504622 F_CPU_s=0.205792
+CORE STAGE PROFILE: stage=thermal_first time=3.0000000000000005e-10 steps=30 cpu_process_seconds=78.765423 raw_queries=9579128 inverse_iterations=1795255 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=388908 F_calls=38748 W_only=371562 F_only=21402 mixed=17346 W_CPU_s=0.505866 F_CPU_s=0.206105
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.0000000000000005e-10 steps=30 cpu_process_seconds=78.819792 raw_queries=9589232 inverse_iterations=1797647 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=390748 F_calls=38932 W_only=373318 F_only=21502 mixed=17430 W_CPU_s=0.508291 F_CPU_s=0.206725
+CORE STAGE PROFILE: stage=viscous_first time=3.0000000000000005e-10 steps=30 cpu_process_seconds=78.864242 raw_queries=9590408 inverse_iterations=1797869 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=392588 F_calls=39116 W_only=375074 F_only=21602 mixed=17514 W_CPU_s=0.510633 F_CPU_s=0.207395
+DIAG before face_velocity t=3.0000000000000005e-10 steps=30
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.0000000000000005e-10 steps=30 cpu_process_seconds=78.908 raw_queries=9590408 inverse_iterations=1797869 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=393508 F_calls=39208 W_only=375952 F_only=21652 mixed=17556 W_CPU_s=0.511825 F_CPU_s=0.210281
+CORE STAGE PROFILE: stage=pressure_capillary time=3.1000000000000007e-10 steps=30 cpu_process_seconds=79.135352 raw_queries=9751696 inverse_iterations=1825048 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=394428 F_calls=39300 W_only=376830 F_only=21702 mixed=17598 W_CPU_s=0.512993 F_CPU_s=0.210616
+CORE STAGE PROFILE: stage=viscous_last time=3.1000000000000007e-10 steps=30 cpu_process_seconds=79.178972 raw_queries=9752648 inverse_iterations=1825230 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=396268 F_calls=39484 W_only=378586 F_only=21802 mixed=17682 W_CPU_s=0.515437 F_CPU_s=0.211361
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.1000000000000007e-10 steps=30 cpu_process_seconds=79.232899 raw_queries=9762816 inverse_iterations=1827626 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=366
+CORE READONLY PROFILE: W_calls=398108 F_calls=39668 W_only=380342 F_only=21902 mixed=17766 W_CPU_s=0.517844 F_CPU_s=0.212022
+CORE STAGE PROFILE: stage=thermal_last time=3.1000000000000007e-10 steps=30 cpu_process_seconds=79.312889 raw_queries=9785976 inverse_iterations=1833434 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=273054 heat_evaluations=372
+CORE READONLY PROFILE: W_calls=399028 F_calls=39760 W_only=381220 F_only=21952 mixed=17808 W_CPU_s=0.519026 F_CPU_s=0.212371
+CORE STAGE PROFILE: stage=accepted time=3.1000000000000007e-10 steps=31 cpu_process_seconds=80.189154 raw_queries=9838192 inverse_iterations=1842410 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=277198 heat_evaluations=372
+CORE READONLY PROFILE: W_calls=399948 F_calls=39852 W_only=382098 F_only=22002 mixed=17850 W_CPU_s=0.520204 F_CPU_s=0.212713
+CORE STAGE PROFILE: stage=phase_first time=3.1000000000000007e-10 steps=31 cpu_process_seconds=81.059007 raw_queries=9890072 inverse_iterations=1851365 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=372
+CORE READONLY PROFILE: W_calls=400868 F_calls=39944 W_only=382976 F_only=22052 mixed=17892 W_CPU_s=0.521529 F_CPU_s=0.213025
+CORE STAGE PROFILE: stage=thermal_first time=3.1000000000000007e-10 steps=31 cpu_process_seconds=81.13939 raw_queries=9913232 inverse_iterations=1857173 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=401788 F_calls=40036 W_only=383854 F_only=22102 mixed=17934 W_CPU_s=0.522836 F_CPU_s=0.213338
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.1000000000000007e-10 steps=31 cpu_process_seconds=81.193638 raw_queries=9923368 inverse_iterations=1859567 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=403628 F_calls=40220 W_only=385610 F_only=22202 mixed=18018 W_CPU_s=0.525186 F_CPU_s=0.21399
+CORE STAGE PROFILE: stage=viscous_first time=3.1000000000000007e-10 steps=31 cpu_process_seconds=81.23873 raw_queries=9924544 inverse_iterations=1859789 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=405468 F_calls=40404 W_only=387366 F_only=22302 mixed=18102 W_CPU_s=0.527549 F_CPU_s=0.214609
+DIAG before face_velocity t=3.1000000000000007e-10 steps=31
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.1000000000000007e-10 steps=31 cpu_process_seconds=81.28245 raw_queries=9924544 inverse_iterations=1859789 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=406388 F_calls=40496 W_only=388244 F_only=22352 mixed=18144 W_CPU_s=0.528835 F_CPU_s=0.217433
+CORE STAGE PROFILE: stage=pressure_capillary time=3.2000000000000008e-10 steps=31 cpu_process_seconds=81.509927 raw_queries=10085928 inverse_iterations=1886974 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=407308 F_calls=40588 W_only=389122 F_only=22402 mixed=18186 W_CPU_s=0.530061 F_CPU_s=0.217742
+CORE STAGE PROFILE: stage=viscous_last time=3.2000000000000008e-10 steps=31 cpu_process_seconds=81.553868 raw_queries=10086880 inverse_iterations=1887156 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=409148 F_calls=40772 W_only=390878 F_only=22502 mixed=18270 W_CPU_s=0.532526 F_CPU_s=0.218412
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.2000000000000008e-10 steps=31 cpu_process_seconds=81.607486 raw_queries=10097048 inverse_iterations=1889552 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=378
+CORE READONLY PROFILE: W_calls=410988 F_calls=40956 W_only=392634 F_only=22602 mixed=18354 W_CPU_s=0.534914 F_CPU_s=0.219043
+CORE STAGE PROFILE: stage=thermal_last time=3.2000000000000008e-10 steps=31 cpu_process_seconds=81.687775 raw_queries=10120208 inverse_iterations=1895360 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=281343 heat_evaluations=384
+CORE READONLY PROFILE: W_calls=411908 F_calls=41048 W_only=393512 F_only=22652 mixed=18396 W_CPU_s=0.536118 F_CPU_s=0.219354
+CORE STAGE PROFILE: stage=accepted time=3.2000000000000008e-10 steps=32 cpu_process_seconds=82.585652 raw_queries=10172120 inverse_iterations=1904317 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=285488 heat_evaluations=384
+CORE READONLY PROFILE: W_calls=412828 F_calls=41140 W_only=394390 F_only=22702 mixed=18438 W_CPU_s=0.537307 F_CPU_s=0.219668
+CORE STAGE PROFILE: stage=phase_first time=3.2000000000000008e-10 steps=32 cpu_process_seconds=83.452515 raw_queries=10224032 inverse_iterations=1913274 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=384
+CORE READONLY PROFILE: W_calls=413748 F_calls=41232 W_only=395268 F_only=22752 mixed=18480 W_CPU_s=0.538545 F_CPU_s=0.219972
+CORE STAGE PROFILE: stage=thermal_first time=3.2000000000000008e-10 steps=32 cpu_process_seconds=83.533641 raw_queries=10247192 inverse_iterations=1919082 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=414668 F_calls=41324 W_only=396146 F_only=22802 mixed=18522 W_CPU_s=0.539726 F_CPU_s=0.220278
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.2000000000000008e-10 steps=32 cpu_process_seconds=83.588991 raw_queries=10257344 inverse_iterations=1921477 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=416508 F_calls=41508 W_only=397902 F_only=22902 mixed=18606 W_CPU_s=0.54214 F_CPU_s=0.220943
+CORE STAGE PROFILE: stage=viscous_first time=3.2000000000000008e-10 steps=32 cpu_process_seconds=83.633152 raw_queries=10258520 inverse_iterations=1921699 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=418348 F_calls=41692 W_only=399658 F_only=23002 mixed=18690 W_CPU_s=0.544548 F_CPU_s=0.22158
+DIAG before face_velocity t=3.2000000000000008e-10 steps=32
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.2000000000000008e-10 steps=32 cpu_process_seconds=83.677373 raw_queries=10258520 inverse_iterations=1921699 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=419268 F_calls=41784 W_only=400536 F_only=23052 mixed=18732 W_CPU_s=0.545794 F_CPU_s=0.224453
+CORE STAGE PROFILE: stage=pressure_capillary time=3.300000000000001e-10 steps=32 cpu_process_seconds=83.90535 raw_queries=10420352 inverse_iterations=1948912 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=420188 F_calls=41876 W_only=401414 F_only=23102 mixed=18774 W_CPU_s=0.54704 F_CPU_s=0.224758
+CORE STAGE PROFILE: stage=viscous_last time=3.300000000000001e-10 steps=32 cpu_process_seconds=83.949475 raw_queries=10421304 inverse_iterations=1949094 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=422028 F_calls=42060 W_only=403170 F_only=23202 mixed=18858 W_CPU_s=0.549584 F_CPU_s=0.225395
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.300000000000001e-10 steps=32 cpu_process_seconds=84.005275 raw_queries=10431504 inverse_iterations=1951492 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=390
+CORE READONLY PROFILE: W_calls=423868 F_calls=42244 W_only=404926 F_only=23302 mixed=18942 W_CPU_s=0.551941 F_CPU_s=0.226181
+CORE STAGE PROFILE: stage=thermal_last time=3.300000000000001e-10 steps=32 cpu_process_seconds=84.087506 raw_queries=10454664 inverse_iterations=1957300 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=289633 heat_evaluations=396
+CORE READONLY PROFILE: W_calls=424788 F_calls=42336 W_only=405804 F_only=23352 mixed=18984 W_CPU_s=0.553105 F_CPU_s=0.226517
+CORE STAGE PROFILE: stage=accepted time=3.300000000000001e-10 steps=33 cpu_process_seconds=84.965789 raw_queries=10506320 inverse_iterations=1966241 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=293852 heat_evaluations=396
+CORE READONLY PROFILE: W_calls=425708 F_calls=42428 W_only=406682 F_only=23402 mixed=19026 W_CPU_s=0.554336 F_CPU_s=0.226821
+CORE STAGE PROFILE: stage=phase_first time=3.300000000000001e-10 steps=33 cpu_process_seconds=85.837147 raw_queries=10557896 inverse_iterations=1975177 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=396
+CORE READONLY PROFILE: W_calls=426628 F_calls=42520 W_only=407560 F_only=23452 mixed=19068 W_CPU_s=0.555519 F_CPU_s=0.227129
+CORE STAGE PROFILE: stage=thermal_first time=3.300000000000001e-10 steps=33 cpu_process_seconds=85.918682 raw_queries=10581056 inverse_iterations=1980985 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=427548 F_calls=42612 W_only=408438 F_only=23502 mixed=19110 W_CPU_s=0.556688 F_CPU_s=0.227461
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.300000000000001e-10 steps=33 cpu_process_seconds=85.974688 raw_queries=10591272 inverse_iterations=1983384 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=429388 F_calls=42796 W_only=410194 F_only=23602 mixed=19194 W_CPU_s=0.559068 F_CPU_s=0.228086
+CORE STAGE PROFILE: stage=viscous_first time=3.300000000000001e-10 steps=33 cpu_process_seconds=86.0209 raw_queries=10592448 inverse_iterations=1983606 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=431228 F_calls=42980 W_only=411950 F_only=23702 mixed=19278 W_CPU_s=0.561571 F_CPU_s=0.228725
+DIAG before face_velocity t=3.300000000000001e-10 steps=33
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.300000000000001e-10 steps=33 cpu_process_seconds=86.067617 raw_queries=10592448 inverse_iterations=1983606 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=432148 F_calls=43072 W_only=412828 F_only=23752 mixed=19320 W_CPU_s=0.562762 F_CPU_s=0.231836
+CORE STAGE PROFILE: stage=pressure_capillary time=3.4000000000000012e-10 steps=33 cpu_process_seconds=86.298639 raw_queries=10755016 inverse_iterations=2010943 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=433068 F_calls=43164 W_only=413706 F_only=23802 mixed=19362 W_CPU_s=0.563929 F_CPU_s=0.232156
+CORE STAGE PROFILE: stage=viscous_last time=3.4000000000000012e-10 steps=33 cpu_process_seconds=86.344449 raw_queries=10755968 inverse_iterations=2011125 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=434908 F_calls=43348 W_only=415462 F_only=23902 mixed=19446 W_CPU_s=0.566317 F_CPU_s=0.232855
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.4000000000000012e-10 steps=33 cpu_process_seconds=86.400786 raw_queries=10766232 inverse_iterations=2013527 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=402
+CORE READONLY PROFILE: W_calls=436748 F_calls=43532 W_only=417218 F_only=24002 mixed=19530 W_CPU_s=0.568843 F_CPU_s=0.233515
+CORE STAGE PROFILE: stage=thermal_last time=3.4000000000000012e-10 steps=33 cpu_process_seconds=86.48305 raw_queries=10789408 inverse_iterations=2019336 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=298075 heat_evaluations=408
+CORE READONLY PROFILE: W_calls=437668 F_calls=43624 W_only=418096 F_only=24052 mixed=19572 W_CPU_s=0.570154 F_CPU_s=0.233862
+CORE STAGE PROFILE: stage=accepted time=3.4000000000000012e-10 steps=34 cpu_process_seconds=87.360136 raw_queries=10841048 inverse_iterations=2028276 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=302298 heat_evaluations=408
+CORE READONLY PROFILE: W_calls=438588 F_calls=43716 W_only=418974 F_only=24102 mixed=19614 W_CPU_s=0.571321 F_CPU_s=0.234267
+CORE STAGE PROFILE: stage=phase_first time=3.4000000000000012e-10 steps=34 cpu_process_seconds=88.234054 raw_queries=10892640 inverse_iterations=2037213 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=408
+CORE READONLY PROFILE: W_calls=439508 F_calls=43808 W_only=419852 F_only=24152 mixed=19656 W_CPU_s=0.572533 F_CPU_s=0.234578
+CORE STAGE PROFILE: stage=thermal_first time=3.4000000000000012e-10 steps=34 cpu_process_seconds=88.31605 raw_queries=10915800 inverse_iterations=2043021 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=440428 F_calls=43900 W_only=420730 F_only=24202 mixed=19698 W_CPU_s=0.573686 F_CPU_s=0.234917
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.4000000000000012e-10 steps=34 cpu_process_seconds=88.373372 raw_queries=10926080 inverse_iterations=2045424 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=442268 F_calls=44084 W_only=422486 F_only=24302 mixed=19782 W_CPU_s=0.576149 F_CPU_s=0.235544
+CORE STAGE PROFILE: stage=viscous_first time=3.4000000000000012e-10 steps=34 cpu_process_seconds=88.418913 raw_queries=10927256 inverse_iterations=2045646 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=444108 F_calls=44268 W_only=424242 F_only=24402 mixed=19866 W_CPU_s=0.578587 F_CPU_s=0.236166
+DIAG before face_velocity t=3.4000000000000012e-10 steps=34
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.4000000000000012e-10 steps=34 cpu_process_seconds=88.464437 raw_queries=10927256 inverse_iterations=2045646 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=445028 F_calls=44360 W_only=425120 F_only=24452 mixed=19908 W_CPU_s=0.579764 F_CPU_s=0.239018
+CORE STAGE PROFILE: stage=pressure_capillary time=3.5000000000000014e-10 steps=34 cpu_process_seconds=88.694961 raw_queries=11089552 inverse_iterations=2072966 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=445948 F_calls=44452 W_only=425998 F_only=24502 mixed=19950 W_CPU_s=0.581057 F_CPU_s=0.239338
+CORE STAGE PROFILE: stage=viscous_last time=3.5000000000000014e-10 steps=34 cpu_process_seconds=88.740367 raw_queries=11090504 inverse_iterations=2073148 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=447788 F_calls=44636 W_only=427754 F_only=24602 mixed=20034 W_CPU_s=0.583539 F_CPU_s=0.239965
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.5000000000000014e-10 steps=34 cpu_process_seconds=88.795855 raw_queries=11100848 inverse_iterations=2075555 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=414
+CORE READONLY PROFILE: W_calls=449628 F_calls=44820 W_only=429510 F_only=24702 mixed=20118 W_CPU_s=0.585958 F_CPU_s=0.240596
+CORE STAGE PROFILE: stage=thermal_last time=3.5000000000000014e-10 steps=34 cpu_process_seconds=88.885895 raw_queries=11124024 inverse_iterations=2081364 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=306525 heat_evaluations=423
+CORE READONLY PROFILE: W_calls=450548 F_calls=44912 W_only=430388 F_only=24752 mixed=20160 W_CPU_s=0.58719 F_CPU_s=0.240908
+CORE STAGE PROFILE: stage=accepted time=3.5000000000000014e-10 steps=35 cpu_process_seconds=89.763007 raw_queries=11175632 inverse_iterations=2090302 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=310752 heat_evaluations=423
+CORE READONLY PROFILE: W_calls=451468 F_calls=45004 W_only=431266 F_only=24802 mixed=20202 W_CPU_s=0.588444 F_CPU_s=0.241224
+CORE STAGE PROFILE: stage=phase_first time=3.5000000000000014e-10 steps=35 cpu_process_seconds=90.636857 raw_queries=11227288 inverse_iterations=2099243 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=423
+CORE READONLY PROFILE: W_calls=452388 F_calls=45096 W_only=432144 F_only=24852 mixed=20244 W_CPU_s=0.589698 F_CPU_s=0.241538
+CORE STAGE PROFILE: stage=thermal_first time=3.5000000000000014e-10 steps=35 cpu_process_seconds=90.725304 raw_queries=11250448 inverse_iterations=2105051 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=453308 F_calls=45188 W_only=433022 F_only=24902 mixed=20286 W_CPU_s=0.590924 F_CPU_s=0.241851
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.5000000000000014e-10 steps=35 cpu_process_seconds=90.781636 raw_queries=11260760 inverse_iterations=2107456 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=455148 F_calls=45372 W_only=434778 F_only=25002 mixed=20370 W_CPU_s=0.593356 F_CPU_s=0.242511
+CORE STAGE PROFILE: stage=viscous_first time=3.5000000000000014e-10 steps=35 cpu_process_seconds=90.827061 raw_queries=11261936 inverse_iterations=2107678 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=456988 F_calls=45556 W_only=436534 F_only=25102 mixed=20454 W_CPU_s=0.595792 F_CPU_s=0.243145
+DIAG before face_velocity t=3.5000000000000014e-10 steps=35
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.5000000000000014e-10 steps=35 cpu_process_seconds=90.872636 raw_queries=11261936 inverse_iterations=2107678 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=457908 F_calls=45648 W_only=437412 F_only=25152 mixed=20496 W_CPU_s=0.596992 F_CPU_s=0.246007
+CORE STAGE PROFILE: stage=pressure_capillary time=3.6000000000000015e-10 steps=35 cpu_process_seconds=91.104382 raw_queries=11425256 inverse_iterations=2135140 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=458828 F_calls=45740 W_only=438290 F_only=25202 mixed=20538 W_CPU_s=0.598196 F_CPU_s=0.24632
+CORE STAGE PROFILE: stage=viscous_last time=3.6000000000000015e-10 steps=35 cpu_process_seconds=91.150867 raw_queries=11426208 inverse_iterations=2135322 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=460668 F_calls=45924 W_only=440046 F_only=25302 mixed=20622 W_CPU_s=0.600569 F_CPU_s=0.246954
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.6000000000000015e-10 steps=35 cpu_process_seconds=91.208047 raw_queries=11436552 inverse_iterations=2137742 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=432
+CORE READONLY PROFILE: W_calls=462508 F_calls=46108 W_only=441802 F_only=25402 mixed=20706 W_CPU_s=0.602997 F_CPU_s=0.247571
+CORE STAGE PROFILE: stage=thermal_last time=3.6000000000000015e-10 steps=35 cpu_process_seconds=91.297084 raw_queries=11459728 inverse_iterations=2143551 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=314979 heat_evaluations=441
+CORE READONLY PROFILE: W_calls=463428 F_calls=46200 W_only=442680 F_only=25452 mixed=20748 W_CPU_s=0.604253 F_CPU_s=0.247881
+CORE STAGE PROFILE: stage=accepted time=3.6000000000000015e-10 steps=36 cpu_process_seconds=92.172776 raw_queries=11511368 inverse_iterations=2152491 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=319206 heat_evaluations=441
+CORE READONLY PROFILE: W_calls=464348 F_calls=46292 W_only=443558 F_only=25502 mixed=20790 W_CPU_s=0.605491 F_CPU_s=0.248192
+CORE STAGE PROFILE: stage=phase_first time=3.6000000000000015e-10 steps=36 cpu_process_seconds=93.051738 raw_queries=11562976 inverse_iterations=2161429 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=441
+CORE READONLY PROFILE: W_calls=465268 F_calls=46384 W_only=444436 F_only=25552 mixed=20832 W_CPU_s=0.606672 F_CPU_s=0.24852
+CORE STAGE PROFILE: stage=thermal_first time=3.6000000000000015e-10 steps=36 cpu_process_seconds=93.139821 raw_queries=11586104 inverse_iterations=2167235 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=466188 F_calls=46476 W_only=445314 F_only=25602 mixed=20874 W_CPU_s=0.607916 F_CPU_s=0.248834
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.6000000000000015e-10 steps=36 cpu_process_seconds=93.195902 raw_queries=11596416 inverse_iterations=2169640 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=468028 F_calls=46660 W_only=447070 F_only=25702 mixed=20958 W_CPU_s=0.610359 F_CPU_s=0.24957
+CORE STAGE PROFILE: stage=viscous_first time=3.6000000000000015e-10 steps=36 cpu_process_seconds=93.241468 raw_queries=11597592 inverse_iterations=2169862 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=469868 F_calls=46844 W_only=448826 F_only=25802 mixed=21042 W_CPU_s=0.61275 F_CPU_s=0.250203
+DIAG before face_velocity t=3.6000000000000015e-10 steps=36
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.6000000000000015e-10 steps=36 cpu_process_seconds=93.286746 raw_queries=11597592 inverse_iterations=2169862 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=470788 F_calls=46936 W_only=449704 F_only=25852 mixed=21084 W_CPU_s=0.613938 F_CPU_s=0.253141
+CORE STAGE PROFILE: stage=pressure_capillary time=3.7000000000000017e-10 steps=36 cpu_process_seconds=93.518908 raw_queries=11762016 inverse_iterations=2197432 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=471708 F_calls=47028 W_only=450582 F_only=25902 mixed=21126 W_CPU_s=0.615134 F_CPU_s=0.253452
+CORE STAGE PROFILE: stage=viscous_last time=3.7000000000000017e-10 steps=36 cpu_process_seconds=93.564156 raw_queries=11762968 inverse_iterations=2197614 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=473548 F_calls=47212 W_only=452338 F_only=26002 mixed=21210 W_CPU_s=0.617542 F_CPU_s=0.254075
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.7000000000000017e-10 steps=36 cpu_process_seconds=93.620311 raw_queries=11773376 inverse_iterations=2200064 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=450
+CORE READONLY PROFILE: W_calls=475388 F_calls=47396 W_only=454094 F_only=26102 mixed=21294 W_CPU_s=0.619927 F_CPU_s=0.254829
+CORE STAGE PROFILE: stage=thermal_last time=3.7000000000000017e-10 steps=36 cpu_process_seconds=93.721086 raw_queries=11796520 inverse_iterations=2205871 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=323433 heat_evaluations=465
+CORE READONLY PROFILE: W_calls=476308 F_calls=47488 W_only=454972 F_only=26152 mixed=21336 W_CPU_s=0.621108 F_CPU_s=0.255137
+CORE STAGE PROFILE: stage=accepted time=3.7000000000000017e-10 steps=37 cpu_process_seconds=94.60125 raw_queries=11848080 inverse_iterations=2214806 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=327660 heat_evaluations=465
+CORE READONLY PROFILE: W_calls=477228 F_calls=47580 W_only=455850 F_only=26202 mixed=21378 W_CPU_s=0.622285 F_CPU_s=0.255511
+CORE STAGE PROFILE: stage=phase_first time=3.7000000000000017e-10 steps=37 cpu_process_seconds=95.477595 raw_queries=11899656 inverse_iterations=2223742 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=465
+CORE READONLY PROFILE: W_calls=478148 F_calls=47672 W_only=456728 F_only=26252 mixed=21420 W_CPU_s=0.623491 F_CPU_s=0.25582
+CORE STAGE PROFILE: stage=thermal_first time=3.7000000000000017e-10 steps=37 cpu_process_seconds=95.57887 raw_queries=11922784 inverse_iterations=2229509 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=479068 F_calls=47764 W_only=457606 F_only=26302 mixed=21462 W_CPU_s=0.624745 F_CPU_s=0.256134
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.7000000000000017e-10 steps=37 cpu_process_seconds=95.635144 raw_queries=11933144 inverse_iterations=2231956 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=480908 F_calls=47948 W_only=459362 F_only=26402 mixed=21546 W_CPU_s=0.62715 F_CPU_s=0.25676
+CORE STAGE PROFILE: stage=viscous_first time=3.7000000000000017e-10 steps=37 cpu_process_seconds=95.6808 raw_queries=11934320 inverse_iterations=2232178 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=482748 F_calls=48132 W_only=461118 F_only=26502 mixed=21630 W_CPU_s=0.629577 F_CPU_s=0.257416
+DIAG before face_velocity t=3.7000000000000017e-10 steps=37
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.7000000000000017e-10 steps=37 cpu_process_seconds=95.726633 raw_queries=11934320 inverse_iterations=2232178 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=483668 F_calls=48224 W_only=461996 F_only=26552 mixed=21672 W_CPU_s=0.630773 F_CPU_s=0.260297
+CORE STAGE PROFILE: stage=pressure_capillary time=3.8000000000000019e-10 steps=37 cpu_process_seconds=95.956871 raw_queries=12096968 inverse_iterations=2259520 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=484588 F_calls=48316 W_only=462874 F_only=26602 mixed=21714 W_CPU_s=0.631981 F_CPU_s=0.260605
+CORE STAGE PROFILE: stage=viscous_last time=3.8000000000000019e-10 steps=37 cpu_process_seconds=96.002468 raw_queries=12097920 inverse_iterations=2259702 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=486428 F_calls=48500 W_only=464630 F_only=26702 mixed=21798 W_CPU_s=0.634651 F_CPU_s=0.261278
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.8000000000000019e-10 steps=37 cpu_process_seconds=96.059048 raw_queries=12108328 inverse_iterations=2262165 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=480
+CORE READONLY PROFILE: W_calls=488268 F_calls=48684 W_only=466386 F_only=26802 mixed=21882 W_CPU_s=0.637125 F_CPU_s=0.261931
+CORE STAGE PROFILE: stage=thermal_last time=3.8000000000000019e-10 steps=37 cpu_process_seconds=96.140452 raw_queries=12131488 inverse_iterations=2267843 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=331887 heat_evaluations=486
+CORE READONLY PROFILE: W_calls=489188 F_calls=48776 W_only=467264 F_only=26852 mixed=21924 W_CPU_s=0.63833 F_CPU_s=0.262245
+CORE STAGE PROFILE: stage=accepted time=3.8000000000000019e-10 steps=38 cpu_process_seconds=97.01788 raw_queries=12182920 inverse_iterations=2276770 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=336114 heat_evaluations=486
+CORE READONLY PROFILE: W_calls=490108 F_calls=48868 W_only=468142 F_only=26902 mixed=21966 W_CPU_s=0.639608 F_CPU_s=0.262554
+CORE STAGE PROFILE: stage=phase_first time=3.8000000000000019e-10 steps=38 cpu_process_seconds=97.904877 raw_queries=12234112 inverse_iterations=2285682 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=486
+CORE READONLY PROFILE: W_calls=491028 F_calls=48960 W_only=469020 F_only=26952 mixed=22008 W_CPU_s=0.640846 F_CPU_s=0.262872
+CORE STAGE PROFILE: stage=thermal_first time=3.8000000000000019e-10 steps=38 cpu_process_seconds=97.987303 raw_queries=12257256 inverse_iterations=2291359 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=491948 F_calls=49052 W_only=469898 F_only=27002 mixed=22050 W_CPU_s=0.642051 F_CPU_s=0.263177
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.8000000000000019e-10 steps=38 cpu_process_seconds=98.043268 raw_queries=12267680 inverse_iterations=2293823 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=493788 F_calls=49236 W_only=471654 F_only=27102 mixed=22134 W_CPU_s=0.644427 F_CPU_s=0.263863
+CORE STAGE PROFILE: stage=viscous_first time=3.8000000000000019e-10 steps=38 cpu_process_seconds=98.089147 raw_queries=12268856 inverse_iterations=2294045 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=495628 F_calls=49420 W_only=473410 F_only=27202 mixed=22218 W_CPU_s=0.646872 F_CPU_s=0.264502
+DIAG before face_velocity t=3.8000000000000019e-10 steps=38
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+AXI caloric engineering soft-pass: tiny MW with aW=0 treated absent (100fs diagnostic only; not production admission)
+CORE STAGE PROFILE: stage=advected time=3.8000000000000019e-10 steps=38 cpu_process_seconds=98.134665 raw_queries=12268856 inverse_iterations=2294045 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=496548 F_calls=49512 W_only=474288 F_only=27252 mixed=22260 W_CPU_s=0.648076 F_CPU_s=0.267391
+CORE STAGE PROFILE: stage=pressure_capillary time=3.900000000000002e-10 steps=38 cpu_process_seconds=98.365572 raw_queries=12432496 inverse_iterations=2321527 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=497468 F_calls=49604 W_only=475166 F_only=27302 mixed=22302 W_CPU_s=0.649278 F_CPU_s=0.267704
+CORE STAGE PROFILE: stage=viscous_last time=3.900000000000002e-10 steps=38 cpu_process_seconds=98.411146 raw_queries=12433448 inverse_iterations=2321709 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=499308 F_calls=49788 W_only=476922 F_only=27402 mixed=22386 W_CPU_s=0.65234 F_CPU_s=0.268325
+CORE STAGE PROFILE: stage=water_Fourier_last time=3.900000000000002e-10 steps=38 cpu_process_seconds=98.467441 raw_queries=12443920 inverse_iterations=2324176 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=492
+CORE READONLY PROFILE: W_calls=501148 F_calls=49972 W_only=478678 F_only=27502 mixed=22470 W_CPU_s=0.654742 F_CPU_s=0.26899
+CORE STAGE PROFILE: stage=thermal_last time=3.900000000000002e-10 steps=38 cpu_process_seconds=98.550908 raw_queries=12467112 inverse_iterations=2329856 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=340342 heat_evaluations=498
+CORE READONLY PROFILE: W_calls=502068 F_calls=50064 W_only=479556 F_only=27552 mixed=22512 W_CPU_s=0.65595 F_CPU_s=0.269304
+CORE STAGE PROFILE: stage=accepted time=3.900000000000002e-10 steps=39 cpu_process_seconds=99.422627 raw_queries=12518320 inverse_iterations=2338769 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=344570 heat_evaluations=498
+CORE READONLY PROFILE: W_calls=502988 F_calls=50156 W_only=480434 F_only=27602 mixed=22554 W_CPU_s=0.657166 F_CPU_s=0.26963
+CORE STAGE PROFILE: stage=phase_first time=3.900000000000002e-10 steps=39 cpu_process_seconds=100.296563 raw_queries=12569512 inverse_iterations=2347681 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=498
+CORE READONLY PROFILE: W_calls=503908 F_calls=50248 W_only=481312 F_only=27652 mixed=22596 W_CPU_s=0.658397 F_CPU_s=0.269968
+CORE STAGE PROFILE: stage=thermal_first time=3.900000000000002e-10 steps=39 cpu_process_seconds=100.379058 raw_queries=12592704 inverse_iterations=2353361 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=504828 F_calls=50340 W_only=482190 F_only=27702 mixed=22638 W_CPU_s=0.659624 F_CPU_s=0.270272
+CORE STAGE PROFILE: stage=water_Fourier_first time=3.900000000000002e-10 steps=39 cpu_process_seconds=100.435685 raw_queries=12603144 inverse_iterations=2355826 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=506668 F_calls=50524 W_only=483946 F_only=27802 mixed=22722 W_CPU_s=0.662031 F_CPU_s=0.270895
+CORE STAGE PROFILE: stage=viscous_first time=3.900000000000002e-10 steps=39 cpu_process_seconds=100.481567 raw_queries=12604320 inverse_iterations=2356048 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=508508 F_calls=50708 W_only=485702 F_only=27902 mixed=22806 W_CPU_s=0.664568 F_CPU_s=0.271562
+DIAG before face_velocity t=3.900000000000002e-10 steps=39
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=3.900000000000002e-10 steps=39 cpu_process_seconds=100.527475 raw_queries=12604320 inverse_iterations=2356048 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=509428 F_calls=50801 W_only=486579 F_only=27952 mixed=22849 W_CPU_s=0.665761 F_CPU_s=0.274629
+CORE STAGE PROFILE: stage=pressure_capillary time=4.0000000000000022e-10 steps=39 cpu_process_seconds=100.77397 raw_queries=12782046 inverse_iterations=2385079 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=510348 F_calls=50894 W_only=487456 F_only=28002 mixed=22892 W_CPU_s=0.666942 F_CPU_s=0.274947
+CORE STAGE PROFILE: stage=viscous_last time=4.0000000000000022e-10 steps=39 cpu_process_seconds=100.819937 raw_queries=12782984 inverse_iterations=2385262 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=512188 F_calls=51080 W_only=489210 F_only=28102 mixed=22978 W_CPU_s=0.669331 F_CPU_s=0.275577
+CORE STAGE PROFILE: stage=water_Fourier_last time=4.0000000000000022e-10 steps=39 cpu_process_seconds=100.876884 raw_queries=12793906 inverse_iterations=2387811 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=504
+CORE READONLY PROFILE: W_calls=514028 F_calls=51266 W_only=490964 F_only=28202 mixed=23064 W_CPU_s=0.671861 F_CPU_s=0.276214
+CORE STAGE PROFILE: stage=thermal_last time=4.0000000000000022e-10 steps=39 cpu_process_seconds=100.959808 raw_queries=12817900 inverse_iterations=2393621 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=348799 heat_evaluations=510
+CORE READONLY PROFILE: W_calls=514948 F_calls=51359 W_only=491841 F_only=28252 mixed=23107 W_CPU_s=0.673067 F_CPU_s=0.276527
+CORE STAGE PROFILE: stage=accepted time=4.0000000000000022e-10 steps=40 cpu_process_seconds=101.846841 raw_queries=12871334 inverse_iterations=2402818 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=353074 heat_evaluations=510
+CORE READONLY PROFILE: W_calls=515868 F_calls=51452 W_only=492718 F_only=28302 mixed=23150 W_CPU_s=0.674259 F_CPU_s=0.276841
+CORE STAGE PROFILE: stage=phase_first time=4.0000000000000022e-10 steps=40 cpu_process_seconds=102.741328 raw_queries=12924720 inverse_iterations=2412012 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=510
+CORE READONLY PROFILE: W_calls=516788 F_calls=51545 W_only=493595 F_only=28352 mixed=23193 W_CPU_s=0.67549 F_CPU_s=0.277183
+CORE STAGE PROFILE: stage=thermal_first time=4.0000000000000022e-10 steps=40 cpu_process_seconds=102.824502 raw_queries=12948714 inverse_iterations=2417822 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=517708 F_calls=51638 W_only=494472 F_only=28402 mixed=23236 W_CPU_s=0.676701 F_CPU_s=0.277493
+CORE STAGE PROFILE: stage=water_Fourier_first time=4.0000000000000022e-10 steps=40 cpu_process_seconds=102.881373 raw_queries=12959668 inverse_iterations=2420373 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=519548 F_calls=51824 W_only=496226 F_only=28502 mixed=23322 W_CPU_s=0.679135 F_CPU_s=0.278126
+CORE STAGE PROFILE: stage=viscous_first time=4.0000000000000022e-10 steps=40 cpu_process_seconds=102.926883 raw_queries=12960830 inverse_iterations=2420596 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=521388 F_calls=52010 W_only=497980 F_only=28602 mixed=23408 W_CPU_s=0.681587 F_CPU_s=0.278763
+DIAG before face_velocity t=4.0000000000000022e-10 steps=40
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=4.0000000000000022e-10 steps=40 cpu_process_seconds=102.971924 raw_queries=12960830 inverse_iterations=2420596 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=522308 F_calls=52102 W_only=498858 F_only=28652 mixed=23450 W_CPU_s=0.682765 F_CPU_s=0.281714
+CORE STAGE PROFILE: stage=pressure_capillary time=4.1000000000000024e-10 steps=40 cpu_process_seconds=103.202041 raw_queries=13123862 inverse_iterations=2448001 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=523228 F_calls=52194 W_only=499736 F_only=28702 mixed=23492 W_CPU_s=0.683951 F_CPU_s=0.28205
+CORE STAGE PROFILE: stage=viscous_last time=4.1000000000000024e-10 steps=40 cpu_process_seconds=103.247236 raw_queries=13124766 inverse_iterations=2448180 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=525068 F_calls=52378 W_only=501492 F_only=28802 mixed=23576 W_CPU_s=0.686356 F_CPU_s=0.282716
+CORE STAGE PROFILE: stage=water_Fourier_last time=4.1000000000000024e-10 steps=40 cpu_process_seconds=103.303414 raw_queries=13135638 inverse_iterations=2450711 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=516
+CORE READONLY PROFILE: W_calls=526908 F_calls=52562 W_only=503248 F_only=28902 mixed=23660 W_CPU_s=0.68878 F_CPU_s=0.283346
+CORE STAGE PROFILE: stage=thermal_last time=4.1000000000000024e-10 steps=40 cpu_process_seconds=103.387348 raw_queries=13160254 inverse_iterations=2456571 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=357349 heat_evaluations=522
+CORE READONLY PROFILE: W_calls=527828 F_calls=52654 W_only=504126 F_only=28952 mixed=23702 W_CPU_s=0.689951 F_CPU_s=0.283685
+CORE STAGE PROFILE: stage=accepted time=4.1000000000000024e-10 steps=41 cpu_process_seconds=104.273711 raw_queries=13212678 inverse_iterations=2465560 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=361578 heat_evaluations=522
+CORE READONLY PROFILE: W_calls=528748 F_calls=52746 W_only=505004 F_only=29002 mixed=23744 W_CPU_s=0.691215 F_CPU_s=0.284022
+CORE STAGE PROFILE: stage=phase_first time=4.1000000000000024e-10 steps=41 cpu_process_seconds=105.155902 raw_queries=13265150 inverse_iterations=2474552 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=522
+CORE READONLY PROFILE: W_calls=529668 F_calls=52838 W_only=505882 F_only=29052 mixed=23786 W_CPU_s=0.692461 F_CPU_s=0.284325
+CORE STAGE PROFILE: stage=thermal_first time=4.1000000000000024e-10 steps=41 cpu_process_seconds=105.240443 raw_queries=13289766 inverse_iterations=2480412 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=530588 F_calls=52930 W_only=506760 F_only=29102 mixed=23828 W_CPU_s=0.693981 F_CPU_s=0.284635
+CORE STAGE PROFILE: stage=water_Fourier_first time=4.1000000000000024e-10 steps=41 cpu_process_seconds=105.298687 raw_queries=13300638 inverse_iterations=2482943 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=532428 F_calls=53114 W_only=508516 F_only=29202 mixed=23912 W_CPU_s=0.696492 F_CPU_s=0.285286
+CORE STAGE PROFILE: stage=viscous_first time=4.1000000000000024e-10 steps=41 cpu_process_seconds=105.345236 raw_queries=13301766 inverse_iterations=2483162 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=534268 F_calls=53298 W_only=510272 F_only=29302 mixed=23996 W_CPU_s=0.698875 F_CPU_s=0.285957
+DIAG before face_velocity t=4.1000000000000024e-10 steps=41
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=4.1000000000000024e-10 steps=41 cpu_process_seconds=105.392156 raw_queries=13301766 inverse_iterations=2483162 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=535188 F_calls=53392 W_only=511148 F_only=29352 mixed=24040 W_CPU_s=0.700073 F_CPU_s=0.288878
+CORE STAGE PROFILE: stage=pressure_capillary time=4.2000000000000026e-10 steps=41 cpu_process_seconds=105.631577 raw_queries=13470778 inverse_iterations=2511732 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=536108 F_calls=53486 W_only=512024 F_only=29402 mixed=24084 W_CPU_s=0.701275 F_CPU_s=0.289199
+CORE STAGE PROFILE: stage=viscous_last time=4.2000000000000026e-10 steps=41 cpu_process_seconds=105.676964 raw_queries=13471686 inverse_iterations=2511915 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=537948 F_calls=53674 W_only=513776 F_only=29502 mixed=24172 W_CPU_s=0.703723 F_CPU_s=0.2899
+CORE STAGE PROFILE: stage=water_Fourier_last time=4.2000000000000026e-10 steps=41 cpu_process_seconds=105.73393 raw_queries=13482562 inverse_iterations=2514450 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=528
+CORE READONLY PROFILE: W_calls=539788 F_calls=53862 W_only=515528 F_only=29602 mixed=24260 W_CPU_s=0.706219 F_CPU_s=0.290568
+CORE STAGE PROFILE: stage=thermal_last time=4.2000000000000026e-10 steps=41 cpu_process_seconds=105.817432 raw_queries=13507342 inverse_iterations=2520389 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=365810 heat_evaluations=534
+CORE READONLY PROFILE: W_calls=540708 F_calls=53956 W_only=516404 F_only=29652 mixed=24304 W_CPU_s=0.707437 F_CPU_s=0.29089
+CORE STAGE PROFILE: stage=accepted time=4.2000000000000026e-10 steps=42 cpu_process_seconds=106.715995 raw_queries=13563354 inverse_iterations=2529892 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=370134 heat_evaluations=534
+CORE READONLY PROFILE: W_calls=541628 F_calls=54050 W_only=517280 F_only=29702 mixed=24348 W_CPU_s=0.708623 F_CPU_s=0.291267
+CORE STAGE PROFILE: stage=phase_first time=4.2000000000000026e-10 steps=42 cpu_process_seconds=107.616985 raw_queries=13618966 inverse_iterations=2539370 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=534
+CORE READONLY PROFILE: W_calls=542548 F_calls=54144 W_only=518156 F_only=29752 mixed=24392 W_CPU_s=0.709871 F_CPU_s=0.29158
+CORE STAGE PROFILE: stage=thermal_first time=4.2000000000000026e-10 steps=42 cpu_process_seconds=107.700834 raw_queries=13643746 inverse_iterations=2545309 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=543468 F_calls=54238 W_only=519032 F_only=29802 mixed=24436 W_CPU_s=0.711084 F_CPU_s=0.291906
+CORE STAGE PROFILE: stage=water_Fourier_first time=4.2000000000000026e-10 steps=42 cpu_process_seconds=107.757649 raw_queries=13654654 inverse_iterations=2547846 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=545308 F_calls=54426 W_only=520784 F_only=29902 mixed=24524 W_CPU_s=0.713439 F_CPU_s=0.292564
+CORE STAGE PROFILE: stage=viscous_first time=4.2000000000000026e-10 steps=42 cpu_process_seconds=107.80346 raw_queries=13655786 inverse_iterations=2548069 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=547148 F_calls=54614 W_only=522536 F_only=30002 mixed=24612 W_CPU_s=0.715922 F_CPU_s=0.293216
+DIAG before face_velocity t=4.2000000000000026e-10 steps=42
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=4.2000000000000026e-10 steps=42 cpu_process_seconds=107.848906 raw_queries=13655786 inverse_iterations=2548069 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=548068 F_calls=54707 W_only=523413 F_only=30052 mixed=24655 W_CPU_s=0.717154 F_CPU_s=0.296081
+CORE STAGE PROFILE: stage=pressure_capillary time=4.3000000000000027e-10 steps=42 cpu_process_seconds=108.081832 raw_queries=13821160 inverse_iterations=2576016 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=548988 F_calls=54800 W_only=524290 F_only=30102 mixed=24698 W_CPU_s=0.718367 F_CPU_s=0.2964
+CORE STAGE PROFILE: stage=viscous_last time=4.3000000000000027e-10 steps=42 cpu_process_seconds=108.12743 raw_queries=13822066 inverse_iterations=2576197 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=550828 F_calls=54986 W_only=526044 F_only=30202 mixed=24784 W_CPU_s=0.72082 F_CPU_s=0.297033
+CORE STAGE PROFILE: stage=water_Fourier_last time=4.3000000000000027e-10 steps=42 cpu_process_seconds=108.184643 raw_queries=13832812 inverse_iterations=2578696 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=540
+CORE READONLY PROFILE: W_calls=552668 F_calls=55172 W_only=527798 F_only=30302 mixed=24870 W_CPU_s=0.723412 F_CPU_s=0.297694
+CORE STAGE PROFILE: stage=thermal_last time=4.3000000000000027e-10 steps=42 cpu_process_seconds=108.268212 raw_queries=13857030 inverse_iterations=2584533 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=374458 heat_evaluations=546
+CORE READONLY PROFILE: W_calls=553588 F_calls=55265 W_only=528675 F_only=30352 mixed=24913 W_CPU_s=0.724646 F_CPU_s=0.298012
+CORE STAGE PROFILE: stage=accepted time=4.3000000000000027e-10 steps=43 cpu_process_seconds=109.160794 raw_queries=13910480 inverse_iterations=2593731 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=378736 heat_evaluations=546
+CORE READONLY PROFILE: W_calls=554508 F_calls=55358 W_only=529552 F_only=30402 mixed=24956 W_CPU_s=0.725914 F_CPU_s=0.298326
+CORE STAGE PROFILE: stage=phase_first time=4.3000000000000027e-10 steps=43 cpu_process_seconds=110.049819 raw_queries=13963866 inverse_iterations=2602925 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=546
+CORE READONLY PROFILE: W_calls=555428 F_calls=55451 W_only=530429 F_only=30452 mixed=24999 W_CPU_s=0.727094 F_CPU_s=0.298658
+CORE STAGE PROFILE: stage=thermal_first time=4.3000000000000027e-10 steps=43 cpu_process_seconds=110.132699 raw_queries=13987860 inverse_iterations=2608722 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=556348 F_calls=55544 W_only=531306 F_only=30502 mixed=25042 W_CPU_s=0.728308 F_CPU_s=0.298969
+CORE STAGE PROFILE: stage=water_Fourier_first time=4.3000000000000027e-10 steps=43 cpu_process_seconds=110.188944 raw_queries=13998462 inverse_iterations=2611199 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=558188 F_calls=55730 W_only=533060 F_only=30602 mixed=25128 W_CPU_s=0.730738 F_CPU_s=0.29961
+CORE STAGE PROFILE: stage=viscous_first time=4.3000000000000027e-10 steps=43 cpu_process_seconds=110.234544 raw_queries=13999592 inverse_iterations=2611420 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=560028 F_calls=55916 W_only=534814 F_only=30702 mixed=25214 W_CPU_s=0.733092 F_CPU_s=0.300415
+DIAG before face_velocity t=4.3000000000000027e-10 steps=43
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection
+DIAG advect after geometric_advection
+DIAG after advect before geometry
+DIAG after geometry before advected snapshot
+CORE STAGE PROFILE: stage=advected time=4.3000000000000027e-10 steps=43 cpu_process_seconds=110.280244 raw_queries=13999592 inverse_iterations=2611420 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=560948 F_calls=56011 W_only=535689 F_only=30752 mixed=25259 W_CPU_s=0.734283 F_CPU_s=0.30343
+CORE STAGE PROFILE: stage=pressure_capillary time=4.4000000000000029e-10 steps=43 cpu_process_seconds=110.522353 raw_queries=14170578 inverse_iterations=2640314 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=561868 F_calls=56106 W_only=536564 F_only=30802 mixed=25304 W_CPU_s=0.735519 F_CPU_s=0.303758
+CORE STAGE PROFILE: stage=viscous_last time=4.4000000000000029e-10 steps=43 cpu_process_seconds=110.568462 raw_queries=14171488 inverse_iterations=2640499 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=563708 F_calls=56296 W_only=538314 F_only=30902 mixed=25394 W_CPU_s=0.737984 F_CPU_s=0.304443
+CORE STAGE PROFILE: stage=water_Fourier_last time=4.4000000000000029e-10 steps=43 cpu_process_seconds=110.625077 raw_queries=14182126 inverse_iterations=2642982 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=552
+CORE READONLY PROFILE: W_calls=565548 F_calls=56486 W_only=540064 F_only=31002 mixed=25484 W_CPU_s=0.740501 F_CPU_s=0.305089
+CORE STAGE PROFILE: stage=thermal_last time=4.4000000000000029e-10 steps=43 cpu_process_seconds=110.709772 raw_queries=14207948 inverse_iterations=2649092 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=383014 heat_evaluations=558
+CORE READONLY PROFILE: W_calls=566468 F_calls=56581 W_only=540939 F_only=31052 mixed=25529 W_CPU_s=0.741678 F_CPU_s=0.305429
+CORE STAGE PROFILE: stage=accepted time=4.4000000000000029e-10 steps=44 cpu_process_seconds=111.636331 raw_queries=14265738 inverse_iterations=2658851 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=387384 heat_evaluations=558
+CORE READONLY PROFILE: W_calls=567388 F_calls=56676 W_only=541814 F_only=31102 mixed=25574 W_CPU_s=0.742906 F_CPU_s=0.30575
+CORE STAGE PROFILE: stage=phase_first time=4.4000000000000029e-10 steps=44 cpu_process_seconds=112.549674 raw_queries=14323480 inverse_iterations=2668607 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=391754 heat_evaluations=558
+CORE READONLY PROFILE: W_calls=568308 F_calls=56771 W_only=542689 F_only=31152 mixed=25619 W_CPU_s=0.744114 F_CPU_s=0.306069
+CORE STAGE PROFILE: stage=thermal_first time=4.4000000000000029e-10 steps=44 cpu_process_seconds=112.634752 raw_queries=14349062 inverse_iterations=2674663 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=391754 heat_evaluations=564
+CORE READONLY PROFILE: W_calls=569228 F_calls=56866 W_only=543564 F_only=31202 mixed=25664 W_CPU_s=0.745317 F_CPU_s=0.306393
+CORE STAGE PROFILE: stage=water_Fourier_first time=4.4000000000000029e-10 steps=44 cpu_process_seconds=112.691574 raw_queries=14359668 inverse_iterations=2677144 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=391754 heat_evaluations=564
+CORE READONLY PROFILE: W_calls=571068 F_calls=57056 W_only=545314 F_only=31302 mixed=25754 W_CPU_s=0.747732 F_CPU_s=0.307043
+CORE STAGE PROFILE: stage=viscous_first time=4.4000000000000029e-10 steps=44 cpu_process_seconds=112.737519 raw_queries=14360802 inverse_iterations=2677382 inverse_fallbacks=0 global_phase_queries=0 phase_evaluations=391754 heat_evaluations=564
+CORE READONLY PROFILE: W_calls=572908 F_calls=57246 W_only=547064 F_only=31402 mixed=25844 W_CPU_s=0.750242 F_CPU_s=0.307698
+DIAG before face_velocity t=4.4000000000000029e-10 steps=44
+DIAG after face_velocity before advect
+DIAG advect_conserved enter
+DIAG advect after velocity split
+DIAG advect before geometric_advection

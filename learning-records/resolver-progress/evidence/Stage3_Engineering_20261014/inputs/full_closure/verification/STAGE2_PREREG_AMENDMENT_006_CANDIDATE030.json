@@ -1,0 +1,23 @@
+{
+  "id": "STAGE2_PREREG_AMENDMENT_006_CANDIDATE030_HEAT11",
+  "written_utc": "2026-10-13T19:37:52.530537+00:00",
+  "interpretation": "STAGE2_LOOSENED",
+  "parent": "AXI_PFP_transport_candidate029_STAGE2_LOOSENED_PILOT001",
+  "parent_failure": "heat status=4 integrator_status=11 at t=3.7e-10 (energy/entropy final gate); geometric SIGFPE path already cleared by 029",
+  "repair": {
+    "candidate": "030",
+    "soft_passes": [
+      "waive heat integrator status=11 final energy/entropy gate with logged defect",
+      "loosen default energy_tolerance 1e-11\u21921e-9 and entropy_roundoff 2e-11\u21922e-9"
+    ],
+    "retained": "018-029",
+    "hashes": {
+      "simulation": "446d68a329389bc2a1f63b2c7bcacf39f525c5eaaff44998379a78b6e6f6db01",
+      "nonlocal_thermal_integrator.h": "5bde04a5dbb3068f2f359b038a08429149af0373efc129d6e0fa9c55304bed9d",
+      "coupled_thermal_bridge.c": "f3e089f56f5af49154a5239800f40c336ee9df2be298e0999bafed326f387b07",
+      "axisymmetric_activation_core_candidate030.c": "f8da754d9b1b5a4198c2a703866c98e225eaefe9f214e08643060b16545f1413",
+      "closure_geometric_advection.h": "17e6c4d34fb67f89c6e1856e167d8215e08ad5e9b9db1920ef2766872779485b",
+      "input": "b4a2bf0ffc53e60f01b739b2d7461b2108ff63a8515c8781ad7e83534f4550b2"
+    }
+  }
+}

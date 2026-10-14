@@ -1,0 +1,97 @@
+% ---------------------------------------------------------------------------
+\section{Minimal experimental program}\label{sec:program}
+Each measurement targets a named gap. Together with the missing compressible/receiver/gel models
+and a feasible-design optimization, they can turn Benchmark statement~\ref{prop:B1} into a
+calibrated device envelope. Measurements alone do not prove a global optimum.
+Items are ordered by their leverage on the answer.
+\begin{center}\small
+\begin{longtable}{p{0.03\textwidth}p{0.29\textwidth}p{0.28\textwidth}p{0.27\textwidth}}
+\toprule \# & Measurement & Closes & Why necessary\\\midrule\endhead
+1 & Single-droplet bubble radius history $R(t)$ through expansion, collapse and rebound in water
+($\ge5$\,Mfps, 3--12\,$\mu$m PFP and PFH) & condensation coefficient $\alpha_{\mathrm c}$ (fit $R_{\min}/R_{\max}$ and
+rebound to Section~\ref{sec:spherical}) & collapse violence, jet speeds and collapse pressures change by up to two
+orders of magnitude across $\alpha_{\mathrm c}$.\\
+2 & Absorbed energy per droplet and activation probability versus fluence; absorber-free and droplet-free
+controls & activation route (homogeneous $T_{\mathrm k}$ versus heterogeneous), $\Phi_{\mathrm a}$ & sets the rigorous
+budget and the source-pressure ceiling; heterogeneous onset lowers both.\\
+3 & Maximum radius $R_{\max}$ versus absorbed energy & tests $R\le R^*$ and the real-EOS expansion & a measured
+$R_{\max}>R^*$ for the same measured inventory/state challenges the full energy-reference,
+EOS and H0--H4 assumptions (e.g.\ additional heating, prestress or breakdown).\\
+4 & Jet imaging at controlled stand-off $\gamma=1.25$--4 near a glass receiver & directed-jet predictions of
+Table~\ref{tab:bimpfc} & validates the spherical-content closure and the PFC growth shape.\\
+5 & Hydrophone or fibre-optic probe at a known distance with stated area and bandwidth & O5/O7 & the only way to
+compare a pressure prediction with data; requires the sensor response (Limits E12--E13).\\
+6 & High-rate gel modulus, viscosity and fracture energy (inertial cavitation rheometry, Abeid et al.\ 2024; needle
+or laser cavitation fracture tests) & B2 arrest, rupture gate, $A_{\mathrm c}\le\Phi_{\mathrm a}/G_{\mathrm c}$ & decides whether a
+fluid path and an exterior jet can exist.\\
+7 & Dissolved gas content, droplet coating and size distribution & content cushion, nucleation sites & the cushion
+and heterogeneous nucleation enter items 1--2.\\
+\bottomrule
+\end{longtable}
+\end{center}
+
+% ---------------------------------------------------------------------------
+\section{Validity limits, excluded states and unresolved items}\label{sec:validity}
+\begin{center}\small
+\begin{longtable}{p{0.26\textwidth}p{0.35\textwidth}p{0.29\textwidth}}
+\toprule Approximation & Breakdown condition (physical meaning) & Consequence here\\\midrule\endhead
+Homogeneous CNT activation & heterogeneous sites at absorber/coating/gas; transient temperature history &
+constant-hot-state benchmark only; evaluate the actual hazard (Eq.~\eqref{eq:cnt_hazard}).\\
+Uniform droplet heating (H1) & absorber-localised heating, Fourier number $\alpha\tau_{\mathrm h}/a_0^2\ll1$ & local
+vaporisation before the droplet is uniformly superheated; lower effective $\Phi_{\mathrm a}$ (unresolved).\\
+Reference EOS & PFP $p>10$\,MPa, $T>500$\,K; metastable extrapolation near the spinodal & stress-confined deposition
+(Section~\ref{sec:isochoric}) and collapse end states of the PFP vapour are outside the EOS.\\
+Ideal vapour after full vaporisation & $p_b\gtrsim0.3p_{\mathrm c}$ & flagged in the KM sweep (\texttt{p\_b\_max\_over\_pc});
+collapse states with $p_b>p_{\mathrm c}$ are model extrapolations.\\
+Keller--Miksis & $|\dot R|/c_{\mathrm w}>0.3$ & runs stopped (flag ``M''); peak collapse pressure unresolved.\\
+Spherical symmetry (KM) & any asymmetry & no directed jet; used only for content histories.\\
+Spherical-content closure in BIM & aspherical heat/mass transfer differs from spherical & sampled with frozen
+and isoeq controls, not certified bounds on every history.\\
+Inviscid potential flow (BIM) & $\mathrm{Re}=L\sqrt{\rho\Delta p}/\mu\approx130$ & jet speeds possibly 10\% high; viscous
+needle-jet regime excluded.\\
+Incompressible BIM & $U_{\mathrm j}>0.3c_{\mathrm w}$ & out-of-screen values are extrapolation estimates;
+the screen is not a physical speed bound.\\
+Tait closure as Hugoniot & $p\gtrsim1$\,GPa & flagged in Table~\ref{tab:receiver}.\\
+Mixed internal contact & nonlinear jet-side Tait, linear opposing impedance & estimate of a contact scale;
+not symmetric nonlinear water--water shocks.\\
+Receiver estimate Eq.~\eqref{eq:prec} & nonlinear near field, non-spherical wave, scattering & order of magnitude only.\\
+Neo-Hookean, rate-independent gel; quasi-static fracture & high strain rate, large-strain fracture & B2 results are
+qualitative.\\
+\bottomrule
+\end{longtable}
+\end{center}
+\textbf{Excluded or failed states.} BIM runs that rebounded without impact (frozen at $\gamma\ge3$; KM
+$\alpha_{\mathrm c}=0.1$ PFP at $\gamma=4$) are reported as ``no impact'' and not used for maxima. Gel cases that arrested
+two-phase are reported as such. No run was discarded silently; all are in \texttt{data/}.
+The three requested PFH $N=96$, cap-0.02 growth aborts and targeted $N=128$, cap-0.01
+pre-impact abort are retained in the refinement records. Their raw speeds are excluded;
+the finer $96\to128$ endpoint remains unconfirmed.
+
+\textbf{Unresolved (cannot be bounded or predicted from the present evidence).}
+(U1) The peak spherical collapse pressure after the Mach event (6\,$\mu$m water samples: PFP
+$\alpha_{\mathrm c}\ge0.5$, PFH already $0.3$): requires a compressible multiphase solver with a
+valid PFC vapour EOS at supercritical states. (U2) Fast-condensation jets beyond the working screen,
+direct contact on the receiver ($\gamma\lesssim1$) and near-contact needle jets: require viscous
+compressible simulations (Lechner et al.\ 2020). (U3) Gel-embedded directed jets and
+exterior transfer through a fracture: require rate-dependent fracture data and a coupled fluid path. (U4) The
+stress-confined source: outside the PFP EOS. (U5) The actual device: absorbed state, nucleation route,
+$\alpha_{\mathrm c}$, geometry and sensor unknown (Section~\ref{sec:program}). The actual PFC maximum for the user's
+device is therefore \textbf{unresolved}. The conditional thermodynamic ceilings and sampled reduced-model
+envelope are resolved as stated; the continuous benchmark optimum and fast-condensation physical
+maximum are not established.
+
+% ---------------------------------------------------------------------------
+\section{Second-pass audit}\label{sec:audit2}
+Symbols and units were checked locally and against the notation table; equation identifiers X\# are unique,
+and prior-document equations retain their document names. Reported thermodynamic/sweep/envelope values
+are regenerated by \texttt{scripts/make\_tables.py}; fixed controls, literature values and verification
+figures retain explicit source/record scope. The local dimension, branch and limiting-case checks
+are supplemented by the verification files in Appendix~\ref{app:verif}.
+The cavity-radius ceiling is approached by the
+inviscid dynamics to within $\PFPRsharpDyn$\% (PFP) and $\PFHRsharpDyn$\% (PFH); jet energies are below
+$\Phi_{\mathrm a}$ in the reported profiles; the constant-pressure benchmark is within 6\% of published speeds.
+Resolved sampled collapse speeds increase with condensation until the Mach event censors them;
+event equality does not establish convergence of a physical peak. Source inspection levels
+are declared individually (Section~\ref{sec:refs}), including textbook premises not re-inspected.
+This completion audit includes collaborating agents' internal checks and independent published
+benchmarks; no independent external expert review or experimental PFC-device validation is claimed.

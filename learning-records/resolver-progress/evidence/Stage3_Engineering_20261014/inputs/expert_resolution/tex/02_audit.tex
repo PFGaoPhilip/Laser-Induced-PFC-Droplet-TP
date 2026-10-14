@@ -1,0 +1,117 @@
+% ---------------------------------------------------------------------------
+\section{Independent audit of the existing results}\label{sec:audit}
+Each existing equation was re-derived independently before use. ``Accepted'' means re-derived
+and confirmed under its stated hypotheses; ``corrected'' means an error or an overstated claim
+was found and replaced; ``restricted'' means the result stands but its claimed scope is narrowed.
+
+\subsection{Limits report (\texttt{DERIVATION.tex}, Steps 1--18, E01--E32)}
+\begin{center}\small
+\begin{longtable}{p{0.10\textwidth}p{0.12\textwidth}p{0.70\textwidth}}
+\toprule ID & Verdict & Finding and consequence\\\midrule\endhead
+E01 & accepted & Definition of absorbed fraction.\\
+E02 & \textbf{corrected} & The ``availability ledger'' is stated as an equality of four non-negative
+destinations with $E_{\mathrm{av}}$ but $E_{\mathrm{av}}$ is never defined thermodynamically. The correct
+budget is the exergy $\Phi$ of Eq.~\eqref{eq:exergy}; the ledger becomes the inequality
+$E_{\mathrm j}+E_{\mathrm s}+E_{\mathrm{rem}}\le\Phia$, with exergy destruction replacing the vague
+``$E_{\mathrm{loss}}$''. The statement ``absorbed optical energy is an optimistic upper cap'' is correct
+for an initial dead state (otherwise include $\Phi_{\mathrm{ini}}$)
+but is the loosest bound; for thermal activation $\Phia\approx0.14$--$0.17\,\Eabs$ (Step T6).\\
+E03, E04 & accepted & RMS and profile-weighted tip bounds; correct, provided $m_{\mathrm{eff}}$ is a
+justified lower bound. Section~\ref{sec:jet} predicts a resolved jet profile instead of an assumed
+plug; its sampled mass is not a proved lower bound on the physically participating mass.\\
+E05 & accepted & Counterexample showing energy alone gives no pointwise cap. Retained; it is the reason
+observable O2 (Eq.~\eqref{eq:Um}) is introduced.\\
+E06--E08 & accepted, restricted & Plug/emission ceilings and dynamic pressure are correct for a declared
+moving column. The 84.10\,m/s figure belongs to the \emph{ideal-gas outlet} architecture with
+5\,nJ of declared source work; it is not a PFC quantity.\\
+E09, E10 & accepted, restricted & Linear impedance matching is correct algebra. Its use at the energy
+ceiling (126\,MPa) is a linear extrapolation; the Tait/Hugoniot value at 84.1\,m/s is
+$\pcUeightyfour$\,MPa (Table~\ref{tab:receiver}), 11.6\% higher. At 850\,m/s the linear value
+underestimates the Hugoniot value by a factor $\ratioUeightfifty$. Correction: E10 is not an upper
+bound once the Mach number exceeds about 0.05; Eq.~\eqref{eq:hug} replaces it.\\
+E11 & accepted & Hugoniot energy relation re-derived; correct. Closed here with the Tait water EOS
+(Section~\ref{sec:receiver}).\\
+E12--E15 & accepted & Acoustic progressive-wave bounds, transmission coefficient and impulse bound are
+correct within their stated hypotheses. The warning against applying E12 to a contact pressure is
+endorsed.\\
+E16--E18 & accepted & Spherical kinetic energy and Rayleigh collapse law; the Rayleigh collapse time was
+reproduced numerically to $1.7\times10^{-8}$ relative error (Appendix~\ref{app:verif}).\\
+E19 & \textbf{corrected} & ``$R_{\max}\le(3E_{\mathrm{av}}/4\pi\Delta p)^{1/3}$'' is a bound only for an
+\emph{empty} cavity whose content does no work. A finite-inventory vapour cavity is pushed by its own vapour: with $E=\Phia$ and
+$\Delta p=\pinf$ the formula gives $\PFPRemptySix\,\mu$m for a 6\,$\mu$m PFP droplet while the inviscid expansion reaches
+$\PFPRdynFree\,\mu$m (violated); with $\Delta p=\pinf-\psat(T_0)$ it gives $\PFPRemptySatSix\,\mu$m (loose). The rigorous
+bound is Eq.~\eqref{eq:vmax} ($R^*=\PFPRboundSix\,\mu$m).\\
+E20--E22 & accepted, restricted & Finite-gas polytropic regularisation is correct algebra; the 300.91\,m/s
+example uses $\kappa=1.4$ and $p_{g,m}/\Delta p=0.01$, neither of which is a PFC property. PFC vapour
+has $k_{\mathrm v}\approx1.03$--$1.04$ and condenses; see Section~\ref{sec:spherical}.\\
+E23 & accepted, restricted & Supponen et al.\ (2016) power law $U_{\mathrm j}=0.9\zeta^{-1}\sqrt{\Delta p/\rho}$,
+$\zeta=0.195\gamma^{-2}$, verified verbatim (their Eqs.~2.5 and 6.1, fitted over $10^{-4}\le\zeta\le0.1$).
+It is a fit to potential-flow simulations of a \emph{constant-pressure (vapour) cavity}, not of an
+arbitrary content. Our BIM (Section~\ref{sec:jet}) reproduces it to within 4--6\% and gives the PFC
+correction.\\
+E24 & accepted & Finite inventory.\\
+E25 & \textbf{updated} & The heat-capacity value $653.74$\,J/(kg\,K) was correctly converted from
+NIST's explicitly interpolated 188.3\,J/(mol\,K). It disagrees with the reference EOS
+($\PFPcp$\,J/(kg\,K)); the present path uses the EOS consistently, without establishing that the
+NIST datum is wrong. The EOS path enthalpy 293\,K$\to$303\,K plus
+vaporisation is $\qEOSpath$\,kJ/kg versus $\qReportPath$\,kJ/kg in the report (2\% difference, because
+latent heat dominates that short path). More important is a \emph{conceptual} correction: activation of
+a homogeneous PFC activation model is not a path to the 1-atm boiling point; the adopted CNT closure requires
+superheat to $\Tk\approx0.92\,T_{\mathrm c}$ (Step T4), raising the specific heat demand to
+$\PFPqSix$\,kJ/kg, 10\% above E25, and changing which vapour state is produced.\\
+E26 & accepted, restricted & The ideal-gas partial-pressure ceiling is correct but depends on assumed
+$T_{b,\max}$ and $V_{b,\min}$; Proposition~\ref{prop:psrc} gives a hypothesis-based source ceiling without
+them.\\
+E27 & accepted & Quasi-static growth screen.\\
+E28 & accepted, restricted & Ideal equilibrium expansion ratio; correct at 303\,K, 1\,atm. It is
+superseded by the real-EOS adiabatic over-expansion ($R/a_0\approx7.9$, Table~\ref{tab:thermo}).\\
+E29 & accepted & First law of the cavity content; used in Eq.~\eqref{eq:km_energy}.\\
+E30 & accepted & Source-work inversion (612.2\,kPa) reproduced.\\
+E31 & accepted, restricted & Envelope of independent intervals; the warning about coupled extremes is
+endorsed and implemented in Section~\ref{sec:envelope}.\\
+E32 & accepted & Operational supremum definition; adopted as observable O7.\\
+\bottomrule
+\end{longtable}
+\end{center}
+\textbf{Unresolved assumptions inherited from the limits report:} the 5\,nJ source work, the
+3\,$\mu$m/50\,$\mu$m column and the 15\,$\mu$m ideal-gas source are declared controls with no measured
+counterpart; they are not used for any PFC prediction in this report.
+
+\subsection{Finite-PFC core/shell study (\texttt{sources/embedded-pfc-update}, E01--E32)}
+\begin{center}\small
+\begin{longtable}{p{0.10\textwidth}p{0.12\textwidth}p{0.70\textwidth}}
+\toprule ID & Verdict & Finding and consequence\\\midrule\endhead
+E01--E05 & accepted & Inventory, distinct interfaces, Helmholtz identities, curved chemical equilibrium.
+Same EOS (Gao et al.\ 2021) as used here; we confirmed $p_{\mathrm c}$, $T_{\mathrm c}$ and $\psat(T_0)$.\\
+E06--E10 & accepted & Spherical neo-Hookean resistance $p_{\mathrm{el}}=\tfrac G2[5-4\lambda^{-1}-\lambda^{-4}]$;
+re-derived; identical to the stress integral used in our gel model (Eq.~\eqref{eq:gelS}).\\
+E11--E17 & accepted & Host inertia, viscous loss and first-law cancellation re-derived.\\
+E18--E21 & accepted, restricted & Stationary equilibria and radial stability are correct for an
+\emph{intact infinite} host. They are equilibrium states, not reachable trajectories.\\
+E22 & accepted & Optical absorption definition.\\
+E23--E24 & \textbf{completed} & CNT barrier and Poisson hazard are stated but not evaluated. Here they are
+evaluated with the EOS (Step T4): the homogeneous kinetic limit is $\Tk=\PFPTkSix$\,K for 6\,$\mu$m
+PFP, far above the stationary-state temperatures (308--352\,K) of that study's equilibria. Therefore its
+supplied seeds (e.g.\ 358\,K, 50\,kPa overpressure) have negligible homogeneous hazard in the adopted model;
+they require heterogeneous sites. This is a new, quantitative reachability statement.\\
+E25--E27 & accepted & Fracture energetics and the review correction (retained seed energy is not a fracture
+upper bound) are endorsed. Our exergy argument (Step T1) supplies the missing ``complete available-energy
+calculation'': $\Phia$ \emph{is} an upper bound on fracture work plus every other useful work.\\
+E28--E32 & accepted & Regime numbers, poroelastic time, internal Hessian.\\
+Transient & accepted, restricted & Radial wall speeds $\le6.1$\,m/s from a 13.5\,pJ seed are consistent
+with our real-EOS expansion physics: the fully activated 0.6\,$\mu$m PFP droplet has
+$\Phia=2.8$\,pJ only if activated at $\Tk$ with \emph{no} shell; a surviving shell requires a lower
+activation temperature. No contradiction; different initial states.\\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\subsection{Reconciliation}
+The two prior studies are compatible: the limits report supplies observable-specific inequalities;
+the finite-PFC study supplies equilibrium states. Neither supplied (i) the thermodynamic work
+budget of a laser-heated PFC droplet, (ii) the adopted activation state and its hazard assessment, (iii) the collapse dynamics
+of a condensable PFC cavity, (iv) a directed-jet calculation, or (v) a nonlinear receiver closure.
+Sections~\ref{sec:thermo}--\ref{sec:receiver} provide a conditional thermodynamic and reduced-dynamic
+closure, with receiver propagation estimated rather than solved. The finite-PFC EOS covers the expansion
+trajectories computed here (temperatures $<423$\,K, pressures $<1.3$\,MPa) but \emph{not} the collapse
+end states nor stress-confined deposition (Section~\ref{sec:validity}).

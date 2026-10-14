@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "scope": "Updated standalone model ZIP extracted to a new directory; both readers regenerated from bundled sources/assets; bilingual, formula/data preservation and portability checks rerun.",
+  "checks": [
+    {
+      "script": "make_delivery.py",
+      "exit_code": 0
+    },
+    {
+      "script": "build_guide.py",
+      "exit_code": 0
+    },
+    {
+      "script": "verify_bilingual.py",
+      "exit_code": 0
+    },
+    {
+      "script": "verify_reader_revision.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_portability.py",
+      "exit_code": 0
+    }
+  ],
+  "outside_reference_assets": "NOT_REQUIRED",
+  "browser_interaction": "NOT_RUN_BY_THIS_CHECK",
+  "new_COMSOL_run": "NOT_RUN",
+  "self_archive_links": "Removed; essential readers and input links remain usable after extraction."
+}

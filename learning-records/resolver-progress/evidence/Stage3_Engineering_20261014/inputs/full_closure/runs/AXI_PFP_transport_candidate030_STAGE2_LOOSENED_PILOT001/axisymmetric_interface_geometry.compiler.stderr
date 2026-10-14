@@ -1,0 +1,25 @@
+axisymmetric_interface_geometry.c: In function ‘closure_axisymmetric_interface_geometry’:
+axisymmetric_interface_geometry.c:205:46: warning: ‘a.x’ may be used uninitialized [-Wmaybe-uninitialized]
+  205 |   out->plane_endpoint_residual=fmaxl(fabsl(nz*a.x+nr*a.y-alpha),
+      |                                            ~~^~~~
+axisymmetric_interface_geometry.c:180:37: note: ‘a.x’ was declared here
+  180 |   ClosureGeometryVertex wp[8],fp[8],a,b;
+      |                                     ^
+axisymmetric_interface_geometry.c:205:53: warning: ‘a.y’ may be used uninitialized [-Wmaybe-uninitialized]
+  205 |   out->plane_endpoint_residual=fmaxl(fabsl(nz*a.x+nr*a.y-alpha),
+      |                                                   ~~^~~~
+axisymmetric_interface_geometry.c:180:37: note: ‘a.y’ was declared here
+  180 |   ClosureGeometryVertex wp[8],fp[8],a,b;
+      |                                     ^
+axisymmetric_interface_geometry.c:206:13: warning: ‘b.x’ may be used uninitialized [-Wmaybe-uninitialized]
+  206 |     fabsl(nz*b.x+nr*b.y-alpha))/norm;
+      |           ~~^~~~
+axisymmetric_interface_geometry.c:180:39: note: ‘b.x’ was declared here
+  180 |   ClosureGeometryVertex wp[8],fp[8],a,b;
+      |                                       ^
+axisymmetric_interface_geometry.c:206:20: warning: ‘b.y’ may be used uninitialized [-Wmaybe-uninitialized]
+  206 |     fabsl(nz*b.x+nr*b.y-alpha))/norm;
+      |                  ~~^~~~
+axisymmetric_interface_geometry.c:180:39: note: ‘b.y’ was declared here
+  180 |   ClosureGeometryVertex wp[8],fp[8],a,b;
+      |                                       ^

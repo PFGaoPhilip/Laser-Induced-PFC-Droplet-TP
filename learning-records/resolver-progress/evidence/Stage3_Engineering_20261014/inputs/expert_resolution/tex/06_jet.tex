@@ -1,0 +1,212 @@
+% ---------------------------------------------------------------------------
+\section{Directed microjet: axisymmetric boundary-integral calculation}\label{sec:jet}
+This section answers handoff priority 4 (fast mass and focusing) for benchmark B1. A spherical model
+cannot select a direction; here the collapse near a rigid receiver is solved in axisymmetric potential
+flow with the PFC content laws of Sections~\ref{sec:thermo}--\ref{sec:spherical}.
+
+\subsection{Step J1 --- Governing equations and nondimensionalisation}
+\emph{Assumptions.} Inviscid, incompressible, irrotational carrier; rigid plane receiver $z=0$;
+uniform cavity pressure $p_b(V)$ (homobaric content); surface tension $\sigma$ on the wall; gravity
+negligible ($\rho g\Rm/\Delta p\sim10^{-6}$, with $g$ gravitational acceleration). \emph{Symbols.} $\phi$ velocity potential
+($\mathbf u=\nabla\phi$); $S$ the cavity surface; $\mathbf n$ unit normal on $S$ pointing into the liquid;
+$q=\partial\phi/\partial n$; $\kappa$ total curvature of $S$ ($\kappa=2/R$ for a sphere);
+$D/Dt$ the derivative following a surface node moving with the liquid velocity. Units: length $L$
+(the free-field, inviscid, tension-free maximum radius of the same cavity), pressure
+$\Delta p_{\mathrm{ref}}=\pinf-\psat(T_0)$, speed $\sqrt{\Delta p_{\mathrm{ref}}/\rho_{\mathrm w}}$, time
+$L\sqrt{\rho_{\mathrm w}/\Delta p_{\mathrm{ref}}}$; $\mathrm{We}=\Delta p_{\mathrm{ref}}L/\sigma$.
+In the next displayed system, $\mathbf x=(r,z)$, $t$, $\phi$, $\mathbf u=\nabla\phi$, $S$,
+$\kappa$ and the spatial derivatives are \emph{dimensionless versions after this scaling};
+the dimensional pressures $\pinf,p_b,\Delta p_{\mathrm{ref}}$ (Pa) enter only through their ratio.
+$V$ in the content law denotes the physical cavity volume (m$^3$), $\mathrm{We}$ is dimensionless,
+$\nabla$ is the gradient, $\nabla^2$ the Laplacian, $|\cdot|$ the Euclidean norm, and $D/Dt$
+the material derivative in scaled time. The next equations have consistent scaled units:
+\begin{align}
+\nabla^2\phi&=0\ \text{in the liquid},\qquad \partial_z\phi=0\ \text{on }z=0,\qquad \phi\to0\ \text{as }|\mathbf x|\to\infty,\label{eq:laplace}\\
+\frac{D\mathbf x}{Dt}&=\nabla\phi,\qquad
+\frac{D\phi}{Dt}=\tfrac12|\nabla\phi|^2+\underbrace{\frac{\pinf-p_b(V)}{\Delta p_{\mathrm{ref}}}}_{\text{drive}}+\frac{\kappa}{\mathrm{We}}\quad\text{on }S.\label{eq:bern}
+\end{align}
+\emph{Derivation of \eqref{eq:bern}.} Unsteady Bernoulli in the liquid with the far field at rest:
+$\partial_t\phi+\tfrac12|\nabla\phi|^2+p/\rho=\pinf/\rho$. At the wall the liquid pressure is
+$p=p_b-\sigma\kappa$ (Laplace). Following a node, $D\phi/Dt=\partial_t\phi+\nabla\phi\cdot\nabla\phi$; substituting
+$\partial_t\phi$ gives $D\phi/Dt=\tfrac12|\nabla\phi|^2+(\pinf-p_b+\sigma\kappa)/\rho$; dividing by
+$\Delta p_{\mathrm{ref}}/\rho$ gives \eqref{eq:bern}. \emph{Check:} for a constant-pressure cavity the drive
+is 1 and \eqref{eq:bern} is exactly the model of Supponen et al.\ (2016, Eq.~5.4, verified).
+
+\subsection{Step J2 --- Boundary integral equation with the receiver image}
+\emph{Symbols.} $\mathbf y^*=(y_r,-y_z)$ the mirror image of $\mathbf y$ in the receiver;
+$\Gf(\mathbf x,\mathbf y)=|\mathbf x-\mathbf y|^{-1}+|\mathbf x-\mathbf y^*|^{-1}$.
+Because $\partial\Gf/\partial z_y=0$ on $z=0$, Green's second identity over the liquid (bounded by $S$, the plane and a
+large hemisphere whose contribution vanishes as $\phi=O(|\mathbf x|^{-1})$) involves $S$ only. For $\mathbf x$ on a
+smooth part of $S$ the free-term is $2\pi\phi(\mathbf x)$.
+For this integral, $\mathbf x,\mathbf y$ are dimensionless field/source coordinates,
+$\phi$ dimensionless potential, $q$ dimensionless normal derivative, $\Gf$ the scaled Green kernel,
+$S$ the scaled surface, $\dd S_y$ its scaled source area, and
+$\partial/\partial n_y$ differentiation along the source unit normal; both integrals use the same
+scaled convention as Eq.~\eqref{eq:bern}:
+\begin{equation}
+2\pi\phi(\mathbf x)+\int_S \Gf(\mathbf x,\mathbf y)\,q(\mathbf y)\,\dd S_y-\int_S\phi(\mathbf y)\,\frac{\partial\Gf}{\partial n_y}(\mathbf x,\mathbf y)\,\dd S_y=0 .\label{eq:bie}
+\end{equation}
+(Signs: $\mathbf n$ points into the liquid, i.e.\ out of the region bounded by $S$; for a sphere of radius 1 with
+$\phi=-1$, \eqref{eq:bie} returns $q=1$, which the implementation reproduces to $1.4\times10^{-8}$ at 64 nodes.) In
+axisymmetry the azimuthal integrals reduce to complete elliptic integrals (Appendix~\ref{app:kernels}); the
+singular single-layer kernel has a logarithmic singularity integrated with an 8-point log-weighted Gauss rule,
+and the free-space double-layer diagonal is fixed by the rigid-mode identity (a uniform $\phi$ produces no
+normal flux in the free problem). Interior potentials (for the jet velocity field) follow from the same
+representation with $2\pi$ replaced by $4\pi$ and $\mathbf x$ in the liquid.
+
+\subsection{Step J3 --- Discretisation, time integration and stopping rule}
+$N+1$ nodes from the far pole ($r=0$, top) to the near pole ($r=0$, bottom); cubic-spline geometry and
+potential in chord length with axis symmetry conditions; linear shape functions for $\phi,q$; 10-point
+Gauss quadrature on regular elements and 20-point on elements adjacent to the collocation node; classical
+RK4 time stepping with $\Delta t=\min(0.02/\max|D\phi/Dt|,\ 0.15\,\Delta s_{\min}/\max|\mathbf u|)$ (Blake's potential
+increment control plus a Courant condition); five-point Longuet-Higgins--Cokelet smoothing and
+curvature-weighted arc-length redistribution every five steps. A run is declared a jet impact when the
+far-pole jet tip comes within $0.01L$ of the opposite cavity wall (the potential-flow solution becomes
+singular at contact); the jet speed $U_{\mathrm j}$ is the maximum far-pole speed toward the receiver
+before that instant (observable O1). Runs that rebound without impact or produce a non-physical state are
+reported as such and not used.
+
+\subsection{Step J4 --- Validation against the constant-pressure benchmark}
+Table~\ref{tab:bimval} compares with Supponen et al.\ (2016), Table~1 (rigid-surface column, growth
+included, verified from the full text). The BIM jet speeds lie $\bimDevMin$ to $\bimDevMax$\,\% from the
+published values for $1.25\le\gamma\le4$; refining from $N=64$ to $96$ changes them by at most
+$\bimConvMax$\,\%; halving the potential-increment cap changes them by $\le\bimSensDt$\,\% and halving the initial radius of
+the growth proxy by $\le\bimSensRinit$\,\%. The systematic $-4$ to $-6$\% offset is consistent with our
+earlier stopping gap ($0.01L$) and our slightly smaller maximum radius in the presence of the wall
+($0.99L$ versus their definition with $R_{\max}$). Starting at maximum radius without the growth phase
+increases the jet speed by a factor $\bimStartMaxRatio$ at $\gamma=2$, confirming Supponen et al.'s
+statement that the growth history strongly affects the jet; the PFC runs therefore include the
+adopted real-EOS growth from the assumed activated droplet. This comparison benchmarks the numerical
+potential-flow components; it does not experimentally validate a laser-heated PFC microjet.
+\input{generated/table_bimval.tex}
+
+\subsection{Step J5 --- PFC-specific content laws}
+The PFC cavity grows from the activated droplet at rest ($R_{\mathrm a}/L=0.141$ for PFP) along the
+real-fluid isentrope Eq.~\eqref{eq:isentrope}. After the volume maximum four collapse closures
+sample plausible limits of the unknown condensation physics; they are not proved bounds on every
+aspherical thermodynamic history:
+\begin{description}[leftmargin=0.6cm,style=sameline]
+\item[frozen] $p_b=p_{\max}(V_{\max}/V)^{k_{\mathrm v}}$, no condensation, adiabatic ($k_{\mathrm v}=\PFPgammav$);
+a no-condensation cushion control.
+\item[KM $\alpha_{\mathrm c}$] $p_b(V/V_{\max})$ taken from the spherical Keller--Miksis collapse with HKS
+condensation coefficient $\alpha_{\mathrm c}=0.1$ or $1$ (Section~\ref{sec:spherical}), continued as
+$p_b\propto V^{-1}$ beyond the end of the spherical record (``spherical-content closure'': it assumes the
+content pressure--volume history of the aspherical collapse equals that of the spherical one).
+\item[isoeq] instantaneous equilibrium at $T_0$: $p_b=\min[\psat(T_0),\psat(T_0)V_{\mathrm{sat}}/V]$; the
+equilibrium-at-$T_0$ control, producing a strong drive in these samples.
+\end{description}
+Surface tension acts throughout ($\mathrm{We}=\PFPWe$ for PFP, $\PFHWe$ for PFH).
+
+\subsection{\texorpdfstring{Results: microjet speeds of a 6\,$\mu$m PFC droplet}{Results: microjet speeds of a 6 micrometre PFC droplet}}
+Table~\ref{tab:bimpfc} and Fig.~\ref{fig:bim}. Speed unit $\sqrt{\Delta p_{\mathrm{ref}}/\rho_{\mathrm w}}=\PFPUunit$\,m/s
+(PFP), $\PFHUunit$\,m/s (PFH).
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Largest sampled in-screen jet.} Among the sampled cases inside the Mach-0.3 screen the fastest microjet is
+$\PFPenvUmax$\,m/s for PFP (\PFPenvMaxClos, $\gamma=\PFPenvMaxg$) and $\PFHenvUmax$\,m/s for PFH (\PFHenvMaxClos,
+$\gamma=\PFHenvMaxg$). Fast-condensation sampled trends straddle the adopted
+screen $0.3c_{\mathrm w}=\Ulim$\,m/s. Original-grid log-linear interpolation places it near
+$\gamma\approx\PFPcrossIsog$ for PFP isoeq, $\PFHcrossIsog$ and $\PFHcrossKMoneg$ for PFH
+isoeq and KM $\alpha_{\mathrm c}=1$; refinement evidence is stated below.
+The physical fast-condensation maximum remains unresolved: interpolation is not proof of a
+continuous optimum or a physical $U_{\max}\ge\Ulim$ lower bound.
+The out-of-screen incompressible values at $\gamma=4$ ($\PFPenvOverMach$\,m/s PFP,
+$\PFHenvOverMach$\,m/s PFH, isoeq) are extrapolation estimates, not certified physical upper
+bounds. Sound speed is a compressibility scale, not a universal jet-speed cap.
+\item \textbf{Condensation is a first-order control.} At fixed $\gamma$ the ordering is
+isoeq $\ge$ KM $\alpha_{\mathrm c}=1$ $>$ KM $\alpha_{\mathrm c}=0.1\approx$ frozen in the admissible sampled comparisons.
+The largest slow-condensation samples are $\PFPenvSlowUmax$\,m/s (PFP) and
+$\PFHenvSlowUmax$\,m/s (PFH); this is not a proof for every $\alpha_{\mathrm c}\le0.1$.
+The frozen cushion prevents jet impact
+altogether at $\gamma\ge3$: the vapour stops the collapse before the jet can cross the cavity.
+\item \textbf{PFP versus PFH.} Per unit $\sqrt{\Delta p_{\mathrm{ref}}/\rho}$, the condensing PFP cavity jets faster than
+the constant-pressure benchmark (isoeq at $\gamma=2$: $U^*_{\mathrm j}=20.8$ versus 15.2) because its vapour is
+unsaturated at $T_0$ during most of the collapse ($V>V_{\mathrm{sat}}$), so the drive exceeds 1; but its reference
+pressure is small ($\PFPdpref$\,kPa), so in physical units PFH (reference $\PFHdpref$\,kPa) gives similar or faster
+jets. With the frozen cushion both species give the same 57--65\,m/s at $\gamma\le2$.
+\item \textbf{Energy partition.} The jet carries $\PFPenvEfmin$--$\PFPenvEfmax$\% (PFP) and $\PFHenvEfmin$--$\PFHenvEfmax$\%
+(PFH) of $\Phia$. At the mass of the fastest admissible jet ($\PFPenvMaxmj$\,pg for PFP) the rigorous energy ceiling
+gives a mass-averaged energetic scale of $\PFPenvMaxUceil$\,m/s. The far-pole speed is not a
+plug/RMS speed; the rigorous comparison is the profile's kinetic energy against $\Phia$.
+\end{enumerate}
+\begin{figure}[ht]\centering
+\includegraphics[width=0.97\textwidth]{figures/bim_pfc_jets.pdf}
+\caption{Microjet speed before impact for a fully activated 6\,$\mu$m droplet versus stand-off, for four
+condensation closures. Dotted: the Supponen power law $0.9\zeta^{-1}$ for a constant-pressure cavity scaled with
+the same $\Delta p_{\mathrm{ref}}$; dash-dot: Mach 0.3 in water.}\label{fig:bim}
+\end{figure}
+\input{generated/table_bimpfc.tex}
+
+\subsection{Exact-input PFC refinements and screen-crossing uncertainty}\label{sec:bim_refine}
+Nine selected content/stand-off cases were refined from the original control $N=64$ to $N=96$
+at the same dimensionless potential-increment cap $\Delta\phi_{\max}=0.02$, and separately
+from cap 0.02 to 0.01 at $N=64$. The real-EOS growth history, content arrays, wall tension,
+growth seed, smoothing, quadrature and $0.01L$ impact gap are retained; physical-control
+comparisons are recorded in \texttt{verification/pfc\_bim\_input\_checks.json}.
+Table~\ref{tab:bimpfcconv} retains every requested attempt. Of nine spatial pairs,
+$\bimPFCValidSpatialCount$ complete and $\bimPFCAbortedSpatialCount$ PFH $N=96$, 0.02 runs
+abort during growth. Their raw pole speeds are diagnostics, not impact predictions.
+Among the completed pairs, the largest speed change is $\bimPFCSpatialMaxDeltaU$\%
+(PFH KM $\alpha_{\mathrm c}=1$, $\gamma=4$, outside the Mach screen). All nine time-control
+pairs complete with changes no larger than $\bimPFCTemporalMaxDeltaU$\%.
+The requested spatial acceptance criterion is therefore \emph{not} uniformly satisfied.
+\input{generated/table_bim_pfc_convergence.tex}
+
+Table~\ref{tab:bimpfctarget} reports the distinct PFH cap-0.01 follow-up and the targeted
+$N=128$ continuation of the out-of-screen KM $\alpha_{\mathrm c}=1$, $\gamma=4$ estimate.
+Changing both $N$ and the cap from the original baseline is not a passing unchanged-step
+spatial pair; the comparison between $N=64,96$ at cap 0.01 is instead a separate spatial test.
+All four such PFH pairs complete with speed changes at most $\bimPFCTargetStableMaxDeltaU$\%.
+For KM $\alpha_{\mathrm c}=1$, $\gamma=4$, the $N=96$ large-cap value
+$\PFHkmOneNinetySixLargeStepU$\,m/s contrasts with $\PFHkmOneNinetySixSmallStepU$\,m/s
+at cap 0.01, a change of $\PFHkmOneNinetySixCapDeltaU$\%. The sampled profile energy changes
+$\PFHkmOneNinetySixCapDeltaEnergy$\% and its coverage fraction changes
+$\PFHkmOneNinetySixCapDeltaCoverage$\% relatively. These expose sensitivity to the
+integration control at that mesh.
+The targeted $N=128$, cap-0.01 run aborts before impact. Its speed is unavailable and
+excluded, so a finest $96\to128$ speed change cannot be computed and the finer spatial
+convergence remains unconfirmed. No such refinement makes an out-of-screen incompressible
+estimate physically admissible.
+\input{generated/table_bim_pfc_target.tex}
+
+Selected $N=96$ slow-condensation samples are $\PFPbimRefinedSlowSample$\,m/s (PFP) and
+$\PFHbimRefinedSlowSample$\,m/s (PFH), compared with the original whole-grid largest samples
+$\PFPenvSlowUmax$ and $\PFHenvSlowUmax$\,m/s. Speed stability does not imply profile stability:
+the requested spatial changes reach $\bimPFCSpatialMaxDeltaMass$\% in sampled mass and
+$\bimPFCSpatialMaxDeltaEnergy$\% in sampled kinetic energy. The exclusion of points near the
+surface is resolution-dependent; coverage and separate profile changes are listed in
+Table~\ref{tab:bimpfcprofiles} (Appendix~\ref{app:verif}). Thus the reported profile energies
+and masses carry appreciably larger quadrature sensitivity than the far-pole speeds.
+
+For the model-screen crossings, Table~\ref{tab:bimpfccross} gives the original interpolation,
+best available $N=96$ estimate and empirical endpoint envelope. All use the broad sampled
+stand-off bracket $[3,4]$; the much narrower numerical endpoint envelope is not a confidence
+interval or a bound on interpolation error between samples. Mixed step settings after an
+abort are identified explicitly. The physical fast-condensation maximum and continuous
+benchmark optimum remain unresolved.
+\input{generated/table_bim_pfc_crossings.tex}
+
+\subsection{Step J6 --- Mass-resolved jet speed (observable O2)}
+At impact the jet is the liquid enclosed by the re-entrant cavity surface between the tip and the rim. Its
+axial velocity is evaluated on a $40\times10$ Gauss grid from the interior representation (points closer
+than 0.6 element lengths to the surface are excluded; coverage varies by case and resolution), giving the
+distribution $m_{\mathrm j}(\ge U)$ of Eq.~\eqref{eq:Um}. For the constant-pressure benchmark the jet
+carries $\jetEfracMin$--$\jetEfracMax$\% of the cavity energy $\tfrac43\pi\Rm^3\Delta p$, nearly independent of
+$\gamma$, consistent with the scale-free argument of Supponen et al.\ (mass $\propto\zeta^2$, speed
+$\propto\zeta^{-1}$). The computed distribution predicts the mass-qualified speed
+$U_{\mathrm j}(m_*)$ for its sampled profile. Independently, mass moving at speed at least $U$ carries
+kinetic energy at least $m_*U^2/2$, so Eq.~\eqref{eq:Kj} implies the rigorous conditional
+ceiling $U_{\mathrm j}(m_*)\le\sqrt{2\Phia/m_*}$ for $m_*>0$. Missing near-interface quadrature
+mass and resolution changes are numerical uncertainties (Table~\ref{tab:bimpfcprofiles}); the distribution is not a certified
+physical upper bound. Both comparisons appear in Fig.~\ref{fig:envelope}.
+
+\subsection{Validity of the jet calculation}
+(i) Potential flow neglects viscosity; at $L\approx24\,\mu$m the Reynolds number based on
+$\sqrt{\Delta p/\rho}$ is $\approx130$, so viscous losses of order 10\% in the jet speed cannot be excluded
+(not computed or bounded here). (ii) Incompressible: an adopted working screen is
+$U_{\mathrm j}/c_{\mathrm w}\lesssim0.3$; it is not an error certificate even below the screen. Faster
+predictions are flagged. (iii) The near-contact regime ($\gamma\lesssim0.2$ in Lechner et al.\ 2020) where
+annular-collision needle jets of order 1000\,m/s form is excluded from $\mathcal D$; it requires
+viscous compressible simulations and is not reachable by this method. (iv) The spherical-content closure
+is an approximation (Section~\ref{sec:validity}). (v) Gel-embedded jets are not computed.
+(vi) The reported far-pole maximum uses a $0.01L$ tip--wall stopping gap. It is not the physical
+speed at contact; the potential-flow contact singularity cannot certify that endpoint.

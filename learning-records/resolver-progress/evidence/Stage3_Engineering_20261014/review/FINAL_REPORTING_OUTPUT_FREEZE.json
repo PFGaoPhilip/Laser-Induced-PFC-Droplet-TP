@@ -1,0 +1,68 @@
+{
+  "schema": "stage3_final_reporting_output_freeze_v1",
+  "scope": "FinalcoreoutputsafterfrozenREADME-onlycommand-ordercorrection;other11coreoutputsunchanged.",
+  "files": [
+    {
+      "path": "FINAL_ANSWER.md",
+      "sha256": "94026ffa781ce59e892460884a665ff4de8d832f68bcdeef50f72f427de3e421",
+      "size": 11207
+    },
+    {
+      "path": "RESULTS_LEDGER.json",
+      "sha256": "36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f",
+      "size": 56433
+    },
+    {
+      "path": "CERTIFICATE.json",
+      "sha256": "967afbfb997f776377352c4e4be3668e2b64dcf9005ded087c2111f6f0e695fd",
+      "size": 5416
+    },
+    {
+      "path": "README.md",
+      "sha256": "be8a95d8e9fc6b1ecda76bd5f1e1676883d4facce6da30a754c7f53f8874d440",
+      "size": 4852
+    },
+    {
+      "path": "READER.html",
+      "sha256": "705e3aadbf7ad1f92844aaab2c44bc8c99baa10930886d86553026d110b177eb",
+      "size": 23606
+    },
+    {
+      "path": "report/STAGE3_ENGINEERING_REPORT.tex",
+      "sha256": "48902950d0415a01dfb9f4eb37b9e2afa68b805cd9b0d7ad6a3d961792da4f85",
+      "size": 48750
+    },
+    {
+      "path": "report/STAGE3_ENGINEERING_REPORT.pdf",
+      "sha256": "127cf1ac428f4e66762a5261dc00f164882486729ba7d32bdc94043b6b8726cc",
+      "size": 416395
+    },
+    {
+      "path": "report/PAGE_VISUAL_QA.json",
+      "sha256": "3b8c0dc81f0562fc6a33349d0e405c950d6e6c9be69443ab10c36f8cd0435c83",
+      "size": 7803
+    },
+    {
+      "path": "review/REPORT_MATH_REVIEW.json",
+      "sha256": "f4dd6f5cb8af42ca689aa890e200f126847b65e54945df4664ec672958a32a25",
+      "size": 5299
+    },
+    {
+      "path": "review/INDEPENDENT_RECOMPUTE.json",
+      "sha256": "2ad7046c83806ad2ab7e56e48573ca30420642edf82fc7643a0ef96538991771",
+      "size": 138180
+    },
+    {
+      "path": "qa/reader/BROWSER_QA.json",
+      "sha256": "9c71201bf3855c2c3e7f9ba52ea363b0fd7465f36eef56127c7c1a02344cdbbf",
+      "size": 3711
+    },
+    {
+      "path": "qa/reader/RELOCATION_BROWSER_QA.json",
+      "sha256": "fe8d81346c2e8a2ba57b9a9d540bd1535dd9e4da6b6b6e6e17556c121cbdf057",
+      "size": 2632
+    }
+  ],
+  "parent_freeze_sha256": "5a1b770fdfc77ec0fe25a89319cf83afb4e2ade2a0d4dde548795be1ae5d4528",
+  "amendment": "STAGE3_FINAL_OUTPUT_AMENDMENT_005_README_REBUILD_ORDER.json"
+}

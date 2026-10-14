@@ -1,0 +1,25 @@
+{
+  "removed_package_copies": [
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_interface_geometry.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_graph.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\axisymmetric_transport_manifest.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_phase_bridge.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\coupled_thermal_bridge.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\material_bridge.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\scaled_plic_geometry.o",
+    "inputs\\full_closure\\runs\\AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001\\simulation.pid"
+  ],
+  "original_evidence_changed": false,
+  "meaning": "Objects/PID copies are unnecessary documentation intermediates; originals preserved.",
+  "report_specialist_cleanup": [
+    "verifiedone-timerepairscript",
+    "supersededpage18image"
+  ],
+  "removed_task_created_relocation_workspaces": [
+    "Stage3_Relocation_20261014_Engineering",
+    "Stage3_Final_Delivery_20261014"
+  ],
+  "removed_relocation_seed_archive": true,
+  "cleanup_method": "NativePowerShellscript withresolvedexacttargetsandTempcontainmentchecks; firstcombinedcommandwaspolicy-rejectedwithoutwork; separatedsafeoperationssucceeded.",
+  "kept": "17finalpagePNGs,browserQA,build/source/reviewevidenceandprotectedoriginals"
+}

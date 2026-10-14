@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scenarios": 52,
+  "original_scenarios": 38,
+  "interface_scenarios": 14,
+  "selector_states": 30,
+  "theme_and_document_events": true,
+  "language_modes": [
+    "bilingual",
+    "en",
+    "zh"
+  ],
+  "query_theme_aliases": [
+    "light",
+    "dark",
+    "day",
+    "night"
+  ],
+  "theme_aria_pressed": "light",
+  "scope": "JavaScript events with browser API stubs. CSS/layout checks use the separate real-browser audit.",
+  "browser_inspection": "verification/READER_REVISION_AUDIT.json",
+  "revision_date": "2026-10-14"
+}

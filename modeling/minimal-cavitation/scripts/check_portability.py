@@ -28,8 +28,8 @@ class Page(HTMLParser):
         attrs = dict(attributes)
         if attrs.get('id'):
             self.ids.add(attrs['id'])
-        self.theme_button |= tag == 'button' and attrs.get('id') == 'theme'
-        self.language_button |= tag == 'button' and attrs.get('id') == 'language'
+        self.theme_button |= tag == 'button' and attrs.get('id') == 'theme-toggle'
+        self.language_button |= tag == 'button' and attrs.get('id') == 'language-toggle'
         self.display_math += 'katex-display' in attrs.get('class', '').split()
         if tag == 'input' and attrs.get('type') == 'checkbox' and attrs.get('data-step'):
             self.step_checks.append(int(attrs['data-step']))
@@ -126,7 +126,8 @@ def main():
                'html': pages, 'local_dependency_count': len(local_files),
                'external_links': sorted(external_citations), 'native_files': native,
                'guide_native_import_conversion': 'Completed record included; see GUIDE_NATIVE_IMPORT_CHECK.txt. This static check does not rerun COMSOL.',
-               'browser_visual_validation': dom_audit.get('browser_visual_validation', 'Not included in this static check.')}
+               'browser_visual_validation': 'NOT_RUN_BY_THIS_SCRIPT. Current real-browser checks are recorded separately by the course revision.',
+               'historical_DOM_browser_note': dom_audit.get('browser_visual_validation', 'No historical note included.')}
     if previous.get('native_files') == native:
         if 'moved_native_reload' in previous:
             results['moved_native_reload'] = previous['moved_native_reload']
@@ -137,7 +138,8 @@ def main():
     moved_path = root / 'verification/BILINGUAL_RELOCATION_AUDIT.json'
     if moved_path.is_file():
         moved = json.loads(moved_path.read_text(encoding='utf-8'))
-        results['bilingual_relocation'] = {'status': moved['status'], 'record': moved_path.name}
+        results['historical_bilingual_relocation'] = {'status': moved['status'], 'record': moved_path.name,
+                                                    'scope': 'Earlier edition; current relocation is checked separately.'}
     (root / 'verification/PORTABILITY_AUDIT.json').write_text(json.dumps(results, indent=2), encoding='utf-8')
     print(json.dumps(results, indent=2))
 

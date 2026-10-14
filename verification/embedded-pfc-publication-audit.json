@@ -1,11 +1,13 @@
 {
   "status": "PASS",
-  "scientific_files_unchanged": 96,
+  "scientific_files_unchanged": 93,
   "public_payload_files_checked": 212,
-  "local_dependencies_checked": 87,
+  "local_dependencies_checked": 93,
   "zip_crc_and_payload_hashes": "PASS",
-  "zip_relative_dependency_closure": 86,
-  "reader_logic_scenarios": 38,
+  "zip_relative_dependency_closure": 93,
+  "reader_logic_scenarios": 52,
   "computed_selector_states": 30,
-  "scope": "Copied scientific payload, moved public-folder dependencies, ZIP integrity/relative closure and executable reader events. No new numerical solve, experimental validation or real-browser layout claim."
+  "declared_editorial_files": 30,
+  "display_equations_preserved": 32,
+  "scope": "Preserved equations/data/models, declared prose revisions, moved-folder dependencies, ZIP integrity and reader logic. No new numerical solve or experimental validation."
 }

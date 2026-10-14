@@ -1,11 +1,32 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-14",
+  "accepted_source_date": "2026-10-11",
   "scope": "Public conditional finite-PFC study; target embedded mechanism not physically validated.",
   "files": [
     {
       "file": ".gitignore",
       "bytes": 148,
       "sha256": "1b9f47d00417b164a7f2b6eafe3001f0faed6adceb365950854d5c62559b6bc0"
+    },
+    {
+      "file": "assets/bilingual-terms.css",
+      "bytes": 38891,
+      "sha256": "6e97c3072ac2cceeed2dc709c9c25d44bf1396516013e18343e1943e341a6b83"
+    },
+    {
+      "file": "assets/course-language.css",
+      "bytes": 272,
+      "sha256": "a7e2d32950f58c35ed61c03bcc45b278ca1283f4f626b7c2b9097e02b628d8c8"
+    },
+    {
+      "file": "assets/course-navigation.json",
+      "bytes": 1363,
+      "sha256": "c9ef9a977a9726518589ba4fad6a8058611a98a56060c67d8cbc713d622db92f"
+    },
+    {
+      "file": "assets/course.css",
+      "bytes": 11737,
+      "sha256": "b4378032c56718486aaa79895dd8c17bd5b4a30e7a74b11a4fb6d2df4cd0ff3a"
     },
     {
       "file": "assets/fracture_budget.png",
@@ -18,6 +39,11 @@
       "sha256": "fb6143b0272e6c4dc36382041824146a4f788dc77108bcfb339cfb571e008c59"
     },
     {
+      "file": "assets/fracture_budget.zh.svg",
+      "bytes": 75421,
+      "sha256": "d6c1b810eb5a162c0db747b1fea30dc8ca925c7c204842bdf3ed87eb6ccfa72f"
+    },
+    {
       "file": "assets/radial_stability.png",
       "bytes": 133530,
       "sha256": "d9a22e6ab66e9ee59374a1e79e62775e780ba6063be32b23ce78735cc57745ba"
@@ -26,6 +52,11 @@
       "file": "assets/radial_stability.svg",
       "bytes": 40109,
       "sha256": "11f2b60f1eb7e8c2a7664fbf65a4a5c5d671765bfee3fbdd73aebb76a611e0bf"
+    },
+    {
+      "file": "assets/radial_stability.zh.svg",
+      "bytes": 38137,
+      "sha256": "13ee6525f27d0e40a64091e10bce33db8ad6cc1afe9c4f5aaf4fc6b2bcf11764"
     },
     {
       "file": "assets/radial_viscosity_controls.png",
@@ -38,14 +69,19 @@
       "sha256": "11890617e1c346f088a719434ceaae9530460bbb0058eef61b367a1bc227aae6"
     },
     {
+      "file": "assets/radial_viscosity_controls.zh.svg",
+      "bytes": 56106,
+      "sha256": "6f47b0868caea5926d765977c38c7d6359796b924cf2e529c8ae9fc358885155"
+    },
+    {
       "file": "assets/reader.css",
-      "bytes": 3219,
-      "sha256": "c922e014bac4d3b5e3950ccb84782765455526b7012775ea255256bf0b4433dd"
+      "bytes": 2412,
+      "sha256": "d4bda338aa39e1c0c77b55b5c8d6d69efa65fd0d7a24d46ce951a5e93a4f3f45"
     },
     {
       "file": "assets/reader.js",
-      "bytes": 2413,
-      "sha256": "74abbeaa80c85da2c9dd25f0dcd85d21511b9f4b24ded40ae9e0c57cc901284d"
+      "bytes": 5734,
+      "sha256": "2c99cc159ff058e4dd1ddad4131b306ea135c48cd73899482b045cb397d71803"
     },
     {
       "file": "assets/size_species_comparison.png",
@@ -56,6 +92,11 @@
       "file": "assets/size_species_comparison.svg",
       "bytes": 43345,
       "sha256": "6027b85584ce470f7f44ca81ca32de62766a6b458bc6eb4e261c051dc19b235a"
+    },
+    {
+      "file": "assets/size_species_comparison.zh.svg",
+      "bytes": 38337,
+      "sha256": "243f077240884cf2ac8eda05bd865230b72456ede5bae198c0cc7225e12386a2"
     },
     {
       "file": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf",
@@ -374,8 +415,8 @@
     },
     {
       "file": "COPY_MANIFEST.json",
-      "bytes": 62728,
-      "sha256": "92d00f928d8ac063b8a6187083571671ae70117df773e4b1bd0e4c567ae571f4"
+      "bytes": 63256,
+      "sha256": "de913e590716f3c4447059bb8ae9d209a00d0a8ed963a6af2828bdc4e885f6f1"
     },
     {
       "file": "data/EQ_000_Perfluoropentane_r0.3_G5_L1.2_native.csv",
@@ -784,8 +825,8 @@
     },
     {
       "file": "DERIVATION.md",
-      "bytes": 47654,
-      "sha256": "73c7ef032aaaeed09df3c04ec39771b81880733fe89441184dc5a16c9a18532b"
+      "bytes": 47271,
+      "sha256": "f3438968380e85b23d1e9e1723301219019152fa0fe72244e475588ff577bc62"
     },
     {
       "file": "DERIVATION.tex",
@@ -793,14 +834,24 @@
       "sha256": "fc7383a97a8cb4f55fe3c0bdec5d9815cb8f2e31eaa684ea6fd9721390af4ebf"
     },
     {
+      "file": "DERIVATION.zh.md",
+      "bytes": 39483,
+      "sha256": "6d892fd5f0ddc4958286169c76762d11f51d32fd54eb44b05c4b0f2e01b0cd0a"
+    },
+    {
       "file": "IMPLEMENTATION_HANDOFF.md",
-      "bytes": 9537,
-      "sha256": "05485fea610a2718e1481c520f868a9b9b04e9df68a4e48e22918dd44e26c2f3"
+      "bytes": 7180,
+      "sha256": "3fbe86371e1a6c62354cc02ccb13e7fb3513bc9e60bd4a233c1e0a5ce6fcce05"
+    },
+    {
+      "file": "IMPLEMENTATION_HANDOFF.zh.md",
+      "bytes": 5734,
+      "sha256": "3ba1181070200f768847ee976c56abc37ac0d14faaa79861e4ef901ab4b53393"
     },
     {
       "file": "index.html",
-      "bytes": 1040500,
-      "sha256": "1307ed7562cb2f8e37462015a696e3839f5079c2a160d79013cff9d57e55d173"
+      "bytes": 1457933,
+      "sha256": "cd47d38e8b963388a0f9f31607c9a9e2078dbf81389a322adeaceb4ec9801b4b"
     },
     {
       "file": "models/Embedded_PFC_Curved_Equilibrium.mph",
@@ -819,18 +870,23 @@
     },
     {
       "file": "PUBLICATION.md",
-      "bytes": 1750,
-      "sha256": "86848880a7b0407f9ddb277528adbb4b7dd9b395f3cf417a8e5c4c97a6ee862b"
+      "bytes": 1407,
+      "sha256": "33778eaf5497fed1bf17d6f505108144903abfcfdbcb792c9af1bd3e10c1fba6"
     },
     {
       "file": "README.md",
-      "bytes": 4042,
-      "sha256": "e5d151b5e618e37cfee21c99394ecfde753eea63f9065e0256411e99adce518c"
+      "bytes": 3695,
+      "sha256": "0baa53e3923525e4e981eb2f1f411d51b018aee56d989efa8e3cf9c5fde76d4f"
     },
     {
       "file": "REPORT.md",
-      "bytes": 17054,
-      "sha256": "d2f8b9513d74b68778c3b238ecc19f0f7bc08ace59fb62d5a81652fde5d530d4"
+      "bytes": 14746,
+      "sha256": "ce082baf634937a61ea25662e30adefe3f1a9b5ca326322a1076db437b58a6b0"
+    },
+    {
+      "file": "REPORT.zh.md",
+      "bytes": 12720,
+      "sha256": "4d5013283859c4ab544d69300883ebb3f8e61118d9c0b585dde5973cb2c174e6"
     },
     {
       "file": "requirements.txt",
@@ -848,14 +904,19 @@
       "sha256": "fbf0ae7724172842e68b7851210e29980bc9d8f0fcaaef3422b69788acb72cb1"
     },
     {
+      "file": "scripts/audit_reader_revision.py",
+      "bytes": 20101,
+      "sha256": "2e510bdc9732e18058695ed5c4dc08b582ebc813ab332ff51f717bb892dfa051"
+    },
+    {
       "file": "scripts/build_comparison.py",
       "bytes": 24357,
       "sha256": "fd40c85b3bd6eec2a6560baedba40d02c0d0664c75ee9998e8da1e15b9540774"
     },
     {
       "file": "scripts/build_reader.py",
-      "bytes": 11773,
-      "sha256": "6ece3964ef57d643be905d95eb0943aedad9c50f76407bb22415b9bf3f5c7e22"
+      "bytes": 20615,
+      "sha256": "76c4099e52f303a838d4aeda5cd2329473417b5fde0c9c2b113597efeeddd5e7"
     },
     {
       "file": "scripts/EmbeddedPfc.java",
@@ -888,9 +949,19 @@
       "sha256": "84961e52392532a98becc70bfca2ef3e669fd37e93f1fd9dec0fd5e9052929ff"
     },
     {
+      "file": "scripts/reader_figures.py",
+      "bytes": 3453,
+      "sha256": "9decd7be28a09eae5d53b1e2151f4be97b9202583f55e7aa2f8326c5cf275161"
+    },
+    {
+      "file": "scripts/reader_text.py",
+      "bytes": 84803,
+      "sha256": "08f5ec72fe9324056c748d559cfea7f78eb633143abfd36ed702b7536438e981"
+    },
+    {
       "file": "scripts/test_reader_logic.cjs",
-      "bytes": 3113,
-      "sha256": "6d883b0e4d5f9fce155ab7ddf3b6576939310fc9c92c2ee83d6b57b2305b3135"
+      "bytes": 9743,
+      "sha256": "114a2c0ceb9fd28ea0d465ed585a55621a92ed28a744cebd6a255d35b1ea2991"
     },
     {
       "file": "scripts/verify_delivery.py",
@@ -989,13 +1060,23 @@
     },
     {
       "file": "SOURCES.md",
-      "bytes": 5704,
-      "sha256": "29d18a776ffd1155df66e0a6dea413c0b53c32bb93e8970e4e932d25ee7de7cb"
+      "bytes": 5527,
+      "sha256": "753848e39fcb0e9a5865363c24c2a6df33b004a361cdbeb60b5548272ef69363"
+    },
+    {
+      "file": "SOURCES.zh.md",
+      "bytes": 4474,
+      "sha256": "5bd6e92ce1f6c556dadd9007dfa311d955b7e75d5abb0fa834986d1cc061fcd4"
     },
     {
       "file": "verification/ACCEPTED_CONTROL_PRESERVATION.json",
       "bytes": 658,
       "sha256": "b4c07e93cb86cd4ed2d28a550483d2151c7a11966c0481f5c52a31317dbb8af5"
+    },
+    {
+      "file": "verification/BILINGUAL_DOCUMENT_BUILD_20261014.json",
+      "bytes": 2032,
+      "sha256": "1d5c8705e74d3accb6dac018080691bed37b4640b975b182659e9a360507697d"
     },
     {
       "file": "verification/DELIVERY_AUDIT.json",
@@ -1008,9 +1089,19 @@
       "sha256": "109604b13d7e1ec65c7ed3ba0f9ddad6955568f195defad82eca09dc92724117"
     },
     {
+      "file": "verification/EDITORIAL_REVISION_20261014.json",
+      "bytes": 16748,
+      "sha256": "bfd23a20a2245e17a39775b5627cf23b0831a54578bc8cd6191b472c0df0a431"
+    },
+    {
       "file": "verification/equilibrium_fresh_reload.csv",
       "bytes": 941,
       "sha256": "c3cd5752288b4c9058667b0ba56ec678e71dbe5a08013777ba93df9ea957a1a1"
+    },
+    {
+      "file": "verification/FRONTEND_REVISION_20261014.json",
+      "bytes": 2394,
+      "sha256": "bac1bea97e030c440046e6d0c857a0da1bce6ee14dd23b0794901aba7522c025"
     },
     {
       "file": "verification/INDEPENDENT_REVIEW.md",
@@ -1043,6 +1134,16 @@
       "sha256": "08f4f5b9948eb7301c435d300b3e1a8543450f976dc037a644c53bd68f612ced"
     },
     {
+      "file": "verification/READER_LOGIC_REVISION_20261014.json",
+      "bytes": 548,
+      "sha256": "789ff48d406b01e6f5f0b93964df5283d8d19698c650442ebb417dacae8f4e8e"
+    },
+    {
+      "file": "verification/READER_REVISION_AUDIT.json",
+      "bytes": 10229,
+      "sha256": "72b9159f96e0dd56663d55ec3122459d3e01343e080983b593b85f6161dfb8bf"
+    },
+    {
       "file": "verification/RELOCATION_AUDIT.json",
       "bytes": 1223,
       "sha256": "d4a0071b9b3fde9e451b45dba7ae5b9a5631457dc6e39489465f22cbeecfff7b"
@@ -1056,6 +1157,11 @@
       "file": "verification/SOURCE_MANIFEST.json",
       "bytes": 12108,
       "sha256": "586727ad134948cb0d46310d02473b2afb156b77a18b947bdc486cf9acab31be"
+    },
+    {
+      "file": "verification/TERMINOLOGY_REVISION_20261014.json",
+      "bytes": 2052,
+      "sha256": "211640e27e95b2c97733ba11eb4c33ca8aa2a62439feadafa12088f5317c6709"
     },
     {
       "file": "verification/transient_fresh_reload.csv",

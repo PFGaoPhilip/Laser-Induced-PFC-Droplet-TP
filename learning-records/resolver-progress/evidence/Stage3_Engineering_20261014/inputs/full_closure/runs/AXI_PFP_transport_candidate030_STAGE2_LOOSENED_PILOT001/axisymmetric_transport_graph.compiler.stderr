@@ -1,0 +1,13 @@
+axisymmetric_transport_graph.c: In function ‘closure_axis_transport_water_Fourier’:
+axisymmetric_transport_graph.c:220:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  220 |   for(int i=1;i<=count;i++)offset[i]+=offset[i-1];memcpy(cursor,offset,count*sizeof(*cursor));
+      |   ^~~
+axisymmetric_transport_graph.c:220:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  220 |   for(int i=1;i<=count;i++)offset[i]+=offset[i-1];memcpy(cursor,offset,count*sizeof(*cursor));
+      |                                                   ^~~~~~
+axisymmetric_transport_graph.c:225:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  225 |       if(C[i]==0.L)continue;long double numerator=C[i]*input[i].T_water_K,denominator=C[i]+dt*sumG[i];
+      |       ^~
+axisymmetric_transport_graph.c:225:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  225 |       if(C[i]==0.L)continue;long double numerator=C[i]*input[i].T_water_K,denominator=C[i]+dt*sumG[i];
+      |                             ^~~~

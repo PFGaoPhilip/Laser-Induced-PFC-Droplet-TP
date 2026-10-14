@@ -1,0 +1,4043 @@
+{
+  "schema": "stage3_independent_arithmetic_review_v1",
+  "deterministic": true,
+  "seed": 20261014,
+  "production_code_imported": false,
+  "solver_rerun": false,
+  "checks": [
+    {
+      "id": "T_jetMass_kg",
+      "status": "PASS",
+      "value": 1.4137166941154071e-12,
+      "source_value": 1.4137166941154071e-12,
+      "relative_difference": 0.0,
+      "unit": "kg",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.jetMass_kg"
+      },
+      "method": "cylindrical mass; lossless energy; adopted linear contact"
+    },
+    {
+      "id": "T_energyVelocity_m_s",
+      "status": "PASS",
+      "value": 84.10441740067199,
+      "source_value": 84.10441740067199,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.energyVelocity_m_s"
+      },
+      "method": "cylindrical mass; lossless energy; adopted linear contact"
+    },
+    {
+      "id": "T_Mach",
+      "status": "PASS",
+      "value": 0.056069611600447995,
+      "source_value": 0.056069611600447995,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.Mach"
+      },
+      "method": "cylindrical mass; lossless energy; adopted linear contact"
+    },
+    {
+      "id": "T_rigidPressure_Pa",
+      "status": "PASS",
+      "value": 126156626.10100798,
+      "source_value": 126156626.10100798,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.rigidPressure_Pa"
+      },
+      "method": "cylindrical mass; lossless energy; adopted linear contact"
+    },
+    {
+      "id": "T_equalImpedancePressure_Pa",
+      "status": "PASS",
+      "value": 63078313.05050399,
+      "source_value": 63078313.05050399,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.equalImpedancePressure_Pa"
+      },
+      "method": "cylindrical mass; lossless energy; adopted linear contact"
+    },
+    {
+      "id": "T_PFP_10pgEnergyVelocity_m_s",
+      "status": "PASS",
+      "value": 737.563556583431,
+      "source_value": 737.563556583431,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.PFP_10pgEnergyVelocity_m_s"
+      },
+      "method": "original rounded energy input, preserved unchanged"
+    },
+    {
+      "id": "T_PFH_10pgEnergyVelocity_m_s",
+      "status": "PASS",
+      "value": 961.2491872558332,
+      "source_value": 961.2491872558332,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/conditional_termtex/verification.json",
+        "selector": "numericalChecks.PFH_10pgEnergyVelocity_m_s"
+      },
+      "method": "original rounded energy input, preserved unchanged"
+    },
+    {
+      "id": "PFP_mass_kg",
+      "status": "PASS",
+      "value": 1.8337513994824743e-13,
+      "source_value": 1.8337513994824743e-13,
+      "relative_difference": 0.0,
+      "unit": "kg",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].mass_kg"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFP_Q_act_J",
+      "status": "PASS",
+      "value": 1.9856954254439094e-08,
+      "source_value": 1.9856954254439094e-08,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].Q_act_J"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFP_Phi_J",
+      "status": "PASS",
+      "value": 2.722572407203039e-09,
+      "source_value": 2.722572407203039e-09,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].Phi_J"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFP_eta_II",
+      "status": "PASS",
+      "value": 0.1371092652134402,
+      "source_value": 0.1371092652134402,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].eta_II"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFP_W_adiabatic_J",
+      "status": "PASS",
+      "value": 2.204698920299016e-09,
+      "source_value": 2.204698920299016e-09,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].W_adiabatic_J"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFP_R_bound_over_a0",
+      "status": "PASS",
+      "value": 7.927347640138555,
+      "source_value": 7.927347640138555,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].R_bound_over_a0"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFH_mass_kg",
+      "status": "PASS",
+      "value": 1.9121929818846423e-13,
+      "source_value": 1.912192981884642e-13,
+      "relative_difference": 1.32013605353747e-16,
+      "unit": "kg",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].mass_kg"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFH_Q_act_J",
+      "status": "PASS",
+      "value": 2.7127507911661847e-08,
+      "source_value": 2.7127507911661847e-08,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].Q_act_J"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFH_Phi_J",
+      "status": "PASS",
+      "value": 4.622122564638143e-09,
+      "source_value": 4.622122564638143e-09,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].Phi_J"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFH_eta_II",
+      "status": "PASS",
+      "value": 0.1703850784852647,
+      "source_value": 0.17038507848526468,
+      "relative_difference": 1.6289909810400024e-16,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].eta_II"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFH_W_adiabatic_J",
+      "status": "PASS",
+      "value": 2.2139802091377748e-09,
+      "source_value": 2.2139802091377748e-09,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].W_adiabatic_J"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "PFH_R_bound_over_a0",
+      "status": "PASS",
+      "value": 8.073037185393458,
+      "source_value": 8.073037185393458,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].R_bound_over_a0"
+      },
+      "method": "stored-state arithmetic; not fresh EOS validation"
+    },
+    {
+      "id": "Tait_sound_speed",
+      "status": "PASS",
+      "value": 1478.3126220543968,
+      "source_value": 1478.3126220543968,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "c_tait"
+      },
+      "method": "derivative of adopted Tait isentrope at upstream state"
+    },
+    {
+      "id": "receiver_rigid_0",
+      "status": "PASS",
+      "value": 7429102.739361777,
+      "source_value": 7429102.739361237,
+      "relative_difference": 7.270960063791253e-14,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[0].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_0",
+      "status": "PASS",
+      "value": 3695462.99337727,
+      "source_value": 3695462.993377268,
+      "relative_difference": 6.300445818863057e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[0].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_1",
+      "status": "PASS",
+      "value": 14959886.574071845,
+      "source_value": 14959886.574071825,
+      "relative_difference": 1.3696024057462989e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[1].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_1",
+      "status": "PASS",
+      "value": 7403506.827950663,
+      "source_value": 7403506.827950597,
+      "relative_difference": 8.931429974246822e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[1].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_2",
+      "status": "PASS",
+      "value": 38603928.64647876,
+      "source_value": 38603928.64647933,
+      "relative_difference": 1.4861044615868534e-14,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[2].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_2",
+      "status": "PASS",
+      "value": 18811925.034645393,
+      "source_value": 18811925.03464545,
+      "relative_difference": 2.9704219198203857e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[2].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_3",
+      "status": "PASS",
+      "value": 78863400.7956911,
+      "source_value": 78863400.79569143,
+      "relative_difference": 4.156878133038344e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[3].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_3",
+      "status": "PASS",
+      "value": 37505722.65991492,
+      "source_value": 37505722.65991471,
+      "relative_difference": 5.562251355759948e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[3].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_4",
+      "status": "PASS",
+      "value": 138461998.92432693,
+      "source_value": 138461998.924327,
+      "relative_difference": 4.3047655846689086e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[4].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_4",
+      "status": "PASS",
+      "value": 63751182.02789807,
+      "source_value": 63751182.027898155,
+      "relative_difference": 1.2855665410297362e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[4].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_5",
+      "status": "PASS",
+      "value": 167855940.2471969,
+      "source_value": 167855940.2471973,
+      "relative_difference": 2.3081112915603713e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[5].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_5",
+      "status": "PASS",
+      "value": 76161882.52835746,
+      "source_value": 76161882.52835737,
+      "relative_difference": 1.1739070017051774e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[5].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_6",
+      "status": "PASS",
+      "value": 375897659.8682542,
+      "source_value": 375897659.8682549,
+      "relative_difference": 1.9027938017900173e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[6].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_6",
+      "status": "PASS",
+      "value": 156518814.82328558,
+      "source_value": 156518814.8232857,
+      "relative_difference": 7.616291350363981e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[6].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_7",
+      "status": "PASS",
+      "value": 623302184.1431346,
+      "source_value": 623302184.1431347,
+      "relative_difference": 1.9125440690483141e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[7].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_7",
+      "status": "PASS",
+      "value": 240386433.10594052,
+      "source_value": 240386433.10594007,
+      "relative_difference": 1.859650854831804e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[7].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_8",
+      "status": "PASS",
+      "value": 1066252791.7894881,
+      "source_value": 1066252791.7894884,
+      "relative_difference": 3.354062670749383e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[8].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_8",
+      "status": "PASS",
+      "value": 371660934.88439345,
+      "source_value": 371660934.8843935,
+      "relative_difference": 1.6037371480521854e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[8].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_9",
+      "status": "PASS",
+      "value": 1592937232.383618,
+      "source_value": 1592937232.3836179,
+      "relative_difference": 1.4967229985879666e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[9].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_9",
+      "status": "PASS",
+      "value": 508377732.24722207,
+      "source_value": 508377732.2472224,
+      "relative_difference": 7.034687909548927e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[9].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_10",
+      "status": "PASS",
+      "value": 2650470854.041194,
+      "source_value": 2650470854.0411935,
+      "relative_difference": 1.799065843248522e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[10].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_10",
+      "status": "PASS",
+      "value": 745898688.5464412,
+      "source_value": 745898688.5464419,
+      "relative_difference": 9.589180786716901e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[10].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_11",
+      "status": "PASS",
+      "value": 3389725568.674995,
+      "source_value": 3389725568.6749983,
+      "relative_difference": 9.846992152602499e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[11].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_11",
+      "status": "PASS",
+      "value": 893164126.4430954,
+      "source_value": 893164126.4430952,
+      "relative_difference": 2.6693702987269777e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[11].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "receiver_rigid_12",
+      "status": "PASS",
+      "value": 6400467080.802885,
+      "source_value": 6400467080.802885,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[12].p_rigid_tait"
+      },
+      "method": "independent compression-ratio bisection of mass/momentum jump plus Tait isentrope"
+    },
+    {
+      "id": "receiver_mixed_12",
+      "status": "PASS",
+      "value": 1403717753.2214472,
+      "source_value": 1403717753.2214453,
+      "relative_difference": 1.3587835791313838e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/receiver_table.json",
+        "selector": "rows[12].p_equal_impedance_tait"
+      },
+      "method": "independent interface-speed bisection; jet nonlinear, target linear"
+    },
+    {
+      "id": "historical_0_m_pg",
+      "status": "PASS",
+      "value": 79.88379035123951,
+      "source_value": 79.88379035123951,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[0].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_0_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.17702033520157734,
+      "source_value": 0.17702033520157734,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[0].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_0_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 261.0810709946262,
+      "source_value": 261.0810709946262,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[0].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_0_p_rec",
+      "status": "PASS",
+      "value": 6568379.372643494,
+      "source_value": 6568379.372643494,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[0].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_0_p_h",
+      "status": "PASS",
+      "value": 75927189.382963,
+      "source_value": 75927189.38296299,
+      "relative_difference": 1.9625593038468602e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[0].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_1_m_pg",
+      "status": "PASS",
+      "value": 256.88103453088956,
+      "source_value": 256.88103453088956,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[1].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_1_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.0761411670008231,
+      "source_value": 0.0761411670008231,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[1].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_1_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 145.5923970578954,
+      "source_value": 145.5923970578954,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[1].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_1_p_rec",
+      "status": "PASS",
+      "value": 9518890.125943704,
+      "source_value": 9518890.125943704,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[1].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_1_p_h",
+      "status": "PASS",
+      "value": 46976540.5576334,
+      "source_value": 46976540.55763338,
+      "relative_difference": 4.75806466918294e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[1].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_2_m_pg",
+      "status": "PASS",
+      "value": 330.3977008996288,
+      "source_value": 330.39770089962883,
+      "relative_difference": 1.7204544313120514e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[2].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_2_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.11683728525619129,
+      "source_value": 0.11683728525619129,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[2].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_2_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 128.37670035496754,
+      "source_value": 128.37670035496754,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[2].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_2_p_rec",
+      "status": "PASS",
+      "value": 21025716.016783834,
+      "source_value": 21025716.016783834,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[2].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_2_p_h",
+      "status": "PASS",
+      "value": 49197695.643594295,
+      "source_value": 49197695.643594116,
+      "relative_difference": 3.63459979145293e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[2].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_3_m_pg",
+      "status": "PASS",
+      "value": 69.56144926033308,
+      "source_value": 69.56144926033308,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[3].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_3_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.22373867168529563,
+      "source_value": 0.22373867168529563,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[3].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_3_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 279.78240972761665,
+      "source_value": 279.78240972761665,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[3].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_3_p_rec",
+      "status": "PASS",
+      "value": 7485590.103778691,
+      "source_value": 7485590.103778691,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[3].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_3_p_h",
+      "status": "PASS",
+      "value": 87571315.69469593,
+      "source_value": 87571315.69469619,
+      "relative_difference": 2.8927250696857195e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[3].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_4_m_pg",
+      "status": "PASS",
+      "value": 173.67551546964845,
+      "source_value": 173.67551546964845,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[4].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_4_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.2228700074896965,
+      "source_value": 0.2228700074896965,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[4].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_4_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 177.06609883871113,
+      "source_value": 177.06609883871113,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[4].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_4_p_rec",
+      "status": "PASS",
+      "value": 10609937.22963291,
+      "source_value": 10609937.22963291,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[4].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_4_p_h",
+      "status": "PASS",
+      "value": 60855356.69648825,
+      "source_value": 60855356.69648839,
+      "relative_difference": 2.3261885070788093e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[4].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_5_m_pg",
+      "status": "PASS",
+      "value": 188.57776602700284,
+      "source_value": 188.57776602700284,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[5].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_5_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.18660671084146355,
+      "source_value": 0.18660671084146355,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[5].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_5_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 169.92585894766924,
+      "source_value": 169.92585894766924,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[5].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_5_p_rec",
+      "status": "PASS",
+      "value": 10097739.034972172,
+      "source_value": 10097739.034972172,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[5].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_5_p_h",
+      "status": "PASS",
+      "value": 56286777.361237496,
+      "source_value": 56286777.36123661,
+      "relative_difference": 1.575181832393427e-14,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[5].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_6_m_pg",
+      "status": "PASS",
+      "value": 194.21785702928292,
+      "source_value": 194.21785702928292,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[6].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_6_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.026297874730499556,
+      "source_value": 0.026297874730499556,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[6].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_6_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 167.44035582658324,
+      "source_value": 167.44035582658324,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[6].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_6_p_rec",
+      "status": "PASS",
+      "value": 4137119.6306704986,
+      "source_value": 4137119.6306704995,
+      "relative_difference": 2.251137645890457e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[6].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_6_p_h",
+      "status": "PASS",
+      "value": 42561879.19816939,
+      "source_value": 42561879.19816911,
+      "relative_difference": 6.476957485891277e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[6].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_7_m_pg",
+      "status": "PASS",
+      "value": 15.009134622168128,
+      "source_value": 15.00913462216813,
+      "relative_difference": 1.1835171607939436e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[7].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_7_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.24655324686839428,
+      "source_value": 0.24655324686839428,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[7].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_7_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 602.3194543582028,
+      "source_value": 602.3194543582028,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[7].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_7_p_rec",
+      "status": "PASS",
+      "value": 7990026.955093736,
+      "source_value": 7990026.955093736,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[7].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_7_p_h",
+      "status": "PASS",
+      "value": 203149037.0541001,
+      "source_value": 203149037.05410093,
+      "relative_difference": 4.107649432929584e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[7].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_8_m_pg",
+      "status": "PASS",
+      "value": 272.7097925313657,
+      "source_value": 272.7097925313657,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[8].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_8_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.2358150809000052,
+      "source_value": 0.2358150809000052,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[8].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_8_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 141.30396576159728,
+      "source_value": 141.30396576159728,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[8].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_8_p_rec",
+      "status": "PASS",
+      "value": 20306110.66113175,
+      "source_value": 20306110.66113175,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[8].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_8_p_h",
+      "status": "PASS",
+      "value": 56362842.26465915,
+      "source_value": 56362842.264658056,
+      "relative_difference": 1.9431868652134366e-14,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[8].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_9_m_pg",
+      "status": "PASS",
+      "value": 287.056013930154,
+      "source_value": 287.056013930154,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[9].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_9_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.2018710066675911,
+      "source_value": 0.2018710066675911,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[9].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_9_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 137.7277308331269,
+      "source_value": 137.7277308331269,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[9].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_9_p_rec",
+      "status": "PASS",
+      "value": 20040546.965346687,
+      "source_value": 20040546.965346687,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[9].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_9_p_h",
+      "status": "PASS",
+      "value": 53257284.98628118,
+      "source_value": 53257284.98628084,
+      "relative_difference": 6.295404036235417e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[9].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_10_m_pg",
+      "status": "PASS",
+      "value": 18.677723196809616,
+      "source_value": 18.67772319680962,
+      "relative_difference": 1.902112822513264e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[10].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_10_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.180548564813739,
+      "source_value": 0.180548564813739,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[10].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_10_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 539.9365779967023,
+      "source_value": 539.9365779967023,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[10].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_10_p_rec",
+      "status": "PASS",
+      "value": 6096201.149197065,
+      "source_value": 6096201.149197064,
+      "relative_difference": 1.5277097192538402e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[10].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_10_p_h",
+      "status": "PASS",
+      "value": 157509127.41717362,
+      "source_value": 157509127.41717348,
+      "relative_difference": 9.46050647235251e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[10].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_11_m_pg",
+      "status": "PASS",
+      "value": 243.69857446022044,
+      "source_value": 243.69857446022047,
+      "relative_difference": 1.1662649029998063e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[11].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_11_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.09075027051735188,
+      "source_value": 0.09075027051735188,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[11].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_11_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 149.47832505352252,
+      "source_value": 149.47832505352252,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[11].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_11_p_rec",
+      "status": "PASS",
+      "value": 9406746.73898077,
+      "source_value": 9406746.73898077,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[11].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_11_p_h",
+      "status": "PASS",
+      "value": 47219879.73988966,
+      "source_value": 47219879.73988967,
+      "relative_difference": 1.5778482787260986e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[11].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_12_m_pg",
+      "status": "PASS",
+      "value": 153.9276417898628,
+      "source_value": 153.9276417898628,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[12].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_12_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.04596990418270055,
+      "source_value": 0.04596990418270055,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[12].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_12_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 188.08164268795147,
+      "source_value": 188.08164268795147,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[12].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_12_p_rec",
+      "status": "PASS",
+      "value": 4367426.043512083,
+      "source_value": 4367426.043512083,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[12].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_12_p_h",
+      "status": "PASS",
+      "value": 46850063.852847755,
+      "source_value": 46850063.85284765,
+      "relative_difference": 2.226424465173776e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[12].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_13_m_pg",
+      "status": "PASS",
+      "value": 324.7633961496428,
+      "source_value": 324.76339614964286,
+      "relative_difference": 1.7503025136064283e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[13].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_13_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.12488802924732248,
+      "source_value": 0.12488802924732248,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[13].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_13_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 129.48551249377496,
+      "source_value": 129.48551249377496,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[13].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_13_p_rec",
+      "status": "PASS",
+      "value": 20534201.37446856,
+      "source_value": 20534201.37446856,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[13].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_13_p_h",
+      "status": "PASS",
+      "value": 48570276.44648052,
+      "source_value": 48570276.44648045,
+      "relative_difference": 1.3805815053616702e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[13].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_14_m_pg",
+      "status": "PASS",
+      "value": 109.73912642931683,
+      "source_value": 109.73912642931684,
+      "relative_difference": 1.2949669983344764e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[14].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_14_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.008300116529382296,
+      "source_value": 0.008300116529382296,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[14].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_14_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 222.75320828156995,
+      "source_value": 222.75320828156995,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[14].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_14_p_rec",
+      "status": "PASS",
+      "value": 1695542.9088153543,
+      "source_value": 1695542.9088153543,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[14].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_14_p_h",
+      "status": "PASS",
+      "value": 39879100.288968876,
+      "source_value": 39879100.288969055,
+      "relative_difference": 4.4839009162810415e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[14].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_15_m_pg",
+      "status": "PASS",
+      "value": 331.1293496364993,
+      "source_value": 331.1293496364993,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[15].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_15_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.06904858425069363,
+      "source_value": 0.06904858425069363,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[15].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_15_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 167.0847789731088,
+      "source_value": 167.0847789731088,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[15].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_15_p_rec",
+      "status": "PASS",
+      "value": 20837898.41881258,
+      "source_value": 20837898.41881258,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[15].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_15_p_h",
+      "status": "PASS",
+      "value": 49251038.48918549,
+      "source_value": 49251038.489185214,
+      "relative_difference": 5.597272474705583e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[15].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_16_m_pg",
+      "status": "PASS",
+      "value": 4.730570691988738,
+      "source_value": 4.730570691988738,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[16].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_16_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.24895425251771547,
+      "source_value": 0.24895425251771547,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[16].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_16_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 1072.8720929665728,
+      "source_value": 1072.8720929665728,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[16].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_16_p_rec",
+      "status": "PASS",
+      "value": 8944648.723358458,
+      "source_value": 8944648.723358456,
+      "relative_difference": 2.082412855819326e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[16].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_16_p_h",
+      "status": "PASS",
+      "value": 399984356.06373066,
+      "source_value": 399984356.0637303,
+      "relative_difference": 8.941046399208727e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[16].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_17_m_pg",
+      "status": "PASS",
+      "value": 195.28901697807387,
+      "source_value": 195.2890169780739,
+      "relative_difference": 1.455366506022971e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[17].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_17_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.015647760452654702,
+      "source_value": 0.015647760452654702,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[17].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_17_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 217.56890044725824,
+      "source_value": 217.56890044725824,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[17].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_17_p_rec",
+      "status": "PASS",
+      "value": 4130298.0961483377,
+      "source_value": 4130298.096148338,
+      "relative_difference": 1.127427794478046e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[17].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_17_p_h",
+      "status": "PASS",
+      "value": 42564290.72858286,
+      "source_value": 42564290.728582844,
+      "relative_difference": 3.50085974387944e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[17].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_18_m_pg",
+      "status": "PASS",
+      "value": 258.77402837824087,
+      "source_value": 258.77402837824087,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[18].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_18_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.04512369205209167,
+      "source_value": 0.04512369205209167,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[18].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_18_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 189.0059095556592,
+      "source_value": 189.0059095556592,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[18].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_18_p_rec",
+      "status": "PASS",
+      "value": 9480183.87238455,
+      "source_value": 9480183.872384548,
+      "relative_difference": 1.964777449788478e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[18].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_18_p_h",
+      "status": "PASS",
+      "value": 46975468.62115806,
+      "source_value": 46975468.62115794,
+      "relative_difference": 2.6962981714812946e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[18].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_19_m_pg",
+      "status": "PASS",
+      "value": 6.144311334556435,
+      "source_value": 6.144311334556436,
+      "relative_difference": 1.4455296474071716e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[19].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_19_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.17758512385564015,
+      "source_value": 0.17758512385564015,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[19].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_19_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 941.3868131533469,
+      "source_value": 941.3868131533469,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[19].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_19_p_rec",
+      "status": "PASS",
+      "value": 6396913.925404705,
+      "source_value": 6396913.925404705,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[19].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_19_p_h",
+      "status": "PASS",
+      "value": 292318024.14691335,
+      "source_value": 292318024.1469137,
+      "relative_difference": 1.223420518444003e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[19].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_20_m_pg",
+      "status": "PASS",
+      "value": 227.48468570089744,
+      "source_value": 227.48468570089744,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[20].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_20_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.21797081092062542,
+      "source_value": 0.21797081092062542,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[20].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_20_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 201.58566420640722,
+      "source_value": 201.58566420640722,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[20].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_20_p_rec",
+      "status": "PASS",
+      "value": 22368558.15501231,
+      "source_value": 22368558.15501231,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[20].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_20_p_h",
+      "status": "PASS",
+      "value": 73155972.97524884,
+      "source_value": 73155972.9752489,
+      "relative_difference": 8.147611514312967e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[20].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_21_m_pg",
+      "status": "PASS",
+      "value": 146.43365563555577,
+      "source_value": 146.43365563555577,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[21].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_21_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.1916235064932269,
+      "source_value": 0.1916235064932269,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[21].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_21_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 251.25532474908442,
+      "source_value": 251.25532474908442,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[21].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_21_p_rec",
+      "status": "PASS",
+      "value": 12426836.723493738,
+      "source_value": 12426836.723493738,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[21].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_21_p_h",
+      "status": "PASS",
+      "value": 78425226.29211134,
+      "source_value": 78425226.29211113,
+      "relative_difference": 2.6600657285556614e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[21].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_22_m_pg",
+      "status": "PASS",
+      "value": 141.13647452855537,
+      "source_value": 141.13647452855537,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[22].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_22_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.20789360897104608,
+      "source_value": 0.20789360897104608,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[22].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_22_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 255.92699306945428,
+      "source_value": 255.92699306945428,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[22].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_22_p_rec",
+      "status": "PASS",
+      "value": 12843512.062874667,
+      "source_value": 12843512.062874665,
+      "relative_difference": 1.4502615329144289e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[22].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_22_p_h",
+      "status": "PASS",
+      "value": 82062795.251147,
+      "source_value": 82062795.25114661,
+      "relative_difference": 4.7211429960963426e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[22].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_23_m_pg",
+      "status": "PASS",
+      "value": 54.034282321398976,
+      "source_value": 54.03428232139898,
+      "relative_difference": 1.3149850525149045e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[23].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_23_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.211420963151696,
+      "source_value": 0.211420963151696,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[23].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_23_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 413.61952617947554,
+      "source_value": 413.61952617947554,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[23].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_23_p_rec",
+      "status": "PASS",
+      "value": 9919992.439931279,
+      "source_value": 9919992.439931279,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[23].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_23_p_h",
+      "status": "PASS",
+      "value": 124342040.61968535,
+      "source_value": 124342040.61968535,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[23].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_24_m_pg",
+      "status": "PASS",
+      "value": 233.07020015655235,
+      "source_value": 233.07020015655237,
+      "relative_difference": 1.2194484499225236e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[24].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_24_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.2016558993961916,
+      "source_value": 0.2016558993961916,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[24].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_24_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 199.15552171137873,
+      "source_value": 199.15552171137873,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[24].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_24_p_rec",
+      "status": "PASS",
+      "value": 22055825.66307956,
+      "source_value": 22055825.66307956,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[24].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_24_p_h",
+      "status": "PASS",
+      "value": 70636300.09172739,
+      "source_value": 70636300.09172726,
+      "relative_difference": 1.89860525778495e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[24].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_25_m_pg",
+      "status": "PASS",
+      "value": 57.25030283183628,
+      "source_value": 57.25030283183629,
+      "relative_difference": 1.241116117494098e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[25].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_25_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.19081282380840822,
+      "source_value": 0.19081282380840822,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[25].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_25_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 401.8341405614793,
+      "source_value": 401.8341405614793,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[25].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_25_p_rec",
+      "status": "PASS",
+      "value": 9332595.128406925,
+      "source_value": 9332595.128406925,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[25].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_25_p_h",
+      "status": "PASS",
+      "value": 116338203.80692302,
+      "source_value": 116338203.80692318,
+      "relative_difference": 1.408933332032155e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[25].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_26_m_pg",
+      "status": "PASS",
+      "value": 179.584895319159,
+      "source_value": 179.584895319159,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[26].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_26_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.11244412098249958,
+      "source_value": 0.11244412098249958,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[26].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_26_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 226.88240839563403,
+      "source_value": 226.88240839563403,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[26].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_26_p_rec",
+      "status": "PASS",
+      "value": 10933087.198453818,
+      "source_value": 10933087.198453816,
+      "relative_difference": 1.7036772097586279e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[26].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_26_p_h",
+      "status": "PASS",
+      "value": 64596867.660224095,
+      "source_value": 64596867.66022376,
+      "relative_difference": 5.190284591276278e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[26].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_27_m_pg",
+      "status": "PASS",
+      "value": 264.8631486427476,
+      "source_value": 264.8631486427476,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[27].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_27_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.1337035425761309,
+      "source_value": 0.1337035425761309,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[27].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_27_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 186.82068398841403,
+      "source_value": 186.82068398841403,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[27].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_27_p_rec",
+      "status": "PASS",
+      "value": 21341544.16580629,
+      "source_value": 21341544.16580629,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[27].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_27_p_h",
+      "status": "PASS",
+      "value": 61765719.97389323,
+      "source_value": 61765719.97389366,
+      "relative_difference": 6.8757086326227204e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[27].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_28_m_pg",
+      "status": "PASS",
+      "value": 89.59521322314112,
+      "source_value": 89.59521322314113,
+      "relative_difference": 1.586117628830147e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[28].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_28_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.0862513848864569,
+      "source_value": 0.0862513848864569,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[28].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_28_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 321.21315482869846,
+      "source_value": 321.21315482869846,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[28].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_28_p_rec",
+      "status": "PASS",
+      "value": 6378763.043728829,
+      "source_value": 6378763.043728829,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[28].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_28_p_h",
+      "status": "PASS",
+      "value": 78648921.03232047,
+      "source_value": 78648921.03232041,
+      "relative_difference": 7.578571198821198e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[28].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_29_m_pg",
+      "status": "PASS",
+      "value": 11.209700293139193,
+      "source_value": 11.209700293139194,
+      "relative_difference": 1.5846604217308604e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[29].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_29_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.23478669371958594,
+      "source_value": 0.23478669371958594,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[29].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_29_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 908.1105600110162,
+      "source_value": 908.1105600110162,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[29].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_29_p_rec",
+      "status": "PASS",
+      "value": 11591477.628261903,
+      "source_value": 11591477.628261903,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[29].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_29_p_h",
+      "status": "PASS",
+      "value": 307470795.6155874,
+      "source_value": 307470795.61558753,
+      "relative_difference": 3.8770930849582716e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[29].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_30_m_pg",
+      "status": "PASS",
+      "value": 12.269107787024742,
+      "source_value": 12.269107787024744,
+      "relative_difference": 1.447828864360329e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[30].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_30_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.20470297687679695,
+      "source_value": 0.20470297687679695,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[30].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_30_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 868.0190082285233,
+      "source_value": 868.0190082285233,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[30].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_30_p_rec",
+      "status": "PASS",
+      "value": 10271988.707979947,
+      "source_value": 10271988.70797995,
+      "relative_difference": 1.8133247632797074e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[30].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_30_p_h",
+      "status": "PASS",
+      "value": 274693249.43909633,
+      "source_value": 274693249.4390961,
+      "relative_difference": 8.679448060278005e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[30].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_31_m_pg",
+      "status": "PASS",
+      "value": 30.80170770284202,
+      "source_value": 30.801707702842023,
+      "relative_difference": 1.153414516193431e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[31].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_31_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.052021436086105446,
+      "source_value": 0.052021436086105446,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[31].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_31_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 547.8331759615075,
+      "source_value": 547.8331759615075,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[31].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_31_p_rec",
+      "status": "PASS",
+      "value": 3781807.2425712277,
+      "source_value": 3781807.2425712277,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[31].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_31_p_h",
+      "status": "PASS",
+      "value": 114914618.62676995,
+      "source_value": 114914618.6267697,
+      "relative_difference": 2.074745423608117e-15,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[31].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_32_m_pg",
+      "status": "PASS",
+      "value": 3.4947002625302033,
+      "source_value": 3.4947002625302037,
+      "relative_difference": 1.2707504978654074e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[32].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_32_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.2341908471184237,
+      "source_value": 0.2341908471184237,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[32].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_32_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 1626.4127126795693,
+      "source_value": 1626.4127126795693,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[32].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_32_p_rec",
+      "status": "PASS",
+      "value": 13057073.182446381,
+      "source_value": 13057073.182446383,
+      "relative_difference": 1.4265410963117315e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[32].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_32_p_h",
+      "status": "PASS",
+      "value": 616739105.5258043,
+      "source_value": 616739105.5258038,
+      "relative_difference": 7.731586240126532e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[32].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_33_m_pg",
+      "status": "PASS",
+      "value": 14.623683280124053,
+      "source_value": 14.623683280124053,
+      "relative_difference": 0.0,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[33].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_33_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.031281354076041955,
+      "source_value": 0.031281354076041955,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[33].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_33_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 795.0736130313188,
+      "source_value": 795.0736130313188,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[33].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_33_p_rec",
+      "status": "PASS",
+      "value": 2490586.310354579,
+      "source_value": 2490586.310354579,
+      "relative_difference": 0.0,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[33].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_33_p_h",
+      "status": "PASS",
+      "value": 145819365.26874754,
+      "source_value": 145819365.26874748,
+      "relative_difference": 4.087567153069024e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[33].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_34_m_pg",
+      "status": "PASS",
+      "value": 3.879905484059509,
+      "source_value": 3.8799054840595093,
+      "relative_difference": 1.1445877011040386e-16,
+      "unit": "pg",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[34].m_pg"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_34_Ej_over_Phi",
+      "status": "PASS",
+      "value": 0.201506911563974,
+      "source_value": 0.201506911563974,
+      "relative_difference": 0.0,
+      "unit": "1",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[34].Ej_over_Phi"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_34_U_ceiling_at_mj",
+      "status": "PASS",
+      "value": 1543.5658210616955,
+      "source_value": 1543.5658210616955,
+      "relative_difference": 0.0,
+      "unit": "m/s",
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[34].U_ceiling_at_mj"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_34_p_rec",
+      "status": "PASS",
+      "value": 11263927.357803028,
+      "source_value": 11263927.35780303,
+      "relative_difference": 1.653637394900828e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[34].p_rec"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "historical_34_p_h",
+      "status": "PASS",
+      "value": 538180264.8526689,
+      "source_value": 538180264.8526688,
+      "relative_difference": 2.215043867939226e-16,
+      "unit": "Pa",
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "selector": "rows[34].p_h"
+      },
+      "method": "stored profile arithmetic or independent mixed contact; not current whole-water/wall objective"
+    },
+    {
+      "id": "legacy_remainder_29",
+      "status": "PASS",
+      "value": -7.17338924392184e-11,
+      "source_value": -7.173389243921819e-11,
+      "relative_difference": 2.882809591205152e-15,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[29].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_31",
+      "status": "PASS",
+      "value": -5.3960538494023825e-11,
+      "source_value": -5.3960538494023825e-11,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[31].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_34",
+      "status": "PASS",
+      "value": -5.388967194081117e-11,
+      "source_value": -5.3889671940811064e-11,
+      "relative_difference": 1.9186900354987072e-15,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[34].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_35",
+      "status": "PASS",
+      "value": -5.3955904108079006e-11,
+      "source_value": -5.395590410807921e-11,
+      "relative_difference": 3.83266959486074e-15,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[35].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_37",
+      "status": "PASS",
+      "value": -7.298501009731953e-11,
+      "source_value": -7.298501009731953e-11,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[37].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_41",
+      "status": "PASS",
+      "value": -5.3803930745704555e-11,
+      "source_value": -5.380393074570445e-11,
+      "relative_difference": 1.9217476332318603e-15,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[41].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_44",
+      "status": "PASS",
+      "value": -5.3944702058779516e-11,
+      "source_value": -5.3944702058779516e-11,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[44].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_65",
+      "status": "PASS",
+      "value": -5.3928986632632396e-11,
+      "source_value": -5.3928986632632396e-11,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[65].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_81",
+      "status": "PASS",
+      "value": -5.3914246249833367e-11,
+      "source_value": -5.391424624983316e-11,
+      "relative_difference": 3.835630979240424e-15,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[81].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_132",
+      "status": "PASS",
+      "value": 3.4301198945567836e-10,
+      "source_value": 3.4301198945567795e-10,
+      "relative_difference": 1.2057604952317727e-15,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[132].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_143",
+      "status": "PASS",
+      "value": 1.1033816692863373e-09,
+      "source_value": 1.1033816692863373e-09,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[143].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_144",
+      "status": "PASS",
+      "value": 4.0699090309443504e-10,
+      "source_value": 4.0699090309443504e-10,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[144].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_145",
+      "status": "PASS",
+      "value": 1.4068250382437874e-09,
+      "source_value": 1.4068250382437872e-09,
+      "relative_difference": 1.4699422281850346e-16,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[145].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_147",
+      "status": "PASS",
+      "value": 1.4767253197488965e-09,
+      "source_value": 1.4767253197488965e-09,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[147].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_149",
+      "status": "PASS",
+      "value": 1.2787435158209051e-09,
+      "source_value": 1.278743515820905e-09,
+      "relative_difference": 1.6171745981875204e-16,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[149].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_154",
+      "status": "PASS",
+      "value": 5.068008707004169e-10,
+      "source_value": 5.068008707004167e-10,
+      "relative_difference": 4.0804024833749534e-16,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[154].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_175",
+      "status": "PASS",
+      "value": 7.487499741904528e-10,
+      "source_value": 7.487499741904531e-10,
+      "relative_difference": 4.142807885139029e-16,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[175].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    },
+    {
+      "id": "legacy_remainder_213",
+      "status": "PASS",
+      "value": 9.615251701847804e-10,
+      "source_value": 9.615251701847804e-10,
+      "relative_difference": 0.0,
+      "unit": "J",
+      "tier": "U",
+      "source": {
+        "path": "inputs/expert_resolution/data/km_sweep.json",
+        "selector": "rows[213].energy_ledger"
+      },
+      "method": "Phi_activation minus Phi_content_at_Rmax minus stored surface/gel/viscous/acoustic terms; bookkeeping remainder is not measured destruction"
+    }
+  ],
+  "source_only_EOS_checks": [
+    {
+      "id": "PFP_radius_EOS",
+      "status": "NOT_RUN",
+      "value": 2.3782042920415665e-05,
+      "unit": "m",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.droplet_table[d0_um=6].R_bound_exergy_m"
+      },
+      "reason": "accepted stable-EOS integral evaluation quoted; no independent EOS package/integration in this arithmetic review"
+    },
+    {
+      "id": "PFP_source_pressure_EOS",
+      "status": "NOT_RUN",
+      "value": 1265385.6995210948,
+      "unit": "Pa absolute",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFP.p_relax_spinodal"
+      },
+      "reason": "accepted expansion-source premise/EOS evaluation quoted; no new EOS run or global sign proof"
+    },
+    {
+      "id": "PFH_radius_EOS",
+      "status": "NOT_RUN",
+      "value": 2.4219111556180373e-05,
+      "unit": "m",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.droplet_table[d0_um=6].R_bound_exergy_m"
+      },
+      "reason": "accepted stable-EOS integral evaluation quoted; no independent EOS package/integration in this arithmetic review"
+    },
+    {
+      "id": "PFH_source_pressure_EOS",
+      "status": "NOT_RUN",
+      "value": 1084910.493438774,
+      "unit": "Pa absolute",
+      "tier": "R|A",
+      "source": {
+        "path": "inputs/expert_resolution/data/thermo_ceilings.json",
+        "selector": "fluids.PFH.p_relax_spinodal"
+      },
+      "reason": "accepted expansion-source premise/EOS evaluation quoted; no new EOS run or global sign proof"
+    }
+  ],
+  "max_arithmetic_relative_difference": 7.270960063791253e-14,
+  "energy_allowances": [
+    {
+      "species": "PFP",
+      "mass_pg": 1,
+      "value_m_s": 2333.4834077846103,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFP",
+      "mass_pg": 3,
+      "value_m_s": 1347.23727363397,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFP",
+      "mass_pg": 10,
+      "value_m_s": 737.9122450810853,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFP",
+      "mass_pg": 30,
+      "value_m_s": 426.03383333588573,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFP",
+      "mass_pg": 100,
+      "value_m_s": 233.34834077846102,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFH",
+      "mass_pg": 1,
+      "value_m_s": 3040.4350230314553,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFH",
+      "mass_pg": 3,
+      "value_m_s": 1755.3959790007766,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFH",
+      "mass_pg": 10,
+      "value_m_s": 961.4699750525903,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFH",
+      "mass_pg": 30,
+      "value_m_s": 555.1049489143558,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    },
+    {
+      "species": "PFH",
+      "mass_pg": 100,
+      "value_m_s": 304.04350230314554,
+      "tier": "R|A",
+      "status": "ARITHMETIC_ONLY"
+    }
+  ],
+  "historical_summary": [
+    {
+      "species": "PFP",
+      "group": "slow_in_screen",
+      "field": "U",
+      "value": 65.27421173639833,
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 2
+      },
+      "closure": "frozen",
+      "gamma": 1.25,
+      "mach": 0.04404467728501912
+    },
+    {
+      "species": "PFP",
+      "group": "fast_in_screen",
+      "field": "U",
+      "value": 360.1701334004048,
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 19
+      },
+      "closure": "km_alpha1",
+      "gamma": 4.0,
+      "mach": 0.24302977962240538
+    },
+    {
+      "species": "PFP",
+      "group": "beyond_screen",
+      "field": "U",
+      "value": 481.5315814884905,
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 16
+      },
+      "closure": "isoeq",
+      "gamma": 4.0,
+      "mach": 0.3249200954713161
+    },
+    {
+      "species": "PFP",
+      "group": "internal_contact_in_screen",
+      "field": "p_h",
+      "value": 292318024.1469137,
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 19
+      },
+      "closure": "km_alpha1",
+      "gamma": 4.0,
+      "mach": 0.24302977962240538
+    },
+    {
+      "species": "PFP",
+      "group": "receiver_estimate_in_screen",
+      "field": "p_rec",
+      "value": 21025716.016783834,
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 2
+      },
+      "closure": "frozen",
+      "gamma": 1.25,
+      "mach": 0.04404467728501912
+    },
+    {
+      "species": "PFH",
+      "group": "slow_in_screen",
+      "field": "U",
+      "value": 186.94886705402996,
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 33
+      },
+      "closure": "km_alpha0.1",
+      "gamma": 4.0,
+      "mach": 0.12614633404455464
+    },
+    {
+      "species": "PFH",
+      "group": "fast_in_screen",
+      "field": "U",
+      "value": 377.5100767066484,
+      "tier": "P",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 29
+      },
+      "closure": "isoeq",
+      "gamma": 3.0,
+      "mach": 0.25473014622580864
+    },
+    {
+      "species": "PFH",
+      "group": "beyond_screen",
+      "field": "U",
+      "value": 715.4791050096972,
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 32
+      },
+      "closure": "isoeq",
+      "gamma": 4.0,
+      "mach": 0.4827794230834664
+    },
+    {
+      "species": "PFH",
+      "group": "internal_contact_in_screen",
+      "field": "p_h",
+      "value": 307470795.61558753,
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 29
+      },
+      "closure": "isoeq",
+      "gamma": 3.0,
+      "mach": 0.25473014622580864
+    },
+    {
+      "species": "PFH",
+      "group": "receiver_estimate_in_screen",
+      "field": "p_rec",
+      "value": 22368558.15501231,
+      "tier": "E",
+      "source": {
+        "path": "inputs/expert_resolution/data/envelope_rows.json",
+        "row_index": 20
+      },
+      "closure": "isoeq",
+      "gamma": 1.25,
+      "mach": 0.06488630934189095
+    }
+  ],
+  "historical_processed_rows": 35,
+  "historical_random_record_indices": [
+    34,
+    11
+  ],
+  "historic_remainders": [
+    {
+      "row_index": 29,
+      "species": "PFP",
+      "mode": "frozen",
+      "alpha_c": 0.0,
+      "remainder_J": -7.17338924392184e-11,
+      "percent_of_Phi": -2.6347836424637925,
+      "initial_naive_difference_J": -2.7019207250790966e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 31,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 0.01,
+      "remainder_J": -5.3960538494023825e-11,
+      "percent_of_Phi": -1.981968903793406,
+      "initial_naive_difference_J": -2.7019207467512286e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 34,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 0.5,
+      "remainder_J": -5.388967194081117e-11,
+      "percent_of_Phi": -1.979365977493809,
+      "initial_naive_difference_J": -2.7019208778179967e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 35,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 0.03,
+      "remainder_J": -5.3955904108079006e-11,
+      "percent_of_Phi": -1.9817986829415177,
+      "initial_naive_difference_J": -2.7019207940659597e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 37,
+      "species": "PFP",
+      "mode": "isoeq",
+      "alpha_c": 0.0,
+      "remainder_J": -7.298501009731953e-11,
+      "percent_of_Phi": -2.680737155207516,
+      "initial_naive_difference_J": -2.701921993560566e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 41,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 1.0,
+      "remainder_J": -5.3803930745704555e-11,
+      "percent_of_Phi": -1.9762167060591993,
+      "initial_naive_difference_J": -2.701920844565336e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 44,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 0.1,
+      "remainder_J": -5.3944702058779516e-11,
+      "percent_of_Phi": -1.9813872320184918,
+      "initial_naive_difference_J": -2.7019206854985043e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 65,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 0.2,
+      "remainder_J": -5.3928986632632396e-11,
+      "percent_of_Phi": -1.9808100049039605,
+      "initial_naive_difference_J": -2.7019206570848502e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 81,
+      "species": "PFP",
+      "mode": "kinetic",
+      "alpha_c": 0.3,
+      "remainder_J": -5.3914246249833367e-11,
+      "percent_of_Phi": -1.9802685911013365,
+      "initial_naive_difference_J": -2.7019206909992554e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 132,
+      "species": "PFH",
+      "mode": "frozen",
+      "alpha_c": 0.0,
+      "remainder_J": 3.4301198945567836e-10,
+      "percent_of_Phi": 7.4210924669093465,
+      "initial_naive_difference_J": -2.74826026861524e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 143,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 0.3,
+      "remainder_J": 1.1033816692863373e-09,
+      "percent_of_Phi": 23.87175272520535,
+      "initial_naive_difference_J": -2.7482045377764186e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 144,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 0.01,
+      "remainder_J": 4.0699090309443504e-10,
+      "percent_of_Phi": 8.805281500065492,
+      "initial_naive_difference_J": -2.748255798986159e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 145,
+      "species": "PFH",
+      "mode": "isoeq",
+      "alpha_c": 0.0,
+      "remainder_J": 1.4068250382437874e-09,
+      "percent_of_Phi": 30.43677484900111,
+      "initial_naive_difference_J": -2.748161712444078e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 147,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 1.0,
+      "remainder_J": 1.4767253197488965e-09,
+      "percent_of_Phi": 31.949073160601195,
+      "initial_naive_difference_J": -2.7481851208695918e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 149,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 0.5,
+      "remainder_J": 1.2787435158209051e-09,
+      "percent_of_Phi": 27.665720628094498,
+      "initial_naive_difference_J": -2.7481962075713418e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 154,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 0.03,
+      "remainder_J": 5.068008707004169e-10,
+      "percent_of_Phi": 10.964678318522552,
+      "initial_naive_difference_J": -2.74824824070603e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 175,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 0.1,
+      "remainder_J": 7.487499741904528e-10,
+      "percent_of_Phi": 16.199266975714025,
+      "initial_naive_difference_J": -2.7482306150174606e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    },
+    {
+      "row_index": 213,
+      "species": "PFH",
+      "mode": "kinetic",
+      "alpha_c": 0.2,
+      "remainder_J": 9.615251701847804e-10,
+      "percent_of_Phi": 20.802675756393672,
+      "initial_naive_difference_J": -2.7482171869396277e-14,
+      "initial_naive_formula": "Phi minus useful_work minus Phi_content omits the mechanical closure mismatch; corrected by independently summing stored terms"
+    }
+  ],
+  "candidate030_diagnostics": {
+    "source": "inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv",
+    "source_sha256": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+    "last_accepted_line": 432,
+    "accepted_record_count": 43,
+    "last_accepted": {
+      "time_s": 4.3000000000000027e-10,
+      "steps": 43.0,
+      "water_mass_kg": 6.5766026012734005e-09,
+      "PFC_mass_kg": 1.833751399525869e-13,
+      "bulk_energy_J": 1.8054733127753962e-08,
+      "entropy_J_K": 5.2455115392796843e-11,
+      "area_m2": 1.5623098472214495e-10,
+      "min_fraction": 0.0,
+      "fraction_sum_error": 4.440892098500626e-16,
+      "uncovered_mass_kg": 9.399588160342476e-33,
+      "pressure_residual": 4.991006256402228e-13,
+      "phase_HKS_entropy_J_K": 4.061662261765626e-15,
+      "phase_bulk_entropy_J_K": 0.0,
+      "interface_heat_entropy_J_K": 2.618922883297803e-16,
+      "capillary_work_J": -9.498240938774447e-17,
+      "interface_heat_energy_defect_J": -6.028282461713636e-17,
+      "water_geometry_volume_defect_m3": 9.718387421966966e-19,
+      "pressure_work_defect_J": 1.9813941880038832e-16,
+      "phase_evaluations": 378736.0,
+      "spinodal_warm": 697690.0,
+      "spinodal_global": 196.0,
+      "heat_evaluations": 1088.0,
+      "mechanical_entropy_J_K": 1.606158593361932e-19,
+      "water_Fourier_entropy_J_K": 2.4602829856341005e-22,
+      "viscous_entropy_J_K": 4.255599380007451e-21,
+      "water_Fourier_boundary_energy_out_J": 0.0,
+      "viscous_boundary_energy_out_J": 0.0,
+      "water_Fourier_energy_defect_J": 2.617657278105191e-20,
+      "viscous_intrinsic_work_defect_J": 9.17852260044651e-19,
+      "converted_transport_energy_roundoff_J": -7.247782311384758e-25,
+      "converted_transport_momentum_roundoff_kg_m_s": 3.696415559912471e-29,
+      "water_Fourier_edges": 155130.0,
+      "viscous_faces": 174494.0,
+      "water_Fourier_iterations": 255.0
+    },
+    "time_ns": 0.43000000000000027,
+    "max_relative_mass_drift": {
+      "water_mass_kg": 3.7732884106127866e-16,
+      "PFC_mass_kg": 2.3402317923312148e-15
+    },
+    "objective_event_established": false,
+    "completion_established": false,
+    "ledger_residual_recomputed": null,
+    "reason": "history contains diagnostics, not a complete exergy ledger, registered observers, or objective event; legacy meta exit is not candidate030 completion"
+  },
+  "objective_recompute": [
+    {
+      "id": "PFP_U_1pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_3pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_10pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_30pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_U_100pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_2um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_2um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_10um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFP_P_10um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_1pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_3pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_10pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_30pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_U_100pg",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_2um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_2um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_10um_2ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    },
+    {
+      "id": "PFH_P_10um_20ns",
+      "status": "NOT_RUN",
+      "value": null,
+      "attained_lower": null,
+      "global_upper": null,
+      "maximizing_design": null,
+      "reason": "no registered objective evidence run or certificate supplied; inherited Stage2 waiver"
+    }
+  ],
+  "certificate_recompute": {
+    "status": "NOT_RUN",
+    "x_star": null,
+    "random_evidence_runs": null,
+    "J_U": null,
+    "J_P": null,
+    "R": null,
+    "Richardson_delta_num": null,
+    "J_up": null,
+    "reason": "no x_star/evidence-run/refinement/certificate records; seed does not create missing samples"
+  },
+  "sources": {
+    "inputs/conditional_termtex/verification.json": "b83ab006b2875ebbf4c75c4f7e7774e4a0b5b988be635a708c593dc91ab9e50e",
+    "inputs/expert_resolution/data/thermo_ceilings.json": "77c32ec1b8870d0b38ef139a821419f8cbdf5af115f94a1000a9607d7b6a5e8b",
+    "inputs/expert_resolution/data/receiver_table.json": "4bb508d9050a617b01e14a2e9ef9b067dc1a7213459554a3a534ce910bed5049",
+    "inputs/expert_resolution/data/envelope_rows.json": "92afe47865cda9314b2e6ddc10ebc42138e87eddede65638690b40d89012c731",
+    "inputs/expert_resolution/data/km_sweep.json": "aea81875bf8ae62d011ba8b122f1922a51555bb6964f28f66859aea7d2c0f587",
+    "inputs/full_closure/runs/AXI_PFP_transport_candidate030_STAGE2_LOOSENED_PILOT001/history.csv": "0e41380114a3af3ccd1128cacf3171e463e862f7de08783f7d125d6365cecfaf",
+    "inputs/full_closure/data/STAGE3_RESULTS_LEDGER_001.json": "cbb4345137aa197849d20789697ad6b9d09c2fb76dd31dc975933abcd0bd82b9"
+  },
+  "interpretation": "Arithmetic PASS establishes agreement with stored adopted inputs; it does not establish material validity, registered objective feasibility, certification, or device transfer."
+}

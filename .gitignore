@@ -1,6 +1,6 @@
 # The authoring workspace reuses the existing parent repository.
 publication/
-# Retained obsolete partial-build files; excluded from the release and project commits.
+# Obsolete partial-build routes remain excluded from commits.
 chapters/01-01-cavity-pressure-inertia-and-directional-jets.html
 text/01-01-cavity-pressure-inertia-and-directional-jets.md
 verification/diagram-review.png
@@ -26,8 +26,12 @@ verification/tmp-symbol-preview/
 !modeling/embedded-pfc-feasibility/sources/accepted_control/models/*.mph
 !modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf
 !modeling/embedded-pfc-feasibility/Embedded_PFC_Feasibility_Public_20261011.zip
+!learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/report/STAGE3_ENGINEERING_REPORT.pdf
 *.mphbin
 *.h5
 *.vtk
 *.vtu
 *.odb
+
+# Portable local revision copies.
+delivery/Lesson_Revision_20261014/

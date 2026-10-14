@@ -51,12 +51,12 @@ def defense(identifier, question_en, question_zh, answer_html, criteria):
     """
     return (f'<article class="defense" id="{escape(identifier)}" data-defense="{escape(identifier)}">'
             +H(question_en,question_zh,identifier+'-question',3)
-            +P('Explain this in your own words. Use assumptions, a physical argument, and a limitation; equation memorization is not required.',
-               '请用自己的话解释，说明假设、物理推理及适用限制；不要求背诵公式。')
+            +P('Explain the mechanism, assumptions, and limits in your own words.',
+               '用自己的话解释机制、假设与限制。')
             +f'<label for="response-{escape(identifier)}">Your explanation / 您的解释</label>'
             +f'<textarea id="response-{escape(identifier)}" data-response="{escape(identifier)}" rows="5"></textarea>'
             +'<details class="answer"><summary>Reference answer and mastery criteria / 参考答案与掌握标准</summary>'
-            +answer_html+H('What a mastered answer demonstrates','掌握后的回答应体现',identifier+'-rubric',4)
+            +answer_html+H('Review criteria','审阅标准',identifier+'-rubric',4)
             +'<ul>'+''.join('<li>'+P(*c)+'</li>' for c in criteria)+'</ul></details></article>')
 
 def note(en,zh,kind='callout'):

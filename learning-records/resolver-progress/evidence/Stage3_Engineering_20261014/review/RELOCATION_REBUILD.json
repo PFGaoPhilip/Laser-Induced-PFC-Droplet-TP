@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "root": "C:\\Users\\carl_\\AppData\\Local\\Temp\\Stage3_Final_Delivery_20261014\\Stage3_Engineering_20261014",
+  "commands": [
+    {
+      "script": "scripts/build_results.py",
+      "exit": 0,
+      "stdout": "Rebuilt RESULTS_LEDGER.json and two documentation tables; objectives remain null.\n",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/independent_recompute.py",
+      "exit": 0,
+      "stdout": "Independent arithmetic: 239 checks; 0 failures; maximum relative difference 7.270960063791253e-14\n",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/build_report.py",
+      "exit": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"tool\": \"pdfLaTeX\",\n  \"passes\": 3,\n  \"errors\": 0,\n  \"undefined_references\": 0,\n  \"overfull_boxes\": 0,\n  \"ledger_sha256\": \"36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f\",\n  \"pdf_sha256\": \"127cf1ac428f4e66762a5261dc00f164882486729ba7d32bdc94043b6b8726cc\",\n  \"fixed_SOURCE_DATE_EPOCH\": 1791936000,\n  \"authoring_marker\": \"NOT_AVAILABLE: supplied container_tools marker absent in Windows runtime; attempted once and recorded\",\n  \"solver_run\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/build_reader.py",
+      "exit": 0,
+      "stdout": "{\"output\": \"READER.html\", \"sha256\": \"705e3aadbf7ad1f92844aaab2c44bc8c99baa10930886d86553026d110b177eb\", \"ledger_sha256\": \"36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f\", \"objectives\": 18, \"network_dependencies\": 0}\n",
+      "stderr": ""
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "RESULTS_LEDGER.json",
+      "original_sha256": "36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f",
+      "rebuilt_sha256": "36b77221dacd0b958c73f4c4c0fac1f46cdaa47f75010fdc099fa3cb7f1c8a0f",
+      "byte_match": true
+    },
+    {
+      "path": "CERTIFICATE.json",
+      "original_sha256": "967afbfb997f776377352c4e4be3668e2b64dcf9005ded087c2111f6f0e695fd",
+      "rebuilt_sha256": "967afbfb997f776377352c4e4be3668e2b64dcf9005ded087c2111f6f0e695fd",
+      "byte_match": true
+    },
+    {
+      "path": "data/CONDITIONAL_ENERGY_CEILINGS.csv",
+      "original_sha256": "bf797b664be58b1b86cbf94e0db5083594ed6fd0a6d0dfefd873001d441bc241",
+      "rebuilt_sha256": "bf797b664be58b1b86cbf94e0db5083594ed6fd0a6d0dfefd873001d441bc241",
+      "byte_match": true
+    },
+    {
+      "path": "data/OBJECTIVE_STATUS.csv",
+      "original_sha256": "47cf74811141e0a789352e82bb2b82a2ffe72905d4e715d3b380cf080ae9674b",
+      "rebuilt_sha256": "47cf74811141e0a789352e82bb2b82a2ffe72905d4e715d3b380cf080ae9674b",
+      "byte_match": true
+    },
+    {
+      "path": "review/INDEPENDENT_RECOMPUTE.json",
+      "original_sha256": "2ad7046c83806ad2ab7e56e48573ca30420642edf82fc7643a0ef96538991771",
+      "rebuilt_sha256": "2ad7046c83806ad2ab7e56e48573ca30420642edf82fc7643a0ef96538991771",
+      "byte_match": true
+    },
+    {
+      "path": "READER.html",
+      "original_sha256": "705e3aadbf7ad1f92844aaab2c44bc8c99baa10930886d86553026d110b177eb",
+      "rebuilt_sha256": "705e3aadbf7ad1f92844aaab2c44bc8c99baa10930886d86553026d110b177eb",
+      "byte_match": true
+    },
+    {
+      "path": "report/STAGE3_ENGINEERING_REPORT.pdf",
+      "original_sha256": "127cf1ac428f4e66762a5261dc00f164882486729ba7d32bdc94043b6b8726cc",
+      "rebuilt_sha256": "127cf1ac428f4e66762a5261dc00f164882486729ba7d32bdc94043b6b8726cc",
+      "byte_match": true
+    }
+  ],
+  "all_outputs_byte_match": true,
+  "browser_check": "Separate real-browser QA record; do not infer from rebuild."
+}

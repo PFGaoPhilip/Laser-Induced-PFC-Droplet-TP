@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "scope": "New reader translations, dynamic labels and Chinese plots.",
+  "terminology": {
+    "PFC_vapor": "蒸气",
+    "surviving_liquid_shell": "剩余液体壳层"
+  },
+  "old_terms_remaining": [],
+  "checked_files": [
+    "index.html",
+    "assets\\reader.js",
+    "scripts\\reader_text.py",
+    "scripts\\reader_figures.py",
+    "scripts\\build_reader.py",
+    "REPORT.zh.md",
+    "DERIVATION.zh.md",
+    "IMPLEMENTATION_HANDOFF.zh.md",
+    "SOURCES.zh.md",
+    "assets\\fracture_budget.zh.svg",
+    "assets\\radial_stability.zh.svg",
+    "assets\\radial_viscosity_controls.zh.svg",
+    "assets\\size_species_comparison.zh.svg"
+  ],
+  "static_audit": {
+    "coverage": {
+      "REPORT.md": {
+        "blocks": 46,
+        "translated": 46
+      },
+      "DERIVATION.md": {
+        "blocks": 123,
+        "translated": 91
+      },
+      "IMPLEMENTATION_HANDOFF.md": {
+        "blocks": 24,
+        "translated": 24
+      },
+      "SOURCES.md": {
+        "blocks": 4,
+        "translated": 4
+      }
+    },
+    "displayed_equations": 32,
+    "equation_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25",
+      "E26",
+      "E27",
+      "E28",
+      "E29",
+      "E30",
+      "E31",
+      "E32"
+    ],
+    "equations_match_prior_archive": true,
+    "unchanged_protected_files": 90,
+    "missing_assets": [],
+    "translated_plot_geometry_unchanged": {
+      "size_species_comparison": 28,
+      "radial_viscosity_controls": 66,
+      "radial_stability": 74,
+      "fracture_budget": 35
+    }
+  },
+  "event_audit": "verification/READER_LOGIC_REVISION_20261014.json",
+  "original_equations_and_protected_payload_unchanged": true
+}

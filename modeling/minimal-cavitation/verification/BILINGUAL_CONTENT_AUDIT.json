@@ -7,7 +7,7 @@
       "mathematical_expressions": 0,
       "numeric_tokens": 642,
       "code_entries": 679,
-      "scope": "Exact ordered tokens; semantic review recorded separately in sources/i18n/."
+      "scope": "Exact ordered tokens. Current prose self-review is recorded in verification/READER_PROSE_AUDIT.json."
     },
     {
       "english": "MODEL_SPEC.md",
@@ -15,7 +15,7 @@
       "mathematical_expressions": 257,
       "numeric_tokens": 445,
       "code_entries": 15,
-      "scope": "Exact ordered tokens; semantic review recorded separately in sources/i18n/."
+      "scope": "Exact ordered tokens. Current prose self-review is recorded in verification/READER_PROSE_AUDIT.json."
     },
     {
       "english": "RESULTS.md",
@@ -23,7 +23,7 @@
       "mathematical_expressions": 0,
       "numeric_tokens": 53,
       "code_entries": 0,
-      "scope": "Exact ordered tokens; semantic review recorded separately in sources/i18n/."
+      "scope": "Exact ordered tokens. Current prose self-review is recorded in verification/READER_PROSE_AUDIT.json."
     }
   ],
   "pages": [
@@ -35,7 +35,7 @@
           "language": "en",
           "steps": 0,
           "display_equations": 29,
-          "highlighted_occurrences": 148,
+          "highlighted_occurrences": 129,
           "semantic_term_ids": [
             "capillary-pressure",
             "cavitation",
@@ -64,7 +64,7 @@
           "language": "zh",
           "steps": 0,
           "display_equations": 29,
-          "highlighted_occurrences": 195,
+          "highlighted_occurrences": 158,
           "semantic_term_ids": [
             "capillary-pressure",
             "cavitation",
@@ -89,7 +89,7 @@
           ]
         }
       ],
-      "default_language": "zh"
+      "default_language": "en"
     },
     {
       "file": "STEP_BY_STEP.html",
@@ -99,7 +99,7 @@
           "language": "en",
           "steps": 53,
           "display_equations": 0,
-          "highlighted_occurrences": 90,
+          "highlighted_occurrences": 88,
           "semantic_term_ids": [
             "confinement",
             "energy-budget",
@@ -123,7 +123,7 @@
           "language": "zh",
           "steps": 53,
           "display_equations": 0,
-          "highlighted_occurrences": 127,
+          "highlighted_occurrences": 122,
           "semantic_term_ids": [
             "confinement",
             "energy-budget",
@@ -144,7 +144,7 @@
           ]
         }
       ],
-      "default_language": "zh"
+      "default_language": "en"
     }
   ],
   "native_models": [
@@ -159,7 +159,7 @@
       "sha256": "6492ff035e3287fb7bf186fedb44bd8cccdbef2c12c25bb9169b971aeec5cd15"
     }
   ],
-  "term_palette": "Exact archived newer-reference stylesheet; only light-to-day selector and term padding adapted.",
+  "term_palette": "Archived term stylesheet is retained. Current readers use the canonical course keyword appearance.",
   "interaction_verification": "Recorded separately; these checks do not replace browser interaction.",
-  "semantic_review": "Chapter peer-review files under sources/i18n/."
+  "semantic_review": "Current prose self-review: verification/READER_PROSE_AUDIT.json. Original peer-review files under sources/i18n/ remain historical evidence."
 }

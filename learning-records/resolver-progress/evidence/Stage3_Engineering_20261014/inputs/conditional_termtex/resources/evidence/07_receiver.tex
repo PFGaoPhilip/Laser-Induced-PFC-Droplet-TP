@@ -1,0 +1,111 @@
+% ---------------------------------------------------------------------------
+\section{Receiver pressure: nonlinear contact and collapse-wave estimates}\label{sec:receiver}
+Handoff priority 6. The pressure observables O5--O7 are computed here from a stated jet speed; they are
+never identified with the source pressure O4.
+
+\subsection{Step P1 --- Weak-shock Hugoniot of water closed with the Tait equation}
+\emph{Symbols} as in Limits E11: upstream state $(\rho_0,p_0)$ at rest, shocked state $(\rho_1,p_1)$, shock speed
+$D$ relative to the upstream liquid, particle-velocity jump $u_p$. Tait isentrope for water (Lechner et al.\ 2020,
+Eq.~8, verified): $n_{\mathrm T}=7.15$, $B_{\mathrm T}=305$\,MPa.
+Here $\rho_0,\rho_1>0$ are densities (kg/m$^3$), $p_0,p_1$ absolute pressures (Pa),
+$D>u_p\ge0$ shock and particle-jump speeds (m/s), $n_{\mathrm T}$ dimensionless exponent,
+and $B_{\mathrm T}$ pressure offset (Pa); subscript 0 denotes upstream and 1 compressed liquid:
+\begin{equation}
+\rho_0D=\rho_1(D-u_p),\qquad p_1-p_0=\rho_0Du_p,\qquad p_1=(p_0+B_{\mathrm T})\Bigl(\frac{\rho_1}{\rho_0}\Bigr)^{n_{\mathrm T}}-B_{\mathrm T}.\label{eq:hug}
+\end{equation}
+The first two relations are exact jump conditions (mass and momentum, Limits E11). The third replaces the
+Hugoniot by the isentrope; the two curves osculate to second order in the specific-volume jump, the entropy
+jump being third order (Landau \& Lifshitz, \emph{Fluid Mechanics}, \S86), so the closure is accurate for weak
+to moderate shocks and is flagged above 1\,GPa. Eliminating $\rho_1$ gives one equation for $D$:
+$(p_0+B_{\mathrm T})[D/(D-u_p)]^{n_{\mathrm T}}-B_{\mathrm T}-p_0-\rho_0Du_p=0$, solved by bracketing.
+\emph{Limit check:} as $u_p\to0$, $D\to c_{\mathrm T}=\sqrt{n_{\mathrm T}(p_0+B_{\mathrm T})/\rho_0}=\cTait$\,m/s and
+$p_1-p_0\to\rho_0c_{\mathrm T}u_p$, recovering Limits E09 (rigid limit).
+
+\paragraph{Rigid receiver.} Arrest of a normally arriving plug of speed $U$ is the piston problem with $u_p=U$.
+\paragraph{Linear-impedance receiver.} Here $U$ is incident jet speed (m/s), $v$ interface speed
+(m/s), $Z_t\ge0$ opposing impedance (Pa\,s/m), and $p_{\mathrm{Hug}}$ the jet-side
+Tait-closed absolute pressure (Pa). The mixed closure solves
+$p_{\mathrm{Hug}}(U-v)-p_0=Z_tv$. It treats the jet side nonlinearly and the opposing medium
+linearly. Setting $Z_t=Z_{\mathrm w}=\rho_0c_{\mathrm T}$ estimates an equal-impedance contact scale;
+it is not the symmetric nonlinear two-water-shock solution. At low Mach number both give
+$p_{\mathrm c}\approx\tfrac12Z_{\mathrm w}U$
+at low Mach number --- the factor $\tfrac12$ of Supponen et al.\ (2017, Eq.~4, verified:
+$p_h=\tfrac12\rho cU_{\mathrm{jet}}=0.45(\rho c^2\Delta p)^{1/2}\zeta^{-1}$, stated valid for $\zeta>10^{-3}$ and
+failing near $\zeta\lesssim0.9(\Delta p/\rho)^{1/2}/c$).
+
+\input{generated/table_receiver.tex}
+
+\textbf{Results.} Table~\ref{tab:receiver}. The nonlinear first-contact pressure exceeds the linear water-hammer
+value by $\ratioUhundred\times$ at 100\,m/s, $\ratioUthreehundred\times$ at 300\,m/s and $\ratioUeightfifty\times$ at
+850\,m/s; Limits E10 is therefore \emph{not} an upper bound outside the small-Mach regime. At the prior sampled
+outlet speed 25.28\,m/s the Tait value is $\pcUfivetwenty$\,MPa (linear: 37.9\,MPa).
+
+\subsection{Step P2 --- Duration and area: why a contact pressure is not a measured peak}
+The one-dimensional hammer pressure persists only until the lateral release wave from the jet edge reaches
+the axis, $t_{\mathrm r}\approx a_{\mathrm j}/c_1$ with $a_{\mathrm j}$ the jet radius and $c_1$ the shocked sound
+speed. For a jet of radius $1\,\mu$m, $t_{\mathrm r}\approx0.6$\,ns: a sensor with 30\,MHz bandwidth (15\,ns rise
+time, Supponen et al.\ 2017) averages the contact pressure over an interval about 25 times longer and an area
+much larger than the jet, so the measured peak (O7) is far below O6. Any comparison with measurements must
+apply the sensor's area and impulse response (Limits E12--E13, E32).
+
+\subsection{Step P3 --- Benchmark B1: what loads the receiver}
+For $\gamma\ge1.25$ the jet first strikes the opposite cavity wall, not the receiver. The internal impact is a
+liquid--liquid contact (equal impedance) producing a local hammer pressure scale
+$p_h\approx\tfrac12Z_{\mathrm w}U_{\mathrm j}$. The mixed contact calculation above supplies the
+nonlinear/linear estimate tabulated in Table~\ref{tab:envelope}; it is not a resolved internal
+shock simulation. That contact emits a torus-like wave from an assumed jet-tip area.
+The receiver, a distance $d\approx z_{\mathrm{bot}}$ below the impact point, is reached
+by this wave. Under linear spherical spreading from a source of radius $a_{\mathrm j}$, and rigid-wall reflection
+of an incident wave (factor 2, Limits E14), the receiver pressure is estimated as follows.
+Here $p_{\mathrm{rec}}$ is a receiver-wave peak estimate (Pa), $p_h$ the internal
+liquid--liquid contact increment (Pa), $a_{\mathrm j}>0$ source/jet radius (m), and $d>0$
+the propagation separation (m). The minimum caps the spreading factor at unity.
+This is an estimated extension of wave observable O5 to a receiver plane; it is not direct
+liquid contact O6 or sensor-averaged O7:
+\begin{equation}
+p_{\mathrm{rec}}\approx2\,p_h\,\min\Bigl(1,\frac{a_{\mathrm j}}{d}\Bigr).\label{eq:prec}
+\end{equation}
+This is an order-of-magnitude estimate (the wave is not spherical, the near field is nonlinear and the cavity
+remnant scatters it); it is reported as such in Table~\ref{tab:envelope} and is not a resolved receiver pressure.
+Direct jet contact with the receiver requires $\gamma\lesssim1$, outside $\mathcal D$, where the cavity touches the wall
+and potential flow fails; that case remains unresolved (Section~\ref{sec:validity}).
+
+\subsection{Step P4 --- Conditional bound for a declared pressure observer}
+The accepted progressive-wave relations of Limits E12--E14 give a pressure bound only after
+fixing the observer area and time scale. Assume a locally planar, normally propagating
+\emph{linear} wave with carrier impedance $Z_{\mathrm w}=\rho_{\mathrm w}c_{\mathrm w}>0$
+(Pa\,s/m), incident pressure increment $p_{\mathrm{inc}}(\mathbf x,t)$ (Pa), position $\mathbf x$ (m),
+time $t$ (s), observer region
+$\Omega_{\mathrm o}$ of area $A_{\mathrm o}>0$ (m$^2$), and interval $\tau_{\mathrm o}>0$ (s).
+Define $E_{A\tau}$ as the incident acoustic energy crossing that region in that interval (J),
+$\bar p_{\mathrm{inc}}$ its area/time mean (Pa), and $p_{\mathrm{rms}}$ its root mean square (Pa).
+Area/time elements $\dd A,\dd t$ have units m$^2$, s, and $\Phia\ge0$ is activated exergy (J).
+The wave-energy flux is $p_{\mathrm{inc}}^2/Z_{\mathrm w}$; with the no-external-work budget
+of Step T1, the captured energy cannot exceed the total available energy:
+\begin{align}
+E_{A\tau}&=\frac{1}{Z_{\mathrm w}}\int_0^{\tau_{\mathrm o}}\int_{\Omega_{\mathrm o}}
+p_{\mathrm{inc}}^2\,\dd A\,\dd t\le\Phia,\notag\\
+p_{\mathrm{rms}}^2&=\frac{1}{A_{\mathrm o}\tau_{\mathrm o}}
+\int_0^{\tau_{\mathrm o}}\int_{\Omega_{\mathrm o}}p_{\mathrm{inc}}^2\,\dd A\,\dd t
+\le\frac{Z_{\mathrm w}\Phia}{A_{\mathrm o}\tau_{\mathrm o}}.\label{eq:pressure_rms}
+\end{align}
+Applying Cauchy--Schwarz to $p_{\mathrm{inc}}$ and the constant function 1 on the same
+area/time region gives $(\int\!\int p_{\mathrm{inc}})^2\le
+(A_{\mathrm o}\tau_{\mathrm o})\int\!\int p_{\mathrm{inc}}^2$, hence
+$|\bar p_{\mathrm{inc}}|\le p_{\mathrm{rms}}$.
+For a linear opposing medium with constant impedance $Z_t>0$ (Pa\,s/m), define the pressure
+transmission factor $\mathcal T_p=2Z_t/(Z_t+Z_{\mathrm w})\in(0,2)$ (dimensionless), and
+$\bar p_{\mathrm{rec}}$ as the corresponding area/time mean at the receiver (Pa):
+\begin{equation}
+|\bar p_{\mathrm{rec}}|\le\mathcal T_p
+\sqrt{\frac{Z_{\mathrm w}\Phia}{A_{\mathrm o}\tau_{\mathrm o}}}
+\le2\sqrt{\frac{Z_{\mathrm w}\Phia}{A_{\mathrm o}\tau_{\mathrm o}}}.
+\label{eq:pressure_observer}
+\end{equation}
+The factor 2 is the rigid-reflection limit, not an additional factor for an already calculated
+collision pressure. Units check: $Z_{\mathrm w}\Phia/(A_{\mathrm o}\tau_{\mathrm o})$ is Pa$^2$.
+The incident bound is saturated algebraically by a uniform fixed-sign pulse with all the budget
+assigned to that wave; this does not prove that PFC collapse can generate that pulse.
+As $A_{\mathrm o}\tau_{\mathrm o}\to0$ the bound grows without supplying a finite point-pressure
+cap. These are conditional linear-wave/RMS or averaged-pressure bounds, not bounds on an
+instantaneous nonlinear contact shock. An actual sensor needs its spatial and temporal response.

@@ -1,0 +1,15 @@
+In file included from material_bridge.c:6:
+pfc_conserved_inverse.h:193:12: warning: ‘closure_pfc_invert_conserved’ defined but not used [-Wunused-function]
+  193 | static int closure_pfc_invert_conserved(const ClosurePFCFluid * f,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from pfc_conserved_inverse.h:6:
+pfc_helmholtz.h:375:12: warning: ‘closure_pfc_kinetic_flux’ defined but not used [-Wunused-function]
+  375 | static int closure_pfc_kinetic_flux(const ClosurePFCFluid * f,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+pfc_helmholtz.h:234:12: warning: ‘closure_pfc_invert’ defined but not used [-Wunused-function]
+  234 | static int closure_pfc_invert(const ClosurePFCFluid * f,double rho,double u,
+      |            ^~~~~~~~~~~~~~~~~~
+In file included from material_bridge.c:5:
+water_mg.h:92:12: warning: ‘closure_water_rho_p’ defined but not used [-Wunused-function]
+   92 | static int closure_water_rho_p(const ClosureWaterMG * eos,double rho,double p,ClosureWaterState * state) {
+      |            ^~~~~~~~~~~~~~~~~~~

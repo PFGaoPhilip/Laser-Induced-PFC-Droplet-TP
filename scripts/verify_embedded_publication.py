@@ -9,6 +9,7 @@ import posixpath
 import re
 import subprocess
 import zipfile
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = 'Embedded_PFC_Feasibility_Public_20261011.zip'
@@ -65,17 +66,29 @@ def audit(study):
     page = (study / 'index.html').read_text(encoding='utf-8')
     assert 'id="theme-toggle"' in page and 'assets/reader.js' in page
     assert 'katex-error' not in page and '@@MATH_' not in page
-    assert len(re.findall(r'class="equation"', page)) == 32
-    assert 'remain unvalidated' in page
+    assert len(BeautifulSoup(page, 'html.parser').select('.equation')) == 32
+    assert 'not established' in re.sub(r'<[^>]+>', ' ', page).lower()
     states = json.loads((study / 'data/reader_states.json').read_text(encoding='utf-8'))
     assert len(states) == 30
     payload = json.loads((study / 'COPY_MANIFEST.json').read_text(encoding='utf-8'))['files']
+    editorial_path = study / 'verification/EDITORIAL_REVISION_20261014.json'
+    editorial = json.loads(editorial_path.read_text(encoding='utf-8')) if editorial_path.is_file() else {}
+    revised = {row['file']: row for row in editorial.get('revised_files', [])}
+    prose_files = {'REPORT.md', 'DERIVATION.md', 'IMPLEMENTATION_HANDOFF.md'}
+    if editorial:
+        preservation = editorial['equation_preservation']
+        assert preservation['count'] == 32 and preservation['match_prior_archive']
+        assert editorial['protected_payload']['unchanged']
     critical = []
     for row in payload:
         path = study / row['file']
         assert digest(path.read_bytes()) == row['public_sha256'], row['file']
         name = row['file']
-        if name in {'REPORT.md', 'DERIVATION.md', 'DERIVATION.tex', 'IMPLEMENTATION_HANDOFF.md',
+        if name in prose_files and not row['unchanged']:
+            revision = revised.get(name)
+            assert revision and revision['public_sha256'] == row['public_sha256'], name
+            assert revision['accepted_source_sha256'] == row['accepted_source_sha256'], name
+        elif name in {'REPORT.md', 'DERIVATION.md', 'DERIVATION.tex', 'IMPLEMENTATION_HANDOFF.md',
                     'output/pdf/FINITE_PFC_DERIVATION.pdf'} or name.startswith(('data/', 'models/')) or (
                         name.startswith('assets/') and path.suffix in {'.png', '.svg'}):
             assert row['unchanged'] and row['accepted_source_sha256'] == row['public_sha256'], name
@@ -110,12 +123,14 @@ def audit(study):
     logic = subprocess.run(['node', str(study / 'scripts/test_reader_logic.cjs')],
                            capture_output=True, text=True, encoding='utf-8', check=True)
     result = json.loads(logic.stdout)
-    assert result['status'] == 'PASS' and result['scenarios'] == 38
+    assert result['status'] == 'PASS' and result['scenarios'] >= 38
     report = {'status': 'PASS', 'scientific_files_unchanged': len(critical),
               'public_payload_files_checked': len(payload), 'local_dependencies_checked': len(checked),
               'zip_crc_and_payload_hashes': 'PASS', 'zip_relative_dependency_closure': len(archived_links),
               'reader_logic_scenarios': result['scenarios'], 'computed_selector_states': len(states),
-              'scope': 'Copied scientific payload, moved public-folder dependencies, ZIP integrity/relative closure and executable reader events. No new numerical solve, experimental validation or real-browser layout claim.'}
+              'declared_editorial_files': len(revised),
+              'display_equations_preserved': editorial.get('equation_preservation', {}).get('count', 32),
+              'scope': 'Preserved equations/data/models, declared prose revisions, moved-folder dependencies, ZIP integrity and reader logic. No new numerical solve or experimental validation.'}
     return report
 
 

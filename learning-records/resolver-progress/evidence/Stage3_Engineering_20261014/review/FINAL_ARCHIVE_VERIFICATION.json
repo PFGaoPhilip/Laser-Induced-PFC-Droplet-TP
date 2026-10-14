@@ -1,0 +1,12 @@
+{
+  "schema": "stage3_archive_verification_v1",
+  "status": "PASS",
+  "archive_name": "Full_Closure_20261014_Stage3.zip",
+  "CRC": "PASS",
+  "safe_paths": "PASS",
+  "case_unique": "PASS",
+  "all_current_package_member_bytes": "PASS",
+  "manifest_sha256_checks": "PASS",
+  "archive_digest": "Final ZIP digest is recorded externally in verification/STAGE3_ARCHIVE_SHA256.txt to avoid circular embedding.",
+  "scope": "Final package integrity, not scientific certification. Rebuild output/input bindings are in RELOCATION_REBUILD.json."
+}

@@ -1,0 +1,54 @@
+% ---------------------------------------------------------------------------
+\section{Parameter and constitutive-law ledger}\label{sec:ledger}
+Status codes: \textbf{M} measured for the user's specimen; \textbf{S} sourced (published, traceable);
+\textbf{A} assumed/declared benchmark control; \textbf{U} unknown. No entry is M: no calibrated specimen
+data were supplied, and the evidence package contains none (checked: \texttt{parameters.json} lists all
+experimental inputs as \texttt{null}; the finite-PFC \texttt{PARAMETER\_AUDIT.json} contains controls only).
+\begin{center}\small
+\begin{longtable}{p{0.25\textwidth}p{0.21\textwidth}p{0.05\textwidth}p{0.36\textwidth}}
+\caption{Ledger of parameters, laws and validity domains.}\label{tab:ledger}\\
+\toprule Quantity / law & Value used & Code & Source and validity domain\\\midrule\endfirsthead
+\toprule Quantity / law & Value used & Code & Source and validity domain\\\midrule\endhead
+PFP/PFH equation of state & Helmholtz EOS & S & Gao et al.\ (2021), CoolProp 8.0.0 implementation; PFP $T\le500$\,K,
+$p\le10$\,MPa; PFH $T\le450$\,K, $p\le40$\,MPa. Metastable extrapolation to the spinodal is outside the fitted
+data (flagged).\\
+$T_{\mathrm c}$, $p_{\mathrm c}$ & PFP $\PFPTc$\,K, $\PFPpc$\,MPa; PFH $\PFHTc$\,K, $\PFHpc$\,MPa & S & EOS; PFP agrees
+with NIST $T_{\mathrm c}=421.9$\,K within 0.3\%.\\
+Liquid $c_p$ of PFP at $T_0$ & $\PFPcp$\,J/(kg\,K) & S & EOS-consistent choice; NIST interpolated 653.7 is a discrepant
+sourced datum, not a conversion error (Limits E25).\\
+PFC liquid--vapour tension & 9.5 (PFP), 12.2 (PFH)\,mN/m at 298\,K & S & Aliabouzar et al.\ (2023), Table 1;
+temperature extrapolation exponent 1.26 is \textbf{A} ($\pm20\%$ tested).\\
+Nucleation kinetics & homogeneous CNT & A & Blander \& Katz (1975) form; heterogeneous sites \textbf{U}.\\
+Water carrier & IAPWS-95; $\rho=998.2$, $c=1482$\,m/s, $\mu=1$\,mPa\,s & S & CoolProp (Wagner \& Pru\ss{} 2002).\\
+Water Tait closure & $n_{\mathrm T}=7.15$, $B_{\mathrm T}=305$\,MPa & S & Lechner et al.\ (2020), Eq.~8; weak-shock range
+($\lesssim1$\,GPa).\\
+Wall tension (cavity in water) & 72\,mN/m (gel 56\,mN/m) & A/S & water value; gel value as in Abeid et al.\ (2024),
+Table 2 (their model constant).\\
+Condensation coefficient $\alpha_{\mathrm c}$ & 0--1 (bracketed) & U & no PFC measurement found; most important
+unknown for collapse.\\
+Vapour heat-capacity ratio & PFP $\PFPgammav$, PFH $\PFHgammav$ & S & EOS ideal-gas limit at $T_0$.\\
+Vapour conductivity & 0.012\,W/(m\,K) & A & order of magnitude for heavy fluorocarbon vapour; minor effect.\\
+Dissolved air & $x_{\mathrm{air}}\le0.3$ & A & negligible effect demonstrated.\\
+Gel modulus, viscosity & $G=5$, 20\,kPa; 20\,mPa\,s & A & within the high-rate (inertial microcavitation rheometry)
+fits reported by Abeid et al.\ (2024): $G=0.6$--$23.8$\,kPa, $\mu=8.8$--$93$\,mPa\,s across gelatin, fibrin and
+polyacrylamide; not the user's gel.\\
+Gel fracture energy $G_{\mathrm c}$ & 0.1--100\,J/m$^2$ & U & to be measured.\\
+Droplet size, species & 3--12\,$\mu$m; PFP, PFH & A & benchmark; matches the published 3/6/12\,$\mu$m class
+(Abeid et al.\ 2024).\\
+Absorbed energy per droplet & full activation to $T_{\mathrm k}$ & A & the actual absorbed energy is \textbf{U};
+the 5\,nJ of the limits report is source work, not absorbed heat.\\
+Hot-state hazard interval $\tau_{\mathrm h}$ & 1\,ns--1\,ms (5\,ns default) & A & CNT observation interval;
+not a demonstrated uniform isobaric optical pulse.\\
+Stand-off $\gamma$, receiver & $1.25$--$4$, rigid plane & A & geometry of the device \textbf{U}.\\
+Sensor & none & U & area and bandwidth needed for O7.\\
+\bottomrule
+\end{longtable}
+\end{center}
+\textbf{Energy--phase--mass ledger for the benchmark (6\,$\mu$m PFP).} Absorbed heat $Q=\PFPQSix$\,nJ (to activate
+$\mF=\PFPmSix$\,ng at $T_{\mathrm k}$) $\to$ exergy $\Phi_{\mathrm a}=\PFPPhiSix$\,nJ (the remaining
+$Q-\Phi_{\mathrm a}$ is unavailable heat at the outset) $\to$ during expansion: content work $\PFPledgerW$\,nJ, of which
+$\PFPledgerpV$\,nJ displaces the ambient, $\PFPledgerSurf$\,nJ is surface energy, $\PFPledgerVisc$\,nJ viscous loss,
+$\PFPledgerRad$\,nJ acoustic radiation, while $\PFPledgerContent$\,nJ of exergy remains in the cold vapour
+$\to$ during collapse: the jet takes $\PFPenvEfmin$--$\PFPenvEfmax$\% of $\Phi_{\mathrm a}$ depending on the closure
+(Table~\ref{tab:bimpfc}). Mass: the whole PFC inventory vaporises (flash fraction $>1$) and recondenses to a degree
+set by $\alpha_{\mathrm c}$. No efficiency coefficient is assumed at any stage.

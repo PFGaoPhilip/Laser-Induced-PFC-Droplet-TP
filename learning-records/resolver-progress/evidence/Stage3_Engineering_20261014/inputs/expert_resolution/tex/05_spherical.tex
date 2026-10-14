@@ -1,0 +1,235 @@
+% ---------------------------------------------------------------------------
+\section{Reduced spherical dynamics of a fully activated PFC droplet}\label{sec:spherical}
+The ceilings of Section~\ref{sec:thermo} say how much work is available; this section computes how a
+spherical cavity actually spends it, and which unknown controls the collapse. Spherical symmetry
+cannot produce a directed jet (Section~\ref{sec:jet}); it gives the expansion, the collapse
+violence and the content pressure history that the jet calculation needs.
+
+\subsection{Step S1 --- Carrier: Keller--Miksis equation (sourced)}
+\emph{Symbols.} $R(t)$, $\dot R$, $\ddot R$ wall radius, velocity, acceleration; $\rho_{\mathrm w}$,
+$c_{\mathrm w}$, $\mu$ carrier density, sound speed and viscosity (for a gel, $\mu=\mu_{\mathrm w}+\mu_{\mathrm{gel}}$);
+$\sigma$ wall tension; $p_b$ cavity pressure; $S_{\mathrm{el}}(R)$ elastic stress integral of the gel
+($S_{\mathrm{el}}=0$ in water);
+$p_L$ carrier pressure at the wall. The liquid is weakly compressible (outgoing spherical
+waves, first order in $\dot R/c_{\mathrm w}$; Keller \& Miksis 1980). Before the two relations:
+$R,a_0$ are lengths (m), $t$ time (s), overdot time differentiation, $\rho_{\mathrm w}$ density
+(kg/m$^3$), $c_{\mathrm w}$ speed (m/s), $\mu$ viscosity (Pa\,s), $\sigma$ tension (N/m),
+$p_b,p_L,\pinf,S_{\mathrm{el}}$ pressures (Pa), and $G$ shear modulus (Pa):
+\begin{gather}
+\Bigl(1-\frac{\dot R}{c_{\mathrm w}}\Bigr)R\ddot R+\frac32\Bigl(1-\frac{\dot R}{3c_{\mathrm w}}\Bigr)\dot R^2
+=\Bigl(1+\frac{\dot R}{c_{\mathrm w}}\Bigr)\frac{p_L-\pinf}{\rho_{\mathrm w}}+\frac{R}{\rho_{\mathrm w}c_{\mathrm w}}\frac{\dd p_L}{\dd t},
+\label{eq:km}\\
+p_L=p_b-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}+S_{\mathrm{el}}(R),\qquad
+S_{\mathrm{el}}(R)=-\frac G2\Bigl[5-4\frac{a_0}{R}-\Bigl(\frac{a_0}{R}\Bigr)^4\Bigr].\label{eq:gelS}
+\end{gather}
+The gel term is the neo-Hookean stress integral (identical to Finite-PFC E08 with
+$S_{\mathrm{el}}=-p_{\mathrm{el}}$; stress-free at the initial droplet radius $a_0$). Because $\dd p_L/\dd t$ contains
+$-4\mu\ddot R/R$, that term is moved to the left. For the explicit equation, $R>0$ (m),
+$\dot R$ (m/s), $\ddot R$ (m/s$^2$), $\rho_{\mathrm w}>0$ (kg/m$^3$), $c_{\mathrm w}>0$ (m/s),
+$p_L,\pinf,p_b,S_{\mathrm{el}}$ (Pa), $\dot p_b$ (Pa/s), $\sigma$ (N/m), $\mu$ (Pa\,s), and $S'_{\mathrm{el}}(R)$
+(Pa/m) have the meanings above. The denominator is positive while $|\dot R|/c_{\mathrm w}<1$:
+\begin{equation}
+\ddot R=\frac{\bigl(1+\tfrac{\dot R}{c_{\mathrm w}}\bigr)\tfrac{p_L-\pinf}{\rho_{\mathrm w}}
+-\tfrac32\bigl(1-\tfrac{\dot R}{3c_{\mathrm w}}\bigr)\dot R^2+\tfrac{R}{\rho_{\mathrm w}c_{\mathrm w}}
+\bigl(\dot p_b+\tfrac{2\sigma\dot R}{R^2}+\tfrac{4\mu\dot R^2}{R^2}+S'_{\mathrm{el}}(R)\dot R\bigr)}
+{\bigl(1-\tfrac{\dot R}{c_{\mathrm w}}\bigr)R+\tfrac{4\mu}{\rho_{\mathrm w}c_{\mathrm w}}} .\label{eq:km_explicit}
+\end{equation}
+\emph{Check:} for $c_{\mathrm w}\to\infty$, $\mu=\sigma=G=0$, $p_b=0$, \eqref{eq:km_explicit} reduces to
+the Rayleigh equation; the implementation reproduces the Rayleigh collapse time
+$0.914681\,R_{\max}\sqrt{\rho/\Delta p}$ to $1.7\times10^{-8}$ and Limits E17 to $2\times10^{-10}$
+(Appendix~\ref{app:verif}). \emph{Validity:} first order in Mach number; runs are stopped when
+$|\dot R|=0.3\,c_{\mathrm w}$ (flag ``M''): beyond that the peak collapse pressure is not resolved
+by this model and is reported as unresolved.
+
+\paragraph{Why the ideal singular endpoint is not a maximum.}
+In the incompressible, inviscid, tension-free limit with a constant cavity pressure,
+let $\Delta p=\pinf-p_b>0$ (Pa), $\rho_{\mathrm w}>0$ (kg/m$^3$), and $\Rm>0$ (m).
+The wall starts at $R=\Rm$, $\dot R=0$ and collapses, so $\dot R\le0$; all radii are in m,
+time in s. Define $w(R)=\dot R^2$ (m$^2$/s$^2$). The Rayleigh limit of
+Eq.~\eqref{eq:km_explicit} (Brennen, Chapter 2) can be integrated without using its singular endpoint:
+\begin{align}
+R\ddot R+\tfrac32\dot R^2&=-\frac{\Delta p}{\rho_{\mathrm w}},\qquad
+\ddot R=\tfrac12\frac{\dd w}{\dd R},\notag\\
+\frac{\dd}{\dd R}(R^3w)&=-\frac{2\Delta p}{\rho_{\mathrm w}}R^2,\notag\\
+R^3w-\Rm^3(0)&=-\frac{2\Delta p}{3\rho_{\mathrm w}}(R^3-\Rm^3),\notag\\
+\dot R&=-\sqrt{\frac{2\Delta p}{3\rho_{\mathrm w}}
+\left[\left(\frac{\Rm}{R}\right)^3-1\right]}\quad(0<R\le\Rm).
+\label{eq:rayleigh_speed}
+\end{align}
+The first substitution uses $\ddot R=\dot R\,\dd\dot R/\dd R$ away from the initial turning point;
+the integrated solution extends continuously to it. Thus the ideal wall speed diverges as
+$R^{-3/2}$ when $R\to0$. This is compatible with finite energy: with the radial liquid velocity
+$u_r(r)=R^2\dot R/r^2$ (m/s), liquid radius $r\ge R$ (m), and radial kinetic energy $K_r$ (J),
+\begin{equation}
+K_r=\int_R^\infty\tfrac12\rho_{\mathrm w}u_r^2\,4\pi r^2\dd r
+=2\pi\rho_{\mathrm w}R^3\dot R^2
+=\tfrac{4\pi}{3}\Delta p(\Rm^3-R^3).
+\label{eq:rayleigh_energy}
+\end{equation}
+The increasing velocity concentrates in a shrinking region. A point speed can therefore diverge
+without violating a finite budget; a prescribed participating mass has the separate finite bound
+of Eq.~\eqref{eq:Kj}. Compressibility, vapour content, viscosity and asymmetric focusing intervene
+before $R=0$. The ideal singular endpoint is a model breakdown, not a physical laser-cavitation
+maximum or a PFC jet-speed prediction.
+
+\subsection{Step S2 --- Content during expansion: equilibrium isentrope of the real fluid}
+At the end of heating the droplet is metastable liquid at $(\Tk,\pinf)$ with specific internal energy
+$u_{\mathrm a}$ and specific volume $v_{\mathrm a}$. It first relaxes at fixed $(u_{\mathrm a},v_{\mathrm a})$ to the
+equilibrium two-phase state (pressure $p_{\mathrm{relax}}$, entropy $s_{\mathrm{relax}}$; this step is
+irreversible). It then expands along the equilibrium isentrope $s=s_{\mathrm{relax}}$.
+Here $p_b,p_{\mathrm{eq}}$ are pressures (Pa), $T_b,T_{\mathrm{eq}}$ temperatures (K),
+$s_{\mathrm{relax}}$ fixed specific entropy (J/(kg\,K)), $V$ volume (m$^3$), $\mF>0$ PFC mass
+(kg), $v_{\mathrm a}$ initial specific volume (m$^3$/kg), and $0$ the initial time:
+\begin{equation}
+p_b=p_{\mathrm{eq}}(s_{\mathrm{relax}},V/\mF),\qquad T_b=T_{\mathrm{eq}}(s_{\mathrm{relax}},V/\mF),
+\qquad V(0)=\mF v_{\mathrm a}.\label{eq:isentrope}
+\end{equation}
+For the 6\,$\mu$m benchmark $p_{\mathrm{relax}}=\PFPkmprelax$\,MPa (PFP) and $\PFHkmprelax$\,MPa (PFH).
+\emph{Justification of adiabaticity:} the thermal diffusion length in water over the expansion time
+($\approx1\,\mu$s) is $\sqrt{\alpha_{\mathrm w}t}\approx0.4\,\mu$m $\ll R$; the content is nearly uniform
+because its sound speed ($\sim$100\,m/s) exceeds the wall speed. Phase 1 ends when the PFC is
+entirely vapour (quality 1).
+
+\subsection{Step S3 --- Content after full vaporisation: vapour, heat and mass transfer}
+\emph{Symbols.} $m_{\mathrm v}$ PFC vapour mass (the condensed film has mass $\mF-m_{\mathrm v}$); $m_{\mathrm a}$
+air mass; $T_b$ uniform core temperature; $c_{v\mathrm v},c_{p\mathrm v}$ ideal-gas heat capacities of the
+vapour from the EOS ($k_{\mathrm v}=c_{p\mathrm v}/c_{v\mathrm v}$); $\mathcal R_{\mathrm v}=\mathcal R_u/M$;
+$E_b=(m_{\mathrm v}c_{v\mathrm v}+m_{\mathrm a}c_{v\mathrm a})T_b$ content internal energy (ideal-gas reference
+$u(0)=0$); $T_i$ wall temperature; $j$ net evaporative mass flux (kg\,m$^{-2}$s$^{-1}$); $q_{\mathrm g}$
+conductive heat flux from the core to the wall; $A=4\pi R^2$.
+For all three rows, $m_{\mathrm v},m_{\mathrm a},E_b$ are respectively masses (kg) and energy (J),
+$\mathcal R_{\mathrm v},\mathcal R_{\mathrm a}$ specific gas constants (J/(kg\,K)),
+$T_b,T_i>0$ temperatures (K), $V>0$ volume (m$^3$), $A$ area (m$^2$), $R$ radius (m),
+$p_b,p_{\mathrm v},\psat$ pressures (Pa), $c_{p\mathrm v}$ heat capacity (J/(kg\,K)),
+$k_{\mathrm g}$ vapour conductivity (W/(m\,K)), $q_{\mathrm g}$ flux (W/m$^2$),
+$j$ mass flux (kg/(m$^2$\,s)), and $\alpha_{\mathrm c}\in[0,1]$ dimensionless coefficient.
+Overdots are time derivatives; $\pi$ is the dimensionless circle constant:
+\begin{align}
+p_b&=\frac{(m_{\mathrm v}\mathcal R_{\mathrm v}+m_{\mathrm a}\mathcal R_{\mathrm a})T_b}{V},\qquad
+\dot m_{\mathrm v}=A\,j,\label{eq:content}\\
+\dot E_b&=-p_b\dot V+A\,j\,c_{p\mathrm v}T_i-A\,q_{\mathrm g},\qquad
+q_{\mathrm g}=k_{\mathrm g}\frac{T_b-T_i}{R/\pi},\label{eq:km_energy}\\
+j&=\frac{2\alpha_{\mathrm c}}{2-\alpha_{\mathrm c}}\frac{1}{\sqrt{2\pi\mathcal R_{\mathrm v}}}
+\Bigl[\frac{\psat(T_i)}{\sqrt{T_i}}-\frac{p_{\mathrm v}}{\sqrt{T_b}}\Bigr],\qquad p_{\mathrm v}=\frac{m_{\mathrm v}\mathcal R_{\mathrm v}T_b}{V}.\label{eq:hks}
+\end{align}
+\eqref{eq:km_energy} is the first law of the open content (Limits E29) with the vapour entering at the
+wall temperature; \eqref{eq:hks} is the Hertz--Knudsen--Schrage law. The gas-side conduction uses the
+boundary-layer length $R/\pi$ of Toegel et al.\ (2000). Evaporation is switched off smoothly when the
+condensed inventory is exhausted (finite PFC inventory, Limits E24); condensation is always allowed.
+The switch from the real EOS to the ideal vapour is pressure-continuous; the implied temperature
+changes from $\PFPkmTswitch$\,K (EOS) to $\PFPkmTswitchIdeal$\,K (ideal) for PFP, the non-ideality
+($Z\approx0.96$) of the vapour at that state. This pressure-continuous switch does not establish
+energy or entropy continuity of the two reference conventions. Subsequent runs with
+$p_b>0.3p_{\mathrm c}$ are flagged as an ideal-vapour warning: a numerical minimum can still be
+an EOS extrapolation. The flag is not a validation certificate.
+
+\subsection{Step S4 --- Wall energy balance and carrier heat diffusion}
+The carrier temperature $T(y,t)$ is written in the Lagrangian volume coordinate $y=(r^3-R^3)/3$.
+\emph{Derivation:} with $u_r$ radial carrier velocity (m/s), incompressibility gives
+$r^2u_r=R^2\dot R$, so $\dd y/\dd t=r^2u_r-R^2\dot R=0$ for a
+material point ($y$ is a material label); with $\partial_r=r^2\partial_y$ the advection--diffusion equation
+$\partial_tT+u_r\partial_rT=\alpha_{\mathrm w}r^{-2}\partial_r(r^2\partial_rT)$ becomes the next
+equation. Here $T$ is temperature (K), $t$ time (s), $y$ material volume coordinate (m$^3$),
+$r,R$ radii (m), $\alpha_{\mathrm w}>0$ thermal diffusivity (m$^2$/s), and
+$\partial_t|_y$ the derivative at fixed material label:
+\begin{equation}
+\partial_tT\big|_y=\alpha_{\mathrm w}\,\partial_y\bigl(r^4\partial_yT\bigr),\qquad r=(3y+R^3)^{1/3},\label{eq:heat}
+\end{equation}
+with $T(y\to\infty)=T_0$. At the wall, $k_{\mathrm w}$ is conductivity (W/(m\,K)),
+$R$ radius (m), $T(y,t),T_i$ temperatures (K), $y$ volume coordinate (m$^3$),
+$j$ mass flux (kg/(m$^2$\,s)), $h_{\mathrm{fg}}(T_i)$ latent heat (J/kg), and $q_{\mathrm g}$ gas-side heat flux
+(W/m$^2$). The interfacial energy balance is
+\begin{equation}
+k_{\mathrm w}\,R^2\,\partial_yT\big|_{y=0}=j\,h_{\mathrm{fg}}(T_i)-q_{\mathrm g},\label{eq:wallbalance}
+\end{equation}
+solved for $T_i$ by Newton iteration. $h_{\mathrm{fg}}(T)$ is the EOS latent heat. Equation \eqref{eq:heat} is
+discretised by finite volumes on a geometrically stretched grid (80 nodes; convergence in
+Appendix~\ref{app:verif}).
+
+\subsection{Step S5 --- Energy ledger}
+Multiplying \eqref{eq:km} (incompressible part) by $4\pi R^2\rho_{\mathrm w}\dot R$ and integrating from
+activation to the spherical maximum radius (where radial kinetic energy vanishes).
+Here $p_b,\pinf$ are pressures (Pa), $\dd V,\Delta V$ volume increments (m$^3$),
+$\sigma$ tension (N/m), $\Delta A$ area change (m$^2$), $E_{\mathrm{gel}},D_{\mathrm{visc}},
+E_{\mathrm{rad}}$ energies (J), $\mu$ viscosity (Pa\,s), $R$ radius (m), $\dot R$ wall speed (m/s),
+and $\dd t$ time increment (s); the integrations cover that expansion interval:
+\begin{equation}
+\int p_b\,\dd V=\pinf\Delta V+\sigma\Delta A+E_{\mathrm{gel}}+D_{\mathrm{visc}}+E_{\mathrm{rad}},\qquad
+D_{\mathrm{visc}}=\int16\pi\mu R\dot R^2\dd t ,\label{eq:ledger}
+\end{equation}
+where $E_{\mathrm{rad}}$ (acoustic radiation, the compressible remainder) is obtained by difference.
+For the 6\,$\mu$m PFP droplet in water (frozen closure): heat $Q=\PFPledgerQ$\,nJ; exergy
+$\Phia=\PFPledgerPhi$\,nJ; content work $\int p_b\dd V=\PFPledgerW$\,nJ, of which $\PFPledgerpV$\,nJ
+displaces the ambient (not useful), $\PFPledgerSurf$\,nJ is surface energy, $\PFPledgerVisc$\,nJ
+viscous loss, $\PFPledgerRad$\,nJ radiated. The useful work is $\PFPledgerUseful$\,nJ and the
+exergy still held by the cold vapour at $R_{\max}$ is $\PFPledgerContent$\,nJ: the expansion converts
+only about one fifth of $\Phia$ into stored liquid/surface energy, and most of the remainder stays
+in the vapour as the potential to recondense. The residual-based mechanical bookkeeping closes to
+$\PFPledgerClosure$ (relative), but this is not an independent radiation or thermochemical conservation
+test: radiation was defined by difference. The full exergy remainder is
+$\PFPledgerExergyResidual$\,nJ ($\PFPledgerExergyResidualPercent$\% of $\Phia$) for PFP and
+$\PFHledgerExergyResidual$\,nJ ($\PFHledgerExergyResidualPercent$\%) for PFH. The negative PFP
+remainder exposes a small reference/closure inconsistency across the adopted phase models; it cannot
+represent physical negative exergy destruction. Thus the rigorous availability inequality is a separate
+thermodynamic result, while this reduced ledger estimates how the budget is spent without an assumed
+efficiency. The independent incompressible frozen mechanical-identity test is listed in
+Appendix~\ref{app:verif}.
+
+\subsection{Results: condensation decides the collapse}\label{sec:km_results}
+Table~\ref{tab:km} and Fig.~\ref{fig:km} summarise 216 runs (PFP/PFH; $d_0=3,6,12\,\mu$m; water,
+5\,kPa and 20\,kPa gels; four closures; $x_{\mathrm{air}}=0,0.3$). Findings:
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Expansion is robust.} Maximum expansion wall speeds are $18$--$20$\,m/s in water for
+every size and closure (PFP 6\,$\mu$m: $\PFPkmUexp$\,m/s, $R_{\max}=\PFPkmRmax\,\mu$m against the
+rigorous $R^*=\PFPRboundSix\,\mu$m); the far-field expansion pressure at 50\,$\mu$m is
+$\PFPkmpexpFifty$\,MPa. The equilibrium expansion is consistent with the H5-conditioned source
+ceiling (Proposition~\ref{prop:psrc}); this does not prove its non-equilibrium extension.
+\item \textbf{Collapse is controlled by one unmeasured number, $\alpha_{\mathrm c}$.} For
+$\alpha_{\mathrm c}\le0.1$ the vapour cannot condense fast enough and cushions the collapse
+(PFP 6\,$\mu$m: $R_{\min}=\PFPkmRminAlphaTenth\,\mu$m, $U_{\mathrm c}=\PFPkmUcolAlphaTenth$\,m/s);
+at $\alpha_{\mathrm c}=0.3$, the original 80-node PFP sample gives
+$U_{\mathrm c}=\PFPkmUcolAlphaThird$\,m/s (thermal refinement below); the 6\,$\mu$m water cases reach
+the Keller--Miksis screen (444.6\,m/s) at $\alpha_{\mathrm c}=0.5$ for PFP and already at
+$\alpha_{\mathrm c}=0.3$ for PFH. Their collapse peaks are unresolved. These are sampled,
+species-dependent transitions, not exact universal thresholds. The
+frozen limit gives $U_{\mathrm c}=\PFPkmUcolFrozen$\,m/s. No measurement of $\alpha_{\mathrm c}$ for PFC
+vapour on water was found; it is the single most important missing datum for collapse pressures.
+\item \textbf{PFH collapses more violently than PFP at equal $\alpha_{\mathrm c}$,} because its vapour
+is more subcooled at $T_0$ ($\psat=\PFHpsatZero$ versus $\PFPpsatZero$\,kPa): condensation
+is thermodynamically favoured and the cushion pressure is lower.
+\item \textbf{Dissolved air at $x_{\mathrm{air}}\le0.3$ is negligible} (change of $R_{\min}$ $\le\airEffectRmin$\%)
+because the air mass is tiny compared with the PFC vapour mass.
+\item \textbf{Gel stiffness suppresses or eliminates the collapse.} The expansion of small PFP droplets
+arrests while still two-phase (flag ``A''): 3 and 6\,$\mu$m at 20\,kPa (6\,$\mu$m: $R=\gelArrestR\,\mu$m, quality
+$\gelArrestQ$) and 3\,$\mu$m at 5\,kPa; the content then follows the reversible equilibrium isentrope and no violent
+collapse occurs in this model. PFH droplets, which carry more exergy per mass, still vaporise fully in both gels.
+For the 6\,$\mu$m PFP droplet in a 5\,kPa gel the collapse speed stays below 15\,m/s for $\alpha_{\mathrm c}\le1$;
+12\,$\mu$m droplets collapse violently for $\alpha_{\mathrm c}\gtrsim0.5$ even in gel.
+\end{enumerate}
+\begin{figure}[ht]\centering
+\includegraphics[width=0.95\textwidth]{figures/km_alpha.pdf}
+\caption{Spherical collapse of the fully activated PFC cavity in water versus the condensation
+coefficient. Above $\alpha_{\mathrm c}\approx0.3$--$0.5$ the collapse runs into the compressible regime
+(dash-dot line); below $\approx0.1$ the vapour cushions it.}\label{fig:km}
+\end{figure}
+\input{generated/table_km.tex}
+
+\subsection{Thermal-grid refinement and vapour-model warning}\label{sec:km_refine}
+The selected 6\,$\mu$m air-free water cases at $\alpha_{\mathrm c}=0.2,0.3,0.5$ were rerun with
+$N_{\mathrm{th}}=160,320$ thermal nodes, changing no other parameter from the 80-node records.
+Table~\ref{tab:kmrefine} separates uncensored reduced-model peaks from Mach-event values.
+For PFP at $\alpha_{\mathrm c}=0.3$, the reported wall speed rises from
+$\PFPkmRefineThirdUBase$ to $\PFPkmRefineThirdUMid$ to $\PFPkmRefineThirdUFine$\,m/s:
+$\PFPkmRefineThirdDeltaU$\% from 160 to 320 nodes and $\PFPkmRefineThirdDeltaUFull$\% from 80 to 320.
+This transitional case does not meet a 2\% speed-change criterion at the finest pair.
+The uncensored $\alpha_{\mathrm c}=0.2$ speeds are more stable, but all six refined cases still
+trigger the ideal-vapour warning; numerical convergence does not cure that physical closure limit.
+
+For the censored PFP $\alpha_{\mathrm c}=0.5$ run, the reported pre-stop radius, vapour mass,
+content pressure and stopping time change by $\PFPkmRefineHalfDeltaR$\%,
+$\PFPkmRefineHalfDeltaMass$\%, $\PFPkmRefineHalfDeltaPb$\% and
+$\PFPkmRefineHalfDeltaTime$\%, respectively, from 160 to 320 nodes. Equal speeds of 444.6\,m/s
+at the screen are imposed by the stopping rule and do not demonstrate peak convergence.
+The cushioning/violent-collapse classification is unchanged by this refinement, while the
+physical peak pressure and fast-collapse endpoint remain unresolved.
+\input{generated/table_km_refine.tex}

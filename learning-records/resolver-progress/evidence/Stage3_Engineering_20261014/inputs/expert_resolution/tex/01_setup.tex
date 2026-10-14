@@ -1,0 +1,152 @@
+% ---------------------------------------------------------------------------
+\section{Problem, system, conventions and observables}\label{sec:setup}
+
+\subsection{Question and objective}
+The user asked (verbatim, translated where Chinese): \emph{``Theoretically, what is the highest
+pressure or jetting velocity one could achieve from laser-induced cavitation? Please resolve this
+completely.''} The handoff (\texttt{EXPERT\_HANDOFF.md}) further requires: (i) an independent audit of the
+existing conditional bounds; (ii) reconciliation of the finite real-fluid PFC study; (iii) resolution of
+activation, compressible/directional focusing, gel rupture and target impact; (iv) a defensible
+\emph{conditional} maximum with validity, uncertainty and attainability; and (v) an experimental program
+for whatever cannot be closed without data. The objective of this report is therefore not a single
+number, but a hierarchy: rigorous ceilings that no process satisfying the stated hypotheses can
+exceed, reduced-model predictions with verified and benchmarked components, and an explicit gap between them.
+
+\subsection{Physical system}
+One single-pulse event in which a nanosecond laser pulse is absorbed in or at a liquid
+perfluorocarbon (PFC) droplet (perfluoro-\emph{n}-pentane, PFP, or perfluoro-\emph{n}-hexane, PFH)
+embedded in an aqueous carrier (water, or a hydrogel), at ambient absolute pressure $\pinf$ and
+temperature $T_0$. The PFC is superheated, nucleates, vaporises and expands as a cavity; the cavity
+reaches a maximum volume and collapses. Near a boundary the collapse is asymmetric and can form a
+liquid microjet. A receiver (target) surface may be loaded by the expansion, by the collapse pressure
+wave, or by the jet. Laser-induced \emph{optical breakdown} (plasma formation) of the carrier is a
+different activation route; it is discussed only to bound the general question (Section~\ref{sec:envelope})
+and is excluded from the PFC benchmark by definition (hypothesis H0 below).
+
+\paragraph{Coordinates and signs.} Spherical radius $r$ (outward positive) for spherical models;
+for directed jets an axisymmetric cylinder system $(r,z)$ with the rigid receiver plane at $z=0$ and the
+bubble centre initially at $z=h>0$. Wall (radial) velocity $\dot R>0$ means expansion; the jet speed
+$U_{\mathrm j}$ is counted positive \emph{toward} the receiver ($-z$ direction). Pressures are
+absolute unless called \emph{gauge} (relative to $\pinf$) or \emph{driving} (a stated difference). Time
+$t=0$ at the end of the deposition stage unless stated.
+
+\paragraph{Initial and boundary conditions (benchmark).} Liquid PFC at rest, stress-free relative to
+$\pinf$ apart from Laplace pressure, temperature $T_0$; carrier at rest at $T_0$, $\pinf$; far-field
+carrier quiescent at $\pinf$, $T_0$; rigid receiver with zero normal velocity (image condition);
+free-field when no receiver is declared. The uniform, approximately isobaric activated state is an
+adopted preparation (H1--H2), not a resolved optical deposition trajectory. The quantity
+$\tau_{\mathrm h}$ used in CNT is the interval assigned to the hot-state nucleation hazard.
+Its default 5\,ns is comparable to the 6\,ns acoustic transit time of a 6\,$\mu$m PFP droplet;
+therefore it cannot by itself establish H2. A real short pulse may be stress confined
+(Section~\ref{sec:isochoric}).
+
+\subsection{Hypotheses used by the rigorous results}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[H0] Thermal activation: the absorbed optical energy appears as heat in the absorber/PFC; no
+optical breakdown or plasma in the carrier.
+\item[H1] Full activation: the absorbed heat raises the whole PFC droplet uniformly to the activation
+state before significant motion (non-uniform, absorber-localised heating is discussed in Section~\ref{sec:validity}).
+\item[H2] No stress confinement: during heating the liquid pressure stays near $\pinf$ plus Laplace
+pressure (heating time long compared with the acoustic transit time of the droplet), unless the
+isochoric route is explicitly invoked (Section~\ref{sec:isochoric}).
+The reported activation EOS adopts the isobar $p_\ell=\pinf$, neglecting the finite-droplet
+Laplace correction at preparation; retaining that correction would require recalculating the
+spinodal, CNT and activated budget at the actual liquid pressure.
+\item[H3] After deposition, the environment is a reservoir at $(T_0,\pinf)$; the system exchanges
+heat only with it and receives no external useful work. Absorber/carrier/gel prestress and additional
+heat sources are absent from the benchmark or must be included in its total activated exergy.
+\item[H4] Continuum thermodynamics with the declared equations of state inside their validity
+domains (Table~\ref{tab:ledger}).
+\end{description}
+
+\subsection{What is maximised: observable definitions (handoff priority 1)}\label{sec:observables}
+The word ``maximum'' is meaningless until the observable is fixed. The following are distinct and
+are never interchanged in this report.
+\begin{description}[leftmargin=0.6cm]
+\item[O1 Internal microjet speed $U_{\mathrm j}$.] Maximum speed of the liquid at the far pole of the
+bubble, toward the receiver, before it touches the opposite bubble wall (definition of Supponen et
+al.\ 2016, \S5.3, verified). Unit m/s.
+\item[O2 Mass-resolved jet speed $U_{\mathrm j}(m_*)$.] The largest speed $U$ such that the jet mass
+moving at least as fast as $U$ is at least $m_*$. Here $m_*>0$ is a specified participating
+mass (kg); $u_{\mathrm{jet}}$ is the local speed toward the receiver (m/s), $\dd m$ a jet mass element (kg),
+$m_{\mathrm j}(\ge U)$ the mass faster than $U$ (kg), and $\sup$ the least upper bound over nonnegative speeds:
+\begin{equation}
+U_{\mathrm j}(m_*) \coloneqq \sup\{\,U\ge 0:\ m_{\mathrm j}(\ge U)\ge m_*\,\},\qquad
+m_{\mathrm j}(\ge U)=\int_{u_{\mathrm{jet}}\ge U}\dd m .\label{eq:Um}
+\end{equation}
+The application chooses $m_*$, e.g.\ the mass needed to load an ink or register in a sensor.
+This gives a mass-qualified observable instead of an unconstrained point-tip maximum.
+\item[O3 Arrival speed $U_{\mathrm{arr}}$.] Normal speed of liquid reaching the receiver plane.
+\item[O4 Source pressure $p_b$.] Absolute pressure inside the cavity during expansion.
+\item[O5 Collapse-wave pressure $p_{\mathrm{ff}}(d)$.] Peak pressure increment of the outgoing wave
+at distance $d$ from the cavity centre, in the far field of the spherical model.
+\item[O6 First-contact receiver pressure $p_{\mathrm c}$.] Pressure increment at the receiver at the
+instant of normal liquid contact (shock/Hugoniot matching), lasting until lateral release.
+\item[O7 Averaged receiver pressure $\bar p(A_{\mathrm o},\tau_{\mathrm o})$.] Area/time average over a
+declared observer area $A_{\mathrm o}$ and duration $\tau_{\mathrm o}$ (Eq.~E32 of the limits report).
+\end{description}
+Initial optical-breakdown shocks (route excluded by H0) are not part of O4--O7 for the PFC benchmark.
+
+\subsection{Benchmark architectures and admissible design set}\label{sec:benchmark}
+No calibrated specimen was supplied (Section~\ref{sec:ledger}). Following the handoff
+(``choose and clearly label a defensible benchmark''), two benchmarks are declared.
+\begin{description}[leftmargin=0.6cm]
+\item[B1 (liquid carrier, rigid receiver).] One PFC droplet in water at stand-off $h$ from a flat rigid
+receiver; observables O1--O6.
+\item[B2 (gel-embedded).] The same droplet in a neo-Hookean/Kelvin--Voigt hydrogel; observables O4--O5
+and the rupture gate (Section~\ref{sec:gel}); directed jets in gel are not solved.
+\end{description}
+For the design set, $d_0=2a_0$ is initial diameter (m); $\tau_{\mathrm h}$ the hot-state hazard
+interval (s); $\gamma=h/\Rm$ the dimensionless stand-off with initial centre height $h$ and
+maximum free-field cavity radius $\Rm$ (m); $\alpha_{\mathrm c}\in[0,1]$ the dimensionless
+phase-transfer coefficient; $x_{\mathrm{air}}$ the ambient gas volume per PFC liquid volume
+(dimensionless); and $G$ the gel shear modulus (Pa). The broad admissible control set is
+\begin{equation}
+\begin{aligned}
+\mathcal D=\Bigl\{&\text{species}\in\{\mathrm{PFP},\mathrm{PFH}\},\ d_0\in[3,12]\,\mu\mathrm m,\
+\tau_{\mathrm h}\in[1\,\mathrm{ns},1\,\mu\mathrm s],\\
+&\gamma=h/\Rm\in[1.25,4],\ \alpha_{\mathrm c}\in[0,1],\ x_{\mathrm{air}}\in[0,0.3],\ G\in[0,20]\,\mathrm{kPa}\Bigr\},
+\end{aligned}\label{eq:design}
+\end{equation}
+Fixed: $T_0=293.15$\,K,
+$\pinf=101.325$\,kPa, water carrier properties at $T_0$, full activation of the droplet (uniform
+heating to its kinetic superheat limit). The lower end $\gamma\ge1.25$ excludes wall contact during
+growth, where the potential-flow method used here is not valid (Section~\ref{sec:jet}).
+The jet runs sample the 6\,$\mu$m, 5\,ns, water, air-free B1 slice at five stand-offs
+and four content closures; they do not optimize every continuous coordinate of $\mathcal D$.
+
+\subsection{Notation}
+Symbols are defined where first used; the recurring ones are collected here (units SI).
+\begin{center}\small
+\begin{longtable}{>{\raggedright}p{0.17\textwidth}p{0.62\textwidth}p{0.13\textwidth}}
+\toprule Symbol & Meaning & Unit\\ \midrule\endhead
+$T_0,\ \pinf$ & environment (dead-state) temperature and absolute pressure & K, Pa\\
+$\Eabs$ & optical energy absorbed in the system during the pulse & J\\
+$\mathcal U,\mathcal S,V$ & internal energy, entropy, volume of the system & J, J/K, m$^3$\\
+$u,s,v,h_{\mathrm F}$ & specific internal energy, entropy, volume, PFC enthalpy & J/kg, J/(kg\,K), m$^3$/kg, J/kg\\
+$\Phi,\ \psi$ & exergy (availability) of the system relative to $(T_0,\pinf)$; specific exergy & J, J/kg\\
+$W_{\mathrm u}$ & useful work: total work minus work against $\pinf$ & J\\
+$\mF,\ a_0,\ d_0$ & PFC mass, initial droplet radius, diameter & kg, m, m\\
+$\rho_{\mathrm F},\ \rho_{\mathrm w},\ c_{\mathrm w}$ & PFC liquid density; carrier density and sound speed & kg/m$^3$, kg/m$^3$, m/s\\
+$\psat(T)$ & saturation pressure from the reference EOS & Pa\\
+$\Tsp(p)$ & liquid-spinodal temperature at liquid pressure $p$ & K\\
+$\Tk$ & kinetic (CNT) superheat limit & K\\
+$\sigma_{\mathrm F},\ \sigma$ & PFC liquid/vapour tension; cavity-wall tension in the carrier & N/m\\
+$R,\ \dot R,\ \Rm$ & cavity radius, wall velocity, maximum radius & m, m/s, m\\
+$p_b,\ p_L$ & cavity pressure; carrier pressure at the wall & Pa\\
+$\alpha_{\mathrm c}$ & condensation/evaporation coefficient (Hertz--Knudsen--Schrage) & --\\
+$h,\ \gamma,\ \zeta$ & stand-off, $\gamma=h/\Rm$, anisotropy parameter & m, --, --\\
+$\Delta p_{\mathrm d}$ & collapse driving pressure used for scaling & Pa\\
+$U_{\mathrm j},\ U^*_{\mathrm j}$ & microjet speed; $U^*_{\mathrm j}=U_{\mathrm j}/\sqrt{\Delta p_{\mathrm d}/\rho_{\mathrm w}}$ & m/s, --\\
+$\phi,\ q$ & velocity potential; its normal derivative (scaled in Section 6) & m$^2$/s, m/s\\
+$\Gf,\ \Hf$ & Green's function with wall image and its normal-derivative kernel & 1/m, 1/m$^2$\\
+$\KE(m),\ \EE(m)$ & complete elliptic integrals of the first/second kind, parameter $m$ & --\\
+$\mathrm{We}$ & Weber number $\Delta p_{\mathrm d}\Rm/\sigma$ & --\\
+$n_{\mathrm T},\ B_{\mathrm T}$ & Tait exponent and pressure for water & --, Pa\\
+$G,\ G_{\mathrm c}$ & gel shear modulus; fracture energy & Pa, J/m$^2$\\
+\bottomrule
+\end{longtable}
+\end{center}
+Equation numbers carry the prefix X to avoid confusion with the E01--E32 numbering of the limits
+report and of the finite-PFC study; those are always cited with their document
+(``Limits E19'', ``Finite-PFC E27'').

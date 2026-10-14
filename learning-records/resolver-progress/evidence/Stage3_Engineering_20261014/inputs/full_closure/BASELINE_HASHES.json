@@ -1,0 +1,57 @@
+{
+  "schema": "full_closure_baseline_hashes_v1",
+  "recorded_at": "2026-10-12T00:26:29+08:00",
+  "recorded_by": "acceptance reviewer, before the full-closure work began",
+  "root_R": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\reports\\Cavitation_Limits_20261011",
+  "git": {
+    "repository": "C:\\L. Jay Guo",
+    "head": "04112243d9ed9e2eee693a592a1f7ba09ecc5851",
+    "head_subject": "Fix screenshot-reported language mixing and repeated TOC translations",
+    "note": "HEAD must be unchanged at handback. The working tree already holds many unrelated modifications from other work; they are not part of this baseline."
+  },
+  "method": {
+    "tool": "full_closure/tools/tree_hash.py",
+    "definition": "For every file under the root: [relative POSIX path, SHA-256 of bytes]. Sort by path string (Python code-point order), serialise as compact JSON (separators ',' ':', ensure_ascii=False, UTF-8), tree hash = SHA-256 of that blob. Exclusions are fnmatch.fnmatchcase patterns matched against the whole relative POSIX path.",
+    "run_with": "python -B full_closure\\tools\\tree_hash.py <root> [--exclude PATTERN ...] [--list]"
+  },
+  "trees": {
+    "E": {
+      "path": "expert_resolution",
+      "excludes": [],
+      "files": 233,
+      "tree_sha256": "fdf43940e66fd1523cd4a41f1daecf81004e5b3d2fa9e4983ff6b99475409179"
+    },
+    "T": {
+      "path": "conditional_termtex",
+      "excludes": [],
+      "files": 23,
+      "tree_sha256": "ae4ce8389d78e4bbe5012853c18cdbd36b72359bf28d8fc0913107133112979c"
+    },
+    "A": {
+      "path": "expert_acceptance",
+      "excludes": [],
+      "files": 15,
+      "tree_sha256": "2386614dbdca6d622fcb7fd6ae352d952eee4aa1c948ca09492aff90ac09ca38"
+    },
+    "R_rest": {
+      "path": ".",
+      "excludes": ["WORK_LOG.md", "full_closure/*", "Full_Closure_*.zip"],
+      "files": 507,
+      "tree_sha256": "89c5db2d73e5b09086845d37ba061750fe6a1fcffc9b2379d770efabd409aba0",
+      "note": "Covers everything in R except the appended top-level log, the full_closure work folder and the final delivery ZIP R\\Full_Closure_<YYYYMMDD>.zip. No file matched the ZIP pattern when this was recorded."
+    }
+  },
+  "commands": [
+    "python -B full_closure\\tools\\tree_hash.py expert_resolution",
+    "python -B full_closure\\tools\\tree_hash.py conditional_termtex",
+    "python -B full_closure\\tools\\tree_hash.py expert_acceptance",
+    "python -B full_closure\\tools\\tree_hash.py . --exclude WORK_LOG.md --exclude \"full_closure/*\" --exclude \"Full_Closure_*.zip\""
+  ],
+  "commands_cwd": "root_R",
+  "reviewer_reference_values": {
+    "source": "expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md",
+    "E_tree_sha256_prefix": "daf607",
+    "T_tree_sha256_prefix": "c9e727",
+    "note": "Those values used a different, Windows-path ordering, so they differ from the values above even though the file counts agree (233 and 23) and no file changed. Compare only against the values above, recomputed with the tool."
+  }
+}

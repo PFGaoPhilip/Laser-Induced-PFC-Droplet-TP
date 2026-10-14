@@ -1,0 +1,116 @@
+% ---------------------------------------------------------------------------
+\section{Axisymmetric kernels (derivation)}\label{app:kernels}
+\emph{Symbols.} Field point $\mathbf x=(r,0,z)$ and source ring point
+$\mathbf y=(r'\cos\theta,r'\sin\theta,z')$ have length coordinates (m); primes label the source,
+not derivatives. The unit normal $\mathbf n=(n_r\cos\theta,n_r\sin\theta,n_z)$ and azimuth
+$\theta$ (radians) are dimensionless.
+Define $A_{\mathrm K}=r^2+r'^2+(z-z')^2$, $B_{\mathrm K}=2rr'$ (m$^2$),
+$m=2B_{\mathrm K}/(A_{\mathrm K}+B_{\mathrm K})\in[0,1)$ (dimensionless);
+$\KE(m),\EE(m)$ are the dimensionless complete elliptic integrals of the first and second kind.
+Their definitions are the integrals of $(1-m\sin^2\varphi)^{-1/2}$ and
+$(1-m\sin^2\varphi)^{1/2}$ over $\varphi\in[0,\pi/2]$.
+The formulas below also hold in the rescaled coordinates of the BIM. Distinct noncoincident
+points require $A_{\mathrm K}>B_{\mathrm K}\ge0$.
+
+\textbf{Step K1.} $|\mathbf x-\mathbf y|^2=A_{\mathrm K}-B_{\mathrm K}\cos\theta$.
+Substituting $\theta=\pi-2\varphi$ gives $\cos\theta=2\sin^2\varphi-1$, so the denominator becomes
+$(A_{\mathrm K}+B_{\mathrm K})(1-m\sin^2\varphi)$ and $\dd\theta=-2\dd\varphi$.
+The transformed limits are $\varphi=\pi/2,-\pi/2$; reversing them removes the minus sign and
+evenness doubles the half-interval integral. Immediately below, $A_{\mathrm K},B_{\mathrm K}$
+are squared lengths, $\theta$ is the dummy angle, and $m,\KE$ the dimensionless parameter/function above:
+\begin{equation}
+\int_0^{2\pi}\frac{\dd\theta}{(A_{\mathrm K}-B_{\mathrm K}\cos\theta)^{1/2}}
+=\frac{4\KE(m)}{\sqrt{A_{\mathrm K}+B_{\mathrm K}}} .\label{eq:K1}
+\end{equation}
+\textbf{Step K2.} The auxiliary identity follows by differentiating
+$F(\varphi)=\sin\varphi\cos\varphi/(1-m\sin^2\varphi)^{1/2}$:
+$F'=(1-2\sin^2\varphi+m\sin^4\varphi)/(1-m\sin^2\varphi)^{3/2}$.
+Subtracting the elliptic-$E$ integrand from $(1-m)(1-m\sin^2\varphi)^{-3/2}$ gives $-mF'$;
+its integral is zero because $F(0)=F(\pi/2)=0$. Thus
+$\int_0^{\pi/2}(1-m\sin^2\varphi)^{-3/2}\dd\varphi=\EE(m)/(1-m)$.
+Substitute this identity
+and $1-m=(A_{\mathrm K}-B_{\mathrm K})/(A_{\mathrm K}+B_{\mathrm K})$, define
+$I_0$ as the inverse-cube angular integral (m$^{-3}$). Here $\theta$ and $m,\EE$ are
+dimensionless; $A_{\mathrm K}>B_{\mathrm K}\ge0$ are squared lengths:
+\begin{equation}
+I_0\coloneqq\int_0^{2\pi}\frac{\dd\theta}{(A_{\mathrm K}-B_{\mathrm K}\cos\theta)^{3/2}}
+=\frac{4\EE(m)}{(A_{\mathrm K}-B_{\mathrm K})\sqrt{A_{\mathrm K}+B_{\mathrm K}}} .\label{eq:K2}
+\end{equation}
+\textbf{Step K3.} For $B_{\mathrm K}>0$, write
+$\cos\theta=[A_{\mathrm K}-(A_{\mathrm K}-B_{\mathrm K}\cos\theta)]/B_{\mathrm K}$ and use
+Eq.~\eqref{eq:K1} and Eq.~\eqref{eq:K2}. Before the next identity,
+$I_0,I_1$ have unit m$^{-3}$, $A_{\mathrm K},B_{\mathrm K}$ m$^2$, $\theta$ is the dummy angle,
+and $\KE=\KE(m),\EE=\EE(m)$ are dimensionless. The $B_{\mathrm K}=0$ axis limit is handled separately:
+\begin{align}
+I_1\coloneqq\int_0^{2\pi}\frac{\cos\theta\,\dd\theta}
+{(A_{\mathrm K}-B_{\mathrm K}\cos\theta)^{3/2}}
+&=\frac{A_{\mathrm K}I_0}{B_{\mathrm K}}-\frac{4\KE}{B_{\mathrm K}\sqrt{A_{\mathrm K}+B_{\mathrm K}}}\notag\\
+&=\frac{4}{B_{\mathrm K}\sqrt{A_{\mathrm K}+B_{\mathrm K}}}
+\Bigl[\frac{A_{\mathrm K}\EE}{A_{\mathrm K}-B_{\mathrm K}}-\KE\Bigr].\label{eq:K3}
+\end{align}
+For $B_{\mathrm K}=0$, the integral of $\cos\theta$ vanishes, so $I_1=0$ directly.
+For $m<10^{-5}$ the binomial series avoids cancellation:
+$I_1=\tfrac{3\pi}{2}B_{\mathrm K}A_{\mathrm K}^{-5/2}
+[1+\tfrac{35}{32}(B_{\mathrm K}/A_{\mathrm K})^2+O(B_{\mathrm K}^4/A_{\mathrm K}^4)]$ (from
+$(1-\epsilon\cos\theta)^{-3/2}=1+\tfrac32\epsilon\cos\theta+\tfrac{15}{8}\epsilon^2\cos^2\theta+\tfrac{35}{16}\epsilon^3\cos^3\theta+\dots$,
+and $\int_0^{2\pi}\cos^2\theta\,\dd\theta=\pi$,
+$\int_0^{2\pi}\cos^4\theta\,\dd\theta=3\pi/4$, with
+$\epsilon=B_{\mathrm K}/A_{\mathrm K}$ dimensionless).
+\textbf{Step K4.} Before the single/double layer kernels, $g_{\mathrm K}$ is dimensionless,
+$h_{\mathrm K}$ has unit m$^{-1}$; $r,r',z,z',\mathbf x,\mathbf y$ are lengths,
+$A_{\mathrm K},B_{\mathrm K}$ squared lengths, $I_0,I_1$ inverse-cube lengths,
+$n_r,n_z$ dimensionless normal components, $\KE$ the elliptic function, and $\theta$ the dummy angle:
+\begin{align}
+g_{\mathrm K}=r'\!\int_0^{2\pi}\!\frac{\dd\theta}{|\mathbf x-\mathbf y|}
+&=\frac{4r'\KE}{\sqrt{A_{\mathrm K}+B_{\mathrm K}}},\notag\\
+h_{\mathrm K}=r'\!\int_0^{2\pi}\!\frac{(\mathbf x-\mathbf y)\cdot\mathbf n}{|\mathbf x-\mathbf y|^3}\dd\theta
+&=r'\bigl[n_r(rI_1-r'I_0)+n_z(z-z')I_0\bigr],\label{eq:K4}
+\end{align}
+since $(\mathbf x-\mathbf y)\cdot\mathbf n=n_r(r\cos\theta-r')+n_z(z-z')$. The image terms use $z'\to-z'$, $n_z\to-n_z$.
+\textbf{Step K5 (singularity).} As $\mathbf y\to\mathbf x$ on the surface,
+$\epsilon_m\coloneqq1-m=[(r-r')^2+(z-z')^2]/(A_{\mathrm K}+B_{\mathrm K})\to0$ and
+$\KE=P(\epsilon_m)-Q(\epsilon_m)\ln\epsilon_m$ (Abramowitz \& Stegun 17.3.34,
+dimensionless polynomials $P,Q$, error $\le2\times10^{-8}$). On an element
+adjacent to the collocation node, with $\xi$ the dimensionless parametric distance from the node,
+$-Q\ln\epsilon_m=-Q\ln(\epsilon_m/\xi^2)+2Q\ln(1/\xi)$; the first part is smooth (Gauss) and the second is integrated with the
+8-point Gauss rule for weight $\ln(1/\xi)$. All kernels were checked against direct $10^5$-point azimuthal quadrature
+(maximum relative error $1.2\times10^{-14}$).
+
+% ---------------------------------------------------------------------------
+\section{Verification record}\label{app:verif}
+\begin{center}\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.40\textwidth}>{\raggedright\arraybackslash}p{0.52\textwidth}}
+\toprule Test & Result (file)\\\midrule\endhead
+BIM kernels vs direct quadrature & max relative error $1.2\times10^{-14}$ (\texttt{verification/bim\_unit\_tests.json})\\
+BIM sphere, exact $q=1$ & error $2.7\times10^{-7}$, $1.4\times10^{-8}$, $2.3\times10^{-9}$ for $N=32,64,128$\\
+BIM free Rayleigh collapse to $R=0.17$ & time error $3.6\times10^{-5}$ ($N=40$), $2.8\times10^{-6}$ ($N=80$);
+energy error $9\times10^{-4}$, $2\times10^{-4}$\\
+BIM vs Supponen et al.\ (2016) Table~1 & $\bimDevMin$ to $\bimDevMax$\%; $N$ 64$\to$96 $\le\bimConvMax$\%; potential cap/2
+$\le\bimSensDt$\%; growth seed $\le\bimSensRinit$\% (\texttt{data/bim\_validate.json})\\
+BIM PFC exact-content refinements & nine requested spatial/time-control pairs;
+$\bimPFCAbortedSpatialCount$ spatial attempts abort; valid spatial speed change up to
+$\bimPFCSpatialMaxDeltaU$\%, time-cap change $\le\bimPFCTemporalMaxDeltaU$\%.
+Original failures retained; targeted cap-0.01 comparisons remain distinct
+(\texttt{verification/pfc\_bim\_convergence.json}, Section~\ref{sec:bim_refine}).\\
+KM vs Rayleigh collapse time / Limits E17 & $1.7\times10^{-8}$ / $2.1\times10^{-10}$ (\texttt{verification/km\_convergence.json})\\
+KM mechanical energy identity (frozen, $c\to\infty$, $\mu=\sigma=0$) & max drift $\PFPEnergyDrift$ (PFP),
+$\PFHEnergyDrift$ (PFH) of $\pinf V_{\max}$ (\texttt{verification/km\_energy\_conservation.json})\\
+KM thermal grid 80/160/320 nodes (6\,$\mu$m water) & exact-input check passes; uncensored PFP
+$\alpha_{\mathrm c}=0.3$: $\PFPkmRefineThirdDeltaU$\% speed change 160$\to$320,
+$\PFPkmRefineThirdDeltaUFull$\% 80$\to$320. Mach flags unchanged; event speed does not establish peak convergence
+(\texttt{verification/km\_refine\_summary.json}, Table~\ref{tab:kmrefine}).\\
+KM ideal-vapour and energy-reference limits & all six refined cases warn at $p_b>0.3p_{\mathrm c}$;
+frozen PFP exergy remainder $\PFPledgerExergyResidualPercent$\% cannot be physical negative destruction.
+The residual-based expansion bookkeeping is not independent thermochemical verification (Section~\ref{sec:spherical}).\\
+KM solver tolerance $10^{-6}$/$10^{-8}$ & $<0.01$\%\\
+Dynamic vs quasi-static over-expansion & $R_{\max}=\PFPRdynFree\,\mu$m (dynamic) vs $\PFPRoverSix\,\mu$m (isentrope integral):
+$\PFPRdynVsIsen$\% (PFP)\\
+Source-pressure sign conditions & $(\partial p/\partial u)_v>0$, $(\partial p/\partial v)_s<0$ at 200 states; $p_{\mathrm{eq}}$ monotonic
+on the isobar (\texttt{verification/psrc\_checks.json})\\
+Tait Hugoniot weak limit & $D\to c_{\mathrm T}=\cTait$\,m/s; slope $\dd D/\dd u_p\approx(n_{\mathrm T}+1)/4$\\
+\bottomrule
+\end{longtable}
+\end{center}
+Scope: these checks verify the implementation of the stated equations against exact or independently
+published solutions. They are not experimental validation of the PFC device.
+\input{generated/table_bim_pfc_profiles.tex}

@@ -1,11 +1,5 @@
-/* Whole-page editions and the reference site's fixed lower-right controls. */
+/* Functional reader rules. Typography and layout come from course.css. */
 [hidden]{display:none!important}
-.reader-controls{position:fixed;right:1.2rem;bottom:1.2rem;z-index:50;display:flex;flex-direction:column;align-items:stretch;gap:8px}
-.reader-controls button{position:static!important;margin:0!important;min-width:104px;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);box-shadow:0 3px 14px #0003;padding:9px 16px;font:600 14px/1.4 system-ui,"Microsoft YaHei",sans-serif}
-.reader-controls button:hover{border-color:var(--link)}
-.reader-controls button:focus-visible{outline:3px solid var(--link);outline-offset:3px}
-html[lang="zh-CN"] body{font-family:system-ui,"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif}
-.guide-section-nav{font-size:12px;gap:10px}.guide-section-nav a{max-width:100%}
-.locale-pane footer{padding-bottom:140px}
-@media(max-width:680px){.reader-controls{right:12px;bottom:12px;gap:7px}.reader-controls button{min-width:98px;font-size:13px;padding:8px 12px}.locale-pane footer{padding-bottom:130px}.guide-section-nav{font-size:11px}}
-@media print{.reader-controls{display:none}.locale-pane footer{padding-bottom:20px}}
+.chapter-body img{display:block;width:100%;height:auto;margin:1rem 0}
+.chapter-body a{overflow-wrap:anywhere}
+.chapter-body .math-display{max-width:100%}

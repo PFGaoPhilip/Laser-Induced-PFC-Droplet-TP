@@ -1,0 +1,5 @@
+html[data-language="en"] body [lang="zh-CN"],
+html[data-language="zh"] body [lang="en"] { display: none !important; }
+.lang-pair > p, .heading-pair > h1, .heading-pair > h2 { margin-top: 0; }
+.modeling-link { margin-block: 2rem; }
+#language-toggle { margin-left: .5rem; }

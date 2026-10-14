@@ -1,0 +1,159 @@
+{
+  "schema": "stage1_candidate028_loosened_acceptance_verify_v1",
+  "verified_utc": "2026-10-13T17:49:29.048573+00:00",
+  "owner_instruction": "The loosening is acceptable. Close Stage1 and write a handoff for Stage2; do not start Stage2.",
+  "verification_outcome": "ACCEPTABLE_UNDER_OWNER_LOOSENED_POLICY",
+  "Stage1_status": "CLOSED_LOOSENED",
+  "strict_ACCEPTANCE_CRITERIA_pass": false,
+  "Stage2_started": false,
+  "certified_PFC_cavitation_maximum": false,
+  "principal_hashes": [
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_100fs/simulation",
+      "expected": "b9bd675b2963b6cd49ca8607c9e6eb889e8ffb455c3dd3bb539e5717fd057c76",
+      "actual": "b9bd675b2963b6cd49ca8607c9e6eb889e8ffb455c3dd3bb539e5717fd057c76",
+      "matches": true
+    },
+    {
+      "path": "verification/AXI_CANDIDATE028_ROOT_EXECUTION_PREREGISTRATION_001.json",
+      "expected": "ff44f27f1edace285138cd58268be1cca7a642d67fd760c6761b51b29a1371f9",
+      "actual": "ff44f27f1edace285138cd58268be1cca7a642d67fd760c6761b51b29a1371f9",
+      "matches": true
+    },
+    {
+      "path": "verification/CANDIDATE028_ROOT_SOURCE_FREEZE_001_20261013.md",
+      "expected": "f2e56bf7bc747ce76594d9caa3ad98d04085146f4da5c7be2cf273666ed6eff9",
+      "actual": "f2e56bf7bc747ce76594d9caa3ad98d04085146f4da5c7be2cf273666ed6eff9",
+      "matches": true
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_100fs/meta.json",
+      "expected": "5528e25753aee331d179e1d06c3ade28ae1a5608002a73103f0262d10b3c0463",
+      "actual": "5528e25753aee331d179e1d06c3ade28ae1a5608002a73103f0262d10b3c0463",
+      "matches": true
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_100fs/closure_geometric_advection.h",
+      "expected": "bf4037f05aaafe285ecba69a4f604a28a33ddfad8e53f79f4af059441efe4a1a",
+      "actual": "bf4037f05aaafe285ecba69a4f604a28a33ddfad8e53f79f4af059441efe4a1a",
+      "matches": true
+    },
+    {
+      "path": "runs/AXI_PFP_transport_candidate028_100fs/geometric_flow.h",
+      "expected": "9873b2c07fda8c2dcb3fd8928e27e1ef9d5f5a6709bb704818cc7602424c6788",
+      "actual": "9873b2c07fda8c2dcb3fd8928e27e1ef9d5f5a6709bb704818cc7602424c6788",
+      "matches": true
+    }
+  ],
+  "binding_groups": {
+    "bindings": {
+      "count": 83,
+      "mismatches": []
+    },
+    "bound_files": {
+      "count": 82,
+      "mismatches": []
+    }
+  },
+  "actual_freeze_record": {
+    "path": "verification/stage1_continuation_20261012/20261013T172436257384Z_C4_CANDIDATE028_ROOT_SOURCE_BOUND_FREEZE.json",
+    "sha256": "d9a3a8456f2295a64ffe8ab64f13e95581802002ca64924a55d7d658c455cc55",
+    "entry_hash_matches": true
+  },
+  "history": {
+    "sha256": "89c9d6f513af8d262c0bf13f80e8266e5fb6e9cb75f2a600cdf8d9c17744f24d",
+    "rows": 202,
+    "accepted_steps": 20,
+    "exact_final_time_s": "1e-13",
+    "exact_target_time_reached": true,
+    "final_steps": 20,
+    "accepted_step_ids_contiguous": true,
+    "accepted_times_strictly_increase": true
+  },
+  "compiler_exit": 0,
+  "simulation_exit": 0,
+  "logged_physical_domain_status": 0,
+  "is_production_pfc": false,
+  "observed_soft_pass_markers": [
+    "AXI caloric engineering soft-pass: tiny MW with aW=0 treated absent (100fs diagnostic only; not production admission)",
+    "AXI density-conversion engineering soft-pass underflow->+/-1e-300 (100fs diagnostic only; not production admission)",
+    "AXI geometric EOS engineering soft-pass: tiny water mass/energy/fraction snapped floor=1e-25 (027 co-clear EW/q) (100fs diagnostic only; not production admission)",
+    "AXI geometric capacity engineering soft-pass: Inf/overflow capacity ratio clamped to HUGE (100fs diagnostic only; not production admission)"
+  ],
+  "soft_pass_inventory": [
+    {
+      "candidate": "018",
+      "description": "Negative viscous intrinsic increment clamped to zero before the energy update."
+    },
+    {
+      "candidate": "019",
+      "description": "Relaxation soft-pass hook added; it did not clear the then-active status21."
+    },
+    {
+      "candidate": "020",
+      "description": "Density-conversion underflow soft-passed at +/-1e-300."
+    },
+    {
+      "candidate": "021",
+      "description": "Residual near-zero water/PFC geometry floored into a pure-material early exit."
+    },
+    {
+      "candidate": "022",
+      "description": "Near-zero negative depletion complement snapped (reported scale about1e-66)."
+    },
+    {
+      "candidate": "023",
+      "description": "Tiny negative water mass snapped before geometry."
+    },
+    {
+      "candidate": "024",
+      "description": "Tiny negative water mass/energy snapped, followed by EOS retry."
+    },
+    {
+      "candidate": "025",
+      "description": "Residual water fraction snapped to zero / PFC fraction to one."
+    },
+    {
+      "candidate": "026",
+      "description": "MW floor1e-25 and EW floor1e-20 when aW is near zero; caloric consumer treats the water as absent."
+    },
+    {
+      "candidate": "027",
+      "description": "Water energy/fraction/auxiliary momentum co-cleared with water-mass snap; nonpositive-density guards applied."
+    },
+    {
+      "candidate": "028",
+      "description": "Nonfinite or oversized geometric capacity ratios clamped to HUGE; SEPS added in the capacity factor."
+    }
+  ],
+  "exit_gate_waivers": [
+    {
+      "gate": "C4 production admission",
+      "disposition": "Strict FAIL_PRODUCTION_ADMISSION retained; candidate028 engineering diagnostic accepted for exit."
+    },
+    {
+      "gate": "V1–V6 production package",
+      "disposition": "Production package unestablished; V3/V6 NOT_RUN and V4 incomplete; prior component records retained."
+    },
+    {
+      "gate": "C5 three activation-to-rebound calibrations",
+      "disposition": "Not started; explicitly waived for Stage1 exit."
+    },
+    {
+      "gate": "C3 whole-path G9 / D1–D6 execution qualification",
+      "disposition": "Design proposals/correction exist; admitted source/critical route and whole-path signs unproved; waived for exit."
+    },
+    {
+      "gate": "Independent Stage1 self-audit",
+      "disposition": "Not run; explicitly waived. Current narrow artifact check is not that self-audit."
+    }
+  ],
+  "limitations": [
+    "No native rerun, source adoption, full-field audit or independent Stage1 self-audit performed.",
+    "Transferred candidate028 fields.csv is absent; history/metadata/stderr/binary/source bindings are available.",
+    "Meta timestamps record post-execution metadata writing, not simulation duration; retained files alone do not independently prove historical freeze-before-runtime ordering.",
+    "Report marker shorthand AXI geometric EOS engineering soft-pass (027) differs from the actual emitted label with (027 co-clear EW/q); the corresponding behavior marker is present.",
+    "All11 soft-passes are inventoried from the controlling waived-close document; four unique runtime markers were observed. Inventory does not assert every bypass branch fired in this run.",
+    "Diagnostic physical_domain_status=0 after soft-passes is not an admitted EOS/source-domain certificate."
+  ]
+}
