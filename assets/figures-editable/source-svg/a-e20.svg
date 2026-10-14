@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">A-E20 — Pressure gradients drive solvent through the network, producing a length-dependent drainage time.</title>
+<desc id="desc">ppore: solvent pressure; jl: solvent relative to network; kperm: network permeability; μl: solvent resistance; Md: storage modulus; Lg, tporo, Dporo, t; Drainage redistributes solvent over Lg; Small perturbation and constant-coefficient assumptions are separate</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">A-E20 · Physical variable map / 物理变量图</text>
+<path d="M105 112 V266" class="thin"/>
+<path d="M150 112 V266" class="thin"/>
+<path d="M195 112 V266" class="thin"/>
+<path d="M240 112 V266" class="thin"/>
+<path d="M285 112 V266" class="thin"/>
+<path d="M330 112 V266" class="thin"/>
+<path d="M375 112 V266" class="thin"/>
+<path d="M420 112 V266" class="thin"/>
+<path d="M465 112 V266" class="thin"/>
+<path d="M510 112 V266" class="thin"/>
+<path d="M555 112 V266" class="thin"/>
+<path d="M600 112 V266" class="thin"/>
+<path d="M96 116 H622" class="thin"/>
+<path d="M96 154 H622" class="thin"/>
+<path d="M96 192 H622" class="thin"/>
+<path d="M96 230 H622" class="thin"/>
+<path d="M96 268 H622" class="thin"/>
+<path d="M118 140 H710" class="arrow"/>
+<path d="M118 193 H710" class="arrow"/>
+<path d="M118 244 H710" class="arrow"/>
+<text x="105" y="88" class="">Solvent through network / 溶剂穿过网络</text>
+<text x="737" y="180" class="">jl →</text>
+<path d="M510 290 H215" class="arrow"/>
+<text x="561" y="296" class="">∇ppore ←</text>
+<text x="156" y="334" class="">Lg , kperm , μl , Md ; tporo</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• ppore: solvent pressure</text>
+<text x="30" y="433" class="muted">• jl: solvent relative to network</text>
+<text x="30" y="457" class="muted">• kperm: network permeability</text>
+<text x="30" y="481" class="muted">• μl: solvent resistance</text>
+<text x="30" y="505" class="muted">• Md: storage modulus</text>
+<text x="30" y="529" class="muted">• Lg, tporo, Dporo, t</text>
+<text x="30" y="571" class="muted">Drainage redistributes solvent over Lg</text>
+<text x="30" y="594" class="muted">Small perturbation and constant-coefficient assumptions are separate</text>
+</svg>

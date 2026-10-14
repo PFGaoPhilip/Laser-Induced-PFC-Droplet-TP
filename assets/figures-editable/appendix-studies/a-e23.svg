@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 550.08" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="550.08" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E23 · Physical variable map</tspan>
+</text>
+<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="95.04" y="84.6144">Response times and dimensionless comparisons</tspan>
+</text>
+<rect id="obj-002" x="104.64" y="112.32" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="123.84" y="136.454">De = τrel / τe</tspan>
+</text>
+<rect id="obj-004" x="104.64" y="172.8" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="123.84" y="196.934">ts = Lg √(ρg / Gg)</tspan>
+</text>
+<rect id="obj-006" x="104.64" y="233.28" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="123.84" y="257.414">tporo ≈ μl Lg² / (kperm Md)</tspan>
+</text>
+<text id="obj-008" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="105.6" y="320.333">Equal boxes list definitions; lengths do not encode time</tspan>
+</text>
+<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• τrel/τe = De</tspan>
+</text>
+<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• Lg√(ρg/Gg) = ts</tspan>
+</text>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• μlLg²/(kpermMd) ≈ tporo</tspan>
+</text>
+<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">Match material response to the transient event</tspan>
+</text>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">Do not substitute slow stiffness for every rate</tspan>
+</text>
+</svg>

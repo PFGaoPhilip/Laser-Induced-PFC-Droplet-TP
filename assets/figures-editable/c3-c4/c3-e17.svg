@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C3-E17 · Continuity plus Bernoulli focusing benchmark</tspan>
+</text>
+<line id="o001" x1="96" y1="120" x2="384" y2="120" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o002" x1="384" y1="120" x2="672" y2="177.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o003" x1="672" y1="177.6" x2="1123.2" y2="177.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o004" x1="96" y1="312" x2="384" y2="312" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o005" x1="384" y1="312" x2="672" y2="254.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o006" x1="672" y1="254.4" x2="1123.2" y2="254.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o007" x1="124.8" y1="216" x2="1104" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="98.88" y="91.92">Solid inlet: a_in, U_in, p_in</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="111.36">Free jet: a_j, U_j</tspan>
+<tspan x="703.68" y="139.68">p_j = p_g + σ_j/a_j</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="118.08" y="379.613">Continuity fixes flux; the pressure budget must support acceleration.</tspan>
+</text>
+<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• a_in solid inlet; U_in, p_in</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• a_j free outlet; U_j</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• Q = inlet flux = outlet flux</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• p_g outside jet</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• σ_j/a_j outlet capillary pressure</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• ρ, α, Δp_loss: budget legend</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">A solid inlet has no imposed σ_j/a_in free-surface jump</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">Required pressure rises with speed gain</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
+</svg>

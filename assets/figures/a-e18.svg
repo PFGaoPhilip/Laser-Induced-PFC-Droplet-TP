@@ -1,26 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
-<title id="title">A-E18 — The gel communication estimate exceeds the ideal liquid-collapse reference for the declared inputs.</title>
-<desc id="desc">Lg = Rmax = 30 µm; Gg = 20 kPa; ρg = ρl = 1000 kg/m³; cs = 4.47214 m/s; ts = 6.70820 µs; tc,liq = 2.74404 µs; Δpc = 100 kPa; Compare two distinct controls, not an actual gel-collapse prediction; Support deformation need not equilibrate during the event</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="664" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">A-E18 · Physical variable map / 物理变量图</text>
-<text x="97" y="90" class="">Two declared models / 两个声明的模型</text>
-<rect x="109" y="119" width="610" height="40" class="area"/>
-<text x="130" y="146" class="">ts = 6.70820 µs — shear transit / 剪切传播</text>
-<rect x="109" y="207" width="250" height="40" class="area"/>
-<text x="130" y="232" class="">tc,liq = 2.74404 µs</text>
-<text x="464" y="244" class="muted">Ideal liquid collapse / 理想液体塌缩</text>
-<text x="131" y="314" class="">ts / tc,liq = 2.44464 ; Lg = Rmax = 30 µm</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Lg = Rmax = 30 µm</text>
-<text x="30" y="433" class="muted">• Gg = 20 kPa</text>
-<text x="30" y="457" class="muted">• ρg = ρl = 1000 kg/m³</text>
-<text x="30" y="481" class="muted">• cs = 4.47214 m/s</text>
-<text x="30" y="505" class="muted">• ts = 6.70820 µs</text>
-<text x="30" y="529" class="muted">• tc,liq = 2.74404 µs</text>
-<text x="30" y="553" class="muted">• Δpc = 100 kPa</text>
-<text x="30" y="595" class="muted">Compare two distinct controls, not an actual gel-collapse prediction</text>
-<text x="30" y="618" class="muted">Support deformation need not equilibrate during the event</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 638.4" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="638.4" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E18 · Physical variable map</tspan>
+</text>
+<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="93.12" y="84.6144">Comparison of two declared controls</tspan>
+</text>
+<rect id="obj-002" x="104.64" y="114.24" width="585.6" height="38.4" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="124.8" y="140.294">ts = 6.70820 µs — shear transit</tspan>
+</text>
+<rect id="obj-004" x="104.64" y="198.72" width="240" height="38.4" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-005" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="124.8" y="224.333">tc,liq = 2.74404 µs</tspan>
+</text>
+<text id="obj-006" font-family="Arial,sans-serif" font-size="16.32" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="374.4" y="226.474">Ideal liquid collapse</tspan>
+</text>
+<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="105.6" y="300.614">ts / tc,liq = 2.44464 ; Lg = Rmax = 30 µm</tspan>
+</text>
+<text id="obj-008" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-009" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• Lg = Rmax = 30 µm</tspan>
+</text>
+<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• Gg = 20 kPa</tspan>
+</text>
+<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• ρg = ρl = 1000 kg/m³</tspan>
+</text>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">• cs = 4.47214 m/s</tspan>
+</text>
+<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">• ts = 6.70820 µs</tspan>
+</text>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="530.573">• tc,liq = 2.74404 µs</tspan>
+</text>
+<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="552.653">• Δpc = 100 kPa</tspan>
+</text>
+<text id="obj-016" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="574.733">Compare two distinct controls, not an actual gel-collapse prediction</tspan>
+</text>
+<text id="obj-017" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="596.813">Support deformation need not equilibrate during the event</tspan>
+</text>
 </svg>

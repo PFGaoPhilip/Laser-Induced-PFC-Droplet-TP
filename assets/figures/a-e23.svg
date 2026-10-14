@@ -1,20 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 568" role="img" aria-labelledby="title desc">
-<title id="title">A-E23 — Three timescale comparisons constrain three different physical assumptions.</title>
-<desc id="desc">τrel/τe = De; Lg√(ρg/Gg) = ts; μlLg²/(kpermMd) ≈ tporo; Match material response to the transient event; Do not substitute slow stiffness for every rate</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="568" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">A-E23 · Physical variable map / 物理变量图</text>
-<text x="99" y="98" class="">Time definitions / 时间定义</text>
-<rect x="109" y="117" width="560" height="38" class="area"/>
-<text x="129" y="142" class="">τrel/τe = De</text>
-<path d="M109 167 H669" class="thin"/>
-<text x="110" y="334" class="muted">Equal boxes identify definitions, not a time ratio / 等宽框列定义，不代表时间比</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• τrel/τe = De</text>
-<text x="30" y="433" class="muted">• Lg√(ρg/Gg) = ts</text>
-<text x="30" y="457" class="muted">• μlLg²/(kpermMd) ≈ tporo</text>
-<text x="30" y="499" class="muted">Match material response to the transient event</text>
-<text x="30" y="522" class="muted">Do not substitute slow stiffness for every rate</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 550.08" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="550.08" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E23 · Physical variable map</tspan>
+</text>
+<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="95.04" y="84.6144">Response times and dimensionless comparisons</tspan>
+</text>
+<rect id="obj-002" x="104.64" y="112.32" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="123.84" y="136.454">De = τrel / τe</tspan>
+</text>
+<rect id="obj-004" x="104.64" y="172.8" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="123.84" y="196.934">ts = Lg √(ρg / Gg)</tspan>
+</text>
+<rect id="obj-006" x="104.64" y="233.28" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="123.84" y="257.414">tporo ≈ μl Lg² / (kperm Md)</tspan>
+</text>
+<text id="obj-008" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="105.6" y="320.333">Equal boxes list definitions; lengths do not encode time</tspan>
+</text>
+<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• τrel/τe = De</tspan>
+</text>
+<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• Lg√(ρg/Gg) = ts</tspan>
+</text>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• μlLg²/(kpermMd) ≈ tporo</tspan>
+</text>
+<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">Match material response to the transient event</tspan>
+</text>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">Do not substitute slow stiffness for every rate</tspan>
+</text>
 </svg>

@@ -195,6 +195,9 @@ def integrate_links():
         'source': '20261011-embedded-pfc-feasibility',
         'scope': 'Finite real-fluid PFC equilibrium and supplied post-nucleation seed in intact spherical gel; target laser/fracture/jet/impact not validated.'}
     (ROOT / 'COURSE_SETTINGS.json').write_text(json.dumps(settings, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    if (ROOT/'assets/figures-editable/manifest.json').is_file():
+        from integrate_english_figures import integrate as integrate_english
+        integrate_english()
     return len(pages)
 
 

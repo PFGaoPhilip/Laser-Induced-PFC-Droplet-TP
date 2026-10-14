@@ -1,34 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
-<title id="title">C1-E11 — The pressure source supplies mechanical work; focusing cannot create extra energy.</title>
-<desc id="desc">Pressure work (pb − p∞)V̇b; Kl; Eσ; 16πμR Ṙ² ≥ 0; pb; p∞; R; Ṙ; t; Expansion or collapse may supply positive pressure work; Viscosity always removes mechanical energy</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="616" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C1-E11 · Physical variable map / 物理变量图</text>
-<circle cx="230" cy="188" r="113" class="thin"/>
-<circle cx="230" cy="188" r="78" class="thin"/>
-<circle cx="230" cy="188" r="48" class="area"/>
-<path d="M230 188 H278" class="arrow"/>
-<text x="246" y="169" class="">R</text>
-<path d="M302 188 H355" class="arrow"/>
-<text x="303" y="169" class="">u(r,t)</text>
-<text x="91" y="320" class="">Shell / 液壳: 4πr²dr , ρ</text>
-<rect x="539" y="123" width="353" height="119" class="area"/>
-<text x="558" y="157" class="">Kℓ = ∫ ρu²/2 dV</text>
-<text x="558" y="196" class="">Pressure work / 压力功: pb dV</text>
-<path d="M368 188 H532" class="arrow"/>
-<text x="537" y="293" class="muted">Surface + viscous work / 表面及黏性功</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Pressure work (pb − p∞)V̇b</text>
-<text x="30" y="433" class="muted">• Eσ</text>
-<text x="30" y="457" class="muted">• pb</text>
-<text x="30" y="481" class="muted">• R</text>
-<text x="30" y="505" class="muted">• t</text>
-<text x="508" y="409" class="muted">• Kl</text>
-<text x="508" y="433" class="muted">• 16πμR Ṙ² ≥ 0</text>
-<text x="508" y="457" class="muted">• p∞</text>
-<text x="508" y="481" class="muted">• Ṙ</text>
-<text x="30" y="547" class="muted">Expansion or collapse may supply positive pressure work</text>
-<text x="30" y="570" class="muted">Viscosity always removes mechanical energy</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E11 The pressure source supplies mechanical work; focusing cannot create extra energy.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E11 | Physical-variable diagram</text>
+<rect x="50" y="165" width="250" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="62" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Pressure work</text>
+<rect x="370" y="165" width="250" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="382" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">K_l + E_σ</text>
+<rect x="690" y="165" width="240" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="702" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Viscous dissipation</text>
+<line x1="305" y1="215" x2="360" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="625" y1="215" x2="680" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="102" y="341.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Storage can change sign; dissipation is nonnegative.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Pressure work (pb − p∞)V̇b</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Eσ</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pb</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
+<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Kl</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">16πμR Ṙ² ≥ 0</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p∞</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Expansion or collapse may supply positive pressure work</text>
+<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Viscosity always removes mechanical energy</text>
 </svg>

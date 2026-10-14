@@ -6,6 +6,7 @@ They are diagrams of the adopted model, not claimed simulation results.
 from html import escape
 import textwrap
 import re
+from pathlib import Path
 
 def clean(value):
     value = str(value).replace('$','')
@@ -15,6 +16,14 @@ def clean(value):
     return value.replace('{','').replace('}','').replace('\\,',' ').replace('\\!','')
 
 def svg_for(eq):
+    root = Path(__file__).resolve().parents[1]
+    masters = root / 'assets/figures-editable'
+    if (masters / 'manifest.json').is_file():
+        ident = eq['id'].lower()
+        group = 'c1-c2' if ident.startswith(('c1-', 'c2-')) else 'c3-c4' if ident.startswith(('c3-', 'c4-')) else 'appendix-studies'
+        approved = masters / group / (ident+'.svg')
+        if approved.is_file():
+            return approved.read_text(encoding='utf-8')
     d=eq['diagram']
     kind=d.get('type','sphere')
     labels=[clean(v if not isinstance(v,(tuple,list)) else ' / '.join(v)) for v in d.get('labels',[])]

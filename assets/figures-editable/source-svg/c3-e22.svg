@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C3-E22 — Compare growth during actual flight against a declared small-amplitude threshold.</title>
+<desc id="desc">H flight gap; U_j travel speed; a₀, d_j = 2a₀; δ₀ → δ_arr → δ_crit; t_flight, t_lin, t_σ; g_max growth; λ_max wavelength; ρ, σ_j, μ; Re_j, We_j, Oh_j; ln, exp: growth legend; Radius defines capillary time; diameter defines the three groups; A radius-sized disturbance is outside linear validity</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C3-E22 · Physical variable map / 物理变量图</text>
+<path d="M94 158 C171 144 211 173 282 158 S400 144 474 158" class="line"/>
+<path d="M94 222 C171 236 211 207 282 222 S400 236 474 222" class="line"/>
+<path d="M124 190 H448" class="arrow"/>
+<text x="248" y="129" class="">δ₀ , a₀</text>
+<text x="237" y="190" class="">Uj</text>
+<path d="M487 190 H761" class="arrow"/>
+<rect x="796" y="101" width="34" height="180" class="area"/>
+<text x="567" y="162" class="">H</text>
+<text x="551" y="261" class="">tflight = H / Uj</text>
+<text x="113" y="314" class="">Growth / 增长: δarr = δ₀ exp(gmax tflight)</text>
+<text x="551" y="311" class="muted">δcrit ; tlin ; tσ</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• H flight gap; U_j travel speed</text>
+<text x="30" y="433" class="muted">• a₀, d_j = 2a₀</text>
+<text x="30" y="457" class="muted">• δ₀ → δ_arr → δ_crit</text>
+<text x="30" y="481" class="muted">• t_flight, t_lin, t_σ</text>
+<text x="30" y="505" class="muted">• g_max growth; λ_max wavelength</text>
+<text x="30" y="529" class="muted">• ρ, σ_j, μ; Re_j, We_j, Oh_j</text>
+<text x="30" y="553" class="muted">• ln, exp: growth legend</text>
+<text x="30" y="595" class="muted">Radius defines capillary time; diameter defines the three groups</text>
+<text x="30" y="618" class="muted">A radius-sized disturbance is outside linear validity</text>
+</svg>

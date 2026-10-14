@@ -227,6 +227,8 @@ def home(chapters,progress):
 def source_page(chapters):
     b=P('The supplied English course is preserved in sources/. New derivations and diagrams extend it. Chapter 3 contains the resolver study. Appendix A contains the two gel-model studies.',
         '提供的英文课程保存在 sources/。新推导与示意图对其进行扩展。第三章包括求解器研究。附录 A 包括两项凝胶模型研究。')
+    b+=P('<a href="../Theses/index.html">Theses and chapter evidence map</a> · <a href="../Theses.md">Complete Markdown register</a>. Each entry records authors, identifiers, summaries, and evidence limits.',
+         '<a href="../Theses/index.html">论文与章节证据映射</a> · <a href="../Theses.md">完整 Markdown 目录</a>。每项记录作者、标识符、摘要与证据边界。')
     b+=P('<a href="../sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md">Original English source</a> · SHA256 <code>cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0</code>.',
          '<a href="../sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md">原始英文来源</a> · SHA256 <code>cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0</code>。')
     b+=P('The <a href="../sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md">before/after comparison</a> guides the course structure. Each source below states the claim it supports.',
@@ -381,5 +383,9 @@ def main():
     if (ROOT/'learning-records/resolver-progress/PROGRESS.json').is_file():
         from integrate_resolver_progress import integrate_links
         integrate_links()
+
+    if (ROOT/'assets/figures-editable/manifest.json').is_file():
+        from integrate_english_figures import integrate as integrate_english
+        integrate_english()
 
 if __name__=='__main__':main()

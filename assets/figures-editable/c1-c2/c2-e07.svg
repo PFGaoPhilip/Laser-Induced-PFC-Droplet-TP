@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img"><title>C2-E07 Heating the absorber and heating the PFC are separate parts of the thermal path.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="664" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E07 | Physical-variable diagram</text>
+<rect x="100" y="125" width="250" height="200" fill="#F6BC77" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<rect x="350" y="125" width="400" height="200" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="127" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#142632">Absorber / side A</text>
+<text x="467" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">PFC / side B</text>
+<line x1="250" y1="235" x2="520" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="382" y="280.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">q; normal A → B</text>
+<text x="102" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_A</text>
+<text x="582" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_B</text>
+<text x="117" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Thermal path and contact are distinct from optical deposition.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T: core temperature field</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">k, q: conduction toward colder material</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_abs: absorber heating</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">∇, ∇·: spatial variation</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ, c_p: stored sensible energy</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u: parcel advection</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t, D/Dt, ∂_t: time changes</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Absorber and PFC can occupy different locations</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">This equation precedes phase change; latent transfer is added at the interface</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E21 Impulse combines duration and amplitude at each liquid position.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E21 | Physical-variable diagram</text>
+<line x1="160" y1="325" x2="810" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="160" y1="325" x2="160" y2="115" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="732" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
+<text x="152" y="103.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p - p_ref</text>
+<line x1="160" y1="325" x2="255" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="255" y1="325" x2="255" y2="160" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="255" y1="160" x2="510" y2="160" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="510" y1="160" x2="510" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="510" y1="325" x2="810" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<rect x="256" y="162" width="252" height="160" fill="#213E4B" stroke="none" stroke-width="1.9500000000000002"/>
+<text x="297" y="233.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Area = Π(x)</text>
+<text x="242" y="354.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">t0</text>
+<text x="497" y="354.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">t1</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Π(x)</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">x: position</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t₁</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Pa s</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p(x,t) − pref(t)</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t₀</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">τ = t₁ − t₀</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Shade the time integral of pressure at a selected position</text>
+</svg>

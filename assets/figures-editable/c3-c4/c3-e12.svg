@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C3-E12 · Volume-fraction definition and retarded monopole approximation</tspan>
+</text>
+<ellipse id="o001" cx="134.4" cy="144" rx="30.72" ry="30.72" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="168" y1="144" x2="892.8" y2="211.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<ellipse id="o003" cx="240" cy="268.8" rx="30.72" ry="30.72" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o004" x1="273.6" y1="268.8" x2="892.8" y2="211.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<ellipse id="o005" cx="345.6" cy="144" rx="30.72" ry="30.72" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o006" x1="379.2" y1="144" x2="892.8" y2="211.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<ellipse id="o007" cx="912" cy="211.2" rx="11.52" ry="11.52" fill="#8EDBD4" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="847.68" y="274.013">Observation x, time t</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="25.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="463.68" y="121.027">Retarded source time: t − r_i/c</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="79.68" y="379.613">Volume fraction requires a defined region; travel times govern pulse overlap.</tspan>
+</text>
+<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• V_i, R_i: bubble sites</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• V_Ω representative region</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• φ_b = ΣV_i / V_Ω</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• s, R: cubic-cell geometry</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• r_i → observation x</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• p′, φ at time t</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="520.007">• ρ, c; V̇_i, V̈_i; t − r_i/c</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Planar arrays require a declared layer thickness</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">Activation and propagation delays affect overlap</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="664.007">Weak far-field sources do not predict impact pressure</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
+</svg>

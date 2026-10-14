@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C4-E39 · Original necessary operating-window checks</tspan>
+</text>
+<rect id="o001" x="115.2" y="96" width="192" height="24" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o002" x="96" y="355.2" width="1084.8" height="28.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="211.2" y1="129.6" x2="211.2" y2="350.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
+<line id="o004" x1="211.2" y1="129.6" x2="480" y2="350.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o005" x1="211.2" y1="316.8" x2="480" y2="316.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="305.28" y="303.12">Δx</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="235.92">H_f</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="242.88" y="183.12">θ</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="617.28" y="192">Normal gap H_f</tspan>
+<tspan x="617.28" y="223.467">Lateral error Δx = H_f tan θ</tspan>
+</text>
+<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• ΓA_f — intended release</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• m_f, v_f — outgoing intact object</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• E_solid, I_net — transmitted budgets</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• H_f, θ → Δx at receiver</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Full release, intact flight and repeatable reset are separate requirements.</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
+</svg>

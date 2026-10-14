@@ -1,32 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">C3-E27 — Finite area and time prevent an unmeasured point spike from standing in for delivered loading.</title>
-<desc id="desc">p′ outgoing wave through A_o; Z_l wave impedance; τ_o, t observation window; E_w = ∫p′²/Z_l; p̄ signed observed mean; dA spatial averaging; Wave energy must be allocated from the same source budget; This is a conditional wave bound, not universal film traction</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C3-E27 · Physical variable map / 物理变量图</text>
-<rect x="68" y="120" width="180" height="110" class="area"/>
-<rect x="392" y="120" width="210" height="110" class="area"/>
-<rect x="748" y="120" width="160" height="110" class="area"/>
-<text x="85" y="157" class="">Source / 能源</text>
-<text x="91" y="198" class="">Eabs , Q</text>
-<text x="412" y="158" class="">Bubble / 气泡</text>
-<text x="418" y="199" class="">pb dV , Kℓ</text>
-<text x="766" y="158" class="">Output / 输出</text>
-<text x="775" y="198" class="">Ej , W</text>
-<path d="M248 176 H392" class="arrow"/>
-<path d="M602 176 H748" class="arrow"/>
-<path d="M500 230 V280" class="arrow"/>
-<text x="300" y="104" class="">Conservation / 守恒</text>
-<text x="541" y="294" class="">Dissipation / 耗散: Ḋ ≥ 0</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• p′ outgoing wave through A_o</text>
-<text x="30" y="433" class="muted">• Z_l wave impedance</text>
-<text x="30" y="457" class="muted">• τ_o, t observation window</text>
-<text x="30" y="481" class="muted">• E_w = ∫p′²/Z_l</text>
-<text x="30" y="505" class="muted">• p̄ signed observed mean</text>
-<text x="30" y="529" class="muted">• dA spatial averaging</text>
-<text x="30" y="571" class="muted">Wave energy must be allocated from the same source budget</text>
-<text x="30" y="594" class="muted">This is a conditional wave bound, not universal film traction</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C3-E27 · One-way-wave energy and finite-observer Cauchy–Schwarz bound</tspan>
+</text>
+<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="82.56" y="224.4">Source allocation</tspan>
+</text>
+<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="490.56" y="224.4">Outgoing wave E_w</tspan>
+</text>
+<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="898.56" y="224.4">Finite A_o, τ_o observer</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="79.68" y="370.32">Each energy allocation belongs to the same finite source budget.</tspan>
+</text>
+<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• p′ outgoing wave through A_o</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• Z_l wave impedance</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• τ_o, t observation window</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• E_w = ∫p′²/Z_l</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• p̄ signed observed mean</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• dA spatial averaging</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Wave energy must be allocated from the same source budget</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">This is a conditional wave bound, not universal film traction</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

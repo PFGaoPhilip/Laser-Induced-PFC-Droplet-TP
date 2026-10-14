@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E25 A radius-only gas law hides mass and thermal changes.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E25 | Physical-variable diagram</text>
+<rect x="60" y="120" width="280" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="72" y="149.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Species masses m_v,s</text>
+<line x1="200" y1="225" x2="490" y2="305" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<rect x="370" y="120" width="280" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="382" y="149.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Temperature T_b</text>
+<line x1="510" y1="225" x2="490" y2="305" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<rect x="680" y="120" width="280" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="692" y="149.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Bubble volume V_b</text>
+<line x1="820" y1="225" x2="490" y2="305" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<rect x="310" y="295" width="360" height="65" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="322" y="324.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Mixture pressure p_b</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_v,s, ṗ_v,s: partial pressure change</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_b, Ṫ_b: heating or cooling</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R, Ṙ: spherical volume change</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_v,s, ṁ_v,s: evaporation or loss</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">V_b, V̇_b: geometric expansion</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s: species index</text>
+<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Expansion lowers pressure at fixed mass and temperature</text>
+<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Evaporation or heating can oppose the geometric pressure decrease</text>
+</svg>

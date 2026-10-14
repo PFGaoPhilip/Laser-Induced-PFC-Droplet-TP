@@ -1,0 +1,1458 @@
+{
+  "10.1016/j.jmbbm.2024.106776": {
+    "version": "6.9",
+    "hitCount": 1,
+    "request": {
+      "queryString": "DOI:10.1016/j.jmbbm.2024.106776",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "39488187",
+          "source": "MED",
+          "pmid": "39488187",
+          "pmcid": "PMC12557251",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC12557251"
+            ]
+          },
+          "doi": "10.1016/j.jmbbm.2024.106776",
+          "title": "Experimental &amp; numerical investigations of ultra-high-speed dynamics of optically induced droplet cavitation in soft materials.",
+          "authorString": "Abeid BA, Fabiilli ML, Aliabouzar M, Estrada JB.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Abeid BA",
+                "lastName": "Abeid",
+                "firstName": "Bachir A",
+                "initials": "BA",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, MI, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Fabiilli ML",
+                "lastName": "Fabiilli",
+                "firstName": "Mario L",
+                "initials": "ML",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Radiology, University of Michigan, Ann Arbor, MI, USA; Department of Biomedical Engineering, University of Michigan, Ann Arbor, MI, USA; Applied Physics Program, University of Michigan, Ann Arbor, MI, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Aliabouzar M",
+                "lastName": "Aliabouzar",
+                "firstName": "Mitra",
+                "initials": "M",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, MI, USA; Department of Radiology, University of Michigan, Ann Arbor, MI, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Estrada JB",
+                "lastName": "Estrada",
+                "firstName": "Jonathan B",
+                "initials": "JB",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1083-4597"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, MI, USA. Electronic address: jbestrad@umich.edu."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1083-4597"
+              },
+              {
+                "type": "ORCID",
+                "value": "0009-0009-0859-8434"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "volume": "160",
+            "journalIssueId": 3851263,
+            "dateOfPublication": "2024 Dec",
+            "monthOfPublication": 12,
+            "yearOfPublication": 2024,
+            "journal": {
+              "medlineAbbreviation": "J Mech Behav Biomed Mater",
+              "title": "Journal of the mechanical behavior of biomedical materials",
+              "essn": "1878-0180",
+              "issn": "1751-6161",
+              "nlmid": "101322406",
+              "isoabbreviation": "J Mech Behav Biomed Mater"
+            },
+            "printPublicationDate": "2024-12-01"
+          },
+          "pubYear": "2024",
+          "pageInfo": "106776",
+          "abstractText": "Perfluorocarbon (PFC) droplets represent a novel class of phase-shift contrast agent with promise in applications in biomedical and bioengineering fields. PFC droplets undergo a fast liquid-gas transition upon exposure to acoustic or optical triggering, offering a potential adaptable and versatile tool as contrast agent in diagnostic imaging and localized drug delivery vehicles in therapeutics systems. In this paper, we utilize advanced imaging techniques to investigate ultra-high-speed inertial dynamics and rectified quasi-static (low-speed) diffusion evolution of optically induced PFC droplet vaporization within three different hydrogels, each of different concentrations, examining effects such as droplet size and PFC core on bubble dynamics and material viscoelastic properties. Gelatin hydrogels reveal concentration-dependent impacts on bubble expansion and material elasticity. Embedding PFC droplets in gelatin increases internal pressure, resulting in higher equilibrium radius and continuous bubble growth during quasi-static evolution. Similar trends are observed in fibrin and polyacrylamide matrices, with differences in bubble behavior attributed to matrix properties and droplet presence. Interestingly, droplet size exhibits minimal impact on bubble expansion during inertial dynamics but influences quasi-static evolution, with larger droplets leading to continuous growth beyond 60 s. Furthermore, the core composition of PFC droplets significantly affects bubble behavior, with higher boiling point droplets exhibiting higher maximum expansion and faster quasi-static dissolution rates. Overall, the study sheds light on the intricate interplay between droplet characteristics, matrix properties, and multi-timescale bubble dynamics, offering valuable insights into their behavior within biomimetic hydrogels.",
+          "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, MI, USA.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, U.S. Gov't, P.H.S.",
+              "research-article",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "NHLBI NIH HHS",
+                "acronym": "HL",
+                "grantId": "R01 HL139656",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fluorocarbons",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Acrylic Resins",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fibrin",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gelatin",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Hydrogels",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Viscosity"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Elasticity"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Optical Phenomena"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Polyacrylamides"
+              }
+            ]
+          },
+          "keywordList": {
+            "keyword": [
+              "Viscoelasticity",
+              "Numerical modeling",
+              "hydrogel",
+              "Ultra-high-speed Imaging",
+              "Laser-induced Droplet Cavitation"
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Gelatin",
+                "registryNumber": "9000-70-8"
+              },
+              {
+                "name": "Acrylic Resins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Fibrin",
+                "registryNumber": "9001-31-4"
+              },
+              {
+                "name": "Fluorocarbons",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Hydrogels",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Polyacrylamides",
+                "registryNumber": "9003-05-8"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.jmbbm.2024.106776"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC12557251"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC12557251?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.jmbbm.2024.106776"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 4,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "authMan": "Y",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "Y",
+          "manuscriptId": "NIHMS2116929",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "2024-11-12",
+          "dateOfCreation": "2024-11-02",
+          "dateOfRevision": "2026-06-21",
+          "electronicPublicationDate": "2024-10-13",
+          "firstPublicationDate": "2024-10-13",
+          "firstIndexDate": "2024-11-03",
+          "fullTextReceivedDate": "2025-11-29",
+          "hasEvaluations": "N"
+        }
+      ]
+    }
+  },
+  "10.3390/nano13152238": {
+    "version": "6.9",
+    "hitCount": 1,
+    "request": {
+      "queryString": "DOI:10.3390/nano13152238",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "37570555",
+          "source": "MED",
+          "pmid": "37570555",
+          "pmcid": "PMC10421047",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC10421047"
+            ]
+          },
+          "doi": "10.3390/nano13152238",
+          "title": "Factors Influencing the Repeated Transient Optical Droplet Vaporization Threshold and Lifetimes of Phase Change, Perfluorocarbon Nanodroplets.",
+          "authorString": "Zhao AX, Zhu YI, Chung E, Lee J, Morais S, Yoon H, Emelianov S.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Zhao AX",
+                "lastName": "Zhao",
+                "firstName": "Andrew X",
+                "initials": "AX",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology, Emory University School of Medicine, Atlanta, GA 30332, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Zhu YI",
+                "lastName": "Zhu",
+                "firstName": "Yiying I",
+                "initials": "YI",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Chung E",
+                "lastName": "Chung",
+                "firstName": "Euisuk",
+                "initials": "E",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Lee J",
+                "lastName": "Lee",
+                "firstName": "Jeehyun",
+                "initials": "J",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Morais S",
+                "lastName": "Morais",
+                "firstName": "Samuel",
+                "initials": "S",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Yoon H",
+                "lastName": "Yoon",
+                "firstName": "Heechul",
+                "initials": "H",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9328-5900"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Electronics and Electrical Engineering, Dankook University, Yongin-si 16890, Republic of Korea."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Emelianov S",
+                "lastName": "Emelianov",
+                "firstName": "Stanislav",
+                "initials": "S",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology, Emory University School of Medicine, Atlanta, GA 30332, USA."
+                    },
+                    {
+                      "affiliation": "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA 30332, USA."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9328-5900"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "15",
+            "volume": "13",
+            "journalIssueId": 3614107,
+            "dateOfPublication": "2023 Aug",
+            "monthOfPublication": 8,
+            "yearOfPublication": 2023,
+            "journal": {
+              "medlineAbbreviation": "Nanomaterials (Basel)",
+              "title": "Nanomaterials (Basel, Switzerland)",
+              "essn": "2079-4991",
+              "issn": "2079-4991",
+              "isoabbreviation": "Nanomaterials (Basel)",
+              "nlmid": "101610216"
+            },
+            "printPublicationDate": "2023-08-01"
+          },
+          "pubYear": "2023",
+          "pageInfo": "2238",
+          "abstractText": "Perfluorocarbon nanodroplets (PFCnDs) are sub-micrometer emulsions composed of a surfactant-encased perfluorocarbon (PFC) liquid and can be formulated to transiently vaporize through optical stimulation. However, the factors governing repeated optical droplet vaporization (ODV) have not been investigated. In this study, we employ high-frame-rate ultrasound (US) to characterize the ODV thresholds of various formulations and imaging parameters and identify those that exhibit low vaporization thresholds and repeatable vaporization. We observe a phenomenon termed \"preconditioning\", where initial laser pulses generate reduced US contrast that appears linked with an increase in nanodroplet size. Variation in laser pulse repetition frequency is found not to change the vaporization threshold, suggesting that \"preconditioning\" is not related to residual heat. Surfactants (bovine serum albumin, lipids, and zonyl) impact the vaporization threshold and imaging lifetime, with lipid shells demonstrating the best performance with relatively low thresholds (21.6 ± 3.7 mJ/cm<sup>2</sup>) and long lifetimes (t<sub>1/2</sub> = 104 ± 21.5 pulses at 75 mJ/cm<sup>2</sup>). Physiological stiffness does not affect the ODV threshold and may enhance nanodroplet stability. Furthermore, PFC critical temperatures are found to correlate with vaporization thresholds. These observations enhance our understanding of ODV behavior and pave the way for improved nanodroplet performance in biomedical applications.",
+          "affiliation": "Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology, Emory University School of Medicine, Atlanta, GA 30332, USA.",
+          "publicationStatus": "epublish",
+          "language": "eng",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "NCATS NIH HHS",
+                "acronym": "TR",
+                "grantId": "UL1 TR000454",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institutes of Health (NIH)",
+                "grantId": "BCRF-19-043",
+                "orderIn": 0
+              },
+              {
+                "agency": "Breast Cancer Research Foundation",
+                "grantId": "BCRF-19-043",
+                "orderIn": 0
+              },
+              {
+                "agency": "NIH HHS",
+                "acronym": "NH",
+                "grantId": "NS102860",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institutes of Health (NIH)",
+                "grantId": "NS102860",
+                "orderIn": 0
+              },
+              {
+                "agency": "Breast Cancer Research Foundation",
+                "grantId": "NS102860",
+                "orderIn": 0
+              },
+              {
+                "agency": "NINDS NIH HHS",
+                "acronym": "NS",
+                "grantId": "R21 NS102860",
+                "orderIn": 0
+              }
+            ]
+          },
+          "keywordList": {
+            "keyword": [
+              "Emulsion",
+              "ultrasound",
+              "Vaporization",
+              "Photoacoustic",
+              "Odv",
+              "Perfluorocarbon Nanodroplets"
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.mdpi.com/2079-4991/13/15/2238/pdf?version=1690980672"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.3390/nano13152238"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC10421047"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC10421047?pdf=render"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 7,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "license": "cc by",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCreation": "2023-08-12",
+          "dateOfRevision": "2024-09-23",
+          "electronicPublicationDate": "2023-08-02",
+          "firstPublicationDate": "2023-08-02",
+          "firstIndexDate": "2023-08-18",
+          "fullTextReceivedDate": "2023-08-21",
+          "hasEvaluations": "N"
+        }
+      ]
+    }
+  },
+  "10.1364/BOE.2.001432": {
+    "version": "6.9",
+    "hitCount": 1,
+    "request": {
+      "queryString": "DOI:10.1364/BOE.2.001432",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "21698007",
+          "source": "MED",
+          "pmid": "21698007",
+          "pmcid": "PMC3114212",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3114212"
+            ]
+          },
+          "doi": "10.1364/boe.2.001432",
+          "title": "Vaporization of perfluorocarbon droplets using optical irradiation.",
+          "authorString": "Strohm E, Rui M, Gorelikov I, Matsuura N, Kolios M.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Strohm E",
+                "lastName": "Strohm",
+                "firstName": "Eric",
+                "initials": "E",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0130-9360"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Physics, Ryerson University, Toronto, Ontario M5B 2K3,"
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Rui M",
+                "lastName": "Rui",
+                "firstName": "Min",
+                "initials": "M",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Physics, Ryerson University, Toronto, Ontario M5B 2K3,"
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Gorelikov I",
+                "lastName": "Gorelikov",
+                "firstName": "Ivan",
+                "initials": "I",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Imaging Research, Sunnybrook Health Sciences Centre, Toronto, Ontario M4N 3M5,"
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Matsuura N",
+                "lastName": "Matsuura",
+                "firstName": "Naomi",
+                "initials": "N",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Imaging Research, Sunnybrook Health Sciences Centre, Toronto, Ontario M4N 3M5,"
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Kolios M",
+                "lastName": "Kolios",
+                "firstName": "Michael",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9994-8293"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Physics, Ryerson University, Toronto, Ontario M5B 2K3,"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9994-8293"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0130-9360"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "journalInfo": {
+            "issue": "6",
+            "volume": "2",
+            "journalIssueId": 2198077,
+            "dateOfPublication": "2011 Jun",
+            "monthOfPublication": 6,
+            "yearOfPublication": 2011,
+            "journal": {
+              "medlineAbbreviation": "Biomed Opt Express",
+              "title": "Biomedical optics express",
+              "essn": "2156-7085",
+              "issn": "2156-7085",
+              "nlmid": "101540630",
+              "isoabbreviation": "Biomed Opt Express"
+            },
+            "printPublicationDate": "2011-06-01"
+          },
+          "pubYear": "2011",
+          "pageInfo": "1432-1442",
+          "abstractText": "Micron-sized liquid perfluorocarbon (PFC) droplets are currently being investigated as activatable agents for medical imaging and cancer therapy. After injection into the bloodstream, superheated PFC droplets can be vaporized to a gas phase for ultrasound imaging, or for cancer therapy via targeted drug delivery and vessel occlusion. Droplet vaporization has been previously demonstrated using acoustic methods. We propose using laser irradiation as a means to induce PFC droplet vaporization using a method we term optical droplet vaporization (ODV). In order to facilitate ODV of PFC droplets which have negligible absorption in the infrared spectrum, optical absorbing nanoparticles were incorporated into the droplet. In this study, micron-sized PFC droplets loaded with silica-coated lead sulfide (PbS) nanoparticles were evaluated using a 1064 nm laser and ultra-high frequency photoacoustic ultrasound (at 200 and 375 MHz). The photoacoustic response was proportional to nanoparticle loading and successful optical droplet vaporization of individual PFC droplets was confirmed using photoacoustic, acoustic, and optical measurements. A minimum laser fluence of 1.4 J/cm(2) was required to vaporize the droplets. The vaporization of PFC droplets via laser irradiation can lead to the activation of PFC agents in tissues previously not accessible using standard ultrasound-based techniques.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "keywordList": {
+            "keyword": [
+              "(170.3880) Medical And Biological Imaging",
+              "(170.5120) Photoacoustic Imaging"
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1364/BOE.2.001432"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3114212"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3114212?pdf=render"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 86,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "N",
+          "hasLabsLinks": "Y",
+          "hasData": "N",
+          "license": "cc by-nc-nd",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "2011-07-14",
+          "dateOfCreation": "2011-06-24",
+          "dateOfRevision": "2022-03-18",
+          "electronicPublicationDate": "2011-05-04",
+          "firstPublicationDate": "2011-05-04",
+          "firstIndexDate": "2011-06-27",
+          "fullTextReceivedDate": "2025-02-05",
+          "hasEvaluations": "N"
+        }
+      ]
+    }
+  },
+  "10.1073/pnas.2318739121": {
+    "version": "6.9",
+    "hitCount": 1,
+    "request": {
+      "queryString": "DOI:10.1073/pnas.2318739121",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "38266054",
+          "source": "MED",
+          "pmid": "38266054",
+          "pmcid": "PMC10835071",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC10835071"
+            ]
+          },
+          "doi": "10.1073/pnas.2318739121",
+          "title": "Laser-driven noncontact bubble transfer printing via a hydrogel composite stamp.",
+          "authorString": "Li C, Luo H, Lin X, Zhang S, Song J.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Li C",
+                "lastName": "Li",
+                "firstName": "Chenglong",
+                "initials": "C",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6442-7941"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Engineering Mechanics, Soft Matter Research Center, and Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Zhejiang University, Hangzhou 310027, China."
+                    },
+                    {
+                      "affiliation": "Department of Rehabilitation Medicine, The First Affiliated Hospital, Zhejiang University, Hangzhou 310003, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Luo H",
+                "lastName": "Luo",
+                "firstName": "Hongyu",
+                "initials": "H",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0977-0880"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Engineering Mechanics, Soft Matter Research Center, and Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Zhejiang University, Hangzhou 310027, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Lin X",
+                "lastName": "Lin",
+                "firstName": "Xinyi",
+                "initials": "X",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Engineering Mechanics, Soft Matter Research Center, and Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Zhejiang University, Hangzhou 310027, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Zhang S",
+                "lastName": "Zhang",
+                "firstName": "Shun",
+                "initials": "S",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Engineering Mechanics, Soft Matter Research Center, and Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Zhejiang University, Hangzhou 310027, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Song J",
+                "lastName": "Song",
+                "firstName": "Jizhou",
+                "initials": "J",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2821-9429"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Engineering Mechanics, Soft Matter Research Center, and Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Zhejiang University, Hangzhou 310027, China."
+                    },
+                    {
+                      "affiliation": "Department of Rehabilitation Medicine, The First Affiliated Hospital, Zhejiang University, Hangzhou 310003, China."
+                    },
+                    {
+                      "affiliation": "The State Key Lab of Brain-Machine Intelligence, Zhejiang University, Hangzhou 310058, China."
+                    },
+                    {
+                      "affiliation": "Institute of Flexible Electronics Technology of Tsinghua University, Zhejiang, Jiaxing 314000, China."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6442-7941"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0977-0880"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2821-9429"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "5",
+            "volume": "121",
+            "journalIssueId": 3698299,
+            "dateOfPublication": "2024 Jan",
+            "monthOfPublication": 1,
+            "yearOfPublication": 2024,
+            "journal": {
+              "medlineAbbreviation": "Proc Natl Acad Sci U S A",
+              "title": "Proceedings of the National Academy of Sciences of the United States of America",
+              "essn": "1091-6490",
+              "issn": "0027-8424",
+              "isoabbreviation": "Proc Natl Acad Sci U S A",
+              "nlmid": "7505876"
+            },
+            "printPublicationDate": "2024-01-01"
+          },
+          "pubYear": "2024",
+          "pageInfo": "e2318739121",
+          "abstractText": "Transfer printing that enables heterogeneous integration of materials into spatially organized, functional arrangements is essential for developing unconventional electronic systems. Here, we report a laser-driven noncontact bubble transfer printing via a hydrogel composite stamp, which features a circular reservoir filled with hydrogel inside a stamp body and encapsulated by a laser absorption layer and an adhesion layer. This composite structure of stamp provides a reversible thermal controlled adhesion in a rapid manner through the liquid-gas phase transition of water in the hydrogel. The ultrasoft nature of hydrogel minimizes the influence of preload on the pick-up performance, which offers a strong interfacial adhesion under a small preload for a reliable damage-free pick-up. The strong light-matter interaction at the interface induces a liquid-gas phase transition to form a bulge on the stamp surface, which eliminates the interfacial adhesion for a successful noncontact printing. Demonstrations of noncontact transfer printing of microscale Si platelets onto various challenging nonadhesive surfaces (e.g., glass, key, wrench, steel sphere, dry petal, droplet) in two-dimensional or three-dimensional layouts illustrate the unusual capabilities for deterministic assembly to develop unconventional electronic systems such as flexible inorganic electronics, curved electronics, and micro-LED display.",
+          "affiliation": "Department of Engineering Mechanics, Soft Matter Research Center, and Key Laboratory of Soft Machines and Smart Devices of Zhejiang Province, Zhejiang University, Hangzhou 310027, China.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "MOST | National Natural Science Foundation of China",
+                "grantId": "12321002",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China",
+                "grantId": "U21A20502",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China",
+                "grantId": "U20A6001",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Key Research and Development Program of China",
+                "grantId": "2022YFC2401901",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Key Research and Development Program of China (NKPs)",
+                "grantId": "2022YFC2401901",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China (NSFC)",
+                "grantId": "12321002",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China (NSFC)",
+                "grantId": "U21A20502",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China",
+                "grantId": "12225209",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China (NSFC)",
+                "grantId": "12225209",
+                "orderIn": 0
+              },
+              {
+                "agency": "MOST | National Natural Science Foundation of China (NSFC)",
+                "grantId": "U20A6001",
+                "orderIn": 0
+              }
+            ]
+          },
+          "keywordList": {
+            "keyword": [
+              "Adhesion Strength",
+              "Transfer Printing",
+              "Laser-driven",
+              "Hydrogel Stamp"
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Unpaywall",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10835071"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1073/pnas.2318739121"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC10835071"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC10835071?pdf=render"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 17,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "license": "cc by-nc-nd",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCreation": "2024-01-24",
+          "dateOfRevision": "2024-07-25",
+          "electronicPublicationDate": "2024-01-24",
+          "firstPublicationDate": "2024-01-24",
+          "firstIndexDate": "2024-01-25",
+          "fullTextReceivedDate": "2024-07-27",
+          "embargoDate": "2024-07-24",
+          "hasEvaluations": "N"
+        }
+      ]
+    }
+  },
+  "10.1021/acsami.5c11300": {
+    "version": "6.9",
+    "hitCount": 1,
+    "request": {
+      "queryString": "DOI:10.1021/acsami.5c11300",
+      "resultType": "core",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "id": "40910739",
+          "source": "MED",
+          "pmid": "40910739",
+          "pmcid": "PMC12557304",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC12557304"
+            ]
+          },
+          "doi": "10.1021/acsami.5c11300",
+          "title": "Real-Time Optical and Acoustic Characterization of Phase-Shift Droplets for Drug-Delivery Applications.",
+          "authorString": "Abeid BA, Chan ZQ, Fabiilli ML, Estrada JB, Aliabouzar M.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Abeid BA",
+                "lastName": "Abeid",
+                "firstName": "Bachir Ahmed",
+                "initials": "BA",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0009-0009-0859-8434"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Chan ZQ",
+                "lastName": "Chan",
+                "firstName": "Ze Qi",
+                "initials": "ZQ",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Radiology, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Fabiilli ML",
+                "lastName": "Fabiilli",
+                "firstName": "Mario L",
+                "initials": "ML",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4752-9812"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    },
+                    {
+                      "affiliation": "Department of Biomedical Engineering, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    },
+                    {
+                      "affiliation": "Applied Physics Program, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Estrada JB",
+                "lastName": "Estrada",
+                "firstName": "Jonathan B",
+                "initials": "JB",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1083-4597"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Radiology, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Aliabouzar M",
+                "lastName": "Aliabouzar",
+                "firstName": "Mitra",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2263-7278"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    },
+                    {
+                      "affiliation": "Department of Radiology, University of Michigan, Ann Arbor, Michigan 48109-5667, United States."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2263-7278"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4752-9812"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1083-4597"
+              },
+              {
+                "type": "ORCID",
+                "value": "0009-0009-0859-8434"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "37",
+            "volume": "17",
+            "journalIssueId": 4018443,
+            "dateOfPublication": "2025 Sep",
+            "monthOfPublication": 9,
+            "yearOfPublication": 2025,
+            "journal": {
+              "medlineAbbreviation": "ACS Appl Mater Interfaces",
+              "title": "ACS applied materials & interfaces",
+              "essn": "1944-8252",
+              "issn": "1944-8244",
+              "nlmid": "101504991",
+              "isoabbreviation": "ACS Appl Mater Interfaces"
+            },
+            "printPublicationDate": "2025-09-01"
+          },
+          "pubYear": "2025",
+          "pageInfo": "51737-51753",
+          "abstractText": "Phase-shift droplets undergoing acoustic droplet vaporization (ADV) offer a promising approach for ultrasound-mediated drug delivery, enabling the spatiotemporally controlled release of therapeutic payloads. A comprehensive understanding of their behavior, through both optical and acoustic methods, is essential for optimizing the therapeutic efficacy. In this study, we investigated the effects of driving pressure, pulse duration, and bulk boiling point of perfluorocarbon droplets on ADV dynamics, payload release, and acoustic emissions. We employed ultra-high-speed brightfield [10 million frames per second (Mfps)], fluorescence (2 Mfps), and confocal microscopy (1 fps) to capture ADV and real-time payload release in fibrin-based hydrogels. During ADV, payload release velocities reached 2-4 m/s, slowing to 0.6-2.7 μm/s post ultrasound. While the cycle number and pressure affected early bubble expansion and acoustic output, long-term bubble behavior and release kinetics were governed by the droplet's thermophysical properties. Ultra-high-speed imaging revealed a direct coupling between bubble dynamics and payload release during ultrasound exposure, with release continuing via diffusion after ultrasound. Notably, payload release rates post-ultrasound exceeded bubble growth rates. Additionally, acoustic emissions, recorded via passive cavitation detection, increased with both pressure and pulse number but decreased in droplets with higher bulk boiling points. These findings underscore the importance of integrating multimodal imaging methods to elucidate ADV mechanisms and design effective hydrogel-based drug-delivery systems.",
+          "affiliation": "Department of Mechanical Engineering, University of Michigan, Ann Arbor, Michigan 48109-5667, United States.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "National Heart, Lung, and Blood Institute",
+                "grantId": "R01HL139656",
+                "orderIn": 0
+              },
+              {
+                "agency": "NHLBI NIH HHS",
+                "acronym": "HL",
+                "grantId": "R01 HL139656",
+                "orderIn": 0
+              },
+              {
+                "agency": "University of Michigan",
+                "grantId": "OORRS033123",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fluorocarbons",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Hydrogels",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Drug Delivery Systems"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Volatilization"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Acoustics"
+              }
+            ]
+          },
+          "keywordList": {
+            "keyword": [
+              "ultrasound",
+              "Drug Delivery",
+              "Acoustic Droplet Vaporization",
+              "Phase-shift Droplets",
+              "Ultrahigh-Speed Imaging"
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Fluorocarbons",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Hydrogels",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1021/acsami.5c11300"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC12557304"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC12557304?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1021/acsami.5c11300"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 2,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "authMan": "Y",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "Y",
+          "manuscriptId": "NIHMS2116857",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "2025-09-18",
+          "dateOfCreation": "2025-09-05",
+          "dateOfRevision": "2025-10-29",
+          "electronicPublicationDate": "2025-09-05",
+          "firstPublicationDate": "2025-09-05",
+          "firstIndexDate": "2025-09-05",
+          "fullTextReceivedDate": "2025-11-29",
+          "hasEvaluations": "N"
+        }
+      ]
+    }
+  }
+}

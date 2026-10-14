@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 569" role="img" aria-labelledby="title desc">
+<title id="title">C1-E20 — A Mach diagnostic exposes the shrinking validity range of incompressible collapse.</title>
+<desc id="desc">Mw = |Ṙ|/c; Ṙ; c = 1500 m/s; M* = 0.1; xM = RM/Rmax; ρ; Δpc; RM ≈ 4.305 μm; The selected threshold flags omitted physics; it does not stop a real cavity</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="569" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E20 · Physical variable map / 物理变量图</text>
+<circle cx="247" cy="181" r="96" class="area"/>
+<circle cx="247" cy="181" r="36" class="thin"/>
+<path d="M247 181 H283" class="arrow"/>
+<text x="254" y="160" class="">RM</text>
+<path d="M392 181 H716" class="arrow"/>
+<text x="446" y="153" class="">c = 1500 m/s</text>
+<path d="M363 227 H280" class="arrow"/>
+<text x="341" y="258" class="">|Ṙ| = M* c</text>
+<text x="112" y="314" class="">Rmax → RM ; xM = RM / Rmax</text>
+<text x="588" y="289" class="">Mw = |Ṙ| / c</text>
+<text x="588" y="322" class="muted">Flag: M* = 0.1 / 检查阈值</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Mw = |Ṙ|/c</text>
+<text x="30" y="433" class="muted">• c = 1500 m/s</text>
+<text x="30" y="457" class="muted">• xM = RM/Rmax</text>
+<text x="30" y="481" class="muted">• Δpc</text>
+<text x="508" y="409" class="muted">• Ṙ</text>
+<text x="508" y="433" class="muted">• M* = 0.1</text>
+<text x="508" y="457" class="muted">• ρ</text>
+<text x="508" y="481" class="muted">• RM ≈ 4.305 μm</text>
+<text x="30" y="523" class="muted">The selected threshold flags omitted physics; it does not stop a real cavity</text>
+</svg>

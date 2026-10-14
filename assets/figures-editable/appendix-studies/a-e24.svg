@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 616.32" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="616.32" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E24 · Physical variable map</tspan>
+</text>
+<rect id="obj-001" x="102.72" y="220.8" width="729.6" height="52.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<rect id="obj-002" x="102.72" y="144" width="729.6" height="15.36" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="103.68" y="96.1344">Target film: loaded footprint At</tspan>
+</text>
+<line id="obj-004" x1="249.6" y1="216" x2="249.6" y2="165.12" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<line id="obj-005" x1="432" y1="216" x2="432" y2="165.12" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<line id="obj-006" x1="614.4" y1="216" x2="614.4" y2="165.12" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="288" y="201.734">tload ; t₀ → t₁</tspan>
+</text>
+<text id="obj-008" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="115.2" y="302.534">Donor / support</tspan>
+</text>
+<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="499.2" y="302.534">Release area Arel ; Γc</tspan>
+</text>
+<text id="obj-010" font-family="Arial,sans-serif" font-size="16.32" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="103.68" y="338.794">Impulse: Jtarget     Minimum separation work: Wsep,min</tspan>
+</text>
+<text id="obj-011" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• tload: target traction</tspan>
+</text>
+<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• At: loaded footprint</tspan>
+</text>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• t₀ → t₁: observation interval</tspan>
+</text>
+<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">• Jtarget: delivered impulse</tspan>
+</text>
+<text id="obj-016" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">• Arel, Γc: intended release</tspan>
+</text>
+<text id="obj-017" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="530.573">• Wsep,min</tspan>
+</text>
+<text id="obj-018" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="552.653">Observe the actual direct or PVC-transmitted load path</tspan>
+</text>
+<text id="obj-019" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="574.733">Release work is necessary, not sufficient</tspan>
+</text>
+</svg>

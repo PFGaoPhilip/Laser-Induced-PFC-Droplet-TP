@@ -1,33 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
-<title id="title">C2-E12 — The saturation curve concerns an equilibrium state, not automatic activation.</title>
-<desc id="desc">T: interface temperature; p_sat,PFP: bulk equilibrium vapor pressure; 282.82–337.94 K: fit domain; 1 bar = 10⁵ Pa; 4.2063; 1103.454 K; 39.77 K: coefficients; Liquid and vapor coexist only when inventory and exchange permit; This curve is not a laser-fluence threshold</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="616" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C2-E12 · Physical variable map / 物理变量图</text>
-<circle cx="310" cy="185" r="78" class="area"/>
-<path d="M310 185 H388" class="arrow"/>
-<text x="337" y="169" class="">R(t)</text>
-<path d="M310 185 L457 263" class="arrow"/>
-<text x="398" y="226" class="">r ≥ R</text>
-<text x="277" y="193" class="">pb</text>
-<text x="610" y="166" class="">p∞ , ρ , μ , σ</text>
-<text x="610" y="194" class="">Surrounding medium / 周围介质</text>
-<path d="M310 78 L310 54" class="arrow"/>
-<path d="M201 185 L167 185" class="arrow"/>
-<path d="M419 185 L459 185" class="arrow"/>
-<text x="100" y="312" class="">Signed wall motion / 有符号壁运动: Ṙ, R̈</text>
-<text x="129" y="75" class="muted">+r direction / +r 方向</text>
-<circle cx="295" cy="195" r="27" class="area"/>
-<text x="590" y="244" class="muted">Liquid ↔ vapor / 液体 ↔ 蒸气</text>
-<text x="590" y="271" class="">ml , mv , j , Q̇ , Tb</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• T: interface temperature</text>
-<text x="30" y="433" class="muted">• p_sat,PFP: bulk equilibrium vapor pressure</text>
-<text x="30" y="457" class="muted">• 282.82–337.94 K: fit domain</text>
-<text x="30" y="481" class="muted">• 1 bar = 10⁵ Pa</text>
-<text x="30" y="505" class="muted">• 4.2063; 1103.454 K; 39.77 K: coefficients</text>
-<text x="30" y="547" class="muted">Liquid and vapor coexist only when inventory and exchange permit</text>
-<text x="30" y="570" class="muted">This curve is not a laser-fluence threshold</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E12 The saturation curve concerns an equilibrium state, not automatic activation.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E12 | Physical-variable diagram</text>
+<rect x="80" y="140" width="300" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="92" y="169.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Liquid | vapor equilibrium</text>
+<line x1="520" y1="325" x2="885" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="520" y1="325" x2="520" y2="125" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="807" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Temperature</text>
+<text x="512" y="113.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Saturation pressure</text>
+<line x1="525" y1="315" x2="536.667" y2="314.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="536.667" y1="314.8" x2="548.333" y2="314.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="548.333" y1="314.2" x2="560" y2="313.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="560" y1="313.2" x2="571.667" y2="311.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="571.667" y1="311.8" x2="583.333" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="583.333" y1="310" x2="595" y2="307.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="595" y1="307.8" x2="606.667" y2="305.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="606.667" y1="305.2" x2="618.333" y2="302.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="618.333" y1="302.2" x2="630" y2="298.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="630" y1="298.8" x2="641.667" y2="295" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="641.667" y1="295" x2="653.333" y2="290.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="653.333" y1="290.8" x2="665" y2="286.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="665" y1="286.2" x2="676.667" y2="281.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="676.667" y1="281.2" x2="688.333" y2="275.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="688.333" y1="275.8" x2="700" y2="270" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="700" y1="270" x2="711.667" y2="263.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="711.667" y1="263.8" x2="723.333" y2="257.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="723.333" y1="257.2" x2="735" y2="250.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="735" y1="250.2" x2="746.667" y2="242.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="746.667" y1="242.8" x2="758.333" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="758.333" y1="235" x2="770" y2="226.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="770" y1="226.8" x2="781.667" y2="218.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="781.667" y1="218.2" x2="793.333" y2="209.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="793.333" y1="209.2" x2="805" y2="199.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="805" y1="199.8" x2="816.667" y2="190" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="816.667" y1="190" x2="828.333" y2="179.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="828.333" y1="179.8" x2="840" y2="169.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="840" y1="169.2" x2="851.667" y2="158.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="851.667" y1="158.2" x2="863.333" y2="146.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="863.333" y1="146.8" x2="875" y2="135" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<text x="82" y="304.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Schematic trend within stated fit ranges</text>
+<text x="82" y="270.52" font-family="Arial,sans-serif" font-size="19" fill="#F6BC77">Not an activation threshold</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T: interface temperature</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">282.82–337.94 K: fit domain</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">4.2063; 1103.454 K; 39.77 K: coefficients</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_sat,PFP: bulk equilibrium vapor pressure</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">1 bar = 10⁵ Pa</text>
+<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Liquid and vapor coexist only when inventory and exchange permit</text>
+<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">This curve is not a laser-fluence threshold</text>
 </svg>

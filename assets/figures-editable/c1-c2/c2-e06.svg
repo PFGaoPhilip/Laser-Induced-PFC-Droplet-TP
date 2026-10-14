@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E06 Interception, reflection, and internal absorption each act once.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E06 | Physical-variable diagram</text>
+<rect x="310" y="110" width="260" height="225" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<line x1="90" y1="205" x2="300" y2="205" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="575" y1="205" x2="790" y2="205" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="310" y1="205" x2="190" y2="115" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="72" y="260.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Incident light</text>
+<text x="72" y="99.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Reflection</text>
+<text x="337" y="270.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Absorber: Q_abs</text>
+<text x="602" y="260.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Transmitted light</text>
+<line x1="330" y1="310" x2="550" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="372" y="349.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+z; thickness h_a</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">h_a: slab thickness</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ω_a, dV: absorbing volume</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">μ_a, Q_abs: optical heating</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f_geo, E_L, E_abs: energy accounting</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">z: depth</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">I_in: light after reflection</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">λ, ℛ_λ, A_λ: wavelength and fractions</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t: pulse integration</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Reflection occurs before entry</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Integrate the source once; do not add equivalent boundary heating again</text>
+</svg>

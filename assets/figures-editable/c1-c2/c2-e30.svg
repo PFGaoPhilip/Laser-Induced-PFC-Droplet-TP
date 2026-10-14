@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E30 The expansion ratio follows from mass conservation at a stated pressure and temperature.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E30 | Physical-variable diagram</text>
+<ellipse cx="180" cy="215" rx="26" ry="26" fill="#F6BC77" stroke="#B4C7D2" stroke-width="2.21"/>
+<ellipse cx="650" cy="215" rx="140" ry="140" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
+<line x1="230" y1="215" x2="485" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="102" y="290.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Liquid: a0 = 5 um</text>
+<text x="492" y="384.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Vapor: R_b,inv = 26.6827 um</text>
+<text x="92" y="100.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Same PFC mass</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">a₀ = 5 μm: original liquid</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0, ρ_d: original inventory</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_v,PFC = 100 kPa</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">151.9778: volume expansion</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R_b,inv = 26.6827 μm: assumed vapor state</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_* = 323 K</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">M_PFC, R_u: ideal mole relation</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: sphere geometry</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Volume ratio is about 152; radius ratio about 5.34</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Inventory radius is not dynamical R_max</text>
+</svg>

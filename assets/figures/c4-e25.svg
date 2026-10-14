@@ -1,29 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">C4-E25 — The traction–separation curve contains strength, stiffness and a finite separation distance.</title>
-<desc id="desc">δ → interface opening; t_n(δ) ↑ tensile resistance; K_n — initial curve slope; δ₀ → peak opening; T_max → peak traction; δ_c → complete separation; Compression is a different branch.; Tensile damage must not be inferred from pressure magnitude.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C4-E25 · Physical variable map / 物理变量图</text>
-<path d="M120 287 H859" class="arrow"/>
-<path d="M145 298 V90" class="arrow"/>
-<path d="M145 287 L343 110 L779 287" class="line"/>
-<path d="M343 110 V287" class="thin"/>
-<text x="91" y="92" class="">tn , Tmax</text>
-<text x="299" y="317" class="">δ0</text>
-<text x="750" y="317" class="">δc</text>
-<text x="815" y="318" class="">δ</text>
-<text x="386" y="221" class="">Area = Γ / 面积 = Γ</text>
-<text x="196" y="206" class="">Kn</text>
-<text x="583" y="91" class="">Opening only / 仅张开分支</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• δ → interface opening</text>
-<text x="30" y="433" class="muted">• t_n(δ) ↑ tensile resistance</text>
-<text x="30" y="457" class="muted">• K_n — initial curve slope</text>
-<text x="30" y="481" class="muted">• δ₀ → peak opening</text>
-<text x="30" y="505" class="muted">• T_max → peak traction</text>
-<text x="30" y="529" class="muted">• δ_c → complete separation</text>
-<text x="30" y="571" class="muted">Compression is a different branch.</text>
-<text x="30" y="594" class="muted">Tensile damage must not be inferred from pressure magnitude.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C4-E25 · Adopted monotonic tensile cohesive law</tspan>
+</text>
+<line id="o001" x1="105.6" y1="340.8" x2="1142.4" y2="340.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o002" x1="115.2" y1="345.6" x2="115.2" y2="86.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o003" x1="115.2" y1="340.8" x2="384" y2="120" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o004" x1="384" y1="120" x2="1036.8" y2="340.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o005" x1="384" y1="120" x2="384" y2="340.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="36.48" y="91.6133">t_n: tensile resistance</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="401.28" y="120.72">T_max</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="353.28" y="379.92">δ₀</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="1015.68" y="379.92">δ_c</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="1135.68" y="379.92">δ</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="26.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="502.08" y="277.333">Full area = Γ</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="626.88" y="101.213">Monotonic tensile opening branch</tspan>
+</text>
+<line id="o013" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• δ → interface opening</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• t_n(δ) ↑ tensile resistance</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• K_n — initial curve slope</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• δ₀ → peak opening</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• T_max → peak traction</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• δ_c → complete separation</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Compression is a different branch.</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">Tensile damage must not be inferred from pressure magnitude.</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

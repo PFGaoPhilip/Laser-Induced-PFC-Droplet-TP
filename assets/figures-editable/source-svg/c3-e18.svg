@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C3-E18 — Finite jet mass converts an energy budget into a meaningful speed and momentum bound.</title>
+<desc id="desc">d_j, A_j cross section; L_j emitted length; M_j emitted liquid; m_j = ∫dm; u field; e_z transfer direction; P_j directional momentum; E_j, E_avail energy budget; U_rms finite-mass speed; ρ, π; Uniform aligned velocity is required for momentum equality; A mathematical tip can have negligible mass</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C3-E18 · Physical variable map / 物理变量图</text>
+<rect x="88" y="146" width="535" height="78" class="area"/>
+<path d="M110 202 H577" class="arrow"/>
+<text x="282" y="127" class="">a , dj , Aj</text>
+<text x="250" y="180" class="">Uj , mj , Pj , Ej</text>
+<text x="268" y="261" class="">Finite liquid / 有限液体: Lj</text>
+<path d="M672 177 H905" class="arrow"/>
+<text x="720" y="147" class="">Flight gap / 飞行间隙: H</text>
+<path d="M744 192 C770 220 794 138 821 177 S868 217 903 177" class="thin"/>
+<text x="728" y="269" class="muted">δ(t), smax, κj</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• d_j, A_j cross section</text>
+<text x="30" y="433" class="muted">• L_j emitted length</text>
+<text x="30" y="457" class="muted">• M_j emitted liquid; m_j = ∫dm</text>
+<text x="30" y="481" class="muted">• u field; e_z transfer direction</text>
+<text x="30" y="505" class="muted">• P_j directional momentum</text>
+<text x="30" y="529" class="muted">• E_j, E_avail energy budget</text>
+<text x="30" y="553" class="muted">• U_rms finite-mass speed; ρ, π</text>
+<text x="30" y="595" class="muted">Uniform aligned velocity is required for momentum equality</text>
+<text x="30" y="618" class="muted">A mathematical tip can have negligible mass</text>
+</svg>

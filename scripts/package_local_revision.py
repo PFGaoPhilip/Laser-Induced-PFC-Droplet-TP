@@ -17,13 +17,13 @@ def digest(path):
 
 def main():
     assert DEST.resolve().is_relative_to(ROOT.resolve())
-    folders = ['assets', 'chapters', 'appendices', 'reference', 'text', 'content',
+    folders = ['assets', 'chapters', 'appendices', 'reference', 'text', 'content', 'Theses',
                'scripts', 'modeling/minimal-cavitation',
                'modeling/embedded-pfc-feasibility',
                'learning-records/resolver-progress', 'sources/ui-feedback-20261014',
                'sources/revision-guidance-20261014', 'sources/historical-handoffs']
     selected = {Path(name) for name in ['index.html', 'README.md', 'MISSION.md',
-                                      'RESOURCES.md', 'WORK_LOG.md', 'HANDOFF.md', 'COURSE_SETTINGS.json', '.nojekyll']}
+                                      'RESOURCES.md', 'WORK_LOG.md', 'Theses.md', 'HANDOFF.md', 'COURSE_SETTINGS.json', '.nojekyll']}
     selected.update(Path('sources') / name for name in [
         'Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md',
         'Cavitation_Course_Before_After_Comparison_EN_ZH.md'])

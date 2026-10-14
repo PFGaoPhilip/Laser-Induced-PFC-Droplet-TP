@@ -1,0 +1,768 @@
+[
+  {
+    "id": "C3-E01",
+    "category": "activation",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E02",
+    "category": "beam uniformity",
+    "corrections": [
+      "Replaced absorber/PFC heating picture with concentric beam and array radii."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E03",
+    "category": "coupling",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E04",
+    "category": "coupling",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E05",
+    "category": "coupling",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E06",
+    "category": "polygon",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E07",
+    "category": "collapse",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E08",
+    "category": "collapse",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E09",
+    "category": "collapse",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E10",
+    "category": "collapse time",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E11",
+    "category": "energy allocation",
+    "corrections": [
+      "Removed generic bubble/source diagram; displayed the stated budget and allocation."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E12",
+    "category": "retarded",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E13",
+    "category": "moving boundaries",
+    "corrections": [
+      "Separated cavity, solid walls and outlet; fixed liquid-to-gas normal and signed curvatures."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E14",
+    "category": "moving boundaries",
+    "corrections": [
+      "Separated cavity, solid walls and outlet; fixed liquid-to-gas normal and signed curvatures."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E15",
+    "category": "moving boundaries",
+    "corrections": [
+      "Separated cavity, solid walls and outlet; fixed liquid-to-gas normal and signed curvatures."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E16",
+    "category": "pressure impulse",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E17",
+    "category": "focusing",
+    "corrections": [
+      "Replaced constant-width finite jet with solid-inlet to free-outlet focusing geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E18",
+    "category": "finite",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E19",
+    "category": "slender conservation",
+    "corrections": [
+      "Added fixed finite-volume slice with distinct face fluxes."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E20",
+    "category": "slender conservation",
+    "corrections": [
+      "Added fixed finite-volume slice with distinct face fluxes."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E21",
+    "category": "growth",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E22",
+    "category": "growth",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E23",
+    "category": "steady",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E24",
+    "category": "wave",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E25",
+    "category": "impact",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E26",
+    "category": "observer",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E27",
+    "category": "energy allocation",
+    "corrections": [
+      "Removed generic bubble/source diagram; displayed the stated budget and allocation."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E28",
+    "category": "compressible control volume",
+    "corrections": [
+      "Replaced impact cartoon with conservative compressible control volume and closure."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E29",
+    "category": "energy allocation",
+    "corrections": [
+      "Removed generic bubble/source diagram; displayed the stated budget and allocation."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E30",
+    "category": "impact",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E31",
+    "category": "coupling",
+    "corrections": [
+      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E32",
+    "category": "growth",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C3-E33",
+    "category": "impact",
+    "corrections": [
+      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter03.py"
+    ]
+  },
+  {
+    "id": "C4-E01",
+    "category": "surface traction",
+    "corrections": [
+      "Removed spurious second solid; fixed solid-to-liquid normal and compressive traction direction."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E02",
+    "category": "surface traction",
+    "corrections": [
+      "Removed spurious second solid; fixed solid-to-liquid normal and compressive traction direction."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E03",
+    "category": "plate thickness",
+    "corrections": [
+      "Added thickness coordinate and neutral midplane."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E04",
+    "category": "plate variation",
+    "corrections": [
+      "Replaced forced blister with reference-plane variational domain and in-plane boundary normal."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E05",
+    "category": "plate variation",
+    "corrections": [
+      "Replaced forced blister with reference-plane variational domain and in-plane boundary normal."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E06",
+    "category": "transient film",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E07",
+    "category": "PVC load path",
+    "corrections": [
+      "Separated liquid/PVC load, PVC-to-film transmission and payload response."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E08",
+    "category": "transient film",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E09",
+    "category": "transient film",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E10",
+    "category": "response times",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E11",
+    "category": "transient film",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E12",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E13",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E14",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E15",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E16",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E17",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E18",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E19",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E20",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E21",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E22",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E23",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E24",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E25",
+    "category": "cohesive law",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E26",
+    "category": "cohesive law",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E27",
+    "category": "cohesive law",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E28",
+    "category": "finite input",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E29",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E30",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E31",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E32",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E33",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E34",
+    "category": "placement",
+    "corrections": [
+      "Added actual departure trajectory, receiver plane and angular placement geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E35",
+    "category": "surface traction",
+    "corrections": [
+      "Removed spurious second solid; fixed solid-to-liquid normal and compressive traction direction."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E36",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E37",
+    "category": "clamped blister",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E38",
+    "category": "cohesive law",
+    "corrections": [],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E39",
+    "category": "placement",
+    "corrections": [
+      "Added actual departure trajectory, receiver plane and angular placement geometry."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E40",
+    "category": "plate variation",
+    "corrections": [
+      "Replaced forced blister with reference-plane variational domain and in-plane boundary normal."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  },
+  {
+    "id": "C4-E41",
+    "category": "energy and momentum",
+    "corrections": [
+      "Replaced generic sequential energy reservoir arrows with equation-specific budget."
+    ],
+    "scientific_status": "accepted against local equation, definitions and notes",
+    "evidence": [
+      "content/chapter04.py"
+    ]
+  }
+]

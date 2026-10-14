@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
+<title id="title">C3-E29 — Energy allocations follow the project chain without double counting.</title>
+<desc id="desc">E_L = 25 μJ incoming; f_geo = 0.8 intercepted; A_λ = 0.5 absorbed; λ wavelength; N_d = 25 sites; E_abs,tot = 10 μJ; E_abs,site = 400 nJ; f_T = 0.40 → E_PFC,deadline; η_j = 0.005 → E_j, E_j,tot; Thermal preparation is checked on its own timescale; η_j is an assumption to be measured or solved</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="592" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C3-E29 · Physical variable map / 物理变量图</text>
+<rect x="302" y="95" width="124" height="190" class="area"/>
+<rect x="426" y="95" width="210" height="190" class="area"/>
+<text x="302" y="318" class="">Absorber / 吸收体</text>
+<text x="476" y="318" class="">PFC / 全氟碳</text>
+<path d="M75 135 H302" class="arrow"/>
+<path d="M328 135 H475" class="arrow"/>
+<path d="M75 188 H302" class="arrow"/>
+<path d="M328 188 H475" class="arrow"/>
+<path d="M75 240 H302" class="arrow"/>
+<path d="M328 240 H475" class="arrow"/>
+<text x="81" y="106" class="">F(r), I(r,t), EL</text>
+<text x="336" y="79" class="">Qabs</text>
+<text x="447" y="123" class="">T(x,t)</text>
+<path d="M683 266 H925" class="arrow"/>
+<path d="M696 274 V105" class="arrow"/>
+<path d="M700 257 C737 249 751 137 790 155 S854 251 914 257" class="line"/>
+<text x="873" y="294" class="">t, τh</text>
+<text x="717" y="109" class="muted">f(t)</text>
+<text x="690" y="322" class="muted">α , Lh , δT , tth</text>
+<path d="M302 336 H426" class="arrow"/>
+<text x="342" y="353" class="muted">z , ha</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• E_L = 25 μJ incoming</text>
+<text x="30" y="433" class="muted">• A_λ = 0.5 absorbed; λ wavelength</text>
+<text x="30" y="457" class="muted">• E_abs,tot = 10 μJ</text>
+<text x="30" y="481" class="muted">• f_T = 0.40 → E_PFC,deadline</text>
+<text x="508" y="409" class="muted">• f_geo = 0.8 intercepted</text>
+<text x="508" y="433" class="muted">• N_d = 25 sites</text>
+<text x="508" y="457" class="muted">• E_abs,site = 400 nJ</text>
+<text x="508" y="481" class="muted">• η_j = 0.005 → E_j, E_j,tot</text>
+<text x="30" y="523" class="muted">Thermal preparation is checked on its own timescale</text>
+<text x="30" y="546" class="muted">η_j is an assumption to be measured or solved</text>
+</svg>

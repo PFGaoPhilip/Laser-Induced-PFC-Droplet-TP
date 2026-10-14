@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E26 The saturation branch ends when the finite liquid inventory is exhausted.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E26 | Physical-variable diagram</text>
+<line x1="180" y1="325" x2="830" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="180" y1="325" x2="180" y2="125" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="752" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Vapor volume V_b</text>
+<text x="172" y="113.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">PFC partial pressure</text>
+<line x1="185" y1="165" x2="420" y2="165" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="420" y1="165" x2="450" y2="165" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="450" y1="165" x2="500" y2="205" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="500" y1="205" x2="590" y2="250" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="590" y1="250" x2="700" y2="278" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="700" y1="278" x2="810" y2="293" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<text x="212" y="141.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Saturation branch</text>
+<text x="502" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Finite-mass branch: p ~ 1/V</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0: total available compound</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">M_PFC, R_u: mole-to-mass conversion</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">V_b: available vapor volume</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_v,PFC,eq: inventory-limited pressure</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_v,eq: actual equilibrium vapor mass</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_b: prescribed thermal state</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_sat,PFC: coexistence ceiling</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">min: choose supply or saturation branch</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Small vapor volume can coexist with remaining liquid</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">A fully vaporized large volume cannot maintain saturation without more PFC</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C3-E28 · Compressible bulk conservation and required constitutive closure</tspan>
+</text>
+<rect id="o001" x="355.2" y="110.4" width="556.8" height="230.4" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="67.2" y1="225.6" x2="345.6" y2="225.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o003" x1="921.6" y1="225.6" x2="1190.4" y2="225.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="30.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="396.48" y="185.76">Conserved state</tspan>
+<tspan x="396.48" y="221.947">ρ, ρu, ρe_t</tspan>
+</text>
+<text id="o005" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="79.68" y="301.92">Mass, momentum</tspan>
+<tspan x="79.68" y="327.093">and energy in</tspan>
+</text>
+<text id="o006" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="934.08" y="301.92">Mass, momentum</tspan>
+<tspan x="934.08" y="327.093">and energy out</tspan>
+</text>
+<line id="o007" x1="614.4" y1="72" x2="614.4" y2="105.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="674.88" y="91.6133">Q_abs: source counted once</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="21.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="358.08" y="386.507">Closure: p = P(ρ,e,{Y_k}); stress and heat flux required.</tspan>
+</text>
+<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• ρ, u, p compressible fields</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• e internal; e_t total energy</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• τ viscous stress; q heat flux</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• Q_abs optical source counted once</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• P(ρ,e,{Y_k}) equation of state</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• I identity; ⊗, ·, ∇· operators</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="520.007">• x, t coordinates; k species index</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Initial jet state is inherited, not recreated with extra pressure</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">Species and interfacial jump conditions must also be supplied</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
+</svg>

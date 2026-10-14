@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E18 The Rayleigh speed solution and pressure-work balance agree exactly.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E18 | Physical-variable diagram</text>
+<rect x="50" y="165" width="250" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="62" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Pressure-work budget E_B</text>
+<rect x="370" y="165" width="250" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="382" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Liquid kinetic energy K_l</text>
+<rect x="690" y="165" width="240" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="702" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Remaining volume potential</text>
+<line x1="305" y1="215" x2="360" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="102" y="340.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">K_l / E_B = 1 - (R/R_max)^3; ideal loss-free control.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Kl(R)</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δpc</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Rmax</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">EB</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Vmax</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Kl/EB = 1 − (R/Rmax)³</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Finite energy survives the excluded zero-radius speed singularity</text>
+</svg>

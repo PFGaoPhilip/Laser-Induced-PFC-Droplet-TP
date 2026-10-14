@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C3-E01 · Independent-event statistical model</tspan>
+</text>
+<ellipse id="o001" cx="124.8" cy="144" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o002" cx="190.08" cy="144" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o003" cx="255.36" cy="144" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o004" cx="320.64" cy="144" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o005" cx="385.92" cy="144" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o006" cx="124.8" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o007" cx="190.08" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o008" cx="255.36" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o009" cx="320.64" cy="211.2" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o010" cx="385.92" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o011" cx="124.8" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o012" cx="190.08" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o013" cx="255.36" cy="278.4" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o014" cx="320.64" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o015" cx="385.92" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="530.88" y="154.933">Fabricated sites N_d → activated sites N_b</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="530.88" y="241.44">Independent Bernoulli events with probability p_a</tspan>
+<tspan x="530.88" y="268.187">Outline circles indicate inactive sites.</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="530.88" y="341.213">Count reproducibility and complete activation differ.</tspan>
+</text>
+<line id="o019" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• N_d fabricated sites</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• N_b activated sites</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• p_a activation probability</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• E[N_b], Var, CV, Pr: count statistics</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Missing sites change symmetry and timing</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">Independent activation is an assumption</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
+</svg>

@@ -1,43 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">A-E20 — Pressure gradients drive solvent through the network, producing a length-dependent drainage time.</title>
-<desc id="desc">ppore: solvent pressure; jl: solvent relative to network; kperm: network permeability; μl: solvent resistance; Md: storage modulus; Lg, tporo, Dporo, t; Drainage redistributes solvent over Lg; Small perturbation and constant-coefficient assumptions are separate</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">A-E20 · Physical variable map / 物理变量图</text>
-<path d="M105 112 V266" class="thin"/>
-<path d="M150 112 V266" class="thin"/>
-<path d="M195 112 V266" class="thin"/>
-<path d="M240 112 V266" class="thin"/>
-<path d="M285 112 V266" class="thin"/>
-<path d="M330 112 V266" class="thin"/>
-<path d="M375 112 V266" class="thin"/>
-<path d="M420 112 V266" class="thin"/>
-<path d="M465 112 V266" class="thin"/>
-<path d="M510 112 V266" class="thin"/>
-<path d="M555 112 V266" class="thin"/>
-<path d="M600 112 V266" class="thin"/>
-<path d="M96 116 H622" class="thin"/>
-<path d="M96 154 H622" class="thin"/>
-<path d="M96 192 H622" class="thin"/>
-<path d="M96 230 H622" class="thin"/>
-<path d="M96 268 H622" class="thin"/>
-<path d="M118 140 H710" class="arrow"/>
-<path d="M118 193 H710" class="arrow"/>
-<path d="M118 244 H710" class="arrow"/>
-<text x="105" y="88" class="">Solvent through network / 溶剂穿过网络</text>
-<text x="737" y="180" class="">jl →</text>
-<path d="M510 290 H215" class="arrow"/>
-<text x="561" y="296" class="">∇ppore ←</text>
-<text x="156" y="334" class="">Lg , kperm , μl , Md ; tporo</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• ppore: solvent pressure</text>
-<text x="30" y="433" class="muted">• jl: solvent relative to network</text>
-<text x="30" y="457" class="muted">• kperm: network permeability</text>
-<text x="30" y="481" class="muted">• μl: solvent resistance</text>
-<text x="30" y="505" class="muted">• Md: storage modulus</text>
-<text x="30" y="529" class="muted">• Lg, tporo, Dporo, t</text>
-<text x="30" y="571" class="muted">Drainage redistributes solvent over Lg</text>
-<text x="30" y="594" class="muted">Small perturbation and constant-coefficient assumptions are separate</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 616.32" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="616.32" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E20 · Physical variable map</tspan>
+</text>
+<line id="obj-001" x1="100.8" y1="107.52" x2="100.8" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-002" x1="144" y1="107.52" x2="144" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-003" x1="187.2" y1="107.52" x2="187.2" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-004" x1="230.4" y1="107.52" x2="230.4" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-005" x1="273.6" y1="107.52" x2="273.6" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-006" x1="316.8" y1="107.52" x2="316.8" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-007" x1="360" y1="107.52" x2="360" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-008" x1="403.2" y1="107.52" x2="403.2" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-009" x1="446.4" y1="107.52" x2="446.4" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-010" x1="489.6" y1="107.52" x2="489.6" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-011" x1="532.8" y1="107.52" x2="532.8" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-012" x1="576" y1="107.52" x2="576" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-013" x1="92.16" y1="111.36" x2="597.12" y2="111.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-014" x1="92.16" y1="147.84" x2="597.12" y2="147.84" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-015" x1="92.16" y1="184.32" x2="597.12" y2="184.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-016" x1="92.16" y1="220.8" x2="597.12" y2="220.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-017" x1="92.16" y1="257.28" x2="597.12" y2="257.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
+<line id="obj-018" x1="113.28" y1="134.4" x2="681.6" y2="134.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<line id="obj-019" x1="113.28" y1="185.28" x2="681.6" y2="185.28" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<line id="obj-020" x1="113.28" y1="234.24" x2="681.6" y2="234.24" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-021" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="100.8" y="84.6144">Solvent flow relative to an intact network</tspan>
+</text>
+<text id="obj-022" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="705.6" y="172.934">jl →</tspan>
+</text>
+<line id="obj-023" x1="489.6" y1="278.4" x2="206.4" y2="278.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-024" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="537.6" y="286.214">∇ppore ←</tspan>
+</text>
+<text id="obj-025" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="149.76" y="320.774">Lg , kperm , μl , Md ; tporo</tspan>
+</text>
+<text id="obj-026" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-027" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• ppore: solvent pressure</tspan>
+</text>
+<text id="obj-028" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• jl: solvent relative to network</tspan>
+</text>
+<text id="obj-029" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• kperm: network permeability</tspan>
+</text>
+<text id="obj-030" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">• μl: solvent resistance</tspan>
+</text>
+<text id="obj-031" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">• Md: storage modulus</tspan>
+</text>
+<text id="obj-032" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="530.573">• Lg, tporo, Dporo, t</tspan>
+</text>
+<text id="obj-033" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="552.653">Drainage redistributes solvent over Lg</tspan>
+</text>
+<text id="obj-034" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="574.733">Small perturbation and constant-coefficient assumptions are separate</tspan>
+</text>
 </svg>

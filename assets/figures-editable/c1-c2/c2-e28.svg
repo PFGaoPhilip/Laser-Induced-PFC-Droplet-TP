@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img"><title>C2-E28 Most of this declared preparation estimate is latent enthalpy.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="664" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E28 | Physical-variable diagram</text>
+<rect x="75" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="87" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Sensible heating</text>
+<rect x="365" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="377" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Latent conversion</text>
+<rect x="655" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="667" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Declared preparation</text>
+<text x="332" y="210.92" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3">+</text>
+<text x="622" y="210.92" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3">=</text>
+<text x="102" y="334.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Path estimate: retain separate loss and mechanical-work budgets.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0: finite core mass</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">c_p,d = 654 J/(kg K)</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_sens = 16.7450 nJ</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_prep = 97.8243 nJ</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T₀ = 293 K → T_* = 323 K</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L_v = 95 kJ/kg</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_lat = 81.0793 nJ</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Sensible plus latent preparation energy</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Carrier losses and mechanical work require a broader energy ledger</text>
+</svg>

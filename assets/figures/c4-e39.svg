@@ -1,25 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 569" role="img" aria-labelledby="title desc">
-<title id="title">C4-E39 — Reference answer: passing global budgets starts, rather than completes, the transfer argument.</title>
-<desc id="desc">ΓA_f — intended release; m_f, v_f — outgoing intact object; E_solid, I_net — transmitted budgets; H_f, θ → Δx at receiver; Full release, intact flight and repeatable reset are separate requirements.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="569" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C4-E39 · Physical variable map / 物理变量图</text>
-<rect x="107" y="205" width="760" height="65" class="area"/>
-<path d="M145 205 C276 205 295 106 482 106 S686 205 828 205" class="line"/>
-<path d="M305 206 V150" class="arrow"/>
-<path d="M465 206 V150" class="arrow"/>
-<path d="M635 206 V150" class="arrow"/>
-<text x="150" y="297" class="">Donor / 供体</text>
-<text x="326" y="95" class="">Film / 薄膜: Ef, hf, ρf, Df</text>
-<path d="M124 321 H825" class="thin"/>
-<text x="433" y="343" class="">Crack / 裂纹: b , Ac</text>
-<text x="298" y="181" class="">pload , w , tcoh</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• ΓA_f — intended release</text>
-<text x="30" y="433" class="muted">• m_f, v_f — outgoing intact object</text>
-<text x="30" y="457" class="muted">• E_solid, I_net — transmitted budgets</text>
-<text x="30" y="481" class="muted">• H_f, θ → Δx at receiver</text>
-<text x="30" y="523" class="muted">Full release, intact flight and repeatable reset are separate requirements.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C4-E39 · Original necessary operating-window checks</tspan>
+</text>
+<rect id="o001" x="115.2" y="96" width="192" height="24" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o002" x="96" y="355.2" width="1084.8" height="28.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="211.2" y1="129.6" x2="211.2" y2="350.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
+<line id="o004" x1="211.2" y1="129.6" x2="480" y2="350.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o005" x1="211.2" y1="316.8" x2="480" y2="316.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="305.28" y="303.12">Δx</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="235.92">H_f</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="242.88" y="183.12">θ</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="617.28" y="192">Normal gap H_f</tspan>
+<tspan x="617.28" y="223.467">Lateral error Δx = H_f tan θ</tspan>
+</text>
+<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• ΓA_f — intended release</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• m_f, v_f — outgoing intact object</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• E_solid, I_net — transmitted budgets</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• H_f, θ → Δx at receiver</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Full release, intact flight and repeatable reset are separate requirements.</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

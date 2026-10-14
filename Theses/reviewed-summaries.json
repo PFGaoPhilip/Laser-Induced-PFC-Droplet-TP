@@ -1,0 +1,266 @@
+{
+  "10.1017/S0022112095003053": {
+    "unit": "Chapter 1; Chapter 3",
+    "background": "The paper models liquid impact through pressure impulse and incompressible boundary conditions.",
+    "experiments": "The abstract describes analytical impact examples; new experiments are unverified.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: mathematical model and boundary conditions",
+    "limits": "A pressure impulse requires a specified geometry and pre-impact velocity field. Peak pressure additionally requires the temporal load profile."
+  },
+  "10.1017/jfm.2016.463": {
+    "unit": "Chapter 1; Chapter 3",
+    "background": "Kelvin impulse organizes asymmetric bubble-collapse jets into distinct dynamical regimes.",
+    "experiments": "Hundreds of high-speed recordings examined bubbles near solid and free boundaries and under variable gravity.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: jet drivers, high-speed visualizations, and three regimes",
+    "limits": "These are re-entrant collapse jets. External PFC transfer jets need their own boundary conditions and calibration."
+  },
+  "10.1017/jfm.2013.26": {
+    "unit": "Chapter 1; Chapter 3",
+    "background": "Pressure-pulse reflection at a capillary meniscus focuses an axisymmetric liquid jet.",
+    "experiments": "Boundary-integral simulations were compared with experimental jet trajectories and velocities.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: pressure pulse, meniscus, and experimental comparison",
+    "limits": "Meniscus geometry and capillary confinement are prescribed. The study does not establish the project's hydrogel outlet."
+  },
+  "10.1017/jfm.2022.202": {
+    "unit": "Chapter 1; Chapter 2; Chapter 3",
+    "background": "An extended Gilmore model connects laser-cavity thermodynamics with shock emission and energy partition.",
+    "experiments": "Plasma photography, time-resolved shadowgraphs, and probe-beam scattering measured bubble growth and oscillations in water.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: measurements and extended Gilmore energy balance",
+    "limits": "Optical breakdown in water differs from absorber-mediated PFC vaporization. Energy partition is case-specific."
+  },
+  "10.1364/BOE.2.001432": {
+    "unit": "Chapter 2",
+    "background": "Optically absorbing nanoparticles enable laser vaporization of weakly infrared-absorbing PFC droplets.",
+    "experiments": "A 1064 nm laser activated PbS-loaded droplets, with optical, acoustic, and photoacoustic confirmation.",
+    "evidence": "E: Europe PMC indexed abstract",
+    "locator": "Europe PMC DOI search: abstract methods",
+    "limits": "The formulation uses micron-scale droplets and silica-coated PbS. The observed fluence cannot be transferred to an unspecified nanoscale inclusion."
+  },
+  "10.1364/OL.39.002599": {
+    "unit": "Chapter 2",
+    "background": "Gold-containing PFC nanoemulsions provide a photothermal route to cavitation-assisted clot disruption.",
+    "experiments": "The available project source identifies in vitro clot-disruption experiments; their detailed protocol remains unverified here.",
+    "evidence": "?: metadata and preserved lesson citation; full methods unread",
+    "locator": "Preserved course source, reference R7",
+    "limits": "Clot disruption does not quantify transfer-jet launch, receiver loading, or printing yield."
+  },
+  "10.1021/la701555n": {
+    "unit": "Chapter 4",
+    "background": "Competing interface fracture determines rate-dependent pickup and release in transfer printing.",
+    "experiments": "PDMS stamps peeled gold films from treated glass while video measured separation speed.",
+    "evidence": "E: author-hosted full text",
+    "source": "https://rogersgroup.northwestern.edu/files/2007/laprinting.pdf",
+    "locator": "Sections 2-3; printed pages 12556-12558",
+    "limits": "The measured interfaces involve PDMS, gold, and glass. Their fracture parameters require remeasurement for the project stamp."
+  },
+  "10.1073/pnas.2318739121": {
+    "unit": "Chapter 4; Appendix A",
+    "background": "Water-vapor inflation in a hydrogel composite stamp switches adhesion for noncontact transfer.",
+    "experiments": "Microscale silicon platelets were transferred onto diverse nonadhesive surfaces in planar and curved arrangements.",
+    "evidence": "E: publisher-deposited and Europe PMC indexed abstracts",
+    "locator": "Abstract: composite reservoir, water phase change, and transfer demonstrations",
+    "limits": "The mechanism uses a sealed composite stamp and water vapor. External PFC jetting and bulk-gel channel formation remain separate mechanisms."
+  },
+  "10.1017/S0022112000003347": {
+    "unit": "Chapter 1; Appendix A",
+    "background": "Elastic-boundary recoil competes with bubble attraction to alter collapse and jet direction.",
+    "experiments": "High-speed imaging measured laser-generated bubbles, liquid jets, and boundary ejection near polyacrylamide gel.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: elastic boundary, photography, and jet directions",
+    "limits": "The bubble lies adjacent to an elastic boundary. An embedded finite-mass PFC inclusion is a different geometry."
+  },
+  "10.1017/jfm.2015.7": {
+    "unit": "Appendix A",
+    "background": "Finite-strain Kelvin-Voigt elasticity modifies spherical cavity oscillations in viscoelastic media.",
+    "experiments": "The paper develops theoretical simulations; new experimental measurements remain unverified in the abstract.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: constitutive framework and elastic forces",
+    "limits": "The medium is intact and the cavity is spherical. Rupture, heterogeneous damage, and outlets need additional models."
+  },
+  "10.1017/S0022112094000480": {
+    "unit": "Chapter 3",
+    "background": "A slender axisymmetric free-surface model predicts liquid-neck thinning and pinch-off.",
+    "experiments": "Model predictions were compared with existing jet-breakup and pendant-drop experiments.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: one-dimensional equations and experimental comparisons",
+    "limits": "A slender jet must already exist. Its launch and receiver impact require separate descriptions."
+  },
+  "10.1063/5.0045705": {
+    "unit": "Chapter 1; Chapter 3",
+    "background": "Near-wall bubble collapse can form a narrow high-speed liquid jet.",
+    "experiments": "Five-million-frame-per-second imaging with femtosecond illumination resolved laser-bubble needle jets near a solid surface.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: seeded bubbles, surface proximity, and imaging",
+    "limits": "The narrow near-wall regime is geometry-specific. Reported speeds cannot be assigned to external transfer flow."
+  },
+  "10.1103/PhysRevFluids.5.093604": {
+    "unit": "Chapter 1; Chapter 3",
+    "background": "Compressible near-wall bubble dynamics depend on bubble-to-boundary separation.",
+    "experiments": "The author preprint reports numerical distance sweeps; new experiments are unverified in its abstract.",
+    "evidence": "E: author preprint abstract",
+    "source": "https://arxiv.org/abs/2005.05733",
+    "locator": "arXiv abstract and related journal DOI",
+    "limits": "Numerical wall-jet benchmarks require matching geometry, compressibility, and resolution before project use."
+  },
+  "10.1103/PhysRevFluids.2.093601": {
+    "unit": "Chapter 3",
+    "background": "Bubble asymmetry changes collapse shock emission and energy distribution.",
+    "experiments": "The author preprint describes measurements of shock emission from nonspherical bubble collapses.",
+    "evidence": "E: author preprint abstract",
+    "source": "https://arxiv.org/abs/1708.04049",
+    "locator": "arXiv abstract",
+    "limits": "Shock emission and jet impact are distinct receiver-load observables."
+  },
+  "10.1103/PhysRevLett.96.224501": {
+    "unit": "Chapter 3",
+    "background": "Bubble interactions can alter shielding and collapse timing in ordered arrays.",
+    "experiments": "The preserved lesson describes controlled multibubble surface-cavitation experiments; primary methods remain unread in this pass.",
+    "evidence": "?: preserved lesson summary and canonical metadata",
+    "locator": "text/03-arrays-finite-jets-and-impact.md, section on bubble interaction",
+    "limits": "The experimental activation differs from laser/PFC arrays. Retain this as a benchmark lead until its primary methods are read."
+  },
+  "10.1016/j.jmbbm.2024.106776": {
+    "unit": "Chapter 2; Appendix A",
+    "background": "PFC phase change couples droplet properties with fast cavity inertia and slow gel-dependent evolution.",
+    "experiments": "Optical activation and imaging followed PFC droplets across inertial and quasi-static stages in gelatin, fibrin, and polyacrylamide.",
+    "evidence": "E: Europe PMC indexed abstract",
+    "locator": "Indexed abstract: three matrices, concentration, droplet size, and core composition",
+    "limits": "A bubble-radius record does not establish a directed external jet, receiver impact, or solid-payload transfer."
+  },
+  "10.3390/nano13152238": {
+    "unit": "Chapter 2; Appendix A",
+    "background": "PFC nanodroplet optical thresholds and reuse depend on shell composition and preconditioning.",
+    "experiments": "High-frame-rate ultrasound measured repeated optical vaporization while formulations and imaging parameters were varied.",
+    "evidence": "E: Europe PMC indexed abstract",
+    "locator": "Indexed abstract: thresholds, shells, preconditioning, and lifetimes",
+    "limits": "Population ultrasound onset differs from single-inclusion activation. Shell, temperature, and conditioning must match."
+  },
+  "10.1021/acs.langmuir.4c05030": {
+    "unit": "Chapter 2; Appendix A",
+    "background": "PFC droplet shells influence bubble growth and post-vaporization payload transport.",
+    "experiments": "Optical microscopy and acoustic measurements compared lipid, protein, and polymer PFH droplets activated by ultrasound in fibrin.",
+    "evidence": "E: Europe PMC indexed abstract",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1021%2Facs.langmuir.4c05030&resultType=core&format=json",
+    "locator": "Indexed abstract: shell types, fibrin, microscopy, and ultrasound stimulation",
+    "limits": "Optical characterization refers to imaging. The driving mechanism is acoustic droplet vaporization."
+  },
+  "10.1021/acsami.5c11300": {
+    "unit": "Chapter 3; Appendix A",
+    "background": "Phase-shift bubble dynamics and payload transport can evolve at different rates.",
+    "experiments": "Brightfield, fluorescence, confocal imaging, and passive acoustic detection tracked ultrasound-activated PFC droplets in fibrin.",
+    "evidence": "E: indexed abstract and figure captions",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/40910739/",
+    "locator": "Abstract and Figures 1, 3, 8, and 10",
+    "limits": "Reported payload motion concerns acoustic activation in gel. It cannot calibrate laser-driven external transfer-jet speed."
+  },
+  "10.1007/s10404-011-0787-4": {
+    "unit": "Chapter 1; Chapter 3; Chapter 4",
+    "background": "Thin-film laser transfer permits external, re-entrant, and blister-driven jet mechanisms.",
+    "experiments": "Time-resolved microscopy compared liquid ejection with metal and polymer absorbing layers.",
+    "evidence": "E: publisher abstract",
+    "source": "https://link.springer.com/article/10.1007/s10404-011-0787-4",
+    "locator": "Abstract: gas cavities, external jets, re-entrant jets, and blister transition",
+    "limits": "The absorber-layer and thin-film geometries require matching. None directly establishes an embedded-PFC outlet."
+  },
+  "10.1017/jfm.2012.337": {
+    "unit": "Chapter 1; Chapter 3; Chapter 4",
+    "background": "A deforming blister drives liquid-film ejection and a printable external jet.",
+    "experiments": "Measured blister profiles drove simulations compared against jet shape, evolution, and released volume.",
+    "evidence": "E: publisher abstract",
+    "source": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/impulsively-actuated-jets-from-thin-liquid-films-for-highresolution-printing-applications/8B18A5957DC4317B99B9F4D2134259CC",
+    "locator": "Abstract: measured boundary motion and experimental comparison",
+    "limits": "The driving boundary was measured. A pressure-only spherical model lacks that spatial launch input."
+  },
+  "10.1007/s10404-013-1248-z": {
+    "unit": "Chapter 2; Chapter 3; Chapter 4",
+    "year": 2014,
+    "background": "Absorber-mediated bubble generation changes jet stability and usable laser-printing conditions.",
+    "experiments": "Time-resolved imaging compared release-layer-assisted and direct irradiation of silver ink, including deposited satellites.",
+    "evidence": "E: publisher abstract",
+    "source": "https://link.springer.com/article/10.1007/s10404-013-1248-z",
+    "locator": "Abstract; issue date March 2014; online publication August 2013",
+    "limits": "The canonical citation year is 2014; online publication occurred in 2013. Silver ink is a printing-mechanism analogue."
+  },
+  "10.1063/5.0186998": {
+    "unit": "Chapter 2; Chapter 3",
+    "background": "Continuous-wave thermocavitation couples beam size, incubation time, heat transfer, and bubble energy.",
+    "experiments": "Water-filled microchannels were irradiated at 1950 nm and imaged while beam radius and laser power varied.",
+    "evidence": "E: author preprint full text",
+    "source": "https://arxiv.org/html/2310.09046v1",
+    "locator": "Sections 2 and 3: microchip, fiber positioning, imaging, and heat-transfer comparison",
+    "limits": "Continuous-wave water heating has different absorption and incubation scales from pulsed PFC activation."
+  },
+  "10.1007/s11340-026-01332-z": {
+    "unit": "Chapter 4; Appendix A",
+    "background": "Hydrogel network architecture governs material changes caused by repeated cavitation.",
+    "experiments": "Five successive laser events were studied using high-speed imaging, confocal microscopy, and inverse rheometry in three gel networks.",
+    "evidence": "E: publisher full text",
+    "source": "https://link.springer.com/article/10.1007/s11340-026-01332-z",
+    "locator": "Experimental Methods; Laser Induced Cavitation; Assessing damage; Conclusions",
+    "limits": "The fitted modulus is an effective damage proxy. Later cycles probe modified near-field material. Recovery requires separate waiting-time experiments."
+  },
+  "10.1007/s42241-026-0020-2": {
+    "unit": "Chapter 1; Appendix A",
+    "background": "Boundary stiffness and bubble separation determine elastic-wall jet and damage regimes.",
+    "experiments": "High-speed photography compared laser-generated submillimeter bubbles near agarose boundaries of three concentrations.",
+    "evidence": "E: publisher abstract",
+    "source": "https://link.springer.com/article/10.1007/s42241-026-0020-2",
+    "locator": "Abstract: high-speed photography, agarose boundaries, and regime classification",
+    "limits": "The optimum separation belongs to an adjacent-boundary geometry. Transfer to embedded PFC inclusions remains an inference requiring experiments."
+  },
+  "10.1088/1361-6633/adedb3": {
+    "unit": "Chapter 1; Chapter 2; Chapter 3",
+    "background": "Optical breakdown links laser pulse conditions with plasma formation, bubble growth, and shock energy.",
+    "experiments": "Plasma photography, probe-beam scattering, and absorption measurements examined tightly focused laser pulses in water.",
+    "evidence": "E: author accepted-manuscript abstract",
+    "source": "https://arxiv.org/abs/2501.11029",
+    "locator": "Abstract; journal reference; revision history",
+    "limits": "Journal publication is 2025; the accepted-manuscript revision is dated 2026. Breakdown energy fractions require matching to that water-plasma regime."
+  },
+  "arxiv:2404.17457": {
+    "unit": "Chapter 2; Appendix A",
+    "background": "A finite superheated droplet couples bubble motion with phase-change and heat-transfer balances.",
+    "experiments": "The abstract reports analytical-limit validation of a semi-analytical model; new experiments are unverified.",
+    "evidence": "E: author preprint abstract",
+    "source": "https://arxiv.org/abs/2404.17457",
+    "locator": "Abstract: motion, thermodynamics, convection-diffusion, and complete vaporization",
+    "limits": "The modeled system is water in oil. PFC properties and gel constitutive laws require substitution and validation."
+  },
+  "10.3390/ijms23126636": {
+    "unit": "Chapter 4; Appendix A",
+    "background": "Laser-generated cavities can create internal channels within cell-covered collagen microfibres.",
+    "experiments": "Femtosecond irradiation, confocal microscopy, and viability assays assessed channel formation and cell preservation.",
+    "evidence": "E: primary article full text",
+    "source": "https://pdfs.semanticscholar.org/75a7/e94d101a157e2f6165db68e72df7b01c9d42.pdf",
+    "locator": "Pages 1-4: abstract, introduction, and channel-formation results",
+    "limits": "This supports geometry-dependent channel formation in collagen. A reproducible PFC-powered outlet and external transfer remain unestablished."
+  },
+  "10.1063/1.5060717": {
+    "unit": "Chapter 4; Appendix A",
+    "background": "Paste rheology can permit repeated laser transfer from a replenishing donor spot.",
+    "experiments": "Industrial silver paste was printed with repeated pulses while solvent addition altered its rheology.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: repeated same-spot printing and rheology modification",
+    "limits": "Healing occurs in a paste film. It does not establish recovery of a chemically crosslinked hydrogel."
+  },
+  "10.1063/5.0123894": {
+    "unit": "Chapter 1; Chapter 3",
+    "background": "Bubble oscillations fragment droplets through multiple interface-jetting mechanisms.",
+    "experiments": "Single laser bubbles inside water microdroplets revealed crown jetting, oil-finger rupture, and induced jetting.",
+    "evidence": "E: publisher-deposited abstract",
+    "locator": "Crossref abstract: three emulsification pathways",
+    "limits": "The geometry concerns water droplets and emulsification. Stable project transfer requires distinct breakup and deposition measurements."
+  },
+  "10.15011/ijmsa.33.330106": {
+    "unit": "Chapter 2; Appendix A",
+    "background": "Dissolved air changes PFH boiling onset and low-heat-flux two-phase heat transfer.",
+    "experiments": "Subcooled PFH flow-boiling experiments varied dissolved-air concentration in a four-millimeter tube.",
+    "evidence": "E: publisher full text",
+    "source": "https://www.jasma.info/journal/wp-content/uploads/sites/2/2016/01/2016_p3301061.pdf",
+    "locator": "Page 1 abstract; pages 2-3 and Table 3",
+    "limits": "Table 3 lists PFH properties at two temperatures. It does not establish high-temperature nanoscale PFC transport or gel-interface properties."
+  }
+}

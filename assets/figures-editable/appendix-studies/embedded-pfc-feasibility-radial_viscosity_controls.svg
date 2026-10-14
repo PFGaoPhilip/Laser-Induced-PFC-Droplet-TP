@@ -1,0 +1,334 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 849.994" role="img">
+<title>radial_viscosity_controls</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="849.994" fill="#FFFFFF"/>
+<polygon id="obj-0001" points="0,849.994 1279.97,849.994 1279.97,0 0,0 0,849.994" fill="#ffffff" stroke="none" stroke-width="1.65885" opacity="1"/>
+<polygon id="obj-0002" points="73.1618,408.013 633.654,408.013 633.654,90.7799 73.1618,90.7799 73.1618,408.013" fill="#ffffff" stroke="none" stroke-width="1.65885" opacity="1"/>
+<line id="obj-0003" x1="98.6387" y1="408.013" x2="98.6387" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0004" x1="98.6387" y1="408.013" x2="98.6387" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0005" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="80.1179" y="428.744">0.0</tspan>
+</text>
+<line id="obj-0006" x1="166.577" y1="408.013" x2="166.577" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0007" x1="166.577" y1="408.013" x2="166.577" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0008" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="148.056" y="428.744">0.2</tspan>
+</text>
+<line id="obj-0009" x1="234.516" y1="408.013" x2="234.516" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0010" x1="234.516" y1="408.013" x2="234.516" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0011" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="215.995" y="428.744">0.4</tspan>
+</text>
+<line id="obj-0012" x1="302.454" y1="408.013" x2="302.454" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0013" x1="302.454" y1="408.013" x2="302.454" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0014" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="283.933" y="428.744">0.6</tspan>
+</text>
+<line id="obj-0015" x1="370.392" y1="408.013" x2="370.392" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0016" x1="370.392" y1="408.013" x2="370.392" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0017" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="351.872" y="428.744">0.8</tspan>
+</text>
+<line id="obj-0018" x1="438.331" y1="408.013" x2="438.331" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0019" x1="438.331" y1="408.013" x2="438.331" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0020" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="419.81" y="428.744">1.0</tspan>
+</text>
+<line id="obj-0021" x1="506.269" y1="408.013" x2="506.269" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0022" x1="506.269" y1="408.013" x2="506.269" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0023" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="487.748" y="428.744">1.2</tspan>
+</text>
+<line id="obj-0024" x1="574.208" y1="408.013" x2="574.208" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0025" x1="574.208" y1="408.013" x2="574.208" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0026" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="555.687" y="428.744">1.4</tspan>
+</text>
+<text id="obj-0027" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="197.866" y="451.969">Time after prescribed seed (µs)</tspan>
+</text>
+<line id="obj-0028" x1="73.1618" y1="393.593" x2="633.654" y2="393.593" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0029" x1="73.1618" y1="393.593" x2="67.3558" y2="393.593" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0030" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="396.411">0</tspan>
+</text>
+<line id="obj-0031" x1="73.1618" y1="346.228" x2="633.654" y2="346.228" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0032" x1="73.1618" y1="346.228" x2="67.3558" y2="346.228" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0033" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="349.046">1</tspan>
+</text>
+<line id="obj-0034" x1="73.1618" y1="298.863" x2="633.654" y2="298.863" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0035" x1="73.1618" y1="298.863" x2="67.3558" y2="298.863" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0036" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="301.681">2</tspan>
+</text>
+<line id="obj-0037" x1="73.1618" y1="251.499" x2="633.654" y2="251.499" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0038" x1="73.1618" y1="251.499" x2="67.3558" y2="251.499" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0039" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="254.317">3</tspan>
+</text>
+<line id="obj-0040" x1="73.1618" y1="204.134" x2="633.654" y2="204.134" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0041" x1="73.1618" y1="204.134" x2="67.3558" y2="204.134" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0042" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="206.952">4</tspan>
+</text>
+<line id="obj-0043" x1="73.1618" y1="156.769" x2="633.654" y2="156.769" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0044" x1="73.1618" y1="156.769" x2="67.3558" y2="156.769" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0045" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="159.587">5</tspan>
+</text>
+<line id="obj-0046" x1="73.1618" y1="109.404" x2="633.654" y2="109.404" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0047" x1="73.1618" y1="109.404" x2="67.3558" y2="109.404" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0048" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="47.9226" y="112.222">6</tspan>
+</text>
+<text id="obj-0049" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1" transform="rotate(-90 40.3749 243.507)">
+<tspan x="-76.0181" y="245.913">Radial wall speed (m/s)</tspan>
+</text>
+<polyline id="obj-0050" points="98.6387,393.593 104.658,273.455 108.435,200.152 110.593,165.204 112.354,142.312 113.887,126.926 115.221,117.018 116.386,110.935 117.38,107.529 118.203,105.877 118.856,105.276 119.396,105.227 119.935,105.563 120.588,106.455 121.355,108.138 121.355,108.138" fill="none" stroke="#b95e23" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0051" points="98.6387,393.593 99.3103,383.847 99.982,378.492 100.697,375.33 101.513,373.328 102.375,372.096 103.668,370.939 106.039,369.427 114.877,364.45 124.362,359.454 131.69,355.994 138.013,353.404 143.762,351.44 149.079,350.002 154.252,348.986 159.282,348.376 164.311,348.146 169.341,348.288 174.514,348.806 179.975,349.729 185.867,351.109 192.477,353.051 200.237,355.736 210.584,359.739 213.601,360.954 213.601,360.954" fill="none" stroke="#176c8e" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0052" points="98.6387,393.593 98.9231,391.622 99.2553,391.467 102.155,391.442 444.488,389.564 607.54,389.062 608.177,389.061 608.177,389.061" fill="none" stroke="#477448" stroke-width="2.48828" opacity="1"/>
+<line id="obj-0053" x1="73.1618" y1="408.013" x2="73.1618" y2="90.7799" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<line id="obj-0054" x1="73.1618" y1="408.013" x2="633.654" y2="408.013" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0055" font-family="Arial,sans-serif" font-size="19.9062" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="214.504" y="76.6465">Initial diameter 0.6 µm</tspan>
+</text>
+<polygon id="obj-0056" points="458.456,178.703 622.042,178.703 622.572,178.68 623.056,178.611 623.493,178.496 623.885,178.334 624.231,178.127 624.53,177.873 624.784,177.574 624.991,177.228 625.152,176.837 625.267,176.399 625.337,175.915 625.36,175.385 625.36,102.392 625.337,101.862 625.267,101.378 625.152,100.94 624.991,100.549 624.784,100.203 624.53,99.9036 624.231,99.6502 623.885,99.4428 623.493,99.2816 623.056,99.1664 622.572,99.0972 622.042,99.0742 458.456,99.0742 457.926,99.0972 457.442,99.1664 457.004,99.2816 456.613,99.4428 456.267,99.6502 455.968,99.9036 455.714,100.203 455.507,100.549 455.346,100.94 455.23,101.378 455.161,101.862 455.138,102.392 455.138,175.385 455.161,175.915 455.23,176.399 455.346,176.837 455.507,177.228 455.714,177.574 455.968,177.873 456.267,178.127 456.613,178.334 457.004,178.496 457.442,178.611 457.926,178.68 458.456,178.703" fill="#ffffff" stroke="#cccccc" stroke-width="1.65885" opacity="0.8"/>
+<polyline id="obj-0057" points="461.774,112.508 478.362,112.508 494.951,112.508" fill="none" stroke="#b95e23" stroke-width="2.48828" opacity="1"/>
+<text id="obj-0058" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="505.341" y="114.831">η = 0 Pa s</tspan>
+</text>
+<polyline id="obj-0059" points="461.774,137.392 478.362,137.392 494.951,137.392" fill="none" stroke="#176c8e" stroke-width="2.48828" opacity="1"/>
+<text id="obj-0060" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="505.341" y="139.715">η = 0.01 Pa s</tspan>
+</text>
+<polyline id="obj-0061" points="461.774,162.276 478.362,162.276 494.951,162.276" fill="none" stroke="#477448" stroke-width="2.48828" opacity="1"/>
+<text id="obj-0062" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="505.341" y="164.599">η = 0.1 Pa s</tspan>
+</text>
+<polygon id="obj-0063" points="707.532,408.013 1268.02,408.013 1268.02,90.7799 707.532,90.7799 707.532,408.013" fill="#ffffff" stroke="none" stroke-width="1.65885" opacity="1"/>
+<line id="obj-0064" x1="733.009" y1="408.013" x2="733.009" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0065" x1="733.009" y1="408.013" x2="733.009" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0066" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="724.276" y="428.744">0</tspan>
+</text>
+<line id="obj-0067" x1="852.032" y1="408.013" x2="852.032" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0068" x1="852.032" y1="408.013" x2="852.032" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0069" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="843.299" y="428.744">2</tspan>
+</text>
+<line id="obj-0070" x1="971.055" y1="408.013" x2="971.055" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0071" x1="971.055" y1="408.013" x2="971.055" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0072" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="962.322" y="428.744">4</tspan>
+</text>
+<line id="obj-0073" x1="1090.08" y1="408.013" x2="1090.08" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0074" x1="1090.08" y1="408.013" x2="1090.08" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0075" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1081.35" y="428.744">6</tspan>
+</text>
+<line id="obj-0076" x1="1209.1" y1="408.013" x2="1209.1" y2="90.7799" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0077" x1="1209.1" y1="408.013" x2="1209.1" y2="413.819" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0078" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1200.37" y="428.744">8</tspan>
+</text>
+<text id="obj-0079" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="832.236" y="451.969">Time after prescribed seed (µs)</tspan>
+</text>
+<line id="obj-0080" x1="707.532" y1="393.593" x2="1268.02" y2="393.593" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0081" x1="707.532" y1="393.593" x2="701.726" y2="393.593" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0082" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="682.293" y="396.411">0</tspan>
+</text>
+<line id="obj-0083" x1="707.532" y1="323.479" x2="1268.02" y2="323.479" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0084" x1="707.532" y1="323.479" x2="701.726" y2="323.479" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0085" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="682.293" y="326.297">1</tspan>
+</text>
+<line id="obj-0086" x1="707.532" y1="253.366" x2="1268.02" y2="253.366" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0087" x1="707.532" y1="253.366" x2="701.726" y2="253.366" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0088" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="682.293" y="256.184">2</tspan>
+</text>
+<line id="obj-0089" x1="707.532" y1="183.252" x2="1268.02" y2="183.252" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0090" x1="707.532" y1="183.252" x2="701.726" y2="183.252" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0091" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="682.293" y="186.071">3</tspan>
+</text>
+<line id="obj-0092" x1="707.532" y1="113.139" x2="1268.02" y2="113.139" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0093" x1="707.532" y1="113.139" x2="701.726" y2="113.139" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0094" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="682.293" y="115.957">4</tspan>
+</text>
+<text id="obj-0095" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1" transform="rotate(-90 674.745 243.507)">
+<tspan x="558.352" y="245.913">Radial wall speed (m/s)</tspan>
+</text>
+<polyline id="obj-0096" points="733.009,393.593 738.995,298.6 742.271,252.47 745.043,218.386 747.564,191.748 749.895,170.828 752.1,154.209 754.179,141.188 756.196,130.83 758.086,122.975 759.85,117.124 761.551,112.717 763.126,109.625 764.576,107.551 765.899,106.253 767.159,105.508 768.356,105.214 769.553,105.295 770.813,105.762 772.199,106.693 773.712,108.174 775.413,110.371 777.366,113.524 779.571,117.813 782.092,123.552 783.415,126.885 783.415,126.885" fill="none" stroke="#b95e23" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0097" points="733.009,393.593 735.603,354.099 738.017,322.736 740.253,298.214 742.489,277.691 744.635,261.34 746.692,248.362 748.749,237.659 750.716,229.255 752.684,222.388 754.651,216.843 756.529,212.612 758.407,209.282 760.196,206.841 761.895,205.104 763.594,203.871 765.293,203.09 766.992,202.714 768.691,202.705 770.48,203.055 772.447,203.826 774.594,205.082 776.919,206.885 779.512,209.38 782.374,212.662 785.593,216.941 789.171,222.332 793.195,229.088 797.756,237.496 802.943,247.852 804.552,251.212 804.552,251.212" fill="none" stroke="#176c8e" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0098" points="733.009,393.593 733.886,382.072 734.78,374.663 735.656,370.097 736.587,367.067 737.609,365.064 738.741,363.79 740.015,363.014 741.413,362.58 743.837,362.273 749.156,362.122 771.861,362.071 802.434,362.337 834.28,362.986 866.763,364.019 901.794,365.509 941.283,367.574 991.6,370.603 1142.55,379.933 1193.5,382.57 1242.55,384.745 1242.55,384.745" fill="none" stroke="#477448" stroke-width="2.48828" opacity="1"/>
+<line id="obj-0099" x1="707.532" y1="408.013" x2="707.532" y2="90.7799" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<line id="obj-0100" x1="707.532" y1="408.013" x2="1268.02" y2="408.013" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0101" font-family="Arial,sans-serif" font-size="19.9062" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="860.619" y="76.6465">Initial diameter 6 µm</tspan>
+</text>
+<polygon id="obj-0102" points="1092.83,178.703 1256.41,178.703 1256.94,178.68 1257.43,178.611 1257.86,178.496 1258.26,178.334 1258.6,178.127 1258.9,177.873 1259.15,177.574 1259.36,177.228 1259.52,176.837 1259.64,176.399 1259.71,175.915 1259.73,175.385 1259.73,102.392 1259.71,101.862 1259.64,101.378 1259.52,100.94 1259.36,100.549 1259.15,100.203 1258.9,99.9036 1258.6,99.6502 1258.26,99.4428 1257.86,99.2816 1257.43,99.1664 1256.94,99.0972 1256.41,99.0742 1092.83,99.0742 1092.3,99.0972 1091.81,99.1664 1091.37,99.2816 1090.98,99.4428 1090.64,99.6502 1090.34,99.9036 1090.08,100.203 1089.88,100.549 1089.72,100.94 1089.6,101.378 1089.53,101.862 1089.51,102.392 1089.51,175.385 1089.53,175.915 1089.6,176.399 1089.72,176.837 1089.88,177.228 1090.08,177.574 1090.34,177.873 1090.64,178.127 1090.98,178.334 1091.37,178.496 1091.81,178.611 1092.3,178.68 1092.83,178.703" fill="#ffffff" stroke="#cccccc" stroke-width="1.65885" opacity="0.8"/>
+<polyline id="obj-0103" points="1096.14,112.508 1112.73,112.508 1129.32,112.508" fill="none" stroke="#b95e23" stroke-width="2.48828" opacity="1"/>
+<text id="obj-0104" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1139.71" y="114.831">η = 0 Pa s</tspan>
+</text>
+<polyline id="obj-0105" points="1096.14,137.392 1112.73,137.392 1129.32,137.392" fill="none" stroke="#176c8e" stroke-width="2.48828" opacity="1"/>
+<text id="obj-0106" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1139.71" y="139.715">η = 0.01 Pa s</tspan>
+</text>
+<polyline id="obj-0107" points="1096.14,162.276 1112.73,162.276 1129.32,162.276" fill="none" stroke="#477448" stroke-width="2.48828" opacity="1"/>
+<text id="obj-0108" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1139.71" y="164.599">η = 0.1 Pa s</tspan>
+</text>
+<polygon id="obj-0109" points="73.1618,786.625 633.654,786.625 633.654,469.392 73.1618,469.392 73.1618,786.625" fill="#ffffff" stroke="none" stroke-width="1.65885" opacity="1"/>
+<line id="obj-0110" x1="98.6387" y1="786.625" x2="98.6387" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0111" x1="98.6387" y1="786.625" x2="98.6387" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0112" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="80.1179" y="807.356">0.0</tspan>
+</text>
+<line id="obj-0113" x1="166.577" y1="786.625" x2="166.577" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0114" x1="166.577" y1="786.625" x2="166.577" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0115" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="148.056" y="807.356">0.2</tspan>
+</text>
+<line id="obj-0116" x1="234.516" y1="786.625" x2="234.516" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0117" x1="234.516" y1="786.625" x2="234.516" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0118" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="215.995" y="807.356">0.4</tspan>
+</text>
+<line id="obj-0119" x1="302.454" y1="786.625" x2="302.454" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0120" x1="302.454" y1="786.625" x2="302.454" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0121" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="283.933" y="807.356">0.6</tspan>
+</text>
+<line id="obj-0122" x1="370.392" y1="786.625" x2="370.392" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0123" x1="370.392" y1="786.625" x2="370.392" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0124" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="351.872" y="807.356">0.8</tspan>
+</text>
+<line id="obj-0125" x1="438.331" y1="786.625" x2="438.331" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0126" x1="438.331" y1="786.625" x2="438.331" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0127" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="419.81" y="807.356">1.0</tspan>
+</text>
+<line id="obj-0128" x1="506.269" y1="786.625" x2="506.269" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0129" x1="506.269" y1="786.625" x2="506.269" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0130" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="487.748" y="807.356">1.2</tspan>
+</text>
+<line id="obj-0131" x1="574.208" y1="786.625" x2="574.208" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0132" x1="574.208" y1="786.625" x2="574.208" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0133" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="555.687" y="807.356">1.4</tspan>
+</text>
+<text id="obj-0134" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="197.866" y="830.582">Time after prescribed seed (µs)</tspan>
+</text>
+<line id="obj-0135" x1="73.1618" y1="772.205" x2="633.654" y2="772.205" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0136" x1="73.1618" y1="772.205" x2="67.3558" y2="772.205" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0137" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="28.3482" y="775.023">1.2</tspan>
+</text>
+<line id="obj-0138" x1="73.1618" y1="708.118" x2="633.654" y2="708.118" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0139" x1="73.1618" y1="708.118" x2="67.3558" y2="708.118" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0140" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="28.3482" y="710.936">1.4</tspan>
+</text>
+<line id="obj-0141" x1="73.1618" y1="644.03" x2="633.654" y2="644.03" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0142" x1="73.1618" y1="644.03" x2="67.3558" y2="644.03" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0143" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="28.3482" y="646.848">1.6</tspan>
+</text>
+<line id="obj-0144" x1="73.1618" y1="579.943" x2="633.654" y2="579.943" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0145" x1="73.1618" y1="579.943" x2="67.3558" y2="579.943" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0146" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="28.3482" y="582.761">1.8</tspan>
+</text>
+<line id="obj-0147" x1="73.1618" y1="515.855" x2="633.654" y2="515.855" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0148" x1="73.1618" y1="515.855" x2="67.3558" y2="515.855" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0149" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="28.3482" y="518.674">2.0</tspan>
+</text>
+<text id="obj-0150" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1" transform="rotate(-90 24.5484 622.119)">
+<tspan x="-77.1638" y="624.525">Outer-radius stretch</tspan>
+</text>
+<polyline id="obj-0151" points="98.6387,772.205 99.1498,772.037 99.7461,771.416 100.456,770.077 101.308,767.603 102.302,763.504 103.466,757.02 104.8,747.327 106.305,733.515 108.009,714.313 109.997,687.518 112.382,650.095 115.505,594.852 121.355,483.812 121.355,483.812" fill="none" stroke="#b95e23" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0152" points="98.6387,772.205 99.2135,772.025 100.056,771.326 101.473,769.606 104.243,765.583 108.3,759.041 112.722,751.2 117.32,742.28 122.206,731.976 127.379,720.18 132.984,706.447 139.019,690.663 145.917,671.558 154.252,647.335 168.335,605.048 180.981,567.538 189.316,543.943 196.501,524.678 203.111,507.999 209.29,493.401 213.601,483.812 213.601,483.812" fill="none" stroke="#176c8e" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0153" points="98.6387,772.205 100.042,772.022 130.485,767.515 161.057,762.615 191.629,757.342 222.202,751.7 253.411,745.564 284.62,739.056 316.466,732.041 348.949,724.511 382.706,716.302 417.1,707.559 453.405,697.946 491.62,687.439 533.02,675.665 578.878,662.228 608.177,653.469 608.177,653.469" fill="none" stroke="#477448" stroke-width="2.48828" opacity="1"/>
+<line id="obj-0154" x1="73.1618" y1="483.812" x2="633.654" y2="483.812" fill="#FFFFFF" stroke="#666666" stroke-width="1.32708" opacity="1" stroke-dasharray="6 4"/>
+<line id="obj-0155" x1="73.1618" y1="786.625" x2="73.1618" y2="469.392" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<line id="obj-0156" x1="73.1618" y1="786.625" x2="633.654" y2="786.625" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<polygon id="obj-0157" points="707.532,786.625 1268.02,786.625 1268.02,469.392 707.532,469.392 707.532,786.625" fill="#ffffff" stroke="none" stroke-width="1.65885" opacity="1"/>
+<line id="obj-0158" x1="733.009" y1="786.625" x2="733.009" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0159" x1="733.009" y1="786.625" x2="733.009" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0160" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="724.276" y="807.356">0</tspan>
+</text>
+<line id="obj-0161" x1="852.032" y1="786.625" x2="852.032" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0162" x1="852.032" y1="786.625" x2="852.032" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0163" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="843.299" y="807.356">2</tspan>
+</text>
+<line id="obj-0164" x1="971.055" y1="786.625" x2="971.055" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0165" x1="971.055" y1="786.625" x2="971.055" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0166" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="962.322" y="807.356">4</tspan>
+</text>
+<line id="obj-0167" x1="1090.08" y1="786.625" x2="1090.08" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0168" x1="1090.08" y1="786.625" x2="1090.08" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0169" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1081.35" y="807.356">6</tspan>
+</text>
+<line id="obj-0170" x1="1209.1" y1="786.625" x2="1209.1" y2="469.392" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0171" x1="1209.1" y1="786.625" x2="1209.1" y2="792.431" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0172" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="1200.37" y="807.356">8</tspan>
+</text>
+<text id="obj-0173" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="832.236" y="830.582">Time after prescribed seed (µs)</tspan>
+</text>
+<line id="obj-0174" x1="707.532" y1="772.205" x2="1268.02" y2="772.205" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0175" x1="707.532" y1="772.205" x2="701.726" y2="772.205" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0176" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="662.719" y="775.023">1.2</tspan>
+</text>
+<line id="obj-0177" x1="707.532" y1="708.118" x2="1268.02" y2="708.118" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0178" x1="707.532" y1="708.118" x2="701.726" y2="708.118" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0179" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="662.719" y="710.936">1.4</tspan>
+</text>
+<line id="obj-0180" x1="707.532" y1="644.03" x2="1268.02" y2="644.03" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0181" x1="707.532" y1="644.03" x2="701.726" y2="644.03" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0182" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="662.719" y="646.848">1.6</tspan>
+</text>
+<line id="obj-0183" x1="707.532" y1="579.943" x2="1268.02" y2="579.943" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0184" x1="707.532" y1="579.943" x2="701.726" y2="579.943" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0185" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="662.719" y="582.761">1.8</tspan>
+</text>
+<line id="obj-0186" x1="707.532" y1="515.855" x2="1268.02" y2="515.855" fill="#FFFFFF" stroke="#b0b0b0" stroke-width="1.32708" opacity="0.2"/>
+<line id="obj-0187" x1="707.532" y1="515.855" x2="701.726" y2="515.855" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0188" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="662.719" y="518.674">2.0</tspan>
+</text>
+<text id="obj-0189" font-family="Arial,sans-serif" font-size="16.5885" fill="#000000" text-anchor="start" opacity="1" transform="rotate(-90 658.919 622.119)">
+<tspan x="557.207" y="624.525">Outer-radius stretch</tspan>
+</text>
+<polyline id="obj-0190" points="733.009,772.205 733.939,772.024 734.899,771.458 735.971,770.374 737.203,768.549 738.554,765.851 740.129,761.815 741.917,756.133 743.909,748.515 746.241,738.047 748.909,724.265 752.037,706.075 755.818,681.82 760.732,647.745 768.797,588.826 779.949,507.849 783.415,483.812 783.415,483.812" fill="none" stroke="#b95e23" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0191" points="733.009,772.205 733.941,772.026 734.959,771.436 736.081,770.337 737.391,768.499 738.911,765.682 740.7,761.53 742.757,755.779 745.261,747.598 748.212,736.622 751.879,721.471 756.618,700.186 763.504,667.363 783,573.598 789.975,542.303 796.057,516.655 801.691,494.46 804.552,483.812 804.552,483.812" fill="none" stroke="#176c8e" stroke-width="2.48828" opacity="1"/>
+<polyline id="obj-0192" points="733.009,772.205 734.028,772.021 735.403,771.38 737.609,769.91 742.78,765.884 780.141,735.763 820.904,703.147 848.292,681.703 871.221,664.2 892.24,648.609 911.984,634.425 930.455,621.607 948.289,609.68 965.486,598.624 982.046,588.409 998.606,578.629 1014.53,569.646 1030.45,561.078 1046.38,552.928 1062.3,545.193 1078.22,537.87 1094.14,530.952 1110.07,524.429 1126.63,518.054 1143.19,512.081 1159.75,506.497 1176.94,501.091 1194.14,496.067 1211.98,491.241 1230.45,486.63 1242.55,483.812 1242.55,483.812" fill="none" stroke="#477448" stroke-width="2.48828" opacity="1"/>
+<line id="obj-0193" x1="707.532" y1="483.812" x2="1268.02" y2="483.812" fill="#FFFFFF" stroke="#666666" stroke-width="1.32708" opacity="1" stroke-dasharray="6 4"/>
+<line id="obj-0194" x1="707.532" y1="786.625" x2="707.532" y2="469.392" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<line id="obj-0195" x1="707.532" y1="786.625" x2="1268.02" y2="786.625" fill="#FFFFFF" stroke="#000000" stroke-width="1.32708" opacity="1"/>
+<text id="obj-0196" font-family="Arial,sans-serif" font-size="18.2474" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="395.15" y="23.8034">Conditional insulated expansion; no outlet and no jet</tspan>
+</text>
+<text id="obj-0197" font-family="Arial,sans-serif" font-size="18.2474" fill="#000000" text-anchor="start" opacity="1">
+<tspan x="277.958" y="45.7052">Equal retained seed energy within each size; 2.1 is a declared stopping screen</tspan>
+</text>
+</svg>

@@ -1,0 +1,448 @@
+{
+  "slide": {
+    "width": 13.333,
+    "height": 4.047517857142857
+  },
+  "background": "#FFFFFF",
+  "objects": [
+    {
+      "type": "rect",
+      "x": 0.0,
+      "y": 0.0,
+      "w": 13.333,
+      "h": 4.047517857142857,
+      "fill": "#f7fafc",
+      "line": null,
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0001",
+      "name": "rect 1: plot geometry"
+    },
+    {
+      "type": "rect",
+      "x": 0.35713392857142856,
+      "y": 1.1904464285714285,
+      "w": 3.6903839285714284,
+      "h": 1.9047142857142856,
+      "fill": "#dcebf6",
+      "line": "#8caac2",
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0002",
+      "name": "rect 2: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 0.5890321428571428,
+      "y": 1.349251982142857,
+      "w": 3.9429986607142857,
+      "h": 0.3535625892857143,
+      "text": "Finite initialized source",
+      "font": "Arial",
+      "font_size": 18.85667142857143,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0003",
+      "name": "text 3: Finite initialized source"
+    },
+    {
+      "type": "text",
+      "x": 0.5890321428571428,
+      "y": 1.8268590892857142,
+      "w": 3.8727623214285716,
+      "h": 0.2892784821428572,
+      "text": "p0 + gas volume → available E0",
+      "font": "Arial",
+      "font_size": 15.428185714285714,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0004",
+      "name": "text 4: p0 + gas volume → available E0"
+    },
+    {
+      "type": "text",
+      "x": 0.5890321428571428,
+      "y": 2.2319680089285714,
+      "w": 3.1844461964285715,
+      "h": 0.27320745535714286,
+      "text": "Pressure falls as Vg grows",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0005",
+      "name": "text 5: Pressure falls as Vg grows"
+    },
+    {
+      "type": "text",
+      "x": 0.5890321428571428,
+      "y": 2.624815330357143,
+      "w": 4.139660410714286,
+      "h": 0.27320745535714286,
+      "text": "One short activation; initial data",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0006",
+      "name": "text 6: One short activation; initial data"
+    },
+    {
+      "type": "rect",
+      "x": 7.023633928571429,
+      "y": 0.41665625,
+      "w": 5.8331875,
+      "h": 1.3690133928571429,
+      "fill": "#e2edf9",
+      "line": "#8caac2",
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0007",
+      "name": "rect 7: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 7.267436607142857,
+      "y": 0.5873662678571429,
+      "w": 4.406558500000001,
+      "h": 0.3535625892857143,
+      "text": "Liquid outlet — A and open B",
+      "font": "Arial",
+      "font_size": 18.85667142857143,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0008",
+      "name": "text 8: Liquid outlet — A and open B"
+    },
+    {
+      "type": "text",
+      "x": 7.267436607142857,
+      "y": 1.0411644464285714,
+      "w": 5.516292660714286,
+      "h": 0.2892784821428572,
+      "text": "U → emitted mass, energy Eout, impulse Iout",
+      "font": "Arial",
+      "font_size": 15.428185714285714,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0009",
+      "name": "text 9: U → emitted mass, energy Eout, impulse Iout"
+    },
+    {
+      "type": "text",
+      "x": 7.267436607142857,
+      "y": 1.4109171071428572,
+      "w": 5.137016428571428,
+      "h": 0.2571364285714286,
+      "text": "Column storage Kjet remains a separate output",
+      "font": "Arial",
+      "font_size": 13.713942857142857,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0010",
+      "name": "text 10: Column storage Kjet remains a separate output"
+    },
+    {
+      "type": "rect",
+      "x": 7.023633928571429,
+      "y": 2.3213705357142858,
+      "w": 5.8331875,
+      "h": 1.3690133928571426,
+      "fill": "#eee3f4",
+      "line": "#aa90b7",
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0011",
+      "name": "rect 11: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 7.267436607142857,
+      "y": 2.480176089285714,
+      "w": 2.861359035714286,
+      "h": 0.3535625892857143,
+      "text": "Gel wall — Model B",
+      "font": "Arial",
+      "font_size": 18.85667142857143,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0012",
+      "name": "text 12: Gel wall — Model B"
+    },
+    {
+      "type": "text",
+      "x": 7.267436607142857,
+      "y": 2.9339742678571428,
+      "w": 5.769143482142856,
+      "h": 0.2892784821428572,
+      "text": "R, Uw → elastic pressure and hemisphere force",
+      "font": "Arial",
+      "font_size": 15.428185714285714,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0013",
+      "name": "text 13: R, Uw → elastic pressure and hemisphere force"
+    },
+    {
+      "type": "text",
+      "x": 7.267436607142857,
+      "y": 3.3037269285714284,
+      "w": 4.912260142857143,
+      "h": 0.2571364285714286,
+      "text": "Radial inertia + stored elastic work + loss",
+      "font": "Arial",
+      "font_size": 13.713942857142857,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0014",
+      "name": "text 14: Radial inertia + stored elastic work + loss"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          4.047517857142857,
+          1.8213830357142857
+        ],
+        [
+          4.267419766865078,
+          1.8075633856233464
+        ],
+        [
+          4.457560515873016,
+          1.769356117724868
+        ],
+        [
+          4.627860491071429,
+          1.7116387555803572
+        ],
+        [
+          4.788240079365079,
+          1.6392888227513227
+        ],
+        [
+          4.94861966765873,
+          1.5571838427992721
+        ],
+        [
+          5.118919642857143,
+          1.4702013392857143
+        ],
+        [
+          5.30906039186508,
+          1.383218835772156
+        ],
+        [
+          5.528962301587302,
+          1.3011138558201059
+        ],
+        [
+          5.788545758928572,
+          1.2287639229910714
+        ],
+        [
+          6.097731150793652,
+          1.171046560846561
+        ],
+        [
+          6.4664388640873005,
+          1.132839292948082
+        ],
+        [
+          6.904589285714286,
+          1.1190196428571428
+        ]
+      ],
+      "_open": true,
+      "fill": null,
+      "line": "#526d83",
+      "line_width": 2.5713642857142855,
+      "opacity": 1.0,
+      "id": "obj-0015",
+      "name": "polygon 15: plot geometry"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          4.047517857142857,
+          2.4761285714285712
+        ],
+        [
+          4.267419766865078,
+          2.486668982514881
+        ],
+        [
+          4.457560515873016,
+          2.5158101190476194
+        ],
+        [
+          4.627860491071429,
+          2.5598318359375
+        ],
+        [
+          4.788240079365079,
+          2.6150139880952388
+        ],
+        [
+          4.94861966765873,
+          2.6776364304315474
+        ],
+        [
+          5.118919642857143,
+          2.743979017857143
+        ],
+        [
+          5.30906039186508,
+          2.8103216052827382
+        ],
+        [
+          5.528962301587302,
+          2.8729440476190473
+        ],
+        [
+          5.788545758928572,
+          2.9281261997767856
+        ],
+        [
+          6.097731150793652,
+          2.9721479166666667
+        ],
+        [
+          6.4664388640873005,
+          3.0012890531994048
+        ],
+        [
+          6.904589285714286,
+          3.0118294642857144
+        ]
+      ],
+      "_open": true,
+      "fill": null,
+      "line": "#526d83",
+      "line_width": 2.5713642857142855,
+      "opacity": 1.0,
+      "id": "obj-0016",
+      "name": "polygon 16: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 4.279416071428571,
+      "y": 0.6490313928571428,
+      "w": 2.5523191428571423,
+      "h": 0.2571364285714286,
+      "text": "Discharge increases Vg",
+      "font": "Arial",
+      "font_size": 13.713942857142857,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0017",
+      "name": "text 17: Discharge increases Vg"
+    },
+    {
+      "type": "text",
+      "x": 4.21989375,
+      "y": 3.3513447857142857,
+      "w": 3.1142098571428574,
+      "h": 0.2571364285714286,
+      "text": "Wall expansion increases Vg",
+      "font": "Arial",
+      "font_size": 13.713942857142857,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0018",
+      "name": "text 18: Wall expansion increases Vg"
+    },
+    {
+      "type": "text",
+      "x": 0.3509428571428571,
+      "y": 0.21939927678571428,
+      "w": 11.289719749999998,
+      "h": 0.30534950892857143,
+      "text": "A: fixed wall     B open: two energy routes     B sealed: wall route, zero discharge",
+      "font": "Arial",
+      "font_size": 16.285307142857143,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0019",
+      "name": "text 19: A: fixed wall     B open: two energy routes     B sealed: wall route, "
+    },
+    {
+      "type": "arrow",
+      "id": "route-head-0",
+      "name": "Energy route arrow 1",
+      "x1": 6.6665,
+      "y1": 1.1190196428571428,
+      "x2": 6.904589285714286,
+      "y2": 1.1190196428571428,
+      "line": "#526D83",
+      "line_width": 2
+    },
+    {
+      "type": "arrow",
+      "id": "route-head-1",
+      "name": "Energy route arrow 2",
+      "x1": 6.6665,
+      "y1": 3.0118294642857144,
+      "x2": 6.904589285714286,
+      "y2": 3.0118294642857144,
+      "line": "#526D83",
+      "line_width": 2
+    }
+  ],
+  "_title": "guide-mechanisms",
+  "_source_svg": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\modeling\\minimal-cavitation\\assets\\guide-mechanisms.svg",
+  "_conversion": "Source vector geometry; curves sampled at 12 points per Bézier segment; native editable labels."
+}

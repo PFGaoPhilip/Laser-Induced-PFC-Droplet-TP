@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E28 Interface normals, signed curvature and material motion must use one consistent convention.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E28 | Physical-variable diagram</text>
+<rect x="110" y="125" width="750" height="200" fill="none" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<ellipse cx="285" cy="225" rx="65" ry="65" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
+<line x1="350" y1="225" x2="680" y2="225" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="532" y="157.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">Liquid u(x,t), p(x,t)</text>
+<text x="632" y="300.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Outlet</text>
+<line x1="350" y1="225" x2="305" y2="225" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="332" y="269.44" font-family="Arial,sans-serif" font-size="18" fill="#F6BC77">n: liquid → gas</text>
+<line x1="350" y1="225" x2="350" y2="170" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="362" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">s: tangent</text>
+<text x="132" y="365.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Moving interface Gamma; spatial field required.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Γ: liquid–gas interface</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s: tangent</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pl</text>
+<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">σκ</text>
+<text x="32" y="546.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">κsphere = −2/R</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">n: liquid → gas</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Vn = u·n</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">D</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pb</text>
+<text x="507" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">2μ n·D n</text>
+<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">At a stationary no-slip solid wall use the wall velocity instead</text>
+<text x="32" y="609.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Phase transfer modifies the kinematic condition in Chapter 2</text>
+</svg>

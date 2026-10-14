@@ -1,23 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
-<title id="title">C2-E27 — A mass ledger begins with the actual core volume.</title>
-<desc id="desc">a₀ = 5 μm; ρ_d = 1630 kg/m³; m_PFC,0 = 0.853466 ng; π: spherical volume; This is a micron-scale teaching core; All later PFC phases share this mass inventory</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="592" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C2-E27 · Physical variable map / 物理变量图</text>
-<circle cx="310" cy="185" r="78" class="area"/>
-<path d="M310 185 H388" class="arrow"/>
-<text x="337" y="169" class="">a₀</text>
-<text x="270" y="198" class="">pd , ρd</text>
-<text x="583" y="157" class="">Carrier / 载液: pc</text>
-<text x="583" y="189" class="">Interface / 界面: σpc , Πshell</text>
-<text x="92" y="311" class="">Finite PFC core / 有限 PFC 液核</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• a₀ = 5 μm</text>
-<text x="30" y="433" class="muted">• ρ_d = 1630 kg/m³</text>
-<text x="30" y="457" class="muted">• m_PFC,0 = 0.853466 ng</text>
-<text x="30" y="481" class="muted">• π: spherical volume</text>
-<text x="30" y="523" class="muted">This is a micron-scale teaching core</text>
-<text x="30" y="546" class="muted">All later PFC phases share this mass inventory</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E27 A mass ledger begins with the actual core volume.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E27 | Physical-variable diagram</text>
+<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
+<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">a</text>
+<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">PFC liquid</text>
+<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Aqueous carrier</text>
+<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p_c; interface: σ_pc, shell</text>
+<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Finite liquid core: a differs from subsequent bubble radius R.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">a₀ = 5 μm</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0 = 0.853466 ng</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ_d = 1630 kg/m³</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: spherical volume</text>
+<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">This is a micron-scale teaching core</text>
+<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">All later PFC phases share this mass inventory</text>
 </svg>

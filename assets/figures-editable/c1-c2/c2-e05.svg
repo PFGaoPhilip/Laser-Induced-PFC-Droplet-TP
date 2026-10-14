@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E05 The absorber deposits heat over a finite optical depth.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E05 | Physical-variable diagram</text>
+<rect x="310" y="110" width="260" height="225" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<line x1="90" y1="205" x2="300" y2="205" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="575" y1="205" x2="790" y2="205" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="310" y1="205" x2="190" y2="115" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="72" y="260.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Incident light</text>
+<text x="72" y="99.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Reflection</text>
+<text x="337" y="270.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Absorber: Q_abs</text>
+<text x="602" y="260.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Transmitted light</text>
+<line x1="330" y1="310" x2="550" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="372" y="349.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+z; thickness h_a</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">z: propagation depth</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">I(z): transmitted beam</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_abs: heat inside slab</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">I_in: entry face</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">μ_a: absorption per depth</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">I′, z′: integration variables</text>
+<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Positive z points into absorber</text>
+<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Photon power lost from beam becomes thermal source under this model</text>
+</svg>

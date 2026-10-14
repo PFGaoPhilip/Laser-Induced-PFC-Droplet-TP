@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 638.4" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="638.4" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E18 · Physical variable map</tspan>
+</text>
+<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="93.12" y="84.6144">Comparison of two declared controls</tspan>
+</text>
+<rect id="obj-002" x="104.64" y="114.24" width="585.6" height="38.4" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="124.8" y="140.294">ts = 6.70820 µs — shear transit</tspan>
+</text>
+<rect id="obj-004" x="104.64" y="198.72" width="240" height="38.4" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-005" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="124.8" y="224.333">tc,liq = 2.74404 µs</tspan>
+</text>
+<text id="obj-006" font-family="Arial,sans-serif" font-size="16.32" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="374.4" y="226.474">Ideal liquid collapse</tspan>
+</text>
+<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="105.6" y="300.614">ts / tc,liq = 2.44464 ; Lg = Rmax = 30 µm</tspan>
+</text>
+<text id="obj-008" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-009" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• Lg = Rmax = 30 µm</tspan>
+</text>
+<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• Gg = 20 kPa</tspan>
+</text>
+<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• ρg = ρl = 1000 kg/m³</tspan>
+</text>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">• cs = 4.47214 m/s</tspan>
+</text>
+<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">• ts = 6.70820 µs</tspan>
+</text>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="530.573">• tc,liq = 2.74404 µs</tspan>
+</text>
+<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="552.653">• Δpc = 100 kPa</tspan>
+</text>
+<text id="obj-016" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="574.733">Compare two distinct controls, not an actual gel-collapse prediction</tspan>
+</text>
+<text id="obj-017" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="596.813">Support deformation need not equilibrate during the event</tspan>
+</text>
+</svg>

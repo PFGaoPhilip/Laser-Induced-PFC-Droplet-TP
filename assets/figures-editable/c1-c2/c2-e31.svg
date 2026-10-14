@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E31 The preparation estimate demands at least 43.7% of the declared absorbed energy.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E31 | Physical-variable diagram</text>
+<rect x="70" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="82" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Incident optical energy</text>
+<rect x="365" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="377" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Absorbed: 223.848 nJ</text>
+<rect x="660" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="672" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">PFC prep: 97.8243 nJ</text>
+<line x1="325" y1="200" x2="355" y2="200" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="620" y1="200" x2="650" y2="200" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="102" y="335.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Required thermal-transfer fraction: at least 0.437012.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_L = 1 μJ: incident</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">A_λ = 0.568909: absorption</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_prep = 97.8243 nJ: specified PFC preparation</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">b_a = 10 μm; w = 20 μm</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f_geo = 0.393469: interception</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_abs = 223.848 nJ: absorber heat</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">η_th,min = 0.437012</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">μ_a = 2×10⁵ m⁻¹; h_a = 5 μm; ℛ_λ = 0.10</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Not all absorbed energy reaches the PFC</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">A surplus absorber budget is not evidence of nucleation or jetting</text>
+</svg>

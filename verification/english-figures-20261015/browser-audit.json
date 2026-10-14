@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "gallery": {
+    "images": 178,
+    "broken": [],
+    "filter": true,
+    "day_night_control": true
+  },
+  "readers": [
+    {
+      "page": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
+      "images": 34,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
+      "images": 36,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "chapters/03-arrays-finite-jets-and-impact.html",
+      "images": 33,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "chapters/04-fracture-and-transfer.html",
+      "images": 41,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "appendices/a-hydrogel-versus-liquid.html",
+      "images": 24,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "modeling/minimal-cavitation/index.html",
+      "images": 8,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "modeling/minimal-cavitation/STEP_BY_STEP.html",
+      "images": 4,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    },
+    {
+      "page": "modeling/embedded-pfc-feasibility/index.html",
+      "images": 8,
+      "broken": [],
+      "sameEnglishFiguresInBothModes": true,
+      "language": "zh",
+      "mathErrors": 0
+    }
+  ]
+}

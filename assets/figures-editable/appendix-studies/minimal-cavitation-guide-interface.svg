@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 388.562" role="img">
+<title>guide-interface</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="388.562" fill="#FFFFFF"/>
+<rect id="obj-0001" x="0" y="0" width="1279.97" height="388.562" fill="#f7fafc" stroke="none" stroke-width="1.14283" opacity="1"/>
+<rect id="obj-0002" x="22.8566" y="22.8566" width="342.849" height="274.279" fill="#e3ebf2" stroke="none" stroke-width="1.14283" opacity="1"/>
+<rect id="obj-0003" x="382.848" y="22.8566" width="485.702" height="274.279" fill="#eef3f7" stroke="none" stroke-width="1.14283" opacity="1"/>
+<rect id="obj-0004" x="885.692" y="22.8566" width="371.419" height="274.279" fill="#e6eef8" stroke="none" stroke-width="1.14283" opacity="1"/>
+<text id="obj-0005" font-family="Arial,sans-serif" font-size="26.2851" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="40.5475" y="55.0501">1 · Model Builder</tspan>
+</text>
+<text id="obj-0006" font-family="Arial,sans-serif" font-size="26.2851" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="401.681" y="55.0501">2 · Settings</tspan>
+</text>
+<text id="obj-0007" font-family="Arial,sans-serif" font-size="26.2851" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="904.526" y="55.0501">3 · Graphics</tspan>
+</text>
+<text id="obj-0008" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="40.5475" y="101.06">Global Definitions</tspan>
+</text>
+<text id="obj-0009" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="64.5469" y="137.631">Parameters 1</tspan>
+</text>
+<text id="obj-0010" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="40.5475" y="174.201">Component c</tspan>
+</text>
+<text id="obj-0011" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="64.5469" y="210.772">Definitions → Variables</tspan>
+</text>
+<text id="obj-0012" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="64.5469" y="248.485">Global Equations 1</tspan>
+</text>
+<text id="obj-0013" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="401.681" y="105.632">Selected equation row:</tspan>
+</text>
+<text id="obj-0014" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="401.681" y="146.773">Name: vv</tspan>
+</text>
+<text id="obj-0015" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="401.681" y="185.63">f: tau*(vvt-acc/Us)</tspan>
+</text>
+<text id="obj-0016" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="401.681" y="226.771">Initial u: 0     Initial ut: 0</tspan>
+</text>
+<text id="obj-0017" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="401.681" y="266.77">Commit cells with Tab</tspan>
+</text>
+<line id="obj-0018" x1="922.263" y1="251.422" x2="1229.68" y2="251.422" fill="#FFFFFF" stroke="#627b91" stroke-width="2.28566" opacity="1"/>
+<line id="obj-0019" x1="922.263" y1="251.422" x2="922.263" y2="98.2833" fill="#FFFFFF" stroke="#627b91" stroke-width="2.28566" opacity="1"/>
+<polyline id="obj-0020" points="922.263,250.279 925.827,222.648 930.68,199.032 936.637,179.21 943.511,162.959 951.114,150.057 959.262,140.282 967.766,133.412 976.441,129.224 985.1,127.497 993.557,128.007 1001.63,130.534 1009.12,134.854 1016.91,140.879 1026.09,148.488 1036.81,157.407 1049.24,167.361 1063.53,178.077 1079.83,189.281 1098.3,200.699 1119.08,212.058 1142.35,223.084 1168.24,233.502 1196.92,243.04 1228.54,251.422" fill="none" stroke="#3479cb" stroke-width="4.57131" opacity="1"/>
+<text id="obj-0021" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="927.382" y="88.4892">U(t)</tspan>
+</text>
+<text id="obj-0022" font-family="Arial,sans-serif" font-size="18.2853" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="1074.81" y="276.153">First ejection time</tspan>
+</text>
+<rect id="obj-0023" x="22.8566" y="314.278" width="1234.25" height="51.4273" fill="#dce6ef" stroke="none" stroke-width="1.14283" opacity="1"/>
+<text id="obj-0024" font-family="Arial,sans-serif" font-size="20.5709" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="42.8331" y="343.1">Bottom: Progress · Messages · Log · numerical result tables</tspan>
+</text>
+</svg>

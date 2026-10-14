@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E20 The interface need not move at the same speed as the adjacent liquid.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E20 | Physical-variable diagram</text>
+<rect x="80" y="120" width="350" height="220" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<rect x="430" y="120" width="430" height="220" fill="none" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="182" y="169.84" font-family="Arial,sans-serif" font-size="23" fill="#E7F0F3">Vapor</text>
+<text x="602" y="169.84" font-family="Arial,sans-serif" font-size="23" fill="#E7F0F3">Liquid</text>
+<line x1="610" y1="230" x2="300" y2="230" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="482" y="276.6" font-family="Arial,sans-serif" font-size="20" fill="#F6BC77">n: liquid → vapor</text>
+<line x1="430" y1="310" x2="545" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="452" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+e_r, wall motion</text>
+<text x="102" y="105.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Interface Gamma</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R, Ṙ: moving bubble surface</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">n = −e_r: liquid → vapor</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u_v: vapor-side motion</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ_l, ρ_v: adjoining densities</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">e_r: outward radial direction</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u_l(R), u_l: outside-liquid motion</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">v_Γ: interface motion</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">j_s: evaporation through interface</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Positive j_s makes liquid speed smaller than outward wall speed</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">For mixtures, species diffusion augments the component fluxes</text>
+</svg>

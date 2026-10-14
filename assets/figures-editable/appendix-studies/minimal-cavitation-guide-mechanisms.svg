@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 388.562" role="img">
+<title>guide-mechanisms</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="388.562" fill="#FFFFFF"/>
+<rect id="obj-0001" x="0" y="0" width="1279.97" height="388.562" fill="#f7fafc" stroke="none" stroke-width="1.14283" opacity="1"/>
+<rect id="obj-0002" x="34.2849" y="114.283" width="354.277" height="182.853" fill="#dcebf6" stroke="#8caac2" stroke-width="1.14283" opacity="1"/>
+<text id="obj-0003" font-family="Arial,sans-serif" font-size="25.1422" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="56.5471" y="150.145">Finite initialized source</tspan>
+</text>
+<text id="obj-0004" font-family="Arial,sans-serif" font-size="20.5709" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="56.5471" y="192.247">p0 + gas volume → available E0</tspan>
+</text>
+<text id="obj-0005" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="56.5471" y="230.2">Pressure falls as Vg grows</tspan>
+</text>
+<text id="obj-0006" font-family="Arial,sans-serif" font-size="19.4281" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="56.5471" y="267.913">One short activation; initial data</tspan>
+</text>
+<rect id="obj-0007" x="674.269" y="39.999" width="559.986" height="131.425" fill="#e2edf9" stroke="#8caac2" stroke-width="1.14283" opacity="1"/>
+<text id="obj-0008" font-family="Arial,sans-serif" font-size="25.1422" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="697.674" y="77.0038">Liquid outlet — A and open B</tspan>
+</text>
+<text id="obj-0009" font-family="Arial,sans-serif" font-size="20.5709" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="697.674" y="116.82">U → emitted mass, energy Eout, impulse Iout</tspan>
+</text>
+<text id="obj-0010" font-family="Arial,sans-serif" font-size="18.2853" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="697.674" y="150.442">Column storage Kjet remains a separate output</tspan>
+</text>
+<rect id="obj-0011" x="674.269" y="222.852" width="559.986" height="131.425" fill="#eee3f4" stroke="#aa90b7" stroke-width="1.14283" opacity="1"/>
+<text id="obj-0012" font-family="Arial,sans-serif" font-size="25.1422" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="697.674" y="258.714">Gel wall — Model B</tspan>
+</text>
+<text id="obj-0013" font-family="Arial,sans-serif" font-size="20.5709" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="697.674" y="298.53">R, Uw → elastic pressure and hemisphere force</tspan>
+</text>
+<text id="obj-0014" font-family="Arial,sans-serif" font-size="18.2853" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="697.674" y="332.152">Radial inertia + stored elastic work + loss</tspan>
+</text>
+<polyline id="obj-0015" points="388.562,174.853 409.672,173.526 427.926,169.858 444.275,164.317 459.671,157.372 475.067,149.49 491.416,141.139 509.67,132.789 530.78,124.907 555.7,117.961 585.382,112.42 620.778,108.753 662.841,107.426" fill="none" stroke="#526d83" stroke-width="3.42849" opacity="1"/>
+<polyline id="obj-0016" points="388.562,237.708 409.672,238.72 427.926,241.518 444.275,245.744 459.671,251.041 475.067,257.053 491.416,263.422 509.67,269.791 530.78,275.803 555.7,281.1 585.382,285.326 620.778,288.124 662.841,289.136" fill="none" stroke="#526d83" stroke-width="3.42849" opacity="1"/>
+<text id="obj-0017" font-family="Arial,sans-serif" font-size="18.2853" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="410.824" y="77.3009">Discharge increases Vg</tspan>
+</text>
+<text id="obj-0018" font-family="Arial,sans-serif" font-size="18.2853" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="405.11" y="336.723">Wall expansion increases Vg</tspan>
+</text>
+<text id="obj-0019" font-family="Arial,sans-serif" font-size="21.7137" fill="#183348" text-anchor="start" opacity="1">
+<tspan x="33.6905" y="38.8676">A: fixed wall     B open: two energy routes     B sealed: wall route, zero discharge</tspan>
+</text>
+<line id="route-head-0" x1="639.984" y1="107.426" x2="662.841" y2="107.426" fill="#FFFFFF" stroke="#526D83" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<line id="route-head-1" x1="639.984" y1="289.136" x2="662.841" y2="289.136" fill="#FFFFFF" stroke="#526D83" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+</svg>

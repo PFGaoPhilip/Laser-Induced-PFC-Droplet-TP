@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
+<title id="title">C2-E16 — Positive superheat driving does not make the nucleation barrier vanish.</title>
+<desc id="desc">W_*: free-energy maximum; r_*: critical radius; σ_vp³: strong tension dependence; Δp_n²: driving-pressure dependence; π: spherical geometry; Surface energy and displaced-volume contribution evaluated at r_*; A positive driving pressure still leaves a finite barrier</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="616" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E16 · Physical variable map / 物理变量图</text>
+<circle cx="310" cy="185" r="78" class="area"/>
+<path d="M310 185 H388" class="arrow"/>
+<text x="337" y="169" class="">rn</text>
+<text x="284" y="196" class="">pv</text>
+<text x="109" y="91" class="">PFC liquid / PFC 液相: pd , Ti</text>
+<text x="105" y="299" class="">New interface / 新界面: σvp</text>
+<path d="M595 279 H922" class="arrow"/>
+<path d="M617 324 V93" class="arrow"/>
+<path d="M620 279 C655 278 676 133 731 155 S796 279 853 318" class="line"/>
+<path d="M710 148 V279" class="thin"/>
+<text x="714" y="130" class="muted">r* , W*</text>
+<text x="572" y="94" class="">W(rn)</text>
+<text x="865" y="299" class="muted">rn</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• W_*: free-energy maximum</text>
+<text x="30" y="433" class="muted">• r_*: critical radius</text>
+<text x="30" y="457" class="muted">• σ_vp³: strong tension dependence</text>
+<text x="30" y="481" class="muted">• Δp_n²: driving-pressure dependence</text>
+<text x="30" y="505" class="muted">• π: spherical geometry</text>
+<text x="30" y="547" class="muted">Surface energy and displaced-volume contribution evaluated at r_*</text>
+<text x="30" y="570" class="muted">A positive driving pressure still leaves a finite barrier</text>
+</svg>

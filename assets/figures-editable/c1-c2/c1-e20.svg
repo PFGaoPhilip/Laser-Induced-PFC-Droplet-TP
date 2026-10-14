@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E20 A Mach diagnostic exposes the shrinking validity range of incompressible collapse.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E20 | Physical-variable diagram</text>
+<rect x="100" y="150" width="300" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="112" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Wall speed / sound speed</text>
+<rect x="570" y="150" width="300" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="582" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Propagation / event time</text>
+<line x1="405" y1="198" x2="560" y2="198" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="122" y="321.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Check both motion and pressure communication.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Mw = |Ṙ|/c</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">c = 1500 m/s</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">xM = RM/Rmax</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δpc</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">M* = 0.1</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">RM ≈ 4.305 μm</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The selected threshold flags omitted physics; it does not stop a real cavity</text>
+</svg>

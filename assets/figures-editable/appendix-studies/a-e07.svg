@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 594.24" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="594.24" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E07 · Physical variable map</tspan>
+</text>
+<ellipse id="obj-001" cx="172.8" cy="171.84" rx="73.92" ry="73.92" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<ellipse id="obj-002" cx="172.8" cy="171.84" rx="27.84" ry="27.84" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<line id="obj-003" x1="172.8" y1="171.84" x2="246.72" y2="171.84" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-004" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="211.2" y="151.814">R</tspan>
+</text>
+<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="105.6" y="278.534">Rref → R</tspan>
+</text>
+<text id="obj-006" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="78.72" y="88.4544">Cavity pressure work: pb dV</tspan>
+</text>
+<rect id="obj-007" x="418.56" y="120" width="393.6" height="118.08" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="obj-008" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="440.64" y="157.574">Elastic storage: Wg</tspan>
+</text>
+<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="440.64" y="198.854">Viscous loss: Ḋg ≥ 0</tspan>
+</text>
+<line id="obj-010" x1="262.08" y1="172.8" x2="413.76" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-011" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="418.56" y="275.654">Gg , ηg ; intact network</tspan>
+</text>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="16.32" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="78.72" y="321.514">Jet energy requires a separate load path and budget</tspan>
+</text>
+<text id="obj-013" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• Rref → R</tspan>
+</text>
+<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• pel(ξ): cavity work pressure</tspan>
+</text>
+<text id="obj-016" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• 4πξ²dξ: volume increment</tspan>
+</text>
+<text id="obj-017" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">• Wg: network energy</tspan>
+</text>
+<text id="obj-018" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">• Gg, π</tspan>
+</text>
+<text id="obj-019" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="530.573">Use pressure times displaced volume</tspan>
+</text>
+<text id="obj-020" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="552.653">Elastic work can return during recoil</tspan>
+</text>
+</svg>

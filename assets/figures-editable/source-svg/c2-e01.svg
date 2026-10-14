@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 568" role="img" aria-labelledby="title desc">
+<title id="title">C2-E01 — Fluence varies across the beam; the quoted radius fixes its definition.</title>
+<desc id="desc">r: transverse radius; w: e⁻² beam radius; F(r), F₀: fluence; Beam axis at r = 0; Gaussian profile across the illuminated plane</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="568" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E01 · Physical variable map / 物理变量图</text>
+<circle cx="257" cy="193" r="103" class="thin"/>
+<path d="M257 193 H360" class="arrow"/>
+<text x="308" y="175" class="">r , w</text>
+<text x="125" y="322" class="">Beam cross-section / 光束截面</text>
+<path d="M598 284 H922" class="arrow"/>
+<path d="M626 285 V99" class="arrow"/>
+<path d="M628 123 C687 123 727 176 770 229 S850 280 912 282" class="line"/>
+<path d="M797 260 V284" class="thin"/>
+<text x="791" y="312" class="">w</text>
+<text x="924" y="302" class="">r</text>
+<text x="590" y="93" class="">F(r)</text>
+<text x="639" y="121" class="">F₀</text>
+<text x="761" y="183" class="muted">F₀ e⁻²</text>
+<text x="123" y="91" class="">EL = ∫ F(r) 2πr dr</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• r: transverse radius</text>
+<text x="30" y="433" class="muted">• w: e⁻² beam radius</text>
+<text x="30" y="457" class="muted">• F(r), F₀: fluence</text>
+<text x="30" y="499" class="muted">Beam axis at r = 0</text>
+<text x="30" y="522" class="muted">Gaussian profile across the illuminated plane</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E09 Exterior shells contribute finite kinetic energy even in an infinite domain.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E09 | Physical-variable diagram</text>
+<ellipse cx="280" cy="215" rx="80" ry="80" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
+<ellipse cx="280" cy="215" rx="140" ry="140" fill="none" stroke="#B4C7D2" stroke-width="2.21"/>
+<ellipse cx="280" cy="215" rx="155" ry="155" fill="none" stroke="#B4C7D2" stroke-width="2.21"/>
+<text x="202" y="233.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Cavity</text>
+<line x1="280" y1="215" x2="425" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="452" y="181.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Exterior liquid shells: 4π r² dr</text>
+<text x="452" y="235.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Integrate r from R to infinity</text>
+<text x="452" y="296.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Storage K_l</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Kl</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u(r,t)</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">4πr²dr</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">r: exterior shells</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
+<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Integrate liquid shells outside the cavity</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The radial field decays enough for finite kinetic energy</text>
+</svg>

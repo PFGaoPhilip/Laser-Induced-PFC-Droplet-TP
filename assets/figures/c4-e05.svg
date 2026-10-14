@@ -1,27 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 617" role="img" aria-labelledby="title desc">
-<title id="title">C4-E05 — A fixed clamp removes the boundary virtual-work terms.</title>
-<desc id="desc">Ω_f, x, y — film plane; w, δw — displacement and variation; D_f, ν_f → ∇⁴w restoring load; T₀ → −∇²w restoring load; U_b, U_T — stored energy; clamp: δw = 0, slope variation = 0; Four spatial derivatives arise from two integrations by parts.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="617" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C4-E05 · Physical variable map / 物理变量图</text>
-<rect x="107" y="205" width="760" height="65" class="area"/>
-<path d="M145 205 C276 205 295 106 482 106 S686 205 828 205" class="line"/>
-<path d="M305 206 V150" class="arrow"/>
-<path d="M465 206 V150" class="arrow"/>
-<path d="M635 206 V150" class="arrow"/>
-<text x="150" y="297" class="">Donor / 供体</text>
-<text x="326" y="95" class="">Film / 薄膜: Ef, hf, ρf, Df</text>
-<path d="M124 321 H825" class="thin"/>
-<text x="433" y="343" class="">Crack / 裂纹: b , Ac</text>
-<text x="298" y="181" class="">pload , w , tcoh</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Ω_f, x, y — film plane</text>
-<text x="30" y="433" class="muted">• w, δw — displacement and variation</text>
-<text x="30" y="457" class="muted">• D_f, ν_f → ∇⁴w restoring load</text>
-<text x="30" y="481" class="muted">• T₀ → −∇²w restoring load</text>
-<text x="30" y="505" class="muted">• U_b, U_T — stored energy</text>
-<text x="30" y="529" class="muted">• clamp: δw = 0, slope variation = 0</text>
-<text x="30" y="571" class="muted">Four spatial derivatives arise from two integrations by parts.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C4-E05 · Derived variational identity for fixed clamps</tspan>
+</text>
+<rect id="o001" x="124.8" y="124.8" width="720" height="225.6" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="290.88" y="211.2">Reference film plane Ω_f</tspan>
+<tspan x="290.88" y="242.667">w(x,y,t), variation δw</tspan>
+</text>
+<line id="o003" x1="849.6" y1="235.2" x2="969.6" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="991.68" y="232.32">n: outward</tspan>
+<tspan x="991.68" y="257.493">in-plane normal</tspan>
+</text>
+<line id="o005" x1="144" y1="369.6" x2="336" y2="369.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="358.08" y="374.813">x</tspan>
+</text>
+<line id="o007" x1="144" y1="369.6" x2="144" y2="278.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="79.68" y="317.213">y</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="194.88" y="99.4267">Fixed boundary: δw = 0; ∂ₙδw = 0</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="511.68" y="389.213">Curvature stores U_b; slope stores U_T.</tspan>
+</text>
+<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• Ω_f, x, y — film plane</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• w, δw — displacement and variation</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• D_f, ν_f → ∇⁴w restoring load</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• T₀ → −∇²w restoring load</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• U_b, U_T — stored energy</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• clamp: δw = 0, slope variation = 0</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Four spatial derivatives arise from two integrations by parts.</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

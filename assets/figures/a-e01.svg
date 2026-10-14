@@ -1,37 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
-<title id="title">A-E01 — The same network shell moves outward while thinning radially and stretching tangentially.</title>
-<desc id="desc">Rref: reference wall; R: current wall; r₀ → r: material shell; λr = r₀²/r²; λθ = λφ = r/r₀; Network material volume is unchanged; Radial direction points outward</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="616" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">A-E01 · Physical variable map / 物理变量图</text>
-<circle cx="196" cy="180" r="80" class="thin"/>
-<circle cx="196" cy="180" r="36" class="area"/>
-<path d="M196 180 H232" class="arrow"/>
-<text x="190" y="160" class="">Rref</text>
-<path d="M196 180 L259 231" class="arrow"/>
-<text x="254" y="240" class="">r₀</text>
-<circle cx="610" cy="180" r="116" class="thin"/>
-<circle cx="610" cy="180" r="78" class="area"/>
-<path d="M610 180 H688" class="arrow"/>
-<text x="650" y="162" class="">R</text>
-<path d="M610 180 L700 253" class="arrow"/>
-<text x="699" y="261" class="">r</text>
-<path d="M298 180 H472" class="arrow"/>
-<text x="307" y="146" class="">Material map / 材料映射</text>
-<text x="82" y="302" class="">Reference / 参考状态</text>
-<text x="513" y="322" class="">Deformed / 变形状态: λr , λθ</text>
-<text x="757" y="106" class="">Gg , ηg</text>
-<text x="753" y="153" class="">σrr , σθθ</text>
-<text x="753" y="201" class="">p∞</text>
-<text x="583" y="187" class="">pb</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Rref: reference wall</text>
-<text x="30" y="433" class="muted">• R: current wall</text>
-<text x="30" y="457" class="muted">• r₀ → r: material shell</text>
-<text x="30" y="481" class="muted">• λr = r₀²/r²</text>
-<text x="30" y="505" class="muted">• λθ = λφ = r/r₀</text>
-<text x="30" y="547" class="muted">Network material volume is unchanged</text>
-<text x="30" y="570" class="muted">Radial direction points outward</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 594.24" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="940.8" height="594.24" fill="#142632"/>
+<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="35.136">A-E01 · Physical variable map</tspan>
+</text>
+<ellipse id="obj-001" cx="188.16" cy="172.8" rx="76.8" ry="76.8" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<ellipse id="obj-002" cx="188.16" cy="172.8" rx="34.56" ry="34.56" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<line id="obj-003" x1="188.16" y1="172.8" x2="222.72" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-004" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="184.32" y="153.734">Rref</tspan>
+</text>
+<line id="obj-005" x1="188.16" y1="172.8" x2="242.466" y2="227.106" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-006" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="241.92" y="244.934">r₀</tspan>
+</text>
+<ellipse id="obj-007" cx="585.6" cy="172.8" rx="94.0368" ry="94.0368" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<ellipse id="obj-008" cx="585.6" cy="172.8" rx="74.88" ry="74.88" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<line id="obj-009" x1="585.6" y1="172.8" x2="660.48" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-010" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="624.96" y="153.734">R</tspan>
+</text>
+<line id="obj-011" x1="585.6" y1="172.8" x2="652.094" y2="239.294" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-012" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="669.12" y="254.534">r</tspan>
+</text>
+<line id="obj-013" x1="283.2" y1="172.8" x2="460.8" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
+<text id="obj-014" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="297.6" y="140.294">Material map</tspan>
+</text>
+<text id="obj-015" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="105.6" y="291.014">Reference</tspan>
+</text>
+<text id="obj-016" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="508.8" y="299.654">Deformed: λr , λθ</tspan>
+</text>
+<text id="obj-017" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="718.08" y="101.894">Gg , ηg</tspan>
+</text>
+<text id="obj-018" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="718.08" y="147.014">σrr , σθθ</tspan>
+</text>
+<text id="obj-019" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="718.08" y="193.094">p∞</tspan>
+</text>
+<text id="obj-020" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="552.96" y="196.934">pb</tspan>
+</text>
+<text id="obj-021" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="91.2" y="333.773">r₀³ − Rref³ = r³ − R³ ; radial coordinates point outward</tspan>
+</text>
+<text id="obj-022" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+</text>
+<text id="obj-023" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="420.173">• Rref: reference wall</tspan>
+</text>
+<text id="obj-024" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="442.253">• R: current wall</tspan>
+</text>
+<text id="obj-025" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="464.333">• r₀ → r: material shell</tspan>
+</text>
+<text id="obj-026" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="486.413">• λr = r₀²/r²</tspan>
+</text>
+<text id="obj-027" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="508.493">• λθ = λφ = r/r₀</tspan>
+</text>
+<text id="obj-028" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="530.573">Network material volume is unchanged</tspan>
+</text>
+<text id="obj-029" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="38.4" y="552.653">Radial direction points outward</tspan>
+</text>
 </svg>

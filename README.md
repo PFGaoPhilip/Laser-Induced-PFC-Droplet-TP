@@ -6,6 +6,11 @@ Use the language and day/night buttons.
 Every reader uses the chapter format and lower-right controls.
 All reading assets work offline.
 
+All 178 lesson figures use English labels in both language modes.
+Open the [editable figure gallery](assets/figures-editable/index.html).
+Every figure includes native PowerPoint objects, SVG, and scene JSON.
+Scientific conventions and actual PowerPoint previews were reviewed before embedding.
+
 从完整文件夹打开 [index.html](index.html)。
 使用语言与日夜切换按钮。
 全部阅读页采用章节格式，切换按钮位于右下角。

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">C4-E29 — Declared coupling converts incoming jet budgets into conditional payload budgets.</title>
+<desc id="desc">A_f = 1 mm² — intended release; h_f = 1 μm — payload thickness; ρ_f = 2330 kg/m³ → m_f = 2.33 μg; η_E = 0.20 → E_solid = 10 nJ; η_I = 0.50 → I_net = 1.5666×10⁻⁹ N s; E_in, I_in — incoming array; Load-path coupling fractions are assumptions.; This payload differs from the blister benchmark.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E29 · Physical variable map / 物理变量图</text>
+<rect x="107" y="205" width="760" height="65" class="area"/>
+<path d="M145 205 C276 205 295 106 482 106 S686 205 828 205" class="line"/>
+<path d="M305 206 V150" class="arrow"/>
+<path d="M465 206 V150" class="arrow"/>
+<path d="M635 206 V150" class="arrow"/>
+<text x="150" y="297" class="">Donor / 供体</text>
+<text x="326" y="95" class="">Film / 薄膜: Ef, hf, ρf, Df</text>
+<path d="M124 321 H825" class="thin"/>
+<text x="433" y="343" class="">Crack / 裂纹: b , Ac</text>
+<text x="298" y="181" class="">pload , w , tcoh</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• A_f = 1 mm² — intended release</text>
+<text x="30" y="433" class="muted">• h_f = 1 μm — payload thickness</text>
+<text x="30" y="457" class="muted">• ρ_f = 2330 kg/m³ → m_f = 2.33 μg</text>
+<text x="30" y="481" class="muted">• η_E = 0.20 → E_solid = 10 nJ</text>
+<text x="30" y="505" class="muted">• η_I = 0.50 → I_net = 1.5666×10⁻⁹ N s</text>
+<text x="30" y="529" class="muted">• E_in, I_in — incoming array</text>
+<text x="30" y="571" class="muted">Load-path coupling fractions are assumptions.</text>
+<text x="30" y="594" class="muted">This payload differs from the blister benchmark.</text>
+</svg>

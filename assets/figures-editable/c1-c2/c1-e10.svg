@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E10 Volume work couples kinetic storage, interface storage and dissipation.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E10 | Physical-variable diagram</text>
+<rect x="50" y="165" width="250" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="62" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Pressure work</text>
+<rect x="370" y="165" width="250" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="382" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">K_l + E_σ</text>
+<rect x="690" y="165" width="240" height="105" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<text x="702" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Viscous dissipation</text>
+<line x1="305" y1="215" x2="360" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="625" y1="215" x2="680" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="102" y="341.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Storage can change sign; dissipation is nonnegative.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Kl</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Vb</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R̈</text>
+<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">σ</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Eσ</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">V̇b</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
+<text x="507" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Surface energy is stored at the spherical boundary</text>
+<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Volume work changes both liquid speed and effective inertia</text>
+</svg>

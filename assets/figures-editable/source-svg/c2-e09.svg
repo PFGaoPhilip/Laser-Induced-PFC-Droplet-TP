@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">C2-E09 — Compare heat penetration with the distance to the PFC, not only with beam width.</title>
+<desc id="desc">L_h: absorber-to-core heating distance; δ_T: penetration during τ_h; α = k/(ρc_p); ΔT: thermal change; t_th: diffusion time; τ_h: available heating duration; Long distance costs time quadratically; Optical pulse duration is not automatically whole-core heating duration</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C2-E09 · Physical variable map / 物理变量图</text>
+<rect x="99" y="113" width="63" height="152" class="area"/>
+<circle cx="546" cy="191" r="78" class="area"/>
+<circle cx="546" cy="191" r="59" class="thin"/>
+<path d="M166 191 H466" class="arrow"/>
+<text x="245" y="164" class="">Lh</text>
+<text x="492" y="314" class="">PFC core / PFC 液核</text>
+<text x="91" y="89" class="">Absorber / 吸收体</text>
+<text x="658" y="165" class="">δT ~ √(α τh)</text>
+<text x="653" y="200" class="">α = k / (ρ cp)</text>
+<text x="653" y="240" class="">tth ~ Lh² / α</text>
+<text x="215" y="286" class="muted">Diffusive heating / 扩散加热</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• L_h: absorber-to-core heating distance</text>
+<text x="30" y="433" class="muted">• δ_T: penetration during τ_h</text>
+<text x="30" y="457" class="muted">• α = k/(ρc_p)</text>
+<text x="30" y="481" class="muted">• ΔT: thermal change</text>
+<text x="30" y="505" class="muted">• t_th: diffusion time</text>
+<text x="30" y="529" class="muted">• τ_h: available heating duration</text>
+<text x="30" y="571" class="muted">Long distance costs time quadratically</text>
+<text x="30" y="594" class="muted">Optical pulse duration is not automatically whole-core heating duration</text>
+</svg>

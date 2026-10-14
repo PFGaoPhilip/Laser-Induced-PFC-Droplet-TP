@@ -1,0 +1,501 @@
+{
+  "slide": {
+    "width": 13.333,
+    "height": 4.047517857142857
+  },
+  "background": "#FFFFFF",
+  "objects": [
+    {
+      "type": "rect",
+      "x": 0.0,
+      "y": 0.0,
+      "w": 13.333,
+      "h": 4.047517857142857,
+      "fill": "#f7fafc",
+      "line": null,
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0001",
+      "name": "rect 1: plot geometry"
+    },
+    {
+      "type": "rect",
+      "x": 0.23808928571428573,
+      "y": 0.23808928571428573,
+      "w": 3.571339285714286,
+      "h": 2.8570714285714285,
+      "fill": "#e3ebf2",
+      "line": null,
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0002",
+      "name": "rect 2: plot geometry"
+    },
+    {
+      "type": "rect",
+      "x": 3.9879955357142856,
+      "y": 0.23808928571428573,
+      "w": 5.0593973214285715,
+      "h": 2.8570714285714285,
+      "fill": "#eef3f7",
+      "line": null,
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0003",
+      "name": "rect 3: plot geometry"
+    },
+    {
+      "type": "rect",
+      "x": 9.225959821428571,
+      "y": 0.23808928571428573,
+      "w": 3.8689508928571428,
+      "h": 2.8570714285714285,
+      "fill": "#e6eef8",
+      "line": null,
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0004",
+      "name": "rect 4: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 0.42236964285714285,
+      "y": 0.3489198482142857,
+      "w": 2.8262408660714287,
+      "h": 0.36963361607142864,
+      "text": "1 · Model Builder",
+      "font": "Arial",
+      "font_size": 19.71379285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0005",
+      "name": "text 5: 1 · Model Builder"
+    },
+    {
+      "type": "text",
+      "x": 4.184180357142857,
+      "y": 0.3489198482142857,
+      "w": 2.0185229642857143,
+      "h": 0.36963361607142864,
+      "text": "2 · Settings",
+      "font": "Arial",
+      "font_size": 19.71379285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0006",
+      "name": "text 6: 2 · Settings"
+    },
+    {
+      "type": "text",
+      "x": 9.422144642857143,
+      "y": 0.3489198482142857,
+      "w": 2.0185229642857143,
+      "h": 0.36963361607142864,
+      "text": "3 · Graphics",
+      "font": "Arial",
+      "font_size": 19.71379285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0007",
+      "name": "text 7: 3 · Graphics"
+    },
+    {
+      "type": "text",
+      "x": 0.42236964285714285,
+      "y": 0.8867635446428572,
+      "w": 2.229231982142857,
+      "h": 0.27320745535714286,
+      "text": "Global Definitions",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0008",
+      "name": "text 8: Global Definitions"
+    },
+    {
+      "type": "text",
+      "x": 0.6723633928571429,
+      "y": 1.2677064017857143,
+      "w": 1.5128213214285715,
+      "h": 0.27320745535714286,
+      "text": "Parameters 1",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0009",
+      "name": "text 9: Parameters 1"
+    },
+    {
+      "type": "text",
+      "x": 0.42236964285714285,
+      "y": 1.6486492589285715,
+      "w": 1.3934195446428572,
+      "h": 0.27320745535714286,
+      "text": "Component c",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0010",
+      "name": "text 10: Component c"
+    },
+    {
+      "type": "text",
+      "x": 0.6723633928571429,
+      "y": 2.0295921160714285,
+      "w": 2.8262408660714287,
+      "h": 0.27320745535714286,
+      "text": "Definitions → Variables",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0011",
+      "name": "text 11: Definitions → Variables"
+    },
+    {
+      "type": "text",
+      "x": 0.6723633928571429,
+      "y": 2.4224394375,
+      "w": 2.229231982142857,
+      "h": 0.27320745535714286,
+      "text": "Global Equations 1",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0012",
+      "name": "text 12: Global Equations 1"
+    },
+    {
+      "type": "text",
+      "x": 4.184180357142857,
+      "y": 0.9343814017857142,
+      "w": 2.7068390892857144,
+      "h": 0.27320745535714286,
+      "text": "Selected equation row:",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0013",
+      "name": "text 13: Selected equation row:"
+    },
+    {
+      "type": "text",
+      "x": 4.184180357142857,
+      "y": 1.3629421160714286,
+      "w": 1.0352142142857144,
+      "h": 0.27320745535714286,
+      "text": "Name: vv",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0014",
+      "name": "text 14: Name: vv"
+    },
+    {
+      "type": "text",
+      "x": 4.184180357142857,
+      "y": 1.7676939017857143,
+      "w": 2.3486337589285715,
+      "h": 0.27320745535714286,
+      "text": "f: tau*(vvt-acc/Us)",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0015",
+      "name": "text 15: f: tau*(vvt-acc/Us)"
+    },
+    {
+      "type": "text",
+      "x": 4.184180357142857,
+      "y": 2.1962546160714287,
+      "w": 3.6620533035714287,
+      "h": 0.27320745535714286,
+      "text": "Initial u: 0     Initial ut: 0",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0016",
+      "name": "text 16: Initial u: 0     Initial ut: 0"
+    },
+    {
+      "type": "text",
+      "x": 4.184180357142857,
+      "y": 2.6129108660714286,
+      "w": 2.5874373125,
+      "h": 0.27320745535714286,
+      "text": "Commit cells with Tab",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0017",
+      "name": "text 17: Commit cells with Tab"
+    },
+    {
+      "type": "line",
+      "x1": 9.606902678571428,
+      "y1": 2.618982142857143,
+      "x2": 12.809203571428572,
+      "y2": 2.618982142857143,
+      "line": "#627b91",
+      "line_width": 1.7142428571428572,
+      "opacity": 1.0,
+      "id": "obj-0018",
+      "name": "line 18: plot geometry"
+    },
+    {
+      "type": "line",
+      "x1": 9.606902678571428,
+      "y1": 2.618982142857143,
+      "x2": 9.606902678571428,
+      "y2": 1.0237839285714285,
+      "line": "#627b91",
+      "line_width": 1.7142428571428572,
+      "opacity": 1.0,
+      "id": "obj-0019",
+      "name": "line 19: plot geometry"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          9.606902678571428,
+          2.6070776785714287
+        ],
+        [
+          9.644028348730984,
+          2.319248675181878
+        ],
+        [
+          9.694587876157408,
+          2.0732506365740746
+        ],
+        [
+          9.756638518415178,
+          1.8667688058035714
+        ],
+        [
+          9.828237533068785,
+          1.6974884259259264
+        ],
+        [
+          9.907442177682704,
+          1.5630947399966926
+        ],
+        [
+          9.992309709821429,
+          1.4612729910714286
+        ],
+        [
+          10.080897387049438,
+          1.389708422205688
+        ],
+        [
+          10.171262466931216,
+          1.3460862764550265
+        ],
+        [
+          10.26146220703125,
+          1.328091796875
+        ],
+        [
+          10.349553864914022,
+          1.333410226521164
+        ],
+        [
+          10.433594698144015,
+          1.3597268084490741
+        ],
+        [
+          10.511641964285714,
+          1.4047267857142858
+        ],
+        [
+          10.592761794704861,
+          1.4674939003596228
+        ],
+        [
+          10.688390190972223,
+          1.5467536582341268
+        ],
+        [
+          10.800139215959822,
+          1.6396539481026786
+        ],
+        [
+          10.929620932539683,
+          1.7433426587301588
+        ],
+        [
+          11.078447403583827,
+          1.854967678881448
+        ],
+        [
+          11.248230691964286,
+          1.9716768973214285
+        ],
+        [
+          11.440582860553077,
+          2.0906182028149805
+        ],
+        [
+          11.657115972222222,
+          2.208939484126984
+        ],
+        [
+          11.89944208984375,
+          2.3237886300223214
+        ],
+        [
+          12.169173276289682,
+          2.432313529265873
+        ],
+        [
+          12.467921594432044,
+          2.5316620706225197
+        ],
+        [
+          12.797299107142857,
+          2.618982142857143
+        ]
+      ],
+      "_open": true,
+      "fill": null,
+      "line": "#3479cb",
+      "line_width": 3.4284857142857144,
+      "opacity": 1.0,
+      "id": "obj-0020",
+      "name": "polygon 20: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 9.66023392857143,
+      "y": 0.7558144375,
+      "w": 0.5576071071428571,
+      "h": 0.27320745535714286,
+      "text": "U(t)",
+      "font": "Arial",
+      "font_size": 14.571064285714286,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0021",
+      "name": "text 21: U(t)"
+    },
+    {
+      "type": "text",
+      "x": 11.195909821428572,
+      "y": 2.7204081785714287,
+      "w": 2.2151847142857144,
+      "h": 0.2571364285714286,
+      "text": "First ejection time",
+      "font": "Arial",
+      "font_size": 13.713942857142857,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0022",
+      "name": "text 22: First ejection time"
+    },
+    {
+      "type": "rect",
+      "x": 0.23808928571428573,
+      "y": 3.2737276785714284,
+      "w": 12.856821428571427,
+      "h": 0.5357008928571432,
+      "fill": "#dce6ef",
+      "line": null,
+      "line_width": 0.8571214285714286,
+      "opacity": 1.0,
+      "id": "obj-0023",
+      "name": "rect 23: plot geometry"
+    },
+    {
+      "type": "text",
+      "x": 0.4461785714285714,
+      "y": 3.398248375,
+      "w": 7.539099232142856,
+      "h": 0.2892784821428572,
+      "text": "Bottom: Progress · Messages · Log · numerical result tables",
+      "font": "Arial",
+      "font_size": 15.428185714285714,
+      "color": "#183348",
+      "valign": "top",
+      "margin": 0,
+      "word_wrap": false,
+      "rotation": 0.0,
+      "bold": false,
+      "id": "obj-0024",
+      "name": "text 24: Bottom: Progress · Messages · Log · numerical result tables"
+    }
+  ],
+  "_title": "guide-interface",
+  "_source_svg": "C:\\L. Jay Guo\\Laser_Induced_PFC_Droplet_TP\\modeling\\minimal-cavitation\\assets\\guide-interface.svg",
+  "_conversion": "Source vector geometry; curves sampled at 12 points per Bézier segment; native editable labels."
+}

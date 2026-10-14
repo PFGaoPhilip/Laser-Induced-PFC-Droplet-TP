@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "check_count": 6644,
+  "check_count": 6658,
   "failures": [],
   "checks": [
     {
@@ -265,6 +265,11 @@
     },
     {
       "name": "index.html: local dependency assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index.html: local dependency assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -4950,6 +4955,11 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -10000,6 +10010,11 @@
     },
     {
       "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -15809,6 +15824,11 @@
       "detail": null
     },
     {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -21294,6 +21314,11 @@
       "detail": null
     },
     {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/04-fracture-and-transfer.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -25154,6 +25179,11 @@
       "detail": null
     },
     {
+      "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "appendices/a-hydrogel-versus-liquid.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -25710,6 +25740,11 @@
     },
     {
       "name": "reference/defense.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/defense.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -26334,6 +26369,11 @@
       "detail": null
     },
     {
+      "name": "reference/notation.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/notation.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -26594,6 +26634,11 @@
       "detail": null
     },
     {
+      "name": "reference/sources.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/sources.html: local dependency ../assets/vendor/katex/katex.min.css",
       "passed": true,
       "detail": null
@@ -26620,6 +26665,11 @@
     },
     {
       "name": "reference/sources.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -26685,6 +26735,26 @@
     },
     {
       "name": "reference/sources.html: anchor #validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../Theses/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../Theses.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../Theses/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/sources.html: local dependency ../Theses.md",
       "passed": true,
       "detail": null
     },
@@ -29376,7 +29446,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Spherical cavity dynamics, liquid inertia, pressure impulse, moving interfaces, and directional jet formation. 球形腔体动力学、液体惯性、压力冲量、运动界面与定向射流形成。"
+      "detail": "Spherical cavity dynamics, liquid inertia , pressure impulse , moving interfaces, and directional jet formation. 球形腔体动力学、 液体惯性 、 压力冲量 、运动界面与定向 射流 形成。"
     },
     {
       "name": "all: map row 2 column 1",
@@ -29423,7 +29493,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Laser heating, nucleation, heat and mass transfer, material properties, and finite phase inventory. 激光加热、成核、传热传质、物性与有限相存量。"
+      "detail": "Laser heating, nucleation , heat and mass transfer , material properties, and finite phase inventory . 激光加热、 成核 、 传热 传质 、物性与 有限相存量 。"
     },
     {
       "name": "all: map row 3 column 1",
@@ -29470,7 +29540,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Array coupling, energy allocation, finite jets, impact, and the three-stage resolver. 阵列耦合、能量分配、有限射流、冲击与三阶段求解器。"
+      "detail": "Array coupling, energy allocation, finite jets , impact, and the three-stage resolver. 阵列耦合、能量分配、有限 射流 、冲击与三阶段求解器。"
     },
     {
       "name": "all: map row 4 column 1",
@@ -29564,7 +29634,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Gel confinement, response times, finite-energy models, and embedded-PFC comparisons. 凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。"
+      "detail": "Gel confinement , response times, finite-energy models, and embedded- PFC comparisons. 凝胶 约束 、响应时间、有限能量模型与嵌入式 PFC 比较。"
     },
     {
       "name": "C01: correspondence row count",
@@ -29616,7 +29686,7 @@
     {
       "name": "C01: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Spherical cavity dynamics, liquid inertia, pressure impulse, moving interfaces, and directional jet formation. 球形腔体动力学、液体惯性、压力冲量、运动界面与定向射流形成。"
+      "detail": "Spherical cavity dynamics, liquid inertia , pressure impulse , moving interfaces, and directional jet formation. 球形腔体动力学、 液体惯性 、 压力冲量 、运动界面与定向 射流 形成。"
     },
     {
       "name": "C02: correspondence row count",
@@ -29668,7 +29738,7 @@
     {
       "name": "C02: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Laser heating, nucleation, heat and mass transfer, material properties, and finite phase inventory. 激光加热、成核、传热传质、物性与有限相存量。"
+      "detail": "Laser heating, nucleation , heat and mass transfer , material properties, and finite phase inventory . 激光加热、 成核 、 传热 传质 、物性与 有限相存量 。"
     },
     {
       "name": "C03: correspondence row count",
@@ -29720,7 +29790,7 @@
     {
       "name": "C03: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Array coupling, energy allocation, finite jets, impact, and the three-stage resolver. 阵列耦合、能量分配、有限射流、冲击与三阶段求解器。"
+      "detail": "Array coupling, energy allocation, finite jets , impact, and the three-stage resolver. 阵列耦合、能量分配、有限 射流 、冲击与三阶段求解器。"
     },
     {
       "name": "C04: correspondence row count",
@@ -29824,7 +29894,7 @@
     {
       "name": "A: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Gel confinement, response times, finite-energy models, and embedded-PFC comparisons. 凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。"
+      "detail": "Gel confinement , response times, finite-energy models, and embedded- PFC comparisons. 凝胶 约束 、响应时间、有限能量模型与嵌入式 PFC 比较。"
     },
     {
       "name": "C1-E01: SVG text within vertical bounds",
@@ -33501,61 +33571,61 @@
   "appendices": 1,
   "chapter_questions": 15,
   "displayed_equations": 168,
-  "bilingual_paragraph_pairs": 3161,
-  "local_dependencies": 488,
+  "bilingual_paragraph_pairs": 3162,
+  "local_dependencies": 501,
   "local_math_fonts": 60,
   "pages": [
     {
       "file": "index.html",
-      "bytes": 15047,
+      "bytes": 21793,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1262946,
+      "bytes": 1314915,
       "equations": 34,
       "defenses": 3
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1494769,
+      "bytes": 1552875,
       "equations": 36,
       "defenses": 3
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 1963935,
+      "bytes": 2010861,
       "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1824924,
+      "bytes": 1864012,
       "equations": 41,
       "defenses": 3
     },
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
-      "bytes": 1238775,
+      "bytes": 1267526,
       "equations": 24,
       "defenses": 3
     },
     {
       "file": "reference/defense.html",
-      "bytes": 12781,
+      "bytes": 15736,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/notation.html",
-      "bytes": 28432,
+      "bytes": 31295,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/sources.html",
-      "bytes": 18496,
+      "bytes": 25610,
       "equations": 0,
       "defenses": 0
     }
@@ -33571,79 +33641,79 @@
       "id": "C1-E02",
       "kind": "sphere",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C1-E03",
       "kind": "sphere",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E04",
       "kind": "sphere",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C1-E05",
       "kind": "sphere",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E06",
       "kind": "sphere",
       "labels": 9,
-      "height": 593.0
+      "height": 650.0
     },
     {
       "id": "C1-E07",
       "kind": "sphere",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C1-E08",
       "kind": "phase",
       "labels": 5,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C1-E09",
       "kind": "energy",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C1-E10",
       "kind": "energy",
       "labels": 10,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C1-E11",
       "kind": "energy",
       "labels": 9,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C1-E12",
       "kind": "energy",
       "labels": 9,
-      "height": 593.0
+      "height": 650.0
     },
     {
       "id": "C1-E13",
       "kind": "sphere",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E14",
       "kind": "sphere",
       "labels": 9,
-      "height": 593.0
+      "height": 650.0
     },
     {
       "id": "C1-E15",
@@ -33655,91 +33725,91 @@
       "id": "C1-E16",
       "kind": "timescale",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C1-E17",
       "kind": "timescale",
       "labels": 7,
-      "height": 641.0
+      "height": 650.0
     },
     {
       "id": "C1-E18",
       "kind": "energy",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E19",
       "kind": "sphere",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E20",
       "kind": "timescale",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E21",
       "kind": "impulse",
       "labels": 7,
-      "height": 641.0
+      "height": 650.0
     },
     {
       "id": "C1-E22",
       "kind": "impulse",
       "labels": 9,
-      "height": 593.0
+      "height": 650.0
     },
     {
       "id": "C1-E23",
       "kind": "impulse",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E24",
       "kind": "impulse",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E25",
       "kind": "impulse",
       "labels": 9,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C1-E26",
       "kind": "sphere",
       "labels": 7,
-      "height": 641.0
+      "height": 650.0
     },
     {
       "id": "C1-E27",
       "kind": "jet",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E28",
       "kind": "jet",
       "labels": 11,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C1-E29",
       "kind": "jet",
       "labels": 10,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C1-E30",
       "kind": "sphere",
       "labels": 9,
-      "height": 593.0
+      "height": 650.0
     },
     {
       "id": "C1-E31",
@@ -33751,55 +33821,55 @@
       "id": "C1-E32",
       "kind": "phase",
       "labels": 12,
-      "height": 617.0
+      "height": 650.0
     },
     {
       "id": "C1-E33",
       "kind": "sphere",
       "labels": 8,
-      "height": 569.0
+      "height": 650.0
     },
     {
       "id": "C1-E34",
       "kind": "impulse",
       "labels": 10,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E01",
       "kind": "laser",
       "labels": 3,
-      "height": 568.0
+      "height": 650.0
     },
     {
       "id": "C2-E02",
       "kind": "laser",
       "labels": 5,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E03",
       "kind": "laser",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E04",
       "kind": "laser",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E05",
       "kind": "laser",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E06",
       "kind": "laser",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E07",
@@ -33811,43 +33881,43 @@
       "id": "C2-E08",
       "kind": "phase",
       "labels": 5,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E09",
       "kind": "timescale",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E10",
       "kind": "timescale",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E11",
       "kind": "sphere",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E12",
       "kind": "phase",
       "labels": 5,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E13",
       "kind": "phase",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E14",
       "kind": "nucleation",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E15",
@@ -33859,7 +33929,7 @@
       "id": "C2-E16",
       "kind": "nucleation",
       "labels": 5,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E17",
@@ -33877,19 +33947,19 @@
       "id": "C2-E19",
       "kind": "phase",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E20",
       "kind": "phase",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E21",
       "kind": "phase",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E22",
@@ -33901,31 +33971,31 @@
       "id": "C2-E23",
       "kind": "energy",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E24",
       "kind": "phase",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E25",
       "kind": "phase",
       "labels": 6,
-      "height": 640.0
+      "height": 650.0
     },
     {
       "id": "C2-E26",
       "kind": "phase",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E27",
       "kind": "sphere",
       "labels": 4,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E28",
@@ -33937,19 +34007,19 @@
       "id": "C2-E29",
       "kind": "energy",
       "labels": 9,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E30",
       "kind": "sphere",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E31",
       "kind": "energy",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C2-E32",
@@ -33961,13 +34031,13 @@
       "id": "C2-E33",
       "kind": "nucleation",
       "labels": 9,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E34",
       "kind": "nucleation",
       "labels": 5,
-      "height": 616.0
+      "height": 650.0
     },
     {
       "id": "C2-E35",
@@ -33979,595 +34049,595 @@
       "id": "C2-E36",
       "kind": "energy",
       "labels": 8,
-      "height": 592.0
+      "height": 650.0
     },
     {
       "id": "C3-E01",
       "kind": "array",
       "labels": 4,
-      "height": 592.0
+      "height": 720.0
     },
     {
       "id": "C3-E02",
       "kind": "laser",
       "labels": 5,
-      "height": 616.0
+      "height": 720.0
     },
     {
       "id": "C3-E03",
       "kind": "array",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E04",
       "kind": "array",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E05",
       "kind": "array",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E06",
       "kind": "array",
       "labels": 5,
-      "height": 639.0
+      "height": 720.0
     },
     {
       "id": "C3-E07",
       "kind": "array",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E08",
       "kind": "array",
       "labels": 5,
-      "height": 616.0
+      "height": 720.0
     },
     {
       "id": "C3-E09",
       "kind": "array",
       "labels": 5,
-      "height": 616.0
+      "height": 720.0
     },
     {
       "id": "C3-E10",
       "kind": "timescale",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E11",
       "kind": "energy",
       "labels": 11,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E12",
       "kind": "array",
       "labels": 7,
-      "height": 687.0
+      "height": 720.0
     },
     {
       "id": "C3-E13",
       "kind": "jet",
       "labels": 5,
-      "height": 616.0
+      "height": 720.0
     },
     {
       "id": "C3-E14",
       "kind": "jet",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E15",
       "kind": "jet",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E16",
       "kind": "impulse",
       "labels": 8,
-      "height": 592.0
+      "height": 720.0
     },
     {
       "id": "C3-E17",
       "kind": "jet",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E18",
       "kind": "jet",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E19",
       "kind": "jet",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E20",
       "kind": "jet",
       "labels": 7,
-      "height": 687.0
+      "height": 720.0
     },
     {
       "id": "C3-E21",
       "kind": "jet",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E22",
       "kind": "timescale",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E23",
       "kind": "impact",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E24",
       "kind": "impact",
       "labels": 7,
-      "height": 687.0
+      "height": 720.0
     },
     {
       "id": "C3-E25",
       "kind": "impact",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E26",
       "kind": "impact",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E27",
       "kind": "energy",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C3-E28",
       "kind": "impact",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E29",
       "kind": "laser",
       "labels": 8,
-      "height": 592.0
+      "height": 720.0
     },
     {
       "id": "C3-E30",
       "kind": "impact",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E31",
       "kind": "array",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E32",
       "kind": "jet",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C3-E33",
       "kind": "impact",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C4-E01",
       "kind": "film",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C4-E02",
       "kind": "impact",
       "labels": 7,
-      "height": 641.0
+      "height": 720.0
     },
     {
       "id": "C4-E03",
       "kind": "film",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E04",
       "kind": "film",
       "labels": 8,
-      "height": 569.0
+      "height": 720.0
     },
     {
       "id": "C4-E40",
       "kind": "film",
       "labels": 8,
-      "height": 592.0
+      "height": 720.0
     },
     {
       "id": "C4-E05",
       "kind": "film",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E06",
       "kind": "film",
       "labels": 8,
-      "height": 592.0
+      "height": 720.0
     },
     {
       "id": "C4-E41",
       "kind": "energy",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C4-E07",
       "kind": "film",
       "labels": 5,
-      "height": 616.0
+      "height": 720.0
     },
     {
       "id": "C4-E08",
       "kind": "impulse",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E09",
       "kind": "film",
       "labels": 4,
-      "height": 569.0
+      "height": 720.0
     },
     {
       "id": "C4-E10",
       "kind": "timescale",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E11",
       "kind": "film",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E12",
       "kind": "energy",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E13",
       "kind": "film",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C4-E14",
       "kind": "film",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E15",
       "kind": "film",
       "labels": 7,
-      "height": 641.0
+      "height": 720.0
     },
     {
       "id": "C4-E16",
       "kind": "film",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E17",
       "kind": "film",
       "labels": 5,
-      "height": 616.0
+      "height": 720.0
     },
     {
       "id": "C4-E18",
       "kind": "film",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E19",
       "kind": "energy",
       "labels": 7,
-      "height": 641.0
+      "height": 720.0
     },
     {
       "id": "C4-E20",
       "kind": "film",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E21",
       "kind": "film",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E22",
       "kind": "energy",
       "labels": 7,
-      "height": 641.0
+      "height": 720.0
     },
     {
       "id": "C4-E23",
       "kind": "film",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E24",
       "kind": "film",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C4-E25",
       "kind": "cohesive",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C4-E26",
       "kind": "cohesive",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E27",
       "kind": "cohesive",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E28",
       "kind": "jet",
       "labels": 7,
-      "height": 664.0
+      "height": 720.0
     },
     {
       "id": "C4-E29",
       "kind": "film",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C4-E30",
       "kind": "energy",
       "labels": 6,
-      "height": 640.0
+      "height": 720.0
     },
     {
       "id": "C4-E31",
       "kind": "energy",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E32",
       "kind": "energy",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E33",
       "kind": "energy",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E34",
       "kind": "film",
       "labels": 5,
-      "height": 593.0
+      "height": 720.0
     },
     {
       "id": "C4-E35",
       "kind": "impact",
       "labels": 4,
-      "height": 569.0
+      "height": 720.0
     },
     {
       "id": "C4-E36",
       "kind": "energy",
       "labels": 4,
-      "height": 569.0
+      "height": 720.0
     },
     {
       "id": "C4-E37",
       "kind": "film",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E38",
       "kind": "cohesive",
       "labels": 6,
-      "height": 617.0
+      "height": 720.0
     },
     {
       "id": "C4-E39",
       "kind": "film",
       "labels": 4,
-      "height": 569.0
+      "height": 720.0
     },
     {
       "id": "A-E01",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E02",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E03",
       "kind": "gel",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     },
     {
       "id": "A-E04",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E05",
       "kind": "gel",
       "labels": 4,
-      "height": 592.0
+      "height": 572.16
     },
     {
       "id": "A-E06",
       "kind": "gel",
       "labels": 4,
-      "height": 592.0
+      "height": 572.16
     },
     {
       "id": "A-E07",
       "kind": "energy",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E08",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E09",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E10",
       "kind": "gel",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     },
     {
       "id": "A-E11",
       "kind": "gel",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     },
     {
       "id": "A-E12",
       "kind": "energy",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     },
     {
       "id": "A-E13",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E14",
       "kind": "energy",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     },
     {
       "id": "A-E15",
       "kind": "gel",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E16",
       "kind": "timescale",
       "labels": 3,
-      "height": 568.0
+      "height": 550.08
     },
     {
       "id": "A-E17",
       "kind": "timescale",
       "labels": 5,
-      "height": 616.0
+      "height": 594.24
     },
     {
       "id": "A-E18",
       "kind": "timescale",
       "labels": 7,
-      "height": 664.0
+      "height": 638.4
     },
     {
       "id": "A-E19",
       "kind": "timescale",
       "labels": 4,
-      "height": 592.0
+      "height": 572.16
     },
     {
       "id": "A-E20",
       "kind": "gel",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     },
     {
       "id": "A-E21",
       "kind": "gel",
       "labels": 3,
-      "height": 568.0
+      "height": 550.08
     },
     {
       "id": "A-E22",
       "kind": "energy",
       "labels": 4,
-      "height": 592.0
+      "height": 572.16
     },
     {
       "id": "A-E23",
       "kind": "timescale",
       "labels": 3,
-      "height": 568.0
+      "height": 550.08
     },
     {
       "id": "A-E24",
       "kind": "film",
       "labels": 6,
-      "height": 640.0
+      "height": 616.32
     }
   ],
   "scope": "Integration/structure/math-rendering/portability gates. Scientific calculation and semantic reviews are separate chapter and cross-review reports; these counts are not experimental validation."

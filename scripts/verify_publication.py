@@ -5,6 +5,7 @@ from urllib.request import Request, build_opener, ProxyHandler
 import argparse
 import hashlib
 import json
+import re
 import time
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -23,12 +24,21 @@ def main():
     settings=json.loads((dest/'COURSE_SETTINGS.json').read_text(encoding='utf-8'))
     base=settings['url'];repo=settings['repository']
     registry=json.loads((dest/'verification/equations.json').read_text(encoding='utf-8'))
+    figure_manifest=dest/'assets/figures-editable/manifest.json'
     wanted={'index.html','COURSE_SETTINGS.json','PUBLIC_FILE_MANIFEST.json',
             'reference/defense.html','reference/notation.html','reference/sources.html',
             'assets/course.css','assets/course-theme.js','assets/course-progress.js',
             'assets/bilingual-terms.css','assets/vendor/katex/katex.min.css',
             'assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2',
             'assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2'}
+    if figure_manifest.is_file():
+        wanted.update({'assets/figures-editable/index.html','assets/figures-editable/manifest.json'})
+        figures=json.loads(figure_manifest.read_text(encoding='utf-8'))
+        wanted.update('assets/figures-editable/'+row['svg'] for row in figures)
+        wanted.update('assets/figures/'+row['id']+'.svg' for row in figures
+                      if re.fullmatch(r'(?:c[1-4]|a)-e\d+',row['id']))
+        wanted.update('assets/figures-editable/'+row['pptx'] for row in figures
+                      if row['id'] in {'c1-e07','c2-e01','c3-e24','c4-e07','a-e01','embedded-pfc-feasibility-radial_stability'})
     wanted.update(ch['file'] for ch in settings['chapters']+settings.get('appendices',[])+settings.get('legacy_routes',[]))
     wanted.update({'assets/course-language.js','assets/course-language.css',
         'modeling/minimal-cavitation/index.html','modeling/minimal-cavitation/STEP_BY_STEP.html',

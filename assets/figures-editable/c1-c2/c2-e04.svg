@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E04 A pulse waveform specifies when the energy is deposited.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E04 | Physical-variable diagram</text>
+<line x1="160" y1="330" x2="810" y2="330" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<line x1="160" y1="330" x2="160" y2="110" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="732" y="358.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
+<text x="152" y="98.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f(t)</text>
+<line x1="165" y1="330" x2="290" y2="330" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="290" y1="330" x2="290" y2="140" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="290" y1="140" x2="620" y2="140" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="620" y1="140" x2="620" y2="330" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<line x1="620" y1="330" x2="800" y2="330" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
+<text x="317" y="220.92" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3">Area = 1</text>
+<text x="342" y="365.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Pulse duration τ_L</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t: pulse time</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f(t): normalized profile</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">r: transverse position</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">τ_L: pulse width</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">I(r,t), I_peak: irradiance</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">F(r), F₀: integrated fluence</text>
+<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Area under f(t) is 1</text>
+<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Peak irradiance and pulse energy are different observables</text>
+</svg>

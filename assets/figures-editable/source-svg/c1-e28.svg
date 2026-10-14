@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
+<title id="title">C1-E28 — Interface normals, signed curvature and material motion must use one consistent convention.</title>
+<desc id="desc">Γ: liquid–gas interface; n: liquid → gas; s: tangent; Vn = u·n; u; D; pl; pb; σκ; 2μ n·D n; κsphere = −2/R; At a stationary no-slip solid wall use the wall velocity instead; Phase transfer modifies the kinematic condition in Chapter 2</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="640" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C1-E28 · Physical variable map / 物理变量图</text>
+<path d="M88 101 H700 M88 274 H700" class="thin"/>
+<circle cx="258" cy="186" r="52" class="area"/>
+<path d="M700 101 C640 154 640 222 700 274" class="line"/>
+<path d="M318 186 H270" class="arrow"/>
+<text x="303" y="160" class="">n → gas / 指向气相</text>
+<path d="M258 126 H320" class="arrow"/>
+<text x="261" y="104" class="">s</text>
+<text x="234" y="195" class="">pb</text>
+<text x="477" y="197" class="">Liquid / 液体: u , p , ρ , μ</text>
+<path d="M670 187 H753" class="arrow"/>
+<text x="732" y="165" class="">Γ , X(t)</text>
+<text x="777" y="207" class="">p∞</text>
+<text x="105" y="316" class="">Moving interface / 运动界面: Vn , κ , φ</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• Γ: liquid–gas interface</text>
+<text x="30" y="433" class="muted">• s: tangent</text>
+<text x="30" y="457" class="muted">• u</text>
+<text x="30" y="481" class="muted">• pl</text>
+<text x="30" y="505" class="muted">• σκ</text>
+<text x="30" y="529" class="muted">• κsphere = −2/R</text>
+<text x="508" y="409" class="muted">• n: liquid → gas</text>
+<text x="508" y="433" class="muted">• Vn = u·n</text>
+<text x="508" y="457" class="muted">• D</text>
+<text x="508" y="481" class="muted">• pb</text>
+<text x="508" y="505" class="muted">• 2μ n·D n</text>
+<text x="30" y="571" class="muted">At a stationary no-slip solid wall use the wall velocity instead</text>
+<text x="30" y="594" class="muted">Phase transfer modifies the kinematic condition in Chapter 2</text>
+</svg>

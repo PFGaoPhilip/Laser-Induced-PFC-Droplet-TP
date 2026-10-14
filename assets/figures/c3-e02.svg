@@ -1,38 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
-<title id="title">C3-E02 — An optical condition can be checked before solving cavity mechanics.</title>
-<desc id="desc">F₀ central fluence; F(R_A) edge fluence; R_A array radius; w beam radius; ε allowed decrease; exp, ln; Beam axis passes through array center; Uniform fluence does not prove uniform activation</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="616" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C3-E02 · Physical variable map / 物理变量图</text>
-<rect x="302" y="95" width="124" height="190" class="area"/>
-<rect x="426" y="95" width="210" height="190" class="area"/>
-<text x="302" y="318" class="">Absorber / 吸收体</text>
-<text x="476" y="318" class="">PFC / 全氟碳</text>
-<path d="M75 135 H302" class="arrow"/>
-<path d="M328 135 H475" class="arrow"/>
-<path d="M75 188 H302" class="arrow"/>
-<path d="M328 188 H475" class="arrow"/>
-<path d="M75 240 H302" class="arrow"/>
-<path d="M328 240 H475" class="arrow"/>
-<text x="81" y="106" class="">F(r), I(r,t), EL</text>
-<text x="336" y="79" class="">Qabs</text>
-<text x="447" y="123" class="">T(x,t)</text>
-<path d="M683 266 H925" class="arrow"/>
-<path d="M696 274 V105" class="arrow"/>
-<path d="M700 257 C737 249 751 137 790 155 S854 251 914 257" class="line"/>
-<text x="873" y="294" class="">t, τh</text>
-<text x="717" y="109" class="muted">f(t)</text>
-<text x="690" y="322" class="muted">α , Lh , δT , tth</text>
-<path d="M302 336 H426" class="arrow"/>
-<text x="342" y="353" class="muted">z , ha</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• F₀ central fluence</text>
-<text x="30" y="433" class="muted">• F(R_A) edge fluence</text>
-<text x="30" y="457" class="muted">• R_A array radius</text>
-<text x="30" y="481" class="muted">• w beam radius</text>
-<text x="30" y="505" class="muted">• ε allowed decrease; exp, ln</text>
-<text x="30" y="547" class="muted">Beam axis passes through array center</text>
-<text x="30" y="570" class="muted">Uniform fluence does not prove uniform activation</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C3-E02 · Derived optical-uniformity condition</tspan>
+</text>
+<ellipse id="o001" cx="326.4" cy="230.4" rx="134.4" ry="134.4" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<ellipse id="o002" cx="326.4" cy="230.4" rx="62.4" ry="62.4" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="326.4" y1="230.4" x2="460.8" y2="230.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="410.88" y="207.12">w</tspan>
+</text>
+<line id="o005" x1="326.4" y1="230.4" x2="326.4" y2="168" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="228.48" y="182.813">R_A</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="25.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="578.88" y="163.68">Beam axis and array centre coincide.</tspan>
+<tspan x="578.88" y="193.573">Inner circle encloses array sites.</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="578.88" y="288.48">F(R_A)/F₀ ≥ 1 − ε</tspan>
+<tspan x="578.88" y="318.373">Uniformity is an optical condition.</tspan>
+</text>
+<line id="o009" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• F₀ central fluence</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• F(R_A) edge fluence</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• R_A array radius</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• w beam radius</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• ε allowed decrease; exp, ln</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">Beam axis passes through array center</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="635.207">Uniform fluence does not prove uniform activation</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

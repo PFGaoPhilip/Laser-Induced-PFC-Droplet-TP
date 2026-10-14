@@ -1,6 +1,20 @@
 # Lesson sources
 # 课程来源
 
+## Theses management / 论文管理
+
+[Theses.md](Theses.md) contains every archived paper entry.
+It sits alongside WORK_LOG.md.
+Each entry includes identifiers, authors, and two summary sentences.
+The [offline reader](Theses/index.html) filters papers by lesson unit.
+The [chapter evidence map](Theses/CHAPTER_MAP.md) identifies placement and limits.
+
+[Theses.md](Theses.md) 保存全部已归档论文条目。
+它与 WORK_LOG.md 位于同级。
+各条目包含标识符、作者与两句摘要。
+[离线阅读页](Theses/index.html)可按课程单元筛选论文。
+[章节证据映射](Theses/CHAPTER_MAP.md)注明引用位置与适用边界。
+
 ## Knowledge / 知识来源
 
 The original English course and revision comparison are preserved in sources/.

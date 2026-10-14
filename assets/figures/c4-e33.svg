@@ -1,32 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 617" role="img" aria-labelledby="title desc">
-<title id="title">C4-E33 — The stated impulse and low-fracture-energy budget are mutually consistent at the implied speed.</title>
-<desc id="desc">I_net → final payload momentum; m_f → v_CM = 0.67238 m/s; K_CM = 0.52669 nJ; ΓA_f = 5 nJ; total minimum = 5.52669 nJ; E_solid = 10 nJ; An exact actual impulse fixes the centre-of-mass speed.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="617" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C4-E33 · Physical variable map / 物理变量图</text>
-<rect x="48" y="128" width="260" height="108" class="area"/>
-<rect x="359" y="128" width="260" height="108" class="area"/>
-<rect x="670" y="128" width="260" height="108" class="area"/>
-<text x="67" y="160" class="">External work / 外力功</text>
-<text x="72" y="204" class="">∫ tl · vf dt dA</text>
-<text x="379" y="160" class="">Solid / 固体: Kf , Ub</text>
-<text x="384" y="204" class="">PVC / 传递</text>
-<text x="687" y="160" class="">Fracture / 断裂: Γ Ac</text>
-<text x="686" y="204" class="">Motion / 运动: mf , vf</text>
-<path d="M308 182 H359" class="arrow"/>
-<path d="M619 182 H670" class="arrow"/>
-<path d="M482 236 V285" class="arrow"/>
-<text x="521" y="287" class="muted">Dissipation / 耗散 ≥ 0</text>
-<text x="75" y="91" class="">Load control matters / 必须声明载荷控制</text>
-<text x="90" y="324" class="muted">Energy and impulse are separate budgets / 能量与冲量分别核算</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• I_net → final payload momentum</text>
-<text x="30" y="433" class="muted">• m_f → v_CM = 0.67238 m/s</text>
-<text x="30" y="457" class="muted">• K_CM = 0.52669 nJ</text>
-<text x="30" y="481" class="muted">• ΓA_f = 5 nJ</text>
-<text x="30" y="505" class="muted">• total minimum = 5.52669 nJ</text>
-<text x="30" y="529" class="muted">• E_solid = 10 nJ</text>
-<text x="30" y="571" class="muted">An exact actual impulse fixes the centre-of-mass speed.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>Scientific schematic</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="40.04">C4-E33 · Energy–momentum compatibility check</tspan>
+</text>
+<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="82.56" y="224.4">Incoming finite budgets</tspan>
+</text>
+<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="490.56" y="224.4">Transmitted E_solid, I_net</tspan>
+</text>
+<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="898.56" y="224.4">Release + departure cost</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="79.68" y="370.32">Work, storage, fracture consumption and net impulse retain separate meanings.</tspan>
+</text>
+<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="446.567">• I_net → final payload momentum</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="446.567">• m_f → v_CM = 0.67238 m/s</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="471.047">• K_CM = 0.52669 nJ</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="471.047">• ΓA_f = 5 nJ</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="495.527">• total minimum = 5.52669 nJ</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="655.68" y="495.527">• E_solid = 10 nJ</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="36.48" y="606.407">An exact actual impulse fixes the centre-of-mass speed.</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

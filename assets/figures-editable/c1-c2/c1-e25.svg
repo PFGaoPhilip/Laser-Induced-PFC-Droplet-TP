@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E25 Pressure impulse and acoustic time have distinct definitions, dimensions and roles.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
+<rect width="980" height="650" fill="#142632"/>
+<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E25 | Physical-variable diagram</text>
+<rect x="100" y="180" width="680" height="120" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
+<line x1="100" y1="180" x2="780" y2="180" fill="none" stroke="#B4C7D2" stroke-width="2.6"/>
+<line x1="100" y1="300" x2="780" y2="300" fill="none" stroke="#B4C7D2" stroke-width="2.6"/>
+<line x1="190" y1="240" x2="650" y2="240" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="117" y="141.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Π0 at z = 0</text>
+<text x="602" y="141.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Π = 0 at z = L</text>
+<text x="257" y="265.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Δ u_z toward outlet</text>
+<text x="187" y="355.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Pressure impulse gradient drives early acceleration.</text>
+<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δp = 0.60 MPa</text>
+<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Π₀ = 0.30 Pa s</text>
+<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L = 100 μm</text>
+<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">c</text>
+<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ν</text>
+<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">τ = 0.50 μs</text>
+<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
+<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">U = 3.0 m/s</text>
+<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ta = L/c</text>
+<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Small bulk residual scales support the ideal column approximation</text>
+<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Many sound crossings are not a guarantee of correct pressure geometry</text>
+</svg>

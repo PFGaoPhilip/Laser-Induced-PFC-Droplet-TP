@@ -144,6 +144,9 @@ def integrate(include_modeling=True):
     settings['prepared']='2026-10-14'
     (ROOT/'COURSE_SETTINGS.json').write_text(json.dumps(settings, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(f'Integrated modeling delivery: {copied} copied files; {len(pages)} localized course pages')
+    if (ROOT/'assets/figures-editable/manifest.json').is_file():
+        from integrate_english_figures import integrate as integrate_english
+        integrate_english()
 
 if __name__=='__main__':
     import argparse

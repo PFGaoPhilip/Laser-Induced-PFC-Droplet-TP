@@ -27,9 +27,9 @@ def main():
     protected_inputs={Path('learning-records/resolver-progress')/row['copy']:row['sha256']
                       for row in json.loads((ROOT/'learning-records/resolver-progress/INPUT_MANIFEST.json').read_text(encoding='utf-8'))['copies']}
     units=settings['chapters']+settings.get('appendices',[])
-    selected={Path('index.html'),Path('.nojekyll'),Path('.gitignore'),Path('README.md'),Path('MISSION.md'),Path('RESOURCES.md'),Path('COURSE_SETTINGS.json')}
+    selected={Path('index.html'),Path('.nojekyll'),Path('.gitignore'),Path('README.md'),Path('MISSION.md'),Path('RESOURCES.md'),Path('Theses.md'),Path('COURSE_SETTINGS.json')}
     selected.update(Path(c['file']) for c in units+settings.get('legacy_routes',[]))
-    selected.update(p.relative_to(ROOT) for folder in ['assets','reference','modeling'] for p in (ROOT/folder).rglob('*') if p.is_file())
+    selected.update(p.relative_to(ROOT) for folder in ['assets','reference','modeling','Theses'] for p in (ROOT/folder).rglob('*') if p.is_file())
     selected.update(p.relative_to(ROOT) for p in (ROOT/'learning-records/resolver-progress').rglob('*') if p.is_file())
     selected.add(Path('text/course.md'))
     selected.update(Path('text')/Path(c['file']).with_suffix('.md').name for c in units)
@@ -53,6 +53,9 @@ def main():
         'GITHUB_PUBLICATION_AUTHORIZATION_20261014.json','lesson-revision-baseline.json',
         'lesson-revision-audit.json','chapter-prose-audit.json','chapter-prose-revision.md',
         'report-prose-revision.md','independent-editorial-review.md','github-release-audit.json'])
+    selected.update(Path('verification/english-figures-20261015')/name for name in
+                    ['figure-audit.json','protected-baseline.json','lesson-audit.json','browser-audit.json','relocation-audit.json'])
+    selected.add(Path('scripts/render_science_decks.ps1'))
     selected={p for p in selected if not {'__pycache__','build','tmp','.tools'}.intersection(p.parts)}
     # These are authored public sources, local dependencies and evidence, not private PDFs or response records.
     forbidden_ext={'.pdf','.zip','.mph','.docx','.pptx','.pem','.key','.sqlite','.db','.exe','.dll'}
@@ -65,7 +68,8 @@ def main():
         public_model_file=relative.parts[0]=='modeling' and p.suffix.lower() in {'.mph','.zip'}
         authored_study_pdf=relative.as_posix()=='modeling/embedded-pfc-feasibility/output/pdf/FINITE_PFC_DERIVATION.pdf'
         authored_resolver_pdf=relative.as_posix()=='learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/report/STAGE3_ENGINEERING_REPORT.pdf'
-        if p.suffix.lower() in forbidden_ext and not (public_model_file or authored_study_pdf or authored_resolver_pdf):problems.append(str(relative))
+        authored_figure_pptx=relative.parts[:2]==('assets','figures-editable') and p.suffix.lower()=='.pptx'
+        if p.suffix.lower() in forbidden_ext and not (public_model_file or authored_study_pdf or authored_resolver_pdf or authored_figure_pptx):problems.append(str(relative))
         if p.suffix.lower() in {'.html','.md','.json','.py','.js','.cjs','.css','.svg','.c','.h','.sh','.tex','.txt','.stdout','.stderr'}:
             text=p.read_text(encoding='utf-8')
             if secret.search(text):problems.append('credential pattern '+str(relative))
@@ -74,6 +78,11 @@ def main():
                 # They are supplementary evidence, never runtime asset addresses.
                 if relative in protected_inputs:
                     assert sha(p)==protected_inputs[relative], 'Changed sealed provenance: '+str(relative)
+                elif relative.parts[:2]==('assets','figures-editable') and relative.name.endswith('.scene.json'):
+                    scene=json.loads(text)
+                    provenance=scene.pop('_source_svg',None)
+                    assert not computer.search(json.dumps(scene)), 'Unexpected local path in scene: '+str(relative)
+                    assert provenance and Path(provenance).resolve().is_relative_to(ROOT.resolve()),str(relative)
                 else:problems.append('local computer reference '+str(relative))
         target=DEST/relative;target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(p,target)

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img" aria-labelledby="title desc">
+<title id="title">C4-E41 — The transient plate equation conserves power between applied work, motion, shape and interface response.</title>
+<desc id="desc">p_load ẇ → incoming solid power; t_coh ẇ → interface power; m_A, ẇ, ẅ → K_f storage; D_f, ∇⁴w → U_b storage; T₀, ∇²w → U_T storage; Ω_f, dA — reference plane; t — event time; Fixed clamps perform no boundary work.; Recoverable cohesion and fracture loss must be counted once.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
+<rect width="980" height="664" rx="8" fill="#142632"/>
+<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
+<text x="28" y="36" class="accent">C4-E41 · Physical variable map / 物理变量图</text>
+<rect x="48" y="128" width="260" height="108" class="area"/>
+<rect x="359" y="128" width="260" height="108" class="area"/>
+<rect x="670" y="128" width="260" height="108" class="area"/>
+<text x="67" y="160" class="">External work / 外力功</text>
+<text x="72" y="204" class="">∫ tl · vf dt dA</text>
+<text x="379" y="160" class="">Solid / 固体: Kf , Ub</text>
+<text x="384" y="204" class="">PVC / 传递</text>
+<text x="687" y="160" class="">Fracture / 断裂: Γ Ac</text>
+<text x="686" y="204" class="">Motion / 运动: mf , vf</text>
+<path d="M308 182 H359" class="arrow"/>
+<path d="M619 182 H670" class="arrow"/>
+<path d="M482 236 V285" class="arrow"/>
+<text x="521" y="287" class="muted">Dissipation / 耗散 ≥ 0</text>
+<text x="75" y="91" class="">Load control matters / 必须声明载荷控制</text>
+<text x="90" y="324" class="muted">Energy and impulse are separate budgets / 能量与冲量分别核算</text>
+<path d="M28 356 H952" stroke="#405967"/>
+<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
+<text x="30" y="409" class="muted">• p_load ẇ → incoming solid power</text>
+<text x="30" y="433" class="muted">• t_coh ẇ → interface power</text>
+<text x="30" y="457" class="muted">• m_A, ẇ, ẅ → K_f storage</text>
+<text x="30" y="481" class="muted">• D_f, ∇⁴w → U_b storage</text>
+<text x="30" y="505" class="muted">• T₀, ∇²w → U_T storage</text>
+<text x="30" y="529" class="muted">• Ω_f, dA — reference plane</text>
+<text x="30" y="553" class="muted">• t — event time</text>
+<text x="30" y="595" class="muted">Fixed clamps perform no boundary work.</text>
+<text x="30" y="618" class="muted">Recoverable cohesion and fracture loss must be counted once.</text>
+</svg>
