@@ -21,7 +21,7 @@ def review_rows(data,equations):
         current.append(item)
 
     def from_vocabulary(eid,symbol):
-        chapter=5 if eid.startswith('A-') else int(eid[1])
+        chapter=90 if eid.startswith('A-') else int(eid[1])
         en,zh,unit=VOCABULARY[chapter][symbol]
         put(eid,symbol,en,zh,unit)
 
@@ -43,7 +43,7 @@ def review_rows(data,equations):
         5:{r'K_g^{\mathrm{bulk}}':'Pa',r'k_{\mathrm{perm}}':'m²',r'\mu_l':'Pa s'},
     }
     for eid,d in data.items():
-        chapter=5 if eid.startswith('A-') else int(eid[1])
+        chapter=90 if eid.startswith('A-') else int(eid[1])
         for row in d['rows']:
             unit=units.get(chapter,{}).get(row['symbol'])
             if unit:
@@ -177,7 +177,7 @@ def review_rows(data,equations):
     # own row. Only explicitly named vocabulary entries are added; this is not
     # a guess from a partial letter match inside a larger TeX expression.
     for eid,d in data.items():
-        chapter=5 if eid.startswith('A-') else int(eid[1])
+        chapter=90 if eid.startswith('A-') else int(eid[1])
         present={row['symbol'] for row in d['rows']}
         for raw in re.findall(r'\$([^$]+)\$',originals[eid]['symbols_en']+' '+originals[eid]['symbols_zh']):
             name=re.split(r'\\(?:geq?|leq?|ne|in|ll)(?![A-Za-z])|[><=]',raw,maxsplit=1)[0].strip()

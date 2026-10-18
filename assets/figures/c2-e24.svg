@@ -1,25 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E24 The pressure responds to species masses, temperature, and changing volume.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E24 | Physical-variable diagram</text>
-<rect x="60" y="120" width="280" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="72" y="149.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Species masses m_v,s</text>
-<line x1="200" y1="225" x2="490" y2="305" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<rect x="370" y="120" width="280" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="382" y="149.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Temperature T_b</text>
-<line x1="510" y1="225" x2="490" y2="305" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<rect x="680" y="120" width="280" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="692" y="149.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Bubble volume V_b</text>
-<line x1="820" y1="225" x2="490" y2="305" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<rect x="310" y="295" width="360" height="65" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="322" y="324.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Mixture pressure p_b</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_v,s, M_s: species mole inventory</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">V_b: finite bubble volume</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_b: total mixture pressure</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ_b, e_b, Y: real-mixture state</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_b: common temperature</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_v,s: component pressure</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R_u: gas constant</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s = 1…N_s; P: EOS function</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Permanent gas remains after condensable vapor is removed</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Dense compression requires a calibrated EOS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E24</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E24 · Ideal-mixture constitutive control and required refinement</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="729.6" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">5</tspan>
+</text>
+<line id="o006" x1="254.4" y1="528" x2="254.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="254.4" y1="144" x2="254.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="254.4" y="550.04">10</tspan>
+</text>
+<line id="o009" x1="412.8" y1="528" x2="412.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="412.8" y1="144" x2="412.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="550.04">20</tspan>
+</text>
+<line id="o012" x1="571.2" y1="528" x2="571.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="571.2" y1="144" x2="571.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="571.2" y="550.04">40</tspan>
+</text>
+<line id="o015" x1="729.6" y1="528" x2="729.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="729.6" y1="144" x2="729.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="729.6" y="550.04">80</tspan>
+</text>
+<line id="o018" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="89.28" y1="451.2" x2="96" y2="451.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="451.2" x2="729.6" y2="451.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="455.96">1e+04</tspan>
+</text>
+<line id="o022" x1="89.28" y1="374.4" x2="96" y2="374.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="374.4" x2="729.6" y2="374.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="379.16">1e+05</tspan>
+</text>
+<line id="o025" x1="89.28" y1="297.6" x2="96" y2="297.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="297.6" x2="729.6" y2="297.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="302.36">1e+06</tspan>
+</text>
+<line id="o028" x1="89.28" y1="220.8" x2="96" y2="220.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="220.8" x2="729.6" y2="220.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="225.56">1e+07</tspan>
+</text>
+<line id="o031" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="96" y1="144" x2="729.6" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">1e+08</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="572.8">bubble radius R  (µm)</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">ideal pᵥ,PFC  (Pa)</tspan>
+</text>
+<polyline id="o036" points="96,206.824 102.4,209.626 108.8,212.428 115.2,215.231 121.6,218.033 128,220.835 134.4,223.638 140.8,226.44 147.2,229.242 153.6,232.045 160,234.847 166.4,237.649 172.8,240.452 179.2,243.254 185.6,246.056 192,248.859 198.4,251.661 204.8,254.463 211.2,257.265 217.6,260.068 224,262.87 230.4,265.672 236.8,268.475 243.2,271.277 249.6,274.079 256,276.882 262.4,279.684 268.8,282.486 275.2,285.289 281.6,288.091 288,290.893 294.4,293.696 300.8,296.498 307.2,299.3 313.6,302.103 320,304.905 326.4,307.707 332.8,310.509 339.2,313.312 345.6,316.114 352,318.916 358.4,321.719 364.8,324.521 371.2,327.323 377.6,330.126 384,332.928 390.4,335.73 396.8,338.533 403.2,341.335 409.6,344.137 416,346.94 422.4,349.742 428.8,352.544 435.2,355.347 441.6,358.149 448,360.951 454.4,363.753 460.8,366.556 467.2,369.358 473.6,372.16 480,374.963 486.4,377.765 492.8,380.567 499.2,383.37 505.6,386.172 512,388.974 518.4,391.777 524.8,394.579 531.2,397.381 537.6,400.184 544,402.986 550.4,405.788 556.8,408.591 563.2,411.393 569.6,414.195 576,416.997 582.4,419.8 588.8,422.602 595.2,425.404 601.6,428.207 608,431.009 614.4,433.811 620.8,436.614 627.2,439.416 633.6,442.218 640,445.021 646.4,447.823 652.8,450.625 659.2,453.428 665.6,456.23 672,459.032 678.4,461.835 684.8,464.637 691.2,467.439 697.6,470.241 704,473.044 710.4,475.846 716.8,478.648 723.2,481.451" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o037" cx="478.679" cy="374.4" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="490.199" y="341.44">R = 26.7 µm: p = 1 bar</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="285.781" y="208.468">p ∝ m T / R³ for fixed m, T</tspan>
+</text>
+<rect id="o040" x="796.8" y="144" width="446.4" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="810.24" y="166.44">Pressure responds to three things</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="813.12" y="207.587">pᵥ,s V_b = (mᵥ,s / Mₛ) Rᵤ T_b</tspan>
+<tspan x="813.12" y="227.253">p_b = Σ pᵥ,s</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="834.24" y="289.187">species mass mᵥ,s (evaporation raises p)</tspan>
+</text>
+<ellipse id="o044" cx="818.88" cy="283.933" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="834.24" y="319.12">temperature T_b (heating raises p)</tspan>
+</text>
+<ellipse id="o046" cx="818.88" cy="313.867" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="834.24" y="349.053">volume V_b (expansion lowers p)</tspan>
+</text>
+<ellipse id="o048" cx="818.88" cy="343.8" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="813.12" y="432.64">This ideal-mixture control is a first model; a</tspan>
+<tspan x="813.12" y="451.52">real-mixture equation of state p = 𝒫(ρ_b, e_b, Y)</tspan>
+<tspan x="813.12" y="470.4">is the required refinement.</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Curve for the fixed PFP inventory of a 5 µm droplet (0.8535 ng) at 323 K. Expansion alone drops p by a factor 1000 for a tenfold</tspan>
+<tspan x="97.92" y="637.173">radius.</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Ideal-gas control of Eq. C2-E24 with M_PFC = 0.2880343 kg/mol.</tspan>
+</text>
 </svg>

@@ -41,13 +41,13 @@ Keep language and day/night controls available.
 
 ## Scope / 范围
 
-Four chapters and Appendix A provide theory and worked controls.
+Five chapters and Appendix A provide theory and worked controls.
 Chapter 3 includes the resolver implementation study.
 Appendix A includes finite-energy and embedded-PFC modeling studies.
 Each model retains its assumptions and validation limits.
 Target calibration, spatial device solutions, and experiments remain research work.
 
-四章与附录 A 提供理论及已解对照。
+五章与附录 A 提供理论及已解对照。
 第三章包括求解器实现研究。
 附录 A 包括有限能量与嵌入式 PFC 建模研究。
 各模型保留其假设与验证限制。

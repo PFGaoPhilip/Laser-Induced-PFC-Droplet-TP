@@ -31,6 +31,6 @@ The modeled system is water in oil. PFC properties and gel constitutive laws req
 
 ## Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://arxiv.org/abs/2404.17457
 - Locator: Abstract: motion, thermodynamics, convection-diffusion, and complete vaporization

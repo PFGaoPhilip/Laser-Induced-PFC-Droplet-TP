@@ -1,61 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E20</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E20 · Newtonian stress and slender axial momentum</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E20 · Newtonian stress and slender axial momentum</tspan>
 </text>
-<rect id="o001" x="201.6" y="153.6" width="691.2" height="105.6" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="76.8" y1="206.4" x2="336" y2="206.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o003" x1="748.8" y1="206.4" x2="1142.4" y2="206.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="60.48" y="303.12">Incoming flux A v |z</tspan>
+<line id="o001" x1="96" y1="489.6" x2="672" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="153.6" x2="96" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="489.6" x2="96" y2="496.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="153.6" x2="96" y2="489.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="511.64">0.00</tspan>
 </text>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="780.48" y="303.12">Outgoing flux A v |z+Δz</tspan>
+<line id="o006" x1="384" y1="489.6" x2="384" y2="496.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="384" y1="153.6" x2="384" y2="489.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="384" y="511.64">3.14</tspan>
 </text>
-<text id="o006" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="406.08" y="192.96">Fixed axial slice Δz</tspan>
-<tspan x="406.08" y="221.28">A(z,t) = πa²</tspan>
+<line id="o009" x1="672" y1="489.6" x2="672" y2="496.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="672" y1="153.6" x2="672" y2="489.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="672" y="511.64">6.28</tspan>
 </text>
-<text id="o007" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="106.627">Slender liquid: axial velocity v(z,t); radius a(z,t)</tspan>
+<line id="o012" x1="89.28" y1="433.6" x2="96" y2="433.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="96" y1="433.6" x2="672" y2="433.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="438.36">0.8</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="98.88" y="374.813">Axial extension: τ_zz − τ_rr = 3μ ∂zv; capillary force follows ∂zκ.</tspan>
+<line id="o015" x1="89.28" y1="321.6" x2="96" y2="321.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="96" y1="321.6" x2="672" y2="321.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="326.36">1.0</tspan>
 </text>
-<line id="o009" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• a(z,t), A jet section</tspan>
+<line id="o018" x1="89.28" y1="209.6" x2="96" y2="209.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="96" y1="209.6" x2="672" y2="209.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="214.36">1.2</tspan>
 </text>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• r radial; z axial</tspan>
+<text id="o021" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="384" y="534.4">k z  (one wavelength)</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• u_r radial; v axial</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="132.16">κ a₀</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• τ_zz − τ_rr = 3μ ∂zv</tspan>
+<polyline id="o023" points="96,348.672 99.8528,348.657 103.706,348.614 107.559,348.541 111.411,348.439 115.264,348.307 119.117,348.145 122.97,347.951 126.823,347.727 130.676,347.47 134.528,347.181 138.381,346.857 142.234,346.5 146.087,346.106 149.94,345.677 153.793,345.21 157.645,344.704 161.498,344.159 165.351,343.574 169.204,342.948 173.057,342.28 176.91,341.568 180.763,340.813 184.615,340.014 188.468,339.17 192.321,338.28 196.174,337.345 200.027,336.364 203.88,335.337 207.732,334.264 211.585,333.146 215.438,331.982 219.291,330.774 223.144,329.523 226.997,328.228 230.849,326.893 234.702,325.518 238.555,324.105 242.408,322.655 246.261,321.172 250.114,319.658 253.967,318.114 257.819,316.545 261.672,314.953 265.525,313.342 269.378,311.715 273.231,310.076 277.084,308.43 280.936,306.78 284.789,305.13 288.642,303.486 292.495,301.852 296.348,300.233 300.201,298.634 304.054,297.06 307.906,295.516 311.759,294.007 315.612,292.539 319.465,291.116 323.318,289.743 327.171,288.427 331.023,287.171 334.876,285.98 338.729,284.859 342.582,283.812 346.435,282.844 350.288,281.958 354.14,281.158 357.993,280.447 361.846,279.828 365.699,279.304 369.552,278.877 373.405,278.548 377.258,278.32 381.11,278.193 384.963,278.168 388.816,278.244 392.669,278.422 396.522,278.7 400.375,279.078 404.227,279.554 408.08,280.126 411.933,280.791 415.786,281.547 419.639,282.39 423.492,283.318 427.344,284.326 431.197,285.41 435.05,286.567 438.903,287.791 442.756,289.078 446.609,290.423 450.462,291.821 454.314,293.268 458.167,294.757 462.02,296.284 465.873,297.844 469.726,299.431 473.579,301.041 477.431,302.668 481.284,304.307 485.137,305.955 488.99,307.605 492.843,309.254 496.696,310.897 500.548,312.53 504.401,314.15 508.254,315.752 512.107,317.333 515.96,318.889 519.813,320.419 523.666,321.918 527.518,323.384 531.371,324.816 535.224,326.21 539.077,327.566 542.93,328.881 546.783,330.154 550.635,331.384 554.488,332.57 558.341,333.711 562.194,334.806 566.047,335.856 569.9,336.86 573.753,337.819 577.605,338.731 581.458,339.598 585.311,340.419 589.164,341.196 593.017,341.929 596.87,342.619 600.722,343.266 604.575,343.872 608.428,344.437 612.281,344.962 616.134,345.448 619.987,345.896 623.839,346.308 627.692,346.683 631.545,347.023 635.398,347.33 639.251,347.603 643.104,347.843 646.957,348.052 650.809,348.229 654.662,348.377 658.515,348.494 662.368,348.581 666.221,348.639 670.074,348.668 672,348.672" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o024" points="96,381.6 99.8528,381.553 103.706,381.411 107.559,381.174 111.411,380.844 115.264,380.419 119.117,379.9 122.97,379.288 126.823,378.582 130.676,377.784 134.528,376.894 138.381,375.912 142.234,374.84 146.087,373.677 149.94,372.426 153.793,371.086 157.645,369.659 161.498,368.146 165.351,366.548 169.204,364.867 173.057,363.103 176.91,361.26 180.763,359.337 184.615,357.338 188.468,355.264 192.321,353.116 196.174,350.899 200.027,348.613 203.88,346.262 207.732,343.848 211.585,341.373 215.438,338.842 219.291,336.258 223.144,333.623 226.997,330.942 230.849,328.217 234.702,325.455 238.555,322.657 242.408,319.829 246.261,316.976 250.114,314.102 253.967,311.212 257.819,308.312 261.672,305.406 265.525,302.5 269.378,299.6 273.231,296.711 277.084,293.841 280.936,290.993 284.789,288.176 288.642,285.395 292.495,282.656 296.348,279.966 300.201,277.332 304.054,274.759 307.906,272.255 311.759,269.826 315.612,267.478 319.465,265.217 323.318,263.051 327.171,260.983 331.023,259.022 334.876,257.172 338.729,255.438 342.582,253.826 346.435,252.34 350.288,250.986 354.14,249.766 357.993,248.686 361.846,247.748 365.699,246.955 369.552,246.31 373.405,245.815 377.258,245.471 381.11,245.279 384.963,245.241 388.816,245.356 392.669,245.624 396.522,246.044 400.375,246.614 404.227,247.333 408.08,248.199 411.933,249.209 415.786,250.359 419.639,251.646 423.492,253.067 427.344,254.616 431.197,256.29 435.05,258.083 438.903,259.989 442.756,262.004 446.609,264.122 450.462,266.336 454.314,268.641 458.167,271.031 462.02,273.498 465.873,276.037 469.726,278.641 473.579,281.304 477.431,284.019 481.284,286.78 485.137,289.58 488.99,292.414 492.843,295.273 496.696,298.154 500.548,301.049 504.401,303.953 508.254,306.859 512.107,309.763 515.96,312.659 519.813,315.542 523.666,318.406 527.518,321.247 531.371,324.06 535.224,326.841 539.077,329.585 542.93,332.288 546.783,334.946 550.635,337.557 554.488,340.115 558.341,342.618 562.194,345.062 566.047,347.445 569.9,349.764 573.753,352.016 577.605,354.199 581.458,356.31 585.311,358.347 589.164,360.308 593.017,362.191 596.87,363.995 600.722,365.718 604.575,367.357 608.428,368.913 612.281,370.383 616.134,371.767 619.987,373.063 623.839,374.27 627.692,375.387 631.545,376.415 635.398,377.351 639.251,378.195 643.104,378.947 646.957,379.606 650.809,380.171 654.662,380.643 658.515,381.021 662.368,381.304 666.221,381.494 670.074,381.588 672,381.6" fill="none" stroke="#B4C7D2" stroke-width="2.4" opacity="1" stroke-dasharray="6 4"/>
+<polyline id="o025" points="96,321.6 99.8528,321.6 103.706,321.6 107.559,321.6 111.411,321.6 115.264,321.6 119.117,321.6 122.97,321.6 126.823,321.6 130.676,321.6 134.528,321.6 138.381,321.6 142.234,321.6 146.087,321.6 149.94,321.6 153.793,321.6 157.645,321.6 161.498,321.6 165.351,321.6 169.204,321.6 173.057,321.6 176.91,321.6 180.763,321.6 184.615,321.6 188.468,321.6 192.321,321.6 196.174,321.6 200.027,321.6 203.88,321.6 207.732,321.6 211.585,321.6 215.438,321.6 219.291,321.6 223.144,321.6 226.997,321.6 230.849,321.6 234.702,321.6 238.555,321.6 242.408,321.6 246.261,321.6 250.114,321.6 253.967,321.6 257.819,321.6 261.672,321.6 265.525,321.6 269.378,321.6 273.231,321.6 277.084,321.6 280.936,321.6 284.789,321.6 288.642,321.6 292.495,321.6 296.348,321.6 300.201,321.6 304.054,321.6 307.906,321.6 311.759,321.6 315.612,321.6 319.465,321.6 323.318,321.6 327.171,321.6 331.023,321.6 334.876,321.6 338.729,321.6 342.582,321.6 346.435,321.6 350.288,321.6 354.14,321.6 357.993,321.6 361.846,321.6 365.699,321.6 369.552,321.6 373.405,321.6 377.258,321.6 381.11,321.6 384.963,321.6 388.816,321.6 392.669,321.6 396.522,321.6 400.375,321.6 404.227,321.6 408.08,321.6 411.933,321.6 415.786,321.6 419.639,321.6 423.492,321.6 427.344,321.6 431.197,321.6 435.05,321.6 438.903,321.6 442.756,321.6 446.609,321.6 450.462,321.6 454.314,321.6 458.167,321.6 462.02,321.6 465.873,321.6 469.726,321.6 473.579,321.6 477.431,321.6 481.284,321.6 485.137,321.6 488.99,321.6 492.843,321.6 496.696,321.6 500.548,321.6 504.401,321.6 508.254,321.6 512.107,321.6 515.96,321.6 519.813,321.6 523.666,321.6 527.518,321.6 531.371,321.6 535.224,321.6 539.077,321.6 542.93,321.6 546.783,321.6 550.635,321.6 554.488,321.6 558.341,321.6 562.194,321.6 566.047,321.6 569.9,321.6 573.753,321.6 577.605,321.6 581.458,321.6 585.311,321.6 589.164,321.6 593.017,321.6 596.87,321.6 600.722,321.6 604.575,321.6 608.428,321.6 612.281,321.6 616.134,321.6 619.987,321.6 623.839,321.6 627.692,321.6 631.545,321.6 635.398,321.6 639.251,321.6 643.104,321.6 646.957,321.6 650.809,321.6 654.662,321.6 658.515,321.6 662.368,321.6 666.221,321.6 670.074,321.6 672,321.6" fill="none" stroke="#2E4756" stroke-width="1.6" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="133.102" y="179.547">κ(z) of Eq. C3-E20 for a = a₀(1 + 0.12 cos kz), k a₀ = 0.7</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• κ surface curvature</tspan>
+<text id="o027" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="417.289" y="460.893">dashed: 1/a alone</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• σ_j, ρ, μ</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="97.92" y="122.28">Curvature varies along the jet and drives the flow</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• ∂r, ∂z, ∂zz, ∂ₜ, t</tspan>
+<rect id="o029" x="710.4" y="96" width="532.8" height="225.6" rx="18.048" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="723.84" y="117.893">Why the factor is three</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Regular radial velocity vanishes at r = 0</tspan>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="726.72" y="159.04">uᵣ = −(r/2) ∂_z v,   τ_zz = 2μ ∂_z v,   τᵣᵣ = −μ ∂_z v</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Curvature gradients drive axial redistribution</tspan>
+<text id="o032" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="726.72" y="217.187">τ_zz − τᵣᵣ = 3μ ∂_z v:  extensional stress is three times</tspan>
+<tspan x="726.72" y="236.853">the shear-viscosity scale.</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="664.007">Surrounding dense liquid requires a two-fluid treatment</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="721.92" y="357.76">simple shear: μ</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<rect id="o034" x="950.4" y="340.8" width="49.5" height="38.4" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1009.5" y="360.64">1μ</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="721.92" y="415.36">stretching: 3μ</tspan>
+</text>
+<rect id="o037" x="950.4" y="398.4" width="148.5" height="38.4" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1108.5" y="418.24">3μ</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="721.92" y="485.44">∂ₜv + v∂_z v = −(σⱼ/ρ) ∂_z κ + [3μ/(ρA)] ∂_z(A ∂_z v)</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.04">Where the jet is thinner (a &lt; a₀ with k a₀ &lt; 1) κ is larger, so</tspan>
+<tspan x="97.92" y="609.92">pressure pushes liquid toward the thicker parts.</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="721.92" y="547.293">The slender axial momentum law keeps the full geometric</tspan>
+<tspan x="721.92" y="565.387">curvature.</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Newtonian stress and slender momentum of Eq. C3-E20.</tspan>
 </text>
 </svg>

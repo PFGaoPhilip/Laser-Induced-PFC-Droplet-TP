@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E10 · One-dimensional conservative equations of the reference solver</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E10 · One-dimensional conservative equations of the reference solver</tspan>
+</text>
+<line id="o001" x1="153.6" y1="556.8" x2="825.6" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="153.6" y1="124.8" x2="153.6" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="153.6" y1="556.8" x2="153.6" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="153.6" y="581.293">0</tspan>
+</text>
+<line id="o005" x1="377.6" y1="556.8" x2="377.6" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="377.6" y="581.293">1</tspan>
+</text>
+<line id="o007" x1="601.6" y1="556.8" x2="601.6" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="601.6" y="581.293">2</tspan>
+</text>
+<line id="o009" x1="825.6" y1="556.8" x2="825.6" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="825.6" y="581.293">3</tspan>
+</text>
+<line id="o011" x1="146.88" y1="556.8" x2="153.6" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o012" x1="153.6" y1="556.8" x2="825.6" y2="556.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="141.12" y="560.173">0</tspan>
+</text>
+<line id="o014" x1="146.88" y1="448.8" x2="153.6" y2="448.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o015" x1="153.6" y1="448.8" x2="825.6" y2="448.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="141.12" y="452.173">1</tspan>
+</text>
+<line id="o017" x1="146.88" y1="340.8" x2="153.6" y2="340.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o018" x1="153.6" y1="340.8" x2="825.6" y2="340.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="141.12" y="344.173">2</tspan>
+</text>
+<line id="o020" x1="146.88" y1="232.8" x2="153.6" y2="232.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="153.6" y1="232.8" x2="825.6" y2="232.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="141.12" y="236.173">3</tspan>
+</text>
+<line id="o023" x1="146.88" y1="124.8" x2="153.6" y2="124.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o024" x1="153.6" y1="124.8" x2="825.6" y2="124.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o025" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="141.12" y="128.173">4</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="489.6" y="611.513">Time from first contact (ns)</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="65.28" y="102.713">z (µm)</tspan>
+</text>
+<polygon id="o028" points="153.6,556.8 692.755,124.8 825.6,124.8 825.6,556.8" fill="#2B5560" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<polygon id="o029" points="153.6,556.8 692.755,124.8 153.6,124.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o030" x1="153.6" y1="556.8" x2="692.755" y2="124.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1"/>
+<line id="o031" x1="153.6" y1="124.8" x2="825.6" y2="124.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1" stroke-dasharray="6 4"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="166.08" y="147.68">inflow boundary z = H</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="672" y="425.76">behind the shock:</tspan>
+<tspan x="672" y="446.213">at rest</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="170.88" y="200.16">ahead:</tspan>
+<tspan x="170.88" y="220.613">ρ_j, −U</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="857.28" y="158.2">Wave pattern</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="857.28" y="250.68">Barotropic shock: S = 1661.9 m/s</tspan>
+<tspan x="857.28" y="271.92">reaches H = 4 µm at 2.41 ns</tspan>
+<tspan x="857.28" y="293.16">Wall: u = 0 (mirror ghost state)</tspan>
+<tspan x="857.28" y="314.4">Inflow: (ρ_j, −U)</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="857.28" y="449.52">Conservative form lets the</tspan>
+<tspan x="857.28" y="470.76">shock move at the right speed.</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Space-time sketch of Eq. (C5-E10); S from Eq. (C5-E05).</tspan>
+</text>
+</svg>

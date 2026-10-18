@@ -90,8 +90,8 @@ def integrate(include_modeling=True):
         relative = '' if p.parent == ROOT else '../'
         banner=s.select_one('.home-header .eyebrow, .hero .eyebrow')
         if banner:
-            language_label(s,banner,'PROJECT-CENTERED THEORY · FOUR CHAPTERS + APPENDIX A',
-                           '项目导向理论 · 四章 + 附录 A')
+            language_label(s,banner,'PROJECT-CENTERED THEORY · FIVE CHAPTERS + APPENDIX A',
+                           '项目导向理论 · 五章 + 附录 A')
         sidebar=s.select_one('.sidebar')
         if sidebar:
             for node, labels in zip(sidebar.find_all('h2',recursive=False),
@@ -106,7 +106,7 @@ def integrate(include_modeling=True):
         if header:
             route=p.relative_to(ROOT).as_posix()
             unit=next((u for u in settings['chapters']+settings['appendices'] if u['file']==route),None)
-            if not unit and route=='chapters/05-hydrogel-versus-liquid.html':unit=settings['appendices'][0]
+            if not unit and route in {x['file'] for x in settings['legacy_routes']}:unit=settings['appendices'][0]
             if unit:
                 language_label(s,header,unit['label']+' · THEORY → DERIVATION → DEFENSE',
                                unit['label_zh']+' · 理论 → 推导 → 答辩')

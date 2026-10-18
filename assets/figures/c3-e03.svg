@@ -1,59 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E03</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E03 · Continuity and potential integration</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E03 · Continuity and potential integration</tspan>
 </text>
-<ellipse id="o001" cx="230.4" cy="216" rx="81.6" ry="81.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o002" cx="912" cy="216" rx="81.6" ry="81.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="175.68" y="221.213">j: source</tspan>
+<rect id="o001" x="38.4" y="96" width="537.6" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">A moving sphere is a monopole source</tspan>
 </text>
-<text id="o004" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="857.28" y="221.213">i: receiver</tspan>
+<ellipse id="o003" cx="144" cy="355.2" rx="43.2" ry="43.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="148.8" y="279.04">bubble j</tspan>
 </text>
-<line id="o005" x1="230.4" y1="326.4" x2="912" y2="326.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="511.68" y="360.413">d_ij</tspan>
+<line id="o005" x1="196.8" y1="355.2" x2="235.2" y2="355.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="144" y1="441.6" x2="460.8" y2="441.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o007" x1="144" y1="434.88" x2="144" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o008" x1="460.8" y1="434.88" x2="460.8" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="302.4" y="466.387">dᵢⱼ</tspan>
 </text>
-<line id="o007" x1="326.4" y1="216" x2="811.2" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="396.48" y="192.72">Shared liquid: ρ, p∞</tspan>
+<ellipse id="o010" cx="460.8" cy="355.2" rx="8.64" ry="8.64" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="480" y="312.093">receiving</tspan>
+<tspan x="480" y="330.187">centre i</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="60.48" y="108.72">Fixed centres; spherical cavities; R_i, R_j ≪ d_ij</tspan>
+<ellipse id="o012" cx="144" cy="355.2" rx="81.6" ry="81.6" fill="none" stroke="#2B6678" stroke-width="1.6" opacity="0.9"/>
+<ellipse id="o013" cx="144" cy="355.2" rx="105.6" ry="105.6" fill="none" stroke="#2B6678" stroke-width="1.6" opacity="0.9"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="59.52" y="547.84">Flux through every sphere is the same: 4πr²u = 4πR²Ṙ.</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="386.88" y="275.04">Source-volume acceleration</tspan>
-<tspan x="386.88" y="301.787">sets the pressure correction.</tspan>
+<line id="o015" x1="672" y1="480" x2="1228.8" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o016" x1="672" y1="144" x2="672" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o017" x1="672" y1="480" x2="672" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o018" x1="672" y1="144" x2="672" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="672" y="502.04">1</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• R_j, Ṙ_j, R̈_j: source bubble</tspan>
+<line id="o020" x1="733.867" y1="480" x2="733.867" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="733.867" y1="144" x2="733.867" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="733.867" y="502.04">2</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• r_j, ξ: radial locations</tspan>
+<line id="o023" x1="919.467" y1="480" x2="919.467" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o024" x1="919.467" y1="144" x2="919.467" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o025" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="919.467" y="502.04">5</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• d_ij: center separation</tspan>
+<line id="o026" x1="1228.8" y1="480" x2="1228.8" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o027" x1="1228.8" y1="144" x2="1228.8" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="502.04">10</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• u_j: radial liquid velocity</tspan>
+<line id="o029" x1="665.28" y1="449.455" x2="672" y2="449.455" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o030" x1="672" y1="449.455" x2="1228.8" y2="449.455" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="660.48" y="454.215">-2.0</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• φ_j, ∂ₜφ_j: source potential</tspan>
+<line id="o032" x1="665.28" y1="373.091" x2="672" y2="373.091" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o033" x1="672" y1="373.091" x2="1228.8" y2="373.091" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="660.48" y="377.851">-1.5</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• i receiving center; t time; π</tspan>
+<line id="o035" x1="665.28" y1="296.727" x2="672" y2="296.727" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o036" x1="672" y1="296.727" x2="1228.8" y2="296.727" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="660.48" y="301.487">-1.0</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Centers fixed; far separation</tspan>
+<line id="o038" x1="665.28" y1="220.364" x2="672" y2="220.364" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o039" x1="672" y1="220.364" x2="1228.8" y2="220.364" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="660.48" y="225.124">-0.5</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">The derivative is at a fixed receiving position</tspan>
+<line id="o041" x1="665.28" y1="144" x2="672" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o042" x1="672" y1="144" x2="1228.8" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="660.48" y="148.76">0.0</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="950.4" y="524.8">dᵢⱼ / Rⱼ</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="616.32" y="122.56">∂ₜφⱼ at dᵢⱼ</tspan>
+</text>
+<polyline id="o046" points="672,388.364 674.798,377.79 677.596,368.094 680.394,359.17 683.192,350.929 685.99,343.297 688.788,336.207 691.586,329.604 694.384,323.44 697.182,317.673 699.98,312.264 702.778,307.182 705.576,302.399 708.374,297.887 711.172,293.626 713.97,289.594 716.768,285.774 719.566,282.149 722.364,278.705 725.162,275.428 727.96,272.307 730.758,269.331 733.556,266.49 736.354,263.774 739.152,261.177 741.95,258.69 744.748,256.306 747.546,254.019 750.344,251.823 753.142,249.714 755.94,247.685 758.738,245.733 761.536,243.853 764.334,242.041 767.132,240.294 769.93,238.608 772.728,236.98 775.526,235.407 778.324,233.886 781.122,232.415 783.92,230.992 786.718,229.613 789.516,228.278 792.314,226.984 795.112,225.728 797.91,224.511 800.708,223.328 803.506,222.181 806.304,221.066 809.102,219.982 811.899,218.928 814.697,217.903 817.495,216.906 820.293,215.935 823.091,214.99 825.889,214.07 828.687,213.173 831.485,212.298 834.283,211.446 837.081,210.614 839.879,209.803 842.677,209.011 845.475,208.238 848.273,207.484 851.071,206.746 853.869,206.026 856.667,205.322 859.465,204.634 862.263,203.961 865.061,203.303 867.859,202.659 870.657,202.029 873.455,201.412 876.253,200.809 879.051,200.218 881.849,199.639 884.647,199.072 887.445,198.516 890.243,197.972 893.041,197.438 895.839,196.914 898.637,196.401 901.435,195.898 904.233,195.404 907.031,194.92 909.829,194.444 912.627,193.978 915.425,193.52 918.223,193.07 921.021,192.628 923.819,192.195 926.617,191.769 929.415,191.35 932.213,190.939 935.011,190.534 937.809,190.137 940.607,189.746 943.405,189.362 946.203,188.985 949.001,188.613 951.799,188.248 954.597,187.888 957.395,187.535 960.193,187.187 962.991,186.844 965.789,186.507 968.587,186.176 971.385,185.849 974.183,185.527 976.981,185.21 979.779,184.899 982.577,184.591 985.375,184.289 988.173,183.99 990.971,183.697 993.769,183.407 996.567,183.122 999.365,182.841 1002.16,182.563 1004.96,182.29 1007.76,182.021 1010.56,181.755 1013.35,181.493 1016.15,181.235 1018.95,180.98 1021.75,180.728 1024.55,180.48 1027.34,180.236 1030.14,179.994 1032.94,179.756 1035.74,179.521 1038.54,179.289 1041.33,179.06 1044.13,178.834 1046.93,178.611 1049.73,178.391 1052.53,178.173 1055.32,177.958 1058.12,177.746 1060.92,177.537 1063.72,177.33 1066.52,177.126 1069.31,176.924 1072.11,176.724 1074.91,176.527 1077.71,176.333 1080.51,176.14 1083.3,175.95 1086.1,175.762 1088.9,175.577 1091.7,175.393 1094.5,175.212 1097.29,175.033 1100.09,174.856 1102.89,174.68 1105.69,174.507 1108.49,174.336 1111.28,174.166 1114.08,173.999 1116.88,173.833 1119.68,173.67 1122.48,173.508 1125.27,173.347 1128.07,173.189 1130.87,173.032 1133.67,172.877 1136.47,172.723 1139.26,172.571 1142.06,172.421 1144.86,172.272 1147.66,172.125 1150.46,171.979 1153.25,171.835 1156.05,171.693 1158.85,171.551 1161.65,171.412 1164.45,171.273 1167.24,171.136 1170.04,171.001 1172.84,170.866 1175.64,170.734 1178.44,170.602 1181.23,170.472 1184.03,170.343 1186.83,170.215 1189.63,170.088 1192.43,169.963 1195.22,169.839 1198.02,169.716 1200.82,169.594 1203.62,169.473 1206.42,169.354 1209.21,169.235 1212.01,169.118 1214.81,169.002 1217.61,168.887 1220.41,168.772 1223.2,168.659 1226,168.547 1228.8,168.436" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="755.84" y="301.621">∂ₜφⱼ = −(2RⱼṘⱼ² + Rⱼ²R̈ⱼ) / dᵢⱼ</tspan>
+</text>
+<ellipse id="o048" cx="919.467" cy="192.873" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="932.907" y="164.713">falls as 1/d</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="673.92" y="571.84">φⱼ = −Rⱼ²Ṙⱼ / rⱼ  (zero at infinity).  Units R = Ṙ = 1, R̈ =</tspan>
+<tspan x="673.92" y="590.72">−0.4.</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="634.787">The neighbour feels a potential that depends on the source history through Rⱼ, Ṙⱼ, R̈ⱼ and falls off with distance.</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Monopole potential of Eq. C3-E03.</tspan>
 </text>
 </svg>

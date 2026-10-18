@@ -1,53 +1,94 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E17</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E17 · Continuity plus Bernoulli focusing benchmark</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E17 · Continuity plus Bernoulli focusing benchmark</tspan>
 </text>
-<line id="o001" x1="96" y1="120" x2="384" y2="120" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o002" x1="384" y1="120" x2="672" y2="177.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o003" x1="672" y1="177.6" x2="1123.2" y2="177.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o004" x1="96" y1="312" x2="384" y2="312" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o005" x1="384" y1="312" x2="672" y2="254.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o006" x1="672" y1="254.4" x2="1123.2" y2="254.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o007" x1="124.8" y1="216" x2="1104" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="98.88" y="91.92">Solid inlet: a_in, U_in, p_in</tspan>
+<rect id="o001" x="38.4" y="96" width="614.4" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Contracting tube feeding a jet</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="703.68" y="111.36">Free jet: a_j, U_j</tspan>
-<tspan x="703.68" y="139.68">p_j = p_g + σ_j/a_j</tspan>
+<polygon id="o003" points="76.8,230.4 249.6,230.4 403.2,307.2 614.4,307.2 614.4,374.4 403.2,374.4 249.6,451.2 76.8,451.2" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.93333" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="88.32" y="178.24">aᵢₙ, Uᵢₙ, pᵢₙ</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="118.08" y="379.613">Continuity fixes flux; the pressure budget must support acceleration.</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="385.92" y="264.64">jet aⱼ, Uⱼ</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• a_in solid inlet; U_in, p_in</tspan>
+<line id="o006" x1="96" y1="340.8" x2="211.2" y2="340.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="422.4" y1="340.8" x2="604.8" y2="340.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="495.587">Q = π aᵢₙ² Uᵢₙ = π aⱼ² Uⱼ,   α = (aⱼ/aᵢₙ)²</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• a_j free outlet; U_j</tspan>
+<text id="o009" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="59.52" y="543.04">Bernoulli with tension and loss gives the jet speed.</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• Q = inlet flux = outlet flux</tspan>
+<line id="o010" x1="768" y1="480" x2="1238.4" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o011" x1="768" y1="144" x2="768" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o012" x1="768" y1="480" x2="768" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="768" y1="144" x2="768" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="768" y="502.04">0.00</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• p_g outside jet</tspan>
+<line id="o015" x1="885.6" y1="480" x2="885.6" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="885.6" y1="144" x2="885.6" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="885.6" y="502.04">0.25</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• σ_j/a_j outlet capillary pressure</tspan>
+<line id="o018" x1="1003.2" y1="480" x2="1003.2" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="1003.2" y1="144" x2="1003.2" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1003.2" y="502.04">0.50</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• ρ, α, Δp_loss: budget legend</tspan>
+<line id="o021" x1="1120.8" y1="480" x2="1120.8" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="1120.8" y1="144" x2="1120.8" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1120.8" y="502.04">0.75</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">A solid inlet has no imposed σ_j/a_in free-surface jump</tspan>
+<line id="o024" x1="1238.4" y1="480" x2="1238.4" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="1238.4" y1="144" x2="1238.4" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1238.4" y="502.04">1.00</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Required pressure rises with speed gain</tspan>
+<line id="o027" x1="761.28" y1="480" x2="768" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="761.28" y1="368" x2="768" y2="368" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="768" y1="368" x2="1238.4" y2="368" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="372.76">2</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<line id="o031" x1="761.28" y1="256" x2="768" y2="256" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="768" y1="256" x2="1238.4" y2="256" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="260.76">3</tspan>
+</text>
+<line id="o034" x1="761.28" y1="144" x2="768" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o035" x1="768" y1="144" x2="1238.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="148.76">4</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1003.2" y="524.8">area ratio α</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="712.32" y="122.56">Uⱼ / √(2Δ/ρ)</tspan>
+</text>
+<polyline id="o039" points="768.47,480 770.714,479.998 772.957,479.994 775.2,479.987 777.443,479.977 779.687,479.965 781.93,479.951 784.173,479.934 786.417,479.914 788.66,479.892 790.903,479.867 793.146,479.84 795.39,479.81 797.633,479.777 799.876,479.742 802.119,479.704 804.363,479.664 806.606,479.621 808.849,479.575 811.092,479.527 813.336,479.476 815.579,479.423 817.822,479.366 820.065,479.308 822.309,479.246 824.552,479.182 826.795,479.115 829.039,479.045 831.282,478.973 833.525,478.897 835.768,478.819 838.012,478.739 840.255,478.655 842.498,478.568 844.741,478.479 846.985,478.387 849.228,478.292 851.471,478.194 853.714,478.093 855.958,477.989 858.201,477.882 860.444,477.772 862.688,477.66 864.931,477.544 867.174,477.425 869.417,477.303 871.661,477.177 873.904,477.049 876.147,476.917 878.39,476.782 880.634,476.644 882.877,476.503 885.12,476.358 887.363,476.21 889.607,476.059 891.85,475.904 894.093,475.745 896.336,475.584 898.58,475.418 900.823,475.249 903.066,475.077 905.31,474.9 907.553,474.72 909.796,474.536 912.039,474.349 914.283,474.157 916.526,473.962 918.769,473.762 921.012,473.559 923.256,473.351 925.499,473.14 927.742,472.924 929.985,472.704 932.229,472.479 934.472,472.25 936.715,472.017 938.958,471.779 941.202,471.537 943.445,471.29 945.688,471.038 947.932,470.782 950.175,470.52 952.418,470.254 954.661,469.982 956.905,469.706 959.148,469.424 961.391,469.137 963.634,468.844 965.878,468.546 968.121,468.242 970.364,467.933 972.607,467.617 974.851,467.296 977.094,466.969 979.337,466.636 981.581,466.296 983.824,465.95 986.067,465.597 988.31,465.238 990.554,464.872 992.797,464.499 995.04,464.119 997.283,463.731 999.527,463.336 1001.77,462.934 1004.01,462.524 1006.26,462.106 1008.5,461.68 1010.74,461.246 1012.99,460.803 1015.23,460.351 1017.47,459.891 1019.72,459.421 1021.96,458.943 1024.2,458.454 1026.45,457.956 1028.69,457.448 1030.93,456.93 1033.18,456.401 1035.42,455.861 1037.66,455.31 1039.91,454.748 1042.15,454.174 1044.39,453.587 1046.64,452.989 1048.88,452.377 1051.12,451.753 1053.36,451.115 1055.61,450.463 1057.85,449.797 1060.09,449.116 1062.34,448.419 1064.58,447.707 1066.82,446.979 1069.07,446.234 1071.31,445.471 1073.55,444.691 1075.8,443.893 1078.04,443.075 1080.28,442.237 1082.53,441.379 1084.77,440.5 1087.01,439.598 1089.26,438.674 1091.5,437.726 1093.74,436.754 1095.99,435.756 1098.23,434.731 1100.47,433.679 1102.72,432.598 1104.96,431.488 1107.2,430.346 1109.45,429.171 1111.69,427.962 1113.93,426.718 1116.18,425.437 1118.42,424.117 1120.66,422.756 1122.91,421.353 1125.15,419.905 1127.39,418.41 1129.64,416.866 1131.88,415.269 1134.12,413.618 1136.37,411.909 1138.61,410.139 1140.85,408.305 1143.1,406.402 1145.34,404.427 1147.58,402.375 1149.83,400.242 1152.07,398.022 1154.31,395.709 1156.56,393.297 1158.8,390.779 1161.04,388.148 1163.28,385.395 1165.53,382.51 1167.77,379.483 1170.01,376.304 1172.26,372.958 1174.5,369.431 1176.74,365.708 1178.99,361.769 1181.23,357.593 1183.47,353.158 1185.72,348.434 1187.96,343.39 1190.2,337.99 1192.45,332.19 1194.69,325.94 1196.93,319.179 1199.18,311.835 1201.42,303.82 1203.66,295.029 1205.91,285.328 1208.15,274.552 1210.39,262.489 1212.64,248.865 1214.88,233.313" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o040" cx="797.4" cy="479.781" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="824.64" y="464.893">α = 0.0625 (aⱼ/aᵢₙ = 1/4): 1.002</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="989.28" y="193.693">diverges as α → 1</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="702.72" y="571.84">Uⱼ = √{ 2[pᵢₙ − p_g − σⱼ/aⱼ − Δpₗₒₛₛ] / [ρ(1 − α²)] },  0 &lt; α &lt;</tspan>
+<tspan x="702.72" y="590.72">1.</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="625.187">Specify either the source pressure or the flow, then solve for the compatible rest. Valid for a steady, inviscid core only.</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Continuity + Bernoulli benchmark of Eq. C3-E17; Δ = pᵢₙ − p_g − σⱼ/aⱼ − Δpₗₒₛₛ.</tspan>
 </text>
 </svg>

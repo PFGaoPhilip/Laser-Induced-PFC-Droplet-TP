@@ -40,3 +40,25 @@ html[data-theme=light]{color-scheme:light;--canvas:#eef3f2;--paper:#fffefa;--pan
   .symbol-definitions td, .symbol-definitions td + td { display: block; width: 100%; border: 0; padding: .6rem 0 .6rem .8rem; }
   .symbol-definitions .symbol-placeholder { display: none; }
 }
+
+/* Compact forms: tight rows, no overlap (owner request 2026-10-18). */
+.table-wrap { margin: .7rem 0; }
+table { line-height: 1.3; }
+th, td { padding: .16rem .5rem; }
+td p, th p { margin: 0; }
+.symbol-panel-heading p { margin: .1rem 0 .3rem; }
+.symbol-definitions { margin: .1rem 0 .35rem; }
+.symbol-definitions td { padding: .14rem .8rem .14rem 0; line-height: 1.3; }
+.symbol-definitions td + td { padding-left: .8rem; }
+.symbol-definitions p { margin: 0; }
+.symbol-definitions .lang-pair > p.zh { margin-top: 0; }
+.symbol-conventions { padding-top: .35rem; }
+.symbol-conventions p { margin: .1rem 0 .3rem; }
+.symbol-glossary td, .symbol-glossary th { padding: .12rem .5rem; }
+.course-map th, .course-map td { padding: .2rem .5rem; }
+@media(max-width:600px) {
+  .symbol-definitions td, .symbol-definitions td + td { padding: .15rem 0 .15rem .7rem; }
+}
+td .lang-pair > p.zh, th .lang-pair > p.zh,
+.symbol-conventions.lang-pair > p.zh, .symbol-panel-heading.lang-pair > p.zh,
+.symbol-definitions .lang-pair > p.zh { margin-top: 0; }

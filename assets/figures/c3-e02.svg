@@ -1,51 +1,124 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E02</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E02 · Derived optical-uniformity condition</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E02 · Derived optical-uniformity condition</tspan>
 </text>
-<ellipse id="o001" cx="326.4" cy="230.4" rx="134.4" ry="134.4" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o002" cx="326.4" cy="230.4" rx="62.4" ry="62.4" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o003" x1="326.4" y1="230.4" x2="460.8" y2="230.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="410.88" y="207.12">w</tspan>
+<rect id="o001" x="38.4" y="96" width="441.6" height="508.8" rx="35.328" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Array inside the beam</tspan>
 </text>
-<line id="o005" x1="326.4" y1="230.4" x2="326.4" y2="168" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="228.48" y="182.813">R_A</tspan>
+<ellipse id="o003" cx="259.2" cy="355.2" rx="192" ry="192" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.0724286"/>
+<ellipse id="o004" cx="259.2" cy="355.2" rx="183.273" ry="183.273" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.0891454"/>
+<ellipse id="o005" cx="259.2" cy="355.2" rx="174.545" ry="174.545" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.108666"/>
+<ellipse id="o006" cx="259.2" cy="355.2" rx="165.818" ry="165.818" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.131188"/>
+<ellipse id="o007" cx="259.2" cy="355.2" rx="157.091" ry="157.091" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.156855"/>
+<ellipse id="o008" cx="259.2" cy="355.2" rx="148.364" ry="148.364" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.185741"/>
+<ellipse id="o009" cx="259.2" cy="355.2" rx="139.636" ry="139.636" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.217832"/>
+<ellipse id="o010" cx="259.2" cy="355.2" rx="130.909" ry="130.909" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.253012"/>
+<ellipse id="o011" cx="259.2" cy="355.2" rx="122.182" ry="122.182" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.29105"/>
+<ellipse id="o012" cx="259.2" cy="355.2" rx="113.455" ry="113.455" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.331587"/>
+<ellipse id="o013" cx="259.2" cy="355.2" rx="104.727" ry="104.727" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.374139"/>
+<ellipse id="o014" cx="259.2" cy="355.2" rx="96" ry="96" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.418093"/>
+<ellipse id="o015" cx="259.2" cy="355.2" rx="87.2727" ry="87.2727" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.462721"/>
+<ellipse id="o016" cx="259.2" cy="355.2" rx="78.5455" ry="78.5455" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.507189"/>
+<ellipse id="o017" cx="259.2" cy="355.2" rx="69.8182" ry="69.8182" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.550588"/>
+<ellipse id="o018" cx="259.2" cy="355.2" rx="61.0909" ry="61.0909" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.591954"/>
+<ellipse id="o019" cx="259.2" cy="355.2" rx="52.3636" ry="52.3636" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.63031"/>
+<ellipse id="o020" cx="259.2" cy="355.2" rx="43.6364" ry="43.6364" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.6647"/>
+<ellipse id="o021" cx="259.2" cy="355.2" rx="34.9091" ry="34.9091" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.694229"/>
+<ellipse id="o022" cx="259.2" cy="355.2" rx="26.1818" ry="26.1818" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.718099"/>
+<ellipse id="o023" cx="259.2" cy="355.2" rx="17.4545" ry="17.4545" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.735651"/>
+<ellipse id="o024" cx="259.2" cy="355.2" rx="8.72727" ry="8.72727" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.746387"/>
+<ellipse id="o025" cx="259.2" cy="355.2" rx="177.6" ry="177.6" fill="none" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="232.32" y="158.493">beam w</tspan>
 </text>
-<text id="o007" font-family="Arial,sans-serif" font-size="25.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="578.88" y="163.68">Beam axis and array centre coincide.</tspan>
-<tspan x="578.88" y="193.573">Inner circle encloses array sites.</tspan>
+<ellipse id="o027" cx="234.743" cy="330.743" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o028" cx="234.743" cy="355.2" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o029" cx="234.743" cy="379.657" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o030" cx="259.2" cy="330.743" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o031" cx="259.2" cy="355.2" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o032" cx="259.2" cy="379.657" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o033" cx="283.657" cy="330.743" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o034" cx="283.657" cy="355.2" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o035" cx="283.657" cy="379.657" rx="4.32" ry="4.32" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o036" cx="259.2" cy="355.2" rx="40.762" ry="40.762" fill="none" stroke="#F28BA0" stroke-width="3.2" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="270.72" y="415.802">R_A</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="578.88" y="288.48">F(R_A)/F₀ ≥ 1 − ε</tspan>
-<tspan x="578.88" y="318.373">Uniformity is an optical condition.</tspan>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="552.64">Wide beam, small array: edge sites receive</tspan>
+<tspan x="54.72" y="571.52">nearly the same fluence as the centre.</tspan>
 </text>
-<line id="o009" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• F₀ central fluence</tspan>
+<line id="o039" x1="604.8" y1="528" x2="1228.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o040" x1="604.8" y1="144" x2="604.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o041" x1="604.8" y1="528" x2="604.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o042" x1="604.8" y1="144" x2="604.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="604.8" y="550.04">0.0</tspan>
 </text>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• F(R_A) edge fluence</tspan>
+<line id="o044" x1="812.8" y1="528" x2="812.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o045" x1="812.8" y1="144" x2="812.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="812.8" y="550.04">0.1</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• R_A array radius</tspan>
+<line id="o047" x1="1020.8" y1="528" x2="1020.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o048" x1="1020.8" y1="144" x2="1020.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1020.8" y="550.04">0.2</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• w beam radius</tspan>
+<line id="o050" x1="1228.8" y1="528" x2="1228.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o051" x1="1228.8" y1="144" x2="1228.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o052" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="550.04">0.3</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• ε allowed decrease; exp, ln</tspan>
+<line id="o053" x1="598.08" y1="528" x2="604.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o054" x1="598.08" y1="432" x2="604.8" y2="432" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o055" x1="604.8" y1="432" x2="1228.8" y2="432" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o056" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="436.76">3</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Beam axis passes through array center</tspan>
+<line id="o057" x1="598.08" y1="336" x2="604.8" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o058" x1="604.8" y1="336" x2="1228.8" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o059" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="340.76">6</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Uniform fluence does not prove uniform activation</tspan>
+<line id="o060" x1="598.08" y1="240" x2="604.8" y2="240" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o061" x1="604.8" y1="240" x2="1228.8" y2="240" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o062" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="244.76">9</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<line id="o063" x1="598.08" y1="144" x2="604.8" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o064" x1="604.8" y1="144" x2="1228.8" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o065" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="148.76">12</tspan>
+</text>
+<text id="o066" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="916.8" y="572.8">allowed edge decrease ε</tspan>
+</text>
+<text id="o067" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="549.12" y="122.56">required beam radius  w / R_A</tspan>
+</text>
+<polyline id="o068" points="634.693,151.869 637.725,169.734 640.756,185.294 643.787,199.008 646.818,211.214 649.849,222.17 652.88,232.077 655.912,241.093 658.943,249.343 661.974,256.932 665.005,263.942 668.036,270.445 671.067,276.498 674.098,282.152 677.13,287.449 680.161,292.425 683.192,297.111 686.223,301.535 689.254,305.72 692.285,309.687 695.317,313.454 698.348,317.039 701.379,320.454 704.41,323.714 707.441,326.829 710.472,329.811 713.504,332.668 716.535,335.409 719.566,338.042 722.597,340.574 725.628,343.01 728.659,345.358 731.69,347.622 734.722,349.807 737.753,351.918 740.784,353.958 743.815,355.933 746.846,357.844 749.877,359.696 752.909,361.492 755.94,363.234 758.971,364.925 762.002,366.567 765.033,368.164 768.064,369.716 771.095,371.227 774.127,372.697 777.158,374.129 780.189,375.524 783.22,376.884 786.251,378.21 789.282,379.504 792.314,380.768 795.345,382.001 798.376,383.206 801.407,384.383 804.438,385.534 807.469,386.659 810.501,387.76 813.532,388.838 816.563,389.892 819.594,390.925 822.625,391.936 825.656,392.927 828.687,393.898 831.719,394.85 834.75,395.784 837.781,396.7 840.812,397.598 843.843,398.48 846.874,399.345 849.906,400.195 852.937,401.029 855.968,401.849 858.999,402.654 862.03,403.445 865.061,404.223 868.092,404.988 871.124,405.74 874.155,406.479 877.186,407.207 880.217,407.922 883.248,408.627 886.279,409.32 889.311,410.002 892.342,410.674 895.373,411.336 898.404,411.988 901.435,412.63 904.466,413.262 907.497,413.886 910.529,414.5 913.56,415.105 916.591,415.702 919.622,416.291 922.653,416.871 925.684,417.444 928.716,418.008 931.747,418.565 934.778,419.115 937.809,419.657 940.84,420.192 943.871,420.72 946.903,421.242 949.934,421.757 952.965,422.265 955.996,422.767 959.027,423.263 962.058,423.752 965.089,424.236 968.121,424.714 971.152,425.186 974.183,425.653 977.214,426.114 980.245,426.569 983.276,427.02 986.308,427.465 989.339,427.905 992.37,428.341 995.401,428.771 998.432,429.197 1001.46,429.618 1004.49,430.034 1007.53,430.446 1010.56,430.853 1013.59,431.256 1016.62,431.655 1019.65,432.05 1022.68,432.44 1025.71,432.827 1028.74,433.209 1031.77,433.588 1034.81,433.963 1037.84,434.334 1040.87,434.701 1043.9,435.065 1046.93,435.425 1049.96,435.782 1052.99,436.135 1056.02,436.485 1059.06,436.832 1062.09,437.175 1065.12,437.515 1068.15,437.852 1071.18,438.186 1074.21,438.517 1077.24,438.844 1080.27,439.169 1083.3,439.491 1086.34,439.81 1089.37,440.126 1092.4,440.439 1095.43,440.75 1098.46,441.058 1101.49,441.363 1104.52,441.666 1107.55,441.966 1110.58,442.263 1113.62,442.559 1116.65,442.851 1119.68,443.141 1122.71,443.429 1125.74,443.714 1128.77,443.997 1131.8,444.278 1134.83,444.557 1137.87,444.833 1140.9,445.107 1143.93,445.379 1146.96,445.649 1149.99,445.917 1153.02,446.182 1156.05,446.446 1159.08,446.707 1162.11,446.967 1165.15,447.224 1168.18,447.48 1171.21,447.734 1174.24,447.986 1177.27,448.236 1180.3,448.484 1183.33,448.731 1186.36,448.975 1189.39,449.218 1192.43,449.459 1195.46,449.698 1198.49,449.936 1201.52,450.172 1204.55,450.407 1207.58,450.639 1210.61,450.87 1213.64,451.1 1216.68,451.328 1219.71,451.554 1222.74,451.779 1225.77,452.003 1228.8,452.225" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o069" cx="812.8" cy="388.58" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o070" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="826.24" y="394.02">ε = 0.1: w ≥ 4.36 R_A</tspan>
+</text>
+<ellipse id="o071" cx="708.8" cy="328.182" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o072" font-family="Arial,sans-serif" font-size="16" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="722.24" y="333.622">ε = 0.05: w ≥ 6.24 R_A</tspan>
+</text>
+<ellipse id="o073" cx="646.4" cy="209.609" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o074" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="657.92" y="215.049">ε = 0.02: w ≥ 9.95 R_A</tspan>
+</text>
+<text id="o075" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="606.72" y="618.053">w ≥ R_A √[ 2 / (−ln(1 − ε)) ].  A 10 % edge drop needs w = 4.357</tspan>
+<tspan x="606.72" y="638.507">R_A.</tspan>
+</text>
+<text id="o076" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Optical-uniformity condition of Eq. C3-E02; this is checked before any cavity mechanics.</tspan>
 </text>
 </svg>

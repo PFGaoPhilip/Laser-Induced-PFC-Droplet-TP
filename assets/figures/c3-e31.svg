@@ -1,62 +1,90 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E31</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E31 · Reference answer: original interaction and allocation formulas</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E31 · Reference answer: original interaction and allocation formulas</tspan>
 </text>
-<ellipse id="o001" cx="230.4" cy="216" rx="81.6" ry="81.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o002" cx="912" cy="216" rx="81.6" ry="81.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="175.68" y="221.213">j: source</tspan>
+<line id="o001" x1="912" y1="475.2" x2="1228.8" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="912" y1="187.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="912" y1="475.2" x2="912" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="912" y1="187.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="912" y="497.24">1</tspan>
 </text>
-<text id="o004" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="857.28" y="221.213">i: receiver</tspan>
+<line id="o006" x1="964.8" y1="475.2" x2="964.8" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="964.8" y1="187.2" x2="964.8" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="964.8" y="497.24">5</tspan>
 </text>
-<line id="o005" x1="230.4" y1="326.4" x2="912" y2="326.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="511.68" y="360.413">d_ij</tspan>
+<line id="o009" x1="1030.8" y1="475.2" x2="1030.8" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="1030.8" y1="187.2" x2="1030.8" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1030.8" y="497.24">10</tspan>
 </text>
-<line id="o007" x1="326.4" y1="216" x2="811.2" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="396.48" y="192.72">Shared liquid: ρ, p∞</tspan>
+<line id="o012" x1="1096.8" y1="475.2" x2="1096.8" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="1096.8" y1="187.2" x2="1096.8" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1096.8" y="497.24">15</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="60.48" y="108.72">Fixed centres; spherical cavities; R_i, R_j ≪ d_ij</tspan>
+<line id="o015" x1="1162.8" y1="475.2" x2="1162.8" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="1162.8" y1="187.2" x2="1162.8" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1162.8" y="497.24">20</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="386.88" y="275.04">Source-volume acceleration</tspan>
-<tspan x="386.88" y="301.787">sets the pressure correction.</tspan>
+<line id="o018" x1="1228.8" y1="475.2" x2="1228.8" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="1228.8" y1="187.2" x2="1228.8" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="497.24">25</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• R_i, R_j bubble radii</tspan>
+<line id="o021" x1="905.28" y1="475.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="905.28" y1="344.291" x2="912" y2="344.291" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="912" y1="344.291" x2="1228.8" y2="344.291" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="349.051">0.5</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• d_ij separations; N sites</tspan>
+<line id="o025" x1="905.28" y1="213.382" x2="912" y2="213.382" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="912" y1="213.382" x2="1228.8" y2="213.382" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="218.142">1.0</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• p_b,i inside; p∞ outside</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1070.4" y="520">N</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• Ṙ_i, R̈_i, Ṙ_j, R̈_j</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="856.32" y="165.76">Rₘₐₓ,N / R_*</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• σ_b, μ, ρ balance parameters</tspan>
+<polyline id="o030" points="912,213.382 925.2,267.395 938.4,293.665 951.6,310.265 964.8,322.088 978,331.116 991.2,338.332 1004.4,344.291 1017.6,349.331 1030.8,353.675 1044,357.475 1057.2,360.84 1070.4,363.851 1083.6,366.568 1096.8,369.038 1110,371.297 1123.2,373.376 1136.4,375.298 1149.6,377.082 1162.8,378.745 1176,380.301 1189.2,381.762 1202.4,383.136 1215.6,384.433 1228.8,385.659" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="808.32" y="116.933">Fixed total work shrinks each bubble</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• E_B,tot fixed work; Δp_c</tspan>
+<rect id="o032" x="38.4" y="96" width="739.2" height="249.6" rx="19.968" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Coupled radial equation</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• R_max,N = R_* N^−1/3; π</tspan>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="159.04">R_iR̈ᵢ + (3/2)Ṙᵢ² = [p_b,i − p∞ − 2σ_b/Rᵢ − 4μṘᵢ/Rᵢ]/ρ − Σ_{j≠i} (Rⱼ²R̈ⱼ +</tspan>
+<tspan x="54.72" y="177.92">2RⱼṘⱼ²)/dᵢⱼ</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Hydraulic connectivity decides whether sources are independent</tspan>
+<text id="o035" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="54.72" y="241.187">Neighbours change the pressure each bubble feels, so single-bubble results</tspan>
+<tspan x="54.72" y="260.853">cannot simply be multiplied by the count.</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Fixed total work changes each cavity scale</tspan>
+<rect id="o036" x="38.4" y="364.8" width="739.2" height="240" rx="19.2" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="387.24">Fixed total pressure work</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o038" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="428.933">E_B,tot = N (4π/3) Δp_c Rₘₐₓ,N³,   Rₘₐₓ,N = R_* N^(−1/3)</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="54.72" y="495.04">Identical constant-pressure ideal cavities; the coupled row needs far separation.</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="808.32" y="548.387">Use connectivity and source allocation before</tspan>
+<tspan x="808.32" y="568.053">summing outputs.</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reference formulas of the Defence 1 answer: Eqs. C3-E05 and C3-E11.</tspan>
 </text>
 </svg>

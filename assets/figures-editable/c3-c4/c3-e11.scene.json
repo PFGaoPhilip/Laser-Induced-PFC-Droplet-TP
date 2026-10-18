@@ -1,355 +1,1334 @@
 {
-  "slide": {
-    "width": 13.333,
-    "height": 7.5
+ "slide": {
+  "width": 13.333,
+  "height": 7.5
+ },
+ "background": "#142632",
+ "objects": [
+  {
+   "x": 0.3,
+   "y": 0.13,
+   "w": 12.7,
+   "h": 0.3719444444444444,
+   "text": "C3-E11 · Leading-model energy check and fixed-total-work comparison",
+   "font": "Arial",
+   "font_size": 19,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o000",
+   "name": "C3-E11 text 0"
   },
-  "background": "#142632",
-  "objects": [
-    {
-      "x": 0.3,
-      "y": 0.15,
-      "w": 12.7,
-      "h": 0.4,
-      "text": "C3-E11 · Leading-model energy check and fixed-total-work comparison",
-      "font": "Arial",
-      "font_size": 21,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o000",
-      "name": "C3-E11 text 0"
-    },
-    {
-      "x": 0.65,
-      "y": 1.55,
-      "w": 3.5,
-      "h": 1.45,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "rect",
-      "id": "o001",
-      "name": "C3-E11 rect 1"
-    },
-    {
-      "x": 0.8300000000000001,
-      "y": 1.78,
-      "w": 3.14,
-      "h": 1,
-      "text": "Pressure-work reservoir",
-      "font": "Arial",
-      "font_size": 18,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o002",
-      "name": "C3-E11 text 2"
-    },
-    {
-      "x1": 4.15,
-      "y1": 2.25,
-      "x2": 4.8500000000000005,
-      "y2": 2.25,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o003",
-      "name": "C3-E11 arrow 3"
-    },
-    {
-      "x": 4.9,
-      "y": 1.55,
-      "w": 3.5,
-      "h": 1.45,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "rect",
-      "id": "o004",
-      "name": "C3-E11 rect 4"
-    },
-    {
-      "x": 5.08,
-      "y": 1.78,
-      "w": 3.14,
-      "h": 1,
-      "text": "K_N: self + pair kinetic energy",
-      "font": "Arial",
-      "font_size": 18,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o005",
-      "name": "C3-E11 text 5"
-    },
-    {
-      "x1": 8.4,
-      "y1": 2.25,
-      "x2": 9.100000000000001,
-      "y2": 2.25,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o006",
-      "name": "C3-E11 arrow 6"
-    },
-    {
-      "x": 9.15,
-      "y": 1.55,
-      "w": 3.5,
-      "h": 1.45,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "rect",
-      "id": "o007",
-      "name": "C3-E11 rect 7"
-    },
-    {
-      "x": 9.33,
-      "y": 1.78,
-      "w": 3.14,
-      "h": 1,
-      "text": "K_N + remaining work: conserved",
-      "font": "Arial",
-      "font_size": 18,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o008",
-      "name": "C3-E11 text 8"
-    },
-    {
-      "x": 0.8,
-      "y": 3.55,
-      "w": 11.8,
-      "h": 0.5,
-      "text": "Each energy allocation belongs to the same finite source budget.",
-      "font": "Arial",
-      "font_size": 18,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o009",
-      "name": "C3-E11 text 9"
-    },
-    {
-      "x1": 0.3,
-      "y1": 4.35,
-      "x2": 13,
-      "y2": 4.35,
-      "line": "#405967",
-      "line_width": 1,
-      "type": "line",
-      "id": "o010",
-      "name": "C3-E11 line 10"
-    },
-    {
-      "x": 0.35,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• N, i, j bubble count/indices",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o011",
-      "name": "C3-E11 text 11"
-    },
-    {
-      "x": 6.8,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• R_i, R_j, R, R_max, Ṙ_i, Ṙ_j, Ṙ",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o012",
-      "name": "C3-E11 text 12"
-    },
-    {
-      "x": 0.35,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• r_i, d_ij radial/center distances",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o013",
-      "name": "C3-E11 text 13"
-    },
-    {
-      "x": 6.8,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• b_i, b_j monopole strengths",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o014",
-      "name": "C3-E11 text 14"
-    },
-    {
-      "x": 0.35,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• φ_i, φ_j; ∇φ gradients",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o015",
-      "name": "C3-E11 text 15"
-    },
-    {
-      "x": 6.8,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• Ω, Γ_j liquid domain/bubble surface; ∂ₙ",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o016",
-      "name": "C3-E11 text 16"
-    },
-    {
-      "x": 0.35,
-      "y": 5.245,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• K_N = self + pair energy; ρ, S",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o017",
-      "name": "C3-E11 text 17"
-    },
-    {
-      "x": 6.8,
-      "y": 5.245,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• Δp_c pressure-work reservoir",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o018",
-      "name": "C3-E11 text 18"
-    },
-    {
-      "x": 0.35,
-      "y": 5.5,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• E_B,tot fixed total work",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o019",
-      "name": "C3-E11 text 19"
-    },
-    {
-      "x": 6.8,
-      "y": 5.5,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• R_max,N = R_* N^−1/3",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o020",
-      "name": "C3-E11 text 20"
-    },
-    {
-      "x": 0.35,
-      "y": 5.755000000000001,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• ∫, Σ, dV, dA, π; * reference label",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o021",
-      "name": "C3-E11 text 21"
-    },
-    {
-      "x": 0.35,
-      "y": 6.160000000000001,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Interaction raises effective inertia, not initial energy",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o022",
-      "name": "C3-E11 text 22"
-    },
-    {
-      "x": 0.35,
-      "y": 6.460000000000001,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Fixed per-bubble radius increases total available work",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o023",
-      "name": "C3-E11 text 23"
-    },
-    {
-      "x": 0.35,
-      "y": 7.08,
-      "w": 12.5,
-      "h": 0.28,
-      "text": "Model schematic; geometry is not to scale.",
-      "font": "Arial",
-      "font_size": 10,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o024",
-      "name": "C3-E11 text 24"
-    }
-  ],
-  "_audit": {
-    "id": "C3-E11",
-    "category": "energy allocation",
-    "corrections": [
-      "Removed generic bubble/source diagram; displayed the stated budget and allocation."
+  {
+   "x1": 1.0,
+   "y1": 5.4,
+   "x2": 6.6,
+   "y2": 5.4,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o001",
+   "name": "C3-E11 line 1"
+  },
+  {
+   "x1": 1.0,
+   "y1": 1.5,
+   "x2": 1.0,
+   "y2": 5.4,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o002",
+   "name": "C3-E11 line 2"
+  },
+  {
+   "x1": 1.0,
+   "y1": 5.4,
+   "x2": 1.0,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o003",
+   "name": "C3-E11 line 3"
+  },
+  {
+   "x1": 1.0,
+   "y1": 1.5,
+   "x2": 1.0,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o004",
+   "name": "C3-E11 line 4"
+  },
+  {
+   "x": 0.5,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "1",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o005",
+   "name": "C3-E11 text 5"
+  },
+  {
+   "x1": 1.9333333333333331,
+   "y1": 5.4,
+   "x2": 1.9333333333333331,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o006",
+   "name": "C3-E11 line 6"
+  },
+  {
+   "x1": 1.9333333333333331,
+   "y1": 1.5,
+   "x2": 1.9333333333333331,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o007",
+   "name": "C3-E11 line 7"
+  },
+  {
+   "x": 1.4333333333333331,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o008",
+   "name": "C3-E11 text 8"
+  },
+  {
+   "x1": 3.0999999999999996,
+   "y1": 5.4,
+   "x2": 3.0999999999999996,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o009",
+   "name": "C3-E11 line 9"
+  },
+  {
+   "x1": 3.0999999999999996,
+   "y1": 1.5,
+   "x2": 3.0999999999999996,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o010",
+   "name": "C3-E11 line 10"
+  },
+  {
+   "x": 2.5999999999999996,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "10",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o011",
+   "name": "C3-E11 text 11"
+  },
+  {
+   "x1": 4.266666666666667,
+   "y1": 5.4,
+   "x2": 4.266666666666667,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o012",
+   "name": "C3-E11 line 12"
+  },
+  {
+   "x1": 4.266666666666667,
+   "y1": 1.5,
+   "x2": 4.266666666666667,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o013",
+   "name": "C3-E11 line 13"
+  },
+  {
+   "x": 3.7666666666666666,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "15",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o014",
+   "name": "C3-E11 text 14"
+  },
+  {
+   "x1": 5.433333333333333,
+   "y1": 5.4,
+   "x2": 5.433333333333333,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o015",
+   "name": "C3-E11 line 15"
+  },
+  {
+   "x1": 5.433333333333333,
+   "y1": 1.5,
+   "x2": 5.433333333333333,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o016",
+   "name": "C3-E11 line 16"
+  },
+  {
+   "x": 4.933333333333333,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "20",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o017",
+   "name": "C3-E11 text 17"
+  },
+  {
+   "x1": 6.6,
+   "y1": 5.4,
+   "x2": 6.6,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o018",
+   "name": "C3-E11 line 18"
+  },
+  {
+   "x1": 6.6,
+   "y1": 1.5,
+   "x2": 6.6,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o019",
+   "name": "C3-E11 line 19"
+  },
+  {
+   "x": 6.1,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "25",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o020",
+   "name": "C3-E11 text 20"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 5.4,
+   "x2": 1.0,
+   "y2": 5.4,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o021",
+   "name": "C3-E11 line 21"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 4.513636363636364,
+   "x2": 1.0,
+   "y2": 4.513636363636364,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o022",
+   "name": "C3-E11 line 22"
+  },
+  {
+   "x1": 1.0,
+   "y1": 4.513636363636364,
+   "x2": 6.6,
+   "y2": 4.513636363636364,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o023",
+   "name": "C3-E11 line 23"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 4.423636363636364,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.25",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o024",
+   "name": "C3-E11 text 24"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 3.627272727272728,
+   "x2": 1.0,
+   "y2": 3.627272727272728,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o025",
+   "name": "C3-E11 line 25"
+  },
+  {
+   "x1": 1.0,
+   "y1": 3.627272727272728,
+   "x2": 6.6,
+   "y2": 3.627272727272728,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o026",
+   "name": "C3-E11 line 26"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 3.537272727272728,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.50",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o027",
+   "name": "C3-E11 text 27"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 2.7409090909090916,
+   "x2": 1.0,
+   "y2": 2.7409090909090916,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o028",
+   "name": "C3-E11 line 28"
+  },
+  {
+   "x1": 1.0,
+   "y1": 2.7409090909090916,
+   "x2": 6.6,
+   "y2": 2.7409090909090916,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o029",
+   "name": "C3-E11 line 29"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 2.6509090909090918,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.75",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o030",
+   "name": "C3-E11 text 30"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 1.854545454545455,
+   "x2": 1.0,
+   "y2": 1.854545454545455,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o031",
+   "name": "C3-E11 line 31"
+  },
+  {
+   "x1": 1.0,
+   "y1": 1.854545454545455,
+   "x2": 6.6,
+   "y2": 1.854545454545455,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o032",
+   "name": "C3-E11 line 32"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 1.7645454545454549,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "1.00",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o033",
+   "name": "C3-E11 text 33"
+  },
+  {
+   "x": 1.0,
+   "y": 5.71,
+   "w": 5.6,
+   "h": 0.25333333333333335,
+   "text": "number of bubbles N",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o034",
+   "name": "C3-E11 text 34"
+  },
+  {
+   "x": 0.4,
+   "y": 1.12,
+   "w": 5.6,
+   "h": 0.25333333333333335,
+   "text": "Rₘₐₓ,N / R_*",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o035",
+   "name": "C3-E11 text 35"
+  },
+  {
+   "points": [
+    [
+     1.0,
+     1.854545454545455
     ],
-    "scientific_status": "accepted against local equation, definitions and notes",
-    "evidence": [
-      "content/chapter03.py"
+    [
+     1.2333333333333334,
+     2.58597086242001
+    ],
+    [
+     1.4666666666666666,
+     2.9417191182113864
+    ],
+    [
+     1.7,
+     3.16650359336818
+    ],
+    [
+     1.9333333333333331,
+     3.3266056038126957
+    ],
+    [
+     2.166666666666667,
+     3.448861171107721
+    ],
+    [
+     2.4,
+     3.546585419598755
+    ],
+    [
+     2.6333333333333333,
+     3.627272727272728
+    ],
+    [
+     2.8666666666666663,
+     3.695523235091245
+    ],
+    [
+     3.0999999999999996,
+     3.7543457771736515
+    ],
+    [
+     3.3333333333333335,
+     3.8058065265562044
+    ],
+    [
+     3.5666666666666664,
+     3.851380085240198
+    ],
+    [
+     3.8,
+     3.8921523235421263
+    ],
+    [
+     4.033333333333333,
+     3.9289438726689325
+    ],
+    [
+     4.266666666666667,
+     3.962388619228106
+    ],
+    [
+     4.5,
+     3.9929854312100055
+    ],
+    [
+     4.7333333333333325,
+     4.02113330631091
+    ],
+    [
+     4.966666666666667,
+     4.047155895164245
+    ],
+    [
+     5.199999999999999,
+     4.071319009582882
+    ],
+    [
+     5.433333333333333,
+     4.093843377754773
+    ],
+    [
+     5.666666666666667,
+     4.1149141046329465
+    ],
+    [
+     5.8999999999999995,
+     4.134687801607241
+    ],
+    [
+     6.133333333333333,
+     4.153298037294418
+    ],
+    [
+     6.366666666666666,
+     4.170859559105693
+    ],
+    [
+     6.6,
+     4.187471601447434
     ]
+   ],
+   "fill": null,
+   "line": "#8EDBD4",
+   "line_width": 3,
+   "_open": true,
+   "type": "polygon",
+   "id": "o036",
+   "name": "C3-E11 polygon 36"
+  },
+  {
+   "x": 6.52,
+   "y": 4.1074716014474335,
+   "w": 0.16,
+   "h": 0.16,
+   "fill": "#F2B880",
+   "line": "#F2B880",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o037",
+   "name": "C3-E11 ellipse 37"
+  },
+  {
+   "x": 4.8999999999999995,
+   "y": 3.6874716014474336,
+   "w": 1.6,
+   "h": 0.25333333333333335,
+   "text": "N = 25: 0.342",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o038",
+   "name": "C3-E11 text 38"
+  },
+  {
+   "x": 1.3133333333333335,
+   "y": 1.9318181818181825,
+   "w": 3.0,
+   "h": 0.26180555555555557,
+   "text": "Rₘₐₓ,N = R_* N^(−1/3)",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o039",
+   "name": "C3-E11 text 39"
+  },
+  {
+   "x1": 7.4,
+   "y1": 5.4,
+   "x2": 12.9,
+   "y2": 5.4,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o040",
+   "name": "C3-E11 line 40"
+  },
+  {
+   "x1": 7.4,
+   "y1": 1.5,
+   "x2": 7.4,
+   "y2": 5.4,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o041",
+   "name": "C3-E11 line 41"
+  },
+  {
+   "x1": 7.4,
+   "y1": 5.4,
+   "x2": 7.4,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o042",
+   "name": "C3-E11 line 42"
+  },
+  {
+   "x1": 7.4,
+   "y1": 1.5,
+   "x2": 7.4,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o043",
+   "name": "C3-E11 line 43"
+  },
+  {
+   "x": 6.9,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "1",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o044",
+   "name": "C3-E11 text 44"
+  },
+  {
+   "x1": 8.316666666666666,
+   "y1": 5.4,
+   "x2": 8.316666666666666,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o045",
+   "name": "C3-E11 line 45"
+  },
+  {
+   "x1": 8.316666666666666,
+   "y1": 1.5,
+   "x2": 8.316666666666666,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o046",
+   "name": "C3-E11 line 46"
+  },
+  {
+   "x": 7.816666666666666,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o047",
+   "name": "C3-E11 text 47"
+  },
+  {
+   "x1": 9.4625,
+   "y1": 5.4,
+   "x2": 9.4625,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o048",
+   "name": "C3-E11 line 48"
+  },
+  {
+   "x1": 9.4625,
+   "y1": 1.5,
+   "x2": 9.4625,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o049",
+   "name": "C3-E11 line 49"
+  },
+  {
+   "x": 8.9625,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "10",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o050",
+   "name": "C3-E11 text 50"
+  },
+  {
+   "x1": 10.608333333333334,
+   "y1": 5.4,
+   "x2": 10.608333333333334,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o051",
+   "name": "C3-E11 line 51"
+  },
+  {
+   "x1": 10.608333333333334,
+   "y1": 1.5,
+   "x2": 10.608333333333334,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o052",
+   "name": "C3-E11 line 52"
+  },
+  {
+   "x": 10.108333333333334,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "15",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o053",
+   "name": "C3-E11 text 53"
+  },
+  {
+   "x1": 11.754166666666666,
+   "y1": 5.4,
+   "x2": 11.754166666666666,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o054",
+   "name": "C3-E11 line 54"
+  },
+  {
+   "x1": 11.754166666666666,
+   "y1": 1.5,
+   "x2": 11.754166666666666,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o055",
+   "name": "C3-E11 line 55"
+  },
+  {
+   "x": 11.254166666666666,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "20",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o056",
+   "name": "C3-E11 text 56"
+  },
+  {
+   "x1": 12.9,
+   "y1": 5.4,
+   "x2": 12.9,
+   "y2": 5.470000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o057",
+   "name": "C3-E11 line 57"
+  },
+  {
+   "x1": 12.9,
+   "y1": 1.5,
+   "x2": 12.9,
+   "y2": 5.4,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o058",
+   "name": "C3-E11 line 58"
+  },
+  {
+   "x": 12.4,
+   "y": 5.49,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "25",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o059",
+   "name": "C3-E11 text 59"
+  },
+  {
+   "x1": 7.33,
+   "y1": 5.4,
+   "x2": 7.4,
+   "y2": 5.4,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o060",
+   "name": "C3-E11 line 60"
+  },
+  {
+   "x1": 7.33,
+   "y1": 3.627272727272728,
+   "x2": 7.4,
+   "y2": 3.627272727272728,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o061",
+   "name": "C3-E11 line 61"
+  },
+  {
+   "x1": 7.4,
+   "y1": 3.627272727272728,
+   "x2": 12.9,
+   "y2": 3.627272727272728,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o062",
+   "name": "C3-E11 line 62"
+  },
+  {
+   "x": 6.45,
+   "y": 3.537272727272728,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o063",
+   "name": "C3-E11 text 63"
+  },
+  {
+   "x1": 7.33,
+   "y1": 1.854545454545455,
+   "x2": 7.4,
+   "y2": 1.854545454545455,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o064",
+   "name": "C3-E11 line 64"
+  },
+  {
+   "x1": 7.4,
+   "y1": 1.854545454545455,
+   "x2": 12.9,
+   "y2": 1.854545454545455,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o065",
+   "name": "C3-E11 line 65"
+  },
+  {
+   "x": 6.45,
+   "y": 1.7645454545454549,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "1.0",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o066",
+   "name": "C3-E11 text 66"
+  },
+  {
+   "x": 7.4,
+   "y": 5.71,
+   "w": 5.5,
+   "h": 0.25333333333333335,
+   "text": "number of bubbles N",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o067",
+   "name": "C3-E11 text 67"
+  },
+  {
+   "x": 6.800000000000001,
+   "y": 1.12,
+   "w": 5.5,
+   "h": 0.25333333333333335,
+   "text": "energy (relative to isolated)",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o068",
+   "name": "C3-E11 text 68"
+  },
+  {
+   "points": [
+    [
+     7.4,
+     1.854545454545455
+    ],
+    [
+     7.629166666666667,
+     1.854545454545455
+    ],
+    [
+     7.858333333333333,
+     1.854545454545455
+    ],
+    [
+     8.0875,
+     1.854545454545455
+    ],
+    [
+     8.316666666666666,
+     1.854545454545455
+    ],
+    [
+     8.545833333333334,
+     1.854545454545455
+    ],
+    [
+     8.775,
+     1.854545454545455
+    ],
+    [
+     9.004166666666666,
+     1.854545454545455
+    ],
+    [
+     9.233333333333334,
+     1.854545454545455
+    ],
+    [
+     9.4625,
+     1.854545454545455
+    ],
+    [
+     9.691666666666666,
+     1.854545454545455
+    ],
+    [
+     9.920833333333334,
+     1.854545454545455
+    ],
+    [
+     10.15,
+     1.854545454545455
+    ],
+    [
+     10.379166666666666,
+     1.854545454545455
+    ],
+    [
+     10.608333333333334,
+     1.854545454545455
+    ],
+    [
+     10.8375,
+     1.854545454545455
+    ],
+    [
+     11.066666666666666,
+     1.854545454545455
+    ],
+    [
+     11.295833333333334,
+     1.854545454545455
+    ],
+    [
+     11.525,
+     1.854545454545455
+    ],
+    [
+     11.754166666666666,
+     1.854545454545455
+    ],
+    [
+     11.983333333333334,
+     1.854545454545455
+    ],
+    [
+     12.2125,
+     1.854545454545455
+    ],
+    [
+     12.441666666666666,
+     1.854545454545455
+    ],
+    [
+     12.670833333333334,
+     1.854545454545455
+    ],
+    [
+     12.9,
+     1.854545454545455
+    ]
+   ],
+   "fill": null,
+   "line": "#F2B880",
+   "line_width": 3,
+   "_open": true,
+   "type": "polygon",
+   "id": "o069",
+   "name": "C3-E11 polygon 69"
+  },
+  {
+   "points": [
+    [
+     7.4,
+     1.854545454545455
+    ],
+    [
+     7.629166666666667,
+     3.627272727272728
+    ],
+    [
+     7.858333333333333,
+     4.218181818181819
+    ],
+    [
+     8.0875,
+     4.513636363636364
+    ],
+    [
+     8.316666666666666,
+     4.690909090909091
+    ],
+    [
+     8.545833333333334,
+     4.8090909090909095
+    ],
+    [
+     8.775,
+     4.893506493506494
+    ],
+    [
+     9.004166666666666,
+     4.956818181818182
+    ],
+    [
+     9.233333333333334,
+     5.006060606060607
+    ],
+    [
+     9.4625,
+     5.045454545454546
+    ],
+    [
+     9.691666666666666,
+     5.0776859504132235
+    ],
+    [
+     9.920833333333334,
+     5.104545454545455
+    ],
+    [
+     10.15,
+     5.127272727272728
+    ],
+    [
+     10.379166666666666,
+     5.1467532467532475
+    ],
+    [
+     10.608333333333334,
+     5.163636363636364
+    ],
+    [
+     10.8375,
+     5.178409090909091
+    ],
+    [
+     11.066666666666666,
+     5.19144385026738
+    ],
+    [
+     11.295833333333334,
+     5.203030303030303
+    ],
+    [
+     11.525,
+     5.213397129186603
+    ],
+    [
+     11.754166666666666,
+     5.222727272727273
+    ],
+    [
+     11.983333333333334,
+     5.231168831168832
+    ],
+    [
+     12.2125,
+     5.238842975206612
+    ],
+    [
+     12.441666666666666,
+     5.245849802371542
+    ],
+    [
+     12.670833333333334,
+     5.252272727272728
+    ],
+    [
+     12.9,
+     5.258181818181819
+    ]
+   ],
+   "fill": null,
+   "line": "#8EDBD4",
+   "line_width": 3,
+   "_open": true,
+   "_dash": true,
+   "type": "polygon",
+   "id": "o070",
+   "name": "C3-E11 polygon 70"
+  },
+  {
+   "x": 7.9383333333333335,
+   "y": 1.474545454545455,
+   "w": 4.2,
+   "h": 0.24486111111111108,
+   "text": "total work E_B,tot = (4π/3)Δp_c R_*³: fixed",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o071",
+   "name": "C3-E11 text 71"
+  },
+  {
+   "x": 9.084166666666667,
+   "y": 4.236363636363637,
+   "w": 3.2,
+   "h": 0.24486111111111108,
+   "text": "work per bubble = E_B,tot / N",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o072",
+   "name": "C3-E11 text 72"
+  },
+  {
+   "x": 1.0,
+   "y": 6.0,
+   "w": 12,
+   "h": 0.26180555555555557,
+   "text": "K_N ≃ 2πρ N R³(1 + SR) Ṙ² = (4πN/3) Δp_c (Rₘₐₓ³ − R³)   in the leading symmetric model (energy balance holds).",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o073",
+   "name": "C3-E11 text 73"
+  },
+  {
+   "x": 1.0,
+   "y": 6.5,
+   "w": 12,
+   "h": 0.26180555555555557,
+   "text": "Splitting a fixed pressure-work budget among N bubbles shrinks each one: Rₘₐₓ,N = R_* N^(−1/3).",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o074",
+   "name": "C3-E11 text 74"
+  },
+  {
+   "x": 0.35,
+   "y": 7.12,
+   "w": 12.6,
+   "h": 0.21944444444444444,
+   "text": "Energy check and fixed-total-work comparison of Eq. C3-E11.",
+   "font": "Arial",
+   "font_size": 10,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o075",
+   "name": "C3-E11 text 75"
   }
+ ],
+ "_title": "C3-E11",
+ "_audit": {
+  "id": "C3-E11",
+  "scientific_status": "drawn from the equation and its stated numbers"
+ }
 }

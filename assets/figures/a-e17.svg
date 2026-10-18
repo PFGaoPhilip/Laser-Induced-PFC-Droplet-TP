@@ -1,50 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 594.24" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E17</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="594.24" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E17 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E17 · Linear constitutive check for the chosen dashpot</tspan>
 </text>
-<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="95.04" y="84.6144">Response times and dimensionless comparisons</tspan>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0</tspan>
 </text>
-<rect id="obj-002" x="104.64" y="112.32" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="136.454">Unloaded Kelvin–Voigt shear: Tsh = 0</tspan>
+<line id="o006" x1="249.6" y1="528" x2="249.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="249.6" y1="144" x2="249.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="249.6" y="550.04">1</tspan>
 </text>
-<rect id="obj-004" x="104.64" y="172.8" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="196.934">Strain recovers after unloading</tspan>
+<line id="o009" x1="403.2" y1="528" x2="403.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="403.2" y1="144" x2="403.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="550.04">2</tspan>
 </text>
-<rect id="obj-006" x="104.64" y="233.28" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="257.414">τKV = ηg / Gg</tspan>
+<line id="o012" x1="556.8" y1="528" x2="556.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="556.8" y1="144" x2="556.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="556.8" y="550.04">3</tspan>
 </text>
-<text id="obj-008" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="105.6" y="320.333">Equal boxes list definitions; lengths do not encode time</tspan>
+<line id="o015" x1="710.4" y1="528" x2="710.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="550.04">4</tspan>
 </text>
-<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<line id="o018" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="89.28" y1="436.571" x2="96" y2="436.571" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="436.571" x2="710.4" y2="436.571" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="441.331">0.25</tspan>
 </text>
-<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• Tsh = 0 after unloading</tspan>
+<line id="o022" x1="89.28" y1="345.143" x2="96" y2="345.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="345.143" x2="710.4" y2="345.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="349.903">0.50</tspan>
 </text>
-<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• γ₀ → γ(t)</tspan>
+<line id="o025" x1="89.28" y1="253.714" x2="96" y2="253.714" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="253.714" x2="710.4" y2="253.714" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="258.474">0.75</tspan>
 </text>
-<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• Gg, ηg</tspan>
+<line id="o028" x1="89.28" y1="162.286" x2="96" y2="162.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="162.286" x2="710.4" y2="162.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="167.046">1.00</tspan>
 </text>
-<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">• τKV = ηg/Gg</tspan>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">time  t / τ_KV</tspan>
 </text>
-<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">• γ̇, t</tspan>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">γ(t) / γ₀</tspan>
 </text>
-<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="530.573">Zero-stress strain recovery is not held-strain stress relaxation</tspan>
+<polyline id="o033" points="96,162.286 100.11,171.941 104.219,181.341 108.329,190.493 112.439,199.404 116.548,208.079 120.658,216.526 124.768,224.749 128.878,232.755 132.987,240.55 137.097,248.139 141.207,255.527 145.316,262.721 149.426,269.725 153.536,276.543 157.645,283.182 161.755,289.646 165.865,295.938 169.975,302.065 174.084,308.03 178.194,313.837 182.304,319.492 186.413,324.996 190.523,330.356 194.633,335.574 198.742,340.654 202.852,345.6 206.962,350.416 211.072,355.104 215.181,359.669 219.291,364.113 223.401,368.44 227.51,372.652 231.62,376.754 235.73,380.747 239.839,384.634 243.949,388.419 248.059,392.105 252.169,395.692 256.278,399.185 260.388,402.586 264.498,405.897 268.607,409.121 272.717,412.259 276.827,415.315 280.936,418.29 285.046,421.187 289.156,424.007 293.266,426.752 297.375,429.425 301.485,432.028 305.595,434.561 309.704,437.028 313.814,439.43 317.924,441.768 322.033,444.045 326.143,446.262 330.253,448.42 334.363,450.521 338.472,452.566 342.582,454.558 346.692,456.497 350.801,458.384 354.911,460.222 359.021,462.012 363.13,463.754 367.24,465.45 371.35,467.101 375.46,468.709 379.569,470.275 383.679,471.799 387.789,473.282 391.898,474.727 396.008,476.133 400.118,477.503 404.227,478.836 408.337,480.134 412.447,481.398 416.557,482.628 420.666,483.826 424.776,484.992 428.886,486.128 432.995,487.233 437.105,488.309 441.215,489.357 445.324,490.377 449.434,491.371 453.544,492.338 457.654,493.279 461.763,494.196 465.873,495.088 469.983,495.957 474.092,496.803 478.202,497.627 482.312,498.429 486.421,499.209 490.531,499.97 494.641,500.71 498.751,501.43 502.86,502.132 506.97,502.815 511.08,503.479 515.189,504.127 519.299,504.757 523.409,505.371 527.518,505.968 531.628,506.55 535.738,507.116 539.847,507.668 543.957,508.204 548.067,508.727 552.177,509.236 556.286,509.731 560.396,510.213 564.506,510.683 568.615,511.14 572.725,511.585 576.835,512.019 580.944,512.441 585.054,512.851 589.164,513.251 593.274,513.641 597.383,514.02 601.493,514.389 605.603,514.748 609.712,515.098 613.822,515.439 617.932,515.77 622.041,516.093 626.151,516.408 630.261,516.714 634.371,517.012 638.48,517.302 642.59,517.584 646.7,517.859 650.809,518.127 654.919,518.388 659.029,518.641 663.138,518.888 667.248,519.129 671.358,519.363 675.468,519.591 679.577,519.813 683.687,520.029 687.797,520.24 691.906,520.445 696.016,520.644 700.126,520.838 704.235,521.027 708.345,521.211 710.4,521.302" fill="none" stroke="#8EDBD4" stroke-width="4.53333" opacity="1"/>
+<ellipse id="o034" cx="249.6" cy="393.461" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<line id="o035" x1="249.6" y1="144" x2="249.6" y2="528" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<line id="o036" x1="96" y1="393.461" x2="710.4" y2="393.461" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="265.92" y="360.501">1/e at t = τ_KV</tspan>
 </text>
-<text id="obj-016" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="552.653">No periodic forcing is assumed</tspan>
+<rect id="o038" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="166.44">Kelvin–Voigt dashpot in shear</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="208.133">Tₛₕ = G_g γ + η_g γ̇</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="260.387">Tₛₕ = 0:  γ̇ = −(G_g/η_g) γ</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="313.187">γ = γ₀ exp(−t/τ_KV),   τ_KV = η_g/G_g</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="371.333">τ_KV = 0.010 / 20 000 = 0.50 µs</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="427.293">This is the recovery time after unloading; it is not a</tspan>
+<tspan x="755.52" y="445.387">relaxation time for stress under constant strain.</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">A Kelvin–Voigt solid recovers strain exponentially; it cannot relax stress at constant strain, so τ_KV must not be reused as τᵣₑₗ.</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Linear constitutive check of Eq. A-E17 (G_g = 20 kPa, η_g = 0.010 Pa s).</tspan>
 </text>
 </svg>

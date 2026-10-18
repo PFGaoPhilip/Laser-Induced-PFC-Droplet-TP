@@ -1,27 +1,28 @@
 {
   "status": "passed",
-  "date": "2026-10-14",
-  "register_entries": 327,
-  "scholarly_records": 322,
-  "existing_identifiers_covered": 285,
-  "discovery_references_checked": 354,
+  "date": "2026-10-18",
+  "register_entries": 336,
+  "scholarly_records": 331,
+  "existing_identifiers_covered": 249,
+  "discovery_references_checked": 318,
   "identifier_aliases": 34,
   "evidence_levels": {
-    "metadata, inference, or unresolved": 298,
+    "metadata, inference, or unresolved": 307,
     "reviewed primary evidence": 29
   },
   "record_types": {
-    "journal-article": 300,
+    "scholarly record": 2,
+    "journal-article": 303,
     "book-chapter": 5,
-    "book": 1,
+    "book": 2,
     "proceedings-article": 4,
     "Dataset": 1,
     "report": 1,
     "Text": 1,
-    "preprint": 9,
+    "preprint": 12,
     "unresolved citation fragment": 2,
     "proceedings/program collection": 3
   },
-  "local_links_checked": 683,
+  "local_links_checked": 701,
   "failures": []
 }

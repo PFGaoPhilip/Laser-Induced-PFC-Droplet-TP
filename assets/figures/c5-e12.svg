@@ -1,30 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">C5-E12 — Pressure work divides into inertia, recoverable network energy, surface energy and viscous loss.</title>
-<desc id="desc">(pb−p∞)V̇: pressure work; Kg: moving exterior; Wg: network storage; Eσ: cavity surface; Pdis ≥ 0: irreversible loss; R, Ṙ, ρg, ηg, σ, t; Network work can return; dashpot loss cannot; Volume rate fixes work signs</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E12 · Physical variable map / 物理变量图</text>
-<circle cx="180" cy="179" r="77" class="line"/>
-<circle cx="180" cy="179" r="29" class="area"/>
-<path d="M180 179 H257" class="arrow"/>
-<text x="220" y="158" class="">R</text>
-<text x="126" y="285" class="">Rref → R</text>
-<text x="98" y="98" class="">Cavity / 腔体: pb dV</text>
-<rect x="436" y="125" width="410" height="123" class="area"/>
-<text x="459" y="164" class="">Elastic storage / 弹性储能: Wg</text>
-<text x="460" y="207" class="">Viscous loss / 黏性耗散: Ḋg ≥ 0</text>
-<path d="M273 180 H431" class="arrow"/>
-<text x="467" y="294" class="muted">Gg , ηg ; intact network / 完整网络</text>
-<text x="93" y="329" class="muted">Stored work is not automatically jet energy / 储存功不自动转为射流能</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• (pb−p∞)V̇: pressure work</text>
-<text x="30" y="433" class="muted">• Kg: moving exterior</text>
-<text x="30" y="457" class="muted">• Wg: network storage</text>
-<text x="30" y="481" class="muted">• Eσ: cavity surface</text>
-<text x="30" y="505" class="muted">• Pdis ≥ 0: irreversible loss</text>
-<text x="30" y="529" class="muted">• R, Ṙ, ρg, ηg, σ, t</text>
-<text x="30" y="571" class="muted">Network work can return; dashpot loss cannot</text>
-<text x="30" y="594" class="muted">Volume rate fixes work signs</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E12 · Axisymmetric compressible flow equations of the COMSOL model</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E12 · Axisymmetric compressible flow equations of the COMSOL model</tspan>
+</text>
+<rect id="o001" x="76.8" y="163.2" width="614.4" height="96" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="89.28" y="191.493">Mass</tspan>
+</text>
+<text id="o003" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="234.387">∂ₜρ + ∇·(ρu) = 0</tspan>
+</text>
+<line id="o004" x1="691.2" y1="211.2" x2="796.8" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.4" opacity="1" marker-end="url(#head)"/>
+<rect id="o005" x="76.8" y="288" width="614.4" height="96" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="89.28" y="316.293">Momentum</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="359.187">ρ Du/Dt = −∇p + ∇·(viscous stress)</tspan>
+</text>
+<line id="o008" x1="691.2" y1="336" x2="796.8" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.4" opacity="1" marker-end="url(#head)"/>
+<rect id="o009" x="76.8" y="412.8" width="614.4" height="96" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="89.28" y="441.093">Liquid law</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="483.987">ρ(p) = ρ_j [(p + Π)/(p_j + Π)]^(1/γ)</tspan>
+</text>
+<line id="o012" x1="691.2" y1="460.8" x2="796.8" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.4" opacity="1" marker-end="url(#head)"/>
+<rect id="o013" x="806.4" y="249.6" width="422.4" height="172.8" fill="#2B5560" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1017.6" y="277.893">Fields (axisymmetric)</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1017.6" y="342.9">ρ,  p</tspan>
+<tspan x="1017.6" y="364.14">u_r,  w</tspan>
+<tspan x="1017.6" y="385.38">viscosity μ = 1 mPa s</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="79.68" y="584.94">Same liquid as the C++ reference, plus radial motion and a small viscosity. No gas phase.</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic of Eq. (C5-E12).</tspan>
+</text>
 </svg>

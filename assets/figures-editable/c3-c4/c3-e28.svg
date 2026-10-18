@@ -1,61 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E28</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E28 · Compressible bulk conservation and required constitutive closure</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E28 · Compressible bulk conservation and required constitutive closure</tspan>
 </text>
-<rect id="o001" x="355.2" y="110.4" width="556.8" height="230.4" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="67.2" y1="225.6" x2="345.6" y2="225.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o003" x1="921.6" y1="225.6" x2="1190.4" y2="225.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="30.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="396.48" y="185.76">Conserved state</tspan>
-<tspan x="396.48" y="221.947">ρ, ρu, ρe_t</tspan>
+<rect id="o001" x="38.4" y="96" width="1204.8" height="307.2" rx="24.576" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Compressible conservation in a fixed volume</tspan>
 </text>
-<text id="o005" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="79.68" y="301.92">Mass, momentum</tspan>
-<tspan x="79.68" y="327.093">and energy in</tspan>
+<rect id="o003" x="57.6" y="153.6" width="384" height="230.4" rx="18.432" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="18.6667" fill="#7FC8F8" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="249.6" y="178.507">Mass</tspan>
 </text>
-<text id="o006" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="934.08" y="301.92">Mass, momentum</tspan>
-<tspan x="934.08" y="327.093">and energy out</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="249.6" y="226.787">∂ₜρ + ∇·(ρu) = 0</tspan>
 </text>
-<line id="o007" x1="614.4" y1="72" x2="614.4" y2="105.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="674.88" y="91.6133">Q_abs: source counted once</tspan>
+<text id="o006" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="249.6" y="331.293">what enters equals the change of density</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="21.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="358.08" y="386.507">Closure: p = P(ρ,e,{Y_k}); stress and heat flux required.</tspan>
+<rect id="o007" x="456" y="153.6" width="384" height="230.4" rx="18.432" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="648" y="178.507">Momentum</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• ρ, u, p compressible fields</tspan>
+<text id="o009" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="648" y="226.787">∂ₜ(ρu) + ∇·(ρu⊗u + pI − τ) = 0</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• e internal; e_t total energy</tspan>
+<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="648" y="331.293">pressure and viscous traction cross the</tspan>
+<tspan x="648" y="349.387">surface</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• τ viscous stress; q heat flux</tspan>
+<rect id="o011" x="854.4" y="153.6" width="384" height="230.4" rx="18.432" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1046.4" y="178.507">Total energy</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• Q_abs optical source counted once</tspan>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1046.4" y="226.787">∂ₜ(ρeₜ) + ∇·[(ρeₜ + p)u − τ·u + q] =</tspan>
+<tspan x="1046.4" y="246.453">Q_abs</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• P(ρ,e,{Y_k}) equation of state</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1046.4" y="331.293">pressure work, viscous work, heat, optical</tspan>
+<tspan x="1046.4" y="349.387">source</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• I identity; ⊗, ·, ∇· operators</tspan>
+<rect id="o015" x="38.4" y="427.2" width="585.6" height="177.6" rx="14.208" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="449.093">Closure still required</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• x, t coordinates; k species index</tspan>
+<text id="o017" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="486.533">p = 𝒫(ρ, e, {Yₖ}),   eₜ = e + |u|²/2</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Initial jet state is inherited, not recreated with extra pressure</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="54.72" y="538.24">An equation of state, species fractions and interface jump</tspan>
+<tspan x="54.72" y="557.12">conditions complete the system.</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Species and interfacial jump conditions must also be supplied</tspan>
+<rect id="o019" x="643.2" y="427.2" width="600" height="177.6" rx="14.208" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="656.64" y="449.093">Why it matters at impact</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o021" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="659.52" y="485.44">Strong compression is not captured by the incompressible potential</tspan>
+<tspan x="659.52" y="504.32">model. Optical heating Q_abs is counted once, and the solid</tspan>
+<tspan x="659.52" y="523.2">response needs its own law.</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Compressible bulk conservation of Eq. C3-E28; schematic.</tspan>
 </text>
 </svg>

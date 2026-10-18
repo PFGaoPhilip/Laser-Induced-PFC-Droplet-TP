@@ -31,7 +31,7 @@ for(const file of files) {
     assert.ok(!/[\u4e00-\u9fff]/.test(en.textContent));
   }
   const banner=d.querySelector('.hero .eyebrow [lang="en"]');
-  if(banner)assert.equal(banner.textContent,'PROJECT-CENTERED THEORY · FOUR CHAPTERS + APPENDIX A');
+  if(banner)assert.equal(banner.textContent,'PROJECT-CENTERED THEORY · FIVE CHAPTERS + APPENDIX A');
   d.getElementById('language-toggle').click();
   assert.equal(d.documentElement.lang,'zh-CN');
   assert.equal(w.getComputedStyle(d.querySelector('body [lang="en"]')).display,'none');

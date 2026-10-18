@@ -1,23 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img"><title>C2-E32 Original optical and thermal formulas used in the reference answer.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="664" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E32 | Physical-variable diagram</text>
-<rect x="310" y="110" width="260" height="225" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<line x1="90" y1="205" x2="300" y2="205" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="575" y1="205" x2="790" y2="205" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="310" y1="205" x2="190" y2="115" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="72" y="260.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Incident light</text>
-<text x="72" y="99.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Reflection</text>
-<text x="337" y="270.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Absorber: Q_abs</text>
-<text x="602" y="260.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Transmitted light</text>
-<line x1="330" y1="310" x2="550" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="372" y="349.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+z; thickness h_a</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_L, w, F₀: incident beam</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_abs: absorber budget</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">α, τ_h: heat propagation</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: Gaussian area factor</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f_geo, A_λ: interception and absorption</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L_h: distance to PFC</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t_th, δ_T: thermal tests</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Light enters the absorber first</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Heat then travels to the phase-changing material</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E32</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E32 · Original formulas for Defense 1</tspan>
+</text>
+<rect id="o001" x="48" y="115.2" width="580.8" height="187.2" rx="14.976" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o002" cx="91.2" cy="163.2" rx="25.92" ry="25.92" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="18.6667" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="91.68" y="161.227">1</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="136.32" y="143.4">Optical energy</tspan>
+</text>
+<text id="o005" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="136.32" y="198.107">E_L = π w² F₀ / 2</tspan>
+</text>
+<text id="o006" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="136.32" y="255.04">Gaussian beam energy</tspan>
+</text>
+<rect id="o007" x="648" y="115.2" width="580.8" height="187.2" rx="14.976" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o008" cx="691.2" cy="163.2" rx="25.92" ry="25.92" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="18.6667" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="691.68" y="161.227">2</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="143.4">Absorbed share</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="198.107">E_abs = f_geo A_λ E_L</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="736.32" y="255.04">aperture × absorptance</tspan>
+</text>
+<rect id="o013" x="48" y="321.6" width="580.8" height="187.2" rx="14.976" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o014" cx="91.2" cy="369.6" rx="25.92" ry="25.92" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="18.6667" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="91.68" y="367.627">3</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="18" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="136.32" y="349.8">Where the heat goes</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="136.32" y="404.507">tₜₕ ~ Lₕ² / α</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="136.32" y="461.44">time to cross a distance</tspan>
+</text>
+<rect id="o019" x="648" y="321.6" width="580.8" height="187.2" rx="14.976" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o020" cx="691.2" cy="369.6" rx="25.92" ry="25.92" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="18.6667" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="691.68" y="367.627">4</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="349.8">Penetration</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="404.507">δ_T ~ √(α τₕ)</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="736.32" y="461.44">distance reached in the pulse</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="559.08">Light must be intercepted, absorbed, and then conducted to the PFC. Each step has its own formula and its own limit.</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="610.787">A short pulse does not imply uniform temperature: compare the heat penetration δ_T with the distance to the PFC.</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reference formulas of the Defence 1 answer: Eqs. C2-E02, E06, E09.</tspan>
+</text>
 </svg>

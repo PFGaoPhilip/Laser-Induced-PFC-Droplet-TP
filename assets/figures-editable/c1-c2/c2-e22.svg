@@ -1,22 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img"><title>C2-E22 Mass enthalpy and conductive heat are different terms in the bubble ledger.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="664" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E22 | Physical-variable diagram</text>
-<rect x="330" y="160" width="300" height="110" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="342" y="189.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Bubble energy storage U_b</text>
-<line x1="100" y1="210" x2="320" y2="210" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="92" y="145.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Heat Q̇_b</text>
-<line x1="480" y1="100" x2="480" y2="150" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="412" y="85.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Mass enthalpy entry</text>
-<line x1="640" y1="215" x2="860" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="692" y="165.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Work p_b V̇_b</text>
-<text x="112" y="354.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Conductive heat and transported enthalpy are separate terms.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">U_b: vapor energy storage</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_b, V_b, V̇_b: pressure work</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">h_v,s, ṁ_v,s: mass enthalpy entry</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: spherical volume</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q̇_b: conductive heat only</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R, Ṙ: bubble geometry and speed</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s = 1…N_s: species ledger</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Expansion removes energy through p_b V̇_b</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Do not add a second latent-heat source to transported vapor enthalpy</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E22</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E22 · Uniform-state open-bubble first-law model</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="614.4" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Open bubble as a control volume</tspan>
+</text>
+<ellipse id="o003" cx="326.4" cy="355.2" rx="115.2" ry="115.2" fill="#0C1820" stroke="#F2B880" stroke-width="3.46667" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="326.4" y="341.987">U_b</tspan>
+<tspan x="326.4" y="361.653">uniform T_b, p_b</tspan>
+</text>
+<line id="o005" x1="48" y1="355.2" x2="206.4" y2="355.2" fill="#FFFFFF" stroke="#F28BA0" stroke-width="5.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="307.84">heat in Q̇_b</tspan>
+<tspan x="54.72" y="326.72">(conduction)</tspan>
+</text>
+<line id="o007" x1="230.4" y1="163.2" x2="268.8" y2="238.08" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="5.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="88.32" y="139.84">vapor in:  Σ hᵥ,s ṁᵥ,s</tspan>
+</text>
+<line id="o009" x1="418.325" y1="278.065" x2="484.512" y2="222.529" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="453.12" y="144.64">work out: p_b V̇_b</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="54.72" y="562.24">V_b = (4π/3)R³, V̇_b = 4πR²Ṙ</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="683.52" y="117.48">Power ledger (illustrative values, W)</tspan>
+</text>
+<line id="o013" x1="691.2" y1="489.6" x2="1228.8" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o014" x1="691.2" y1="163.2" x2="691.2" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o015" x1="684.48" y1="489.6" x2="691.2" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="691.2" y1="489.6" x2="1228.8" y2="489.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="679.68" y="494.36">0</tspan>
+</text>
+<line id="o018" x1="684.48" y1="393.6" x2="691.2" y2="393.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="691.2" y1="393.6" x2="1228.8" y2="393.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="679.68" y="398.36">0.5</tspan>
+</text>
+<line id="o021" x1="684.48" y1="297.6" x2="691.2" y2="297.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="691.2" y1="297.6" x2="1228.8" y2="297.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="679.68" y="302.36">1</tspan>
+</text>
+<line id="o024" x1="684.48" y1="201.6" x2="691.2" y2="201.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="691.2" y1="201.6" x2="1228.8" y2="201.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="679.68" y="206.36">1.5</tspan>
+</text>
+<rect id="o027" x="710.016" y="432" width="96.768" height="57.6" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="758.4" y="417.693">0.3</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="758.4" y="511.227">Q̇_b</tspan>
+</text>
+<rect id="o030" x="844.416" y="220.8" width="96.768" height="211.2" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="892.8" y="206.493">+1.1</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="892.8" y="511.227">Σ h ṁ</tspan>
+</text>
+<rect id="o033" x="978.816" y="220.8" width="96.768" height="172.8" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1027.2" y="206.493">-0.9</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1027.2" y="511.227">−p_b V̇_b</tspan>
+</text>
+<rect id="o036" x="1113.22" y="393.6" width="96.768" height="96" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1161.6" y="379.293">0.5</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1161.6" y="511.227">= U̇_b</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="683.52" y="576.64">U̇_b = Q̇_b − p_b V̇_b + Σ hᵥ,s ṁᵥ,s. Transported enthalpy and</tspan>
+<tspan x="683.52" y="595.52">conduction are different terms.</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">First law of Eq. C2-E22; the numbers in the ledger are illustrative.</tspan>
+</text>
 </svg>

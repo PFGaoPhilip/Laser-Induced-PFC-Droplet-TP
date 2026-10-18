@@ -1,27 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E28 Interface normals, signed curvature and material motion must use one consistent convention.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E28 | Physical-variable diagram</text>
-<rect x="110" y="125" width="750" height="200" fill="none" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<ellipse cx="285" cy="225" rx="65" ry="65" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="350" y1="225" x2="680" y2="225" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="532" y="157.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">Liquid u(x,t), p(x,t)</text>
-<text x="632" y="300.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Outlet</text>
-<line x1="350" y1="225" x2="305" y2="225" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="332" y="269.44" font-family="Arial,sans-serif" font-size="18" fill="#F6BC77">n: liquid → gas</text>
-<line x1="350" y1="225" x2="350" y2="170" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="362" y="194.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">s: tangent</text>
-<text x="132" y="365.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Moving interface Gamma; spatial field required.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Γ: liquid–gas interface</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s: tangent</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pl</text>
-<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">σκ</text>
-<text x="32" y="546.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">κsphere = −2/R</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">n: liquid → gas</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Vn = u·n</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">D</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pb</text>
-<text x="507" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">2μ n·D n</text>
-<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">At a stationary no-slip solid wall use the wall velocity instead</text>
-<text x="32" y="609.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Phase transfer modifies the kinematic condition in Chapter 2</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E28</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E28 · Kinematic condition and clean-interface traction</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="518.4" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Interface patch and conventions</tspan>
+</text>
+<ellipse id="o003" cx="288" cy="369.6" rx="163.2" ry="163.2" fill="#1E4A5A" stroke="#2B6678" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o004" cx="288" cy="369.6" rx="124.8" ry="124.8" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<line id="o005" x1="390.23" y1="298.018" x2="323.387" y2="344.821" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="390.23" y1="298.018" x2="351.686" y2="242.971" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="235.257" y1="256.493" x2="269.743" y2="330.448" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o008" x1="235.257" y1="256.493" x2="174.353" y2="284.893" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o009" x1="170.726" y1="412.284" x2="247.405" y2="384.375" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o010" x1="170.726" y1="412.284" x2="193.71" y2="475.431" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="395.52" y="188.933">n: liquid → gas</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="17.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="424.32" y="246.533">s: tangent</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="567.587">For a bubble the normal points inward, so the sphere</tspan>
+<tspan x="54.72" y="587.253">curvature is κ = −2/R.</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="587.52" y="113.227">Three conditions on the interface Γ</tspan>
+</text>
+<rect id="o015" x="585.6" y="148.8" width="657.6" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="601.92" y="170.693">Kinematic</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="601.92" y="209.227">Vₙ = u · n</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="601.92" y="255.04">the surface moves with the liquid normal to itself</tspan>
+</text>
+<rect id="o019" x="585.6" y="302.4" width="657.6" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="601.92" y="324.293">Normal stress</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="601.92" y="362.827">pₗ = p_b + σκ + 2μ n·D·n</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="601.92" y="408.64">σκ = −2σ/R for a sphere</tspan>
+</text>
+<rect id="o023" x="585.6" y="456" width="657.6" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="601.92" y="477.893">Tangential stress</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="601.92" y="516.427">2μ s·D·n = 0</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="601.92" y="562.24">gas cannot support shear</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="587.52" y="625.187">One sign convention for n, κ and D is required, or the terms cancel</tspan>
+<tspan x="587.52" y="644.853">wrongly.</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">D = ½(∇u + ∇uᵀ) is the strain-rate tensor (Eq. C1-E28).</tspan>
+</text>
 </svg>

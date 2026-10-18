@@ -1,26 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 568" role="img" aria-labelledby="title desc">
-<title id="title">C5-E16 — The event duration determines which part of the network response can act before the jet or load arrives.</title>
-<desc id="desc">τe: cavity/jet duration; τrel: stress memory; De = τrel/τe; Memory persistence differs from stiffness; Use the actual transient event</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="568" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E16 · Physical variable map / 物理变量图</text>
-<text x="99" y="98" class="">Time definitions / 时间定义</text>
-<rect x="109" y="117" width="560" height="38" class="area"/>
-<text x="129" y="142" class="">τe</text>
-<path d="M109 167 H669" class="thin"/>
-<rect x="109" y="180" width="560" height="38" class="area"/>
-<text x="129" y="205" class="">τrel</text>
-<path d="M109 230 H669" class="thin"/>
-<rect x="109" y="243" width="560" height="38" class="area"/>
-<text x="129" y="268" class="">De = τrel/τe</text>
-<path d="M109 293 H669" class="thin"/>
-<text x="110" y="334" class="muted">Equal boxes identify definitions, not a time ratio / 等宽框列定义，不代表时间比</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• τe: cavity/jet duration</text>
-<text x="30" y="433" class="muted">• τrel: stress memory</text>
-<text x="30" y="457" class="muted">• De = τrel/τe</text>
-<text x="30" y="499" class="muted">Memory persistence differs from stiffness</text>
-<text x="30" y="522" class="muted">Use the actual transient event</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E16 · Time-integrated momentum and mass balance of the confined model</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E16 · Time-integrated momentum and mass balance of the confined model</tspan>
+</text>
+<line id="o001" x1="563.2" y1="134.4" x2="563.2" y2="552" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="563.2" y="574.573">0.0001</tspan>
+</text>
+<line id="o003" x1="684.8" y1="134.4" x2="684.8" y2="552" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="684.8" y="574.573">0.001</tspan>
+</text>
+<line id="o005" x1="806.4" y1="134.4" x2="806.4" y2="552" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="806.4" y="574.573">0.01</tspan>
+</text>
+<line id="o007" x1="928" y1="134.4" x2="928" y2="552" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="928" y="574.573">0.1</tspan>
+</text>
+<line id="o009" x1="1049.6" y1="134.4" x2="1049.6" y2="552" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1049.6" y="574.573">1</tspan>
+</text>
+<line id="o011" x1="1171.2" y1="134.4" x2="1171.2" y2="552" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1171.2" y="574.573">10</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="806.4" y="608.633">Relative size (%), logarithmic axis</tspan>
+</text>
+<line id="o014" x1="1134.59" y1="134.4" x2="1134.59" y2="552" fill="#FFFFFF" stroke="#F2B880" stroke-width="2.66667" opacity="1" stroke-dasharray="6 4"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="1134.59" y="118.727">5% engineering line</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="171.833">Time step (strict vs automatic)</tspan>
+</text>
+<rect id="o017" x="441.6" y="152.64" width="592.099" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="1046.18" y="172.64">0.74%</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="229.433">Momentum balance (confined)</tspan>
+</text>
+<rect id="o020" x="441.6" y="210.24" width="489.477" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="943.557" y="230.24">0.106%</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="287.033">Mass balance (confined)</tspan>
+</text>
+<rect id="o023" x="441.6" y="267.84" width="395.841" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="849.921" y="287.84">0.018%</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="344.633">Plateau, C++ vs COMSOL</tspan>
+</text>
+<rect id="o026" x="441.6" y="325.44" width="426.226" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="880.306" y="345.44">0.032%</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="402.233">Wave history L2, C++ vs COMSOL</tspan>
+</text>
+<rect id="o029" x="441.6" y="383.04" width="429.428" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="883.508" y="403.04">0.034%</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="459.833">Centre disk vs p_H (converged)</tspan>
+</text>
+<rect id="o032" x="441.6" y="440.64" width="505.289" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="959.369" y="460.64">0.143%</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="46.08" y="517.433">Incident speed, plane z = 2a</tspan>
+</text>
+<rect id="o035" x="441.6" y="498.24" width="2.88" height="36.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="454.08" y="518.24">&lt; 1e-5</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="46.08" y="658.707">Every bar compares a result with its own stated reference; none compares a model with an experiment.</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Values from CH6_CH8_RESULTS.json, CPP_vs_COMSOL_wall_history.json and BAND_RESULTS.json.</tspan>
+</text>
 </svg>

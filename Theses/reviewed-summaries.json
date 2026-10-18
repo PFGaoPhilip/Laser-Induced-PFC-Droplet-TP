@@ -262,5 +262,37 @@
     "source": "https://www.jasma.info/journal/wp-content/uploads/sites/2/2016/01/2016_p3301061.pdf",
     "locator": "Page 1 abstract; pages 2-3 and Table 3",
     "limits": "Table 3 lists PFH properties at two temperatures. It does not establish high-temperature nanoscale PFC transport or gel-interface properties."
+  },
+  "10.1103/RevModPhys.61.75": {
+    "unit": "Chapter 5",
+    "background": "The review treats the Riemann problem and the shock jump relations for fluids with general equations of state.",
+    "experiments": "It is a theory review, and no new experiments were verified for this lesson.",
+    "evidence": "I: metadata verified through Crossref; role in the lesson stated; contents not read",
+    "locator": "Crossref record: Reviews of Modern Physics 61 (1989), authors Menikoff and Plohr",
+    "limits": "Supports the Hugoniot construction of Chapter 5 Section 3. Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson."
+  },
+  "10.1016/j.ijthermalsci.2003.09.002": {
+    "unit": "Chapter 5",
+    "background": "The paper constructs equations of state for a liquid and its vapor for use in two-phase flow models.",
+    "experiments": "Experimental comparisons in the paper were not verified for this lesson.",
+    "evidence": "I: metadata verified through Crossref; role in the lesson stated; contents not read",
+    "locator": "Crossref record: International Journal of Thermal Sciences (2004), authors Le Metayer, Massoni and Saurel",
+    "limits": "Supports the stiffened-gas form of the liquid law in Eq. (C5-E01); the parameters gamma = 4.4 and Pi = 600 MPa are project inputs. Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson."
+  },
+  "10.1007/b79761": {
+    "unit": "Chapter 5",
+    "background": "The book presents Riemann solvers and finite-volume methods for conservation laws in fluid dynamics.",
+    "experiments": "It is a numerical-methods text, and no experiments were checked for this lesson.",
+    "evidence": "I: metadata verified through Crossref; role in the lesson stated; contents not read",
+    "locator": "Crossref record: Springer book, author Toro (2009)",
+    "limits": "Supports the finite-volume setting of the one-dimensional reference solver. Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson."
+  },
+  "10.1016/0041-5553(62)90062-9": {
+    "unit": "Chapter 5",
+    "background": "The paper presents a difference scheme for the interaction of non-stationary shock waves with obstacles.",
+    "experiments": "Numerical-experiment details in the paper were not verified for this lesson.",
+    "evidence": "I: metadata verified through Crossref; role in the lesson stated; contents not read",
+    "locator": "Crossref record: USSR Computational Mathematics and Mathematical Physics (1962), author Rusanov",
+    "limits": "Origin of the dissipative numerical flux named in Eq. (C5-E11). Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson."
   }
 }

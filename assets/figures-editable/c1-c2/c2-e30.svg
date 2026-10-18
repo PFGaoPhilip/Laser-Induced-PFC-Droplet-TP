@@ -1,20 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E30 The expansion ratio follows from mass conservation at a stated pressure and temperature.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E30 | Physical-variable diagram</text>
-<ellipse cx="180" cy="215" rx="26" ry="26" fill="#F6BC77" stroke="#B4C7D2" stroke-width="2.21"/>
-<ellipse cx="650" cy="215" rx="140" ry="140" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="230" y1="215" x2="485" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="102" y="290.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Liquid: a0 = 5 um</text>
-<text x="492" y="384.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Vapor: R_b,inv = 26.6827 um</text>
-<text x="92" y="100.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Same PFC mass</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">a₀ = 5 μm: original liquid</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0, ρ_d: original inventory</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_v,PFC = 100 kPa</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">151.9778: volume expansion</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R_b,inv = 26.6827 μm: assumed vapor state</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_* = 323 K</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">M_PFC, R_u: ideal mole relation</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: sphere geometry</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Volume ratio is about 152; radius ratio about 5.34</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Inventory radius is not dynamical R_max</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E30</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E30 · Derived ideal-vapor inventory radius</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="672" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">1e+04</tspan>
+</text>
+<line id="o006" x1="346.323" y1="528" x2="346.323" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="346.323" y1="144" x2="346.323" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="346.323" y="550.04">1e+05</tspan>
+</text>
+<line id="o009" x1="596.645" y1="528" x2="596.645" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="596.645" y1="144" x2="596.645" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="596.645" y="550.04">1e+06</tspan>
+</text>
+<line id="o012" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="89.28" y1="429.712" x2="96" y2="429.712" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="96" y1="429.712" x2="672" y2="429.712" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="434.472">2</tspan>
+</text>
+<line id="o016" x1="89.28" y1="299.783" x2="96" y2="299.783" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="96" y1="299.783" x2="672" y2="299.783" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="304.543">5</tspan>
+</text>
+<line id="o019" x1="89.28" y1="201.495" x2="96" y2="201.495" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="201.495" x2="672" y2="201.495" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="206.255">10</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="384" y="572.8">PFC partial pressure pᵥ,PFC  (Pa)</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">R_b,inv / a₀</tspan>
+</text>
+<polyline id="o024" points="96,181.689 101.816,184.217 107.631,186.746 113.447,189.274 119.262,191.803 125.078,194.331 130.893,196.86 136.709,199.388 142.525,201.917 148.34,204.445 154.156,206.974 159.971,209.502 165.787,212.031 171.603,214.559 177.418,217.088 183.234,219.616 189.049,222.145 194.865,224.673 200.68,227.202 206.496,229.73 212.312,232.259 218.127,234.787 223.943,237.316 229.758,239.844 235.574,242.373 241.389,244.901 247.205,247.43 253.021,249.958 258.836,252.487 264.652,255.015 270.467,257.543 276.283,260.072 282.098,262.6 287.914,265.129 293.73,267.657 299.545,270.186 305.361,272.714 311.176,275.243 316.992,277.771 322.808,280.3 328.623,282.828 334.439,285.357 340.254,287.885 346.07,290.414 351.885,292.942 357.701,295.471 363.517,297.999 369.332,300.528 375.148,303.056 380.963,305.585 386.779,308.113 392.594,310.642 398.41,313.17 404.226,315.699 410.041,318.227 415.857,320.756 421.672,323.284 427.488,325.813 433.303,328.341 439.119,330.87 444.935,333.398 450.75,335.927 456.566,338.455 462.381,340.984 468.197,343.512 474.013,346.041 479.828,348.569 485.644,351.098 491.459,353.626 497.275,356.155 503.09,358.683 508.906,361.212 514.722,363.74 520.537,366.269 526.353,368.797 532.168,371.326 537.984,373.854 543.799,376.383 549.615,378.911 555.431,381.44 561.246,383.968 567.062,386.497 572.877,389.025 578.693,391.554 584.509,394.082 590.324,396.611 596.14,399.139 601.955,401.668 607.771,404.196 613.586,406.725 619.402,409.253 625.218,411.782 631.033,414.31 636.849,416.838 642.664,419.367 648.48,421.895 654.295,424.424 660.111,426.952 665.927,429.481 671.742,432.009" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o025" cx="346.323" cy="290.524" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="359.763" y="257.564">1 bar: 5.337 a₀ = 26.69 µm</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="180.955" y="230.526">R ∝ p^(−1/3)</tspan>
+</text>
+<rect id="o028" x="710.4" y="144" width="532.8" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="723.84" y="166.44">To scale at 1 bar and 323 K</tspan>
+</text>
+<ellipse id="o030" cx="1027.2" cy="408" rx="115.2" ry="115.2" fill="#0C1820" stroke="#F2B880" stroke-width="3.2" opacity="1"/>
+<ellipse id="o031" cx="1027.2" cy="408" rx="21.5837" ry="21.5837" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.93333" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="726.72" y="207.04">(R_b,inv / a₀)³ = ρ_d Rᵤ T* / (M_PFC pᵥ,PFC) = 151.98</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="726.72" y="274.24">bubble R = 26.69 µm</tspan>
+<tspan x="726.72" y="293.12">(radius ratio 5.34)</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="726.72" y="389.44">droplet a₀ = 5 µm</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">If every PFC molecule becomes ideal vapor at 1 bar, the bubble is 5.3 times the droplet radius, 152 times its volume.</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Inventory radius of Eq. C2-E30 (M_PFC = 0.2880343 kg/mol, ρ_d = 1630 kg/m³).</tspan>
+</text>
 </svg>

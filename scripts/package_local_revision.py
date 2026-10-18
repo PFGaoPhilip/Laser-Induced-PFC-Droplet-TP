@@ -3,11 +3,14 @@ from pathlib import Path
 import hashlib
 import json
 import shutil
+import sys
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-DEST = ROOT / 'delivery/Lesson_Revision_20261014'
-ARCHIVE = ROOT / 'delivery/Lesson_Revision_20261014.zip'
+DEFAULT_NAME = 'Lesson_Revision_20261014'
+NAME = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_NAME
+DEST = ROOT / 'delivery' / NAME
+ARCHIVE = ROOT / 'delivery' / (NAME + '.zip')
 EXCLUDED = {'.git', '__pycache__', 'build', 'tmp', 'temp', '.tools'}
 
 
@@ -20,7 +23,7 @@ def main():
     folders = ['assets', 'chapters', 'appendices', 'reference', 'text', 'content', 'Theses',
                'scripts', 'modeling/minimal-cavitation',
                'modeling/embedded-pfc-feasibility',
-               'learning-records/resolver-progress', 'sources/ui-feedback-20261014',
+               'learning-records/resolver-progress', 'sources/rigid_wall_ch5', 'sources/ui-feedback-20261014',
                'sources/revision-guidance-20261014', 'sources/historical-handoffs']
     selected = {Path(name) for name in ['index.html', 'README.md', 'MISSION.md',
                                       'RESOURCES.md', 'WORK_LOG.md', 'Theses.md', 'HANDOFF.md', 'COURSE_SETTINGS.json', '.nojekyll']}
@@ -53,7 +56,7 @@ def main():
         shutil.copy2(ROOT / relative, target)
     forwarded_path = ROOT / 'verification/local-revision-forwarded-browser.json'
     forwarded_hashes = {}
-    if forwarded_path.is_file():
+    if forwarded_path.is_file() and NAME == DEFAULT_NAME:
         forwarded = json.loads(forwarded_path.read_text(encoding='utf-8'))
         assert forwarded['status'] == 'passed'
         forwarded_hashes = forwarded.get('verified_reader_asset_hashes', {})
@@ -76,7 +79,8 @@ def main():
               'zip_bytes': ARCHIVE.stat().st_size, 'zip_sha256': digest(ARCHIVE),
               'crc_and_hashes': 'passed', 'forwarded_reader_assets_bound': len(forwarded_hashes),
               'published': False}
-    (ROOT / 'verification/local-revision-package.json').write_text(
+    report_name = 'local-revision-package.json' if NAME == DEFAULT_NAME else 'local-revision-package-' + NAME + '.json'
+    (ROOT / 'verification' / report_name).write_text(
         json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report))
 

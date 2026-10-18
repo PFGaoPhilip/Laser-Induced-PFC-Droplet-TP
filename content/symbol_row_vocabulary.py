@@ -512,7 +512,7 @@ H_f|Normal payload flight gap|被转印对象法向飞行间隙|m
 for vocabulary in VOCABULARY.values():
     vocabulary[r'\pi']=('Circle constant','圆周率','1')
 
-add(5,r'''
+add(90,r'''
 r_0|Reference material radius|参考物质半径|m
 r|Current material radius|当前物质半径|m
 \lambda_r|Radial principal stretch|径向主伸长比|1

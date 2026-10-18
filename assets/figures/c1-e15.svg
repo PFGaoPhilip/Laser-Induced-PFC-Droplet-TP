@@ -1,26 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 664" role="img"><title>C1-E15 The initial condition fixes the integration constant and the inward sign fixes the branch.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="664" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E15 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">R(t)</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">p_b</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Surrounding liquid</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p∞, ρ, μ; interface: σ</text>
-<line x1="270" y1="215" x2="410" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="442" y="319.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">r ≥ R</text>
-<line x1="410" y1="215" x2="475" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="417" y="253.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">+e_r (coordinate)</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Signed wall speed: Ṙ; acceleration: R̈</text>
-<line x1="160" y1="215" x2="205" y2="215" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="92" y="99.44" font-family="Arial,sans-serif" font-size="18" fill="#F6BC77">Collapse: Ṙ &lt; 0</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Rmax</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s: integration radius</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ &lt; 0</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">y = Ṙ²</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δpc</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Speed is zero at R = Rmax</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Zero radius is an excluded model endpoint</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E15</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E15 · Integrated speed with initial constant and branch</tspan>
+</text>
+<line id="o001" x1="105.6" y1="537.6" x2="720" y2="537.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="105.6" y1="144" x2="105.6" y2="537.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="105.6" y1="537.6" x2="105.6" y2="544.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="105.6" y1="144" x2="105.6" y2="537.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="105.6" y="559.64">0.02</tspan>
+</text>
+<line id="o006" x1="249.507" y1="537.6" x2="249.507" y2="544.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="249.507" y1="144" x2="249.507" y2="537.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="249.507" y="559.64">0.05</tspan>
+</text>
+<line id="o009" x1="358.369" y1="537.6" x2="358.369" y2="544.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="358.369" y1="144" x2="358.369" y2="537.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="358.369" y="559.64">0.1</tspan>
+</text>
+<line id="o012" x1="467.231" y1="537.6" x2="467.231" y2="544.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="467.231" y1="144" x2="467.231" y2="537.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="467.231" y="559.64">0.2</tspan>
+</text>
+<line id="o015" x1="611.138" y1="537.6" x2="611.138" y2="544.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="611.138" y1="144" x2="611.138" y2="537.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="611.138" y="559.64">0.5</tspan>
+</text>
+<line id="o018" x1="720" y1="537.6" x2="720" y2="544.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="720" y1="144" x2="720" y2="537.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="720" y="559.64">1</tspan>
+</text>
+<line id="o021" x1="98.88" y1="537.6" x2="105.6" y2="537.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="98.88" y1="406.4" x2="105.6" y2="406.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="105.6" y1="406.4" x2="720" y2="406.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="94.08" y="411.16">10</tspan>
+</text>
+<line id="o025" x1="98.88" y1="275.2" x2="105.6" y2="275.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="105.6" y1="275.2" x2="720" y2="275.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="94.08" y="279.96">100</tspan>
+</text>
+<line id="o028" x1="98.88" y1="144" x2="105.6" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="105.6" y1="144" x2="720" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="94.08" y="148.76">1000</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="582.4">R / Rₘₐₓ</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="122.56">|Ṙ|  (m/s)</tspan>
+</text>
+<polyline id="o033" points="220.369,146.054 224.481,148.292 228.593,150.53 232.705,152.768 236.818,155.006 240.93,157.244 245.042,159.482 249.154,161.72 253.266,163.958 257.379,166.197 261.491,168.435 265.603,170.673 269.715,172.911 273.827,175.149 277.94,177.388 282.052,179.626 286.164,181.865 290.276,184.103 294.388,186.342 298.5,188.58 302.613,190.819 306.725,193.057 310.837,195.296 314.949,197.535 319.061,199.774 323.174,202.013 327.286,204.252 331.398,206.491 335.51,208.73 339.622,210.97 343.735,213.209 347.847,215.449 351.959,217.688 356.071,219.928 360.183,222.168 364.296,224.409 368.408,226.649 372.52,228.89 376.632,231.131 380.744,233.372 384.856,235.613 388.969,237.855 393.081,240.097 397.193,242.339 401.305,244.582 405.417,246.825 409.53,249.069 413.642,251.313 417.754,253.558 421.866,255.803 425.978,258.048 430.091,260.295 434.203,262.542 438.315,264.79 442.427,267.038 446.539,269.288 450.652,271.538 454.764,273.79 458.876,276.042 462.988,278.296 467.1,280.551 471.212,282.808 475.325,285.066 479.437,287.326 483.549,289.588 487.661,291.851 491.773,294.117 495.886,296.385 499.998,298.656 504.11,300.929 508.222,303.205 512.334,305.484 516.447,307.767 520.559,310.054 524.671,312.344 528.783,314.639 532.895,316.939 537.008,319.244 541.12,321.555 545.232,323.872 549.344,326.196 553.456,328.527 557.568,330.866 561.681,333.213 565.793,335.57 569.905,337.938 574.017,340.316 578.129,342.707 582.242,345.111 586.354,347.53 590.466,349.966 594.578,352.418 598.69,354.89 602.803,357.384 606.915,359.901 611.027,362.444 615.139,365.016 619.251,367.619 623.364,370.257 627.476,372.935 631.588,375.656 635.7,378.427 639.812,381.252 643.924,384.139 648.037,387.097 652.149,390.134 656.261,393.263 660.373,396.496 664.485,399.852 668.598,403.351 672.71,407.018 676.822,410.888 680.934,415.004 685.046,419.422 689.159,424.223 693.271,429.521 697.383,435.487 701.495,442.396 705.607,450.733 709.72,461.482 713.832,477.184 717.944,509.616" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o034" points="220.369,146.052 224.481,148.29 228.593,150.527 232.705,152.765 236.818,155.003 240.93,157.241 245.042,159.479 249.154,161.717 253.266,163.955 257.379,166.192 261.491,168.43 265.603,170.668 269.715,172.906 273.827,175.144 277.94,177.382 282.052,179.62 286.164,181.857 290.276,184.095 294.388,186.333 298.5,188.571 302.613,190.809 306.725,193.047 310.837,195.285 314.949,197.522 319.061,199.76 323.174,201.998 327.286,204.236 331.398,206.474 335.51,208.712 339.622,210.95 343.735,213.187 347.847,215.425 351.959,217.663 356.071,219.901 360.183,222.139 364.296,224.377 368.408,226.615 372.52,228.852 376.632,231.09 380.744,233.328 384.856,235.566 388.969,237.804 393.081,240.042 397.193,242.28 401.305,244.517 405.417,246.755 409.53,248.993 413.642,251.231 417.754,253.469 421.866,255.707 425.978,257.945 430.091,260.182 434.203,262.42 438.315,264.658 442.427,266.896 446.539,269.134 450.652,271.372 454.764,273.61 458.876,275.848 462.988,278.085 467.1,280.323 471.212,282.561 475.325,284.799 479.437,287.037 483.549,289.275 487.661,291.513 491.773,293.75 495.886,295.988 499.998,298.226 504.11,300.464 508.222,302.702 512.334,304.94 516.447,307.178 520.559,309.415 524.671,311.653 528.783,313.891 532.895,316.129 537.008,318.367 541.12,320.605 545.232,322.843 549.344,325.08 553.456,327.318 557.568,329.556 561.681,331.794 565.793,334.032 569.905,336.27 574.017,338.508 578.129,340.745 582.242,342.983 586.354,345.221 590.466,347.459 594.578,349.697 598.69,351.935 602.803,354.173 606.915,356.41 611.027,358.648 615.139,360.886 619.251,363.124 623.364,365.362 627.476,367.6 631.588,369.838 635.7,372.075 639.812,374.313 643.924,376.551 648.037,378.789 652.149,381.027 656.261,383.265 660.373,385.503 664.485,387.74 668.598,389.978 672.71,392.216 676.822,394.454 680.934,396.692 685.046,398.93 689.159,401.168 693.271,403.405 697.383,405.643 701.495,407.881 705.607,410.119 709.72,412.357 713.832,414.595 717.944,416.833 720,417.952" fill="none" stroke="#F2B880" stroke-width="2.4" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o035" cx="611.138" cy="362.513" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="368.258" y="377.56">21.6 m/s at R = Rₘₐₓ/2</tspan>
+</text>
+<ellipse id="o037" cx="358.369" cy="221.18" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="374.689" y="226.635">258 m/s at R = Rₘₐₓ/10</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="130.169" y="411.293">dashed: ∝ R^(−3/2) as R → 0</tspan>
+</text>
+<rect id="o040" x="758.4" y="144" width="484.8" height="393.6" rx="31.488" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="771.84" y="166.44">Reading the solution</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="774.72" y="208.133">Ṙ = −√{ (2Δp_c/3ρ) [ (Rₘₐₓ/R)³ − 1 ] }</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="279.587">The start R = Rₘₐₓ at rest fixes the constant: Ṙ</tspan>
+<tspan x="795.84" y="299.253">= 0 there.</tspan>
+</text>
+<ellipse id="o044" cx="780.48" cy="274.333" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="329.853">The minus sign selects the inward branch</tspan>
+<tspan x="795.84" y="349.52">(collapse).</tspan>
+</text>
+<ellipse id="o046" cx="780.48" cy="324.6" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="380.12">As R → 0, |Ṙ| grows without bound: this is the</tspan>
+<tspan x="795.84" y="399.787">model&#x27;s singularity, not a physical speed limit.</tspan>
+</text>
+<ellipse id="o048" cx="780.48" cy="374.867" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="430.387">Real collapse is stopped by gas, viscosity,</tspan>
+<tspan x="795.84" y="450.053">tension and compressibility long before.</tspan>
+</text>
+<ellipse id="o050" cx="780.48" cy="425.133" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o051" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="107.52" y="617.507">Teaching inputs: Rₘₐₓ = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa.</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Wall speed from Eq. C1-E15 (log–log axes).</tspan>
+</text>
 </svg>

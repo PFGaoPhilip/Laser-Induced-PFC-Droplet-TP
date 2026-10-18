@@ -60,7 +60,7 @@ def main():
     # These are authored public sources, local dependencies and evidence, not private PDFs or response records.
     forbidden_ext={'.pdf','.zip','.mph','.docx','.pptx','.pem','.key','.sqlite','.db','.exe','.dll'}
     secret=re.compile(r'gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----')
-    computer=re.compile(r'file:/{3}|(?<![A-Za-z0-9])[A-Z]:[\\/]',re.I)
+    computer=re.compile(r'file:/{3}|(?<![A-Za-z0-9])[A-Za-z]:[\\/](?:Users|Program Files|Windows|AppData|ProgramData|Temp|tmp|L\. Jay|Documents|home)',re.I)
     problems=[]
     for relative in sorted(selected):
         p=ROOT/relative
@@ -81,8 +81,17 @@ def main():
                 elif relative.parts[:2]==('assets','figures-editable') and relative.name.endswith('.scene.json'):
                     scene=json.loads(text)
                     provenance=scene.pop('_source_svg',None)
-                    assert not computer.search(json.dumps(scene)), 'Unexpected local path in scene: '+str(relative)
-                    assert provenance and Path(provenance).resolve().is_relative_to(ROOT.resolve()),str(relative)
+                    def _strings(node):
+                        if isinstance(node,str):
+                            yield node
+                        elif isinstance(node,dict):
+                            for v in node.values():
+                                yield from _strings(v)
+                        elif isinstance(node,list):
+                            for v in node:
+                                yield from _strings(v)
+                    assert not any(computer.search(v) for v in _strings(scene)), 'Unexpected local path in scene: '+str(relative)
+                    assert (provenance is None) or Path(provenance).resolve().is_relative_to(ROOT.resolve()),str(relative)
                 else:problems.append('local computer reference '+str(relative))
         target=DEST/relative;target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(p,target)

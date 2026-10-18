@@ -1,36 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
-<title id="title">C5-E06 — Zero deformation gives zero elastic resistance, and positive expansion raises it monotonically.</title>
-<desc id="desc">Rref: zero resistance; R increasing → pel increasing; large R → 5Gg/2; dpel/dR &gt; 0; Expansion requires positive additional pressure; Pressure plateau does not cap stored work</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="592" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E06 · Physical variable map / 物理变量图</text>
-<circle cx="196" cy="180" r="80" class="thin"/>
-<circle cx="196" cy="180" r="36" class="area"/>
-<path d="M196 180 H232" class="arrow"/>
-<text x="190" y="160" class="">Rref</text>
-<path d="M196 180 L259 231" class="arrow"/>
-<text x="254" y="240" class="">r₀</text>
-<circle cx="610" cy="180" r="116" class="thin"/>
-<circle cx="610" cy="180" r="78" class="area"/>
-<path d="M610 180 H688" class="arrow"/>
-<text x="650" y="162" class="">R</text>
-<path d="M610 180 L700 253" class="arrow"/>
-<text x="699" y="261" class="">r</text>
-<path d="M298 180 H472" class="arrow"/>
-<text x="307" y="146" class="">Material map / 材料映射</text>
-<text x="82" y="302" class="">Reference / 参考状态</text>
-<text x="513" y="322" class="">Deformed / 变形状态: λr , λθ</text>
-<text x="757" y="106" class="">Gg , ηg</text>
-<text x="753" y="153" class="">σrr , σθθ</text>
-<text x="753" y="201" class="">p∞</text>
-<text x="583" y="187" class="">pb</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Rref: zero resistance</text>
-<text x="30" y="433" class="muted">• R increasing → pel increasing</text>
-<text x="30" y="457" class="muted">• large R → 5Gg/2</text>
-<text x="30" y="481" class="muted">• dpel/dR &gt; 0</text>
-<text x="30" y="523" class="muted">Expansion requires positive additional pressure</text>
-<text x="30" y="546" class="muted">Pressure plateau does not cap stored work</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E06 · Area-weighted wall observer and dimensionless time</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E06 · Area-weighted wall observer and dimensionless time</tspan>
+</text>
+<ellipse id="o001" cx="326.4" cy="355.2" rx="201.6" ry="201.6" fill="#213E4B" stroke="#8EDBD4" stroke-width="3.33333" opacity="1"/>
+<ellipse id="o002" cx="326.4" cy="355.2" rx="124.992" ry="124.992" fill="#2B5560" stroke="#F2B880" stroke-width="3.33333" opacity="1"/>
+<ellipse id="o003" cx="326.4" cy="355.2" rx="5.76" ry="5.76" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="497.499" y1="256.416" x2="452.105" y2="282.624" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o005" x1="155.301" y1="256.416" x2="200.695" y2="282.624" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="326.4" y1="552.768" x2="326.4" y2="500.352" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="326.4" y1="355.2" x2="528" y2="355.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="18.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="377.28" y="337.413">a</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="283.2" y="416.787">core</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="50.88" y="119.8">Wall z = 0 seen from above</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="703.68" y="129.4">Observer</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="185.28">p̄_R = (2 / R²) ∫₀ᴿ p r dr</tspan>
+<tspan x="703.68" y="207.307">weight 2r dr / R² is the disk area element</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="703.68" y="286.08">R = a: full sensor</tspan>
+<tspan x="703.68" y="308.107">R = a/2: centre</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="703.68" y="355">Edge release</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="414.267">Front moves inward from r = a at c_0.</tspan>
+<tspan x="703.68" y="436.293">At τ = c_0 t / a the annulus a(1−τ) &lt; r ≤ a has relaxed.</tspan>
+<tspan x="703.68" y="458.32">Area fraction f_rel = 1 − (1 − τ)².</tspan>
+</text>
+<rect id="o016" x="700.8" y="518.4" width="528" height="96" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="964.8" y="549.093">At the peak: τ = 0.0472, f_rel = 0.0921</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="964.8" y="589.893">Full release would give 0.908 p_H</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic; annulus width is exaggerated for legibility.</tspan>
+</text>
 </svg>

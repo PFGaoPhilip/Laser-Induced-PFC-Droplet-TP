@@ -1,12 +1,44 @@
 # Theses
 
-Search and metadata verification date: 2026-10-14.
+Search and metadata verification date: 2026-10-18.
 
 This register sits alongside WORK_LOG.md.
 Each entry includes title, authors, identifier, and two summary sentences.
 Unverified experimental details are explicitly marked.
 
 [Chapter evidence map](Theses/CHAPTER_MAP.md) · [Offline literature reader](Theses/index.html)
+
+## 10.1002/(sici)1096-9101(1997)21:3
+
+Individual record: [10.1002_(sici)1096-9101(1997)21_3.md](Theses/10.1002_%28sici%291096-9101%281997%2921_3.md)
+
+- Title: Unverified; identifier imported from project citations.
+- Authors: Unverified
+- Year: Unverified
+- DOI: 10.1002/(sici)1096-9101(1997)21:3
+- arXiv ID/URL: Not yet checked
+- Source URL: https://doi.org/10.1002/(sici)1096-9101(1997)21:3
+- Record type: scholarly record
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: Unverified imported lead
+- Access status: Metadata only; full-text access not yet checked.
+- Lesson mapping: Background or peripheral citation; placement unreviewed.
+
+### Two-sentence summary
+
+Background and theory remain unverified pending a readable primary source.
+Experiments performed remain unverified pending methods or explicit abstract evidence.
+
+### Provenance
+
+Local citation locations:
+
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1`
+
+### Applicability and gaps
+
+Project-specific thresholds and transfer performance remain unverified.
 
 ## 10.1002/0471143030.cb1016s47
 
@@ -603,6 +635,49 @@ Project-specific thresholds and transfer performance remain unverified.
 
 Canonical metadata verified on 2026-10-14: https://api.crossref.org/works/10.1007%2F978-3-319-49719-8_10
 
+## 10.1007/b79761
+
+Individual record: [10.1007_b79761.md](Theses/10.1007_b79761.md)
+
+- Title: Riemann Solvers and Numerical Methods for Fluid Dynamics
+- Authors: Eleuterio F. Toro
+- Year: 2009
+- DOI: 10.1007/b79761
+- arXiv ID/URL: Not yet checked
+- Source URL: https://doi.org/10.1007/b79761
+- Record type: book
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: I: metadata verified through Crossref; role in the lesson stated; contents not read
+- Access status: Metadata and abstract evidence; full-text access not verified.
+- Lesson mapping: Chapter 5
+
+### Two-sentence summary
+
+The book presents Riemann solvers and finite-volume methods for conservation laws in fluid dynamics.
+It is a numerical-methods text, and no experiments were checked for this lesson.
+
+### Provenance
+
+Canonical metadata: https://api.crossref.org/works/10.1007%2Fb79761
+
+Venue: 
+
+Local citation locations:
+
+- `reference/sources.html:3`
+- `scripts/source_catalog.py:20`
+
+### Applicability and gaps
+
+Supports the finite-volume setting of the one-dimensional reference solver. Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson.
+
+### Evidence review
+
+- Date read: 2026-10-18
+- Source read: https://api.crossref.org/works/10.1007%2Fb79761
+- Locator: Crossref record: Springer book, author Toro (2009)
+
 ## 10.1007/BF01414629
 
 Individual record: [10.1007_BF01414629.md](Theses/10.1007_BF01414629.md)
@@ -755,7 +830,7 @@ The absorber-layer and thin-film geometries require matching. None directly esta
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://link.springer.com/article/10.1007/s10404-011-0787-4
 - Locator: Abstract: gas cavities, external jets, re-entrant jets, and blister transition
 
@@ -798,7 +873,7 @@ The canonical citation year is 2014; online publication occurred in 2013. Silver
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://link.springer.com/article/10.1007/s10404-013-1248-z
 - Locator: Abstract; issue date March 2014; online publication August 2013
 
@@ -944,7 +1019,7 @@ The fitted modulus is an effective damage proxy. Later cycles probe modified nea
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://link.springer.com/article/10.1007/s11340-026-01332-z
 - Locator: Experimental Methods; Laser Induced Cavitation; Assessing damage; Conclusions
 
@@ -983,7 +1058,7 @@ The optimum separation belongs to an adjacent-boundary geometry. Transfer to emb
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://link.springer.com/article/10.1007/s42241-026-0020-2
 - Locator: Abstract: high-speed photography, agarose boundaries, and regime classification
 
@@ -1025,6 +1100,49 @@ Project-specific thresholds and transfer performance remain unverified.
 ### Merged discovery arxiv_1906.10646.md
 
 - https://arxiv.org/abs/1906.10646
+
+## 10.1016/0041-5553(62)90062-9
+
+Individual record: [10.1016_0041-5553(62)90062-9.md](Theses/10.1016_0041-5553%2862%2990062-9.md)
+
+- Title: The calculation of the interaction of non-stationary shock waves and obstacles
+- Authors: V.V Rusanov
+- Year: 1962
+- DOI: 10.1016/0041-5553(62)90062-9
+- arXiv ID/URL: Not yet checked
+- Source URL: https://doi.org/10.1016/0041-5553(62)90062-9
+- Record type: journal-article
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: I: metadata verified through Crossref; role in the lesson stated; contents not read
+- Access status: Metadata and abstract evidence; full-text access not verified.
+- Lesson mapping: Chapter 5
+
+### Two-sentence summary
+
+The paper presents a difference scheme for the interaction of non-stationary shock waves with obstacles.
+Numerical-experiment details in the paper were not verified for this lesson.
+
+### Provenance
+
+Canonical metadata: https://api.crossref.org/works/10.1016%2F0041-5553%2862%2990062-9
+
+Venue: USSR Computational Mathematics and Mathematical Physics
+
+Local citation locations:
+
+- `reference/sources.html:3`
+- `scripts/source_catalog.py:21`
+
+### Applicability and gaps
+
+Origin of the dissipative numerical flux named in Eq. (C5-E11). Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson.
+
+### Evidence review
+
+- Date read: 2026-10-18
+- Source read: https://api.crossref.org/works/10.1016%2F0041-5553%2862%2990062-9
+- Locator: Crossref record: USSR Computational Mathematics and Mathematical Physics (1962), author Rusanov
 
 ## 10.1016/j.actbio.2013.03.027
 
@@ -1676,6 +1794,39 @@ Local citation locations:
 
 Project-specific thresholds and transfer performance remain unverified.
 
+## 10.1016/j.ijheatmas
+
+Individual record: [10.1016_j.ijheatmas.md](Theses/10.1016_j.ijheatmas.md)
+
+- Title: Unverified; identifier imported from project citations.
+- Authors: Unverified
+- Year: Unverified
+- DOI: 10.1016/j.ijheatmas
+- arXiv ID/URL: Not yet checked
+- Source URL: https://doi.org/10.1016/j.ijheatmas
+- Record type: scholarly record
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: Unverified imported lead
+- Access status: Metadata only; full-text access not yet checked.
+- Lesson mapping: Background or peripheral citation; placement unreviewed.
+
+### Two-sentence summary
+
+Background and theory remain unverified pending a readable primary source.
+Experiments performed remain unverified pending methods or explicit abstract evidence.
+
+### Provenance
+
+Local citation locations:
+
+- `reports/PFC_Project_Report_20261011_ppt169_20261011/analysis/Laser_Triggered_Cavitation_Transfer_Supervisor_Progress_20260919_Full_Figures_Retypeset.slide_library.json:783`
+- `reports/PFC_Project_Report_20261011_ppt169_20261011/analysis/Laser_Triggered_Cavitation_Transfer_Supervisor_Progress_20260919_No_Speaker_Notes_With_References.slide_library.json:783`
+
+### Applicability and gaps
+
+Project-specific thresholds and transfer performance remain unverified.
+
 ## 10.1016/j.ijheatmasstransfer.2022.122845
 
 Individual record: [10.1016_j.ijheatmasstransfer.2022.122845.md](Theses/10.1016_j.ijheatmasstransfer.2022.122845.md)
@@ -1820,6 +1971,49 @@ Canonical metadata verified on 2026-10-14: https://api.crossref.org/works/10.101
 - reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:884
 - reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/resources/sources/Trummler_2021.provenance.json.txt:3
 - reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/verification/V4_SOURCE_OPTIONS.md.txt:30
+
+## 10.1016/j.ijthermalsci.2003.09.002
+
+Individual record: [10.1016_j.ijthermalsci.2003.09.002.md](Theses/10.1016_j.ijthermalsci.2003.09.002.md)
+
+- Title: Élaboration des lois d'état d'un liquide et de sa vapeur pour les modèles d'écoulements diphasiques
+- Authors: O Le Métayer; J Massoni; R Saurel
+- Year: 2004
+- DOI: 10.1016/j.ijthermalsci.2003.09.002
+- arXiv ID/URL: Not yet checked
+- Source URL: https://doi.org/10.1016/j.ijthermalsci.2003.09.002
+- Record type: journal-article
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: I: metadata verified through Crossref; role in the lesson stated; contents not read
+- Access status: Metadata and abstract evidence; full-text access not verified.
+- Lesson mapping: Chapter 5
+
+### Two-sentence summary
+
+The paper constructs equations of state for a liquid and its vapor for use in two-phase flow models.
+Experimental comparisons in the paper were not verified for this lesson.
+
+### Provenance
+
+Canonical metadata: https://api.crossref.org/works/10.1016%2Fj.ijthermalsci.2003.09.002
+
+Venue: International Journal of Thermal Sciences
+
+Local citation locations:
+
+- `reference/sources.html:3`
+- `scripts/source_catalog.py:19`
+
+### Applicability and gaps
+
+Supports the stiffened-gas form of the liquid law in Eq. (C5-E01); the parameters gamma = 4.4 and Pi = 600 MPa are project inputs. Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson.
+
+### Evidence review
+
+- Date read: 2026-10-18
+- Source read: https://api.crossref.org/works/10.1016%2Fj.ijthermalsci.2003.09.002
+- Locator: Crossref record: International Journal of Thermal Sciences (2004), authors Le Metayer, Massoni and Saurel
 
 ## 10.1016/j.jconrel.2009.05.026
 
@@ -2210,7 +2404,7 @@ A bubble-radius record does not establish a directed external jet, receiver impa
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.jmbbm.2024.106776&resultType=core&format=json
 - Locator: Indexed abstract: three matrices, concentration, droplet size, and core composition
 
@@ -3720,7 +3914,7 @@ The driving boundary was measured. A pressure-only spherical model lacks that sp
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/impulsively-actuated-jets-from-thin-liquid-films-for-highresolution-printing-applications/8B18A5957DC4317B99B9F4D2134259CC
 - Locator: Abstract: measured boundary motion and experimental comparison
 
@@ -3765,7 +3959,7 @@ Meniscus geometry and capillary confinement are prescribed. The study does not e
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fjfm.2013.26
 - Locator: Crossref abstract: pressure pulse, meniscus, and experimental comparison
 
@@ -3839,7 +4033,7 @@ The medium is intact and the cavity is spherical. Rupture, heterogeneous damage,
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fjfm.2015.7
 - Locator: Crossref abstract: constitutive framework and elastic forces
 
@@ -3916,7 +4110,7 @@ These are re-entrant collapse jets. External PFC transfer jets need their own bo
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fjfm.2016.463
 - Locator: Crossref abstract: jet drivers, high-speed visualizations, and three regimes
 
@@ -3961,7 +4155,7 @@ Optical breakdown in water differs from absorber-mediated PFC vaporization. Ener
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fjfm.2022.202
 - Locator: Crossref abstract: measurements and extended Gilmore energy balance
 
@@ -4120,7 +4314,7 @@ The bubble lies adjacent to an elastic boundary. An embedded finite-mass PFC inc
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fs0022112000003347
 - Locator: Crossref abstract: elastic boundary, photography, and jet directions
 
@@ -4244,7 +4438,7 @@ A slender jet must already exist. Its launch and receiver impact require separat
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fs0022112094000480
 - Locator: Crossref abstract: one-dimensional equations and experimental comparisons
 
@@ -4295,7 +4489,7 @@ A pressure impulse requires a specified geometry and pre-impact velocity field. 
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1017%2Fs0022112095003053
 - Locator: Crossref abstract: mathematical model and boundary conditions
 
@@ -4594,7 +4788,7 @@ Optical characterization refers to imaging. The driving mechanism is acoustic dr
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1021%2Facs.langmuir.4c05030&resultType=core&format=json
 - Locator: Indexed abstract: shell types, fibrin, microscopy, and ultrasound stimulation
 
@@ -4711,7 +4905,7 @@ Reported payload motion concerns acoustic activation in gel. It cannot calibrate
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://pubmed.ncbi.nlm.nih.gov/40910739/
 - Locator: Abstract and Figures 1, 3, 8, and 10
 
@@ -5058,7 +5252,7 @@ The measured interfaces involve PDMS, gold, and glass. Their fracture parameters
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://rogersgroup.northwestern.edu/files/2007/laprinting.pdf
 - Locator: Sections 2-3; printed pages 12556-12558
 
@@ -6893,8 +7087,8 @@ Healing occurs in a paste film. It does not establish recovery of a chemically c
 
 ### Evidence review
 
-- Date read: 2026-10-14
-- Source read: https://api.crossref.org/works/10.1063%2F1.5060717
+- Date read: 2026-10-18
+- Source read: Preserved local lesson citation
 - Locator: Crossref abstract: repeated same-spot printing and rheology modification
 
 ## 10.1063/5.0043822
@@ -6995,7 +7189,7 @@ The narrow near-wall regime is geometry-specific. Reported speeds cannot be assi
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1063%2F5.0045705
 - Locator: Crossref abstract: seeded bubbles, surface proximity, and imaging
 
@@ -7074,8 +7268,8 @@ The geometry concerns water droplets and emulsification. Stable project transfer
 
 ### Evidence review
 
-- Date read: 2026-10-14
-- Source read: https://api.crossref.org/works/10.1063%2F5.0123894
+- Date read: 2026-10-18
+- Source read: Preserved local lesson citation
 - Locator: Crossref abstract: three emulsification pathways
 
 ## 10.1063/5.0156507
@@ -7229,7 +7423,7 @@ Continuous-wave water heating has different absorption and incubation scales fro
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://arxiv.org/html/2310.09046v1
 - Locator: Sections 2 and 3: microchip, fiber positioning, imaging, and heat-transfer comparison
 
@@ -7462,7 +7656,7 @@ The mechanism uses a sealed composite stamp and water vapor. External PFC jettin
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1073%2Fpnas.2318739121&resultType=core&format=json
 - Locator: Abstract: composite reservoir, water phase change, and transfer demonstrations
 
@@ -8061,7 +8255,7 @@ Journal publication is 2025; the accepted-manuscript revision is dated 2026. Bre
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://arxiv.org/abs/2501.11029
 - Locator: Abstract; journal reference; revision history
 
@@ -8708,7 +8902,7 @@ Shock emission and jet impact are distinct receiver-load observables.
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://arxiv.org/abs/1708.04049
 - Locator: arXiv abstract
 
@@ -8782,7 +8976,7 @@ Numerical wall-jet benchmarks require matching geometry, compressibility, and re
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://arxiv.org/abs/2005.05733
 - Locator: arXiv abstract and related journal DOI
 
@@ -8949,7 +9143,7 @@ The experimental activation differs from laser/PFC arrays. Retain this as a benc
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1103%2Fphysrevlett.96.224501
 - Locator: text/03-arrays-finite-jets-and-impact.md, section on bubble interaction
 
@@ -8989,6 +9183,49 @@ Local citation locations:
 ### Applicability and gaps
 
 Project-specific thresholds and transfer performance remain unverified.
+
+## 10.1103/RevModPhys.61.75
+
+Individual record: [10.1103_RevModPhys.61.75.md](Theses/10.1103_RevModPhys.61.75.md)
+
+- Title: The Riemann problem for fluid flow of real materials
+- Authors: Ralph Menikoff; Bradley J. Plohr
+- Year: 1989
+- DOI: 10.1103/RevModPhys.61.75
+- arXiv ID/URL: Not yet checked
+- Source URL: https://doi.org/10.1103/RevModPhys.61.75
+- Record type: journal-article
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: I: metadata verified through Crossref; role in the lesson stated; contents not read
+- Access status: Metadata and abstract evidence; full-text access not verified.
+- Lesson mapping: Chapter 5
+
+### Two-sentence summary
+
+The review treats the Riemann problem and the shock jump relations for fluids with general equations of state.
+It is a theory review, and no new experiments were verified for this lesson.
+
+### Provenance
+
+Canonical metadata: https://api.crossref.org/works/10.1103%2Frevmodphys.61.75
+
+Venue: Reviews of Modern Physics
+
+Local citation locations:
+
+- `reference/sources.html:3`
+- `scripts/source_catalog.py:18`
+
+### Applicability and gaps
+
+Supports the Hugoniot construction of Chapter 5 Section 3. Used here only for the stated role; contents beyond title, authors, year and venue were not read for this lesson.
+
+### Evidence review
+
+- Date read: 2026-10-18
+- Source read: https://api.crossref.org/works/10.1103%2Frevmodphys.61.75
+- Locator: Crossref record: Reviews of Modern Physics 61 (1989), authors Menikoff and Plohr
 
 ## 10.1109/58.166815
 
@@ -10696,7 +10933,7 @@ The formulation uses micron-scale droplets and silica-coated PbS. The observed f
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1364%2FBOE.2.001432&resultType=core&format=json
 - Locator: Europe PMC DOI search: abstract methods
 
@@ -10829,7 +11066,7 @@ Clot disruption does not quantify transfer-jet launch, receiver loading, or prin
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://api.crossref.org/works/10.1364%2Fol.39.002599
 - Locator: Preserved course source, reference R7
 
@@ -10976,7 +11213,7 @@ Table 3 lists PFH properties at two temperatures. It does not establish high-tem
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.jasma.info/journal/wp-content/uploads/sites/2/2016/01/2016_p3301061.pdf
 - Locator: Page 1 abstract; pages 2-3 and Table 3
 
@@ -11653,7 +11890,7 @@ This supports geometry-dependent channel formation in collagen. A reproducible P
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://pdfs.semanticscholar.org/75a7/e94d101a157e2f6165db68e72df7b01c9d42.pdf
 - Locator: Pages 1-4: abstract, introduction, and channel-formation results
 
@@ -11763,7 +12000,7 @@ Population ultrasound onset differs from single-inclusion activation. Shell, tem
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.3390%2Fnano13152238&resultType=core&format=json
 - Locator: Indexed abstract: thresholds, shells, preconditioning, and lifetimes
 
@@ -12136,6 +12373,42 @@ Local citation locations:
 
 Project-specific thresholds and transfer performance remain unverified.
 
+## 1703.01088
+
+Individual record: [arxiv_1703.01088.md](Theses/arxiv_1703.01088.md)
+
+- Title: Unverified; identifier imported from project citations.
+- Authors: Unverified
+- Year: Unverified
+- DOI: Unavailable; see stable source identifier
+- arXiv ID/URL: https://arxiv.org/abs/1703.01088
+- Source URL: https://arxiv.org/abs/1703.01088
+- Record type: preprint
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: Unverified imported lead
+- Access status: Metadata only; full-text access not yet checked.
+- Lesson mapping: Background or peripheral citation; placement unreviewed.
+
+### Two-sentence summary
+
+Background and theory remain unverified pending a readable primary source.
+Experiments performed remain unverified pending methods or explicit abstract evidence.
+
+### Provenance
+
+Local citation locations:
+
+- `reference/sources.html:3`
+- `reference/sources.html:3`
+- `reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3`
+- `reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3`
+- `scripts/source_catalog.py:5`
+
+### Applicability and gaps
+
+Project-specific thresholds and transfer performance remain unverified.
+
 ## 1707.04620
 
 Individual record: [arxiv_1707.04620.md](Theses/arxiv_1707.04620.md)
@@ -12167,6 +12440,51 @@ Local citation locations:
 - `reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:184`
 - `reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:928`
 - `reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:928`
+
+### Applicability and gaps
+
+Project-specific thresholds and transfer performance remain unverified.
+
+## 1708.04049
+
+Individual record: [arxiv_1708.04049.md](Theses/arxiv_1708.04049.md)
+
+- Title: Unverified; identifier imported from project citations.
+- Authors: Unverified
+- Year: Unverified
+- DOI: Unavailable; see stable source identifier
+- arXiv ID/URL: https://arxiv.org/abs/1708.04049
+- Source URL: https://arxiv.org/abs/1708.04049
+- Record type: preprint
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: Unverified imported lead
+- Access status: Metadata only; full-text access not yet checked.
+- Lesson mapping: Background or peripheral citation; placement unreviewed.
+
+### Two-sentence summary
+
+Background and theory remain unverified pending a readable primary source.
+Experiments performed remain unverified pending methods or explicit abstract evidence.
+
+### Provenance
+
+Local citation locations:
+
+- `reports/Cavitation_Limits_20261011/DERIVATION.tex:860`
+- `reports/Cavitation_Limits_20261011/READER.html:424`
+- `reports/Cavitation_Limits_20261011/REPORT.md:580`
+- `reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:860`
+- `reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:424`
+- `reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:580`
+- `reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.json:1218`
+- `reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182`
+- `reports/Cavitation_Limits_20261011/expert_resolution/NEXT_AGENT_HANDOFF.md:227`
+- `reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:187`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:860`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:580`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:217`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:232`
 
 ### Applicability and gaps
 
@@ -12205,6 +12523,51 @@ Local citation locations:
 - `reports/Cavitation_Limits_20261011/full_closure/solver/references/PROVENANCE.json:11`
 - `reports/Cavitation_Limits_20261011/full_closure/verification/V1_PREREGISTRATION.json:6`
 - `reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/solver/references/PROVENANCE.json.txt:11`
+
+### Applicability and gaps
+
+Project-specific thresholds and transfer performance remain unverified.
+
+## 2005.05733
+
+Individual record: [arxiv_2005.05733.md](Theses/arxiv_2005.05733.md)
+
+- Title: Unverified; identifier imported from project citations.
+- Authors: Unverified
+- Year: Unverified
+- DOI: Unavailable; see stable source identifier
+- arXiv ID/URL: https://arxiv.org/abs/2005.05733
+- Source URL: https://arxiv.org/abs/2005.05733
+- Record type: preprint
+- Date searched: 2026-10-18
+- Record origin: Existing project citation
+- Evidence level: Unverified imported lead
+- Access status: Metadata only; full-text access not yet checked.
+- Lesson mapping: Background or peripheral citation; placement unreviewed.
+
+### Two-sentence summary
+
+Background and theory remain unverified pending a readable primary source.
+Experiments performed remain unverified pending methods or explicit abstract evidence.
+
+### Provenance
+
+Local citation locations:
+
+- `reports/Cavitation_Limits_20261011/DERIVATION.tex:839`
+- `reports/Cavitation_Limits_20261011/READER.html:418`
+- `reports/Cavitation_Limits_20261011/REPORT.md:568`
+- `reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:839`
+- `reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:418`
+- `reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:568`
+- `reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.json:1223`
+- `reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182`
+- `reports/Cavitation_Limits_20261011/expert_resolution/NEXT_AGENT_HANDOFF.md:227`
+- `reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:189`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:839`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:568`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:67`
+- `reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:82`
 
 ### Applicability and gaps
 
@@ -12393,7 +12756,7 @@ The modeled system is water in oil. PFC properties and gel constitutive laws req
 
 ### Evidence review
 
-- Date read: 2026-10-14
+- Date read: 2026-10-18
 - Source read: https://arxiv.org/abs/2404.17457
 - Locator: Abstract: motion, thermodynamics, convection-diffusion, and complete vaporization
 

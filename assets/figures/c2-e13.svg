@@ -1,50 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E13 Water provides a matched-temperature reference, not a guaranteed vapor reservoir.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E13 | Physical-variable diagram</text>
-<rect x="80" y="140" width="300" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="92" y="169.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Liquid | vapor equilibrium</text>
-<line x1="520" y1="325" x2="885" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="520" y1="325" x2="520" y2="125" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="807" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Temperature</text>
-<text x="512" y="113.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Saturation pressure</text>
-<line x1="525" y1="315" x2="536.667" y2="314.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="536.667" y1="314.8" x2="548.333" y2="314.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="548.333" y1="314.2" x2="560" y2="313.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="560" y1="313.2" x2="571.667" y2="311.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="571.667" y1="311.8" x2="583.333" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="583.333" y1="310" x2="595" y2="307.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="595" y1="307.8" x2="606.667" y2="305.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="606.667" y1="305.2" x2="618.333" y2="302.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="618.333" y1="302.2" x2="630" y2="298.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="630" y1="298.8" x2="641.667" y2="295" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="641.667" y1="295" x2="653.333" y2="290.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="653.333" y1="290.8" x2="665" y2="286.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="665" y1="286.2" x2="676.667" y2="281.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="676.667" y1="281.2" x2="688.333" y2="275.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="688.333" y1="275.8" x2="700" y2="270" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="700" y1="270" x2="711.667" y2="263.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="711.667" y1="263.8" x2="723.333" y2="257.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="723.333" y1="257.2" x2="735" y2="250.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="735" y1="250.2" x2="746.667" y2="242.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="746.667" y1="242.8" x2="758.333" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="758.333" y1="235" x2="770" y2="226.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="770" y1="226.8" x2="781.667" y2="218.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="781.667" y1="218.2" x2="793.333" y2="209.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="793.333" y1="209.2" x2="805" y2="199.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="805" y1="199.8" x2="816.667" y2="190" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="816.667" y1="190" x2="828.333" y2="179.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="828.333" y1="179.8" x2="840" y2="169.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="840" y1="169.2" x2="851.667" y2="158.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="851.667" y1="158.2" x2="863.333" y2="146.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="863.333" y1="146.8" x2="875" y2="135" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<text x="82" y="304.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Schematic trend within stated fit ranges</text>
-<text x="82" y="270.52" font-family="Arial,sans-serif" font-size="19" fill="#F6BC77">Not an activation threshold</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T: water temperature</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">273–303 K; 304–333 K: separate branches</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">5.40221, 1838.675 K, 31.737 K</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_sat,w: water equilibrium pressure</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">10⁵ Pa: pressure reference</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">5.20389, 1733.926 K, 39.485 K</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Use the coefficient branch belonging to the temperature</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The hot PFC and carrier may have different local temperatures</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E13</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E13 · Verified empirical water property correlations</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="787.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">270</tspan>
+</text>
+<line id="o006" x1="194.743" y1="528" x2="194.743" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="194.743" y1="144" x2="194.743" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="194.743" y="550.04">280</tspan>
+</text>
+<line id="o009" x1="293.486" y1="528" x2="293.486" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="293.486" y1="144" x2="293.486" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="293.486" y="550.04">290</tspan>
+</text>
+<line id="o012" x1="392.229" y1="528" x2="392.229" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="392.229" y1="144" x2="392.229" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="392.229" y="550.04">300</tspan>
+</text>
+<line id="o015" x1="490.971" y1="528" x2="490.971" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="490.971" y1="144" x2="490.971" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="490.971" y="550.04">310</tspan>
+</text>
+<line id="o018" x1="589.714" y1="528" x2="589.714" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="589.714" y1="144" x2="589.714" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="589.714" y="550.04">320</tspan>
+</text>
+<line id="o021" x1="688.457" y1="528" x2="688.457" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="688.457" y1="144" x2="688.457" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="688.457" y="550.04">330</tspan>
+</text>
+<line id="o024" x1="787.2" y1="528" x2="787.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="787.2" y1="144" x2="787.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="787.2" y="550.04">340</tspan>
+</text>
+<line id="o027" x1="89.28" y1="478.658" x2="96" y2="478.658" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="96" y1="478.658" x2="787.2" y2="478.658" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="483.418">0.01</tspan>
+</text>
+<line id="o030" x1="89.28" y1="354.663" x2="96" y2="354.663" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="96" y1="354.663" x2="787.2" y2="354.663" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="359.423">0.1</tspan>
+</text>
+<line id="o033" x1="89.28" y1="230.668" x2="96" y2="230.668" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o034" x1="96" y1="230.668" x2="787.2" y2="230.668" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="235.428">1</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="441.6" y="572.8">temperature T  (K)</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">pₛₐₜ  (bar)</tspan>
+</text>
+<polyline id="o038" points="125.623,505.791 128.615,504.606 131.607,503.424 134.599,502.244 137.592,501.068 140.584,499.894 143.576,498.723 146.568,497.555 149.561,496.391 152.553,495.229 155.545,494.07 158.537,492.913 161.529,491.76 164.522,490.61 167.514,489.462 170.506,488.317 173.498,487.175 176.49,486.036 179.483,484.9 182.475,483.766 185.467,482.635 188.459,481.507 191.451,480.382 194.444,479.259 197.436,478.139 200.428,477.022 203.42,475.908 206.412,474.796 209.405,473.687 212.397,472.581 215.389,471.477 218.381,470.377 221.374,469.278 224.366,468.183 227.358,467.09 230.35,465.999 233.342,464.912 236.335,463.826 239.327,462.744 242.319,461.664 245.311,460.587 248.303,459.512 251.296,458.44 254.288,457.37 257.28,456.303 260.272,455.238 263.264,454.176 266.257,453.117 269.249,452.06 272.241,451.005 275.233,449.953 278.225,448.904 281.218,447.857 284.21,446.812 287.202,445.77 290.194,444.73 293.186,443.693 296.179,442.658 299.171,441.626 302.163,440.596 305.155,439.568 308.148,438.543 311.14,437.52 314.132,436.5 317.124,435.482 320.116,434.466 323.109,433.453 326.101,432.442 329.093,431.433 332.085,430.427 335.077,429.423 338.07,428.421 341.062,427.422 344.054,426.425 347.046,425.43 350.038,424.438 353.031,423.448 356.023,422.46 359.015,421.474 362.007,420.491 364.999,419.509 367.992,418.531 370.984,417.554 373.976,416.579 376.968,415.607 379.961,414.637 382.953,413.669 385.945,412.704 388.937,411.74 391.929,410.779 394.922,409.82 397.914,408.863 400.906,407.908 403.898,406.955 406.89,406.005 409.883,405.056 412.875,404.11 415.867,403.166 418.859,402.224 421.851,401.284" fill="none" stroke="#7FC8F8" stroke-width="4" opacity="1"/>
+<polyline id="o039" points="431.726,398.213 434.618,397.314 437.511,396.417 440.403,395.522 443.296,394.628 446.188,393.737 449.081,392.848 451.973,391.961 454.865,391.075 457.758,390.192 460.65,389.31 463.543,388.431 466.435,387.553 469.328,386.678 472.22,385.804 475.113,384.932 478.005,384.062 480.898,383.194 483.79,382.328 486.683,381.463 489.575,380.601 492.468,379.74 495.36,378.881 498.252,378.025 501.145,377.17 504.037,376.316 506.93,375.465 509.822,374.616 512.715,373.768 515.607,372.922 518.5,372.078 521.392,371.236 524.285,370.395 527.177,369.557 530.07,368.72 532.962,367.885 535.855,367.051 538.747,366.22 541.639,365.39 544.532,364.562 547.424,363.736 550.317,362.911 553.209,362.089 556.102,361.268 558.994,360.448 561.887,359.631 564.779,358.815 567.672,358.001 570.564,357.188 573.457,356.378 576.349,355.569 579.242,354.761 582.134,353.956 585.026,353.152 587.919,352.35 590.811,351.549 593.704,350.75 596.596,349.953 599.489,349.157 602.381,348.364 605.274,347.571 608.166,346.781 611.059,345.992 613.951,345.204 616.844,344.419 619.736,343.634 622.629,342.852 625.521,342.071 628.414,341.292 631.306,340.514 634.198,339.738 637.091,338.964 639.983,338.191 642.876,337.42 645.768,336.65 648.661,335.882 651.553,335.115 654.446,334.35 657.338,333.587 660.231,332.825 663.123,332.064 666.016,331.306 668.908,330.548 671.801,329.793 674.693,329.039 677.585,328.286 680.478,327.535 683.37,326.785 686.263,326.037 689.155,325.29 692.048,324.545 694.94,323.802 697.833,323.06 700.725,322.319 703.618,321.58 706.51,320.842 709.403,320.106 712.295,319.371 715.188,318.638 718.08,317.906" fill="none" stroke="#7FC8F8" stroke-width="4" opacity="1"/>
+<polyline id="o040" points="222.588,272.049 228.086,270.762 233.584,269.482 239.081,268.207 244.579,266.938 250.077,265.674 255.574,264.417 261.072,263.165 266.57,261.918 272.067,260.677 277.565,259.442 283.063,258.213 288.561,256.988 294.058,255.77 299.556,254.556 305.054,253.348 310.551,252.146 316.049,250.948 321.547,249.756 327.044,248.569 332.542,247.388 338.04,246.211 343.537,245.04 349.035,243.874 354.533,242.713 360.03,241.556 365.528,240.405 371.026,239.259 376.523,238.118 382.021,236.982 387.519,235.85 393.017,234.723 398.514,233.602 404.012,232.485 409.51,231.372 415.007,230.265 420.505,229.162 426.003,228.064 431.5,226.97 436.998,225.881 442.496,224.797 447.993,223.717 453.491,222.641 458.989,221.57 464.486,220.504 469.984,219.442 475.482,218.384 480.979,217.331 486.477,216.282 491.975,215.238 497.472,214.198 502.97,213.162 508.468,212.13 513.966,211.102 519.463,210.079 524.961,209.06 530.459,208.045 535.956,207.034 541.454,206.027 546.952,205.024 552.449,204.025 557.947,203.031 563.445,202.04 568.942,201.053 574.44,200.07 579.938,199.091 585.435,198.116 590.933,197.145 596.431,196.178 601.928,195.214 607.426,194.255 612.924,193.299 618.422,192.347 623.919,191.398 629.417,190.454 634.915,189.513 640.412,188.575 645.91,187.642 651.408,186.712 656.905,185.785 662.403,184.863 667.901,183.943 673.398,183.028 678.896,182.115 684.394,181.207 689.891,180.301 695.389,179.4 700.887,178.501 706.384,177.607 711.882,176.715 717.38,175.827 722.878,174.942 728.375,174.061 733.873,173.183 739.371,172.308 744.868,171.437 750.366,170.569 755.864,169.704 761.361,168.842 766.859,167.984" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<rect id="o041" x="421.851" y="144" width="9.87429" height="384" fill="#F28BA0" stroke="#F28BA0" stroke-width="0" opacity="0.25"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="260.709" y="200.998">gap 303–304 K:</tspan>
+<tspan x="260.709" y="219.091">no value assigned</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="125.349" y="447.318">water (two fitted branches)</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="609.189" y="168.223">PFP</tspan>
+</text>
+<ellipse id="o045" cx="620.818" cy="343.342" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="16" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="497.938" y="315.182">0.12 bar</tspan>
+</text>
+<ellipse id="o047" cx="620.818" cy="191.933" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="497.938" y="163.773">2.05 bar</tspan>
+</text>
+<rect id="o049" x="816" y="144" width="427.2" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="829.44" y="166.44">A reference, not a reservoir</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="853.44" y="207.587">Water is the matched-temperature</tspan>
+<tspan x="853.44" y="227.253">comparison: 0.12 bar at 323 K against 2.05</tspan>
+<tspan x="853.44" y="246.92">bar for PFP.</tspan>
+</text>
+<ellipse id="o052" cx="838.08" cy="202.333" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o053" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="853.44" y="278.187">Each water branch is valid only inside its</tspan>
+<tspan x="853.44" y="297.853">own interval, 273–303 K and 304–333 K.</tspan>
+</text>
+<ellipse id="o054" cx="838.08" cy="272.933" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o055" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="853.44" y="328.453">The formulas give equilibrium values; they</tspan>
+<tspan x="853.44" y="348.12">do not promise that vapor is available.</tspan>
+</text>
+<ellipse id="o056" cx="838.08" cy="323.2" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o057" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Both correlations use log₁₀(p / 10⁵ Pa) = A − B / (T − C) with different A, B, C for each substance and branch.</tspan>
+</text>
+<text id="o058" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Correlations of Eqs. C2-E12 and C2-E13 (log scale).</tspan>
+</text>
 </svg>

@@ -7,7 +7,7 @@ const root=path.resolve(__dirname,'..');
   const es=JSON.parse(fs.readFileSync(path.join(root,'verification/equations.json'),'utf8'));
   const types=['sphere','energy','impulse','laser','phase','nucleation','array','jet','impact','film','cohesive','gel','timescale'];
   const selected=[...types.map(t=>es.find(e=>e.diagram.type===t)).filter(Boolean)];
-  for(const id of ['C1-E20','C1-E28','C2-E09','C3-E22','C4-E07','C4-E08','C4-E13','C4-E40','C4-E41','C5-E01','C5-E07','C5-E18','C5-E20']){
+  for(const id of ['C1-E20','C1-E28','C2-E09','C3-E22','C4-E07','C4-E08','C4-E13','C4-E40','C4-E41','A-E01','A-E07','A-E18','A-E20']){
     const eq=es.find(e=>e.id===id);if(eq&&!selected.some(e=>e.id===id))selected.push(eq);
   }
   const width=620,pad=24,header=34;

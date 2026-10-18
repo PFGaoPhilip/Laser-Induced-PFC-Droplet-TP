@@ -1,132 +1,78 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E32</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E32 · Reference answer: original finite-mass and growth formulas</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E32 · Reference answer: original finite-mass and growth formulas</tspan>
 </text>
-<rect id="o001" x="76.8" y="158.4" width="518.4" height="76.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="105.6" y1="196.8" x2="556.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="156.48" y="135.12">Finite emitted liquid: m_j, E_j, U_j</tspan>
+<line id="o001" x1="912" y1="475.2" x2="1228.8" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="912" y1="187.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="912" y1="475.2" x2="912" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="912" y1="187.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="912" y="497.24">0e+00</tspan>
 </text>
-<line id="o004" x1="76.8" y1="273.6" x2="595.2" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="307.613">L_j</tspan>
+<line id="o006" x1="1056" y1="475.2" x2="1056" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="1056" y1="187.2" x2="1056" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1056" y="497.24">1e-10</tspan>
 </text>
-<line id="o006" x1="48" y1="158.4" x2="48" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="17.28" y="270.693">d_j = 2a_j</tspan>
+<line id="o009" x1="1200" y1="475.2" x2="1200" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="1200" y1="187.2" x2="1200" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1200" y="497.24">2e-10</tspan>
 </text>
-<line id="o008" x1="604.8" y1="196.8" x2="1104" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o009" x="1113.6" y="110.4" width="19.2" height="230.4" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="770.88" y="264.413">Gap H</tspan>
+<line id="o012" x1="905.28" y1="475.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="905.28" y1="379.2" x2="912" y2="379.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="912" y1="379.2" x2="1228.8" y2="379.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="383.96">2</tspan>
 </text>
-<line id="o011" x1="624" y1="148.8" x2="630.24" y2="148.839" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o012" x1="630.24" y1="148.839" x2="636.48" y2="149.617" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o013" x1="636.48" y1="149.617" x2="642.72" y2="151.119" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o014" x1="642.72" y1="151.119" x2="648.96" y2="153.272" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o015" x1="648.96" y1="153.272" x2="655.2" y2="155.947" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o016" x1="655.2" y1="155.947" x2="661.44" y2="158.967" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o017" x1="661.44" y1="158.967" x2="667.68" y2="162.116" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o018" x1="667.68" y1="162.116" x2="673.92" y2="165.157" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o019" x1="673.92" y1="165.157" x2="680.16" y2="167.851" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o020" x1="680.16" y1="167.851" x2="686.4" y2="169.972" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o021" x1="686.4" y1="169.972" x2="692.64" y2="171.327" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o022" x1="692.64" y1="171.327" x2="698.88" y2="171.775" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o023" x1="698.88" y1="171.775" x2="705.12" y2="171.237" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o024" x1="705.12" y1="171.237" x2="711.36" y2="169.707" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o025" x1="711.36" y1="169.707" x2="717.6" y2="167.256" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o026" x1="717.6" y1="167.256" x2="723.84" y2="164.029" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o027" x1="723.84" y1="164.029" x2="730.08" y2="160.236" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o028" x1="730.08" y1="160.236" x2="736.32" y2="156.141" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o029" x1="736.32" y1="156.141" x2="742.56" y2="152.041" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o030" x1="742.56" y1="152.041" x2="748.8" y2="148.245" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o031" x1="748.8" y1="148.245" x2="755.04" y2="145.053" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o032" x1="755.04" y1="145.053" x2="761.28" y2="142.73" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o033" x1="761.28" y1="142.73" x2="767.52" y2="141.485" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o034" x1="767.52" y1="141.485" x2="773.76" y2="141.454" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o035" x1="773.76" y1="141.454" x2="780" y2="142.683" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o036" x1="780" y1="142.683" x2="786.24" y2="145.128" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o037" x1="786.24" y1="145.128" x2="792.48" y2="148.65" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o038" x1="792.48" y1="148.65" x2="798.72" y2="153.022" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o039" x1="798.72" y1="153.022" x2="804.96" y2="157.947" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o040" x1="804.96" y1="157.947" x2="811.2" y2="163.076" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o041" x1="811.2" y1="163.076" x2="817.44" y2="168.032" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o042" x1="817.44" y1="168.032" x2="823.68" y2="172.438" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o043" x1="823.68" y1="172.438" x2="829.92" y2="175.947" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o044" x1="829.92" y1="175.947" x2="836.16" y2="178.27" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o045" x1="836.16" y1="178.27" x2="842.4" y2="179.193" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o046" x1="842.4" y1="179.193" x2="848.64" y2="178.606" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o047" x1="848.64" y1="178.606" x2="854.88" y2="176.505" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o048" x1="854.88" y1="176.505" x2="861.12" y2="173.001" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o049" x1="861.12" y1="173.001" x2="867.36" y2="168.313" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o050" x1="867.36" y1="168.313" x2="873.6" y2="162.753" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o051" x1="873.6" y1="162.753" x2="879.84" y2="156.711" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o052" x1="879.84" y1="156.711" x2="886.08" y2="150.62" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o053" x1="886.08" y1="150.62" x2="892.32" y2="144.933" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o054" x1="892.32" y1="144.933" x2="898.56" y2="140.082" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o055" x1="898.56" y1="140.082" x2="904.8" y2="136.45" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o056" x1="904.8" y1="136.45" x2="911.04" y2="134.34" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o057" x1="911.04" y1="134.34" x2="917.28" y2="133.948" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o058" x1="917.28" y1="133.948" x2="923.52" y2="135.349" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o059" x1="923.52" y1="135.349" x2="929.76" y2="138.485" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o060" x1="929.76" y1="138.485" x2="936" y2="143.17" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o061" x1="936" y1="143.17" x2="942.24" y2="149.095" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o062" x1="942.24" y1="149.095" x2="948.48" y2="155.854" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o063" x1="948.48" y1="155.854" x2="954.72" y2="162.968" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o064" x1="954.72" y1="162.968" x2="960.96" y2="169.918" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o065" x1="960.96" y1="169.918" x2="967.2" y2="176.188" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o066" x1="967.2" y1="176.188" x2="973.44" y2="181.299" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o067" x1="973.44" y1="181.299" x2="979.68" y2="184.844" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o068" x1="979.68" y1="184.844" x2="985.92" y2="186.528" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o069" x1="985.92" y1="186.528" x2="992.16" y2="186.181" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o070" x1="992.16" y1="186.181" x2="998.4" y2="183.784" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o071" x1="998.4" y1="183.784" x2="1004.64" y2="179.466" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o072" x1="1004.64" y1="179.466" x2="1010.88" y2="173.505" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o073" x1="1010.88" y1="173.505" x2="1017.12" y2="166.302" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o074" x1="1017.12" y1="166.302" x2="1023.36" y2="158.363" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o075" x1="1023.36" y1="158.363" x2="1029.6" y2="150.255" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o076" x1="1029.6" y1="150.255" x2="1035.84" y2="142.573" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o077" x1="1035.84" y1="142.573" x2="1042.08" y2="135.892" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o078" x1="1042.08" y1="135.892" x2="1048.32" y2="130.723" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o079" x1="1048.32" y1="130.723" x2="1054.56" y2="127.481" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o080" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="617.28" y="111.12">δ₀ → δ_arr during H/U_j</tspan>
+<line id="o016" x1="905.28" y1="283.2" x2="912" y2="283.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="912" y1="283.2" x2="1228.8" y2="283.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="287.96">4</tspan>
 </text>
-<text id="o081" font-family="Arial,sans-serif" font-size="21.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="118.08" y="379.307">Linear growth applies while disturbances remain small relative to radius.</tspan>
+<line id="o019" x1="905.28" y1="187.2" x2="912" y2="187.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="912" y1="187.2" x2="1228.8" y2="187.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="191.96">6</tspan>
 </text>
-<line id="o082" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o083" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• m_j finite liquid mass</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1070.4" y="520">Pⱼ  (N s)</tspan>
 </text>
-<text id="o084" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• E_avail, E_j energy budget</tspan>
+<text id="o023" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="856.32" y="165.76">Eⱼ  (nJ)</tspan>
 </text>
-<text id="o085" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• U_rms, U_j velocities</tspan>
+<polyline id="o024" points="912,475.2 915.2,475.17 918.4,475.079 921.6,474.928 924.8,474.717 928,474.445 931.2,474.114 934.4,473.721 937.6,473.268 940.8,472.755 944,472.182 947.2,471.548 950.4,470.854 953.6,470.099 956.8,469.285 960,468.409 963.2,467.474 966.4,466.478 969.6,465.422 972.8,464.305 976,463.128 979.2,461.89 982.4,460.593 985.6,459.235 988.8,457.816 992,456.337 995.2,454.798 998.4,453.198 1001.6,451.538 1004.8,449.818 1008,448.038 1011.2,446.197 1014.4,444.295 1017.6,442.333 1020.8,440.311 1024,438.229 1027.2,436.086 1030.4,433.883 1033.6,431.619 1036.8,429.295 1040,426.911 1043.2,424.467 1046.4,421.962 1049.6,419.396 1052.8,416.771 1056,414.085 1059.2,411.338 1062.4,408.531 1065.6,405.664 1068.8,402.737 1072,399.749 1075.2,396.701 1078.4,393.592 1081.6,390.423 1084.8,387.194 1088,383.904 1091.2,380.554 1094.4,377.144 1097.6,373.673 1100.8,370.142 1104,366.55 1107.2,362.898 1110.4,359.186 1113.6,355.414 1116.8,351.581 1120,347.687 1123.2,343.734 1126.4,339.72 1129.6,335.645 1132.8,331.511 1136,327.316 1139.2,323.06 1142.4,318.744 1145.6,314.368 1148.8,309.932 1152,305.435 1155.2,300.877 1158.4,296.26 1161.6,291.582 1164.8,286.844 1168,282.045 1171.2,277.186 1174.4,272.266 1177.6,267.287 1180.8,262.246 1184,257.146 1187.2,251.985 1190.4,246.764 1193.6,241.482 1196.8,236.14 1200,230.738 1203.2,225.275 1206.4,219.752 1209.6,214.169 1212.8,208.525 1216,202.821 1219.2,197.057 1222.4,191.232" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polygon id="o025" points="912,187.2 915.2,187.2 918.4,187.2 921.6,187.2 924.8,187.2 928,187.2 931.2,187.2 934.4,187.2 937.6,187.2 940.8,187.2 944,187.2 947.2,187.2 950.4,187.2 953.6,187.2 956.8,187.2 960,187.2 963.2,187.2 966.4,187.2 969.6,187.2 972.8,187.2 976,187.2 979.2,187.2 982.4,187.2 985.6,187.2 988.8,187.2 992,187.2 995.2,187.2 998.4,187.2 1001.6,187.2 1004.8,187.2 1008,187.2 1011.2,187.2 1014.4,187.2 1017.6,187.2 1020.8,187.2 1024,187.2 1027.2,187.2 1030.4,187.2 1033.6,187.2 1036.8,187.2 1040,187.2 1043.2,187.2 1046.4,187.2 1049.6,187.2 1052.8,187.2 1056,187.2 1059.2,187.2 1062.4,187.2 1065.6,187.2 1068.8,187.2 1072,187.2 1075.2,187.2 1078.4,187.2 1081.6,187.2 1084.8,187.2 1088,187.2 1091.2,187.2 1094.4,187.2 1097.6,187.2 1100.8,187.2 1104,187.2 1107.2,187.2 1110.4,187.2 1113.6,187.2 1116.8,187.2 1120,187.2 1123.2,187.2 1126.4,187.2 1129.6,187.2 1132.8,187.2 1136,187.2 1139.2,187.2 1142.4,187.2 1145.6,187.2 1148.8,187.2 1152,187.2 1155.2,187.2 1158.4,187.2 1161.6,187.2 1164.8,187.2 1168,187.2 1171.2,187.2 1174.4,187.2 1177.6,187.2 1180.8,187.2 1184,187.2 1187.2,187.2 1190.4,187.2 1193.6,187.2 1196.8,187.2 1200,187.2 1203.2,187.2 1206.4,187.2 1209.6,187.2 1212.8,187.2 1216,187.2 1219.2,187.2 1222.4,187.2 1225.6,187.2 1228.8,187.2 1228.8,187.2 1225.6,187.2 1222.4,191.232 1219.2,197.057 1216,202.821 1212.8,208.525 1209.6,214.169 1206.4,219.752 1203.2,225.275 1200,230.738 1196.8,236.14 1193.6,241.482 1190.4,246.764 1187.2,251.985 1184,257.146 1180.8,262.246 1177.6,267.287 1174.4,272.266 1171.2,277.186 1168,282.045 1164.8,286.844 1161.6,291.582 1158.4,296.26 1155.2,300.877 1152,305.435 1148.8,309.932 1145.6,314.368 1142.4,318.744 1139.2,323.06 1136,327.316 1132.8,331.511 1129.6,335.645 1126.4,339.72 1123.2,343.734 1120,347.687 1116.8,351.581 1113.6,355.414 1110.4,359.186 1107.2,362.898 1104,366.55 1100.8,370.142 1097.6,373.673 1094.4,377.144 1091.2,380.554 1088,383.904 1084.8,387.194 1081.6,390.423 1078.4,393.592 1075.2,396.701 1072,399.749 1068.8,402.737 1065.6,405.664 1062.4,408.531 1059.2,411.338 1056,414.085 1052.8,416.771 1049.6,419.396 1046.4,421.962 1043.2,424.467 1040,426.911 1036.8,429.295 1033.6,431.619 1030.4,433.883 1027.2,436.086 1024,438.229 1020.8,440.311 1017.6,442.333 1014.4,444.295 1011.2,446.197 1008,448.038 1004.8,449.818 1001.6,451.538 998.4,453.198 995.2,454.798 992,456.337 988.8,457.816 985.6,459.235 982.4,460.593 979.2,461.89 976,463.128 972.8,464.305 969.6,465.422 966.4,466.478 963.2,467.474 960,468.409 956.8,469.285 953.6,470.099 950.4,470.854 947.2,471.548 944,472.182 940.8,472.755 937.6,473.268 934.4,473.721 931.2,474.114 928,474.445 924.8,474.717 921.6,474.928 918.4,475.079 915.2,475.17 912,475.2" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.06667" opacity="0.18"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="808.32" y="116.933">P² ≤ 2mE: the allowed region</tspan>
 </text>
-<text id="o086" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• P_j useful axial momentum</tspan>
+<rect id="o027" x="38.4" y="96" width="739.2" height="182.4" rx="14.592" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Bounds from finite mass</tspan>
 </text>
-<text id="o087" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• a₀, δ₀ → δ_arr</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="161.227">Uᵣₘₛ ≤ √(2Eₐᵥₐᵢₗ / mⱼ),    Pⱼ² ≤ 2 mⱼ Eⱼ</tspan>
 </text>
-<text id="o088" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• H flight gap; g_max growth</tspan>
+<rect id="o030" x="38.4" y="297.6" width="739.2" height="163.2" rx="13.056" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="320.04">Growth during flight</tspan>
 </text>
-<text id="o089" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• exp(g_max H/U_j) flight amplification</tspan>
+<text id="o032" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="362.827">δₐᵣᵣ / a₀ = (δ₀/a₀) exp(gₘₐₓ H / Uⱼ)</tspan>
 </text>
-<text id="o090" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Fastest tip speed differs from a finite-mass velocity</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="54.72" y="418.24">gₘₐₓ is the fastest inviscid growth rate of a cylinder.</tspan>
 </text>
-<text id="o091" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Coherent arrival depends on initial disturbance and finite geometry</tspan>
+<text id="o034" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="40.32" y="529.733">Speed, focusing and survival must all refer to the same emitted liquid state: the same mⱼ, Eⱼ and Uⱼ.</tspan>
 </text>
-<text id="o092" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o035" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="586.787">Teaching case: mⱼ = 3.927 ng, Eⱼ = 2 nJ gives Uᵣₘₛ ≤ 31.9 m/s and Pⱼ ≤ 1.253×10⁻¹⁰ N s; flight 3.13 µs → δ/a₀ grows from 1 % to 2.26 %.</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reference formulas of the Defence 2 answer: Eqs. C3-E18, E21, E22.</tspan>
 </text>
 </svg>

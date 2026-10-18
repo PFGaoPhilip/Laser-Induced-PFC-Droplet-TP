@@ -1,61 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E28</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E28 · Finite incoming state inherited from the teaching source</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E28 · Finite incoming state inherited from the teaching source</tspan>
 </text>
-<rect id="o001" x="76.8" y="158.4" width="518.4" height="76.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="105.6" y1="196.8" x2="556.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="156.48" y="135.12">Finite emitted liquid: m_j, E_j, U_j</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">The jet that arrives at the film (inherited from Chapter 3)</tspan>
 </text>
-<line id="o004" x1="76.8" y1="273.6" x2="595.2" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="307.613">L_j</tspan>
+<rect id="o002" x="76.8" y="163.2" width="480" height="86.4" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="3.2" opacity="1"/>
+<line id="o003" x1="566.4" y1="206.4" x2="662.4" y2="206.4" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o004" x1="76.8" y1="283.2" x2="556.8" y2="283.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o005" x1="76.8" y1="276.48" x2="76.8" y2="289.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o006" x1="556.8" y1="276.48" x2="556.8" y2="289.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="316.8" y="269.44">Lⱼ = 50 µm</tspan>
 </text>
-<line id="o006" x1="48" y1="158.4" x2="48" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="17.28" y="270.693">d_j = 2a_j</tspan>
+<rect id="o008" x="48" y="326.4" width="283.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="17.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="348.293">mass</tspan>
 </text>
-<line id="o008" x1="643.2" y1="196.8" x2="1132.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o009" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="674.88" y="153.6">Finite mass defines speed</tspan>
-<tspan x="674.88" y="185.067">and useful momentum.</tspan>
+<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="190.08" y="388.893">mⱼ = ρπdⱼ²Lⱼ/4</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="26.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="674.88" y="278.4">P_j² ≤ 2 m_j E_j</tspan>
-<tspan x="674.88" y="309.867">E_j ≤ E_avail</tspan>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="190.08" y="456.093">3.926990817e-12 kg</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• N = 25 — independent cells</tspan>
+<rect id="o012" x="345.6" y="326.4" width="283.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="359.04" y="348.293">speed</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• d_j = 10 μm</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="487.68" y="388.893">Uⱼ = √(2Eⱼ/mⱼ)</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• L_j = 50 μm</tspan>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="487.68" y="456.093">31.9153824 m/s</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• ρ = 1000 kg/m³ → m_j</tspan>
+<rect id="o016" x="643.2" y="326.4" width="283.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="656.64" y="348.293">energy</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• E_j = 2 nJ → U_j = 31.915 m/s</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="785.28" y="388.893">Eᵢₙ = N Eⱼ</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• E_in = 50 nJ</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="785.28" y="456.093">50.0 nJ</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• I_in = 3.1333×10⁻⁹ N s</tspan>
+<rect id="o020" x="940.8" y="326.4" width="283.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="954.24" y="348.293">momentum</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Finite carrier mass, not PFC vapor mass.</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1082.88" y="388.893">Iᵢₙ = N mⱼ Uⱼ</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">No additional cluster amplification factor.</tspan>
+<text id="o023" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1082.88" y="456.093">3.133285343e-09 N s</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o024" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="188.387">N = 25 jets, Eⱼ = 2 nJ each, ρ = 1000 kg/m³, dⱼ = 10 µm.</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="572.933">The input to the solid is a finite energy and an aligned momentum, not a pressure peak.</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="49.92" y="624.64">Assumes all 25 jets are activated, aligned and identical (Chapter 3 teaching state).</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Inherited jet state of Eq. C4-E28.</tspan>
 </text>
 </svg>

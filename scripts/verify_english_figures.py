@@ -14,8 +14,8 @@ def audit(root):
     rows=json.loads((base/'manifest.json').read_text(encoding='utf-8'))
     equations=json.loads((root/'verification/equations.json').read_text(encoding='utf-8'))
     expected={e['id'].lower() for e in equations}
-    actual={r['id'] for r in rows if re.fullmatch(r'(?:c[1-4]|a)-e\d+',r['id'])}
-    assert expected==actual and len(rows)==178
+    actual={r['id'] for r in rows if re.fullmatch(r'(?:c[1-5]|a)-e\d+',r['id'])}
+    assert expected==actual and len(rows)==200
     native=0
     for r in rows:
         svg=base/r['svg']

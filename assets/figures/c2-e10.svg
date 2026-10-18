@@ -1,24 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E10 A short pulse does not imply uniform temperature in a micron-scale core.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E10 | Physical-variable diagram</text>
-<rect x="100" y="125" width="250" height="200" fill="#F6BC77" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<rect x="350" y="125" width="400" height="200" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="127" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#142632">Absorber / side A</text>
-<text x="467" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">PFC / side B</text>
-<line x1="250" y1="235" x2="520" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="382" y="280.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">q; normal A → B</text>
-<text x="102" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_A</text>
-<text x="582" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_B</text>
-<text x="117" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Thermal path and contact are distinct from optical deposition.</text>
-<rect x="351" y="126" width="18" height="198" fill="#F6BC77" stroke="none" stroke-width="1.9500000000000002"/>
-<text x="772" y="219.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">δ_T</text>
-<text x="772" y="254.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">≪ L_h</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">α_d = 4.69034×10⁻⁸ m²/s</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">τ_h = 10 ns</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">δ_T ≈ 21.66 nm</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L_h = 5 μm</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t_th ≈ 533 μs</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">k_d = 0.050, ρ_d = 1630, c_p,d = 654 (SI)</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Heated shell is much thinner than the core</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Distributed absorbers or later conduction must justify a uniform-core model</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E10</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E10 · Declared-input thermal calculation</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0</tspan>
+</text>
+<line id="o006" x1="198.4" y1="528" x2="198.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="198.4" y1="144" x2="198.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="198.4" y="550.04">1</tspan>
+</text>
+<line id="o009" x1="300.8" y1="528" x2="300.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="300.8" y1="144" x2="300.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="300.8" y="550.04">2</tspan>
+</text>
+<line id="o012" x1="403.2" y1="528" x2="403.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="403.2" y1="144" x2="403.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="550.04">3</tspan>
+</text>
+<line id="o015" x1="505.6" y1="528" x2="505.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="505.6" y1="144" x2="505.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="505.6" y="550.04">4</tspan>
+</text>
+<line id="o018" x1="608" y1="528" x2="608" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="608" y1="144" x2="608" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="608" y="550.04">5</tspan>
+</text>
+<line id="o021" x1="710.4" y1="528" x2="710.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="550.04">6</tspan>
+</text>
+<line id="o024" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="89.28" y1="436.571" x2="96" y2="436.571" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="436.571" x2="710.4" y2="436.571" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="441.331">0.25</tspan>
+</text>
+<line id="o028" x1="89.28" y1="345.143" x2="96" y2="345.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="345.143" x2="710.4" y2="345.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="349.903">0.50</tspan>
+</text>
+<line id="o031" x1="89.28" y1="253.714" x2="96" y2="253.714" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="96" y1="253.714" x2="710.4" y2="253.714" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="258.474">0.75</tspan>
+</text>
+<line id="o034" x1="89.28" y1="162.286" x2="96" y2="162.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o035" x1="96" y1="162.286" x2="710.4" y2="162.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="167.046">1.00</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">depth into the droplet  z  (µm)</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">T − T₀ (relative to surface)</tspan>
+</text>
+<polyline id="o039" points="96,162.286 100.11,458.488 104.219,524.791 108.329,527.969 112.439,528 116.548,528 120.658,528 124.768,528 128.878,528 132.987,528 137.097,528 141.207,528 145.316,528 149.426,528 153.536,528 157.645,528 161.755,528 165.865,528 169.975,528 174.084,528 178.194,528 182.304,528 186.413,528 190.523,528 194.633,528 198.742,528 202.852,528 206.962,528 211.072,528 215.181,528 219.291,528 223.401,528 227.51,528 231.62,528 235.73,528 239.839,528 243.949,528 248.059,528 252.169,528 256.278,528 260.388,528 264.498,528 268.607,528 272.717,528 276.827,528 280.936,528 285.046,528 289.156,528 293.266,528 297.375,528 301.485,528 305.595,528 309.704,528 313.814,528 317.924,528 322.033,528 326.143,528 330.253,528 334.363,528 338.472,528 342.582,528 346.692,528 350.801,528 354.911,528 359.021,528 363.13,528 367.24,528 371.35,528 375.46,528 379.569,528 383.679,528 387.789,528 391.898,528 396.008,528 400.118,528 404.227,528 408.337,528 412.447,528 416.557,528 420.666,528 424.776,528 428.886,528 432.995,528 437.105,528 441.215,528 445.324,528 449.434,528 453.544,528 457.654,528 461.763,528 465.873,528 469.983,528 474.092,528 478.202,528 482.312,528 486.421,528 490.531,528 494.641,528 498.751,528 502.86,528 506.97,528 511.08,528 515.189,528 519.299,528 523.409,528 527.518,528 531.628,528 535.738,528 539.847,528 543.957,528 548.067,528 552.177,528 556.286,528 560.396,528 564.506,528 568.615,528 572.725,528 576.835,528 580.944,528 585.054,528 589.164,528 593.274,528 597.383,528 601.493,528 605.603,528 609.712,528 613.822,528 617.932,528 622.041,528 626.151,528 630.261,528 634.371,528 638.48,528 642.59,528 646.7,528 650.809,528 654.919,528 659.029,528 663.138,528 667.248,528 671.358,528 675.468,528 679.577,528 683.687,528 687.797,528 691.906,528 696.016,528 700.126,528 704.235,528 708.345,528 710.4,528" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o040" points="96,162.286 100.11,200.413 104.219,237.892 108.329,274.107 112.439,308.507 116.548,340.626 120.658,370.107 124.768,396.706 128.878,420.296 132.987,440.862 137.097,458.488 141.207,473.336 145.316,485.633 149.426,495.642 153.536,503.652 157.645,509.952 161.755,514.823 165.865,518.526 169.975,521.292 174.084,523.324 178.194,524.791 182.304,525.832 186.413,526.559 190.523,527.057 194.633,527.392 198.742,527.615 202.852,527.76 206.962,527.853 211.072,527.911 215.181,527.947 219.291,527.969 223.401,527.982 227.51,527.99 231.62,527.994 235.73,527.997 239.839,527.998 243.949,527.999 248.059,528 252.169,528 256.278,528 260.388,528 264.498,528 268.607,528 272.717,528 276.827,528 280.936,528 285.046,528 289.156,528 293.266,528 297.375,528 301.485,528 305.595,528 309.704,528 313.814,528 317.924,528 322.033,528 326.143,528 330.253,528 334.363,528 338.472,528 342.582,528 346.692,528 350.801,528 354.911,528 359.021,528 363.13,528 367.24,528 371.35,528 375.46,528 379.569,528 383.679,528 387.789,528 391.898,528 396.008,528 400.118,528 404.227,528 408.337,528 412.447,528 416.557,528 420.666,528 424.776,528 428.886,528 432.995,528 437.105,528 441.215,528 445.324,528 449.434,528 453.544,528 457.654,528 461.763,528 465.873,528 469.983,528 474.092,528 478.202,528 482.312,528 486.421,528 490.531,528 494.641,528 498.751,528 502.86,528 506.97,528 511.08,528 515.189,528 519.299,528 523.409,528 527.518,528 531.628,528 535.738,528 539.847,528 543.957,528 548.067,528 552.177,528 556.286,528 560.396,528 564.506,528 568.615,528 572.725,528 576.835,528 580.944,528 585.054,528 589.164,528 593.274,528 597.383,528 601.493,528 605.603,528 609.712,528 613.822,528 617.932,528 622.041,528 626.151,528 630.261,528 634.371,528 638.48,528 642.59,528 646.7,528 650.809,528 654.919,528 659.029,528 663.138,528 667.248,528 671.358,528 675.468,528 679.577,528 683.687,528 687.797,528 691.906,528 696.016,528 700.126,528 704.235,528 708.345,528 710.4,528" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<polyline id="o041" points="96,162.286 100.11,166.109 104.219,169.932 108.329,173.754 112.439,177.573 116.548,181.39 120.658,185.204 124.768,189.014 128.878,192.819 132.987,196.619 137.097,200.413 141.207,204.2 145.316,207.981 149.426,211.753 153.536,215.518 157.645,219.273 161.755,223.018 165.865,226.754 169.975,230.478 174.084,234.191 178.194,237.892 182.304,241.58 186.413,245.255 190.523,248.916 194.633,252.562 198.742,256.194 202.852,259.81 206.962,263.41 211.072,266.993 215.181,270.559 219.291,274.107 223.401,277.637 227.51,281.149 231.62,284.641 235.73,288.113 239.839,291.565 243.949,294.997 248.059,298.407 252.169,301.796 256.278,305.163 260.388,308.507 264.498,311.828 268.607,315.126 272.717,318.401 276.827,321.651 280.936,324.877 285.046,328.078 289.156,331.253 293.266,334.404 297.375,337.528 301.485,340.626 305.595,343.698 309.704,346.743 313.814,349.761 317.924,352.752 322.033,355.714 326.143,358.65 330.253,361.557 334.363,364.435 338.472,367.286 342.582,370.107 346.692,372.9 350.801,375.663 354.911,378.397 359.021,381.102 363.13,383.777 367.24,386.423 371.35,389.038 375.46,391.624 379.569,394.18 383.679,396.706 387.789,399.201 391.898,401.666 396.008,404.101 400.118,406.506 404.227,408.88 408.337,411.224 412.447,413.538 416.557,415.821 420.666,418.073 424.776,420.296 428.886,422.488 432.995,424.65 437.105,426.781 441.215,428.883 445.324,430.954 449.434,432.995 453.544,435.007 457.654,436.988 461.763,438.94 465.873,440.862 469.983,442.755 474.092,444.619 478.202,446.453 482.312,448.258 486.421,450.034 490.531,451.782 494.641,453.501 498.751,455.191 502.86,456.854 506.97,458.488 511.08,460.094 515.189,461.673 519.299,463.225 523.409,464.749 527.518,466.246 531.628,467.717 535.738,469.161 539.847,470.579 543.957,471.97 548.067,473.336 552.177,474.677 556.286,475.992 560.396,477.282 564.506,478.547 568.615,479.788 572.725,481.004 576.835,482.196 580.944,483.365 585.054,484.51 589.164,485.633 593.274,486.732 597.383,487.808 601.493,488.863 605.603,489.895 609.712,490.905 613.822,491.894 617.932,492.862 622.041,493.809 626.151,494.736 630.261,495.642 634.371,496.528 638.48,497.395 642.59,498.242 646.7,499.069 650.809,499.878 654.919,500.669 659.029,501.441 663.138,502.196 667.248,502.932 671.358,503.652 675.468,504.354 679.577,505.039 683.687,505.708 687.797,506.361 691.906,506.997 696.016,507.618 700.126,508.224 704.235,508.815 708.345,509.391 710.4,509.673" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<line id="o042" x1="608" y1="144" x2="608" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="456.32" y="250.469">PFC core</tspan>
+<tspan x="456.32" y="269.349">radius 5 µm</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="113.792" y="332.297">at 10 ns only the outer</tspan>
+<tspan x="113.792" y="351.177">~22 nm is warm</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="177.28" y="438.354">1 µs: 0.2 µm</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="361.6" y="306.697">100 µs: 2 µm</tspan>
+</text>
+<rect id="o047" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="166.44">Declared numbers</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="207.587">α = 0.050 / (1630 × 654)</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="769.92" y="234.36">= 4.690×10⁻⁸ m²/s</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="274.693">tₜₕ ~ (5 µm)² / α</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="769.92" y="301.467">= 5.33×10⁻⁴ s</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="341.8">δ_T ~ √(α × 10 ns)</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="769.92" y="368.573">= 2.17×10⁻⁸ m</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="417.96">A 10 ns pulse heats a layer 230 times thinner than the</tspan>
+<tspan x="755.52" y="436.84">droplet radius. Uniform temperature in a micron-scale</tspan>
+<tspan x="755.52" y="455.72">core is not implied by a short pulse.</tspan>
+</text>
+<text id="o056" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="97.92" y="616.96">Profiles: erfc(z / 2√(αt)), the conduction solution for a surface held at fixed temperature (scale illustration).</tspan>
+</text>
+<text id="o057" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Numbers of Eq. C2-E10; profile shapes use the same α.</tspan>
+</text>
 </svg>

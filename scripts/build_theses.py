@@ -23,7 +23,7 @@ def apply_reviews():
             content = path.read_text(encoding="utf-8")
             doi = field(content, "DOI")
             key = path.stem.removeprefix("arxiv_") if path.name.startswith("arxiv_") else doi.lower()
-            record_type = cache.get(key, {}).get("metadata", {}).get("type", "preprint" if path.name.startswith("arxiv_") else "scholarly record")
+            record_type = ((cache.get(key) or {}).get("metadata") or {}).get("type", "preprint" if path.name.startswith("arxiv_") else "scholarly record")
             if "- Record type:" not in content:
                 content = content.replace("- Date searched:", "- Record type: " + record_type + "\n- Date searched:")
             path.write_text(content, encoding="utf-8")

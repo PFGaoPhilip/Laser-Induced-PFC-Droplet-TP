@@ -1,28 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 592" role="img" aria-labelledby="title desc">
-<title id="title">C5-E22 — Pressure resistance and elastic work answer different parts of the feasibility calculation.</title>
-<desc id="desc">Gg, Rref, R; pel → 5Gg/2 at large R; Wg grows with displaced volume; π: sphere geometry; Pressure plateau is not a fracture threshold; Stored work is not automatically lost heat</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="592" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E22 · Physical variable map / 物理变量图</text>
-<circle cx="180" cy="179" r="77" class="line"/>
-<circle cx="180" cy="179" r="29" class="area"/>
-<path d="M180 179 H257" class="arrow"/>
-<text x="220" y="158" class="">R</text>
-<text x="126" y="285" class="">Rref → R</text>
-<text x="98" y="98" class="">Cavity / 腔体: pb dV</text>
-<rect x="436" y="125" width="410" height="123" class="area"/>
-<text x="459" y="164" class="">Elastic storage / 弹性储能: Wg</text>
-<text x="460" y="207" class="">Viscous loss / 黏性耗散: Ḋg ≥ 0</text>
-<path d="M273 180 H431" class="arrow"/>
-<text x="467" y="294" class="muted">Gg , ηg ; intact network / 完整网络</text>
-<text x="93" y="329" class="muted">Stored work is not automatically jet energy / 储存功不自动转为射流能</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Gg, Rref, R</text>
-<text x="30" y="433" class="muted">• pel → 5Gg/2 at large R</text>
-<text x="30" y="457" class="muted">• Wg grows with displaced volume</text>
-<text x="30" y="481" class="muted">• π: sphere geometry</text>
-<text x="30" y="523" class="muted">Pressure plateau is not a fracture threshold</text>
-<text x="30" y="546" class="muted">Stored work is not automatically lost heat</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E22 · Reference formulas: validity range and limits of the verification</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E22 · Reference formulas: validity range and limits of the verification</tspan>
+</text>
+<line id="o001" x1="96" y1="249.6" x2="1180.8" y2="249.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
+<line id="o002" x1="96" y1="249.6" x2="96" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="276.013">0</tspan>
+</text>
+<line id="o004" x1="250.971" y1="249.6" x2="250.971" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="250.971" y="276.013">0.02</tspan>
+</text>
+<line id="o006" x1="405.943" y1="249.6" x2="405.943" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="405.943" y="276.013">0.04</tspan>
+</text>
+<line id="o008" x1="560.914" y1="249.6" x2="560.914" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="560.914" y="276.013">0.06</tspan>
+</text>
+<line id="o010" x1="715.886" y1="249.6" x2="715.886" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="715.886" y="276.013">0.08</tspan>
+</text>
+<line id="o012" x1="870.857" y1="249.6" x2="870.857" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="870.857" y="276.013">0.1</tspan>
+</text>
+<line id="o014" x1="1025.83" y1="249.6" x2="1025.83" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1025.83" y="276.013">0.12</tspan>
+</text>
+<line id="o016" x1="1180.8" y1="249.6" x2="1180.8" y2="256.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1180.8" y="276.013">0.14</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="638.4" y="306.387">Impact Mach number M = U / c_0</tspan>
+</text>
+<rect id="o019" x="336.206" y="196.8" width="472.663" height="48" fill="#2B5560" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="572.537" y="224.787">tested: 0.031 to 0.092</tspan>
+</text>
+<line id="o021" x1="567.888" y1="172.8" x2="567.888" y2="196.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="3.33333" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="567.888" y="157.433">nominal 0.0609</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="98.88" y="139">Speed axis</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="98.88" y="339.527">U = 50 m/s → M = 0.031</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="715.749" y="339.527">U = 150 m/s → M = 0.092</tspan>
+</text>
+<rect id="o026" x="76.8" y="384" width="566.4" height="249.6" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="94.08" y="412.6">Inside the model</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="98.88" y="460.14">•  Liquid only, barotropic stiffened-gas law</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="98.88" y="508.14">•  Rigid flat slip wall, free jet side</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="98.88" y="556.14">•  First arrival, τ = c_0 t / a ≤ 1</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="98.88" y="604.14">•  Jet radius 0.5 to 2 µm</tspan>
+</text>
+<rect id="o032" x="672" y="384" width="566.4" height="249.6" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="20" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="689.28" y="412.6">Outside the model</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="460.14">•  Gas cushion, splash, cavitation</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="508.14">•  Elastic wall; pressure after τ ≈ 1</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="556.14">•  Bubble-to-jet physics upstream</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="604.14">•  Any experiment: not established</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Ranges taken from the five sensitivity cases and the model assumptions.</tspan>
+</text>
 </svg>

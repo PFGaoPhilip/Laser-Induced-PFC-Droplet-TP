@@ -1,68 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 616.32" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E20</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="616.32" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E20 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E20 · Darcy/storage approximation and derived diffusion</tspan>
 </text>
-<line id="obj-001" x1="100.8" y1="107.52" x2="100.8" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-002" x1="144" y1="107.52" x2="144" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-003" x1="187.2" y1="107.52" x2="187.2" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-004" x1="230.4" y1="107.52" x2="230.4" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-005" x1="273.6" y1="107.52" x2="273.6" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-006" x1="316.8" y1="107.52" x2="316.8" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-007" x1="360" y1="107.52" x2="360" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-008" x1="403.2" y1="107.52" x2="403.2" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-009" x1="446.4" y1="107.52" x2="446.4" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-010" x1="489.6" y1="107.52" x2="489.6" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-011" x1="532.8" y1="107.52" x2="532.8" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-012" x1="576" y1="107.52" x2="576" y2="255.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-013" x1="92.16" y1="111.36" x2="597.12" y2="111.36" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-014" x1="92.16" y1="147.84" x2="597.12" y2="147.84" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-015" x1="92.16" y1="184.32" x2="597.12" y2="184.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-016" x1="92.16" y1="220.8" x2="597.12" y2="220.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-017" x1="92.16" y1="257.28" x2="597.12" y2="257.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.26667" opacity="1"/>
-<line id="obj-018" x1="113.28" y1="134.4" x2="681.6" y2="134.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<line id="obj-019" x1="113.28" y1="185.28" x2="681.6" y2="185.28" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<line id="obj-020" x1="113.28" y1="234.24" x2="681.6" y2="234.24" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-021" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="100.8" y="84.6144">Solvent flow relative to an intact network</tspan>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">1e-06</tspan>
 </text>
-<text id="obj-022" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="705.6" y="172.934">jl →</tspan>
+<line id="o006" x1="300.8" y1="528" x2="300.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="300.8" y1="144" x2="300.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="300.8" y="550.04">1e-05</tspan>
 </text>
-<line id="obj-023" x1="489.6" y1="278.4" x2="206.4" y2="278.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-024" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="537.6" y="286.214">∇ppore ←</tspan>
+<line id="o009" x1="505.6" y1="528" x2="505.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="505.6" y1="144" x2="505.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="505.6" y="550.04">1e-04</tspan>
 </text>
-<text id="obj-025" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="149.76" y="320.774">Lg , kperm , μl , Md ; tporo</tspan>
+<line id="o012" x1="710.4" y1="528" x2="710.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="550.04">1e-03</tspan>
 </text>
-<text id="obj-026" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<line id="o015" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="89.28" y1="432" x2="96" y2="432" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="96" y1="432" x2="710.4" y2="432" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="436.76">1e-06</tspan>
 </text>
-<text id="obj-027" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• ppore: solvent pressure</tspan>
+<line id="o019" x1="89.28" y1="336" x2="96" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="336" x2="710.4" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="340.76">1e-03</tspan>
 </text>
-<text id="obj-028" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• jl: solvent relative to network</tspan>
+<line id="o022" x1="89.28" y1="240" x2="96" y2="240" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="240" x2="710.4" y2="240" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="244.76">1e+00</tspan>
 </text>
-<text id="obj-029" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• kperm: network permeability</tspan>
+<line id="o025" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="144" x2="710.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">1e+03</tspan>
 </text>
-<text id="obj-030" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">• μl: solvent resistance</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">drainage length L_g  (m)</tspan>
 </text>
-<text id="obj-031" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">• Md: storage modulus</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">tₚₒᵣₒ  (s)</tspan>
 </text>
-<text id="obj-032" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="530.573">• Lg, tporo, Dporo, t</tspan>
+<polyline id="o030" points="96,328.901 102.206,326.961 108.412,325.022 114.618,323.083 120.824,321.143 127.03,319.204 133.236,317.264 139.442,315.325 145.648,313.386 151.855,311.446 158.061,309.507 164.267,307.568 170.473,305.628 176.679,303.689 182.885,301.749 189.091,299.81 195.297,297.871 201.503,295.931 207.709,293.992 213.915,292.052 220.121,290.113 226.327,288.174 232.533,286.234 238.739,284.295 244.945,282.355 251.152,280.416 257.358,278.477 263.564,276.537 269.77,274.598 275.976,272.658 282.182,270.719 288.388,268.78 294.594,266.84 300.8,264.901 307.006,262.961 313.212,261.022 319.418,259.083 325.624,257.143 331.83,255.204 338.036,253.264 344.242,251.325 350.448,249.386 356.655,247.446 362.861,245.507 369.067,243.568 375.273,241.628 381.479,239.689 387.685,237.749 393.891,235.81 400.097,233.871 406.303,231.931 412.509,229.992 418.715,228.052 424.921,226.113 431.127,224.174 437.333,222.234 443.539,220.295 449.745,218.355 455.952,216.416 462.158,214.477 468.364,212.537 474.57,210.598 480.776,208.658 486.982,206.719 493.188,204.78 499.394,202.84 505.6,200.901 511.806,198.961 518.012,197.022 524.218,195.083 530.424,193.143 536.63,191.204 542.836,189.264 549.042,187.325 555.248,185.386 561.455,183.446 567.661,181.507 573.867,179.568 580.073,177.628 586.279,175.689 592.485,173.749 598.691,171.81 604.897,169.871 611.103,167.931 617.309,165.992 623.515,164.052 629.721,162.113 635.927,160.174 642.133,158.234 648.339,156.295 654.545,154.355 660.752,152.416 666.958,150.477 673.164,148.537 679.37,146.598 685.576,144.658" fill="none" stroke="#8EDBD4" stroke-width="4.53333" opacity="1"/>
+<ellipse id="o031" cx="398.514" cy="234.365" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="414.834" y="287.805">tₚₒᵣₒ = 1.5 s at 30 µm</tspan>
 </text>
-<text id="obj-033" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="552.653">Drainage redistributes solvent over Lg</tspan>
+<line id="o033" x1="96" y1="416.732" x2="710.4" y2="416.732" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="141.663" y="388.025">event time 3 µs</tspan>
 </text>
-<text id="obj-034" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="574.733">Small perturbation and constant-coefficient assumptions are separate</tspan>
+<text id="o035" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="346.463" y="190.493">slope 2: t ∝ L_g²</tspan>
+</text>
+<rect id="o036" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="166.44">Darcy flow and diffusion</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="207.587">jₗ = −(k/μₗ) ∇pₚₒᵣₑ</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="255.04">∂p/∂t = Dₚₒᵣₒ ∇²p,   Dₚₒᵣₒ = k M_d / μₗ</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="307.84">tₚₒᵣₒ ~ L_g² / Dₚₒᵣₒ = μₗ L_g² / (k M_d)</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="364.893">k = 10⁻¹⁷ m², M_d = 60 kPa, μₗ = 1 mPa s (prescribed</tspan>
+<tspan x="755.52" y="382.987">teaching values).</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="432.093">A 3 µs event is approximately undrained at 30 µm; local</tspan>
+<tspan x="755.52" y="450.187">solvent motion remains possible.</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Permeability and modulus are inputs from characterisation; only the quadratic scaling with length is a result of the model.</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Darcy/storage drainage time of Eq. A-E20.</tspan>
 </text>
 </svg>

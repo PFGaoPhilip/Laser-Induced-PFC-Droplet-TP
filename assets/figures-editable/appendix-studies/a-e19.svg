@@ -1,47 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 572.16" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E19</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="572.16" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E19 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E19 · Separate compressibility diagnostic</tspan>
 </text>
-<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="95.04" y="84.6144">Response times and dimensionless comparisons</tspan>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">1e+05</tspan>
 </text>
-<rect id="obj-002" x="104.64" y="112.32" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="136.454">cL: longitudinal wave speed</tspan>
+<line id="o006" x1="218.88" y1="528" x2="218.88" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="218.88" y1="144" x2="218.88" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="218.88" y="550.04">1e+06</tspan>
 </text>
-<rect id="obj-004" x="104.64" y="172.8" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="196.934">tL = Lg / cL</tspan>
+<line id="o009" x1="341.76" y1="528" x2="341.76" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="341.76" y1="144" x2="341.76" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="341.76" y="550.04">1e+07</tspan>
 </text>
-<rect id="obj-006" x="104.64" y="233.28" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="257.414">Mw = |Ṙ| / cL</tspan>
+<line id="o012" x1="464.64" y1="528" x2="464.64" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="464.64" y1="144" x2="464.64" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="464.64" y="550.04">1e+08</tspan>
 </text>
-<text id="obj-008" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="105.6" y="320.333">Equal boxes list definitions; lengths do not encode time</tspan>
+<line id="o015" x1="587.52" y1="528" x2="587.52" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="587.52" y1="144" x2="587.52" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="587.52" y="550.04">1e+09</tspan>
 </text>
-<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<line id="o018" x1="710.4" y1="528" x2="710.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="550.04">1e+10</tspan>
 </text>
-<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• cL: bulk and shear response</tspan>
+<line id="o021" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="89.28" y1="432" x2="96" y2="432" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="432" x2="710.4" y2="432" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="436.76">10</tspan>
 </text>
-<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• Kgᵇᵘˡᵏ, Gg, ρg</tspan>
+<line id="o025" x1="89.28" y1="336" x2="96" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="336" x2="710.4" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="340.76">100</tspan>
 </text>
-<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• Lg/cL = tL</tspan>
+<line id="o028" x1="89.28" y1="240" x2="96" y2="240" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="240" x2="710.4" y2="240" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="244.76">1000</tspan>
 </text>
-<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">• |Ṙ|/cL = Mw</tspan>
+<line id="o031" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="96" y1="144" x2="710.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">10000</tspan>
 </text>
-<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">Small shear stiffness does not establish small longitudinal impedance</tspan>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">bulk modulus K_bulk  (Pa)</tspan>
 </text>
-<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="530.573">Do not compute shock load from the incompressible control</tspan>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">longitudinal speed c_L  (m/s)</tspan>
+</text>
+<polyline id="o036" points="96,427.072 99.0874,426.114 102.175,425.145 105.262,424.165 108.35,423.175 111.437,422.175 114.525,421.165 117.612,420.145 120.699,419.117 123.787,418.08 126.874,417.035 129.962,415.982 133.049,414.921 136.137,413.853 139.224,412.779 142.312,411.697 145.399,410.609 148.486,409.516 151.574,408.416 154.661,407.311 157.749,406.201 160.836,405.086 163.924,403.966 167.011,402.841 170.098,401.713 173.186,400.58 176.273,399.443 179.361,398.303 182.448,397.159 185.536,396.012 188.623,394.861 191.711,393.708 194.798,392.552 197.885,391.393 200.973,390.232 204.06,389.068 207.148,387.902 210.235,386.733 213.323,385.563 216.41,384.391 219.497,383.216 222.585,382.04 225.672,380.863 228.76,379.684 231.847,378.503 234.935,377.321 238.022,376.138 241.11,374.953 244.197,373.767 247.284,372.581 250.372,371.393 253.459,370.204 256.547,369.014 259.634,367.823 262.722,366.631 265.809,365.439 268.896,364.246 271.984,363.052 275.071,361.857 278.159,360.662 281.246,359.466 284.334,358.27 287.421,357.073 290.509,355.875 293.596,354.677 296.683,353.479 299.771,352.28 302.858,351.081 305.946,349.881 309.033,348.682 312.121,347.481 315.208,346.281 318.295,345.08 321.383,343.879 324.47,342.677 327.558,341.475 330.645,340.273 333.733,339.071 336.82,337.869 339.908,336.666 342.995,335.463 346.082,334.26 349.17,333.057 352.257,331.854 355.345,330.65 358.432,329.447 361.52,328.243 364.607,327.039 367.694,325.835 370.782,324.631 373.869,323.427 376.957,322.223 380.044,321.018 383.132,319.814 386.219,318.609 389.307,317.404 392.394,316.2 395.481,314.995 398.569,313.79 401.656,312.585 404.744,311.38 407.831,310.175 410.919,308.97 414.006,307.765 417.093,306.559 420.181,305.354 423.268,304.149 426.356,302.943 429.443,301.738 432.531,300.533 435.618,299.327 438.706,298.122 441.793,296.916 444.88,295.711 447.968,294.505 451.055,293.299 454.143,292.094 457.23,290.888 460.318,289.682 463.405,288.477 466.492,287.271 469.58,286.065 472.667,284.86 475.755,283.654 478.842,282.448 481.93,281.242 485.017,280.036 488.105,278.831 491.192,277.625 494.279,276.419 497.367,275.213 500.454,274.007 503.542,272.801 506.629,271.595 509.717,270.39 512.804,269.184 515.891,267.978 518.979,266.772 522.066,265.566 525.154,264.36 528.241,263.154 531.329,261.948 534.416,260.742 537.504,259.536 540.591,258.33 543.678,257.124 546.766,255.918 549.853,254.712 552.941,253.506 556.028,252.301 559.116,251.095 562.203,249.889 565.29,248.683 568.378,247.477 571.465,246.271 574.553,245.065 577.64,243.859 580.728,242.653 583.815,241.447 586.903,240.241 589.99,239.035 593.077,237.829 596.165,236.623 599.252,235.417 602.34,234.211 605.427,233.005 608.515,231.799 611.602,230.593 614.689,229.387 617.777,228.181 620.864,226.975 623.952,225.769 627.039,224.563 630.127,223.357 633.214,222.151 636.302,220.945 639.389,219.738 642.476,218.532 645.564,217.326 648.651,216.12 651.739,214.914 654.826,213.708 657.914,212.502 661.001,211.296 664.088,210.09 667.176,208.884 670.263,207.678 673.351,206.472 676.438,205.266 679.526,204.06 682.613,202.854 685.701,201.648 688.788,200.442 691.875,199.236 694.963,198.03 698.05,196.824 701.138,195.618 704.225,194.412 707.313,193.206 710.4,192" fill="none" stroke="#8EDBD4" stroke-width="4.53333" opacity="1"/>
+<line id="o037" x1="96" y1="465.551" x2="710.4" y2="465.551" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="164.229" y="450.886">cₛ = 4.47 m/s (shear)</tspan>
+</text>
+<ellipse id="o039" cx="629.597" cy="223.563" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="276.317" y="247.657">K = 2.2 GPa (assumed): c_L = 1483 m/s</tspan>
+</text>
+<rect id="o041" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="166.44">Compressional crossing</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="208.133">c_L ≃ √[(K_bulk + 4G_g/3)/ρ_g]</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="260.387">t_L = L_g / c_L,    M_w = |Ṙ| / c_L</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="322.24">t_L = 20.2 ns,   M_w = 0.0067  (|Ṙ| = 10 m/s)</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="388.893">K_bulk = 2.2 GPa is an assumed water-like value for</tspan>
+<tspan x="755.52" y="406.987">illustration; the real gel must be characterised.</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Shear and longitudinal waves differ by about 330×: a water-rich gel answers compression almost instantly and shear slowly.</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Separate compressibility diagnostic of Eq. A-E19 (L_g = 30 µm).</tspan>
 </text>
 </svg>

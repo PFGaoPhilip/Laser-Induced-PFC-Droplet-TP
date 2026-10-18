@@ -1,30 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">C5-E14 — The elastic cost occupies a finite fraction of the work budget even though its pressure is below 100 kPa.</title>
-<desc id="desc">Δpw = 100 kPa; ΔV: same cavity expansion; W100 = 11.2574 nJ; Wg = 4.51604 nJ; residual = 6.74133 nJ; R, Rref; Compare energy at the same displaced volume; Residual is not automatically an emitted jet</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E14 · Physical variable map / 物理变量图</text>
-<circle cx="180" cy="179" r="77" class="line"/>
-<circle cx="180" cy="179" r="29" class="area"/>
-<path d="M180 179 H257" class="arrow"/>
-<text x="220" y="158" class="">R</text>
-<text x="126" y="285" class="">Rref → R</text>
-<text x="98" y="98" class="">Cavity / 腔体: pb dV</text>
-<rect x="436" y="125" width="410" height="123" class="area"/>
-<text x="459" y="164" class="">Elastic storage / 弹性储能: Wg</text>
-<text x="460" y="207" class="">Viscous loss / 黏性耗散: Ḋg ≥ 0</text>
-<path d="M273 180 H431" class="arrow"/>
-<text x="467" y="294" class="muted">Gg , ηg ; intact network / 完整网络</text>
-<text x="93" y="329" class="muted">Stored work is not automatically jet energy / 储存功不自动转为射流能</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Δpw = 100 kPa</text>
-<text x="30" y="433" class="muted">• ΔV: same cavity expansion</text>
-<text x="30" y="457" class="muted">• W100 = 11.2574 nJ</text>
-<text x="30" y="481" class="muted">• Wg = 4.51604 nJ</text>
-<text x="30" y="505" class="muted">• residual = 6.74133 nJ</text>
-<text x="30" y="529" class="muted">• R, Rref</text>
-<text x="30" y="571" class="muted">Compare energy at the same displaced volume</text>
-<text x="30" y="594" class="muted">Residual is not automatically an emitted jet</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E14 · Observers evaluated in the COMSOL model</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E14 · Observers evaluated in the COMSOL model</tspan>
+</text>
+<rect id="o001" x="134.4" y="547.2" width="441.6" height="26.88" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="134.4" y1="574.08" x2="151.68" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o003" x1="155.52" y1="574.08" x2="172.8" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="176.64" y1="574.08" x2="193.92" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o005" x1="197.76" y1="574.08" x2="215.04" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o006" x1="218.88" y1="574.08" x2="236.16" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="240" y1="574.08" x2="257.28" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="261.12" y1="574.08" x2="278.4" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o009" x1="282.24" y1="574.08" x2="299.52" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="303.36" y1="574.08" x2="320.64" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o011" x1="324.48" y1="574.08" x2="341.76" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o012" x1="345.6" y1="574.08" x2="362.88" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="366.72" y1="574.08" x2="384" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="387.84" y1="574.08" x2="405.12" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o015" x1="408.96" y1="574.08" x2="426.24" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="430.08" y1="574.08" x2="447.36" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="451.2" y1="574.08" x2="468.48" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o018" x1="472.32" y1="574.08" x2="489.6" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="493.44" y1="574.08" x2="510.72" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="514.56" y1="574.08" x2="531.84" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="535.68" y1="574.08" x2="552.96" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="556.8" y1="574.08" x2="574.08" y2="593.28" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<rect id="o023" x="230.4" y="124.8" width="249.6" height="422.4" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<line id="o024" x1="355.2" y1="96" x2="355.2" y2="542.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.33333" opacity="1" stroke-dasharray="6 4"/>
+<line id="o025" x1="355.2" y1="153.6" x2="355.2" y2="326.4" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="24" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="372.48" y="240.72">U</tspan>
+</text>
+<line id="o027" x1="201.6" y1="374.4" x2="508.8" y2="374.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.86667" opacity="1" stroke-dasharray="6 4"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="516.48" y="378.233">plane z = 2a</tspan>
+</text>
+<line id="o029" x1="182.4" y1="124.8" x2="182.4" y2="547.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="46.08" y="129.44">z = 4a</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="46.08" y="532.64">z = 0</tspan>
+</text>
+<line id="o032" x1="480" y1="532.8" x2="427.2" y2="532.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o033" x1="230.4" y1="532.8" x2="283.2" y2="532.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="492.48" y="519.833">edge release</tspan>
+</text>
+<line id="o035" x1="230.4" y1="609.6" x2="480" y2="609.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="5.33333" opacity="1"/>
+<line id="o036" x1="292.8" y1="635.52" x2="417.6" y2="635.52" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="137.28" y="659.36">sensor r ≤ a (full)</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="492.48" y="637.28">centre r ≤ a/2</tspan>
+</text>
+<line id="o039" x1="230.4" y1="91.2" x2="480" y2="91.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="355.2" y="77.6">2a</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="742.08" y="139">Axisymmetric: wall z = 0, axis r = 0</tspan>
+</text>
+<ellipse id="o042" cx="758.4" cy="206.4" rx="6.72" ry="6.72" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="780.48" y="210.693">Liquid column radius a, length 4a</tspan>
+</text>
+<ellipse id="o044" cx="758.4" cy="265.92" rx="6.72" ry="6.72" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="780.48" y="270.213">Incoming speed U toward −z</tspan>
+</text>
+<ellipse id="o046" cx="758.4" cy="325.44" rx="6.72" ry="6.72" fill="#B4C7D2" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="780.48" y="329.733">Rigid slip wall at z = 0</tspan>
+</text>
+<ellipse id="o048" cx="758.4" cy="384.96" rx="6.72" ry="6.72" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="780.48" y="389.253">Free side at r = a: pressure released to p_j</tspan>
+</text>
+<ellipse id="o050" cx="758.4" cy="444.48" rx="6.72" ry="6.72" fill="#B4C7D2" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o051" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="780.48" y="448.773">Plane z = 2a: incident mass and energy flux</tspan>
+</text>
+<ellipse id="o052" cx="758.4" cy="504" rx="6.72" ry="6.72" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o053" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="780.48" y="508.293">Wall disk r ≤ a: area-weighted pressure</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="742.08" y="604.14">First contact at t = 0. Liquid only; no gas, no cavitation.</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Model schematic; geometry is not to scale.</tspan>
+</text>
 </svg>

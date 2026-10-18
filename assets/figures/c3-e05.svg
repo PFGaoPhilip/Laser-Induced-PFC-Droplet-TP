@@ -1,59 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E05</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E05 · Coupled spherical approximation</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E05 · Coupled spherical approximation</tspan>
 </text>
-<ellipse id="o001" cx="230.4" cy="216" rx="81.6" ry="81.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o002" cx="912" cy="216" rx="81.6" ry="81.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="175.68" y="221.213">j: source</tspan>
+<line id="o001" x1="96" y1="528" x2="720" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0.0</tspan>
 </text>
-<text id="o004" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="857.28" y="221.213">i: receiver</tspan>
+<line id="o006" x1="304" y1="528" x2="304" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="304" y1="144" x2="304" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="304" y="550.04">0.5</tspan>
 </text>
-<line id="o005" x1="230.4" y1="326.4" x2="912" y2="326.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="511.68" y="360.413">d_ij</tspan>
+<line id="o009" x1="512" y1="528" x2="512" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="512" y1="144" x2="512" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="512" y="550.04">1.0</tspan>
 </text>
-<line id="o007" x1="326.4" y1="216" x2="811.2" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="396.48" y="192.72">Shared liquid: ρ, p∞</tspan>
+<line id="o012" x1="720" y1="528" x2="720" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="720" y1="144" x2="720" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="720" y="550.04">1.5</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="60.48" y="108.72">Fixed centres; spherical cavities; R_i, R_j ≪ d_ij</tspan>
+<line id="o015" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="89.28" y1="408" x2="96" y2="408" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="96" y1="408" x2="720" y2="408" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="412.76">1</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="386.88" y="275.04">Source-volume acceleration</tspan>
-<tspan x="386.88" y="301.787">sets the pressure correction.</tspan>
+<line id="o019" x1="89.28" y1="288" x2="96" y2="288" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="288" x2="720" y2="288" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="292.76">2</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• R_i, Ṙ_i, R̈_i at receiver i</tspan>
+<line id="o022" x1="89.28" y1="168" x2="96" y2="168" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="168" x2="720" y2="168" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="172.76">3</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• R_j, Ṙ_j, R̈_j at source j</tspan>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="408" y="572.8">t  (µs)</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• d_ij between centers</tspan>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">R / R₀</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• p_b,i inside bubble</tspan>
+<polyline id="o027" points="96,408 100.167,407.791 104.334,407.171 108.501,406.16 112.668,404.785 116.835,403.082 121.002,401.093 125.169,398.858 129.336,396.419 133.503,393.813 137.669,391.076 141.836,388.238 146.003,385.326 150.17,382.364 154.337,379.369 158.504,376.359 162.671,373.346 166.838,370.341 171.005,367.353 175.172,364.389 179.339,361.455 183.506,358.554 187.673,355.69 191.84,352.866 196.007,350.084 200.174,347.346 204.341,344.652 208.508,342.002 212.674,339.398 216.841,336.84 221.008,334.327 225.175,331.859 229.342,329.435 233.509,327.057 237.676,324.722 241.843,322.43 246.01,320.181 250.177,317.975 254.344,315.809 258.511,313.685 262.678,311.601 266.845,309.556 271.012,307.55 275.179,305.582 279.346,303.651 283.513,301.757 287.679,299.9 291.846,298.077 296.013,296.29 300.18,294.537 304.347,292.818 308.514,291.132 312.681,289.479 316.848,287.857 321.015,286.267 325.182,284.709 329.349,283.18 333.516,281.682 337.683,280.213 341.85,278.774 346.017,277.363 350.184,275.98 354.351,274.626 358.518,273.298 362.684,271.998 366.851,270.725 371.018,269.478 375.185,268.257 379.352,267.061 383.519,265.891 387.686,264.746 391.853,263.626 396.02,262.53 400.187,261.458 404.354,260.41 408.521,259.386 412.688,258.385 416.855,257.407 421.022,256.451 425.189,255.519 429.356,254.609 433.523,253.721 437.689,252.855 441.856,252.01 446.023,251.187 450.19,250.386 454.357,249.606 458.524,248.846 462.691,248.108 466.858,247.39 471.025,246.692 475.192,246.015 479.359,245.358 483.526,244.721 487.693,244.104 491.86,243.507 496.027,242.93 500.194,242.371 504.361,241.833 508.528,241.313 512.694,240.813 516.861,240.332 521.028,239.869 525.195,239.426 529.362,239.001 533.529,238.595 537.696,238.208 541.863,237.839 546.03,237.489 550.197,237.156 554.364,236.843 558.531,236.547 562.698,236.27 566.865,236.01 571.032,235.769 575.199,235.546 579.366,235.341 583.533,235.154 587.699,234.984 591.866,234.833 596.033,234.699 600.2,234.583 604.367,234.485 608.534,234.404 612.701,234.341 616.868,234.296 621.035,234.269 625.202,234.259 629.369,234.267 633.536,234.293 637.703,234.336 641.87,234.397 646.037,234.476 650.204,234.572 654.371,234.686 658.538,234.818 662.705,234.967 666.871,235.134 671.038,235.319 675.205,235.522 679.372,235.743 683.539,235.981 687.706,236.238 691.873,236.512 696.04,236.804 700.207,237.115 704.374,237.444 708.541,237.79 712.708,238.155 716.875,238.539 720,238.838" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o028" points="96,408 100.167,407.821 104.334,407.289 108.501,406.418 112.668,405.231 116.835,403.756 121.002,402.023 125.169,400.068 129.336,397.923 133.503,395.621 137.669,393.191 141.836,390.66 146.003,388.052 150.17,385.387 154.337,382.684 158.504,379.956 162.671,377.217 166.838,374.477 171.005,371.745 175.172,369.028 179.339,366.331 183.506,363.66 187.673,361.017 191.84,358.406 196.007,355.829 200.174,353.288 204.341,350.784 208.508,348.317 212.674,345.889 216.841,343.5 221.008,341.15 225.175,338.839 229.342,336.567 233.509,334.334 237.676,332.138 241.843,329.981 246.01,327.861 250.177,325.778 254.344,323.731 258.511,321.72 262.678,319.744 266.845,317.803 271.012,315.896 275.179,314.022 279.346,312.181 283.513,310.373 287.679,308.596 291.846,306.85 296.013,305.135 300.18,303.45 304.347,301.794 308.514,300.167 312.681,298.569 316.848,296.999 321.015,295.456 325.182,293.94 329.349,292.45 333.516,290.987 337.683,289.549 341.85,288.136 346.017,286.749 350.184,285.385 354.351,284.046 358.518,282.73 362.684,281.437 366.851,280.167 371.018,278.92 375.185,277.695 379.352,276.491 383.519,275.309 387.686,274.149 391.853,273.009 396.02,271.89 400.187,270.791 404.354,269.712 408.521,268.654 412.688,267.614 416.855,266.594 421.022,265.593 425.189,264.611 429.356,263.647 433.523,262.702 437.689,261.775 441.856,260.866 446.023,259.974 450.19,259.1 454.357,258.244 458.524,257.404 462.691,256.582 466.858,255.776 471.025,254.987 475.192,254.215 479.359,253.458 483.526,252.718 487.693,251.994 491.86,251.286 496.027,250.593 500.194,249.916 504.361,249.255 508.528,248.609 512.694,247.978 516.861,247.362 521.028,246.761 525.195,246.175 529.362,245.603 533.529,245.046 537.696,244.504 541.863,243.976 546.03,243.463 550.197,242.963 554.364,242.478 558.531,242.007 562.698,241.55 566.865,241.107 571.032,240.677 575.199,240.261 579.366,239.859 583.533,239.471 587.699,239.096 591.866,238.734 596.033,238.386 600.2,238.051 604.367,237.73 608.534,237.421 612.701,237.126 616.868,236.844 621.035,236.575 625.202,236.319 629.369,236.076 633.536,235.846 637.703,235.629 641.87,235.425 646.037,235.233 650.204,235.055 654.371,234.889 658.538,234.736 662.705,234.595 666.871,234.467 671.038,234.352 675.205,234.25 679.372,234.16 683.539,234.082 687.706,234.018 691.873,233.965 696.04,233.926 700.207,233.899 704.374,233.884 708.541,233.883 712.708,233.893 716.875,233.916 720,233.942" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<polyline id="o029" points="96,408 100.167,407.843 104.334,407.377 108.501,406.613 112.668,405.568 116.835,404.265 121.002,402.73 125.169,400.99 129.336,399.074 133.503,397.007 137.669,394.817 141.836,392.527 146.003,390.157 150.17,387.727 154.337,385.252 158.504,382.748 162.671,380.225 166.838,377.694 171.005,375.163 175.172,372.64 179.339,370.13 183.506,367.638 187.673,365.168 191.84,362.722 196.007,360.305 200.174,357.916 204.341,355.559 208.508,353.234 212.674,350.942 216.841,348.683 221.008,346.458 225.175,344.268 229.342,342.111 233.509,339.988 237.676,337.9 241.843,335.845 246.01,333.823 250.177,331.834 254.344,329.877 258.511,327.953 262.678,326.06 266.845,324.198 271.012,322.367 275.179,320.566 279.346,318.795 283.513,317.053 287.679,315.339 291.846,313.653 296.013,311.995 300.18,310.364 304.347,308.76 308.514,307.182 312.681,305.629 316.848,304.102 321.015,302.599 325.182,301.121 329.349,299.667 333.516,298.236 337.683,296.828 341.85,295.443 346.017,294.08 350.184,292.739 354.351,291.42 358.518,290.121 362.684,288.844 366.851,287.587 371.018,286.351 375.185,285.134 379.352,283.936 383.519,282.758 387.686,281.599 391.853,280.459 396.02,279.337 400.187,278.233 404.354,277.147 408.521,276.079 412.688,275.028 416.855,273.994 421.022,272.977 425.189,271.977 429.356,270.993 433.523,270.025 437.689,269.074 441.856,268.138 446.023,267.218 450.19,266.313 454.357,265.424 458.524,264.549 462.691,263.69 466.858,262.845 471.025,262.015 475.192,261.199 479.359,260.397 483.526,259.61 487.693,258.836 491.86,258.076 496.027,257.33 500.194,256.597 504.361,255.878 508.528,255.171 512.694,254.478 516.861,253.798 521.028,253.131 525.195,252.477 529.362,251.835 533.529,251.206 537.696,250.589 541.863,249.984 546.03,249.392 550.197,248.812 554.364,248.244 558.531,247.688 562.698,247.143 566.865,246.611 571.032,246.09 575.199,245.58 579.366,245.082 583.533,244.596 587.699,244.121 591.866,243.657 596.033,243.204 600.2,242.763 604.367,242.332 608.534,241.913 612.701,241.504 616.868,241.106 621.035,240.719 625.202,240.343 629.369,239.978 633.536,239.623 637.703,239.279 641.87,238.945 646.037,238.622 650.204,238.309 654.371,238.007 658.538,237.715 662.705,237.434 666.871,237.162 671.038,236.901 675.205,236.65 679.372,236.409 683.539,236.179 687.706,235.958 691.873,235.748 696.04,235.547 700.207,235.357 704.374,235.176 708.541,235.006 712.708,234.845 716.875,234.695 720,234.588" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<rect id="o030" x="124.8" y="155.52" width="28.8" height="19.2" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="167.04" y="165.76">isolated bubble</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• p∞ remote liquid</tspan>
+<rect id="o032" x="124.8" y="190.08" width="28.8" height="19.2" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="167.04" y="200.32">identical neighbour, d = 30 µm</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• B_i, σ_b, μ, ρ: radial balance legend</tspan>
+<rect id="o034" x="124.8" y="224.64" width="28.8" height="19.2" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="167.04" y="234.88">identical neighbour, d = 15 µm</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">All accelerations solved together</tspan>
+<rect id="o036" x="748.8" y="144" width="494.4" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="762.24" y="166.44">Same equation, extra inertia</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">No jet shape or film boundary is yet resolved</tspan>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="765.12" y="207.04">R_iR̈ᵢ + (3/2)Ṙᵢ² + Σ (Rⱼ²R̈ⱼ + 2RⱼṘⱼ²)/dᵢⱼ = Bᵢ</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="765.12" y="288.093">Bᵢ = [p_b,i − p∞ − 2σ_b/Rᵢ − 4μṘᵢ/Rᵢ] / ρ  (isolated</tspan>
+<tspan x="765.12" y="306.187">driving)</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="786.24" y="360.64">Identical neighbours move together, so the extra</tspan>
+<tspan x="786.24" y="379.52">term acts as added liquid mass.</tspan>
+</text>
+<ellipse id="o041" cx="770.88" cy="355.52" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="786.24" y="409.28">The closer the neighbour, the slower the expansion.</tspan>
+</text>
+<ellipse id="o043" cx="770.88" cy="404.16" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="786.24" y="438.4">Energy is shared, not created.</tspan>
+</text>
+<ellipse id="o045" cx="770.88" cy="433.28" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Two identical bubbles (p_g0 = 1 MPa, γ = 1.4) integrated with the coupled equation of Eq. C3-E05.</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Coupled spherical approximation of Eq. C3-E05 for N = 2 identical bubbles.</tspan>
 </text>
 </svg>

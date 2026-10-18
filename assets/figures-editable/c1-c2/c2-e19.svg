@@ -1,18 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E19 A bubble surface and a PFC evaporation surface need not be identical.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E19 | Physical-variable diagram</text>
-<ellipse cx="260" cy="215" rx="115" ry="115" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<ellipse cx="320" cy="260" rx="38" ry="38" fill="#F6BC77" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="330" y1="230" x2="410" y2="145" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="442" y="156.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Actual PFC contact patch Gamma_s</text>
-<text x="452" y="239.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Full 4π R² requires complete contact.</text>
-<text x="132" y="370.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Bubble boundary and PFC evaporation surface can differ.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Γ_s: actual species interface</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_v,s, ṁ_v,s: vapor inventory and rate</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">dA: contacted surface patch</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">j_s: liquid → vapor</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R: complete bubble radius only when applicable</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: full-sphere special case</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">PFC may occupy only a residual inclusion</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Do not give every species the whole bubble area automatically</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E19</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E19 · Species phase-mass balance</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="614.4" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Which surface evaporates PFC?</tspan>
+</text>
+<ellipse id="o003" cx="316.8" cy="364.8" rx="144" ry="144" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="3.2" opacity="1"/>
+<ellipse id="o004" cx="412.8" cy="355.2" rx="124.8" ry="124.8" fill="#0C1820" stroke="#F2B880" stroke-width="3.2" opacity="0.95"/>
+<polyline id="o005" points="403.898,479.473 405.693,478.087 407.466,476.673 409.217,475.232 410.944,473.763 412.648,472.267 414.329,470.744 415.985,469.195 417.616,467.621 419.223,466.02 420.804,464.395 422.359,462.745 423.889,461.071 425.391,459.372 426.867,457.651 428.316,455.906 429.736,454.139 431.129,452.349 432.494,450.538 433.829,448.706 435.136,446.852 436.413,444.979 437.661,443.085 438.879,441.172 440.066,439.241 441.223,437.29 442.349,435.322 443.444,433.336 444.508,431.334 445.54,429.314 446.54,427.279 447.507,425.229 448.443,423.163 449.345,421.083 450.215,418.989 451.052,416.881 451.855,414.761 452.625,412.628 453.362,410.483 454.064,408.327 454.732,406.16 455.367,403.983 455.966,401.796 456.532,399.6 457.062,397.395 457.558,395.183 458.019,392.963 458.445,390.735 458.836,388.502 459.192,386.262 459.512,384.017 459.797,381.768 460.046,379.514 460.26,377.256 460.439,374.996 460.581,372.733 460.688,370.468 460.76,368.201 460.796,365.934 460.796,363.666 460.76,361.399 460.688,359.132 460.581,356.867 460.439,354.604 460.26,352.344 460.046,350.086 459.797,347.832 459.512,345.583 459.192,343.338 458.836,341.098 458.445,338.865 458.019,336.637 457.558,334.417 457.062,332.205 456.532,330 455.966,327.804 455.367,325.617 454.732,323.44 454.064,321.273 453.362,319.117 452.625,316.972 451.855,314.839 451.052,312.719 450.215,310.611 449.345,308.517 448.443,306.437 447.507,304.371 446.54,302.321 445.54,300.286 444.508,298.266 443.444,296.264 442.349,294.278 441.223,292.31 440.066,290.359 438.879,288.428 437.661,286.515 436.413,284.621 435.136,282.748 433.829,280.894 432.494,279.062 431.129,277.251 429.736,275.461 428.316,273.694 426.867,271.949 425.391,270.228 423.889,268.529 422.359,266.855 420.804,265.205 419.223,263.58 417.616,261.979 415.985,260.405 414.329,258.856 412.648,257.333 410.944,255.837 409.217,254.368 407.466,252.927 405.693,251.513 403.898,250.127 402.082,248.77 400.244,247.441 398.386,246.142 396.507,244.872 394.609,243.632 392.691,242.421 390.755,241.242 388.8,240.092 386.827,238.974 384.837,237.887 382.83,236.831 380.807,235.807" fill="none" stroke="#F28BA0" stroke-width="6.66667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="472.32" y="499.293">Γₛ: droplet surface</tspan>
+<tspan x="472.32" y="517.387">in contact with vapor</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="126.72" y="207.587">PFC droplet</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="376.32" y="207.587">vapor bubble</tspan>
+</text>
+<line id="o009" x1="240" y1="355.2" x2="201.6" y2="355.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="548.387">Evaporation occurs on the part of the droplet surface that touches</tspan>
+<tspan x="54.72" y="568.053">vapor, Γₛ. It need not coincide with the whole bubble surface.</tspan>
+</text>
+<rect id="o011" x="681.6" y="96" width="561.6" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="695.04" y="118.44">Mass balance of species s</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="697.92" y="161.227">ṁᵥ,s |phase = ∫ over Γₛ of jₛ dA</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="697.92" y="226.787">jₛ: signed liquid-to-vapor mass flux (kg m⁻² s⁻¹)</tspan>
+</text>
+<rect id="o015" x="696" y="273.6" width="532.8" height="148.8" rx="11.904" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="712.32" y="297.413">Special case only</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="712.32" y="337.187">ṁ = 4πR² jₛ   when the whole spherical bubble wall of</tspan>
+<tspan x="712.32" y="356.853">radius R is in uniform contact with the PFC.</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="697.92" y="461.987">Phase change is only one term: escape and dissolution are</tspan>
+<tspan x="697.92" y="481.653">accounted for separately in the ledger of Eq. C2-E18.</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Area integral of Eq. C2-E19; sketch is schematic.</tspan>
+</text>
 </svg>

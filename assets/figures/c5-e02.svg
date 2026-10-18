@@ -1,37 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 616" role="img" aria-labelledby="title desc">
-<title id="title">C5-E02 — Radial and tangential stretches produce different network stresses around the cavity.</title>
-<desc id="desc">Gg: polymer network; Tᵉrr: radial traction; Tᵉθθ: tangential stress; r₀ → r; λr, λθ, F, B, χ, I; Equal χ cancels in the stress difference; Tensile stress is positive</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="616" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E02 · Physical variable map / 物理变量图</text>
-<circle cx="196" cy="180" r="80" class="thin"/>
-<circle cx="196" cy="180" r="36" class="area"/>
-<path d="M196 180 H232" class="arrow"/>
-<text x="190" y="160" class="">Rref</text>
-<path d="M196 180 L259 231" class="arrow"/>
-<text x="254" y="240" class="">r₀</text>
-<circle cx="610" cy="180" r="116" class="thin"/>
-<circle cx="610" cy="180" r="78" class="area"/>
-<path d="M610 180 H688" class="arrow"/>
-<text x="650" y="162" class="">R</text>
-<path d="M610 180 L700 253" class="arrow"/>
-<text x="699" y="261" class="">r</text>
-<path d="M298 180 H472" class="arrow"/>
-<text x="307" y="146" class="">Material map / 材料映射</text>
-<text x="82" y="302" class="">Reference / 参考状态</text>
-<text x="513" y="322" class="">Deformed / 变形状态: λr , λθ</text>
-<text x="757" y="106" class="">Gg , ηg</text>
-<text x="753" y="153" class="">σrr , σθθ</text>
-<text x="753" y="201" class="">p∞</text>
-<text x="583" y="187" class="">pb</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• Gg: polymer network</text>
-<text x="30" y="433" class="muted">• Tᵉrr: radial traction</text>
-<text x="30" y="457" class="muted">• Tᵉθθ: tangential stress</text>
-<text x="30" y="481" class="muted">• r₀ → r</text>
-<text x="30" y="505" class="muted">• λr, λθ, F, B, χ, I</text>
-<text x="30" y="547" class="muted">Equal χ cancels in the stress difference</text>
-<text x="30" y="570" class="muted">Tensile stress is positive</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E02 · Rigid-wall limit of the Chapter 3 acoustic matching</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E02 · Rigid-wall limit of the Chapter 3 acoustic matching</tspan>
+</text>
+<rect id="o001" x="86.4" y="192" width="441.6" height="153.6" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="307.2" y="225.707">Liquid, Z_l = ρ c</tspan>
+</text>
+<line id="o003" x1="134.4" y1="288" x2="441.6" y2="288" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="316.8" y="316.293">speed U</tspan>
+</text>
+<rect id="o005" x="528" y="187.2" width="86.4" height="163.2" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o006" x1="528" y1="350.4" x2="545.28" y2="369.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="549.12" y1="350.4" x2="566.4" y2="369.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="570.24" y1="350.4" x2="587.52" y2="369.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o009" x1="591.36" y1="350.4" x2="608.64" y2="369.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<rect id="o010" x="528" y="187.2" width="86.4" height="163.2" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="626.88" y="273.707">Wall, Z_r → ∞</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="417.4">Contact velocity v_i = Z_l U / (Z_l + Z_r)</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="89.28" y="460.6">v_i → 0  as  Z_r → ∞</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="518.2">Contact pressure p = Z_l Z_r U / (Z_l + Z_r)</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="89.28" y="561.4">p → Z_0 U,  Z_0 = ρ_j c_0</tspan>
+</text>
+<rect id="o016" x="768" y="403.2" width="460.8" height="182.4" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="19.3333" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="998.4" y="438.847">Numbers at U = 99.027 m/s</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="998.4" y="484.293">Z_0 = 1.6234 × 10⁶ Pa s/m</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="998.4" y="522.693">Z_0 U = 160.765 MPa</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="998.4" y="561.093">p_A = p_j + Z_0 U = 160.867 MPa</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="626.88" y="325.587">Linear estimate: valid for U/c_0 ≪ 1</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic of Eq. (C3-E24) in the limit Z_r → ∞. Not to scale.</tspan>
+</text>
 </svg>

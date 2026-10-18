@@ -1,141 +1,102 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E17</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E17 · Governing-equation and boundary verification</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E17 · Governing-equation and boundary verification</tspan>
 </text>
-<line id="o001" x1="76.8" y1="302.4" x2="777.6" y2="302.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o002" x1="105.6" y1="302.4" x2="113.64" y2="302.002" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o003" x1="113.64" y1="302.002" x2="121.68" y2="300.849" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o004" x1="121.68" y1="300.849" x2="129.72" y2="298.998" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o005" x1="129.72" y1="298.998" x2="137.76" y2="296.508" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o006" x1="137.76" y1="296.508" x2="145.8" y2="293.435" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o007" x1="145.8" y1="293.435" x2="153.84" y2="289.833" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o008" x1="153.84" y1="289.833" x2="161.88" y2="285.754" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o009" x1="161.88" y1="285.754" x2="169.92" y2="281.249" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o010" x1="169.92" y1="281.249" x2="177.96" y2="276.37" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o011" x1="177.96" y1="276.37" x2="186" y2="271.163" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o012" x1="186" y1="271.163" x2="194.04" y2="265.675" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o013" x1="194.04" y1="265.675" x2="202.08" y2="259.952" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o014" x1="202.08" y1="259.952" x2="210.12" y2="254.037" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o015" x1="210.12" y1="254.037" x2="218.16" y2="247.972" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o016" x1="218.16" y1="247.972" x2="226.2" y2="241.798" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o017" x1="226.2" y1="241.798" x2="234.24" y2="235.553" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o018" x1="234.24" y1="235.553" x2="242.28" y2="229.276" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o019" x1="242.28" y1="229.276" x2="250.32" y2="223.002" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o020" x1="250.32" y1="223.002" x2="258.36" y2="216.766" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o021" x1="258.36" y1="216.766" x2="266.4" y2="210.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o022" x1="266.4" y1="210.6" x2="274.44" y2="204.536" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o023" x1="274.44" y1="204.536" x2="282.48" y2="198.604" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o024" x1="282.48" y1="198.604" x2="290.52" y2="192.832" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o025" x1="290.52" y1="192.832" x2="298.56" y2="187.246" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o026" x1="298.56" y1="187.246" x2="306.6" y2="181.873" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o027" x1="306.6" y1="181.873" x2="314.64" y2="176.735" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o028" x1="314.64" y1="176.735" x2="322.68" y2="171.855" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o029" x1="322.68" y1="171.855" x2="330.72" y2="167.254" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o030" x1="330.72" y1="167.254" x2="338.76" y2="162.951" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o031" x1="338.76" y1="162.951" x2="346.8" y2="158.962" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o032" x1="346.8" y1="158.962" x2="354.84" y2="155.306" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o033" x1="354.84" y1="155.306" x2="362.88" y2="151.995" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o034" x1="362.88" y1="151.995" x2="370.92" y2="149.043" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o035" x1="370.92" y1="149.043" x2="378.96" y2="146.461" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o036" x1="378.96" y1="146.461" x2="387" y2="144.26" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o037" x1="387" y1="144.26" x2="395.04" y2="142.448" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o038" x1="395.04" y1="142.448" x2="403.08" y2="141.031" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o039" x1="403.08" y1="141.031" x2="411.12" y2="140.015" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o040" x1="411.12" y1="140.015" x2="419.16" y2="139.404" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o041" x1="419.16" y1="139.404" x2="427.2" y2="139.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o042" x1="427.2" y1="139.2" x2="435.24" y2="139.404" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o043" x1="435.24" y1="139.404" x2="443.28" y2="140.015" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o044" x1="443.28" y1="140.015" x2="451.32" y2="141.031" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o045" x1="451.32" y1="141.031" x2="459.36" y2="142.448" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o046" x1="459.36" y1="142.448" x2="467.4" y2="144.26" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o047" x1="467.4" y1="144.26" x2="475.44" y2="146.461" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o048" x1="475.44" y1="146.461" x2="483.48" y2="149.043" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o049" x1="483.48" y1="149.043" x2="491.52" y2="151.995" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o050" x1="491.52" y1="151.995" x2="499.56" y2="155.306" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o051" x1="499.56" y1="155.306" x2="507.6" y2="158.962" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o052" x1="507.6" y1="158.962" x2="515.64" y2="162.951" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o053" x1="515.64" y1="162.951" x2="523.68" y2="167.254" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o054" x1="523.68" y1="167.254" x2="531.72" y2="171.855" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o055" x1="531.72" y1="171.855" x2="539.76" y2="176.735" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o056" x1="539.76" y1="176.735" x2="547.8" y2="181.873" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o057" x1="547.8" y1="181.873" x2="555.84" y2="187.246" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o058" x1="555.84" y1="187.246" x2="563.88" y2="192.832" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o059" x1="563.88" y1="192.832" x2="571.92" y2="198.604" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o060" x1="571.92" y1="198.604" x2="579.96" y2="204.536" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o061" x1="579.96" y1="204.536" x2="588" y2="210.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o062" x1="588" y1="210.6" x2="596.04" y2="216.766" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o063" x1="596.04" y1="216.766" x2="604.08" y2="223.002" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o064" x1="604.08" y1="223.002" x2="612.12" y2="229.276" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o065" x1="612.12" y1="229.276" x2="620.16" y2="235.553" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o066" x1="620.16" y1="235.553" x2="628.2" y2="241.798" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o067" x1="628.2" y1="241.798" x2="636.24" y2="247.972" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o068" x1="636.24" y1="247.972" x2="644.28" y2="254.037" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o069" x1="644.28" y1="254.037" x2="652.32" y2="259.952" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o070" x1="652.32" y1="259.952" x2="660.36" y2="265.675" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o071" x1="660.36" y1="265.675" x2="668.4" y2="271.163" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o072" x1="668.4" y1="271.163" x2="676.44" y2="276.37" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o073" x1="676.44" y1="276.37" x2="684.48" y2="281.249" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o074" x1="684.48" y1="281.249" x2="692.52" y2="285.754" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o075" x1="692.52" y1="285.754" x2="700.56" y2="289.833" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o076" x1="700.56" y1="289.833" x2="708.6" y2="293.435" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o077" x1="708.6" y1="293.435" x2="716.64" y2="296.508" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o078" x1="716.64" y1="296.508" x2="724.68" y2="298.998" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o079" x1="724.68" y1="298.998" x2="732.72" y2="300.849" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o080" x1="732.72" y1="300.849" x2="740.76" y2="302.002" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o081" x1="740.76" y1="302.002" x2="748.8" y2="302.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<rect id="o082" x="81.6" y="278.4" width="28.8" height="48" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<rect id="o083" x="744" y="278.4" width="28.8" height="48" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o084" x1="427.2" y1="297.6" x2="427.2" y2="144" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o085" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="444.48" y="228.72">w(r) ↑</tspan>
+<line id="o001" x1="96" y1="518.4" x2="691.2" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="518.4" x2="96" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="540.44">0.00</tspan>
 </text>
-<line id="o086" x1="240" y1="374.4" x2="240" y2="312" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o087" x1="427.2" y1="374.4" x2="427.2" y2="312" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o088" x1="614.4" y1="374.4" x2="614.4" y2="312" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o089" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="300.48" y="398.507">p₀: maintained pressure</tspan>
+<line id="o006" x1="244.8" y1="518.4" x2="244.8" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="244.8" y1="144" x2="244.8" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="244.8" y="540.44">0.25</tspan>
 </text>
-<line id="o090" x1="427.2" y1="336" x2="748.8" y2="336" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o091" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="578.88" y="360.107">b</tspan>
+<line id="o009" x1="393.6" y1="518.4" x2="393.6" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="393.6" y1="144" x2="393.6" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="393.6" y="540.44">0.50</tspan>
 </text>
-<ellipse id="o092" cx="1012.8" cy="216" rx="100.8" ry="100.8" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o093" x1="1012.8" y1="216" x2="1113.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o094" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="1039.68" y="192.413">b</tspan>
+<line id="o012" x1="542.4" y1="518.4" x2="542.4" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="542.4" y1="144" x2="542.4" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="542.4" y="540.44">0.75</tspan>
 </text>
-<text id="o095" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="895.68" y="370.32">A_c = π b²</tspan>
+<line id="o015" x1="691.2" y1="518.4" x2="691.2" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="691.2" y1="144" x2="691.2" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="691.2" y="540.44">1.00</tspan>
 </text>
-<text id="o096" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="74.88" y="101.52">Clamped circular blister: w(b) = 0; w′(b) = 0; regular centre.</tspan>
+<line id="o018" x1="89.28" y1="505.029" x2="96" y2="505.029" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="96" y1="505.029" x2="691.2" y2="505.029" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="509.789">-1.5</tspan>
 </text>
-<line id="o097" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o098" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• r — radial coordinate</tspan>
+<line id="o021" x1="89.28" y1="438.171" x2="96" y2="438.171" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="96" y1="438.171" x2="691.2" y2="438.171" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="442.931">-1</tspan>
 </text>
-<text id="o099" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• b — crack edge</tspan>
+<line id="o024" x1="89.28" y1="371.314" x2="96" y2="371.314" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="96" y1="371.314" x2="691.2" y2="371.314" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="376.074">-0.5</tspan>
 </text>
-<text id="o100" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• w, w′ — opening and slope</tspan>
+<line id="o027" x1="89.28" y1="304.457" x2="96" y2="304.457" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="96" y1="304.457" x2="691.2" y2="304.457" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="309.217">0</tspan>
 </text>
-<text id="o101" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• D_f L_r²w = p₀ — equation residual</tspan>
+<line id="o030" x1="89.28" y1="237.6" x2="96" y2="237.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="96" y1="237.6" x2="691.2" y2="237.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="242.36">0.5</tspan>
 </text>
-<text id="o102" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• r = 0 and b → zero slope</tspan>
+<line id="o033" x1="89.28" y1="170.743" x2="96" y2="170.743" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o034" x1="96" y1="170.743" x2="691.2" y2="170.743" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="175.503">1</tspan>
 </text>
-<text id="o103" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">L_r r² = 4</tspan>
+<text id="o036" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="393.6" y="563.2">r / b</tspan>
 </text>
-<text id="o104" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">L_r r⁴ = 16r²</tspan>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">w/w(0)  and  w′ b/w(0)</tspan>
 </text>
-<text id="o105" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<polyline id="o038" points="96,170.743 98.991,170.75 101.982,170.77 104.973,170.804 107.964,170.851 110.955,170.912 113.946,170.986 116.937,171.074 119.928,171.175 122.919,171.289 125.91,171.417 128.901,171.559 131.891,171.714 134.882,171.882 137.873,172.063 140.864,172.258 143.855,172.466 146.846,172.687 149.837,172.922 152.828,173.17 155.819,173.43 158.81,173.704 161.801,173.991 164.792,174.291 167.783,174.604 170.774,174.93 173.765,175.269 176.756,175.621 179.747,175.985 182.738,176.362 185.729,176.752 188.72,177.154 191.711,177.569 194.702,177.996 197.692,178.435 200.683,178.887 203.674,179.352 206.665,179.828 209.656,180.317 212.647,180.817 215.638,181.33 218.629,181.854 221.62,182.39 224.611,182.938 227.602,183.497 230.593,184.068 233.584,184.651 236.575,185.244 239.566,185.849 242.557,186.465 245.548,187.093 248.539,187.731 251.53,188.38 254.521,189.039 257.512,189.71 260.503,190.391 263.493,191.082 266.484,191.784 269.475,192.495 272.466,193.217 275.457,193.949 278.448,194.691 281.439,195.442 284.43,196.203 287.421,196.973 290.412,197.753 293.403,198.541 296.394,199.339 299.385,200.146 302.376,200.962 305.367,201.786 308.358,202.618 311.349,203.459 314.34,204.309 317.331,205.166 320.322,206.031 323.313,206.904 326.304,207.785 329.294,208.673 332.285,209.568 335.276,210.47 338.267,211.379 341.258,212.296 344.249,213.218 347.24,214.148 350.231,215.083 353.222,216.025 356.213,216.972 359.204,217.925 362.195,218.884 365.186,219.849 368.177,220.818 371.168,221.793 374.159,222.772 377.15,223.756 380.141,224.745 383.132,225.737 386.123,226.734 389.114,227.735 392.105,228.739 395.095,229.747 398.086,230.758 401.077,231.773 404.068,232.79 407.059,233.809 410.05,234.832 413.041,235.856 416.032,236.882 419.023,237.911 422.014,238.94 425.005,239.972 427.996,241.004 430.987,242.037 433.978,243.071 436.969,244.105 439.96,245.14 442.951,246.174 445.942,247.208 448.933,248.242 451.924,249.275 454.915,250.307 457.906,251.338 460.896,252.367 463.887,253.394 466.878,254.42 469.869,255.443 472.86,256.464 475.851,257.482 478.842,258.497 481.833,259.509 484.824,260.518 487.815,261.522 490.806,262.523 493.797,263.519 496.788,264.51 499.779,265.497 502.77,266.479 505.761,267.455 508.752,268.425 511.743,269.39 514.734,270.348 517.725,271.3 520.716,272.245 523.707,273.182 526.697,274.113 529.688,275.035 532.679,275.95 535.67,276.856 538.661,277.754 541.652,278.643 544.643,279.522 547.634,280.392 550.625,281.252 553.616,282.103 556.607,282.942 559.598,283.771 562.589,284.589 565.58,285.395 568.571,286.19 571.562,286.973 574.553,287.743 577.544,288.501 580.535,289.245 583.526,289.977 586.517,290.694 589.508,291.398 592.498,292.087 595.489,292.761 598.48,293.421 601.471,294.065 604.462,294.693 607.453,295.306 610.444,295.902 613.435,296.481 616.426,297.043 619.417,297.588 622.408,298.114 625.399,298.623 628.39,299.113 631.381,299.584 634.372,300.036 637.363,300.468 640.354,300.88 643.345,301.272 646.336,301.643 649.327,301.993 652.318,302.321 655.309,302.628 658.299,302.912 661.29,303.174 664.281,303.412 667.272,303.627 670.263,303.818 673.254,303.985 676.245,304.128 679.236,304.245 682.227,304.337 685.218,304.404 688.209,304.444 691.2,304.457" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o039" points="96,304.457 98.991,307.145 101.982,309.832 104.973,312.518 107.964,315.204 110.955,317.887 113.946,320.569 116.937,323.248 119.928,325.924 122.919,328.597 125.91,331.267 128.901,333.932 131.891,336.593 134.882,339.248 137.873,341.899 140.864,344.544 143.855,347.183 146.846,349.815 149.837,352.44 152.828,355.058 155.819,357.669 158.81,360.271 161.801,362.864 164.792,365.449 167.783,368.024 170.774,370.59 173.765,373.145 176.756,375.69 179.747,378.224 182.738,380.746 185.729,383.256 188.72,385.755 191.711,388.24 194.702,390.713 197.692,393.172 200.683,395.618 203.674,398.049 206.665,400.465 209.656,402.866 212.647,405.252 215.638,407.622 218.629,409.976 221.62,412.313 224.611,414.633 227.602,416.936 230.593,419.22 233.584,421.486 236.575,423.734 239.566,425.962 242.557,428.171 245.548,430.36 248.539,432.528 251.53,434.676 254.521,436.802 257.512,438.907 260.503,440.99 263.493,443.051 266.484,445.088 269.475,447.103 272.466,449.094 275.457,451.061 278.448,453.003 281.439,454.921 284.43,456.813 287.421,458.68 290.412,460.52 293.403,462.335 296.394,464.122 299.385,465.882 302.376,467.614 305.367,469.318 308.358,470.994 311.349,472.641 314.34,474.258 317.331,475.846 320.322,477.404 323.313,478.931 326.304,480.427 329.294,481.892 332.285,483.325 335.276,484.726 338.267,486.094 341.258,487.429 344.249,488.731 347.24,489.999 350.231,491.233 353.222,492.432 356.213,493.596 359.204,494.725 362.195,495.818 365.186,496.875 368.177,497.895 371.168,498.878 374.159,499.824 377.15,500.731 380.141,501.601 383.132,502.432 386.123,503.223 389.114,503.975 392.105,504.688 395.095,505.359 398.086,505.991 401.077,506.581 404.068,507.129 407.059,507.636 410.05,508.1 413.041,508.522 416.032,508.9 419.023,509.235 422.014,509.525 425.005,509.772 427.996,509.973 430.987,510.13 433.978,510.24 436.969,510.305 439.96,510.323 442.951,510.295 445.942,510.219 448.933,510.096 451.924,509.924 454.915,509.705 457.906,509.436 460.896,509.118 463.887,508.75 466.878,508.332 469.869,507.864 472.86,507.345 475.851,506.774 478.842,506.152 481.833,505.478 484.824,504.751 487.815,503.971 490.806,503.138 493.797,502.251 496.788,501.31 499.779,500.314 502.77,499.263 505.761,498.157 508.752,496.996 511.743,495.778 514.734,494.503 517.725,493.171 520.716,491.782 523.707,490.335 526.697,488.83 529.688,487.267 532.679,485.644 535.67,483.962 538.661,482.22 541.652,480.417 544.643,478.554 547.634,476.63 550.625,474.644 553.616,472.597 556.607,470.487 559.598,468.315 562.589,466.079 565.58,463.78 568.571,461.417 571.562,458.989 574.553,456.497 577.544,453.94 580.535,451.317 583.526,448.628 586.517,445.873 589.508,443.051 592.498,440.161 595.489,437.205 598.48,434.18 601.471,431.086 604.462,427.924 607.453,424.693 610.444,421.392 613.435,418.021 616.426,414.58 619.417,411.068 622.408,407.484 625.399,403.829 628.39,400.101 631.381,396.302 634.372,392.429 637.363,388.483 640.354,384.463 643.345,380.37 646.336,376.201 649.327,371.958 652.318,367.639 655.309,363.245 658.299,358.775 661.29,354.228 664.281,349.604 667.272,344.902 670.263,340.123 673.254,335.266 676.245,330.33 679.236,325.315 682.227,320.221 685.218,315.047 688.209,309.792 691.2,304.457" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="175.68" y="204.019">w</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="415.104" y="379.122">w′ = p₀r(r²−b²)</tspan>
+<tspan x="415.104" y="397.215">/(16D_f)</tspan>
+</text>
+<rect id="o042" x="720" y="144" width="523.2" height="374.4" rx="29.952" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="733.44" y="166.44">Direct verification</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="207.587">𝓛ᵣ(r²) = 4,   𝓛ᵣ(r⁴) = 16 r²</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="259.293">𝓛ᵣ w ∝ −8 + 16 r²,  𝓛ᵣ²w ∝ 64  ⇒  D_f 𝓛ᵣ²w = p₀</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="313.187">w′(r) = p₀ r (r² − b²) / (16D_f)</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="736.32" y="379.84">Slope zero at r = 0 and r = b; steepest between.</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.587">Differentiating the answer back reproduces the governing equation, so the solution is verified, not assumed.</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Verification of Eq. C4-E17.</tspan>
 </text>
 </svg>

@@ -1,50 +1,91 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E33</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E33 · Energy–momentum compatibility check</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E33 · Energy–momentum compatibility check</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">Incoming finite budgets</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Do the energy and momentum budgets describe the same motion?</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">Transmitted E_solid, I_net</tspan>
+<line id="o002" x1="96" y1="508.8" x2="710.4" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="192" x2="96" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o004" x1="96" y1="508.8" x2="96" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o005" x1="96" y1="192" x2="96" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="530.84">0.0</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">Release + departure cost</tspan>
+<line id="o007" x1="249.6" y1="508.8" x2="249.6" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="249.6" y1="192" x2="249.6" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="249.6" y="530.84">0.3</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Work, storage, fracture consumption and net impulse retain separate meanings.</tspan>
+<line id="o010" x1="403.2" y1="508.8" x2="403.2" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o011" x1="403.2" y1="192" x2="403.2" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="530.84">0.6</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• I_net → final payload momentum</tspan>
+<line id="o013" x1="556.8" y1="508.8" x2="556.8" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="556.8" y1="192" x2="556.8" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="556.8" y="530.84">0.9</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• m_f → v_CM = 0.67238 m/s</tspan>
+<line id="o016" x1="710.4" y1="508.8" x2="710.4" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="710.4" y1="192" x2="710.4" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="530.84">1.2</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• K_CM = 0.52669 nJ</tspan>
+<line id="o019" x1="89.28" y1="508.8" x2="96" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="89.28" y1="376.8" x2="96" y2="376.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="96" y1="376.8" x2="710.4" y2="376.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="381.56">5</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• ΓA_f = 5 nJ</tspan>
+<line id="o023" x1="89.28" y1="244.8" x2="96" y2="244.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o024" x1="96" y1="244.8" x2="710.4" y2="244.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o025" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="249.56">10</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• total minimum = 5.52669 nJ</tspan>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="553.6">film speed v  (m/s)</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• E_solid = 10 nJ</tspan>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="170.56">energy  (nJ)</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">An exact actual impulse fixes the centre-of-mass speed.</tspan>
+<polyline id="o028" points="96,376.8 102.206,376.795 108.412,376.782 114.618,376.759 120.824,376.728 127.03,376.687 133.236,376.637 139.442,376.579 145.648,376.511 151.855,376.434 158.061,376.348 164.267,376.253 170.473,376.149 176.679,376.036 182.885,375.914 189.091,375.783 195.297,375.643 201.503,375.494 207.709,375.336 213.915,375.169 220.121,374.992 226.327,374.807 232.533,374.613 238.739,374.41 244.945,374.197 251.152,373.976 257.358,373.745 263.564,373.506 269.77,373.257 275.976,373 282.182,372.733 288.388,372.457 294.594,372.173 300.8,371.879 307.006,371.576 313.212,371.264 319.418,370.944 325.624,370.614 331.83,370.275 338.036,369.927 344.242,369.57 350.448,369.204 356.655,368.829 362.861,368.445 369.067,368.052 375.273,367.649 381.479,367.238 387.685,366.818 393.891,366.389 400.097,365.95 406.303,365.503 412.509,365.047 418.715,364.581 424.921,364.107 431.127,363.623 437.333,363.131 443.539,362.629 449.745,362.118 455.952,361.599 462.158,361.07 468.364,360.532 474.57,359.986 480.776,359.43 486.982,358.865 493.188,358.291 499.394,357.708 505.6,357.116 511.806,356.515 518.012,355.905 524.218,355.286 530.424,354.658 536.63,354.021 542.836,353.375 549.042,352.719 555.248,352.055 561.455,351.382 567.661,350.699 573.867,350.008 580.073,349.308 586.279,348.598 592.485,347.88 598.691,347.152 604.897,346.416 611.103,345.67 617.309,344.915 623.515,344.152 629.721,343.379 635.927,342.597 642.133,341.807 648.339,341.007 654.545,340.198 660.752,339.38 666.958,338.553 673.164,337.717 679.37,336.872 685.576,336.018 691.782,335.155 697.988,334.283 704.194,333.402 710.4,332.511" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o029" x1="96" y1="244.8" x2="710.4" y2="244.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<line id="o030" x1="440.258" y1="192" x2="440.258" y2="508.8" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o031" cx="440.258" cy="362.895" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="202.178" y="319.789">5.527 nJ at v_CM</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="131.2" y="217.053">E_solid = 10 nJ</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="451.778" y="474.093">v_CM = Iₙₑₜ/m_f = 0.6724 m/s</tspan>
+</text>
+<rect id="o035" x="739.2" y="153.6" width="504" height="374.4" rx="29.952" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="176.04">Implied speed and energy</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="216.64">v_CM = Iₙₑₜ / m_f = 0.672378829 m/s</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="269.44">K_CM = Iₙₑₜ² / (2 m_f) = 0.526688683 nJ</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="322.24">Γ A_f + K_CM = 5.526688683 nJ  &lt;  E_solid</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="394.24">Check: the impulse budget and low-Γ energy budget agree</tspan>
+<tspan x="755.52" y="413.12">at the implied speed.</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.587">Compatibility is a screen: it shows the two budgets do not contradict each other, not that the film actually leaves.</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Energy–momentum compatibility of Eq. C4-E33.</tspan>
 </text>
 </svg>

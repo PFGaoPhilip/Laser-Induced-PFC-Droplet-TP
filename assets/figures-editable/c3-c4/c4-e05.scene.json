@@ -1,286 +1,691 @@
 {
-  "slide": {
-    "width": 13.333,
-    "height": 7.5
+ "slide": {
+  "width": 13.333,
+  "height": 7.5
+ },
+ "background": "#142632",
+ "objects": [
+  {
+   "x": 0.3,
+   "y": 0.13,
+   "w": 12.7,
+   "h": 0.3719444444444444,
+   "text": "C4-E05 · Derived variational identity for fixed clamps",
+   "font": "Arial",
+   "font_size": 19,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o000",
+   "name": "C4-E05 text 0"
   },
-  "background": "#142632",
-  "objects": [
-    {
-      "x": 0.3,
-      "y": 0.15,
-      "w": 12.7,
-      "h": 0.4,
-      "text": "C4-E05 · Derived variational identity for fixed clamps",
-      "font": "Arial",
-      "font_size": 21,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o000",
-      "name": "C4-E05 text 0"
-    },
-    {
-      "x": 1.3,
-      "y": 1.3,
-      "w": 7.5,
-      "h": 2.35,
-      "fill": null,
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "rect",
-      "id": "o001",
-      "name": "C4-E05 rect 1"
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "w": 5.5,
-      "h": 0.6,
-      "text": "Reference film plane Ω_f\nw(x,y,t), variation δw",
-      "font": "Arial",
-      "font_size": 20,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o002",
-      "name": "C4-E05 text 2"
-    },
-    {
-      "x1": 8.85,
-      "y1": 2.45,
-      "x2": 10.1,
-      "y2": 2.45,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o003",
-      "name": "C4-E05 arrow 3"
-    },
-    {
-      "x": 10.3,
-      "y": 2.2,
-      "w": 2.5,
-      "h": 0.6,
-      "text": "n: outward\nin-plane normal",
-      "font": "Arial",
-      "font_size": 16,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o004",
-      "name": "C4-E05 text 4"
-    },
-    {
-      "x1": 1.5,
-      "y1": 3.85,
-      "x2": 3.5,
-      "y2": 3.85,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o005",
-      "name": "C4-E05 arrow 5"
-    },
-    {
-      "x": 3.7,
-      "y": 3.7,
-      "w": 1,
-      "h": 0.3,
-      "text": "x",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o006",
-      "name": "C4-E05 text 6"
-    },
-    {
-      "x1": 1.5,
-      "y1": 3.85,
-      "x2": 1.5,
-      "y2": 2.9,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o007",
-      "name": "C4-E05 arrow 7"
-    },
-    {
-      "x": 0.8,
-      "y": 3.1,
-      "w": 1,
-      "h": 0.3,
-      "text": "y",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o008",
-      "name": "C4-E05 text 8"
-    },
-    {
-      "x": 2.0,
-      "y": 0.8,
-      "w": 10.5,
-      "h": 0.35,
-      "text": "Fixed boundary: δw = 0; ∂ₙδw = 0",
-      "font": "Arial",
-      "font_size": 19,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o009",
-      "name": "C4-E05 text 9"
-    },
-    {
-      "x": 5.3,
-      "y": 3.85,
-      "w": 7,
-      "h": 0.3,
-      "text": "Curvature stores U_b; slope stores U_T.",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o010",
-      "name": "C4-E05 text 10"
-    },
-    {
-      "x1": 0.3,
-      "y1": 4.35,
-      "x2": 13,
-      "y2": 4.35,
-      "line": "#405967",
-      "line_width": 1,
-      "type": "line",
-      "id": "o011",
-      "name": "C4-E05 line 11"
-    },
-    {
-      "x": 0.35,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• Ω_f, x, y — film plane",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o012",
-      "name": "C4-E05 text 12"
-    },
-    {
-      "x": 6.8,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• w, δw — displacement and variation",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o013",
-      "name": "C4-E05 text 13"
-    },
-    {
-      "x": 0.35,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• D_f, ν_f → ∇⁴w restoring load",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o014",
-      "name": "C4-E05 text 14"
-    },
-    {
-      "x": 6.8,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• T₀ → −∇²w restoring load",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o015",
-      "name": "C4-E05 text 15"
-    },
-    {
-      "x": 0.35,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• U_b, U_T — stored energy",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o016",
-      "name": "C4-E05 text 16"
-    },
-    {
-      "x": 6.8,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• clamp: δw = 0, slope variation = 0",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o017",
-      "name": "C4-E05 text 17"
-    },
-    {
-      "x": 0.35,
-      "y": 6.12,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Four spatial derivatives arise from two integrations by parts.",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o018",
-      "name": "C4-E05 text 18"
-    },
-    {
-      "x": 0.35,
-      "y": 7.08,
-      "w": 12.5,
-      "h": 0.28,
-      "text": "Model schematic; geometry is not to scale.",
-      "font": "Arial",
-      "font_size": 10,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o019",
-      "name": "C4-E05 text 19"
-    }
-  ],
-  "_audit": {
-    "id": "C4-E05",
-    "category": "plate variation",
-    "corrections": [
-      "Replaced forced blister with reference-plane variational domain and in-plane boundary normal."
+  {
+   "x": 0.5,
+   "y": 1.0,
+   "w": 12.3,
+   "h": 0.27875,
+   "text": "With a fixed clamp, the boundary terms drop and one operator is left",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o001",
+   "name": "C4-E05 text 1"
+  },
+  {
+   "x": 0.5,
+   "y": 1.5,
+   "w": 6.0,
+   "h": 2.5,
+   "fill": "#213E4B",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o002",
+   "name": "C4-E05 round_rect 2"
+  },
+  {
+   "x": 0.62,
+   "y": 1.56,
+   "w": 5.76,
+   "h": 0.27875,
+   "text": "Bending variation",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o003",
+   "name": "C4-E05 text 3"
+  },
+  {
+   "x": 0.65,
+   "y": 2.0,
+   "w": 5.7,
+   "h": 0.26180555555555557,
+   "text": "coefficient of w_xxyy:  2ν_f + 2(1 − ν_f) = 2",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o004",
+   "name": "C4-E05 text 4"
+  },
+  {
+   "x": 0.65,
+   "y": 2.6,
+   "w": 5.7,
+   "h": 0.25333333333333335,
+   "text": "δU_b = D_f ∫ (wₓₓₓₓ + 2w_xxyy + w_yyyy) δw dA = D_f ∫ ∇⁴w δw dA",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o005",
+   "name": "C4-E05 text 5"
+  },
+  {
+   "x": 0.65,
+   "y": 3.35,
+   "w": 5.7,
+   "h": 0.24486111111111108,
+   "text": "Poisson ratio cancels from the interior operator.",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o006",
+   "name": "C4-E05 text 6"
+  },
+  {
+   "x": 6.8,
+   "y": 1.5,
+   "w": 6.0,
+   "h": 2.5,
+   "fill": "#213E4B",
+   "line": "#F28BA0",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o007",
+   "name": "C4-E05 round_rect 7"
+  },
+  {
+   "x": 6.92,
+   "y": 1.56,
+   "w": 5.76,
+   "h": 0.27875,
+   "text": "Tension variation",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#F28BA0",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o008",
+   "name": "C4-E05 text 8"
+  },
+  {
+   "x": 6.95,
+   "y": 2.0,
+   "w": 5.7,
+   "h": 0.26180555555555557,
+   "text": "δU_T = T₀ ∫ ∇w·∇δw dA",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o009",
+   "name": "C4-E05 text 9"
+  },
+  {
+   "x": 6.95,
+   "y": 2.55,
+   "w": 5.7,
+   "h": 0.26180555555555557,
+   "text": "= −T₀ ∫ ∇²w δw dA   (δw = 0 on the clamp)",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#F28BA0",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o010",
+   "name": "C4-E05 text 10"
+  },
+  {
+   "x1": 1.0,
+   "y1": 6.1000000000000005,
+   "x2": 6.2,
+   "y2": 6.1000000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o011",
+   "name": "C4-E05 line 11"
+  },
+  {
+   "x1": 1.0,
+   "y1": 4.4,
+   "x2": 1.0,
+   "y2": 6.1000000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o012",
+   "name": "C4-E05 line 12"
+  },
+  {
+   "x1": 1.0,
+   "y1": 6.1000000000000005,
+   "x2": 1.0,
+   "y2": 6.170000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o013",
+   "name": "C4-E05 line 13"
+  },
+  {
+   "x1": 1.0,
+   "y1": 4.4,
+   "x2": 1.0,
+   "y2": 6.1000000000000005,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o014",
+   "name": "C4-E05 line 14"
+  },
+  {
+   "x": 0.5,
+   "y": 6.19,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o015",
+   "name": "C4-E05 text 15"
+  },
+  {
+   "x1": 3.6,
+   "y1": 6.1000000000000005,
+   "x2": 3.6,
+   "y2": 6.170000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o016",
+   "name": "C4-E05 line 16"
+  },
+  {
+   "x1": 3.6,
+   "y1": 4.4,
+   "x2": 3.6,
+   "y2": 6.1000000000000005,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o017",
+   "name": "C4-E05 line 17"
+  },
+  {
+   "x": 3.1,
+   "y": 6.19,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.25",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o018",
+   "name": "C4-E05 text 18"
+  },
+  {
+   "x1": 6.2,
+   "y1": 6.1000000000000005,
+   "x2": 6.2,
+   "y2": 6.170000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o019",
+   "name": "C4-E05 line 19"
+  },
+  {
+   "x1": 6.2,
+   "y1": 4.4,
+   "x2": 6.2,
+   "y2": 6.1000000000000005,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o020",
+   "name": "C4-E05 line 20"
+  },
+  {
+   "x": 5.7,
+   "y": 6.19,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o021",
+   "name": "C4-E05 text 21"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 5.250000000000001,
+   "x2": 1.0,
+   "y2": 5.250000000000001,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o022",
+   "name": "C4-E05 line 22"
+  },
+  {
+   "x1": 1.0,
+   "y1": 5.250000000000001,
+   "x2": 6.2,
+   "y2": 5.250000000000001,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o023",
+   "name": "C4-E05 line 23"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 5.160000000000001,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "2",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o024",
+   "name": "C4-E05 text 24"
+  },
+  {
+   "x": 1.0,
+   "y": 6.41,
+   "w": 5.2,
+   "h": 0.25333333333333335,
+   "text": "ν_f",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o025",
+   "name": "C4-E05 text 25"
+  },
+  {
+   "x": 0.4,
+   "y": 4.0200000000000005,
+   "w": 5.2,
+   "h": 0.25333333333333335,
+   "text": "coefficient",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o026",
+   "name": "C4-E05 text 26"
+  },
+  {
+   "points": [
+    [
+     1.0,
+     5.250000000000001
     ],
-    "scientific_status": "accepted against local equation, definitions and notes",
-    "evidence": [
-      "content/chapter04.py"
+    [
+     1.1061224489795918,
+     5.250000000000001
+    ],
+    [
+     1.2122448979591836,
+     5.250000000000001
+    ],
+    [
+     1.3183673469387756,
+     5.250000000000001
+    ],
+    [
+     1.4244897959183673,
+     5.250000000000001
+    ],
+    [
+     1.530612244897959,
+     5.250000000000001
+    ],
+    [
+     1.636734693877551,
+     5.250000000000001
+    ],
+    [
+     1.7428571428571429,
+     5.250000000000001
+    ],
+    [
+     1.8489795918367347,
+     5.250000000000001
+    ],
+    [
+     1.9551020408163264,
+     5.250000000000001
+    ],
+    [
+     2.061224489795918,
+     5.250000000000001
+    ],
+    [
+     2.16734693877551,
+     5.250000000000001
+    ],
+    [
+     2.273469387755102,
+     5.250000000000001
+    ],
+    [
+     2.3795918367346935,
+     5.250000000000001
+    ],
+    [
+     2.4857142857142858,
+     5.250000000000001
+    ],
+    [
+     2.591836734693877,
+     5.250000000000001
+    ],
+    [
+     2.6979591836734693,
+     5.250000000000001
+    ],
+    [
+     2.8040816326530615,
+     5.250000000000001
+    ],
+    [
+     2.910204081632653,
+     5.250000000000001
+    ],
+    [
+     3.016326530612245,
+     5.250000000000001
+    ],
+    [
+     3.1224489795918364,
+     5.250000000000001
+    ],
+    [
+     3.2285714285714286,
+     5.250000000000001
+    ],
+    [
+     3.33469387755102,
+     5.250000000000001
+    ],
+    [
+     3.440816326530612,
+     5.250000000000001
+    ],
+    [
+     3.546938775510204,
+     5.250000000000001
+    ],
+    [
+     3.653061224489796,
+     5.250000000000001
+    ],
+    [
+     3.7591836734693875,
+     5.250000000000001
+    ],
+    [
+     3.8653061224489793,
+     5.250000000000001
+    ],
+    [
+     3.9714285714285715,
+     5.250000000000001
+    ],
+    [
+     4.077551020408164,
+     5.250000000000001
+    ],
+    [
+     4.183673469387754,
+     5.250000000000001
+    ],
+    [
+     4.289795918367346,
+     5.250000000000001
+    ],
+    [
+     4.395918367346939,
+     5.250000000000001
+    ],
+    [
+     4.502040816326531,
+     5.250000000000001
+    ],
+    [
+     4.608163265306123,
+     5.250000000000001
+    ],
+    [
+     4.7142857142857135,
+     5.250000000000001
+    ],
+    [
+     4.820408163265306,
+     5.250000000000001
+    ],
+    [
+     4.926530612244898,
+     5.250000000000001
+    ],
+    [
+     5.03265306122449,
+     5.250000000000001
+    ],
+    [
+     5.1387755102040815,
+     5.250000000000001
+    ],
+    [
+     5.244897959183673,
+     5.250000000000001
+    ],
+    [
+     5.351020408163265,
+     5.250000000000001
+    ],
+    [
+     5.457142857142857,
+     5.250000000000001
+    ],
+    [
+     5.563265306122449,
+     5.250000000000001
+    ],
+    [
+     5.66938775510204,
+     5.250000000000001
+    ],
+    [
+     5.775510204081632,
+     5.250000000000001
+    ],
+    [
+     5.881632653061224,
+     5.250000000000001
+    ],
+    [
+     5.987755102040817,
+     5.250000000000001
+    ],
+    [
+     6.093877551020408,
+     5.250000000000001
+    ],
+    [
+     6.2,
+     5.250000000000001
     ]
+   ],
+   "fill": null,
+   "line": "#8EDBD4",
+   "line_width": 3,
+   "_open": true,
+   "type": "polygon",
+   "id": "o027",
+   "name": "C4-E05 polygon 27"
+  },
+  {
+   "x": 1.6,
+   "y": 4.6400000000000015,
+   "w": 3.4,
+   "h": 0.24486111111111108,
+   "text": "2ν + 2(1 − ν) = 2 for every ν",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o028",
+   "name": "C4-E05 text 28"
+  },
+  {
+   "x": 7.0,
+   "y": 4.4,
+   "w": 5.8,
+   "h": 0.27875,
+   "text": "Result: D_f ∇⁴w − T₀ ∇²w are the elastic restoring terms.",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o029",
+   "name": "C4-E05 text 29"
+  },
+  {
+   "x": 7.0,
+   "y": 5.1,
+   "w": 5.8,
+   "h": 0.4736111111111111,
+   "text": "They are the same terms that enter the transient balance of Eq.\nC4-E06.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o030",
+   "name": "C4-E05 text 30"
+  },
+  {
+   "x": 0.35,
+   "y": 7.12,
+   "w": 12.6,
+   "h": 0.21944444444444444,
+   "text": "Clamped variational identity of Eq. C4-E05.",
+   "font": "Arial",
+   "font_size": 10,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o031",
+   "name": "C4-E05 text 31"
   }
+ ],
+ "_title": "C4-E05",
+ "_audit": {
+  "id": "C4-E05",
+  "scientific_status": "drawn from the equation and its stated numbers"
+ }
 }

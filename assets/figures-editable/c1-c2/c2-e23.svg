@@ -1,23 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E23 A variable vapor mass makes a fixed-mass polytropic shortcut conditional.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E23 | Physical-variable diagram</text>
-<rect x="330" y="160" width="300" height="110" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="342" y="189.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Bubble energy storage U_b</text>
-<line x1="100" y1="210" x2="320" y2="210" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="92" y="145.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Heat Q̇_b</text>
-<line x1="480" y1="100" x2="480" y2="150" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="412" y="85.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Mass enthalpy entry</text>
-<line x1="640" y1="215" x2="860" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="692" y="165.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Work p_b V̇_b</text>
-<text x="112" y="354.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Conductive heat and transported enthalpy are separate terms.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_b, Ṫ_b: common vapor temperature</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">e_s, c_v,s: internal-energy storage</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">U_b: total stored energy</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_b V̇_b: work</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_v,s, ṁ_v,s: changing species mass</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">h_v,s: boundary enthalpy</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q̇_b: conduction</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s = 1…N_s: summation</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The product rule includes both temperature and mass changes</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Consistent energy references preserve the balance</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E23</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E23 · Product-rule derivation of thermal closure</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="537.6" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">From U_b to a temperature equation</tspan>
+</text>
+<text id="o003" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="159.587">Internal energy</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="191.267">U_b = Σ mᵥ,s eₛ(T_b)</tspan>
+</text>
+<text id="o005" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="245.2">Product rule</tspan>
+</text>
+<text id="o006" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="276.88">U̇_b = (Σ m cᵥ) Ṫ_b + Σ eₛ ṁᵥ,s</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="330.813">Insert the first law</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="362.493">(Σ m cᵥ) Ṫ_b = Q̇_b − p_b V̇_b + Σ (hᵥ,s − eₛ) ṁᵥ,s</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="59.52" y="415.88">For an ideal vapor h − e = Rᵤ T / M = 9.3 kJ/kg at 323 K,</tspan>
+<tspan x="59.52" y="434.76">so every mass added also carries the work term.</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="606.72" y="116.933">Terms that change the bubble temperature (illustrative, W)</tspan>
+</text>
+<line id="o011" x1="624" y1="489.6" x2="1228.8" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o012" x1="624" y1="163.2" x2="624" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o013" x1="617.28" y1="489.6" x2="624" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="624" y1="489.6" x2="1228.8" y2="489.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="612.48" y="494.36">0</tspan>
+</text>
+<line id="o016" x1="617.28" y1="403.705" x2="624" y2="403.705" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="624" y1="403.705" x2="1228.8" y2="403.705" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="612.48" y="408.465">0.5</tspan>
+</text>
+<line id="o019" x1="617.28" y1="317.811" x2="624" y2="317.811" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="624" y1="317.811" x2="1228.8" y2="317.811" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="612.48" y="322.571">1</tspan>
+</text>
+<line id="o022" x1="617.28" y1="231.916" x2="624" y2="231.916" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="624" y1="231.916" x2="1228.8" y2="231.916" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="612.48" y="236.676">1.5</tspan>
+</text>
+<rect id="o025" x="645.168" y="266.274" width="108.864" height="223.326" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="699.6" y="251.967">1.30</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="699.6" y="511.227">Σ(h−e)ṁ</tspan>
+</text>
+<rect id="o028" x="796.368" y="214.737" width="108.864" height="51.5368" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="850.8" y="200.43">+0.30</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="850.8" y="511.227">Q̇_b</tspan>
+</text>
+<rect id="o031" x="947.568" y="214.737" width="108.864" height="154.611" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1002" y="200.43">-0.90</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1002" y="511.227">−p V̇</tspan>
+</text>
+<rect id="o034" x="1098.77" y="369.347" width="108.864" height="120.253" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1153.2" y="355.041">0.70</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1153.2" y="511.227">= (Σmcᵥ) Ṫ</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="606.72" y="577.187">A fixed-mass polytropic law cannot hold while ṁᵥ,s ≠ 0: the mass terms</tspan>
+<tspan x="606.72" y="596.853">change the temperature as well.</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Thermal closure of Eq. C2-E23; waterfall values are illustrative.</tspan>
+</text>
 </svg>

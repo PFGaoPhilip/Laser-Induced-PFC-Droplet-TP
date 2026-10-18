@@ -1,80 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 616.32" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E11</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="616.32" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E11 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E11 · Derived intact-medium radial control</tspan>
 </text>
-<ellipse id="obj-001" cx="188.16" cy="172.8" rx="76.8" ry="76.8" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<ellipse id="obj-002" cx="188.16" cy="172.8" rx="34.56" ry="34.56" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<line id="obj-003" x1="188.16" y1="172.8" x2="222.72" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-004" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="184.32" y="153.734">Rref</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Pressure ledger at one instant (kPa)</tspan>
 </text>
-<line id="obj-005" x1="188.16" y1="172.8" x2="242.466" y2="227.106" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-006" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="241.92" y="244.934">r₀</tspan>
+<line id="o002" x1="57.6" y1="499.2" x2="729.6" y2="499.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="57.6" y1="153.6" x2="57.6" y2="499.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o004" x1="50.88" y1="499.2" x2="57.6" y2="499.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o005" x1="57.6" y1="499.2" x2="729.6" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="46.08" y="503.96">0</tspan>
 </text>
-<ellipse id="obj-007" cx="585.6" cy="172.8" rx="94.0368" ry="94.0368" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<ellipse id="obj-008" cx="585.6" cy="172.8" rx="74.88" ry="74.88" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<line id="obj-009" x1="585.6" y1="172.8" x2="660.48" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-010" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="624.96" y="153.734">R</tspan>
+<line id="o007" x1="50.88" y1="430.08" x2="57.6" y2="430.08" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="57.6" y1="430.08" x2="729.6" y2="430.08" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="46.08" y="434.84">25</tspan>
 </text>
-<line id="obj-011" x1="585.6" y1="172.8" x2="652.094" y2="239.294" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-012" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="669.12" y="254.534">r</tspan>
+<line id="o010" x1="50.88" y1="360.96" x2="57.6" y2="360.96" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o011" x1="57.6" y1="360.96" x2="729.6" y2="360.96" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="46.08" y="365.72">50</tspan>
 </text>
-<line id="obj-013" x1="283.2" y1="172.8" x2="460.8" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-014" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="297.6" y="140.294">Material map</tspan>
+<line id="o013" x1="50.88" y1="291.84" x2="57.6" y2="291.84" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="57.6" y1="291.84" x2="729.6" y2="291.84" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="46.08" y="296.6">75</tspan>
 </text>
-<text id="obj-015" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="105.6" y="291.014">Reference</tspan>
+<line id="o016" x1="50.88" y1="222.72" x2="57.6" y2="222.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="57.6" y1="222.72" x2="729.6" y2="222.72" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="46.08" y="227.48">100</tspan>
 </text>
-<text id="obj-016" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="508.8" y="299.654">Deformed: λr , λθ</tspan>
+<line id="o019" x1="50.88" y1="153.6" x2="57.6" y2="153.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="57.6" y1="153.6" x2="729.6" y2="153.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="46.08" y="158.36">125</tspan>
 </text>
-<text id="obj-017" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="718.08" y="101.894">Gg , ηg</tspan>
+<rect id="o022" x="76.416" y="222.72" width="96.768" height="276.48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="124.8" y="208.413">100.0</tspan>
 </text>
-<text id="obj-018" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="718.08" y="147.014">σrr , σθθ</tspan>
+<text id="o024" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="124.8" y="520.827">p_b − p_∞</tspan>
 </text>
-<text id="obj-019" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="718.08" y="193.094">p∞</tspan>
+<rect id="o025" x="210.816" y="222.72" width="96.768" height="13.271" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="259.2" y="208.413">-4.8</tspan>
 </text>
-<text id="obj-020" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="552.96" y="196.934">pb</tspan>
+<text id="o027" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="259.2" y="520.827">− 2σ/R</tspan>
 </text>
-<text id="obj-021" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="91.2" y="333.773">r₀³ − Rref³ = r³ − R³ ; radial coordinates point outward</tspan>
+<rect id="o028" x="345.216" y="235.991" width="96.768" height="119.787" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="393.6" y="221.684">-43.3</tspan>
 </text>
-<text id="obj-022" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<text id="o030" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="393.6" y="520.827">− pₑₗ</tspan>
 </text>
-<text id="obj-023" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• pb: inner driving pressure</tspan>
+<rect id="o031" x="479.616" y="318.914" width="96.768" height="36.864" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="528" y="304.607">+13.3</tspan>
 </text>
-<text id="obj-024" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• p∞: exterior pressure</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="528" y="520.827">− 4η_gṘ/R</tspan>
 </text>
-<text id="obj-025" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• 2σ/R: capillary resistance</tspan>
+<rect id="o034" x="614.016" y="318.914" width="96.768" height="180.286" fill="#A8E6A1" stroke="#A8E6A1" stroke-width="1.33333" opacity="0.85"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="662.4" y="304.607">65.2</tspan>
 </text>
-<text id="obj-026" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">• pel(R): network resistance</tspan>
+<text id="o036" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="662.4" y="520.827">= ρ_g(RR̈ + 3Ṙ²/2)</tspan>
 </text>
-<text id="obj-027" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">• −4ηgṘ/R: viscous term</tspan>
+<rect id="o037" x="768" y="96" width="475.2" height="422.4" rx="33.792" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="781.44" y="118.44">Spherical radial control</tspan>
 </text>
-<text id="obj-028" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="530.573">• ρg, R, Ṙ, R̈</tspan>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="784.32" y="158.493">ρ_g(RR̈ + 3Ṙ²/2) = p_b − p_∞ − 2σ/R − pₑₗ − 4η_gṘ/R</tspan>
 </text>
-<text id="obj-029" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="552.653">Spherical motion has no directional jet</tspan>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="255.04">Left: inertia of the surrounding gel.</tspan>
 </text>
-<text id="obj-030" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="574.733">A liquid pocket requires a separate layered problem</tspan>
+<ellipse id="o041" cx="790.08" cy="249.92" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="284.16">Right: driving overpressure minus capillary,</tspan>
+<tspan x="805.44" y="303.04">elastic and viscous resistance.</tspan>
+</text>
+<ellipse id="o043" cx="790.08" cy="279.04" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="332.8">Inward motion (Ṙ &lt; 0) turns the viscous term into</tspan>
+<tspan x="805.44" y="351.68">a push.</tspan>
+</text>
+<ellipse id="o045" cx="790.08" cy="327.68" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="59.52" y="547.84">Illustration: p_b − p_∞ = 100 kPa, R = 30 µm, Ṙ = −10 m/s, σ = 0.072 N/m (assumed), η_g = 0.010 Pa s, G_g = 20 kPa, R_ref = 5 µm.</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="59.52" y="601.187">The model quantifies cavity work before any directional-flow calculation; it does not create an outlet.</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Radial control of Eq. A-E11 (values illustrative; the inertia bar is what is left over).</tspan>
 </text>
 </svg>

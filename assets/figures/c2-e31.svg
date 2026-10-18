@@ -1,23 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E31 The preparation estimate demands at least 43.7% of the declared absorbed energy.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E31 | Physical-variable diagram</text>
-<rect x="70" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="82" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Incident optical energy</text>
-<rect x="365" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="377" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Absorbed: 223.848 nJ</text>
-<rect x="660" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="672" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">PFC prep: 97.8243 nJ</text>
-<line x1="325" y1="200" x2="355" y2="200" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="620" y1="200" x2="650" y2="200" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="102" y="335.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Required thermal-transfer fraction: at least 0.437012.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_L = 1 μJ: incident</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">A_λ = 0.568909: absorption</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_prep = 97.8243 nJ: specified PFC preparation</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">b_a = 10 μm; w = 20 μm</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f_geo = 0.393469: interception</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_abs = 223.848 nJ: absorber heat</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">η_th,min = 0.437012</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">μ_a = 2×10⁵ m⁻¹; h_a = 5 μm; ℛ_λ = 0.10</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Not all absorbed energy reaches the PFC</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">A surplus absorber budget is not evidence of nucleation or jetting</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E31</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E31 · Declared optical-to-heat energy screen</tspan>
+</text>
+<text id="o001" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="113.227">From 1 µJ of laser light to the 97.8 nJ the PFC must receive (nJ)</tspan>
+</text>
+<text id="o002" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="171.653">incident E_L</tspan>
+</text>
+<rect id="o003" x="489.6" y="153.6" width="595.2" height="52.8" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1094.4" y="174.533">1000.0 nJ</tspan>
+</text>
+<text id="o005" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="253.253">absorbed E_abs = f_geo A_λ E_L</tspan>
+</text>
+<rect id="o006" x="489.6" y="235.2" width="133.234" height="52.8" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="632.434" y="256.133">223.8 nJ</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="334.853">needed Qₚᵣₑₚ (constant-property)</tspan>
+</text>
+<rect id="o009" x="489.6" y="316.8" width="58.225" height="52.8" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="557.425" y="337.733">97.8 nJ</tspan>
+</text>
+<rect id="o011" x="48" y="403.2" width="576" height="201.6" rx="16.128" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="64.32" y="426.467">f_geo = 1 − e^(−2(10/20)²) = 0.393469</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="64.32" y="464.867">A_λ = 0.90 × (1 − e^(−1)) = 0.568909</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="503.267">E_abs = 0.393469 × 0.568909 × 1 µJ = 223.848 nJ</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="64.32" y="552.093">No loss between absorption and PFC is included in this screen.</tspan>
+</text>
+<rect id="o016" x="652.8" y="403.2" width="576" height="201.6" rx="16.128" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="666.24" y="425.093">Minimum heat-delivery fraction</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="669.12" y="459.107">ηₜₕ,min = Qₚᵣₑₚ / E_abs = 97.8243 / 223.848 = 0.437012</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="669.12" y="515.333">At least 43.7 % of the declared absorbed energy must reach</tspan>
+<tspan x="669.12" y="535.787">the PFC as heat, even with no losses.</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Energy screen of Eq. C2-E31; all inputs are declared teaching values.</tspan>
+</text>
 </svg>

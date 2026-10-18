@@ -5,7 +5,7 @@ from coursekit import H, P, T
 RESOURCES = {
     3: [('resolver-work', 'Three-stage resolver', '三阶段求解器',
          'learning-records/resolver-progress/index.html')],
-    5: [('finite-energy-models', 'Finite-energy cavitation models', '有限能量空化模型',
+    90: [('finite-energy-models', 'Finite-energy cavitation models', '有限能量空化模型',
          'modeling/minimal-cavitation/index.html'),
         ('embedded-pfc-study', 'PFC droplets in hydrogel', '水凝胶中的 PFC 液滴',
          'modeling/embedded-pfc-feasibility/index.html')],
@@ -42,7 +42,7 @@ def resource_sections(number):
                 + P('Maximum: Not established. Missing: 18 attained objectives and certificates.',
                     '最大值：尚未建立。缺少：18 项已达到的目标及证书。')
                 + resource_links(number, '../') + '</section>')
-    if number == 5:
+    if number == 90:
         return ('<section class="unit-study" data-course-resource="minimal">'
                 + H('Finite-energy cavitation models', '有限能量空化模型',
                     'finite-energy-models')

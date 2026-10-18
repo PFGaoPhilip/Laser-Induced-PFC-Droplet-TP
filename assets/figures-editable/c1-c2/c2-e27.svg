@@ -1,17 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E27 A mass ledger begins with the actual core volume.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E27 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">a</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">PFC liquid</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Aqueous carrier</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p_c; interface: σ_pc, shell</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Finite liquid core: a differs from subsequent bubble radius R.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">a₀ = 5 μm</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0 = 0.853466 ng</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ_d = 1630 kg/m³</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: spherical volume</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">This is a micron-scale teaching core</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">All later PFC phases share this mass inventory</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E27</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E27 · Finite-mass worked calculation</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="200.014" y1="528" x2="200.014" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="200.014" y1="144" x2="200.014" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="200.014" y="550.04">1e-06</tspan>
+</text>
+<line id="o006" x1="545.542" y1="528" x2="545.542" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="545.542" y1="144" x2="545.542" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="545.542" y="550.04">1e-05</tspan>
+</text>
+<line id="o009" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="532.76">1e-15</tspan>
+</text>
+<line id="o012" x1="89.28" y1="451.2" x2="96" y2="451.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="96" y1="451.2" x2="710.4" y2="451.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="455.96">1e-14</tspan>
+</text>
+<line id="o015" x1="89.28" y1="374.4" x2="96" y2="374.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="96" y1="374.4" x2="710.4" y2="374.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="379.16">1e-13</tspan>
+</text>
+<line id="o018" x1="89.28" y1="297.6" x2="96" y2="297.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="96" y1="297.6" x2="710.4" y2="297.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="302.36">1e-12</tspan>
+</text>
+<line id="o021" x1="89.28" y1="220.8" x2="96" y2="220.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="96" y1="220.8" x2="710.4" y2="220.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="225.56">1e-11</tspan>
+</text>
+<line id="o024" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="96" y1="144" x2="710.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">1e-10</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">core radius a  (m)</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">PFC mass  (kg)</tspan>
+</text>
+<polyline id="o029" points="108.222,525.135 114.156,521.178 120.089,517.222 126.022,513.266 131.956,509.309 137.889,505.353 143.822,501.397 149.756,497.44 155.689,493.484 161.622,489.528 167.555,485.571 173.489,481.615 179.422,477.658 185.355,473.702 191.289,469.746 197.222,465.789 203.155,461.833 209.089,457.877 215.022,453.92 220.955,449.964 226.888,446.008 232.822,442.051 238.755,438.095 244.688,434.138 250.622,430.182 256.555,426.226 262.488,422.269 268.422,418.313 274.355,414.357 280.288,410.4 286.221,406.444 292.155,402.488 298.088,398.531 304.021,394.575 309.955,390.618 315.888,386.662 321.821,382.706 327.755,378.749 333.688,374.793 339.621,370.837 345.554,366.88 351.488,362.924 357.421,358.968 363.354,355.011 369.288,351.055 375.221,347.098 381.154,343.142 387.088,339.186 393.021,335.229 398.954,331.273 404.887,327.317 410.821,323.36 416.754,319.404 422.687,315.448 428.621,311.491 434.554,307.535 440.487,303.578 446.421,299.622 452.354,295.666 458.287,291.709 464.22,287.753 470.154,283.797 476.087,279.84 482.02,275.884 487.954,271.928 493.887,267.971 499.82,264.015 505.754,260.058 511.687,256.102 517.62,252.146 523.553,248.189 529.487,244.233 535.42,240.277 541.353,236.32 547.287,232.364 553.22,228.408 559.153,224.451 565.087,220.495 571.02,216.538 576.953,212.582 582.886,208.626 588.82,204.669 594.753,200.713 600.686,196.757 606.62,192.8 612.553,188.844 618.486,184.888 624.42,180.931 630.353,176.975 636.286,173.018 642.219,169.062 648.153,165.106 654.086,161.149 660.019,157.193 665.953,153.237 671.886,149.28 677.819,145.324" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o030" cx="200.014" cy="463.928" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="213.454" y="430.968">1 µm: 0.006828 ng</tspan>
+</text>
+<ellipse id="o032" cx="441.527" cy="302.885" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="454.967" y="329.445">5 µm: 0.8535 ng</tspan>
+</text>
+<ellipse id="o034" cx="545.542" cy="233.528" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="321.862" y="200.568">10 µm: 6.828 ng</tspan>
+</text>
+<rect id="o036" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="165.893">Start every ledger from the real volume</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="208.68">m_PFC,0 = (4π/3)(1630)(5×10⁻⁶)³</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="20" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="263.12">= 8.5347×10⁻¹³ kg = 0.8535 ng</tspan>
+</text>
+<ellipse id="o040" cx="864" cy="393.6" rx="86.4" ry="86.4" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="864" y="394.787">5 µm</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="981.12" y="361.187">about 0.85 nanogram,</tspan>
+<tspan x="981.12" y="380.853">a fixed, finite budget</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Mass scales as a³: a 10 µm core carries eight times as much PFC as a 5 µm core. Every later vapor amount is bounded by this</tspan>
+<tspan x="97.92" y="637.173">number.</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Initial PFC mass of Eq. C2-E27 (ρ_d = 1630 kg/m³).</tspan>
+</text>
 </svg>

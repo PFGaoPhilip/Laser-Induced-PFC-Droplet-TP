@@ -1,323 +1,901 @@
 {
-  "slide": {
-    "width": 13.333,
-    "height": 7.5
+ "slide": {
+  "width": 13.333,
+  "height": 7.5
+ },
+ "background": "#142632",
+ "objects": [
+  {
+   "x": 0.3,
+   "y": 0.13,
+   "w": 12.7,
+   "h": 0.3719444444444444,
+   "text": "C3-E33 · Reference answer: original impact and observer formulas",
+   "font": "Arial",
+   "font_size": 19,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o000",
+   "name": "C3-E33 text 0"
   },
-  "background": "#142632",
-  "objects": [
-    {
-      "x": 0.3,
-      "y": 0.15,
-      "w": 12.7,
-      "h": 0.4,
-      "text": "C3-E33 · Reference answer: original impact and observer formulas",
-      "font": "Arial",
-      "font_size": 21,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o000",
-      "name": "C3-E33 text 0"
-    },
-    {
-      "x": 0.8,
-      "y": 1.65,
-      "w": 5.4,
-      "h": 0.8,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "rect",
-      "id": "o001",
-      "name": "C3-E33 rect 1"
-    },
-    {
-      "x1": 1.1,
-      "y1": 2.05,
-      "x2": 5.8,
-      "y2": 2.05,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o002",
-      "name": "C3-E33 arrow 2"
-    },
-    {
-      "x": 1.6,
-      "y": 1.15,
-      "w": 4.3,
-      "h": 0.4,
-      "text": "Finite emitted liquid: m_j, E_j, U_j",
-      "font": "Arial",
-      "font_size": 18,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o003",
-      "name": "C3-E33 text 3"
-    },
-    {
-      "x1": 0.8,
-      "y1": 2.85,
-      "x2": 6.2,
-      "y2": 2.85,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "line",
-      "id": "o004",
-      "name": "C3-E33 line 4"
-    },
-    {
-      "x": 3,
-      "y": 2.95,
-      "w": 2,
-      "h": 0.4,
-      "text": "L_j",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o005",
-      "name": "C3-E33 text 5"
-    },
-    {
-      "x1": 0.5,
-      "y1": 1.65,
-      "x2": 0.5,
-      "y2": 2.45,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "line",
-      "id": "o006",
-      "name": "C3-E33 line 6"
-    },
-    {
-      "x": 0.15,
-      "y": 2.6,
-      "w": 1.8,
-      "h": 0.35,
-      "text": "d_j = 2a_j",
-      "font": "Arial",
-      "font_size": 14,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o007",
-      "name": "C3-E33 text 7"
-    },
-    {
-      "x": 9.2,
-      "y": 1.05,
-      "w": 0.4,
-      "h": 1.8,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "rect",
-      "id": "o008",
-      "name": "C3-E33 rect 8"
-    },
-    {
-      "x1": 6.3,
-      "y1": 2.05,
-      "x2": 9.15,
-      "y2": 2.05,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o009",
-      "name": "C3-E33 arrow 9"
-    },
-    {
-      "x": 9.85,
-      "y": 1.1,
-      "w": 3,
-      "h": 0.6,
-      "text": "Receiver\nZ_r, v_i",
-      "font": "Arial",
-      "font_size": 18,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o010",
-      "name": "C3-E33 text 10"
-    },
-    {
-      "x": 6.6,
-      "y": 3.15,
-      "w": 5.9,
-      "h": 0.8,
-      "text": "Early pressure: acoustic matching\nImpulse: finite momentum change",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o011",
-      "name": "C3-E33 text 11"
-    },
-    {
-      "x1": 0.3,
-      "y1": 4.35,
-      "x2": 13,
-      "y2": 4.35,
-      "line": "#405967",
-      "line_width": 1,
-      "type": "line",
-      "id": "o012",
-      "name": "C3-E33 line 12"
-    },
-    {
-      "x": 0.35,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• U_j, L_j finite incoming jet",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o013",
-      "name": "C3-E33 text 13"
-    },
-    {
-      "x": 6.8,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• ρ, c; Z_l liquid impedance",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o014",
-      "name": "C3-E33 text 14"
-    },
-    {
-      "x": 0.35,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• Z_r receiver impedance",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o015",
-      "name": "C3-E33 text 15"
-    },
-    {
-      "x": 6.8,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• p_early early contact scale",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o016",
-      "name": "C3-E33 text 16"
-    },
-    {
-      "x": 0.35,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• τ_eq = L_j/c",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o017",
-      "name": "C3-E33 text 17"
-    },
-    {
-      "x": 6.8,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• A_o, τ_o finite observer",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o018",
-      "name": "C3-E33 text 18"
-    },
-    {
-      "x": 0.35,
-      "y": 5.245,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• p(x,ξ), p_ref, p_obs(t), dA",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o019",
-      "name": "C3-E33 text 19"
-    },
-    {
-      "x": 0.35,
-      "y": 6.12,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Location, footprint and time window must stay fixed",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o020",
-      "name": "C3-E33 text 20"
-    },
-    {
-      "x": 0.35,
-      "y": 6.42,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Early compressive pressure is not buried release-interface traction",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o021",
-      "name": "C3-E33 text 21"
-    },
-    {
-      "x": 0.35,
-      "y": 7.08,
-      "w": 12.5,
-      "h": 0.28,
-      "text": "Model schematic; geometry is not to scale.",
-      "font": "Arial",
-      "font_size": 10,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o022",
-      "name": "C3-E33 text 22"
-    }
-  ],
-  "_audit": {
-    "id": "C3-E33",
-    "category": "impact",
-    "corrections": [
-      "Separated finite jet geometry, acoustic matching, steady redirection, growth, and observer definitions."
+  {
+   "x1": 9.5,
+   "y1": 4.95,
+   "x2": 12.8,
+   "y2": 4.95,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o001",
+   "name": "C3-E33 line 1"
+  },
+  {
+   "x1": 9.5,
+   "y1": 1.95,
+   "x2": 9.5,
+   "y2": 4.95,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o002",
+   "name": "C3-E33 line 2"
+  },
+  {
+   "x1": 9.5,
+   "y1": 4.95,
+   "x2": 9.5,
+   "y2": 5.0200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o003",
+   "name": "C3-E33 line 3"
+  },
+  {
+   "x1": 9.5,
+   "y1": 1.95,
+   "x2": 9.5,
+   "y2": 4.95,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o004",
+   "name": "C3-E33 line 4"
+  },
+  {
+   "x": 9.0,
+   "y": 5.04,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.01",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o005",
+   "name": "C3-E33 text 5"
+  },
+  {
+   "x1": 11.15,
+   "y1": 4.95,
+   "x2": 11.15,
+   "y2": 5.0200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o006",
+   "name": "C3-E33 line 6"
+  },
+  {
+   "x1": 11.15,
+   "y1": 1.95,
+   "x2": 11.15,
+   "y2": 4.95,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o007",
+   "name": "C3-E33 line 7"
+  },
+  {
+   "x": 10.65,
+   "y": 5.04,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "1",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o008",
+   "name": "C3-E33 text 8"
+  },
+  {
+   "x1": 12.8,
+   "y1": 4.95,
+   "x2": 12.8,
+   "y2": 5.0200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o009",
+   "name": "C3-E33 line 9"
+  },
+  {
+   "x1": 12.8,
+   "y1": 1.95,
+   "x2": 12.8,
+   "y2": 4.95,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o010",
+   "name": "C3-E33 line 10"
+  },
+  {
+   "x": 12.3,
+   "y": 5.04,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "100",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o011",
+   "name": "C3-E33 text 11"
+  },
+  {
+   "x1": 9.43,
+   "y1": 4.95,
+   "x2": 9.5,
+   "y2": 4.95,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o012",
+   "name": "C3-E33 line 12"
+  },
+  {
+   "x1": 9.43,
+   "y1": 3.521428571428572,
+   "x2": 9.5,
+   "y2": 3.521428571428572,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o013",
+   "name": "C3-E33 line 13"
+  },
+  {
+   "x1": 9.5,
+   "y1": 3.521428571428572,
+   "x2": 12.8,
+   "y2": 3.521428571428572,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o014",
+   "name": "C3-E33 line 14"
+  },
+  {
+   "x": 8.55,
+   "y": 3.431428571428572,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o015",
+   "name": "C3-E33 text 15"
+  },
+  {
+   "x1": 9.43,
+   "y1": 2.0928571428571434,
+   "x2": 9.5,
+   "y2": 2.0928571428571434,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o016",
+   "name": "C3-E33 line 16"
+  },
+  {
+   "x1": 9.5,
+   "y1": 2.0928571428571434,
+   "x2": 12.8,
+   "y2": 2.0928571428571434,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o017",
+   "name": "C3-E33 line 17"
+  },
+  {
+   "x": 8.55,
+   "y": 2.0028571428571436,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "1.0",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o018",
+   "name": "C3-E33 text 18"
+  },
+  {
+   "x": 9.5,
+   "y": 5.26,
+   "w": 3.3,
+   "h": 0.25333333333333335,
+   "text": "Zᵣ / Zₗ",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o019",
+   "name": "C3-E33 text 19"
+  },
+  {
+   "x": 8.9,
+   "y": 1.5699999999999998,
+   "w": 3.3,
+   "h": 0.25333333333333335,
+   "text": "p/ρcU",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o020",
+   "name": "C3-E33 text 20"
+  },
+  {
+   "points": [
+    [
+     9.5,
+     4.921711456859972
     ],
-    "scientific_status": "accepted against local equation, definitions and notes",
-    "evidence": [
-      "content/chapter03.py"
+    [
+     9.533333333333333,
+     4.918983300310671
+    ],
+    [
+     9.566666666666666,
+     4.915995202129669
+    ],
+    [
+     9.6,
+     4.912723032473602
+    ],
+    [
+     9.633333333333333,
+     4.90914054984738
+    ],
+    [
+     9.666666666666666,
+     4.905219242205628
+    ],
+    [
+     9.7,
+     4.900928161457573
+    ],
+    [
+     9.733333333333333,
+     4.896233752333527
+    ],
+    [
+     9.766666666666667,
+     4.891099676926868
+    ],
+    [
+     9.8,
+     4.885486636650596
+    ],
+    [
+     9.833333333333334,
+     4.879352193850871
+    ],
+    [
+     9.866666666666667,
+     4.872650595910136
+    ],
+    [
+     9.9,
+     4.8653326053573815
+    ],
+    [
+     9.933333333333334,
+     4.8573453402899505
+    ],
+    [
+     9.966666666666667,
+     4.848632130304619
+    ],
+    [
+     10.0,
+     4.839132394137256
+    ],
+    [
+     10.033333333333333,
+     4.828781546317033
+    ],
+    [
+     10.066666666666666,
+     4.8175109413434924
+    ],
+    [
+     10.1,
+     4.805247865174764
+    ],
+    [
+     10.133333333333333,
+     4.791915585143757
+    ],
+    [
+     10.166666666666666,
+     4.777433470753515
+    ],
+    [
+     10.2,
+     4.761717199083496
+    ],
+    [
+     10.233333333333333,
+     4.7446790596861455
+    ],
+    [
+     10.266666666666667,
+     4.726228374766228
+    ],
+    [
+     10.3,
+     4.706272050988243
+    ],
+    [
+     10.333333333333334,
+     4.6847152792990325
+    ],
+    [
+     10.366666666666667,
+     4.661462398509234
+    ],
+    [
+     10.4,
+     4.636417936854739
+    ],
+    [
+     10.433333333333334,
+     4.609487843152601
+    ],
+    [
+     10.466666666666667,
+     4.5805809152709545
+    ],
+    [
+     10.5,
+     4.54961042826496
+    ],
+    [
+     10.533333333333333,
+     4.516495957549517
+    ],
+    [
+     10.566666666666666,
+     4.481165383816969
+    ],
+    [
+     10.6,
+     4.443557056104496
+    ],
+    [
+     10.633333333333333,
+     4.4036220776556645
+    ],
+    [
+     10.666666666666666,
+     4.36132666636696
+    ],
+    [
+     10.7,
+     4.316654528231895
+    ],
+    [
+     10.733333333333334,
+     4.269609169079561
+    ],
+    [
+     10.766666666666666,
+     4.220216058047221
+    ],
+    [
+     10.8,
+     4.168524546792995
+    ],
+    [
+     10.833333333333334,
+     4.114609442706199
+    ],
+    [
+     10.866666666666667,
+     4.058572133556934
+    ],
+    [
+     10.9,
+     4.0005411662349015
+    ],
+    [
+     10.933333333333334,
+     3.9406721942359386
+    ],
+    [
+     10.966666666666667,
+     3.879147227659876
+    ],
+    [
+     11.0,
+     3.816173145365613
+    ],
+    [
+     11.033333333333333,
+     3.7519794605673527
+    ],
+    [
+     11.066666666666666,
+     3.6868153668193595
+    ],
+    [
+     11.1,
+     3.620946128674304
+    ],
+    [
+     11.133333333333333,
+     3.554648917527473
+    ],
+    [
+     11.166666666666666,
+     3.48820822532967
+    ],
+    [
+     11.2,
+     3.4219110141828386
+    ],
+    [
+     11.233333333333334,
+     3.3560417760377828
+    ],
+    [
+     11.266666666666666,
+     3.2908776822897905
+    ],
+    [
+     11.3,
+     3.22668399749153
+    ],
+    [
+     11.333333333333334,
+     3.163709915197267
+    ],
+    [
+     11.366666666666667,
+     3.102184948621204
+    ],
+    [
+     11.4,
+     3.042315976622242
+    ],
+    [
+     11.433333333333334,
+     2.984285009300209
+    ],
+    [
+     11.466666666666667,
+     2.9282477001509433
+    ],
+    [
+     11.5,
+     2.8743325960641486
+    ],
+    [
+     11.533333333333333,
+     2.8226410848099217
+    ],
+    [
+     11.566666666666666,
+     2.7732479737775826
+    ],
+    [
+     11.6,
+     2.726202614625248
+    ],
+    [
+     11.633333333333333,
+     2.681530476490183
+    ],
+    [
+     11.666666666666666,
+     2.639235065201479
+    ],
+    [
+     11.7,
+     2.599300086752647
+    ],
+    [
+     11.733333333333334,
+     2.5616917590401744
+    ],
+    [
+     11.766666666666667,
+     2.526361185307626
+    ],
+    [
+     11.8,
+     2.493246714592183
+    ],
+    [
+     11.833333333333334,
+     2.462276227586189
+    ],
+    [
+     11.866666666666667,
+     2.4333692997045424
+    ],
+    [
+     11.9,
+     2.4064392060024042
+    ],
+    [
+     11.933333333333334,
+     2.3813947443479093
+    ],
+    [
+     11.966666666666667,
+     2.35814186355811
+    ],
+    [
+     12.0,
+     2.3365850918688995
+    ],
+    [
+     12.033333333333333,
+     2.3166287680909154
+    ],
+    [
+     12.066666666666666,
+     2.298178083170998
+    ],
+    [
+     12.1,
+     2.281139943773647
+    ],
+    [
+     12.133333333333333,
+     2.2654236721036285
+    ],
+    [
+     12.166666666666668,
+     2.250941557713386
+    ],
+    [
+     12.2,
+     2.237609277682379
+    ],
+    [
+     12.233333333333334,
+     2.2253462015136507
+    ],
+    [
+     12.266666666666666,
+     2.2140755965401104
+    ],
+    [
+     12.3,
+     2.203724748719887
+    ],
+    [
+     12.333333333333334,
+     2.1942250125525242
+    ],
+    [
+     12.366666666666667,
+     2.1855118025671922
+    ],
+    [
+     12.4,
+     2.177524537499761
+    ],
+    [
+     12.433333333333334,
+     2.170206546947007
+    ],
+    [
+     12.466666666666667,
+     2.1635049490062723
+    ],
+    [
+     12.5,
+     2.157370506206548
+    ],
+    [
+     12.533333333333333,
+     2.1517574659302747
+    ],
+    [
+     12.566666666666666,
+     2.146623390523617
+    ],
+    [
+     12.6,
+     2.1419289813995706
+    ],
+    [
+     12.633333333333333,
+     2.1376379006515154
+    ],
+    [
+     12.666666666666666,
+     2.1337165930097637
+    ],
+    [
+     12.7,
+     2.1301341103835405
+    ],
+    [
+     12.733333333333334,
+     2.1268619407274736
+    ],
+    [
+     12.766666666666666,
+     2.1238738425464723
+    ],
+    [
+     12.8,
+     2.1211456859971713
     ]
+   ],
+   "fill": null,
+   "line": "#8EDBD4",
+   "line_width": 3,
+   "_open": true,
+   "type": "polygon",
+   "id": "o021",
+   "name": "C3-E33 polygon 21"
+  },
+  {
+   "x": 8.4,
+   "y": 1.05,
+   "w": 4.4,
+   "h": 0.2702777777777778,
+   "text": "Contact pressure fraction",
+   "font": "Arial",
+   "font_size": 13,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o022",
+   "name": "C3-E33 text 22"
+  },
+  {
+   "x": 0.4,
+   "y": 1.0,
+   "w": 7.7,
+   "h": 1.55,
+   "fill": "#213E4B",
+   "line": "#8EDBD4",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o023",
+   "name": "C3-E33 round_rect 23"
+  },
+  {
+   "x": 0.52,
+   "y": 1.06,
+   "w": 7.46,
+   "h": 0.27875,
+   "text": "Early contact",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o024",
+   "name": "C3-E33 text 24"
+  },
+  {
+   "x": 0.55,
+   "y": 1.45,
+   "w": 7.4,
+   "h": 0.2872222222222222,
+   "text": "p_early ≃ Zₗ Zᵣ Uⱼ / (Zₗ + Zᵣ),   Zₗ = ρc",
+   "font": "Arial",
+   "font_size": 14,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o025",
+   "name": "C3-E33 text 25"
+  },
+  {
+   "x": 0.4,
+   "y": 2.7,
+   "w": 7.7,
+   "h": 1.55,
+   "fill": "#213E4B",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o026",
+   "name": "C3-E33 round_rect 26"
+  },
+  {
+   "x": 0.52,
+   "y": 2.7600000000000002,
+   "w": 7.46,
+   "h": 0.27875,
+   "text": "Duration",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o027",
+   "name": "C3-E33 text 27"
+  },
+  {
+   "x": 0.55,
+   "y": 3.15,
+   "w": 7.4,
+   "h": 0.2872222222222222,
+   "text": "τ_eq = Lⱼ / c",
+   "font": "Arial",
+   "font_size": 14,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o028",
+   "name": "C3-E33 text 28"
+  },
+  {
+   "x": 0.4,
+   "y": 4.4,
+   "w": 7.7,
+   "h": 1.9,
+   "fill": "#213E4B",
+   "line": "#F28BA0",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o029",
+   "name": "C3-E33 round_rect 29"
+  },
+  {
+   "x": 0.52,
+   "y": 4.46,
+   "w": 7.46,
+   "h": 0.27875,
+   "text": "Observer",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#F28BA0",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o030",
+   "name": "C3-E33 text 30"
+  },
+  {
+   "x": 0.55,
+   "y": 4.85,
+   "w": 7.4,
+   "h": 0.27875,
+   "text": "p_obs(t) = (1/A_oτₒ) ∫∫ (p − p_ref) dA dξ",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o031",
+   "name": "C3-E33 text 31"
+  },
+  {
+   "x": 8.4,
+   "y": 5.55,
+   "w": 4.5,
+   "h": 0.4736111111111111,
+   "text": "A finite impact scale is an input to load-path\nanalysis, not proof of intact release.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o032",
+   "name": "C3-E33 text 32"
+  },
+  {
+   "x": 0.35,
+   "y": 7.12,
+   "w": 12.6,
+   "h": 0.21944444444444444,
+   "text": "Reference formulas of the Defence 3 answer: Eqs. C3-E24, E25, E26.",
+   "font": "Arial",
+   "font_size": 10,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o033",
+   "name": "C3-E33 text 33"
   }
+ ],
+ "_title": "C3-E33",
+ "_audit": {
+  "id": "C3-E33",
+  "scientific_status": "drawn from the equation and its stated numbers"
+ }
 }

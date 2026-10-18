@@ -1,62 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E33</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E33 · Reference answer: original impact and observer formulas</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E33 · Reference answer: original impact and observer formulas</tspan>
 </text>
-<rect id="o001" x="76.8" y="158.4" width="518.4" height="76.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="105.6" y1="196.8" x2="556.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="156.48" y="135.12">Finite emitted liquid: m_j, E_j, U_j</tspan>
+<line id="o001" x1="912" y1="475.2" x2="1228.8" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="912" y1="187.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="912" y1="475.2" x2="912" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="912" y1="187.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="912" y="497.24">0.01</tspan>
 </text>
-<line id="o004" x1="76.8" y1="273.6" x2="595.2" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="307.613">L_j</tspan>
+<line id="o006" x1="1070.4" y1="475.2" x2="1070.4" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="1070.4" y1="187.2" x2="1070.4" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1070.4" y="497.24">1</tspan>
 </text>
-<line id="o006" x1="48" y1="158.4" x2="48" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="17.28" y="270.693">d_j = 2a_j</tspan>
+<line id="o009" x1="1228.8" y1="475.2" x2="1228.8" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="1228.8" y1="187.2" x2="1228.8" y2="475.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="497.24">100</tspan>
 </text>
-<rect id="o008" x="883.2" y="100.8" width="38.4" height="172.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o009" x1="604.8" y1="196.8" x2="878.4" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o010" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="948.48" y="125.76">Receiver</tspan>
-<tspan x="948.48" y="154.08">Z_r, v_i</tspan>
+<line id="o012" x1="905.28" y1="475.2" x2="912" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="905.28" y1="338.057" x2="912" y2="338.057" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="912" y1="338.057" x2="1228.8" y2="338.057" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="342.817">0.5</tspan>
 </text>
-<text id="o011" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="636.48" y="332.64">Early pressure: acoustic matching</tspan>
-<tspan x="636.48" y="359.387">Impulse: finite momentum change</tspan>
+<line id="o016" x1="905.28" y1="200.914" x2="912" y2="200.914" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="912" y1="200.914" x2="1228.8" y2="200.914" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="900.48" y="205.674">1.0</tspan>
 </text>
-<line id="o012" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• U_j, L_j finite incoming jet</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1070.4" y="520">Zᵣ / Zₗ</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• ρ, c; Z_l liquid impedance</tspan>
+<text id="o020" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="856.32" y="165.76">p/ρcU</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• Z_r receiver impedance</tspan>
+<polyline id="o021" points="912,472.484 915.2,472.222 918.4,471.936 921.6,471.621 924.8,471.277 928,470.901 931.2,470.489 934.4,470.038 937.6,469.546 940.8,469.007 944,468.418 947.2,467.774 950.4,467.072 953.6,466.305 956.8,465.469 960,464.557 963.2,463.563 966.4,462.481 969.6,461.304 972.8,460.024 976,458.634 979.2,457.125 982.4,455.489 985.6,453.718 988.8,451.802 992,449.733 995.2,447.5 998.4,445.096 1001.6,442.511 1004.8,439.736 1008,436.763 1011.2,433.584 1014.4,430.192 1017.6,426.581 1020.8,422.748 1024,418.687 1027.2,414.399 1030.4,409.882 1033.6,405.141 1036.8,400.178 1040,395.003 1043.2,389.623 1046.4,384.052 1049.6,378.305 1052.8,372.398 1056,366.353 1059.2,360.19 1062.4,353.934 1065.6,347.611 1068.8,341.246 1072,334.868 1075.2,328.503 1078.4,322.18 1081.6,315.924 1084.8,309.762 1088,303.716 1091.2,297.81 1094.4,292.062 1097.6,286.491 1100.8,281.112 1104,275.936 1107.2,270.974 1110.4,266.232 1113.6,261.715 1116.8,257.427 1120,253.367 1123.2,249.533 1126.4,245.922 1129.6,242.531 1132.8,239.352 1136,236.379 1139.2,233.603 1142.4,231.018 1145.6,228.614 1148.8,226.382 1152,224.312 1155.2,222.396 1158.4,220.625 1161.6,218.989 1164.8,217.481 1168,216.09 1171.2,214.81 1174.4,213.633 1177.6,212.551 1180.8,211.558 1184,210.646 1187.2,209.809 1190.4,209.042 1193.6,208.34 1196.8,207.696 1200,207.108 1203.2,206.569 1206.4,206.076 1209.6,205.625 1212.8,205.213 1216,204.837 1219.2,204.493 1222.4,204.179 1225.6,203.892 1228.8,203.63" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="808.32" y="116.933">Contact pressure fraction</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• p_early early contact scale</tspan>
+<rect id="o023" x="38.4" y="96" width="739.2" height="148.8" rx="11.904" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Early contact</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• τ_eq = L_j/c</tspan>
+<text id="o025" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="156.427">p_early ≃ Zₗ Zᵣ Uⱼ / (Zₗ + Zᵣ),   Zₗ = ρc</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• A_o, τ_o finite observer</tspan>
+<rect id="o026" x="38.4" y="259.2" width="739.2" height="148.8" rx="11.904" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="281.64">Duration</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• p(x,ξ), p_ref, p_obs(t), dA</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="319.627">τ_eq = Lⱼ / c</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Location, footprint and time window must stay fixed</tspan>
+<rect id="o029" x="38.4" y="422.4" width="739.2" height="182.4" rx="14.592" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="444.84">Observer</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Early compressive pressure is not buried release-interface traction</tspan>
+<text id="o031" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="482.28">p_obs(t) = (1/A_oτₒ) ∫∫ (p − p_ref) dA dξ</tspan>
 </text>
-<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o032" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="808.32" y="548.387">A finite impact scale is an input to load-path</tspan>
+<tspan x="808.32" y="568.053">analysis, not proof of intact release.</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reference formulas of the Defence 3 answer: Eqs. C3-E24, E25, E26.</tspan>
 </text>
 </svg>

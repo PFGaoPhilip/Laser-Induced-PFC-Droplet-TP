@@ -60,13 +60,13 @@ def audit(root):
     resolver_card = next((c for c in home.select('.chapter-card')
                           if c.select_one('a[href="chapters/03-arrays-finite-jets-and-impact.html"]')), None)
     appendix_card = next((c for c in home.select('.chapter-card')
-                         if c.select_one('a[href="appendices/a-hydrogel-versus-liquid.html"]')), None)
+                         if c.select_one('a[href="appendices/90-hydrogel-versus-liquid.html"]')), None)
     check(resolver_card is not None and resolver_card.select_one('a[href*="resolver-progress"]') is not None,
           'Chapter 3 card lacks the resolver resource.')
     check(appendix_card is not None and len(appendix_card.select('a[href*="modeling/"]')) == 4,
           'Appendix A card lacks both translated modeling resources.')
     owners = [('chapters/03-arrays-finite-jets-and-impact.html', ['resolver-work']),
-              ('appendices/a-hydrogel-versus-liquid.html', ['finite-energy-models', 'embedded-pfc-study'])]
+              ('appendices/90-hydrogel-versus-liquid.html', ['finite-energy-models', 'embedded-pfc-study'])]
     for name, anchors in owners:
         doc = documents[Path(name)]
         for anchor in anchors:

@@ -1,55 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E19</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E19 · Slender-jet volume conservation</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E19 · Slender-jet volume conservation</tspan>
 </text>
-<rect id="o001" x="201.6" y="153.6" width="691.2" height="105.6" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="76.8" y1="206.4" x2="336" y2="206.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o003" x1="748.8" y1="206.4" x2="1142.4" y2="206.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="60.48" y="303.12">Incoming flux A v |z</tspan>
+<rect id="o001" x="38.4" y="96" width="739.2" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Slender jet: a(z, t) stretched by v(z, t)</tspan>
 </text>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="780.48" y="303.12">Outgoing flux A v |z+Δz</tspan>
+<polygon id="o003" points="86.4,268.116 97.139,269.09 107.878,270.203 118.617,271.457 129.356,272.85 140.095,274.377 150.834,276.03 161.573,277.796 172.312,279.663 183.051,281.612 193.79,283.626 204.529,285.683 215.268,287.762 226.007,289.842 236.746,291.9 247.485,293.915 258.224,295.867 268.963,297.736 279.702,299.506 290.441,301.162 301.18,302.693 311.919,304.09 322.658,305.348 333.397,306.465 344.136,307.443 354.875,308.286 365.614,309.003 376.353,309.605 387.092,310.107 397.831,310.525 408.569,310.877 419.308,311.185 430.047,311.468 440.786,311.751 451.525,312.053 462.264,312.397 473.003,312.804 483.742,313.292 494.481,313.879 505.22,314.578 515.959,315.402 526.698,316.359 537.437,317.455 548.176,318.692 558.915,320.069 569.654,321.58 580.393,323.218 591.132,324.972 601.871,326.827 612.61,328.768 623.349,330.775 634.088,332.828 644.827,334.906 655.566,336.987 666.305,339.049 677.044,341.07 687.783,343.03 698.522,344.91 709.261,346.693 720,348.363 720,342.837 709.261,344.507 698.522,346.29 687.783,348.17 677.044,350.13 666.305,352.151 655.566,354.213 644.827,356.294 634.088,358.372 623.349,360.425 612.61,362.432 601.871,364.373 591.132,366.228 580.393,367.982 569.654,369.62 558.915,371.131 548.176,372.508 537.437,373.745 526.698,374.841 515.959,375.798 505.22,376.622 494.481,377.321 483.742,377.908 473.003,378.396 462.264,378.803 451.525,379.147 440.786,379.449 430.047,379.732 419.308,380.015 408.569,380.323 397.831,380.675 387.092,381.093 376.353,381.595 365.614,382.197 354.875,382.914 344.136,383.757 333.397,384.735 322.658,385.852 311.919,387.11 301.18,388.507 290.441,390.038 279.702,391.694 268.963,393.464 258.224,395.333 247.485,397.285 236.746,399.3 226.007,401.358 215.268,403.438 204.529,405.517 193.79,407.574 183.051,409.588 172.312,411.537 161.573,413.404 150.834,415.17 140.095,416.823 129.356,418.35 118.617,419.743 107.878,420.997 97.139,422.11 86.4,423.084" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.93333" opacity="1"/>
+<line id="o004" x1="153.6" y1="345.6" x2="187.2" y2="345.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o005" x1="307.2" y1="345.6" x2="371.52" y2="345.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="460.8" y1="345.6" x2="555.84" y2="345.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="614.4" y1="345.6" x2="740.16" y2="345.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="97.92" y="461.44">v(z): speed grows along z, so the column is stretched and thins</tspan>
 </text>
-<text id="o006" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="406.08" y="192.96">Fixed axial slice Δz</tspan>
-<tspan x="406.08" y="221.28">A(z,t) = πa²</tspan>
+<rect id="o009" x="288" y="192" width="115.2" height="307.2" fill="none" stroke="#F28BA0" stroke-width="2.4" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="261.12" y="163.84">slice Δz</tspan>
 </text>
-<text id="o007" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="106.627">Slender liquid: axial velocity v(z,t); radius a(z,t)</tspan>
+<line id="o011" x1="244.8" y1="249.6" x2="283.2" y2="249.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o012" x1="408" y1="249.6" x2="446.4" y2="249.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="97.92" y="533.44">[Av](z)</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="98.88" y="375.12">Storage changes by incoming minus outgoing volume flux.</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="443.52" y="533.44">[Av](z + Δz)</tspan>
 </text>
-<line id="o009" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• z → axial flight direction</tspan>
+<rect id="o015" x="796.8" y="96" width="446.4" height="508.8" rx="35.712" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="810.24" y="117.893">Volume balance of the slice</tspan>
 </text>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• Δz fixed finite slice; ξ inside</tspan>
+<text id="o017" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="813.12" y="163.84">A = πa²;  ∂ₜ∫A dξ = [Av](z) − [Av](z + Δz)</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• a(z,t), A = πa²</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="813.12" y="241.733">Δz → 0:  ∂ₜA + ∂_z(Av) = 0</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• Av incoming and outgoing flux</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="813.12" y="302.493">dividing by 2πa:</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• v average axial velocity</tspan>
+<text id="o020" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="813.12" y="343.627">∂ₜa + v ∂_z a = −(a/2) ∂_z v</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• ∂ₜ, ∂z, t: evolution legend</tspan>
+<text id="o021" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="813.12" y="418.24">If ∂_z v &gt; 0 the right side is negative: the</tspan>
+<tspan x="813.12" y="437.12">radius shrinks even before capillary necking</tspan>
+<tspan x="813.12" y="456">grows.</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Positive axial strain thins the jet</tspan>
-</text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Initial/end data are required</tspan>
-</text>
-<text id="o018" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Slender-jet volume conservation of Eq. C3-E19; schematic geometry.</tspan>
 </text>
 </svg>

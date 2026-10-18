@@ -1,23 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E36 Original conservation formulas prevent unlimited vapor and duplicated latent energy.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E36 | Physical-variable diagram</text>
-<rect x="80" y="120" width="350" height="220" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<rect x="430" y="120" width="430" height="220" fill="none" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="182" y="169.84" font-family="Arial,sans-serif" font-size="23" fill="#E7F0F3">Vapor</text>
-<text x="602" y="169.84" font-family="Arial,sans-serif" font-size="23" fill="#E7F0F3">Liquid</text>
-<line x1="610" y1="230" x2="300" y2="230" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="482" y="276.6" font-family="Arial,sans-serif" font-size="20" fill="#F6BC77">n: liquid → vapor</text>
-<line x1="430" y1="310" x2="545" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="452" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+e_r, wall motion</text>
-<text x="102" y="105.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Interface Gamma</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">j_s, L_v,s: phase conversion</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">U_b, Q̇_b: bubble thermal ledger</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">h_v,s, ṁ_v,s: transported enthalpy</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ_l: adjacent liquid density</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">q_l, q_v, n: heat jump signs</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_b V̇_b: pressure work</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R, Ṙ, u_l(R): moving interface</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">s: species index</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Latent conversion is already included consistently in phase and enthalpy balances</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Evaporation and condensation have opposite signs</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E36</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E36 · Original phase-energy and velocity-slip formulas</tspan>
+</text>
+<rect id="o001" x="48" y="105.6" width="384" height="470.4" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="128.04">Interface energy jump</tspan>
+</text>
+<rect id="o003" x="76.8" y="192" width="153.6" height="230.4" fill="#1E4A5A" stroke="#2B6678" stroke-width="1.33333" opacity="1"/>
+<rect id="o004" x="230.4" y="192" width="172.8" height="230.4" fill="#0C1820" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o005" x1="230.4" y1="182.4" x2="230.4" y2="432" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<line id="o006" x1="96" y1="307.2" x2="225.6" y2="307.2" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="240" y1="307.2" x2="336" y2="307.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="69.12" y="163.293">liquid</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="251.52" y="163.293">vapor</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="457.733">jₛ Lᵥ,s = (qₗ − qᵥ)·n</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="64.32" y="513.693">unbalanced heat becomes latent heat</tspan>
+</text>
+<rect id="o012" x="451.2" y="105.6" width="384" height="470.4" rx="30.72" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="464.64" y="128.04">Bubble ledger</tspan>
+</text>
+<ellipse id="o014" cx="643.2" cy="307.2" rx="81.6" ry="81.6" fill="#0C1820" stroke="#F2B880" stroke-width="3.2" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="643.2" y="311.12">U_b</tspan>
+</text>
+<line id="o016" x1="475.2" y1="307.2" x2="556.8" y2="307.2" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o017" x1="729.6" y1="249.6" x2="796.8" y2="201.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o018" x1="643.2" y1="172.8" x2="643.2" y2="220.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="467.52" y="457.187">U̇_b = Q̇_b − p_b V̇_b + Σ hᵥ,s ṁᵥ,s</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="467.52" y="523.293">heat, work and carried enthalpy</tspan>
+</text>
+<rect id="o021" x="854.4" y="105.6" width="384" height="470.4" rx="30.72" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="867.84" y="128.04">Velocity slip</tspan>
+</text>
+<line id="o023" x1="883.2" y1="384" x2="883.2" y2="182.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1"/>
+<line id="o024" x1="892.8" y1="259.2" x2="1113.6" y2="259.2" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o025" x1="892.8" y1="326.4" x2="1065.6" y2="326.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="899.52" y="225.693">wall: Ṙ</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="899.52" y="345.693">liquid: uₗ(R)</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="870.72" y="457.733">uₗ(R) = Ṙ − jₛ / ρₗ</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="870.72" y="513.693">evaporation separates them</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="611.333">Conserved energy and mass at the interface prevent unlimited vapor and double-counted latent heat.</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reference formulas of Defence 4: Eqs. C2-E20, E21, E22.</tspan>
+</text>
 </svg>

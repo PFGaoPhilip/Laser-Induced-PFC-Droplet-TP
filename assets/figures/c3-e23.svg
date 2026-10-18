@@ -1,61 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E23</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E23 · Dynamic-pressure definition and steady momentum flux</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E23 · Dynamic-pressure definition and steady momentum flux</tspan>
 </text>
-<rect id="o001" x="76.8" y="158.4" width="518.4" height="76.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="105.6" y1="196.8" x2="556.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="156.48" y="135.12">Finite emitted liquid: m_j, E_j, U_j</tspan>
+<rect id="o001" x="38.4" y="96" width="633.6" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Steady redirection of a jet</tspan>
 </text>
-<line id="o004" x1="76.8" y1="273.6" x2="595.2" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="307.613">L_j</tspan>
+<rect id="o003" x="211.2" y="148.8" width="96" height="192" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.93333" opacity="1"/>
+<line id="o004" x1="259.2" y1="144" x2="259.2" y2="331.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="323.52" y="227.333">Uⱼ, Aⱼ</tspan>
 </text>
-<line id="o006" x1="48" y1="158.4" x2="48" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="17.28" y="270.693">d_j = 2a_j</tspan>
+<rect id="o006" x="96" y="345.6" width="499.2" height="28.8" fill="#3A5362" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<line id="o007" x1="201.6" y1="340.8" x2="28.8" y2="331.2" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o008" x1="316.8" y1="340.8" x2="489.6" y2="331.2" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="97.92" y="408.64">all axial momentum is removed; liquid leaves sideways</tspan>
 </text>
-<rect id="o008" x="883.2" y="100.8" width="38.4" height="244.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o009" x1="604.8" y1="196.8" x2="878.4" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o010" x1="849.6" y1="196.8" x2="849.6" y2="91.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o011" x1="849.6" y1="196.8" x2="849.6" y2="331.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="948.48" y="162.133">Redirected flow</tspan>
-<tspan x="948.48" y="187.307">zero axial</tspan>
-<tspan x="948.48" y="212.48">outlet momentum</tspan>
+<text id="o010" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="457.733">qⱼ = ½ρUⱼ²,   ṁ = ρA_jUⱼ</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="98.88" y="377.52">F_steady = ρ A_j U_j²; q_j = ρ U_j²/2 is a pressure scale.</tspan>
+<text id="o011" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="502.027">F_steady = ṁUⱼ = ρA_jUⱼ² = 2 qⱼ Aⱼ</tspan>
 </text>
-<line id="o014" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• U_j incident jet speed</tspan>
+<text id="o012" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="59.52" y="547.84">Aⱼ = π(5 µm)² → F = 80 µN</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• A_j incident area</tspan>
+<text id="o013" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="693.12" y="117.48">Two very different pressure scales (MPa, log axis)</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• ρ liquid; ṁ = ρA_jU_j</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="180.16">qⱼ = ½ρUⱼ²</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• q_j dynamic-pressure scale</tspan>
+<rect id="o015" x="960" y="163.2" width="33.9346" height="48" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1003.53" y="183.04">0.509 MPa</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• F_steady receiver force</tspan>
+<text id="o017" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="256.96">ρ c Uⱼ (early rigid contact)</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• Lateral outlet carries zero axial momentum</tspan>
+<rect id="o018" x="960" y="240" width="128.365" height="48" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1097.96" y="259.84">47.2 MPa</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">q_j is a scale, not a universal mean or local traction</tspan>
+<text id="o020" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="332.387">Dynamic pressure is a scale; it is not a pressure applied</tspan>
+<tspan x="693.12" y="352.053">over the whole surface.</tspan>
 </text>
-<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">A moving receiver changes relative speed and force</tspan>
+<text id="o021" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="693.12" y="418.787">Steady force follows from momentum flux with the same Uⱼ, ρ,</tspan>
+<tspan x="693.12" y="438.453">Aⱼ used elsewhere. The first nanoseconds of impact (second</tspan>
+<tspan x="693.12" y="458.12">bar) are about 90 times larger.</tspan>
 </text>
-<text id="o023" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Eq. C3-E23 with the declared jet: Uⱼ = 31.915 m/s, dⱼ = 10 µm, ρ = 1000 kg/m³, c = 1480 m/s.</tspan>
 </text>
 </svg>

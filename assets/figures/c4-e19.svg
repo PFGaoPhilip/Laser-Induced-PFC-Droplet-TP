@@ -1,53 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E19</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E19 · Derived potential under maintained-pressure control</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E19 · Derived potential under maintained-pressure control</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">Plate storage U_b</tspan>
+<line id="o001" x1="96" y1="518.4" x2="691.2" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="518.4" x2="96" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="540.44">0.00</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">Source potential −p₀V_bl</tspan>
+<line id="o006" x1="244.8" y1="518.4" x2="244.8" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="244.8" y1="144" x2="244.8" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="244.8" y="540.44">0.25</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">System potential P</tspan>
+<line id="o009" x1="393.6" y1="518.4" x2="393.6" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="393.6" y1="144" x2="393.6" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="393.6" y="540.44">0.50</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Work, storage, fracture consumption and net impulse retain separate meanings.</tspan>
+<line id="o012" x1="542.4" y1="518.4" x2="542.4" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="542.4" y1="144" x2="542.4" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="542.4" y="540.44">0.75</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• p₀ — maintained source pressure</tspan>
+<line id="o015" x1="691.2" y1="518.4" x2="691.2" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="691.2" y1="144" x2="691.2" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="691.2" y="540.44">1.00</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• V_bl, v — cavity volume</tspan>
+<line id="o018" x1="89.28" y1="501.382" x2="96" y2="501.382" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="96" y1="501.382" x2="691.2" y2="501.382" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="506.142">-1</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• C_b — volume compliance</tspan>
+<line id="o021" x1="89.28" y1="416.291" x2="96" y2="416.291" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="96" y1="416.291" x2="691.2" y2="416.291" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="421.051">-0.5</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• U_b = ½p₀V_bl — plate storage</tspan>
+<line id="o024" x1="89.28" y1="331.2" x2="96" y2="331.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="96" y1="331.2" x2="691.2" y2="331.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="335.96">0</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• −p₀V_bl — source potential</tspan>
+<line id="o027" x1="89.28" y1="246.109" x2="96" y2="246.109" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="96" y1="246.109" x2="691.2" y2="246.109" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="250.869">0.5</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• P = U_b − p₀V_bl</tspan>
+<line id="o030" x1="89.28" y1="161.018" x2="96" y2="161.018" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="96" y1="161.018" x2="691.2" y2="161.018" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="165.778">1</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• b, D_f — geometry and stiffness</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="393.6" y="563.2">V_bl / V*</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">The external pressure reservoir supplies work as the crack grows.</tspan>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">energy / (p*V*)</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<polyline id="o035" points="96,331.2 102.012,331.191 108.024,331.165 114.036,331.122 120.048,331.061 126.061,330.983 132.073,330.887 138.085,330.775 144.097,330.644 150.109,330.497 156.121,330.332 162.133,330.149 168.145,329.95 174.158,329.733 180.17,329.498 186.182,329.247 192.194,328.977 198.206,328.691 204.218,328.387 210.23,328.066 216.242,327.727 222.255,327.371 228.267,326.998 234.279,326.607 240.291,326.199 246.303,325.774 252.315,325.331 258.327,324.871 264.339,324.393 270.352,323.899 276.364,323.386 282.376,322.857 288.388,322.31 294.4,321.745 300.412,321.164 306.424,320.565 312.436,319.948 318.448,319.315 324.461,318.663 330.473,317.995 336.485,317.309 342.497,316.606 348.509,315.885 354.521,315.147 360.533,314.392 366.545,313.619 372.558,312.829 378.57,312.022 384.582,311.197 390.594,310.355 396.606,309.495 402.618,308.618 408.63,307.724 414.642,306.813 420.655,305.884 426.667,304.937 432.679,303.974 438.691,302.993 444.703,301.994 450.715,300.978 456.727,299.945 462.739,298.895 468.752,297.827 474.764,296.742 480.776,295.639 486.788,294.519 492.8,293.382 498.812,292.227 504.824,291.055 510.836,289.866 516.848,288.659 522.861,287.435 528.873,286.193 534.885,284.934 540.897,283.658 546.909,282.365 552.921,281.054 558.933,279.725 564.945,278.38 570.958,277.017 576.97,275.636 582.982,274.238 588.994,272.823 595.006,271.391 601.018,269.941 607.03,268.474 613.042,266.989 619.055,265.487 625.067,263.968 631.079,262.431 637.091,260.877 643.103,259.306 649.115,257.717 655.127,256.111 661.139,254.487 667.152,252.846 673.164,251.188 679.176,249.512 685.188,247.819 691.2,246.109" fill="none" stroke="#7FC8F8" stroke-width="4" opacity="1"/>
+<polyline id="o036" points="96,331.2 102.012,332.919 108.024,334.638 114.036,336.357 120.048,338.076 126.061,339.795 132.073,341.514 138.085,343.233 144.097,344.952 150.109,346.671 156.121,348.39 162.133,350.109 168.145,351.828 174.158,353.547 180.17,355.266 186.182,356.985 192.194,358.704 198.206,360.423 204.218,362.142 210.23,363.861 216.242,365.58 222.255,367.299 228.267,369.018 234.279,370.737 240.291,372.456 246.303,374.175 252.315,375.894 258.327,377.613 264.339,379.332 270.352,381.051 276.364,382.77 282.376,384.489 288.388,386.208 294.4,387.927 300.412,389.646 306.424,391.365 312.436,393.084 318.448,394.803 324.461,396.522 330.473,398.241 336.485,399.96 342.497,401.679 348.509,403.398 354.521,405.117 360.533,406.836 366.545,408.555 372.558,410.274 378.57,411.993 384.582,413.712 390.594,415.431 396.606,417.15 402.618,418.869 408.63,420.588 414.642,422.307 420.655,424.026 426.667,425.745 432.679,427.464 438.691,429.183 444.703,430.902 450.715,432.621 456.727,434.34 462.739,436.06 468.752,437.779 474.764,439.498 480.776,441.217 486.788,442.936 492.8,444.655 498.812,446.374 504.824,448.093 510.836,449.812 516.848,451.531 522.861,453.25 528.873,454.969 534.885,456.688 540.897,458.407 546.909,460.126 552.921,461.845 558.933,463.564 564.945,465.283 570.958,467.002 576.97,468.721 582.982,470.44 588.994,472.159 595.006,473.878 601.018,475.597 607.03,477.316 613.042,479.035 619.055,480.754 625.067,482.473 631.079,484.192 637.091,485.911 643.103,487.63 649.115,489.349 655.127,491.068 661.139,492.787 667.152,494.506 673.164,496.225 679.176,497.944 685.188,499.663 691.2,501.382" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<polyline id="o037" points="96,331.2 102.012,332.91 108.024,334.603 114.036,336.279 120.048,337.937 126.061,339.578 132.073,341.202 138.085,342.808 144.097,344.396 150.109,345.968 156.121,347.522 162.133,349.059 168.145,350.578 174.158,352.08 180.17,353.564 186.182,355.032 192.194,356.482 198.206,357.914 204.218,359.329 210.23,360.727 216.242,362.107 222.255,363.47 228.267,364.816 234.279,366.144 240.291,367.455 246.303,368.749 252.315,370.025 258.327,371.284 264.339,372.526 270.352,373.75 276.364,374.957 282.376,376.146 288.388,377.318 294.4,378.473 300.412,379.61 306.424,380.73 312.436,381.833 318.448,382.918 324.461,383.986 330.473,385.036 336.485,386.069 342.497,387.085 348.509,388.084 354.521,389.065 360.533,390.028 366.545,390.975 372.558,391.904 378.57,392.815 384.582,393.709 390.594,394.586 396.606,395.446 402.618,396.288 408.63,397.113 414.642,397.92 420.655,398.71 426.667,399.483 432.679,400.238 438.691,400.976 444.703,401.697 450.715,402.4 456.727,403.086 462.739,403.754 468.752,404.405 474.764,405.039 480.776,405.656 486.788,406.255 492.8,406.836 498.812,407.401 504.824,407.948 510.836,408.477 516.848,408.989 522.861,409.484 528.873,409.962 534.885,410.422 540.897,410.865 546.909,411.29 552.921,411.698 558.933,412.089 564.945,412.462 570.958,412.818 576.97,413.157 582.982,413.478 588.994,413.782 595.006,414.068 601.018,414.337 607.03,414.589 613.042,414.824 619.055,415.041 625.067,415.24 631.079,415.423 637.091,415.588 643.103,415.735 649.115,415.865 655.127,415.978 661.139,416.074 667.152,416.152 673.164,416.213 679.176,416.256 685.188,416.282 691.2,416.291" fill="none" stroke="#8EDBD4" stroke-width="4.53333" opacity="1"/>
+<line id="o038" x1="96" y1="331.2" x2="691.2" y2="331.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.6" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="165.12" y="201.039">U_b = V²/(2C_b)  (stored)</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="153.216" y="481.839">−p₀V  (source work)</tspan>
+</text>
+<ellipse id="o041" cx="691.2" cy="416.291" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="510.72" y="402.531">𝒫 = −p₀V/2</tspan>
+</text>
+<rect id="o043" x="720" y="144" width="523.2" height="374.4" rx="29.952" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="733.44" y="166.44">Maintained pressure</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="206.493">C_b = ∂V_bl/∂p₀ = π b⁶ / (192 D_f),   V_bl = C_b p₀</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="265.187">U_b = V_bl² / (2C_b) = p₀V_bl / 2</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="317.987">𝒫 = U_b − p₀V_bl = −π p₀² b⁶ / (384 D_f)</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="736.32" y="389.44">Half of the source work is stored; the other half is the</tspan>
+<tspan x="736.32" y="408.32">loss of potential.</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.587">With p₀ held fixed the source does work p₀V; the total potential is negative: the system gains energy by opening.</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Potential under maintained pressure, Eq. C4-E19 (normalised: V* = 1, p* = 1; U_b = V²/2 along the linear compliance).</tspan>
 </text>
 </svg>

@@ -1,57 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E05</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E05 · Derived variational identity for fixed clamps</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E05 · Derived variational identity for fixed clamps</tspan>
 </text>
-<rect id="o001" x="124.8" y="124.8" width="720" height="225.6" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="211.2">Reference film plane Ω_f</tspan>
-<tspan x="290.88" y="242.667">w(x,y,t), variation δw</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">With a fixed clamp, the boundary terms drop and one operator is left</tspan>
 </text>
-<line id="o003" x1="849.6" y1="235.2" x2="969.6" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="991.68" y="232.32">n: outward</tspan>
-<tspan x="991.68" y="257.493">in-plane normal</tspan>
+<rect id="o002" x="48" y="144" width="576" height="240" rx="19.2" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="166.44">Bending variation</tspan>
 </text>
-<line id="o005" x1="144" y1="369.6" x2="336" y2="369.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="358.08" y="374.813">x</tspan>
+<text id="o004" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="207.587">coefficient of w_xxyy:  2ν_f + 2(1 − ν_f) = 2</tspan>
 </text>
-<line id="o007" x1="144" y1="369.6" x2="144" y2="278.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="79.68" y="317.213">y</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="264.64">δU_b = D_f ∫ (wₓₓₓₓ + 2w_xxyy + w_yyyy) δw dA = D_f ∫ ∇⁴w δw dA</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="194.88" y="99.4267">Fixed boundary: δw = 0; ∂ₙδw = 0</tspan>
+<text id="o006" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="64.32" y="336.093">Poisson ratio cancels from the interior operator.</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="511.68" y="389.213">Curvature stores U_b; slope stores U_T.</tspan>
+<rect id="o007" x="652.8" y="144" width="576" height="240" rx="19.2" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="666.24" y="166.44">Tension variation</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• Ω_f, x, y — film plane</tspan>
+<text id="o009" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="669.12" y="207.587">δU_T = T₀ ∫ ∇w·∇δw dA</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• w, δw — displacement and variation</tspan>
+<text id="o010" font-family="Arial,sans-serif" font-size="16.6667" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="669.12" y="260.387">= −T₀ ∫ ∇²w δw dA   (δw = 0 on the clamp)</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• D_f, ν_f → ∇⁴w restoring load</tspan>
+<line id="o011" x1="96" y1="585.6" x2="595.2" y2="585.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o012" x1="96" y1="422.4" x2="96" y2="585.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o013" x1="96" y1="585.6" x2="96" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="96" y1="422.4" x2="96" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="607.64">0</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• T₀ → −∇²w restoring load</tspan>
+<line id="o016" x1="345.6" y1="585.6" x2="345.6" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="345.6" y1="422.4" x2="345.6" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="345.6" y="607.64">0.25</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• U_b, U_T — stored energy</tspan>
+<line id="o019" x1="595.2" y1="585.6" x2="595.2" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="595.2" y1="422.4" x2="595.2" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="595.2" y="607.64">0.5</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• clamp: δw = 0, slope variation = 0</tspan>
+<line id="o022" x1="89.28" y1="504" x2="96" y2="504" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="504" x2="595.2" y2="504" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="508.76">2</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Four spatial derivatives arise from two integrations by parts.</tspan>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="345.6" y="630.4">ν_f</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="400.96">coefficient</tspan>
+</text>
+<polyline id="o027" points="96,504 106.188,504 116.376,504 126.563,504 136.751,504 146.939,504 157.127,504 167.314,504 177.502,504 187.69,504 197.878,504 208.065,504 218.253,504 228.441,504 238.629,504 248.816,504 259.004,504 269.192,504 279.38,504 289.567,504 299.755,504 309.943,504 320.131,504 330.318,504 340.506,504 350.694,504 360.882,504 371.069,504 381.257,504 391.445,504 401.633,504 411.82,504 422.008,504 432.196,504 442.384,504 452.571,504 462.759,504 472.947,504 483.135,504 493.322,504 503.51,504 513.698,504 523.886,504 534.073,504 544.261,504 554.449,504 564.637,504 574.824,504 585.012,504 595.2,504" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="155.52" y="459.933">2ν + 2(1 − ν) = 2 for every ν</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="673.92" y="439.08">Result: D_f ∇⁴w − T₀ ∇²w are the elastic restoring terms.</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="673.92" y="505.187">They are the same terms that enter the transient balance of Eq.</tspan>
+<tspan x="673.92" y="524.853">C4-E06.</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Clamped variational identity of Eq. C4-E05.</tspan>
 </text>
 </svg>

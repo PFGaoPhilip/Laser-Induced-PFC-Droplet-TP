@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E05 · Barotropic shock pressure used by both solvers</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E05 · Barotropic shock pressure used by both solvers</tspan>
+</text>
+<line id="o001" x1="192" y1="441.6" x2="1017.6" y2="441.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="192" y1="441.6" x2="192" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="192" y="468.013">155</tspan>
+</text>
+<line id="o004" x1="379.636" y1="441.6" x2="379.636" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="379.636" y="468.013">160</tspan>
+</text>
+<line id="o006" x1="567.273" y1="441.6" x2="567.273" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="567.273" y="468.013">165</tspan>
+</text>
+<line id="o008" x1="754.909" y1="441.6" x2="754.909" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="754.909" y="468.013">170</tspan>
+</text>
+<line id="o010" x1="942.545" y1="441.6" x2="942.545" y2="448.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="942.545" y="468.013">175</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="604.8" y="503.033">Absolute wall pressure at U = 99.027 m/s (MPa)</tspan>
+</text>
+<line id="o013" x1="192" y1="172.8" x2="412.155" y2="172.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="5.33333" opacity="1"/>
+<ellipse id="o014" cx="412.155" cy="172.8" rx="9.6" ry="9.6" fill="#B4C7D2" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="31.68" y="175.827">Acoustic p_A</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="434.235" y="175.827">160.867</tspan>
+</text>
+<line id="o017" x1="192" y1="268.8" x2="910.838" y2="268.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1"/>
+<ellipse id="o018" cx="910.838" cy="268.8" rx="9.6" ry="9.6" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="31.68" y="271.827">Barotropic p_B</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="932.918" y="271.827">174.155</tspan>
+</text>
+<line id="o021" x1="192" y1="364.8" x2="928.394" y2="364.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="5.33333" opacity="1"/>
+<ellipse id="o022" cx="928.394" cy="364.8" rx="9.6" ry="9.6" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="31.68" y="367.827">Hugoniot p_H</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="950.474" y="367.827">174.623</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="89.28" y="570.693">p_B is 0.268% below p_H: the energy equation is dropped.</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="613.893">p_A is 7.9% below p_H: the linear estimate ignores compression.</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Values from Eqs. (C5-E02), (C5-E04) and (C5-E05).</tspan>
+</text>
+</svg>

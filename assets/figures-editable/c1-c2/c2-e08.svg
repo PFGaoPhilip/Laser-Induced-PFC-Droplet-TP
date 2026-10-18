@@ -1,20 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E08 Contact resistance delays heat transfer even after the light has been absorbed.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E08 | Physical-variable diagram</text>
-<rect x="100" y="125" width="250" height="200" fill="#F6BC77" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<rect x="350" y="125" width="400" height="200" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="127" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#142632">Absorber / side A</text>
-<text x="467" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">PFC / side B</text>
-<line x1="250" y1="235" x2="520" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="382" y="280.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">q; normal A → B</text>
-<text x="102" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_A</text>
-<text x="582" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_B</text>
-<text x="117" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Thermal path and contact are distinct from optical deposition.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">A: absorber side, T_A, q_A</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">n_AB: A → B</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ℛ_T: contact resistance</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">B: PFC side, T_B, q_B</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">q_n: continuous normal flux</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Hot A gives positive q_n when T_A &gt; T_B</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">No stored heat at the contact in this control</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E08</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E08 · Thermal-contact boundary conditions</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="768" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="528" x2="768" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="532.76">0.0</tspan>
+</text>
+<line id="o006" x1="89.28" y1="353.455" x2="96" y2="353.455" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="96" y1="353.455" x2="768" y2="353.455" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="358.215">0.5</tspan>
+</text>
+<line id="o009" x1="89.28" y1="178.909" x2="96" y2="178.909" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="96" y1="178.909" x2="768" y2="178.909" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="183.669">1.0</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="432" y="572.8">position across the contact</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">temperature (relative)</tspan>
+</text>
+<polyline id="o014" points="96,161.455 97.6842,161.805 99.3684,162.154 101.053,162.504 102.737,162.854 104.421,163.204 106.105,163.554 107.789,163.904 109.474,164.254 111.158,164.604 112.842,164.954 114.526,165.304 116.211,165.654 117.895,166.004 119.579,166.354 121.263,166.704 122.947,167.054 124.632,167.404 126.316,167.754 128,168.104 129.684,168.454 131.368,168.804 133.053,169.154 134.737,169.504 136.421,169.854 138.105,170.204 139.789,170.554 141.474,170.904 143.158,171.254 144.842,171.604 146.526,171.954 148.211,172.303 149.895,172.653 151.579,173.003 153.263,173.353 154.947,173.703 156.632,174.053 158.316,174.403 160,174.753 161.684,175.103 163.368,175.453 165.053,175.803 166.737,176.153 168.421,176.503 170.105,176.853 171.789,177.203 173.474,177.553 175.158,177.903 176.842,178.253 178.526,178.603 180.211,178.953 181.895,179.303 183.579,179.653 185.263,180.003 186.947,180.353 188.632,180.703 190.316,181.053 192,181.403 193.684,181.753 195.368,182.103 197.053,182.452 198.737,182.802 200.421,183.152 202.105,183.502 203.789,183.852 205.474,184.202 207.158,184.552 208.842,184.902 210.526,185.252 212.211,185.602 213.895,185.952 215.579,186.302 217.263,186.652 218.947,187.002 220.632,187.352 222.316,187.702 224,188.052 225.684,188.402 227.368,188.752 229.053,189.102 230.737,189.452 232.421,189.802 234.105,190.152 235.789,190.502 237.474,190.852 239.158,191.202 240.842,191.552 242.526,191.902 244.211,192.252 245.895,192.602 247.579,192.951 249.263,193.301 250.947,193.651 252.632,194.001 254.316,194.351 256,194.701 257.684,195.051 259.368,195.401 261.053,195.751 262.737,196.101 264.421,196.451 266.105,196.801 267.789,197.151 269.474,197.501 271.158,197.851 272.842,198.201 274.526,198.551 276.211,198.901 277.895,199.251 279.579,199.601 281.263,199.951 282.947,200.301 284.632,200.651 286.316,201.001 288,201.351 289.684,201.701 291.368,202.051 293.053,202.401 294.737,202.751 296.421,203.1 298.105,203.45 299.789,203.8 301.474,204.15 303.158,204.5 304.842,204.85 306.526,205.2 308.211,205.55 309.895,205.9 311.579,206.25 313.263,206.6 314.947,206.95 316.632,207.3 318.316,207.65 320,208 321.684,208.35 323.368,208.7 325.053,209.05 326.737,209.4 328.421,209.75 330.105,210.1 331.789,210.45 333.474,210.8 335.158,211.15 336.842,211.5 338.526,211.85 340.211,212.2 341.895,212.55 343.579,212.9 345.263,213.249 346.947,213.599 348.632,213.949 350.316,214.299 352,214.649 353.684,214.999 355.368,215.349 357.053,215.699 358.737,216.049 360.421,216.399 362.105,216.749 363.789,217.099 365.474,217.449 367.158,217.799 368.842,218.149 370.526,218.499 372.211,218.849 373.895,219.199 375.579,219.549 377.263,219.899 378.947,220.249 380.632,220.599 382.316,220.949 384,221.299 385.684,221.649 387.368,221.999 389.053,222.349 390.737,222.699 392.421,223.049 394.105,223.398 395.789,223.748 397.474,224.098 399.158,224.448 400.842,224.798 402.526,225.148 404.211,225.498 405.895,225.848 407.579,226.198 409.263,226.548 410.947,226.898 412.632,227.248 414.316,227.598 416,227.948 417.684,228.298 419.368,228.648 421.053,228.998 422.737,229.348 424.421,229.698 426.105,230.048 427.789,230.398 429.474,230.748 431.158,231.098" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<polyline id="o015" points="432.842,353.63 434.526,353.979 436.211,354.329 437.895,354.679 439.579,355.029 441.263,355.379 442.947,355.729 444.632,356.079 446.316,356.429 448,356.779 449.684,357.129 451.368,357.479 453.053,357.829 454.737,358.179 456.421,358.529 458.105,358.879 459.789,359.229 461.474,359.579 463.158,359.929 464.842,360.279 466.526,360.629 468.211,360.979 469.895,361.329 471.579,361.679 473.263,362.029 474.947,362.379 476.632,362.729 478.316,363.079 480,363.429 481.684,363.779 483.368,364.129 485.053,364.478 486.737,364.828 488.421,365.178 490.105,365.528 491.789,365.878 493.474,366.228 495.158,366.578 496.842,366.928 498.526,367.278 500.211,367.628 501.895,367.978 503.579,368.328 505.263,368.678 506.947,369.028 508.632,369.378 510.316,369.728 512,370.078 513.684,370.428 515.368,370.778 517.053,371.128 518.737,371.478 520.421,371.828 522.105,372.178 523.789,372.528 525.474,372.878 527.158,373.228 528.842,373.578 530.526,373.928 532.211,374.278 533.895,374.627 535.579,374.977 537.263,375.327 538.947,375.677 540.632,376.027 542.316,376.377 544,376.727 545.684,377.077 547.368,377.427 549.053,377.777 550.737,378.127 552.421,378.477 554.105,378.827 555.789,379.177 557.474,379.527 559.158,379.877 560.842,380.227 562.526,380.577 564.211,380.927 565.895,381.277 567.579,381.627 569.263,381.977 570.947,382.327 572.632,382.677 574.316,383.027 576,383.377 577.684,383.727 579.368,384.077 581.053,384.427 582.737,384.776 584.421,385.126 586.105,385.476 587.789,385.826 589.474,386.176 591.158,386.526 592.842,386.876 594.526,387.226 596.211,387.576 597.895,387.926 599.579,388.276 601.263,388.626 602.947,388.976 604.632,389.326 606.316,389.676 608,390.026 609.684,390.376 611.368,390.726 613.053,391.076 614.737,391.426 616.421,391.776 618.105,392.126 619.789,392.476 621.474,392.826 623.158,393.176 624.842,393.526 626.526,393.876 628.211,394.226 629.895,394.576 631.579,394.925 633.263,395.275 634.947,395.625 636.632,395.975 638.316,396.325 640,396.675 641.684,397.025 643.368,397.375 645.053,397.725 646.737,398.075 648.421,398.425 650.105,398.775 651.789,399.125 653.474,399.475 655.158,399.825 656.842,400.175 658.526,400.525 660.211,400.875 661.895,401.225 663.579,401.575 665.263,401.925 666.947,402.275 668.632,402.625 670.316,402.975 672,403.325 673.684,403.675 675.368,404.025 677.053,404.375 678.737,404.725 680.421,405.075 682.105,405.424 683.789,405.774 685.474,406.124 687.158,406.474 688.842,406.824 690.526,407.174 692.211,407.524 693.895,407.874 695.579,408.224 697.263,408.574 698.947,408.924 700.632,409.274 702.316,409.624 704,409.974 705.684,410.324 707.368,410.674 709.053,411.024 710.737,411.374 712.421,411.724 714.105,412.074 715.789,412.424 717.474,412.774 719.158,413.124 720.842,413.474 722.526,413.824 724.211,414.174 725.895,414.524 727.579,414.874 729.263,415.224 730.947,415.573 732.632,415.923 734.316,416.273 736,416.623 737.684,416.973 739.368,417.323 741.053,417.673 742.737,418.023 744.421,418.373 746.105,418.723 747.789,419.073 749.474,419.423 751.158,419.773 752.842,420.123 754.526,420.473 756.211,420.823 757.895,421.173 759.579,421.523 761.263,421.873 762.947,422.223 764.632,422.573 766.316,422.923 768,423.273" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o016" x1="432" y1="231.098" x2="432" y2="353.63" fill="#FFFFFF" stroke="#F28BA0" stroke-width="3.33333" opacity="1"/>
+<line id="o017" x1="432" y1="144" x2="432" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="139.2" y="172.788">material A</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="626.4" y="172.788">material B</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="462.24" y="282.315">T_A − T_B = R_T qₙ</tspan>
+</text>
+<line id="o021" x1="163.2" y1="486.109" x2="364.8" y2="486.109" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o022" x1="499.2" y1="486.109" x2="700.8" y2="486.109" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="265.92" y="464.715">qₙ</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="585.12" y="463.622">qₙ (same)</tspan>
+</text>
+<rect id="o025" x="796.8" y="144" width="446.4" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="810.24" y="166.44">Resistance at the contact</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="813.12" y="208.133">Flux continuity:</tspan>
+<tspan x="813.12" y="228.587">q_A·n = q_B·n = qₙ</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="813.12" y="289.733">Temperature jump:</tspan>
+<tspan x="813.12" y="310.187">T_A − T_B = R_T qₙ</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="813.12" y="370.24">R_T (m²K/W) is a property of the interface. The</tspan>
+<tspan x="813.12" y="389.12">same heat flows, but a temperature step builds up</tspan>
+<tspan x="813.12" y="408">and delays heating of side B.</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Light is absorbed in A, yet B warms only after heat crosses the contact: absorbed energy is not delivered energy.</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Contact conditions of Eq. C2-E08; profile is schematic.</tspan>
+</text>
 </svg>

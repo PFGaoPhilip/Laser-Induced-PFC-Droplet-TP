@@ -1,58 +1,142 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E12</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E12 · Volume-fraction definition and retarded monopole approximation</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E12 · Volume-fraction definition and retarded monopole approximation</tspan>
 </text>
-<ellipse id="o001" cx="134.4" cy="144" rx="30.72" ry="30.72" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="168" y1="144" x2="892.8" y2="211.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<ellipse id="o003" cx="240" cy="268.8" rx="30.72" ry="30.72" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o004" x1="273.6" y1="268.8" x2="892.8" y2="211.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<ellipse id="o005" cx="345.6" cy="144" rx="30.72" ry="30.72" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o006" x1="379.2" y1="144" x2="892.8" y2="211.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<ellipse id="o007" cx="912" cy="211.2" rx="11.52" ry="11.52" fill="#8EDBD4" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="847.68" y="274.013">Observation x, time t</tspan>
+<rect id="o001" x="38.4" y="96" width="422.4" height="508.8" rx="33.792" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Bubbles in a cubic lattice</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="25.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="463.68" y="121.027">Retarded source time: t − r_i/c</tspan>
+<ellipse id="o003" cx="105.6" cy="177.6" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o004" cx="105.6" cy="246.72" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o005" cx="105.6" cy="315.84" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o006" cx="105.6" cy="384.96" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o007" cx="174.72" cy="177.6" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o008" cx="174.72" cy="246.72" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o009" cx="174.72" cy="315.84" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o010" cx="174.72" cy="384.96" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o011" cx="243.84" cy="177.6" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o012" cx="243.84" cy="246.72" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o013" cx="243.84" cy="315.84" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o014" cx="243.84" cy="384.96" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o015" cx="312.96" cy="177.6" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o016" cx="312.96" cy="246.72" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o017" cx="312.96" cy="315.84" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o018" cx="312.96" cy="384.96" rx="20.16" ry="20.16" fill="#0C1820" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<line id="o019" x1="105.6" y1="475.2" x2="174.72" y2="475.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o020" x1="105.6" y1="468.48" x2="105.6" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o021" x1="174.72" y1="468.48" x2="174.72" y2="481.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="140.16" y="461.293">s</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="79.68" y="379.613">Volume fraction requires a defined region; travel times govern pulse overlap.</tspan>
+<text id="o023" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="528.64">φ_b = Σ Vᵢ / V_Ω = (4π/3) R³ / s³ for one</tspan>
+<tspan x="54.72" y="547.52">bubble per cell.</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• V_i, R_i: bubble sites</tspan>
+<line id="o024" x1="595.2" y1="499.2" x2="931.2" y2="499.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o025" x1="595.2" y1="144" x2="595.2" y2="499.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o026" x1="595.2" y1="499.2" x2="595.2" y2="505.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o027" x1="595.2" y1="144" x2="595.2" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="595.2" y="521.24">0.0</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• V_Ω representative region</tspan>
+<line id="o029" x1="662.4" y1="499.2" x2="662.4" y2="505.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o030" x1="662.4" y1="144" x2="662.4" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="662.4" y="521.24">0.1</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• φ_b = ΣV_i / V_Ω</tspan>
+<line id="o032" x1="729.6" y1="499.2" x2="729.6" y2="505.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o033" x1="729.6" y1="144" x2="729.6" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="729.6" y="521.24">0.2</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• s, R: cubic-cell geometry</tspan>
+<line id="o035" x1="796.8" y1="499.2" x2="796.8" y2="505.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o036" x1="796.8" y1="144" x2="796.8" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="796.8" y="521.24">0.3</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• r_i → observation x</tspan>
+<line id="o038" x1="864" y1="499.2" x2="864" y2="505.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o039" x1="864" y1="144" x2="864" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="864" y="521.24">0.4</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• p′, φ at time t</tspan>
+<line id="o041" x1="931.2" y1="499.2" x2="931.2" y2="505.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o042" x1="931.2" y1="144" x2="931.2" y2="499.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="931.2" y="521.24">0.5</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• ρ, c; V̇_i, V̈_i; t − r_i/c</tspan>
+<line id="o044" x1="588.48" y1="499.2" x2="595.2" y2="499.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o045" x1="588.48" y1="434.618" x2="595.2" y2="434.618" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o046" x1="595.2" y1="434.618" x2="931.2" y2="434.618" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="583.68" y="439.378">0.1</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Planar arrays require a declared layer thickness</tspan>
+<line id="o048" x1="588.48" y1="370.036" x2="595.2" y2="370.036" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o049" x1="595.2" y1="370.036" x2="931.2" y2="370.036" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="583.68" y="374.796">0.2</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Activation and propagation delays affect overlap</tspan>
+<line id="o051" x1="588.48" y1="305.455" x2="595.2" y2="305.455" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o052" x1="595.2" y1="305.455" x2="931.2" y2="305.455" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o053" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="583.68" y="310.215">0.3</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="664.007">Weak far-field sources do not predict impact pressure</tspan>
+<line id="o054" x1="588.48" y1="240.873" x2="595.2" y2="240.873" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o055" x1="595.2" y1="240.873" x2="931.2" y2="240.873" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o056" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="583.68" y="245.633">0.4</tspan>
 </text>
-<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<line id="o057" x1="588.48" y1="176.291" x2="595.2" y2="176.291" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o058" x1="595.2" y1="176.291" x2="931.2" y2="176.291" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o059" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="583.68" y="181.051">0.5</tspan>
+</text>
+<text id="o060" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="763.2" y="544">R / s</tspan>
+</text>
+<text id="o061" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="539.52" y="122.56">volume fraction φ_b</tspan>
+</text>
+<polyline id="o062" points="595.2,499.2 598.594,499.2 601.988,499.197 605.382,499.191 608.776,499.178 612.17,499.156 615.564,499.125 618.958,499.08 622.352,499.022 625.745,498.946 629.139,498.851 632.533,498.736 635.927,498.598 639.321,498.434 642.715,498.244 646.109,498.024 649.503,497.773 652.897,497.488 656.291,497.168 659.685,496.81 663.079,496.412 666.473,495.973 669.867,495.489 673.261,494.96 676.655,494.382 680.048,493.755 683.442,493.075 686.836,492.34 690.23,491.55 693.624,490.7 697.018,489.79 700.412,488.818 703.806,487.78 707.2,486.676 710.594,485.503 713.988,484.258 717.382,482.94 720.776,481.547 724.17,480.077 727.564,478.527 730.958,476.896 734.352,475.181 737.745,473.38 741.139,471.492 744.533,469.513 747.927,467.443 751.321,465.278 754.715,463.018 758.109,460.659 761.503,458.199 764.897,455.637 768.291,452.971 771.685,450.198 775.079,447.316 778.473,444.324 781.867,441.218 785.261,437.998 788.655,434.66 792.048,431.203 795.442,427.625 798.836,423.924 802.23,420.097 805.624,416.143 809.018,412.059 812.412,407.843 815.806,403.493 819.2,399.008 822.594,394.384 825.988,389.62 829.382,384.714 832.776,379.664 836.17,374.468 839.564,369.123 842.958,363.627 846.352,357.979 849.745,352.176 853.139,346.217 856.533,340.098 859.927,333.818 863.321,327.376 866.715,320.768 870.109,313.993 873.503,307.048 876.897,299.932 880.291,292.642 883.685,285.177 887.079,277.534 890.473,269.711 893.867,261.707 897.261,253.518 900.655,245.143 904.048,236.58 907.442,227.827 910.836,218.881 914.23,209.741 917.624,200.404 921.018,190.869 924.412,181.133 927.806,171.194 931.2,161.05" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o063" cx="662.4" cy="496.495" rx="5.76" ry="5.76" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o064" font-family="Arial,sans-serif" font-size="14.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="672" y="472.041">0.004</tspan>
+</text>
+<ellipse id="o065" cx="729.6" cy="477.558" rx="5.76" ry="5.76" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o066" font-family="Arial,sans-serif" font-size="14.6667" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="739.2" y="453.105">0.034</tspan>
+</text>
+<ellipse id="o067" cx="796.8" cy="426.16" rx="5.76" ry="5.76" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o068" font-family="Arial,sans-serif" font-size="14.6667" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="806.4" y="401.706">0.113</tspan>
+</text>
+<rect id="o069" x="950.4" y="144" width="292.8" height="355.2" rx="23.424" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o070" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="963.84" y="165.893">Delay rᵢ/c</tspan>
+</text>
+<ellipse id="o071" cx="988.8" cy="288" rx="9.6" ry="9.6" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o072" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="971.52" y="225.693">source i</tspan>
+</text>
+<line id="o073" x1="998.4" y1="288" x2="1190.4" y2="288" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<ellipse id="o074" cx="1209.6" cy="288" rx="8.64" ry="8.64" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o075" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1153.92" y="322.24">x</tspan>
+</text>
+<text id="o076" font-family="Arial,sans-serif" font-size="14.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="961.92" y="354.747">the signal at x now was emitted at</tspan>
+<tspan x="961.92" y="372.053">t − rᵢ/c</tspan>
+</text>
+<text id="o077" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="597.12" y="571.84">φ(x,t) ≃ −Σ V̇ᵢ(t − rᵢ/c) / (4π rᵢ),   p′ ≃ Σ ρ V̈ᵢ(t − rᵢ/c) / (4π rᵢ)</tspan>
+</text>
+<text id="o078" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="597.12" y="620.387">A spatial sum needs source histories and travel times, not just a site</tspan>
+<tspan x="597.12" y="640.053">count.</tspan>
+</text>
+<text id="o079" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Volume fraction and retarded monopole approximation of Eq. C3-E12 (far, compact, weak sources).</tspan>
 </text>
 </svg>

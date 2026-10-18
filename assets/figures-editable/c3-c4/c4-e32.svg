@@ -1,47 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E32</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E32 · Passed necessary release and minimum-speed screens</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E32 · Passed necessary release and minimum-speed screens</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">Incoming finite budgets</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Passed screens for Γ = 0.005 J/m² and v_f = 0.50 m/s</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">Transmitted E_solid, I_net</tspan>
+<line id="o002" x1="48" y1="480" x2="643.2" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="48" y1="163.2" x2="48" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o004" x1="41.28" y1="480" x2="48" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o005" x1="48" y1="480" x2="643.2" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="36.48" y="484.76">0</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">Release + departure cost</tspan>
+<line id="o007" x1="41.28" y1="336" x2="48" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="48" y1="336" x2="643.2" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="36.48" y="340.76">5</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Work, storage, fracture consumption and net impulse retain separate meanings.</tspan>
+<line id="o010" x1="41.28" y1="192" x2="48" y2="192" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o011" x1="48" y1="192" x2="643.2" y2="192" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="36.48" y="196.76">10</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• ΓA_f = 5 nJ — release</tspan>
+<rect id="o013" x="75.776" y="336" width="142.848" height="144" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="147.2" y="321.693">5.000</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• ½m_f v_f² = 0.29125 nJ — minimum translation</tspan>
+<text id="o015" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="147.2" y="501.627">Γ A_f</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• E_req = 5.29125 nJ &lt; E_solid</tspan>
+<rect id="o016" x="274.176" y="327.612" width="142.848" height="8.388" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="345.6" y="313.305">+0.291</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• I_req = 1.165×10⁻⁹ N s &lt; I_net</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="345.6" y="501.627">½ m_f v_f²</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• v_f = 0.50 m/s — required minimum</tspan>
+<rect id="o019" x="472.576" y="327.612" width="142.848" height="152.388" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="544" y="313.305">5.291</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Spatial crack completion and intactness remain unproved.</tspan>
+<text id="o021" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="544" y="501.627">= E_req</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="693.12" y="116.933">Energy budget (nJ)</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="180.16">E_req(0.50 m/s)</tspan>
+</text>
+<rect id="o024" x="883.2" y="163.2" width="101.592" height="48" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="994.392" y="183.04">5.291 nJ</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="256.96">E_solid</tspan>
+</text>
+<rect id="o027" x="883.2" y="240" width="192" height="48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1084.8" y="259.84">10.000 nJ</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="693.12" y="352.133">Impulse budget (nN s)</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="400.96">I_req</tspan>
+</text>
+<rect id="o031" x="883.2" y="384" width="136.693" height="48" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1029.49" y="403.84">1.165 nN s</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="477.76">Iₙₑₜ</tspan>
+</text>
+<rect id="o034" x="883.2" y="460.8" width="183.819" height="48" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1076.62" y="480.64">1.567 nN s</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="524.933">E_req(0.50 m/s) = 5.00 + 0.29125 = 5.29125 nJ  &lt;  E_solid = 10.0 nJ</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="577.733">I_req = m_f v_f = (2.33×10⁻⁹)(0.50) = 1.165e-09 N s  &lt;  Iₙₑₜ = 1.567e-09 N s</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="49.92" y="634.787">Both necessary budgets pass; success is still not established.</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Passed screens of Eq. C4-E32.</tspan>
 </text>
 </svg>

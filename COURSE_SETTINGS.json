@@ -134,6 +134,34 @@
           "实际传递的载荷能否释放目标界面，同时不损坏被转印对象？"
         ]
       ]
+    },
+    {
+      "id": "C05",
+      "kind": "chapter",
+      "label": "Chapter 5",
+      "label_zh": "第 5 章",
+      "file": "chapters/05-jet-on-rigid-wall.html",
+      "title": "Jet-on-rigid-wall calculation",
+      "title_zh": "刚性壁面射流计算",
+      "defense_ids": [
+        "C5-Q1",
+        "C5-Q2",
+        "C5-Q3"
+      ],
+      "unit_map_row": [
+        [
+          "Chapter 5: Jet-on-Rigid-Wall Calculation",
+          "第5章：刚性壁面射流计算"
+        ],
+        [
+          "Liquid-only impact theory, a finite-volume reference, and an axisymmetric COMSOL wall-band verification.",
+          "纯液体撞击理论、有限体积参考解与轴对称 COMSOL 壁面加密带核验。"
+        ],
+        [
+          "What wall pressure can a rigid-wall jet reach, and how well do two independent solvers agree?",
+          "射流撞击刚性壁面可达到多大的壁面压力？两个独立求解器的一致性如何？"
+        ]
+      ]
     }
   ],
   "appendices": [
@@ -142,7 +170,7 @@
       "kind": "appendix",
       "label": "Appendix A",
       "label_zh": "附录 A",
-      "file": "appendices/a-hydrogel-versus-liquid.html",
+      "file": "appendices/90-hydrogel-versus-liquid.html",
       "title": "Hydrogel versus liquid platforms",
       "title_zh": "水凝胶与液体平台",
       "defense_ids": [
@@ -176,19 +204,19 @@
     "C02",
     "C03",
     "C04",
+    "C05",
     "A"
   ],
   "legacy_routes": [
     {
       "file": "chapters/05-hydrogel-versus-liquid.html",
-      "canonical": "appendices/a-hydrogel-versus-liquid.html"
+      "canonical": "appendices/90-hydrogel-versus-liquid.html"
+    },
+    {
+      "file": "appendices/a-hydrogel-versus-liquid.html",
+      "canonical": "appendices/90-hydrogel-versus-liquid.html"
     }
   ],
-  "legacy_response_ids": {
-    "C5-Q1": "A-Q1",
-    "C5-Q2": "A-Q2",
-    "C5-Q3": "A-Q3"
-  },
   "causal_chain": [
     "absorption",
     "heat transport",

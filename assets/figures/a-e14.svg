@@ -1,61 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 616.32" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E14</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="616.32" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E14 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E14 · Finite work-budget comparison</tspan>
 </text>
-<ellipse id="obj-001" cx="172.8" cy="171.84" rx="73.92" ry="73.92" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<ellipse id="obj-002" cx="172.8" cy="171.84" rx="27.84" ry="27.84" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<line id="obj-003" x1="172.8" y1="171.84" x2="246.72" y2="171.84" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-004" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="211.2" y="151.814">R</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Work needed to open the cavity against a 100 kPa overpressure</tspan>
 </text>
-<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="105.6" y="278.534">Rref → R</tspan>
+<text id="o002" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="171.653">available  W₁₀₀ = Δp_w ΔV</tspan>
 </text>
-<text id="obj-006" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="78.72" y="88.4544">Cavity pressure work: pb dV</tspan>
+<rect id="o003" x="489.6" y="153.6" width="544.677" height="52.8" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1043.88" y="174.533">11.257 nJ</tspan>
 </text>
-<rect id="obj-007" x="418.56" y="120" width="393.6" height="118.08" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-008" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="440.64" y="157.574">Elastic storage: Wg</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="253.253">elastic cost  W_g</tspan>
 </text>
-<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="440.64" y="198.854">Viscous loss: Ḋg ≥ 0</tspan>
+<rect id="o006" x="489.6" y="235.2" width="218.504" height="52.8" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="717.704" y="256.133">4.516 nJ</tspan>
 </text>
-<line id="obj-010" x1="262.08" y1="172.8" x2="413.76" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-011" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="418.56" y="275.654">Gg , ηg ; intact network</tspan>
+<text id="o008" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="334.853">left over  W₁₀₀ − W_g</tspan>
 </text>
-<text id="obj-012" font-family="Arial,sans-serif" font-size="16.32" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="78.72" y="321.514">Jet energy requires a separate load path and budget</tspan>
+<rect id="o009" x="489.6" y="316.8" width="326.173" height="52.8" fill="#A8E6A1" stroke="#A8E6A1" stroke-width="1.33333" opacity="0.85"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="825.373" y="337.733">6.741 nJ</tspan>
 </text>
-<text id="obj-013" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<rect id="o011" x="48" y="412.8" width="576" height="182.4" rx="14.592" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="434.693">Volume and budget</tspan>
 </text>
-<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• Δpw = 100 kPa</tspan>
+<text id="o013" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="475.84">ΔV = (4π/3)(R³ − R_ref³) = 1.12573737e-13 m³</tspan>
 </text>
-<text id="obj-015" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• ΔV: same cavity expansion</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="533.44">W₁₀₀ = (100 kPa)(ΔV) = 11.2574 nJ</tspan>
 </text>
-<text id="obj-016" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• W100 = 11.2574 nJ</tspan>
+<rect id="o015" x="652.8" y="412.8" width="576" height="182.4" rx="14.592" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="666.24" y="434.693">Fraction</tspan>
 </text>
-<text id="obj-017" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">• Wg = 4.51604 nJ</tspan>
+<text id="o017" font-family="Arial,sans-serif" font-size="20" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="669.12" y="479.12">W_g / W₁₀₀ = 0.401163</tspan>
 </text>
-<text id="obj-018" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">• residual = 6.74133 nJ</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="669.12" y="538.24">about 40 % of the work budget is taken by elasticity</tspan>
 </text>
-<text id="obj-019" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="530.573">• R, Rref</tspan>
-</text>
-<text id="obj-020" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="552.653">Compare energy at the same displaced volume</tspan>
-</text>
-<text id="obj-021" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="574.733">Residual is not automatically an emitted jet</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Finite work-budget comparison of Eq. A-E14 (Δp_w = 100 kPa).</tspan>
 </text>
 </svg>

@@ -1,297 +1,898 @@
 {
-  "slide": {
-    "width": 13.066666666666666,
-    "height": 8.666666666666666
+ "slide": {
+  "width": 13.333,
+  "height": 7.5
+ },
+ "background": "#142632",
+ "objects": [
+  {
+   "x": 0.3,
+   "y": 0.13,
+   "w": 12.7,
+   "h": 0.3719444444444444,
+   "text": "C2-E29 · Refined constant-pressure enthalpy path",
+   "font": "Arial",
+   "font_size": 19,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o000",
+   "name": "C2-E29 text 0"
   },
-  "background": "#142632",
-  "objects": [
-    {
-      "type": "text",
-      "id": "C2-E29-001",
-      "name": "text1",
-      "x": 0.3466666666666667,
-      "y": 0.29333333333333333,
-      "w": 12.333333333333334,
-      "h": 0.39266666666666666,
-      "text": "C2-E29 | Physical-variable diagram",
-      "font": "Arial",
-      "font_size": 18.24,
-      "color": "#8EDBD4",
-      "word_wrap": false
-    },
-    {
-      "type": "rect",
-      "id": "C2-E29-002",
-      "name": "rect2",
-      "x": 1.0,
-      "y": 2.0,
-      "w": 3.3333333333333335,
-      "h": 1.3333333333333333,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-003",
-      "name": "text3",
-      "x": 1.1333333333333333,
-      "y": 2.1333333333333333,
-      "w": 3.1333333333333333,
-      "h": 0.37200000000000005,
-      "text": "Liquid heating",
-      "font": "Arial",
-      "font_size": 17.28,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "rect",
-      "id": "C2-E29-004",
-      "name": "rect4",
-      "x": 4.866666666666666,
-      "y": 2.0,
-      "w": 3.3333333333333335,
-      "h": 1.3333333333333333,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-005",
-      "name": "text5",
-      "x": 5.0,
-      "y": 2.1333333333333333,
-      "w": 3.1333333333333333,
-      "h": 0.37200000000000005,
-      "text": "Latent conversion",
-      "font": "Arial",
-      "font_size": 17.28,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "rect",
-      "id": "C2-E29-006",
-      "name": "rect6",
-      "x": 8.733333333333333,
-      "y": 2.0,
-      "w": 3.3333333333333335,
-      "h": 1.3333333333333333,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-007",
-      "name": "text7",
-      "x": 8.866666666666667,
-      "y": 2.1333333333333333,
-      "w": 3.1333333333333333,
-      "h": 0.37200000000000005,
-      "text": "Vapor heating",
-      "font": "Arial",
-      "font_size": 17.28,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-008",
-      "name": "text8",
-      "x": 4.4,
-      "y": 2.466666666666667,
-      "w": 0.5333333333333333,
-      "h": 0.49600000000000005,
-      "text": "+",
-      "font": "Arial",
-      "font_size": 23.04,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-009",
-      "name": "text9",
-      "x": 8.266666666666667,
-      "y": 2.466666666666667,
-      "w": 0.5333333333333333,
-      "h": 0.49600000000000005,
-      "text": "+",
-      "font": "Arial",
-      "font_size": 23.04,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-010",
-      "name": "text10",
-      "x": 1.3333333333333333,
-      "y": 4.2,
-      "w": 11.333333333333334,
-      "h": 0.39266666666666666,
-      "text": "Sum along one constant-pressure path gives Q_iso.",
-      "font": "Arial",
-      "font_size": 18.24,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-011",
-      "name": "text11",
-      "x": 0.4,
-      "y": 5.44,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "m_PFC,0: fixed compound mass",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-012",
-      "name": "text12",
-      "x": 0.4,
-      "y": 5.76,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "T₀ → T_sat: liquid heating",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-013",
-      "name": "text13",
-      "x": 0.4,
-      "y": 6.08,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "T_sat → T_*: vapor heating",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-014",
-      "name": "text14",
-      "x": 0.4,
-      "y": 6.4,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "L_v(T_sat,p): coexistence latent enthalpy",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-015",
-      "name": "text15",
-      "x": 0.4,
-      "y": 6.72,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "T, dT: temperature integration",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-016",
-      "name": "text16",
-      "x": 6.733333333333333,
-      "y": 5.44,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "p: constant path pressure",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-017",
-      "name": "text17",
-      "x": 6.733333333333333,
-      "y": 5.76,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "T_sat: phase transition",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-018",
-      "name": "text18",
-      "x": 6.733333333333333,
-      "y": 6.08,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "c_p,l, c_p,v: phase heat capacities",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-019",
-      "name": "text19",
-      "x": 6.733333333333333,
-      "y": 6.4,
-      "w": 6.066666666666666,
-      "h": 0.35133333333333333,
-      "text": "Q_iso: total path heat",
-      "font": "Arial",
-      "font_size": 16.32,
-      "color": "#E7F0F3",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-020",
-      "name": "text20",
-      "x": 0.4,
-      "y": 7.253333333333333,
-      "w": 12.333333333333334,
-      "h": 0.33066666666666666,
-      "text": "Latent enthalpy already contains the phase-transition flow work",
-      "font": "Arial",
-      "font_size": 15.36,
-      "color": "#B4C7D2",
-      "word_wrap": false
-    },
-    {
-      "type": "text",
-      "id": "C2-E29-021",
-      "name": "text21",
-      "x": 0.4,
-      "y": 7.573333333333333,
-      "w": 12.333333333333334,
-      "h": 0.33066666666666666,
-      "text": "The constant-property screen does not replace a calibrated enthalpy path",
-      "font": "Arial",
-      "font_size": 15.36,
-      "color": "#B4C7D2",
-      "word_wrap": false
-    }
-  ]
+  {
+   "x": 0.5,
+   "y": 1.0,
+   "w": 7.5,
+   "h": 0.27875,
+   "text": "Specific enthalpy gained along the constant-pressure path (kJ/kg)",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o001",
+   "name": "C2-E29 text 1"
+  },
+  {
+   "x1": 1.0,
+   "y1": 5.45,
+   "x2": 7.7,
+   "y2": 5.45,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o002",
+   "name": "C2-E29 line 2"
+  },
+  {
+   "x1": 1.0,
+   "y1": 1.85,
+   "x2": 1.0,
+   "y2": 5.45,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o003",
+   "name": "C2-E29 line 3"
+  },
+  {
+   "x1": 1.0,
+   "y1": 5.45,
+   "x2": 1.0,
+   "y2": 5.5200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o004",
+   "name": "C2-E29 line 4"
+  },
+  {
+   "x1": 1.0,
+   "y1": 1.85,
+   "x2": 1.0,
+   "y2": 5.45,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o005",
+   "name": "C2-E29 line 5"
+  },
+  {
+   "x": 0.5,
+   "y": 5.54,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "290",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o006",
+   "name": "C2-E29 text 6"
+  },
+  {
+   "x1": 2.861111111111111,
+   "y1": 5.45,
+   "x2": 2.861111111111111,
+   "y2": 5.5200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o007",
+   "name": "C2-E29 line 7"
+  },
+  {
+   "x1": 2.861111111111111,
+   "y1": 1.85,
+   "x2": 2.861111111111111,
+   "y2": 5.45,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o008",
+   "name": "C2-E29 line 8"
+  },
+  {
+   "x": 2.361111111111111,
+   "y": 5.54,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "300",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o009",
+   "name": "C2-E29 text 9"
+  },
+  {
+   "x1": 4.722222222222222,
+   "y1": 5.45,
+   "x2": 4.722222222222222,
+   "y2": 5.5200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o010",
+   "name": "C2-E29 line 10"
+  },
+  {
+   "x1": 4.722222222222222,
+   "y1": 1.85,
+   "x2": 4.722222222222222,
+   "y2": 5.45,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o011",
+   "name": "C2-E29 line 11"
+  },
+  {
+   "x": 4.222222222222222,
+   "y": 5.54,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "310",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o012",
+   "name": "C2-E29 text 12"
+  },
+  {
+   "x1": 6.583333333333334,
+   "y1": 5.45,
+   "x2": 6.583333333333334,
+   "y2": 5.5200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o013",
+   "name": "C2-E29 line 13"
+  },
+  {
+   "x1": 6.583333333333334,
+   "y1": 1.85,
+   "x2": 6.583333333333334,
+   "y2": 5.45,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o014",
+   "name": "C2-E29 line 14"
+  },
+  {
+   "x": 6.083333333333334,
+   "y": 5.54,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "320",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o015",
+   "name": "C2-E29 text 15"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 5.45,
+   "x2": 1.0,
+   "y2": 5.45,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o016",
+   "name": "C2-E29 line 16"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 4.73,
+   "x2": 1.0,
+   "y2": 4.73,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o017",
+   "name": "C2-E29 line 17"
+  },
+  {
+   "x1": 1.0,
+   "y1": 4.73,
+   "x2": 7.7,
+   "y2": 4.73,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o018",
+   "name": "C2-E29 line 18"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 4.640000000000001,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "25",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o019",
+   "name": "C2-E29 text 19"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 4.01,
+   "x2": 1.0,
+   "y2": 4.01,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o020",
+   "name": "C2-E29 line 20"
+  },
+  {
+   "x1": 1.0,
+   "y1": 4.01,
+   "x2": 7.7,
+   "y2": 4.01,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o021",
+   "name": "C2-E29 line 21"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 3.92,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "50",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o022",
+   "name": "C2-E29 text 22"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 3.29,
+   "x2": 1.0,
+   "y2": 3.29,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o023",
+   "name": "C2-E29 line 23"
+  },
+  {
+   "x1": 1.0,
+   "y1": 3.29,
+   "x2": 7.7,
+   "y2": 3.29,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o024",
+   "name": "C2-E29 line 24"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 3.2,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "75",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o025",
+   "name": "C2-E29 text 25"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 2.57,
+   "x2": 1.0,
+   "y2": 2.57,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o026",
+   "name": "C2-E29 line 26"
+  },
+  {
+   "x1": 1.0,
+   "y1": 2.57,
+   "x2": 7.7,
+   "y2": 2.57,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o027",
+   "name": "C2-E29 line 27"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 2.48,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "100",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o028",
+   "name": "C2-E29 text 28"
+  },
+  {
+   "x1": 0.9299999999999999,
+   "y1": 1.85,
+   "x2": 1.0,
+   "y2": 1.85,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o029",
+   "name": "C2-E29 line 29"
+  },
+  {
+   "x1": 1.0,
+   "y1": 1.85,
+   "x2": 7.7,
+   "y2": 1.85,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o030",
+   "name": "C2-E29 line 30"
+  },
+  {
+   "x": 0.050000000000000044,
+   "y": 1.76,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "125",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o031",
+   "name": "C2-E29 text 31"
+  },
+  {
+   "x": 1.0,
+   "y": 5.76,
+   "w": 6.7,
+   "h": 0.25333333333333335,
+   "text": "temperature T  (K)",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o032",
+   "name": "C2-E29 text 32"
+  },
+  {
+   "x": 0.4,
+   "y": 1.4700000000000002,
+   "w": 6.7,
+   "h": 0.25333333333333335,
+   "text": "H − H₀  (kJ/kg)",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o033",
+   "name": "C2-E29 text 33"
+  },
+  {
+   "points": [
+    [
+     1.5862499999999957,
+     5.45
+    ],
+    [
+     1.6739538070713436,
+     5.441124018673103
+    ],
+    [
+     1.7616576141426912,
+     5.4322480373462065
+    ],
+    [
+     1.8493614212140388,
+     5.42337205601931
+    ],
+    [
+     1.9370652282853866,
+     5.414496074692413
+    ],
+    [
+     2.0247690353567345,
+     5.405620093365516
+    ],
+    [
+     2.1124728424280823,
+     5.396744112038619
+    ],
+    [
+     2.20017664949943,
+     5.387868130711722
+    ],
+    [
+     2.2878804565707775,
+     5.378992149384826
+    ],
+    [
+     2.375584263642125,
+     5.370116168057929
+    ],
+    [
+     2.4632880707134728,
+     5.361240186731032
+    ],
+    [
+     2.5509918777848206,
+     5.352364205404135
+    ],
+    [
+     2.6386956848561685,
+     5.3434882240772374
+    ],
+    [
+     2.7263994919275163,
+     5.334612242750341
+    ],
+    [
+     2.814103298998864,
+     5.325736261423444
+    ],
+    [
+     2.9018071060702115,
+     5.316860280096547
+    ],
+    [
+     2.9895109131415594,
+     5.30798429876965
+    ],
+    [
+     3.077214720212907,
+     5.299108317442753
+    ],
+    [
+     3.1649185272842546,
+     5.2902323361158565
+    ],
+    [
+     3.2526223343556024,
+     5.28135635478896
+    ]
+   ],
+   "fill": null,
+   "line": "#7FC8F8",
+   "line_width": 3.4,
+   "_open": true,
+   "type": "polygon",
+   "id": "o034",
+   "name": "C2-E29 polygon 34"
+  },
+  {
+   "x1": 3.2526223343556024,
+   "y1": 5.28135635478896,
+   "x2": 3.2526223343556024,
+   "y2": 2.5453563547889595,
+   "line": "#F28BA0",
+   "line_width": 3.4,
+   "type": "line",
+   "id": "o035",
+   "name": "C2-E29 line 35"
+  },
+  {
+   "points": [
+    [
+     3.2526223343556024,
+     2.5453563547889595
+    ],
+    [
+     3.4587781764070598,
+     2.516644692201638
+    ],
+    [
+     3.6649340184585166,
+     2.4879330296143163
+    ],
+    [
+     3.871089860509984,
+     2.459221367026993
+    ],
+    [
+     4.0772457025614415,
+     2.4305097044396713
+    ],
+    [
+     4.283401544612898,
+     2.401798041852349
+    ],
+    [
+     4.489557386664355,
+     2.373086379265028
+    ],
+    [
+     4.695713228715813,
+     2.3443747166777062
+    ],
+    [
+     4.90186907076728,
+     2.315663054090383
+    ],
+    [
+     5.108024912818737,
+     2.286951391503061
+    ],
+    [
+     5.314180754870194,
+     2.2582397289157394
+    ],
+    [
+     5.520336596921652,
+     2.2295280663284176
+    ],
+    [
+     5.726492438973119,
+     2.200816403741095
+    ],
+    [
+     5.932648281024576,
+     2.1721047411537726
+    ],
+    [
+     6.138804123076033,
+     2.143393078566451
+    ],
+    [
+     6.34495996512749,
+     2.114681415979129
+    ],
+    [
+     6.551115807178947,
+     2.0859697533918076
+    ],
+    [
+     6.7572716492304155,
+     2.0572580908044844
+    ],
+    [
+     6.963427491281872,
+     2.0285464282171626
+    ],
+    [
+     7.169583333333329,
+     1.9998347656298407
+    ]
+   ],
+   "fill": null,
+   "line": "#8EDBD4",
+   "line_width": 3.4,
+   "_open": true,
+   "type": "polygon",
+   "id": "o036",
+   "name": "C2-E29 polygon 36"
+  },
+  {
+   "x": 1.6383333333333334,
+   "y": 5.0044,
+   "w": 2.8,
+   "h": 0.4397222222222222,
+   "text": "liquid: cₚ,l = 654 J/(kg K)\nto Tₛₐₜ = 302.1 K",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#7FC8F8",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o037",
+   "name": "C2-E29 text 37"
+  },
+  {
+   "x": 3.3726223343556025,
+   "y": 3.766,
+   "w": 1.8,
+   "h": 0.4397222222222222,
+   "text": "latent step\nLᵥ = 95 kJ/kg",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#F28BA0",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o038",
+   "name": "C2-E29 text 38"
+  },
+  {
+   "x": 4.988333333333333,
+   "y": 1.9516,
+   "w": 3.6,
+   "h": 0.24486111111111108,
+   "text": "vapor: cₚ,v (assumed 0.9 kJ/(kg K))",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o039",
+   "name": "C2-E29 text 39"
+  },
+  {
+   "x": 8.0,
+   "y": 1.5,
+   "w": 4.95,
+   "h": 4.0,
+   "fill": "#213E4B",
+   "line": "#8EDBD4",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o040",
+   "name": "C2-E29 round_rect 40"
+  },
+  {
+   "x": 8.12,
+   "y": 1.56,
+   "w": 4.71,
+   "h": 0.27875,
+   "text": "Each phase uses its own cₚ",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o041",
+   "name": "C2-E29 text 41"
+  },
+  {
+   "x": 8.15,
+   "y": 2.0,
+   "w": 4.7,
+   "h": 0.26180555555555557,
+   "text": "Qᵢₛₒ = m [ ∫cₚ,l dT + Lᵥ(Tₛₐₜ, p) + ∫cₚ,v dT ]",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o042",
+   "name": "C2-E29 text 42"
+  },
+  {
+   "x": 8.370000000000001,
+   "y": 2.85,
+   "w": 4.48,
+   "h": 0.45666666666666667,
+   "text": "Liquid heating stops at Tₛₐₜ = 302.1 K (1 bar),\nnot at T*.",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o043",
+   "name": "C2-E29 text 43"
+  },
+  {
+   "x": 8.185,
+   "y": 2.9083333333333337,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o044",
+   "name": "C2-E29 ellipse 44"
+  },
+  {
+   "x": 8.370000000000001,
+   "y": 3.3566666666666665,
+   "w": 4.48,
+   "h": 0.45666666666666667,
+   "text": "Vapor heating from Tₛₐₜ to T* uses cₚ,v, a\ndifferent number.",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o045",
+   "name": "C2-E29 text 45"
+  },
+  {
+   "x": 8.185,
+   "y": 3.415,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o046",
+   "name": "C2-E29 ellipse 46"
+  },
+  {
+   "x": 8.370000000000001,
+   "y": 3.863333333333333,
+   "w": 4.48,
+   "h": 0.45666666666666667,
+   "text": "The earlier estimate heated the liquid all the way\nto T*.",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o047",
+   "name": "C2-E29 text 47"
+  },
+  {
+   "x": 8.185,
+   "y": 3.9216666666666664,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o048",
+   "name": "C2-E29 ellipse 48"
+  },
+  {
+   "x": 1.0,
+   "y": 6.0,
+   "w": 12,
+   "h": 0.25333333333333335,
+   "text": "Per kilogram: 5.9 kJ liquid + 95 kJ latent + 18.9 kJ vapor (cₚ,v is an assumed illustration).",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o049",
+   "name": "C2-E29 text 49"
+  },
+  {
+   "x": 1.0,
+   "y": 6.45,
+   "w": 12,
+   "h": 0.26180555555555557,
+   "text": "Latent enthalpy still dominates, but the sensible parts must follow the phase actually being heated.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o050",
+   "name": "C2-E29 text 50"
+  },
+  {
+   "x": 0.35,
+   "y": 7.12,
+   "w": 12.6,
+   "h": 0.21944444444444444,
+   "text": "Refined constant-pressure path of Eq. C2-E29; Tₛₐₜ from Eq. C2-E12 at 1 bar.",
+   "font": "Arial",
+   "font_size": 10,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o051",
+   "name": "C2-E29 text 51"
+  }
+ ],
+ "_title": "C2-E29",
+ "_audit": {
+  "id": "C2-E29",
+  "scientific_status": "drawn from the equation and its stated numbers"
+ }
 }

@@ -1,322 +1,1485 @@
 {
-  "slide": {
-    "width": 13.333,
-    "height": 7.5
+ "slide": {
+  "width": 13.333,
+  "height": 7.5
+ },
+ "background": "#142632",
+ "objects": [
+  {
+   "x": 0.3,
+   "y": 0.13,
+   "w": 12.7,
+   "h": 0.3719444444444444,
+   "text": "C3-E12 · Volume-fraction definition and retarded monopole approximation",
+   "font": "Arial",
+   "font_size": 19,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o000",
+   "name": "C3-E12 text 0"
   },
-  "background": "#142632",
-  "objects": [
-    {
-      "x": 0.3,
-      "y": 0.15,
-      "w": 12.7,
-      "h": 0.4,
-      "text": "C3-E12 · Volume-fraction definition and retarded monopole approximation",
-      "font": "Arial",
-      "font_size": 21,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o000",
-      "name": "C3-E12 text 0"
-    },
-    {
-      "x": 1.0799999999999998,
-      "y": 1.18,
-      "w": 0.64,
-      "h": 0.64,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "ellipse",
-      "id": "o001",
-      "name": "C3-E12 ellipse 1"
-    },
-    {
-      "x1": 1.75,
-      "y1": 1.5,
-      "x2": 9.3,
-      "y2": 2.2,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o002",
-      "name": "C3-E12 arrow 2"
-    },
-    {
-      "x": 2.18,
-      "y": 2.48,
-      "w": 0.64,
-      "h": 0.64,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "ellipse",
-      "id": "o003",
-      "name": "C3-E12 ellipse 3"
-    },
-    {
-      "x1": 2.85,
-      "y1": 2.8,
-      "x2": 9.3,
-      "y2": 2.2,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o004",
-      "name": "C3-E12 arrow 4"
-    },
-    {
-      "x": 3.2800000000000002,
-      "y": 1.18,
-      "w": 0.64,
-      "h": 0.64,
-      "fill": "#213E4B",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "ellipse",
-      "id": "o005",
-      "name": "C3-E12 ellipse 5"
-    },
-    {
-      "x1": 3.95,
-      "y1": 1.5,
-      "x2": 9.3,
-      "y2": 2.2,
-      "line": "#8EDBD4",
-      "line_width": 2,
-      "type": "arrow",
-      "id": "o006",
-      "name": "C3-E12 arrow 6"
-    },
-    {
-      "x": 9.38,
-      "y": 2.08,
-      "w": 0.24,
-      "h": 0.24,
-      "fill": "#8EDBD4",
-      "line": "#B4C7D2",
-      "line_width": 1.5,
-      "type": "ellipse",
-      "id": "o007",
-      "name": "C3-E12 ellipse 7"
-    },
-    {
-      "x": 8.8,
-      "y": 2.6,
-      "w": 3,
-      "h": 0.4,
-      "text": "Observation x, time t",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o008",
-      "name": "C3-E12 text 8"
-    },
-    {
-      "x": 4.8,
-      "y": 1,
-      "w": 5,
-      "h": 0.4,
-      "text": "Retarded source time: t − r_i/c",
-      "font": "Arial",
-      "font_size": 19,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o009",
-      "name": "C3-E12 text 9"
-    },
-    {
-      "x": 0.8,
-      "y": 3.7,
-      "w": 11.8,
-      "h": 0.4,
-      "text": "Volume fraction requires a defined region; travel times govern pulse overlap.",
-      "font": "Arial",
-      "font_size": 17,
-      "color": "#E7F0F3",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o010",
-      "name": "C3-E12 text 10"
-    },
-    {
-      "x1": 0.3,
-      "y1": 4.35,
-      "x2": 13,
-      "y2": 4.35,
-      "line": "#405967",
-      "line_width": 1,
-      "type": "line",
-      "id": "o011",
-      "name": "C3-E12 line 11"
-    },
-    {
-      "x": 0.35,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• V_i, R_i: bubble sites",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o012",
-      "name": "C3-E12 text 12"
-    },
-    {
-      "x": 6.8,
-      "y": 4.48,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• V_Ω representative region",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o013",
-      "name": "C3-E12 text 13"
-    },
-    {
-      "x": 0.35,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• φ_b = ΣV_i / V_Ω",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o014",
-      "name": "C3-E12 text 14"
-    },
-    {
-      "x": 6.8,
-      "y": 4.735,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• s, R: cubic-cell geometry",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o015",
-      "name": "C3-E12 text 15"
-    },
-    {
-      "x": 0.35,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• r_i → observation x",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o016",
-      "name": "C3-E12 text 16"
-    },
-    {
-      "x": 6.8,
-      "y": 4.99,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• p′, φ at time t",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o017",
-      "name": "C3-E12 text 17"
-    },
-    {
-      "x": 0.35,
-      "y": 5.245,
-      "w": 6.25,
-      "h": 0.27,
-      "text": "• ρ, c; V̇_i, V̈_i; t − r_i/c",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o018",
-      "name": "C3-E12 text 18"
-    },
-    {
-      "x": 0.35,
-      "y": 6.12,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Planar arrays require a declared layer thickness",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o019",
-      "name": "C3-E12 text 19"
-    },
-    {
-      "x": 0.35,
-      "y": 6.42,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Activation and propagation delays affect overlap",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o020",
-      "name": "C3-E12 text 20"
-    },
-    {
-      "x": 0.35,
-      "y": 6.72,
-      "w": 12.5,
-      "h": 0.32,
-      "text": "Weak far-field sources do not predict impact pressure",
-      "font": "Arial",
-      "font_size": 11.5,
-      "color": "#8EDBD4",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o021",
-      "name": "C3-E12 text 21"
-    },
-    {
-      "x": 0.35,
-      "y": 7.08,
-      "w": 12.5,
-      "h": 0.28,
-      "text": "Model schematic; geometry is not to scale.",
-      "font": "Arial",
-      "font_size": 10,
-      "color": "#B4C7D2",
-      "word_wrap": true,
-      "type": "text",
-      "id": "o022",
-      "name": "C3-E12 text 22"
-    }
-  ],
-  "_audit": {
-    "id": "C3-E12",
-    "category": "retarded",
-    "corrections": [
-      "Replaced generic nine-site array with equation-specific source/receiver, polygon, or retarded geometry."
+  {
+   "x": 0.4,
+   "y": 1.0,
+   "w": 4.4,
+   "h": 5.3,
+   "fill": "#213E4B",
+   "line": "#8EDBD4",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o001",
+   "name": "C3-E12 round_rect 1"
+  },
+  {
+   "x": 0.52,
+   "y": 1.06,
+   "w": 4.16,
+   "h": 0.27875,
+   "text": "Bubbles in a cubic lattice",
+   "font": "Arial",
+   "font_size": 13.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o002",
+   "name": "C3-E12 text 2"
+  },
+  {
+   "x": 0.8899999999999999,
+   "y": 1.6400000000000001,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o003",
+   "name": "C3-E12 ellipse 3"
+  },
+  {
+   "x": 0.8899999999999999,
+   "y": 2.3600000000000003,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o004",
+   "name": "C3-E12 ellipse 4"
+  },
+  {
+   "x": 0.8899999999999999,
+   "y": 3.08,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o005",
+   "name": "C3-E12 ellipse 5"
+  },
+  {
+   "x": 0.8899999999999999,
+   "y": 3.8,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o006",
+   "name": "C3-E12 ellipse 6"
+  },
+  {
+   "x": 1.6099999999999999,
+   "y": 1.6400000000000001,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o007",
+   "name": "C3-E12 ellipse 7"
+  },
+  {
+   "x": 1.6099999999999999,
+   "y": 2.3600000000000003,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o008",
+   "name": "C3-E12 ellipse 8"
+  },
+  {
+   "x": 1.6099999999999999,
+   "y": 3.08,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o009",
+   "name": "C3-E12 ellipse 9"
+  },
+  {
+   "x": 1.6099999999999999,
+   "y": 3.8,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o010",
+   "name": "C3-E12 ellipse 10"
+  },
+  {
+   "x": 2.3299999999999996,
+   "y": 1.6400000000000001,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o011",
+   "name": "C3-E12 ellipse 11"
+  },
+  {
+   "x": 2.3299999999999996,
+   "y": 2.3600000000000003,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o012",
+   "name": "C3-E12 ellipse 12"
+  },
+  {
+   "x": 2.3299999999999996,
+   "y": 3.08,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o013",
+   "name": "C3-E12 ellipse 13"
+  },
+  {
+   "x": 2.3299999999999996,
+   "y": 3.8,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o014",
+   "name": "C3-E12 ellipse 14"
+  },
+  {
+   "x": 3.0500000000000003,
+   "y": 1.6400000000000001,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o015",
+   "name": "C3-E12 ellipse 15"
+  },
+  {
+   "x": 3.0500000000000003,
+   "y": 2.3600000000000003,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o016",
+   "name": "C3-E12 ellipse 16"
+  },
+  {
+   "x": 3.0500000000000003,
+   "y": 3.08,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o017",
+   "name": "C3-E12 ellipse 17"
+  },
+  {
+   "x": 3.0500000000000003,
+   "y": 3.8,
+   "w": 0.42,
+   "h": 0.42,
+   "fill": "#0C1820",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "ellipse",
+   "id": "o018",
+   "name": "C3-E12 ellipse 18"
+  },
+  {
+   "x1": 1.0999999999999999,
+   "y1": 4.95,
+   "x2": 1.8199999999999998,
+   "y2": 4.95,
+   "line": "#B4C7D2",
+   "line_width": 1.3,
+   "type": "line",
+   "id": "o019",
+   "name": "C3-E12 line 19"
+  },
+  {
+   "x1": 1.0999999999999999,
+   "y1": 4.88,
+   "x2": 1.0999999999999999,
+   "y2": 5.0200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1.3,
+   "type": "line",
+   "id": "o020",
+   "name": "C3-E12 line 20"
+  },
+  {
+   "x1": 1.8199999999999998,
+   "y1": 4.88,
+   "x2": 1.8199999999999998,
+   "y2": 5.0200000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1.3,
+   "type": "line",
+   "id": "o021",
+   "name": "C3-E12 line 21"
+  },
+  {
+   "x": 0.45999999999999996,
+   "y": 4.654166666666667,
+   "w": 2.0,
+   "h": 0.24486111111111108,
+   "text": "s",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o022",
+   "name": "C3-E12 text 22"
+  },
+  {
+   "x": 0.55,
+   "y": 5.35,
+   "w": 4.1,
+   "h": 0.45666666666666667,
+   "text": "φ_b = Σ Vᵢ / V_Ω = (4π/3) R³ / s³ for one\nbubble per cell.",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o023",
+   "name": "C3-E12 text 23"
+  },
+  {
+   "x1": 6.2,
+   "y1": 5.2,
+   "x2": 9.7,
+   "y2": 5.2,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o024",
+   "name": "C3-E12 line 24"
+  },
+  {
+   "x1": 6.2,
+   "y1": 1.5,
+   "x2": 6.2,
+   "y2": 5.2,
+   "line": "#B4C7D2",
+   "line_width": 1.5,
+   "type": "line",
+   "id": "o025",
+   "name": "C3-E12 line 25"
+  },
+  {
+   "x1": 6.2,
+   "y1": 5.2,
+   "x2": 6.2,
+   "y2": 5.2700000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o026",
+   "name": "C3-E12 line 26"
+  },
+  {
+   "x1": 6.2,
+   "y1": 1.5,
+   "x2": 6.2,
+   "y2": 5.2,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o027",
+   "name": "C3-E12 line 27"
+  },
+  {
+   "x": 5.7,
+   "y": 5.29,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.0",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o028",
+   "name": "C3-E12 text 28"
+  },
+  {
+   "x1": 6.9,
+   "y1": 5.2,
+   "x2": 6.9,
+   "y2": 5.2700000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o029",
+   "name": "C3-E12 line 29"
+  },
+  {
+   "x1": 6.9,
+   "y1": 1.5,
+   "x2": 6.9,
+   "y2": 5.2,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o030",
+   "name": "C3-E12 line 30"
+  },
+  {
+   "x": 6.4,
+   "y": 5.29,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.1",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o031",
+   "name": "C3-E12 text 31"
+  },
+  {
+   "x1": 7.6000000000000005,
+   "y1": 5.2,
+   "x2": 7.6000000000000005,
+   "y2": 5.2700000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o032",
+   "name": "C3-E12 line 32"
+  },
+  {
+   "x1": 7.6000000000000005,
+   "y1": 1.5,
+   "x2": 7.6000000000000005,
+   "y2": 5.2,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o033",
+   "name": "C3-E12 line 33"
+  },
+  {
+   "x": 7.1000000000000005,
+   "y": 5.29,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.2",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o034",
+   "name": "C3-E12 text 34"
+  },
+  {
+   "x1": 8.3,
+   "y1": 5.2,
+   "x2": 8.3,
+   "y2": 5.2700000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o035",
+   "name": "C3-E12 line 35"
+  },
+  {
+   "x1": 8.3,
+   "y1": 1.5,
+   "x2": 8.3,
+   "y2": 5.2,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o036",
+   "name": "C3-E12 line 36"
+  },
+  {
+   "x": 7.800000000000001,
+   "y": 5.29,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.3",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o037",
+   "name": "C3-E12 text 37"
+  },
+  {
+   "x1": 9.0,
+   "y1": 5.2,
+   "x2": 9.0,
+   "y2": 5.2700000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o038",
+   "name": "C3-E12 line 38"
+  },
+  {
+   "x1": 9.0,
+   "y1": 1.5,
+   "x2": 9.0,
+   "y2": 5.2,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o039",
+   "name": "C3-E12 line 39"
+  },
+  {
+   "x": 8.5,
+   "y": 5.29,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.4",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o040",
+   "name": "C3-E12 text 40"
+  },
+  {
+   "x1": 9.7,
+   "y1": 5.2,
+   "x2": 9.7,
+   "y2": 5.2700000000000005,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o041",
+   "name": "C3-E12 line 41"
+  },
+  {
+   "x1": 9.7,
+   "y1": 1.5,
+   "x2": 9.7,
+   "y2": 5.2,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o042",
+   "name": "C3-E12 line 42"
+  },
+  {
+   "x": 9.2,
+   "y": 5.29,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "0.5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o043",
+   "name": "C3-E12 text 43"
+  },
+  {
+   "x1": 6.13,
+   "y1": 5.2,
+   "x2": 6.2,
+   "y2": 5.2,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o044",
+   "name": "C3-E12 line 44"
+  },
+  {
+   "x1": 6.13,
+   "y1": 4.527272727272727,
+   "x2": 6.2,
+   "y2": 4.527272727272727,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o045",
+   "name": "C3-E12 line 45"
+  },
+  {
+   "x1": 6.2,
+   "y1": 4.527272727272727,
+   "x2": 9.7,
+   "y2": 4.527272727272727,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o046",
+   "name": "C3-E12 line 46"
+  },
+  {
+   "x": 5.25,
+   "y": 4.4372727272727275,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.1",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o047",
+   "name": "C3-E12 text 47"
+  },
+  {
+   "x1": 6.13,
+   "y1": 3.8545454545454545,
+   "x2": 6.2,
+   "y2": 3.8545454545454545,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o048",
+   "name": "C3-E12 line 48"
+  },
+  {
+   "x1": 6.2,
+   "y1": 3.8545454545454545,
+   "x2": 9.7,
+   "y2": 3.8545454545454545,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o049",
+   "name": "C3-E12 line 49"
+  },
+  {
+   "x": 5.25,
+   "y": 3.7645454545454546,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.2",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o050",
+   "name": "C3-E12 text 50"
+  },
+  {
+   "x1": 6.13,
+   "y1": 3.181818181818182,
+   "x2": 6.2,
+   "y2": 3.181818181818182,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o051",
+   "name": "C3-E12 line 51"
+  },
+  {
+   "x1": 6.2,
+   "y1": 3.181818181818182,
+   "x2": 9.7,
+   "y2": 3.181818181818182,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o052",
+   "name": "C3-E12 line 52"
+  },
+  {
+   "x": 5.25,
+   "y": 3.0918181818181822,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.3",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o053",
+   "name": "C3-E12 text 53"
+  },
+  {
+   "x1": 6.13,
+   "y1": 2.5090909090909093,
+   "x2": 6.2,
+   "y2": 2.5090909090909093,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o054",
+   "name": "C3-E12 line 54"
+  },
+  {
+   "x1": 6.2,
+   "y1": 2.5090909090909093,
+   "x2": 9.7,
+   "y2": 2.5090909090909093,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o055",
+   "name": "C3-E12 line 55"
+  },
+  {
+   "x": 5.25,
+   "y": 2.4190909090909094,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.4",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o056",
+   "name": "C3-E12 text 56"
+  },
+  {
+   "x1": 6.13,
+   "y1": 1.8363636363636364,
+   "x2": 6.2,
+   "y2": 1.8363636363636364,
+   "line": "#B4C7D2",
+   "line_width": 1,
+   "type": "line",
+   "id": "o057",
+   "name": "C3-E12 line 57"
+  },
+  {
+   "x1": 6.2,
+   "y1": 1.8363636363636364,
+   "x2": 9.7,
+   "y2": 1.8363636363636364,
+   "line": "#2E4756",
+   "line_width": 0.6,
+   "type": "line",
+   "id": "o058",
+   "name": "C3-E12 line 58"
+  },
+  {
+   "x": 5.25,
+   "y": 1.7463636363636363,
+   "w": 0.85,
+   "h": 0.22791666666666666,
+   "text": "0.5",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "right",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o059",
+   "name": "C3-E12 text 59"
+  },
+  {
+   "x": 6.2,
+   "y": 5.51,
+   "w": 3.5,
+   "h": 0.25333333333333335,
+   "text": "R / s",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "center",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o060",
+   "name": "C3-E12 text 60"
+  },
+  {
+   "x": 5.6000000000000005,
+   "y": 1.12,
+   "w": 3.5,
+   "h": 0.25333333333333335,
+   "text": "volume fraction φ_b",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o061",
+   "name": "C3-E12 text 61"
+  },
+  {
+   "points": [
+    [
+     6.2,
+     5.2
     ],
-    "scientific_status": "accepted against local equation, definitions and notes",
-    "evidence": [
-      "content/chapter03.py"
+    [
+     6.235353535353536,
+     5.199996369787289
+    ],
+    [
+     6.270707070707071,
+     5.199970958298313
+    ],
+    [
+     6.306060606060607,
+     5.199901984256807
+    ],
+    [
+     6.341414141414141,
+     5.1997676663865064
+    ],
+    [
+     6.376767676767677,
+     5.199546223411145
+    ],
+    [
+     6.412121212121212,
+     5.199215874054459
+    ],
+    [
+     6.447474747474748,
+     5.198754837040182
+    ],
+    [
+     6.482828282828283,
+     5.1981413310920495
+    ],
+    [
+     6.5181818181818185,
+     5.197353574933797
+    ],
+    [
+     6.553535353535354,
+     5.19636978728916
+    ],
+    [
+     6.5888888888888895,
+     5.1951681868818715
+    ],
+    [
+     6.624242424242424,
+     5.193726992435668
+    ],
+    [
+     6.6595959595959595,
+     5.192024422674284
+    ],
+    [
+     6.694949494949495,
+     5.190038696321454
+    ],
+    [
+     6.7303030303030305,
+     5.187748032100913
+    ],
+    [
+     6.765656565656566,
+     5.185130648736397
+    ],
+    [
+     6.801010101010101,
+     5.182164764951641
+    ],
+    [
+     6.836363636363637,
+     5.178828599470378
+    ],
+    [
+     6.871717171717172,
+     5.175100371016345
+    ],
+    [
+     6.907070707070707,
+     5.170958298313276
+    ],
+    [
+     6.942424242424242,
+     5.166380600084906
+    ],
+    [
+     6.977777777777778,
+     5.16134549505497
+    ],
+    [
+     7.013131313131313,
+     5.155831201947204
+    ],
+    [
+     7.048484848484849,
+     5.149815939485341
+    ],
+    [
+     7.083838383838384,
+     5.143277926393117
+    ],
+    [
+     7.11919191919192,
+     5.136195381394267
+    ],
+    [
+     7.154545454545455,
+     5.128546523212527
+    ],
+    [
+     7.189898989898991,
+     5.12030957057163
+    ],
+    [
+     7.225252525252525,
+     5.111462742195311
+    ],
+    [
+     7.260606060606061,
+     5.101984256807307
+    ],
+    [
+     7.295959595959596,
+     5.091852333131351
+    ],
+    [
+     7.331313131313132,
+     5.081045189891179
+    ],
+    [
+     7.366666666666667,
+     5.069541045810525
+    ],
+    [
+     7.402020202020203,
+     5.057318119613125
+    ],
+    [
+     7.437373737373738,
+     5.044354630022713
+    ],
+    [
+     7.472727272727273,
+     5.030628795763025
+    ],
+    [
+     7.508080808080808,
+     5.016118835557796
+    ],
+    [
+     7.543434343434344,
+     5.00080296813076
+    ],
+    [
+     7.578787878787879,
+     4.9846594122056525
+    ],
+    [
+     7.6141414141414145,
+     4.967666386506208
+    ],
+    [
+     7.64949494949495,
+     4.9498021097561615
+    ],
+    [
+     7.6848484848484855,
+     4.931044800679249
+    ],
+    [
+     7.72020202020202,
+     4.911372677999204
+    ],
+    [
+     7.7555555555555555,
+     4.890763960439763
+    ],
+    [
+     7.790909090909091,
+     4.86919686672466
+    ],
+    [
+     7.8262626262626265,
+     4.846649615577629
+    ],
+    [
+     7.861616161616162,
+     4.823100425722407
+    ],
+    [
+     7.896969696969697,
+     4.798527515882728
+    ],
+    [
+     7.932323232323233,
+     4.772909104782326
+    ],
+    [
+     7.9676767676767675,
+     4.746223411144937
+    ],
+    [
+     8.003030303030304,
+     4.7184486536942964
+    ],
+    [
+     8.038383838383838,
+     4.689563051154138
+    ],
+    [
+     8.073737373737373,
+     4.659544822248199
+    ],
+    [
+     8.10909090909091,
+     4.628372185700211
+    ],
+    [
+     8.144444444444446,
+     4.596023360233912
+    ],
+    [
+     8.17979797979798,
+     4.562476564573034
+    ],
+    [
+     8.215151515151515,
+     4.527710017441315
+    ],
+    [
+     8.250505050505051,
+     4.491701937562488
+    ],
+    [
+     8.285858585858586,
+     4.454430543660289
+    ],
+    [
+     8.32121212121212,
+     4.415874054458452
+    ],
+    [
+     8.356565656565657,
+     4.3760106886807115
+    ],
+    [
+     8.391919191919193,
+     4.334818665050805
+    ],
+    [
+     8.427272727272728,
+     4.292276202292465
+    ],
+    [
+     8.462626262626262,
+     4.2483615191294275
+    ],
+    [
+     8.497979797979799,
+     4.203052834285427
+    ],
+    [
+     8.533333333333333,
+     4.156328366484199
+    ],
+    [
+     8.56868686868687,
+     4.1081663344494785
+    ],
+    [
+     8.604040404040404,
+     4.058544956904999
+    ],
+    [
+     8.63939393939394,
+     4.007442452574497
+    ],
+    [
+     8.674747474747475,
+     3.9548370401817072
+    ],
+    [
+     8.71010101010101,
+     3.900706938450365
+    ],
+    [
+     8.745454545454546,
+     3.8450303661042042
+    ],
+    [
+     8.780808080808082,
+     3.7877855418669597
+    ],
+    [
+     8.816161616161617,
+     3.7289506844623683
+    ],
+    [
+     8.851515151515152,
+     3.6685040126141626
+    ],
+    [
+     8.886868686868688,
+     3.6064237450460794
+    ],
+    [
+     8.922222222222222,
+     3.542688100481853
+    ],
+    [
+     8.957575757575757,
+     3.477275297645218
+    ],
+    [
+     8.992929292929293,
+     3.41016355525991
+    ],
+    [
+     9.02828282828283,
+     3.3413310920496624
+    ],
+    [
+     9.063636363636364,
+     3.2707561267382124
+    ],
+    [
+     9.098989898989899,
+     3.1984168780492936
+    ],
+    [
+     9.134343434343435,
+     3.1242915647066414
+    ],
+    [
+     9.16969696969697,
+     3.048358405433991
+    ],
+    [
+     9.205050505050504,
+     2.9705956189550764
+    ],
+    [
+     9.24040404040404,
+     2.8909814239936336
+    ],
+    [
+     9.275757575757577,
+     2.8094940392733965
+    ],
+    [
+     9.311111111111112,
+     2.7261116835181007
+    ],
+    [
+     9.346464646464646,
+     2.640812575451481
+    ],
+    [
+     9.381818181818183,
+     2.553574933797273
+    ],
+    [
+     9.417171717171717,
+     2.4643769772792115
+    ],
+    [
+     9.452525252525254,
+     2.37319692462103
+    ],
+    [
+     9.487878787878788,
+     2.2800129945464658
+    ],
+    [
+     9.523232323232325,
+     2.1848034057792516
+    ],
+    [
+     9.55858585858586,
+     2.087546377043124
+    ],
+    [
+     9.593939393939394,
+     1.9882201270618176
+    ],
+    [
+     9.62929292929293,
+     1.8868028745590655
+    ],
+    [
+     9.664646464646465,
+     1.7832728382586058
+    ],
+    [
+     9.7,
+     1.677608236884172
     ]
+   ],
+   "fill": null,
+   "line": "#8EDBD4",
+   "line_width": 3,
+   "_open": true,
+   "type": "polygon",
+   "id": "o062",
+   "name": "C3-E12 polygon 62"
+  },
+  {
+   "x": 6.840000000000001,
+   "y": 5.111820865895074,
+   "w": 0.12,
+   "h": 0.12,
+   "fill": "#F2B880",
+   "line": "#F2B880",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o063",
+   "name": "C3-E12 ellipse 63"
+  },
+  {
+   "x": 6.98,
+   "y": 4.771820865895073,
+   "w": 0.9,
+   "h": 0.23638888888888887,
+   "text": "0.004",
+   "font": "Arial",
+   "font_size": 11,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o064",
+   "name": "C3-E12 text 64"
+  },
+  {
+   "x": 7.540000000000001,
+   "y": 4.914566927160587,
+   "w": 0.12,
+   "h": 0.12,
+   "fill": "#F28BA0",
+   "line": "#F28BA0",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o065",
+   "name": "C3-E12 ellipse 65"
+  },
+  {
+   "x": 7.680000000000001,
+   "y": 4.574566927160586,
+   "w": 0.9,
+   "h": 0.23638888888888887,
+   "text": "0.034",
+   "font": "Arial",
+   "font_size": 11,
+   "color": "#F28BA0",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o066",
+   "name": "C3-E12 text 66"
+  },
+  {
+   "x": 8.24,
+   "y": 4.3791633791669815,
+   "w": 0.12,
+   "h": 0.12,
+   "fill": "#7FC8F8",
+   "line": "#7FC8F8",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o067",
+   "name": "C3-E12 ellipse 67"
+  },
+  {
+   "x": 8.38,
+   "y": 4.039163379166981,
+   "w": 0.9,
+   "h": 0.23638888888888887,
+   "text": "0.113",
+   "font": "Arial",
+   "font_size": 11,
+   "color": "#7FC8F8",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o068",
+   "name": "C3-E12 text 68"
+  },
+  {
+   "x": 9.9,
+   "y": 1.5,
+   "w": 3.05,
+   "h": 3.7,
+   "fill": "#213E4B",
+   "line": "#F2B880",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o069",
+   "name": "C3-E12 round_rect 69"
+  },
+  {
+   "x": 10.02,
+   "y": 1.56,
+   "w": 2.8099999999999996,
+   "h": 0.2702777777777778,
+   "text": "Delay rᵢ/c",
+   "font": "Arial",
+   "font_size": 13,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o070",
+   "name": "C3-E12 text 70"
+  },
+  {
+   "x": 10.200000000000001,
+   "y": 2.9,
+   "w": 0.2,
+   "h": 0.2,
+   "fill": "#F2B880",
+   "line": "#F2B880",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o071",
+   "name": "C3-E12 ellipse 71"
+  },
+  {
+   "x": 10.1,
+   "y": 2.2,
+   "w": 2.7,
+   "h": 0.24486111111111108,
+   "text": "source i",
+   "font": "Arial",
+   "font_size": 11.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o072",
+   "name": "C3-E12 text 72"
+  },
+  {
+   "x1": 10.4,
+   "y1": 3.0,
+   "x2": 12.4,
+   "y2": 3.0,
+   "line": "#8EDBD4",
+   "line_width": 2.5,
+   "type": "arrow",
+   "id": "o073",
+   "name": "C3-E12 arrow 73"
+  },
+  {
+   "x": 12.51,
+   "y": 2.91,
+   "w": 0.18,
+   "h": 0.18,
+   "fill": "#F28BA0",
+   "line": "#F28BA0",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o074",
+   "name": "C3-E12 ellipse 74"
+  },
+  {
+   "x": 12.0,
+   "y": 3.2,
+   "w": 1.0,
+   "h": 0.25333333333333335,
+   "text": "x",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#F28BA0",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o075",
+   "name": "C3-E12 text 75"
+  },
+  {
+   "x": 10.0,
+   "y": 3.55,
+   "w": 2.9,
+   "h": 0.42277777777777775,
+   "text": "the signal at x now was emitted at\nt − rᵢ/c",
+   "font": "Arial",
+   "font_size": 11,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o076",
+   "name": "C3-E12 text 76"
+  },
+  {
+   "x": 6.2,
+   "y": 5.8,
+   "w": 6.7,
+   "h": 0.25333333333333335,
+   "text": "φ(x,t) ≃ −Σ V̇ᵢ(t − rᵢ/c) / (4π rᵢ),   p′ ≃ Σ ρ V̈ᵢ(t − rᵢ/c) / (4π rᵢ)",
+   "font": "Arial",
+   "font_size": 12,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o077",
+   "name": "C3-E12 text 77"
+  },
+  {
+   "x": 6.2,
+   "y": 6.3,
+   "w": 6.7,
+   "h": 0.4736111111111111,
+   "text": "A spatial sum needs source histories and travel times, not just a site\ncount.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o078",
+   "name": "C3-E12 text 78"
+  },
+  {
+   "x": 0.35,
+   "y": 7.12,
+   "w": 12.6,
+   "h": 0.21944444444444444,
+   "text": "Volume fraction and retarded monopole approximation of Eq. C3-E12 (far, compact, weak sources).",
+   "font": "Arial",
+   "font_size": 10,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o079",
+   "name": "C3-E12 text 79"
   }
+ ],
+ "_title": "C3-E12",
+ "_audit": {
+  "id": "C3-E12",
+  "scientific_status": "drawn from the equation and its stated numbers"
+ }
 }

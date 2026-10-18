@@ -1,26 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E13 The ideal control begins at rest and excludes the mechanisms that arrest real collapse.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E13 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">R(t)</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">p_b</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Surrounding liquid</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p∞, ρ, μ; interface: σ</text>
-<line x1="270" y1="215" x2="410" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="442" y="319.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">r ≥ R</text>
-<line x1="410" y1="215" x2="475" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="417" y="253.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">+e_r (coordinate)</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Signed wall speed: Ṙ; acceleration: R̈</text>
-<line x1="160" y1="215" x2="205" y2="215" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="92" y="99.44" font-family="Arial,sans-serif" font-size="18" fill="#F6BC77">Collapse: Ṙ &lt; 0</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Rmax at t = 0</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R(t)</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p∞</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δpc &gt; 0</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ(0) = 0</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R̈</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pv</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Constant pressure deficit initiates inward acceleration</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E13</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E13 · Idealized collapse initial-value problem</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="441.6" height="528" rx="35.328" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Ideal collapse, starting at rest</tspan>
+</text>
+<ellipse id="o003" cx="259.2" cy="345.6" rx="110.4" ry="110.4" fill="#1E4A5A" stroke="#2B6678" stroke-width="1.6" opacity="1"/>
+<ellipse id="o004" cx="259.2" cy="345.6" rx="96" ry="96" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="259.2" y="324.707">pᵥ only</tspan>
+</text>
+<text id="o006" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="259.2" y="356.387">R(0) = Rₘₐₓ</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="259.2" y="388.067">Ṙ(0) = 0</tspan>
+</text>
+<line id="o008" x1="446.4" y1="345.6" x2="384" y2="345.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o009" x1="391.57" y1="213.23" x2="347.447" y2="257.353" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o010" x1="259.2" y1="158.4" x2="259.2" y2="220.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o011" x1="126.83" y1="213.23" x2="170.953" y2="257.353" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o012" x1="72" y1="345.6" x2="134.4" y2="345.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o013" x1="126.83" y1="477.97" x2="170.953" y2="433.847" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o014" x1="259.2" y1="532.8" x2="259.2" y2="470.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<line id="o015" x1="391.57" y1="477.97" x2="347.447" y2="433.847" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="562.787">p∞ squeezes the liquid; the gas pushes back</tspan>
+<tspan x="54.72" y="582.453">only with pᵥ.   Δp_c = p∞ − pᵥ &gt; 0.</tspan>
+</text>
+<line id="o017" x1="585.6" y1="518.4" x2="1209.6" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o018" x1="585.6" y1="144" x2="585.6" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o019" x1="585.6" y1="518.4" x2="585.6" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="585.6" y1="144" x2="585.6" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="585.6" y="540.44">0</tspan>
+</text>
+<line id="o022" x1="793.6" y1="518.4" x2="793.6" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="793.6" y1="144" x2="793.6" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="793.6" y="540.44">1</tspan>
+</text>
+<line id="o025" x1="1001.6" y1="518.4" x2="1001.6" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="1001.6" y1="144" x2="1001.6" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1001.6" y="540.44">2</tspan>
+</text>
+<line id="o028" x1="1209.6" y1="518.4" x2="1209.6" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="1209.6" y1="144" x2="1209.6" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1209.6" y="540.44">3</tspan>
+</text>
+<line id="o031" x1="578.88" y1="518.4" x2="585.6" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="578.88" y1="429.257" x2="585.6" y2="429.257" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o033" x1="585.6" y1="429.257" x2="1209.6" y2="429.257" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="574.08" y="434.017">0.25</tspan>
+</text>
+<line id="o035" x1="578.88" y1="340.114" x2="585.6" y2="340.114" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o036" x1="585.6" y1="340.114" x2="1209.6" y2="340.114" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="574.08" y="344.874">0.50</tspan>
+</text>
+<line id="o038" x1="578.88" y1="250.971" x2="585.6" y2="250.971" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o039" x1="585.6" y1="250.971" x2="1209.6" y2="250.971" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="574.08" y="255.731">0.75</tspan>
+</text>
+<line id="o041" x1="578.88" y1="161.829" x2="585.6" y2="161.829" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o042" x1="585.6" y1="161.829" x2="1209.6" y2="161.829" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="574.08" y="166.589">1.00</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="897.6" y="563.2">t  (µs)</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="529.92" y="122.56">R / Rₘₐₓ</tspan>
+</text>
+<polyline id="o046" points="585.6,161.829 591.492,161.844 597.384,161.892 603.275,161.972 609.164,162.083 615.051,162.226 620.935,162.401 626.816,162.608 632.694,162.846 638.567,163.116 644.436,163.418 650.299,163.752 656.157,164.118 662.008,164.515 667.853,164.944 673.69,165.405 679.519,165.898 685.339,166.423 691.151,166.979 696.953,167.568 702.745,168.188 708.527,168.839 714.297,169.523 720.056,170.238 725.803,170.985 731.537,171.764 737.258,172.575 742.964,173.418 748.657,174.292 754.335,175.198 759.997,176.136 765.643,177.106 771.273,178.108 776.886,179.141 782.481,180.206 788.058,181.303 793.616,182.432 799.155,183.592 804.674,184.784 810.172,186.009 815.65,187.264 821.106,188.552 826.54,189.872 831.952,191.223 837.34,192.606 842.704,194.021 848.045,195.467 853.36,196.946 858.649,198.456 863.913,199.998 869.15,201.572 874.36,203.178 879.542,204.815 884.695,206.484 889.82,208.185 894.915,209.918 899.979,211.683 905.013,213.479 910.016,215.307 914.986,217.167 919.924,219.059 924.829,220.983 929.7,222.938 934.537,224.925 939.338,226.944 944.104,228.995 948.834,231.078 953.527,233.192 958.182,235.338 962.8,237.516 967.378,239.726 971.917,241.967 976.416,244.241 980.875,246.546 985.292,248.883 989.667,251.251 994,253.652 998.29,256.084 1002.54,258.548 1006.74,261.044 1010.89,263.572 1015,266.131 1019.07,268.723 1023.08,271.346 1027.05,274.001 1030.97,276.687 1034.84,279.406 1038.67,282.156 1042.44,284.938 1046.16,287.752 1049.83,290.597 1053.44,293.475 1057.01,296.384 1060.52,299.325 1063.97,302.298 1067.37,305.303 1070.72,308.339 1074,311.407 1077.24,314.507 1080.41,317.639 1083.52,320.803 1086.58,323.998 1089.58,327.225 1092.51,330.484 1095.39,333.775 1098.2,337.097 1100.96,340.452 1103.65,343.838 1106.27,347.256 1108.84,350.706 1111.34,354.187 1113.77,357.7 1116.14,361.246 1118.44,364.822 1120.68,368.431 1122.85,372.072 1124.95,375.744 1126.98,379.448 1128.95,383.184 1130.84,386.952 1132.67,390.751 1134.43,394.582 1136.12,398.445 1137.74,402.34 1139.29,406.267 1140.76,410.225 1142.17,414.216 1143.51,418.238 1144.78,422.292 1145.98,426.377 1147.1,430.495 1148.16,434.644 1149.15,438.825 1150.07,443.038 1150.92,447.282 1151.7,451.559 1152.42,455.867 1153.07,460.207 1153.65,464.579 1154.17,468.982 1154.63,473.418 1155.03,477.885 1155.37,482.384 1155.65,486.914 1155.88,491.477 1156.06,496.071 1156.19,500.697 1156.28,505.355 1156.34,510.045 1156.36,514.767 1156.36,518.329" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o047" x1="1156.36" y1="144" x2="1156.36" y2="518.4" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="971.081" y="338.419">t_c = 2.74 µs</tspan>
+</text>
+<ellipse id="o049" cx="585.6" cy="161.829" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="609.44" y="186.469">flat start (Ṙ = 0)</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="876" y="481.051">steepest at the end</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="587.52" y="618.6">R R̈ + (3/2)Ṙ² = −Δp_c/ρ,  R(0) = Rₘₐₓ,  Ṙ(0) = 0</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="587.52" y="656.867">The model has no gas, viscosity, tension or compressibility, so nothing</tspan>
+<tspan x="587.52" y="676.533">stops the collapse.</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">R(t) from the quadrature of Eq. C1-E16; Rₘₐₓ = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa.</tspan>
+</text>
 </svg>

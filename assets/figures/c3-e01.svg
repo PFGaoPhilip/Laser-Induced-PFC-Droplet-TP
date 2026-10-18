@@ -1,55 +1,123 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E01</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E01 · Independent-event statistical model</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E01 · Independent-event statistical model</tspan>
 </text>
-<ellipse id="o001" cx="124.8" cy="144" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o002" cx="190.08" cy="144" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o003" cx="255.36" cy="144" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o004" cx="320.64" cy="144" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o005" cx="385.92" cy="144" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o006" cx="124.8" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o007" cx="190.08" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o008" cx="255.36" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o009" cx="320.64" cy="211.2" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o010" cx="385.92" cy="211.2" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o011" cx="124.8" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o012" cx="190.08" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o013" cx="255.36" cy="278.4" rx="19.2" ry="19.2" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o014" cx="320.64" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o015" cx="385.92" cy="278.4" rx="19.2" ry="19.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o016" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="530.88" y="154.933">Fabricated sites N_d → activated sites N_b</tspan>
+<line id="o001" x1="96" y1="528" x2="729.6" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="119.467" y1="528" x2="119.467" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="119.467" y1="144" x2="119.467" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="119.467" y="550.04">10</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="530.88" y="241.44">Independent Bernoulli events with probability p_a</tspan>
-<tspan x="530.88" y="268.187">Outline circles indicate inactive sites.</tspan>
+<line id="o006" x1="315.022" y1="528" x2="315.022" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="315.022" y1="144" x2="315.022" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="315.022" y="550.04">15</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="530.88" y="341.213">Count reproducibility and complete activation differ.</tspan>
+<line id="o009" x1="510.578" y1="528" x2="510.578" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="510.578" y1="144" x2="510.578" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="510.578" y="550.04">20</tspan>
 </text>
-<line id="o019" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• N_d fabricated sites</tspan>
+<line id="o012" x1="706.133" y1="528" x2="706.133" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="706.133" y1="144" x2="706.133" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="706.133" y="550.04">25</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• N_b activated sites</tspan>
+<line id="o015" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="96" y1="528" x2="729.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="532.76">0.0</tspan>
 </text>
-<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• p_a activation probability</tspan>
+<line id="o018" x1="89.28" y1="436.571" x2="96" y2="436.571" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="96" y1="436.571" x2="729.6" y2="436.571" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="441.331">0.1</tspan>
 </text>
-<text id="o023" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• E[N_b], Var, CV, Pr: count statistics</tspan>
+<line id="o021" x1="89.28" y1="345.143" x2="96" y2="345.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="96" y1="345.143" x2="729.6" y2="345.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="349.903">0.2</tspan>
 </text>
-<text id="o024" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Missing sites change symmetry and timing</tspan>
+<line id="o024" x1="89.28" y1="253.714" x2="96" y2="253.714" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="96" y1="253.714" x2="729.6" y2="253.714" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="258.474">0.3</tspan>
 </text>
-<text id="o025" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Independent activation is an assumption</tspan>
+<line id="o027" x1="89.28" y1="162.286" x2="96" y2="162.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="96" y1="162.286" x2="729.6" y2="162.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="167.046">0.4</tspan>
 </text>
-<text id="o026" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="572.8">activated sites N_b</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">probability</tspan>
+</text>
+<rect id="o032" x="103.822" y="528" width="31.2889" height="5.45697e-11" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o033" x="142.933" y="528" width="31.2889" height="1.4148e-09" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o034" x="182.044" y="528" width="31.2889" height="3.1362e-08" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o035" x="221.156" y="528" width="31.2889" height="5.95878e-07" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o036" x="260.267" y="528" width="31.2889" height="9.7043e-06" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o037" x="299.378" y="528" width="31.2889" height="0.000135213" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o038" x="338.489" y="527.998" width="31.2889" height="0.00160566" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o039" x="377.6" y="527.984" width="31.2889" height="0.016151" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o040" x="416.711" y="527.864" width="31.2889" height="0.136386" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o041" x="455.822" y="527.045" width="31.2889" height="0.954705" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o042" x="494.933" y="522.558" width="31.2889" height="5.44182" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o043" x="534.044" y="503.382" width="31.2889" height="24.6177" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o044" x="573.156" y="442.957" width="31.2889" height="85.0431" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o045" x="612.267" y="317.241" width="31.2889" height="210.759" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o046" x="651.378" y="194.298" width="31.2889" height="333.702" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o047" x="690.489" y="274.387" width="31.2889" height="253.613" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<line id="o048" x1="657.244" y1="144" x2="657.244" y2="528" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="16.6667" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="495.964" y="168.73">mean 23.75</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="516.053" y="241.973">all 25: 27.7 %</tspan>
+</text>
+<rect id="o051" x="758.4" y="144" width="484.8" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o052" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="771.84" y="165.893">N_d = 25 independent sites, pₐ = 0.95</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="774.72" y="207.04">E[N_b] = N_d pₐ</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1096.32" y="208.133">23.75</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="774.72" y="259.84">Var(N_b) = N_d pₐ (1 − pₐ)</tspan>
+</text>
+<text id="o056" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1096.32" y="260.933">1.1875</tspan>
+</text>
+<text id="o057" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="774.72" y="312.64">CV = √[(1 − pₐ)/(N_d pₐ)]</tspan>
+</text>
+<text id="o058" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1096.32" y="313.733">4.588 %</tspan>
+</text>
+<text id="o059" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="774.72" y="365.44">Pr(N_b = N_d) = pₐ^N_d</tspan>
+</text>
+<text id="o060" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1096.32" y="366.533">0.27739</tspan>
+</text>
+<text id="o061" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="774.72" y="432.64">Count reproducibility (CV small) and complete</tspan>
+<tspan x="774.72" y="451.52">activation (all 25) are different tests: here CV is</tspan>
+<tspan x="774.72" y="470.4">4.6 % but all 25 fire in only 28 % of shots.</tspan>
+</text>
+<text id="o062" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Binomial model: sites activate independently with the same probability; common heating or feedback would break that assumption.</tspan>
+</text>
+<text id="o063" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Statistics of Eq. C3-E01 (exact binomial distribution).</tspan>
 </text>
 </svg>

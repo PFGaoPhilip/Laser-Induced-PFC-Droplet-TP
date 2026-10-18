@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E13 · Boundary and initial conditions of the axisymmetric model</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E13 · Boundary and initial conditions of the axisymmetric model</tspan>
+</text>
+<rect id="o001" x="134.4" y="115.2" width="249.6" height="499.2" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<rect id="o002" x="134.4" y="595.68" width="249.6" height="18.72" fill="#2B5560" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<line id="o003" x1="153.6" y1="595.68" x2="153.6" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o004" x1="172.8" y1="595.68" x2="172.8" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o005" x1="192" y1="595.68" x2="192" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o006" x1="211.2" y1="595.68" x2="211.2" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o007" x1="230.4" y1="595.68" x2="230.4" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o008" x1="249.6" y1="595.68" x2="249.6" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o009" x1="268.8" y1="595.68" x2="268.8" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o010" x1="288" y1="595.68" x2="288" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o011" x1="307.2" y1="595.68" x2="307.2" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o012" x1="326.4" y1="595.68" x2="326.4" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o013" x1="345.6" y1="595.68" x2="345.6" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o014" x1="364.8" y1="595.68" x2="364.8" y2="614.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o015" x1="134.4" y1="605.04" x2="384" y2="605.04" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<line id="o016" x1="134.4" y1="364.8" x2="384" y2="364.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1" stroke-dasharray="6 4"/>
+<rect id="o017" x="134.4" y="614.4" width="249.6" height="26.88" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o018" x1="134.4" y1="641.28" x2="151.68" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="155.52" y1="641.28" x2="172.8" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="176.64" y1="641.28" x2="193.92" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="197.76" y1="641.28" x2="215.04" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="218.88" y1="641.28" x2="236.16" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="240" y1="641.28" x2="257.28" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o024" x1="261.12" y1="641.28" x2="278.4" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="282.24" y1="641.28" x2="299.52" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="303.36" y1="641.28" x2="320.64" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o027" x1="324.48" y1="641.28" x2="341.76" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="345.6" y1="641.28" x2="362.88" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="366.72" y1="641.28" x2="384" y2="660.48" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="396.48" y="368.633">plane z = 2a</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="396.48" y="604.313">band z ≤ 0.15 a</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="46.08" y="130.4">z = 4a</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="46.08" y="620">z = 0</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="118.08" y="94.88">r = 0</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="338.88" y="94.88">r = a</tspan>
+</text>
+<line id="o036" x1="259.2" y1="134.4" x2="259.2" y2="220.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="20" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="271.68" y="174.52">U</tspan>
+</text>
+<line id="o038" x1="441.6" y1="240" x2="382.08" y2="240" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="454.08" y="243.833">outlet at p_j</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="674.88" y="139">Setup</tspan>
+</text>
+<ellipse id="o041" cx="681.6" cy="177.6" rx="5.76" ry="5.76" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="182.547">Compressible laminar flow, axisymmetric</tspan>
+</text>
+<ellipse id="o043" cx="681.6" cy="220.8" rx="5.76" ry="5.76" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="225.747">Liquid law: Eq. (C5-E01), μ = 1 mPa s</tspan>
+</text>
+<ellipse id="o045" cx="681.6" cy="264" rx="5.76" ry="5.76" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="268.947">Slip wall z = 0; inflow z = 4a</tspan>
+</text>
+<ellipse id="o047" cx="681.6" cy="307.2" rx="5.76" ry="5.76" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="312.147">Free outlet r = a (confined case: slip)</tspan>
+</text>
+<ellipse id="o049" cx="681.6" cy="350.4" rx="5.76" ry="5.76" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="355.347">Free triangles, global h_max = 0.025 a</tspan>
+</text>
+<ellipse id="o051" cx="681.6" cy="393.6" rx="5.76" ry="5.76" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o052" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="398.547">Time output every 0.001 ns in the band runs</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="20" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="674.88" y="455.8">Band refinement sequence</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="498.54">band h = a/40</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="18" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="924.48" y="498.54">16,176 elements</tspan>
+</text>
+<text id="o056" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="536.94">band h = a/80</tspan>
+</text>
+<text id="o057" font-family="Arial,sans-serif" font-size="18" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="924.48" y="536.94">18,468 elements</tspan>
+</text>
+<text id="o058" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="575.34">band h = a/160</tspan>
+</text>
+<text id="o059" font-family="Arial,sans-serif" font-size="18" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="924.48" y="575.34">26,776 elements</tspan>
+</text>
+<text id="o060" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="694.08" y="613.74">band h = a/320</tspan>
+</text>
+<text id="o061" font-family="Arial,sans-serif" font-size="18" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="924.48" y="613.74">57,668 elements</tspan>
+</text>
+<text id="o062" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic; mesh lines are indicative, not the actual triangulation.</tspan>
+</text>
+</svg>

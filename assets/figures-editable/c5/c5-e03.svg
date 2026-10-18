@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E03 · Mass and momentum jump across the stopping shock</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E03 · Mass and momentum jump across the stopping shock</tspan>
+</text>
+<rect id="o001" x="86.4" y="153.6" width="48" height="307.2" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="86.4" y1="460.8" x2="103.68" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o003" x1="107.52" y1="460.8" x2="124.8" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<rect id="o004" x="86.4" y="148.8" width="48" height="316.8" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="120" y="493.28">wall z = 0</tspan>
+</text>
+<rect id="o006" x="134.4" y="153.6" width="307.2" height="307.2" fill="#2B5560" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<rect id="o007" x="441.6" y="153.6" width="412.8" height="307.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o008" x1="441.6" y1="129.6" x2="441.6" y2="484.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1"/>
+<line id="o009" x1="441.6" y1="100.8" x2="576" y2="100.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="434.88" y="80.7867">shock front, lab speed S = U_s − U</tspan>
+</text>
+<line id="o011" x1="816" y1="307.2" x2="604.8" y2="307.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="734.4" y="282.387">incoming speed U</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="146.88" y="196.293">Behind the shock</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="146.88" y="262.08">at rest</tspan>
+<tspan x="146.88" y="284.107">ρ_1, p_1</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="18.6667" fill="#B4C7D2" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="463.68" y="196.293">Ahead of the shock</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="463.68" y="373.893">ρ_j, p_j</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="551.493">In the shock frame: liquid enters at U_s and leaves at U_s − U</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="89.28" y="594.693">Mass: ρ_1 (U_s − U) = ρ_j U_s</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="89.28" y="628.293">Momentum: p_1 − p_j = ρ_j U_s U</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="89.28" y="661.893">Velocity ratio x = U / U_s = 1 − ρ_j / ρ_1</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic of Eq. (C5-E03); distances are not to scale.</tspan>
+</text>
+</svg>

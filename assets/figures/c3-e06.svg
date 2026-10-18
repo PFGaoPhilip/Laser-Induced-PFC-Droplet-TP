@@ -1,72 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E06</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E06 · Exact polygon geometry</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E06 · Exact polygon geometry</tspan>
 </text>
-<line id="o001" x1="192" y1="129.6" x2="283.452" y2="288" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o002" x1="283.452" y1="288" x2="100.548" y2="288" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o003" x1="100.548" y1="288" x2="192" y2="129.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<ellipse id="o004" cx="192" cy="129.6" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o005" cx="283.452" cy="288" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o006" cx="100.548" cy="288" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="127.68" y="379.613">N = 3</tspan>
+<polygon id="o001" points="230.4,220.8 342.637,415.2 118.163,415.2" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o002" cx="230.4" cy="220.8" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o003" cx="342.637" cy="415.2" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o004" cx="118.163" cy="415.2" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="230.4" y="512.72">N = 3</tspan>
 </text>
-<line id="o008" x1="633.6" y1="129.6" x2="739.2" y2="235.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o009" x1="739.2" y1="235.2" x2="633.6" y2="340.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o010" x1="633.6" y1="340.8" x2="528" y2="235.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o011" x1="528" y1="235.2" x2="633.6" y2="129.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<ellipse id="o012" cx="633.6" cy="129.6" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o013" cx="739.2" cy="235.2" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o014" cx="633.6" cy="340.8" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o015" cx="528" cy="235.2" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o016" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="569.28" y="379.613">N = 4</tspan>
+<text id="o006" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="230.4" y="545.227">S₃ s = 2.0000</tspan>
 </text>
-<line id="o017" x1="1056" y1="129.6" x2="1156.43" y2="202.568" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o018" x1="1156.43" y1="202.568" x2="1118.07" y2="320.632" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o019" x1="1118.07" y1="320.632" x2="993.93" y2="320.632" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o020" x1="993.93" y1="320.632" x2="955.568" y2="202.568" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o021" x1="955.568" y1="202.568" x2="1056" y2="129.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<ellipse id="o022" cx="1056" cy="129.6" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o023" cx="1156.43" cy="202.568" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o024" cx="1118.07" cy="320.632" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o025" cx="993.93" cy="320.632" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<ellipse id="o026" cx="955.568" cy="202.568" rx="17.28" ry="17.28" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o027" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="991.68" y="379.613">N = 5</tspan>
+<polygon id="o007" points="633.6,220.8 763.2,350.4 633.6,480 504,350.4" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<line id="o008" x1="633.6" y1="220.8" x2="633.6" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<line id="o009" x1="763.2" y1="350.4" x2="504" y2="350.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o010" cx="633.6" cy="220.8" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o011" cx="763.2" cy="350.4" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o012" cx="633.6" cy="480" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o013" cx="504" cy="350.4" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="633.6" y="512.72">N = 4</tspan>
 </text>
-<text id="o028" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="50.88" y="100.907">Regular polygons: pitch s joins adjacent bubble centres; diagonals have different lengths.</tspan>
+<text id="o015" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="633.6" y="545.227">S₄ s = 2.7071</tspan>
 </text>
-<line id="o029" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o030" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• N = 3, 4, 5 vertices</tspan>
+<polygon id="o016" points="1036.8,220.8 1160.06,310.351 1112.98,455.249 960.623,455.249 913.543,310.351" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<line id="o017" x1="1036.8" y1="220.8" x2="1112.98" y2="455.249" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<line id="o018" x1="1036.8" y1="220.8" x2="960.623" y2="455.249" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<line id="o019" x1="1160.06" y1="310.351" x2="960.623" y2="455.249" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<line id="o020" x1="1160.06" y1="310.351" x2="913.543" y2="310.351" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<line id="o021" x1="1112.98" y1="455.249" x2="913.543" y2="310.351" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o022" cx="1036.8" cy="220.8" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o023" cx="1160.06" cy="310.351" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o024" cx="1112.98" cy="455.249" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o025" cx="960.623" cy="455.249" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o026" cx="913.543" cy="310.351" rx="19.2" ry="19.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1036.8" y="512.72">N = 5</tspan>
 </text>
-<text id="o031" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• s neighbor pitch</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1036.8" y="545.227">S₅ s = 3.2361</tspan>
 </text>
-<text id="o032" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• d_k chord distances</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="118.027">Regular polygons of N bubbles, neighbouring distance s</tspan>
 </text>
-<text id="o033" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• S_N = Σ 1/d_k</tspan>
+<text id="o030" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="161.227">dₖ = s sin(kπ/N) / sin(π/N),   S_N = Σₖ₌₁^{N−1} 1/dₖ</tspan>
 </text>
-<text id="o034" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• k, π, sin, φ_g: geometry legend</tspan>
+<text id="o031" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="592.68">S₃ = 2/s,   S₄ = (2 + 1/√2)/s,   S₅ = (2 + 2/φ)/s,   φ = (1 + √5)/2</tspan>
 </text>
-<text id="o035" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Triangle: two neighbors at s</tspan>
+<text id="o032" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="639.587">Every bubble sees the same sum of reciprocal distances, so they can share one radius history in this constrained control.</tspan>
 </text>
-<text id="o036" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Square: two at s, one at √2 s</tspan>
-</text>
-<text id="o037" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="664.007">Pentagon: two at s, two at φ_g s</tspan>
-</text>
-<text id="o038" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Exact polygon geometry of Eq. C3-E06 (chords drawn dashed).</tspan>
 </text>
 </svg>

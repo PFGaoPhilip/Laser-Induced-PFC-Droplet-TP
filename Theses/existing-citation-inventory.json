@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-18",
   "scope": "Project textual files; generated duplicates excluded",
   "records": [
     {
@@ -14,221 +14,58 @@
         "text/03-arrays-finite-jets-and-impact.md:203",
         "text/03-arrays-finite-jets-and-impact.md:205",
         "text/course.md:2959",
-        "text/course.md:2961",
-        "verification/chapter03-review.json:624"
+        "text/course.md:2961"
       ]
     },
     {
-      "identifier": "10.1103/PhysRevE.85.066303",
+      "identifier": "10.1016/j.jmbbm.2024.106776",
       "kind": "doi",
       "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/conditional_termtex/CONDITIONAL_SOLUTION.md:186",
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/conditional_termtex/verification.json:199",
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/conditional_termtex/verification.json:200",
-        "reports/Cavitation_Limits_20261011/conditional_termtex/CONDITIONAL_SOLUTION.md:186",
-        "reports/Cavitation_Limits_20261011/conditional_termtex/verification.json:199",
-        "reports/Cavitation_Limits_20261011/conditional_termtex/verification.json:200",
-        "reports/Cavitation_Limits_20261011/conditional_termtex/write_solution.py:139",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/conditional_termtex/CONDITIONAL_SOLUTION.md.txt:186",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_B_GEOMETRY_CERTIFICATE/inputs/conditional_termtex/CONDITIONAL_SOLUTION.md.txt:186",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/conditional_termtex/CONDITIONAL_SOLUTION.md.txt:186"
-      ]
-    },
-    {
-      "identifier": "1708.04049",
-      "kind": "arxiv",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182",
-        "reports/Cavitation_Limits_20261011/DERIVATION.tex:860",
-        "reports/Cavitation_Limits_20261011/READER.html:424",
-        "reports/Cavitation_Limits_20261011/REPORT.md:580",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:860",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:424",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:580",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.json:1218",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182",
-        "reports/Cavitation_Limits_20261011/expert_resolution/NEXT_AGENT_HANDOFF.md:227",
-        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:187",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:860",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:580",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:217",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:232",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:32",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:26",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:52",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:249"
-      ]
-    },
-    {
-      "identifier": "2005.05733",
-      "kind": "arxiv",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182",
-        "reports/Cavitation_Limits_20261011/DERIVATION.tex:839",
-        "reports/Cavitation_Limits_20261011/READER.html:418",
-        "reports/Cavitation_Limits_20261011/REPORT.md:568",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:839",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:418",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:568",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.json:1223",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182",
-        "reports/Cavitation_Limits_20261011/expert_resolution/NEXT_AGENT_HANDOFF.md:227",
-        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:189",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:839",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:568",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:67",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:82",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:29",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:23",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:49",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:201"
-      ]
-    },
-    {
-      "identifier": "10.1017/jfm.2016.463",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:11",
-        "reference/sources.html:3",
-        "reports/Cavitation_Limits_20261011/DERIVATION.tex:853",
-        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:98",
-        "reports/Cavitation_Limits_20261011/READER.html:422",
-        "reports/Cavitation_Limits_20261011/REPORT.md:576",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:853",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:422",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:576",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/evidence/EXPERT_HANDOFF.md:98",
+        "modeling/embedded-pfc-feasibility/DERIVATION.tex:465",
+        "modeling/embedded-pfc-feasibility/index.html:17",
+        "modeling/embedded-pfc-feasibility/index.html:398",
+        "modeling/embedded-pfc-feasibility/REPORT.md:20",
+        "modeling/embedded-pfc-feasibility/REPORT.zh.md:20",
+        "modeling/embedded-pfc-feasibility/SOURCES.md:7",
+        "modeling/embedded-pfc-feasibility/SOURCES.zh.md:7",
+        "modeling/embedded-pfc-feasibility/scripts/build_comparison.py:129",
+        "modeling/embedded-pfc-feasibility/scripts/reader_text.py:17",
+        "modeling/embedded-pfc-feasibility/scripts/reader_text.py:107",
+        "modeling/embedded-pfc-feasibility/scripts/reader_text.py:333",
+        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:445",
         "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:98",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:853",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:576",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:4",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:376",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:1380",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:11",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:31",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:25",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:51",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:231",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:233",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:240",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/31_Close_the_PFC_Source_to_Impact_Problem.md:61",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/31_Close_the_PFC_Source_to_Impact_Problem.md:63",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2477",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2479",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2084",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2086",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/31.md:63",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/31.md:65",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
-        "scripts/source_catalog.py:5",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1140"
-      ]
-    },
-    {
-      "identifier": "10.1103/PhysRevFluids.2.093601",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:14",
-        "reports/Cavitation_Limits_20261011/DERIVATION.tex:860",
-        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:98",
-        "reports/Cavitation_Limits_20261011/READER.html:424",
-        "reports/Cavitation_Limits_20261011/REPORT.md:580",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:860",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:424",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:580",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/evidence/EXPERT_HANDOFF.md:98",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:98",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:860",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:580",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:14",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:32",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:26",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:247",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:256"
-      ]
-    },
-    {
-      "identifier": "10.1063/5.0045705",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:17",
-        "reports/Cavitation_Limits_20261011/DERIVATION.tex:832",
-        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:96",
-        "reports/Cavitation_Limits_20261011/READER.html:416",
-        "reports/Cavitation_Limits_20261011/REPORT.md:564",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:832",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:416",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:564",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/evidence/EXPERT_HANDOFF.md:96",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/THIRD_PARTY_NOTICES.md:5",
-        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:188",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:96",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:832",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:564",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:159",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:174",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:2",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:7",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:24",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:43",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:92",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:197",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:268",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:363",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:498",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:17",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:30",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:24",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:50",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:215",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:217",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:224"
-      ]
-    },
-    {
-      "identifier": "10.1103/PhysRevFluids.5.093604",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:21",
-        "reports/Cavitation_Limits_20261011/DERIVATION.tex:839",
-        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:97",
-        "reports/Cavitation_Limits_20261011/READER.html:418",
-        "reports/Cavitation_Limits_20261011/REPORT.md:568",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:839",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:418",
-        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:568",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/evidence/EXPERT_HANDOFF.md:97",
-        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:350",
-        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:361",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:76",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:97",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:839",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:568",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:21",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:29",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:23",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:199",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:208"
-      ]
-    },
-    {
-      "identifier": "10.1103/PhysRevX.2.031002",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:24",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:24"
+        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:89",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/finite_pfc_report.txt:20",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024.txt:1",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:114",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:1215",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:1358",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:1424",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2756",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:37",
+        "reports/Cavitation_Limits_20261011/sources/embedded-pfc-update/REPORT.txt:20",
+        "reports/Cavitation_Limits_20261011/sources/embedded-pfc-update/SOURCES.txt:7",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/30_Finite_PFC_Numerical_Verification.md:115",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/30_Finite_PFC_Numerical_Verification.md:117",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2397",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2399",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2016",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2018",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/24_30.md:578",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/24_30.md:580",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/DERIVATION.tex:465",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/index.html:15",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/index.html:394",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/REPORT.md:20",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/SOURCES.md:7",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/scripts/build_comparison.py:129",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:324"
       ]
     },
     {
       "identifier": "10.1021/acs.iecr.1c02969",
       "kind": "doi",
       "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:27",
         "modeling/embedded-pfc-feasibility/DERIVATION.tex:466",
         "modeling/embedded-pfc-feasibility/index.html:398",
         "modeling/embedded-pfc-feasibility/SOURCES.md:8",
@@ -251,23 +88,6 @@
         "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
         "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:37",
         "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:27",
-        "reports/Cavitation_Limits_20261011/full_closure/CONTENT_THERMODYNAMICS.md:326",
-        "reports/Cavitation_Limits_20261011/full_closure/HELMHOLTZ_IDENTITY_AUDIT.md:5",
-        "reports/Cavitation_Limits_20261011/full_closure/HEOS_PHASE_BRANCHES.md:61",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:17",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:11",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:7",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:16",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/sources/Gao_et_al_2021_PFC_EOS.provenance.json:5",
-        "reports/Cavitation_Limits_20261011/full_closure/tools/download_primary_sources.py:25",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:26",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:172",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:1025",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:1025",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/CONTENT_THERMODYNAMICS.md.txt:326",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/HELMHOLTZ_IDENTITY_AUDIT.md.txt:5",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/HEOS_PHASE_BRANCHES.md.txt:61",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/resources/sources/Gao_et_al_2021_PFC_EOS.provenance.json.txt:5",
         "reports/Cavitation_Limits_20261011/sources/embedded-pfc-update/SOURCES.txt:8",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/images/formula_manifest.json:768",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/25_Real_Fluid_Curved_Phase_Equilibrium.md:1",
@@ -294,91 +114,6 @@
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:283",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:304",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/validation/theory_audit/FINITE_PFC_FORMULA_RECOMMENDATIONS.md:34"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.zemedi.2023.01.004",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:34",
-        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:114",
-        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:220",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:51",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2621",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:34",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:36",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:30",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:311",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:320",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.jmbbm.2024.106776",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:37",
-        "modeling/embedded-pfc-feasibility/DERIVATION.tex:465",
-        "modeling/embedded-pfc-feasibility/index.html:17",
-        "modeling/embedded-pfc-feasibility/index.html:398",
-        "modeling/embedded-pfc-feasibility/REPORT.md:20",
-        "modeling/embedded-pfc-feasibility/REPORT.zh.md:20",
-        "modeling/embedded-pfc-feasibility/SOURCES.md:7",
-        "modeling/embedded-pfc-feasibility/SOURCES.zh.md:7",
-        "modeling/embedded-pfc-feasibility/scripts/build_comparison.py:129",
-        "modeling/embedded-pfc-feasibility/scripts/reader_text.py:17",
-        "modeling/embedded-pfc-feasibility/scripts/reader_text.py:107",
-        "modeling/embedded-pfc-feasibility/scripts/reader_text.py:333",
-        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:445",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:89",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/finite_pfc_report.txt:20",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024.txt:1",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:114",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:1215",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:1358",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:1424",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2756",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:37",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:35",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:29",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:295",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:304",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S19_Abeid2024.txt:1",
-        "reports/Cavitation_Limits_20261011/sources/embedded-pfc-update/REPORT.txt:20",
-        "reports/Cavitation_Limits_20261011/sources/embedded-pfc-update/SOURCES.txt:7",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/30_Finite_PFC_Numerical_Verification.md:115",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/30_Finite_PFC_Numerical_Verification.md:117",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2397",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2399",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2016",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2018",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/24_30.md:578",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/24_30.md:580",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/DERIVATION.tex:465",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/index.html:15",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/index.html:394",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/REPORT.md:20",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/SOURCES.md:7",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/embedded-pfc-feasibility/scripts/build_comparison.py:129",
-        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:324"
-      ]
-    },
-    {
-      "identifier": "10.1073/pnas.1920168117",
-      "kind": "doi",
-      "origins": [
-        "learning-records/resolver-progress/evidence/Stage3_Engineering_20261014/inputs/expert_resolution/tex/12_references.tex:40",
-        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:40",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:37",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:31",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:327",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:336",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
       ]
     },
     {
@@ -524,9 +259,7 @@
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:106",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:107",
         "scripts/source_catalog.py:8",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1149",
-        "verification/chapter02-check.py:216",
-        "verification/chapter02-review.json:540"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1149"
       ]
     },
     {
@@ -565,14 +298,46 @@
       ]
     },
     {
+      "identifier": "10.1017/jfm.2016.463",
+      "kind": "doi",
+      "origins": [
+        "reference/sources.html:3",
+        "reports/Cavitation_Limits_20261011/DERIVATION.tex:853",
+        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:98",
+        "reports/Cavitation_Limits_20261011/READER.html:422",
+        "reports/Cavitation_Limits_20261011/REPORT.md:576",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:853",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:422",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:576",
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:98",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:853",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:576",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:4",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:376",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:1380",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:11",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/31_Close_the_PFC_Source_to_Impact_Problem.md:61",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/31_Close_the_PFC_Source_to_Impact_Problem.md:63",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2477",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/speaker_notes.tex:2479",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2084",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/total.md:2086",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/31.md:63",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/notes/parts/31.md:65",
+        "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
+        "scripts/source_catalog.py:5",
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1140"
+      ]
+    },
+    {
       "identifier": "10.1017/jfm.2013.26",
       "kind": "doi",
       "origins": [
         "reference/sources.html:3",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
         "scripts/source_catalog.py:6",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1143",
-        "verification/chapter03-review.json:631"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1143"
       ]
     },
     {
@@ -593,14 +358,11 @@
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/sources/prior-material-ledger.json:204",
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/sources/prior-material-ledger.json:389",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1",
         "reports/Cavitation_Limits_20261011/sources/prior-material-ledger.json:204",
         "reports/Cavitation_Limits_20261011/sources/prior-material-ledger.json:389",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
         "scripts/source_catalog.py:9",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1152",
-        "verification/chapter02-check.py:222",
-        "verification/chapter02-review.json:554"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1152"
       ]
     },
     {
@@ -639,9 +401,7 @@
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:218",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:219",
         "scripts/source_catalog.py:12",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1161",
-        "verification/chapter04-check.py:186",
-        "verification/chapter04-review.json:765"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1161"
       ]
     },
     {
@@ -657,10 +417,7 @@
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/Laser_Triggered_Cavitation_Transfer_Supervisor_Progress_20260919_No_Speaker_Notes_With_References.md:148",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
         "scripts/source_catalog.py:13",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1164",
-        "verification/chapter05-check.py:162",
-        "verification/chapter05-review.json:354",
-        "verification/cross-review-05.json:871"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1164"
       ]
     },
     {
@@ -670,10 +427,7 @@
         "reference/sources.html:3",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
         "scripts/source_catalog.py:14",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1167",
-        "verification/chapter05-check.py:163",
-        "verification/chapter05-review.json:362",
-        "verification/cross-review-05.json:879"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1167"
       ]
     },
     {
@@ -712,10 +466,7 @@
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:253",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/report_references.json:254",
         "scripts/source_catalog.py:15",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1170",
-        "verification/chapter05-check.py:164",
-        "verification/chapter05-review.json:370",
-        "verification/cross-review-05.json:895"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1170"
       ]
     },
     {
@@ -725,8 +476,39 @@
         "reference/sources.html:3",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
         "scripts/source_catalog.py:16",
-        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1173",
-        "verification/chapter03-review.json:637"
+        "sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md:1173"
+      ]
+    },
+    {
+      "identifier": "10.1103/RevModPhys.61.75",
+      "kind": "doi",
+      "origins": [
+        "reference/sources.html:3",
+        "scripts/source_catalog.py:18"
+      ]
+    },
+    {
+      "identifier": "10.1016/j.ijthermalsci.2003.09.002",
+      "kind": "doi",
+      "origins": [
+        "reference/sources.html:3",
+        "scripts/source_catalog.py:19"
+      ]
+    },
+    {
+      "identifier": "10.1007/b79761",
+      "kind": "doi",
+      "origins": [
+        "reference/sources.html:3",
+        "scripts/source_catalog.py:20"
+      ]
+    },
+    {
+      "identifier": "10.1016/0041-5553(62)90062-9",
+      "kind": "doi",
+      "origins": [
+        "reference/sources.html:3",
+        "scripts/source_catalog.py:21"
       ]
     },
     {
@@ -737,9 +519,79 @@
         "reference/sources.html:3",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/reference-provenance/course_bibliography.original.html.txt:3",
-        "scripts/source_catalog.py:5",
-        "verification/chapter01-check.py:160",
-        "verification/chapter01-review.json:1253"
+        "scripts/source_catalog.py:5"
+      ]
+    },
+    {
+      "identifier": "10.1063/5.0045705",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/DERIVATION.tex:832",
+        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:96",
+        "reports/Cavitation_Limits_20261011/READER.html:416",
+        "reports/Cavitation_Limits_20261011/REPORT.md:564",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:832",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:416",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:564",
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/THIRD_PARTY_NOTICES.md:5",
+        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:188",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:96",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:832",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:564",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:159",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:174",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:2",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:7",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:24",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:43",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:92",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:197",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:268",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:363",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/ReuterOhl2021.txt:498",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:17"
+      ]
+    },
+    {
+      "identifier": "10.1103/PhysRevFluids.5.093604",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/DERIVATION.tex:839",
+        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:97",
+        "reports/Cavitation_Limits_20261011/READER.html:418",
+        "reports/Cavitation_Limits_20261011/REPORT.md:568",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:839",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:418",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:568",
+        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:350",
+        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:361",
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:76",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:97",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:839",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:568",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:21"
+      ]
+    },
+    {
+      "identifier": "2005.05733",
+      "kind": "arxiv",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/DERIVATION.tex:839",
+        "reports/Cavitation_Limits_20261011/READER.html:418",
+        "reports/Cavitation_Limits_20261011/REPORT.md:568",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:839",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:418",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:568",
+        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.json:1223",
+        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182",
+        "reports/Cavitation_Limits_20261011/expert_resolution/NEXT_AGENT_HANDOFF.md:227",
+        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:189",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:839",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:568",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:67",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:82"
       ]
     },
     {
@@ -753,10 +605,47 @@
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:846",
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:420",
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:572",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/evidence/EXPERT_HANDOFF.md:99",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:99",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:846",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:572"
+      ]
+    },
+    {
+      "identifier": "10.1103/PhysRevFluids.2.093601",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/DERIVATION.tex:860",
+        "reports/Cavitation_Limits_20261011/EXPERT_HANDOFF.md:98",
+        "reports/Cavitation_Limits_20261011/READER.html:424",
+        "reports/Cavitation_Limits_20261011/REPORT.md:580",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:860",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:424",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:580",
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:98",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:860",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:580",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:14"
+      ]
+    },
+    {
+      "identifier": "1708.04049",
+      "kind": "arxiv",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/DERIVATION.tex:860",
+        "reports/Cavitation_Limits_20261011/READER.html:424",
+        "reports/Cavitation_Limits_20261011/REPORT.md:580",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:860",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:424",
+        "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:580",
+        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.json:1218",
+        "reports/Cavitation_Limits_20261011/expert_acceptance/EXPERT_ACCEPTANCE_REVIEW.md:182",
+        "reports/Cavitation_Limits_20261011/expert_resolution/NEXT_AGENT_HANDOFF.md:227",
+        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:187",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:860",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:580",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:217",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PROVENANCE.json:232"
       ]
     },
     {
@@ -770,12 +659,10 @@
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/DERIVATION.tex:874",
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/READER.html:428",
         "reports/Cavitation_Limits_20261011/build/relocation/Cavitation_Limits_20261011/REPORT.md:588",
-        "reports/Cavitation_Limits_20261011/expert_acceptance/evidence/EXPERT_HANDOFF.md:100",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/expert_assignment.txt:100",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_derivation.tex.txt:874",
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/context/prior_limits_report.txt:588",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -797,12 +684,51 @@
       ]
     },
     {
+      "identifier": "10.1103/PhysRevE.85.066303",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/conditional_termtex/CONDITIONAL_SOLUTION.md:186",
+        "reports/Cavitation_Limits_20261011/conditional_termtex/verification.json:199",
+        "reports/Cavitation_Limits_20261011/conditional_termtex/verification.json:200",
+        "reports/Cavitation_Limits_20261011/conditional_termtex/write_solution.py:139"
+      ]
+    },
+    {
+      "identifier": "10.1016/j.zemedi.2023.01.004",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:114",
+        "reports/Cavitation_Limits_20261011/expert_resolution/PARAMETER_LEDGER.json:220",
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/scripts/prepare_ledgers.py:51",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2621",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:34"
+      ]
+    },
+    {
+      "identifier": "10.1103/PhysRevX.2.031002",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:24"
+      ]
+    },
+    {
+      "identifier": "10.1073/pnas.1920168117",
+      "kind": "doi",
+      "origins": [
+        "reports/Cavitation_Limits_20261011/expert_resolution/READER.html:61",
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
+        "reports/Cavitation_Limits_20261011/expert_resolution/tex/12_references.tex:40"
+      ]
+    },
+    {
       "identifier": "10.1155/2019/9480193",
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2571",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -810,8 +736,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2574",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -847,8 +772,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2602",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -856,8 +780,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2606",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -886,8 +809,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2624",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -902,8 +824,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2632",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -939,8 +860,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2667",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -962,8 +882,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2678",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
@@ -985,8 +904,7 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Abeid2024_PMC12557251.html:2709",
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
@@ -1007,1376 +925,1204 @@
       "identifier": "10.1155/2013/404361",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1002/adma.201502022",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1186/s40349-015-0041-8",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1021/acs.langmuir.9b02132",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1088/0031-9155/55/17/004",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/58.166815",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2011.05.021",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2020.04.014",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2013.11.025",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1073/pnas.1312171111",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1088/0031-9155/58/8/2523",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.2174/138161212800099883",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1155/2014/579684",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.7150/thno.32424",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.cis.2021.102407",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2019.03.024",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/s0301-5629(03)00980-3",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.1755236",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1063/1.4864110",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.4812882",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1063/1.4864289",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/TUFFC.2020.3032441",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.msec.2016.11.107",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2022.106090",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2019.06.004",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1007/978-3-319-22536-4_13",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.cis.2012.08.005",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1098/rsta.2022.0025",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1063/1.3565062",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2014.02.031",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1088/0031-9155/57/21/7205",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1021/acs.langmuir.0c00320",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1007/s11095-010-0277-5",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1118/1.3548068",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1093/jnci/djm043",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1179/175889709X446516",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.biomaterials.2017.06.012",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1115/1.4005980",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1115/1.3138276",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.biomaterials.2011.11.036",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2014.03.007",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2018.02.004",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.7150/thno.28782",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1021/la062097u",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.7150/thno.4846",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2021.12.007",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1115/1.1824131",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1115/1.2206200",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2013.08.005",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1021/acs.langmuir.6b00616",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2009.04.010",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.2161440",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.7863/jum.1999.18.1.33",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2019.08.018",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.4937747",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1103/PhysRevLett.126.034501",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2020.105430",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2021.105608",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultras.2013.04.005",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2021.105769",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2016.01.019",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1172/JCI18420",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1074/jbc.271.47.29822",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1177/2041731418768285",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c4tb00775a",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.bioactmat.2020.12.012",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2019.05.024",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultsonch.2020.105109",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/TUFFC.2021.3093828",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.7150/thno.14961",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2012.10.004",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/TUFFC.2009.1132",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2013.10.020",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/ULTSYM.2017.8091704",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1039/d0sm00753f",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.actbio.2013.03.027",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.actbio.2021.11.020",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1002/adhm.202101672",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1098/rsif.2011.0054",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2013.02.006",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.7150/thno.18650",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.diii.2013.01.022",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1002/hep.23425",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1590/0100-3984.2018.0084",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.2174/157340512799220625",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/tuffc.2005.1504019",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.3626155",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.csm.2010.08.009",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1103/PhysRevLett.88.078103",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1148/radiographics.17.4.9225389",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1109/TBME.1977.326112",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/s0301-5629(98)00163-x",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1097/RLI.0000000000000919",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1148/radiol.2017161683",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.3552884",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2022.08.008",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.nuclcard.2004.01.003",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1021/la2043944",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1134/S1063771009040162",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1159/000088479",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.drudis.2006.07.005",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1200/JCO.2005.08.119",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2018.11.006",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.5111345",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1121/1.5091781",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S20_PMC10517405.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC10517405.txt:1"
       ]
     },
     {
       "identifier": "10.1114/1.231",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1371/journal.pone.0119470",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1109/IEMBS.2009.5335260",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1089/neu.2016.4600",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c6cp06704b",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1089/neu.2011.2224",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.jmbbm.2017.06.018",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1586/17434440.1.1.95",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.media.2009.10.006",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c5sm02055g",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.jmbbm.2015.06.023",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c4sm02652g",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1038/ncomms2178",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1089/neu.2011.1772",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.ultrasmedbio.2017.02.020",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1038/srep30550",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1063/1.4896108",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c7sm01479a",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1088/0034-4885/79/4/046601",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c9sm00570f",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/b617050a",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c3sm52689e",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c5sm00330j",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c6sm00431h",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c8sm00722e",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1021/la503832r",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1021/acsomega.7b00108",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c8sm02142b",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c9sm01039d",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c8sm01560k",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c9sm01023h",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c9sm01173k",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1371/journal.pone.0204765",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/s1361-8415(00)00039-6",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.3109/02699052.2014.888478",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c5sm00230c",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1103/PhysRevE.85.016319",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1529/biophysj.105.079921",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c0lc00520g",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.foodres.2017.09.087",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1243/09544119JEIM622",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1038/s41598-018-25913-8",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1126/science.aai8830",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c3cp55330b",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c8sm02423e",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1115/1.2899575",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.exer.2012.01.011",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1002/(sici)1096-9101(1997)21:3",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1371/journal.pone.0175396",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.3389/fneur.2016.00010",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1088/1361-6560/aa4fe8",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1088/0031-9155/56/22/001",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1088/1468-6996/9/2/025008",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1056/NEJMoa1008069",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1109/TMI.2014.2383835",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1016/j.cell.2015.06.067",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1602/neurorx.2.3.410",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1088/1361-6560/aaae3b",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1073/pnas.1901047116",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1038/nature07970",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1021/mz500031q",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1021/ja0742176",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1038/47083",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c7sm00617a",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1039/c8sm00646f",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1002/marc.200900869",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
       "identifier": "10.1021/ja211365r",
       "kind": "doi",
       "origins": [
-        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/files/S21_PMC7196784.txt:1"
+        "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/PMC7196784.txt:1"
       ]
     },
     {
@@ -2405,443 +2151,6 @@
       "kind": "doi",
       "origins": [
         "reports/Cavitation_Limits_20261011/expert_resolution/sources/literature/Supponen2016.txt:537"
-      ]
-    },
-    {
-      "identifier": "2201.07318",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/CONTENT_THERMODYNAMICS.md:144",
-        "reports/Cavitation_Limits_20261011/full_closure/CONTENT_THERMODYNAMICS.md:328",
-        "reports/Cavitation_Limits_20261011/full_closure/tools/record_d5_amendment.py:53",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/S2_PREREGISTRATION_AMENDMENT_001.json:49",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:27",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/CITATION_MAP.md:14",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:178",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.md:158",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:1026",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:1026",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/CONTENT_THERMODYNAMICS.md.txt:144",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/CONTENT_THERMODYNAMICS.md.txt:328"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.ijheatmasstransfer.2022.122845",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/CONTENT_THERMODYNAMICS.md:328",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:27",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:180",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:1026",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:1026",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/CONTENT_THERMODYNAMICS.md.txt:328"
-      ]
-    },
-    {
-      "identifier": "10.15011/ijmsa.33.330106",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/CONTENT_THERMODYNAMICS.md:329",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_A_THERMODYNAMICS/inputs/full_closure/CONTENT_THERMODYNAMICS.md.txt:329"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.jcp.2008.11.002",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/MIXED_CELL_RELAXATION.md:5",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:21",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:15",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:71",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:80",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/sources/Saurel_Petitpas_Berry_pressure_relaxation_report.provenance.json:5",
-        "reports/Cavitation_Limits_20261011/full_closure/tools/download_primary_sources.py:28"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.jcp.2018.07.055",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/PRESSURE_WORK_AND_PROJECTION.md:7"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.ultsonch.2020.105307",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/SOURCED_WATER_EOS_AUDIT.md:9",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:25",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:19",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:135",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:144",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/SOURCED_WATER_EOS_AUDIT.md.txt:9"
-      ]
-    },
-    {
-      "identifier": "2008.04332",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/SOURCED_WATER_EOS_AUDIT.md:9",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:25",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:19",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:45",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:137",
-        "reports/Cavitation_Limits_20261011/full_closure/solver/references/PROVENANCE.json:18",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/V2_PREREGISTRATION.json:11",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/SOURCED_WATER_EOS_AUDIT.md.txt:9",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/solver/references/PROVENANCE.json.txt:18"
-      ]
-    },
-    {
-      "identifier": "10.1029/2004JE002305",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/SOURCED_WATER_EOS_AUDIT.md:11",
-        "reports/Cavitation_Limits_20261011/full_closure/WATER_MIE_GRUNEISEN_CANDIDATE.md:7",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:22",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:16",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:87",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:96",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/finalize_review.py:34",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/PRIMARY_SOURCE_CHECKS.json:6",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/reference/web_c_reference.py:15",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_reference.py:15",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_review.md:835",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:880",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/SOURCED_WATER_EOS_AUDIT.md.txt:11",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/WATER_MIE_GRUNEISEN_CANDIDATE.md.txt:7"
-      ]
-    },
-    {
-      "identifier": "10.1121/1.384720",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/SPHERICAL_LEDGER_DERIVATION.md:9"
-      ]
-    },
-    {
-      "identifier": "10.7907/WPQB-2W24",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:19",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:13",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:39",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:48"
-      ]
-    },
-    {
-      "identifier": "10.1017/S0022112009006351",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:20",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:14",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:55",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:64",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/sources/Johnsen_Colonius_2009.provenance.json:5",
-        "reports/Cavitation_Limits_20261011/full_closure/tools/download_primary_sources.py:19",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/V4_SOURCE_OPTIONS.md:7",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_review.md:837",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:882",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/resources/sources/Johnsen_Colonius_2009.provenance.json.txt:5",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/verification/V4_SOURCE_OPTIONS.md.txt:7"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.ijmultiphaseflow.2021.103618",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:24",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:18",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:119",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:128",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/sources/Trummler_2021.provenance.json:5",
-        "reports/Cavitation_Limits_20261011/full_closure/tools/download_primary_sources.py:22",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/V4_SOURCE_OPTIONS.md:30",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_review.md:839",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:884",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/resources/sources/Trummler_2021.provenance.json.txt:5",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/verification/V4_SOURCE_OPTIONS.md.txt:30"
-      ]
-    },
-    {
-      "identifier": "2104.06298",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:24",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:18",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:44",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:121",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/sources/Trummler_2021.provenance.json:3",
-        "reports/Cavitation_Limits_20261011/full_closure/tools/download_primary_sources.py:21",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/V4_SOURCE_OPTIONS.md:30",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/v4_primary_code_leads_20261012/TRUMMLER_SOURCE_VERSION_QUALIFICATION004.md:5",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/v4_primary_code_leads_20261012/V4_CURRENT_SOURCE_CONTROL_003.md:9",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/water_degenerate_source_sources008/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/LOCAL_ANALYTIC_SUPPLEMENT.md:94",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/water_degenerate_source_sources008a/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/LOCAL_ANALYTIC_SUPPLEMENT.md:94",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/water_reference_support_sources004/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/LOCAL_ANALYTIC_SUPPLEMENT.md:94",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/finalize_review.py:58",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/LOCAL_ANALYTIC_SUPPLEMENT.md:94",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/PRIMARY_SOURCE_CHECKS.json:61",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_review.md:839",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:884",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/resources/sources/Trummler_2021.provenance.json.txt:3",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/verification/V4_SOURCE_OPTIONS.md.txt:30"
-      ]
-    },
-    {
-      "identifier": "2004.08750",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:26",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:20",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:46",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:153",
-        "reports/Cavitation_Limits_20261011/full_closure/solver/references/PROVENANCE.json:11",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/V1_PREREGISTRATION.json:6",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/solver/references/PROVENANCE.json.txt:11"
-      ]
-    },
-    {
-      "identifier": "10.1017/jfm.2022.571",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:27",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:21",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:47",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:167",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:169",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:176"
-      ]
-    },
-    {
-      "identifier": "10.1007/978-3-319-49719-8_10",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:28",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:22",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:48",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:183",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:185",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:192"
-      ]
-    },
-    {
-      "identifier": "10.1063/1.443031",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:33",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:27",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:263",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:272",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/reference/web_c_reference.py:16",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_reference.py:16",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_review.md:836",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:881"
-      ]
-    },
-    {
-      "identifier": "10.1090/S0025-5718-1987-0890255-3",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:34",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:28",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:279",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:288"
-      ]
-    },
-    {
-      "identifier": "10.1093/oso/9780195094091.001.0001",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/resources/build_presentation_source_inventory_20261013.py:38",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/DOI_ARXIV_LIST.md:32",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:343",
-        "reports/Cavitation_Limits_20261011/full_closure/resources/presentation_sources_20261013/SOURCE_CATALOGUE.json:352"
-      ]
-    },
-    {
-      "identifier": "10.1007/BF01414629",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/solver/HLLC_CONSERVATIVE_FLUX.tex:277",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/hllc_flux_sources001/solver/HLLC_CONSERVATIVE_FLUX.tex:271",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/hllc_flux_sources002/solver/HLLC_CONSERVATIVE_FLUX.tex:277",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_C_SOLVER_BENCHMARKS/inputs/full_closure/solver/HLLC_CONSERVATIVE_FLUX.tex.txt:277"
-      ]
-    },
-    {
-      "identifier": "1111.3082",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/EVENT_AND_TAIL_AUDIT.md:412",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_B_GEOMETRY_CERTIFICATE/inputs/full_closure/verification/EVENT_AND_TAIL_AUDIT.md.txt:412"
-      ]
-    },
-    {
-      "identifier": "1405.7616",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/EVENT_AND_TAIL_AUDIT.md:412",
-        "reports/Cavitation_Limits_20261011/full_closure/web_review_20261012/WEB_B_GEOMETRY_CERTIFICATE/inputs/full_closure/verification/EVENT_AND_TAIL_AUDIT.md.txt:412"
-      ]
-    },
-    {
-      "identifier": "10.1063/1.4945981",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/V1_PREREGISTRATION.json:7"
-      ]
-    },
-    {
-      "identifier": "10.2172/1430663",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/start_snapshots/W_WORK_LOG_before.md:97"
-      ]
-    },
-    {
-      "identifier": "10.3390/cryst10080651",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/start_snapshots/W_WORK_LOG_before.md:166",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/start_snapshots/W_WORK_LOG_before.md:199"
-      ]
-    },
-    {
-      "identifier": "10.1017/jfm.2022.705",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/v4_primary_code_leads_20261012/V4_SOURCE_CODE_QUALIFICATION_002.md:7"
-      ]
-    },
-    {
-      "identifier": "1402.4610",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:23",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/CITATION_MAP.md:11",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:150",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.md:161",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:315",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:315"
-      ]
-    },
-    {
-      "identifier": "2307.16041",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:24",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:24",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/CITATION_MAP.md:24",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:156",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:157",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.md:162",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:316",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:316"
-      ]
-    },
-    {
-      "identifier": "10.1142/S0218202511005775",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:25",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:165",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:317",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:317"
-      ]
-    },
-    {
-      "identifier": "2406.18614",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/build_review_record.py:28",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/CITATION_MAP.md:15",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.json:186",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/LOCAL_REVIEW.md:159",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:1027",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:1027"
-      ]
-    },
-    {
-      "identifier": "10.1002/qj.49711749903",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_A_THERMODYNAMICS/returned_text_snapshots/WEB_A_THERMODYNAMICS_REVIEW.md:315",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_A_THERMODYNAMICS/received/WEB_A_THERMODYNAMICS_REVIEW.md:315"
-      ]
-    },
-    {
-      "identifier": "1005.2781",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/LOCAL_REVIEW.md:139",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/PRIMARY_SOURCE_CHECKS.json:79",
-        "reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:184",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:927",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:927"
-      ]
-    },
-    {
-      "identifier": "1707.04620",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/LOCAL_REVIEW.md:140",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/PRIMARY_SOURCE_CHECKS.json:91",
-        "reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:184",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:928",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:928"
-      ]
-    },
-    {
-      "identifier": "10.1006/jcph.2000.6567",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/PRIMARY_SOURCE_CHECKS.json:105",
-        "reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:186",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:379"
-      ]
-    },
-    {
-      "identifier": "10.1016/j.jcp.2009.12.018",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/PRIMARY_SOURCE_CHECKS.json:109",
-        "reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:186",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:380"
-      ]
-    },
-    {
-      "identifier": "10.1098/rsta.1927.0008",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/PRIMARY_SOURCE_CHECKS.json:113",
-        "reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:186",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:929"
-      ]
-    },
-    {
-      "identifier": "10.1098/rspa.1952.0060",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_B_GEOMETRY_CERTIFICATE/PRIMARY_SOURCE_CHECKS.json:117",
-        "reports/Cavitation_Limits_20261011/full_closure/web_new_agent_20261012/B_GEOMETRY_CERTIFICATION/TOPIC_HANDOFF.md:186",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_B_GEOMETRY_CERTIFICATE/received/web_b_review/preserved_uppercase_name/WEB_B_REVIEW.md:930"
-      ]
-    },
-    {
-      "identifier": "1511.02756",
-      "kind": "arxiv",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/finalize_review.py:80",
-        "reports/Cavitation_Limits_20261011/full_closure/verification/web_return_reviews_20261012/WEB_C_SOLVER_BENCHMARKS/PRIMARY_SOURCE_CHECKS.json:102",
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:546"
-      ]
-    },
-    {
-      "identifier": "10.1017/S0962492902000156",
-      "kind": "doi",
-      "origins": [
-        "reports/Cavitation_Limits_20261011/full_closure/web_returns/WEB_C_SOLVER_BENCHMARKS/received/web_c_delivery/WEB_C_REVIEW.md:547"
       ]
     },
     {
@@ -2920,15 +2229,6 @@
         "reports/PFC_Project_Report_20261011_ppt169_20261011/analysis/Laser_Triggered_Cavitation_Transfer_Supervisor_Progress_20260919_No_Speaker_Notes_With_References.slide_library.json:932",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/Laser_Triggered_Cavitation_Transfer_Supervisor_Progress_20260919_Full_Figures_Retypeset.md:168",
         "reports/PFC_Project_Report_20261011_ppt169_20261011/sources/Laser_Triggered_Cavitation_Transfer_Supervisor_Progress_20260919_No_Speaker_Notes_With_References.md:148"
-      ]
-    },
-    {
-      "identifier": "10.1039/D0SM02243H",
-      "kind": "doi",
-      "origins": [
-        "verification/chapter05-check.py:165",
-        "verification/chapter05-review.json:377",
-        "verification/cross-review-05.json:887"
       ]
     }
   ]

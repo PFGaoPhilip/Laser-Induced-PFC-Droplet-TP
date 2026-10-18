@@ -1,22 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E22 The short-event approximation must justify removing convective and viscous impulses.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E22 | Physical-variable diagram</text>
-<rect x="100" y="180" width="680" height="120" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<line x1="100" y1="180" x2="780" y2="180" fill="none" stroke="#B4C7D2" stroke-width="2.6"/>
-<line x1="100" y1="300" x2="780" y2="300" fill="none" stroke="#B4C7D2" stroke-width="2.6"/>
-<line x1="190" y1="240" x2="650" y2="240" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="117" y="141.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Π0 at z = 0</text>
-<text x="602" y="141.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Π = 0 at z = L</text>
-<text x="257" y="265.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Δ u_z toward outlet</text>
-<text x="187" y="355.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Pressure impulse gradient drives early acceleration.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δu</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u(x,t)</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">μ</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t₀ → t₁</text>
-<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Viscous impulse</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">−∇Π/ρ</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ν = μ/ρ</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Convective impulse</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Pressure-gradient impulse shares momentum change with two residual terms</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E22</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E22 · Exact fixed-position integrated incompressible momentum</tspan>
+</text>
+<text id="o001" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="113.227">Size of each term in the integrated momentum equation (m/s, log scale)</tspan>
+</text>
+<line id="o002" x1="326.4" y1="163.2" x2="326.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="326.4" y="436.347">10⁻⁵</tspan>
+</text>
+<line id="o004" x1="406.4" y1="163.2" x2="406.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="406.4" y="436.347">10⁻⁴</tspan>
+</text>
+<line id="o006" x1="486.4" y1="163.2" x2="486.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="486.4" y="436.347">10⁻³</tspan>
+</text>
+<line id="o008" x1="566.4" y1="163.2" x2="566.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="566.4" y="436.347">10⁻²</tspan>
+</text>
+<line id="o010" x1="646.4" y1="163.2" x2="646.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="646.4" y="436.347">10⁻¹</tspan>
+</text>
+<line id="o012" x1="726.4" y1="163.2" x2="726.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="726.4" y="436.347">10⁰</tspan>
+</text>
+<line id="o014" x1="806.4" y1="163.2" x2="806.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.06667" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="806.4" y="436.347">10¹</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="190.72">pressure-impulse term</tspan>
+<tspan x="49.92" y="209.6">Π / (ρL) = Δu</tspan>
+</text>
+<rect id="o017" x="326.4" y="182.4" width="438.17" height="43.2" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="774.17" y="202.787">3 m/s</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="272.32">convective impulse</tspan>
+<tspan x="49.92" y="291.2">~ U²τ/L</tspan>
+</text>
+<rect id="o020" x="326.4" y="264" width="292.257" height="43.2" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="628.257" y="284.387">0.045 m/s</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="353.92">viscous impulse</tspan>
+<tspan x="49.92" y="372.8">~ ν Δu τ/L²</tspan>
+</text>
+<rect id="o023" x="326.4" y="345.6" width="94.0873" height="43.2" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="430.087" y="365.987">0.00015 m/s</tspan>
+</text>
+<rect id="o025" x="864" y="115.2" width="379.2" height="345.6" rx="27.648" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="877.44" y="137.093">Why the short-event model works</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="880.32" y="178.787">Δu = −∇Π/ρ − ∫(u·∇)u dt + ν∫∇²u dt</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="901.44" y="255.04">Uτ/L = 0.015: convection moves the</tspan>
+<tspan x="901.44" y="273.92">fluid only 1.5 % of L.</tspan>
+</text>
+<ellipse id="o029" cx="886.08" cy="249.92" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="901.44" y="303.68">ντ/L² = 5×10⁻⁵: viscosity has no time</tspan>
+<tspan x="901.44" y="322.56">to act.</tspan>
+</text>
+<ellipse id="o031" cx="886.08" cy="298.56" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="901.44" y="352.32">Dropping both leaves Δu ≃ −∇Π/ρ.</tspan>
+</text>
+<ellipse id="o033" cx="886.08" cy="347.2" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="482.28">Bars start at 10⁻⁵ m/s. If either small ratio were near 1, the corresponding bar would be as long as the first and the</tspan>
+<tspan x="49.92" y="503.52">reduced model would fail.</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="49.92" y="577.187">Teaching case: Π₀ = 0.30 Pa·s, ρ = 1000 kg/m³, L = 100 µm, τ = 0.5 µs, ν = 10⁻⁶ m²/s.</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Magnitudes from Eq. C1-E22 using the numbers of Eq. C1-E25.</tspan>
+</text>
 </svg>

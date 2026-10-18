@@ -1,44 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 550.08" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E23</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="550.08" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E23 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E23 · Original event-response formulas recalled</tspan>
 </text>
-<text id="obj-001" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="95.04" y="84.6144">Response times and dimensionless comparisons</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Three timescale comparisons, three assumptions</tspan>
 </text>
-<rect id="obj-002" x="104.64" y="112.32" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-003" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="136.454">De = τrel / τe</tspan>
+<rect id="o002" x="48" y="144" width="379.2" height="326.4" rx="26.112" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="18" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="166.44">Deborah number</tspan>
 </text>
-<rect id="obj-004" x="104.64" y="172.8" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-005" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="196.934">ts = Lg √(ρg / Gg)</tspan>
+<text id="o004" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="237.6" y="216.64">De = τᵣₑₗ / τₑ</tspan>
 </text>
-<rect id="obj-006" x="104.64" y="233.28" width="710.4" height="36.48" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<text id="obj-007" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="123.84" y="257.414">tporo ≈ μl Lg² / (kperm Md)</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="237.6" y="322.24">does the network relax during the event?</tspan>
 </text>
-<text id="obj-008" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="105.6" y="320.333">Equal boxes list definitions; lengths do not encode time</tspan>
+<text id="o006" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="237.6" y="408.093">viscoelastic response</tspan>
 </text>
-<text id="obj-009" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<rect id="o007" x="446.4" y="144" width="379.2" height="326.4" rx="26.112" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="459.84" y="166.44">Shear crossing</tspan>
 </text>
-<text id="obj-010" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• τrel/τe = De</tspan>
+<text id="o009" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="636" y="216.64">tₛ = L_g / √(G_g/ρ_g) = 6.71 µs</tspan>
 </text>
-<text id="obj-011" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• Lg√(ρg/Gg) = ts</tspan>
+<text id="o010" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="636" y="322.24">is the gel quasi-static over the event?</tspan>
 </text>
-<text id="obj-012" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• μlLg²/(kpermMd) ≈ tporo</tspan>
+<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="636" y="408.093">inertia / wave travel</tspan>
 </text>
-<text id="obj-013" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">Match material response to the transient event</tspan>
+<rect id="o012" x="844.8" y="144" width="379.2" height="326.4" rx="26.112" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="858.24" y="166.44">Drainage</tspan>
 </text>
-<text id="obj-014" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">Do not substitute slow stiffness for every rate</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1034.4" y="216.64">tₚₒᵣₒ ~ μₗ L_g² / (k M_d) = 1.5 s</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="1034.4" y="322.24">can solvent leave during the event?</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1034.4" y="408.093">poroelastic transport</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="524.387">Each ratio against the event time constrains a different physical assumption; one passing test does not cover the others.</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Original event-response formulas recalled: Eqs. A-E16, A-E18, A-E20 (Defence 3).</tspan>
 </text>
 </svg>

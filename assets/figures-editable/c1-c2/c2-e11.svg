@@ -1,19 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E11 The smaller inclusion has a larger capillary contribution at the same tension.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E11 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">a</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">PFC liquid</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Aqueous carrier</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p_c; interface: σ_pc, shell</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Finite liquid core: a differs from subsequent bubble radius R.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">a: PFC-core radius</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_c: aqueous carrier outside</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Π_shell: shell pressure</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_d: inside core</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">σ_pc: PFC–carrier interface</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">8 kPa at 5 μm; 400 kPa at 100 nm</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">PFC-core radius is not the subsequent bubble radius</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">A nanodroplet may need much more local pressure than a micron core</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E11</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E11 · Static capillary and shell-pressure control</tspan>
+</text>
+<line id="o001" x1="643.2" y1="528" x2="1219.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="643.2" y1="144" x2="643.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="700.998" y1="528" x2="700.998" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="700.998" y1="144" x2="700.998" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="700.998" y="550.04">1e-07</tspan>
+</text>
+<line id="o006" x1="892.998" y1="528" x2="892.998" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="892.998" y1="144" x2="892.998" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="892.998" y="550.04">1e-06</tspan>
+</text>
+<line id="o009" x1="1085" y1="528" x2="1085" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="1085" y1="144" x2="1085" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1085" y="550.04">1e-05</tspan>
+</text>
+<line id="o012" x1="636.48" y1="528" x2="643.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="643.2" y1="528" x2="1219.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="631.68" y="532.76">1e+03</tspan>
+</text>
+<line id="o015" x1="636.48" y1="432" x2="643.2" y2="432" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="643.2" y1="432" x2="1219.2" y2="432" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="631.68" y="436.76">1e+04</tspan>
+</text>
+<line id="o018" x1="636.48" y1="336" x2="643.2" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="643.2" y1="336" x2="1219.2" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="631.68" y="340.76">1e+05</tspan>
+</text>
+<line id="o021" x1="636.48" y1="240" x2="643.2" y2="240" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="643.2" y1="240" x2="1219.2" y2="240" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="631.68" y="244.76">1e+06</tspan>
+</text>
+<line id="o024" x1="636.48" y1="144" x2="643.2" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="643.2" y1="144" x2="1219.2" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="631.68" y="148.76">1e+07</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="931.2" y="572.8">core radius a  (m)</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="587.52" y="122.56">2σ_pc / a  (Pa)</tspan>
+</text>
+<polyline id="o029" points="643.398,249.402 649.216,252.311 655.034,255.22 660.852,258.13 666.67,261.039 672.489,263.948 678.307,266.857 684.125,269.766 689.943,272.675 695.761,275.584 701.58,278.493 707.398,281.402 713.216,284.311 719.034,287.22 724.852,290.13 730.67,293.039 736.489,295.948 742.307,298.857 748.125,301.766 753.943,304.675 759.761,307.584 765.58,310.493 771.398,313.402 777.216,316.311 783.034,319.22 788.852,322.13 794.67,325.039 800.489,327.948 806.307,330.857 812.125,333.766 817.943,336.675 823.761,339.584 829.58,342.493 835.398,345.402 841.216,348.311 847.034,351.22 852.852,354.13 858.67,357.039 864.489,359.948 870.307,362.857 876.125,365.766 881.943,368.675 887.761,371.584 893.58,374.493 899.398,377.402 905.216,380.311 911.034,383.22 916.852,386.13 922.67,389.039 928.489,391.948 934.307,394.857 940.125,397.766 945.943,400.675 951.761,403.584 957.58,406.493 963.398,409.402 969.216,412.311 975.034,415.22 980.852,418.13 986.67,421.039 992.489,423.948 998.307,426.857 1004.13,429.766 1009.94,432.675 1015.76,435.584 1021.58,438.493 1027.4,441.402 1033.22,444.311 1039.03,447.22 1044.85,450.13 1050.67,453.039 1056.49,455.948 1062.31,458.857 1068.13,461.766 1073.94,464.675 1079.76,467.584 1085.58,470.493 1091.4,473.402 1097.22,476.311 1103.03,479.22 1108.85,482.13 1114.67,485.039 1120.49,487.948 1126.31,490.857 1132.13,493.766 1137.94,496.675 1143.76,499.584 1149.58,502.493 1155.4,505.402 1161.22,508.311 1167.03,511.22 1172.85,514.13 1178.67,517.039 1184.49,519.948 1190.31,522.857 1196.13,525.766" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o030" cx="1027.2" cy="441.303" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="1040.64" y="408.89">5 µm: 8 kPa</tspan>
+</text>
+<ellipse id="o032" cx="700.998" cy="278.202" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="16.6667" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="714.438" y="284.189">0.1 µm: 400 kPa</tspan>
+</text>
+<rect id="o034" x="38.4" y="96" width="518.4" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="117.893">Smaller inclusion, larger capillary pressure</tspan>
+</text>
+<ellipse id="o036" cx="182.4" cy="307.2" rx="110.4" ry="110.4" fill="#1E4A5A" stroke="#8EDBD4" stroke-width="2.93333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="182.4" y="303.587">a = 5 µm</tspan>
+<tspan x="182.4" y="323.253">8 kPa</tspan>
+</text>
+<ellipse id="o038" cx="422.4" cy="307.2" rx="33.6" ry="33.6" fill="#1E4A5A" stroke="#F28BA0" stroke-width="2.93333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="432" y="369.693">a = 0.1 µm</tspan>
+<tspan x="432" y="387.787">400 kPa</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="453.48">p_d ≃ p_c + 2σ_pc/a + Πₛₕₑₗₗ</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="495.04">σ_pc = 0.020 N/m (teaching value); the shell term is</tspan>
+<tspan x="54.72" y="513.92">added separately.</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="587.52" y="617.507">Same tension, 50 times smaller radius: capillary pressure 50 times larger</tspan>
+<tspan x="587.52" y="637.173">(2σ/a is inversely proportional to a).</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Static capillary control of Eq. C2-E11.</tspan>
+</text>
 </svg>

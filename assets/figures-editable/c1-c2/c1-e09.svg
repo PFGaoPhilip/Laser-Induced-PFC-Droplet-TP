@@ -1,22 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E09 Exterior shells contribute finite kinetic energy even in an infinite domain.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E09 | Physical-variable diagram</text>
-<ellipse cx="280" cy="215" rx="80" ry="80" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<ellipse cx="280" cy="215" rx="140" ry="140" fill="none" stroke="#B4C7D2" stroke-width="2.21"/>
-<ellipse cx="280" cy="215" rx="155" ry="155" fill="none" stroke="#B4C7D2" stroke-width="2.21"/>
-<text x="202" y="233.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Cavity</text>
-<line x1="280" y1="215" x2="425" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="452" y="181.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Exterior liquid shells: 4π r² dr</text>
-<text x="452" y="235.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Integrate r from R to infinity</text>
-<text x="452" y="296.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Storage K_l</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Kl</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u(r,t)</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">4πr²dr</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">r: exterior shells</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Integrate liquid shells outside the cavity</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The radial field decays enough for finite kinetic energy</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E09</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E09 · Exact kinetic-energy integral in the spherical model</tspan>
+</text>
+<line id="o001" x1="91.2" y1="528" x2="667.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="91.2" y1="144" x2="91.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="91.2" y1="528" x2="91.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="91.2" y1="144" x2="91.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="91.2" y="550.04">1</tspan>
+</text>
+<line id="o006" x1="206.4" y1="528" x2="206.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="206.4" y1="144" x2="206.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="206.4" y="550.04">2</tspan>
+</text>
+<line id="o009" x1="321.6" y1="528" x2="321.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="321.6" y1="144" x2="321.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="321.6" y="550.04">3</tspan>
+</text>
+<line id="o012" x1="436.8" y1="528" x2="436.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="436.8" y1="144" x2="436.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="436.8" y="550.04">4</tspan>
+</text>
+<line id="o015" x1="552" y1="528" x2="552" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="552" y1="144" x2="552" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="552" y="550.04">5</tspan>
+</text>
+<line id="o018" x1="667.2" y1="528" x2="667.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="667.2" y1="144" x2="667.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="667.2" y="550.04">6</tspan>
+</text>
+<line id="o021" x1="84.48" y1="528" x2="91.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="84.48" y1="436.571" x2="91.2" y2="436.571" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="91.2" y1="436.571" x2="667.2" y2="436.571" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="441.331">0.25</tspan>
+</text>
+<line id="o025" x1="84.48" y1="345.143" x2="91.2" y2="345.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="91.2" y1="345.143" x2="667.2" y2="345.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="349.903">0.50</tspan>
+</text>
+<line id="o028" x1="84.48" y1="253.714" x2="91.2" y2="253.714" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="91.2" y1="253.714" x2="667.2" y2="253.714" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="258.474">0.75</tspan>
+</text>
+<line id="o031" x1="84.48" y1="162.286" x2="91.2" y2="162.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="91.2" y1="162.286" x2="667.2" y2="162.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="167.046">1.00</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="379.2" y="572.8">r / R</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="35.52" y="122.56">K(&lt;r) / K(∞)</tspan>
+</text>
+<polyline id="o036" points="91.2,528 94.0945,519.036 96.9889,510.502 99.8834,502.366 102.778,494.601 105.672,487.184 108.567,480.09 111.461,473.299 114.356,466.793 117.25,460.553 120.145,454.563 123.039,448.81 125.934,443.279 128.828,437.957 131.723,432.833 134.617,427.896 137.512,423.136 140.406,418.543 143.301,414.11 146.195,409.827 149.089,405.688 151.984,401.684 154.878,397.81 157.773,394.06 160.667,390.427 163.562,386.907 166.456,383.493 169.351,380.181 172.245,376.968 175.14,373.847 178.034,370.816 180.929,367.871 183.823,365.008 186.718,362.223 189.612,359.514 192.507,356.877 195.401,354.31 198.295,351.81 201.19,349.373 204.084,346.999 206.979,344.685 209.873,342.427 212.768,340.225 215.662,338.076 218.557,335.978 221.451,333.93 224.346,331.929 227.24,329.975 230.135,328.065 233.029,326.198 235.924,324.373 238.818,322.588 241.713,320.842 244.607,319.133 247.502,317.461 250.396,315.824 253.29,314.221 256.185,312.652 259.079,311.114 261.974,309.608 264.868,308.132 267.763,306.685 270.657,305.266 273.552,303.875 276.446,302.511 279.341,301.173 282.235,299.861 285.13,298.572 288.024,297.308 290.919,296.067 293.813,294.849 296.708,293.652 299.602,292.477 302.496,291.323 305.391,290.189 308.285,289.075 311.18,287.98 314.074,286.904 316.969,285.846 319.863,284.806 322.758,283.783 325.652,282.778 328.547,281.788 331.441,280.815 334.336,279.858 337.23,278.916 340.125,277.989 343.019,277.076 345.914,276.178 348.808,275.294 351.703,274.423 354.597,273.566 357.491,272.721 360.386,271.89 363.28,271.071 366.175,270.264 369.069,269.469 371.964,268.685 374.858,267.913 377.753,267.152 380.647,266.402 383.542,265.662 386.436,264.933 389.331,264.214 392.225,263.506 395.12,262.807 398.014,262.117 400.909,261.437 403.803,260.766 406.697,260.104 409.592,259.451 412.486,258.807 415.381,258.171 418.275,257.544 421.17,256.924 424.064,256.313 426.959,255.71 429.853,255.114 432.748,254.525 435.642,253.945 438.537,253.371 441.431,252.805 444.326,252.245 447.22,251.693 450.115,251.147 453.009,250.607 455.904,250.075 458.798,249.548 461.692,249.028 464.587,248.515 467.481,248.007 470.376,247.505 473.27,247.009 476.165,246.519 479.059,246.034 481.954,245.555 484.848,245.081 487.743,244.613 490.637,244.15 493.532,243.692 496.426,243.239 499.321,242.791 502.215,242.349 505.11,241.911 508.004,241.477 510.898,241.049 513.793,240.625 516.687,240.206 519.582,239.791 522.476,239.38 525.371,238.974 528.265,238.572 531.16,238.174 534.054,237.781 536.949,237.391 539.843,237.006 542.738,236.624 545.632,236.246 548.527,235.872 551.421,235.502 554.316,235.136 557.21,234.773 560.105,234.414 562.999,234.058 565.893,233.706 568.788,233.357 571.682,233.012 574.577,232.67 577.471,232.331 580.366,231.996 583.26,231.663 586.155,231.334 589.049,231.008 591.944,230.685 594.838,230.365 597.733,230.048 600.627,229.734 603.522,229.423 606.416,229.115 609.311,228.81 612.205,228.507 615.099,228.207 617.994,227.91 620.888,227.615 623.783,227.323 626.677,227.034 629.572,226.747 632.466,226.463 635.361,226.181 638.255,225.902 641.15,225.625 644.044,225.351 646.939,225.079 649.833,224.809 652.728,224.542 655.622,224.276 658.517,224.014 661.411,223.753 664.306,223.494 667.2,223.238" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o037" x1="91.2" y1="162.286" x2="667.2" y2="162.286" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o038" cx="206.4" cy="345.143" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="221.76" y="364.57">50 % inside r = 2R</tspan>
+</text>
+<ellipse id="o040" cx="436.8" cy="253.714" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="452.16" y="273.141">75 % inside r = 4R</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="285.12" y="181.166">K(∞) = 2πρR³Ṙ² is finite</tspan>
+</text>
+<rect id="o043" x="700.8" y="139.2" width="542.4" height="451.2" rx="36.096" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="714.24" y="161.64">Energy lives in thin shells</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="717.12" y="203.88">dK = ½ρu² · 4πr² dr  ∝  r⁻² dr</tspan>
+</text>
+<ellipse id="o046" cx="969.6" cy="360" rx="138.24" ry="138.24" fill="#1E4A5A" stroke="#B4C7D2" stroke-width="1.06667" opacity="0.85"/>
+<ellipse id="o047" cx="969.6" cy="360" rx="108" ry="108" fill="#2B6678" stroke="#B4C7D2" stroke-width="1.06667" opacity="0.85"/>
+<ellipse id="o048" cx="969.6" cy="360" rx="82.08" ry="82.08" fill="#1E4A5A" stroke="#B4C7D2" stroke-width="1.06667" opacity="0.85"/>
+<ellipse id="o049" cx="969.6" cy="360" rx="62.64" ry="62.64" fill="#2B6678" stroke="#B4C7D2" stroke-width="1.06667" opacity="0.85"/>
+<ellipse id="o050" cx="969.6" cy="360" rx="49.68" ry="49.68" fill="#1E4A5A" stroke="#B4C7D2" stroke-width="1.06667" opacity="0.85"/>
+<ellipse id="o051" cx="969.6" cy="360" rx="43.2" ry="43.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<text id="o052" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="717.12" y="524.387">u² ∝ r⁻⁴ but shell volume ∝ r²: the integrand falls as</tspan>
+<tspan x="717.12" y="544.053">r⁻², so even an infinite liquid holds finite energy.</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="93.12" y="618.6">Kₗ = ∫ ½ρu² 4πr² dr = 2πρR⁴Ṙ² ∫ r⁻² dr = 2πρR³Ṙ²</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="93.12" y="659.333">Half of it is within one extra bubble radius of the wall.</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Cumulative fraction K(&lt;r)/K = 1 − R/r from Eq. C1-E09.</tspan>
+</text>
 </svg>

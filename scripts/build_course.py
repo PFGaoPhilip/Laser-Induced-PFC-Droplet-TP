@@ -1,4 +1,4 @@
-"""Build the bilingual, portable four-chapter course and Appendix A."""
+"""Build the bilingual, portable five-chapter course and Appendix A (source number 90)."""
 from pathlib import Path
 from html import escape
 import argparse
@@ -29,14 +29,16 @@ PLANNED=[
  (2,'laser-heat-and-finite-pfc-inventory','Laser heating and finite PFC phase inventory','激光加热与有限 PFC 相存量'),
  (3,'arrays-to-coherent-jets-and-loads','From droplet arrays to coherent jets and defined loads','从液滴阵列到相干射流与明确载荷'),
  (4,'load-path-fracture-and-intact-transfer','Load paths, fracture and intact transfer','受力路径、断裂与完整转印'),
- (5,'hydrogel-versus-liquid-platforms','Hydrogel and conventional liquid platforms','水凝胶与常规液体平台'),
+ (5,'jet-on-rigid-wall','Jet on a rigid wall: theory, calculation and verification','刚性壁面射流：理论、计算与核验'),
+ (90,'hydrogel-versus-liquid-platforms','Hydrogel and conventional liquid platforms','水凝胶与常规液体平台'),
 ]
 UNIT_MAP = {
  1:[('Chapter 1: Cavitation and jets','第1章：空化与射流基础'),('Spherical cavity dynamics, liquid inertia, pressure impulse, moving interfaces, and directional jet formation.','球形腔体动力学、液体惯性、压力冲量、运动界面与定向射流形成。'),('How does cavity pressure accelerate liquid, and why does a directional jet require asymmetry?','腔体压力如何加速液体？为什么形成定向射流必须有不对称性？')],
  2:[('Chapter 2: PFC versus ordinary droplets','第2章：PFC与普通液滴对比'),('Laser heating, nucleation, heat and mass transfer, material properties, and finite phase inventory.','激光加热、成核、传热传质、物性与有限相存量。'),('What changes when PFC replaces an ordinary droplet?','用 PFC 替代普通液滴会改变什么？')],
  3:[('Chapter 3: Arrays and calculations','第3章：阵列与计算'),('Array coupling, energy allocation, finite jets, impact, and the three-stage resolver.','阵列耦合、能量分配、有限射流、冲击与三阶段求解器。'),('How do array sites produce a finite mechanical output?','阵列位点如何产生有限力学输出？')],
  4:[('Chapter 4: Fracture and transfer','第4章：断裂与转印'),('Film/PVC loading, transient structural response, interface separation, and transfer criteria.','薄膜／PVC受载、瞬态结构响应、界面分离与转印判据。'),('Does the delivered load release the intended interface without destroying the payload?','实际传递的载荷能否释放目标界面，同时不损坏被转印对象？')],
- 5:[('Appendix A: Hydrogel versus liquid','附录A：水凝胶与液体平台'),('Gel confinement, response times, finite-energy models, and embedded-PFC comparisons.','凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。'),('How does gel confinement change transfer?','凝胶约束如何改变转印？')],
+ 5:[('Chapter 5: Jet-on-Rigid-Wall Calculation','第5章：刚性壁面射流计算'),('Liquid-only impact theory, a finite-volume reference, and an axisymmetric COMSOL wall-band verification.','纯液体撞击理论、有限体积参考解与轴对称 COMSOL 壁面加密带核验。'),('What wall pressure can a rigid-wall jet reach, and how well do two independent solvers agree?','射流撞击刚性壁面可达到多大的壁面压力？两个独立求解器的一致性如何？')],
+ 90:[('Appendix A: Hydrogel versus liquid','附录A：水凝胶与液体平台'),('Gel confinement, response times, finite-energy models, and embedded-PFC comparisons.','凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。'),('How does gel confinement change transfer?','凝胶约束如何改变转印？')],
 }
 MAP_HEADERS=[('Unit','单元'),('Contents','内容'),('Question','问题')]
 
@@ -70,7 +72,7 @@ def unit_label(ch):
     return ('Appendix '+ch['letter'],'附录 '+ch['letter']) if is_appendix(ch) else ('Chapter '+str(ch['number']),'第 '+str(ch['number'])+' 章')
 
 def filename(ch):
-    return ('a-' if is_appendix(ch) else f'{ch["number"]:02d}-')+re.sub(r'^\d{2}-','',ch['slug'])+'.html'
+    return f'{ch["number"]:02d}-'+re.sub(r'^\d{2}-','',ch['slug'])+'.html'
 
 def route(ch):return ('appendices/' if is_appendix(ch) else 'chapters/')+filename(ch)
 
@@ -144,7 +146,7 @@ def panel(ch):
 
 def course_body(ch):
     supplement=resource_sections(ch['number'])
-    defense_anchor={3:'defense',5:'gel-defense'}.get(ch['number'])
+    defense_anchor={3:'defense',90:'gel-defense'}.get(ch['number'])
     if supplement and defense_anchor:
         marker='<div class="heading-pair"><h2 id="'+defense_anchor+'"'
         assert marker in ch['body'], 'Defense section anchor changed'
@@ -175,8 +177,6 @@ def chapter_page(ch,chapters,progress):
     out+=f'<div class="reading" data-unit="{unit_id(ch)}" data-unit-kind="{ch.get("kind","chapter")}" data-chapter="{unit_id(ch)}">'+header+'<main class="chapter-body">'+raw+panel(ch)+'</main><nav class="chapter-navigation">'+''.join(links)+'</nav></div></div>'+footer()
     if is_appendix(ch):
         out=out.replace('</head>',f'<link rel="canonical" href="{BASE}{route(ch)}"></head>')
-        # Keep old equation/question bookmarks valid without reusing their visible labels.
-        out=re.sub(r'<(section|article) class="(equation-unit|defense)" id="A-([EQ]\d+)"',lambda m:f'<span id="C5-{m[3]}" aria-hidden="true"></span>'+m[0],out)
     return render_html(out)
 
 def reference_page(title,en,zh,body,chapters):
@@ -195,17 +195,17 @@ def reference_page(title,en,zh,body,chapters):
     return render_html(head(title,'../')+topbar('../')+layout+footer())
 
 def home(chapters,progress):
-    b='<header class="chapter-header home-header"><p class="eyebrow">PROJECT-CENTERED THEORY / 项目导向理论 · FOUR CHAPTERS + APPENDIX A / 四章 + 附录 A</p>'
+    b='<header class="chapter-header home-header"><p class="eyebrow">PROJECT-CENTERED THEORY / 项目导向理论 · FIVE CHAPTERS + APPENDIX A / 五章 + 附录 A</p>'
     b+=f'<h1 lang="en">{TITLE}</h1><h1 lang="zh-CN" class="zh">{TITLE_ZH}</h1>'
     b+=P('Follow a laser pulse through phase change, jet formation, and transfer. Derive each balance and check its limits.',
          '沿激光脉冲、相变、射流形成到转印展开学习。推导各项平衡并核验其限制。','lead')
     b+='<div class="chain">'+P('Laser absorption → heating and nucleation → finite phase inventory → bubble and spatial jet → transmitted load → fracture and placement.',
          '激光吸收 → 加热与成核 → 有限相存量 → 气泡与空间射流 → 传递载荷 → 断裂与定位。')+'</div>'
-    b+=P('Four chapters and Appendix A contain worked derivations and examples. Each unit ends with three defense questions. Chapter 3 includes the resolver study. Appendix A includes both modeling studies.',
-         '四章与附录 A 提供完整推导及例题。每单元设三个答辩问题。第三章包括求解器研究。附录 A 包括两项建模研究。')
+    b+=P('Five chapters and Appendix A contain worked derivations and examples. Each unit ends with three defense questions. Chapter 3 includes the resolver study. Chapter 5 chains theory, calculation and solver verification for a jet on a rigid wall. Appendix A includes both modeling studies.',
+         '五章与附录 A 提供完整推导及例题。每单元设三个答辩问题。第三章包括求解器研究。第五章依次给出射流撞击刚性壁面的理论、计算与求解器核验。附录 A 包括两项建模研究。')
     b+='<div class="resource-nav"><a class="button" href="chapters/'+filename(chapters[0])+'">Begin Chapter 1 / 开始第一章</a><a class="button" href="reference/defense.html">How mastery works / 如何判定掌握</a><a class="button" href="text/course.md">Editable bilingual text / 可编辑双语文本</a></div></header>'
     b+='<main class="chapter-body"><section class="course-map" id="course-map" data-unit-map="all">'+H('Contents','目录','course-map-heading')+unit_map([n for n,*_ in PLANNED])+'</section>'
-    b+='<section class="chapter-grid" aria-label="Four chapters and Appendix A">'
+    b+='<section class="chapter-grid" aria-label="Five chapters and Appendix A">'
     for ch in chapters:
         b+='<article class="chapter-card"><span class="card-number">'+unit_label(ch)[0]+' / '+unit_label(ch)[1]+'</span>'
         b+=f'<h2 lang="en"><a href="{route(ch)}">{escape(ch["title_en"])}</a></h2><h2 class="zh" lang="zh-CN">{escape(ch["title_zh"])}</h2>'
@@ -225,8 +225,8 @@ def home(chapters,progress):
     return render_html(head(TITLE)+topbar()+layout+footer())
 
 def source_page(chapters):
-    b=P('The supplied English course is preserved in sources/. New derivations and diagrams extend it. Chapter 3 contains the resolver study. Appendix A contains the two gel-model studies.',
-        '提供的英文课程保存在 sources/。新推导与示意图对其进行扩展。第三章包括求解器研究。附录 A 包括两项凝胶模型研究。')
+    b=P('The supplied English course is preserved in sources/. New derivations and diagrams extend it. Chapter 3 contains the resolver study. Chapter 5 contains the rigid-wall jet chain. Appendix A contains the two gel-model studies.',
+        '提供的英文课程保存在 sources/。新推导与示意图对其进行扩展。第三章包括求解器研究。第五章包括刚性壁面射流链。附录 A 包括两项凝胶模型研究。')
     b+=P('<a href="../Theses/index.html">Theses and chapter evidence map</a> · <a href="../Theses.md">Complete Markdown register</a>. Each entry records authors, identifiers, summaries, and evidence limits.',
          '<a href="../Theses/index.html">论文与章节证据映射</a> · <a href="../Theses.md">完整 Markdown 目录</a>。每项记录作者、标识符、摘要与证据边界。')
     b+=P('<a href="../sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md">Original English source</a> · SHA256 <code>cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0</code>.',
@@ -279,7 +279,6 @@ def defense_page(chapters,progress):
     for ch in chapters:
         bs=BeautifulSoup(ch['body'],'html.parser')
         b+=H(unit_label(ch)[0]+' · '+ch['title_en'],unit_label(ch)[1]+' · '+ch['title_zh'],'defense-a' if is_appendix(ch) else f'defense-c{ch["number"]}')+status(ch,progress)
-        if is_appendix(ch):b+='<span id="defense-c5" aria-hidden="true"></span>'
         for article in bs.select('article[data-defense]'):
             en=article.select_one('h3[lang=en]').get_text();zh=article.select_one('h3[lang="zh-CN"]').get_text()
             b+=P(f'<a href="../{route(ch)}#{article["id"]}">{escape(en)}</a>',f'<a href="../{route(ch)}#{article["id"]}">{escape(zh)}</a>')
@@ -337,8 +336,7 @@ def settings(chapters):
       'appendices':[record(ch) for ch in chapters if is_appendix(ch)],
       'resource_ownership':{'resolver':'C03','minimal_cavitation':'A','embedded_pfc':'A'},
       'unit_order':[unit_id(ch) for ch in chapters],
-      'legacy_routes':[{'file':'chapters/05-hydrogel-versus-liquid.html','canonical':'appendices/a-hydrogel-versus-liquid.html'}],
-      'legacy_response_ids':{f'C5-Q{i}':f'A-Q{i}' for i in range(1,4)},
+      'legacy_routes':[{'file':'chapters/05-hydrogel-versus-liquid.html','canonical':'appendices/90-hydrogel-versus-liquid.html'},{'file':'appendices/a-hydrogel-versus-liquid.html','canonical':'appendices/90-hydrogel-versus-liquid.html'}],
       'causal_chain':['absorption','heat transport','activation','finite phase inventory','bubble pressure and flow','spatial jet','transmitted load','fracture','intact placement','reset'],
       'architectures':['PFC in aqueous droplet stamp','PFC-containing liquid layer: direct film loading','PFC-containing liquid layer: intact PVC-mediated loading','open liquid pocket in gel','PFC embedded in bulk gel','sealed gel/composite cavity'],
       'maximum_reports':['highest verified single-shot defined pressure or finite-mass speed','repeatable intact-transfer envelope']}
@@ -352,18 +350,15 @@ def main():
     if progress_path.exists():progress=json.loads(progress_path.read_text(encoding='utf-8'))
     else:progress={'course':TITLE,'units':{unit_id(ch):{'status':'pending','accepted_question_ids':[],'evidence':[]} for ch in chapters}}
     if 'chapters' in progress:progress['units']=progress.pop('chapters')
-    if 'C05' in progress['units']:
-        legacy=progress['units'].pop('C05')
-        assert 'A' not in progress['units'],'Conflicting current and legacy appendix records'
-        legacy['accepted_question_ids']=[q.replace('C5-Q','A-Q') for q in legacy['accepted_question_ids']]
-        progress['units']['A']=legacy
+    for ch in chapters:progress['units'].setdefault(unit_id(ch),{'status':'pending','accepted_question_ids':[],'evidence':[]})
     progress_path.write_text(json.dumps(progress,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     assert len({e['id'] for e in EQUATIONS})==len(EQUATIONS),'Duplicate equation ID'
     for eq in EQUATIONS:(ROOT/'assets/figures'/f'{eq["id"].lower()}.svg').write_text(svg_for(eq),encoding='utf-8')
     for ch in chapters:
         rendered=chapter_page(ch,chapters,progress)
         (ROOT/route(ch)).write_text(rendered,encoding='utf-8')
-        if is_appendix(ch):(ROOT/'chapters/05-hydrogel-versus-liquid.html').write_text(rendered,encoding='utf-8')
+        if is_appendix(ch):
+            for legacy in ('chapters/05-hydrogel-versus-liquid.html','appendices/a-hydrogel-versus-liquid.html'):(ROOT/legacy).write_text(rendered,encoding='utf-8')
         (ROOT/'text'/filename(ch).replace('.html','.md')).write_text(markdown_source(ch),encoding='utf-8')
     (ROOT/'text/course.md').write_text('\n\n---\n\n'.join((ROOT/'text'/filename(ch).replace('.html','.md')).read_text(encoding='utf-8') for ch in chapters),encoding='utf-8')
     (ROOT/'index.html').write_text(home(chapters,progress),encoding='utf-8')

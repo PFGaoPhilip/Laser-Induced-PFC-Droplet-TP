@@ -1,66 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E40</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E40 · Explicit integration-by-parts boundary terms</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E40 · Explicit integration-by-parts boundary terms</tspan>
 </text>
-<rect id="o001" x="124.8" y="124.8" width="720" height="225.6" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="211.2">Reference film plane Ω_f</tspan>
-<tspan x="290.88" y="242.667">w(x,y,t), variation δw</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Integrating by parts twice moves derivatives from δw onto the moment tensor</tspan>
 </text>
-<line id="o003" x1="849.6" y1="235.2" x2="969.6" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="991.68" y="232.32">n: outward</tspan>
-<tspan x="991.68" y="257.493">in-plane normal</tspan>
+<rect id="o002" x="48" y="148.8" width="1180.8" height="100.8" rx="8.064" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="172.613">Start</tspan>
 </text>
-<line id="o005" x1="144" y1="369.6" x2="336" y2="369.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="358.08" y="374.813">x</tspan>
+<text id="o004" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="174.72" y="173.44">δU_b = ∫ B_αβ ∂α∂β(δw) dA</tspan>
 </text>
-<line id="o007" x1="144" y1="369.6" x2="144" y2="278.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="79.68" y="317.213">y</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="923.52" y="172.893">derivatives sit on δw</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="194.88" y="99.4267">Fixed boundary: δw = 0; ∂ₙδw = 0</tspan>
+<rect id="o006" x="48" y="264" width="1180.8" height="100.8" rx="8.064" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="287.813">Once</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="511.68" y="389.213">Curvature stores U_b; slope stores U_T.</tspan>
+<text id="o008" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="174.72" y="288.64">= ∮ n_α B_αβ ∂β(δw) dℓ − ∫ (∂α B_αβ) ∂β(δw) dA</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• Ω_f — plate interior</tspan>
+<text id="o009" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="923.52" y="288.093">edge moment term appears</tspan>
+</text>
+<rect id="o010" x="48" y="379.2" width="1180.8" height="100.8" rx="8.064" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="403.013">Twice</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="174.72" y="403.84">= ∮ n_α B_αβ ∂β δw dℓ − ∮ nᵦ ∂αB_αβ δw dℓ + ∫ (∂α∂β B_αβ) δw dA</tspan>
 </text>
 <text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• ∂Ω_f, dℓ — fixed clamped edge</tspan>
+<tspan x="923.52" y="403.293">edge shear term appears</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• w, δw — displacement and variation</tspan>
+<rect id="o014" x="48" y="499.2" width="576" height="110.4" rx="8.832" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="521.093">B_αβ</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• B_αβ, D_f, ν_f — curvature moments</tspan>
+<text id="o016" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="552.64">B_αβ = D_f[(1−ν_f) w_αβ + ν_f δ_αβ ∇²w]</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• n_α, n_β — in-plane boundary normal</tspan>
+<rect id="o017" x="652.8" y="499.2" width="576" height="110.4" rx="8.832" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="666.24" y="521.093">Fixed clamp</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• δU_b, δU_T — virtual energy</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="669.12" y="552.64">w = 0 and ∂ₙw = 0 on the edge ⇒ both boundary terms vanish</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• T₀ — pretension</tspan>
-</text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="520.007">• boundary: δw = 0, ∂ₙδw = 0</tspan>
-</text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">The first bending boundary term contains the slope variation.</tspan>
-</text>
-<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">The second contains the displacement variation; both vanish at the clamp.</tspan>
-</text>
-<text id="o022" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Boundary terms of Eq. C4-E40 (the term order follows the equation).</tspan>
 </text>
 </svg>

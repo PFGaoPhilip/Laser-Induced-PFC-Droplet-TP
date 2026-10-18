@@ -107,7 +107,7 @@ def collect(text):
 
 def compile_rows(e):
     from symbol_row_vocabulary import VOCABULARY
-    chapter=5 if e['id'].startswith('A-') else int(e['id'][1])
+    chapter=90 if e['id'].startswith('A-') else int(e['id'][1])
     en,en_notes,en_pieces,en_groups=collect(e['symbols_en'])
     zh,zh_notes,zh_pieces,zh_groups=collect(e['symbols_zh'])
     names=list(en)+[name for name in zh if name not in en]

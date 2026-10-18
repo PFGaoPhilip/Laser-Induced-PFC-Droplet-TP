@@ -1,23 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E21 The liquid-to-vapor normal fixes the signs of heat and phase flux.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E21 | Physical-variable diagram</text>
-<rect x="80" y="120" width="350" height="220" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<rect x="430" y="120" width="430" height="220" fill="none" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="182" y="169.84" font-family="Arial,sans-serif" font-size="23" fill="#E7F0F3">Vapor</text>
-<text x="602" y="169.84" font-family="Arial,sans-serif" font-size="23" fill="#E7F0F3">Liquid</text>
-<line x1="610" y1="230" x2="300" y2="230" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="482" y="276.6" font-family="Arial,sans-serif" font-size="20" fill="#F6BC77">n: liquid → vapor</text>
-<line x1="430" y1="310" x2="545" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="452" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+e_r, wall motion</text>
-<text x="102" y="105.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Interface Gamma</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">n: liquid → vapor</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">q_v: heat leaving into vapor</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">h_l,s → h_v,s: enthalpy change</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">k_l, k_v; T_l, T_v: thermal fields</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">q_l: heat arriving from liquid</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">j_s: phase mass flux</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L_v,s: latent requirement</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">η = l or v; ∇: local gradient</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Evaporation j_s &gt; 0 consumes latent enthalpy</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Condensation j_s &lt; 0 supplies heat to surrounding material</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E21</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E21 · Reduced interfacial energy jump and Fourier law</tspan>
+</text>
+<line id="o001" x1="96" y1="508.8" x2="710.4" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="553.6">distance from the interface (liquid | vapor)</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">temperature (relative)</tspan>
+</text>
+<polyline id="o005" points="96,326.4 97.5398,325.818 99.0797,325.236 100.62,324.655 102.159,324.073 103.699,323.491 105.239,322.909 106.779,322.327 108.319,321.745 109.859,321.164 111.398,320.582 112.938,320 114.478,319.418 116.018,318.836 117.558,318.255 119.098,317.673 120.638,317.091 122.177,316.509 123.717,315.927 125.257,315.345 126.797,314.764 128.337,314.182 129.877,313.6 131.417,313.018 132.956,312.436 134.496,311.855 136.036,311.273 137.576,310.691 139.116,310.109 140.656,309.527 142.195,308.945 143.735,308.364 145.275,307.782 146.815,307.2 148.355,306.618 149.895,306.036 151.435,305.455 152.974,304.873 154.514,304.291 156.054,303.709 157.594,303.127 159.134,302.545 160.674,301.964 162.214,301.382 163.753,300.8 165.293,300.218 166.833,299.636 168.373,299.055 169.913,298.473 171.453,297.891 172.992,297.309 174.532,296.727 176.072,296.145 177.612,295.564 179.152,294.982 180.692,294.4 182.232,293.818 183.771,293.236 185.311,292.655 186.851,292.073 188.391,291.491 189.931,290.909 191.471,290.327 193.011,289.745 194.55,289.164 196.09,288.582 197.63,288 199.17,287.418 200.71,286.836 202.25,286.255 203.789,285.673 205.329,285.091 206.869,284.509 208.409,283.927 209.949,283.345 211.489,282.764 213.029,282.182 214.568,281.6 216.108,281.018 217.648,280.436 219.188,279.855 220.728,279.273 222.268,278.691 223.808,278.109 225.347,277.527 226.887,276.945 228.427,276.364 229.967,275.782 231.507,275.2 233.047,274.618 234.586,274.036 236.126,273.455 237.666,272.873 239.206,272.291 240.746,271.709 242.286,271.127 243.826,270.545 245.365,269.964 246.905,269.382 248.445,268.8 249.985,268.218 251.525,267.636 253.065,267.055 254.605,266.473 256.144,265.891 257.684,265.309 259.224,264.727 260.764,264.145 262.304,263.564 263.844,262.982 265.383,262.4 266.923,261.818 268.463,261.236 270.003,260.655 271.543,260.073 273.083,259.491 274.623,258.909 276.162,258.327 277.702,257.745 279.242,257.164 280.782,256.582 282.322,256 283.862,255.418 285.402,254.836 286.941,254.255 288.481,253.673 290.021,253.091 291.561,252.509 293.101,251.927 294.641,251.345 296.18,250.764 297.72,250.182 299.26,249.6 300.8,249.018 302.34,248.436 303.88,247.855 305.42,247.273 306.959,246.691 308.499,246.109 310.039,245.527 311.579,244.945 313.119,244.364 314.659,243.782 316.198,243.2 317.738,242.618 319.278,242.036 320.818,241.455 322.358,240.873 323.898,240.291 325.438,239.709 326.977,239.127 328.517,238.545 330.057,237.964 331.597,237.382 333.137,236.8 334.677,236.218 336.217,235.636 337.756,235.055 339.296,234.473 340.836,233.891 342.376,233.309 343.916,232.727 345.456,232.145 346.995,231.564 348.535,230.982 350.075,230.4 351.615,229.818 353.155,229.236 354.695,228.655 356.235,228.073 357.774,227.491 359.314,226.909 360.854,226.327 362.394,225.745 363.934,225.164 365.474,224.582 367.014,224 368.553,223.418 370.093,222.836 371.633,222.255 373.173,221.673 374.713,221.091 376.253,220.509 377.792,219.927 379.332,219.345 380.872,218.764 382.412,218.182 383.952,217.6 385.492,217.018 387.032,216.436 388.571,215.855 390.111,215.273 391.651,214.691 393.191,214.109 394.731,213.527 396.271,212.945 397.811,212.364 399.35,211.782 400.89,211.2 402.43,210.618" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<polyline id="o006" points="403.97,210.394 405.51,210.527 407.05,210.66 408.589,210.793 410.129,210.926 411.669,211.059 413.209,211.192 414.749,211.325 416.289,211.458 417.829,211.591 419.368,211.724 420.908,211.857 422.448,211.99 423.988,212.123 425.528,212.256 427.068,212.389 428.608,212.522 430.147,212.655 431.687,212.788 433.227,212.921 434.767,213.054 436.307,213.186 437.847,213.319 439.386,213.452 440.926,213.585 442.466,213.718 444.006,213.851 445.546,213.984 447.086,214.117 448.626,214.25 450.165,214.383 451.705,214.516 453.245,214.649 454.785,214.782 456.325,214.915 457.865,215.048 459.405,215.181 460.944,215.314 462.484,215.447 464.024,215.58 465.564,215.713 467.104,215.846 468.644,215.979 470.183,216.112 471.723,216.245 473.263,216.378 474.803,216.511 476.343,216.644 477.883,216.777 479.423,216.91 480.962,217.043 482.502,217.176 484.042,217.309 485.582,217.442 487.122,217.575 488.662,217.708 490.202,217.841 491.741,217.974 493.281,218.107 494.821,218.24 496.361,218.373 497.901,218.506 499.441,218.639 500.98,218.772 502.52,218.905 504.06,219.038 505.6,219.171 507.14,219.304 508.68,219.437 510.22,219.57 511.759,219.703 513.299,219.836 514.839,219.969 516.379,220.102 517.919,220.235 519.459,220.368 520.998,220.501 522.538,220.634 524.078,220.767 525.618,220.9 527.158,221.033 528.698,221.166 530.238,221.299 531.777,221.432 533.317,221.565 534.857,221.698 536.397,221.831 537.937,221.964 539.477,222.097 541.017,222.23 542.556,222.363 544.096,222.496 545.636,222.629 547.176,222.762 548.716,222.895 550.256,223.028 551.795,223.161 553.335,223.294 554.875,223.426 556.415,223.559 557.955,223.692 559.495,223.825 561.035,223.958 562.574,224.091 564.114,224.224 565.654,224.357 567.194,224.49 568.734,224.623 570.274,224.756 571.814,224.889 573.353,225.022 574.893,225.155 576.433,225.288 577.973,225.421 579.513,225.554 581.053,225.687 582.592,225.82 584.132,225.953 585.672,226.086 587.212,226.219 588.752,226.352 590.292,226.485 591.832,226.618 593.371,226.751 594.911,226.884 596.451,227.017 597.991,227.15 599.531,227.283 601.071,227.416 602.611,227.549 604.15,227.682 605.69,227.815 607.23,227.948 608.77,228.081 610.31,228.214 611.85,228.347 613.389,228.48 614.929,228.613 616.469,228.746 618.009,228.879 619.549,229.012 621.089,229.145 622.629,229.278 624.168,229.411 625.708,229.544 627.248,229.677 628.788,229.81 630.328,229.943 631.868,230.076 633.408,230.209 634.947,230.342 636.487,230.475 638.027,230.608 639.567,230.741 641.107,230.874 642.647,231.007 644.186,231.14 645.726,231.273 647.266,231.406 648.806,231.539 650.346,231.672 651.886,231.805 653.426,231.938 654.965,232.071 656.505,232.204 658.045,232.337 659.585,232.47 661.125,232.603 662.665,232.736 664.205,232.869 665.744,233.002 667.284,233.135 668.824,233.268 670.364,233.401 671.904,233.534 673.444,233.666 674.983,233.799 676.523,233.932 678.063,234.065 679.603,234.198 681.143,234.331 682.683,234.464 684.223,234.597 685.762,234.73 687.302,234.863 688.842,234.996 690.382,235.129 691.922,235.262 693.462,235.395 695.002,235.528 696.541,235.661 698.081,235.794 699.621,235.927 701.161,236.06 702.701,236.193 704.241,236.326 705.78,236.459 707.32,236.592 708.86,236.725 710.4,236.858" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o007" x1="403.2" y1="144" x2="403.2" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o008" cx="403.2" cy="210.327" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="136.32" y="166.022">liquid: steep gradient</tspan>
+<tspan x="136.32" y="184.902">(larger qₗ)</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="458.88" y="166.022">vapor: gentle gradient</tspan>
+<tspan x="458.88" y="184.902">(smaller qᵥ)</tspan>
+</text>
+<line id="o011" x1="249.6" y1="425.891" x2="387.84" y2="425.891" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o012" x1="418.56" y1="425.891" x2="556.8" y2="425.891" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="243.84" y="405.347">qₗ·n</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="458.88" y="405.347">qᵥ·n</tspan>
+</text>
+<rect id="o015" x="739.2" y="144" width="504" height="364.8" rx="29.184" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="165.893">Heat that is not passed on becomes latent heat</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="209.227">jₛ Lᵥ,s = (qₗ − qᵥ)·n</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="265.187">Lᵥ,s = hᵥ,s − hₗ,s &gt; 0 (J/kg)</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="318.813">qₗ·n arriving</tspan>
+</text>
+<rect id="o020" x="945.6" y="302.4" width="144" height="30.72" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1099.2" y="321.693">1000 W/m²</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="362.973">qᵥ·n leaving</tspan>
+</text>
+<rect id="o023" x="945.6" y="346.56" width="28.8" height="30.72" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="984" y="365.853">200 W/m²</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="755.52" y="407.133">j Lᵥ = difference</tspan>
+</text>
+<rect id="o026" x="945.6" y="390.72" width="115.2" height="30.72" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1070.4" y="410.013">800 W/m²</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="586.787">Fourier law on each side: q_η = −k_η ∇T_η, η = l, v. Signs are fixed by n pointing liquid → vapor.</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="97.92" y="634.787">Example: 800 W/m² of unbalanced heat with Lᵥ = 95 kJ/kg evaporates j = 8.4 g m⁻² s⁻¹. Fluxes shown are illustrative.</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reduced energy jump of Eq. C2-E21.</tspan>
+</text>
 </svg>

@@ -178,6 +178,30 @@ TITLES_ZH = {
     'Original pressure and work formulas recalled': '回顾原始压力与功公式',
     'Original event-response formulas recalled': '回顾原始事件响应公式',
     'Original load and interface-work accounting': '原始载荷与界面功的收支核算',
+    # Chapter 5 begin
+    'Adopted barotropic stiffened-gas law and exact sound speed': '采用的正压刚化气体律与精确声速',
+    'Rigid-wall limit of the Chapter 3 acoustic matching': '第三章声学匹配的刚性壁面极限',
+    'Mass and momentum jump across the stopping shock': '停止激波两侧的质量与动量跳跃',
+    'Energy-conserving Hugoniot pressure in closed form': '能量守恒的 Hugoniot 压力封闭形式',
+    'Barotropic shock pressure used by both solvers': '两个求解器所用的正压激波压力',
+    'Area-weighted wall observer and dimensionless time': '面积加权壁面观测量与无量纲时间',
+    'Edge-release scale estimate for the finite sensor': '有限传感区的边缘释放尺度估计',
+    'Incident mass and kinetic-energy flux through the observation plane': '穿过观察平面的入射质量与动能通量',
+    'Dimensionless groups and validity range of the model': '模型的无量纲数与适用范围',
+    'One-dimensional conservative equations of the reference solver': '参考求解器的一维守恒方程',
+    'Rusanov flux with Heun time stepping': 'Rusanov 通量与 Heun 时间推进',
+    'Axisymmetric compressible flow equations of the COMSOL model': 'COMSOL 模型的轴对称可压缩流动方程',
+    'Boundary and initial conditions of the axisymmetric model': '轴对称模型的边界条件与初始条件',
+    'Observers evaluated in the COMSOL model': 'COMSOL 模型中计算的观测量',
+    'Relative error and successive-refinement change': '相对误差与逐次加密变化量',
+    'Time-integrated momentum and mass balance of the confined model': '受限模型的时间积分动量与质量平衡',
+    'Cross-solver comparison metrics for the confined column': '受限液柱的跨求解器比较指标',
+    'Scaling collapse and spread of the finite-area factor': '有限面积因子的尺度坍缩与离散度',
+    'Delivered rigid-wall relations and link to the Chapter 3 ceiling': '交付的刚性壁面关系及其与第三章上限的联系',
+    'Reference formulas: speed bound and pressure map together': '参考公式：速度上界与压力映射合并',
+    'Reference formulas: edge-release explanation of the finite-area factor': '参考公式：用边缘释放解释有限面积因子',
+    'Reference formulas: validity range and limits of the verification': '参考公式：适用范围与核验的局限',
+    # Chapter 5 end
 }
 
 

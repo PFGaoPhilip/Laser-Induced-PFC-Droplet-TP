@@ -1,19 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E20 A Mach diagnostic exposes the shrinking validity range of incompressible collapse.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E20 | Physical-variable diagram</text>
-<rect x="100" y="150" width="300" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="112" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Wall speed / sound speed</text>
-<rect x="570" y="150" width="300" height="95" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="582" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Propagation / event time</text>
-<line x1="405" y1="198" x2="560" y2="198" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="122" y="321.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Check both motion and pressure communication.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Mw = |Ṙ|/c</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">c = 1500 m/s</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">xM = RM/Rmax</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δpc</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">M* = 0.1</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">RM ≈ 4.305 μm</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The selected threshold flags omitted physics; it does not stop a real cavity</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E20</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E20 · Ideal-trajectory diagnostic, not a physical limit</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="729.6" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0.025</tspan>
+</text>
+<line id="o006" x1="215.055" y1="528" x2="215.055" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="215.055" y1="144" x2="215.055" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="215.055" y="550.04">0.05</tspan>
+</text>
+<line id="o009" x1="334.109" y1="528" x2="334.109" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="334.109" y1="144" x2="334.109" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="334.109" y="550.04">0.1</tspan>
+</text>
+<line id="o012" x1="453.164" y1="528" x2="453.164" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="453.164" y1="144" x2="453.164" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="453.164" y="550.04">0.2</tspan>
+</text>
+<line id="o015" x1="610.545" y1="528" x2="610.545" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="610.545" y1="144" x2="610.545" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="610.545" y="550.04">0.5</tspan>
+</text>
+<line id="o018" x1="729.6" y1="528" x2="729.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="729.6" y1="144" x2="729.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="729.6" y="550.04">1</tspan>
+</text>
+<line id="o021" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="89.28" y1="400" x2="96" y2="400" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="400" x2="729.6" y2="400" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="404.76">0.01</tspan>
+</text>
+<line id="o025" x1="89.28" y1="272" x2="96" y2="272" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="272" x2="729.6" y2="272" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="276.76">0.1</tspan>
+</text>
+<line id="o028" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="144" x2="729.6" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">1</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="572.8">R / Rₘₐₓ</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">wall Mach number |Ṙ| / c</tspan>
+</text>
+<polyline id="o033" points="96.8147,144 101.047,144 105.28,144 109.513,144 113.745,144 117.978,144 122.211,144 126.443,144 130.676,144 134.909,145.104 139.141,147.159 143.374,149.214 147.607,151.269 151.84,153.324 156.072,155.379 160.305,157.434 164.538,159.489 168.77,161.544 173.003,163.598 177.236,165.653 181.468,167.708 185.701,169.763 189.934,171.818 194.166,173.873 198.399,175.929 202.632,177.984 206.864,180.039 211.097,182.094 215.33,184.149 219.562,186.204 223.795,188.259 228.028,190.314 232.26,192.369 236.493,194.425 240.726,196.48 244.958,198.535 249.191,200.59 253.424,202.646 257.656,204.701 261.889,206.757 266.122,208.812 270.354,210.867 274.587,212.923 278.82,214.979 283.053,217.034 287.285,219.09 291.518,221.146 295.751,223.202 299.983,225.258 304.216,227.314 308.449,229.37 312.681,231.426 316.914,233.482 321.147,235.539 325.379,237.595 329.612,239.652 333.845,241.709 338.077,243.766 342.31,245.823 346.543,247.88 350.775,249.938 355.008,251.995 359.241,254.053 363.473,256.111 367.706,258.17 371.939,260.229 376.171,262.288 380.404,264.347 384.637,266.407 388.869,268.467 393.102,270.527 397.335,272.588 401.567,274.649 405.8,276.711 410.033,278.773 414.266,280.836 418.498,282.9 422.731,284.964 426.964,287.029 431.196,289.095 435.429,291.161 439.662,293.229 443.894,295.297 448.127,297.366 452.36,299.437 456.592,301.509 460.825,303.582 465.058,305.656 469.29,307.733 473.523,309.81 477.756,311.89 481.988,313.971 486.221,316.055 490.454,318.14 494.686,320.228 498.919,322.319 503.152,324.413 507.384,326.509 511.617,328.609 515.85,330.712 520.082,332.819 524.315,334.931 528.548,337.046 532.78,339.167 537.013,341.293 541.246,343.424 545.479,345.562 549.711,347.706 553.944,349.857 558.177,352.016 562.409,354.184 566.642,356.36 570.875,358.547 575.107,360.744 579.34,362.954 583.573,365.176 587.805,367.412 592.038,369.663 596.271,371.931 600.503,374.217 604.736,376.522 608.969,378.85 613.201,381.202 617.434,383.58 621.667,385.987 625.899,388.426 630.132,390.901 634.365,393.415 638.597,395.973 642.83,398.58 647.063,401.242 651.295,403.965 655.528,406.759 659.761,409.631 663.993,412.595 668.226,415.662 672.459,418.85 676.692,422.178 680.924,425.673 685.157,429.367 689.39,433.302 693.622,437.534 697.855,442.141 702.088,447.234 706.32,452.98 710.553,459.648 714.786,467.711 719.018,478.129 723.251,493.38 727.484,524.956" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o034" x1="96" y1="272" x2="729.6" y2="272" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="620.145" y="256.867">M* = 0.1</tspan>
+</text>
+<polygon id="o036" points="96.8147,144 396.128,144 396.128,528 96.8147,528" fill="#F28BA0" stroke="#F28BA0" stroke-width="0.666667" opacity="0.18"/>
+<line id="o037" x1="396.128" y1="144" x2="396.128" y2="528" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o038" cx="396.128" cy="272" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="407.648" y="239.04">x_M = 0.143487</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="118.819" y="417.976">incompressible model</tspan>
+<tspan x="118.819" y="436.856">not trusted here</tspan>
+</text>
+<rect id="o041" x="768" y="144" width="475.2" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="781.44" y="166.44">A diagnostic, not a limit</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="784.32" y="208.133">x_M = [ 1 + 3ρc²M*² / (2Δp_c) ]^(−1/3)</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="269.987">With c = 1500 m/s and M* = 0.1 the ideal</tspan>
+<tspan x="805.44" y="289.653">collapse reaches M* at R = 0.143 Rₘₐₓ.</tspan>
+</text>
+<ellipse id="o045" cx="790.08" cy="264.733" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="320.253">Inside that radius the speed is large enough</tspan>
+<tspan x="805.44" y="339.92">that liquid compressibility must be added.</tspan>
+</text>
+<ellipse id="o047" cx="790.08" cy="315" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="370.52">The ideal trajectory itself is not a physical</tspan>
+<tspan x="805.44" y="390.187">prediction.</tspan>
+</text>
+<ellipse id="o049" cx="790.08" cy="365.267" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="618.053">Wall Mach number M_w = |Ṙ|/c grows as R shrinks, so the incompressible formulas lose validity near the end of the collapse.</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Curve from Eq. C1-E15 with c = 1500 m/s; threshold from Eq. C1-E20 (teaching inputs).</tspan>
+</text>
 </svg>

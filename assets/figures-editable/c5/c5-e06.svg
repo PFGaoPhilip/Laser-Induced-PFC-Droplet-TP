@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E06 · Area-weighted wall observer and dimensionless time</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E06 · Area-weighted wall observer and dimensionless time</tspan>
+</text>
+<ellipse id="o001" cx="326.4" cy="355.2" rx="201.6" ry="201.6" fill="#213E4B" stroke="#8EDBD4" stroke-width="3.33333" opacity="1"/>
+<ellipse id="o002" cx="326.4" cy="355.2" rx="124.992" ry="124.992" fill="#2B5560" stroke="#F2B880" stroke-width="3.33333" opacity="1"/>
+<ellipse id="o003" cx="326.4" cy="355.2" rx="5.76" ry="5.76" fill="#E7F0F3" stroke="#E7F0F3" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="497.499" y1="256.416" x2="452.105" y2="282.624" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o005" x1="155.301" y1="256.416" x2="200.695" y2="282.624" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="326.4" y1="552.768" x2="326.4" y2="500.352" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="326.4" y1="355.2" x2="528" y2="355.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="18.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="377.28" y="337.413">a</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="middle" opacity="1">
+<tspan x="283.2" y="416.787">core</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="50.88" y="119.8">Wall z = 0 seen from above</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="703.68" y="129.4">Observer</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="185.28">p̄_R = (2 / R²) ∫₀ᴿ p r dr</tspan>
+<tspan x="703.68" y="207.307">weight 2r dr / R² is the disk area element</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="703.68" y="286.08">R = a: full sensor</tspan>
+<tspan x="703.68" y="308.107">R = a/2: centre</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="703.68" y="355">Edge release</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="414.267">Front moves inward from r = a at c_0.</tspan>
+<tspan x="703.68" y="436.293">At τ = c_0 t / a the annulus a(1−τ) &lt; r ≤ a has relaxed.</tspan>
+<tspan x="703.68" y="458.32">Area fraction f_rel = 1 − (1 − τ)².</tspan>
+</text>
+<rect id="o016" x="700.8" y="518.4" width="528" height="96" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="964.8" y="549.093">At the peak: τ = 0.0472, f_rel = 0.0921</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="964.8" y="589.893">Full release would give 0.908 p_H</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic; annulus width is exaggerated for legibility.</tspan>
+</text>
+</svg>

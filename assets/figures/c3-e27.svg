@@ -1,53 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E27</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E27 · One-way-wave energy and finite-observer Cauchy–Schwarz bound</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E27 · One-way-wave energy and finite-observer Cauchy–Schwarz bound</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">Source allocation</tspan>
+<line id="o001" x1="96" y1="518.4" x2="729.6" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="518.4" x2="96" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="540.44">1</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">Outgoing wave E_w</tspan>
+<line id="o006" x1="223.182" y1="518.4" x2="223.182" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="223.182" y1="144" x2="223.182" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="223.182" y="540.44">2</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">Finite A_o, τ_o observer</tspan>
+<line id="o009" x1="391.307" y1="518.4" x2="391.307" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="391.307" y1="144" x2="391.307" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="391.307" y="540.44">5</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Each energy allocation belongs to the same finite source budget.</tspan>
+<line id="o012" x1="518.488" y1="518.4" x2="518.488" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="518.488" y1="144" x2="518.488" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="518.488" y="540.44">10</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• p′ outgoing wave through A_o</tspan>
+<line id="o015" x1="720.066" y1="518.4" x2="720.066" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="720.066" y1="144" x2="720.066" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="720.066" y="540.44">30</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• Z_l wave impedance</tspan>
+<line id="o018" x1="89.28" y1="518.4" x2="96" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="89.28" y1="413.964" x2="96" y2="413.964" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="413.964" x2="729.6" y2="413.964" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="418.724">0.2</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• τ_o, t observation window</tspan>
+<line id="o022" x1="89.28" y1="275.907" x2="96" y2="275.907" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="275.907" x2="729.6" y2="275.907" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="280.667">0.5</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• E_w = ∫p′²/Z_l</tspan>
+<line id="o025" x1="89.28" y1="171.47" x2="96" y2="171.47" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="171.47" x2="729.6" y2="171.47" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="176.23">1</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• p̄ signed observed mean</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="563.2">window ratio τₒ / τ_eq</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• dA spatial averaging</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">|p̄| / p₀</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Wave energy must be allocated from the same source budget</tspan>
+<polyline id="o030" points="96,171.47 99.1846,174.085 102.369,176.7 105.554,179.315 108.738,181.931 111.923,184.546 115.108,187.161 118.292,189.776 121.477,192.391 124.661,195.006 127.846,197.621 131.03,200.236 134.215,202.851 137.4,205.466 140.584,208.081 143.769,210.696 146.953,213.311 150.138,215.926 153.323,218.541 156.507,221.156 159.692,223.771 162.876,226.386 166.061,229.001 169.245,231.616 172.43,234.231 175.615,236.847 178.799,239.462 181.984,242.077 185.168,244.692 188.353,247.307 191.538,249.922 194.722,252.537 197.907,255.152 201.091,257.767 204.276,260.382 207.46,262.997 210.645,265.612 213.83,268.227 217.014,270.842 220.199,273.457 223.383,276.072 226.568,278.687 229.753,281.302 232.937,283.917 236.122,286.532 239.306,289.147 242.491,291.763 245.675,294.378 248.86,296.993 252.045,299.608 255.229,302.223 258.414,304.838 261.598,307.453 264.783,310.068 267.968,312.683 271.152,315.298 274.337,317.913 277.521,320.528 280.706,323.143 283.89,325.758 287.075,328.373 290.26,330.988 293.444,333.603 296.629,336.218 299.813,338.833 302.998,341.448 306.183,344.063 309.367,346.679 312.552,349.294 315.736,351.909 318.921,354.524 322.105,357.139 325.29,359.754 328.475,362.369 331.659,364.984 334.844,367.599 338.028,370.214 341.213,372.829 344.398,375.444 347.582,378.059 350.767,380.674 353.951,383.289 357.136,385.904 360.32,388.519 363.505,391.134 366.69,393.749 369.874,396.364 373.059,398.979 376.243,401.595 379.428,404.21 382.613,406.825 385.797,409.44 388.982,412.055 392.166,414.67 395.351,417.285 398.535,419.9 401.72,422.515 404.905,425.13 408.089,427.745 411.274,430.36 414.458,432.975 417.643,435.59 420.828,438.205 424.012,440.82 427.197,443.435 430.381,446.05 433.566,448.665 436.75,451.28 439.935,453.895 443.12,456.511 446.304,459.126 449.489,461.741 452.673,464.356 455.858,466.971 459.043,469.586 462.227,472.201 465.412,474.816 468.596,477.431 471.781,480.046 474.965,482.661 478.15,485.276 481.335,487.891 484.519,490.506 487.704,493.121 490.888,495.736 494.073,498.351 497.258,500.966 500.442,503.581 503.627,506.196 506.811,508.811 509.996,511.427 513.18,514.042 516.365,516.657" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o031" points="96,171.47 99.1846,172.778 102.369,174.085 105.554,175.393 108.738,176.7 111.923,178.008 115.108,179.315 118.292,180.623 121.477,181.931 124.661,183.238 127.846,184.546 131.03,185.853 134.215,187.161 137.4,188.468 140.584,189.776 143.769,191.083 146.953,192.391 150.138,193.698 153.323,195.006 156.507,196.313 159.692,197.621 162.876,198.928 166.061,200.236 169.245,201.543 172.43,202.851 175.615,204.158 178.799,205.466 181.984,206.773 185.168,208.081 188.353,209.389 191.538,210.696 194.722,212.004 197.907,213.311 201.091,214.619 204.276,215.926 207.46,217.234 210.645,218.541 213.83,219.849 217.014,221.156 220.199,222.464 223.383,223.771 226.568,225.079 229.753,226.386 232.937,227.694 236.122,229.001 239.306,230.309 242.491,231.616 245.675,232.924 248.86,234.231 252.045,235.539 255.229,236.847 258.414,238.154 261.598,239.462 264.783,240.769 267.968,242.077 271.152,243.384 274.337,244.692 277.521,245.999 280.706,247.307 283.89,248.614 287.075,249.922 290.26,251.229 293.444,252.537 296.629,253.844 299.813,255.152 302.998,256.459 306.183,257.767 309.367,259.074 312.552,260.382 315.736,261.689 318.921,262.997 322.105,264.305 325.29,265.612 328.475,266.92 331.659,268.227 334.844,269.535 338.028,270.842 341.213,272.15 344.398,273.457 347.582,274.765 350.767,276.072 353.951,277.38 357.136,278.687 360.32,279.995 363.505,281.302 366.69,282.61 369.874,283.917 373.059,285.225 376.243,286.532 379.428,287.84 382.613,289.147 385.797,290.455 388.982,291.763 392.166,293.07 395.351,294.378 398.535,295.685 401.72,296.993 404.905,298.3 408.089,299.608 411.274,300.915 414.458,302.223 417.643,303.53 420.828,304.838 424.012,306.145 427.197,307.453 430.381,308.76 433.566,310.068 436.75,311.375 439.935,312.683 443.12,313.99 446.304,315.298 449.489,316.605 452.673,317.913 455.858,319.221 459.043,320.528 462.227,321.836 465.412,323.143 468.596,324.451 471.781,325.758 474.965,327.066 478.15,328.373 481.335,329.681 484.519,330.988 487.704,332.296 490.888,333.603 494.073,334.911 497.258,336.218 500.442,337.526 503.627,338.833 506.811,340.141 509.996,341.448 513.18,342.756 516.365,344.063 519.55,345.371 522.734,346.679 525.919,347.986 529.103,349.294 532.288,350.601 535.473,351.909 538.657,353.216 541.842,354.524 545.026,355.831 548.211,357.139 551.396,358.446 554.58,359.754 557.765,361.061 560.949,362.369 564.134,363.676 567.318,364.984 570.503,366.291 573.688,367.599 576.872,368.906 580.057,370.214 583.241,371.521 586.426,372.829 589.611,374.137 592.795,375.444 595.98,376.752 599.164,378.059 602.349,379.367 605.533,380.674 608.718,381.982 611.903,383.289 615.087,384.597 618.272,385.904 621.456,387.212 624.641,388.519 627.826,389.827 631.01,391.134 634.195,392.442 637.379,393.749 640.564,395.057 643.748,396.364 646.933,397.672 650.118,398.979 653.302,400.287 656.487,401.595 659.671,402.902 662.856,404.21 666.041,405.517 669.225,406.825 672.41,408.132 675.594,409.44 678.779,410.747 681.963,412.055 685.148,413.362 688.333,414.67 691.517,415.977 694.702,417.285 697.886,418.592 701.071,419.9 704.256,421.207 707.44,422.515 710.625,423.822 713.809,425.13 716.994,426.437 720.178,427.745 723.363,429.053 726.548,430.36" fill="none" stroke="#F2B880" stroke-width="4" opacity="1" stroke-dasharray="6 4"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="123.088" y="482.744">|p̄| = p₀ τ_eq/τₒ  (actual mean)</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">This is a conditional wave bound, not universal film traction</tspan>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="250.27" y="200.931">bound √(Zₗ E_w / A_oτₒ) = p₀ √(τ_eq/τₒ)</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<rect id="o034" x="758.4" y="144" width="484.8" height="374.4" rx="29.952" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="771.84" y="166.44">Finite window, finite energy</tspan>
+</text>
+<text id="o036" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="774.72" y="207.587">E_w = ∫∫ p′²/Zₗ dA dt</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="774.72" y="255.04">|p̄|² ≤ (1/A_oτₒ) ∫∫ p′² dA dt = Zₗ E_w/(A_oτₒ)</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="322.24">Mean ≤ root-mean-square (Cauchy–Schwarz).</tspan>
+</text>
+<ellipse id="o039" cx="780.48" cy="317.12" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="351.36">The bound uses the one-way wave relation u′ =</tspan>
+<tspan x="795.84" y="370.24">p′/Zₗ.</tspan>
+</text>
+<ellipse id="o041" cx="780.48" cy="346.24" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="795.84" y="400">A point spike with no measured area or time cannot</tspan>
+<tspan x="795.84" y="418.88">stand for delivered loading.</tspan>
+</text>
+<ellipse id="o043" cx="780.48" cy="394.88" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.587">For a window longer than the pulse the true mean falls as 1/x while the energy bound falls only as 1/√x: the bound is safe, not</tspan>
+<tspan x="97.92" y="611.253">tight.</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">One-way-wave energy bound of Eq. C3-E27 evaluated for a rectangular pulse of amplitude p₀ and duration τ_eq.</tspan>
 </text>
 </svg>

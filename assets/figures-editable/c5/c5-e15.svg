@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E15 · Relative error and successive-refinement change</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E15 · Relative error and successive-refinement change</tspan>
+</text>
+<line id="o001" x1="144" y1="556.8" x2="854.4" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="144" y1="124.8" x2="144" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="137.28" y1="556.8" x2="144" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="144" y1="556.8" x2="854.4" y2="556.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="131.52" y="560.173">155</tspan>
+</text>
+<line id="o006" x1="137.28" y1="470.4" x2="144" y2="470.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="144" y1="470.4" x2="854.4" y2="470.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="131.52" y="473.773">160</tspan>
+</text>
+<line id="o009" x1="137.28" y1="384" x2="144" y2="384" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="144" y1="384" x2="854.4" y2="384" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="131.52" y="387.373">165</tspan>
+</text>
+<line id="o012" x1="137.28" y1="297.6" x2="144" y2="297.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="144" y1="297.6" x2="854.4" y2="297.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="131.52" y="300.973">170</tspan>
+</text>
+<line id="o015" x1="137.28" y1="211.2" x2="144" y2="211.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="144" y1="211.2" x2="854.4" y2="211.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="131.52" y="214.573">175</tspan>
+</text>
+<line id="o018" x1="137.28" y1="124.8" x2="144" y2="124.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="144" y1="124.8" x2="854.4" y2="124.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="131.52" y="128.173">180</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="55.68" y="102.713">Peak full-sensor pressure (MPa)</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="232.8" y="584.327">band h = a/40</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="232.8" y="611.053">16,176 elements</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="232.8" y="331.511">166.593</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="410.4" y="584.327">band h = a/80</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="410.4" y="611.053">18,468 elements</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="410.4" y="388.431">163.299</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="588" y="584.327">band h = a/160</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="588" y="611.053">26,776 elements</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="588" y="400.863">162.579</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="765.6" y="584.327">band h = a/320</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="765.6" y="611.053">57,668 elements</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="765.6" y="400.366">162.608</tspan>
+</text>
+<line id="o034" x1="232.8" y1="356.477" x2="410.4" y2="413.398" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1"/>
+<line id="o035" x1="410.4" y1="413.398" x2="588" y2="425.83" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1"/>
+<line id="o036" x1="588" y1="425.83" x2="765.6" y2="425.333" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="3.33333" opacity="1"/>
+<ellipse id="o037" cx="232.8" cy="356.477" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o038" cx="410.4" cy="413.398" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o039" cx="588" cy="425.83" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o040" cx="765.6" cy="425.333" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<line id="o041" x1="144" y1="217.716" x2="854.4" y2="217.716" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.86667" opacity="1" stroke-dasharray="6 4"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="end" opacity="1">
+<tspan x="851.52" y="205.883">p_H = 174.623 MPa</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="19.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="895.68" y="158.047">Successive change</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="895.68" y="207.66">a/40 → a/80:  1.98%</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="895.68" y="250.86">a/80 → a/160:  0.44%</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="895.68" y="294.06">a/160 → a/320:  0.02%</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="19.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="895.68" y="359.647">Converged peak</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="895.68" y="399.66">162.6 MPa = 0.931 p_H</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="895.68" y="445.2">Denominator of each change:</tspan>
+<tspan x="895.68" y="464.867">the previous, coarser value</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Values read from B025, B0125, B00625 and B003125 history files.</tspan>
+</text>
+</svg>

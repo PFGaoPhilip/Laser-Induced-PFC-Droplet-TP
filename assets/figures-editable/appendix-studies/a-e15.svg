@@ -1,77 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.8 594.24" role="img">
-<title>Scientific schematic</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>A-E15</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="940.8" height="594.24" fill="#142632"/>
-<text id="obj-000" font-family="Arial,sans-serif" font-size="19.2" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="35.136">A-E15 · Physical variable map</tspan>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">A-E15 · Signed-pressure and positive-loss check</tspan>
 </text>
-<ellipse id="obj-001" cx="188.16" cy="172.8" rx="76.8" ry="76.8" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<ellipse id="obj-002" cx="188.16" cy="172.8" rx="34.56" ry="34.56" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<line id="obj-003" x1="188.16" y1="172.8" x2="222.72" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-004" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="184.32" y="153.734">Rref</tspan>
+<line id="o001" x1="96" y1="508.8" x2="422.4" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="508.8" x2="96" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="530.84">-20</tspan>
 </text>
-<line id="obj-005" x1="188.16" y1="172.8" x2="242.466" y2="227.106" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-006" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="241.92" y="244.934">r₀</tspan>
+<line id="o006" x1="259.2" y1="508.8" x2="259.2" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="259.2" y1="144" x2="259.2" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="259.2" y="530.84">0</tspan>
 </text>
-<ellipse id="obj-007" cx="585.6" cy="172.8" rx="94.0368" ry="94.0368" fill="none" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<ellipse id="obj-008" cx="585.6" cy="172.8" rx="74.88" ry="74.88" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
-<line id="obj-009" x1="585.6" y1="172.8" x2="660.48" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-010" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="624.96" y="153.734">R</tspan>
+<line id="o009" x1="422.4" y1="508.8" x2="422.4" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="422.4" y1="144" x2="422.4" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="422.4" y="530.84">20</tspan>
 </text>
-<line id="obj-011" x1="585.6" y1="172.8" x2="652.094" y2="239.294" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-012" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="669.12" y="254.534">r</tspan>
+<line id="o012" x1="89.28" y1="508.8" x2="96" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="89.28" y1="417.6" x2="96" y2="417.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="96" y1="417.6" x2="422.4" y2="417.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="422.36">-15</tspan>
 </text>
-<line id="obj-013" x1="283.2" y1="172.8" x2="460.8" y2="172.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.26667" opacity="1" marker-end="url(#head)"/>
-<text id="obj-014" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="297.6" y="140.294">Material map</tspan>
+<line id="o016" x1="89.28" y1="326.4" x2="96" y2="326.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="96" y1="326.4" x2="422.4" y2="326.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="331.16">0</tspan>
 </text>
-<text id="obj-015" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="105.6" y="291.014">Reference</tspan>
+<line id="o019" x1="89.28" y1="235.2" x2="96" y2="235.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="235.2" x2="422.4" y2="235.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="239.96">15</tspan>
 </text>
-<text id="obj-016" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="508.8" y="299.654">Deformed: λr , λθ</tspan>
+<line id="o022" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="144" x2="422.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">30</tspan>
 </text>
-<text id="obj-017" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="718.08" y="101.894">Gg , ηg</tspan>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="259.2" y="553.6">wall speed Ṙ  (m/s)</tspan>
 </text>
-<text id="obj-018" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="718.08" y="147.014">σrr , σθθ</tspan>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">RHS viscous term (kPa)</tspan>
 </text>
-<text id="obj-019" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="718.08" y="193.094">p∞</tspan>
+<polyline id="o027" points="96,164.267 97.6402,165.896 99.2804,167.526 100.921,169.155 102.561,170.785 104.201,172.414 105.841,174.044 107.481,175.673 109.122,177.303 110.762,178.932 112.402,180.561 114.042,182.191 115.682,183.82 117.323,185.45 118.963,187.079 120.603,188.709 122.243,190.338 123.883,191.968 125.524,193.597 127.164,195.227 128.804,196.856 130.444,198.486 132.084,200.115 133.725,201.745 135.365,203.374 137.005,205.004 138.645,206.633 140.285,208.263 141.926,209.892 143.566,211.522 145.206,213.151 146.846,214.781 148.486,216.41 150.127,218.04 151.767,219.669 153.407,221.298 155.047,222.928 156.687,224.557 158.328,226.187 159.968,227.816 161.608,229.446 163.248,231.075 164.888,232.705 166.529,234.334 168.169,235.964 169.809,237.593 171.449,239.223 173.089,240.852 174.73,242.482 176.37,244.111 178.01,245.741 179.65,247.37 181.29,249 182.931,250.629 184.571,252.259 186.211,253.888 187.851,255.518 189.491,257.147 191.132,258.777 192.772,260.406 194.412,262.036 196.052,263.665 197.692,265.294 199.333,266.924 200.973,268.553 202.613,270.183 204.253,271.812 205.893,273.442 207.534,275.071 209.174,276.701 210.814,278.33 212.454,279.96 214.094,281.589 215.735,283.219 217.375,284.848 219.015,286.478 220.655,288.107 222.295,289.737 223.936,291.366 225.576,292.996 227.216,294.625 228.856,296.255 230.496,297.884 232.137,299.514 233.777,301.143 235.417,302.773 237.057,304.402 238.697,306.031 240.338,307.661 241.978,309.29 243.618,310.92 245.258,312.549 246.898,314.179 248.539,315.808 250.179,317.438 251.819,319.067 253.459,320.697 255.099,322.326 256.74,323.956 258.38,325.585 260.02,327.215 261.66,328.844 263.301,330.474 264.941,332.103 266.581,333.733 268.221,335.362 269.861,336.992 271.502,338.621 273.142,340.251 274.782,341.88 276.422,343.51 278.062,345.139 279.703,346.769 281.343,348.398 282.983,350.027 284.623,351.657 286.263,353.286 287.904,354.916 289.544,356.545 291.184,358.175 292.824,359.804 294.464,361.434 296.105,363.063 297.745,364.693 299.385,366.322 301.025,367.952 302.665,369.581 304.306,371.211 305.946,372.84 307.586,374.47 309.226,376.099 310.866,377.729 312.507,379.358 314.147,380.988 315.787,382.617 317.427,384.247 319.067,385.876 320.708,387.506 322.348,389.135 323.988,390.764 325.628,392.394 327.268,394.023 328.909,395.653 330.549,397.282 332.189,398.912 333.829,400.541 335.469,402.171 337.11,403.8 338.75,405.43 340.39,407.059 342.03,408.689 343.67,410.318 345.311,411.948 346.951,413.577 348.591,415.207 350.231,416.836 351.871,418.466 353.512,420.095 355.152,421.725 356.792,423.354 358.432,424.984 360.072,426.613 361.713,428.243 363.353,429.872 364.993,431.502 366.633,433.131 368.273,434.76 369.914,436.39 371.554,438.019 373.194,439.649 374.834,441.278 376.474,442.908 378.115,444.537 379.755,446.167 381.395,447.796 383.035,449.426 384.675,451.055 386.316,452.685 387.956,454.314 389.596,455.944 391.236,457.573 392.876,459.203 394.517,460.832 396.157,462.462 397.797,464.091 399.437,465.721 401.077,467.35 402.718,468.98 404.358,470.609 405.998,472.239 407.638,473.868 409.278,475.497 410.919,477.127 412.559,478.756 414.199,480.386 415.839,482.015 417.479,483.645 419.12,485.274 420.76,486.904 422.4,488.533" fill="none" stroke="#7FC8F8" stroke-width="4" opacity="1"/>
+<ellipse id="o028" cx="177.6" cy="245.333" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="193.92" y="249.883">+13.33 kPa at Ṙ = −10 m/s</tspan>
 </text>
-<text id="obj-020" font-family="Arial,sans-serif" font-size="17.28" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="552.96" y="196.934">pb</tspan>
+<line id="o030" x1="556.8" y1="508.8" x2="883.2" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o031" x1="556.8" y1="144" x2="556.8" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o032" x1="556.8" y1="508.8" x2="556.8" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o033" x1="556.8" y1="144" x2="556.8" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o034" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="556.8" y="530.84">-20</tspan>
 </text>
-<text id="obj-021" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="91.2" y="333.773">r₀³ − Rref³ = r³ − R³ ; radial coordinates point outward</tspan>
+<line id="o035" x1="720" y1="508.8" x2="720" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o036" x1="720" y1="144" x2="720" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="720" y="530.84">0</tspan>
 </text>
-<text id="obj-022" font-family="Arial,sans-serif" font-size="17.28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="26.88" y="384.134">Variables and physical limits</tspan>
+<line id="o038" x1="883.2" y1="508.8" x2="883.2" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o039" x1="883.2" y1="144" x2="883.2" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="883.2" y="530.84">20</tspan>
 </text>
-<text id="obj-023" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="420.173">• Ṙ = −10 m/s: inward</tspan>
+<line id="o041" x1="550.08" y1="508.8" x2="556.8" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o042" x1="550.08" y1="387.2" x2="556.8" y2="387.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o043" x1="556.8" y1="387.2" x2="883.2" y2="387.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="545.28" y="391.96">2</tspan>
 </text>
-<text id="obj-024" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="442.253">• R = 30 µm</tspan>
+<line id="o045" x1="550.08" y1="265.6" x2="556.8" y2="265.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o046" x1="556.8" y1="265.6" x2="883.2" y2="265.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="545.28" y="270.36">4</tspan>
 </text>
-<text id="obj-025" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="464.333">• ηg = 0.010 Pa s</tspan>
+<line id="o048" x1="550.08" y1="144" x2="556.8" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o049" x1="556.8" y1="144" x2="883.2" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="545.28" y="148.76">6</tspan>
 </text>
-<text id="obj-026" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="486.413">• pvisc,RHS = +13.3333 kPa</tspan>
+<text id="o051" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="720" y="553.6">wall speed Ṙ  (m/s)</tspan>
 </text>
-<text id="obj-027" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="508.493">• Pdis = +1.50796 mW</tspan>
+<text id="o052" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="501.12" y="122.56">P_dis  (mW)</tspan>
 </text>
-<text id="obj-028" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="530.573">Viscosity opposes collapse</tspan>
+<polyline id="o053" points="558.44,149.398 560.08,156.658 561.721,163.844 563.361,170.957 565.001,177.995 566.641,184.959 568.281,191.849 569.922,198.665 571.562,205.407 573.202,212.075 574.842,218.668 576.482,225.188 578.123,231.634 579.763,238.005 581.403,244.302 583.043,250.526 584.683,256.675 586.324,262.75 587.964,268.751 589.604,274.678 591.244,280.531 592.884,286.309 594.525,292.014 596.165,297.644 597.805,303.201 599.445,308.683 601.085,314.092 602.726,319.426 604.366,324.686 606.006,329.872 607.646,334.984 609.286,340.022 610.927,344.986 612.567,349.875 614.207,354.691 615.847,359.433 617.487,364.1 619.128,368.693 620.768,373.213 622.408,377.658 624.048,382.029 625.688,386.326 627.329,390.549 628.969,394.698 630.609,398.772 632.249,402.773 633.889,406.7 635.53,410.552 637.17,414.331 638.81,418.035 640.45,421.665 642.09,425.221 643.731,428.703 645.371,432.111 647.011,435.445 648.651,438.705 650.291,441.891 651.932,445.002 653.572,448.04 655.212,451.003 656.852,453.893 658.492,456.708 660.133,459.449 661.773,462.116 663.413,464.709 665.053,467.228 666.693,469.673 668.334,472.044 669.974,474.341 671.614,476.563 673.254,478.712 674.894,480.786 676.535,482.786 678.175,484.713 679.815,486.565 681.455,488.343 683.095,490.047 684.736,491.677 686.376,493.233 688.016,494.714 689.656,496.122 691.296,497.456 692.937,498.715 694.577,499.9 696.217,501.012 697.857,502.049 699.497,503.012 701.138,503.901 702.778,504.716 704.418,505.457 706.058,506.124 707.698,506.716 709.339,507.235 710.979,507.679 712.619,508.05 714.259,508.346 715.899,508.568 717.54,508.717 719.18,508.791 720.82,508.791 722.46,508.717 724.101,508.568 725.741,508.346 727.381,508.05 729.021,507.679 730.661,507.235 732.302,506.716 733.942,506.124 735.582,505.457 737.222,504.716 738.862,503.901 740.503,503.012 742.143,502.049 743.783,501.012 745.423,499.9 747.063,498.715 748.704,497.456 750.344,496.122 751.984,494.714 753.624,493.233 755.264,491.677 756.905,490.047 758.545,488.343 760.185,486.565 761.825,484.713 763.465,482.786 765.106,480.786 766.746,478.712 768.386,476.563 770.026,474.341 771.666,472.044 773.307,469.673 774.947,467.228 776.587,464.709 778.227,462.116 779.867,459.449 781.508,456.708 783.148,453.893 784.788,451.003 786.428,448.04 788.068,445.002 789.709,441.891 791.349,438.705 792.989,435.445 794.629,432.111 796.269,428.703 797.91,425.221 799.55,421.665 801.19,418.035 802.83,414.331 804.47,410.552 806.111,406.7 807.751,402.773 809.391,398.772 811.031,394.698 812.671,390.549 814.312,386.326 815.952,382.029 817.592,377.658 819.232,373.213 820.872,368.693 822.513,364.1 824.153,359.433 825.793,354.691 827.433,349.875 829.073,344.986 830.714,340.022 832.354,334.984 833.994,329.872 835.634,324.686 837.274,319.426 838.915,314.092 840.555,308.683 842.195,303.201 843.835,297.644 845.475,292.014 847.116,286.309 848.756,280.531 850.396,274.678 852.036,268.751 853.676,262.75 855.317,256.675 856.957,250.526 858.597,244.302 860.237,238.005 861.877,231.634 863.518,225.188 865.158,218.668 866.798,212.075 868.438,205.407 870.078,198.665 871.719,191.849 873.359,184.959 874.999,177.995 876.639,170.957 878.279,163.844 879.92,156.658 881.56,149.398" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<ellipse id="o054" cx="638.4" cy="417.116" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o055" font-family="Arial,sans-serif" font-size="14.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="659.52" y="383.06">P_dis = 1.508 mW</tspan>
 </text>
-<text id="obj-029" font-family="Arial,sans-serif" font-size="15.36" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="38.4" y="552.653">Dissipation is positive for either speed sign</tspan>
+<rect id="o056" x="912" y="144" width="331.2" height="364.8" rx="26.496" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o057" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="925.44" y="165.893">Sign and loss</tspan>
+</text>
+<text id="o058" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="923.52" y="206.493">−4η_gṘ/R = +13 333.3 Pa</tspan>
+</text>
+<text id="o059" font-family="Arial,sans-serif" font-size="14.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="923.52" y="258.747">P_dis = 16πη_gRṘ² = 1.50796447×10⁻³ W</tspan>
+</text>
+<text id="o060" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="923.52" y="336.093">Inward motion flips the pressure term;</tspan>
+<tspan x="923.52" y="354.187">dissipated power stays positive.</tspan>
+</text>
+<text id="o061" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.587">η_g = 0.010 Pa s, R = 30 µm, Ṙ = −10 m/s. The viscous term is linear in Ṙ, the dissipation is quadratic.</tspan>
+</text>
+<text id="o062" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Signed-pressure and positive-loss check of Eq. A-E15.</tspan>
 </text>
 </svg>

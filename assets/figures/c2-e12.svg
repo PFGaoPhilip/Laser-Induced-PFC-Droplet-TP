@@ -1,49 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E12 The saturation curve concerns an equilibrium state, not automatic activation.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E12 | Physical-variable diagram</text>
-<rect x="80" y="140" width="300" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="92" y="169.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Liquid | vapor equilibrium</text>
-<line x1="520" y1="325" x2="885" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="520" y1="325" x2="520" y2="125" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="807" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Temperature</text>
-<text x="512" y="113.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Saturation pressure</text>
-<line x1="525" y1="315" x2="536.667" y2="314.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="536.667" y1="314.8" x2="548.333" y2="314.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="548.333" y1="314.2" x2="560" y2="313.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="560" y1="313.2" x2="571.667" y2="311.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="571.667" y1="311.8" x2="583.333" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="583.333" y1="310" x2="595" y2="307.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="595" y1="307.8" x2="606.667" y2="305.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="606.667" y1="305.2" x2="618.333" y2="302.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="618.333" y1="302.2" x2="630" y2="298.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="630" y1="298.8" x2="641.667" y2="295" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="641.667" y1="295" x2="653.333" y2="290.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="653.333" y1="290.8" x2="665" y2="286.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="665" y1="286.2" x2="676.667" y2="281.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="676.667" y1="281.2" x2="688.333" y2="275.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="688.333" y1="275.8" x2="700" y2="270" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="700" y1="270" x2="711.667" y2="263.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="711.667" y1="263.8" x2="723.333" y2="257.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="723.333" y1="257.2" x2="735" y2="250.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="735" y1="250.2" x2="746.667" y2="242.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="746.667" y1="242.8" x2="758.333" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="758.333" y1="235" x2="770" y2="226.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="770" y1="226.8" x2="781.667" y2="218.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="781.667" y1="218.2" x2="793.333" y2="209.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="793.333" y1="209.2" x2="805" y2="199.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="805" y1="199.8" x2="816.667" y2="190" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="816.667" y1="190" x2="828.333" y2="179.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="828.333" y1="179.8" x2="840" y2="169.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="840" y1="169.2" x2="851.667" y2="158.2" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="851.667" y1="158.2" x2="863.333" y2="146.8" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="863.333" y1="146.8" x2="875" y2="135" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<text x="82" y="304.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Schematic trend within stated fit ranges</text>
-<text x="82" y="270.52" font-family="Arial,sans-serif" font-size="19" fill="#F6BC77">Not an activation threshold</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T: interface temperature</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">282.82–337.94 K: fit domain</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">4.2063; 1103.454 K; 39.77 K: coefficients</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p_sat,PFP: bulk equilibrium vapor pressure</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">1 bar = 10⁵ Pa</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Liquid and vapor coexist only when inventory and exchange permit</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">This curve is not a laser-fluence threshold</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E12</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E12 · Verified empirical PFP property correlation</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="787.2" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">280</tspan>
+</text>
+<line id="o006" x1="211.2" y1="528" x2="211.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="211.2" y1="144" x2="211.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="211.2" y="550.04">290</tspan>
+</text>
+<line id="o009" x1="326.4" y1="528" x2="326.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="326.4" y1="144" x2="326.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="326.4" y="550.04">300</tspan>
+</text>
+<line id="o012" x1="441.6" y1="528" x2="441.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="441.6" y1="144" x2="441.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="441.6" y="550.04">310</tspan>
+</text>
+<line id="o015" x1="556.8" y1="528" x2="556.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="556.8" y1="144" x2="556.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="556.8" y="550.04">320</tspan>
+</text>
+<line id="o018" x1="672" y1="528" x2="672" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="672" y1="144" x2="672" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="672" y="550.04">330</tspan>
+</text>
+<line id="o021" x1="787.2" y1="528" x2="787.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="787.2" y1="144" x2="787.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="787.2" y="550.04">340</tspan>
+</text>
+<line id="o024" x1="89.28" y1="483.575" x2="96" y2="483.575" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="96" y1="483.575" x2="787.2" y2="483.575" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="488.335">0.1</tspan>
+</text>
+<line id="o027" x1="89.28" y1="336" x2="96" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="96" y1="336" x2="787.2" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="340.76">1</tspan>
+</text>
+<line id="o030" x1="89.28" y1="188.425" x2="96" y2="188.425" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="96" y1="188.425" x2="787.2" y2="188.425" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="193.185">10</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="441.6" y="572.8">temperature T  (K)</tspan>
+</text>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">pₛₐₜ,PFP  (bar)</tspan>
+</text>
+<polyline id="o035" points="128.486,385.25 131.677,384.487 134.868,383.727 138.059,382.967 141.25,382.21 144.441,381.454 147.632,380.7 150.822,379.948 154.013,379.197 157.204,378.448 160.395,377.701 163.586,376.955 166.777,376.211 169.968,375.469 173.159,374.728 176.349,373.99 179.54,373.252 182.731,372.517 185.922,371.783 189.113,371.05 192.304,370.32 195.495,369.591 198.685,368.863 201.876,368.137 205.067,367.413 208.258,366.69 211.449,365.969 214.64,365.25 217.831,364.532 221.022,363.816 224.212,363.101 227.403,362.388 230.594,361.676 233.785,360.967 236.976,360.258 240.167,359.551 243.358,358.846 246.548,358.142 249.739,357.44 252.93,356.739 256.121,356.04 259.312,355.342 262.503,354.646 265.694,353.952 268.885,353.258 272.075,352.567 275.266,351.877 278.457,351.188 281.648,350.501 284.839,349.815 288.03,349.131 291.221,348.448 294.411,347.767 297.602,347.087 300.793,346.409 303.984,345.732 307.175,345.057 310.366,344.383 313.557,343.71 316.748,343.039 319.938,342.37 323.129,341.701 326.32,341.035 329.511,340.369 332.702,339.705 335.893,339.043 339.084,338.382 342.274,337.722 345.465,337.063 348.656,336.407 351.847,335.751 355.038,335.097 358.229,334.444 361.42,333.792 364.611,333.142 367.801,332.494 370.992,331.846 374.183,331.2 377.374,330.556 380.565,329.912 383.756,329.27 386.947,328.63 390.137,327.991 393.328,327.353 396.519,326.716 399.71,326.081 402.901,325.447 406.092,324.814 409.283,324.183 412.474,323.553 415.664,322.924 418.855,322.296 422.046,321.67 425.237,321.045 428.428,320.422 431.619,319.8 434.81,319.179 438,318.559 441.191,317.94 444.382,317.323 447.573,316.707 450.764,316.093 453.955,315.479 457.146,314.867 460.336,314.256 463.527,313.646 466.718,313.038 469.909,312.431 473.1,311.825 476.291,311.22 479.482,310.616 482.673,310.014 485.863,309.413 489.054,308.813 492.245,308.215 495.436,307.617 498.627,307.021 501.818,306.426 505.009,305.832 508.199,305.239 511.39,304.648 514.581,304.058 517.772,303.468 520.963,302.881 524.154,302.294 527.345,301.708 530.536,301.124 533.726,300.54 536.917,299.958 540.108,299.377 543.299,298.798 546.49,298.219 549.681,297.642 552.872,297.065 556.062,296.49 559.253,295.916 562.444,295.343 565.635,294.771 568.826,294.201 572.017,293.631 575.208,293.063 578.399,292.495 581.589,291.929 584.78,291.364 587.971,290.8 591.162,290.237 594.353,289.675 597.544,289.115 600.735,288.555 603.925,287.996 607.116,287.439 610.307,286.883 613.498,286.327 616.689,285.773 619.88,285.22 623.071,284.668 626.262,284.117 629.452,283.567 632.643,283.018 635.834,282.471 639.025,281.924 642.216,281.378 645.407,280.834 648.598,280.29 651.788,279.747 654.979,279.206 658.17,278.666 661.361,278.126 664.552,277.588 667.743,277.05 670.934,276.514 674.125,275.979 677.315,275.444 680.506,274.911 683.697,274.379 686.888,273.848 690.079,273.317 693.27,272.788 696.461,272.26 699.651,271.733 702.842,271.207 706.033,270.681 709.224,270.157 712.415,269.634 715.606,269.112 718.797,268.59 721.988,268.07 725.178,267.551 728.369,267.032 731.56,266.515 734.751,265.998 737.942,265.483 741.133,264.969 744.324,264.455 747.514,263.942 750.705,263.431 753.896,262.92 757.087,262.411 760.278,261.902 763.469,261.394" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o036" x1="96" y1="336" x2="787.2" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o037" cx="350.634" cy="336" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="364.074" y="359.267">1 bar at 302.1 K</tspan>
+</text>
+<ellipse id="o039" cx="247.488" cy="357.935" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="260.928" y="329.775">293 K: 0.71 bar</tspan>
+</text>
+<ellipse id="o041" cx="593.088" cy="289.898" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="606.528" y="261.738">323 K: 2.05 bar</tspan>
+</text>
+<rect id="o043" x="816" y="144" width="427.2" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="829.44" y="166.44">What the curve says</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="832.32" y="207.587">log₁₀(p/10⁵ Pa) = 4.2063 − 1103.454 K/(T −</tspan>
+<tspan x="832.32" y="227.253">39.77 K)</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="853.44" y="293.987">Valid only for 282.82 K ≤ T ≤ 337.94 K.</tspan>
+</text>
+<ellipse id="o047" cx="838.08" cy="288.733" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="853.44" y="323.92">It gives the equilibrium vapor pressure of</tspan>
+<tspan x="853.44" y="343.587">bulk liquid.</tspan>
+</text>
+<ellipse id="o049" cx="838.08" cy="318.667" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="853.44" y="374.187">Reaching it does not by itself start a</tspan>
+<tspan x="853.44" y="393.853">bubble: nucleation is a separate step.</tspan>
+</text>
+<ellipse id="o051" cx="838.08" cy="368.933" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o052" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">At 293 K the saturation pressure is below 1 bar; the liquid is superheated only when the surroundings or the liquid pressure sit</tspan>
+<tspan x="97.92" y="637.173">below the curve.</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Empirical PFP correlation of Eq. C2-E12 (log scale).</tspan>
+</text>
 </svg>

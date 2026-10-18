@@ -1,54 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E34 The probability formula does not replace the missing material-specific rate.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E34 | Physical-variable diagram</text>
-<rect x="90" y="140" width="320" height="110" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="102" y="169.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Local rate J(T,p) in V_d</text>
-<line x1="420" y1="195" x2="510" y2="195" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="550" y1="325" x2="900" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="550" y1="325" x2="550" y2="125" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="822" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Integrated hazard</text>
-<text x="542" y="113.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">P_act</text>
-<line x1="555" y1="320" x2="564.429" y2="304.803" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="564.429" y1="304.803" x2="573.857" y2="290.855" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="573.857" y1="290.855" x2="583.286" y2="278.053" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="583.286" y1="278.053" x2="592.714" y2="266.302" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="592.714" y1="266.302" x2="602.143" y2="255.516" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="602.143" y1="255.516" x2="611.571" y2="245.617" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="611.571" y1="245.617" x2="621" y2="236.53" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="621" y1="236.53" x2="630.429" y2="228.19" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="630.429" y1="228.19" x2="639.857" y2="220.535" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="639.857" y1="220.535" x2="649.286" y2="213.509" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="649.286" y1="213.509" x2="658.714" y2="207.06" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="658.714" y1="207.06" x2="668.143" y2="201.141" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="668.143" y1="201.141" x2="677.571" y2="195.708" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="677.571" y1="195.708" x2="687" y2="190.721" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="687" y1="190.721" x2="696.429" y2="186.144" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="696.429" y1="186.144" x2="705.857" y2="181.943" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="705.857" y1="181.943" x2="715.286" y2="178.087" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="715.286" y1="178.087" x2="724.714" y2="174.547" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="724.714" y1="174.547" x2="734.143" y2="171.299" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="734.143" y1="171.299" x2="743.571" y2="168.317" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="743.571" y1="168.317" x2="753" y2="165.58" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="753" y1="165.58" x2="762.429" y2="163.068" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="762.429" y1="163.068" x2="771.857" y2="160.763" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="771.857" y1="160.763" x2="781.286" y2="158.646" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="781.286" y1="158.646" x2="790.714" y2="156.704" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="790.714" y1="156.704" x2="800.143" y2="154.921" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="800.143" y1="154.921" x2="809.571" y2="153.285" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="809.571" y1="153.285" x2="819" y2="151.783" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="819" y1="151.783" x2="828.429" y2="150.404" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="828.429" y1="150.404" x2="837.857" y2="149.139" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="837.857" y1="149.139" x2="847.286" y2="147.977" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="847.286" y1="147.977" x2="856.714" y2="146.911" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="856.714" y1="146.911" x2="866.143" y2="145.933" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="866.143" y1="145.933" x2="875.571" y2="145.035" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="875.571" y1="145.035" x2="885" y2="144.211" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<text x="112" y="319.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Integrate the local rate over space and time.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T, p: local hot state</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">V_d(t′): available liquid</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">P_act: activation probability</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">J: supplied event rate</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t, t′, dV: event integration</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">A rate law or calibrated activation law is still required</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">One absent event does not prove impossibility</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E34</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E34 · Original activation-probability formula</tspan>
+</text>
+<text id="o001" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="638.4" y="119.787">P_act = 1 − exp[ − ∫₀ᵗ ∫ J(T, p) dV dt′ ]    (V = V_d(t′))</tspan>
+</text>
+<rect id="o002" x="57.6" y="192" width="374.4" height="259.2" rx="20.736" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="22.6667" fill="#F28BA0" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="244.8" y="222.107">J(T, p)</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="244.8" y="289.733">nucleation rate</tspan>
+<tspan x="244.8" y="310.187">m⁻³ s⁻¹</tspan>
+</text>
+<text id="o005" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="244.8" y="398.493">must be supplied by the material</tspan>
+</text>
+<text id="o006" font-family="Arial,sans-serif" font-size="26.6667" fill="#B4C7D2" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="444.48" y="311.787">×</tspan>
+</text>
+<rect id="o007" x="456" y="192" width="374.4" height="259.2" rx="20.736" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="643.2" y="222.107">V_d(t′)</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="643.2" y="289.733">liquid volume that</tspan>
+<tspan x="643.2" y="310.187">can nucleate</tspan>
+<tspan x="643.2" y="330.64">m³</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="643.2" y="398.493">shrinks as PFC leaves the liquid</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="26.6667" fill="#B4C7D2" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="842.88" y="311.787">×</tspan>
+</text>
+<rect id="o012" x="854.4" y="192" width="374.4" height="259.2" rx="20.736" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="22.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1041.6" y="222.107">t′ from 0 to t</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1041.6" y="289.733">time spent in the</tspan>
+<tspan x="1041.6" y="310.187">activating state</tspan>
+<tspan x="1041.6" y="330.64">s</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1041.6" y="398.493">set by the heating history</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="59.52" y="500.933">The exponent is the expected number of events. Independent events and a finite integrated rate give a probability between 0 and</tspan>
+<tspan x="59.52" y="521.387">1.</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="563.88">The formula organises the problem but does not replace the missing, material-specific J(T, p).</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Activation probability of Eq. C2-E34 (Poisson model).</tspan>
+</text>
 </svg>

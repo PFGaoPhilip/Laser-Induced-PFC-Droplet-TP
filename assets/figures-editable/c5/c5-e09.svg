@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E09 · Dimensionless groups and validity range of the model</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E09 · Dimensionless groups and validity range of the model</tspan>
+</text>
+<rect id="o001" x="76.8" y="144" width="547.2" height="182.4" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="350.4" y="175.173">Mach number</tspan>
+</text>
+<text id="o003" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="350.4" y="230.813">M = U / c_0 = 0.0609</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="350.4" y="287.187">tested 0.031 to 0.092</tspan>
+</text>
+<rect id="o005" x="662.4" y="144" width="547.2" height="182.4" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="936" y="175.173">Sound crossing of the radius</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="936" y="230.813">t_a = a / c_0 = 0.615 ns</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="936" y="287.187">for a = 1 µm</tspan>
+</text>
+<rect id="o009" x="76.8" y="364.8" width="547.2" height="182.4" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="350.4" y="395.973">Compression behind the shock</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="350.4" y="451.613">ρ_1 / ρ_j = 1.0594</tspan>
+</text>
+<text id="o012" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="350.4" y="507.987">only 5.9% denser</tspan>
+</text>
+<rect id="o013" x="662.4" y="364.8" width="547.2" height="182.4" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="936" y="395.973">Barotropic against energy law</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="936" y="451.613">(p_H − p_B) / p_H = 0.268%</tspan>
+</text>
+<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="936" y="507.987">at the nominal speed</tspan>
+</text>
+<text id="o017" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="79.68" y="618.54">Small Mach number and small compression let the density-only law stand in for the energy law.</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Values from Eqs. (C5-E04) and (C5-E05) and the sensitivity cases.</tspan>
+</text>
+</svg>

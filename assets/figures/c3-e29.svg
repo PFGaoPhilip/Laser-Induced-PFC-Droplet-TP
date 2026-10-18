@@ -1,59 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E29</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E29 · Declared optical and mechanical allocation</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E29 · Declared optical and mechanical allocation</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">E_L = 25 μJ</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="113.227">From 25 µJ of laser light to 2 nJ of jet kinetic energy (nJ, log axis)</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">E_abs,total = 10 μJ</tspan>
+<text id="o002" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="171.107">incident laser energy E_L</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">E_j,total = 50 nJ</tspan>
+<rect id="o003" x="585.6" y="153.6" width="509.232" height="43.2" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1104.43" y="173.987">25000 nJ</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Each energy allocation belongs to the same finite source budget.</tspan>
+<text id="o005" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="238.307">absorbed E_abs,tot = 0.8 × 0.5 × E_L</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• E_L = 25 μJ incoming</tspan>
+<rect id="o006" x="585.6" y="220.8" width="463.155" height="43.2" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1058.35" y="241.187">10000 nJ</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• f_geo = 0.8 intercepted</tspan>
+<text id="o008" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="305.507">per site E_abs,site = E_abs,tot / 25</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• A_λ = 0.5 absorbed; λ wavelength</tspan>
+<rect id="o009" x="585.6" y="288" width="301.289" height="43.2" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="896.489" y="308.387">400 nJ</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• N_d = 25 sites</tspan>
+<text id="o011" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="372.707">to PFC by deadline f_T E_abs,site (f_T = 0.40)</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• E_abs,tot = 10 μJ</tspan>
+<rect id="o012" x="585.6" y="355.2" width="255.212" height="43.2" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="850.412" y="375.587">160 nJ</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• E_abs,site = 400 nJ</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="439.907">jet kinetic energy Eⱼ = ηⱼ E_abs,site</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• f_T = 0.40 → E_PFC,deadline</tspan>
+<rect id="o015" x="585.6" y="422.4" width="34.8559" height="43.2" fill="#A8E6A1" stroke="#A8E6A1" stroke-width="1.33333" opacity="0.85"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="630.056" y="442.787">2 nJ</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="520.007">• η_j = 0.005 → E_j, E_j,tot</tspan>
+<rect id="o017" x="48" y="470.4" width="576" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="64.32" y="495.587">Efficiencies are stipulated: f_geo = 0.8, A_λ = 0.5, f_T =</tspan>
+<tspan x="64.32" y="515.253">0.40, ηⱼ = 0.005.</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Thermal preparation is checked on its own timescale</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="64.32" y="548.387">N_d = 25 sites share the energy equally.</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">η_j is an assumption to be measured or solved</tspan>
+<rect id="o020" x="643.2" y="470.4" width="595.2" height="139.2" rx="11.136" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="656.64" y="492.293">Total jet energy</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="659.52" y="535.627">Eⱼ,tot = N_d Eⱼ = 25 × 2.00 nJ = 50.0 nJ</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Allocation chain of Eq. C3-E29: each stage uses only the energy left by the previous one (no double counting).</tspan>
 </text>
 </svg>

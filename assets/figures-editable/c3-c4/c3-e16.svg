@@ -1,53 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E16</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E16 · Pressure-impulse control and distinct focusing budgets</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E16 · Pressure-impulse control and distinct focusing budgets</tspan>
 </text>
-<rect id="o001" x="105.6" y="148.8" width="960" height="105.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="134.4" y1="201.6" x2="1036.8" y2="201.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="25.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="108.48" y="121.027">z = 0: Π = Π₀</tspan>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="162.574" y1="528" x2="162.574" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="162.574" y1="144" x2="162.574" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="162.574" y="550.04">1e-13</tspan>
 </text>
-<text id="o004" font-family="Arial,sans-serif" font-size="25.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="799.68" y="121.027">z = L: Π = 0</tspan>
+<line id="o006" x1="383.728" y1="528" x2="383.728" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="383.728" y1="144" x2="383.728" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="383.728" y="550.04">1e-12</tspan>
 </text>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="252.48" y="322.32">Δu = −∇Π/ρ; Π decreases in the launch direction.</tspan>
+<line id="o009" x1="604.883" y1="528" x2="604.883" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="604.883" y1="144" x2="604.883" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="604.883" y="550.04">1e-11</tspan>
 </text>
-<line id="o006" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• Π₀ at z = 0 source</tspan>
+<line id="o012" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="532.76">3</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• Π = 0 at z = L free end</tspan>
+<line id="o015" x1="89.28" y1="461.072" x2="96" y2="461.072" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="96" y1="461.072" x2="710.4" y2="461.072" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="465.832">10</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• A column area; L length</tspan>
+<line id="o018" x1="89.28" y1="400" x2="96" y2="400" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="96" y1="400" x2="710.4" y2="400" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="404.76">30</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• Π(z), ∇Π → Δu</tspan>
+<line id="o021" x1="89.28" y1="333.072" x2="96" y2="333.072" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="96" y1="333.072" x2="710.4" y2="333.072" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="337.832">100</tspan>
 </text>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• U = Π₀/(ρL)</tspan>
+<line id="o024" x1="89.28" y1="272" x2="96" y2="272" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="96" y1="272" x2="710.4" y2="272" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="276.76">300</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• m = ρAL; J = Π₀A</tspan>
+<line id="o027" x1="89.28" y1="205.072" x2="96" y2="205.072" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="96" y1="205.072" x2="710.4" y2="205.072" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="209.832">1000</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• E, fixed J vs fixed E</tspan>
+<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">liquid mass m  (kg)</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="520.007">• p, p_ref, x, t₀, τ_p, t</tspan>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">jet speed U  (m/s)</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Fixed impulse per area is not fixed total impulse</tspan>
+<polyline id="o032" points="96.2278,154.12 102.483,157.74 108.738,161.36 114.992,164.98 121.247,168.601 127.502,172.221 133.757,175.841 140.012,179.461 146.267,183.081 152.522,186.702 158.776,190.322 165.031,193.942 171.286,197.562 177.541,201.182 183.796,204.803 190.051,208.423 196.306,212.043 202.561,215.663 208.815,219.283 215.07,222.904 221.325,226.524 227.58,230.144 233.835,233.764 240.09,237.384 246.345,241.005 252.599,244.625 258.854,248.245 265.109,251.865 271.364,255.486 277.619,259.106 283.874,262.726 290.129,266.346 296.384,269.966 302.638,273.587 308.893,277.207 315.148,280.827 321.403,284.447 327.658,288.067 333.913,291.688 340.168,295.308 346.423,298.928 352.677,302.548 358.932,306.168 365.187,309.789 371.442,313.409 377.697,317.029 383.952,320.649 390.207,324.269 396.461,327.89 402.716,331.51 408.971,335.13 415.226,338.75 421.481,342.37 427.736,345.991 433.991,349.611 440.246,353.231 446.5,356.851 452.755,360.471 459.01,364.092 465.265,367.712 471.52,371.332 477.775,374.952 484.03,378.572 490.284,382.193 496.539,385.813 502.794,389.433 509.049,393.053 515.304,396.673 521.559,400.294 527.814,403.914 534.069,407.534 540.323,411.154 546.578,414.774 552.833,418.395 559.088,422.015 565.343,425.635 571.598,429.255 577.853,432.875 584.108,436.496 590.362,440.116 596.617,443.736 602.872,447.356 609.127,450.976 615.382,454.597 621.637,458.217 627.892,461.837 634.146,465.457 640.401,469.077 646.656,472.698 652.911,476.318 659.166,479.938 665.421,483.558 671.676,487.178 677.931,490.799 684.185,494.419 690.44,498.039 696.695,501.659 702.95,505.279 709.205,508.9" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<polyline id="o033" points="96.2278,275.34 102.483,277.15 108.738,278.96 114.992,280.77 121.247,282.58 127.502,284.39 133.757,286.2 140.012,288.01 146.267,289.82 152.522,291.631 158.776,293.441 165.031,295.251 171.286,297.061 177.541,298.871 183.796,300.681 190.051,302.491 196.306,304.301 202.561,306.111 208.815,307.921 215.07,309.732 221.325,311.542 227.58,313.352 233.835,315.162 240.09,316.972 246.345,318.782 252.599,320.592 258.854,322.402 265.109,324.212 271.364,326.023 277.619,327.833 283.874,329.643 290.129,331.453 296.384,333.263 302.638,335.073 308.893,336.883 315.148,338.693 321.403,340.503 327.658,342.313 333.913,344.124 340.168,345.934 346.423,347.744 352.677,349.554 358.932,351.364 365.187,353.174 371.442,354.984 377.697,356.794 383.952,358.604 390.207,360.414 396.461,362.225 402.716,364.035 408.971,365.845 415.226,367.655 421.481,369.465 427.736,371.275 433.991,373.085 440.246,374.895 446.5,376.705 452.755,378.515 459.01,380.326 465.265,382.136 471.52,383.946 477.775,385.756 484.03,387.566 490.284,389.376 496.539,391.186 502.794,392.996 509.049,394.806 515.304,396.616 521.559,398.427 527.814,400.237 534.069,402.047 540.323,403.857 546.578,405.667 552.833,407.477 559.088,409.287 565.343,411.097 571.598,412.907 577.853,414.717 584.108,416.528 590.362,418.338 596.617,420.148 602.872,421.958 609.127,423.768 615.382,425.578 621.637,427.388 627.892,429.198 634.146,431.008 640.401,432.818 646.656,434.629 652.911,436.439 659.166,438.249 665.421,440.059 671.676,441.869 677.931,443.679 684.185,445.489 690.44,447.299 696.695,449.109 702.95,450.919 709.205,452.73" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o034" cx="515.107" cy="396.56" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="185.827" y="423.12">3.93 ng, 31.9 m/s: the declared jet</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">At fixed total impulse, lower mass needs more energy</tspan>
+<text id="o036" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="123.111" y="205.176">fixed impulse J: U = J/m</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="238.748" y="328.376">fixed energy E: U = √(2E/m)</tspan>
+</text>
+<rect id="o038" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="166.44">Two different budgets</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="207.587">Π(z) = Π₀(1 − z/L),  U = Π₀/(ρL)</tspan>
+<tspan x="755.52" y="227.253">m = ρAL,  J = Π₀A = mU</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="293.987">J = 1.253e-10 N s,   E = 2.00 nJ</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="776.64" y="346.24">Quarter the mass at fixed J: speed ×4, energy ×4.</tspan>
+</text>
+<ellipse id="o043" cx="761.28" cy="341.12" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="776.64" y="375.36">Quarter the mass at fixed E: speed ×2, momentum ÷2.</tspan>
+</text>
+<ellipse id="o045" cx="761.28" cy="370.24" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="776.64" y="404.48">The pressure-impulse field and the total energy must</tspan>
+<tspan x="776.64" y="423.36">both be satisfied.</tspan>
+</text>
+<ellipse id="o047" cx="761.28" cy="399.36" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Focusing a given source into a lighter jet buys speed only at a price set by which quantity is conserved.</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Pressure-impulse column and focusing budgets of Eq. C3-E16 (m = 3.927 ng, E = 2 nJ).</tspan>
 </text>
 </svg>

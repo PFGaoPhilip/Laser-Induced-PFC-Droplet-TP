@@ -1,43 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">C5-E20 — Pressure gradients drive solvent through the network, producing a length-dependent drainage time.</title>
-<desc id="desc">ppore: solvent pressure; jl: solvent relative to network; kperm: network permeability; μl: solvent resistance; Md: storage modulus; Lg, tporo, Dporo, t; Drainage redistributes solvent over Lg; Small perturbation and constant-coefficient assumptions are separate</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E20 · Physical variable map / 物理变量图</text>
-<path d="M105 112 V266" class="thin"/>
-<path d="M150 112 V266" class="thin"/>
-<path d="M195 112 V266" class="thin"/>
-<path d="M240 112 V266" class="thin"/>
-<path d="M285 112 V266" class="thin"/>
-<path d="M330 112 V266" class="thin"/>
-<path d="M375 112 V266" class="thin"/>
-<path d="M420 112 V266" class="thin"/>
-<path d="M465 112 V266" class="thin"/>
-<path d="M510 112 V266" class="thin"/>
-<path d="M555 112 V266" class="thin"/>
-<path d="M600 112 V266" class="thin"/>
-<path d="M96 116 H622" class="thin"/>
-<path d="M96 154 H622" class="thin"/>
-<path d="M96 192 H622" class="thin"/>
-<path d="M96 230 H622" class="thin"/>
-<path d="M96 268 H622" class="thin"/>
-<path d="M118 140 H710" class="arrow"/>
-<path d="M118 193 H710" class="arrow"/>
-<path d="M118 244 H710" class="arrow"/>
-<text x="105" y="88" class="">Solvent through network / 溶剂穿过网络</text>
-<text x="737" y="180" class="">jl →</text>
-<path d="M510 290 H215" class="arrow"/>
-<text x="561" y="296" class="">∇ppore ←</text>
-<text x="156" y="334" class="">Lg , kperm , μl , Md ; tporo</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• ppore: solvent pressure</text>
-<text x="30" y="433" class="muted">• jl: solvent relative to network</text>
-<text x="30" y="457" class="muted">• kperm: network permeability</text>
-<text x="30" y="481" class="muted">• μl: solvent resistance</text>
-<text x="30" y="505" class="muted">• Md: storage modulus</text>
-<text x="30" y="529" class="muted">• Lg, tporo, Dporo, t</text>
-<text x="30" y="571" class="muted">Drainage redistributes solvent over Lg</text>
-<text x="30" y="594" class="muted">Small perturbation and constant-coefficient assumptions are separate</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E20 · Reference formulas: speed bound and pressure map together</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E20 · Reference formulas: speed bound and pressure map together</tspan>
+</text>
+<rect id="o001" x="48" y="220.8" width="278.4" height="163.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18.6667" fill="#B4C7D2" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="187.2" y="251.973">Chapter 3</tspan>
+</text>
+<text id="o003" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="187.2" y="320.633">energy E_av, mass m_j</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="187.2" y="361.28">bound</tspan>
+</text>
+<line id="o005" x1="326.4" y1="302.4" x2="393.6" y2="302.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<rect id="o006" x="345.6" y="220.8" width="278.4" height="163.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="18.6667" fill="#B4C7D2" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="484.8" y="251.973">Speed ceiling</tspan>
+</text>
+<text id="o008" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="484.8" y="320.633">U ≤ √(2 E_av / m_j)</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="484.8" y="361.28">bound</tspan>
+</text>
+<line id="o010" x1="624" y1="302.4" x2="691.2" y2="302.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<rect id="o011" x="643.2" y="220.8" width="278.4" height="163.2" fill="#213E4B" stroke="#F2B880" stroke-width="2.66667" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="782.4" y="251.973">Prescribed speed U</tspan>
+</text>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="782.4" y="320.633">taken as given here</tspan>
+</text>
+<text id="o014" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="782.4" y="361.28">input</tspan>
+</text>
+<line id="o015" x1="921.6" y1="302.4" x2="988.8" y2="302.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="3.33333" opacity="1" marker-end="url(#head)"/>
+<rect id="o016" x="940.8" y="220.8" width="278.4" height="163.2" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1080" y="251.973">Pressure map</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1080" y="320.633">p_wall = f(U)</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1080" y="361.28">computed</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="middle" opacity="1">
+<tspan x="1084.8" y="454.32">centre: p_H</tspan>
+<tspan x="1084.8" y="475.56">full sensor: 0.931 p_H</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="50.88" y="535.68">The bound limits the speed. The map converts a speed to a pressure.</tspan>
+<tspan x="50.88" y="557.707">The two claims meet only at the prescribed speed.</tspan>
+</text>
+<text id="o022" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="50.88" y="628.293">A bound is not a prediction; a map is not a measurement.</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Chain of Eq. (C5-E20); Chapter 3 bound from Eq. (C3-E32).</tspan>
+</text>
 </svg>

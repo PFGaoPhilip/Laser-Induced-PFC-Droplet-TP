@@ -1,63 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E04</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E04 · Linear-plate energy model</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E04 · Linear-plate energy model</tspan>
 </text>
-<rect id="o001" x="124.8" y="124.8" width="720" height="225.6" fill="none" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="211.2">Reference film plane Ω_f</tspan>
-<tspan x="290.88" y="242.667">w(x,y,t), variation δw</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Three energies of a vibrating film (shaded: where each is evaluated)</tspan>
 </text>
-<line id="o003" x1="849.6" y1="235.2" x2="969.6" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o004" font-family="Arial,sans-serif" font-size="21.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="991.68" y="232.32">n: outward</tspan>
-<tspan x="991.68" y="257.493">in-plane normal</tspan>
+<rect id="o002" x="48" y="144" width="379.2" height="384" rx="30.336" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="18" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="166.44">Kinetic K_f</tspan>
 </text>
-<line id="o005" x1="144" y1="369.6" x2="336" y2="369.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="358.08" y="374.813">x</tspan>
+<line id="o004" x1="81.6" y1="316.8" x2="81.6" y2="299.71" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o005" x1="129.6" y1="316.8" x2="129.6" y2="268.916" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="177.6" y1="316.8" x2="177.6" y2="247.606" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="225.6" y1="316.8" x2="225.6" y2="240" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o008" x1="273.6" y1="316.8" x2="273.6" y2="247.606" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o009" x1="321.6" y1="316.8" x2="321.6" y2="268.916" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o010" x1="369.6" y1="316.8" x2="369.6" y2="299.71" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o011" x1="76.8" y1="316.8" x2="393.6" y2="316.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="14.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="237.6" y="421.947">m_A/2 ∫ ẇ² dA</tspan>
 </text>
-<line id="o007" x1="144" y1="369.6" x2="144" y2="278.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="79.68" y="317.213">y</tspan>
+<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="237.6" y="504.093">velocity of every patch</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="194.88" y="99.4267">Fixed boundary: δw = 0; ∂ₙδw = 0</tspan>
+<rect id="o014" x="446.4" y="144" width="379.2" height="384" rx="30.336" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="459.84" y="166.44">Bending U_b</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="511.68" y="389.213">Curvature stores U_b; slope stores U_T.</tspan>
+<polyline id="o016" points="475.2,316.8 477.862,316.75 480.524,316.601 483.187,316.355 485.849,316.018 488.511,315.596 491.173,315.098 493.835,314.533 496.497,313.914 499.16,313.253 501.822,312.565 504.484,311.865 507.146,311.169 509.808,310.494 512.471,309.857 515.133,309.275 517.795,308.767 520.457,308.349 523.119,308.038 525.782,307.851 528.444,307.802 531.106,307.906 533.768,308.175 536.43,308.622 539.092,309.255 541.755,310.083 544.417,311.111 547.079,312.345 549.741,313.785 552.403,315.431 555.066,317.281 557.728,319.331 560.39,321.572 563.052,323.997 565.714,326.593 568.376,329.348 571.039,332.246 573.701,335.269 576.363,338.4 579.025,341.617 581.687,344.9 584.35,348.225 587.012,351.569 589.674,354.907 592.336,358.215 594.998,361.467 597.661,364.64 600.323,367.707 602.985,370.645 605.647,373.431 608.309,376.042 610.971,378.458 613.634,380.658 616.296,382.624 618.958,384.341 621.62,385.794 624.282,386.972 626.945,387.863 629.607,388.462 632.269,388.762 634.931,388.762 637.593,388.462 640.255,387.863 642.918,386.972 645.58,385.794 648.242,384.341 650.904,382.624 653.566,380.658 656.229,378.458 658.891,376.042 661.553,373.431 664.215,370.645 666.877,367.707 669.539,364.64 672.202,361.467 674.864,358.215 677.526,354.907 680.188,351.569 682.85,348.225 685.513,344.9 688.175,341.617 690.837,338.4 693.499,335.269 696.161,332.246 698.824,329.348 701.486,326.593 704.148,323.997 706.81,321.572 709.472,319.331 712.134,317.281 714.797,315.431 717.459,313.785 720.121,312.345 722.783,311.111 725.445,310.083 728.108,309.255 730.77,308.622 733.432,308.175 736.094,307.906 738.756,307.802 741.418,307.851 744.081,308.038 746.743,308.349 749.405,308.767 752.067,309.275 754.729,309.857 757.392,310.494 760.054,311.169 762.716,311.865 765.378,312.565 768.04,313.253 770.703,313.914 773.365,314.533 776.027,315.098 778.689,315.596 781.351,316.018 784.013,316.355 786.676,316.601 789.338,316.75 792,316.8" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="486.72" y="201.693">sharp bends cost most</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• Ω_f, dA — film plane</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="14.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="636" y="421.947">D_f/2 ∫ [wₓₓ² + w_yy² + 2ν wₓₓ w_yy + 2(1−ν)</tspan>
+<tspan x="636" y="439.253">w_xy²] dA</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• x, y — in-plane directions</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="636" y="504.093">curvature of the surface</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• w, ẇ, t — film motion</tspan>
+<rect id="o020" x="844.8" y="144" width="379.2" height="384" rx="30.336" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="858.24" y="166.44">Tension U_T</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• w_xx, w_yy, w_xy — curvature</tspan>
+<polyline id="o022" points="873.6,316.8 876.262,314.773 878.924,312.747 881.587,310.724 884.249,308.705 886.911,306.692 889.573,304.686 892.235,302.688 894.897,300.7 897.56,298.724 900.222,296.76 902.884,294.809 905.546,292.875 908.208,290.957 910.871,289.057 913.533,287.176 916.195,285.316 918.857,283.478 921.519,281.663 924.182,279.872 926.844,278.108 929.506,276.37 932.168,274.66 934.83,272.98 937.492,271.331 940.155,269.713 942.817,268.128 945.479,266.576 948.141,265.06 950.803,263.58 953.466,262.137 956.128,260.732 958.79,259.366 961.452,258.04 964.114,256.755 966.776,255.512 969.439,254.312 972.101,253.155 974.763,252.043 977.425,250.975 980.087,249.954 982.75,248.979 985.412,248.051 988.074,247.172 990.736,246.341 993.398,245.559 996.061,244.826 998.723,244.144 1001.38,243.512 1004.05,242.932 1006.71,242.403 1009.37,241.926 1012.03,241.501 1014.7,241.128 1017.36,240.808 1020.02,240.541 1022.68,240.328 1025.34,240.167 1028.01,240.06 1030.67,240.007 1033.33,240.007 1035.99,240.06 1038.66,240.167 1041.32,240.328 1043.98,240.541 1046.64,240.808 1049.3,241.128 1051.97,241.501 1054.63,241.926 1057.29,242.403 1059.95,242.932 1062.62,243.512 1065.28,244.144 1067.94,244.826 1070.6,245.559 1073.26,246.341 1075.93,247.172 1078.59,248.051 1081.25,248.979 1083.91,249.954 1086.57,250.975 1089.24,252.043 1091.9,253.155 1094.56,254.312 1097.22,255.512 1099.89,256.755 1102.55,258.04 1105.21,259.366 1107.87,260.732 1110.53,262.137 1113.2,263.58 1115.86,265.06 1118.52,266.576 1121.18,268.128 1123.85,269.713 1126.51,271.331 1129.17,272.98 1131.83,274.66 1134.49,276.37 1137.16,278.108 1139.82,279.872 1142.48,281.663 1145.14,283.478 1147.81,285.316 1150.47,287.176 1153.13,289.057 1155.79,290.957 1158.45,292.875 1161.12,294.809 1163.78,296.76 1166.44,298.724 1169.1,300.7 1171.76,302.688 1174.43,304.686 1177.09,306.692 1179.75,308.705 1182.41,310.724 1185.08,312.747 1187.74,314.773 1190.4,316.8" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<line id="o023" x1="873.6" y1="316.8" x2="960" y2="259.191" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1" stroke-dasharray="6 4"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="885.12" y="201.693">steep slopes cost most</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• D_f, ν_f — bending</tspan>
+<text id="o025" font-family="Arial,sans-serif" font-size="14.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1034.4" y="421.947">T₀/2 ∫ |∇w|² dA</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• m_A → K_f</tspan>
+<text id="o026" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1034.4" y="504.093">slope of the surface</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• T₀ → U_T</tspan>
+<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="572.387">Bending is stored by curvature, tension by slope, kinetic energy by velocity: three separate integrals over the same film Ω_f.</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="520.007">• U_b — shape energy</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="49.92" y="624.64">Valid for small deflection, uniform thin plate, with in-plane tension T₀ taken as given.</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Clamped edge: displacement and normal slope fixed.</tspan>
-</text>
-<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Linear-plate energies of Eq. C4-E04; the pictures are schematic.</tspan>
 </text>
 </svg>

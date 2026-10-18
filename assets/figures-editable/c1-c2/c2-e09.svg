@@ -1,24 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E09 Compare heat penetration with the distance to the PFC, not only with beam width.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E09 | Physical-variable diagram</text>
-<rect x="100" y="125" width="250" height="200" fill="#F6BC77" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<rect x="350" y="125" width="400" height="200" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="127" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#142632">Absorber / side A</text>
-<text x="467" y="172.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">PFC / side B</text>
-<line x1="250" y1="235" x2="520" y2="235" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="382" y="280.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">q; normal A → B</text>
-<text x="102" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_A</text>
-<text x="582" y="111.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">T_B</text>
-<text x="117" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Thermal path and contact are distinct from optical deposition.</text>
-<rect x="351" y="126" width="18" height="198" fill="#F6BC77" stroke="none" stroke-width="1.9500000000000002"/>
-<text x="772" y="219.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">δ_T</text>
-<text x="772" y="254.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">≪ L_h</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L_h: absorber-to-core heating distance</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">α = k/(ρc_p)</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t_th: diffusion time</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">δ_T: penetration during τ_h</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ΔT: thermal change</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">τ_h: available heating duration</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Long distance costs time quadratically</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Optical pulse duration is not automatically whole-core heating duration</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E09</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E09 · Diffusive scaling derived from the heat equation</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="633.6" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">1e-09</tspan>
+</text>
+<line id="o006" x1="275.2" y1="528" x2="275.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="275.2" y1="144" x2="275.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="275.2" y="550.04">1e-07</tspan>
+</text>
+<line id="o009" x1="454.4" y1="528" x2="454.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="454.4" y1="144" x2="454.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="454.4" y="550.04">1e-05</tspan>
+</text>
+<line id="o012" x1="633.6" y1="528" x2="633.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="633.6" y1="144" x2="633.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="633.6" y="550.04">1e-03</tspan>
+</text>
+<line id="o015" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="89.28" y1="432" x2="96" y2="432" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="96" y1="432" x2="633.6" y2="432" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="436.76">1e-08</tspan>
+</text>
+<line id="o019" x1="89.28" y1="336" x2="96" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="336" x2="633.6" y2="336" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="340.76">1e-07</tspan>
+</text>
+<line id="o022" x1="89.28" y1="240" x2="96" y2="240" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="240" x2="633.6" y2="240" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="244.76">1e-06</tspan>
+</text>
+<line id="o025" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="144" x2="633.6" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">1e-05</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="364.8" y="572.8">heating time τₕ  (s)</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">penetration δ_T  (m)</tspan>
+</text>
+<polyline id="o030" points="96,447.782 101.43,444.873 106.861,441.964 112.291,439.055 117.721,436.146 123.152,433.237 128.582,430.328 134.012,427.419 139.442,424.509 144.873,421.6 150.303,418.691 155.733,415.782 161.164,412.873 166.594,409.964 172.024,407.055 177.455,404.146 182.885,401.237 188.315,398.328 193.745,395.419 199.176,392.509 204.606,389.6 210.036,386.691 215.467,383.782 220.897,380.873 226.327,377.964 231.758,375.055 237.188,372.146 242.618,369.237 248.048,366.328 253.479,363.419 258.909,360.509 264.339,357.6 269.77,354.691 275.2,351.782 280.63,348.873 286.061,345.964 291.491,343.055 296.921,340.146 302.352,337.237 307.782,334.328 313.212,331.419 318.642,328.509 324.073,325.6 329.503,322.691 334.933,319.782 340.364,316.873 345.794,313.964 351.224,311.055 356.655,308.146 362.085,305.237 367.515,302.328 372.945,299.419 378.376,296.509 383.806,293.6 389.236,290.691 394.667,287.782 400.097,284.873 405.527,281.964 410.958,279.055 416.388,276.146 421.818,273.237 427.248,270.328 432.679,267.419 438.109,264.509 443.539,261.6 448.97,258.691 454.4,255.782 459.83,252.873 465.261,249.964 470.691,247.055 476.121,244.146 481.552,241.237 486.982,238.328 492.412,235.419 497.842,232.509 503.273,229.6 508.703,226.691 514.133,223.782 519.564,220.873 524.994,217.964 530.424,215.055 535.855,212.146 541.285,209.237 546.715,206.328 552.145,203.419 557.576,200.509 563.006,197.6 568.436,194.691 573.867,191.782 579.297,188.873 584.727,185.964 590.158,183.055 595.588,180.146 601.018,177.237 606.448,174.328 611.879,171.419 617.309,168.509 622.739,165.6 628.17,162.691 633.6,159.782" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o031" cx="185.6" cy="399.782" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="199.04" y="371.622">δ_T ≈ 22 nm at 10 ns</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="401.372" y="380.736">δ_T ~ √(α τₕ)</tspan>
+</text>
+<line id="o034" x1="710.4" y1="528" x2="1238.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o035" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o036" x1="710.4" y1="528" x2="710.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o037" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="550.04">1e-08</tspan>
+</text>
+<line id="o039" x1="974.4" y1="528" x2="974.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o040" x1="974.4" y1="144" x2="974.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="974.4" y="550.04">1e-06</tspan>
+</text>
+<line id="o042" x1="1238.4" y1="528" x2="1238.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o043" x1="1238.4" y1="144" x2="1238.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1238.4" y="550.04">1e-04</tspan>
+</text>
+<line id="o045" x1="703.68" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o046" x1="703.68" y1="374.4" x2="710.4" y2="374.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o047" x1="710.4" y1="374.4" x2="1238.4" y2="374.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="698.88" y="379.16">1e-05</tspan>
+</text>
+<line id="o049" x1="703.68" y1="220.8" x2="710.4" y2="220.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o050" x1="710.4" y1="220.8" x2="1238.4" y2="220.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o051" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="698.88" y="225.56">1e-01</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="974.4" y="572.8">distance Lₕ  (m)</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="654.72" y="122.56">diffusion time tₜₕ  (s)</tspan>
+</text>
+<polyline id="o054" points="710.4,515.374 715.733,512.271 721.067,509.168 726.4,506.065 731.733,502.962 737.067,499.859 742.4,496.756 747.733,493.653 753.067,490.55 758.4,487.447 763.733,484.344 769.067,481.241 774.4,478.138 779.733,475.035 785.067,471.932 790.4,468.829 795.733,465.726 801.067,462.623 806.4,459.52 811.733,456.417 817.067,453.314 822.4,450.211 827.733,447.108 833.067,444.005 838.4,440.902 843.733,437.799 849.067,434.695 854.4,431.592 859.733,428.489 865.067,425.386 870.4,422.283 875.733,419.18 881.067,416.077 886.4,412.974 891.733,409.871 897.067,406.768 902.4,403.665 907.733,400.562 913.067,397.459 918.4,394.356 923.733,391.253 929.067,388.15 934.4,385.047 939.733,381.944 945.067,378.841 950.4,375.738 955.733,372.635 961.067,369.532 966.4,366.429 971.733,363.326 977.067,360.223 982.4,357.12 987.733,354.017 993.067,350.914 998.4,347.811 1003.73,344.708 1009.07,341.605 1014.4,338.502 1019.73,335.399 1025.07,332.295 1030.4,329.192 1035.73,326.089 1041.07,322.986 1046.4,319.883 1051.73,316.78 1057.07,313.677 1062.4,310.574 1067.73,307.471 1073.07,304.368 1078.4,301.265 1083.73,298.162 1089.07,295.059 1094.4,291.956 1099.73,288.853 1105.07,285.75 1110.4,282.647 1115.73,279.544 1121.07,276.441 1126.4,273.338 1131.73,270.235 1137.07,267.132 1142.4,264.029 1147.73,260.926 1153.07,257.823 1158.4,254.72 1163.73,251.617 1169.07,248.514 1174.4,245.411 1179.73,242.308 1185.07,239.205 1190.4,236.102 1195.73,232.999 1201.07,229.895 1206.4,226.792 1211.73,223.689 1217.07,220.586 1222.4,217.483 1227.73,214.38 1233.07,211.277 1238.4,208.174" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<ellipse id="o055" cx="1066.66" cy="308.093" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o056" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="799.784" y="275.133">tₜₕ ≈ 0.53 ms to cross 5 µm</tspan>
+</text>
+<text id="o057" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="759.736" y="419.333">tₜₕ ~ Lₕ²/α</tspan>
+</text>
+<text id="o058" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">α = k/(ρcₚ) = 4.69×10⁻⁸ m²/s for the PFC liquid.  Heat travels a distance δ in a time ~ δ²/α, so doubling δ costs four times as</tspan>
+<tspan x="97.92" y="637.173">long.</tspan>
+</text>
+<text id="o059" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Scalings of Eq. C2-E09 evaluated with the PFC liquid properties of Eq. C2-E10.</tspan>
+</text>
 </svg>

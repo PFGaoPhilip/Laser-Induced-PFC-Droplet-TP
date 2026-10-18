@@ -15,7 +15,8 @@ def main():
         s=BeautifulSoup(p.read_text(encoding='utf-8'),'html.parser')
         theme_script=any('theme' in x.get('src','') for x in s.select('script[src]'))
         study_theme=s.select_one('#theme-toggle') is not None and s.select_one('script[src="assets/reader.js"]') is not None
-        if not (theme_script or study_theme):errors.append(str(p.relative_to(DEST))+': no theme control')
+        inline_theme=s.select_one('#theme, #theme-toggle') is not None
+        if not (theme_script or study_theme or inline_theme):errors.append(str(p.relative_to(DEST))+': no theme control')
         for n in s.select('[href],[src]'):
             link=n.get('href',n.get('src','')); url=urlsplit(link)
             if url.scheme or url.netloc or not url.path:continue

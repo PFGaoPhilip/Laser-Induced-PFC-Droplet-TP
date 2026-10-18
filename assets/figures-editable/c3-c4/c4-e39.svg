@@ -1,45 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E39</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E39 · Original necessary operating-window checks</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E39 · Original necessary operating-window checks</tspan>
 </text>
-<rect id="o001" x="115.2" y="96" width="192" height="24" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<rect id="o002" x="96" y="355.2" width="1084.8" height="28.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o003" x1="211.2" y1="129.6" x2="211.2" y2="350.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o004" x1="211.2" y1="129.6" x2="480" y2="350.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o005" x1="211.2" y1="316.8" x2="480" y2="316.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="305.28" y="303.12">Δx</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Defence 3: passing global budgets starts, rather than completes, the argument</tspan>
 </text>
-<text id="o007" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="46.08" y="235.92">H_f</tspan>
+<rect id="o002" x="48" y="144" width="361.6" height="144" rx="11.52" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="228.8" y="166.44">energy</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="242.88" y="183.12">θ</tspan>
+<text id="o004" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="228.8" y="194.027">E_solid ≥ Γ A_f + ½ m_f v_f²</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="617.28" y="192">Normal gap H_f</tspan>
-<tspan x="617.28" y="223.467">Lateral error Δx = H_f tan θ</tspan>
+<line id="o005" x1="412.48" y1="216" x2="454.72" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<rect id="o006" x="457.6" y="144" width="361.6" height="144" rx="11.52" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="638.4" y="166.44">momentum</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• ΓA_f — intended release</tspan>
+<text id="o008" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="638.4" y="194.027">Iₙₑₜ ≥ m_f v_f</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• m_f, v_f — outgoing intact object</tspan>
+<line id="o009" x1="822.08" y1="216" x2="864.32" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<rect id="o010" x="867.2" y="144" width="361.6" height="144" rx="11.52" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1048" y="166.44">placement</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• E_solid, I_net — transmitted budgets</tspan>
+<text id="o012" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1048" y="194.027">Δx = H_f tan θ</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• H_f, θ → Δx at receiver</tspan>
+<rect id="o013" x="48" y="326.4" width="576" height="249.6" rx="19.968" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="348.293">Passed means</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Full release, intact flight and repeatable reset are separate requirements.</tspan>
+<text id="o015" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="85.44" y="389.44">The budgets are large enough: a necessary condition.</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<ellipse id="o016" cx="70.08" cy="384.32" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="85.44" y="418.56">No contradiction between energy and momentum.</tspan>
+</text>
+<ellipse id="o018" cx="70.08" cy="413.44" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="85.44" y="447.68">Placement error is smaller than the feature, if it is.</tspan>
+</text>
+<ellipse id="o020" cx="70.08" cy="442.56" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<rect id="o021" x="652.8" y="326.4" width="576" height="249.6" rx="19.968" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="666.24" y="348.293">Still not shown</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="690.24" y="389.44">That the crack front actually advances (needs G ≥ Γ locally).</tspan>
+</text>
+<ellipse id="o024" cx="674.88" cy="384.32" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="690.24" y="418.56">That the film stays intact on departure.</tspan>
+</text>
+<ellipse id="o026" cx="674.88" cy="413.44" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="690.24" y="447.68">That the real coupling fractions are 0.20 and 0.50.</tspan>
+</text>
+<ellipse id="o028" cx="674.88" cy="442.56" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reference formulas of the Defence 3 answer: Eqs. C4-E30 and C4-E34.</tspan>
 </text>
 </svg>

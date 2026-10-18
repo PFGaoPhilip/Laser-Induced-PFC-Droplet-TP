@@ -1,24 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E29 A rigorous preparation path uses the heat capacity of each phase over its own interval.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E29 | Physical-variable diagram</text>
-<rect x="75" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="87" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Liquid heating</text>
-<rect x="365" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="377" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Latent conversion</text>
-<rect x="655" y="150" width="250" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="667" y="179.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Vapor heating</text>
-<text x="332" y="210.92" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3">+</text>
-<text x="622" y="210.92" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3">+</text>
-<text x="102" y="335.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Sum along one constant-pressure path gives Q_iso.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">m_PFC,0: fixed compound mass</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T₀ → T_sat: liquid heating</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_sat → T_*: vapor heating</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">L_v(T_sat,p): coexistence latent enthalpy</text>
-<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T, dT: temperature integration</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p: constant path pressure</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">T_sat: phase transition</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">c_p,l, c_p,v: phase heat capacities</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Q_iso: total path heat</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Latent enthalpy already contains the phase-transition flow work</text>
-<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The constant-property screen does not replace a calibrated enthalpy path</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E29</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E29 · Refined constant-pressure enthalpy path</tspan>
+</text>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Specific enthalpy gained along the constant-pressure path (kJ/kg)</tspan>
+</text>
+<line id="o002" x1="96" y1="523.2" x2="739.2" y2="523.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="177.6" x2="96" y2="523.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o004" x1="96" y1="523.2" x2="96" y2="529.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o005" x1="96" y1="177.6" x2="96" y2="523.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="545.24">290</tspan>
+</text>
+<line id="o007" x1="274.667" y1="523.2" x2="274.667" y2="529.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="274.667" y1="177.6" x2="274.667" y2="523.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="274.667" y="545.24">300</tspan>
+</text>
+<line id="o010" x1="453.333" y1="523.2" x2="453.333" y2="529.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o011" x1="453.333" y1="177.6" x2="453.333" y2="523.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="453.333" y="545.24">310</tspan>
+</text>
+<line id="o013" x1="632" y1="523.2" x2="632" y2="529.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="632" y1="177.6" x2="632" y2="523.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o015" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="632" y="545.24">320</tspan>
+</text>
+<line id="o016" x1="89.28" y1="523.2" x2="96" y2="523.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="89.28" y1="454.08" x2="96" y2="454.08" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o018" x1="96" y1="454.08" x2="739.2" y2="454.08" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="458.84">25</tspan>
+</text>
+<line id="o020" x1="89.28" y1="384.96" x2="96" y2="384.96" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="96" y1="384.96" x2="739.2" y2="384.96" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="389.72">50</tspan>
+</text>
+<line id="o023" x1="89.28" y1="315.84" x2="96" y2="315.84" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o024" x1="96" y1="315.84" x2="739.2" y2="315.84" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o025" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="320.6">75</tspan>
+</text>
+<line id="o026" x1="89.28" y1="246.72" x2="96" y2="246.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o027" x1="96" y1="246.72" x2="739.2" y2="246.72" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="251.48">100</tspan>
+</text>
+<line id="o029" x1="89.28" y1="177.6" x2="96" y2="177.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o030" x1="96" y1="177.6" x2="739.2" y2="177.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o031" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="182.36">125</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="417.6" y="568">temperature T  (K)</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="156.16">H − H₀  (kJ/kg)</tspan>
+</text>
+<polyline id="o034" points="152.28,523.2 160.7,522.348 169.119,521.496 177.539,520.644 185.958,519.792 194.378,518.94 202.797,518.087 211.217,517.235 219.637,516.383 228.056,515.531 236.476,514.679 244.895,513.827 253.315,512.975 261.734,512.123 270.154,511.271 278.573,510.419 286.993,509.566 295.413,508.714 303.832,507.862 312.252,507.01" fill="none" stroke="#7FC8F8" stroke-width="4.53333" opacity="1"/>
+<line id="o035" x1="312.252" y1="507.01" x2="312.252" y2="244.354" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4.53333" opacity="1"/>
+<polyline id="o036" points="312.252,244.354 332.043,241.598 351.834,238.842 371.625,236.085 391.416,233.329 411.207,230.573 430.998,227.816 450.788,225.06 470.579,222.304 490.37,219.547 510.161,216.791 529.952,214.035 549.743,211.278 569.534,208.522 589.325,205.766 609.116,203.009 628.907,200.253 648.698,197.497 668.489,194.74 688.28,191.984" fill="none" stroke="#8EDBD4" stroke-width="4.53333" opacity="1"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="15.3333" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="159.2" y="494.916">liquid: cₚ,l = 654 J/(kg K)</tspan>
+<tspan x="159.2" y="513.009">to Tₛₐₜ = 302.1 K</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="325.692" y="376.029">latent step</tspan>
+<tspan x="325.692" y="394.123">Lᵥ = 95 kJ/kg</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="480.8" y="201.847">vapor: cₚ,v (assumed 0.9 kJ/(kg K))</tspan>
+</text>
+<rect id="o040" x="768" y="144" width="475.2" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="781.44" y="166.44">Each phase uses its own cₚ</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="784.32" y="207.587">Qᵢₛₒ = m [ ∫cₚ,l dT + Lᵥ(Tₛₐₜ, p) + ∫cₚ,v dT ]</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="288.64">Liquid heating stops at Tₛₐₜ = 302.1 K (1 bar),</tspan>
+<tspan x="805.44" y="307.52">not at T*.</tspan>
+</text>
+<ellipse id="o044" cx="790.08" cy="283.52" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="337.28">Vapor heating from Tₛₐₜ to T* uses cₚ,v, a</tspan>
+<tspan x="805.44" y="356.16">different number.</tspan>
+</text>
+<ellipse id="o046" cx="790.08" cy="332.16" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="385.92">The earlier estimate heated the liquid all the way</tspan>
+<tspan x="805.44" y="404.8">to T*.</tspan>
+</text>
+<ellipse id="o048" cx="790.08" cy="380.8" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o049" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.04">Per kilogram: 5.9 kJ liquid + 95 kJ latent + 18.9 kJ vapor (cₚ,v is an assumed illustration).</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="634.787">Latent enthalpy still dominates, but the sensible parts must follow the phase actually being heated.</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Refined constant-pressure path of Eq. C2-E29; Tₛₐₜ from Eq. C2-E12 at 1 bar.</tspan>
+</text>
 </svg>

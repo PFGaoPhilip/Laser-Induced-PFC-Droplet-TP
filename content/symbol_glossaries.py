@@ -128,7 +128,7 @@ v(r'a','Circular released/blister radius','圆形释放／鼓泡区域半径','m
 v(r't','Time','时间','s','Independent coordinate for pulse loading, inertia and fracture evolution.','脉冲受载、惯性及断裂演化的独立坐标。'),
 v(r'\nabla_\parallel','Film-plane spatial gradient','薄膜平面空间梯度','m⁻¹','Differentiates within the plate plane; it is an operator rather than a material parameter.','在薄板平面内求导；是算子，而非材料参数。'),
 ],
-5:[
+90:[
 v(r't','Time','时间','s','Independent coordinate of the transient cavity event; the reference state is specified at zero.','瞬态腔体事件的独立坐标；参考状态规定在零时刻。'),
 v(r'r_0','Reference material radial coordinate','参考材料径向坐标','m','Labels a material shell in the stress-free configuration; held fixed for material motion.','标识无应力构形中的材料壳层；追踪材料运动时保持不变。'),
 v(r'r','Current material radial coordinate','当前材料径向坐标','m','Current position of the shell labeled by r₀; distinct from current wall radius R.','由 r₀ 标识的壳层当前所在位置；不同于当前壁面半径 R。'),
@@ -166,3 +166,6 @@ v(r't_s','Shear communication time','剪切传播时间','s','Small-disturbance 
 v(r't_{\mathrm{poro}}','Poroelastic drainage time scale','孔弹性排水时间尺度','s','Diffusion-scale solvent/network pressure equilibration under the stated linear approximation.','在指定线性近似下溶剂／网络压力平衡的扩散时间尺度。'),
 ],
 }
+
+from chapter05_spec import GLOSSARY5
+GLOSSARIES[5] = GLOSSARY5

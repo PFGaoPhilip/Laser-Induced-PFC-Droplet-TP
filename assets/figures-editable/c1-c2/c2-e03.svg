@@ -1,64 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C2-E03 The aperture removes the outer annuli from the useful incident energy.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C2-E03 | Physical-variable diagram</text>
-<ellipse cx="220" cy="215" rx="105" ry="105" fill="none" stroke="#B4C7D2" stroke-width="2.21"/>
-<ellipse cx="220" cy="215" rx="63" ry="63" fill="none" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="220" y1="215" x2="325" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="242" y="246.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">w</text>
-<text x="117" y="354.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Illuminated transverse plane</text>
-<line x1="540" y1="325" x2="890" y2="325" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="540" y1="325" x2="540" y2="115" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="812" y="353.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">r / w</text>
-<text x="532" y="103.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">F / F0</text>
-<line x1="545" y1="125" x2="553.5" y2="125.998" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="553.5" y1="125.998" x2="562" y2="128.96" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="562" y1="128.96" x2="570.5" y2="133.801" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="570.5" y1="133.801" x2="579" y2="140.377" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="579" y1="140.377" x2="587.5" y2="148.501" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="587.5" y1="148.501" x2="596" y2="157.946" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="596" y1="157.946" x2="604.5" y2="168.459" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="604.5" y1="168.459" x2="613" y2="179.77" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="613" y1="179.77" x2="621.5" y2="191.605" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="621.5" y1="191.605" x2="630" y2="203.694" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="630" y1="203.694" x2="638.5" y2="215.785" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="638.5" y1="215.785" x2="647" y2="227.65" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="647" y1="227.65" x2="655.5" y2="239.089" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="655.5" y1="239.089" x2="664" y2="249.938" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="664" y1="249.938" x2="672.5" y2="260.07" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="672.5" y1="260.07" x2="681" y2="269.393" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="681" y1="269.393" x2="689.5" y2="277.851" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="689.5" y1="277.851" x2="698" y2="285.42" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="698" y1="285.42" x2="706.5" y2="292.105" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="706.5" y1="292.105" x2="715" y2="297.933" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="715" y1="297.933" x2="723.5" y2="302.95" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="723.5" y1="302.95" x2="732" y2="307.216" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="732" y1="307.216" x2="740.5" y2="310.799" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="740.5" y1="310.799" x2="749" y2="313.773" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="749" y1="313.773" x2="757.5" y2="316.213" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="757.5" y1="316.213" x2="766" y2="318.191" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="766" y1="318.191" x2="774.5" y2="319.776" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="774.5" y1="319.776" x2="783" y2="321.032" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="783" y1="321.032" x2="791.5" y2="322.016" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="791.5" y1="322.016" x2="800" y2="322.778" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="800" y1="322.778" x2="808.5" y2="323.362" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="808.5" y1="323.362" x2="817" y2="323.805" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="817" y1="323.805" x2="825.5" y2="324.136" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="825.5" y1="324.136" x2="834" y2="324.382" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="834" y1="324.382" x2="842.5" y2="324.563" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="842.5" y1="324.563" x2="851" y2="324.693" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="851" y1="324.693" x2="859.5" y2="324.787" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="859.5" y1="324.787" x2="868" y2="324.854" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="868" y1="324.854" x2="876.5" y2="324.9" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<line x1="876.5" y1="324.9" x2="885" y2="324.933" fill="none" stroke="#8EDBD4" stroke-width="2.6"/>
-<text x="597" y="104.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Gaussian profile (prescribed)</text>
-<ellipse cx="220" cy="215" rx="50" ry="50" fill="none" stroke="#F6BC77" stroke-width="2.21"/>
-<text x="87" y="90.52" font-family="Arial,sans-serif" font-size="19" fill="#F6BC77">Centered aperture b_a</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">b_a: absorber aperture edge</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">r, F(r): intercepted annuli</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">f_geo: intercepted fraction</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">w: beam radius</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">E_L: full incident energy</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">π: annulus geometry</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">b_a → 0 gives no interception</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">b_a ≫ w captures nearly all beam energy</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C2-E03</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C2-E03 · Derived interception fraction</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="480" height="508.8" rx="38.4" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">An aperture keeps the inner part</tspan>
+</text>
+<ellipse id="o003" cx="278.4" cy="345.6" rx="192" ry="192" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o004" cx="278.4" cy="345.6" rx="183.273" ry="183.273" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o005" cx="278.4" cy="345.6" rx="174.545" ry="174.545" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o006" cx="278.4" cy="345.6" rx="165.818" ry="165.818" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o007" cx="278.4" cy="345.6" rx="157.091" ry="157.091" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o008" cx="278.4" cy="345.6" rx="148.364" ry="148.364" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o009" cx="278.4" cy="345.6" rx="139.636" ry="139.636" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o010" cx="278.4" cy="345.6" rx="130.909" ry="130.909" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o011" cx="278.4" cy="345.6" rx="122.182" ry="122.182" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o012" cx="278.4" cy="345.6" rx="113.455" ry="113.455" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.05"/>
+<ellipse id="o013" cx="278.4" cy="345.6" rx="104.727" ry="104.727" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.0740282"/>
+<ellipse id="o014" cx="278.4" cy="345.6" rx="96" ry="96" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.108268"/>
+<ellipse id="o015" cx="278.4" cy="345.6" rx="87.2727" ry="87.2727" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.153196"/>
+<ellipse id="o016" cx="278.4" cy="345.6" rx="78.5455" ry="78.5455" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.209719"/>
+<ellipse id="o017" cx="278.4" cy="345.6" rx="69.8182" ry="69.8182" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.277761"/>
+<ellipse id="o018" cx="278.4" cy="345.6" rx="61.0909" ry="61.0909" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.355916"/>
+<ellipse id="o019" cx="278.4" cy="345.6" rx="52.3636" ry="52.3636" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.441232"/>
+<ellipse id="o020" cx="278.4" cy="345.6" rx="43.6364" ry="43.6364" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.529212"/>
+<ellipse id="o021" cx="278.4" cy="345.6" rx="34.9091" ry="34.9091" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.614095"/>
+<ellipse id="o022" cx="278.4" cy="345.6" rx="26.1818" ry="26.1818" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.689421"/>
+<ellipse id="o023" cx="278.4" cy="345.6" rx="17.4545" ry="17.4545" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.748818"/>
+<ellipse id="o024" cx="278.4" cy="345.6" rx="8.72727" ry="8.72727" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="0" opacity="0.786886"/>
+<ellipse id="o025" cx="278.4" cy="345.6" rx="48" ry="48" fill="none" stroke="#F28BA0" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o026" cx="278.4" cy="345.6" rx="96" ry="96" fill="none" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o027" cx="278.4" cy="345.6" rx="144" ry="144" fill="none" stroke="#7FC8F8" stroke-width="2.93333" opacity="1"/>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="567.04">Circles: absorber apertures bₐ = 0.5w, w, 1.5w. Light</tspan>
+<tspan x="54.72" y="585.92">outside is not used.</tspan>
+</text>
+<line id="o029" x1="604.8" y1="528" x2="1228.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o030" x1="604.8" y1="144" x2="604.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o031" x1="604.8" y1="528" x2="604.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="604.8" y1="144" x2="604.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="604.8" y="550.04">0.0</tspan>
+</text>
+<line id="o034" x1="729.6" y1="528" x2="729.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o035" x1="729.6" y1="144" x2="729.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="729.6" y="550.04">0.5</tspan>
+</text>
+<line id="o037" x1="854.4" y1="528" x2="854.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o038" x1="854.4" y1="144" x2="854.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="854.4" y="550.04">1.0</tspan>
+</text>
+<line id="o040" x1="979.2" y1="528" x2="979.2" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o041" x1="979.2" y1="144" x2="979.2" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="979.2" y="550.04">1.5</tspan>
+</text>
+<line id="o043" x1="1104" y1="528" x2="1104" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o044" x1="1104" y1="144" x2="1104" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1104" y="550.04">2.0</tspan>
+</text>
+<line id="o046" x1="1228.8" y1="528" x2="1228.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o047" x1="1228.8" y1="144" x2="1228.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="550.04">2.5</tspan>
+</text>
+<line id="o049" x1="598.08" y1="528" x2="604.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o050" x1="598.08" y1="436.571" x2="604.8" y2="436.571" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o051" x1="604.8" y1="436.571" x2="1228.8" y2="436.571" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o052" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="441.331">0.25</tspan>
+</text>
+<line id="o053" x1="598.08" y1="345.143" x2="604.8" y2="345.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o054" x1="604.8" y1="345.143" x2="1228.8" y2="345.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o055" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="349.903">0.50</tspan>
+</text>
+<line id="o056" x1="598.08" y1="253.714" x2="604.8" y2="253.714" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o057" x1="604.8" y1="253.714" x2="1228.8" y2="253.714" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o058" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="258.474">0.75</tspan>
+</text>
+<line id="o059" x1="598.08" y1="162.286" x2="604.8" y2="162.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o060" x1="604.8" y1="162.286" x2="1228.8" y2="162.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o061" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="593.28" y="167.046">1.00</tspan>
+</text>
+<text id="o062" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="916.8" y="572.8">bₐ / w</tspan>
+</text>
+<text id="o063" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="549.12" y="122.56">f_geo</tspan>
+</text>
+<polyline id="o064" points="604.8,528 608.974,527.796 613.148,527.183 617.322,526.164 621.496,524.742 625.67,522.922 629.843,520.71 634.017,518.114 638.191,515.141 642.365,511.802 646.539,508.108 650.713,504.07 654.887,499.702 659.061,495.017 663.235,490.03 667.409,484.757 671.583,479.215 675.757,473.419 679.93,467.388 684.104,461.139 688.278,454.691 692.452,448.062 696.626,441.272 700.8,434.338 704.974,427.28 709.148,420.117 713.322,412.866 717.496,405.548 721.67,398.179 725.843,390.777 730.017,383.361 734.191,375.946 738.365,368.549 742.539,361.185 746.713,353.87 750.887,346.617 755.061,339.441 759.235,332.354 763.409,325.368 767.583,318.494 771.757,311.743 775.93,305.123 780.104,298.644 784.278,292.313 788.452,286.138 792.626,280.124 796.8,274.277 800.974,268.601 805.148,263.1 809.322,257.776 813.496,252.633 817.67,247.671 821.843,242.891 826.017,238.294 830.191,233.879 834.365,229.645 838.539,225.59 842.713,221.713 846.887,218.011 851.061,214.482 855.235,211.121 859.409,207.925 863.583,204.891 867.757,202.015 871.93,199.291 876.104,196.715 880.278,194.283 884.452,191.989 888.626,189.829 892.8,187.797 896.974,185.889 901.148,184.099 905.322,182.423 909.496,180.854 913.67,179.389 917.843,178.021 922.017,176.747 926.191,175.561 930.365,174.459 934.539,173.435 938.713,172.487 942.887,171.608 947.061,170.796 951.235,170.046 955.409,169.354 959.583,168.716 963.757,168.13 967.93,167.591 972.104,167.096 976.278,166.643 980.452,166.228 984.626,165.848 988.8,165.502 992.974,165.186 997.148,164.898 1001.32,164.636 1005.5,164.398 1009.67,164.181 1013.84,163.986 1018.02,163.808 1022.19,163.648 1026.37,163.503 1030.54,163.372 1034.71,163.255 1038.89,163.149 1043.06,163.054 1047.23,162.968 1051.41,162.891 1055.58,162.823 1059.76,162.761 1063.93,162.707 1068.1,162.658 1072.28,162.614 1076.45,162.575 1080.63,162.541 1084.8,162.51 1088.97,162.483 1093.15,162.459 1097.32,162.437 1101.5,162.419 1105.67,162.402 1109.84,162.387 1114.02,162.374 1118.19,162.363 1122.37,162.353 1126.54,162.344 1130.71,162.337 1134.89,162.33 1139.06,162.324 1143.23,162.319 1147.41,162.314 1151.58,162.311 1155.76,162.307 1159.93,162.304 1164.1,162.302 1168.28,162.299 1172.45,162.297 1176.63,162.296 1180.8,162.294 1184.97,162.293 1189.15,162.292 1193.32,162.291 1197.5,162.29 1201.67,162.29 1205.84,162.289 1210.02,162.289 1214.19,162.288 1218.37,162.288 1222.54,162.287 1226.71,162.287 1228.8,162.287" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o065" cx="729.6" cy="384.103" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o066" font-family="Arial,sans-serif" font-size="16.6667" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="741.12" y="356.489">0.393</tspan>
+</text>
+<ellipse id="o067" cx="854.4" cy="211.78" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o068" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="865.92" y="232.166">0.865</tspan>
+</text>
+<ellipse id="o069" cx="979.2" cy="166.348" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o070" font-family="Arial,sans-serif" font-size="16.6667" fill="#7FC8F8" text-anchor="start" opacity="1">
+<tspan x="990.72" y="186.735">0.989</tspan>
+</text>
+<text id="o071" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="606.72" y="618.053">f_geo = 1 − exp(−2 bₐ² / w²):  the outer annuli are removed from</tspan>
+<tspan x="606.72" y="638.507">the useful energy.</tspan>
+</text>
+<text id="o072" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Interception fraction of Eq. C2-E03; bₐ = w/2 gives the 0.3935 used later.</tspan>
+</text>
 </svg>

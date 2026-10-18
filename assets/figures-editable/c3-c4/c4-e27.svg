@@ -1,56 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E27</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E27 · Cohesive admissibility teaching calculation</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E27 · Cohesive admissibility teaching calculation</tspan>
 </text>
-<line id="o001" x1="105.6" y1="340.8" x2="1142.4" y2="340.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o002" x1="115.2" y1="345.6" x2="115.2" y2="86.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o003" x1="115.2" y1="340.8" x2="384" y2="120" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o004" x1="384" y1="120" x2="1036.8" y2="340.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o005" x1="384" y1="120" x2="384" y2="340.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="36.48" y="91.6133">t_n: tensile resistance</tspan>
+<text id="o001" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="49.92" y="112.68">Cohesive admissibility check with the teaching numbers</tspan>
 </text>
-<text id="o007" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="401.28" y="120.72">T_max</tspan>
+<rect id="o002" x="48" y="144" width="379.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="61.44" y="165.893">given</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="353.28" y="379.92">δ₀</tspan>
+<text id="o004" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="240" y="217.187">Γ = 0.005 J/m²</tspan>
+<tspan x="240" y="236.853">Tₘₐₓ = 0.10 MPa</tspan>
+<tspan x="240" y="256.52">Kₙ = 10¹³ Pa/m</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="1015.68" y="379.92">δ_c</tspan>
+<rect id="o005" x="446.4" y="144" width="379.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="17.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="459.84" y="165.893">δ₀ = Tₘₐₓ / Kₙ</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="1135.68" y="379.92">δ</tspan>
+<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="638.4" y="217.187">10⁵ / 10¹³ = 1.0×10⁻⁸ m = 10 nm</tspan>
 </text>
-<text id="o011" font-family="Arial,sans-serif" font-size="26.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="502.08" y="277.333">Full area = Γ</tspan>
+<rect id="o008" x="844.8" y="144" width="379.2" height="201.6" rx="16.128" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="858.24" y="165.893">δ_c = 2Γ / Tₘₐₓ</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="626.88" y="101.213">Monotonic tensile opening branch</tspan>
+<text id="o010" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1036.8" y="217.187">2(0.005) / 10⁵ = 1.0×10⁻⁷ m = 100 nm</tspan>
 </text>
-<line id="o013" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• T_max = 0.10 MPa — curve peak</tspan>
+<text id="o011" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="401.507">δ₀  (peak)</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• K_n = 10¹³ Pa/m — initial slope</tspan>
+<rect id="o012" x="259.2" y="384" width="69.6" height="43.2" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="338.4" y="404.387">10 nm</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• δ₀ = 10 nm</tspan>
+<text id="o014" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="468.707">δ_c  (final)</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• δ_c = 100 nm</tspan>
+<rect id="o015" x="259.2" y="451.2" width="696" height="43.2" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="0.85"/>
+<text id="o016" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="964.8" y="471.587">100 nm</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• Γ = 0.005 J/m² — curve area</tspan>
+<text id="o017" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="534.533">δ_c is ten times δ₀: the law has a distinct softening stage, so it is admissible (δ₀ &lt; δ_c).</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">10 nm &lt; 100 nm: the softening interval is admissible.</tspan>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="49.92" y="591.04">These are stipulated teaching values, not measured properties of a real interface.</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Admissibility calculation of Eq. C4-E27.</tspan>
 </text>
 </svg>

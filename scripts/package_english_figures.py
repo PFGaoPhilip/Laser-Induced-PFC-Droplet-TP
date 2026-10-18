@@ -17,7 +17,7 @@ def main():
         target=(BASE/link).resolve()
         assert target.is_relative_to(BASE.resolve()) and target.is_file(),link
     files=sorted(p for p in BASE.rglob('*') if p.is_file() and '__pycache__' not in p.parts)
-    manifest={'entry':'index.html','figures':178,'files':[{'file':p.relative_to(BASE).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
+    manifest={'entry':'index.html','figures':200,'files':[{'file':p.relative_to(BASE).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
     ARCHIVE.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(ARCHIVE,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for p in files:z.write(p,'English_Lesson_Figures/'+p.relative_to(BASE).as_posix())

@@ -1,26 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E32 The source pressure moves carrier liquid; geometry determines whether that motion is a useful jet.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E32 | Physical-variable diagram</text>
-<rect x="60" y="160" width="235" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="72" y="189.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Finite PFC / heat input</text>
-<rect x="370" y="160" width="235" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="382" y="189.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Bubble pressure p_b</text>
-<rect x="680" y="160" width="235" height="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="1.9500000000000002"/>
-<text x="692" y="189.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Carrier displacement</text>
-<line x1="300" y1="210" x2="360" y2="210" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<line x1="610" y1="210" x2="670" y2="210" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="132" y="341.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">Geometry selects direction; scalar radius does not.</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">PFC liquid → vapor</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pv,w</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pb</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ carrier</text>
-<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
-<text x="32" y="546.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">σ</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pv,PFC</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pg</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p∞</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R</text>
-<text x="507" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R̈</text>
-<text x="507" y="546.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">μ</text>
-<text x="32" y="585.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The pressure history must connect to a specific liquid path</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E32</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E32 · Original formulas quoted for defense 1</tspan>
+</text>
+<rect id="o001" x="48" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="179.4" y="156.84">Source pressure</tspan>
+</text>
+<text id="o003" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="179.4" y="184.427">p_b from the contents (E08),</tspan>
+<tspan x="179.4" y="204.093">not from R alone</tspan>
+</text>
+<line id="o004" x1="313.68" y1="216" x2="351.12" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<rect id="o005" x="354" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="485.4" y="156.84">Radius motion</tspan>
+</text>
+<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="485.4" y="184.427">Rayleigh–Plesset: p_b − p∞ −</tspan>
+<tspan x="485.4" y="204.093">2σ/R − 4μṘ/R (E07)</tspan>
+</text>
+<line id="o008" x1="619.68" y1="216" x2="657.12" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<rect id="o009" x="660" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<text id="o010" font-family="Arial,sans-serif" font-size="18" fill="#7FC8F8" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="791.4" y="156.84">Liquid response</tspan>
+</text>
+<text id="o011" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="791.4" y="184.427">inertia stores the work;</tspan>
+<tspan x="791.4" y="204.093">impulse Π gives early speed</tspan>
+<tspan x="791.4" y="223.76">(E05, E21)</tspan>
+</text>
+<line id="o012" x1="925.68" y1="216" x2="963.12" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<rect id="o013" x="966" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1097.4" y="156.84">Geometry</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1097.4" y="184.427">stand-off and walls decide</tspan>
+<tspan x="1097.4" y="204.093">direction (E26–E29)</tspan>
+</text>
+<rect id="o016" x="48" y="336" width="1180.8" height="148.8" rx="11.904" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="360.36">Reference formulas of the defence answer</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="401.227">ρ(RR̈ + 3Ṙ²/2) = p_b − p∞ − 2σ/R − 4μṘ/R</tspan>
+<tspan x="64.32" y="423.253">p_b = pᵥ,PFC + pᵥ,w + p_g</tspan>
+</text>
+<text id="o019" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="525.48">The source pressure moves carrier liquid. Whether that motion becomes a useful jet is decided by geometry, not by the</tspan>
+<tspan x="49.92" y="546.72">pressure alone.</tspan>
+</text>
+<text id="o020" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="49.92" y="581.987">Every term of the radius equation is a pressure (Pa); every term of the composition is a partial pressure.</tspan>
+</text>
+<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Summary of Eqs. C1-E07 and C1-E08.</tspan>
+</text>
 </svg>

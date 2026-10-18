@@ -22,13 +22,15 @@ Scientific conventions and actual PowerPoint previews were reviewed before embed
 2. [Laser heating and finite PFC inventory](chapters/02-optical-heating-and-finite-pfc-inventory.html).
 3. [Arrays, jets, impact, and the three-stage resolver](chapters/03-arrays-finite-jets-and-impact.html).
 4. [Fracture and transfer](chapters/04-fracture-and-transfer.html).
-5. [Appendix A: liquid, hydrogel, and both modeling studies](appendices/a-hydrogel-versus-liquid.html).
+5. [Jet-on-rigid-wall calculation](chapters/05-jet-on-rigid-wall.html).
+6. [Appendix A: liquid, hydrogel, and both modeling studies](appendices/90-hydrogel-versus-liquid.html).
 
 1. [空化与射流](chapters/01-cavity-pressure-inertia-and-directional-jets.html?lang=zh)。
 2. [激光加热与有限 PFC 存量](chapters/02-optical-heating-and-finite-pfc-inventory.html?lang=zh)。
 3. [阵列、射流、冲击与三阶段求解器](chapters/03-arrays-finite-jets-and-impact.html?lang=zh)。
 4. [断裂与转印](chapters/04-fracture-and-transfer.html?lang=zh)。
-5. [附录 A：液体、水凝胶与两项建模研究](appendices/a-hydrogel-versus-liquid.html?lang=zh)。
+5. [刚性壁面射流计算](chapters/05-jet-on-rigid-wall.html?lang=zh)。
+6. [附录 A：液体、水凝胶与两项建模研究](appendices/90-hydrogel-versus-liquid.html?lang=zh)。
 
 The resolver lesson belongs to Chapter 3.
 The finite-energy and embedded-PFC studies belong to Appendix A.

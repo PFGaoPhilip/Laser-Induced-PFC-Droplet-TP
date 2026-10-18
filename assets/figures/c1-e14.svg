@@ -1,27 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E14 The monotonic collapse branch allows radius to replace time in the first integration.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E14 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">R(t)</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">p_b</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Surrounding liquid</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p∞, ρ, μ; interface: σ</text>
-<line x1="270" y1="215" x2="410" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="442" y="319.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">r ≥ R</text>
-<line x1="410" y1="215" x2="475" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="417" y="253.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">+e_r (coordinate)</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Signed wall speed: Ṙ; acceleration: R̈</text>
-<line x1="160" y1="215" x2="205" y2="215" fill="none" stroke="#F6BC77" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="92" y="99.44" font-family="Arial,sans-serif" font-size="18" fill="#F6BC77">Collapse: Ṙ &lt; 0</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">y(R) = Ṙ²</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ ≠ 0</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Δpc</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R³y</text>
-<text x="32" y="522.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Rmax endpoint</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R decreases</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R̈</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Cancel speed only away from the initial turning point</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E14</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E14 · Exact chain rule and integrating factor</tspan>
+</text>
+<line id="o001" x1="748.8" y1="321.6" x2="1228.8" y2="321.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="748.8" y1="139.2" x2="748.8" y2="321.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="748.8" y1="321.6" x2="748.8" y2="328.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="748.8" y1="139.2" x2="748.8" y2="321.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="748.8" y="343.64">0.25</tspan>
+</text>
+<line id="o006" x1="908.8" y1="321.6" x2="908.8" y2="328.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="908.8" y1="139.2" x2="908.8" y2="321.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="908.8" y="343.64">0.50</tspan>
+</text>
+<line id="o009" x1="1068.8" y1="321.6" x2="1068.8" y2="328.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="1068.8" y1="139.2" x2="1068.8" y2="321.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1068.8" y="343.64">0.75</tspan>
+</text>
+<line id="o012" x1="1228.8" y1="321.6" x2="1228.8" y2="328.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="1228.8" y1="139.2" x2="1228.8" y2="321.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="343.64">1.00</tspan>
+</text>
+<line id="o015" x1="742.08" y1="321.6" x2="748.8" y2="321.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="742.08" y1="264.6" x2="748.8" y2="264.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="748.8" y1="264.6" x2="1228.8" y2="264.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="737.28" y="269.36">20</tspan>
+</text>
+<line id="o019" x1="742.08" y1="207.6" x2="748.8" y2="207.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="748.8" y1="207.6" x2="1228.8" y2="207.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="737.28" y="212.36">40</tspan>
+</text>
+<line id="o022" x1="742.08" y1="150.6" x2="748.8" y2="150.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="748.8" y1="150.6" x2="1228.8" y2="150.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="737.28" y="155.36">60</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="117.76">y (scaled)</tspan>
+</text>
+<polyline id="o026" points="748.8,142.05 752.011,152.604 755.221,162.36 758.432,171.39 761.643,179.763 764.854,187.535 768.064,194.761 771.275,201.487 774.486,207.756 777.696,213.605 780.907,219.071 784.118,224.183 787.328,228.969 790.539,233.456 793.75,237.666 796.961,241.62 800.171,245.337 803.382,248.835 806.593,252.131 809.803,255.237 813.014,258.168 816.225,260.936 819.435,263.552 822.646,266.026 825.857,268.368 829.068,270.586 832.278,272.689 835.489,274.684 838.7,276.577 841.91,278.376 845.121,280.086 848.332,281.712 851.542,283.26 854.753,284.734 857.964,286.138 861.175,287.477 864.385,288.754 867.596,289.973 870.807,291.138 874.017,292.25 877.228,293.313 880.439,294.33 883.649,295.304 886.86,296.235 890.071,297.128 893.282,297.983 896.492,298.803 899.703,299.589 902.914,300.344 906.124,301.068 909.335,301.764 912.546,302.432 915.757,303.075 918.967,303.692 922.178,304.286 925.389,304.858 928.599,305.408 931.81,305.938 935.021,306.448 938.231,306.939 941.442,307.413 944.653,307.87 947.864,308.311 951.074,308.737 954.285,309.147 957.496,309.543 960.706,309.926 963.917,310.296 967.128,310.653 970.338,310.999 973.549,311.332 976.76,311.655 979.971,311.968 983.181,312.27 986.392,312.563 989.603,312.846 992.813,313.121 996.024,313.387 999.235,313.644 1002.45,313.894 1005.66,314.136 1008.87,314.371 1012.08,314.598 1015.29,314.819 1018.5,315.033 1021.71,315.241 1024.92,315.443 1028.13,315.639 1031.34,315.83 1034.55,316.015 1037.76,316.194 1040.97,316.369 1044.18,316.539 1047.4,316.704 1050.61,316.864 1053.82,317.02 1057.03,317.172 1060.24,317.32 1063.45,317.463 1066.66,317.603 1069.87,317.739 1073.08,317.872 1076.29,318.001 1079.5,318.127 1082.71,318.249 1085.92,318.369 1089.13,318.485 1092.35,318.598 1095.56,318.709 1098.77,318.817 1101.98,318.922 1105.19,319.024 1108.4,319.124 1111.61,319.222 1114.82,319.317 1118.03,319.41 1121.24,319.5 1124.45,319.589 1127.66,319.675 1130.87,319.76 1134.08,319.842 1137.29,319.922 1140.51,320.001 1143.72,320.078 1146.93,320.153 1150.14,320.226 1153.35,320.298 1156.56,320.368 1159.77,320.436 1162.98,320.503 1166.19,320.569 1169.4,320.633 1172.61,320.695 1175.82,320.757 1179.03,320.817 1182.24,320.875 1185.46,320.933 1188.67,320.989 1191.88,321.044 1195.09,321.098 1198.3,321.15 1201.51,321.202 1204.72,321.252 1207.93,321.302 1211.14,321.35 1214.35,321.398 1217.56,321.444 1220.77,321.49 1223.98,321.535 1227.19,321.578 1228.8,321.6" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="918.4" y="170.29">y = Ṙ² ∝ x⁻³ − 1: blows up inward</tspan>
+</text>
+<line id="o028" x1="748.8" y1="580.8" x2="1228.8" y2="580.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o029" x1="748.8" y1="398.4" x2="748.8" y2="580.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o030" x1="748.8" y1="580.8" x2="748.8" y2="587.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="748.8" y1="398.4" x2="748.8" y2="580.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="748.8" y="602.84">0.00</tspan>
+</text>
+<line id="o033" x1="868.8" y1="580.8" x2="868.8" y2="587.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o034" x1="868.8" y1="398.4" x2="868.8" y2="580.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="868.8" y="602.84">0.25</tspan>
+</text>
+<line id="o036" x1="988.8" y1="580.8" x2="988.8" y2="587.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o037" x1="988.8" y1="398.4" x2="988.8" y2="580.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="988.8" y="602.84">0.50</tspan>
+</text>
+<line id="o039" x1="1108.8" y1="580.8" x2="1108.8" y2="587.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o040" x1="1108.8" y1="398.4" x2="1108.8" y2="580.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1108.8" y="602.84">0.75</tspan>
+</text>
+<line id="o042" x1="1228.8" y1="580.8" x2="1228.8" y2="587.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o043" x1="1228.8" y1="398.4" x2="1228.8" y2="580.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="602.84">1.00</tspan>
+</text>
+<line id="o045" x1="742.08" y1="580.8" x2="748.8" y2="580.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o046" x1="742.08" y1="497.891" x2="748.8" y2="497.891" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o047" x1="748.8" y1="497.891" x2="1228.8" y2="497.891" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="737.28" y="502.651">0.5</tspan>
+</text>
+<line id="o049" x1="742.08" y1="414.982" x2="748.8" y2="414.982" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o050" x1="748.8" y1="414.982" x2="1228.8" y2="414.982" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o051" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="737.28" y="419.742">1.0</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="988.8" y="625.6">x = R / Rₘₐₓ</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="376.96">R³y (scaled)</tspan>
+</text>
+<polyline id="o054" points="748.8,414.982 751.212,414.982 753.624,414.982 756.036,414.982 758.448,414.983 760.86,414.984 763.272,414.986 765.684,414.989 768.096,414.993 770.509,414.997 772.921,415.003 775.333,415.01 777.745,415.018 780.157,415.028 782.569,415.04 784.981,415.053 787.393,415.068 789.805,415.085 792.217,415.105 794.629,415.126 797.041,415.15 799.453,415.177 801.865,415.206 804.277,415.238 806.689,415.273 809.102,415.311 811.514,415.352 813.926,415.396 816.338,415.444 818.75,415.495 821.162,415.55 823.574,415.609 825.986,415.671 828.398,415.738 830.81,415.809 833.222,415.884 835.634,415.964 838.046,416.048 840.458,416.136 842.87,416.23 845.282,416.328 847.694,416.432 850.107,416.541 852.519,416.655 854.931,416.774 857.343,416.899 859.755,417.03 862.167,417.166 864.579,417.309 866.991,417.457 869.403,417.612 871.815,417.773 874.227,417.94 876.639,418.114 879.051,418.295 881.463,418.483 883.875,418.677 886.287,418.879 888.699,419.087 891.112,419.303 893.524,419.527 895.936,419.758 898.348,419.997 900.76,420.243 903.172,420.498 905.584,420.76 907.996,421.031 910.408,421.31 912.82,421.598 915.232,421.894 917.644,422.199 920.056,422.513 922.468,422.835 924.88,423.167 927.292,423.508 929.705,423.859 932.117,424.218 934.529,424.588 936.941,424.967 939.353,425.356 941.765,425.755 944.177,426.164 946.589,426.583 949.001,427.013 951.413,427.453 953.825,427.904 956.237,428.365 958.649,428.838 961.061,429.321 963.473,429.815 965.885,430.321 968.297,430.838 970.71,431.366 973.122,431.907 975.534,432.458 977.946,433.022 980.358,433.598 982.77,434.186 985.182,434.786 987.594,435.398 990.006,436.023 992.418,436.661 994.83,437.311 997.242,437.974 999.654,438.65 1002.07,439.34 1004.48,440.042 1006.89,440.758 1009.3,441.488 1011.71,442.231 1014.13,442.988 1016.54,443.759 1018.95,444.543 1021.36,445.342 1023.77,446.155 1026.19,446.983 1028.6,447.825 1031.01,448.682 1033.42,449.553 1035.84,450.44 1038.25,451.341 1040.66,452.258 1043.07,453.19 1045.48,454.137 1047.9,455.1 1050.31,456.078 1052.72,457.072 1055.13,458.082 1057.54,459.109 1059.96,460.151 1062.37,461.21 1064.78,462.285 1067.19,463.376 1069.6,464.484 1072.02,465.609 1074.43,466.751 1076.84,467.91 1079.25,469.086 1081.66,470.28 1084.08,471.491 1086.49,472.719 1088.9,473.965 1091.31,475.229 1093.72,476.511 1096.14,477.811 1098.55,479.129 1100.96,480.465 1103.37,481.82 1105.78,483.193 1108.2,484.585 1110.61,485.996 1113.02,487.426 1115.43,488.875 1117.85,490.343 1120.26,491.83 1122.67,493.337 1125.08,494.863 1127.49,496.409 1129.91,497.975 1132.32,499.561 1134.73,501.167 1137.14,502.793 1139.55,504.44 1141.97,506.106 1144.38,507.794 1146.79,509.502 1149.2,511.231 1151.61,512.981 1154.03,514.752 1156.44,516.544 1158.85,518.358 1161.26,520.193 1163.67,522.049 1166.09,523.928 1168.5,525.828 1170.91,527.75 1173.32,529.694 1175.73,531.661 1178.15,533.65 1180.56,535.661 1182.97,537.695 1185.38,539.751 1187.79,541.831 1190.21,543.933 1192.62,546.059 1195.03,548.208 1197.44,550.38 1199.86,552.575 1202.27,554.794 1204.68,557.037 1207.09,559.304 1209.5,561.595 1211.92,563.91 1214.33,566.249 1216.74,568.613 1219.15,571.001 1221.56,573.413 1223.98,575.851 1226.39,578.313 1228.8,580.8" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o055" x1="964.8" y1="430.092" x2="1132.8" y2="465.349" fill="#FFFFFF" stroke="#F2B880" stroke-width="2.66667" opacity="1" stroke-dasharray="6 4"/>
+<text id="o056" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="782.4" y="502.72">R³y = 1 − x³: simple, slope ∝ −R²</tspan>
+</text>
+<rect id="o057" x="38.4" y="96" width="614.4" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o058" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Why the radius replaces time</tspan>
+</text>
+<text id="o059" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="164.933">1  y(R) = Ṙ²,  Ṙ ≠ 0</tspan>
+</text>
+<text id="o060" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="197.573">dy/dR = 2R̈</tspan>
+</text>
+<text id="o061" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="252.32">2  Rewrite R R̈ + (3/2)Ṙ² = −Δp_c/ρ</tspan>
+</text>
+<text id="o062" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="284.96">y′ + 3y/R = −2Δp_c/(ρR)</tspan>
+</text>
+<text id="o063" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="339.707">3  Multiply by the integrating factor R³</tspan>
+</text>
+<text id="o064" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="372.347">d(R³y)/dR = R³y′ + 3R²y = −(2Δp_c/ρ) R²</tspan>
+</text>
+<text id="o065" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="427.093">4  Integrate from Rₘₐₓ (y = 0)</tspan>
+</text>
+<text id="o066" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="83.52" y="459.733">R³y = (2Δp_c/3ρ)(Rₘₐₓ³ − R³)</tspan>
+</text>
+<text id="o067" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="59.52" y="518.733">On the monotonic inward branch R is a valid independent</tspan>
+<tspan x="59.52" y="538.4">variable. The factor R³ makes the left side an exact derivative.</tspan>
+</text>
+<text id="o068" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Curves are y = Ṙ² and R³y from Eqs. C1-E14 and C1-E15 (scaled as labelled).</tspan>
+</text>
 </svg>

@@ -1,53 +1,89 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E22</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E22 · Derived loading-control comparison</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E22 · Derived loading-control comparison</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">Fixed pressure: G ∝ b⁴</tspan>
+<line id="o001" x1="96" y1="518.4" x2="691.2" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="518.4" x2="96" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="540.44">0.5</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">Fixed volume: G ∝ b⁻⁸</tspan>
+<line id="o006" x1="294.4" y1="518.4" x2="294.4" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="294.4" y1="144" x2="294.4" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="294.4" y="540.44">1</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">Different crack evolution</tspan>
+<line id="o009" x1="492.8" y1="518.4" x2="492.8" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="492.8" y1="144" x2="492.8" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="492.8" y="540.44">1.5</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Work, storage, fracture consumption and net impulse retain separate meanings.</tspan>
+<line id="o012" x1="691.2" y1="518.4" x2="691.2" y2="525.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="691.2" y1="144" x2="691.2" y2="518.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="691.2" y="540.44">2</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• V̄ — fixed added volume</tspan>
+<line id="o015" x1="89.28" y1="518.4" x2="96" y2="518.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="89.28" y1="424.8" x2="96" y2="424.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="96" y1="424.8" x2="691.2" y2="424.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="429.56">0.1</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• b ↑ advancing crack</tspan>
+<line id="o019" x1="89.28" y1="331.2" x2="96" y2="331.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="331.2" x2="691.2" y2="331.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="335.96">1</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• p(b) ↓ as compliance grows</tspan>
+<line id="o022" x1="89.28" y1="237.6" x2="96" y2="237.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="237.6" x2="691.2" y2="237.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="242.36">10</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• C_b, D_f — elastic compliance</tspan>
+<line id="o025" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="144" x2="691.2" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">100</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• U_b — plate storage</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="393.6" y="563.2">b / b₀</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• G_V̄ ∝ b⁻⁸</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">G / G(b₀)</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• G_p₀ ∝ b⁴ under fixed p₀</tspan>
+<polyline id="o030" points="96,443.906 102.012,439.052 108.024,434.338 114.036,429.758 120.048,425.303 126.061,420.966 132.073,416.743 138.085,412.626 144.097,408.611 150.109,404.693 156.121,400.867 162.133,397.129 168.145,393.474 174.158,389.901 180.17,386.404 186.182,382.981 192.194,379.628 198.206,376.343 204.218,373.123 210.23,369.966 216.242,366.868 222.255,363.829 228.267,360.845 234.279,357.916 240.291,355.038 246.303,352.21 252.315,349.43 258.327,346.697 264.339,344.01 270.352,341.366 276.364,338.764 282.376,336.203 288.388,333.682 294.4,331.2 300.412,328.755 306.424,326.346 312.436,323.972 318.448,321.633 324.461,319.326 330.473,317.052 336.485,314.809 342.497,312.597 348.509,310.414 354.521,308.261 360.533,306.135 366.545,304.037 372.558,301.966 378.57,299.92 384.582,297.9 390.594,295.905 396.606,293.934 402.618,291.987 408.63,290.063 414.642,288.161 420.655,286.281 426.667,284.423 432.679,282.586 438.691,280.769 444.703,278.972 450.715,277.195 456.727,275.437 462.739,273.698 468.752,271.978 474.764,270.275 480.776,268.59 486.788,266.922 492.8,265.271 498.812,263.637 504.824,262.019 510.836,260.417 516.848,258.831 522.861,257.26 528.873,255.704 534.885,254.163 540.897,252.636 546.909,251.123 552.921,249.625 558.933,248.14 564.945,246.668 570.958,245.21 576.97,243.765 582.982,242.332 588.994,240.912 595.006,239.504 601.018,238.108 607.03,236.725 613.042,235.352 619.055,233.992 625.067,232.642 631.079,231.304 637.091,229.977 643.103,228.66 649.115,227.354 655.127,226.059 661.139,224.773 667.152,223.498 673.164,222.232 679.176,220.977 685.188,219.731 691.2,218.494" fill="none" stroke="#F2B880" stroke-width="4.26667" opacity="1"/>
+<polyline id="o031" points="126.061,151.667 132.073,160.115 138.085,168.348 144.097,176.378 150.109,184.215 156.121,191.867 162.133,199.343 168.145,206.651 174.158,213.799 180.17,220.792 186.182,227.639 192.194,234.344 198.206,240.914 204.218,247.354 210.23,253.669 216.242,259.863 222.255,265.942 228.267,271.909 234.279,277.769 240.291,283.525 246.303,289.18 252.315,294.739 258.327,300.205 264.339,305.58 270.352,310.868 276.364,316.072 282.376,321.193 288.388,326.235 294.4,331.2 300.412,336.09 306.424,340.908 312.436,345.656 318.448,350.335 324.461,354.948 330.473,359.496 336.485,363.982 342.497,368.406 348.509,372.771 354.521,377.079 360.533,381.33 366.545,385.526 372.558,389.669 378.57,393.759 384.582,397.799 390.594,401.789 396.606,405.731 402.618,409.626 408.63,413.474 414.642,417.278 420.655,421.038 426.667,424.754 432.679,428.429 438.691,432.062 444.703,435.656 450.715,439.21 456.727,442.726 462.739,446.204 468.752,449.645 474.764,453.05 480.776,456.42 486.788,459.756 492.8,463.057 498.812,466.326 504.824,469.561 510.836,472.765 516.848,475.938 522.861,479.08 528.873,482.192 534.885,485.275 540.897,488.328 546.909,491.353 552.921,494.35 558.933,497.32 564.945,500.263 570.958,503.18 576.97,506.071 582.982,508.936 588.994,511.776 595.006,514.592 601.018,517.383" fill="none" stroke="#F28BA0" stroke-width="4.26667" opacity="1"/>
+<line id="o032" x1="96" y1="331.2" x2="691.2" y2="331.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="343.68" y="195.741">fixed pressure: G ∝ b⁴ (grows: unstable)</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Same instantaneous state does not imply the same crack trajectory.</tspan>
+<text id="o034" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="113.536" y="488.235">fixed volume: G ∝ b⁻⁸ (falls: stable)</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<rect id="o035" x="720" y="144" width="523.2" height="374.4" rx="29.952" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="733.44" y="166.44">Same plate, two load controls</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="201.693">U_b|V̄ = V̄² / (2C_b) = 96 D_f V̄² / (π b⁶)</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="255.587">p(b) = 192 D_f V̄ / (π b⁶)</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="736.32" y="307.293">G_V̄ = 288 D_f V̄² / (π² b⁸) = p(b)² b⁴ / (128 D_f)</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="736.32" y="379.84">Same formula in p, but p itself falls as b⁻⁶ at fixed</tspan>
+<tspan x="736.32" y="398.72">volume.</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="591.587">A maintained pressure source lets the crack run away; a fixed liquid volume arrests it. Always state the control.</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Loading-control comparison of Eq. C4-E22.</tspan>
 </text>
 </svg>

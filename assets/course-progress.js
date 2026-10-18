@@ -10,8 +10,6 @@
   function read(key){try{return localStorage.getItem(prefix+key);}catch(e){return null;}}
   function get(key){
     var current=read(key);if(current!==null&&current!==undefined)return current;
-    var old=/^A-Q([123])$/.exec(key);
-    if(old){var saved=read('C5-Q'+old[1]);if(saved!==null&&saved!==undefined){put(key,saved);return saved;}}
     return '';
   }
   function put(key,value){try{localStorage.setItem(prefix+key,value);return true;}catch(e){return false;}}

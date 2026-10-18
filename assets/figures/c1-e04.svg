@@ -1,28 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E04 A fixed liquid observation point and a moving interface point have different time derivatives.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E04 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">R(t)</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">p_b</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Surrounding liquid</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p∞, ρ, μ; interface: σ</text>
-<line x1="270" y1="215" x2="410" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="442" y="319.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">r ≥ R</text>
-<line x1="410" y1="215" x2="475" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="417" y="253.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">+e_r (coordinate)</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Signed wall speed: Ṙ; acceleration: R̈</text>
-<ellipse cx="600" cy="300" rx="5" ry="5" fill="#F6BC77" stroke="#B4C7D2" stroke-width="2.21"/>
-<text x="617" y="349.44" font-family="Arial,sans-serif" font-size="18" fill="#F6BC77">Fixed r</text>
-<text x="102" y="105.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">Moving interface versus fixed observer</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Fixed r</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">φ</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R̈</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">dφ(R,t)/dt</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Moving R(t)</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Ṙ</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">∂tφ at fixed r</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Take the partial derivative before setting r = R</text>
-<text x="32" y="561.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">The moving-point derivative differs by Ṙ²</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E04</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E04 · Exact Eulerian and moving-point derivatives</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="422.4" height="508.8" rx="33.792" fill="#1E4A5A" stroke="#2B6678" stroke-width="2" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="119.947">Two observers, one potential</tspan>
+</text>
+<ellipse id="o003" cx="240" cy="336" rx="76.8" ry="76.8" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o004" cx="240" cy="336" rx="99.84" ry="99.84" fill="none" stroke="#F2B880" stroke-width="1.73333" opacity="0.7"/>
+<line id="o005" x1="316.8" y1="259.2" x2="359.04" y2="216.96" fill="#FFFFFF" stroke="#F2B880" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="270.72" y="154.24">wall point moves outward</tspan>
+</text>
+<ellipse id="o007" cx="422.4" cy="412.8" rx="9.6" ry="9.6" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="309.12" y="445.12">fixed point r = 2R</tspan>
+</text>
+<text id="o009" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="529.187">The fixed point feels φ change only because</tspan>
+<tspan x="54.72" y="548.853">R(t) changes. A point riding the wall also</tspan>
+<tspan x="54.72" y="568.52">moves to larger r.</tspan>
+</text>
+<text id="o010" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="501.12" y="118.027">Three derivatives for R = 1, Ṙ = 1, R̈ = −0.5</tspan>
+</text>
+<line id="o011" x1="1094.4" y1="153.6" x2="1094.4" y2="441.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="501.12" y="193.733">∂φ/∂t at fixed r = 2R</tspan>
+</text>
+<rect id="o013" x="964.8" y="179.52" width="129.6" height="43.2" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1107.84" y="198.533">-0.75</tspan>
+</text>
+<text id="o015" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="501.12" y="284.933">∂φ/∂t at fixed r = R</tspan>
+</text>
+<rect id="o016" x="835.2" y="270.72" width="259.2" height="43.2" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1107.84" y="289.733">-1.50</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="501.12" y="376.133">dφ/dt following the wall</tspan>
+</text>
+<rect id="o019" x="1008" y="361.92" width="86.4" height="43.2" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="1107.84" y="380.933">-0.50</tspan>
+</text>
+<rect id="o021" x="499.2" y="460.8" width="739.2" height="110.4" rx="8.832" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="515.52" y="485.707">Chain rule at the wall:   dφ/dt = ∂φ/∂t + Ṙ ∂φ/∂r</tspan>
+<tspan x="515.52" y="507.733">−0.5 = −1.5 + (1)(1)</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="501.12" y="611.333">Using the wrong derivative changes the wall pressure of Eq. C1-E05 by a whole Ṙ²</tspan>
+<tspan x="501.12" y="631.787">term.</tspan>
+</text>
+<text id="o024" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Values from Eq. C1-E04 with R = 1, Ṙ = 1, R̈ = −0.5 (units m² s⁻²).</tspan>
+</text>
 </svg>

@@ -1,143 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E06</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E06 · Reduced transient momentum balance with explicit initial/boundary data</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E06 · Reduced transient momentum balance with explicit initial/boundary data</tspan>
 </text>
-<line id="o001" x1="96" y1="259.2" x2="960" y2="259.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o002" x1="115.2" y1="259.2" x2="125.28" y2="259.074" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o003" x1="125.28" y1="259.074" x2="135.36" y2="258.698" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o004" x1="135.36" y1="258.698" x2="145.44" y2="258.073" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o005" x1="145.44" y1="258.073" x2="155.52" y2="257.203" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o006" x1="155.52" y1="257.203" x2="165.6" y2="256.094" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o007" x1="165.6" y1="256.094" x2="175.68" y2="254.753" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o008" x1="175.68" y1="254.753" x2="185.76" y2="253.188" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o009" x1="185.76" y1="253.188" x2="195.84" y2="251.408" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o010" x1="195.84" y1="251.408" x2="205.92" y2="249.425" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o011" x1="205.92" y1="249.425" x2="216" y2="247.25" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o012" x1="216" y1="247.25" x2="226.08" y2="244.897" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o013" x1="226.08" y1="244.897" x2="236.16" y2="242.382" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o014" x1="236.16" y1="242.382" x2="246.24" y2="239.718" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o015" x1="246.24" y1="239.718" x2="256.32" y2="236.923" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o016" x1="256.32" y1="236.923" x2="266.4" y2="234.013" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o017" x1="266.4" y1="234.013" x2="276.48" y2="231.008" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o018" x1="276.48" y1="231.008" x2="286.56" y2="227.925" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o019" x1="286.56" y1="227.925" x2="296.64" y2="224.783" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o020" x1="296.64" y1="224.783" x2="306.72" y2="221.601" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o021" x1="306.72" y1="221.601" x2="316.8" y2="218.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o022" x1="316.8" y1="218.4" x2="326.88" y2="215.199" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o023" x1="326.88" y1="215.199" x2="336.96" y2="212.017" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o024" x1="336.96" y1="212.017" x2="347.04" y2="208.875" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o025" x1="347.04" y1="208.875" x2="357.12" y2="205.792" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o026" x1="357.12" y1="205.792" x2="367.2" y2="202.787" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o027" x1="367.2" y1="202.787" x2="377.28" y2="199.877" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o028" x1="377.28" y1="199.877" x2="387.36" y2="197.082" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o029" x1="387.36" y1="197.082" x2="397.44" y2="194.418" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o030" x1="397.44" y1="194.418" x2="407.52" y2="191.903" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o031" x1="407.52" y1="191.903" x2="417.6" y2="189.55" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o032" x1="417.6" y1="189.55" x2="427.68" y2="187.375" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o033" x1="427.68" y1="187.375" x2="437.76" y2="185.392" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o034" x1="437.76" y1="185.392" x2="447.84" y2="183.612" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o035" x1="447.84" y1="183.612" x2="457.92" y2="182.047" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o036" x1="457.92" y1="182.047" x2="468" y2="180.706" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o037" x1="468" y1="180.706" x2="478.08" y2="179.597" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o038" x1="478.08" y1="179.597" x2="488.16" y2="178.727" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o039" x1="488.16" y1="178.727" x2="498.24" y2="178.102" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o040" x1="498.24" y1="178.102" x2="508.32" y2="177.726" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o041" x1="508.32" y1="177.726" x2="518.4" y2="177.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o042" x1="518.4" y1="177.6" x2="528.48" y2="177.726" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o043" x1="528.48" y1="177.726" x2="538.56" y2="178.102" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o044" x1="538.56" y1="178.102" x2="548.64" y2="178.727" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o045" x1="548.64" y1="178.727" x2="558.72" y2="179.597" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o046" x1="558.72" y1="179.597" x2="568.8" y2="180.706" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o047" x1="568.8" y1="180.706" x2="578.88" y2="182.047" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o048" x1="578.88" y1="182.047" x2="588.96" y2="183.612" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o049" x1="588.96" y1="183.612" x2="599.04" y2="185.392" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o050" x1="599.04" y1="185.392" x2="609.12" y2="187.375" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o051" x1="609.12" y1="187.375" x2="619.2" y2="189.55" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o052" x1="619.2" y1="189.55" x2="629.28" y2="191.903" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o053" x1="629.28" y1="191.903" x2="639.36" y2="194.418" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o054" x1="639.36" y1="194.418" x2="649.44" y2="197.082" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o055" x1="649.44" y1="197.082" x2="659.52" y2="199.877" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o056" x1="659.52" y1="199.877" x2="669.6" y2="202.787" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o057" x1="669.6" y1="202.787" x2="679.68" y2="205.792" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o058" x1="679.68" y1="205.792" x2="689.76" y2="208.875" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o059" x1="689.76" y1="208.875" x2="699.84" y2="212.017" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o060" x1="699.84" y1="212.017" x2="709.92" y2="215.199" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o061" x1="709.92" y1="215.199" x2="720" y2="218.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o062" x1="720" y1="218.4" x2="730.08" y2="221.601" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o063" x1="730.08" y1="221.601" x2="740.16" y2="224.783" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o064" x1="740.16" y1="224.783" x2="750.24" y2="227.925" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o065" x1="750.24" y1="227.925" x2="760.32" y2="231.008" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o066" x1="760.32" y1="231.008" x2="770.4" y2="234.013" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o067" x1="770.4" y1="234.013" x2="780.48" y2="236.923" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o068" x1="780.48" y1="236.923" x2="790.56" y2="239.718" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o069" x1="790.56" y1="239.718" x2="800.64" y2="242.382" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o070" x1="800.64" y1="242.382" x2="810.72" y2="244.897" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o071" x1="810.72" y1="244.897" x2="820.8" y2="247.25" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o072" x1="820.8" y1="247.25" x2="830.88" y2="249.425" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o073" x1="830.88" y1="249.425" x2="840.96" y2="251.408" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o074" x1="840.96" y1="251.408" x2="851.04" y2="253.188" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o075" x1="851.04" y1="253.188" x2="861.12" y2="254.753" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o076" x1="861.12" y1="254.753" x2="871.2" y2="256.094" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o077" x1="871.2" y1="256.094" x2="881.28" y2="257.203" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o078" x1="881.28" y1="257.203" x2="891.36" y2="258.073" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o079" x1="891.36" y1="258.073" x2="901.44" y2="258.698" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o080" x1="901.44" y1="258.698" x2="911.52" y2="259.074" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<line id="o081" x1="911.52" y1="259.074" x2="921.6" y2="259.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<rect id="o082" x="91.2" y="230.4" width="28.8" height="57.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<rect id="o083" x="916.8" y="230.4" width="28.8" height="57.6" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o084" x1="288" y1="360" x2="288" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o085" x1="518.4" y1="360" x2="518.4" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o086" x1="748.8" y1="360" x2="748.8" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o087" x1="518.4" y1="96" x2="518.4" y2="158.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o088" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="578.88" y="127.92">t_coh ↓: opening resistance</tspan>
+<rect id="o001" x="48" y="96" width="595.2" height="508.8" rx="40.704" fill="#1E4A5A" stroke="#2B6678" stroke-width="1.6" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="64.32" y="116.933">Film element: four forces balance inertia</tspan>
 </text>
-<text id="o089" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="233.28" y="386.813">p_load ↑: applied positive departure load</tspan>
+<rect id="o003" x="115.2" y="336" width="460.8" height="28.8" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o004" x1="345.6" y1="220.8" x2="345.6" y2="331.2" fill="#FFFFFF" stroke="#F28BA0" stroke-width="5.33333" opacity="1" marker-end="url(#head)"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="357.12" y="244.893">p_load (pressure)</tspan>
 </text>
-<text id="o090" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="98.88" y="101.52">Film: w ↑; fixed clamps</tspan>
+<line id="o006" x1="211.2" y1="422.4" x2="211.2" y2="369.6" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o007" font-family="Arial,sans-serif" font-size="15.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="97.92" y="446.493">D_f∇⁴w − T₀∇²w (elastic)</tspan>
 </text>
-<text id="o091" font-family="Arial,sans-serif" font-size="22.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="982.08" y="223.267">Inertia</tspan>
-<tspan x="982.08" y="250.013">Bending</tspan>
-<tspan x="982.08" y="276.76">Pretension</tspan>
+<line id="o008" x1="480" y1="422.4" x2="480" y2="369.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<text id="o009" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="385.92" y="446.493">t_coh (cohesive)</tspan>
 </text>
-<line id="o092" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o093" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• w, ẇ, ẅ ↑ positive departure</tspan>
+<line id="o010" x1="345.6" y1="268.8" x2="345.6" y2="235.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="97.92" y="519.587">m_A ẅ + D_f∇⁴w − T₀∇²w = p_load − t_coh</tspan>
 </text>
-<text id="o094" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• x, t — location and time</tspan>
+<text id="o012" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="97.92" y="567.04">m_A ẅ is the inertia that is left over.</tspan>
 </text>
-<text id="o095" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• m_A — film inertia</tspan>
+<rect id="o013" x="662.4" y="96" width="580.8" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="675.84" y="118.44">Initial and boundary data</tspan>
 </text>
-<text id="o096" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• D_f — bending stiffness</tspan>
+<text id="o015" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="699.84" y="169.187">At rest at t = 0:  w = 0,  ẇ = 0 everywhere.</tspan>
 </text>
-<text id="o097" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• T₀ — pretension</tspan>
+<ellipse id="o016" cx="684.48" cy="163.933" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="699.84" y="199.12">Clamped edge:  w = 0 and ∂ₙw = 0 (no deflection, no slope).</tspan>
 </text>
-<text id="o098" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• p_load ↑ exposed load</tspan>
+<ellipse id="o018" cx="684.48" cy="193.867" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o019" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="699.84" y="229.053">Loading enters only through p_load; cohesive resistance only</tspan>
+<tspan x="699.84" y="248.72">through t_coh.</tspan>
 </text>
-<text id="o099" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• t_coh ↓ opening resistance</tspan>
+<ellipse id="o020" cx="684.48" cy="223.8" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="678.72" y="380.387">Without the initial data the equation has many solutions;</tspan>
+<tspan x="678.72" y="400.053">without the clamp it cannot be solved.</tspan>
 </text>
-<text id="o100" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="520.007">• clamp: w = 0, ∂ₙw = 0</tspan>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="678.72" y="466.24">Reduced model: small deflection, thin uniform film, tension T₀</tspan>
+<tspan x="678.72" y="485.12">prescribed.</tspan>
 </text>
-<text id="o101" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">The film starts at rest.</tspan>
-</text>
-<text id="o102" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">The release interface supplies resistance.</tspan>
-</text>
-<text id="o103" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o023" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Reduced transient plate balance of Eq. C4-E06; schematic.</tspan>
 </text>
 </svg>

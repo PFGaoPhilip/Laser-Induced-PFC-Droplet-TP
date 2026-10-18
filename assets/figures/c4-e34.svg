@@ -1,48 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E34</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E34 · Ballistic placement estimate</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E34 · Ballistic placement estimate</tspan>
 </text>
-<rect id="o001" x="115.2" y="96" width="192" height="24" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<rect id="o002" x="96" y="355.2" width="1084.8" height="28.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o003" x1="211.2" y1="129.6" x2="211.2" y2="350.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1"/>
-<line id="o004" x1="211.2" y1="129.6" x2="480" y2="350.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<line id="o005" x1="211.2" y1="316.8" x2="480" y2="316.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="305.28" y="303.12">Δx</tspan>
+<line id="o001" x1="768" y1="508.8" x2="1228.8" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="768" y1="144" x2="768" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="768" y1="508.8" x2="768" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="768" y1="144" x2="768" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="768" y="530.84">0</tspan>
 </text>
-<text id="o007" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="46.08" y="235.92">H_f</tspan>
+<line id="o006" x1="860.16" y1="508.8" x2="860.16" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="860.16" y1="144" x2="860.16" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="860.16" y="530.84">1</tspan>
 </text>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="242.88" y="183.12">θ</tspan>
+<line id="o009" x1="952.32" y1="508.8" x2="952.32" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="952.32" y1="144" x2="952.32" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="952.32" y="530.84">2</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="617.28" y="192">Normal gap H_f</tspan>
-<tspan x="617.28" y="223.467">Lateral error Δx = H_f tan θ</tspan>
+<line id="o012" x1="1044.48" y1="508.8" x2="1044.48" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="1044.48" y1="144" x2="1044.48" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1044.48" y="530.84">3</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• H_f — payload normal flight gap</tspan>
+<line id="o015" x1="1136.64" y1="508.8" x2="1136.64" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="1136.64" y1="144" x2="1136.64" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1136.64" y="530.84">4</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• θ — departure angle</tspan>
+<line id="o018" x1="1228.8" y1="508.8" x2="1228.8" y2="515.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="1228.8" y1="144" x2="1228.8" y2="508.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1228.8" y="530.84">5</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• Δx — lateral placement error</tspan>
+<line id="o021" x1="761.28" y1="508.8" x2="768" y2="508.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="761.28" y1="427.733" x2="768" y2="427.733" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="768" y1="427.733" x2="1228.8" y2="427.733" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="432.493">2</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• target normal ↓ receiver</tspan>
+<line id="o025" x1="761.28" y1="346.667" x2="768" y2="346.667" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="768" y1="346.667" x2="1228.8" y2="346.667" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="351.427">4</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• H_f = 100 μm, θ = 1°</tspan>
+<line id="o028" x1="761.28" y1="265.6" x2="768" y2="265.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="768" y1="265.6" x2="1228.8" y2="265.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="270.36">6</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">A 1° departure error gives about 1.75 μm offset in this example.</tspan>
+<line id="o031" x1="761.28" y1="184.533" x2="768" y2="184.533" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="768" y1="184.533" x2="1228.8" y2="184.533" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="756.48" y="189.293">8</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o034" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="998.4" y="553.6">launch error θ  (degrees)</tspan>
+</text>
+<text id="o035" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="712.32" y="122.56">Δx  (µm)</tspan>
+</text>
+<polyline id="o036" points="768,508.8 772.655,505.227 777.309,501.654 781.964,498.081 786.618,494.508 791.273,490.935 795.927,487.362 800.582,483.789 805.236,480.216 809.891,476.643 814.545,473.07 819.2,469.497 823.855,465.923 828.509,462.35 833.164,458.776 837.818,455.203 842.473,451.629 847.127,448.056 851.782,444.482 856.436,440.908 861.091,437.334 865.745,433.76 870.4,430.186 875.055,426.611 879.709,423.037 884.364,419.462 889.018,415.888 893.673,412.313 898.327,408.738 902.982,405.162 907.636,401.587 912.291,398.012 916.945,394.436 921.6,390.86 926.255,387.284 930.909,383.708 935.564,380.131 940.218,376.555 944.873,372.978 949.527,369.401 954.182,365.824 958.836,362.246 963.491,358.668 968.145,355.09 972.8,351.512 977.455,347.934 982.109,344.355 986.764,340.776 991.418,337.197 996.073,333.617 1000.73,330.038 1005.38,326.458 1010.04,322.877 1014.69,319.297 1019.35,315.716 1024,312.135 1028.65,308.553 1033.31,304.971 1037.96,301.389 1042.62,297.807 1047.27,294.224 1051.93,290.641 1056.58,287.058 1061.24,283.474 1065.89,279.89 1070.55,276.305 1075.2,272.72 1079.85,269.135 1084.51,265.549 1089.16,261.963 1093.82,258.377 1098.47,254.79 1103.13,251.203 1107.78,247.616 1112.44,244.028 1117.09,240.439 1121.75,236.85 1126.4,233.261 1131.05,229.671 1135.71,226.081 1140.36,222.491 1145.02,218.9 1149.67,215.308 1154.33,211.717 1158.98,208.124 1163.64,204.531 1168.29,200.938 1172.95,197.344 1177.6,193.75 1182.25,190.155 1186.91,186.56 1191.56,182.964 1196.22,179.368 1200.87,175.771 1205.53,172.174 1210.18,168.576 1214.84,164.978 1219.49,161.379 1224.15,157.779 1228.8,154.179" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o037" cx="860.16" cy="438.049" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="876.48" y="472.289">θ = 1°: Δx = 1.7455 µm</tspan>
+</text>
+<rect id="o039" x="38.4" y="96" width="624" height="508.8" rx="40.704" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Ballistic placement</tspan>
+</text>
+<rect id="o041" x="76.8" y="163.2" width="547.2" height="28.8" fill="#3A5362" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="78.72" y="148.893">exit plane (jet source)</tspan>
+</text>
+<rect id="o043" x="76.8" y="422.4" width="547.2" height="28.8" fill="#3A5362" stroke="#B4C7D2" stroke-width="1.86667" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="78.72" y="470.493">film plane</tspan>
+</text>
+<line id="o045" x1="249.6" y1="192" x2="249.6" y2="422.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<line id="o046" x1="249.6" y1="192" x2="321.6" y2="417.6" fill="#FFFFFF" stroke="#F2B880" stroke-width="4.66667" opacity="1" marker-end="url(#head)"/>
+<line id="o047" x1="67.2" y1="192" x2="67.2" y2="422.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o048" x1="73.92" y1="192" x2="60.48" y2="192" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o049" x1="73.92" y1="422.4" x2="60.48" y2="422.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="48" y="312.64">H_f</tspan>
+</text>
+<line id="o051" x1="249.6" y1="475.2" x2="326.4" y2="475.2" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1"/>
+<line id="o052" x1="249.6" y1="468.48" x2="249.6" y2="481.92" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1"/>
+<line id="o053" x1="326.4" y1="468.48" x2="326.4" y2="481.92" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1"/>
+<text id="o054" font-family="Arial,sans-serif" font-size="16.6667" fill="#F28BA0" text-anchor="middle" opacity="1">
+<tspan x="288" y="461.587">Δx</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="18.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="347.52" y="286.027">θ</tspan>
+</text>
+<text id="o056" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="59.52" y="538.787">Δx = H_f tan θ,   H_f = 100 µm,   θ = 1° ⇒ Δx = 1.74551 µm</tspan>
+</text>
+<text id="o057" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="693.12" y="605.44">A receiving gap converts a small angular error into a placement</tspan>
+<tspan x="693.12" y="624.32">error; compare Δx with the feature size.</tspan>
+</text>
+<text id="o058" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Ballistic placement of Eq. C4-E34 (the sketch angle is exaggerated).</tspan>
 </text>
 </svg>

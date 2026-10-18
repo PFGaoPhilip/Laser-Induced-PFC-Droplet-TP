@@ -1,24 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E05 Liquid inertia relates the interface pressure to wall acceleration and squared speed.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E05 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<line x1="270" y1="215" x2="370" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="287" y="197.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">R(t)</text>
-<text x="222" y="251.6" font-family="Arial,sans-serif" font-size="20" fill="#E7F0F3">p_b</text>
-<text x="432" y="148.76" font-family="Arial,sans-serif" font-size="22" fill="#E7F0F3">Surrounding liquid</text>
-<text x="432" y="183.52" font-family="Arial,sans-serif" font-size="19" fill="#E7F0F3">p∞, ρ, μ; interface: σ</text>
-<line x1="270" y1="215" x2="410" y2="310" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="442" y="319.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">r ≥ R</text>
-<line x1="410" y1="215" x2="475" y2="215" fill="none" stroke="#8EDBD4" stroke-width="2.6" marker-end="url(#arrow)"/>
-<text x="417" y="253.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">+e_r (coordinate)</text>
-<text x="102" y="364.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Signed wall speed: Ṙ; acceleration: R̈</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pl at r = R</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">ρ</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">u(R,t) = Ṙ</text>
-<text x="32" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">r</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">p∞</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">φ</text>
-<text x="507" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">R̈</text>
-<text x="507" y="498.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">t</text>
-<text x="32" y="537.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">R R̈ and 3Ṙ²/2 each have units m²/s²</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E05</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E05 · Derived inertial pressure</tspan>
+</text>
+<line id="o001" x1="91.2" y1="556.8" x2="657.6" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="91.2" y1="144" x2="91.2" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="91.2" y1="556.8" x2="91.2" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="91.2" y1="144" x2="91.2" y2="556.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="91.2" y="578.84">1</tspan>
+</text>
+<line id="o006" x1="280" y1="556.8" x2="280" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="280" y1="144" x2="280" y2="556.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="280" y="578.84">2</tspan>
+</text>
+<line id="o009" x1="468.8" y1="556.8" x2="468.8" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="468.8" y1="144" x2="468.8" y2="556.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="468.8" y="578.84">3</tspan>
+</text>
+<line id="o012" x1="657.6" y1="556.8" x2="657.6" y2="563.52" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="657.6" y1="144" x2="657.6" y2="556.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="657.6" y="578.84">4</tspan>
+</text>
+<line id="o015" x1="84.48" y1="556.8" x2="91.2" y2="556.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="84.48" y1="474.24" x2="91.2" y2="474.24" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="91.2" y1="474.24" x2="657.6" y2="474.24" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="479">0</tspan>
+</text>
+<line id="o019" x1="84.48" y1="391.68" x2="91.2" y2="391.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="91.2" y1="391.68" x2="657.6" y2="391.68" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="396.44">1</tspan>
+</text>
+<line id="o022" x1="84.48" y1="309.12" x2="91.2" y2="309.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="91.2" y1="309.12" x2="657.6" y2="309.12" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="313.88">2</tspan>
+</text>
+<line id="o025" x1="84.48" y1="226.56" x2="91.2" y2="226.56" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="91.2" y1="226.56" x2="657.6" y2="226.56" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="231.32">3</tspan>
+</text>
+<line id="o028" x1="84.48" y1="144" x2="91.2" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="91.2" y1="144" x2="657.6" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="79.68" y="148.76">4</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="374.4" y="601.6">r / R</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="35.52" y="122.56">(p − p∞) / ρ</tspan>
+</text>
+<line id="o033" x1="91.2" y1="474.24" x2="657.6" y2="474.24" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.6" opacity="1"/>
+<polyline id="o034" points="91.2,391.68 95.0013,390.96 98.8027,390.444 102.604,390.102 106.405,389.912 110.207,389.853 114.008,389.907 117.809,390.059 121.611,390.294 125.412,390.603 129.213,390.974 133.015,391.398 136.816,391.869 140.617,392.378 144.419,392.92 148.22,393.49 152.021,394.083 155.823,394.696 159.624,395.324 163.426,395.965 167.227,396.616 171.028,397.274 174.83,397.938 178.631,398.606 182.432,399.275 186.234,399.946 190.035,400.616 193.836,401.284 197.638,401.95 201.439,402.612 205.24,403.27 209.042,403.924 212.843,404.572 216.644,405.215 220.446,405.852 224.247,406.482 228.048,407.106 231.85,407.723 235.651,408.332 239.452,408.935 243.254,409.53 247.055,410.118 250.856,410.699 254.658,411.272 258.459,411.837 262.26,412.395 266.062,412.946 269.863,413.489 273.664,414.024 277.466,414.552 281.267,415.073 285.068,415.586 288.87,416.092 292.671,416.591 296.472,417.083 300.274,417.568 304.075,418.046 307.877,418.517 311.678,418.982 315.479,419.44 319.281,419.891 323.082,420.336 326.883,420.774 330.685,421.207 334.486,421.633 338.287,422.053 342.089,422.467 345.89,422.875 349.691,423.278 353.493,423.675 357.294,424.066 361.095,424.452 364.897,424.832 368.698,425.208 372.499,425.578 376.301,425.943 380.102,426.302 383.903,426.657 387.705,427.008 391.506,427.353 395.307,427.694 399.109,428.03 402.91,428.361 406.711,428.689 410.513,429.012 414.314,429.33 418.115,429.644 421.917,429.955 425.718,430.261 429.519,430.563 433.321,430.862 437.122,431.156 440.923,431.447 444.725,431.734 448.526,432.017 452.328,432.297 456.129,432.573 459.93,432.846 463.732,433.116 467.533,433.382 471.334,433.644 475.136,433.904 478.937,434.161 482.738,434.414 486.54,434.664 490.341,434.911 494.142,435.156 497.944,435.397 501.745,435.636 505.546,435.871 509.348,436.104 513.149,436.334 516.95,436.562 520.752,436.787 524.553,437.009 528.354,437.229 532.156,437.446 535.957,437.661 539.758,437.874 543.56,438.084 547.361,438.291 551.162,438.497 554.964,438.7 558.765,438.901 562.566,439.099 566.368,439.296 570.169,439.49 573.97,439.682 577.772,439.873 581.573,440.061 585.374,440.247 589.176,440.431 592.977,440.613 596.779,440.794 600.58,440.972 604.381,441.149 608.183,441.324 611.984,441.497 615.785,441.668 619.587,441.837 623.388,442.005 627.189,442.171 630.991,442.335 634.792,442.498 638.593,442.659 642.395,442.819 646.196,442.977 649.997,443.133 653.799,443.288 657.6,443.441" fill="none" stroke="#8EDBD4" stroke-width="3.73333" opacity="1"/>
+<polyline id="o035" points="91.2,185.28 95.0013,188.634 98.8027,192.033 102.604,195.459 106.405,198.896 110.207,202.331 114.008,205.754 117.809,209.155 121.611,212.528 125.412,215.867 129.213,219.166 133.015,222.423 136.816,225.633 140.617,228.795 144.419,231.906 148.22,234.966 152.021,237.973 155.823,240.928 159.624,243.828 163.426,246.675 167.227,249.469 171.028,252.21 174.83,254.898 178.631,257.534 182.432,260.119 186.234,262.653 190.035,265.137 193.836,267.573 197.638,269.96 201.439,272.3 205.24,274.594 209.042,276.843 212.843,279.047 216.644,281.208 220.446,283.327 224.247,285.405 228.048,287.442 231.85,289.439 235.651,291.399 239.452,293.32 243.254,295.205 247.055,297.054 250.856,298.868 254.658,300.647 258.459,302.394 262.26,304.108 266.062,305.79 269.863,307.442 273.664,309.063 277.466,310.655 281.267,312.218 285.068,313.753 288.87,315.261 292.671,316.742 296.472,318.197 300.274,319.627 304.075,321.032 307.877,322.412 311.678,323.769 315.479,325.104 319.281,326.415 323.082,327.705 326.883,328.973 330.685,330.22 334.486,331.446 338.287,332.653 342.089,333.84 345.89,335.008 349.691,336.157 353.493,337.288 357.294,338.402 361.095,339.497 364.897,340.576 368.698,341.638 372.499,342.684 376.301,343.714 380.102,344.728 383.903,345.727 387.705,346.711 391.506,347.68 395.307,348.636 399.109,349.577 402.91,350.504 406.711,351.418 410.513,352.319 414.314,353.207 418.115,354.083 421.917,354.946 425.718,355.797 429.519,356.636 433.321,357.464 437.122,358.28 440.923,359.085 444.725,359.88 448.526,360.663 452.328,361.436 456.129,362.199 459.93,362.952 463.732,363.694 467.533,364.427 471.334,365.151 475.136,365.865 478.937,366.57 482.738,367.266 486.54,367.953 490.341,368.632 494.142,369.302 497.944,369.964 501.745,370.617 505.546,371.263 509.348,371.9 513.149,372.53 516.95,373.153 520.752,373.767 524.553,374.375 528.354,374.975 532.156,375.568 535.957,376.154 539.758,376.733 543.56,377.306 547.361,377.872 551.162,378.431 554.964,378.984 558.765,379.531 562.566,380.071 566.368,380.606 570.169,381.134 573.97,381.657 577.772,382.174 581.573,382.685 585.374,383.19 589.176,383.69 592.977,384.185 596.779,384.674 600.58,385.158 604.381,385.637 608.183,386.111 611.984,386.579 615.785,387.043 619.587,387.502 623.388,387.956 627.189,388.406 630.991,388.851 634.792,389.291 638.593,389.727 642.395,390.158 646.196,390.586 649.997,391.008 653.799,391.427 657.6,391.841" fill="none" stroke="#F2B880" stroke-width="3.73333" opacity="1"/>
+<ellipse id="o036" cx="91.2" cy="391.68" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o037" cx="91.2" cy="185.28" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="402.88" y="392.992">expanding, slowing</tspan>
+<tspan x="402.88" y="411.872">Ṙ = 1, R̈ = −0.5</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="232.96" y="152.896">collapsing, decelerating</tspan>
+<tspan x="232.96" y="171.776">Ṙ = −1, R̈ = +2</tspan>
+</text>
+<rect id="o040" x="691.2" y="139.2" width="552" height="340.8" rx="27.264" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="704.64" y="161.64">The wall value has three pieces</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="707.52" y="204.427">pₗ − p∞ = ρ [ R R̈ + 2Ṙ² − Ṙ²/2 ]</tspan>
+</text>
+<line id="o043" x1="1046.4" y1="240" x2="1046.4" y2="388.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="17.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="707.52" y="256.133">R R̈</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="798.72" y="255.867">wall acceleration</tspan>
+</text>
+<rect id="o046" x="1020" y="244.8" width="26.4" height="28.8" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="707.52" y="304.133">2Ṙ²</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="798.72" y="303.867">unsteady potential</tspan>
+</text>
+<rect id="o049" x="1046.4" y="292.8" width="105.6" height="28.8" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="707.52" y="352.133">−Ṙ²/2</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="14.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="798.72" y="351.867">Bernoulli kinetic term</tspan>
+</text>
+<rect id="o052" x="1020" y="340.8" width="26.4" height="28.8" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o053" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="707.52" y="418.787">Expanding case: −0.5 + 2 − 0.5 = 1.0 = R R̈ + 3Ṙ²/2</tspan>
+</text>
+<text id="o054" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="693.12" y="515.333">The pressure is stored in the liquid by its inertia: pₗ</tspan>
+<tspan x="693.12" y="535.787">exceeds p∞ whenever R R̈ + 3Ṙ²/2 &gt; 0.</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="693.12" y="601.187">Far away the acceleration term decays as 1/r, the Ṙ² term as</tspan>
+<tspan x="693.12" y="620.853">1/r⁴.</tspan>
+</text>
+<text id="o056" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Profile: p − p∞ = ρ[(R²R̈ + 2RṘ²)/r − R⁴Ṙ²/(2r⁴)] from the unsteady Bernoulli equation, R = 1.</tspan>
+</text>
 </svg>

@@ -19786,5 +19786,2255 @@
       "$t_0,t_1$ 为明确的起止时间（s）",
       "$dA,dt$ 为面积／时间测度，$\\int$ 为定积分"
     ]
+  },
+  "C5-E01": {
+    "rows": [
+      {
+        "symbol": "p",
+        "en": "$p$ — Absolute pressure (Pa)",
+        "zh": "$p$ — 绝对压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — Liquid density (kg m⁻³)",
+        "zh": "$\\rho$ — 液体密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Reference density 998.1539919 at the reference pressure (kg m⁻³)",
+        "zh": "$\\rho_j$ — 参考压力下的参考密度 998.1539919（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Reference pressure 101325 (Pa)",
+        "zh": "$p_j$ — 参考压力 101325（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Pi",
+        "en": "$\\Pi$ — Stiffness pressure 6.00 × 10⁸ (Pa)",
+        "zh": "$\\Pi$ — 刚度压力 6.00 × 10⁸（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\gamma",
+        "en": "$\\gamma$ — Stiffness exponent 4.4 (dimensionless)",
+        "zh": "$\\gamma$ — 刚度指数 4.4（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c",
+        "en": "$c$ — Local sound speed (m s⁻¹)",
+        "zh": "$c$ — 局部声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "d/d\\rho",
+        "en": "$d/d\\rho$ — Derivative operator with respect to density (m³ kg⁻¹)",
+        "zh": "$d/d\\rho$ — 对密度的导数算符（m³ kg⁻¹）",
+        "unit": "m³ kg⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Pressure depends on density alone (barotropic)",
+      "Valid while temperature change is negligible",
+      "The law fixes $c_{0}$ = 1626.447 m s⁻¹"
+    ],
+    "notes_zh": [
+      "压力仅依赖于密度（正压）",
+      "温度变化可忽略时成立",
+      "该律给出 $c_{0}$ = 1626.447 m s⁻¹"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E02": {
+    "rows": [
+      {
+        "symbol": "p_{\\mathrm{early}}",
+        "en": "$p_{\\mathrm{early}}$ — Early compressive contact pressure from Chapter 3 matching (Pa)",
+        "zh": "$p_{\\mathrm{early}}$ — 第三章匹配得到的早期压缩接触压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "Z_l",
+        "en": "$Z_l$ — Liquid longitudinal impedance (Pa s m⁻¹)",
+        "zh": "$Z_l$ — 液体纵向阻抗（Pa s m⁻¹）",
+        "unit": "Pa s m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "Z_r",
+        "en": "$Z_r$ — Receiver longitudinal impedance (Pa s m⁻¹)",
+        "zh": "$Z_r$ — 接收体纵向阻抗（Pa s m⁻¹）",
+        "unit": "Pa s m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Prescribed incoming speed 99.027 (m s⁻¹)",
+        "zh": "$U$ — 给定入射速度 99.027（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "Z_0",
+        "en": "$Z_0$ — Reference acoustic impedance $ρ_{j}$ $c_{0}$ (Pa s m⁻¹)",
+        "zh": "$Z_0$ — 参考声阻抗 $ρ_{j}$ $c_{0}$（Pa s m⁻¹）",
+        "unit": "Pa s m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_A",
+        "en": "$p_A$ — Absolute acoustic wall pressure (Pa)",
+        "zh": "$p_A$ — 绝对声学壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Reference pressure (Pa)",
+        "zh": "$p_j$ — 参考压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Reference density (kg m⁻³)",
+        "zh": "$\\rho_j$ — 参考密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "$Z_{l}$ = $Z_{0}$ at linear order",
+      "Rigid wall: $Z_{r}$ → ∞ gives zero contact velocity",
+      "$Z_{0}$ U = 160.765 MPa at U = 99.027 m s⁻¹"
+    ],
+    "notes_zh": [
+      "线性阶下 $Z_{l}$ = $Z_{0}$",
+      "刚性壁面：$Z_{r}$ → ∞ 使接触速度为零",
+      "U = 99.027 m s⁻¹ 时 $Z_{0}$ U = 160.765 MPa"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E03": {
+    "rows": [
+      {
+        "symbol": "\\rho_1",
+        "en": "$\\rho_1$ — Density behind the shock (kg m⁻³)",
+        "zh": "$\\rho_1$ — 激波后密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Density of the incoming liquid (kg m⁻³)",
+        "zh": "$\\rho_j$ — 入射液体密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U_s",
+        "en": "$U_s$ — Shock speed relative to the incoming liquid (m s⁻¹)",
+        "zh": "$U_s$ — 相对入射液体的激波速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Incoming liquid speed toward the wall (m s⁻¹)",
+        "zh": "$U$ — 入射液体朝壁面的速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_1",
+        "en": "$p_1$ — Absolute pressure behind the shock (Pa)",
+        "zh": "$p_1$ — 激波后绝对压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Absolute pressure ahead of the shock (Pa)",
+        "zh": "$p_j$ — 激波前绝对压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "x",
+        "en": "$x$ — Velocity ratio U/$U_{s}$ (dimensionless)",
+        "zh": "$x$ — 速度比 U/$U_{s}$（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Liquid behind the shock is at rest against the wall",
+      "Mass and momentum jump conditions need no equation of state",
+      "In the frame of the shock the incoming speed is $U_{s}$ and the outgoing speed is $U_{s}$ − U"
+    ],
+    "notes_zh": [
+      "激波后的液体相对壁面静止",
+      "质量与动量跳跃条件不需要状态方程",
+      "在激波参考系中，入流速度为 $U_{s}$，出流速度为 $U_{s}$ − U"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E04": {
+    "rows": [
+      {
+        "symbol": "e",
+        "en": "$e$ — Specific internal energy of the stiffened-gas liquid (J kg⁻¹)",
+        "zh": "$e$ — 刚化气体液体的比内能（J kg⁻¹）",
+        "unit": "J kg⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "e_1",
+        "en": "$e_1$ — Specific internal energy behind the shock (J kg⁻¹)",
+        "zh": "$e_1$ — 激波后比内能（J kg⁻¹）",
+        "unit": "J kg⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "e_j",
+        "en": "$e_j$ — Specific internal energy of the incoming liquid (J kg⁻¹)",
+        "zh": "$e_j$ — 入射液体比内能（J kg⁻¹）",
+        "unit": "J kg⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "k",
+        "en": "$k$ — Auxiliary constant (γ+1)M²/4 (dimensionless)",
+        "zh": "$k$ — 辅助常数 (γ+1)M²/4（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "M",
+        "en": "$M$ — Impact Mach number U/$c_{0}$ (dimensionless)",
+        "zh": "$M$ — 撞击马赫数 U/$c_{0}$（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "x",
+        "en": "$x$ — Velocity ratio U/$U_{s}$ from Eq. (C5-E03) (dimensionless)",
+        "zh": "$x$ — 来自式（C5-E03）的速度比 U/$U_{s}$（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H",
+        "en": "$p_H$ — Hugoniot wall pressure (Pa)",
+        "zh": "$p_H$ — Hugoniot 壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\gamma",
+        "en": "$\\gamma$ — Stiffness exponent 4.4 (dimensionless)",
+        "zh": "$\\gamma$ — 刚度指数 4.4（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Pi",
+        "en": "$\\Pi$ — Stiffness pressure 6.00 × 10⁸ (Pa)",
+        "zh": "$\\Pi$ — 刚度压力 6.00 × 10⁸（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Prescribed impact speed (m s⁻¹)",
+        "zh": "$U$ — 给定撞击速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Energy closure assumes a fully caloric stiffened gas",
+      "Root x is positive and below 1",
+      "M → 0 recovers $p_{H}$ → $p_{j}$ + $Z_{0}$ U"
+    ],
+    "notes_zh": [
+      "能量闭合假设为完全量热的刚化气体",
+      "根 x 为正且小于 1",
+      "M → 0 时回到 $p_{H}$ → $p_{j}$ + $Z_{0}$ U"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E05": {
+    "rows": [
+      {
+        "symbol": "S",
+        "en": "$S$ — Lab-frame shock speed toward +z (m s⁻¹)",
+        "zh": "$S$ — 实验室参考系中朝 +z 的激波速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "S_B",
+        "en": "$S_B$ — Root of the barotropic condition (m s⁻¹)",
+        "zh": "$S_B$ — 正压条件的根（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_1",
+        "en": "$\\rho_1$ — Density behind the shock (kg m⁻³)",
+        "zh": "$\\rho_1$ — 激波后密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Incoming density (kg m⁻³)",
+        "zh": "$\\rho_j$ — 入射密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Incoming speed (m s⁻¹)",
+        "zh": "$U$ — 入射速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U_s",
+        "en": "$U_s$ — Shock speed relative to the incoming liquid (m s⁻¹)",
+        "zh": "$U_s$ — 相对入射液体的激波速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p(\\rho_1)",
+        "en": "$p(\\rho_1)$ — Pressure from the law of Eq. (C5-E01) at density $ρ_{1}$ (Pa)",
+        "zh": "$p(\\rho_1)$ — 由式（C5-E01）在密度 $ρ_{1}$ 处给出的压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Incoming pressure (Pa)",
+        "zh": "$p_j$ — 入射压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_B",
+        "en": "$p_B$ — Barotropic shock pressure (Pa)",
+        "zh": "$p_B$ — 正压激波压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Mass and momentum are kept; the energy equation is dropped",
+      "$S_{B}$ solves p($ρ_{1}$) = $p_{j}$ + $ρ_{j}$(U+S)U",
+      "This is the law both solvers integrate"
+    ],
+    "notes_zh": [
+      "保留质量与动量；舍去能量方程",
+      "$S_{B}$ 求解 p($ρ_{1}$) = $p_{j}$ + $ρ_{j}$(U+S)U",
+      "两个求解器积分的正是这一定律"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E06": {
+    "rows": [
+      {
+        "symbol": "\\bar p_R",
+        "en": "$\\bar p_R$ — Area-weighted mean absolute pressure on the wall disk (Pa)",
+        "zh": "$\\bar p_R$ — 壁面圆盘上的面积加权平均绝对压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "R",
+        "en": "$R$ — Sensor radius, a or a/2 (m)",
+        "zh": "$R$ — 传感区半径，取 a 或 a/2（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p(r,0,t)",
+        "en": "$p(r,0,t)$ — Wall pressure at radius r, z = 0 (Pa)",
+        "zh": "$p(r,0,t)$ — 半径 r、z = 0 处的壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "r",
+        "en": "$r$ — Radial coordinate (m)",
+        "zh": "$r$ — 径向坐标（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — Time from first contact (s)",
+        "zh": "$t$ — 自首次接触起的时间（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\tau",
+        "en": "$\\tau$ — Dimensionless time $c_{0}$ t / a (dimensionless)",
+        "zh": "$\\tau$ — 无量纲时间 $c_{0}$ t / a（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Lambda",
+        "en": "$\\Lambda$ — Finite-area peak factor (dimensionless)",
+        "zh": "$\\Lambda$ — 有限面积峰值因子（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H",
+        "en": "$p_H$ — Hugoniot wall pressure (Pa)",
+        "zh": "$p_H$ — Hugoniot 壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "The weight 2r/R² is the area element of an axisymmetric disk",
+      "A line average along r without that weight is a different observable",
+      "Peak is taken over the first-arrival window"
+    ],
+    "notes_zh": [
+      "权重 2r/R² 是轴对称圆盘的面积微元",
+      "沿 r 不带该权重的线平均是另一个观测量",
+      "峰值取自首次到达时间窗"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E07": {
+    "rows": [
+      {
+        "symbol": "f_{\\mathrm{rel}}",
+        "en": "$f_{\\mathrm{rel}}$ — Fraction of the wall disk reached by edge release (dimensionless)",
+        "zh": "$f_{\\mathrm{rel}}$ — 边缘释放已到达的壁面圆盘面积分数（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\tau",
+        "en": "$\\tau$ — Dimensionless time $c_{0}$ t / a (dimensionless)",
+        "zh": "$\\tau$ — 无量纲时间 $c_{0}$ t / a（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar p_a",
+        "en": "$\\bar p_a$ — Full-sensor mean wall pressure (Pa)",
+        "zh": "$\\bar p_a$ — 全传感区平均壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H",
+        "en": "$p_H$ — Hugoniot wall pressure (Pa)",
+        "zh": "$p_H$ — Hugoniot 壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Sound speed carrying the release inward (m s⁻¹)",
+        "zh": "$c_0$ — 向内传播释放的声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Order-of-magnitude scale, not a prediction",
+      "Assumes a release front advancing inward at $c_{0}$ from r = a",
+      "Pressure inside the front is taken equal to $p_{H}$"
+    ],
+    "notes_zh": [
+      "数量级尺度估计，并非预测",
+      "假设释放前沿自 r = a 起以 $c_{0}$ 向内推进",
+      "前沿内部压力取为 $p_{H}$"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E08": {
+    "rows": [
+      {
+        "symbol": "A_j",
+        "en": "$A_j$ — Jet cross-section area (m²)",
+        "zh": "$A_j$ — 射流横截面积（m²）",
+        "unit": "m²",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\dot m",
+        "en": "$\\dot m$ — Incident mass flow rate (kg s⁻¹)",
+        "zh": "$\\dot m$ — 入射质量流率（kg s⁻¹）",
+        "unit": "kg s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\dot K",
+        "en": "$\\dot K$ — Incident kinetic-energy flux (W)",
+        "zh": "$\\dot K$ — 入射动能通量（W）",
+        "unit": "W",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "K",
+        "en": "$K$ — Kinetic energy crossing the plane up to time t (J)",
+        "zh": "$K$ — 截至时间 t 穿过平面的动能（J）",
+        "unit": "J",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Incoming density (kg m⁻³)",
+        "zh": "$\\rho_j$ — 入射密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Incoming speed (m s⁻¹)",
+        "zh": "$U$ — 入射速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t_w",
+        "en": "$t_w$ — Incident-flux window (s)",
+        "zh": "$t_w$ — 入射通量时间窗（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U_s",
+        "en": "$U_s$ — Shock speed relative to the incoming liquid (m s⁻¹)",
+        "zh": "$U_s$ — 相对入射液体的激波速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Plane z = 2a lies upstream of the wall",
+      "The window ends before the reflected shock reaches the plane",
+      "Flux is liquid energy crossing the plane; the rigid wall receives no work"
+    ],
+    "notes_zh": [
+      "平面 z = 2a 位于壁面上游",
+      "时间窗在反射激波到达该平面之前结束",
+      "通量是穿过平面的液体能量；刚性壁面不接收功"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E09": {
+    "rows": [
+      {
+        "symbol": "M",
+        "en": "$M$ — Impact Mach number (dimensionless)",
+        "zh": "$M$ — 撞击马赫数（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Prescribed speed, 50 to 150 (m s⁻¹)",
+        "zh": "$U$ — 给定速度，50 至 150（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t_a",
+        "en": "$t_a$ — Time for sound to cross the jet radius (s)",
+        "zh": "$t_a$ — 声波穿过射流半径的时间（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius, 0.5 to 2 μm (m)",
+        "zh": "$a$ — 射流半径，0.5 至 2 μm（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_1/\\rho_j",
+        "en": "$\\rho_1/\\rho_j$ — Compression ratio behind the shock (dimensionless)",
+        "zh": "$\\rho_1/\\rho_j$ — 激波后压缩比（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "x",
+        "en": "$x$ — Velocity ratio at U = 99.027 m s⁻¹ (dimensionless)",
+        "zh": "$x$ — U = 99.027 m s⁻¹ 时的速度比（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H",
+        "en": "$p_H$ — Hugoniot pressure (Pa)",
+        "zh": "$p_H$ — Hugoniot 压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_B",
+        "en": "$p_B$ — Barotropic pressure (Pa)",
+        "zh": "$p_B$ — 正压压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Tested range of M is 0.031 to 0.092",
+      "a = 1 μm gives $t_{a}$ = 0.615 ns",
+      "Compression of 5.9% keeps the barotropic law close to the energy law"
+    ],
+    "notes_zh": [
+      "M 的检验范围为 0.031 至 0.092",
+      "a = 1 μm 时 $t_{a}$ = 0.615 ns",
+      "5.9% 的压缩使正压律接近能量律"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E10": {
+    "rows": [
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — Liquid density (kg m⁻³)",
+        "zh": "$\\rho$ — 液体密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "u",
+        "en": "$u$ — Axial velocity, negative toward the wall (m s⁻¹)",
+        "zh": "$u$ — 轴向速度，朝壁面为负（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p(\\rho)",
+        "en": "$p(\\rho)$ — Pressure from Eq. (C5-E01) (Pa)",
+        "zh": "$p(\\rho)$ — 来自式（C5-E01）的压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "z",
+        "en": "$z$ — Axial coordinate from the wall (m)",
+        "zh": "$z$ — 距壁面的轴向坐标（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — Time (s)",
+        "zh": "$t$ — 时间（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "H",
+        "en": "$H$ — Column length 4 μm (m)",
+        "zh": "$H$ — 液柱长度 4 μm（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Inflow density (kg m⁻³)",
+        "zh": "$\\rho_j$ — 入流密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Inflow speed (m s⁻¹)",
+        "zh": "$U$ — 入流速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — Partial derivative with respect to time (s⁻¹)",
+        "zh": "$\\partial_t$ — 对时间的偏导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\partial_z",
+        "en": "$\\partial_z$ — Partial derivative with respect to axial position (m⁻¹)",
+        "zh": "$\\partial_z$ — 对轴向位置的偏导数（m⁻¹）",
+        "unit": "m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Planar column, no radial variation",
+      "Viscosity omitted in this reference",
+      "Initial state is the uniform inflow state"
+    ],
+    "notes_zh": [
+      "平面液柱，无径向变化",
+      "该参考解忽略黏性",
+      "初态为均匀入流状态"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E11": {
+    "rows": [
+      {
+        "symbol": "\\boldsymbol Q",
+        "en": "$\\boldsymbol Q$ — Vector of conserved variables ρ and ρu (kg m⁻³; kg m⁻² s⁻¹)",
+        "zh": "$\\boldsymbol Q$ — 守恒变量向量 ρ 与 ρu（kg m⁻³; kg m⁻² s⁻¹）",
+        "unit": "kg m⁻³; kg m⁻² s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol F",
+        "en": "$\\boldsymbol F$ — Physical flux vector (kg m⁻² s⁻¹; Pa)",
+        "zh": "$\\boldsymbol F$ — 物理通量向量（kg m⁻² s⁻¹; Pa）",
+        "unit": "kg m⁻² s⁻¹; Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "N",
+        "en": "$N$ — Number of cells, 4000 (dimensionless)",
+        "zh": "$N$ — 网格单元数，4000（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "H",
+        "en": "$H$ — Column length 4 μm (m)",
+        "zh": "$H$ — 液柱长度 4 μm（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Delta z",
+        "en": "$\\Delta z$ — Cell size H/N, 1 nm (m)",
+        "zh": "$\\Delta z$ — 单元尺寸 H/N，1 nm（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol F_{i+\\frac12}",
+        "en": "$\\boldsymbol F_{i+\\frac12}$ — Numerical flux at the face between cells i and i+1 (kg m⁻² s⁻¹; Pa)",
+        "zh": "$\\boldsymbol F_{i+\\frac12}$ — 单元 i 与 i+1 之间界面的数值通量（kg m⁻² s⁻¹; Pa）",
+        "unit": "kg m⁻² s⁻¹; Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol Q_L",
+        "en": "$\\boldsymbol Q_L$ — State left of the face (kg m⁻³; kg m⁻² s⁻¹)",
+        "zh": "$\\boldsymbol Q_L$ — 界面左侧状态（kg m⁻³; kg m⁻² s⁻¹）",
+        "unit": "kg m⁻³; kg m⁻² s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol Q_R",
+        "en": "$\\boldsymbol Q_R$ — State right of the face (kg m⁻³; kg m⁻² s⁻¹)",
+        "zh": "$\\boldsymbol Q_R$ — 界面右侧状态（kg m⁻³; kg m⁻² s⁻¹）",
+        "unit": "kg m⁻³; kg m⁻² s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\alpha",
+        "en": "$\\alpha$ — Largest local wave speed (Rusanov) (m s⁻¹)",
+        "zh": "$\\alpha$ — 最大局部波速（Rusanov）（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_L",
+        "en": "$c_L$ — Sound speed of Eq. (C5-E01) left of the face (m s⁻¹)",
+        "zh": "$c_L$ — 界面左侧由式（C5-E01）给出的声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_R",
+        "en": "$c_R$ — Sound speed of Eq. (C5-E01) right of the face (m s⁻¹)",
+        "zh": "$c_R$ — 界面右侧由式（C5-E01）给出的声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\mathcal L",
+        "en": "$\\mathcal L$ — Spatial operator −∂_z F discretized by the face fluxes (kg m⁻³ s⁻¹; Pa m⁻¹)",
+        "zh": "$\\mathcal L$ — 由界面通量离散的空间算子 −∂_z F（kg m⁻³ s⁻¹; Pa m⁻¹）",
+        "unit": "kg m⁻³ s⁻¹; Pa m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Delta t",
+        "en": "$\\Delta t$ — Time step 0.4 Δz / (U + 1.2 $c_{wall}$) (s)",
+        "zh": "$\\Delta t$ — 时间步 0.4 Δz / (U + 1.2 $c_{wall}$)（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol Q^{*}",
+        "en": "$\\boldsymbol Q^{*}$ — Predictor state (kg m⁻³; kg m⁻² s⁻¹)",
+        "zh": "$\\boldsymbol Q^{*}$ — 预测态（kg m⁻³; kg m⁻² s⁻¹）",
+        "unit": "kg m⁻³; kg m⁻² s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol Q^{n}",
+        "en": "$\\boldsymbol Q^{n}$ — Old state (kg m⁻³; kg m⁻² s⁻¹)",
+        "zh": "$\\boldsymbol Q^{n}$ — 旧状态（kg m⁻³; kg m⁻² s⁻¹）",
+        "unit": "kg m⁻³; kg m⁻² s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol Q^{n+1}",
+        "en": "$\\boldsymbol Q^{n+1}$ — New state (kg m⁻³; kg m⁻² s⁻¹)",
+        "zh": "$\\boldsymbol Q^{n+1}$ — 新状态（kg m⁻³; kg m⁻² s⁻¹）",
+        "unit": "kg m⁻³; kg m⁻² s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "First-order in space, second-order in time (Heun)",
+      "Dissipation scales with α, so shocks stay stable",
+      "Face fluxes at the wall use a mirrored ghost state"
+    ],
+    "notes_zh": [
+      "空间一阶、时间二阶（Heun）",
+      "耗散量与 α 成比例，激波保持稳定",
+      "壁面界面通量采用镜像虚拟状态"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E12": {
+    "rows": [
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — Liquid density (kg m⁻³)",
+        "zh": "$\\rho$ — 液体密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — Velocity vector with components ($u_{r}$, w) (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 速度向量，分量为 ($u_{r}$, w)（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p",
+        "en": "$p$ — Absolute pressure (Pa)",
+        "zh": "$p$ — 绝对压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\mu",
+        "en": "$\\mu$ — Dynamic viscosity 1 mPa s (Pa s)",
+        "zh": "$\\mu$ — 动力黏度 1 mPa s（Pa s）",
+        "unit": "Pa s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol I",
+        "en": "$\\boldsymbol I$ — Identity tensor (dimensionless)",
+        "zh": "$\\boldsymbol I$ — 单位张量（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho_j",
+        "en": "$\\rho_j$ — Reference density (kg m⁻³)",
+        "zh": "$\\rho_j$ — 参考密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Reference pressure (Pa)",
+        "zh": "$p_j$ — 参考压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Pi",
+        "en": "$\\Pi$ — Stiffness pressure of Eq. (C5-E01) (Pa)",
+        "zh": "$\\Pi$ — 式（C5-E01）的刚度压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\gamma",
+        "en": "$\\gamma$ — Stiffness exponent of Eq. (C5-E01) (dimensionless)",
+        "zh": "$\\gamma$ — 式（C5-E01）的刚度指数（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — Gradient in axisymmetric (r, z) coordinates (m⁻¹)",
+        "zh": "$\\nabla$ — 轴对称 (r, z) 坐标中的梯度（m⁻¹）",
+        "unit": "m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\mathsf T",
+        "en": "$\\mathsf T$ — Transpose (dimensionless)",
+        "zh": "$\\mathsf T$ — 转置（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Axisymmetric compressible laminar flow, no gas phase",
+      "Density follows pressure through the inverse of Eq. (C5-E01)",
+      "Viscosity is small and does not set the plateau"
+    ],
+    "notes_zh": [
+      "轴对称可压缩层流，无气相",
+      "密度通过式（C5-E01）的逆关系随压力变化",
+      "黏性很小，不决定压力平台"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E13": {
+    "rows": [
+      {
+        "symbol": "\\boldsymbol n",
+        "en": "$\\boldsymbol n$ — Unit normal to the boundary (dimensionless)",
+        "zh": "$\\boldsymbol n$ — 边界单位法向量（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — Velocity vector (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 速度向量（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "u_z",
+        "en": "$u_z$ — Axial velocity component (m s⁻¹)",
+        "zh": "$u_z$ — 轴向速度分量（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "w",
+        "en": "$w$ — Axial velocity w(r,z,t) (m s⁻¹)",
+        "zh": "$w$ — 轴向速度 w(r,z,t)（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\boldsymbol e_z",
+        "en": "$\\boldsymbol e_z$ — Unit vector along +z (dimensionless)",
+        "zh": "$\\boldsymbol e_z$ — 沿 +z 的单位向量（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Inflow speed (m s⁻¹)",
+        "zh": "$U$ — 入流速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Release pressure and initial pressure (Pa)",
+        "zh": "$p_j$ — 释放压力与初始压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\delta",
+        "en": "$\\delta$ — Onset thickness 0.02 a (m)",
+        "zh": "$\\delta$ — 起始过渡厚度 0.02 a（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\tanh",
+        "en": "$\\tanh$ — Hyperbolic tangent (dimensionless)",
+        "zh": "$\\tanh$ — 双曲正切（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Domain r from 0 to a and z from 0 to 4a",
+      "The release side stands for a free jet surface",
+      "Axisymmetric normals are $n_{r}$ and $n_{z}$"
+    ],
+    "notes_zh": [
+      "计算域 r 从 0 到 a，z 从 0 到 4a",
+      "释放侧代表射流自由表面",
+      "轴对称法向分量为 $n_{r}$ 与 $n_{z}$"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E14": {
+    "rows": [
+      {
+        "symbol": "\\dot m_p",
+        "en": "$\\dot m_p$ — Computed mass flow through the plane (kg s⁻¹)",
+        "zh": "$\\dot m_p$ — 计算得到的穿过平面的质量流率（kg s⁻¹）",
+        "unit": "kg s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\dot K_p",
+        "en": "$\\dot K_p$ — Computed kinetic-energy flux through the plane (W)",
+        "zh": "$\\dot K_p$ — 计算得到的穿过平面的动能通量（W）",
+        "unit": "W",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U_{\\mathrm{inc}}",
+        "en": "$U_{\\mathrm{inc}}$ — Mass-flux-weighted incident speed (m s⁻¹)",
+        "zh": "$U_{\\mathrm{inc}}$ — 质量通量加权的入射速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar p_R",
+        "en": "$\\bar p_R$ — Area-weighted wall pressure of Eq. (C5-E06) (Pa)",
+        "zh": "$\\bar p_R$ — 式（C5-E06）的面积加权壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "w",
+        "en": "$w$ — Axial velocity (m s⁻¹)",
+        "zh": "$w$ — 轴向速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "u_r",
+        "en": "$u_r$ — Radial velocity (m s⁻¹)",
+        "zh": "$u_r$ — 径向速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — Density (kg m⁻³)",
+        "zh": "$\\rho$ — 密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\max(-w,0)",
+        "en": "$\\max(-w,0)$ — Positive part of the inward axial speed (m s⁻¹)",
+        "zh": "$\\max(-w,0)$ — 朝壁面轴向速度的正部（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t_w",
+        "en": "$t_w$ — Incident-flux window 1 ns (s)",
+        "zh": "$t_w$ — 入射通量时间窗 1 ns（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "R",
+        "en": "$R$ — Sensor radius (m)",
+        "zh": "$R$ — 传感区半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "r",
+        "en": "$r$ — Radial coordinate (m)",
+        "zh": "$r$ — 径向坐标（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Integrals use the 2πr weight of the axisymmetric model",
+      "Only inward flux counts at the plane",
+      "These are the numbers that check the transport and the wall observer"
+    ],
+    "notes_zh": [
+      "积分采用轴对称模型的 2πr 权重",
+      "平面处仅计入朝壁面的通量",
+      "这些数用于检验输运与壁面观测量"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E15": {
+    "rows": [
+      {
+        "symbol": "\\varepsilon",
+        "en": "$\\varepsilon$ — Relative error (dimensionless)",
+        "zh": "$\\varepsilon$ — 相对误差（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "X",
+        "en": "$X$ — Computed quantity (units of the compared quantity)",
+        "zh": "$X$ — 被评价的计算量（units of the compared quantity）",
+        "unit": "units of the compared quantity",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "X_{\\mathrm{ref}}",
+        "en": "$X_{\\mathrm{ref}}$ — Stated reference value (units of the compared quantity)",
+        "zh": "$X_{\\mathrm{ref}}$ — 所注明的参考值（units of the compared quantity）",
+        "unit": "units of the compared quantity",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Delta_k",
+        "en": "$\\Delta_k$ — Successive change on refinement step k (dimensionless)",
+        "zh": "$\\Delta_k$ — 第 k 次加密的相邻变化（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar P_k",
+        "en": "$\\bar P_k$ — Peak full-sensor wall pressure on band size $h_{k}$ (Pa)",
+        "zh": "$\\bar P_k$ — 带宽 $h_{k}$ 上的全传感区壁面压力峰值（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar p_a",
+        "en": "$\\bar p_a$ — Full-sensor mean wall pressure (Pa)",
+        "zh": "$\\bar p_a$ — 全传感区平均壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "h_k",
+        "en": "$h_k$ — Maximum element size in the wall band r ≤ a, z ≤ 0.15 a (m)",
+        "zh": "$h_k$ — 壁面加密带 r ≤ a、z ≤ 0.15 a 内的最大单元尺寸（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "k",
+        "en": "$k$ — Refinement index, 1 to 4 (dimensionless)",
+        "zh": "$k$ — 加密序号，取 1 至 4（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Every error names its reference value",
+      "Output spacing is 0.001 ns",
+      "The band is refined alone because global refinement exceeds memory"
+    ],
+    "notes_zh": [
+      "每个误差都注明其参考值",
+      "输出间隔为 0.001 ns",
+      "仅加密壁面带，因为全局加密超出内存"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E16": {
+    "rows": [
+      {
+        "symbol": "P_z",
+        "en": "$P_z$ — Axial momentum of the liquid in the domain (kg m s⁻¹)",
+        "zh": "$P_z$ — 计算域内液体的轴向动量（kg m s⁻¹）",
+        "unit": "kg m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "F_{\\mathrm{wall}}",
+        "en": "$F_{\\mathrm{wall}}$ — Pressure force on the wall, ∫ p dA (N)",
+        "zh": "$F_{\\mathrm{wall}}$ — 壁面压力，∫ p dA（N）",
+        "unit": "N",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "F_{\\mathrm{top}}",
+        "en": "$F_{\\mathrm{top}}$ — Inflow pressure force plus momentum flux, ∫(p + ρw²) dA (N)",
+        "zh": "$F_{\\mathrm{top}}$ — 入流压力加动量通量，∫(p + ρw²) dA（N）",
+        "unit": "N",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "M",
+        "en": "$M$ — Liquid mass in the domain (kg)",
+        "zh": "$M$ — 计算域内液体质量（kg）",
+        "unit": "kg",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\dot m_{\\mathrm{top}}",
+        "en": "$\\dot m_{\\mathrm{top}}$ — Net mass flow into the domain through the top (kg s⁻¹)",
+        "zh": "$\\dot m_{\\mathrm{top}}$ — 经顶部净流入计算域的质量流率（kg s⁻¹）",
+        "unit": "kg s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "V",
+        "en": "$V$ — Domain volume (axisymmetric) (m³)",
+        "zh": "$V$ — 计算域体积（轴对称）（m³）",
+        "unit": "m³",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "e_P",
+        "en": "$e_P$ — Momentum balance residual (dimensionless)",
+        "zh": "$e_P$ — 动量平衡残差（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "e_M",
+        "en": "$e_M$ — Mass balance residual (dimensionless)",
+        "zh": "$e_M$ — 质量平衡残差（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — Current time (s)",
+        "zh": "$t$ — 当前时间（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t\\prime",
+        "en": "$t\\prime$ — Integration variable (s)",
+        "zh": "$t\\prime$ — 积分变量（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "w",
+        "en": "$w$ — Axial velocity (m s⁻¹)",
+        "zh": "$w$ — 轴向速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Confined case: side wall set to slip so nothing leaves sideways",
+      "Forces are signed with +z positive",
+      "Balance is checked over 0 to 3 ns"
+    ],
+    "notes_zh": [
+      "受限情形：侧壁取滑移，侧向无流出",
+      "力以 +z 为正",
+      "在 0 至 3 ns 内检验平衡"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E17": {
+    "rows": [
+      {
+        "symbol": "\\delta_2",
+        "en": "$\\delta_2$ — Relative L2 difference of the two wall histories (dimensionless)",
+        "zh": "$\\delta_2$ — 两条壁面压力历程的相对 L2 差（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\delta_\\infty",
+        "en": "$\\delta_\\infty$ — Largest pointwise relative difference (dimensionless)",
+        "zh": "$\\delta_\\infty$ — 最大逐点相对差（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p^{C}_m",
+        "en": "$p^{C}_m$ — COMSOL wall pressure at sample m (Pa)",
+        "zh": "$p^{C}_m$ — 样本 m 处的 COMSOL 壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p^{X}_m",
+        "en": "$p^{X}_m$ — C++ wall pressure interpolated to the same time (Pa)",
+        "zh": "$p^{X}_m$ — 线性插值到同一时刻的 C++ 壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "N_s",
+        "en": "$N_s$ — Number of common samples, 361 (dimensionless)",
+        "zh": "$N_s$ — 共同样本数，361（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "m",
+        "en": "$m$ — Sample index (dimensionless)",
+        "zh": "$m$ — 样本序号（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar p_{\\mathrm{pl}}",
+        "en": "$\\bar p_{\\mathrm{pl}}$ — Plateau pressure, mean over the window (Pa)",
+        "zh": "$\\bar p_{\\mathrm{pl}}$ — 压力平台，窗口内平均（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t_m",
+        "en": "$t_m$ — Sample time spaced by 5 ps (s)",
+        "zh": "$t_m$ — 间隔 5 ps 的样本时间（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Both solvers use the same law, inputs, wall and inflow",
+      "The window starts after the arrival transient",
+      "Agreement tests the implementation of one model"
+    ],
+    "notes_zh": [
+      "两个求解器采用同一定律、输入、壁面与入流",
+      "时间窗在到达瞬态之后开始",
+      "一致性检验的是同一模型的实现"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E18": {
+    "rows": [
+      {
+        "symbol": "\\Lambda_i",
+        "en": "$\\Lambda_i$ — Peak factor of case i (dimensionless)",
+        "zh": "$\\Lambda_i$ — 工况 i 的峰值因子（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar p_{a,i}",
+        "en": "$\\bar p_{a,i}$ — Full-sensor wall pressure of case i (Pa)",
+        "zh": "$\\bar p_{a,i}$ — 工况 i 的全传感区壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_{H,i}",
+        "en": "$p_{H,i}$ — Hugoniot pressure of case i from Eq. (C5-E04) (Pa)",
+        "zh": "$p_{H,i}$ — 工况 i 由式（C5-E04）得到的 Hugoniot 压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "i",
+        "en": "$i$ — Case index over the five converged cases (dimensionless)",
+        "zh": "$i$ — 五个收敛工况的序号（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\sigma_\\Lambda",
+        "en": "$\\sigma_\\Lambda$ — Relative spread of the peak factor (dimensionless)",
+        "zh": "$\\sigma_\\Lambda$ — 峰值因子的相对离散度（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\overline{\\Lambda}",
+        "en": "$\\overline{\\Lambda}$ — Mean peak factor over the cases (dimensionless)",
+        "zh": "$\\overline{\\Lambda}$ — 各工况峰值因子的平均（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "g(\\tau)",
+        "en": "$g(\\tau)$ — Common normalized pressure history (dimensionless)",
+        "zh": "$g(\\tau)$ — 共同的无量纲压力历程（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\tau",
+        "en": "$\\tau$ — Dimensionless time $c_{0}$ t / a (dimensionless)",
+        "zh": "$\\tau$ — 无量纲时间 $c_{0}$ t / a（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Cases vary U from 50 to 150 m s⁻¹ and a from 0.5 to 2 μm",
+      "The ranges are scenario choices, not confidence intervals",
+      "Collapse is checked only up to τ = 0.49"
+    ],
+    "notes_zh": [
+      "各工况使 U 在 50 至 150 m s⁻¹、a 在 0.5 至 2 μm 之间变化",
+      "这些范围是情景选择，并非置信区间",
+      "仅检验 τ ≤ 0.49 内的坍缩"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E19": {
+    "rows": [
+      {
+        "symbol": "\\bar p_{a/2}",
+        "en": "$\\bar p_{a/2}$ — Centre-disk wall pressure, r ≤ a/2 (Pa)",
+        "zh": "$\\bar p_{a/2}$ — 中心圆盘壁面压力，r ≤ a/2（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar p_a",
+        "en": "$\\bar p_a$ — Full-sensor wall pressure, r ≤ a (Pa)",
+        "zh": "$\\bar p_a$ — 全传感区壁面压力，r ≤ a（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H(U)",
+        "en": "$p_H(U)$ — Hugoniot pressure at the given speed (Pa)",
+        "zh": "$p_H(U)$ — 给定速度下的 Hugoniot 压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Lambda",
+        "en": "$\\Lambda$ — Finite-area peak factor 0.931 (dimensionless)",
+        "zh": "$\\Lambda$ — 有限面积峰值因子 0.931（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t_{\\mathrm{hi}}",
+        "en": "$t_{\\mathrm{hi}}$ — Duration of the high-pressure interval (s)",
+        "zh": "$t_{\\mathrm{hi}}$ — 高压阶段的持续时间（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "Z_0",
+        "en": "$Z_0$ — Reference acoustic impedance (Pa s m⁻¹)",
+        "zh": "$Z_0$ — 参考声阻抗（Pa s m⁻¹）",
+        "unit": "Pa s m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U_s",
+        "en": "$U_s$ — Shock speed relative to the incoming liquid (m s⁻¹)",
+        "zh": "$U_s$ — 相对入射液体的激波速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Reference pressure (Pa)",
+        "zh": "$p_j$ — 参考压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Valid for liquid-only, barotropic, rigid flat wall, first arrival",
+      "U/$c_{0}$ between 0.031 and 0.092",
+      "Wall tension after τ ≈ 1 is not physical here because cavitation is not modelled"
+    ],
+    "notes_zh": [
+      "适用于纯液体、正压、刚性平壁、首次到达",
+      "U/$c_{0}$ 在 0.031 至 0.092 之间",
+      "τ ≈ 1 之后的壁面拉应力在此不具物理意义，因为未建立空化模型"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E20": {
+    "rows": [
+      {
+        "symbol": "p_{\\mathrm{wall}}",
+        "en": "$p_{\\mathrm{wall}}$ — Mean wall pressure over the stated disk (Pa)",
+        "zh": "$p_{\\mathrm{wall}}$ — 所述圆盘上的平均壁面压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_j",
+        "en": "$p_j$ — Reference pressure (Pa)",
+        "zh": "$p_j$ — 参考压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U_s/c_0",
+        "en": "$U_s/c_0$ — Nonlinear factor 1.0856 (dimensionless)",
+        "zh": "$U_s/c_0$ — 非线性因子 1.0856（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "Z_0",
+        "en": "$Z_0$ — Reference acoustic impedance (Pa s m⁻¹)",
+        "zh": "$Z_0$ — 参考声阻抗（Pa s m⁻¹）",
+        "unit": "Pa s m⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — Impact speed (m s⁻¹)",
+        "zh": "$U$ — 撞击速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\Lambda",
+        "en": "$\\Lambda$ — Finite-area peak factor (dimensionless)",
+        "zh": "$\\Lambda$ — 有限面积峰值因子（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H",
+        "en": "$p_H$ — Hugoniot pressure (Pa)",
+        "zh": "$p_H$ — Hugoniot 压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "E_{\\mathrm{av}}",
+        "en": "$E_{\\mathrm{av}}$ — Kinetic energy available to the jet (Chapter 3) (J)",
+        "zh": "$E_{\\mathrm{av}}$ — 可用于射流的动能（第三章）（J）",
+        "unit": "J",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "m_j",
+        "en": "$m_j$ — Jet mass (Chapter 3) (kg)",
+        "zh": "$m_j$ — 射流质量（第三章）（kg）",
+        "unit": "kg",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "The speed bound is conditional on how much energy reaches the jet",
+      "The pressure map is conditional on U",
+      "Together they form one conditional chain"
+    ],
+    "notes_zh": [
+      "速度上界取决于有多少能量到达射流",
+      "压力映射取决于 U",
+      "二者合成一条有条件的链"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E21": {
+    "rows": [
+      {
+        "symbol": "\\Lambda",
+        "en": "$\\Lambda$ — Finite-area peak factor (dimensionless)",
+        "zh": "$\\Lambda$ — 有限面积峰值因子（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\bar P_{\\max}",
+        "en": "$\\bar P_{\\max}$ — Peak full-sensor pressure (Pa)",
+        "zh": "$\\bar P_{\\max}$ — 全传感区压力峰值（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "p_H",
+        "en": "$p_H$ — Hugoniot pressure (Pa)",
+        "zh": "$p_H$ — Hugoniot 压力（Pa）",
+        "unit": "Pa",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "f_{\\mathrm{rel}}",
+        "en": "$f_{\\mathrm{rel}}$ — Released area fraction from Eq. (C5-E07) (dimensionless)",
+        "zh": "$f_{\\mathrm{rel}}$ — 来自式（C5-E07）的已释放面积分数（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\kappa",
+        "en": "$\\kappa$ — Fraction of the excess lost inside the released annulus (dimensionless)",
+        "zh": "$\\kappa$ — 释放环带内损失的超压比例（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\tau_{\\mathrm{pk}}",
+        "en": "$\\tau_{\\mathrm{pk}}$ — Dimensionless time of the peak (dimensionless)",
+        "zh": "$\\tau_{\\mathrm{pk}}$ — 峰值出现的无量纲时间（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "t_{\\mathrm{pk}}",
+        "en": "$t_{\\mathrm{pk}}$ — Time of the peak, 0.029 ns (s)",
+        "zh": "$t_{\\mathrm{pk}}$ — 峰值时刻，0.029 ns（s）",
+        "unit": "s",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "c_0",
+        "en": "$c_0$ — Reference sound speed (m s⁻¹)",
+        "zh": "$c_0$ — 参考声速（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "κ = 1 means the annulus keeps no excess pressure",
+      "Computed κ lies between 0 and 1",
+      "The estimate explains the sign and size of the gap, not its digits"
+    ],
+    "notes_zh": [
+      "κ = 1 表示环带不保留超压",
+      "算得的 κ 介于 0 与 1 之间",
+      "该估计解释差值的符号与大小，而非具体数字"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
+  },
+  "C5-E22": {
+    "rows": [
+      {
+        "symbol": "M",
+        "en": "$M$ — Impact Mach number (dimensionless)",
+        "zh": "$M$ — 撞击马赫数（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "a",
+        "en": "$a$ — Jet radius (m)",
+        "zh": "$a$ — 射流半径（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\tau",
+        "en": "$\\tau$ — Dimensionless time $c_{0}$ t / a (dimensionless)",
+        "zh": "$\\tau$ — 无量纲时间 $c_{0}$ t / a（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\delta_2",
+        "en": "$\\delta_2$ — Relative L2 difference between the two solvers (dimensionless)",
+        "zh": "$\\delta_2$ — 两个求解器间的相对 L2 差（无量纲）",
+        "unit": "1",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      },
+      {
+        "symbol": "\\mu\\mathrm m",
+        "en": "$\\mu\\mathrm m$ — Micrometre, 10⁻⁶ m (m)",
+        "zh": "$\\mu\\mathrm m$ — 微米，10⁻⁶ m（m）",
+        "unit": "m",
+        "source_en": null,
+        "source_zh": null,
+        "review": "Individual definition written for Chapter 5."
+      }
+    ],
+    "notes_en": [
+      "Gas cushion, splash, elastic wall and cavitation are outside the model",
+      "Pressure after τ ≈ 1 includes negative absolute values and is not physical here",
+      "Agreement of two solvers of one model is verification, not validation"
+    ],
+    "notes_zh": [
+      "气垫、飞溅、弹性壁面与空化均在模型之外",
+      "τ ≈ 1 之后的压力含负的绝对值，在此不具物理意义",
+      "同一模型的两个求解器一致属于核验，而非验证"
+    ],
+    "source_fragments_en": [],
+    "source_fragments_zh": [],
+    "expanded_groups_en": [],
+    "expanded_groups_zh": []
   }
 }

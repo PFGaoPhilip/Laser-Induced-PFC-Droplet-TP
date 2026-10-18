@@ -20,7 +20,7 @@ def svg_for(eq):
     masters = root / 'assets/figures-editable'
     if (masters / 'manifest.json').is_file():
         ident = eq['id'].lower()
-        group = 'c1-c2' if ident.startswith(('c1-', 'c2-')) else 'c3-c4' if ident.startswith(('c3-', 'c4-')) else 'appendix-studies'
+        group = 'c1-c2' if ident.startswith(('c1-', 'c2-')) else 'c3-c4' if ident.startswith(('c3-', 'c4-')) else 'c5' if ident.startswith('c5-') else 'appendix-studies'
         approved = masters / group / (ident+'.svg')
         if approved.is_file():
             return approved.read_text(encoding='utf-8')

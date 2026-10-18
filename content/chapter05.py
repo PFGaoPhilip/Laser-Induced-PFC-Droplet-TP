@@ -1,281 +1,298 @@
-r"""Appendix A: hydrogel platforms, finite-strain cavity work and transfer tests.
+r"""Chapter 5: jet on a rigid wall — theory, calculation and solver verification."""
+import csv
+import json
+from pathlib import Path
 
-This worker owns this chapter only. All numerical gel values are teaching inputs.
-"""
 from coursekit import P, H, E, T, cite, defense, note
 from symbol_tables import glossary
+from chapter05_spec import EQS
+
+DATA = Path(__file__).resolve().parents[1] / 'sources/rigid_wall_ch5'
+SPEC = {e['n']: e for e in EQS}
 
 
-def gel(labels, notes):
-    return {r"type": r"gel", r"labels": labels, r"notes": notes}
+def eq(n):
+    e = SPEC[n]
+    sym_en = '; '.join(f"${s}$ — {en}" for s, en, zh, u in e['rows']) + '.'
+    sym_zh = '；'.join(f"${s}$ — {zh}" for s, en, zh, u in e['rows']) + '。'
+    return E(f"C5-E{n:02d}", e['tex'], sym_en, sym_zh, e['kind'],
+             {"type": e['dtype'], "labels": e['labels'], "notes": e['dnotes']},
+             e['cap_en'], e['cap_zh'])
 
 
-def times(labels, notes):
-    return {r"type": r"timescale", r"labels": labels, r"notes": notes}
+def fig(name, cap_en, cap_zh):
+    return (f'<figure class="formula-figure"><img src="../assets/figures/{name}.svg" '
+            f'alt="{cap_en}" loading="lazy"><figcaption>' + P(cap_en, cap_zh) + '</figcaption></figure>')
 
 
-body = H("Hydrogel support and transfer performance", "水凝胶支撑与转印性能", r"gel-objective")
-body += P(
-    "Hydrogel can locate PFC droplets, support liquid patterns and conform under small preload. Its network also stores energy, dissipates motion and changes transport. It can tear. Compare absorbed energy, phase source, motion, selective release, intact placement and reset. Smaller cavities or higher pressure leave overall improvement unresolved.",
-    "水凝胶可定位 PFC 液滴、支撑液体图案，并在小预载下贴合。其网络也储存能量、耗散运动、改变输运，并可能撕裂。应比较吸收能量、相变源、运动、选择性释放、完整落位及复位。空腔更小或压力更高仍未确定整体改善。")
-body += T(
-    [(r"Architecture", r"结构方案"), (r"Where displaced material can go", r"被排开材料的去向"), (r"Benefit to test; new cost", r"待检验的收益与新增代价")],
+def history(case):
+    with open(DATA / f'{case}_history.csv', newline='') as f:
+        rows = list(csv.DictReader(f))
+    return {k: [float(r[k]) for r in rows] for k in rows[0]}
+
+
+def peak(case, key='pWall'):
+    return max(history(case)[key])
+
+
+def mpa(x):
+    return f'{x / 1e6:.3f}'
+
+
+P_H = 174622895.4
+band = json.loads((DATA / 'BAND_RESULTS.json').read_text(encoding='utf-8'))
+
+ladder = []
+previous = None
+for case, elems, hdiv in [('B025', 16176, 40), ('B0125', 18468, 80), ('B00625', 26776, 160), ('B003125', 57668, 320)]:
+    value = peak(case)
+    central = peak(case, 'pWallC')
+    change = '—' if previous is None else f'{abs(value - previous) / previous * 100:.2f}%'
+    ladder.append([(f'$a/{hdiv}$', f'$a/{hdiv}$'), (f'{elems:,}', f'{elems:,}'), (mpa(value), mpa(value)),
+                   (change, change), (f'{value / P_H:.4f}', f'{value / P_H:.4f}'),
+                   (mpa(central), mpa(central))])
+    previous = value
+
+B = []
+B.append(H("1. Problem, inputs and conventions", "1. 问题、输入与约定", "system"))
+B.append(P(
+    "Find the pressure that a liquid jet of prescribed speed exerts on a rigid wall. Follow three links in order. Theory gives a closed-form reference. A one-dimensional finite-volume code calculates the planar history. An axisymmetric COMSOL model verifies the finite jet.",
+    "求给定速度的液体射流作用于刚性壁面的压力。依次沿三个环节推进。理论给出封闭形式的参照。一维有限体积程序计算平面历程。轴对称 COMSOL 模型核验有限射流。"))
+B.append(P(
+    "Fix the coordinates first. The rigid wall lies at $z=0$. The liquid occupies $z>0$ and moves toward $-z$. The radial coordinate $r$ measures distance from the jet axis. Time $t=0$ is the first contact of the liquid front with the wall. The jet radius $a$ and the incoming speed $U$ are supplied.",
+    "先固定坐标。刚性壁面位于 $z=0$。液体占据 $z>0$ 并朝 $-z$ 运动。径向坐标 $r$ 为到射流轴线的距离。时间 $t=0$ 为液体前沿首次接触壁面的时刻。射流半径 $a$ 与入射速度 $U$ 为给定值。"))
+B.append(P(
+    "State the assumptions. The liquid is the only phase. There is no gas cushion, splash, wall elasticity or cavitation. The wall is flat, rigid and frictionless. The jet side is free, so its pressure is released to the reference pressure $p_j$. Only the first arrival is modelled, up to about one sound-crossing time of the jet radius.",
+    "说明假设。液体是唯一的相。不含气垫、飞溅、壁面弹性或空化。壁面平坦、刚性且无摩擦。射流侧面为自由面，其压力释放到参考压力 $p_j$。仅模拟首次到达，时长约为声波穿过射流半径所需时间的一倍。"))
+B.append(P(
+    "Chapter 3 bounds the speed a source can give a finite jet. This chapter maps a given speed to a wall pressure. Whether a real source reaches that speed is not decided here. Physical validation against an experiment: Not established. Missing: a measured wall pressure for a real jet.",
+    "第三章界定了能源能给有限射流的速度上限。本章把给定速度映射为壁面压力。真实能源能否达到该速度，本章不作判断。对照实验的物理验证：尚未确立。缺少：真实射流的壁面压力实测。"))
+B.append(T(
+    [("Input", "输入"), ("Value", "取值"), ("Role", "作用")],
     [
-        [(r"Conventional liquid site containing PFC", r"含 PFC 的常规液体位点"), (r"Toward an exposed meniscus or defined outlet; the carrier remains a liquid.", r"朝暴露液面或明确出口运动；载液保持液体状态。"), (r"Direct liquid displacement; wetting drift, spreading and neighboring flows can vary.", r"直接排开液体；润湿漂移、铺展和邻近流动可能发生变化。")],
-        [(r"Open liquid pocket supported by gel", r"凝胶支撑的开放液腔"), (r"Liquid leaves an opening while the gel wall deforms.", r"液体经开口离开，同时凝胶壁发生变形。"), (r"A located outlet and compliant support; moving walls consume, return or redirect energy.", r"定位出口与柔顺支撑；运动壁面会消耗、返还能量或改变其方向。")],
-        [(r"PFC embedded directly in bulk gel", r"PFC 直接嵌入体相凝胶"), (r"Initially into network deformation; an external liquid path must exist or be created.", r"起初转化为网络变形；必须已有或形成通往外部的液体路径。"), (r"Stable inclusion locations; large strain, trapped vapor, network rupture and solid contamination.", r"稳定的夹杂位置；大应变、滞留蒸气、网络破裂及固体污染。")],
-        [(r"Sealed cavity under a gel/composite stamp", r"凝胶／复合印章下的密封腔体"), (r"Boundary bulging and pressure transmission rather than an open liquid outlet.", r"通过边界鼓起与压力传递，而不是开放液体出口。"), (r"Distributed deformation and local peeling; this can be a blister actuator with a different release mechanism.", r"分布式变形与局部剥离；它可以是具有不同释放机制的鼓泡致动器。")],
-    ])
-body += P(
-    "Li et al. demonstrated a sealed hydrogel-composite stamp. Laser heating formed water vapor, deformed covering layers and released a platelet. This establishes a pressure–deformation–fracture route. External PFC jetting from bulk gel remains unestablished. The millisecond event requires separate justification before informing microsecond material laws. " + cite(r"r11"),
-    "Li 等展示了密闭水凝胶复合印章。激光加热形成水蒸气，使覆盖层变形并释放片状对象。这确立了压力—变形—断裂路径。体相凝胶中的 PFC 外部喷射尚未确立。毫秒事件用于微秒材料规律前，须另给依据。 " + cite(r"r11"))
+        [("Jet radius $a$", "射流半径 $a$"), ("1 μm (also 0.5 and 2 μm)", "1 μm（另取 0.5 与 2 μm）"), ("Length scale of the jet and the wall sensor.", "射流与壁面传感区的长度尺度。")],
+        [("Incoming speed $U$", "入射速度 $U$"), ("99.02724 m s⁻¹ (also 50 and 150)", "99.02724 m s⁻¹（另取 50 与 150）"), ("Prescribed, uniform and not predicted.", "给定、均匀，并非预测值。")],
+        [("Reference density $\\rho_j$", "参考密度 $\\rho_j$"), ("998.1539919 kg m⁻³", "998.1539919 kg m⁻³"), ("Density of the undisturbed jet.", "未扰动射流的密度。")],
+        [("Reference pressure $p_j$", "参考压力 $p_j$"), ("101325 Pa", "101325 Pa"), ("Pressure of the jet and of the released side.", "射流及释放侧的压力。")],
+        [("Stiffness $\\gamma$, $\\Pi$", "刚度 $\\gamma$、$\\Pi$"), ("4.4 and 600 MPa", "4.4 与 600 MPa"), ("Parameters of the liquid law in Eq. (C5-E01).", "式（C5-E01）液体律的参数。")],
+        [("Viscosity $\\mu$", "黏度 $\\mu$"), ("1 mPa s", "1 mPa s"), ("Small; used only in the COMSOL model.", "很小；仅用于 COMSOL 模型。")],
+        [("Column length $H$", "液柱长度 $H$"), ("4a", "4a"), ("Distance from the wall to the inflow boundary.", "壁面到入流边界的距离。")],
+    ]))
+B.append(glossary(5))
 
-body += H("1. Intact spherical model", "1. 完整球形模型", r"gel-assumptions")
-body += P(
-    "Use an infinite homogeneous isotropic incompressible neo-Hookean medium. Its network remains continuous and intact. Existing cavity radii are stress-free $R_{\\mathrm{ref}}>0$ and current $R(t)>0$. Material lies outside the cavity. Far-field radial stress is $-p_\\infty(t)$. Internal pressure $p_b(t)$ is spatially uniform. Interface tension $\\sigma$ is constant. Tensile Cauchy stress is positive. Radius points outward; positive speed means expansion. Omit gravity, nearby boundaries, outlets, drainage, damage, shell stress and phase slip.",
-    "采用无限、均匀、各向同性、不可压缩 neo-Hookean 介质，网络连续且完整。已有空腔无应力半径为 $R_{\\mathrm{ref}}>0$，当前半径为 $R(t)>0$。材料位于空腔外。远场径向应力为 $-p_\\infty(t)$，内压 $p_b(t)$ 空间均匀，界面张力 $\\sigma$ 恒定。拉伸 Cauchy 应力取正。径向向外，正速率表示膨胀。忽略重力、附近边界、出口、排水、损伤、壳层应力及相变滑移。")
-body += P(
-    "Initially $t=0$, $R=R_{\\mathrm{ref}}$, $\\dot R=0$, and the network is unstretched. Mechanical equilibrium requires $p_b(0)-p_\\infty(0)=2\\sigma/R_{\\mathrm{ref}}$. Laser and phase dynamics must supply later $p_b(t)$. Polymerization around a loaded inclusion can create a different stress-free shape. Initial liquid-core radius $a_0$ defines PFC inventory. Determine it separately from reference and vapor-cavity radii.",
-    "初始 $t=0$、$R=R_{\\mathrm{ref}}$、$\\dot R=0$，网络未伸长。力学平衡要求 $p_b(0)-p_\\infty(0)=2\\sigma/R_{\\mathrm{ref}}$。后续 $p_b(t)$ 由激光及相变动力学提供。围绕受载夹杂聚合可产生不同无应力形状。初始液核半径 $a_0$ 定义 PFC 物质量，应与参考半径及蒸气空腔半径分别确定。")
-body += glossary(5)
-body += P(
-    "Powers, products and comparisons use ordinary meanings. Subscripts label directions, materials or states. $d/dr$ differentiates current radius. Partial derivatives fix other coordinates. $\\int$ uses the stated limits; $\\lim$ denotes limits; $\\pi$ is dimensionless. Each display defines all visible symbols. Gaudron, Warnez and Johnsen supply the nonlinear-elastic cavity framework. The transformations and work calculation below follow the stated spherical assumptions. " + cite(r"r13"),
-    "幂、乘积及比较采用通常意义。下标表示方向、材料或状态。$d/dr$ 对当前半径求导，偏导固定其他坐标。$\\int$ 采用所写积分限，$\\lim$ 表示极限，$\\pi$ 为无量纲常数。每个公式前定义全部符号。Gaudron、Warnez 与 Johnsen 提供非线性弹性空腔框架。下文变换与功计算基于已声明球形假设。 " + cite(r"r13"))
+B.append(H("2. Theory: the liquid law and the acoustic limit", "2. 理论：液体律与声学极限", "law"))
+B.append(P(
+    "Step 1 — Adopt a pressure law that depends on density alone. Eq. (C5-E01) is the stiffened-gas form. It is an adopted constitutive law, not a derivation from first principles. " + cite("r17") + " Both solvers below integrate this same law.",
+    "步骤 1——采用仅依赖于密度的压力律。式（C5-E01）为刚化气体形式。它是采用的本构律，并非由第一性原理推导。 " + cite("r17") + " 下文两个求解器积分的都是这同一条定律。"))
+B.append(eq(1))
+B.append(P(
+    "Step 2 — Differentiate the law. The factor $(\\rho/\\rho_j)^{\\gamma}$ gives $dp/d\\rho=\\gamma(p_j+\\Pi)\\rho^{\\gamma-1}/\\rho_j^{\\gamma}$. Replace $(p_j+\\Pi)(\\rho/\\rho_j)^{\\gamma}$ by $p+\\Pi$. This gives $c^2=\\gamma(p+\\Pi)/\\rho$. At the reference state, $c_0^2=4.4\\times6.00101325\\times10^{8}/998.1539919$. Hence $c_0=1626.447$ m s⁻¹. The check is dimensional: pressure over density is a squared speed.",
+    "步骤 2——对该律求导。因子 $(\\rho/\\rho_j)^{\\gamma}$ 给出 $dp/d\\rho=\\gamma(p_j+\\Pi)\\rho^{\\gamma-1}/\\rho_j^{\\gamma}$。将 $(p_j+\\Pi)(\\rho/\\rho_j)^{\\gamma}$ 替换为 $p+\\Pi$，得到 $c^2=\\gamma(p+\\Pi)/\\rho$。在参考状态下，$c_0^2=4.4\\times6.00101325\\times10^{8}/998.1539919$，故 $c_0=1626.447$ m s⁻¹。量纲检验：压力除以密度是速度的平方。"))
+B.append(P(
+    "Step 3 — Take the rigid-wall limit of the Chapter 3 contact pressure. Chapter 3 matched liquid and receiver impedances and found the early pressure of Eq. (C3-E24). A rigid wall has $Z_r\\to\\infty$. The common contact velocity then tends to zero. The pressure tends to $Z_0U$ with $Z_0=\\rho_jc_0=1.6234\\times10^{6}$ Pa s m⁻¹. The opposite limit $Z_r\\to0$ gives zero pressure, as a free surface should.",
+    "步骤 3——取第三章接触压力的刚性壁面极限。第三章匹配了液体与接收体的阻抗，得到式（C3-E24）的早期压力。刚性壁面有 $Z_r\\to\\infty$。共同接触速度趋于零，压力趋于 $Z_0U$，其中 $Z_0=\\rho_jc_0=1.6234\\times10^{6}$ Pa s m⁻¹。相反的极限 $Z_r\\to0$ 给出零压力，符合自由面。"))
+B.append(eq(2))
+B.append(P(
+    "At $U=99.027$ m s⁻¹ the excess pressure $Z_0U$ is 160.765 MPa. The absolute value $p_A$ is 160.867 MPa. This is a linear estimate. It holds for $U/c_0\\ll1$. The next section removes that restriction.",
+    "在 $U=99.027$ m s⁻¹ 时，超压 $Z_0U$ 为 160.765 MPa，绝对值 $p_A$ 为 160.867 MPa。这是线性估计，适用于 $U/c_0\\ll1$。下一节去掉这一限制。"))
 
-body += H("2. Elastic pressure derivation", "2. 弹性压力推导", r"gel-pressure")
-body += P("Step 1 — Conserve material volume. Follow a shell from reference to current radius. Incompressibility preserves volume between shell and cavity. Differentiate at fixed time for radial stretch. Every divided radius is strictly positive.",
-          "步骤 1——材料体积守恒。跟踪球壳从参考半径至当前半径。不可压缩性保持球壳与空腔之间的体积。在固定时间求导，得到径向伸长。所有被除半径均严格为正。")
-body += E(r"A-E01", r"\begin{aligned}r^3-R^3&=r_0^3-R_{\mathrm{ref}}^3,\\3r^2\frac{\partial r}{\partial r_0}&=3r_0^2,\\\lambda_r:=\frac{\partial r}{\partial r_0}&=\frac{r_0^2}{r^2},\qquad\lambda_\theta=\lambda_\phi=\frac{r}{r_0},\\\lambda_r\lambda_\theta\lambda_\phi&=1.\end{aligned}",
-    r"$r_0\geq R_{\mathrm{ref}}>0$ and $r\geq R>0$ are reference/current material radii (m); $R_{\mathrm{ref}}$, $R$ are cavity radii (m). $\lambda_r$, $\lambda_\theta$, $\lambda_\phi$ are dimensionless principal stretches; $\theta,\phi$ are tangential directions. $\partial r/\partial r_0$ is the derivative with respect to the reference material coordinate at fixed time.",
-    r"$r_0\geq R_{\mathrm{ref}}>0$ 与 $r\geq R>0$ 为参考／当前材料半径（m）；$R_{\mathrm{ref}}$、$R$ 为腔体半径（m）。$\lambda_r$、$\lambda_\theta$、$\lambda_\phi$ 为无量纲主伸长；$\theta,\phi$ 为切向方向。$\partial r/\partial r_0$ 表示构形映射中固定时刻的材料坐标导数。",
-    r"Exact kinematics under incompressibility", gel([r"Rref: reference wall", r"R: current wall", r"r₀ → r: material shell", r"λr = r₀²/r²", r"λθ = λφ = r/r₀"], [r"Network material volume is unchanged", r"Radial direction points outward"]),
-    r"The same network shell moves outward while thinning radially and stretching tangentially.", r"同一网络球壳向外移动，同时径向变薄、切向伸长。")
-body += P("Step 2 — Apply neo-Hookean stress. Each principal stress contains a common incompressibility multiplier and stretch contribution. Subtract radial from tangential stress to remove the multiplier. This constitutive assumption requires material validation.",
-          "步骤 2——应用 neo-Hookean 应力。各主应力包含共同不可压缩乘子及伸长项。切向减径向应力，消去乘子。该本构假设需要材料验证。")
-body += E(r"A-E02", r"\begin{aligned}\mathbf T^e&=-\chi\mathbf I+G_g\mathbf B,\qquad\mathbf B=\mathbf F\mathbf F^{\mathsf T},\\T^e_{rr}&=-\chi+G_g\lambda_r^2,\qquad T^e_{\theta\theta}=T^e_{\phi\phi}=-\chi+G_g\lambda_\theta^2,\\T^e_{\theta\theta}-T^e_{rr}&=G_g\left[\left(\frac r{r_0}\right)^2-\left(\frac{r_0}r\right)^4\right].\end{aligned}",
-    r"$\mathbf T^e$ and its $rr$, $\theta\theta$, $\phi\phi$ principal components are elastic Cauchy stresses (Pa), tensile positive. $\chi$ is the incompressibility multiplier (Pa); $\mathbf I$ is the dimensionless identity tensor; $G_g>0$ is network shear modulus (Pa). $\mathbf F$ is the dimensionless deformation gradient, $\mathbf B$ its left Cauchy–Green tensor, and $\mathsf T$ denotes transpose. $\lambda_r$, $\lambda_\theta$ are stretches; $r,r_0>0$ are current/reference material radii (m).",
-    r"$\mathbf T^e$ 及其 $rr$、$\theta\theta$、$\phi\phi$ 主分量为弹性 Cauchy 应力（Pa），拉伸取正。$\chi$ 为不可压缩约束乘子（Pa）；$\mathbf I$ 为无量纲单位张量；$G_g>0$ 为网络剪切模量（Pa）。$\mathbf F$ 为无量纲变形梯度，$\mathbf B$ 为左 Cauchy–Green 张量，$\mathsf T$ 表示转置。$\lambda_r$、$\lambda_\theta$ 为伸长；$r,r_0>0$ 为当前／参考材料半径（m）。",
-    r"Constitutive assumption and exact subtraction", gel([r"Gg: polymer network", r"Tᵉrr: radial traction", r"Tᵉθθ: tangential stress", r"r₀ → r", r"λr, λθ, F, B, χ, I"], [r"Equal χ cancels in the stress difference", r"Tensile stress is positive"]),
-    r"Radial and tangential stretches produce different network stresses around the cavity.", r"空腔周围的径向与切向伸长产生不同的网络应力。")
-body += P("Step 3 — Integrate spherical elastic balance. Radial stress derivative equals twice tangential-minus-radial stress divided by radius. Wall and far-field tractions determine elastic resistance. The same stress-difference integral enters dynamic balance later. That use retains the separate dynamic inertia.",
-          "步骤 3——积分球形弹性平衡。径向应力导数等于切向减径向应力的两倍除以半径。壁面及远场牵引确定弹性阻力。同一应力差积分随后进入动力学平衡，同时保留独立动力学惯性。")
-body += E(r"A-E03", r"\begin{aligned}\frac{dT^e_{rr}}{dr}&=\frac{2}{r}(T^e_{\theta\theta}-T^e_{rr}),\\T^e_{rr}(\infty)&=-p_\infty,\qquad T^e_{rr}(R)=-p_b+\frac{2\sigma}{R},\\p_{\mathrm{el}}(R):=p_b-p_\infty-\frac{2\sigma}{R}&=2G_g\int_R^\infty\left[\left(\frac r{r_0}\right)^2-\left(\frac{r_0}r\right)^4\right]\frac{dr}{r}.\end{aligned}",
-    r"$T^e_{rr}$, $T^e_{\theta\theta}$ are radial/tangential elastic stresses (Pa) in this static control; $r$ is current radius, $r_0=r_0(r)$ the reference coordinate, $R>0$ the cavity radius (m). $p_b$, $p_\infty$ are inner/far-field pressures (Pa); $\sigma\geq0$ is constant tension (N m⁻¹); $G_g>0$ is shear modulus (Pa); $p_{\mathrm{el}}$ is the signed elastic resistance (Pa). $d/dr$ differentiates in $r$, $\int_R^\infty$ integrates over exterior material, and $\infty$ labels the infinite far field.",
-    r"$T^e_{rr}$、$T^e_{\theta\theta}$ 为该静态控制模型的径向／切向弹性应力（Pa）；$r$ 为当前半径，$r_0=r_0(r)$ 为参考坐标，$R>0$ 为腔体半径（m）。$p_b$、$p_\infty$ 为内部／远场压力（Pa）；$\sigma\geq0$ 为恒定张力（N m⁻¹）；$G_g>0$ 为剪切模量（Pa）；$p_{\mathrm{el}}$ 为带符号的弹性阻力（Pa）。$d/dr$ 表示对 $r$ 求导，$\int_R^\infty$ 对外部材料积分，$\infty$ 标记无限远场。",
-    r"Static balance defining the elastic resistance", gel([r"R: cavity surface", r"pb: cavity pressure", r"2σ/R: interface jump", r"p∞: far field", r"pel: integrated network resistance", r"r, r₀, Tᵉrr, Tᵉθθ, Gg"], [r"Integrate from the wall to the far field", r"Dynamic inertia is introduced later"]),
-    r"The wall pressure supports capillary traction and the accumulated elastic resistance.", r"壁面压力同时支撑毛细牵引与积分后的弹性阻力。")
-body += P("Step 4 — Transform radius with its Jacobian. For $R>R_{\\mathrm{ref}}$, set $q=r_0/r$. It rises from $R_{\\mathrm{ref}}/R$ to one. Differentiate its cube and cancel the positive square. Finite exterior positions have positive $1-q^3$. The undeformed transformation is degenerate. Evaluate its zero resistance directly.",
-          "步骤 4——连同雅可比变换半径。$R>R_{\\mathrm{ref}}$ 时令 $q=r_0/r$，它从 $R_{\\mathrm{ref}}/R$ 增至一。对其三次方求导并约去正平方。有限外域位置满足 $1-q^3>0$。未变形时换元退化，直接计算零阻力。")
-body += E(r"A-E04", r"\begin{aligned}q^3&=1-\frac{R^3-R_{\mathrm{ref}}^3}{r^3},\qquad q(R)=\frac{R_{\mathrm{ref}}}{R},\qquad q(\infty)=1,\\3q^2\,dq&=3(1-q^3)\frac{dr}{r},\qquad \frac{dr}{r}=\frac{q^2\,dq}{1-q^3},\\\left(q^{-2}-q^4\right)\frac{dr}{r}&=\frac{1-q^6}{1-q^3}\,dq=(1+q^3)\,dq.\end{aligned}",
-    r"$q=r_0/r$ is a positive dimensionless coordinate ratio; $r_0,r$ are reference/current material radii (m), and $R>R_{\mathrm{ref}}>0$ are current/reference cavity radii (m). $q(R)$ and $q(\infty)$ denote endpoint values. $dq,dr$ are coordinate differentials; $\infty$ denotes the far-field limit. The factorization $1-q^6=(1-q^3)(1+q^3)$ applies for $q<1$ before taking the endpoint limit.",
-    r"$q=r_0/r$ 为正的无量纲坐标比；$r_0,r$ 为参考／当前材料半径（m），$R>R_{\mathrm{ref}}>0$ 为当前／参考腔体半径（m）。$q(R)$、$q(\infty)$ 表示端点值。$dq,dr$ 为坐标微分；$\infty$ 表示远场极限。因式分解 $1-q^6=(1-q^3)(1+q^3)$ 先在 $q<1$ 时使用，再取端点极限。",
-    r"Exact change of variable for expansion", gel([r"qwall = Rref/R", r"q → 1 far away", r"r₀/r = q", r"R, Rref, r, r₀", r"dr/r ↔ q²dq/(1−q³)"], [r"Mapped limits retain the wall and infinity", r"Factorization removes the apparent endpoint singularity"]),
-    r"The material coordinate ratio converts a spatial stress integral into a regular polynomial integral.", r"材料坐标比将空间应力积分转化为正则的多项式积分。")
-body += E(r"A-E05", r"\begin{aligned}p_{\mathrm{el}}(R)&=2G_g\int_{R_{\mathrm{ref}}/R}^{1}(1+q^3)\,dq\\&=2G_g\left[q+\frac{q^4}{4}\right]_{R_{\mathrm{ref}}/R}^{1}\\&=2G_g\left[\frac54-\frac{R_{\mathrm{ref}}}{R}-\frac14\left(\frac{R_{\mathrm{ref}}}{R}\right)^4\right]\\&=\frac{G_g}{2}\left[5-4\frac{R_{\mathrm{ref}}}{R}-\left(\frac{R_{\mathrm{ref}}}{R}\right)^4\right].\end{aligned}",
-    r"$p_{\mathrm{el}}$ is elastic cavity resistance (Pa); $G_g>0$ is network shear modulus (Pa); $R\geq R_{\mathrm{ref}}>0$ are current/reference cavity radii (m). $q$ is the dimensionless integration variable. $\int$ is a definite integral, and $[f(q)]_a^b$ means upper-endpoint minus lower-endpoint evaluation of the bracketed function.",
-    r"$p_{\mathrm{el}}$ 为弹性腔体阻力（Pa）；$G_g>0$ 为网络剪切模量（Pa）；$R\geq R_{\mathrm{ref}}>0$ 为当前／参考腔体半径（m）。$q$ 为无量纲积分变量。$\int$ 为定积分，$[f(q)]_a^b$ 表示括号中函数的上端点值减去下端点值。",
-    r"Derived neo-Hookean elastic resistance", gel([r"pel(R): inward resistance", r"Gg: network modulus", r"Rref/R: wall stretch inverse", r"q: stress-integral coordinate"], [r"Integrate 1 and q³ term by term", r"Constitutive result for an intact infinite network"]),
-    r"Elastic resistance follows from the full stretch field, not from a guessed constant pressure.", r"弹性阻力来自完整伸长场，而不是猜测的恒定压力。")
-body += P("The rows apply Eq. (A-E04), integrate $1+q^3$, evaluate endpoints, then multiply. This reproduces Gaudron et al., Eq. (2.18). Large expansion approaches a constitutive pressure plateau. Fracture threshold remains unestablished. Finite geometry, prestress, stiffening or rupture can change the response. " + cite(r"r13"),
-          "各行依次应用式（A-E04）、积分 $1+q^3$、计算端点并相乘。这恢复 Gaudron 等式（2.18）。大膨胀趋于本构压力平台。断裂阈值尚未确立。有限几何、预应力、硬化或破裂可改变响应。 " + cite(r"r13"))
-body += E(r"A-E06", r"\begin{aligned}p_{\mathrm{el}}(R_{\mathrm{ref}})&=\frac{G_g}{2}(5-4-1)=0,\\\frac{dp_{\mathrm{el}}}{dR}&=2G_g\left(\frac{R_{\mathrm{ref}}}{R^2}+\frac{R_{\mathrm{ref}}^4}{R^5}\right)>0,\\\lim_{R/R_{\mathrm{ref}}\to\infty}p_{\mathrm{el}}(R)&=\frac52G_g.\end{aligned}",
-    r"$p_{\mathrm{el}}$ is pressure resistance (Pa); $G_g>0$ is shear modulus (Pa); $R\geq R_{\mathrm{ref}}>0$ are cavity radii (m). $d/dR$ is the radius derivative (giving Pa m⁻¹ here); $\lim$ takes the positive large-radius-ratio limit; $\infty$ denotes an unbounded ratio.",
-    r"$p_{\mathrm{el}}$ 为压力阻力（Pa）；$G_g>0$ 为剪切模量（Pa）；$R\geq R_{\mathrm{ref}}>0$ 为腔体半径（m）。$d/dR$ 表示半径导数（此处单位为 Pa m⁻¹）；$\lim$ 取正的大半径比极限；$\infty$ 表示比值无界。",
-    r"Limiting-state and sign checks", gel([r"Rref: zero resistance", r"R increasing → pel increasing", r"large R → 5Gg/2", r"dpel/dR > 0"], [r"Expansion requires positive additional pressure", r"Pressure plateau does not cap stored work"]),
-    r"Zero deformation gives zero elastic resistance, and positive expansion raises it monotonically.", r"零变形给出零弹性阻力，正向膨胀使阻力单调增大。")
+B.append(H("3. Theory: the stopping shock and the Hugoniot pressure", "3. 理论：停止激波与 Hugoniot 压力", "shock"))
+B.append(P(
+    "Step 4 — Describe the stopping shock. At first contact a shock leaves the wall and travels toward $+z$ at lab speed $S$. Liquid behind it is at rest against the wall. Liquid ahead of it moves toward the wall at speed $U$. Its speed relative to the incoming liquid is $U_s=U+S$. Work in the frame of the shock. Liquid enters at speed $U_s$ and leaves at speed $S=U_s-U$.",
+    "步骤 4——描述停止激波。首次接触时，激波离开壁面，以实验室速度 $S$ 朝 $+z$ 传播。激波后的液体相对壁面静止，激波前的液体以速度 $U$ 朝壁面运动。它相对入射液体的速度为 $U_s=U+S$。取激波参考系：液体以速度 $U_s$ 流入，以速度 $S=U_s-U$ 流出。"))
+B.append(P(
+    "Mass balance across the front gives $\\rho_jU_s=\\rho_1S$. Momentum balance gives $p_j+\\rho_jU_s^2=p_1+\\rho_1S^2$. Substitute $\\rho_1S=\\rho_jU_s$ into the second relation. Then $p_1-p_j=\\rho_jU_s(U_s-S)=\\rho_jU_sU$. These are the two relations of Eq. (C5-E03). They are exact for a planar steady shock and need no equation of state. " + cite("r16"),
+    "跨波前的质量平衡给出 $\\rho_jU_s=\\rho_1S$。动量平衡给出 $p_j+\\rho_jU_s^2=p_1+\\rho_1S^2$。把 $\\rho_1S=\\rho_jU_s$ 代入第二式，得 $p_1-p_j=\\rho_jU_s(U_s-S)=\\rho_jU_sU$。这就是式（C5-E03）的两个关系。它们对平面定常激波精确成立，且不需要状态方程。 " + cite("r16")))
+B.append(eq(3))
+B.append(P(
+    "Step 5 — Close the jump with energy conservation. The specific internal energy of the stiffened-gas liquid is $e=(p+\\gamma\\Pi)/[(\\gamma-1)\\rho]$. Energy conservation across the shock requires $e_1-e_j=\\tfrac12(p_1+p_j)(1/\\rho_j-1/\\rho_1)$. Write $\\rho_1=\\rho_j/(1-x)$ with $x=U/U_s$. Put $\\Delta=p_1-p_j$ and $B=p_j+\\gamma\\Pi$. Multiply the energy relation by $(\\gamma-1)\\rho_j$. It becomes $\\Delta(1-x)-Bx=\\tfrac12(\\gamma-1)x(2p_j+\\Delta)$.",
+    "步骤 5——用能量守恒封闭跳跃。刚化气体液体的比内能为 $e=(p+\\gamma\\Pi)/[(\\gamma-1)\\rho]$。跨激波的能量守恒要求 $e_1-e_j=\\tfrac12(p_1+p_j)(1/\\rho_j-1/\\rho_1)$。令 $\\rho_1=\\rho_j/(1-x)$，其中 $x=U/U_s$。记 $\\Delta=p_1-p_j$、$B=p_j+\\gamma\\Pi$。将能量关系乘以 $(\\gamma-1)\\rho_j$，得 $\\Delta(1-x)-Bx=\\tfrac12(\\gamma-1)x(2p_j+\\Delta)$。"))
+B.append(P(
+    "Collect the terms in $\\Delta$. Then $\\Delta\\,[1-(\\gamma+1)x/2]=\\gamma(p_j+\\Pi)\\,x$. Momentum gives $\\Delta=\\rho_jU^2/x$. Insert it and use $c_0^2=\\gamma(p_j+\\Pi)/\\rho_j$. The result is $x^2+\\tfrac12(\\gamma+1)M^2x-M^2=0$ with $M=U/c_0$. Its positive root is $x=-k+\\sqrt{k^2+M^2}$ with $k=(\\gamma+1)M^2/4$. The Hugoniot pressure follows as $p_H=p_j+\\rho_jU^2/x$. " + cite("r16"),
+    "合并 $\\Delta$ 的项，得 $\\Delta\\,[1-(\\gamma+1)x/2]=\\gamma(p_j+\\Pi)\\,x$。动量关系给出 $\\Delta=\\rho_jU^2/x$。代入并使用 $c_0^2=\\gamma(p_j+\\Pi)/\\rho_j$，得到 $x^2+\\tfrac12(\\gamma+1)M^2x-M^2=0$，其中 $M=U/c_0$。其正根为 $x=-k+\\sqrt{k^2+M^2}$，$k=(\\gamma+1)M^2/4$。Hugoniot 压力为 $p_H=p_j+\\rho_jU^2/x$。 " + cite("r16")))
+B.append(eq(4))
+B.append(P(
+    "Check the limits and the number. For $M\\to0$, $x\\to M$ and $p_H\\to p_j+\\rho_jc_0U$, which is Eq. (C5-E02). At $U=99.02724$ m s⁻¹, $M=0.060886$, $k=0.0050046$ and $x=0.056086$. Hence $U_s=1765.62$ m s⁻¹, $\\rho_1/\\rho_j=1.0594$ and $p_H=174.6229$ MPa. A separate bisection on the energy residual in the C++ code gives the same 174.622895 MPa.",
+    "检验极限与数值。当 $M\\to0$ 时，$x\\to M$，$p_H\\to p_j+\\rho_jc_0U$，即式（C5-E02）。在 $U=99.02724$ m s⁻¹ 时，$M=0.060886$，$k=0.0050046$，$x=0.056086$。于是 $U_s=1765.62$ m s⁻¹，$\\rho_1/\\rho_j=1.0594$，$p_H=174.6229$ MPa。C++ 程序对能量残差另作二分求根，得到相同的 174.622895 MPa。"))
+B.append(P(
+    "Step 6 — Keep the density-only law and drop the energy equation. This is the model that both solvers integrate. Mass and momentum still give $\\rho_1=\\rho_j(U+S)/S$ and $p_1-p_j=\\rho_j(U+S)U$. The law of Eq. (C5-E01) must also give $p_1$ at the density $\\rho_1$. Solve this condition for the root $S_B$.",
+    "步骤 6——保留仅含密度的定律并舍去能量方程。这是两个求解器积分的模型。质量与动量仍给出 $\\rho_1=\\rho_j(U+S)/S$ 与 $p_1-p_j=\\rho_j(U+S)U$。式（C5-E01）的定律还须在密度 $\\rho_1$ 处给出 $p_1$。对该条件求根 $S_B$。"))
+B.append(eq(5))
+B.append(P(
+    "At the nominal speed $S_B=1661.86$ m s⁻¹ and $p_B=174.155$ MPa. This lies 0.268% below $p_H$. The gap is the effect of dropping the energy equation. The acoustic estimate of Eq. (C5-E02) lies 7.9% below $p_H$ in absolute pressure. The nonlinear factor is $(p_H-p_j)/(Z_0U)=U_s/c_0=1.0856$.",
+    "在名义速度下 $S_B=1661.86$ m s⁻¹，$p_B=174.155$ MPa，比 $p_H$ 低 0.268%。该差值是舍去能量方程的影响。式（C5-E02）的声学估计在绝对压力上比 $p_H$ 低 7.9%。非线性因子为 $(p_H-p_j)/(Z_0U)=U_s/c_0=1.0856$。"))
 
-body += H("3. Elastic work", "3. 弹性功", r"gel-work")
-body += P("Step 5 — Integrate pressure against volume change. Multiply elastic pressure by spherical area. Insert Eq. (A-E05) and integrate each dummy-radius power. The antiderivative of $\\xi^{-2}$ is $-1/\\xi$. Keep both endpoints to enforce zero reference work.",
-          "步骤 5——对体积变化积分压力功。将弹性压力乘球面面积，代入式（A-E05），积分各哑半径幂。$\\xi^{-2}$ 的原函数为 $-1/\\xi$。保留两端点，使参考功为零。")
-body += E(r"A-E07", r"\begin{aligned}W_g(R)&=4\pi\int_{R_{\mathrm{ref}}}^{R}p_{\mathrm{el}}(\xi)\xi^2\,d\xi\\&=2\pi G_g\int_{R_{\mathrm{ref}}}^{R}\left(5\xi^2-4R_{\mathrm{ref}}\xi-R_{\mathrm{ref}}^4\xi^{-2}\right)d\xi\\&=2\pi G_g\left[\frac{5\xi^3}{3}-2R_{\mathrm{ref}}\xi^2+\frac{R_{\mathrm{ref}}^4}{\xi}\right]_{R_{\mathrm{ref}}}^{R}\\&=2\pi G_g\left[\frac{5R^3}{3}-2R_{\mathrm{ref}}R^2+\frac{R_{\mathrm{ref}}^4}{R}-\frac{2R_{\mathrm{ref}}^3}{3}\right].\end{aligned}",
-    r"$W_g$ is stored elastic work relative to the unstretched state (J); $p_{\mathrm{el}}(\xi)$ is signed elastic resistance (Pa); $G_g>0$ is modulus (Pa). $R\geq R_{\mathrm{ref}}>0$ and dummy integration radius $\xi$ are lengths (m); $d\xi$ is its differential. $\pi$ is the circle constant; $[\ ]_{R_{\mathrm{ref}}}^{R}$ denotes endpoint subtraction.",
-    r"$W_g$ 为相对未伸长状态的储存弹性功（J）；$p_{\mathrm{el}}(\xi)$ 为带符号弹性阻力（Pa）；$G_g>0$ 为模量（Pa）。$R\geq R_{\mathrm{ref}}>0$ 与虚拟积分半径 $\xi$ 为长度（m）；$d\xi$ 为其微分。$\pi$ 为圆周率；$[\ ]_{R_{\mathrm{ref}}}^{R}$ 表示端点相减。",
-    r"Exact work integral within the elastic model", {r"type":r"energy", r"labels":[r"Rref → R", r"pel(ξ): cavity work pressure", r"4πξ²dξ: volume increment", r"Wg: network energy", r"Gg, π"], r"notes":[r"Use pressure times displaced volume", r"Elastic work can return during recoil"]},
-    r"The area factor converts radius increments into cavity volume increments before integrating work.", r"先用面积因子将半径增量转化为腔体体积增量，再积分功。")
-body += P("The lower endpoint is $(5/3-2+1)R_{\\mathrm{ref}}^3=2R_{\\mathrm{ref}}^3/3$. Subtract it in the final row. Pressure can plateau while work grows with volume. Units are Pa m³ = J. Differentiating work recovers pressure × area.",
-          "下端点为 $(5/3-2+1)R_{\\mathrm{ref}}^3=2R_{\\mathrm{ref}}^3/3$，在末行减去。压力可形成平台而功随体积增加。单位为 Pa m³ = J。对功求导可恢复压力 × 面积。")
-body += E(r"A-E08", r"\begin{aligned}\frac{dW_g}{dR}&=2\pi G_g\left(5R^2-4R_{\mathrm{ref}}R-\frac{R_{\mathrm{ref}}^4}{R^2}\right)=4\pi R^2p_{\mathrm{el}}(R),\\R=R_{\mathrm{ref}}+\delta R\colon\qquad p_{\mathrm{el}}&=\frac{4G_g\delta R}{R_{\mathrm{ref}}}+O\!\left(G_g\frac{\delta R^2}{R_{\mathrm{ref}}^2}\right),\\W_g&=8\pi G_gR_{\mathrm{ref}}\delta R^2+O(G_g\delta R^3).\end{aligned}",
-    r"$W_g$ is elastic work (J), $p_{\mathrm{el}}$ resistance (Pa), $G_g>0$ shear modulus (Pa), $R,R_{\mathrm{ref}}>0$ cavity radii (m), and $\delta R=R-R_{\mathrm{ref}}$ a small radius change (m), with $|\delta R|/R_{\mathrm{ref}}\ll1$. $d/dR$ is differentiation in radius; $O$ denotes terms bounded by a constant times the indicated scale as that ratio tends to zero; $\pi$ is dimensionless.",
-    r"$W_g$ 为弹性功（J），$p_{\mathrm{el}}$ 为阻力（Pa），$G_g>0$ 为剪切模量（Pa），$R,R_{\mathrm{ref}}>0$ 为腔体半径（m），$\delta R=R-R_{\mathrm{ref}}$ 为小半径变化（m），满足 $|\delta R|/R_{\mathrm{ref}}\ll1$。$d/dR$ 表示对半径求导；$O$ 表示当该比值趋于零时，被某常数乘所示尺度界定的项；$\pi$ 为无量纲量。",
-    r"Work-conjugacy and small-deformation checks", gel([r"δR = R−Rref", r"small δR: pel ∝ δR", r"Wg ∝ δR²", r"4πR²pel = dWg/dR", r"Gg, O"], [r"Zero reference work and zero initial slope", r"Elastic energy is nonnegative for expansion"]),
-    r"Near the reference cavity, pressure is linear in radius change and stored work is quadratic.", r"在参考腔体附近，压力与半径变化呈线性关系，储存功则呈二次关系。")
-body += P("Differentiate Eq. (A-E05) at reference radius for the linear term. Integrate it with area $4\\pi R_{\\mathrm{ref}}^2$ for quadratic work. A reference-volume strain-energy integral also recovers Eq. (A-E07). Intact hyperelastic storage is reversible. Its useful return depends on timing and geometry. Distinguish stored energy from irreversible heat loss.",
-          "在参考半径对式（A-E05）求导，得到线性项。乘面积 $4\\pi R_{\\mathrm{ref}}^2$ 后积分，得到二次功。参考体积应变能积分也恢复式（A-E07）。完整超弹性储能可逆，其有用返还取决于时序和几何。应区分储能与不可逆热损失。")
+B.append(H("4. Theory: the finite sensor, edge release and scales", "4. 理论：有限传感区、边缘释放与尺度", "finite"))
+B.append(P(
+    "Step 7 — Define what is measured. The planar result of Section 3 holds under a column that fills the wall. A real jet has a free side from the first instant. Report the wall pressure as a mean over a fixed disk. Eq. (C5-E06) uses the axisymmetric area weight $2r\\,dr/R^2$. The disk radius $R$ is $a$ for the full sensor and $a/2$ for the centre. This follows the fixed-observer rule of Eq. (C3-E26).",
+    "步骤 7——定义被测量。第 3 节的平面结果适用于充满壁面的液柱。真实射流自首次接触起就有自由侧边。将壁面压力报告为固定圆盘上的平均值。式（C5-E06）采用轴对称面积权重 $2r\\,dr/R^2$。圆盘半径 $R$ 对全传感区取 $a$，对中心区取 $a/2$。这遵循式（C3-E26）的固定观测量规则。"))
+B.append(eq(6))
+B.append(P(
+    "Step 8 — Estimate the effect of the free side. Pressure release starts at the edge $r=a$ at first contact. Let it advance inward at $c_0$. After the dimensionless time $\\tau=c_0t/a$ it has reached the annulus $a(1-\\tau)<r\\le a$. The fraction of the disk area in that annulus is $f_{\\mathrm{rel}}=1-(1-\\tau)^2$. If the annulus keeps no excess pressure and the core keeps $p_H$, the mean falls to $p_H(1-\\tau)^2$. This is a scale estimate. It fixes the sign and size of the gap, not its value.",
+    "步骤 8——估计自由侧边的影响。压力释放自首次接触起从边缘 $r=a$ 开始，设其以 $c_0$ 向内推进。经无量纲时间 $\\tau=c_0t/a$ 后，它到达环带 $a(1-\\tau)<r\\le a$。该环带占圆盘面积的比例为 $f_{\\mathrm{rel}}=1-(1-\\tau)^2$。若环带不保留超压而核心保持 $p_H$，平均值降为 $p_H(1-\\tau)^2$。这是尺度估计，它确定差值的符号与大小，而不确定其数值。"))
+B.append(eq(7))
+B.append(P(
+    "Step 9 — Count the energy that crosses a plane upstream of the wall. The plane $z=2a$ is hit by the incident liquid before the reflected shock arrives. The reflected shock needs about $2a/(U_s-U)=1.20$ ns to climb back for $a=1$ μm. Use the window $t_w=1$ ns. The kinetic-energy flux $\\dot K=\\tfrac12\\rho_jU^3\\pi a^2$ is 1.5226 mW. Energy through the plane in 1 ns is 1.5226 pJ. This is liquid energy crossing a plane. A rigid wall does no work on the liquid, so it receives none.",
+    "步骤 9——计量穿过壁面上游平面的能量。入射液体在反射激波到达之前先经过平面 $z=2a$。对 $a=1$ μm，反射激波返回该平面约需 $2a/(U_s-U)=1.20$ ns。取时间窗 $t_w=1$ ns。动能通量 $\\dot K=\\tfrac12\\rho_jU^3\\pi a^2$ 为 1.5226 mW，1 ns 内穿过平面的能量为 1.5226 pJ。这是穿过平面的液体能量。刚性壁面不对液体做功，因此也不接收功。"))
+B.append(eq(8))
+B.append(P(
+    "Step 10 — State the validity range. The nominal Mach number is $M=0.0609$. The tested range is $0.031\\le M\\le0.092$. The sound-crossing time of the jet radius is $a/c_0=0.615$ ns for $a=1$ μm. The compression behind the shock is only 5.9%. That is why the barotropic law stays within 0.27% of the energy law. No conclusion is claimed outside this range.",
+    "步骤 10——说明适用范围。名义马赫数为 $M=0.0609$，检验范围为 $0.031\\le M\\le0.092$。$a=1$ μm 时，声波穿过射流半径的时间 $a/c_0$ 为 0.615 ns。激波后的压缩仅 5.9%，因此正压律与能量律相差不超过 0.27%。超出此范围不作任何结论。"))
+B.append(eq(9))
 
-body += H("4. Inertia and viscous loss", "4. 惯性与黏性损失", r"gel-dynamics")
-body += P("Step 6 — Add Kelvin–Voigt viscosity. Total stress adds $2\\eta_g\\mathbf D$ to elastic stress. $\\mathbf D$ is symmetric velocity gradient. Incompressibility and equal material/wall normal velocity give the radial field. Expansion produces negative radial gradient and positive tangential extension.",
-          "步骤 6——加入 Kelvin–Voigt 黏性。总应力在弹性应力上加入 $2\\eta_g\\mathbf D$，其中 $\\mathbf D$ 为对称速度梯度。不可压缩性及材料／壁面法向速度相等给出径向流场。膨胀产生负径向梯度及正切向伸长。")
-body += E(r"A-E09", r"\begin{aligned}\mathbf T&=\mathbf T^e+2\eta_g\mathbf D,\qquad u_r(r,t)=\frac{R^2\dot R}{r^2},\\D_{rr}&=\frac{\partial u_r}{\partial r}=-\frac{2R^2\dot R}{r^3},\qquad D_{\theta\theta}=D_{\phi\phi}=\frac{u_r}{r}=\frac{R^2\dot R}{r^3},\\T_{\theta\theta}-T_{rr}&=T^e_{\theta\theta}-T^e_{rr}+\frac{6\eta_gR^2\dot R}{r^3}.\end{aligned}",
-    r"$\mathbf T$, $\mathbf T^e$ and their radial/tangential components are total/elastic Cauchy stresses (Pa). $\eta_g\geq0$ is the chosen medium viscosity (Pa s); $\mathbf D$ and its components are strain rates (s⁻¹). $u_r$ is radial material speed (m s⁻¹); $r\geq R(t)>0$ is current position, $R$ wall radius (m), $t$ time (s), and $\dot R$ wall speed (m s⁻¹). $\partial/\partial r$ is the fixed-time spatial derivative.",
-    r"$\mathbf T$、$\mathbf T^e$ 及其径向／切向分量为总／弹性 Cauchy 应力（Pa）。$\eta_g\geq0$ 为所选介质黏度（Pa s）；$\mathbf D$ 及其分量为应变率（s⁻¹）。$u_r$ 为径向材料速度（m s⁻¹）；$r\geq R(t)>0$ 为当前位置，$R$ 为壁面半径（m），$t$ 为时间（s），$\dot R$ 为泡壁速度（m s⁻¹）。$\partial/\partial r$ 为固定时刻的空间导数。",
-    r"Kelvin–Voigt closure and exact radial kinematics", gel([r"Ṙ: wall material speed", r"ur = R²Ṙ/r²", r"ηg: viscous network/medium contribution", r"Drr, Dθθ, Dφφ", r"T, Tᵉ, r, R, t"], [r"Dashpot stress follows the velocity gradient", r"Use one effective viscosity for each represented resistance"]),
-    r"The viscous term derives from the surrounding-medium strain rate, not from bubble mass.", r"黏性项来自周围介质的应变率，而不是气泡质量。")
-body += P("Step 7 — Integrate radial momentum. Retain fixed-position and convective acceleration. Eq. (A-E09) gives an integrable acceleration field. Wall total stress is $-p_b+2\\sigma/R$; far-field stress is $-p_\\infty$. Integrate their difference to fix the signs.",
-          "步骤 7——积分径向动量。保留固定位置及对流加速度。式（A-E09）给出可积加速度场。壁面总应力为 $-p_b+2\\sigma/R$，远场为 $-p_\\infty$。积分两者之差以确定符号。")
-body += E(r"A-E10", r"\begin{aligned}a_r&:=\frac{\partial u_r}{\partial t}+u_r\frac{\partial u_r}{\partial r}=\frac{2R\dot R^2+R^2\ddot R}{r^2}-\frac{2R^4\dot R^2}{r^5},\\\rho_g a_r&=\frac{\partial T_{rr}}{\partial r}+\frac{2}{r}(T_{rr}-T_{\theta\theta}),\\\rho_g\int_R^\infty a_r\,dr&=\rho_g\left[R\ddot R+2\dot R^2-\frac{\dot R^2}{2}\right]=\rho_g\left(R\ddot R+\frac32\dot R^2\right),\\2\int_R^\infty\frac{6\eta_gR^2\dot R}{r^4}\,dr&=12\eta_gR^2\dot R\left(\frac{1}{3R^3}\right)=\frac{4\eta_g\dot R}{R}.\end{aligned}",
-    r"$a_r$ is material radial acceleration (m s⁻²); $u_r$ radial speed (m s⁻¹); $r\geq R>0$ position and cavity radius (m); $t$ time (s); $\dot R$, $\ddot R$ wall speed/acceleration (m s⁻¹, m s⁻²). $\rho_g>0$ is density (kg m⁻³), $\eta_g\geq0$ viscosity (Pa s), and $T_{rr},T_{\theta\theta}$ total stresses (Pa). $\partial$ denotes fixed-other-coordinate derivatives and the integrals run through the exterior to infinity. Integrated acceleration times density has units Pa.",
-    r"$a_r$ 为材料径向加速度（m s⁻²）；$u_r$ 为径向速度（m s⁻¹）；$r\geq R>0$ 为位置与腔体半径（m）；$t$ 为时间（s）；$\dot R$、$\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²）。$\rho_g>0$ 为密度（kg m⁻³），$\eta_g\geq0$ 为黏度（Pa s），$T_{rr},T_{\theta\theta}$ 为总应力（Pa）。$\partial$ 表示保持其他坐标不变的偏导，积分经外部材料到无穷远。积分后的加速度乘以密度的单位为 Pa。",
-    r"Momentum law and explicitly evaluated integrals", gel([r"R, Ṙ, R̈: wall motion", r"ar: material acceleration at r", r"ρg: exterior inertia", r"Trr, Tθθ: total stresses", r"4ηgṘ/R: signed resistance", r"ur, t"], [r"Both Eulerian and convective acceleration are retained", r"The infinite exterior supplies effective inertia"]),
-    r"Integrating the material acceleration and the viscous stress difference gives their distinct radial contributions.", r"对材料加速度与黏性应力差积分，得到各自不同的径向贡献。")
-body += E(r"A-E11", r"\rho_g\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-p_{\mathrm{el}}(R)-\frac{4\eta_g\dot R}{R}.",
-    r"$\rho_g$ is effective medium density (kg m⁻³); $R>0$ is the cavity radius (m); $\dot R$, $\ddot R$ are wall speed/acceleration (m s⁻¹, m s⁻²). $p_b$, $p_\infty$, $p_{\mathrm{el}}(R)$ are cavity, far-field and signed elastic pressures (Pa); $\sigma$ is tension (N m⁻¹); $\eta_g$ is the represented medium viscosity (Pa s). Each term has units Pa.",
-    r"$\rho_g$ 为有效介质密度（kg m⁻³）；$R>0$ 为腔体半径（m）；$\dot R$、$\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²）。$p_b$、$p_\infty$、$p_{\mathrm{el}}(R)$ 为腔内、远场及带符号弹性压力（Pa）；$\sigma$ 为张力（N m⁻¹）；$\eta_g$ 为所描述介质的黏度（Pa s）。每一项的单位均为 Pa。",
-    r"Derived intact-medium radial control", gel([r"pb: inner driving pressure", r"p∞: exterior pressure", r"2σ/R: capillary resistance", r"pel(R): network resistance", r"−4ηgṘ/R: viscous term", r"ρg, R, Ṙ, R̈"], [r"Spherical motion has no directional jet", r"A liquid pocket requires a separate layered problem"]),
-    r"The spherical control quantifies cavity work and wall motion before any directional-flow calculation.", r"球形控制模型先量化腔体功与泡壁运动，再进行定向流动计算。")
-body += P("Integrating the stress derivative gives far-field minus wall stress. Subtract both stress-difference integrals for Eq. (A-E11). Setting $G_g=0$ recovers the liquid model. Viscosity resists expansion and collapse with opposite pressure signs. If fitted $\\eta_g$ includes solvent loss, count that dissipation once. Separate solvent/network models need relative-motion closure. Appreciable phase slip changes the wall-kinematic assumption.",
-          "积分应力导数得到远场减壁面应力。减去两种应力差积分，得到式（A-E11）。取 $G_g=0$ 恢复液体模型。黏性以相反压力符号阻碍膨胀与塌缩。拟合 $\\eta_g$ 已包含溶剂损失时，该耗散计入一次。独立溶剂／网络模型需要相对运动闭合。显著相变滑移会改变壁面运动假设。")
-body += P("Step 8 — Multiply by volume-change rate. The radial field gives kinetic energy. The checked elastic-work derivative supplies storage rate. Viscosity changes signed acceleration but always dissipates mechanical energy. Its loss contains squared speed.",
-          "步骤 8——乘体积变化率。径向流场给出动能，已检验弹性功导数给出储能率。黏性改变带符号加速度，但始终耗散机械能，损失包含速度平方。")
-body += E(r"A-E12", r"\begin{aligned}K_g&=2\pi\rho_gR^3\dot R^2,\qquad E_\sigma=4\pi\sigma R^2,\qquad \dot V=4\pi R^2\dot R,\\\frac{d}{dt}(K_g+W_g+E_\sigma)&=(p_b-p_\infty)\dot V-P_{\mathrm{dis}},\\P_{\mathrm{dis}}&=16\pi\eta_gR\dot R^2\geq0.\end{aligned}",
-    r"$K_g,W_g,E_\sigma$ are medium kinetic energy, stored network work and interface energy (J); $\rho_g$ density (kg m⁻³); $R>0$ radius (m); $\dot R$ wall speed (m s⁻¹); $\sigma$ tension (N m⁻¹). $\dot V$ is cavity volume-change rate (m³ s⁻¹), $p_b,p_\infty$ pressures (Pa), $P_{\mathrm{dis}}$ nonnegative viscous power (W), $\eta_g\geq0$ viscosity (Pa s), $t$ time (s); $d/dt$ is the full time derivative and $\pi$ the circle constant.",
-    r"$K_g,W_g,E_\sigma$ 为介质动能、储存网络功与界面能（J）；$\rho_g$ 为密度（kg m⁻³）；$R>0$ 为半径（m）；$\dot R$ 为泡壁速度（m s⁻¹）；$\sigma$ 为张力（N m⁻¹）。$\dot V$ 为腔体体积变化率（m³ s⁻¹），$p_b,p_\infty$ 为压力（Pa），$P_{\mathrm{dis}}$ 为非负黏性功率（W），$\eta_g\geq0$ 为黏度（Pa s），$t$ 为时间（s）；$d/dt$ 为全时间导数，$\pi$ 为圆周率。",
-    r"Derived mechanical energy balance", {r"type":r"energy", r"labels":[r"(pb−p∞)V̇: pressure work", r"Kg: moving exterior", r"Wg: network storage", r"Eσ: cavity surface", r"Pdis ≥ 0: irreversible loss", r"R, Ṙ, ρg, ηg, σ, t"], r"notes":[r"Network work can return; dashpot loss cannot", r"Volume rate fixes work signs"]},
-    r"Pressure work divides into inertia, recoverable network energy, surface energy and viscous loss.", r"压力功分配到惯性、可恢复的网络能、表面能和黏性损耗。")
-
-body += H("5. Pressure and work example", "5. 压力与功示例", r"gel-example")
-body += P("Prescribe shear modulus 20 kPa, reference radius 5 µm, current radius 30 µm and density 1000 kg m⁻³. These are teaching inputs. Calculate resistance and stored work first. Sixfold wall stretch assumes an intact neo-Hookean network. Validate that assumption for any proposed gel.",
-          "规定剪切模量 20 kPa、参考半径 5 µm、当前半径 30 µm、密度 1000 kg m⁻³。这些为教学输入。先计算阻力及储存功。六倍壁面伸长假设 neo-Hookean 网络保持完整。用于实际凝胶前须验证该假设。")
-body += E(r"A-E13", r"\begin{aligned}p_{\mathrm{el}}&=\frac{20000}{2}\left[5-4\left(\frac5{30}\right)-\left(\frac5{30}\right)^4\right]=43325.6173\ \mathrm{Pa},\\W_g&=2\pi(20000)\left[\frac53(30\times10^{-6})^3-2(5\times10^{-6})(30\times10^{-6})^2\right.\\&\hspace{30mm}\left.+\frac{(5\times10^{-6})^4}{30\times10^{-6}}-\frac23(5\times10^{-6})^3\right]\\&=4.51603944\times10^{-9}\ \mathrm J.\end{aligned}",
-    r"$p_{\mathrm{el}}$ is elastic resistance (Pa); $W_g$ is stored elastic work (J). The displayed 20000 is $G_g$ in Pa, 5 and 30 in the dimensionless ratios are both radii in µm, and $5\times10^{-6}$, $30\times10^{-6}$ are $R_{\mathrm{ref}},R$ in m. $\pi$ is dimensionless, $\mathrm{Pa}$ means pascal and $\mathrm J$ joule; $\times$ indicates multiplication.",
-    r"$p_{\mathrm{el}}$ 为弹性阻力（Pa）；$W_g$ 为储存弹性功（J）。所示 20000 为以 Pa 表示的 $G_g$，无量纲比值中的 5 与 30 均为以 µm 表示的半径，$5\times10^{-6}$、$30\times10^{-6}$ 为以 m 表示的 $R_{\mathrm{ref}},R$。$\pi$ 为无量纲量，$\mathrm{Pa}$ 表示帕斯卡，$\mathrm J$ 表示焦耳；$\times$ 表示乘法。",
-    r"Teaching-input substitution", gel([r"Gg = 20 kPa", r"Rref = 5 µm", r"R = 30 µm", r"pel = 43.3256 kPa", r"Wg = 4.51604 nJ"], [r"Sixfold wall stretch: intactness is unverified", r"Values are not PFC formulation measurements"]),
-    r"This soft network still stores several nanojoules when the cavity radius expands sixfold.", r"腔体半径膨胀六倍时，即使这个柔软网络也会储存数纳焦耳能量。")
-body += P("Prescribe net work pressure 100 kPa over the same volume increase. This gives 11.2574 nJ. Network storage consumes 40.1163%. Residual 6.74133 nJ bounds kinetic, surface and loss increments in this artificial ledger. External jet energy remains unestablished. Use the surface-energy increment so initial energy cancels consistently.",
-          "在相同体积增量上规定净做功压力 100 kPa，得到 11.2574 nJ。网络储存占 40.1163%。剩余 6.74133 nJ 是该人工账目中动能、表面能及损失增量的上界。外部射流能量尚未确立。采用表面能增量，使初始能量一致相消。")
-body += E(r"A-E14", r"\begin{aligned}\Delta V&=\frac{4\pi}{3}(R^3-R_{\mathrm{ref}}^3)=1.12573737\times10^{-13}\ \mathrm{m^3},\\W_{100}&:=\Delta p_w\Delta V=11.2573737\ \mathrm{nJ},\\\frac{W_g}{W_{100}}&=0.401162791,\qquad W_{100}-W_g=6.74133424\ \mathrm{nJ}.\end{aligned}",
-    r"$\Delta V$ is expanded cavity volume (m³), $R=30$ µm and $R_{\mathrm{ref}}=5$ µm are radii; $\Delta p_w=100000$ Pa is a constant illustrative net pressure-work input. $W_{100}$ is the resulting work scale (J), with subscript 100 labeling its 100 kPa input, and $W_g=4.51603944$ nJ is stored network work. $\pi$ is dimensionless; nJ means $10^{-9}$ J.",
-    r"$\Delta V$ 为腔体膨胀体积（m³），$R=30$ µm、$R_{\mathrm{ref}}=5$ µm 为半径；$\Delta p_w=100000$ Pa 为恒定的示例净压力功输入。$W_{100}$ 为由此得到的功尺度（J），下标 100 标记其 100 kPa 输入，$W_g=4.51603944$ nJ 为储存网络功。$\pi$ 为无量纲量；nJ 表示 $10^{-9}$ J。",
-    r"Finite work-budget comparison", {r"type":r"energy", r"labels":[r"Δpw = 100 kPa", r"ΔV: same cavity expansion", r"W100 = 11.2574 nJ", r"Wg = 4.51604 nJ", r"residual = 6.74133 nJ", r"R, Rref"], r"notes":[r"Compare energy at the same displaced volume", r"Residual is not automatically an emitted jet"]},
-    r"The elastic cost occupies a finite fraction of the work budget even though its pressure is below 100 kPa.", r"即使弹性压力低于 100 kPa，其能量代价也占据功预算的有限份额。")
-body += P("Prescribe viscosity 0.010 Pa s, radius 30 µm and inward speed −10 m s⁻¹. The signed momentum contribution is +13.3333 kPa. Dissipative power is +1.50796 mW. Positive collapse resistance still removes energy. Total dissipation requires integration over the velocity history.",
-          "规定黏度 0.010 Pa s、半径 30 µm、向内速度 −10 m s⁻¹。带符号动量项为 +13.3333 kPa，耗散功率为 +1.50796 mW。正塌缩阻力仍消耗能量。总耗散需对速度历程积分。")
-body += E(r"A-E15", r"\begin{aligned}p_{\mathrm{visc,RHS}}&=-\frac{4\eta_g\dot R}{R}=-\frac{4(0.010)(-10)}{30\times10^{-6}}=13333.3333\ \mathrm{Pa},\\P_{\mathrm{dis}}&=16\pi\eta_gR\dot R^2=16\pi(0.010)(30\times10^{-6})(100)=1.50796447\times10^{-3}\ \mathrm W.\end{aligned}",
-    r"$p_{\mathrm{visc,RHS}}$ is the signed viscous pressure term on the radial equation's right-hand side (Pa); RHS labels that side. $P_{\mathrm{dis}}$ is dissipated power (W), $\eta_g=0.010$ Pa s is illustrative viscosity, $R=30\times10^{-6}$ m radius, $\dot R=-10$ m s⁻¹ wall speed, and $\pi$ the circle constant. The number 100 is the squared speed in m² s⁻².",
-    r"$p_{\mathrm{visc,RHS}}$ 为径向方程右侧的带符号黏性压力项（Pa）；RHS 标记右侧。$P_{\mathrm{dis}}$ 为耗散功率（W），$\eta_g=0.010$ Pa s 为示例黏度，$R=30\times10^{-6}$ m 为半径，$\dot R=-10$ m s⁻¹ 为泡壁速度，$\pi$ 为圆周率。数值 100 为以 m² s⁻² 表示的速度平方。",
-    r"Signed-pressure and positive-loss check", gel([r"Ṙ = −10 m/s: inward", r"R = 30 µm", r"ηg = 0.010 Pa s", r"pvisc,RHS = +13.3333 kPa", r"Pdis = +1.50796 mW"], [r"Viscosity opposes collapse", r"Dissipation is positive for either speed sign"]),
-    r"Inward motion changes the pressure sign but leaves dissipated power positive.", r"向内运动改变压力项符号，但耗散功率仍为正。")
-
-body += H("6. Material memory and transport times", "6. 材料记忆与输运时间", r"gel-times")
-body += P("Step 9 — Compare measured relaxation time with event duration. Large Deborah number means stress memory persists during the event. Infinite stiffness remains unestablished. Small Deborah number permits relaxation. Confinement and solvent drainage remain separate questions. A relaxation spectrum can require several times.",
-          "步骤 9——比较实测松弛时间与事件时长。大 Deborah 数表示应力记忆在事件期间持续，无限刚度尚未确立。小 Deborah 数允许松弛。约束与溶剂排水是独立问题。松弛谱可需要多个时间尺度。")
-body += E(r"A-E16", r"\mathrm{De}:=\frac{\tau_{\mathrm{rel}}}{\tau_e}.",
-    r"$\mathrm{De}$ is the dimensionless event Deborah number; $\tau_{\mathrm{rel}}>0$ is an independently identified network stress-relaxation time (s), and $\tau_e>0$ is the specified cavity/jet event duration (s). Subscripts rel and e label relaxation and event respectively.",
-    r"$\mathrm{De}$ 为无量纲事件 Deborah 数；$\tau_{\mathrm{rel}}>0$ 为独立确定的网络应力松弛时间（s），$\tau_e>0$ 为指定的腔体／射流事件持续时间（s）。下标 rel、e 分别表示松弛与事件。",
-    r"Response-time definition", times([r"τe: cavity/jet duration", r"τrel: stress memory", r"De = τrel/τe"], [r"Memory persistence differs from stiffness", r"Use the actual transient event"]),
-    r"The event duration determines which part of the network response can act before the jet or load arrives.", r"事件持续时间决定网络响应的哪一部分能在射流或载荷到达前发挥作用。")
-body += P("In Kelvin–Voigt shear, held strain leaves constant elastic stress after strain rate vanishes. Releasing stress instead gives exponential strain recovery. Its retardation time is $\\eta_g/G_g$. Distinguish this recovery time from stress relaxation.",
-          "Kelvin–Voigt 剪切中，保持应变时，应变率消失后弹性应力恒定。释放应力则产生指数应变恢复，其迟滞时间为 $\\eta_g/G_g$。应区分恢复时间与应力松弛。")
-body += E(r"A-E17", r"\begin{aligned}T_{\mathrm{sh}}&=G_g\gamma+\eta_g\dot\gamma,\\T_{\mathrm{sh}}=0:\quad\dot\gamma&=-\frac{G_g}{\eta_g}\gamma,\qquad\gamma(t)=\gamma_0\exp(-t/\tau_{\mathrm{KV}}),\qquad\tau_{\mathrm{KV}}:=\frac{\eta_g}{G_g}.\end{aligned}",
-    r"$T_{\mathrm{sh}}$ is shear stress (Pa); $\gamma$ is dimensionless small shear strain, $\dot\gamma$ its rate (s⁻¹), $G_g>0$ shear modulus (Pa), and $\eta_g>0$ viscosity (Pa s). $t\geq0$ is time after release (s), $\gamma_0$ initial strain, $\tau_{\mathrm{KV}}$ the Kelvin–Voigt zero-stress recovery/retardation time (s), and $\exp$ the exponential of a dimensionless argument. sh and KV are labels, not multiplication.",
-    r"$T_{\mathrm{sh}}$ 为剪切应力（Pa）；$\gamma$ 为无量纲小剪切应变，$\dot\gamma$ 为其速率（s⁻¹），$G_g>0$ 为剪切模量（Pa），$\eta_g>0$ 为黏度（Pa s）。$t\geq0$ 为卸载后的时间（s），$\gamma_0$ 为初始应变，$\tau_{\mathrm{KV}}$ 为 Kelvin–Voigt 零应力恢复／迟滞时间（s），$\exp$ 表示对无量纲参数取指数。sh 与 KV 是标签，不是乘法。",
-    r"Linear constitutive check for the chosen dashpot", times([r"Tsh = 0 after unloading", r"γ₀ → γ(t)", r"Gg, ηg", r"τKV = ηg/Gg", r"γ̇, t"], [r"Zero-stress strain recovery is not held-strain stress relaxation", r"No periodic forcing is assumed"]),
-    r"Kelvin–Voigt strain recovery illustrates what its parameter ratio means and what it does not mean.", r"Kelvin–Voigt 应变恢复说明其参数比值的意义及不能代表的意义。")
-body += P("Step 10 — Compare spatial communication times. Shear speed estimates small-strain network motion. Ideal liquid collapse estimates radial carrier inertia. Use comparison length 30 µm for both. Their time ratio is 2.44464. Global shear equilibration can therefore be slow relative to liquid collapse. Check nonradial support dynamics. The spherical equation already retains radial inertia.",
-          "步骤 10——比较空间通信时间。剪切波速估算小应变网络运动，理想液体塌缩估算径向载液惯性。两者采用比较长度 30 µm。时间比为 2.44464，整体剪切平衡可慢于液体塌缩。须检查非径向支撑动力学。球形方程已经保留径向惯性。")
-body += E(r"A-E18", r"\begin{aligned}c_s&\simeq\sqrt{G_g/\rho_g}=4.47213595\ \mathrm{m\,s^{-1}},\qquad t_s:=L_g/c_s=6.70820393\ \mathrm{\mu s},\\t_{c,\mathrm{liq}}&=0.9146813565\,R_{\max}\sqrt{\rho_l/\Delta p_c}=2.74404407\ \mathrm{\mu s},\qquad\frac{t_s}{t_{c,\mathrm{liq}}}=2.44464147.\end{aligned}",
-    r"$c_s$ is a small-strain shear speed estimate (m s⁻¹), $G_g=20000$ Pa modulus, $\rho_g=1000$ kg m⁻³ medium density, $L_g=30$ µm comparison length, and $t_s$ its shear crossing time (s). $t_{c,\mathrm{liq}}$ is ideal empty-liquid-cavity collapse time (s), $R_{\max}=30$ µm maximum radius, $\rho_l=1000$ kg m⁻³ liquid density, and $\Delta p_c=100000$ Pa collapse pressure gap. The coefficient is the Rayleigh integral; liq labels the liquid control, $\simeq$ is an estimate, and µs means $10^{-6}$ s.",
-    r"$c_s$ 为小应变剪切波速估计（m s⁻¹），$G_g=20000$ Pa 为模量，$\rho_g=1000$ kg m⁻³ 为介质密度，$L_g=30$ µm 为比较长度，$t_s$ 为该长度上的剪切传播时间（s）。$t_{c,\mathrm{liq}}$ 为理想空液体腔的塌缩时间（s），$R_{\max}=30$ µm 为最大半径，$\rho_l=1000$ kg m⁻³ 为液体密度，$\Delta p_c=100000$ Pa 为塌缩压力差。系数来自 Rayleigh 积分；liq 标记液体控制模型，$\simeq$ 表示估计，µs 表示 $10^{-6}$ s。",
-    r"Teaching response-time comparison", times([r"Lg = Rmax = 30 µm", r"Gg = 20 kPa", r"ρg = ρl = 1000 kg/m³", r"cs = 4.47214 m/s", r"ts = 6.70820 µs", r"tc,liq = 2.74404 µs", r"Δpc = 100 kPa"], [r"Compare two distinct controls, not an actual gel-collapse prediction", r"Support deformation need not equilibrate during the event"]),
-    r"The gel communication estimate exceeds the ideal liquid-collapse reference for the declared inputs.", r"对已声明输入，凝胶传播时间估计大于理想液体塌缩参考时间。")
-body += P("Low shear modulus leaves rapid compression resistance unresolved. Longitudinal motion also depends on bulk modulus. Restore compressibility for finite acoustic travel or high wall speed. The incompressible spherical control idealizes that propagation. Shock pressure and arrival time require a compressible model.",
-          "低剪切模量仍未确定快速压缩阻力。纵向运动还取决于体积模量。有限声传播或高壁速时须恢复可压缩性。不可压缩球形对照将传播理想化。激波压力及到达时间需要可压缩模型。")
-body += E(r"A-E19", r"c_L\simeq\sqrt{\frac{K_g^{\mathrm{bulk}}+4G_g/3}{\rho_g}},\qquad t_L:=\frac{L_g}{c_L},\qquad M_w:=\frac{|\dot R|}{c_L}.",
-    r"$c_L$ is longitudinal wave speed estimate (m s⁻¹) in a separate small-strain compressible extension; $K_g^{\mathrm{bulk}}>0$ is bulk modulus (Pa), distinctly labeled from kinetic energy $K_g$; $G_g$ shear modulus (Pa), $\rho_g$ density (kg m⁻³), $L_g$ length (m), $t_L$ longitudinal crossing time (s), $M_w$ dimensionless wall Mach number, and $\dot R$ wall speed (m s⁻¹). $|\ |$ takes absolute value; $\simeq$ denotes an estimate.",
-    r"$c_L$ 为独立小应变可压缩扩展中的纵波波速估计（m s⁻¹）；$K_g^{\mathrm{bulk}}>0$ 为体积模量（Pa），其明确标签使之区别于动能 $K_g$；$G_g$ 为剪切模量（Pa），$\rho_g$ 为密度（kg m⁻³），$L_g$ 为长度（m），$t_L$ 为纵波传播时间（s），$M_w$ 为无量纲泡壁 Mach 数，$\dot R$ 为泡壁速度（m s⁻¹）。$|\ |$ 表示绝对值；$\simeq$ 表示估计。",
-    r"Separate compressibility diagnostic", times([r"cL: bulk and shear response", r"Kgᵇᵘˡᵏ, Gg, ρg", r"Lg/cL = tL", r"|Ṙ|/cL = Mw"], [r"Small shear stiffness does not establish small longitudinal impedance", r"Do not compute shock load from the incompressible control"]),
-    r"Shear and longitudinal propagation test different aspects of a water-rich gel's transient response.", r"剪切与纵向传播检验富水凝胶瞬态响应的不同方面。")
-body += P("Step 11 — Derive drainage in a separate two-phase model. Assume small perturbations in uniform gel. Adopt Darcy relative solvent flux and constant storage modulus. Solvent conservation gives pressure diffusion. Large-strain interface drainage requires additional coupling.",
-          "步骤 11——在独立两相模型中推导排水。假设均匀凝胶的小扰动，采用 Darcy 相对溶剂通量及恒定储存模量。溶剂守恒给出压力扩散。大应变界面排水需要额外耦合。")
-body += E(r"A-E20", r"\begin{aligned}\mathbf j_l&=-\frac{k_{\mathrm{perm}}}{\mu_l}\nabla p_{\mathrm{pore}},\qquad\frac{1}{M_d}\frac{\partial p_{\mathrm{pore}}}{\partial t}+\nabla\cdot\mathbf j_l=0,\\\frac{\partial p_{\mathrm{pore}}}{\partial t}&=D_{\mathrm{poro}}\nabla^2p_{\mathrm{pore}},\qquad D_{\mathrm{poro}}:=\frac{k_{\mathrm{perm}}M_d}{\mu_l},\\t_{\mathrm{poro}}&\sim\frac{L_g^2}{D_{\mathrm{poro}}}=\frac{\mu_lL_g^2}{k_{\mathrm{perm}}M_d}.\end{aligned}",
-    r"$\mathbf j_l$ is relative solvent volume flux (m s⁻¹); $k_{\mathrm{perm}}>0$ permeability (m²), $\mu_l>0$ solvent viscosity (Pa s), $p_{\mathrm{pore}}$ incremental pore pressure (Pa), $M_d>0$ storage/constrained drained modulus adopted for this scalar approximation (Pa), $t$ time (s), $D_{\mathrm{poro}}$ diffusion coefficient (m² s⁻¹), $L_g$ drainage length (m), and $t_{\mathrm{poro}}$ drainage time estimate (s). $\nabla$, $\nabla\cdot$, $\nabla^2$ are gradient, divergence and Laplacian in space; the dot here is the vector divergence operator, not an equation separator; $\sim$ means scaling estimate.",
-    r"$\mathbf j_l$ 为相对溶剂体积通量（m s⁻¹）；$k_{\mathrm{perm}}>0$ 为渗透率（m²），$\mu_l>0$ 为溶剂黏度（Pa s），$p_{\mathrm{pore}}$ 为增量孔隙压力（Pa），$M_d>0$ 为该标量近似采用的储存／受约束排水模量（Pa），$t$ 为时间（s），$D_{\mathrm{poro}}$ 为扩散系数（m² s⁻¹），$L_g$ 为排水长度（m），$t_{\mathrm{poro}}$ 为排水时间估计（s）。$\nabla$、$\nabla\cdot$、$\nabla^2$ 为空间梯度、散度和 Laplace 算子；此处点号属于向量散度算子，不是方程分隔符；$\sim$ 表示尺度估计。",
-    r"Darcy/storage approximation and derived diffusion", gel([r"ppore: solvent pressure", r"jl: solvent relative to network", r"kperm: network permeability", r"μl: solvent resistance", r"Md: storage modulus", r"Lg, tporo, Dporo, t"], [r"Drainage redistributes solvent over Lg", r"Small perturbation and constant-coefficient assumptions are separate"]),
-    r"Pressure gradients drive solvent through the network, producing a length-dependent drainage time.", r"压力梯度驱动溶剂通过网络，产生依赖长度的排水时间。")
-body += P("Insert Darcy flux into conservation. Constant coefficients factor out of the derivatives. Balance time and second spatial derivatives over $L_g$ for drainage time. Primary measurements support this scaling; actual permeability and modulus require characterization. Prescribe permeability $10^{-17}$ m², modulus 60 kPa, viscosity 0.001 Pa s and length 30 µm. Drainage time is 1.5 s. A 3 µs event is approximately undrained at that length. Local solvent motion remains possible. <a href=\"https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h\">Primary drainage study</a>.",
-          "将 Darcy 通量代入守恒，常系数移出导数。按 $L_g$ 平衡时间导数与空间二阶导数，得到排水时间。原始测量支持该尺度，实际渗透率与模量须表征。规定渗透率 $10^{-17}$ m²、模量 60 kPa、黏度 0.001 Pa s、长度 30 µm，排水时间为 1.5 s。该长度上的 3 µs 事件近似不排水，局部溶剂运动仍可能发生。<a href=\"https://pubs.rsc.org/en/content/articlehtml/2021/sm/d0sm02243h\">原始排水研究</a>。")
-
-body += H("7. Architecture tests and operating windows", "7. 结构检验与工作窗口", r"gel-tests")
-body += P("Gel stabilization of PFC jets: Not established. Brujan et al. observed deformation, recoil, both jet directions and boundary-material ejection. Their reported 960 m s⁻¹ maximum belongs to one laser-bubble/gel geometry. It supplies a counterexample to universal stabilization. PFC transfer limits require their own measurements. " + cite(r"r12"),
-          "凝胶稳定 PFC 射流尚未确立。Brujan 等观测到变形、回弹、双向射流及边界材料喷出。其报告的 960 m s⁻¹ 最大值属于特定激光气泡／凝胶几何，可反驳普遍稳定化判断。PFC 转印极限需要独立测量。 " + cite(r"r12"))
-body += P("Test all four architectures. Open pockets need coupled liquid momentum, wall traction and outlet shape. Bulk embedding needs an existing or rupture-created liquid path. Alternatively, identify solid deformation as the actuator. Sealed cavities need pressure–layer–fracture coupling. In film/PVC stacks, distinguish direct film loading from transmission through intact PVC. Specify release interface and payload stress for each route.",
-          "检验四种结构。开放液腔需耦合液体动量、壁面牵引及出口形状。体相嵌入需已有或破裂形成的液体通路，也可明确固体变形作为致动机制。密闭空腔需压力—层运动—断裂耦合。薄膜／PVC 叠层中，区分直接薄膜加载与完整 PVC 传递。各路径均须规定释放界面及载荷应力。")
-body += T(
-    [(r"Control or observation", r"控制或观测"), (r"What it discriminates", r"可区分的机制")],
+B.append(H("5. Calculation: the one-dimensional reference solver", "5. 计算：一维参考求解器", "calc"))
+B.append(P(
+    "Step 11 — Write the planar problem as conservation laws. Eq. (C5-E10) holds mass and momentum in conservative form. Conservative form lets a shock form and move at the correct speed. The wall is a mirrored state with $u=0$. The inflow boundary holds the state $(\\rho_j,-U)$. The initial state is the uniform inflow state.",
+    "步骤 11——把平面问题写成守恒律。式（C5-E10）以守恒形式表示质量与动量。守恒形式使激波得以形成并以正确速度运动。壁面为 $u=0$ 的镜像状态。入流边界保持状态 $(\\rho_j,-U)$，初态为均匀入流状态。"))
+B.append(eq(10))
+B.append(P(
+    "Step 12 — Discretize with a dissipative flux and a two-stage time step. Cell size is $\\Delta z=H/N=4\\ \\mu\\mathrm m/4000=1$ nm. The face flux averages the two physical fluxes and subtracts $\\alpha/2$ times the state jump. The speed $\\alpha$ is the larger value of $|u|+c$ on the two sides. " + cite("r19") + " " + cite("r18") + " The Heun step is a predictor followed by the average of two spatial operators. It is second order in time and first order in space.",
+    "步骤 12——用耗散通量与两步时间推进离散。单元尺寸 $\\Delta z=H/N=4\\ \\mu\\mathrm m/4000=1$ nm。界面通量取两侧物理通量的平均，再减去状态跳跃的 $\\alpha/2$ 倍。速度 $\\alpha$ 取两侧 $|u|+c$ 的较大者。 " + cite("r19") + " " + cite("r18") + " Heun 步先预测，再取两次空间算子的平均。它在时间上为二阶，在空间上为一阶。"))
+B.append(eq(11))
+B.append(P(
+    "Step 13 — Read the planar reference. Run the code for the confined column at $U=99.02724$ m s⁻¹. Average the wall pressure over 0.2 to 2 ns. Compare it with the exact planar pressures. Every entry names its reference value.",
+    "步骤 13——读取平面参考解。对受限液柱在 $U=99.02724$ m s⁻¹ 下运行程序，取 0.2 至 2 ns 的壁面压力平均值，并与精确平面压力比较。每一项都注明其参考值。"))
+B.append(T(
+    [("Quantity", "量"), ("Value (MPa, absolute)", "数值（MPa，绝对压力）"), ("Relative to $p_B$", "相对 $p_B$"), ("Relative to $p_H$", "相对 $p_H$")],
     [
-        [(r"Match PFC inventory, distribution, shell survival, absorber position, initial temperature and measured absorbed energy.", r"匹配 PFC 物质量、分布、壳层存活、吸收体位置、初始温度及实测吸收能量。"), (r"Separates optical/activation changes from mechanical support changes; equal incident energy alone does not do this.", r"将光学／激活变化与力学支撑变化区分开；仅使入射能量相等做不到这一点。")],
-        [(r"Synchronize cavity contour, gel/film motion, emitted liquid composition, finite jet mass, speed, angle and arrival.", r"同步记录腔体轮廓、凝胶／薄膜运动、喷出液体成分、有限射流质量、速度、角度及到达时间。"), (r"Distinguishes a liquid jet, a recoil-driven second jet, solid fragments and a membrane/blister actuator.", r"区分液体射流、回弹驱动的第二股射流、固体碎片及膜片／鼓泡致动器。")],
-        [(r"Specify pressure location, area, bandwidth and time window; record displacement and crack progression.", r"明确压力位置、面积、带宽及时间窗口；记录位移和裂纹进展。"), (r"Connects fluid output to interface work and selective release rather than an isolated peak.", r"将流体输出连接到界面功和选择性释放，而不是孤立峰值。")],
-        [(r"Across independent events, compare angular spread, mass/speed variation, breakup, release success, damage and placement error.", r"在独立事件间比较角度分散、质量／速度变异、破碎、释放成功率、损伤及定位误差。"), (r"Tests repeatability at a useful delivered load; a lower speed variation with insufficient release is not an improved process.", r"在有用的实际传递载荷下检验重复性；若载荷不足以释放，仅速度变异降低不代表工艺改善。")],
-        [(r"Measure cooling, retained vapor, swelling, residue, network damage and reset before repeated pulses.", r"重复脉冲前测量冷却、滞留蒸气、溶胀、残留物、网络损伤及复位。"), (r"Tests whether positional benefits survive reuse and whether activation/geometry drift accumulates.", r"检验定位优势能否在复用中持续，以及激活／几何漂移是否累积。")],
-    ])
-body += P("Report verified single-event pressure or finite-mass speed separately from repeatable intact transfer. Gel can trade peak speed for peeling control or lower scatter. Improved alignment can coexist with reduced useful impulse. The radial formula leaves these tradeoffs unresolved. Missing: rate laws, inclusion/reference geometry, phase and damage kinetics, outlet evolution, release and landing laws.",
-          "已验证单事件压力或有限质量速率，与可重复完整转印分别报告。凝胶可用峰值速率换取剥离控制或更小离散。更好对准可与更低有用冲量共存。径向公式仍未确定这些权衡。缺失：速率规律、夹杂／参考几何、相变和损伤动力学、出口演化、释放与落位规律。")
+        [("Acoustic estimate $p_A$", "声学估计 $p_A$"), ("160.867", "160.867"), ("−7.63%", "−7.63%"), ("−7.88%", "−7.88%")],
+        [("Barotropic shock $p_B$", "正压激波 $p_B$"), ("174.155", "174.155"), ("0 (reference)", "0（参照）"), ("−0.27%", "−0.27%")],
+        [("Hugoniot $p_H$", "Hugoniot $p_H$"), ("174.623", "174.623"), ("+0.27%", "+0.27%"), ("0 (reference)", "0（参照）")],
+        [("C++ plateau, 4000 cells", "C++ 平台，4000 单元"), ("174.148", "174.148"), ("−0.004%", "−0.004%"), ("−0.27%", "−0.27%")],
+    ]))
+B.append(P(
+    "The C++ plateau agrees with the barotropic shock to 0.004%. This is the check that the discretization reproduces its own exact law. The remaining 0.27% to $p_H$ is the energy equation that the model omits.",
+    "C++ 平台与正压激波的偏差为 0.004%。这检验了离散格式再现了它自身的精确定律。与 $p_H$ 相差的 0.27% 来自模型舍去的能量方程。"))
 
-body += H("8. Oral questions", "8. 口头问题", r"gel-defense")
+B.append(H("6. Verification: the COMSOL axisymmetric model", "6. 核验：COMSOL 轴对称模型", "model"))
+B.append(P(
+    "Step 14 — State the finite-element model. It is a compressible laminar-flow study in axisymmetric $(r,z)$ coordinates. Eq. (C5-E12) adds radial motion and a small viscosity to the same liquid. The density follows the pressure through the inverse of Eq. (C5-E01). There is no gas phase.",
+    "步骤 14——给出有限元模型。它是轴对称 $(r,z)$ 坐标下的可压缩层流研究。式（C5-E12）在同一种液体上增加径向运动与很小的黏性。密度通过式（C5-E01）的逆关系随压力变化。不含气相。"))
+B.append(eq(12))
+B.append(P(
+    "Step 15 — Set the boundaries and the initial state. The domain is $0\\le r\\le a$ and $0\\le z\\le4a$. The wall is a slip wall. The inflow boundary carries the speed $U$. The side boundary is an outlet at $p_j$, which creates the free side. The liquid starts with a thin onset layer $w=-U\\tanh(z/\\delta)$, $\\delta=0.02a$, so that the wall holds it at rest at $t=0$.",
+    "步骤 15——设定边界与初态。计算域为 $0\\le r\\le a$、$0\\le z\\le4a$。壁面为滑移壁面。入流边界给定速度 $U$。侧边界为压力 $p_j$ 的出口，由此形成自由侧边。液体以薄过渡层 $w=-U\\tanh(z/\\delta)$、$\\delta=0.02a$ 开始，使壁面在 $t=0$ 时将其约束为静止。"))
+B.append(eq(13))
+B.append(P(
+    "Step 16 — Fix the observers before the comparison. Eq. (C5-E14) defines the transport observers at the plane $z=2a$ and the area-weighted wall pressure at $z=0$. The same integrals serve every mesh and every case. Mass flux and kinetic-energy flux through the plane check the prescribed inflow. The mass-flux-weighted incident speed over 0 to 1 ns is 99.0272 m s⁻¹, which differs from $U$ by less than $10^{-5}$ percent. The incident energy over the same window is 1.52258 pJ, which differs from Eq. (C5-E08) by less than $10^{-5}$ percent.",
+    "步骤 16——比较之前先固定观测量。式（C5-E14）定义了平面 $z=2a$ 处的输运观测量与 $z=0$ 处的面积加权壁面压力。同一组积分适用于每一种网格和每一个工况。穿过平面的质量通量与动能通量用于检验给定的入流。0 至 1 ns 内质量通量加权的入射速度为 99.0272 m s⁻¹，与 $U$ 的偏差小于百分之 $10^{-5}$。同一时间窗内的入射能量为 1.52258 pJ，与式（C5-E08）的偏差小于百分之 $10^{-5}$。"))
+B.append(eq(14))
 
-answer1 = E(r"A-E21", r"\rho_g\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-p_{\mathrm{el}}(R)-\frac{4\eta_g\dot R}{R}.",
-    r"$\rho_g$ is effective exterior density (kg m⁻³); $R>0$ cavity radius (m); $\dot R,\ddot R$ wall speed/acceleration (m s⁻¹, m s⁻²); $p_b,p_\infty,p_{\mathrm{el}}$ cavity, far-field and elastic pressures (Pa); $\sigma$ tension (N m⁻¹); $\eta_g$ represented medium viscosity (Pa s). This quoted original formula has the intact spherical, no-slip assumptions of Eq. (A-E11).",
-    r"$\rho_g$ 为外部有效密度（kg m⁻³）；$R>0$ 为腔体半径（m）；$\dot R,\ddot R$ 为泡壁速度／加速度（m s⁻¹、m s⁻²）；$p_b,p_\infty,p_{\mathrm{el}}$ 为腔内、远场及弹性压力（Pa）；$\sigma$ 为张力（N m⁻¹）；$\eta_g$ 为所描述介质的黏度（Pa s）。这一引用的原始公式采用式（A-E11）的完整球形、无滑移假设。",
-    r"Original radial control recalled", gel([r"pb → radial cavity motion", r"R, Ṙ, R̈, ρg", r"p∞, 2σ/R, pel, ηg"], [r"Radial growth alone has no preferred jet direction", r"An outlet or a deforming solid supplies another problem"]),
-    r"A radial model describes expansion and resistance; it does not manufacture an outlet.", r"径向模型描述膨胀及阻力，不会凭空产生出口。")
-answer1 += P("Identify where displaced matter can go. Liquid sites and open pockets can emit carrier through an outlet. Bulk inclusions may inflate without external liquid emission. Rupture or channels add damage and contamination mechanisms. Sealed cavities can bend covers and drive cracks without an emitted jet. The hydrogel stamp paper establishes this sealed pressure–deformation–release route.",
-             "先确定排开材料的去向。液体位点与开放液腔可经出口喷出载液。体相夹杂可能膨胀而无外部液体喷出。破裂或通道会增加损伤及污染机制。密闭空腔可弯曲覆盖层并驱动裂纹，而无需喷出射流。水凝胶印章论文确立了该密闭压力—变形—释放路径。")
-answer1 += P("The spherical model gives intact-medium pressure and work. Jet direction needs a spatial moving-interface model. Blisters and intact PVC paths need solid/interface mechanics. State the required closure for each architecture. Activation leaves carrier emission and selective transfer unresolved.",
-             "球形模型给出完整介质中的压力和功。射流方向需空间运动界面模型，鼓泡与完整 PVC 路径需固体／界面力学。各结构须注明所需闭合。激活仍未确定载液喷出与选择性转印。")
-body += defense(r"A-Q1", "Trace matter and force paths in the three gel actuators.", "追踪三种凝胶致动器中的物质与传力路径。", answer1,
-    [(r"Identifies the displaced-material path and distinguishes external liquid flow from solid deformation or damage.", r"明确被排开材料的路径，区分外部液体流动、固体变形与损伤。"),
-     (r"Connects pressure to an explicit outlet or solid/interface load path and states what the spherical equation cannot calculate.", r"将压力连接到明确出口或固体／界面载荷路径，并说明球形方程不能计算什么。"),
-     (r"Uses the hydrogel paper as architecture-specific evidence and keeps the other possibilities conditional rather than discarded.", r"将水凝胶论文作为特定结构的证据，保留其他条件性可能，而不是排除它们。")])
+B.append(H("7. Verification: convergence, balances and the cross-check", "7. 核验：收敛、平衡与交叉检验", "verify"))
+B.append(P(
+    "Step 17 — Judge mesh convergence by the peak of the full-sensor mean. Global refinement beyond about 64,000 elements exceeds the available memory. The peak forms about 0.03 ns after contact and within about 0.05 $a$ of the wall. So refine only a wall band $r\\le a$, $z\\le0.15a$ and keep the rest of the mesh fixed. Eq. (C5-E15) defines the relative error and the successive change. The denominator of the change is the previous, coarser value.",
+    "步骤 17——以全传感区平均的峰值判断网格收敛。全局加密超过约 64,000 单元时超出可用内存。峰值在接触后约 0.03 ns、距壁面约 0.05 $a$ 以内形成。因此仅加密壁面带 $r\\le a$、$z\\le0.15a$，其余网格保持不变。式（C5-E15）定义了相对误差与逐次变化量，变化量的分母为前一个较粗网格的值。"))
+B.append(eq(15))
+B.append(T(
+    [("Band size $h$", "加密带尺寸 $h$"), ("Elements", "单元数"), ("Peak full sensor (MPa)", "全传感区峰值（MPa）"), ("Change $\\Delta_k$", "变化量 $\\Delta_k$"), ("Peak / $p_H$", "峰值 / $p_H$"), ("Peak centre $r\\le a/2$ (MPa)", "中心区峰值 $r\\le a/2$（MPa）")],
+    ladder))
+B.append(P(
+    "The successive changes fall from 1.98% to 0.44% and then to 0.02%. The converged full-sensor peak is 162.6 MPa. It is 0.931 of $p_H$, that is 6.9% below the reference. The converged centre-disk peak is 174.37 MPa, 0.14% from $p_H$.",
+    "逐次变化量由 1.98% 降至 0.44%，再降至 0.02%。收敛的全传感区峰值为 162.6 MPa，为 $p_H$ 的 0.931 倍，即比参照值低 6.9%。收敛的中心圆盘峰值为 174.37 MPa，与 $p_H$ 相差 0.14%。"))
+B.append(P(
+    "Step 18 — Check the time step. A run with strict steps and relative tolerance $10^{-3}$ on the 16,136-element mesh gives a full-sensor peak of 168.106 MPa. The automatic-step run gives 169.359 MPa. They differ by 0.74% of the automatic value. A time-step study at the finest band is not done.",
+    "步骤 18——检查时间步。在 16,136 单元网格上，采用严格步长、相对容差 $10^{-3}$ 的运行给出全传感区峰值 168.106 MPa，自动步长运行给出 169.359 MPa，二者相差自动步长值的 0.74%。最细加密带上的时间步研究尚未进行。"))
+B.append(P(
+    "Step 19 — Audit the conservation laws. Close the column on the sides so nothing leaves sideways. Eq. (C5-E16) then compares the change of axial momentum and of mass with their own boundary integrals over 0 to 3 ns. The momentum residual is 0.106% and the mass residual is 0.018%. These residuals test the solver, not the physics.",
+    "步骤 19——审计守恒律。将液柱侧面封闭，使侧向无流出。式（C5-E16）在 0 至 3 ns 内把轴向动量与质量的变化同各自的边界积分比较。动量残差为 0.106%，质量残差为 0.018%。这些残差检验的是求解器，而不是物理。"))
+B.append(eq(16))
+B.append(P(
+    "Step 20 — Compare the two solvers on the same problem. Both integrate the confined planar column with the same law, inputs, wall and inflow. Interpolate the C++ history onto the 361 COMSOL sample times between 0.2 and 2.0 ns. Eq. (C5-E17) gives a relative L2 difference of 0.034% and a largest pointwise difference of 0.096%. The plateaus are 174.205 MPa (COMSOL) and 174.148 MPa (C++), a difference of 0.032%. The COMSOL plateau lies 0.24% below $p_H$ and 0.028% above $p_B$.",
+    "步骤 20——在同一问题上比较两个求解器。二者以相同的定律、输入、壁面和入流积分受限平面液柱。把 C++ 历程插值到 0.2 至 2.0 ns 间的 361 个 COMSOL 样本时刻。式（C5-E17）给出相对 L2 差 0.034%，最大逐点差 0.096%。平台分别为 174.205 MPa（COMSOL）与 174.148 MPa（C++），相差 0.032%。COMSOL 平台比 $p_H$ 低 0.24%，比 $p_B$ 高 0.028%。"))
+B.append(eq(17))
+B.append(P(
+    "The agreement shows that two codes with different numerics implement the same model. It does not show that the model matches a real jet.",
+    "该一致性表明数值方法不同的两个程序实现了同一个模型。它并不表明该模型与真实射流一致。"))
 
-answer2 = E(r"A-E22", r"\begin{aligned}p_{\mathrm{el}}(R)&=\frac{G_g}{2}\left[5-4\frac{R_{\mathrm{ref}}}{R}-\left(\frac{R_{\mathrm{ref}}}{R}\right)^4\right],\\W_g(R)&=2\pi G_g\left[\frac{5R^3}{3}-2R_{\mathrm{ref}}R^2+\frac{R_{\mathrm{ref}}^4}{R}-\frac{2R_{\mathrm{ref}}^3}{3}\right].\end{aligned}",
-    r"$p_{\mathrm{el}}$ is elastic resistance (Pa), $W_g$ stored work (J), $G_g>0$ shear modulus (Pa), and $R\geq R_{\mathrm{ref}}>0$ current/reference cavity radii (m); $\pi$ is dimensionless. These quote Eqs. (A-E05) and (A-E07) for the intact infinite incompressible neo-Hookean medium.",
-    r"$p_{\mathrm{el}}$ 为弹性阻力（Pa），$W_g$ 为储存功（J），$G_g>0$ 为剪切模量（Pa），$R\geq R_{\mathrm{ref}}>0$ 为当前／参考腔体半径（m）；$\pi$ 为无量纲量。这些公式引用式（A-E05）与（A-E07），适用于完整、无限、不可压缩 neo-Hookean 介质。",
-    r"Original pressure and work formulas recalled", {r"type":r"energy", r"labels":[r"Gg, Rref, R", r"pel → 5Gg/2 at large R", r"Wg grows with displaced volume", r"π: sphere geometry"], r"notes":[r"Pressure plateau is not a fracture threshold", r"Stored work is not automatically lost heat"]},
-    r"Pressure resistance and elastic work answer different parts of the feasibility calculation.", r"压力阻力与弹性功回答可行性计算中的不同部分。")
-answer2 += P("At modulus 20 kPa and 5 → 30 µm expansion, resistance is 43.3256 kPa. Network work is 4.51604 nJ. Constant net pressure 100 kPa supplies 11.2574 nJ over the same volume. Storage is 40.1163%. Remaining surface, viscous and kinetic demands require the full work balance. Reference 5 µm describes the cavity/network state. PFC core size needs separate identification.",
-             "模量 20 kPa、5 → 30 µm 膨胀时，阻力为 43.3256 kPa，网络功为 4.51604 nJ。同一体积上恒定净压 100 kPa 提供 11.2574 nJ，储存占 40.1163%。其余表面、黏性及动能需求须用完整功平衡检查。5 µm 参考描述空腔／网络状态。PFC 核心尺寸须单独辨认。")
-answer2 += P("The $5G_g/2$ plateau follows the intact constitutive model. Fracture and jet stability remain unestablished. Work still grows with volume; real networks can stiffen or tear. Recoil may return storage late, sideways or into damage. Viscous dissipation stays nonnegative. Useful conversion requires phase-pressure history, moving geometry and energy partition.",
-             "$5G_g/2$ 平台来自完整本构模型。断裂与射流稳定性尚未确立。功仍随体积增长，实际网络可硬化或撕裂。回弹可能将储能延迟、侧向或通过损伤返还。黏性耗散保持非负。有用转换需要相变压力历程、运动几何及能量分配。")
-body += defense(r"A-Q2", "Explain the 5Gg/2 plateau and its work requirement.", "解释 5Gg/2 平台及其功需求。", answer2,
-    [(r"Explains the stretch-based elastic origin, zero reference resistance, and constitutive rather than fracture meaning of the plateau.", r"说明基于伸长的弹性来源、参考状态零阻力，以及平台属于本构而非断裂意义。"),
-     (r"Uses pressure times volume change to interpret the 4.51604 nJ storage and its 40.1163% benchmark fraction without calling it a predicted jet energy.", r"用压力乘体积变化解释 4.51604 nJ 储存及其 40.1163% 示例比例，不将其称为预测射流能量。"),
-     (r"Separates recoverable storage from irreversible viscosity and identifies damage, timing and nonspherical flow as unresolved links.", r"区分可恢复储存与不可逆黏性，指出损伤、时序和非球形流动仍是未闭合环节。")])
+B.append(H("8. Sensitivity and the delivered relations", "8. 敏感性与交付关系", "relations"))
+B.append(P(
+    "Step 21 — Vary the speed and the radius at the converged band size $h=a/160$. Eq. (C5-E18) defines the peak factor $\\Lambda_i$ of each case and its spread. Five cases cover $U=50$ to 150 m s⁻¹ and $a=0.5$ to 2 μm. These ranges are scenario choices, not confidence intervals.",
+    "步骤 21——在收敛的加密带尺寸 $h=a/160$ 下改变速度与半径。式（C5-E18）定义了各工况的峰值因子 $\\Lambda_i$ 及其离散度。五个工况覆盖 $U=50$ 至 150 m s⁻¹、$a=0.5$ 至 2 μm。这些范围是情景选择，并非置信区间。"))
+case_labels = {'B00625': ('99.03', '1'), 'BU050': ('50', '1'), 'BU150': ('150', '1'), 'BA05': ('99.03', '0.5'), 'BA2': ('99.03', '2')}
+sens = []
+for case in ('BU050', 'B00625', 'BU150', 'BA05', 'BA2'):
+    r = band[case]
+    u, a_um = case_labels[case]
+    cells = [u, a_um, mpa(r['p_H']), mpa(r['p_area']), f"{r['ratio_area']:.4f}", f"{r['err_central_pct']:.2f}%"]
+    sens.append([(c, c) for c in cells])
+B.append(T(
+    [("$U$ (m s⁻¹)", "$U$（m s⁻¹）"), ("$a$ (μm)", "$a$（μm）"), ("$p_H$ (MPa)", "$p_H$（MPa）"), ("Peak full sensor (MPa)", "全传感区峰值（MPa）"), ("$\\Lambda$", "$\\Lambda$"), ("Centre error vs $p_H$", "中心区相对 $p_H$ 误差")],
+    sens))
+B.append(eq(18))
+B.append(P(
+    "The five peak factors lie between 0.9303 and 0.9314. Their spread is 0.12% of the mean. The scaled histories coincide for $\\tau\\le0.49$, the longest time covered by the band runs.",
+    "五个峰值因子介于 0.9303 与 0.9314 之间，离散度为平均值的 0.12%。无量纲历程在 $\\tau\\le0.49$ 内重合，这是加密带运行覆盖的最长时间。"))
+B.append(P(
+    "Step 22 — Read the gap with the scale estimate. The peak occurs at 0.029 ns, so $\\tau_{\\mathrm{pk}}=0.0472$. Eq. (C5-E07) then gives $f_{\\mathrm{rel}}=0.0921$ and a full-release value of $(1-\\tau_{\\mathrm{pk}})^2=0.908$. The computed factor 0.931 lies between 0.908 and 1. So the annulus keeps about a quarter of its excess pressure. The gap exists because the free side acts from the first instant. It is not a mesh effect, since the band refinement changes the peak by only 0.02% at the finest level.",
+    "步骤 22——用尺度估计解读该差值。峰值出现在 0.029 ns，故 $\\tau_{\\mathrm{pk}}=0.0472$。式（C5-E07）给出 $f_{\\mathrm{rel}}=0.0921$，完全释放值为 $(1-\\tau_{\\mathrm{pk}})^2=0.908$。算得的因子 0.931 介于 0.908 与 1 之间，说明环带保留了约四分之一的超压。该差值的出现，是因为自由侧边自首次接触起就在起作用。它不是网格效应，因为加密带在最细一级仅使峰值改变 0.02%。"))
+B.append(P(
+    "Step 23 — State the delivered relations. Eq. (C5-E19) collects them. The centre disk follows the Hugoniot pressure. The full sensor follows $0.931\\,p_H$. The high-pressure interval lasts about $a/c_0$, which is 0.61 ns for $a=1$ μm. The pressure map multiplies the Chapter 3 ceiling $Z_0U$ by the factor $U_s/c_0=1.0856$.",
+    "步骤 23——陈述交付的关系。式（C5-E19）汇总如下。中心圆盘遵循 Hugoniot 压力，全传感区遵循 $0.931\\,p_H$。高压阶段持续约 $a/c_0$，对 $a=1$ μm 为 0.61 ns。压力映射把第三章的上限 $Z_0U$ 乘以因子 $U_s/c_0=1.0856$。"))
+B.append(eq(19))
+B.append(P(
+    "State the limits. The result holds for a liquid-only barotropic column, a rigid flat wall and the first arrival. The tested ranges are $0.031\\le M\\le0.092$ and $0.5\\le a\\le2$ μm. After $\\tau\\approx1$ the computed wall pressure turns negative in absolute value, which is not physical here because cavitation is not modelled. A gas cushion, an elastic wall and the bubble-to-jet physics upstream are not covered.",
+    "说明局限。该结果适用于纯液体正压液柱、刚性平壁与首次到达。检验范围为 $0.031\\le M\\le0.092$ 与 $0.5\\le a\\le2$ μm。$\\tau\\approx1$ 之后，算得的壁面压力绝对值变为负，这在此不具物理意义，因为未建立空化模型。气垫、弹性壁面以及上游的气泡到射流物理均未涵盖。"))
 
-answer3 = E(r"A-E23", r"\mathrm{De}=\frac{\tau_{\mathrm{rel}}}{\tau_e},\qquad t_s=\frac{L_g}{\sqrt{G_g/\rho_g}},\qquad t_{\mathrm{poro}}\sim\frac{\mu_lL_g^2}{k_{\mathrm{perm}}M_d}.",
-    r"$\mathrm{De}$ is dimensionless event Deborah number, $\tau_{\mathrm{rel}}$ measured stress-memory time, $\tau_e$ event duration and $t_s,t_{\mathrm{poro}}$ shear/drainage estimates (s). $L_g$ is a specified length (m), $G_g$ shear modulus (Pa), $\rho_g$ density (kg m⁻³), $\mu_l$ solvent viscosity (Pa s), $k_{\mathrm{perm}}$ permeability (m²), and $M_d$ adopted drained storage modulus (Pa). $\sim$ denotes scaling and the square root is the small-strain shear-speed estimate. These recall Eqs. (A-E16), (A-E18) and (A-E20).",
-    r"$\mathrm{De}$ 为无量纲事件 Deborah 数，$\tau_{\mathrm{rel}}$ 为实测应力记忆时间，$\tau_e$ 为事件持续时间，$t_s,t_{\mathrm{poro}}$ 为剪切／排水时间估计（s）。$L_g$ 为指定长度（m），$G_g$ 为剪切模量（Pa），$\rho_g$ 为密度（kg m⁻³），$\mu_l$ 为溶剂黏度（Pa s），$k_{\mathrm{perm}}$ 为渗透率（m²），$M_d$ 为所采用的排水储存模量（Pa）。$\sim$ 表示尺度关系，平方根为小应变剪切波速估计。这些公式引用式（A-E16）、（A-E18）、（A-E20）。",
-    r"Original event-response formulas recalled", times([r"τrel/τe = De", r"Lg√(ρg/Gg) = ts", r"μlLg²/(kpermMd) ≈ tporo"], [r"Match material response to the transient event", r"Do not substitute slow stiffness for every rate"]),
-    r"Three timescale comparisons constrain three different physical assumptions.", r"三个时间尺度比较分别约束三个不同的物理假设。")
-answer3 += E(r"A-E24", r"\mathbf J_{\mathrm{target}}=\int_{t_0}^{t_1}\int_{A_t}\mathbf t_{\mathrm{load}}\,dA\,dt,\qquad W_{\mathrm{sep,min}}=\int_{A_{\mathrm{rel}}}\Gamma_c\,dA.",
-    r"$\mathbf J_{\mathrm{target}}$ is vector impulse delivered to the specified target (N s); $\mathbf t_{\mathrm{load}}$ is external load traction (Pa), $A_t$ target loading area (m²), and $t_0,t_1$ defined start/end times (s). $W_{\mathrm{sep,min}}$ is necessary fracture-work budget (J), $A_{\mathrm{rel}}$ intended released interface area (m²), and $\Gamma_c$ relevant interface fracture energy (J m⁻²), conditional on mode and rate. $dA,dt$ are area/time measures and $\int$ is definite integration. Neither integral alone proves crack onset or intact landing.",
-    r"$\mathbf J_{\mathrm{target}}$ 为传递到指定目标的向量冲量（N s）；$\mathbf t_{\mathrm{load}}$ 为外加载荷牵引（Pa），$A_t$ 为目标受载面积（m²），$t_0,t_1$ 为明确的起止时间（s）。$W_{\mathrm{sep,min}}$ 为必要断裂功预算（J），$A_{\mathrm{rel}}$ 为目标释放界面面积（m²），$\Gamma_c$ 为相关界面断裂能（J m⁻²），取决于模态与速率。$dA,dt$ 为面积／时间测度，$\int$ 为定积分。这两个积分都不能独自证明裂纹起始或完整落点。",
-    r"Original load and interface-work accounting", {r"type":r"film", r"labels":[r"tload: target traction", r"At: loaded footprint", r"t₀ → t₁: observation interval", r"Jtarget: delivered impulse", r"Arel, Γc: intended release", r"Wsep,min"], r"notes":[r"Observe the actual direct or PVC-transmitted load path", r"Release work is necessary, not sufficient"]},
-    r"A fair comparison follows the delivered load into the intended interface and the final placement.", r"公平比较要跟踪实际载荷进入目标界面及最终定位。")
-answer3 += P("Compare all architectures with matched PFC inventory, absorber, absorbed energy and initial temperature. Match outlet and release interface where possible. Measure unavoidable architecture changes and report conditional comparisons. Characterize network response at event strain, rate and temperature. Test shell survival and heat deposition. Shear estimate 6.7082 µs differs from liquid-collapse reference 2.7440 µs. Actual gel-cavity time and longitudinal load remain unresolved.",
-             "比较各结构时匹配 PFC 物质量、吸收体、吸收能量及初温。条件允许时匹配出口及释放界面。测量不可避免的结构变化，并报告有条件比较。在事件应变、速率及温度下表征网络。检验壳层存续和热沉积。剪切估计 6.7082 µs 不同于液体塌缩参照 2.7440 µs。实际凝胶空腔时间及纵向载荷仍未确定。")
-answer3 += P("Synchronize cavity, liquid composition, solid motion, calibrated load and crack images. Compare independent-shot distributions, intact placement, contamination and reset. Stabilization means reduced angle, speed, mass or footprint variability at sufficient load. One smaller bubble leaves that result unestablished. Report single-event maxima separately from repeatable transfer. Missing rate mechanics, permeability, phase kinetics or fracture data remain explicit inputs.",
-             "同步记录空腔、液体组成、固体运动、标定载荷及裂纹图像。比较独立发射分布、完整落位、污染和复位。稳定化意味着载荷足够时角度、速率、质量或面积变异降低。单个更小气泡仍未确立该结果。单事件最大值与可重复转印分别报告。速率力学、渗透率、相变动力学或断裂数据仍列为明确缺失输入。")
-body += defense(r"A-Q3", "Which matched measurements establish improved PFC transfer with gel?", "哪些匹配测量能确立凝胶改善 PFC 转印？", answer3,
-    [(r"Defines a fair absorbed-energy/material/geometry comparison while retaining each architecture and both film/PVC load paths.", r"定义公平的吸收能量／材料／几何比较，同时保留每种结构及两条薄膜／PVC 载荷路径。"),
-     (r"Distinguishes stress memory, shear communication, solvent drainage and longitudinal compression, with the assumptions of each estimate.", r"区分应力记忆、剪切传播、溶剂排水与纵向压缩，并说明各估计的假设。"),
-     (r"Links synchronized mechanism measurements to useful impulse, selective fracture, intact placement, variability and reset; separates extreme output from repeatable transfer.", r"将同步机制测量连接到有效冲量、选择性断裂、完整定位、变异与复位；区分极端输出与可重复转印。")])
+B.append(H("9. Oral questions", "9. 口头问题", "defense"))
+answer1 = eq(20)
+answer1 += P(
+    "Start from the energy bound. Chapter 3 limits the speed by the energy available to the finite jet mass. This chapter takes the speed as given and maps it to pressure. At 99.027 m s⁻¹ the linear ceiling is 160.765 MPa excess. The nonlinear factor 1.0856 gives 174.52 MPa excess, which is the Hugoniot level. Over the full sensor the peak is 0.931 of the absolute Hugoniot pressure, 162.6 MPa. These numbers hold for the prescribed speed. They say nothing on whether a source delivers that speed.",
+    "从能量上界出发。第三章用有限射流质量可得的能量来限制速度。本章把速度当作给定值并映射为压力。在 99.027 m s⁻¹ 时，线性上限为 160.765 MPa 超压。非线性因子 1.0856 给出 174.52 MPa 超压，即 Hugoniot 水平。在整个传感区上，峰值为绝对 Hugoniot 压力的 0.931 倍，即 162.6 MPa。这些数值对应于给定速度，并不说明能源能否提供该速度。")
+answer1 += P(
+    "A bound and a map are different claims. The bound says a speed cannot be exceeded. The map says what pressure follows from a speed under stated assumptions. Neither is a prediction of the pressure a given laser pulse produces. That needs the upstream chain of Chapters 1 to 3 and a measurement.",
+    "上界与映射是不同的结论。上界说明速度不可超过某值。映射说明在所述假设下某一速度对应何种压力。二者都不是对给定激光脉冲所产生压力的预测。那需要第一至第三章的上游链条以及实测。")
+B.append(defense("C5-Q1",
+    "Which wall pressure does this chain establish for a prescribed 99.03 m/s jet, and what stays conditional?",
+    "该链条对给定的 99.03 m/s 射流确立了何种壁面压力？哪些仍是有条件的？", answer1,
+    [("Separates the Chapter 3 speed bound from the speed-to-pressure map and states that the speed is prescribed.", "区分第三章的速度上界与速度到压力的映射，并说明速度为给定值。"),
+     ("Quotes the linear ceiling, the Hugoniot level and the full-sensor factor with their reference values.", "引用线性上限、Hugoniot 水平和全传感区因子，并注明各自的参照值。"),
+     ("Names the conditions: liquid only, rigid flat wall, barotropic law, first arrival and the tested ranges.", "指出条件：纯液体、刚性平壁、正压律、首次到达以及检验范围。")]))
+
+answer2 = eq(21)
+answer2 += P(
+    "The free side of the jet acts from first contact. A release front from the edge reaches the radius $a(1-\\tau)$ at dimensionless time $\\tau$. At the peak time 0.029 ns, $\\tau=0.0472$ and the released annulus holds 9.2% of the disk area. Full release of that annulus gives $0.908\\,p_H$. The computed factor 0.931 requires the annulus to keep about a quarter of its excess pressure. The sign and size agree with the scale estimate.",
+    "射流的自由侧边自首次接触起就在起作用。边缘的释放前沿在无量纲时间 $\\tau$ 到达半径 $a(1-\\tau)$。在峰值时刻 0.029 ns，$\\tau=0.0472$，已释放环带占圆盘面积的 9.2%。该环带完全释放时给出 $0.908\\,p_H$。算得的因子 0.931 要求环带保留约四分之一的超压。符号与大小与尺度估计一致。")
+answer2 += P(
+    "Evidence against a mesh artifact: the band refinement changes the peak by 1.98%, 0.44% and 0.02%. The factor is the same within 0.12% for five speeds and radii. The centre disk, which the release has not reached, stays within 0.43% of $p_H$. A mesh artifact would not be confined to the full-area average and would not collapse with $\\tau$.",
+    "反对网格伪影的证据：加密带使峰值依次改变 1.98%、0.44% 和 0.02%；五组速度与半径下该因子的偏差在 0.12% 以内；释放尚未到达的中心圆盘保持在 $p_H$ 的 0.43% 以内。网格伪影不会只出现在全面积平均上，也不会随 $\\tau$ 坍缩。")
+B.append(defense("C5-Q2",
+    "Is the 6.9% gap between the full-sensor peak and the Hugoniot pressure a mesh artifact or edge release? Which evidence decides?",
+    "全传感区峰值与 Hugoniot 压力之间 6.9% 的差值是网格伪影还是边缘释放？哪些证据能决定？", answer2,
+    [("Explains the free side acting from first contact and the released annulus with the area fraction of Eq. (C5-E07).", "解释自由侧边自首次接触起的作用，并用式（C5-E07）的面积分数说明已释放环带。"),
+     ("Uses the band-refinement sequence, the centre disk and the five-case collapse as separate pieces of evidence.", "把加密带序列、中心圆盘和五工况坍缩作为各自独立的证据。"),
+     ("States that the scale estimate fixes sign and size, not the digits, and that 0.931 comes from the simulation.", "说明尺度估计只确定符号与大小而非数字，0.931 来自模拟。")]))
+
+answer3 = eq(22)
+answer3 += P(
+    "The relative L2 difference of 0.034% between the C++ and COMSOL histories shows that two implementations of one model agree. Both use the same stiffened-gas law, inputs, wall and inflow. A shared modelling error would appear in both. So the agreement cannot validate the law, the neglect of gas or the rigid wall. It supports a statement about numerics only.",
+    "C++ 与 COMSOL 历程之间 0.034% 的相对 L2 差表明同一模型的两个实现是一致的。二者使用相同的刚化气体律、输入、壁面和入流。共同的建模误差会同时出现在两者之中。因此这一致性不能验证该定律、对气相的忽略或刚性壁面，它只支持关于数值的陈述。")
+answer3 += P(
+    "The 162.6 MPa result is supported as a numerical result for a liquid-only column at $0.031\\le M\\le0.092$ and $0.5\\le a\\le2$ μm during the first arrival. It is not supported as a prediction of a measured wall pressure, as a value after $\\tau\\approx1$, or as a value with a gas cushion or an elastic wall. Physical validation: Not established. Missing: a measured wall pressure for a real jet.",
+    "162.6 MPa 作为数值结果成立，条件是纯液体液柱、$0.031\\le M\\le0.092$、$0.5\\le a\\le2$ μm 且处于首次到达阶段。它不支持作为实测壁面压力的预测，不支持 $\\tau\\approx1$ 之后的数值，也不支持含气垫或弹性壁面的情形。物理验证：尚未确立。缺少：真实射流的壁面压力实测。")
+B.append(defense("C5-Q3",
+    "What does the 0.034% solver agreement establish, and which uses of the 162.6 MPa result stay unsupported?",
+    "0.034% 的求解器一致性确立了什么？162.6 MPa 的哪些用途仍无依据？", answer3,
+    [("Distinguishes verification of an implementation from validation of the model against experiment.", "区分对实现的核验与对模型的实验验证。"),
+     ("Lists the supported range: liquid only, rigid flat wall, tested Mach and radius ranges, first arrival.", "列出支持的范围：纯液体、刚性平壁、检验过的马赫数与半径范围、首次到达。"),
+     ("Names unsupported uses: a measured pressure, times after $\\tau\\approx1$, a gas cushion and an elastic wall.", "指出无依据的用途：实测压力、$\\tau\\approx1$ 之后的时间、气垫与弹性壁面。")]))
+
+body = "".join(B)
 
 CHAPTER = {
     r"number": 5,
-    r"kind": r"appendix",
-    r"letter": r"A",
-    r"slug": r"05-hydrogel-versus-liquid",
-    r"title_en": r"Hydrogel versus liquid platforms",
-    r"title_zh": r"水凝胶与液体平台",
-    r"summary_en": "Derive gel resistance and work. Compare four architectures using intact-transfer measurements.",
-    r"summary_zh": "推导凝胶阻力与功。用完整转印测量比较四种结构。",
+    r"kind": r"chapter",
+    r"slug": r"05-jet-on-rigid-wall",
+    r"title_en": r"Jet-on-rigid-wall calculation",
+    r"title_zh": r"刚性壁面射流计算",
+    r"summary_en": "Map a prescribed jet speed to a wall pressure. Chain closed-form theory, a finite-volume calculation and a COMSOL verification.",
+    r"summary_zh": "把给定射流速度映射为壁面压力。依次给出封闭形式理论、有限体积计算与 COMSOL 核验。",
     r"body": body,
-    r"question_ids": [r"A-Q1", r"A-Q2", r"A-Q3"],
+    r"question_ids": [r"C5-Q1", r"C5-Q2", r"C5-Q3"],
     r"objectives": [
-        (r"Derive finite-strain neo-Hookean cavity resistance and elastic work from volume, stress and equilibrium.", r"从体积、应力与平衡推导有限应变 neo-Hookean 腔体阻力与弹性功。"),
-        (r"Separate reversible storage, viscous loss, stress memory, communication and drainage.", r"区分可逆储存、黏性损耗、应力记忆、传播与排水。"),
-        (r"Compare conventional liquid, open pockets, bulk embedding and sealed cavities using intact-transfer evidence.", r"用完整转印证据比较常规液体、开放液腔、体相嵌入及密封腔体。"),
+        (r"Derive the acoustic and Hugoniot wall pressures of a liquid stopped by a rigid wall.", r"推导被刚性壁面截停的液体的声学壁面压力与 Hugoniot 壁面压力。"),
+        (r"Calculate the planar history with a finite-volume code and read the area-weighted finite-jet observer.", r"用有限体积程序计算平面历程，并读取面积加权的有限射流观测量。"),
+        (r"Verify the result with an axisymmetric model, convergence, balances and a cross-solver comparison, and state its limits.", r"用轴对称模型、收敛性、平衡与跨求解器比较核验结果，并说明其局限。"),
     ],
-    r"prerequisite_en": "Prerequisites: Chapters 1–4’s inventory, liquid motion, loading and selective fracture.",
-    r"prerequisite_zh": "前提：第一至四章的物质量、液体运动、加载及选择性断裂。",
+    r"prerequisite_en": "Prerequisites: Chapter 3’s finite jet, acoustic impact matching and fixed observer.",
+    r"prerequisite_zh": "前提：第三章的有限射流、声学撞击匹配与固定观测量。",
 }

@@ -1,17 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 650" role="img"><title>C1-E08 The mechanical input comes from the evolving contents, not from radius alone.</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8EDBD4"/></marker></defs>
-<rect width="980" height="650" fill="#142632"/>
-<text x="28" y="42.52" font-family="Arial,sans-serif" font-size="19" fill="#8EDBD4">C1-E08 | Physical-variable diagram</text>
-<ellipse cx="270" cy="215" rx="100" ry="100" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.21"/>
-<text x="172" y="209.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">PFC vapor + water vapor</text>
-<text x="182" y="249.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">+ permanent gas</text>
-<ellipse cx="305" cy="275" rx="20" ry="20" fill="#F6BC77" stroke="#B4C7D2" stroke-width="2.21"/>
-<text x="452" y="202.68" font-family="Arial,sans-serif" font-size="21" fill="#E7F0F3">p_b = p_v,PFC + p_v,w + p_g</text>
-<text x="452" y="259.44" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3">Residual PFC liquid: finite inventory</text>
-<text x="32" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pb</text>
-<text x="32" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pv,w</text>
-<text x="32" y="474.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">Finite PFC liquid inventory</text>
-<text x="507" y="426.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pv,PFC</text>
-<text x="507" y="450.36" font-family="Arial,sans-serif" font-size="17" fill="#E7F0F3">pg</text>
-<text x="32" y="532.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">Partial pressures need mass and energy histories</text>
-<text x="32" y="556.28" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2">No fixed-mass gas law is automatically a vaporization law</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E08</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E08 · Pressure composition requiring thermodynamic closure</tspan>
+</text>
+<line id="o001" x1="576" y1="528" x2="1228.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="576" y1="144" x2="576" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="569.28" y1="528" x2="576" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="576" y1="528" x2="1228.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="564.48" y="532.76">0</tspan>
+</text>
+<line id="o006" x1="569.28" y1="436.571" x2="576" y2="436.571" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="576" y1="436.571" x2="1228.8" y2="436.571" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="564.48" y="441.331">1</tspan>
+</text>
+<line id="o009" x1="569.28" y1="345.143" x2="576" y2="345.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="576" y1="345.143" x2="1228.8" y2="345.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="564.48" y="349.903">2</tspan>
+</text>
+<line id="o012" x1="569.28" y1="253.714" x2="576" y2="253.714" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="576" y1="253.714" x2="1228.8" y2="253.714" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="564.48" y="258.474">3</tspan>
+</text>
+<line id="o015" x1="569.28" y1="162.286" x2="576" y2="162.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="576" y1="162.286" x2="1228.8" y2="162.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="564.48" y="167.046">4</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="520.32" y="122.56">partial pressure (bar)</tspan>
+</text>
+<rect id="o019" x="603.744" y="433.506" width="107.712" height="94.4942" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o020" x="603.744" y="429.659" width="107.712" height="3.84673" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o021" x="603.744" y="425.088" width="107.712" height="4.57143" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="657.6" y="409.408">p_b = 1.13</tspan>
+</text>
+<text id="o023" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="657.6" y="551.133">30 °C</tspan>
+</text>
+<rect id="o024" x="766.944" y="393.467" width="107.712" height="134.533" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o025" x="766.944" y="386.775" width="107.712" height="6.69196" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o026" x="766.944" y="382.204" width="107.712" height="4.57143" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="820.8" y="366.524">p_b = 1.59</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="820.8" y="551.133">40 °C</tspan>
+</text>
+<rect id="o029" x="930.144" y="341.183" width="107.712" height="186.817" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o030" x="930.144" y="329.984" width="107.712" height="11.1984" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o031" x="930.144" y="325.413" width="107.712" height="4.57143" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="984" y="309.733">p_b = 2.22</tspan>
+</text>
+<text id="o033" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="984" y="551.133">50 °C</tspan>
+</text>
+<rect id="o034" x="1093.34" y="274.323" width="107.712" height="253.677" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o035" x="1093.34" y="256.23" width="107.712" height="18.0934" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="0.85"/>
+<rect id="o036" x="1093.34" y="251.658" width="107.712" height="4.57143" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="0.85"/>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="1147.2" y="235.978">p_b = 3.02</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1147.2" y="551.133">60 °C</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="529.92" y="586.24">Bars are saturation values (upper bounds) from C2-E12 and C2-E13. The 0.05 bar gas</tspan>
+<tspan x="529.92" y="605.12">part is an assumed placeholder.</tspan>
+</text>
+<rect id="o040" x="528" y="631.68" width="24" height="21.12" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="560.64" y="640.96">PFC vapor</tspan>
+</text>
+<rect id="o042" x="768" y="631.68" width="24" height="21.12" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o043" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="800.64" y="640.96">water vapor</tspan>
+</text>
+<rect id="o044" x="1008" y="631.68" width="24" height="21.12" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="1040.64" y="640.96">permanent gas</tspan>
+</text>
+<rect id="o046" x="38.4" y="96" width="441.6" height="528" rx="35.328" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o047" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">Dalton additivity in one bubble</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="19.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="54.72" y="166.573">p_b = pᵥ,PFC + pᵥ,w + p_g</tspan>
+</text>
+<ellipse id="o049" cx="259.2" cy="355.2" rx="139.2" ry="139.2" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
+<ellipse id="o050" cx="262.331" cy="390.521" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o051" cx="224.716" cy="381.652" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o052" cx="323.146" cy="383.582" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o053" cx="344.994" cy="306.257" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o054" cx="264.021" cy="303.415" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o055" cx="202.642" cy="342.031" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o056" cx="276.018" cy="387.001" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o057" cx="282.855" cy="458.857" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o058" cx="306.147" cy="267.864" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o059" cx="274.217" cy="309.025" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o060" cx="227.177" cy="436.54" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o061" cx="247.378" cy="253.825" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o062" cx="282.844" cy="332.886" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o063" cx="187.896" cy="299.499" rx="7.68" ry="7.68" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o064" cx="212.679" cy="353.534" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o065" cx="226.662" cy="360.7" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o066" cx="353.231" cy="313.887" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o067" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="529.187">PFC vapor, water vapor and permanent gas fill</tspan>
+<tspan x="54.72" y="548.853">one volume at one temperature; their pressures</tspan>
+<tspan x="54.72" y="568.52">add.</tspan>
+</text>
+<text id="o068" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">The radius equation needs p_b from the contents (a thermodynamic closure), not from R alone.</tspan>
+</text>
 </svg>

@@ -35,9 +35,9 @@ def main():
     paths=[ROOT/'index.html',*(ROOT/c['file'] for c in units),*sorted((ROOT/'reference').glob('*.html'))]
     docs={p:BeautifulSoup(p.read_text(encoding='utf-8'),'html.parser') for p in paths}
     ids={p:{n['id'] for n in soup.select('[id]')} for p,soup in docs.items()}
-    check('Four main chapters',len(settings['chapters'])==4)
+    check('Five main chapters',len(settings['chapters'])==5)
     check('Appendix A is separate',len(settings.get('appendices',[]))==1 and settings['appendices'][0]['id']=='A')
-    check('Exactly fifteen unit-defense questions',sum(len(c['defense_ids']) for c in units)==15)
+    check('Exactly eighteen unit-defense questions',sum(len(c['defense_ids']) for c in units)==18)
     check('All equation IDs unique',len({e['id'] for e in eqs})==len(eqs))
     check('Source copy unchanged',hashlib.sha256((ROOT/'sources/Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md').read_bytes()).hexdigest()==settings['source_sha256'])
     check('Comparison copy unchanged',hashlib.sha256((ROOT/'sources/Cavitation_Course_Before_After_Comparison_EN_ZH.md').read_bytes()).hexdigest()==settings['comparison_sha256'])
@@ -114,7 +114,7 @@ def main():
                 outside_subscripts=re.sub(r'\{[^{}]*\}','',annotation.get_text()) if annotation else ',;'
                 check(ch['id']+': one variable per glossary row',len(cells)==4 and annotation is not None and ',' not in outside_subscripts and ';' not in outside_subscripts)
                 check(ch['id']+': individual bilingual meaning and role',len(cells)==4 and len(cells[1].select('.lang-pair > p'))==2 and len(cells[3].select('.lang-pair > p'))==2 and bool(cells[2].get_text(strip=True)))
-        check(ch['id']+': no Chapter 5 label',not re.search(r'Chapter\s+5\b|第\s*5\s*章|第五章',soup.get_text(' ',strip=True),re.I))
+        check(ch['id']+': no Chapter 90 label',not re.search(r'Chapter\s+90\b|第\s*90\s*章',soup.get_text(' ',strip=True),re.I))
         check(ch['id']+': exactly three questions',len(soup.select('article[data-defense]'))==3)
         check(ch['id']+': expected IDs',[n['data-defense'] for n in soup.select('article[data-defense]')]==ch['defense_ids'])
         for defense in soup.select('article[data-defense]'):
@@ -127,10 +127,11 @@ def main():
         check('Legacy hydrogel link shows updated Appendix A',old.is_file() and old.read_bytes()==canonical.read_bytes())
         if old.is_file():
             old_soup=BeautifulSoup(old.read_text(encoding='utf-8'),'html.parser')
-            check('Legacy question and equation bookmarks preserved',all(old_soup.find(id=identifier) is not None for identifier in ['C5-Q1','C5-Q2','C5-Q3',*[f'C5-E{i:02d}' for i in range(1,25)]]))
+            check('Legacy hydrogel page keeps Appendix A question bookmarks',all(old_soup.find(id=identifier) is not None for identifier in ['A-Q1','A-Q2','A-Q3']))
     # Exact mapping cells plus the user's no-old-course-code constraint.
-    mapping_locations=[(ROOT/'index.html','all',list(range(1,6)))]
-    mapping_locations+=[(ROOT/ch['file'],ch['id'],[i+1]) for i,ch in enumerate(units)]
+    unit_numbers=[1,2,3,4,5,90]
+    mapping_locations=[(ROOT/'index.html','all',unit_numbers)]
+    mapping_locations+=[(ROOT/ch['file'],ch['id'],[n]) for n,ch in zip(unit_numbers,units)]
     for p,label,numbers in mapping_locations:
         region=docs[p].select_one(f'[data-unit-map="{label}"]')
         rows=region.select('tbody tr') if region else []

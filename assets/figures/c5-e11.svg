@@ -1,38 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" role="img" aria-labelledby="title desc">
-<title id="title">C5-E11 — The spherical control quantifies cavity work and wall motion before any directional-flow calculation.</title>
-<desc id="desc">pb: inner driving pressure; p∞: exterior pressure; 2σ/R: capillary resistance; pel(R): network resistance; −4ηgṘ/R: viscous term; ρg, R, Ṙ, R̈; Spherical motion has no directional jet; A liquid pocket requires a separate layered problem</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#8edbd4"/></marker></defs>
-<rect width="980" height="640" rx="8" fill="#142632"/>
-<style>text{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#e7f0f3;font-size:20px}.muted{fill:#b4c7d2;font-size:17px}.accent{fill:#8edbd4}.line{fill:none;stroke:#8edbd4;stroke-width:3}.thin{fill:none;stroke:#b4c7d2;stroke-width:2}.arrow{fill:none;stroke:#8edbd4;stroke-width:3;marker-end:url(#arrow)}.area{fill:#213e4b;stroke:#b4c7d2;stroke-width:2}</style>
-<text x="28" y="36" class="accent">C5-E11 · Physical variable map / 物理变量图</text>
-<circle cx="196" cy="180" r="80" class="thin"/>
-<circle cx="196" cy="180" r="36" class="area"/>
-<path d="M196 180 H232" class="arrow"/>
-<text x="190" y="160" class="">Rref</text>
-<path d="M196 180 L259 231" class="arrow"/>
-<text x="254" y="240" class="">r₀</text>
-<circle cx="610" cy="180" r="116" class="thin"/>
-<circle cx="610" cy="180" r="78" class="area"/>
-<path d="M610 180 H688" class="arrow"/>
-<text x="650" y="162" class="">R</text>
-<path d="M610 180 L700 253" class="arrow"/>
-<text x="699" y="261" class="">r</text>
-<path d="M298 180 H472" class="arrow"/>
-<text x="307" y="146" class="">Material map / 材料映射</text>
-<text x="82" y="302" class="">Reference / 参考状态</text>
-<text x="513" y="322" class="">Deformed / 变形状态: λr , λθ</text>
-<text x="757" y="106" class="">Gg , ηg</text>
-<text x="753" y="153" class="">σrr , σθθ</text>
-<text x="753" y="201" class="">p∞</text>
-<text x="583" y="187" class="">pb</text>
-<path d="M28 356 H952" stroke="#405967"/>
-<text x="30" y="382" class="muted">Variables in this equation / 本式变量</text>
-<text x="30" y="409" class="muted">• pb: inner driving pressure</text>
-<text x="30" y="433" class="muted">• p∞: exterior pressure</text>
-<text x="30" y="457" class="muted">• 2σ/R: capillary resistance</text>
-<text x="30" y="481" class="muted">• pel(R): network resistance</text>
-<text x="30" y="505" class="muted">• −4ηgṘ/R: viscous term</text>
-<text x="30" y="529" class="muted">• ρg, R, Ṙ, R̈</text>
-<text x="30" y="571" class="muted">Spherical motion has no directional jet</text>
-<text x="30" y="594" class="muted">A liquid pocket requires a separate layered problem</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C5-E11 · Rusanov flux with Heun time stepping</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="31.68" y="41.8267">C5-E11 · Rusanov flux with Heun time stepping</tspan>
+</text>
+<rect id="o001" x="76.8" y="220.8" width="67.2" height="96" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="76.8" y1="316.8" x2="94.08" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o003" x1="97.92" y1="316.8" x2="115.2" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="119.04" y1="316.8" x2="136.32" y2="336" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<rect id="o005" x="76.8" y="216" width="67.2" height="105.6" fill="#3A5362" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o006" font-family="Arial,sans-serif" font-size="17.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="115.2" y="354.387">wall</tspan>
+</text>
+<rect id="o007" x="148.8" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o008" x="230.4" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o009" x="312" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o010" x="393.6" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o011" x="475.2" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o012" x="556.8" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o013" x="638.4" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o014" x="720" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o015" x="801.6" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<rect id="o016" x="883.2" y="220.8" width="81.6" height="96" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="151.68" y="258.08">cell 1</tspan>
+</text>
+<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="924" y="258.08">N</tspan>
+</text>
+<line id="o019" x1="52.8" y1="268.8" x2="139.2" y2="268.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="1.33333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="22.08" y="198.08">mirror ghost state</tspan>
+</text>
+<line id="o021" x1="1128" y1="268.8" x2="969.6" y2="268.8" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<text id="o022" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="977.28" y="234.233">inflow ρ_j, −U</tspan>
+</text>
+<line id="o023" x1="148.8" y1="398.4" x2="964.8" y2="398.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.6" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="310.08" y="424.14">H = 4 µm,  N = 4000,  Δz = 1 nm</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="79.68" y="503.8">Face flux (Rusanov)</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="79.68" y="559.68">F = ½(F_L + F_R) − ½ α (Q_R − Q_L)</tspan>
+<tspan x="79.68" y="581.707">α = max(|u_L| + c_L, |u_R| + c_R)</tspan>
+</text>
+<text id="o027" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="703.68" y="503.8">Time step (Heun)</tspan>
+</text>
+<text id="o028" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="703.68" y="559.68">predictor Q* = Qⁿ + Δt L(Qⁿ)</tspan>
+<tspan x="703.68" y="581.707">Qⁿ⁺¹ = Qⁿ + ½ Δt [L(Qⁿ) + L(Q*)]</tspan>
+</text>
+<text id="o029" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="310.08" y="462.233">Wall pressure read from the cell next to the wall</tspan>
+</text>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="36.48" y="697.3">Schematic of the discretization of Eqs. (C5-E10) and (C5-E11); only ten of 4000 cells are drawn.</tspan>
+</text>
 </svg>

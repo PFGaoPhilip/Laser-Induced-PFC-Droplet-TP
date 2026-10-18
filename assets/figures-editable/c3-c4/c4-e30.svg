@@ -1,53 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C4-E30</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C4-E30 · Necessary global energy and momentum screens</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C4-E30 · Necessary global energy and momentum screens</tspan>
 </text>
-<rect id="o001" x="62.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="82.56" y="224.4">Incoming finite budgets</tspan>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0.0</tspan>
 </text>
-<line id="o003" x1="398.4" y1="216" x2="465.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o004" x="470.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="490.56" y="224.4">Transmitted E_solid, I_net</tspan>
+<line id="o006" x1="218.88" y1="528" x2="218.88" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="218.88" y1="144" x2="218.88" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="218.88" y="550.04">0.5</tspan>
 </text>
-<line id="o006" x1="806.4" y1="216" x2="873.6" y2="216" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<rect id="o007" x="878.4" y="148.8" width="336" height="139.2" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="898.56" y="224.4">Release + departure cost</tspan>
+<line id="o009" x1="341.76" y1="528" x2="341.76" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="341.76" y1="144" x2="341.76" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="341.76" y="550.04">1.0</tspan>
 </text>
-<text id="o009" font-family="Arial,sans-serif" font-size="24" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="79.68" y="370.32">Work, storage, fracture consumption and net impulse retain separate meanings.</tspan>
+<line id="o012" x1="464.64" y1="528" x2="464.64" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="464.64" y1="144" x2="464.64" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="464.64" y="550.04">1.5</tspan>
 </text>
-<line id="o010" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• E_solid → available budget</tspan>
+<line id="o015" x1="587.52" y1="528" x2="587.52" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="587.52" y1="144" x2="587.52" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="587.52" y="550.04">2.0</tspan>
 </text>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• ΓA_f → full release cost</tspan>
+<line id="o018" x1="710.4" y1="528" x2="710.4" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="710.4" y1="144" x2="710.4" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="710.4" y="550.04">2.5</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• ½m_f v_f² → departure kinetic energy</tspan>
+<line id="o021" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="89.28" y1="400" x2="96" y2="400" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="400" x2="710.4" y2="400" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="404.76">10</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• I_net → net opening impulse</tspan>
+<line id="o025" x1="89.28" y1="272" x2="96" y2="272" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="272" x2="710.4" y2="272" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="276.76">20</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• m_f v_f → required momentum</tspan>
+<line id="o028" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="144" x2="710.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">30</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• E_req, I_req — minimum screens</tspan>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">film departure speed v_f  (m/s)</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Passing is necessary, not sufficient.</tspan>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">E_req  (nJ)</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">Support reactions are already included in net impulse.</tspan>
+<polyline id="o033" points="96,464 99.0874,463.998 102.175,463.991 105.262,463.979 108.35,463.962 111.437,463.941 114.525,463.915 117.612,463.885 120.699,463.849 123.787,463.809 126.874,463.765 129.962,463.715 133.049,463.661 136.137,463.602 139.224,463.539 142.312,463.47 145.399,463.398 148.486,463.32 151.574,463.237 154.661,463.15 157.749,463.059 160.836,462.962 163.924,462.861 167.011,462.755 170.098,462.644 173.186,462.529 176.273,462.409 179.361,462.284 182.448,462.155 185.536,462.021 188.623,461.882 191.711,461.738 194.798,461.59 197.885,461.437 200.973,461.279 204.06,461.117 207.148,460.95 210.235,460.778 213.323,460.602 216.41,460.42 219.497,460.234 222.585,460.044 225.672,459.848 228.76,459.648 231.847,459.444 234.935,459.234 238.022,459.02 241.11,458.801 244.197,458.578 247.284,458.349 250.372,458.116 253.459,457.879 256.547,457.636 259.634,457.389 262.722,457.137 265.809,456.881 268.896,456.619 271.984,456.354 275.071,456.083 278.159,455.808 281.246,455.527 284.334,455.243 287.421,454.953 290.509,454.659 293.596,454.36 296.683,454.057 299.771,453.748 302.858,453.435 305.946,453.118 309.033,452.795 312.121,452.468 315.208,452.136 318.295,451.8 321.383,451.458 324.47,451.112 327.558,450.762 330.645,450.406 333.733,450.046 336.82,449.681 339.908,449.312 342.995,448.938 346.082,448.559 349.17,448.175 352.257,447.787 355.345,447.394 358.432,446.996 361.52,446.594 364.607,446.187 367.694,445.775 370.782,445.358 373.869,444.937 376.957,444.511 380.044,444.08 383.132,443.645 386.219,443.205 389.307,442.76 392.394,442.31 395.481,441.856 398.569,441.397 401.656,440.934 404.744,440.465 407.831,439.992 410.919,439.514 414.006,439.032 417.093,438.545 420.181,438.053 423.268,437.556 426.356,437.055 429.443,436.549 432.531,436.038 435.618,435.523 438.706,435.003 441.793,434.478 444.88,433.948 447.968,433.414 451.055,432.875 454.143,432.332 457.23,431.783 460.318,431.23 463.405,430.672 466.492,430.11 469.58,429.543 472.667,428.971 475.755,428.394 478.842,427.813 481.93,427.227 485.017,426.636 488.105,426.041 491.192,425.441 494.279,424.836 497.367,424.226 500.454,423.612 503.542,422.993 506.629,422.369 509.717,421.741 512.804,421.108 515.891,420.47 518.979,419.828 522.066,419.18 525.154,418.528 528.241,417.872 531.329,417.211 534.416,416.545 537.504,415.874 540.591,415.198 543.678,414.518 546.766,413.833 549.853,413.144 552.941,412.449 556.028,411.75 559.116,411.047 562.203,410.338 565.29,409.625 568.378,408.907 571.465,408.185 574.553,407.458 577.64,406.726 580.728,405.989 583.815,405.248 586.903,404.502 589.99,403.751 593.077,402.996 596.165,402.235 599.252,401.47 602.34,400.701 605.427,399.927 608.515,399.148 611.602,398.364 614.689,397.575 617.777,396.782 620.864,395.985 623.952,395.182 627.039,394.375 630.127,393.563 633.214,392.746 636.302,391.925 639.389,391.099 642.476,390.268 645.564,389.432 648.651,388.592 651.739,387.747 654.826,386.898 657.914,386.043 661.001,385.184 664.088,384.321 667.176,383.452 670.263,382.579 673.351,381.701 676.438,380.819 679.526,379.931 682.613,379.04 685.701,378.143 688.788,377.241 691.875,376.335 694.963,375.425 698.05,374.509 701.138,373.589 704.225,372.664 707.313,371.734 710.4,370.8" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<polyline id="o034" points="96,272 99.0874,271.998 102.175,271.991 105.262,271.979 108.35,271.962 111.437,271.941 114.525,271.915 117.612,271.885 120.699,271.849 123.787,271.809 126.874,271.765 129.962,271.715 133.049,271.661 136.137,271.602 139.224,271.539 142.312,271.47 145.399,271.398 148.486,271.32 151.574,271.237 154.661,271.15 157.749,271.059 160.836,270.962 163.924,270.861 167.011,270.755 170.098,270.644 173.186,270.529 176.273,270.409 179.361,270.284 182.448,270.155 185.536,270.021 188.623,269.882 191.711,269.738 194.798,269.59 197.885,269.437 200.973,269.279 204.06,269.117 207.148,268.95 210.235,268.778 213.323,268.602 216.41,268.42 219.497,268.234 222.585,268.044 225.672,267.848 228.76,267.648 231.847,267.444 234.935,267.234 238.022,267.02 241.11,266.801 244.197,266.578 247.284,266.349 250.372,266.116 253.459,265.879 256.547,265.636 259.634,265.389 262.722,265.137 265.809,264.881 268.896,264.619 271.984,264.354 275.071,264.083 278.159,263.808 281.246,263.527 284.334,263.243 287.421,262.953 290.509,262.659 293.596,262.36 296.683,262.057 299.771,261.748 302.858,261.435 305.946,261.118 309.033,260.795 312.121,260.468 315.208,260.136 318.295,259.8 321.383,259.458 324.47,259.112 327.558,258.762 330.645,258.406 333.733,258.046 336.82,257.681 339.908,257.312 342.995,256.938 346.082,256.559 349.17,256.175 352.257,255.787 355.345,255.394 358.432,254.996 361.52,254.594 364.607,254.187 367.694,253.775 370.782,253.358 373.869,252.937 376.957,252.511 380.044,252.08 383.132,251.645 386.219,251.205 389.307,250.76 392.394,250.31 395.481,249.856 398.569,249.397 401.656,248.934 404.744,248.465 407.831,247.992 410.919,247.514 414.006,247.032 417.093,246.545 420.181,246.053 423.268,245.556 426.356,245.055 429.443,244.549 432.531,244.038 435.618,243.523 438.706,243.003 441.793,242.478 444.88,241.948 447.968,241.414 451.055,240.875 454.143,240.332 457.23,239.783 460.318,239.23 463.405,238.672 466.492,238.11 469.58,237.543 472.667,236.971 475.755,236.394 478.842,235.813 481.93,235.227 485.017,234.636 488.105,234.041 491.192,233.441 494.279,232.836 497.367,232.226 500.454,231.612 503.542,230.993 506.629,230.369 509.717,229.741 512.804,229.108 515.891,228.47 518.979,227.828 522.066,227.18 525.154,226.528 528.241,225.872 531.329,225.211 534.416,224.545 537.504,223.874 540.591,223.198 543.678,222.518 546.766,221.833 549.853,221.144 552.941,220.449 556.028,219.75 559.116,219.047 562.203,218.338 565.29,217.625 568.378,216.907 571.465,216.185 574.553,215.458 577.64,214.726 580.728,213.989 583.815,213.248 586.903,212.502 589.99,211.751 593.077,210.996 596.165,210.235 599.252,209.47 602.34,208.701 605.427,207.927 608.515,207.148 611.602,206.364 614.689,205.575 617.777,204.782 620.864,203.985 623.952,203.182 627.039,202.375 630.127,201.563 633.214,200.746 636.302,199.925 639.389,199.099 642.476,198.268 645.564,197.432 648.651,196.592 651.739,195.747 654.826,194.898 657.914,194.043 661.001,193.184 664.088,192.321 667.176,191.452 670.263,190.579 673.351,189.701 676.438,188.819 679.526,187.931 682.613,187.04 685.701,186.143 688.788,185.241 691.875,184.335 694.963,183.425 698.05,182.509 701.138,181.589 704.225,180.664 707.313,179.734 710.4,178.8" fill="none" stroke="#F28BA0" stroke-width="4" opacity="1"/>
+<line id="o035" x1="96" y1="400" x2="710.4" y2="400" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="130.176" y="363.293">E_solid = 10 nJ (budget)</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<text id="o037" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="449.664" y="453.533">Γ = 0.005 J/m²: Γ A_f = 5 nJ</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="117.888" y="190.493">Γ = 0.020 J/m²: Γ A_f = 20 nJ</tspan>
+</text>
+<rect id="o039" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o040" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="166.44">Necessary, not sufficient</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="208.133">E_req(v_f) = Γ A_f + ½ m_f v_f²</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="256.133">I_req(v_f) = m_f v_f</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="313.187">pass:  E_solid ≥ E_req  and  Iₙₑₜ ≥ I_req</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="379.84">The whole release area A_f, not a pressure peak, sets</tspan>
+<tspan x="755.52" y="398.72">the fracture energy cost.</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">Energy to open the interface (Γ A_f) plus energy to move the released film (½ m_f v_f²).</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Global screens of Eq. C4-E30 (A_f = 1 mm², m_f = 2.33 µg).</tspan>
 </text>
 </svg>

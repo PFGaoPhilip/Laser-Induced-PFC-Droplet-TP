@@ -1,61 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>Scientific schematic</title>
+<title>C3-E18</title>
 <defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
 <rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="28" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="31.68" y="40.04">C3-E18 · Finite-mass definitions and Cauchy–Schwarz bound</tspan>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C3-E18 · Finite-mass definitions and Cauchy–Schwarz bound</tspan>
 </text>
-<rect id="o001" x="76.8" y="158.4" width="518.4" height="76.8" fill="#213E4B" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="105.6" y1="196.8" x2="556.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="24" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="156.48" y="135.12">Finite emitted liquid: m_j, E_j, U_j</tspan>
+<line id="o001" x1="96" y1="528" x2="710.4" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0e+00</tspan>
 </text>
-<line id="o004" x1="76.8" y1="273.6" x2="595.2" y2="273.6" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="22.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="290.88" y="307.613">L_j</tspan>
+<line id="o006" x1="235.636" y1="528" x2="235.636" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="235.636" y1="144" x2="235.636" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="235.636" y="550.04">5e-11</tspan>
 </text>
-<line id="o006" x1="48" y1="158.4" x2="48" y2="235.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="17.28" y="270.693">d_j = 2a_j</tspan>
+<line id="o009" x1="375.273" y1="528" x2="375.273" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="375.273" y1="144" x2="375.273" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="375.273" y="550.04">1e-10</tspan>
 </text>
-<line id="o008" x1="643.2" y1="196.8" x2="1132.8" y2="196.8" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
-<text id="o009" font-family="Arial,sans-serif" font-size="26.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="674.88" y="153.6">Finite mass defines speed</tspan>
-<tspan x="674.88" y="185.067">and useful momentum.</tspan>
+<line id="o012" x1="514.909" y1="528" x2="514.909" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="514.909" y1="144" x2="514.909" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="514.909" y="550.04">1e-10</tspan>
 </text>
-<text id="o010" font-family="Arial,sans-serif" font-size="26.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="674.88" y="278.4">P_j² ≤ 2 m_j E_j</tspan>
-<tspan x="674.88" y="309.867">E_j ≤ E_avail</tspan>
+<line id="o015" x1="654.545" y1="528" x2="654.545" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="654.545" y1="144" x2="654.545" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="654.545" y="550.04">2e-10</tspan>
 </text>
-<line id="o011" x1="28.8" y1="417.6" x2="1248" y2="417.6" fill="#FFFFFF" stroke="#405967" stroke-width="1.33333" opacity="1"/>
-<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="446.567">• d_j, A_j cross section</tspan>
+<line id="o018" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="89.28" y1="400" x2="96" y2="400" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="96" y1="400" x2="710.4" y2="400" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="404.76">2</tspan>
 </text>
-<text id="o013" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="446.567">• L_j emitted length</tspan>
+<line id="o022" x1="89.28" y1="272" x2="96" y2="272" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="272" x2="710.4" y2="272" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="276.76">4</tspan>
 </text>
-<text id="o014" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="471.047">• M_j emitted liquid; m_j = ∫dm</tspan>
+<line id="o025" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="144" x2="710.4" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">6</tspan>
 </text>
-<text id="o015" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="471.047">• u field; e_z transfer direction</tspan>
+<text id="o028" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="403.2" y="572.8">directed momentum Pⱼ  (N s)</tspan>
 </text>
-<text id="o016" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="495.527">• P_j directional momentum</tspan>
+<text id="o029" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">kinetic energy Eⱼ  (nJ)</tspan>
 </text>
-<text id="o017" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="655.68" y="495.527">• E_j, E_avail energy budget</tspan>
+<polygon id="o030" points="96,144 99.0874,144 102.175,144 105.262,144 108.35,144 111.437,144 114.525,144 117.612,144 120.699,144 123.787,144 126.874,144 129.962,144 133.049,144 136.137,144 139.224,144 142.312,144 145.399,144 148.486,144 151.574,144 154.661,144 157.749,144 160.836,144 163.924,144 167.011,144 170.098,144 173.186,144 176.273,144 179.361,144 182.448,144 185.536,144 188.623,144 191.711,144 194.798,144 197.885,144 200.973,144 204.06,144 207.148,144 210.235,144 213.323,144 216.41,144 219.497,144 222.585,144 225.672,144 228.76,144 231.847,144 234.935,144 238.022,144 241.11,144 244.197,144 247.284,144 250.372,144 253.459,144 256.547,144 259.634,144 262.722,144 265.809,144 268.896,144 271.984,144 275.071,144 278.159,144 281.246,144 284.334,144 287.421,144 290.509,144 293.596,144 296.683,144 299.771,144 302.858,144 305.946,144 309.033,144 312.121,144 315.208,144 318.295,144 321.383,144 324.47,144 327.558,144 330.645,144 333.733,144 336.82,144 339.908,144 342.995,144 346.082,144 349.17,144 352.257,144 355.345,144 358.432,144 361.52,144 364.607,144 367.694,144 370.782,144 373.869,144 376.957,144 380.044,144 383.132,144 386.219,144 389.307,144 392.394,144 395.481,144 398.569,144 401.656,144 404.744,144 407.831,144 410.919,144 414.006,144 417.093,144 420.181,144 423.268,144 426.356,144 429.443,144 432.531,144 435.618,144 438.706,144 441.793,144 444.88,144 447.968,144 451.055,144 454.143,144 457.23,144 460.318,144 463.405,144 466.492,144 469.58,144 472.667,144 475.755,144 478.842,144 481.93,144 485.017,144 488.105,144 491.192,144 494.279,144 497.367,144 500.454,144 503.542,144 506.629,144 509.717,144 512.804,144 515.891,144 518.979,144 522.066,144 525.154,144 528.241,144 531.329,144 534.416,144 537.504,144 540.591,144 543.678,144 546.766,144 549.853,144 552.941,144 556.028,144 559.116,144 562.203,144 565.29,144 568.378,144 571.465,144 574.553,144 577.64,144 580.728,144 583.815,144 586.903,144 589.99,144 593.077,144 596.165,144 599.252,144 602.34,144 605.427,144 608.515,144 611.602,144 614.689,144 617.777,144 620.864,144 623.952,144 627.039,144 630.127,144 633.214,144 636.302,144 639.389,144 642.476,144 645.564,144 648.651,144 651.739,144 654.826,144 657.914,144 661.001,144 664.088,144 667.176,144 670.263,144 673.351,144 676.438,144 679.526,144 682.613,144 685.701,144 688.788,144 691.875,144 694.963,144 698.05,144 701.138,144 704.225,144 707.313,144 710.4,144 710.4,144 707.313,144 704.225,144 701.138,145.403 698.05,149.297 694.963,153.171 691.875,157.026 688.788,160.86 685.701,164.674 682.613,168.469 679.526,172.243 676.438,175.998 673.351,179.733 670.263,183.448 667.176,187.143 664.088,190.818 661.001,194.473 657.914,198.108 654.826,201.723 651.739,205.318 648.651,208.894 645.564,212.449 642.476,215.985 639.389,219.5 636.302,222.996 633.214,226.472 630.127,229.928 627.039,233.364 623.952,236.78 620.864,240.176 617.777,243.552 614.689,246.908 611.602,250.245 608.515,253.561 605.427,256.858 602.34,260.134 599.252,263.391 596.165,266.628 593.077,269.845 589.99,273.042 586.903,276.219 583.815,279.376 580.728,282.513 577.64,285.63 574.553,288.728 571.465,291.805 568.378,294.862 565.29,297.9 562.203,300.918 559.116,303.916 556.028,306.893 552.941,309.851 549.853,312.789 546.766,315.707 543.678,318.605 540.591,321.484 537.504,324.342 534.416,327.18 531.329,329.999 528.241,332.798 525.154,335.576 522.066,338.335 518.979,341.074 515.891,343.793 512.804,346.492 509.717,349.171 506.629,351.83 503.542,354.469 500.454,357.088 497.367,359.688 494.279,362.267 491.192,364.827 488.105,367.366 485.017,369.886 481.93,372.386 478.842,374.866 475.755,377.326 472.667,379.766 469.58,382.186 466.492,384.586 463.405,386.966 460.318,389.327 457.23,391.667 454.143,393.988 451.055,396.288 447.968,398.569 444.88,400.83 441.793,403.07 438.706,405.291 435.618,407.492 432.531,409.673 429.443,411.835 426.356,413.976 423.268,416.097 420.181,418.199 417.093,420.28 414.006,422.342 410.919,424.383 407.831,426.405 404.744,428.407 401.656,430.389 398.569,432.351 395.481,434.293 392.394,436.215 389.307,438.117 386.219,440 383.132,441.862 380.044,443.704 376.957,445.527 373.869,447.33 370.782,449.112 367.694,450.875 364.607,452.618 361.52,454.341 358.432,456.044 355.345,457.727 352.257,459.39 349.17,461.034 346.082,462.657 342.995,464.26 339.908,465.844 336.82,467.408 333.733,468.951 330.645,470.475 327.558,471.979 324.47,473.463 321.383,474.927 318.295,476.371 315.208,477.795 312.121,479.199 309.033,480.584 305.946,481.948 302.858,483.293 299.771,484.617 296.683,485.922 293.596,487.207 290.509,488.471 287.421,489.716 284.334,490.941 281.246,492.146 278.159,493.332 275.071,494.497 271.984,495.642 268.896,496.768 265.809,497.873 262.722,498.959 259.634,500.024 256.547,501.07 253.459,502.096 250.372,503.102 247.284,504.088 244.197,505.054 241.11,506 238.022,506.926 234.935,507.832 231.847,508.719 228.76,509.585 225.672,510.432 222.585,511.258 219.497,512.065 216.41,512.852 213.323,513.619 210.235,514.366 207.148,515.093 204.06,515.8 200.973,516.487 197.885,517.154 194.798,517.802 191.711,518.429 188.623,519.037 185.536,519.624 182.448,520.192 179.361,520.74 176.273,521.268 173.186,521.775 170.098,522.263 167.011,522.732 163.924,523.18 160.836,523.608 157.749,524.016 154.661,524.405 151.574,524.773 148.486,525.122 145.399,525.45 142.312,525.759 139.224,526.048 136.137,526.317 133.049,526.566 129.962,526.795 126.874,527.004 123.787,527.193 120.699,527.363 117.612,527.512 114.525,527.641 111.437,527.751 108.35,527.841 105.262,527.91 102.175,527.96 99.0874,527.99 96,528" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.06667" opacity="0.18"/>
+<polyline id="o031" points="96,528 99.0874,527.99 102.175,527.96 105.262,527.91 108.35,527.841 111.437,527.751 114.525,527.641 117.612,527.512 120.699,527.363 123.787,527.193 126.874,527.004 129.962,526.795 133.049,526.566 136.137,526.317 139.224,526.048 142.312,525.759 145.399,525.45 148.486,525.122 151.574,524.773 154.661,524.405 157.749,524.016 160.836,523.608 163.924,523.18 167.011,522.732 170.098,522.263 173.186,521.775 176.273,521.268 179.361,520.74 182.448,520.192 185.536,519.624 188.623,519.037 191.711,518.429 194.798,517.802 197.885,517.154 200.973,516.487 204.06,515.8 207.148,515.093 210.235,514.366 213.323,513.619 216.41,512.852 219.497,512.065 222.585,511.258 225.672,510.432 228.76,509.585 231.847,508.719 234.935,507.832 238.022,506.926 241.11,506 244.197,505.054 247.284,504.088 250.372,503.102 253.459,502.096 256.547,501.07 259.634,500.024 262.722,498.959 265.809,497.873 268.896,496.768 271.984,495.642 275.071,494.497 278.159,493.332 281.246,492.146 284.334,490.941 287.421,489.716 290.509,488.471 293.596,487.207 296.683,485.922 299.771,484.617 302.858,483.293 305.946,481.948 309.033,480.584 312.121,479.199 315.208,477.795 318.295,476.371 321.383,474.927 324.47,473.463 327.558,471.979 330.645,470.475 333.733,468.951 336.82,467.408 339.908,465.844 342.995,464.26 346.082,462.657 349.17,461.034 352.257,459.39 355.345,457.727 358.432,456.044 361.52,454.341 364.607,452.618 367.694,450.875 370.782,449.112 373.869,447.33 376.957,445.527 380.044,443.704 383.132,441.862 386.219,440 389.307,438.117 392.394,436.215 395.481,434.293 398.569,432.351 401.656,430.389 404.744,428.407 407.831,426.405 410.919,424.383 414.006,422.342 417.093,420.28 420.181,418.199 423.268,416.097 426.356,413.976 429.443,411.835 432.531,409.673 435.618,407.492 438.706,405.291 441.793,403.07 444.88,400.83 447.968,398.569 451.055,396.288 454.143,393.988 457.23,391.667 460.318,389.327 463.405,386.966 466.492,384.586 469.58,382.186 472.667,379.766 475.755,377.326 478.842,374.866 481.93,372.386 485.017,369.886 488.105,367.366 491.192,364.827 494.279,362.267 497.367,359.688 500.454,357.088 503.542,354.469 506.629,351.83 509.717,349.171 512.804,346.492 515.891,343.793 518.979,341.074 522.066,338.335 525.154,335.576 528.241,332.798 531.329,329.999 534.416,327.18 537.504,324.342 540.591,321.484 543.678,318.605 546.766,315.707 549.853,312.789 552.941,309.851 556.028,306.893 559.116,303.916 562.203,300.918 565.29,297.9 568.378,294.862 571.465,291.805 574.553,288.728 577.64,285.63 580.728,282.513 583.815,279.376 586.903,276.219 589.99,273.042 593.077,269.845 596.165,266.628 599.252,263.391 602.34,260.134 605.427,256.858 608.515,253.561 611.602,250.245 614.689,246.908 617.777,243.552 620.864,240.176 623.952,236.78 627.039,233.364 630.127,229.928 633.214,226.472 636.302,222.996 639.389,219.5 642.476,215.985 645.564,212.449 648.651,208.894 651.739,205.318 654.826,201.723 657.914,198.108 661.001,194.473 664.088,190.818 667.176,187.143 670.263,183.448 673.351,179.733 676.438,175.998 679.526,172.243 682.613,168.469 685.701,164.674 688.788,160.86 691.875,157.026 694.963,153.171 698.05,149.297 701.138,145.403" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<ellipse id="o032" cx="446.016" cy="400" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="459.456" y="439.04">uniform jet: on the boundary</tspan>
 </text>
-<text id="o018" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="520.007">• U_rms finite-mass speed; ρ, π</tspan>
+<ellipse id="o034" cx="341.012" cy="400" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="15.3333" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="117.332" y="361.693">spread of velocities:</tspan>
+<tspan x="117.332" y="379.787">same E, less P</tspan>
 </text>
-<text id="o019" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="606.407">Uniform aligned velocity is required for momentum equality</tspan>
+<text id="o036" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" opacity="1">
+<tspan x="167.04" y="188.387">allowed: E ≥ P²/2m</tspan>
 </text>
-<text id="o020" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" opacity="1">
-<tspan x="36.48" y="635.207">A mathematical tip can have negligible mass</tspan>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="496.582" y="501.44">forbidden</tspan>
 </text>
-<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="36.48" y="696.187">Model schematic; geometry is not to scale.</tspan>
+<rect id="o038" x="739.2" y="144" width="504" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="752.64" y="165.893">Cauchy–Schwarz on the jet liquid</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="207.587">Aⱼ = πdⱼ²/4,  mⱼ = ρA_jLⱼ</tspan>
+</text>
+<text id="o041" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="255.04">mⱼ = 1000 × π(10 µm)²/4 × 50 µm = 3.927 ng</tspan>
+</text>
+<text id="o042" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="313.187">|Pⱼ|² ≤ (∫dm)(∫u_z² dm) ≤ 2 mⱼ Eⱼ</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="755.52" y="370.787">Uᵣₘₛ ≤ √(2Eₐᵥₐᵢₗ / mⱼ)</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="755.52" y="427.84">Finite mass turns an energy budget into a bound on both</tspan>
+<tspan x="755.52" y="446.72">speed and momentum.</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="617.507">The jet carries at most P = √(2 m E) of useful momentum; a non-uniform velocity spends energy without adding momentum.</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Finite-mass definitions and bound of Eq. C3-E18.</tspan>
 </text>
 </svg>
