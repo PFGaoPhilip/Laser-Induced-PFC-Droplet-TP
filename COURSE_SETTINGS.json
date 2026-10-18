@@ -13,7 +13,19 @@
   "default_theme": "dark",
   "offline_assets": true,
   "formula_figure_required": true,
-  "local_symbols_before_every_display": true,
+  "local_symbols_before_every_display": false,
+  "local_symbol_placement": {
+    "default": "before",
+    "C01": "after",
+    "chapter01_order": [
+      "derivation",
+      "equation_title",
+      "formulas",
+      "compact_symbol_table",
+      "figure",
+      "check"
+    ]
+  },
   "mastery_policy": {
     "questions_per_chapter": 3,
     "own_words_sufficient": true,

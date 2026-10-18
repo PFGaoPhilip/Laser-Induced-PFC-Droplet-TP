@@ -5,7 +5,9 @@ import json,sys
 
 ROOT=Path(__file__).resolve().parents[1]
 target=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else ROOT
-out=ROOT/'reports/ch1_defense_revision/browser'
+report_dir=Path(sys.argv[2]).resolve() if len(sys.argv)>2 else ROOT/'reports/ch1_defense_revision'
+focused=len(sys.argv)>3 and sys.argv[3]=='focused'
+out=report_dir/'browser'
 out.mkdir(parents=True,exist_ok=True)
 chapter='chapters/01-cavity-pressure-inertia-and-directional-jets.html'
 results=[]
@@ -28,6 +30,11 @@ with sync_playwright() as p:
         assert state['equations']==33 and state['errors']==0 and not state['brokenImages'] and not state['overflow'],state
         assert state['lang']==lang and state['theme']==theme
         assert state['visibleEnglish']==(lang=='en') and state['visibleChinese']==(lang=='zh')
+        layout=page.locator('.equation-unit').evaluate_all('''els=>els.map(e=>({
+          id:e.id,order:Array.from(e.children).map(x=>x.classList.contains('equation-heading')?'title':x.classList.contains('math-display')?'formulas':x.classList.contains('symbols')?'symbols':x.tagName.toLowerCase()),
+          tables:e.querySelectorAll('table.symbol-definitions').length,
+          columns:Math.max(...Array.from(e.querySelectorAll('table.symbol-definitions tr')).map(r=>r.cells.length))}))''')
+        assert all(x['order']==['title','formulas','symbols','figure'] and x['tables']==1 and x['columns']==2 for x in layout),layout
         # Verify both toggle buttons and persistence after query-free navigation.
         page.locator('#language-toggle').click();page.locator('#theme-toggle').click()
         changed=page.evaluate('({lang:document.documentElement.dataset.language,theme:document.documentElement.dataset.theme})')
@@ -35,17 +42,20 @@ with sync_playwright() as p:
         assert page.evaluate('({lang:document.documentElement.dataset.language,theme:document.documentElement.dataset.theme})')==changed
         page.goto((target/chapter).as_uri()+f'?lang={lang}&theme={theme}',wait_until='load')
         page.locator('details.answer').evaluate_all('(els)=>els.forEach(e=>e.open=true)')
+        page.locator('img').evaluate_all('(els)=>els.forEach(e=>e.loading="eager")')
+        page.wait_for_function('Array.from(document.images).every(i=>i.complete && i.naturalWidth>0)')
+        page.evaluate('document.fonts.ready')
         # Freeze smooth scrolling for deterministic capture. Product CSS stays intact.
         page.add_style_tag(content='html{scroll-behavior:auto!important}')
-        for ident in ([] if target!=ROOT else ['C1-E05','C1-E11','C1-E14','C1-E21','C1-E28','C1-E30','C1-E33'] if width>400 else ['C1-E05','C1-E30']):
+        for ident in ([] if target!=ROOT else ['C1-E21'] if focused else ['C1-E05','C1-E11','C1-E14','C1-E21','C1-E28','C1-E30','C1-E33'] if width>400 else ['C1-E05','C1-E21','C1-E30']):
             page.locator('#'+ident).screenshot(path=str(out/f'{name}-{ident}.png'))
-        if name=='desktop-en-light' and target==ROOT:
+        if name=='desktop-en-light' and target==ROOT and not focused:
             for box in page.locator('.equation-unit').all():
                 box.screenshot(path=str(out/(box.get_attribute('id')+'.png')))
         assert not errors,errors
-        results.append({'case':name,**state,'toggle_and_persistence':'passed','javascript_errors':errors})
+        results.append({'case':name,**state,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
         ctx.close()
     browser.close()
 name='relocated-browser.json' if target!=ROOT else 'browser.json'
-(ROOT/'reports/ch1_defense_revision'/name).write_text(json.dumps({'status':'passed','offline_file_origin':True,'cases':results},indent=2)+'\n',encoding='utf-8')
+(report_dir/name).write_text(json.dumps({'status':'passed','offline_file_origin':True,'cases':results},indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'status':'passed','offline':True,'cases':len(results),'relocated':target!=ROOT}))

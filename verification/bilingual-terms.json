@@ -3,9 +3,9 @@
   "style": "Different concepts have different colors within each English/Chinese prose pair. Each term keeps the same color throughout the course, with day/night variants.",
   "dictionary_terms": 120,
   "pages": 12,
-  "highlights": 3711,
-  "color_count": 8,
-  "paired_prose_groups_checked": 2669,
+  "highlights": 3608,
+  "color_count": 7,
+  "paired_prose_groups_checked": 2631,
   "no_distinct_terms_share_a_color_in_any_paired_prose_group": true,
   "palette": [
     {
@@ -105,24 +105,10 @@
         "dark": 6.55,
         "light": 9.91
       }
-    },
-    {
-      "dark": "#f6f68d",
-      "light": "#6c6c13",
-      "wash": "#fafae5",
-      "rgb": [
-        246,
-        246,
-        141
-      ],
-      "contrast_ratio": {
-        "dark": 10.38,
-        "light": 5.24
-      }
     }
   ],
   "term_color_indices": {
-    "absorbed-energy": 5,
+    "absorbed-energy": 4,
     "absorber": 0,
     "absorptance": 2,
     "absorption-coefficient": 0,
@@ -145,12 +131,12 @@
     "coalescence": 0,
     "cohesive-strength": 0,
     "cohesive-traction": 0,
-    "collapse-time": 6,
+    "collapse-time": 3,
     "compliant-boundary": 0,
     "compressibility": 5,
     "condensation": 0,
-    "confinement": 4,
-    "control-volume": 3,
+    "confinement": 5,
+    "control-volume": 1,
     "critical-radius": 0,
     "damping": 0,
     "deborah-number": 1,
@@ -177,7 +163,7 @@
     "homogeneous-nucleation": 0,
     "hydrogel": 2,
     "incompressibility": 1,
-    "inertia": 7,
+    "inertia": 6,
     "interfacial-adhesion": 0,
     "interfacial-fracture": 1,
     "jet": 0,
@@ -185,11 +171,11 @@
     "keller-miksis": 0,
     "kelvin-impulse": 0,
     "kinematic-condition": 0,
-    "kinetic-energy": 4,
+    "kinetic-energy": 5,
     "laplace-pressure": 0,
     "latent-heat": 1,
     "liquid-bridge": 0,
-    "mach-number": 4,
+    "mach-number": 6,
     "mass-transfer": 0,
     "microbubble": 0,
     "microjet": 4,
@@ -227,12 +213,12 @@
     "stefan-balance": 4,
     "stiffened-gas": 0,
     "superheat": 1,
-    "surface-tension": 5,
+    "surface-tension": 4,
     "thermal-diffusion": 0,
     "thermal-diffusivity": 0,
     "thermal-localization": 0,
     "thermocavitation": 0,
-    "traction": 6,
+    "traction": 4,
     "traction-separation": 0,
     "vapor-pressure": 0,
     "vaporization": 4,
@@ -244,7 +230,7 @@
     "young-modulus": 1
   },
   "strict_pair_audit": {
-    "paired_blocks_checked": 4902,
+    "paired_blocks_checked": 5064,
     "one_sided_colored_terms_remaining": 0,
     "pages": [
       {
@@ -687,7 +673,7 @@
       },
       {
         "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-        "paired_blocks_checked": 685,
+        "paired_blocks_checked": 847,
         "contextual_matches": [
           {
             "line": 3,
@@ -744,18 +730,6 @@
             ]
           },
           {
-            "line": 217,
-            "terms": [
-              "kinetic-energy"
-            ]
-          },
-          {
-            "line": 235,
-            "terms": [
-              "kinetic-energy"
-            ]
-          },
-          {
             "line": 235,
             "terms": [
               "kinetic-energy"
@@ -787,7 +761,7 @@
             ]
           },
           {
-            "line": 629,
+            "line": 653,
             "terms": [
               "mach-number"
             ]
@@ -825,12 +799,6 @@
             ]
           },
           {
-            "line": 880,
-            "terms": [
-              "velocity-potential"
-            ]
-          },
-          {
             "line": 934,
             "terms": [
               "velocity-potential"
@@ -858,6 +826,18 @@
             "line": 934,
             "terms": [
               "velocity-potential"
+            ]
+          },
+          {
+            "line": 949,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 982,
+            "terms": [
+              "acoustic-crossing-time"
             ]
           }
         ],
@@ -1104,19 +1084,9 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 997,
+            "line": 1072,
             "English": "Conventions and conditions. (C1-E17); The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility .",
             "Chinese": "约定与条件。 初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。",
-            "English_only": [],
-            "Chinese_only": [
-              "noncondensable-gas"
-            ],
-            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
-          },
-          {
-            "line": 997,
-            "English": "R ˙ ≤ 0 \\dot R\\le0 R ˙ ≤ 0 is inward wall velocity (m s⁻¹); R ∈ ( 0 , R max ⁡ ] R\\in(0,R_{\\max}] R ∈ ( 0 , R m a x ​ ] and R max ⁡ R_{\\max} R m a x ​ are current and maximum radii (m); Δ p c > 0 \\Delta p_c>0 Δ p c ​ > 0 is constant collapse pressure (Pa); ρ \\rho ρ is carrier density (kg m⁻³); t c t_c t c ​ is ideal collapse time (s); B B B is the dimensionless beta function defined in Eq. (C1-E16); K l K_l K l ​ is carrier kinetic energy (J); π \\pi π is the circle constant. The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility . y y y is squared speed (m² s⁻²); x = R / R max ⁡ x=R/R_{\\max} x = R / R m a x ​ is dimensionless radius; V b = 4 π R 3 / 3 V_b=4\\pi R^3/3 V b ​ = 4 π R 3 /3 and V max ⁡ = 4 π R max ⁡ 3 / 3 V_{\\max}=4\\pi R_{\\max}^3/3 V m a x ​ = 4 π R m a x 3 ​ /3 are volumes (m³); V V V is dummy volume (m³).",
-            "Chinese": "R ˙ ≤ 0 \\dot R\\le0 R ˙ ≤ 0 为向内壁面速度（m s⁻¹）； R ∈ ( 0 , R max ⁡ ] R\\in(0,R_{\\max}] R ∈ ( 0 , R m a x ​ ] 与 R max ⁡ R_{\\max} R m a x ​ 为当前与最大半径（m）； Δ p c > 0 \\Delta p_c>0 Δ p c ​ > 0 为常数塌缩压差（Pa）； ρ \\rho ρ 为载液密度（kg m⁻³）； t c t_c t c ​ 为理想 塌缩时间 （s）； B B B 为式（C1-E16）定义的无量纲贝塔函数； K l K_l K l ​ 为载液 动能 （J）； π \\pi π 为圆周率。初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。 y y y 为速度平方（m² s⁻²）； x = R / R max ⁡ x=R/R_{\\max} x = R / R m a x ​ 为无量纲半径； V b = 4 π R 3 / 3 V_b=4\\pi R^3/3 V b ​ = 4 π R 3 /3 与 V max ⁡ = 4 π R max ⁡ 3 / 3 V_{\\max}=4\\pi R_{\\max}^3/3 V m a x ​ = 4 π R m a x 3 ​ /3 为体积（m³）； V V V 为积分哑体积（m³）。",
             "English_only": [],
             "Chinese_only": [
               "noncondensable-gas"
@@ -2597,7 +2567,7 @@
     ]
   },
   "highlighter_sha256": "26dedad15f46a139131cb987274f79e55c87b46986cca4dbaa77b1326c970dc6",
-  "color_stylesheet_sha256": "3a619be0a645c5b64aebc694e8f946ac12f282e222ba0a547a4f035c4a4dd043",
+  "color_stylesheet_sha256": "9279f5cfd004ebda44aa4a31c7434b9c00bf9901ca05e4e61876e00dfe5d6345",
   "term_totals": {
     "absorbed-energy": 40,
     "absorber": 52,
@@ -2617,11 +2587,11 @@
     "cavitation": 32,
     "cohesive-strength": 10,
     "cohesive-traction": 12,
-    "collapse-time": 52,
-    "compressibility": 64,
+    "collapse-time": 44,
+    "compressibility": 62,
     "condensation": 14,
     "confinement": 56,
-    "control-volume": 6,
+    "control-volume": 8,
     "critical-radius": 12,
     "deborah-number": 30,
     "delamination": 22,
@@ -2643,33 +2613,33 @@
     "incompressibility": 82,
     "inertia": 126,
     "interfacial-fracture": 8,
-    "jet": 497,
+    "jet": 495,
     "jet-speed": 8,
     "kinematic-condition": 2,
-    "kinetic-energy": 165,
+    "kinetic-energy": 153,
     "latent-heat": 18,
     "liquid-bridge": 4,
-    "mach-number": 44,
+    "mach-number": 40,
     "mass-transfer": 8,
     "microjet": 4,
-    "momentum": 222,
+    "momentum": 218,
     "nanodroplet": 6,
     "neo-hookean": 42,
-    "noncondensable-gas": 30,
+    "noncondensable-gas": 24,
     "nucleation": 33,
     "nucleation-barrier": 4,
     "ohnesorge-number": 4,
     "optical-breakdown": 2,
     "optical-uniformity": 2,
     "peak-pressure": 8,
-    "pfc": 358,
+    "pfc": 352,
     "phase-change": 36,
     "phase-inventory": 6,
     "poisson-ratio": 18,
     "polytropic-exponent": 2,
     "poroelastic": 6,
     "potential-flow": 8,
-    "pressure-impulse": 66,
+    "pressure-impulse": 58,
     "rayleigh-plesset": 10,
     "re-entrant-jet": 2,
     "rebound": 18,
@@ -2679,19 +2649,19 @@
     "rigid-wall": 42,
     "shock-wave": 94,
     "spherical-collapse": 2,
-    "stand-off": 14,
+    "stand-off": 12,
     "stefan-balance": 2,
     "stiffened-gas": 16,
     "superheat": 2,
-    "surface-tension": 66,
+    "surface-tension": 52,
     "thermal-diffusivity": 4,
     "traction": 141,
     "traction-separation": 4,
-    "vapor-pressure": 30,
+    "vapor-pressure": 28,
     "vaporization": 22,
-    "velocity-potential": 113,
+    "velocity-potential": 102,
     "viscoelasticity": 4,
-    "viscosity": 364,
+    "viscosity": 340,
     "water-hammer": 2,
     "weber-number": 4,
     "young-modulus": 6
@@ -2771,7 +2741,7 @@
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "highlights": 789,
+      "highlights": 686,
       "terms": {
         "absorber": 2,
         "acoustic-crossing-time": 6,
@@ -2779,11 +2749,11 @@
         "boundary-integral": 2,
         "capillary-pressure": 6,
         "cavitation": 6,
-        "collapse-time": 28,
-        "compressibility": 22,
+        "collapse-time": 20,
+        "compressibility": 20,
         "condensation": 2,
         "confinement": 4,
-        "control-volume": 2,
+        "control-volume": 4,
         "ejected-jet": 6,
         "energy-budget": 2,
         "equation-of-state": 2,
@@ -2793,37 +2763,42 @@
         "heat-transfer": 4,
         "incompressibility": 20,
         "inertia": 40,
-        "jet": 61,
+        "jet": 59,
         "kinematic-condition": 2,
-        "kinetic-energy": 45,
+        "kinetic-energy": 33,
         "latent-heat": 4,
         "liquid-bridge": 4,
-        "mach-number": 20,
+        "mach-number": 16,
         "mass-transfer": 4,
         "microjet": 2,
-        "momentum": 48,
-        "noncondensable-gas": 20,
+        "momentum": 44,
+        "noncondensable-gas": 14,
         "nucleation": 2,
         "peak-pressure": 4,
-        "pfc": 40,
+        "pfc": 34,
         "phase-change": 2,
         "potential-flow": 2,
-        "pressure-impulse": 46,
+        "pressure-impulse": 38,
         "rayleigh-plesset": 8,
         "re-entrant-jet": 2,
         "shock-wave": 2,
-        "stand-off": 14,
-        "surface-tension": 46,
+        "stand-off": 12,
+        "surface-tension": 32,
         "traction": 24,
-        "vapor-pressure": 16,
+        "vapor-pressure": 14,
         "vaporization": 2,
-        "velocity-potential": 77,
-        "viscosity": 130
+        "velocity-potential": 66,
+        "viscosity": 106
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "131ad61a267d6c295c37b04a4db2215fcc166cd3c0da30a47f789be248f1d887"
+      "sha256": "5dc8365d5faef2730371275f7eefc80b465a654332d2c6facd87f47081cde687",
+      "post_highlight_display_label_update": {
+        "owner_request": "Use corresponding subchapters, such as C1.6 and C1.7",
+        "all_33_labels_match_containing_h2": true,
+        "math_technical_marks_links_and_anchors_preserved": true
+      }
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
@@ -3087,7 +3062,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "00624969564606fe1dcb1a4a0fd56703bb65236fd530f9376ebca4d22697a69f"
+      "sha256": "0dd6dc739a9c46126bb5df5868423883686cc2594ef9a05381e712cb284e3f5f"
     },
     {
       "file": "reference/sources.html",

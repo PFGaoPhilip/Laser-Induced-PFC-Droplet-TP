@@ -41,6 +41,8 @@ def main():
     selected.update(Path('reports/ch1_defense_revision')/name for name in
         ['IMPLEMENTATION_REPORT.md','EQUATION_MAP.csv','VERIFICATION_REPORT.json',
          'INDEPENDENT_REVIEW.md','UNRESOLVED_ISSUES.md','EXAMINER_RESOLUTION.md','browser.json'])
+    selected.update(Path('reports/ch1_symbol_layout_20261019')/name for name in
+        ['LAYOUT_REPORT.json','browser.json'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'scripts').glob('*') if p.is_file() and p.suffix in ['.py','.cjs'])
     if (DEST/'.git').exists():
         previous=json.loads(subprocess.check_output(['git','-C',str(DEST),'show','HEAD:PUBLIC_FILE_MANIFEST.json'],text=True,encoding='utf-8'))

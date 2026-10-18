@@ -2,7 +2,7 @@
 from html import escape
 import json
 import re
-from equation_symbols import symbol_panel
+from equation_symbols import symbol_panel, equation_label
 from equation_titles import equation_title_zh
 
 EQUATIONS = []
@@ -18,8 +18,8 @@ def P(en, zh, cls=''):
 def H(en, zh, anchor, level=2):
     return f'<div class="heading-pair"><h{level} id="{escape(anchor)}" lang="en">{safe_inline_math(en)}</h{level}><h{level} lang="zh-CN" class="zh">{safe_inline_math(zh)}</h{level}></div>'
 
-def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, caption_zh):
-    """Every display has bilingual local definitions and an immediate variable figure.
+def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, caption_zh, *, symbol_position='before'):
+    """Every display has bilingual local definitions and a variable figure.
 
     diagram: {type: sphere|energy|impulse|laser|phase|nucleation|array|jet|impact|film|cohesive|gel|timescale,
               labels: [plain unicode variable labels], notes: [physical annotations]}.
@@ -31,11 +31,16 @@ def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, captio
                 kind=kind, kind_zh=kind_zh, diagram=diagram, caption_en=caption_en, caption_zh=caption_zh)
     EQUATIONS.append(item)
     label = escape(identifier.lower())
+    display_label=escape(equation_label(identifier))
+    displayed_zh=(f'({display_label}) · ' if equation_label(identifier)!=identifier else '')+escape(kind_zh)
+    assert symbol_position in ('before', 'after')
+    symbols = symbol_panel(identifier, P, symbol_position)
     return (f'<section class="equation-unit" id="{escape(identifier)}" data-kind="{escape(kind)}">'
-            + symbol_panel(identifier, P)
-            + f'<div class="lang-pair equation-heading inline-pair"><p lang="en">({escape(identifier)}) · {escape(kind)}</p>'
-            + f' / <p lang="zh-CN" class="zh">{escape(kind_zh)}</p></div>'
+            + (symbols if symbol_position == 'before' else '')
+            + f'<div class="lang-pair equation-heading inline-pair"><p lang="en">({display_label}) · {escape(kind)}</p>'
+            + f' / <p lang="zh-CN" class="zh">{displayed_zh}</p></div>'
             + f'<div class="math-display" data-tex="{escape(tex, quote=True)}"></div>'
+            + (symbols if symbol_position == 'after' else '')
             + f'<figure class="formula-figure"><img src="../assets/figures/{label}.svg" alt="{escape(caption_en, quote=True)}" loading="lazy">'
             + '<figcaption>'+P(caption_en, caption_zh)+'</figcaption></figure></section>')
 

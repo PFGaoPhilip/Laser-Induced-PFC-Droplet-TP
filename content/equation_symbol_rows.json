@@ -72,13 +72,50 @@
         "unit": "Pa",
         "source_en": 8,
         "source_zh": 8
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — positive carrier density (kg m⁻³)",
+        "zh": "$\\rho$ — 正载液密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "p_b",
+        "en": "$p_b$ — bubble pressure (Pa)",
+        "zh": "$p_b$ — 气泡压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\sigma",
+        "en": "$\\sigma$ — constant surface tension (N m⁻¹)",
+        "zh": "$\\sigma$ — 常数表面张力（N m⁻¹）",
+        "unit": "N m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\mu",
+        "en": "$\\mu$ — dynamic viscosity (Pa s)",
+        "zh": "$\\mu$ — 动力黏度（Pa s）",
+        "unit": "Pa s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\ddot R",
+        "en": "$\\ddot R$ — wall acceleration (m s⁻²)",
+        "zh": "$\\ddot R$ — 壁面加速度（m s⁻²）",
+        "unit": "m s⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
-      "The arrow denotes the far-field limit"
+      "The arrow denotes the far-field limit",
+      "All pressures share an absolute reference"
     ],
     "notes_zh": [
-      "箭头表示远场极限"
+      "箭头表示远场极限",
+      "全部压力采用同一绝对参考值"
     ],
     "source_fragments_en": [
       "$R$ is the cavity radius (m)",
@@ -156,15 +193,45 @@
         "unit": "m³ s⁻¹",
         "source_en": 5,
         "source_zh": 5
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — positive constant liquid density (kg m⁻³)",
+        "zh": "$\\rho$ — 正常数液体密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\delta r",
+        "en": "$\\delta r$ — positive fixed shell thickness (m)",
+        "zh": "$\\delta r$ — 固定球壳正厚度（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\pi",
+        "en": "$\\pi$ — circle constant (1)",
+        "zh": "$\\pi$ — 圆周率（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_r",
+        "en": "$\\partial_r$ — radial derivative at fixed time (m⁻¹)",
+        "zh": "$\\partial_r$ — 固定时间的径向导数（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$\\partial/\\partial r$ differentiates at fixed time",
-      "The implication arrows indicate integration and use of the interface condition"
+      "The implication arrows indicate integration and use of the interface condition",
+      "The fixed shell stays liquid; $r\\ge R(t)>0$"
     ],
     "notes_zh": [
       "$\\partial/\\partial r$ 表示固定时间下的径向求导",
-      "箭头表示积分及应用界面条件"
+      "箭头表示积分及应用界面条件",
+      "固定球壳始终属于液体；$r\\ge R(t)>0$"
     ],
     "source_fragments_en": [
       "$r\\ge R(t)>0$ is radial position (m)",
@@ -246,6 +313,41 @@
         "unit": "m s⁻¹",
         "source_en": 6,
         "source_zh": 6
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — liquid velocity vector (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 液体速度矢量（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol e_r",
+        "en": "$\\boldsymbol e_r$ — outward radial unit vector (1)",
+        "zh": "$\\boldsymbol e_r$ — 向外径向单位矢量（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\times",
+        "en": "$\\nabla\\times$ — spatial curl operator (m⁻¹)",
+        "zh": "$\\nabla\\times$ — 空间旋度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol0",
+        "en": "$\\boldsymbol0$ — zero vorticity vector (s⁻¹)",
+        "zh": "$\\boldsymbol0$ — 零涡量矢量（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "g(t)",
+        "en": "$g(t)$ — velocity-potential gauge function (m² s⁻¹)",
+        "zh": "$g(t)$ — 速度势规范函数（m² s⁻¹）",
+        "unit": "m² s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
@@ -447,13 +549,113 @@
         "unit": "m s⁻²",
         "source_en": 9,
         "source_zh": 9
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — liquid velocity, $\\nabla\\phi$ (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 液体速度，即 $\\nabla\\phi$（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\cdot",
+        "en": "$\\nabla\\cdot$ — spatial divergence operator (m⁻¹)",
+        "zh": "$\\nabla\\cdot$ — 空间散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\times",
+        "en": "$\\nabla\\times$ — spatial curl operator (m⁻¹)",
+        "zh": "$\\nabla\\times$ — 空间旋度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — vector Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 矢量拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "u_i",
+        "en": "$u_i$ — Cartesian velocity component indexed by $i$ (m s⁻¹)",
+        "zh": "$u_i$ — 指标 $i$ 对应的笛卡尔速度分量（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "u_j",
+        "en": "$u_j$ — Cartesian velocity component indexed by $j$ (m s⁻¹)",
+        "zh": "$u_j$ — 指标 $j$ 对应的笛卡尔速度分量（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "i",
+        "en": "$i$ — Cartesian component index, 1, 2 or 3 (1)",
+        "zh": "$i$ — 笛卡尔分量指标，取 1、2 或 3（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "j",
+        "en": "$j$ — Cartesian component index, 1, 2 or 3 (1)",
+        "zh": "$j$ — 笛卡尔分量指标，取 1、2 或 3（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_i",
+        "en": "$\\partial_i$ — coordinate derivative indexed by $i$ (m⁻¹)",
+        "zh": "$\\partial_i$ — 指标 $i$ 对应的坐标导数（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_j",
+        "en": "$\\partial_j$ — coordinate derivative indexed by $j$ (m⁻¹)",
+        "zh": "$\\partial_j$ — 指标 $j$ 对应的坐标导数（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\sum",
+        "en": "$\\sum$ — summation over the indicated index (1)",
+        "zh": "$\\sum$ — 对指定指标求和（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "B_0(t)",
+        "en": "$B_0(t)$ — Bernoulli integration function (m² s⁻²)",
+        "zh": "$B_0(t)$ — 伯努利积分函数（m² s⁻²）",
+        "unit": "m² s⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "p",
+        "en": "$p$ — local liquid pressure (Pa)",
+        "zh": "$p$ — 局部液体压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
-      "$\\partial_t$ is taken at fixed position before wall evaluation"
+      "$\\partial_t$ is taken at fixed position before wall evaluation",
+      "Zero vorticity gives $\\partial_j u_i=\\partial_i u_j$; smooth fields permit derivative exchange; $|\\ |$ denotes Euclidean magnitude; $\\infty$ denotes the far-field limit"
     ],
     "notes_zh": [
-      "$\\partial_t$ 必须先在固定位置求导，再于壁面取值"
+      "$\\partial_t$ 必须先在固定位置求导，再于壁面取值",
+      "无旋条件给出 $\\partial_j u_i=\\partial_i u_j$；光滑场允许交换导数；$|\\ |$ 表示欧氏模长；$\\infty$ 表示远场极限"
     ],
     "source_fragments_en": [
       "$p_l$ is liquid pressure at the wall",
@@ -566,13 +768,50 @@
         "source_en": null,
         "source_zh": null,
         "review": "Explicit individual definition checked against the original declaration."
+      },
+      {
+        "symbol": "\\boldsymbol n",
+        "en": "$\\boldsymbol n$ — unit normal directed from liquid into gas (1)",
+        "zh": "$\\boldsymbol n$ — 液体指向气体的单位法向（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol e_r",
+        "en": "$\\boldsymbol e_r$ — outward radial unit vector (1)",
+        "zh": "$\\boldsymbol e_r$ — 向外径向单位矢量（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\kappa",
+        "en": "$\\kappa$ — signed interface curvature (m⁻¹)",
+        "zh": "$\\kappa$ — 带符号界面曲率（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla_s\\cdot",
+        "en": "$\\nabla_s\\cdot$ — surface divergence operator (m⁻¹)",
+        "zh": "$\\nabla_s\\cdot$ — 表面散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\cdot",
+        "en": "$\\nabla\\cdot$ — volume divergence operator (m⁻¹)",
+        "zh": "$\\nabla\\cdot$ — 体散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
-      "wall evaluation is performed at $r=R$"
+      "wall evaluation is performed at $r=R$",
+      "Extend the unit normal radially without radial variation; its normal derivative vanishes, so surface and volume divergences agree at the sphere"
     ],
     "notes_zh": [
-      "壁面取值在 $r=R$ 处进行"
+      "壁面取值在 $r=R$ 处进行",
+      "将单位法向沿径向作不变延拓；其法向导数为零，因此表面散度与体散度在球面一致"
     ],
     "source_fragments_en": [
       "$u$ is radial velocity",
@@ -736,6 +975,48 @@
         "unit": "Pa",
         "source_en": 3,
         "source_zh": 3
+      },
+      {
+        "symbol": "i",
+        "en": "$i$ — component index: PFC vapor, water vapor or permanent gas (1)",
+        "zh": "$i$ — 组分指标：PFC 蒸气、水蒸气或非凝结气体（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "p_i",
+        "en": "$p_i$ — component partial pressure (Pa)",
+        "zh": "$p_i$ — 组分分压（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "n_i",
+        "en": "$n_i$ — component amount of substance (mol)",
+        "zh": "$n_i$ — 组分物质的量（mol）",
+        "unit": "mol",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "V_b",
+        "en": "$V_b$ — positive bubble volume (m³)",
+        "zh": "$V_b$ — 气泡正体积（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\mathcal R",
+        "en": "$\\mathcal R$ — universal gas constant (J mol⁻¹ K⁻¹)",
+        "zh": "$\\mathcal R$ — 通用气体常数（J mol⁻¹ K⁻¹）",
+        "unit": "J mol⁻¹ K⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "T_b",
+        "en": "$T_b$ — positive common gas temperature (K)",
+        "zh": "$T_b$ — 共同气体正温度（K）",
+        "unit": "K",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
@@ -838,6 +1119,34 @@
         "unit": "1",
         "source_en": 7,
         "source_zh": 7
+      },
+      {
+        "symbol": "dV",
+        "en": "$dV$ — spherical shell volume element (m³)",
+        "zh": "$dV$ — 球壳体积元（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\theta",
+        "en": "$\\theta$ — polar angle, $0\\le\\theta\\le\\pi$ (1)",
+        "zh": "$\\theta$ — 极角，$0\\le\\theta\\le\\pi$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\psi",
+        "en": "$\\psi$ — azimuthal angle, $0\\le\\psi\\le2\\pi$ (1)",
+        "zh": "$\\psi$ — 方位角，$0\\le\\psi\\le2\\pi$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "b",
+        "en": "$b$ — finite outer cutoff radius, $b>R$ (m)",
+        "zh": "$b$ — 有限外截断半径，$b>R$（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
@@ -1198,6 +1507,27 @@
         "unit": "kg m⁻³",
         "source_en": 6,
         "source_zh": 5
+      },
+      {
+        "symbol": "\\mu",
+        "en": "$\\mu$ — viscosity, set to zero in this control (Pa s)",
+        "zh": "$\\mu$ — 黏度，在此对照中置零（Pa s）",
+        "unit": "Pa s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\sigma",
+        "en": "$\\sigma$ — surface tension, set to zero in this control (N m⁻¹)",
+        "zh": "$\\sigma$ — 表面张力，在此对照中置零（N m⁻¹）",
+        "unit": "N m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "p_b",
+        "en": "$p_b$ — bubble pressure (Pa)",
+        "zh": "$p_b$ — 气泡压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [],
@@ -1285,6 +1615,55 @@
         "unit": "kg m⁻³",
         "source_en": 6,
         "source_zh": 5
+      },
+      {
+        "symbol": "y'",
+        "en": "$y'$ — radius derivative $dy/dR$ (m s⁻²)",
+        "zh": "$y'$ — 半径导数 $dy/dR$（m s⁻²）",
+        "unit": "m s⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "I",
+        "en": "$I$ — positive integrating factor, $I(R_{\\max})=1$ (1)",
+        "zh": "$I$ — 正积分因子，$I(R_{\\max})=1$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "I'",
+        "en": "$I'$ — radius derivative $dI/dR$ (m⁻¹)",
+        "zh": "$I'$ — 半径导数 $dI/dR$（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "s",
+        "en": "$s$ — positive dummy radius (m)",
+        "zh": "$s$ — 正积分哑半径（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "R_{\\max}",
+        "en": "$R_{\\max}$ — maximum cavity radius (m)",
+        "zh": "$R_{\\max}$ — 最大空腔半径（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\ln",
+        "en": "$\\ln$ — natural logarithm with positive dimensionless argument (1)",
+        "zh": "$\\ln$ — 自变量为正无量纲数的自然对数（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\exp",
+        "en": "$\\exp$ — exponential with dimensionless argument (1)",
+        "zh": "$\\exp$ — 自变量无量纲的指数函数（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
@@ -1705,6 +2084,34 @@
         "unit": "1",
         "source_en": 8,
         "source_zh": 7
+      },
+      {
+        "symbol": "V_b",
+        "en": "$V_b$ — cavity volume, $4\\pi R^3/3$ (m³)",
+        "zh": "$V_b$ — 空腔体积，$4\\pi R^3/3$（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "V",
+        "en": "$V$ — dummy volume variable (m³)",
+        "zh": "$V$ — 积分哑体积变量（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — time (s)",
+        "zh": "$t$ — 时间（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\dot R",
+        "en": "$\\dot R$ — wall speed (m s⁻¹)",
+        "zh": "$\\dot R$ — 壁面速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [],
@@ -1918,15 +2325,31 @@
         "unit": "Pa",
         "source_en": 8,
         "source_zh": 8
+      },
+      {
+        "symbol": "x",
+        "en": "$x$ — normalized radius, $R/R_{\\max}$ (1)",
+        "zh": "$x$ — 无量纲半径，$R/R_{\\max}$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "R",
+        "en": "$R$ — current cavity radius (m)",
+        "zh": "$R$ — 当前空腔半径（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "absolute bars denote magnitude",
-      "The number uses the previous teaching density and pressure"
+      "The number uses the previous teaching density and pressure",
+      "Teaching inputs use the preceding density and pressure, with $c=1500$ m s⁻¹ and chosen $M_*=0.1$"
     ],
     "notes_zh": [
       "绝对值符号表示大小",
-      "数值使用前述教学密度与压差"
+      "数值使用前述教学密度与压差",
+      "教学输入采用前述密度和压差，并取 $c=1500$ m s⁻¹、选定 $M_*=0.1$"
     ],
     "source_fragments_en": [
       "$M_w$ is wall Mach number (dimensionless)",
@@ -2024,15 +2447,80 @@
         "unit": "s",
         "source_en": 6,
         "source_zh": 6
+      },
+      {
+        "symbol": "q",
+        "en": "$q$ — gauge pressure (Pa)",
+        "zh": "$q$ — 表压（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "N",
+        "en": "$N$ — positive integer subdivision count (1)",
+        "zh": "$N$ — 正整数分段数（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "k",
+        "en": "$k$ — time-sample index (1)",
+        "zh": "$k$ — 时间采样指标（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t_k",
+        "en": "$t_k$ — sample time (s)",
+        "zh": "$t_k$ — 采样时刻（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\Delta t",
+        "en": "$\\Delta t$ — time-step width (s)",
+        "zh": "$\\Delta t$ — 时间段宽度（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol J_p",
+        "en": "$\\boldsymbol J_p$ — gauge-pressure mechanical impulse on the liquid control volume (N s)",
+        "zh": "$\\boldsymbol J_p$ — 作用于液体控制体的表压机械冲量（N s）",
+        "unit": "N s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "S(t)",
+        "en": "$S(t)$ — liquid control-volume surface (m²)",
+        "zh": "$S(t)$ — 液体控制体表面（m²）",
+        "unit": "m²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol n",
+        "en": "$\\boldsymbol n$ — outward unit normal to the control surface (1)",
+        "zh": "$\\boldsymbol n$ — 控制表面向外单位法向（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "dA",
+        "en": "$dA$ — area element (m²)",
+        "zh": "$dA$ — 面积元（m²）",
+        "unit": "m²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "Square brackets on $\\Pi$ denote units, not endpoint evaluation",
-      "The integral is at fixed position in a liquid domain whose displacement will be assessed below"
+      "The integral is at fixed position in a liquid domain whose displacement will be assessed below",
+      "Brackets denote units; fixed-surface reduction requires fixed orientation and all sampled points remaining liquid"
     ],
     "notes_zh": [
       "$\\Pi$ 的方括号表示单位，而非端点取值",
-      "积分在固定位置进行，液体区域的位移将在下文评估"
+      "积分在固定位置进行，液体区域的位移将在下文评估",
+      "方括号表示单位；固定表面约化要求方向固定且全部采样点始终位于液体中"
     ],
     "source_fragments_en": [
       "$\\boldsymbol x$ is fixed liquid position (m)",
@@ -2144,14 +2632,47 @@
         "unit": "m",
         "source_en": 7,
         "source_zh": 7
+      },
+      {
+        "symbol": "p",
+        "en": "$p$ — local liquid pressure (Pa)",
+        "zh": "$p$ — 局部液体压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "p_{\\mathrm{ref}}",
+        "en": "$p_{\\mathrm{ref}}$ — spatially uniform reference pressure (Pa)",
+        "zh": "$p_{\\mathrm{ref}}$ — 空间均匀参考压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — vector Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 矢量拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — time derivative at fixed position (s⁻¹)",
+        "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
-      "$\\nabla$ is spatial gradient (m⁻¹), $\\nabla^2$ the vector Laplacian (m⁻²)",
       "the dot is a true vector contraction in convective acceleration, not an equation separator"
     ],
     "notes_zh": [
-      "$\\nabla$ 为空间梯度（m⁻¹），$\\nabla^2$ 为矢量拉普拉斯（m⁻²）",
       "圆点是对流加速度中的真正矢量缩并，并非公式分隔符"
     ],
     "source_fragments_en": [
@@ -2242,17 +2763,68 @@
         "unit": "kg m⁻³",
         "source_en": 6,
         "source_zh": 6
+      },
+      {
+        "symbol": "t_0",
+        "en": "$t_0$ — fixed event start time (s)",
+        "zh": "$t_0$ — 固定事件起始时刻（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t_1",
+        "en": "$t_1$ — fixed event end time (s)",
+        "zh": "$t_1$ — 固定事件终止时刻（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — time (s)",
+        "zh": "$t$ — 时间（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — liquid velocity (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 液体速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\cdot",
+        "en": "$\\nabla\\cdot$ — spatial divergence operator (m⁻¹)",
+        "zh": "$\\nabla\\cdot$ — 空间散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — spatial Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 空间拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$\\nabla\\cdot$ denotes divergence and $\\nabla^2$ Laplacian",
       "$\\ll$ means asymptotically small, and $\\simeq$ marks the reduced approximation",
-      "The last Laplace equation belongs to that reduced model"
+      "The last Laplace equation belongs to that reduced model",
+      "$\\sim$ denotes a scale estimate, rather than an equality or rigorous error bound"
     ],
     "notes_zh": [
       "$\\nabla\\cdot$ 表示散度，$\\nabla^2$ 表示拉普拉斯算子",
       "$\\ll$ 表示渐近很小，$\\simeq$ 表示约化近似",
-      "最后的拉普拉斯方程属于该约化模型"
+      "最后的拉普拉斯方程属于该约化模型",
+      "$\\sim$ 表示尺度估计，并非等式或严格误差界"
     ],
     "source_fragments_en": [
       "$U>0$ is a characteristic liquid speed (m s⁻¹)",
@@ -2346,15 +2918,24 @@
         "unit": "m s⁻¹",
         "source_en": 7,
         "source_zh": 6
+      },
+      {
+        "symbol": "s",
+        "en": "$s$ — dummy axial integration coordinate (m)",
+        "zh": "$s$ — 轴向积分哑坐标（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$d/dz$ is an axial derivative",
-      "Subscript $z$ labels the component and 0 the driven endpoint"
+      "Subscript $z$ labels the component and 0 the driven endpoint",
+      "The uniform-speed column is an inviscid core benchmark; no-slip wall layers are omitted"
     ],
     "notes_zh": [
       "$d/dz$ 为轴向导数",
-      "下标 $z$ 表示分量，0 表示受驱动端点"
+      "下标 $z$ 表示分量，0 表示受驱动端点",
+      "匀速液柱是无黏核心流基准；省略无滑移壁面层"
     ],
     "source_fragments_en": [
       "$z\\in[0,L]$ is axial position",
@@ -2560,14 +3141,30 @@
         "unit": "1",
         "source_en": 6,
         "source_zh": 6
+      },
+      {
+        "symbol": "\\theta",
+        "en": "$\\theta$ — polar angle, $0\\le\\theta\\le\\pi$ (1)",
+        "zh": "$\\theta$ — 极角，$0\\le\\theta\\le\\pi$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\psi",
+        "en": "$\\psi$ — azimuthal angle, $0\\le\\psi\\le2\\pi$ (1)",
+        "zh": "$\\psi$ — 方位角，$0\\le\\psi\\le2\\pi$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "The angular identity expresses directional cancellation under perfect spherical symmetry",
-      "it is not a boundary-jet prediction"
+      "it is not a boundary-jet prediction",
+      "Angles are dimensionless radians; tuple entries are Cartesian vector components"
     ],
     "notes_zh": [
-      "角积分恒等式表示完全球对称下方向相互抵消，并非边界射流预测"
+      "角积分恒等式表示完全球对称下方向相互抵消，并非边界射流预测",
+      "角度以无量纲弧度计；有序三元组为笛卡尔矢量分量"
     ],
     "source_fragments_en": [
       "$\\gamma$ is dimensionless stand-off",
@@ -2642,19 +3239,70 @@
         "unit": "Pa s",
         "source_en": 5,
         "source_zh": 5
+      },
+      {
+        "symbol": "\\boldsymbol T",
+        "en": "$\\boldsymbol T$ — Cauchy stress tensor (Pa)",
+        "zh": "$\\boldsymbol T$ — 柯西应力张量（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol I",
+        "en": "$\\boldsymbol I$ — identity tensor (1)",
+        "zh": "$\\boldsymbol I$ — 单位张量（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "D/Dt",
+        "en": "$D/Dt$ — material time derivative (s⁻¹)",
+        "zh": "$D/Dt$ — 物质时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — time derivative at fixed position (s⁻¹)",
+        "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\cdot",
+        "en": "$\\nabla\\cdot$ — spatial divergence operator (m⁻¹)",
+        "zh": "$\\nabla\\cdot$ — 空间散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — spatial Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 空间拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$\\nabla\\cdot,\\nabla,\\nabla^2$ denote divergence, gradient and vector Laplacian",
       "$\\partial_t$ is the fixed-position derivative",
       "The dot in convection is vector contraction",
-      "The momentum equation has force-per-volume units (N m⁻³)"
+      "The momentum equation has force-per-volume units (N m⁻³)",
+      "Superscript $\\mathsf T$ denotes transpose; body forces are omitted; the density derivative is displayed before imposing constant density"
     ],
     "notes_zh": [
       "$\\nabla\\cdot,\\nabla,\\nabla^2$ 分别为散度、梯度与矢量拉普拉斯",
       "$\\partial_t$ 为固定位置导数",
       "对流中的圆点为矢量缩并",
-      "动量方程各项单位为单位体积力（N m⁻³）"
+      "动量方程各项单位为单位体积力（N m⁻³）",
+      "上标 $\\mathsf T$ 表示转置；忽略体力；密度导数写在施加常密度条件之前"
     ],
     "source_fragments_en": [
       "$\\boldsymbol u(\\boldsymbol x,t)$ is liquid velocity (m s⁻¹)",
@@ -2772,17 +3420,82 @@
         "unit": "m",
         "source_en": 11,
         "source_zh": 11
+      },
+      {
+        "symbol": "F",
+        "en": "$F$ — smooth dimensionless level set increasing into gas (1)",
+        "zh": "$F$ — 向气体侧增加的光滑无量纲水平集（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol x",
+        "en": "$\\boldsymbol x$ — position (m)",
+        "zh": "$\\boldsymbol x$ — 位置（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — time (s)",
+        "zh": "$t$ — 时间（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol T_g",
+        "en": "$\\boldsymbol T_g$ — gas stress, $-p_b\\boldsymbol I$ (Pa)",
+        "zh": "$\\boldsymbol T_g$ — 气体应力，$-p_b\\boldsymbol I$（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol T_l",
+        "en": "$\\boldsymbol T_l$ — liquid stress, $-p_l\\boldsymbol I+2\\mu\\boldsymbol D$ (Pa)",
+        "zh": "$\\boldsymbol T_l$ — 液体应力，$-p_l\\boldsymbol I+2\\mu\\boldsymbol D$（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol I",
+        "en": "$\\boldsymbol I$ — identity tensor (1)",
+        "zh": "$\\boldsymbol I$ — 单位张量（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla_s\\cdot",
+        "en": "$\\nabla_s\\cdot$ — surface divergence operator (m⁻¹)",
+        "zh": "$\\nabla_s\\cdot$ — 表面散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — time derivative at fixed position (s⁻¹)",
+        "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$\\nabla\\boldsymbol u$ is its spatial gradient, with superscript $\\mathsf T$ denoting transpose",
       "$\\nabla_s\\cdot$ is surface divergence",
-      "Dots denote tensor/vector contractions"
+      "Dots denote tensor/vector contractions",
+      "The level-set gradient is nonzero on the interface"
     ],
     "notes_zh": [
       "$\\nabla\\boldsymbol u$ 为其空间梯度，上标 $\\mathsf T$ 表示转置",
       "$\\nabla_s\\cdot$ 为表面散度",
-      "圆点表示张量或矢量缩并"
+      "圆点表示张量或矢量缩并",
+      "水平集在界面上的梯度非零"
     ],
     "source_fragments_en": [
       "$\\boldsymbol D$ is symmetric liquid strain-rate tensor (s⁻¹)",
@@ -2902,19 +3615,56 @@
         "unit": "kg m⁻³",
         "source_en": 9,
         "source_zh": 9
+      },
+      {
+        "symbol": "p_l",
+        "en": "$p_l$ — liquid-side interface pressure (Pa)",
+        "zh": "$p_l$ — 界面液体侧压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — spatial Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 空间拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "D/Dt",
+        "en": "$D/Dt$ — material time derivative (s⁻¹)",
+        "zh": "$D/Dt$ — 物质时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — time derivative at fixed position (s⁻¹)",
+        "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$\\nabla$ and $\\nabla^2$ are spatial gradient and Laplacian",
       "$D/Dt$ is the material derivative",
       "$|\\boldsymbol u|$ is speed and the dot a vector contraction",
-      "The potential gauge is fixed at infinity"
+      "The potential gauge is fixed at infinity",
+      "Interface markers $\\boldsymbol X(t)$ follow liquid particles; $D\\phi/Dt$ has units m² s⁻²; assume single-valued potential and a smooth pre-impact interface"
     ],
     "notes_zh": [
       "$\\nabla$ 与 $\\nabla^2$ 为空间梯度与拉普拉斯",
       "$D/Dt$ 为物质导数",
       "$|\\boldsymbol u|$ 为速率，圆点为矢量缩并",
-      "速度势参考值固定在无穷远"
+      "速度势参考值固定在无穷远",
+      "界面标记点 $\\boldsymbol X(t)$ 随液体质点运动；$D\\phi/Dt$ 单位为 m² s⁻²；假设速度势单值且撞击前界面光滑"
     ],
     "source_fragments_en": [
       "$\\boldsymbol u$ is liquid velocity (m s⁻¹)",
@@ -3035,15 +3785,24 @@
         "source_en": null,
         "source_zh": null,
         "review": "Explicit individual definition checked against the original declaration."
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — time (s)",
+        "zh": "$t$ — 时间（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "The potential is differentiated along the wall",
-      "viscosity is zero in this check"
+      "viscosity is zero in this check",
+      "$d/dt$ follows the spherical interface"
     ],
     "notes_zh": [
       "速度势沿壁面求导",
-      "此检验中黏度为零"
+      "此检验中黏度为零",
+      "$d/dt$ 跟随球形界面"
     ],
     "source_fragments_en": [
       "$\\phi_\\Gamma$ is the velocity potential evaluated on the spherical interface (m² s⁻¹), with subscript $\\Gamma$ the interface label",
@@ -3125,15 +3884,80 @@
         "unit": "s",
         "source_en": 5,
         "source_zh": 5
+      },
+      {
+        "symbol": "\\rho_0",
+        "en": "$\\rho_0$ — positive uniform background density (kg m⁻³)",
+        "zh": "$\\rho_0$ — 均匀背景正密度（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\rho'",
+        "en": "$\\rho'$ — small acoustic density perturbation (kg m⁻³)",
+        "zh": "$\\rho'$ — 小幅声学密度扰动（kg m⁻³）",
+        "unit": "kg m⁻³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "p'",
+        "en": "$p'$ — small acoustic pressure perturbation (Pa)",
+        "zh": "$p'$ — 小幅声学压力扰动（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol u'",
+        "en": "$\\boldsymbol u'$ — small acoustic velocity perturbation (m s⁻¹)",
+        "zh": "$\\boldsymbol u'$ — 小幅声学速度扰动（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\cdot",
+        "en": "$\\nabla\\cdot$ — spatial divergence operator (m⁻¹)",
+        "zh": "$\\nabla\\cdot$ — 空间散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — spatial Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 空间拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — time derivative at fixed position (s⁻¹)",
+        "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
+        "unit": "s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t",
+        "en": "$t$ — time (s)",
+        "zh": "$t$ — 时间（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "t_a",
+        "en": "$t_a$ — one-way acoustic travel time (s)",
+        "zh": "$t_a$ — 单程声传播时间（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$|\\ |$ denotes magnitude",
-      "subscript $e$ labels the selected event scale"
+      "subscript $e$ labels the selected event scale",
+      "Primes denote small acoustic perturbations; ns is 10⁻⁹ s; linearization assumes inviscid barotropic liquid and constant $c$"
     ],
     "notes_zh": [
       "$|\\ |$ 表示大小",
-      "下标 $e$ 标识选定事件尺度"
+      "下标 $e$ 标识选定事件尺度",
+      "撇号标记小幅声学扰动；ns 为 10⁻⁹ s；线性化假设液体无黏、正压且声速恒定"
     ],
     "source_fragments_en": [
       "$M_w$ is wall Mach number",
@@ -3247,6 +4071,13 @@
         "unit": "Pa",
         "source_en": 6,
         "source_zh": 6
+      },
+      {
+        "symbol": "p_l",
+        "en": "$p_l$ — liquid-side wall pressure (Pa)",
+        "zh": "$p_l$ — 壁面液体侧压力（Pa）",
+        "unit": "Pa",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
@@ -3359,6 +4190,41 @@
         "unit": "1",
         "source_en": 9,
         "source_zh": 7
+      },
+      {
+        "symbol": "y",
+        "en": "$y$ — squared wall speed (m² s⁻²)",
+        "zh": "$y$ — 壁面速度平方（m² s⁻²）",
+        "unit": "m² s⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "x",
+        "en": "$x$ — normalized radius, $R/R_{\\max}$ (1)",
+        "zh": "$x$ — 无量纲半径，$R/R_{\\max}$（1）",
+        "unit": "1",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "V_b",
+        "en": "$V_b$ — cavity volume, $4\\pi R^3/3$ (m³)",
+        "zh": "$V_b$ — 空腔体积，$4\\pi R^3/3$（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "V_{\\max}",
+        "en": "$V_{\\max}$ — maximum volume, $4\\pi R_{\\max}^3/3$ (m³)",
+        "zh": "$V_{\\max}$ — 最大体积，$4\\pi R_{\\max}^3/3$（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "V",
+        "en": "$V$ — dummy volume variable (m³)",
+        "zh": "$V$ — 积分哑体积变量（m³）",
+        "unit": "m³",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
@@ -3508,15 +4374,80 @@
         "unit": "m s⁻¹",
         "source_en": 11,
         "source_zh": 11
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — liquid velocity (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 液体速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nu",
+        "en": "$\\nu$ — kinematic viscosity (m² s⁻¹)",
+        "zh": "$\\nu$ — 运动黏度（m² s⁻¹）",
+        "unit": "m² s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — characteristic speed (m s⁻¹)",
+        "zh": "$U$ — 特征速度（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\tau",
+        "en": "$\\tau$ — event duration, $t_1-t_0$ (s)",
+        "zh": "$\\tau$ — 事件时长，$t_1-t_0$（s）",
+        "unit": "s",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "z",
+        "en": "$z$ — column coordinate, $0\\le z\\le L$ (m)",
+        "zh": "$z$ — 液柱坐标，$0\\le z\\le L$（m）",
+        "unit": "m",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\Delta u_z",
+        "en": "$\\Delta u_z$ — axial speed increment (m s⁻¹)",
+        "zh": "$\\Delta u_z$ — 轴向速度增量（m s⁻¹）",
+        "unit": "m s⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient operator (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — spatial Laplacian operator (m⁻²)",
+        "zh": "$\\nabla^2$ — 空间拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\nabla\\cdot",
+        "en": "$\\nabla\\cdot$ — spatial divergence operator (m⁻¹)",
+        "zh": "$\\nabla\\cdot$ — 空间散度算子（m⁻¹）",
+        "unit": "m⁻¹",
+        "source": "chapter01 derivation declarations, merged 2026-10-19"
       }
     ],
     "notes_en": [
       "$\\nabla,\\nabla^2$ denote spatial gradient and Laplacian",
-      "The reduced momentum formula needs a frozen geometry and small omitted impulses"
+      "The reduced momentum formula needs a frozen geometry and small omitted impulses",
+      "$\\ll$ denotes an asymptotic smallness condition"
     ],
     "notes_zh": [
       "$\\nabla,\\nabla^2$ 为空间梯度与拉普拉斯",
-      "约化动量公式要求冻结几何，且被忽略的冲量项较小"
+      "约化动量公式要求冻结几何，且被忽略的冲量项较小",
+      "$\\ll$ 表示渐近很小条件"
     ],
     "source_fragments_en": [
       "$\\Pi$ is local pressure impulse (Pa s)",

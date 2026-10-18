@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from build_course import UNIT_MAP
 from equation_titles import TITLES_ZH
+from equation_symbols import equation_label
 
 ROOT=Path(__file__).resolve().parents[1]
 checks=[]
@@ -59,10 +60,12 @@ def main():
             equation=equations_by_id[unit['id']]
             title_en=heading.find('p',lang='en',recursive=False) if heading else None
             title_zh=heading.find('p',lang='zh-CN',recursive=False) if heading else None
+            displayed_id=equation_label(unit['id'])
+            expected_zh=(f'({displayed_id}) · ' if displayed_id!=unit['id'] else '')+equation['kind_zh']
             check(unit['id']+': exact bilingual equation title',
                   title_en is not None and title_zh is not None
-                  and title_en.get_text()==f'({unit["id"]}) · {equation["kind"]}'
-                  and title_zh.get_text()==equation.get('kind_zh')==TITLES_ZH[equation['kind']]
+                  and title_en.get_text()==f'({displayed_id}) · {equation["kind"]}'
+                  and title_zh.get_text()==expected_zh and equation.get('kind_zh')==TITLES_ZH[equation['kind']]
                   and bool(re.search(r'[\u4e00-\u9fff]',title_zh.get_text())))
             check(unit['id']+': separate language title views',
                   heading is not None and 'inline-pair' in heading.get('class',[])
@@ -72,8 +75,13 @@ def main():
             symbols=unit.select_one('.symbols')
             formula=unit.select_one('.math-display')
             ordered=[n for n in unit.children if getattr(n,'name',None)]
-            check(unit['id']+': local bilingual symbols before math',symbols is not None and formula is not None and ordered.index(symbols)<ordered.index(formula))
-            check(unit['id']+': immediate physical-variable figure',formula is not None and formula.find_next_sibling().name=='figure' and 'formula-figure' in formula.find_next_sibling().get('class',[]))
+            if re.fullmatch(r'C1-E(?:0[1-9]|[12][0-9]|3[0-3])',unit['id']):
+                check(unit['id']+': owner-requested title, math, compact symbols, figure order',
+                      [n.get('class',[])[0] for n in ordered]==['lang-pair','math-display','symbols','formula-figure']
+                      and ordered[0]==heading and ordered[1]==formula and ordered[2]==symbols)
+            else:
+                check(unit['id']+': local bilingual symbols before math',symbols is not None and formula is not None and ordered.index(symbols)<ordered.index(formula))
+                check(unit['id']+': immediate physical-variable figure',formula is not None and formula.find_next_sibling().name=='figure' and 'formula-figure' in formula.find_next_sibling().get('class',[]))
             check(unit['id']+': static readable math and MathML',bool(formula and formula.select_one('.katex-html') and formula.select_one('math')))
             table=symbols.select_one('table.symbol-definitions') if symbols else None
             expected=local_definitions[unit['id']]['rows']
@@ -101,8 +109,10 @@ def main():
         markdown=(ROOT/'text'/Path(ch['file']).with_suffix('.md').name).read_text(encoding='utf-8')
         for equation in docs[ROOT/ch['file']].select('.equation-unit'):
             e=equations_by_id[equation['id']]
+            label=equation_label(e['id'])
+            zh=(f'({label}) · ' if label!=e['id'] else '')+e['kind_zh']
             check(e['id']+': portable Markdown preserves inline bilingual title',
-                  f'({e["id"]}) · {e["kind"]} / {e["kind_zh"]}' in markdown)
+                  f'({label}) · {e["kind"]} / {zh}' in markdown)
     for ch in units:
         p=ROOT/ch['file'];soup=docs[p]
         glossaries=soup.select('table.symbol-glossary')

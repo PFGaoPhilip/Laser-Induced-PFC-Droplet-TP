@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from chapter01_steps import STEPS
+from equation_symbols import relabel_chapter01_references
 
 
 def eq(identifier, tex, en, zh, kind, typ, labels, notes, cap_en, cap_zh):
@@ -42,11 +43,10 @@ def eq(identifier, tex, en, zh, kind, typ, labels, notes, cap_en, cap_zh):
     en += " " + steps["symbols_en"]
     zh += " " + steps["symbols_zh"]
     block = E(identifier, tex, en, zh, kind,
-             {"type": typ, "labels": labels, "notes": notes}, cap_en, cap_zh)
-    # Keep the established symbol-table and figure layout. Extra declarations
-    # immediately precede the full derivation within the same equation column.
-    marker = '<div class="math-display"'
-    block = block.replace(marker, P(en,zh,'symbol-conventions') + marker, 1)
+             {"type": typ, "labels": labels, "notes": notes}, cap_en, cap_zh,
+             symbol_position='after')
+    # The owner requests the existing compact symbol table after the formulas.
+    # Additional derivation definitions are merged into equation_symbol_rows.json.
     return (P('<strong>Derivation.</strong> '+steps['en'],
               '<strong>推导。</strong> '+steps['zh']) + block
             + P('<strong>Check and interpretation.</strong> '+steps['check_en'],
@@ -336,7 +336,7 @@ CHAPTER = {
     "title_zh": "空腔压力、载液惯性与定向射流",
     "summary_en": "Derive cavity motion, energy and collapse time. Specify boundaries for directional jets.",
     "summary_zh": "推导空腔运动、能量和塌缩时间。规定定向射流边界。",
-    "body": body,
+    "body": relabel_chapter01_references(body),
     "question_ids": ["C1-Q1", "C1-Q2", "C1-Q3"],
     "objectives": [
         ("Classify the cavity and liquid force path before using a jet model.", "使用射流模型之前，辨认空腔与液体传力路径。"),
