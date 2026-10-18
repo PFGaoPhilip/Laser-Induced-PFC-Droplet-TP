@@ -1,70 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>C1-E28</title>
-<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="30.72" y="35.1733">C1-E28 · Kinematic condition and clean-interface traction</tspan>
-</text>
-<rect id="o001" x="38.4" y="96" width="518.4" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="51.84" y="118.44">Interface patch and conventions</tspan>
-</text>
-<ellipse id="o003" cx="288" cy="369.6" rx="163.2" ry="163.2" fill="#1E4A5A" stroke="#2B6678" stroke-width="1.33333" opacity="1"/>
-<ellipse id="o004" cx="288" cy="369.6" rx="124.8" ry="124.8" fill="#0C1820" stroke="#F2B880" stroke-width="2.93333" opacity="1"/>
-<line id="o005" x1="390.23" y1="298.018" x2="323.387" y2="344.821" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
-<line id="o006" x1="390.23" y1="298.018" x2="351.686" y2="242.971" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
-<line id="o007" x1="235.257" y1="256.493" x2="269.743" y2="330.448" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
-<line id="o008" x1="235.257" y1="256.493" x2="174.353" y2="284.893" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
-<line id="o009" x1="170.726" y1="412.284" x2="247.405" y2="384.375" fill="#FFFFFF" stroke="#F28BA0" stroke-width="4" opacity="1" marker-end="url(#head)"/>
-<line id="o010" x1="170.726" y1="412.284" x2="193.71" y2="475.431" fill="#FFFFFF" stroke="#7FC8F8" stroke-width="3.2" opacity="1" marker-end="url(#head)"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="395.52" y="188.933">n: liquid → gas</tspan>
-</text>
-<text id="o012" font-family="Arial,sans-serif" font-size="17.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="424.32" y="246.533">s: tangent</tspan>
-</text>
-<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="54.72" y="567.587">For a bubble the normal points inward, so the sphere</tspan>
-<tspan x="54.72" y="587.253">curvature is κ = −2/R.</tspan>
-</text>
-<text id="o014" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="587.52" y="113.227">Three conditions on the interface Γ</tspan>
-</text>
-<rect id="o015" x="585.6" y="148.8" width="657.6" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
-<text id="o016" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="601.92" y="170.693">Kinematic</tspan>
-</text>
-<text id="o017" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="601.92" y="209.227">Vₙ = u · n</tspan>
-</text>
-<text id="o018" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="601.92" y="255.04">the surface moves with the liquid normal to itself</tspan>
-</text>
-<rect id="o019" x="585.6" y="302.4" width="657.6" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
-<text id="o020" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="601.92" y="324.293">Normal stress</tspan>
-</text>
-<text id="o021" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="601.92" y="362.827">pₗ = p_b + σκ + 2μ n·D·n</tspan>
-</text>
-<text id="o022" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="601.92" y="408.64">σκ = −2σ/R for a sphere</tspan>
-</text>
-<rect id="o023" x="585.6" y="456" width="657.6" height="139.2" rx="11.136" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
-<text id="o024" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="601.92" y="477.893">Tangential stress</tspan>
-</text>
-<text id="o025" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="601.92" y="516.427">2μ s·D·n = 0</tspan>
-</text>
-<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="601.92" y="562.24">gas cannot support shear</tspan>
-</text>
-<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="587.52" y="625.187">One sign convention for n, κ and D is required, or the terms cancel</tspan>
-<tspan x="587.52" y="644.853">wrongly.</tspan>
-</text>
-<text id="o028" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="35.52" y="696.373">D = ½(∇u + ∇uᵀ) is the strain-rate tensor (Eq. C1-E28).</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E28</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E28 · Inviscid pre-impact moving-interface closure</tspan>
+</text>
+<rect id="o001" x="38.4" y="96" width="576" height="518.4" rx="41.472" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="51.84" y="118.44">A shape that is not a sphere</tspan>
+</text>
+<polygon id="o003" points="507.898,355.2 506.857,344.569 503.767,334.169 498.723,324.219 491.877,314.921 483.431,306.446 473.631,298.932 462.747,292.474 451.068,287.126 438.883,282.895 426.471,279.749 414.087,277.613 401.949,276.381 390.236,275.923 379.074,276.087 368.538,276.718 358.65,277.661 349.384,278.771 340.668,279.923 332.394,281.018 324.43,281.989 316.63,282.803 308.844,283.464 300.934,284.011 292.783,284.512 284.304,285.066 275.45,285.787 266.22,286.805 256.659,288.252 246.859,290.253 236.956,292.92 227.126,296.342 217.573,300.581 208.521,305.664 200.205,311.58 192.854,318.282 186.681,325.686 181.874,333.675 178.581,342.103 176.908,350.804 176.908,359.596 178.581,368.297 181.874,376.725 186.681,384.714 192.854,392.118 200.205,398.82 208.521,404.736 217.573,409.819 227.126,414.058 236.956,417.48 246.859,420.147 256.659,422.148 266.22,423.595 275.45,424.613 284.304,425.334 292.783,425.888 300.934,426.389 308.844,426.936 316.63,427.597 324.43,428.411 332.394,429.382 340.668,430.477 349.384,431.629 358.65,432.739 368.538,433.682 379.074,434.313 390.236,434.477 401.949,434.019 414.087,432.787 426.471,430.651 438.883,427.505 451.068,423.274 462.747,417.926 473.631,411.468 483.431,403.954 491.877,395.479 498.723,386.181 503.767,376.231 506.857,365.831 507.898,355.2" fill="#0C1820" stroke="#F2B880" stroke-width="3.2" opacity="1"/>
+<text id="o004" font-family="Arial,sans-serif" font-size="26.6667" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="326.4" y="369.387">Γ</tspan>
+</text>
+<rect id="o005" x="76.8" y="566.4" width="499.2" height="24.96" fill="#3A5362" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o006" x1="78.72" y1="591.36" x2="93.12" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="97.92" y1="591.36" x2="112.32" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o008" x1="117.12" y1="591.36" x2="131.52" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o009" x1="136.32" y1="591.36" x2="150.72" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="155.52" y1="591.36" x2="169.92" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o011" x1="174.72" y1="591.36" x2="189.12" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o012" x1="193.92" y1="591.36" x2="208.32" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="213.12" y1="591.36" x2="227.52" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o014" x1="232.32" y1="591.36" x2="246.72" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o015" x1="251.52" y1="591.36" x2="265.92" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="270.72" y1="591.36" x2="285.12" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="289.92" y1="591.36" x2="304.32" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o018" x1="309.12" y1="591.36" x2="323.52" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="328.32" y1="591.36" x2="342.72" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="347.52" y1="591.36" x2="361.92" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o021" x1="366.72" y1="591.36" x2="381.12" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="385.92" y1="591.36" x2="400.32" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="405.12" y1="591.36" x2="419.52" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o024" x1="424.32" y1="591.36" x2="438.72" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="443.52" y1="591.36" x2="457.92" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="462.72" y1="591.36" x2="477.12" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o027" x1="481.92" y1="591.36" x2="496.32" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="501.12" y1="591.36" x2="515.52" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="520.32" y1="591.36" x2="534.72" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o030" x1="539.52" y1="591.36" x2="553.92" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="558.72" y1="591.36" x2="573.12" y2="607.68" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="507.898" y1="355.2" x2="560.698" y2="355.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<line id="o033" x1="388.334" y1="275.911" x2="414.734" y2="230.185" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<line id="o034" x1="272.414" y1="286.087" x2="246.014" y2="240.361" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<line id="o035" x1="176.698" y1="355.2" x2="123.898" y2="355.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<line id="o036" x1="272.414" y1="424.313" x2="246.014" y2="470.039" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<line id="o037" x1="388.334" y1="434.489" x2="414.734" y2="480.215" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="54.72" y="523.84">Surface velocity u = ∇φ differs from point to point; the shape</tspan>
+<tspan x="54.72" y="542.72">changes as it is carried along.</tspan>
+</text>
+<text id="o039" font-family="Arial,sans-serif" font-size="18.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="645.12" y="113.227">Closure loop (inviscid, before impact)</tspan>
+</text>
+<rect id="o040" x="643.2" y="144" width="600" height="96" rx="7.68" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o041" cx="676.8" cy="192" rx="23.04" ry="23.04" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="17.3333" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="677.28" y="188.933">1</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="721.92" y="167.813">Known φ on Γ</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="721.92" y="206.493">solve ∇²φ = 0 in the liquid</tspan>
+</text>
+<line id="o045" x1="940.8" y1="240" x2="940.8" y2="259.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o046" x="643.2" y="259.2" width="600" height="96" rx="7.68" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o047" cx="676.8" cy="307.2" rx="23.04" ry="23.04" fill="#7FC8F8" stroke="#7FC8F8" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="17.3333" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="677.28" y="304.133">2</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="17.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="721.92" y="283.013">u = ∇φ at the surface</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="721.92" y="321.693">normal speed Vₙ = ∂φ/∂n</tspan>
+</text>
+<line id="o051" x1="940.8" y1="355.2" x2="940.8" y2="374.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o052" x="643.2" y="374.4" width="600" height="96" rx="7.68" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o053" cx="676.8" cy="422.4" rx="23.04" ry="23.04" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<text id="o054" font-family="Arial,sans-serif" font-size="17.3333" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="677.28" y="419.333">3</tspan>
+</text>
+<text id="o055" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="721.92" y="398.213">Advect: dX/dt = u(X, t)</tspan>
+</text>
+<text id="o056" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="721.92" y="436.893">new shape Γ(t + dt), new curvature κ</tspan>
+</text>
+<line id="o057" x1="940.8" y1="470.4" x2="940.8" y2="489.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.66667" opacity="1" marker-end="url(#head)"/>
+<rect id="o058" x="643.2" y="489.6" width="600" height="96" rx="7.68" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
+<ellipse id="o059" cx="676.8" cy="537.6" rx="23.04" ry="23.04" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o060" font-family="Arial,sans-serif" font-size="17.3333" fill="#142632" text-anchor="middle" font-weight="bold" opacity="1">
+<tspan x="677.28" y="534.533">4</tspan>
+</text>
+<text id="o061" font-family="Arial,sans-serif" font-size="17.3333" fill="#F28BA0" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="721.92" y="513.413">Update φ on Γ</tspan>
+</text>
+<text id="o062" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="721.92" y="552.093">Dφ/Dt = ½|u|² + (p∞ − p_b − σκ)/ρ</tspan>
+</text>
+<text id="o063" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="645.12" y="625.187">The shape and the potential evolve together; changing geometry is</tspan>
+<tspan x="645.12" y="644.853">what creates focusing.</tspan>
+</text>
+<text id="o064" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Schematic of the loop of Eq. C1-E28; the deformed shape is illustrative.</tspan>
+</text>
+</svg>

@@ -75,32 +75,6 @@ def e11(f):
     f.note('Energy ledger from the Rayleigh–Plesset solution of Eq. C1-E07 using the balance of Eq. C1-E11.')
 
 
-def e12(f):
-    x = np.linspace(1, 4, 200)
-    p = Plot(f, 1.0, 1.55, 5.2, 3.7, (1, 4), (-2.2, 1.2), 'r / R', 'strain rate / (Ṙ/R)', (1, 2, 3, 4), (-2, -1, 0, 1), fy='{:g}')
-    p.seg(1, 0, 4, 0, GRID, 1.2)
-    p.curve(x, -2 / x ** 3, PINK, 3)
-    p.curve(x, 1 / x ** 3, ACC, 3)
-    p.label(1.3, -1.45, 'D_rr = −2R²Ṙ/r³ (radial)', PINK, 12, w=3)
-    p.label(1.5, .9, 'D_θθ = D_ψψ = R²Ṙ/r³ (tangential)', ACC, 12, w=3.4, dy=-.2)
-    p.f.text(1.0, 5.95, 5.3, 'D_rr + 2D_θθ = 0: no net volume change (incompressible).', 12.5, FG)
-    p2 = Plot(f, 7.2, 1.55, 5.6, 3.7, (1, 4), (0, 1.05), 'r / R', 'dissipation inside r', (1, 2, 3, 4), (0, .25, .5, .75, 1), fy='{:.2f}')
-    p2.curve(x, 1 - 1 / x ** 3, WARM, 3)
-    p2.pt(2, 7 / 8, ACC)
-    p2.label(2, 7 / 8, '87.5 % inside r = 2R', ACC, 12, w=2.4, dx=.14, dy=.05)
-    p2.label(2.2, .35, '𝒟 = ∫ 2μ(D_rr² + 2D_θθ²) 4πr² dr\n= 48πμR⁴Ṙ² ∫ r⁻⁴ dr = 16πμRṘ²', FG, 11.5, w=3.4)
-    x0, y0 = 4.5, 3.55
-    f.rect(x0, y0 - .2, .5, .5, fill=None, line=MUT, lw=1.2)
-    f.rect(x0 - .1, y0 - .05, .78, .2, fill=LIQ2, line=ACC, lw=1.8, opacity=.9)
-    f.line(x0 - .35, y0 + .05, x0 - .12, y0 + .05, ACC, 2, arrow=True)
-    f.line(x0 + .85, y0 + .05, x0 + .66, y0 + .05, ACC, 2, arrow=True)
-    f.line(x0 + .25, y0 - .38, x0 + .25, y0 - .2, PINK, 2, arrow=True)
-    f.line(x0 + .25, y0 + .48, x0 + .25, y0 + .3, PINK, 2, arrow=True)
-    f.text(f_x := 7.2, 5.85, 5.7, 'A shell element is squeezed radially and stretched around the sphere; most of this shearing happens near the wall.', 12.5, FG)
-    f.text(1.0, 6.6, 11.9, 'Direct strain-rate integration reproduces the energy-balance loss of Eq. C1-E11 exactly.', 13, WARM)
-    f.note('Profiles from Eq. C1-E12; the expanding case Ṙ > 0 is drawn (signs flip for collapse).')
-
-
 def e13(f):
     f.panel(.4, 1.0, 4.6, 5.5, 'Ideal collapse, starting at rest', ACC, size=13.5)
     cx, cy = 2.7, 3.6
@@ -125,7 +99,7 @@ def e13(f):
     p.label(1.35, .12, 'steepest at the end', ACC, 12, w=2.2)
     f.text(6.1, 6.27, 6.6, 'R R̈ + (3/2)Ṙ² = −Δp_c/ρ,  R(0) = R_max,  Ṙ(0) = 0', 13.5, FG, bold=True)
     f.text(6.1, 6.68, 6.6, 'The model has no gas, viscosity, tension or compressibility, so nothing stops the collapse.', 12.5, WARM)
-    f.note('R(t) from the quadrature of Eq. C1-E16; R_max = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa.')
+    f.note('R(t) from the quadrature of Eq. C1-E15; R_max = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa.')
 
 
 def e14(f):
@@ -146,7 +120,7 @@ def e14(f):
         f.text(.6, y, 5.9, f'{i + 1}  {a_}', 13, WARM, bold=True)
         y = f.text(.85, y + .34, 5.7, b_, 13, FG) + .3
     f.text(.6, y + .05, 5.9, 'On the monotonic inward branch R is a valid independent variable. The factor R³ makes the left side an exact derivative.', 12.5, MUT)
-    f.note('Curves are y = Ṙ² and R³y from Eqs. C1-E14 and C1-E15 (scaled as labelled).')
+    f.note('Curves are y = Ṙ² and R³y from Eqs. C1-E13 and C1-E14 (scaled as labelled).')
 
 
 def e15(f):
@@ -169,7 +143,7 @@ def e15(f):
                                 'As R → 0, |Ṙ| grows without bound: this is the model\'s singularity, not a physical speed limit.',
                                 'Real collapse is stopped by gas, viscosity, tension and compressibility long before.'], 12.5)
     f.text(1.1, 6.27, 12, 'Teaching inputs: R_max = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa.', 12.5, MUT)
-    f.note('Wall speed from Eq. C1-E15 (log–log axes).')
+    f.note('Wall speed from Eq. C1-E14 (log–log axes).')
 
 
 def e16(f):
@@ -188,7 +162,7 @@ def e16(f):
     f.text(8.05, 3.65, 4.8, f'= √(3/2) × {math.sqrt(2 / 3) * tc_coeff():.4f} = {tc_coeff():.6f}', 13, FG)
     f.text(8.05, 4.3, 4.8, 'The substitution x = R/R_max and dR = R_max dx moves all dimensions into the prefactor.', 12, MUT)
     f.text(1.0, 6.27, 12, 'The endpoint singularity is integrable, so the ideal collapse takes a finite time, 0.91468 R_max √(ρ/Δp_c).', 13, FG)
-    f.note('Integrand from Eq. C1-E16; area by numerical quadrature.')
+    f.note('Integrand from Eq. C1-E15; area by numerical quadrature.')
 
 
 def e17(f):
@@ -208,7 +182,7 @@ def e17(f):
     p2.label(.1, .85, 'dx = (1/3) q^(−2/3) dq', ACC, 12, w=2.6)
     f.text(1.0, 6.27, 12, 'C_t = (1/√6) B(5/6, 1/2) = 2.2405/√6 = 0.9146813565…', 14, FG, bold=True)
     f.text(1.0, 6.7, 12, 'The cube-law change of variable turns the collapse integral into a standard beta integral with known value.', 13, WARM)
-    f.note('B(a, b) = ∫ q^(a−1)(1 − q)^(b−1) dq for a, b > 0 (Eq. C1-E17).')
+    f.note('B(a, b) = ∫ q^(a−1)(1 − q)^(b−1) dq for a, b > 0 (Eq. C1-E16).')
 
 
 def e18(f):
@@ -225,14 +199,14 @@ def e18(f):
     for i in idx:
         p.pt(xr[i], Kn[i] / EB, WARM, .06)
     err = np.max(np.abs(Kn[ok] / EB - (1 - xr[ok] ** 3)))
-    p.label(.04, .42, 'line: 1 − (R/R_max)³ from Eq. C1-E18', ACC, 12, w=3.4, dy=.0)
+    p.label(.04, .42, 'line: 1 − (R/R_max)³ from Eq. C1-E17', ACC, 12, w=3.4, dy=.0)
     p.label(.04, .28, f'dots: direct ODE solution; largest difference {err:.0e}', WARM, 12, w=3.4, dy=.0)
     f.panel(8.0, 1.5, 4.95, 4.0, 'Two independent routes', ACC, size=13.5)
-    f.text(8.15, 2.0, 4.7, 'Route 1: speed solution\nK_l = 2πρR³Ṙ² with Ṙ from Eq. C1-E15', 12.5, FG)
+    f.text(8.15, 2.0, 4.7, 'Route 1: speed solution\nK_l = 2πρR³Ṙ² with Ṙ from Eq. C1-E14', 12.5, FG)
     f.text(8.15, 3.0, 4.7, 'Route 2: pressure work\nE_B = Δp_c V_max = (4π/3) Δp_c R_max³', 12.5, FG)
     f.text(8.15, 4.0, 4.7, 'K_l/E_B = 1 − (R/R_max)³  holds at every radius, so no energy is created or lost.', 12.5, WARM, bold=True)
     f.text(1.0, 6.27, 12, 'Half the radius has released 7/8 of the stored pressure work as kinetic energy.', 13.5, FG)
-    f.note('Dots: numerical integration of R R̈ + 3Ṙ²/2 = −Δp_c/ρ (Eq. C1-E13); no viscosity, tension or gas.')
+    f.note('Dots: numerical integration of R R̈ + 3Ṙ²/2 = −Δp_c/ρ (Eq. C1-E12); no viscosity, tension or gas.')
 
 
 def e19(f):
@@ -264,7 +238,7 @@ def e19(f):
         y = f.text(7.9, y, 4.9, h, 13, WARM, bold=True)
         y = f.text(8.0, y, 4.8, b, 12, FG) + .18
     f.text(7.9, y + .05, 4.9, 'Inputs: ρ = 1000 kg/m³, Δp_c = 100 kPa, R_max = 30 µm. A teaching case, not a measurement.', 11.5, MUT)
-    f.note('All values from Eq. C1-E19 and the Rayleigh curve of Eq. C1-E16.')
+    f.note('All values from Eq. C1-E18 and the Rayleigh curve of Eq. C1-E15.')
 
 
 def e20(f):
@@ -288,7 +262,7 @@ def e20(f):
                                 'Inside that radius the speed is large enough that liquid compressibility must be added.',
                                 'The ideal trajectory itself is not a physical prediction.'], 12.5)
     f.text(1.0, 6.27, 12, 'Wall Mach number M_w = |Ṙ|/c grows as R shrinks, so the incompressible formulas lose validity near the end of the collapse.', 13, FG)
-    f.note('Curve from Eq. C1-E15 with c = 1500 m/s; threshold from Eq. C1-E20 (teaching inputs).')
+    f.note('Curve from Eq. C1-E14 with c = 1500 m/s; threshold from Eq. C1-E19 (teaching inputs).')
 
 
-FIGS = {10: e10, 11: e11, 12: e12, 13: e13, 14: e14, 15: e15, 16: e16, 17: e17, 18: e18, 19: e19, 20: e20}
+FIGS = {10: e10, 11: e11, 13: e13, 14: e14, 15: e15, 16: e16, 17: e17, 18: e18, 19: e19, 20: e20}

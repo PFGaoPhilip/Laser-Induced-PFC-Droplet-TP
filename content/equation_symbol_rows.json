@@ -1128,145 +1128,6 @@
   "C1-E12": {
     "rows": [
       {
-        "symbol": "D_{rr}",
-        "en": "$D_{rr}$ — Radial strain-rate component (s⁻¹)",
-        "zh": "$D_{rr}$ — 径向应变率分量（s⁻¹）",
-        "unit": "s⁻¹",
-        "source_en": 0,
-        "source_zh": 0
-      },
-      {
-        "symbol": "D_{\\theta\\theta}",
-        "en": "$D_{\\theta\\theta}$ — Polar tangential strain-rate component (s⁻¹)",
-        "zh": "$D_{\\theta\\theta}$ — 极角切向应变率分量（s⁻¹）",
-        "unit": "s⁻¹",
-        "source_en": 0,
-        "source_zh": 0
-      },
-      {
-        "symbol": "D_{\\psi\\psi}",
-        "en": "$D_{\\psi\\psi}$ — Azimuthal tangential strain-rate component (s⁻¹)",
-        "zh": "$D_{\\psi\\psi}$ — 方位角切向应变率分量（s⁻¹）",
-        "unit": "s⁻¹",
-        "source_en": 0,
-        "source_zh": 0
-      },
-      {
-        "symbol": "\\mathcal D_\\mu",
-        "en": "$\\mathcal D_\\mu$ is total viscous dissipation rate (W)",
-        "zh": "$\\mathcal D_\\mu$ 为总黏性耗散率（W）",
-        "unit": "W",
-        "source_en": 1,
-        "source_zh": 1
-      },
-      {
-        "symbol": "\\mu",
-        "en": "$\\mu$ is viscosity (Pa s)",
-        "zh": "$\\mu$ 为黏度（Pa s）",
-        "unit": "Pa s",
-        "source_en": 2,
-        "source_zh": 2
-      },
-      {
-        "symbol": "R",
-        "en": "$R>0$ is radius (m)",
-        "zh": "$R>0$ 为半径（m）",
-        "unit": "m",
-        "source_en": 3,
-        "source_zh": 3
-      },
-      {
-        "symbol": "r",
-        "en": "$r$ radial integration position (m)",
-        "zh": "$r$ 为径向积分位置（m）",
-        "unit": "m",
-        "source_en": 4,
-        "source_zh": 4
-      },
-      {
-        "symbol": "\\dot R",
-        "en": "$\\dot R$ is wall speed (m s⁻¹)",
-        "zh": "$\\dot R$ 为壁面速度（m s⁻¹）",
-        "unit": "m s⁻¹",
-        "source_en": 5,
-        "source_zh": 5
-      },
-      {
-        "symbol": "\\pi",
-        "en": "$\\pi$ is the circle constant (dimensionless)",
-        "zh": "$\\pi$ 为圆周率（无量纲）",
-        "unit": "1",
-        "source_en": 6,
-        "source_zh": 6
-      },
-      {
-        "symbol": "\\theta",
-        "en": "$\\theta$ — Polar direction label in the strain-rate components (—)",
-        "zh": "$\\theta$ — 应变率分量中的极角方向标记（—）",
-        "unit": "—",
-        "source_en": null,
-        "source_zh": null,
-        "review": "Explicit individual definition checked against the original declaration."
-      },
-      {
-        "symbol": "\\psi",
-        "en": "$\\psi$ — Azimuthal direction label, distinct from velocity potential (—)",
-        "zh": "$\\psi$ — 与速度势区别使用的方位角方向标记（—）",
-        "unit": "—",
-        "source_en": null,
-        "source_zh": null,
-        "review": "Explicit individual definition checked against the original declaration."
-      },
-      {
-        "symbol": "\\phi",
-        "en": "$\\phi$ — Velocity potential (m² s⁻¹)",
-        "zh": "$\\phi$ — 速度势（m² s⁻¹）",
-        "unit": "m² s⁻¹",
-        "source_en": null,
-        "source_zh": null,
-        "review": "Explicit individual definition checked against the original declaration."
-      }
-    ],
-    "notes_en": [
-      "The integral is over the liquid exterior",
-      "angular labels do not reuse the potential symbol $\\phi$"
-    ],
-    "notes_zh": [
-      "积分区域为液体外域",
-      "角向标记不复用速度势符号 $\\phi$"
-    ],
-    "source_fragments_en": [
-      "$D_{rr},D_{\\theta\\theta},D_{\\psi\\psi}$ are radial and two tangential strain-rate components (s⁻¹), with $r,\\theta,\\psi$ labeling spherical radial, polar and azimuthal directions",
-      "$\\mathcal D_\\mu$ is total viscous dissipation rate (W)",
-      "$\\mu$ is viscosity (Pa s)",
-      "$R>0$ is radius",
-      "$r$ radial integration position (m)",
-      "$\\dot R$ is wall speed (m s⁻¹)",
-      "$\\pi$ is the circle constant",
-      "The integral is over the liquid exterior",
-      "angular labels do not reuse the potential symbol $\\phi$"
-    ],
-    "source_fragments_zh": [
-      "$D_{rr},D_{\\theta\\theta},D_{\\psi\\psi}$ 为径向与两个切向的应变率分量（s⁻¹），其中 $r,\\theta,\\psi$ 分别表示球坐标径向、极角与方位角方向",
-      "$\\mathcal D_\\mu$ 为总黏性耗散率（W）",
-      "$\\mu$ 为黏度（Pa s）",
-      "$R>0$ 为半径",
-      "$r$ 为径向积分位置（m）",
-      "$\\dot R$ 为壁面速度（m s⁻¹）",
-      "$\\pi$ 为圆周率",
-      "积分区域为液体外域",
-      "角向标记不复用速度势符号 $\\phi$"
-    ],
-    "expanded_groups_en": [
-      "$D_{rr},D_{\\theta\\theta},D_{\\psi\\psi}$ are radial and two tangential strain-rate components (s⁻¹), with $r,\\theta,\\psi$ labeling spherical radial, polar and azimuthal directions"
-    ],
-    "expanded_groups_zh": [
-      "$D_{rr},D_{\\theta\\theta},D_{\\psi\\psi}$ 为径向与两个切向的应变率分量（s⁻¹），其中 $r,\\theta,\\psi$ 分别表示球坐标径向、极角与方位角方向"
-    ]
-  },
-  "C1-E13": {
-    "rows": [
-      {
         "symbol": "\\Delta p_c",
         "en": "$\\Delta p_c>0$ is constant collapse-driving pressure (Pa)",
         "zh": "$\\Delta p_c>0$ 为常数塌缩驱动压差（Pa）",
@@ -1367,7 +1228,7 @@
       "$\\dot R,\\ddot R$ 为速度（m s⁻¹）与加速度（m s⁻²）"
     ]
   },
-  "C1-E14": {
+  "C1-E13": {
     "rows": [
       {
         "symbol": "y(R)",
@@ -1458,7 +1319,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E15": {
+  "C1-E14": {
     "rows": [
       {
         "symbol": "R",
@@ -1549,7 +1410,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E16": {
+  "C1-E15": {
     "rows": [
       {
         "symbol": "t_c",
@@ -1666,7 +1527,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E17": {
+  "C1-E16": {
     "rows": [
       {
         "symbol": "x",
@@ -1771,7 +1632,7 @@
       "$dx,dq$ 为积分测度"
     ]
   },
-  "C1-E18": {
+  "C1-E17": {
     "rows": [
       {
         "symbol": "K_l",
@@ -1872,7 +1733,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E19": {
+  "C1-E18": {
     "rows": [
       {
         "symbol": "t_c",
@@ -1984,7 +1845,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E20": {
+  "C1-E19": {
     "rows": [
       {
         "symbol": "M_w",
@@ -2098,7 +1959,7 @@
       "$R_M,R_{\\max}$ 为半径（m）"
     ]
   },
-  "C1-E21": {
+  "C1-E20": {
     "rows": [
       {
         "symbol": "\\boldsymbol x",
@@ -2202,7 +2063,7 @@
       "$t_0,t_1$ 为事件端点（s）"
     ]
   },
-  "C1-E22": {
+  "C1-E21": {
     "rows": [
       {
         "symbol": "\\Delta\\boldsymbol u",
@@ -2324,7 +2185,7 @@
       "$t_0,t_1,t$ 为时间（s）"
     ]
   },
-  "C1-E23": {
+  "C1-E22": {
     "rows": [
       {
         "symbol": "U",
@@ -2420,7 +2281,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E24": {
+  "C1-E23": {
     "rows": [
       {
         "symbol": "z",
@@ -2521,7 +2382,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E25": {
+  "C1-E24": {
     "rows": [
       {
         "symbol": "\\Pi_0",
@@ -2642,7 +2503,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E26": {
+  "C1-E25": {
     "rows": [
       {
         "symbol": "\\gamma",
@@ -2732,7 +2593,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E27": {
+  "C1-E26": {
     "rows": [
       {
         "symbol": "\\boldsymbol u(\\boldsymbol x,t)",
@@ -2822,7 +2683,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E28": {
+  "C1-E27": {
     "rows": [
       {
         "symbol": "\\boldsymbol D",
@@ -2960,7 +2821,7 @@
       "$p_l,p_b$ 为界面液体与气体压力（Pa）"
     ]
   },
-  "C1-E29": {
+  "C1-E28": {
     "rows": [
       {
         "symbol": "\\boldsymbol u",
@@ -3092,7 +2953,7 @@
       "$p_\\infty,p_b$ 为远场与气泡压力（Pa）"
     ]
   },
-  "C1-E30": {
+  "C1-E29": {
     "rows": [
       {
         "symbol": "\\phi_\\Gamma",
@@ -3215,7 +3076,7 @@
       "$p_\\infty,p_b$ 为压力（Pa）"
     ]
   },
-  "C1-E31": {
+  "C1-E30": {
     "rows": [
       {
         "symbol": "M_w",
@@ -3297,7 +3158,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E32": {
+  "C1-E31": {
     "rows": [
       {
         "symbol": "\\rho",
@@ -3425,7 +3286,7 @@
       "$p_{v,\\mathrm{PFC}},p_{v,w},p_g$ 为 PFC 蒸气、水蒸气与非凝结气体分压（Pa）"
     ]
   },
-  "C1-E33": {
+  "C1-E32": {
     "rows": [
       {
         "symbol": "\\dot R",
@@ -3534,7 +3395,7 @@
     "expanded_groups_en": [],
     "expanded_groups_zh": []
   },
-  "C1-E34": {
+  "C1-E33": {
     "rows": [
       {
         "symbol": "\\Pi",

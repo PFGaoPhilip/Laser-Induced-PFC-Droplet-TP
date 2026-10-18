@@ -35,7 +35,7 @@ dq|Dimensionless substitution integration measure|无量纲换元积分微元|1
 dR|Radius integration measure|半径积分微元|m
 C_t|Ideal-collapse time coefficient|理想塌缩时间系数|1
 B(a,b)|Beta function at the specified positive arguments|指定正参数处的贝塔函数|1
-B|Beta function defined in Eq. (C1-E17)|式（C1-E17）定义的贝塔函数|1
+B|Beta function defined in Eq. (C1-E16)|式（C1-E16）定义的贝塔函数|1
 V_{\max}|Maximum cavity volume|最大空腔体积|m³
 M_w|Wall Mach number|壁面马赫数|1
 M_*|Selected diagnostic Mach value|选定的诊断马赫数值|1

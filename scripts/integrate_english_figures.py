@@ -28,7 +28,7 @@ def integrate():
             rows.append(row)
             if re.fullmatch(r'(?:c[1-5]|a)-e\d+', ident):
                 shutil.copy2(BASE / row['svg'], ROOT / 'assets/figures' / (ident+'.svg'))
-    assert len(rows) == 200, len(rows)
+    assert len(rows) == 199, len(rows)
     appendix = json.loads((BASE/'appendix-studies/manifest.json').read_text(encoding='utf-8'))
     studies = [r for r in appendix if not r['id'].startswith('a-e')]
     for page in ('modeling/minimal-cavitation/index.html',
@@ -55,7 +55,7 @@ def integrate():
         cards.append(f'<article id="{r["id"]}"><h2>{escape(title)}</h2><img loading="lazy" src="{r["svg"]}" alt="{escape(title)}"><p><a href="{r["pptx"]}">Editable PowerPoint</a> · <a href="{r["svg"]}">SVG</a> · <a href="{r["scene"]}">Scene JSON</a></p></article>')
     html = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>English lesson figures</title>
 <style>:root{color-scheme:light;--bg:#f4f6f8;--fg:#142632;--card:#fff}body.dark{color-scheme:dark;--bg:#142632;--fg:#e7f0f3;--card:#213e4b}body{background:var(--bg);color:var(--fg);font:17px Arial,sans-serif;max-width:1280px;margin:auto;padding:24px}a{color:inherit}header{position:sticky;top:0;background:var(--bg);padding:12px;z-index:1}button,input{font:inherit;padding:8px}article{background:var(--card);padding:18px;margin:24px 0;border:1px solid #899ba5;border-radius:8px}img{display:block;width:100%;height:auto}h2{font-size:22px}</style>
-<header><button id="theme">Day / night</button> <input id="search" placeholder="Filter figure IDs" aria-label="Filter figure IDs"><p>200 English figures · 190 equation diagrams · 10 study figures.</p></header><h1>English lesson figures</h1><p>Native editable PowerPoint objects accompany every SVG. Physical conventions and actual PowerPoint previews were reviewed before embedding. Quantitative charts retain the accepted source data. Diagrams state their model assumptions.</p>'''+''.join(cards)+'''<script>const b=document.body;b.classList.toggle('dark',localStorage.figureTheme==='dark');document.querySelector('#theme').onclick=()=>{b.classList.toggle('dark');localStorage.figureTheme=b.classList.contains('dark')?'dark':'light'};document.querySelector('#search').oninput=e=>document.querySelectorAll('article').forEach(a=>a.hidden=!a.id.includes(e.target.value.toLowerCase()));</script></html>'''
+<header><button id="theme">Day / night</button> <input id="search" placeholder="Filter figure IDs" aria-label="Filter figure IDs"><p>199 English figures · 189 equation diagrams · 10 study figures.</p></header><h1>English lesson figures</h1><p>Native editable PowerPoint objects accompany every SVG. Physical conventions and actual PowerPoint previews were reviewed before embedding. Quantitative charts retain the accepted source data. Diagrams state their model assumptions.</p>'''+''.join(cards)+'''<script>const b=document.body;b.classList.toggle('dark',localStorage.figureTheme==='dark');document.querySelector('#theme').onclick=()=>{b.classList.toggle('dark');localStorage.figureTheme=b.classList.contains('dark')?'dark':'light'};document.querySelector('#search').oninput=e=>document.querySelectorAll('article').forEach(a=>a.hidden=!a.id.includes(e.target.value.toLowerCase()));</script></html>'''
     (BASE/'index.html').write_text(html,encoding='utf-8')
     return rows
 

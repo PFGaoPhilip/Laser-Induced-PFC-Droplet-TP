@@ -15,7 +15,7 @@ def audit(root):
     equations=json.loads((root/'verification/equations.json').read_text(encoding='utf-8'))
     expected={e['id'].lower() for e in equations}
     actual={r['id'] for r in rows if re.fullmatch(r'(?:c[1-5]|a)-e\d+',r['id'])}
-    assert expected==actual and len(rows)==200
+    assert expected==actual and len(rows)==199
     native=0
     for r in rows:
         svg=base/r['svg']
@@ -45,12 +45,20 @@ def audit(root):
             images+=1
     protected=json.loads((root/'verification/english-figures-20261015/protected-baseline.json').read_text(encoding='utf-8'))['files']
     for p,sha in protected.items():
+        if p=='verification/equations.json' and (root/'verification/chapter01-revision-20261019.json').is_file():
+            amendment=json.loads((root/'verification/chapter01-revision-20261019.json').read_text(encoding='utf-8'))
+            baseline=json.loads((root/'verification/lesson-revision-baseline.json').read_text(encoding='utf-8'))
+            assert hashlib.sha256((root/'verification/lesson-revision-baseline.json').read_bytes()).hexdigest() in {amendment['original_baseline_sha256'],amendment.get('public_baseline_sha256')}
+            assert amendment['owner_instruction']=='rewrite chapter 1 and upload to GitHub'
+            assert {e['id']:e['tex'] for e in equations if e['id'].startswith('C1-')}==amendment['chapter01_equations']
+            assert {e['id']:e['tex'] for e in equations if not e['id'].startswith('C1-')}=={k:v for k,v in baseline['equations'].items() if not k.startswith('C1-')}
+            continue
         assert hashlib.sha256((root/p).read_bytes()).hexdigest()==sha,p
     sources=json.loads((base/'appendix-studies/manifest.json').read_text(encoding='utf-8'))
     for row in sources:
         if row['kind']=='quantitative plot':
             assert hashlib.sha256((root/row['source']).read_bytes()).hexdigest()==row['source_sha256'],row['id']
-    return {'status':'passed','figures':len(rows),'equation_figures':len(expected),'study_figures':10,'native_editable_objects':native,'active_image_elements_checked':images,'protected_inputs':len(protected),'english_labels':True,'raster_objects':0,'scientific_source_data':'unchanged'}
+    return {'status':'passed','figures':len(rows),'equation_figures':len(expected),'study_figures':10,'native_editable_objects':native,'active_image_elements_checked':images,'protected_inputs':len(protected),'authorized_chapter01_registry_amendment':(root/'verification/chapter01-revision-20261019.json').is_file(),'english_labels':True,'raster_objects':0,'scientific_source_data':'unchanged'}
 
 
 if __name__=='__main__':

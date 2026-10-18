@@ -77,7 +77,7 @@ def main():
     for kind in {eq['diagram']['type'] for eq in registry}:
         eq=next(eq for eq in registry if eq['diagram']['type']==kind)
         wanted.add('assets/figures/'+eq['id'].lower()+'.svg')
-    for identifier in ['C1-E28','C2-E09','C3-E22','C4-E07','C4-E13','C4-E40','C4-E41','A-E18','A-E20']:
+    for identifier in ['C1-E27','C2-E09','C3-E22','C4-E07','C4-E13','C4-E40','C4-E41','A-E18','A-E20']:
         wanted.add('assets/figures/'+identifier.lower()+'.svg')
     def verify(relative):
         expected=(dest/relative).read_bytes()

@@ -6,7 +6,8 @@ Use the language and day/night buttons.
 Every reader uses the chapter format and lower-right controls.
 All reading assets work offline.
 
-All 178 lesson figures use English labels in both language modes.
+All 189 equation diagrams use English labels in both language modes.
+The gallery also preserves 10 study figures.
 Open the [editable figure gallery](assets/figures-editable/index.html).
 Every figure includes native PowerPoint objects, SVG, and scene JSON.
 Scientific conventions and actual PowerPoint previews were reviewed before embedding.
@@ -106,3 +107,17 @@ Publication remains HELD_NOT_PUBLISHED.
 最大值：尚未建立。
 缺少：18 项已达到的目标及证书。
 发布状态保持 HELD_NOT_PUBLISHED。
+
+
+## Chapter 1 revision — 2026-10-19 / 第一章修订
+
+All 33 surviving Chapter 1 equation blocks contain multiline derivations.
+The original E12 dissipation check was deleted.
+Later equation IDs were renumbered.
+See reports/ch1_defense_revision/EQUATION_MAP.csv for migration.
+The original defense verdict and learner records remain unchanged.
+
+第一章保留的 33 个公式块均包含多行推导。
+已删除原 E12 独立耗散检验，并依次重排后续公式编号。
+编号迁移见 reports/ch1_defense_revision/EQUATION_MAP.csv。
+原答辩结论与学习记录保持不变。

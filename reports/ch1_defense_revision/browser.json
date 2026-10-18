@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "offline_file_origin": true,
+  "cases": [
+    {
+      "case": "desktop-en-light",
+      "lang": "en",
+      "theme": "light",
+      "equations": 33,
+      "errors": 0,
+      "brokenImages": [],
+      "overflow": false,
+      "visibleEnglish": true,
+      "visibleChinese": false,
+      "toggle_and_persistence": "passed",
+      "javascript_errors": []
+    },
+    {
+      "case": "desktop-zh-dark",
+      "lang": "zh",
+      "theme": "dark",
+      "equations": 33,
+      "errors": 0,
+      "brokenImages": [],
+      "overflow": false,
+      "visibleEnglish": false,
+      "visibleChinese": true,
+      "toggle_and_persistence": "passed",
+      "javascript_errors": []
+    },
+    {
+      "case": "mobile-en-dark",
+      "lang": "en",
+      "theme": "dark",
+      "equations": 33,
+      "errors": 0,
+      "brokenImages": [],
+      "overflow": false,
+      "visibleEnglish": true,
+      "visibleChinese": false,
+      "toggle_and_persistence": "passed",
+      "javascript_errors": []
+    },
+    {
+      "case": "mobile-zh-light",
+      "lang": "zh",
+      "theme": "light",
+      "equations": 33,
+      "errors": 0,
+      "brokenImages": [],
+      "overflow": false,
+      "visibleEnglish": false,
+      "visibleChinese": true,
+      "toggle_and_persistence": "passed",
+      "javascript_errors": []
+    }
+  ]
+}

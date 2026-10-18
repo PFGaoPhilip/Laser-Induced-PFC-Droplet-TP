@@ -52,7 +52,7 @@ def e22(f):
     f.bullets(9.15, 2.5, 3.7, ['Uτ/L = 0.015: convection moves the fluid only 1.5 % of L.', 'ντ/L² = 5×10⁻⁵: viscosity has no time to act.', 'Dropping both leaves Δu ≃ −∇Π/ρ.'], 12)
     f.text(.5, 4.85, 12.4, 'Bars start at 10⁻⁵ m/s. If either small ratio were near 1, the corresponding bar would be as long as the first and the reduced model would fail.', 13.5, FG)
     f.text(.5, 5.85, 12.4, 'Teaching case: Π₀ = 0.30 Pa·s, ρ = 1000 kg/m³, L = 100 µm, τ = 0.5 µs, ν = 10⁻⁶ m²/s.', 12.5, MUT)
-    f.note('Magnitudes from Eq. C1-E22 using the numbers of Eq. C1-E25.')
+    f.note('Magnitudes from Eq. C1-E21 using the numbers of Eq. C1-E24.')
 
 
 def e23(f):
@@ -109,7 +109,7 @@ def e24(f):
     f.text(9.05, 3.75, 3.8, 'Δu_z = 3.0 m/s', 17, WARM, bold=True)
     f.text(9.05, 4.4, 3.8, 'The impulse drops linearly, so every slice gets the same velocity change toward the outlet.', 12, MUT)
     f.text(.5, 6.2, 12.4, 'A constant gradient means uniform acceleration: the whole column leaves the driven end as one plug.', 13.5, FG)
-    f.note('Boundary values Π(0) = Π₀, Π(L) = 0 (Eq. C1-E24).')
+    f.note('Boundary values Π(0) = Π₀, Π(L) = 0 (Eq. C1-E23).')
 
 
 def e25(f):
@@ -162,7 +162,7 @@ def e26(f):
         f.text(gx + r * .8 + .12, (cy2 + 6.0) / 2 - .1, 1.5, f'h = {g} R_max', 11, MUT, wrap=False)
         f.text(gx - .8, cy2 - r * .65 - .45, 1.6, f'γ = {g}', 13.5, ACC, 'center', bold=True)
     f.text(5.2, 1.5, 7.7, 'Small γ: boundary close, strong asymmetry.   Large γ: far boundary, nearly spherical.', 12.5, FG)
-    f.note('Definitions of Eq. C1-E26. Positions drawn to show the trend; radii are not to scale.')
+    f.note('Definitions of Eq. C1-E25. Positions drawn to show the trend; radii are not to scale.')
 
 
 def e27(f):
@@ -212,7 +212,7 @@ def e28(f):
         f.text(6.25, y + .95, 6.5, d, 12, MUT)
         y += 1.6
     f.text(6.1, 6.35, 6.8, 'One sign convention for n, κ and D is required, or the terms cancel wrongly.', 12.5, FG)
-    f.note('D = ½(∇u + ∇uᵀ) is the strain-rate tensor (Eq. C1-E28).')
+    f.note('D = ½(∇u + ∇uᵀ) is the strain-rate tensor (Eq. C1-E27).')
 
 
 def e29(f):
@@ -244,7 +244,7 @@ def e29(f):
             f.line(9.8, y + 1.0, 9.8, y + 1.2, MUT, 2, arrow=True)
         y += 1.2
     f.text(6.7, 6.35, 6.2, 'The shape and the potential evolve together; changing geometry is what creates focusing.', 12.5, WARM)
-    f.note('Schematic of the loop of Eq. C1-E29; the deformed shape is illustrative.')
+    f.note('Schematic of the loop of Eq. C1-E28; the deformed shape is illustrative.')
 
 
 def e30(f):
@@ -263,7 +263,7 @@ def e30(f):
     err = np.max(np.abs(lhs - rhs)[idx]) / np.max(np.abs(lhs)[idx])
     p.label(.05, ym * .98, f'solid: left side, dashed: right side; relative gap {err:.0e}', FG, 11, w=5.2, dy=.0)
     f.panel(.4, 1.0, 6.2, 5.4, 'The general closure contains the sphere', ACC, size=13.5)
-    steps = [('General closure, Eq. C1-E29', 'D φ/Dt = ½|u|² + (p∞ − p_b − σκ)/ρ', ACC), ('Insert the sphere', 'φ_Γ = −RṘ,   κ = −2/R', WARM), ('Differentiate along the wall', '−Ṙ² − RR̈ = (p∞ − p_b + 2σ/R)/ρ + ½Ṙ²', BLUE), ('Rearrange', 'ρ(RR̈ + 3Ṙ²/2) = p_b − p∞ − 2σ/R', PINK)]
+    steps = [('General closure, Eq. C1-E28', 'D φ/Dt = ½|u|² + (p∞ − p_b − σκ)/ρ', ACC), ('Insert the sphere', 'φ_Γ = −RṘ,   κ = −2/R', WARM), ('Differentiate along the wall', '−Ṙ² − RR̈ = (p∞ − p_b + 2σ/R)/ρ + ½Ṙ²', BLUE), ('Rearrange', 'ρ(RR̈ + 3Ṙ²/2) = p_b − p∞ − 2σ/R', PINK)]
     y = 1.5
     for h, e, c in steps:
         f.text(.6, y, 5.8, h, 12.5, c, bold=True)
@@ -298,7 +298,7 @@ def e31(f):
     p.label(1.2e-3, .3, 'τ_e = 10 µs', ACC, 12, w=1.8)
     f.text(7.5, 5.7, 5.4, 'M_w = |Ṙ|/c  and  𝒞_e = L_e/(cτ_e)  test different things.', 12.5, FG, bold=True)
     f.text(.5, 6.2, 12.4, 'A pulse can need compressibility even when the wall is slow: 𝒞_e ≳ 1 means pressure cannot equalise during the rise.', 13, WARM)
-    f.note('c = 1500 m/s; curves from the definition 𝒞_e = L_e/(c τ_e) of Eq. C1-E31.')
+    f.note('c = 1500 m/s; curves from the definition 𝒞_e = L_e/(c τ_e) of Eq. C1-E30.')
 
 
 def e32(f):
@@ -330,7 +330,7 @@ def e33(f):
         f.text(x0, 1.05, 3.5, t, 14.5, c, bold=True)
         f.text(x0, 5.75, 3.7, s, 11.5, FG)
     f.text(.5, 6.45, 12.4, 'The singular speed belongs to an ideal radial trajectory (no gas, viscosity, tension or compressibility), not to a validated physical maximum.', 12.5, WARM)
-    f.note('Teaching inputs R_max = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa (Eqs. C1-E15, E16, E18).')
+    f.note('Teaching inputs R_max = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa (Eqs. C1-E14, E16, E18).')
 
 
 def e34(f):
@@ -353,7 +353,7 @@ def e34(f):
     f.text(.65, 4.63, 12.0, 'Reference formulas', 13.5, ACC, bold=True)
     f.text(.65, 5.0, 12.0, 'Π(x) = ∫(p − p_ref)dt;   Δu ≃ −∇Π/ρ,  ∇²Π = 0\nU_column = Π₀/(ρL);   t_a = L/c', 14, FG, bold=True)
     f.text(.5, 6.3, 12.4, 'The impulse benchmark gives the early velocity field; the moving-interface problem that follows is a separate calculation.', 13, WARM)
-    f.note('Summary of Eqs. C1-E21 to C1-E25 for the declared case.')
+    f.note('Summary of Eqs. C1-E20 to C1-E24 for the declared case.')
 
 
 FIGS = {21: e21, 22: e22, 23: e23, 24: e24, 25: e25, 26: e26, 27: e27, 28: e28, 29: e29, 30: e30, 31: e31, 32: e32, 33: e33, 34: e34}

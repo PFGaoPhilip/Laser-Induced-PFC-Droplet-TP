@@ -10,12 +10,12 @@ RHO_W, P_ATM = 1000.0, 101325.0
 
 
 def rayleigh_speed(x, Rmax, rho, dpc):
-    """C1-E15: wall speed (m/s, negative) at x = R/Rmax."""
+    """C1-E14: wall speed (m/s, negative) at x = R/Rmax."""
     return -math.sqrt(2 * dpc / (3 * rho) * (x ** -3 - 1))
 
 
 def rayleigh_curve(Rmax, rho, dpc, n=600):
-    """Time-resolved ideal collapse from the quadrature of C1-E16, using x = 1 - s^2 to remove the endpoint singularity."""
+    """Time-resolved ideal collapse from the quadrature of C1-E15, using x = 1 - s^2 to remove the endpoint singularity."""
     s = np.linspace(0, 1 - 1e-4, n)
     x = 1 - s ** 2
     K = math.sqrt(3 * rho / (2 * dpc))
@@ -48,7 +48,7 @@ def rp_solve(R0, V0, t_end, rho=RHO_W, pinf=P_ATM, sigma=0.072, mu=1e-3, pg0=Non
 
 
 def collapse_ode(Rmax, rho, dpc, t_end, n=2000):
-    """Direct integration of C1-E13 for the independent check of E15/E18."""
+    """Direct integration of C1-E12 for the independent check of E15/E18."""
     def rhs(t, y):
         R, V = y
         return [V, (-dpc / rho - 1.5 * V * V) / R]

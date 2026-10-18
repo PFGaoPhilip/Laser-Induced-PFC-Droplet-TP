@@ -102,21 +102,21 @@ def svg_for(eq):
             path('M710 148 V279','thin');text(714,130,'r* , W*','muted')
             text(572,94,'W(rn)');text(865,299,'rn','muted')
     elif kind=='timescale':
-        if eq['id'] in {'C1-E16','C1-E17','C3-E10'}:
+        if eq['id'] in {'C1-E15','C1-E16','C3-E10'}:
             circle(197,184,83);circle(426,184,37)
             path('M285 184 H377','arrow');text(120,294,'Rmax , Ṙ(0) = 0');text(386,264,'R ↓')
             path('M638 288 H923','arrow');path('M660 291 V94','arrow')
             path('M665 118 C778 120 857 143 904 282')
             text(683,96,'R / Rmax');text(843,315,'t / tc')
             text(584,336,'Formal collapse / 形式塌缩','muted')
-        elif eq['id']=='C1-E20':
+        elif eq['id']=='C1-E19':
             circle(247,181,96);circle(247,181,36,'thin')
             path('M247 181 H283','arrow');text(254,160,'RM')
             path('M392 181 H716','arrow');text(446,153,'c = 1500 m/s')
             path('M363 227 H280','arrow');text(341,258,'|Ṙ| = M* c')
             text(112,314,'Rmax → RM ; xM = RM / Rmax')
             text(588,289,'Mw = |Ṙ| / c');text(588,322,'Flag: M* = 0.1 / 检查阈值','muted')
-        elif eq['id']=='C1-E31':
+        elif eq['id']=='C1-E30':
             circle(171,181,57);path('M228 181 H855','arrow')
             text(118,275,'R , Ṙ');text(303,145,'Pressure information / 压力信息: c')
             path('M231 286 H854','thin');text(470,312,'Le ; ta = Le / c')
@@ -217,7 +217,7 @@ def svg_for(eq):
         text(443,188,'pb,i(t), Ri(t), activation delay / 激活延迟')
         path('M493 262 H894','arrow');text(535,291,'Propagation / 传播: ri / c')
     elif kind in {'jet','impact'}:
-        if eq['id'] in {'C1-E27','C1-E28','C1-E29','C1-E30'}:
+        if eq['id'] in {'C1-E26','C1-E27','C1-E28','C1-E29'}:
             path('M88 101 H700 M88 274 H700','thin');circle(258,186,52)
             path('M700 101 C640 154 640 222 700 274','line')
             path('M318 186 H270','arrow');text(303,160,'n → gas / 指向气相')
@@ -230,7 +230,7 @@ def svg_for(eq):
         if kind=='impact':
             rect(747,77,45,235);path('M623 177 H747','arrow');text(696,338,'Receiver / 接收体: Zr, vi')
             text(804,151,'p, traction');text(804,183,'Ao, τo')
-        elif eq['id'] not in {'C1-E27','C1-E28','C1-E29','C1-E30'}:
+        elif eq['id'] not in {'C1-E26','C1-E27','C1-E28','C1-E29'}:
             path('M672 177 H905','arrow');text(720,147,'Flight gap / 飞行间隙: H')
             path('M744 192 C770 220 794 138 821 177 S868 217 903 177','thin');text(728,269,'δ(t), smax, κj','muted')
     elif kind=='film':

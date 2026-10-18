@@ -17,7 +17,6 @@ TITLES_ZH = {
     'Exact kinetic-energy integral in the spherical model': '球形模型内的精确动能积分',
     'Exact product-rule derivatives': '乘积求导法则的精确应用',
     'Derived mechanical-energy balance': '推导得到的机械能平衡',
-    'Independent dissipation and conservation check': '独立的耗散与守恒检验',
     'Idealized collapse initial-value problem': '理想化塌缩的初值问题',
     'Exact chain rule and integrating factor': '精确的链式法则与积分因子',
     'Integrated speed with initial constant and branch': '含初始积分常数与分支选择的速度积分解',

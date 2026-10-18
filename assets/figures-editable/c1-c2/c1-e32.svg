@@ -1,62 +1,160 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>C1-E32</title>
-<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="30.72" y="35.1733">C1-E32 · Original formulas quoted for defense 1</tspan>
-</text>
-<rect id="o001" x="48" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#F2B880" stroke-width="2.13333" opacity="1"/>
-<text id="o002" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="middle" font-weight="bold" opacity="1">
-<tspan x="179.4" y="156.84">Source pressure</tspan>
-</text>
-<text id="o003" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
-<tspan x="179.4" y="184.427">p_b from the contents (E08),</tspan>
-<tspan x="179.4" y="204.093">not from R alone</tspan>
-</text>
-<line id="o004" x1="313.68" y1="216" x2="351.12" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
-<rect id="o005" x="354" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
-<text id="o006" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="middle" font-weight="bold" opacity="1">
-<tspan x="485.4" y="156.84">Radius motion</tspan>
-</text>
-<text id="o007" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
-<tspan x="485.4" y="184.427">Rayleigh–Plesset: p_b − p∞ −</tspan>
-<tspan x="485.4" y="204.093">2σ/R − 4μṘ/R (E07)</tspan>
-</text>
-<line id="o008" x1="619.68" y1="216" x2="657.12" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
-<rect id="o009" x="660" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#7FC8F8" stroke-width="2.13333" opacity="1"/>
-<text id="o010" font-family="Arial,sans-serif" font-size="18" fill="#7FC8F8" text-anchor="middle" font-weight="bold" opacity="1">
-<tspan x="791.4" y="156.84">Liquid response</tspan>
-</text>
-<text id="o011" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
-<tspan x="791.4" y="184.427">inertia stores the work;</tspan>
-<tspan x="791.4" y="204.093">impulse Π gives early speed</tspan>
-<tspan x="791.4" y="223.76">(E05, E21)</tspan>
-</text>
-<line id="o012" x1="925.68" y1="216" x2="963.12" y2="216" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2.93333" opacity="1" marker-end="url(#head)"/>
-<rect id="o013" x="966" y="134.4" width="262.8" height="163.2" rx="13.056" fill="#213E4B" stroke="#F28BA0" stroke-width="2.13333" opacity="1"/>
-<text id="o014" font-family="Arial,sans-serif" font-size="18" fill="#F28BA0" text-anchor="middle" font-weight="bold" opacity="1">
-<tspan x="1097.4" y="156.84">Geometry</tspan>
-</text>
-<text id="o015" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="middle" opacity="1">
-<tspan x="1097.4" y="184.427">stand-off and walls decide</tspan>
-<tspan x="1097.4" y="204.093">direction (E26–E29)</tspan>
-</text>
-<rect id="o016" x="48" y="336" width="1180.8" height="148.8" rx="11.904" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
-<text id="o017" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="64.32" y="360.36">Reference formulas of the defence answer</tspan>
-</text>
-<text id="o018" font-family="Arial,sans-serif" font-size="18.6667" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="64.32" y="401.227">ρ(RR̈ + 3Ṙ²/2) = p_b − p∞ − 2σ/R − 4μṘ/R</tspan>
-<tspan x="64.32" y="423.253">p_b = pᵥ,PFC + pᵥ,w + p_g</tspan>
-</text>
-<text id="o019" font-family="Arial,sans-serif" font-size="18" fill="#F2B880" text-anchor="start" opacity="1">
-<tspan x="49.92" y="525.48">The source pressure moves carrier liquid. Whether that motion becomes a useful jet is decided by geometry, not by the</tspan>
-<tspan x="49.92" y="546.72">pressure alone.</tspan>
-</text>
-<text id="o020" font-family="Arial,sans-serif" font-size="16.6667" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="49.92" y="581.987">Every term of the radius equation is a pressure (Pa); every term of the composition is a partial pressure.</tspan>
-</text>
-<text id="o021" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="35.52" y="696.373">Summary of Eqs. C1-E07 and C1-E08.</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E32</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E32 · Original formulas quoted for defense 2</tspan>
+</text>
+<line id="o001" x1="86.4" y1="480" x2="432" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="86.4" y1="163.2" x2="86.4" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="86.4" y1="480" x2="86.4" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="86.4" y1="163.2" x2="86.4" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="86.4" y="502.04">0.05</tspan>
+</text>
+<line id="o006" x1="166.364" y1="480" x2="166.364" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="166.364" y1="163.2" x2="166.364" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="166.364" y="502.04">0.1</tspan>
+</text>
+<line id="o009" x1="352.036" y1="480" x2="352.036" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="352.036" y1="163.2" x2="352.036" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="352.036" y="502.04">0.5</tspan>
+</text>
+<line id="o012" x1="432" y1="480" x2="432" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="432" y1="163.2" x2="432" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="432" y="502.04">1</tspan>
+</text>
+<line id="o015" x1="79.68" y1="480" x2="86.4" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="79.68" y1="374.4" x2="86.4" y2="374.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o017" x1="86.4" y1="374.4" x2="432" y2="374.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="74.88" y="379.16">10</tspan>
+</text>
+<line id="o019" x1="79.68" y1="268.8" x2="86.4" y2="268.8" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o020" x1="86.4" y1="268.8" x2="432" y2="268.8" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="74.88" y="273.56">100</tspan>
+</text>
+<line id="o022" x1="79.68" y1="163.2" x2="86.4" y2="163.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="86.4" y1="163.2" x2="432" y2="163.2" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="74.88" y="167.96">1000</tspan>
+</text>
+<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="259.2" y="524.8">R / Rₘₐₓ</tspan>
+</text>
+<text id="o026" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="30.72" y="141.76">|Ṙ| (m/s)</tspan>
+</text>
+<polyline id="o027" points="86.6736,177.781 88.4089,178.815 90.1442,179.85 91.8795,180.885 93.6148,181.92 95.3501,182.955 97.0855,183.99 98.8208,185.025 100.556,186.06 102.291,187.095 104.027,188.13 105.762,189.165 107.497,190.2 109.233,191.235 110.968,192.27 112.703,193.305 114.439,194.34 116.174,195.375 117.909,196.41 119.644,197.445 121.38,198.48 123.115,199.515 124.85,200.55 126.586,201.586 128.321,202.621 130.056,203.656 131.792,204.691 133.527,205.726 135.262,206.762 136.998,207.797 138.733,208.832 140.468,209.867 142.203,210.903 143.939,211.938 145.674,212.973 147.409,214.009 149.145,215.044 150.88,216.08 152.615,217.115 154.351,218.151 156.086,219.186 157.821,220.222 159.557,221.257 161.292,222.293 163.027,223.329 164.762,224.364 166.498,225.4 168.233,226.436 169.968,227.472 171.704,228.508 173.439,229.544 175.174,230.58 176.91,231.616 178.645,232.652 180.38,233.688 182.116,234.725 183.851,235.761 185.586,236.798 187.321,237.834 189.057,238.871 190.792,239.907 192.527,240.944 194.263,241.981 195.998,243.018 197.733,244.055 199.469,245.092 201.204,246.13 202.939,247.167 204.675,248.204 206.41,249.242 208.145,250.28 209.881,251.318 211.616,252.356 213.351,253.394 215.086,254.432 216.822,255.471 218.557,256.51 220.292,257.549 222.028,258.588 223.763,259.627 225.498,260.667 227.234,261.706 228.969,262.746 230.704,263.786 232.44,264.827 234.175,265.868 235.91,266.909 237.645,267.95 239.381,268.991 241.116,270.033 242.851,271.075 244.587,272.118 246.322,273.161 248.057,274.204 249.793,275.248 251.528,276.292 253.263,277.337 254.999,278.382 256.734,279.427 258.469,280.473 260.204,281.52 261.94,282.567 263.675,283.614 265.41,284.663 267.146,285.712 268.881,286.761 270.616,287.811 272.352,288.862 274.087,289.914 275.822,290.966 277.558,292.02 279.293,293.074 281.028,294.129 282.763,295.185 284.499,296.242 286.234,297.3 287.969,298.36 289.705,299.42 291.44,300.482 293.175,301.545 294.911,302.609 296.646,303.674 298.381,304.741 300.117,305.81 301.852,306.88 303.587,307.952 305.322,309.026 307.058,310.102 308.793,311.179 310.528,312.259 312.264,313.341 313.999,314.425 315.734,315.511 317.47,316.6 319.205,317.692 320.94,318.786 322.676,319.883 324.411,320.984 326.146,322.087 327.881,323.194 329.617,324.305 331.352,325.419 333.087,326.537 334.823,327.66 336.558,328.787 338.293,329.918 340.029,331.054 341.764,332.196 343.499,333.343 345.235,334.496 346.97,335.655 348.705,336.82 350.44,337.992 352.176,339.172 353.911,340.359 355.646,341.554 357.382,342.758 359.117,343.971 360.852,345.194 362.588,346.427 364.323,347.671 366.058,348.927 367.794,350.195 369.529,351.477 371.264,352.773 373,354.084 374.735,355.412 376.47,356.757 378.205,358.121 379.941,359.505 381.676,360.911 383.411,362.341 385.147,363.797 386.882,365.281 388.617,366.795 390.353,368.341 392.088,369.925 393.823,371.547 395.559,373.214 397.294,374.929 399.029,376.697 400.764,378.526 402.5,380.421 404.235,382.392 405.97,384.449 407.706,386.605 409.441,388.874 411.176,391.275 412.912,393.832 414.647,396.576 416.382,399.546 418.118,402.797 419.853,406.406 421.588,410.483 423.323,415.203 425.059,420.854 426.794,427.982 428.529,437.807 430.265,454.225" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o028" x1="518.4" y1="480" x2="864" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o029" x1="518.4" y1="163.2" x2="518.4" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o030" x1="518.4" y1="480" x2="518.4" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="518.4" y1="163.2" x2="518.4" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o032" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="518.4" y="502.04">0</tspan>
+</text>
+<line id="o033" x1="633.6" y1="480" x2="633.6" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o034" x1="633.6" y1="163.2" x2="633.6" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="633.6" y="502.04">1</tspan>
+</text>
+<line id="o036" x1="748.8" y1="480" x2="748.8" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o037" x1="748.8" y1="163.2" x2="748.8" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="748.8" y="502.04">2</tspan>
+</text>
+<line id="o039" x1="864" y1="480" x2="864" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o040" x1="864" y1="163.2" x2="864" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o041" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="864" y="502.04">3</tspan>
+</text>
+<line id="o042" x1="511.68" y1="480" x2="518.4" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o043" x1="511.68" y1="377.806" x2="518.4" y2="377.806" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o044" x1="518.4" y1="377.806" x2="864" y2="377.806" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o045" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="506.88" y="382.566">10</tspan>
+</text>
+<line id="o046" x1="511.68" y1="275.613" x2="518.4" y2="275.613" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o047" x1="518.4" y1="275.613" x2="864" y2="275.613" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="506.88" y="280.373">20</tspan>
+</text>
+<line id="o049" x1="511.68" y1="173.419" x2="518.4" y2="173.419" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o050" x1="518.4" y1="173.419" x2="864" y2="173.419" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o051" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="506.88" y="178.179">30</tspan>
+</text>
+<text id="o052" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="691.2" y="524.8">t (µs)</tspan>
+</text>
+<text id="o053" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="462.72" y="141.76">R (µm)</tspan>
+</text>
+<polyline id="o054" points="518.4,173.419 521.663,173.433 524.927,173.474 528.189,173.542 531.451,173.638 534.711,173.761 537.97,173.911 541.228,174.089 544.483,174.294 547.736,174.527 550.986,174.786 554.233,175.073 557.478,175.388 560.718,175.729 563.955,176.098 567.188,176.495 570.416,176.919 573.64,177.37 576.859,177.848 580.073,178.354 583.281,178.887 586.483,179.447 589.679,180.035 592.868,180.65 596.051,181.292 599.227,181.962 602.395,182.659 605.556,183.384 608.708,184.136 611.853,184.915 614.989,185.721 618.116,186.555 621.234,187.416 624.343,188.304 627.442,189.22 630.53,190.163 633.609,191.134 636.676,192.132 639.733,193.157 642.778,194.209 645.812,195.289 648.834,196.396 651.844,197.531 654.841,198.693 657.825,199.882 660.796,201.098 663.754,202.342 666.698,203.613 669.627,204.912 672.543,206.238 675.443,207.591 678.328,208.971 681.198,210.379 684.053,211.814 686.891,213.277 689.713,214.767 692.518,216.284 695.306,217.829 698.076,219.401 700.829,221 703.564,222.626 706.281,224.28 708.979,225.961 711.657,227.67 714.317,229.406 716.956,231.169 719.576,232.96 722.175,234.778 724.753,236.623 727.311,238.496 729.846,240.396 732.36,242.323 734.852,244.277 737.322,246.259 739.768,248.269 742.191,250.305 744.591,252.369 746.967,254.461 749.318,256.579 751.645,258.725 753.947,260.898 756.223,263.099 758.474,265.327 760.699,267.582 762.897,269.865 765.068,272.175 767.212,274.512 769.329,276.877 771.418,279.269 773.478,281.688 775.51,284.135 777.513,286.609 779.487,289.11 781.43,291.639 783.344,294.195 785.227,296.779 787.08,299.389 788.901,302.027 790.69,304.693 792.448,307.385 794.173,310.105 795.866,312.853 797.526,315.628 799.153,318.43 800.745,321.259 802.304,324.116 803.829,327 805.319,329.911 806.773,332.85 808.193,335.816 809.577,338.809 810.925,341.83 812.236,344.878 813.512,347.954 814.75,351.057 815.951,354.187 817.115,357.344 818.241,360.529 819.33,363.741 820.38,366.98 821.393,370.247 822.367,373.541 823.302,376.863 824.199,380.212 825.057,383.588 825.876,386.991 826.656,390.422 827.397,393.88 828.099,397.366 828.762,400.879 829.387,404.419 829.973,407.986 830.52,411.581 831.029,415.203 831.5,418.853 831.934,422.53 832.33,426.234 832.69,429.965 833.014,433.724 833.302,437.51 833.556,441.324 833.777,445.165 833.965,449.033 834.121,452.929 834.248,456.852 834.348,460.802 834.421,464.779 834.47,468.784 834.5,472.816 834.512,476.876 834.514,479.939" fill="none" stroke="#F2B880" stroke-width="4" opacity="1"/>
+<line id="o055" x1="834.514" y1="163.2" x2="834.514" y2="480" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<line id="o056" x1="940.8" y1="480" x2="1238.4" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o057" x1="940.8" y1="163.2" x2="940.8" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o058" x1="940.8" y1="480" x2="940.8" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o059" x1="940.8" y1="163.2" x2="940.8" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o060" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="940.8" y="502.04">0</tspan>
+</text>
+<line id="o061" x1="1089.6" y1="480" x2="1089.6" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o062" x1="1089.6" y1="163.2" x2="1089.6" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o063" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1089.6" y="502.04">0.5</tspan>
+</text>
+<line id="o064" x1="1238.4" y1="480" x2="1238.4" y2="486.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o065" x1="1238.4" y1="163.2" x2="1238.4" y2="480" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o066" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="1238.4" y="502.04">1</tspan>
+</text>
+<line id="o067" x1="934.08" y1="480" x2="940.8" y2="480" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o068" x1="934.08" y1="329.143" x2="940.8" y2="329.143" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o069" x1="940.8" y1="329.143" x2="1238.4" y2="329.143" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o070" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="929.28" y="333.903">0.5</tspan>
+</text>
+<line id="o071" x1="934.08" y1="178.286" x2="940.8" y2="178.286" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o072" x1="940.8" y1="178.286" x2="1238.4" y2="178.286" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o073" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="929.28" y="183.046">1</tspan>
+</text>
+<text id="o074" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="1089.6" y="524.8">R / Rₘₐₓ</tspan>
+</text>
+<text id="o075" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="885.12" y="141.76">Kₗ / E_B</tspan>
+</text>
+<polyline id="o076" points="940.8,178.286 943.806,178.286 946.812,178.288 949.818,178.294 952.824,178.306 955.83,178.325 958.836,178.353 961.842,178.392 964.848,178.445 967.855,178.512 970.861,178.597 973.867,178.7 976.873,178.823 979.879,178.969 982.885,179.139 985.891,179.335 988.897,179.559 991.903,179.813 994.909,180.099 997.915,180.419 1000.92,180.773 1003.93,181.165 1006.93,181.597 1009.94,182.069 1012.95,182.584 1015.95,183.144 1018.96,183.751 1021.96,184.406 1024.97,185.112 1027.98,185.869 1030.98,186.681 1033.99,187.549 1036.99,188.475 1040,189.46 1043.01,190.507 1046.01,191.618 1049.02,192.793 1052.02,194.036 1055.03,195.348 1058.04,196.731 1061.04,198.187 1064.05,199.717 1067.05,201.323 1070.06,203.008 1073.07,204.774 1076.07,206.621 1079.08,208.552 1082.08,210.569 1085.09,212.674 1088.1,214.869 1091.1,217.154 1094.11,219.534 1097.12,222.008 1100.12,224.579 1103.13,227.249 1106.13,230.02 1109.14,232.893 1112.15,235.871 1115.15,238.956 1118.16,242.148 1121.16,245.451 1124.17,248.865 1127.18,252.394 1130.18,256.038 1133.19,259.799 1136.19,263.68 1139.2,267.683 1142.21,271.808 1145.21,276.058 1148.22,280.436 1151.22,284.941 1154.23,289.578 1157.24,294.347 1160.24,299.25 1163.25,304.29 1166.25,309.468 1169.26,314.785 1172.27,320.245 1175.27,325.848 1178.28,331.596 1181.28,337.492 1184.29,343.537 1187.3,349.733 1190.3,356.083 1193.31,362.587 1196.32,369.248 1199.32,376.067 1202.33,383.047 1205.33,390.189 1208.34,397.496 1211.35,404.968 1214.35,412.608 1217.36,420.419 1220.36,428.4 1223.37,436.556 1226.38,444.886 1229.38,453.394 1232.39,462.081 1235.39,470.949 1238.4,480" fill="none" stroke="#7FC8F8" stroke-width="4" opacity="1"/>
+<text id="o077" font-family="Arial,sans-serif" font-size="19.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="88.32" y="118.573">Speed</tspan>
+</text>
+<text id="o078" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="88.32" y="566.493">Ṙ = −√{(2Δp_c/3ρ)[(Rₘₐₓ/R)³ − 1]}</tspan>
+</text>
+<text id="o079" font-family="Arial,sans-serif" font-size="19.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="520.32" y="118.573">Time</tspan>
+</text>
+<text id="o080" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="520.32" y="566.493">t_c = B(5/6,1/2)/√6 · Rₘₐₓ√(ρ/Δp_c) = 2.744</tspan>
+<tspan x="520.32" y="584.587">µs</tspan>
+</text>
+<text id="o081" font-family="Arial,sans-serif" font-size="19.3333" fill="#7FC8F8" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="942.72" y="118.573">Energy</tspan>
+</text>
+<text id="o082" font-family="Arial,sans-serif" font-size="15.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="942.72" y="566.493">Kₗ = (4π/3)Δp_c(Rₘₐₓ³ − R³)</tspan>
+</text>
+<text id="o083" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="49.92" y="634.787">The singular speed belongs to an ideal radial trajectory (no gas, viscosity, tension or compressibility), not to a validated physical</tspan>
+<tspan x="49.92" y="654.453">maximum.</tspan>
+</text>
+<text id="o084" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Teaching inputs Rₘₐₓ = 30 µm, ρ = 1000 kg/m³, Δp_c = 100 kPa (Eqs. C1-E14, E16, E18).</tspan>
+</text>
+</svg>

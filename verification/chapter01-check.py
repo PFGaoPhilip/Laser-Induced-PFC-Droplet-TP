@@ -131,7 +131,7 @@ for z in (0.0,length/3,length):
 soup=BeautifulSoup(mod.body,"html.parser")
 ids=[q["id"] for q in EQUATIONS]
 gate("Unique equation IDs",len(ids)==len(set(ids)),ids)
-gate("Sequential complete equation IDs",ids==[f"C1-E{n:02d}" for n in range(1,35)],ids)
+gate("Sequential complete equation IDs",ids==[f"C1-E{n:02d}" for n in range(1,34)],ids)
 gate("Exactly three defense questions",len(soup.select("article.defense"))==3,mod.CHAPTER["question_ids"])
 for entry in EQUATIONS:
     gate(entry["id"]+" bilingual local definitions",bool(entry["symbols_en"]) and bool(entry["symbols_zh"]),"Local declarations supplied before the display")

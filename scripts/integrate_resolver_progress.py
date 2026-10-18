@@ -44,7 +44,9 @@ def integrate_links():
     if not (LESSON/'PROGRESS.json').is_file():return
     record=json.loads((LESSON/'PROGRESS.json').read_text(encoding='utf-8'))
     settings_path=ROOT/'COURSE_SETTINGS.json';settings=json.loads(settings_path.read_text(encoding='utf-8'))
-    authorization_path=ROOT/'verification/GITHUB_PUBLICATION_AUTHORIZATION_20261014.json'
+    authorization_path=ROOT/'verification/GITHUB_PUBLICATION_AUTHORIZATION_20261019.json'
+    if not authorization_path.is_file():
+        authorization_path=ROOT/'verification/GITHUB_PUBLICATION_AUTHORIZATION_20261014.json'
     authorization=json.loads(authorization_path.read_text(encoding='utf-8')) if authorization_path.is_file() else {}
     authorized=(authorization.get('status')=='AUTHORIZED' and authorization.get('owner_instruction')=='Update to GitHub.' and authorization.get('repository')==settings['repository'])
     settings['resolver_progress']={'file':'learning-records/resolver-progress/index.html','record':'learning-records/resolver-progress/PROGRESS.json','parent_unit':'C03','publication_status':'OWNER_AUTHORIZED_GITHUB_RELEASE' if authorized else 'HELD_NOT_PUBLISHED','published':authorized,'stages':{r['id']:r['status'] for r in record['stages']},'strict_acceptance':False}

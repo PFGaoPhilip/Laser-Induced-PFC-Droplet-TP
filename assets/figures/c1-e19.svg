@@ -1,146 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>C1-E19</title>
-<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="30.72" y="35.1733">C1-E19 · Declared teaching calculation</tspan>
-</text>
-<line id="o001" x1="96" y1="326.4" x2="700.8" y2="326.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o002" x1="96" y1="134.4" x2="96" y2="326.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o003" x1="96" y1="326.4" x2="96" y2="333.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o004" x1="96" y1="134.4" x2="96" y2="326.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="96" y="348.44">0</tspan>
-</text>
-<line id="o006" x1="297.6" y1="326.4" x2="297.6" y2="333.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o007" x1="297.6" y1="134.4" x2="297.6" y2="326.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="297.6" y="348.44">1</tspan>
-</text>
-<line id="o009" x1="499.2" y1="326.4" x2="499.2" y2="333.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o010" x1="499.2" y1="134.4" x2="499.2" y2="326.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="499.2" y="348.44">2</tspan>
-</text>
-<line id="o012" x1="700.8" y1="326.4" x2="700.8" y2="333.12" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o013" x1="700.8" y1="134.4" x2="700.8" y2="326.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="700.8" y="348.44">3</tspan>
-</text>
-<line id="o015" x1="89.28" y1="326.4" x2="96" y2="326.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o016" x1="89.28" y1="266.4" x2="96" y2="266.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o017" x1="96" y1="266.4" x2="700.8" y2="266.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o018" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
-<tspan x="84.48" y="271.16">10</tspan>
-</text>
-<line id="o019" x1="89.28" y1="206.4" x2="96" y2="206.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o020" x1="96" y1="206.4" x2="700.8" y2="206.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o021" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
-<tspan x="84.48" y="211.16">20</tspan>
-</text>
-<line id="o022" x1="89.28" y1="146.4" x2="96" y2="146.4" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o023" x1="96" y1="146.4" x2="700.8" y2="146.4" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
-<tspan x="84.48" y="151.16">30</tspan>
-</text>
-<text id="o025" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="40.32" y="112.96">R  (µm)</tspan>
-</text>
-<polyline id="o026" points="96,146.4 101.711,146.408 107.421,146.432 113.131,146.472 118.839,146.528 124.545,146.601 130.248,146.689 135.948,146.793 141.645,146.914 147.338,147.05 153.026,147.203 158.709,147.371 164.386,147.556 170.057,147.756 175.722,147.973 181.379,148.206 187.029,148.454 192.67,148.719 198.303,149 203.927,149.297 209.541,149.61 215.145,149.939 220.738,150.284 226.319,150.645 231.889,151.022 237.447,151.416 242.991,151.825 248.522,152.25 254.04,152.692 259.543,153.149 265.031,153.623 270.503,154.112 275.96,154.618 281.4,155.139 286.823,155.677 292.228,156.231 297.615,156.801 302.984,157.386 308.333,157.988 313.662,158.606 318.972,159.24 324.26,159.89 329.527,160.556 334.772,161.238 339.994,161.937 345.194,162.651 350.369,163.381 355.521,164.128 360.648,164.89 365.75,165.668 370.825,166.463 375.875,167.273 380.897,168.1 385.892,168.943 390.859,169.801 395.797,170.676 400.706,171.567 405.585,172.474 410.434,173.397 415.251,174.335 420.037,175.29 424.791,176.262 429.512,177.249 434.2,178.252 438.854,179.271 443.473,180.306 448.058,181.357 452.606,182.425 457.118,183.508 461.593,184.608 466.031,185.723 470.431,186.855 474.791,188.002 479.113,189.166 483.394,190.346 487.635,191.541 491.834,192.753 495.992,193.981 500.107,195.225 504.179,196.485 508.207,197.761 512.191,199.053 516.129,200.361 520.023,201.685 523.87,203.025 527.669,204.382 531.422,205.754 535.126,207.142 538.781,208.547 542.387,209.967 545.943,211.404 549.448,212.856 552.902,214.325 556.303,215.809 559.652,217.31 562.948,218.827 566.189,220.36 569.376,221.908 572.508,223.473 575.584,225.054 578.604,226.651 581.566,228.264 584.471,229.893 587.317,231.539 590.105,233.2 592.833,234.877 595.5,236.57 598.108,238.28 600.654,240.005 603.138,241.747 605.559,243.504 607.918,245.278 610.214,247.067 612.445,248.873 614.612,250.695 616.714,252.532 618.751,254.386 620.722,256.256 622.627,258.142 624.466,260.044 626.237,261.962 627.942,263.896 629.579,265.846 631.148,267.812 632.649,269.794 634.082,271.793 635.448,273.807 636.745,275.837 637.974,277.884 639.134,279.946 640.227,282.025 641.252,284.119 642.21,286.23 643.101,288.356 643.926,290.499 644.684,292.658 645.378,294.833 646.008,297.024 646.574,299.231 647.079,301.454 647.523,303.693 647.909,305.948 648.238,308.219 648.512,310.506 648.735,312.809 648.908,315.128 649.036,317.464 649.123,319.815 649.174,322.182 649.196,324.566 649.199,326.364" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
-<ellipse id="o027" cx="595.5" cy="236.4" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
-<line id="o028" x1="649.199" y1="134.4" x2="649.199" y2="326.4" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
-<text id="o029" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
-<tspan x="338.22" y="246.093">R = Rₘₐₓ/2 at 2.48 µs</tspan>
-</text>
-<text id="o030" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
-<tspan x="468.719" y="167.44">t_c = 2.744 µs</tspan>
-</text>
-<line id="o031" x1="96" y1="585.6" x2="700.8" y2="585.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o032" x1="96" y1="403.2" x2="96" y2="585.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
-<line id="o033" x1="96" y1="585.6" x2="96" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o034" x1="96" y1="403.2" x2="96" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o035" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="96" y="607.64">0</tspan>
-</text>
-<line id="o036" x1="297.6" y1="585.6" x2="297.6" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o037" x1="297.6" y1="403.2" x2="297.6" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o038" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="297.6" y="607.64">1</tspan>
-</text>
-<line id="o039" x1="499.2" y1="585.6" x2="499.2" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o040" x1="499.2" y1="403.2" x2="499.2" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o041" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="499.2" y="607.64">2</tspan>
-</text>
-<line id="o042" x1="700.8" y1="585.6" x2="700.8" y2="592.32" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o043" x1="700.8" y1="403.2" x2="700.8" y2="585.6" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o044" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
-<tspan x="700.8" y="607.64">3</tspan>
-</text>
-<line id="o045" x1="89.28" y1="585.6" x2="96" y2="585.6" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o046" x1="89.28" y1="529.477" x2="96" y2="529.477" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o047" x1="96" y1="529.477" x2="700.8" y2="529.477" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o048" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
-<tspan x="84.48" y="534.237">4</tspan>
-</text>
-<line id="o049" x1="89.28" y1="473.354" x2="96" y2="473.354" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o050" x1="96" y1="473.354" x2="700.8" y2="473.354" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o051" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
-<tspan x="84.48" y="478.114">8</tspan>
-</text>
-<line id="o052" x1="89.28" y1="417.231" x2="96" y2="417.231" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
-<line id="o053" x1="96" y1="417.231" x2="700.8" y2="417.231" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
-<text id="o054" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
-<tspan x="84.48" y="421.991">12</tspan>
-</text>
-<text id="o055" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
-<tspan x="398.4" y="630.4">t  (µs)</tspan>
-</text>
-<text id="o056" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="40.32" y="381.76">Kₗ  (nJ)</tspan>
-</text>
-<polyline id="o057" points="96,585.552 101.711,585.552 107.421,585.515 113.131,585.409 118.839,585.261 124.545,585.07 130.248,584.837 135.948,584.562 141.645,584.246 147.338,583.887 153.026,583.487 158.709,583.046 164.386,582.563 170.057,582.04 175.722,581.476 181.379,580.872 187.029,580.228 192.67,579.545 198.303,578.822 203.927,578.061 209.541,577.261 215.145,576.423 220.738,575.547 226.319,574.635 231.889,573.686 237.447,572.701 242.991,571.68 248.522,570.625 254.04,569.535 259.543,568.411 265.031,567.254 270.503,566.065 275.96,564.843 281.4,563.591 286.823,562.307 292.228,560.994 297.615,559.652 302.984,558.281 308.333,556.883 313.662,555.457 318.972,554.006 324.26,552.529 329.527,551.028 334.772,549.502 339.994,547.954 345.194,546.384 350.369,544.793 355.521,543.181 360.648,541.55 365.75,539.901 370.825,538.234 375.875,536.55 380.897,534.85 385.892,533.136 390.859,531.407 395.797,529.666 400.706,527.913 405.585,526.149 410.434,524.374 415.251,522.591 420.037,520.8 424.791,519.002 429.512,517.197 434.2,515.388 438.854,513.574 443.473,511.758 448.058,509.94 452.606,508.12 457.118,506.301 461.593,504.482 466.031,502.666 470.431,500.853 474.791,499.044 479.113,497.24 483.394,495.442 487.635,493.651 491.834,491.868 495.992,490.094 500.107,488.33 504.179,486.577 508.207,484.837 512.191,483.109 516.129,481.395 520.023,479.696 523.87,478.013 527.669,476.346 531.422,474.697 535.126,473.066 538.781,471.455 542.387,469.864 545.943,468.294 549.448,466.746 552.902,465.22 556.303,463.718 559.652,462.24 562.948,460.787 566.189,459.359 569.376,457.958 572.508,456.585 575.584,455.238 578.604,453.92 581.566,452.631 584.471,451.372 587.317,450.142 590.105,448.943 592.833,447.775 595.5,446.639 598.108,445.534 600.654,444.462 603.138,443.422 605.559,442.415 607.918,441.441 610.214,440.501 612.445,439.595 614.612,438.722 616.714,437.883 618.751,437.077 620.722,436.306 622.627,435.569 624.466,434.866 626.237,434.196 627.942,433.56 629.579,432.957 631.148,432.388 632.649,431.851 634.082,431.346 635.448,430.874 636.745,430.433 637.974,430.023 639.134,429.643 640.227,429.293 641.252,428.972 642.21,428.679 643.101,428.414 643.926,428.175 644.684,427.961 645.378,427.772 646.008,427.606 646.574,427.461 647.079,427.338 647.523,427.234 647.909,427.149 648.238,427.079 648.512,427.025 648.735,426.984 648.908,426.955 649.036,426.935 649.123,426.924 649.174,426.918 649.196,426.916 649.199,426.916" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
-<line id="o058" x1="96" y1="426.916" x2="700.8" y2="426.916" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
-<text id="o059" font-family="Arial,sans-serif" font-size="16" fill="#F2B880" text-anchor="start" opacity="1">
-<tspan x="125.76" y="411.236">E_B = 11.3097 nJ</tspan>
-</text>
-<ellipse id="o060" cx="595.5" cy="446.751" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
-<text id="o061" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" opacity="1">
-<tspan x="357.42" y="472.765">Kₗ = 7/8 E_B = 9.896 nJ</tspan>
-</text>
-<rect id="o062" x="739.2" y="134.4" width="504" height="475.2" rx="38.016" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
-<text id="o063" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="752.64" y="156.84">The declared numbers</tspan>
-</text>
-<text id="o064" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="760.32" y="203.333">Collapse time</tspan>
-</text>
-<text id="o065" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="769.92" y="228.187">t_c = 0.9147 × 30 µm × √(1000/10⁵) = 2.7440 µs</tspan>
-</text>
-<text id="o066" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="760.32" y="270.88">Work scale</tspan>
-</text>
-<text id="o067" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="769.92" y="295.733">E_B = (4π/3)(10⁵)(30 µm)³ = 11.3097 nJ</tspan>
-</text>
-<text id="o068" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="760.32" y="338.427">Half-radius speed</tspan>
-</text>
-<text id="o069" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="769.92" y="363.28">Ṙ = −√[(2×10⁵/(3×1000))(8 − 1)] = −21.6025 m/s</tspan>
-</text>
-<text id="o070" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="760.32" y="405.973">Half-radius energy</tspan>
-</text>
-<text id="o071" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="769.92" y="430.827">Kₗ = (7/8) E_B = 9.8960 nJ</tspan>
-</text>
-<text id="o072" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="760.32" y="476.68">Inputs: ρ = 1000 kg/m³, Δp_c = 100 kPa, Rₘₐₓ = 30 µm. A</tspan>
-<tspan x="760.32" y="494.773">teaching case, not a measurement.</tspan>
-</text>
-<text id="o073" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="35.52" y="696.373">All values from Eq. C1-E19 and the Rayleigh curve of Eq. C1-E16.</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E19</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E19 · Ideal-trajectory diagnostic, not a physical limit</tspan>
+</text>
+<line id="o001" x1="96" y1="528" x2="729.6" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o002" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o003" x1="96" y1="528" x2="96" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o004" x1="96" y1="144" x2="96" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="96" y="550.04">0.025</tspan>
+</text>
+<line id="o006" x1="215.055" y1="528" x2="215.055" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o007" x1="215.055" y1="144" x2="215.055" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o008" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="215.055" y="550.04">0.05</tspan>
+</text>
+<line id="o009" x1="334.109" y1="528" x2="334.109" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o010" x1="334.109" y1="144" x2="334.109" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o011" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="334.109" y="550.04">0.1</tspan>
+</text>
+<line id="o012" x1="453.164" y1="528" x2="453.164" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o013" x1="453.164" y1="144" x2="453.164" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o014" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="453.164" y="550.04">0.2</tspan>
+</text>
+<line id="o015" x1="610.545" y1="528" x2="610.545" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="610.545" y1="144" x2="610.545" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="610.545" y="550.04">0.5</tspan>
+</text>
+<line id="o018" x1="729.6" y1="528" x2="729.6" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="729.6" y1="144" x2="729.6" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="729.6" y="550.04">1</tspan>
+</text>
+<line id="o021" x1="89.28" y1="528" x2="96" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="89.28" y1="400" x2="96" y2="400" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o023" x1="96" y1="400" x2="729.6" y2="400" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o024" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="404.76">0.01</tspan>
+</text>
+<line id="o025" x1="89.28" y1="272" x2="96" y2="272" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o026" x1="96" y1="272" x2="729.6" y2="272" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o027" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="276.76">0.1</tspan>
+</text>
+<line id="o028" x1="89.28" y1="144" x2="96" y2="144" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o029" x1="96" y1="144" x2="729.6" y2="144" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o030" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="84.48" y="148.76">1</tspan>
+</text>
+<text id="o031" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="412.8" y="572.8">R / Rₘₐₓ</tspan>
+</text>
+<text id="o032" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="40.32" y="122.56">wall Mach number |Ṙ| / c</tspan>
+</text>
+<polyline id="o033" points="96.8147,144 101.047,144 105.28,144 109.513,144 113.745,144 117.978,144 122.211,144 126.443,144 130.676,144 134.909,145.104 139.141,147.159 143.374,149.214 147.607,151.269 151.84,153.324 156.072,155.379 160.305,157.434 164.538,159.489 168.77,161.544 173.003,163.598 177.236,165.653 181.468,167.708 185.701,169.763 189.934,171.818 194.166,173.873 198.399,175.929 202.632,177.984 206.864,180.039 211.097,182.094 215.33,184.149 219.562,186.204 223.795,188.259 228.028,190.314 232.26,192.369 236.493,194.425 240.726,196.48 244.958,198.535 249.191,200.59 253.424,202.646 257.656,204.701 261.889,206.757 266.122,208.812 270.354,210.867 274.587,212.923 278.82,214.979 283.053,217.034 287.285,219.09 291.518,221.146 295.751,223.202 299.983,225.258 304.216,227.314 308.449,229.37 312.681,231.426 316.914,233.482 321.147,235.539 325.379,237.595 329.612,239.652 333.845,241.709 338.077,243.766 342.31,245.823 346.543,247.88 350.775,249.938 355.008,251.995 359.241,254.053 363.473,256.111 367.706,258.17 371.939,260.229 376.171,262.288 380.404,264.347 384.637,266.407 388.869,268.467 393.102,270.527 397.335,272.588 401.567,274.649 405.8,276.711 410.033,278.773 414.266,280.836 418.498,282.9 422.731,284.964 426.964,287.029 431.196,289.095 435.429,291.161 439.662,293.229 443.894,295.297 448.127,297.366 452.36,299.437 456.592,301.509 460.825,303.582 465.058,305.656 469.29,307.733 473.523,309.81 477.756,311.89 481.988,313.971 486.221,316.055 490.454,318.14 494.686,320.228 498.919,322.319 503.152,324.413 507.384,326.509 511.617,328.609 515.85,330.712 520.082,332.819 524.315,334.931 528.548,337.046 532.78,339.167 537.013,341.293 541.246,343.424 545.479,345.562 549.711,347.706 553.944,349.857 558.177,352.016 562.409,354.184 566.642,356.36 570.875,358.547 575.107,360.744 579.34,362.954 583.573,365.176 587.805,367.412 592.038,369.663 596.271,371.931 600.503,374.217 604.736,376.522 608.969,378.85 613.201,381.202 617.434,383.58 621.667,385.987 625.899,388.426 630.132,390.901 634.365,393.415 638.597,395.973 642.83,398.58 647.063,401.242 651.295,403.965 655.528,406.759 659.761,409.631 663.993,412.595 668.226,415.662 672.459,418.85 676.692,422.178 680.924,425.673 685.157,429.367 689.39,433.302 693.622,437.534 697.855,442.141 702.088,447.234 706.32,452.98 710.553,459.648 714.786,467.711 719.018,478.129 723.251,493.38 727.484,524.956" fill="none" stroke="#8EDBD4" stroke-width="4" opacity="1"/>
+<line id="o034" x1="96" y1="272" x2="729.6" y2="272" fill="#FFFFFF" stroke="#F2B880" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<text id="o035" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="620.145" y="256.867">M* = 0.1</tspan>
+</text>
+<polygon id="o036" points="96.8147,144 396.128,144 396.128,528 96.8147,528" fill="#F28BA0" stroke="#F28BA0" stroke-width="0.666667" opacity="0.18"/>
+<line id="o037" x1="396.128" y1="144" x2="396.128" y2="528" fill="#FFFFFF" stroke="#F28BA0" stroke-width="1.73333" opacity="1" stroke-dasharray="6 4"/>
+<ellipse id="o038" cx="396.128" cy="272" rx="7.68" ry="7.68" fill="#F28BA0" stroke="#F28BA0" stroke-width="1.33333" opacity="1"/>
+<text id="o039" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="407.648" y="239.04">x_M = 0.143487</tspan>
+</text>
+<text id="o040" font-family="Arial,sans-serif" font-size="16" fill="#F28BA0" text-anchor="start" opacity="1">
+<tspan x="118.819" y="417.976">incompressible model</tspan>
+<tspan x="118.819" y="436.856">not trusted here</tspan>
+</text>
+<rect id="o041" x="768" y="144" width="475.2" height="384" rx="30.72" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="781.44" y="166.44">A diagnostic, not a limit</tspan>
+</text>
+<text id="o043" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="784.32" y="208.133">x_M = [ 1 + 3ρc²M*² / (2Δp_c) ]^(−1/3)</tspan>
+</text>
+<text id="o044" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="269.987">With c = 1500 m/s and M* = 0.1 the ideal</tspan>
+<tspan x="805.44" y="289.653">collapse reaches M* at R = 0.143 Rₘₐₓ.</tspan>
+</text>
+<ellipse id="o045" cx="790.08" cy="264.733" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o046" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="320.253">Inside that radius the speed is large enough</tspan>
+<tspan x="805.44" y="339.92">that liquid compressibility must be added.</tspan>
+</text>
+<ellipse id="o047" cx="790.08" cy="315" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o048" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="805.44" y="370.52">The ideal trajectory itself is not a physical</tspan>
+<tspan x="805.44" y="390.187">prediction.</tspan>
+</text>
+<ellipse id="o049" cx="790.08" cy="365.267" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o050" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="97.92" y="618.053">Wall Mach number M_w = |Ṙ|/c grows as R shrinks, so the incompressible formulas lose validity near the end of the collapse.</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Curve from Eq. C1-E14 with c = 1500 m/s; threshold from Eq. C1-E19 (teaching inputs).</tspan>
+</text>
+</svg>

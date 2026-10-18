@@ -1,11 +1,11 @@
 {
   "chapter": 1,
   "status": "passed",
-  "equation_count": 34,
+  "equation_count": 33,
   "defense_question_count": 3,
-  "english_prose_words_excluding_local_definitions": 3614,
-  "english_words_including_local_definitions": 6466,
-  "check_count": 107,
+  "english_prose_words_excluding_local_definitions": 9385,
+  "english_words_including_local_definitions": 12129,
+  "check_count": 105,
   "checks": [
     {
       "name": "Rayleigh coefficient: direct radius integral versus beta",
@@ -283,8 +283,7 @@
         "C1-E30",
         "C1-E31",
         "C1-E32",
-        "C1-E33",
-        "C1-E34"
+        "C1-E33"
       ]
     },
     {
@@ -323,8 +322,7 @@
         "C1-E30",
         "C1-E31",
         "C1-E32",
-        "C1-E33",
-        "C1-E34"
+        "C1-E33"
       ]
     },
     {
@@ -626,32 +624,6 @@
       "name": "C1-E12 immediate physical diagram",
       "passed": true,
       "detail": {
-        "type": "energy",
-        "labels": [
-          "Drr",
-          "Dθθ",
-          "Dψψ",
-          "Dμ",
-          "μ",
-          "R",
-          "r",
-          "Ṙ",
-          "4πr²dr"
-        ],
-        "notes": [
-          "Integrate the positive dissipation density in exterior shells"
-        ]
-      }
-    },
-    {
-      "name": "C1-E13 bilingual local definitions",
-      "passed": true,
-      "detail": "Local declarations supplied before the display"
-    },
-    {
-      "name": "C1-E13 immediate physical diagram",
-      "passed": true,
-      "detail": {
         "type": "sphere",
         "labels": [
           "Rmax at t = 0",
@@ -669,12 +641,12 @@
       }
     },
     {
-      "name": "C1-E14 bilingual local definitions",
+      "name": "C1-E13 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E14 immediate physical diagram",
+      "name": "C1-E13 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "sphere",
@@ -695,12 +667,12 @@
       }
     },
     {
-      "name": "C1-E15 bilingual local definitions",
+      "name": "C1-E14 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E15 immediate physical diagram",
+      "name": "C1-E14 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "sphere",
@@ -720,12 +692,12 @@
       }
     },
     {
-      "name": "C1-E16 bilingual local definitions",
+      "name": "C1-E15 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E16 immediate physical diagram",
+      "name": "C1-E15 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "timescale",
@@ -746,12 +718,12 @@
       }
     },
     {
-      "name": "C1-E17 bilingual local definitions",
+      "name": "C1-E16 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E17 immediate physical diagram",
+      "name": "C1-E16 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "timescale",
@@ -770,12 +742,12 @@
       }
     },
     {
-      "name": "C1-E18 bilingual local definitions",
+      "name": "C1-E17 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E18 immediate physical diagram",
+      "name": "C1-E17 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "energy",
@@ -795,12 +767,12 @@
       }
     },
     {
-      "name": "C1-E19 bilingual local definitions",
+      "name": "C1-E18 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E19 immediate physical diagram",
+      "name": "C1-E18 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "sphere",
@@ -820,12 +792,12 @@
       }
     },
     {
-      "name": "C1-E20 bilingual local definitions",
+      "name": "C1-E19 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E20 immediate physical diagram",
+      "name": "C1-E19 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "timescale",
@@ -845,12 +817,12 @@
       }
     },
     {
-      "name": "C1-E21 bilingual local definitions",
+      "name": "C1-E20 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E21 immediate physical diagram",
+      "name": "C1-E20 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "impulse",
@@ -869,12 +841,12 @@
       }
     },
     {
-      "name": "C1-E22 bilingual local definitions",
+      "name": "C1-E21 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E22 immediate physical diagram",
+      "name": "C1-E21 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "impulse",
@@ -895,12 +867,12 @@
       }
     },
     {
-      "name": "C1-E23 bilingual local definitions",
+      "name": "C1-E22 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E23 immediate physical diagram",
+      "name": "C1-E22 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "impulse",
@@ -920,12 +892,12 @@
       }
     },
     {
-      "name": "C1-E24 bilingual local definitions",
+      "name": "C1-E23 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E24 immediate physical diagram",
+      "name": "C1-E23 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "impulse",
@@ -945,12 +917,12 @@
       }
     },
     {
-      "name": "C1-E25 bilingual local definitions",
+      "name": "C1-E24 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E25 immediate physical diagram",
+      "name": "C1-E24 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "impulse",
@@ -972,12 +944,12 @@
       }
     },
     {
-      "name": "C1-E26 bilingual local definitions",
+      "name": "C1-E25 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E26 immediate physical diagram",
+      "name": "C1-E25 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "sphere",
@@ -996,12 +968,12 @@
       }
     },
     {
-      "name": "C1-E27 bilingual local definitions",
+      "name": "C1-E26 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E27 immediate physical diagram",
+      "name": "C1-E26 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "jet",
@@ -1021,12 +993,12 @@
       }
     },
     {
-      "name": "C1-E28 bilingual local definitions",
+      "name": "C1-E27 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E28 immediate physical diagram",
+      "name": "C1-E27 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "jet",
@@ -1050,12 +1022,12 @@
       }
     },
     {
-      "name": "C1-E29 bilingual local definitions",
+      "name": "C1-E28 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E29 immediate physical diagram",
+      "name": "C1-E28 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "jet",
@@ -1078,12 +1050,12 @@
       }
     },
     {
-      "name": "C1-E30 bilingual local definitions",
+      "name": "C1-E29 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E30 immediate physical diagram",
+      "name": "C1-E29 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "sphere",
@@ -1104,12 +1076,12 @@
       }
     },
     {
-      "name": "C1-E31 bilingual local definitions",
+      "name": "C1-E30 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E31 immediate physical diagram",
+      "name": "C1-E30 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "timescale",
@@ -1129,12 +1101,12 @@
       }
     },
     {
-      "name": "C1-E32 bilingual local definitions",
+      "name": "C1-E31 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E32 immediate physical diagram",
+      "name": "C1-E31 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "phase",
@@ -1158,12 +1130,12 @@
       }
     },
     {
-      "name": "C1-E33 bilingual local definitions",
+      "name": "C1-E32 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E33 immediate physical diagram",
+      "name": "C1-E32 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "sphere",
@@ -1183,12 +1155,12 @@
       }
     },
     {
-      "name": "C1-E34 bilingual local definitions",
+      "name": "C1-E33 bilingual local definitions",
       "passed": true,
       "detail": "Local declarations supplied before the display"
     },
     {
-      "name": "C1-E34 immediate physical diagram",
+      "name": "C1-E33 immediate physical diagram",
       "passed": true,
       "detail": {
         "type": "impulse",
@@ -1218,7 +1190,7 @@
     {
       "name": "C1-Q1 original formula section present",
       "passed": true,
-      "detail": "C1-E32"
+      "detail": "C1-E31"
     },
     {
       "name": "C1-Q2 formulas first in reference answer",
@@ -1228,7 +1200,7 @@
     {
       "name": "C1-Q2 original formula section present",
       "passed": true,
-      "detail": "C1-E33"
+      "detail": "C1-E32"
     },
     {
       "name": "C1-Q3 formulas first in reference answer",
@@ -1238,7 +1210,7 @@
     {
       "name": "C1-Q3 original formula section present",
       "passed": true,
-      "detail": "C1-E34"
+      "detail": "C1-E33"
     }
   ],
   "source_sha256": "cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0",

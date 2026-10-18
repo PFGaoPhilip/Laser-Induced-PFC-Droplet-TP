@@ -1,7 +1,7 @@
 {
   "status": "accepted",
-  "date": "2026-10-17",
-  "figure_count": 70,
+  "date": "2026-10-19",
+  "figure_count": 69,
   "ids": [
     "C1-E01",
     "C1-E02",
@@ -36,7 +36,6 @@
     "C1-E31",
     "C1-E32",
     "C1-E33",
-    "C1-E34",
     "C2-E01",
     "C2-E02",
     "C2-E03",
@@ -86,5 +85,7 @@
   "limitations": [
     "Schematics describe the adopted lesson models and their declared assumptions.",
     "Illustrative values are labelled as such in each figure."
-  ]
+  ],
+  "historical_acceptance_date": "2026-10-17",
+  "revision": "Original physical geometry preserved; old E12 deleted; later IDs migrated by frozen-byte mapping. Historical receipt preserved in baseline archive. Browser SVG and native object checks recorded separately."
 }

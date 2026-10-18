@@ -1,76 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
-<title>C1-E23</title>
-<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
-<rect width="1279.97" height="720" fill="#142632"/>
-<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="30.72" y="35.1733">C1-E23 · Short-event reduced pressure-impulse model</tspan>
-</text>
-<polygon id="o001" points="105.6,595.2 585.6,595.2 585.211,575.872 584.044,556.576 582.1,537.342 579.384,518.203 575.9,499.188 571.652,480.328 566.649,461.656 560.897,443.199 554.408,424.99 547.19,407.056 539.256,389.428 530.619,372.133 521.292,355.2 511.291,338.656 500.632,322.529 489.333,306.844 477.41,291.626 464.885,276.901 451.777,262.692 438.108,249.023 423.899,235.915 409.174,223.39 393.956,211.467 378.271,200.168 362.144,189.509 345.6,179.508 328.667,170.181 311.372,161.544 293.744,153.61 275.81,146.392 257.601,139.903 239.144,134.151 220.472,129.148 201.612,124.9 182.597,121.416 163.458,118.7 144.224,116.756 124.928,115.589 105.6,115.2" fill="#1E4A5A" stroke="#2B6678" stroke-width="1.86667" opacity="1"/>
-<line id="o002" x1="105.6" y1="595.2" x2="562.107" y2="446.872" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
-<text id="o003" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="568.592" y="449.189">Π = 0.8 Π₀</tspan>
-</text>
-<line id="o004" x1="105.6" y1="595.2" x2="493.928" y2="313.063" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
-<text id="o005" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="499.731" y="314.042">Π = 0.6 Π₀</tspan>
-</text>
-<line id="o006" x1="105.6" y1="595.2" x2="387.737" y2="206.872" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
-<text id="o007" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="392.478" y="206.789">Π = 0.4 Π₀</tspan>
-</text>
-<line id="o008" x1="105.6" y1="595.2" x2="253.928" y2="138.693" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.46667" opacity="1" stroke-dasharray="6 4"/>
-<text id="o009" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="257.331" y="137.928">Π = 0.2 Π₀</tspan>
-</text>
-<line id="o010" x1="105.6" y1="595.2" x2="585.6" y2="595.2" fill="#FFFFFF" stroke="#F2B880" stroke-width="5.33333" opacity="1"/>
-<text id="o011" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="203.52" y="618.467">driven boundary: Π = Π₀</tspan>
-</text>
-<line id="o012" x1="105.6" y1="595.2" x2="105.6" y2="115.2" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="5.33333" opacity="1"/>
-<text id="o013" font-family="Arial,sans-serif" font-size="16.6667" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="117.12" y="97.1867">free boundary: Π = 0</tspan>
-</text>
-<polyline id="o014" points="219.506,577.985 218.101,570.41 216.193,562.947 213.79,555.628 210.903,548.485 207.546,541.552 203.732,534.858 199.48,528.435 194.808,522.31 189.737,516.51 184.29,511.063 178.49,505.992 172.365,501.32 165.942,497.068 159.248,493.254 152.315,489.897 145.172,487.01 137.853,484.607 130.39,482.699 122.815,481.294" fill="none" stroke="#F2B880" stroke-width="1.6" opacity="0.7"/>
-<line id="o015" x1="178.519" y1="506.016" x2="130.211" y2="466.518" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
-<polyline id="o016" points="333.413,560.769 330.602,545.621 326.786,530.694 321.98,516.055 316.207,501.771 309.491,487.904 301.864,474.517 293.36,461.669 284.016,449.419 273.874,437.821 262.979,426.926 251.381,416.784 239.131,407.44 226.283,398.936 212.896,391.309 199.029,384.593 184.745,378.82 170.106,374.014 155.179,370.198 140.031,367.387" fill="none" stroke="#F2B880" stroke-width="1.6" opacity="0.7"/>
-<line id="o017" x1="251.439" y1="416.832" x2="227.285" y2="397.083" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
-<polyline id="o018" points="447.319,543.554 443.104,520.831 437.379,498.441 430.17,476.483 421.51,455.056 411.437,434.256 399.997,414.175 387.24,394.904 373.223,376.529 358.01,359.131 341.669,342.79 324.271,327.577 305.896,313.56 286.625,300.803 266.544,289.363 245.744,279.29 224.317,270.63 202.359,263.421 179.969,257.696 157.246,253.481" fill="none" stroke="#F2B880" stroke-width="1.6" opacity="0.7"/>
-<line id="o019" x1="324.358" y1="327.648" x2="308.256" y2="314.482" fill="#FFFFFF" stroke="#F2B880" stroke-width="4" opacity="1" marker-end="url(#head)"/>
-<text id="o020" font-family="Arial,sans-serif" font-size="20" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="721.92" y="123.92">Reduced model: ∇²Π = 0</tspan>
-</text>
-<text id="o021" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="743.04" y="173.987">Incompressible short event: ∇·Δu = 0 and Δu ≃ −∇Π/ρ give</tspan>
-<tspan x="743.04" y="193.653">Laplace&#x27;s equation for Π.</tspan>
-</text>
-<ellipse id="o022" cx="727.68" cy="168.733" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
-<text id="o023" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="743.04" y="224.253">Π is fixed on the boundaries (Π₀ on the driven wall, 0</tspan>
-<tspan x="743.04" y="243.92">at the free surface); the interior follows from geometry</tspan>
-<tspan x="743.04" y="263.587">alone.</tspan>
-</text>
-<ellipse id="o024" cx="727.68" cy="219" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
-<text id="o025" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="743.04" y="294.853">Here Π = Π₀(1 − θ/θ₀) in a right-angle corner is</tspan>
-<tspan x="743.04" y="314.52">harmonic, so Δu points along circular arcs toward the</tspan>
-<tspan x="743.04" y="334.187">free side.</tspan>
-</text>
-<ellipse id="o026" cx="727.68" cy="289.6" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
-<text id="o027" font-family="Arial,sans-serif" font-size="16.6667" fill="#E7F0F3" text-anchor="start" opacity="1">
-<tspan x="743.04" y="365.453">Arrow length ∝ 1/r: the impulse gradient is steepest</tspan>
-<tspan x="743.04" y="385.12">near the corner.</tspan>
-</text>
-<ellipse id="o028" cx="727.68" cy="360.2" rx="4.32" ry="4.32" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
-<rect id="o029" x="720" y="480" width="518.4" height="168" rx="13.44" fill="#213E4B" stroke="#B4C7D2" stroke-width="2.13333" opacity="1"/>
-<text id="o030" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
-<tspan x="736.32" y="502.853">Conditions: Uτ/L ≪ 1 and ντ/L² ≪ 1.</tspan>
-</text>
-<text id="o031" font-family="Arial,sans-serif" font-size="16.6667" fill="#F2B880" text-anchor="start" opacity="1">
-<tspan x="736.32" y="543.587">Result: the velocity right after the pulse depends on</tspan>
-<tspan x="736.32" y="563.253">the shape of the liquid region, not on a detailed</tspan>
-<tspan x="736.32" y="582.92">pressure history.</tspan>
-</text>
-<text id="o032" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
-<tspan x="35.52" y="696.373">Corner example: an exact harmonic solution chosen to show the geometry dependence; not a model of the laser event.</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.97 720" role="img">
+<title>C1-E23</title>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0,0 L7,3.5 L0,7 Z" fill="context-stroke"/></marker></defs>
+<rect width="1279.97" height="720" fill="#142632"/>
+<text id="o000" font-family="Arial,sans-serif" font-size="25.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="30.72" y="35.1733">C1-E23 · Exact straight-column solution of the reduced model</tspan>
+</text>
+<rect id="o001" x="124.8" y="148.8" width="672" height="67.2" fill="#1E4A5A" stroke="#2B6678" stroke-width="2" opacity="1"/>
+<rect id="o002" x="105.6" y="139.2" width="19.2" height="86.4" fill="#3A5362" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o003" font-family="Arial,sans-serif" font-size="15.3333" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="78.72" y="105.693">driven end z = 0</tspan>
+</text>
+<text id="o004" font-family="Arial,sans-serif" font-size="15.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="645.12" y="105.693">outlet z = L</tspan>
+</text>
+<line id="o005" x1="182.4" y1="182.4" x2="268.8" y2="182.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o006" x1="316.8" y1="182.4" x2="403.2" y2="182.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o007" x1="451.2" y1="182.4" x2="537.6" y2="182.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o008" x1="585.6" y1="182.4" x2="672" y2="182.4" fill="#FFFFFF" stroke="#8EDBD4" stroke-width="4" opacity="1" marker-end="url(#head)"/>
+<line id="o009" x1="124.8" y1="235.2" x2="796.8" y2="235.2" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o010" x1="124.8" y1="228.48" x2="124.8" y2="241.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<line id="o011" x1="796.8" y1="228.48" x2="796.8" y2="241.92" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.73333" opacity="1"/>
+<text id="o012" font-family="Arial,sans-serif" font-size="15.3333" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="460.8" y="257.773">L = 100 µm</tspan>
+</text>
+<line id="o013" x1="124.8" y1="528" x2="796.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o014" x1="124.8" y1="288" x2="124.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="2" opacity="1"/>
+<line id="o015" x1="124.8" y1="528" x2="124.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o016" x1="124.8" y1="288" x2="124.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o017" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="124.8" y="550.04">0.00</tspan>
+</text>
+<line id="o018" x1="292.8" y1="528" x2="292.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o019" x1="292.8" y1="288" x2="292.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o020" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="292.8" y="550.04">0.25</tspan>
+</text>
+<line id="o021" x1="460.8" y1="528" x2="460.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o022" x1="460.8" y1="288" x2="460.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o023" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="460.8" y="550.04">0.50</tspan>
+</text>
+<line id="o024" x1="628.8" y1="528" x2="628.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o025" x1="628.8" y1="288" x2="628.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o026" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="628.8" y="550.04">0.75</tspan>
+</text>
+<line id="o027" x1="796.8" y1="528" x2="796.8" y2="534.72" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o028" x1="796.8" y1="288" x2="796.8" y2="528" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o029" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="middle" opacity="1">
+<tspan x="796.8" y="550.04">1.00</tspan>
+</text>
+<line id="o030" x1="118.08" y1="528" x2="124.8" y2="528" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o031" x1="118.08" y1="418.909" x2="124.8" y2="418.909" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o032" x1="124.8" y1="418.909" x2="796.8" y2="418.909" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o033" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="113.28" y="423.669">0.5</tspan>
+</text>
+<line id="o034" x1="118.08" y1="309.818" x2="124.8" y2="309.818" fill="#FFFFFF" stroke="#B4C7D2" stroke-width="1.33333" opacity="1"/>
+<line id="o035" x1="124.8" y1="309.818" x2="796.8" y2="309.818" fill="#FFFFFF" stroke="#2E4756" stroke-width="0.8" opacity="1"/>
+<text id="o036" font-family="Arial,sans-serif" font-size="14" fill="#B4C7D2" text-anchor="end" opacity="1">
+<tspan x="113.28" y="314.578">1.0</tspan>
+</text>
+<text id="o037" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="middle" opacity="1">
+<tspan x="460.8" y="572.8">z / L</tspan>
+</text>
+<text id="o038" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="69.12" y="266.56">Π / Π₀</tspan>
+</text>
+<polyline id="o039" points="124.8,309.818 138.514,314.271 152.229,318.724 165.943,323.176 179.657,327.629 193.371,332.082 207.086,336.534 220.8,340.987 234.514,345.44 248.229,349.892 261.943,354.345 275.657,358.798 289.371,363.25 303.086,367.703 316.8,372.156 330.514,376.609 344.229,381.061 357.943,385.514 371.657,389.967 385.371,394.419 399.086,398.872 412.8,403.325 426.514,407.777 440.229,412.23 453.943,416.683 467.657,421.135 481.371,425.588 495.086,430.041 508.8,434.494 522.514,438.946 536.229,443.399 549.943,447.852 563.657,452.304 577.371,456.757 591.086,461.21 604.8,465.662 618.514,470.115 632.229,474.568 645.943,479.02 659.657,483.473 673.371,487.926 687.086,492.378 700.8,496.831 714.514,501.284 728.229,505.737 741.943,510.189 755.657,514.642 769.371,519.095 783.086,523.547 796.8,528" fill="none" stroke="#F2B880" stroke-width="4.26667" opacity="1"/>
+<ellipse id="o040" cx="124.8" cy="309.818" rx="7.68" ry="7.68" fill="#F2B880" stroke="#F2B880" stroke-width="1.33333" opacity="1"/>
+<ellipse id="o041" cx="796.8" cy="528" rx="7.68" ry="7.68" fill="#8EDBD4" stroke="#8EDBD4" stroke-width="1.33333" opacity="1"/>
+<text id="o042" font-family="Arial,sans-serif" font-size="17.3333" fill="#F2B880" text-anchor="start" opacity="1">
+<tspan x="376.32" y="377.442">Π(z) = Π₀(1 − z/L)</tspan>
+</text>
+<rect id="o043" x="854.4" y="115.2" width="388.8" height="441.6" rx="31.104" fill="#213E4B" stroke="#8EDBD4" stroke-width="2.13333" opacity="1"/>
+<text id="o044" font-family="Arial,sans-serif" font-size="18" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="867.84" y="137.64">Straight column</tspan>
+</text>
+<text id="o045" font-family="Arial,sans-serif" font-size="17.3333" fill="#E7F0F3" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="870.72" y="179.333">d²Π/dz² = 0</tspan>
+<tspan x="870.72" y="199.787">Π = Π₀ (1 − z/L)</tspan>
+</text>
+<text id="o046" font-family="Arial,sans-serif" font-size="17.3333" fill="#8EDBD4" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="870.72" y="260.933">Δu_z = −(1/ρ) dΠ/dz = Π₀ / (ρL)</tspan>
+</text>
+<text id="o047" font-family="Arial,sans-serif" font-size="16" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="870.72" y="322.24">With Π₀ = 0.30 Pa·s, ρ = 1000 kg/m³, L =</tspan>
+<tspan x="870.72" y="341.12">100 µm:</tspan>
+</text>
+<text id="o048" font-family="Arial,sans-serif" font-size="22.6667" fill="#F2B880" text-anchor="start" font-weight="bold" opacity="1">
+<tspan x="870.72" y="380.507">Δu_z = 3.0 m/s</tspan>
+</text>
+<text id="o049" font-family="Arial,sans-serif" font-size="16" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="870.72" y="437.44">The impulse drops linearly, so every slice</tspan>
+<tspan x="870.72" y="456.32">gets the same velocity change toward the</tspan>
+<tspan x="870.72" y="475.2">outlet.</tspan>
+</text>
+<text id="o050" font-family="Arial,sans-serif" font-size="18" fill="#E7F0F3" text-anchor="start" opacity="1">
+<tspan x="49.92" y="611.88">A constant gradient means uniform acceleration: the whole column leaves the driven end as one plug.</tspan>
+</text>
+<text id="o051" font-family="Arial,sans-serif" font-size="13.3333" fill="#B4C7D2" text-anchor="start" opacity="1">
+<tspan x="35.52" y="696.373">Boundary values Π(0) = Π₀, Π(L) = 0 (Eq. C1-E23).</tspan>
+</text>
+</svg>

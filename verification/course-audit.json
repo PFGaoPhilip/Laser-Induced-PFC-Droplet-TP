@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "check_count": 7676,
+  "check_count": 7753,
   "failures": [],
   "checks": [
     {
@@ -289,6 +289,11 @@
       "detail": null
     },
     {
+      "name": "index.html: local dependency assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "index.html: local dependency index.html",
       "passed": true,
       "detail": null
@@ -505,6 +510,416 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: unique DOM anchors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: bilingual paragraph pair",
       "passed": true,
       "detail": null
     },
@@ -4919,51 +5334,6 @@
       "detail": null
     },
     {
-      "name": "C1-E34: exact bilingual equation title",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: separate language title views",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: local bilingual symbols before math",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: immediate physical-variable figure",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: static readable math and MathML",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: one symbol per local definition",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: explicit individual local units",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: at most two variables per visual row",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: bilingual definition in each cell",
-      "passed": true,
-      "detail": null
-    },
-    {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/vendor/katex/katex.min.css",
       "passed": true,
       "detail": null
@@ -4990,6 +5360,11 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -5279,47 +5654,47 @@
       "detail": null
     },
     {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/figures/c1-e16.svg",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r1",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r1",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r1",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r1",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
       "passed": true,
       "detail": null
     },
@@ -5339,27 +5714,27 @@
       "detail": null
     },
     {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r2",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/figures/c1-e20.svg",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r2",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r2",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r2",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r2",
       "passed": true,
       "detail": null
     },
@@ -5384,47 +5759,47 @@
       "detail": null
     },
     {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r12",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/figures/c1-e25.svg",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r12",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r12",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r3",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r12",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r12",
       "passed": true,
       "detail": null
     },
@@ -5439,27 +5814,27 @@
       "detail": null
     },
     {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r4",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/figures/c1-e28.svg",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r4",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r4",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../reference/sources.html#r4",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: anchor ../reference/sources.html#r4",
       "passed": true,
       "detail": null
     },
@@ -5485,11 +5860,6 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/figures/c1-e33.svg",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/figures/c1-e34.svg",
       "passed": true,
       "detail": null
     },
@@ -10045,6 +10415,11 @@
     },
     {
       "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/02-optical-heating-and-finite-pfc-inventory.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -15859,6 +16234,11 @@
       "detail": null
     },
     {
+      "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/03-arrays-finite-jets-and-impact.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -21349,6 +21729,11 @@
       "detail": null
     },
     {
+      "name": "chapters/04-fracture-and-transfer.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/04-fracture-and-transfer.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -25389,6 +25774,11 @@
       "detail": null
     },
     {
+      "name": "chapters/05-jet-on-rigid-wall.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "chapters/05-jet-on-rigid-wall.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -29239,6 +29629,11 @@
       "detail": null
     },
     {
+      "name": "appendices/90-hydrogel-versus-liquid.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "appendices/90-hydrogel-versus-liquid.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -29815,6 +30210,11 @@
     },
     {
       "name": "reference/defense.html: local dependency ../assets/course-language.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference/defense.html: local dependency ../assets/bilingual-terms.css",
       "passed": true,
       "detail": null
     },
@@ -30514,6 +30914,11 @@
       "detail": null
     },
     {
+      "name": "reference/notation.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/notation.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -30854,6 +31259,11 @@
       "detail": null
     },
     {
+      "name": "reference/sources.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "reference/sources.html: local dependency ../index.html",
       "passed": true,
       "detail": null
@@ -30967,8 +31377,8 @@
       "name": "Every registry display rendered once",
       "passed": true,
       "detail": {
-        "rendered": 190,
-        "registered": 190
+        "rendered": 189,
+        "registered": 189
       }
     },
     {
@@ -31133,11 +31543,6 @@
     },
     {
       "name": "C1-E33: portable Markdown preserves inline bilingual title",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: portable Markdown preserves inline bilingual title",
       "passed": true,
       "detail": null
     },
@@ -32252,7 +32657,7 @@
       "detail": null
     },
     {
-      "name": "C1-Q1: formula-first reference",
+      "name": "C1-Q1: bilingual derivation followed by its original formula",
       "passed": true,
       "detail": null
     },
@@ -32262,7 +32667,7 @@
       "detail": null
     },
     {
-      "name": "C1-Q2: formula-first reference",
+      "name": "C1-Q2: bilingual derivation followed by its original formula",
       "passed": true,
       "detail": null
     },
@@ -32272,7 +32677,7 @@
       "detail": null
     },
     {
-      "name": "C1-Q3: formula-first reference",
+      "name": "C1-Q3: bilingual derivation followed by its original formula",
       "passed": true,
       "detail": null
     },
@@ -34051,7 +34456,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Spherical cavity dynamics, liquid inertia, pressure impulse, moving interfaces, and directional jet formation. 球形腔体动力学、液体惯性、压力冲量、运动界面与定向射流形成。"
+      "detail": "Spherical cavity dynamics, liquid inertia , pressure impulse , moving interfaces, and directional jet formation. 球形腔体动力学、 液体惯性 、 压力冲量 、运动界面与定向 射流 形成。"
     },
     {
       "name": "all: map row 2 column 1",
@@ -34098,7 +34503,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Laser heating, nucleation, heat and mass transfer, material properties, and finite phase inventory. 激光加热、成核、传热传质、物性与有限相存量。"
+      "detail": "Laser heating, nucleation , heat and mass transfer , material properties, and finite phase inventory . 激光加热、 成核 、 传热 传质 、物性与 有限相存量 。"
     },
     {
       "name": "all: map row 3 column 1",
@@ -34145,7 +34550,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Array coupling, energy allocation, finite jets, impact, and the three-stage resolver. 阵列耦合、能量分配、有限射流、冲击与三阶段求解器。"
+      "detail": "Array coupling, energy allocation, finite jets , impact, and the three-stage resolver. 阵列耦合、能量分配、有限 射流 、冲击与三阶段求解器。"
     },
     {
       "name": "all: map row 4 column 1",
@@ -34286,7 +34691,7 @@
     {
       "name": "all: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Gel confinement, response times, finite-energy models, and embedded-PFC comparisons. 凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。"
+      "detail": "Gel confinement , response times, finite-energy models, and embedded- PFC comparisons. 凝胶 约束 、响应时间、有限能量模型与嵌入式 PFC 比较。"
     },
     {
       "name": "C01: correspondence row count",
@@ -34338,7 +34743,7 @@
     {
       "name": "C01: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Spherical cavity dynamics, liquid inertia, pressure impulse, moving interfaces, and directional jet formation. 球形腔体动力学、液体惯性、压力冲量、运动界面与定向射流形成。"
+      "detail": "Spherical cavity dynamics, liquid inertia , pressure impulse , moving interfaces, and directional jet formation. 球形腔体动力学、 液体惯性 、 压力冲量 、运动界面与定向 射流 形成。"
     },
     {
       "name": "C02: correspondence row count",
@@ -34390,7 +34795,7 @@
     {
       "name": "C02: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Laser heating, nucleation, heat and mass transfer, material properties, and finite phase inventory. 激光加热、成核、传热传质、物性与有限相存量。"
+      "detail": "Laser heating, nucleation , heat and mass transfer , material properties, and finite phase inventory . 激光加热、 成核 、 传热 传质 、物性与 有限相存量 。"
     },
     {
       "name": "C03: correspondence row count",
@@ -34442,7 +34847,7 @@
     {
       "name": "C03: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Array coupling, energy allocation, finite jets, impact, and the three-stage resolver. 阵列耦合、能量分配、有限射流、冲击与三阶段求解器。"
+      "detail": "Array coupling, energy allocation, finite jets , impact, and the three-stage resolver. 阵列耦合、能量分配、有限 射流 、冲击与三阶段求解器。"
     },
     {
       "name": "C04: correspondence row count",
@@ -34598,7 +35003,7 @@
     {
       "name": "A: main-material column has no old course identifiers",
       "passed": true,
-      "detail": "Gel confinement, response times, finite-energy models, and embedded-PFC comparisons. 凝胶约束、响应时间、有限能量模型与嵌入式 PFC 比较。"
+      "detail": "Gel confinement , response times, finite-energy models, and embedded- PFC comparisons. 凝胶 约束 、响应时间、有限能量模型与嵌入式 PFC 比较。"
     },
     {
       "name": "C1-E01: SVG text within vertical bounds",
@@ -35257,26 +35662,6 @@
     },
     {
       "name": "C1-E33: Newton radius notation",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: SVG text within vertical bounds",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: figure labels retained",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: no control characters in math",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "C1-E34: Newton radius notation",
       "passed": true,
       "detail": null
     },
@@ -38714,68 +39099,68 @@
   "chapters": 5,
   "appendices": 1,
   "chapter_questions": 18,
-  "displayed_equations": 190,
-  "bilingual_paragraph_pairs": 3703,
-  "local_dependencies": 569,
+  "displayed_equations": 189,
+  "bilingual_paragraph_pairs": 3785,
+  "local_dependencies": 578,
   "local_math_fonts": 60,
   "pages": [
     {
       "file": "index.html",
-      "bytes": 17042,
+      "bytes": 25394,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 1263120,
-      "equations": 34,
+      "bytes": 2928224,
+      "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
-      "bytes": 1494950,
+      "bytes": 1553056,
       "equations": 36,
       "defenses": 3
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
-      "bytes": 1964116,
+      "bytes": 2011042,
       "equations": 33,
       "defenses": 3
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
-      "bytes": 1825099,
+      "bytes": 1864187,
       "equations": 41,
       "defenses": 3
     },
     {
       "file": "chapters/05-jet-on-rigid-wall.html",
-      "bytes": 1461459,
+      "bytes": 1492834,
       "equations": 22,
       "defenses": 3
     },
     {
       "file": "appendices/90-hydrogel-versus-liquid.html",
-      "bytes": 1237768,
+      "bytes": 1266519,
       "equations": 24,
       "defenses": 3
     },
     {
       "file": "reference/defense.html",
-      "bytes": 14593,
+      "bytes": 18062,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/notation.html",
-      "bytes": 28613,
+      "bytes": 31476,
       "equations": 0,
       "defenses": 0
     },
     {
       "file": "reference/sources.html",
-      "bytes": 23015,
+      "bytes": 31061,
       "equations": 0,
       "defenses": 0
     }
@@ -38849,68 +39234,68 @@
     },
     {
       "id": "C1-E12",
-      "kind": "energy",
-      "labels": 9,
+      "kind": "sphere",
+      "labels": 8,
       "height": 720.0
     },
     {
       "id": "C1-E13",
       "kind": "sphere",
-      "labels": 8,
+      "labels": 9,
       "height": 720.0
     },
     {
       "id": "C1-E14",
       "kind": "sphere",
-      "labels": 9,
+      "labels": 7,
       "height": 720.0
     },
     {
       "id": "C1-E15",
-      "kind": "sphere",
-      "labels": 7,
+      "kind": "timescale",
+      "labels": 8,
       "height": 720.0
     },
     {
       "id": "C1-E16",
       "kind": "timescale",
-      "labels": 8,
-      "height": 720.0
-    },
-    {
-      "id": "C1-E17",
-      "kind": "timescale",
       "labels": 7,
       "height": 720.0
     },
     {
-      "id": "C1-E18",
+      "id": "C1-E17",
       "kind": "energy",
       "labels": 8,
       "height": 720.0
     },
     {
-      "id": "C1-E19",
+      "id": "C1-E18",
       "kind": "sphere",
       "labels": 8,
       "height": 720.0
     },
     {
-      "id": "C1-E20",
+      "id": "C1-E19",
       "kind": "timescale",
       "labels": 8,
       "height": 720.0
     },
     {
-      "id": "C1-E21",
+      "id": "C1-E20",
       "kind": "impulse",
       "labels": 7,
       "height": 720.0
     },
     {
-      "id": "C1-E22",
+      "id": "C1-E21",
       "kind": "impulse",
       "labels": 9,
+      "height": 720.0
+    },
+    {
+      "id": "C1-E22",
+      "kind": "impulse",
+      "labels": 8,
       "height": 720.0
     },
     {
@@ -38922,65 +39307,59 @@
     {
       "id": "C1-E24",
       "kind": "impulse",
-      "labels": 8,
-      "height": 720.0
-    },
-    {
-      "id": "C1-E25",
-      "kind": "impulse",
       "labels": 9,
       "height": 720.0
     },
     {
-      "id": "C1-E26",
+      "id": "C1-E25",
       "kind": "sphere",
       "labels": 7,
+      "height": 720.0
+    },
+    {
+      "id": "C1-E26",
+      "kind": "jet",
+      "labels": 8,
       "height": 720.0
     },
     {
       "id": "C1-E27",
       "kind": "jet",
-      "labels": 8,
+      "labels": 11,
       "height": 720.0
     },
     {
       "id": "C1-E28",
       "kind": "jet",
-      "labels": 11,
-      "height": 720.0
-    },
-    {
-      "id": "C1-E29",
-      "kind": "jet",
       "labels": 10,
       "height": 720.0
     },
     {
-      "id": "C1-E30",
+      "id": "C1-E29",
       "kind": "sphere",
       "labels": 9,
       "height": 720.0
     },
     {
-      "id": "C1-E31",
+      "id": "C1-E30",
       "kind": "timescale",
       "labels": 7,
       "height": 720.0
     },
     {
-      "id": "C1-E32",
+      "id": "C1-E31",
       "kind": "phase",
       "labels": 12,
       "height": 720.0
     },
     {
-      "id": "C1-E33",
+      "id": "C1-E32",
       "kind": "sphere",
       "labels": 8,
       "height": 720.0
     },
     {
-      "id": "C1-E34",
+      "id": "C1-E33",
       "kind": "impulse",
       "labels": 10,
       "height": 720.0

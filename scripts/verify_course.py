@@ -120,7 +120,18 @@ def main():
         for defense in soup.select('article[data-defense]'):
             ans=defense.select_one('details.answer')
             content=[n for n in ans.children if getattr(n,'name',None) and n.name!='summary' and n.get('aria-hidden')!='true'] if ans else []
-            check(defense['id']+': formula-first reference',bool(content and 'equation-unit' in content[0].get('class',[])))
+            if defense['id'] in {'C1-Q1','C1-Q2','C1-Q3'}:
+                expected_id={'C1-Q1':'C1-E31','C1-Q2':'C1-E32','C1-Q3':'C1-E33'}[defense['id']]
+                intro=content[0] if content else None
+                formula=content[1] if len(content)>1 else None
+                check(defense['id']+': bilingual derivation followed by its original formula',
+                      intro is not None and 'lang-pair' in intro.get('class',[])
+                      and intro.select_one('p[lang="en"] strong') is not None
+                      and intro.select_one('p[lang="zh-CN"] strong') is not None
+                      and formula is not None and 'equation-unit' in formula.get('class',[])
+                      and formula.get('id')==expected_id and formula.select_one('.math-display') is not None)
+            else:
+                check(defense['id']+': formula-first reference',bool(content and 'equation-unit' in content[0].get('class',[])))
             check(defense['id']+': semantic rubric',len(ans.select('li'))>=3 if ans else False)
     for legacy in settings.get('legacy_routes',[]):
         old=ROOT/legacy['file'];canonical=ROOT/legacy['canonical']

@@ -70,6 +70,8 @@ def rayleigh_points():
 
 def draw(eq):
  c=Canvas(eq);id=eq['id'];k=eq['diagram']['type'];n=int(id.split('E')[1]);ch=id[:2];fix=[]
+ # Numerical drawing cases retain their original physical ordering.
+ if ch=='C1' and n>=12:n+=1
  if ch=='C1' and k=='sphere':
   c.sphere();fix+=['Outward arrow explicitly labels radial coordinate, not signed wall motion.']
   if n in [13,14,15,19,33]:c.line(160,215,205,215,True,color=HOT);c.text(90,80,'Collapse: dR/dt < 0',18,HOT,350);fix+=['Separate inward collapse arrow from outward radial coordinate.']
@@ -98,7 +100,7 @@ def draw(eq):
   fix+=['Qualitative trajectories have no fabricated data points.']
  elif ch=='C1' and id=='C1-E08':
   c.circle(270,215,100);c.text(170,190,'PFC vapor + water vapor',18,w=350);c.text(180,230,'+ permanent gas',18,w=310);c.circle(305,275,20, HOT);c.text(450,180,'p_b = p_v,PFC + p_v,w + p_g',21,w=480);c.text(450,240,'Residual PFC liquid: finite inventory',18,w=480);fix+=['Residual liquid kept distinct from vapor mixture.']
- elif ch=='C1' and id=='C1-E32':
+ elif ch=='C1' and id=='C1-E31':
   c.box(60,160,235,100,'Finite PFC / heat input');c.box(370,160,235,100,'Bubble pressure p_b');c.box(680,160,235,100,'Carrier displacement');c.line(300,210,360,210,True);c.line(610,210,670,210,True);c.text(130,320,'Geometry selects direction; scalar radius does not.',20,w=780)
  elif ch=='C1' and k=='energy':
   if n==18:

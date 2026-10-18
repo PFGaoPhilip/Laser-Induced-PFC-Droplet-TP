@@ -70,9 +70,9 @@ def review_rows(data,equations):
     data['C1-E06']['rows'].sort(key=lambda x:order.index(x['symbol']))
 
     # Local numerical/physical context that was embedded in shared clauses.
-    put('C1-E19',r'\rho','Substituted carrier density','代入的载液密度','kg m⁻³',r'\rho=1000')
-    data['C1-E19']['notes_en']=[s for s in data['C1-E19']['notes_en'] if not s.startswith('Substituted inputs')]
-    data['C1-E19']['notes_zh']=[s for s in data['C1-E19']['notes_zh'] if not s.startswith('代入输入')]
+    put('C1-E18',r'\rho','Substituted carrier density','代入的载液密度','kg m⁻³',r'\rho=1000')
+    data['C1-E18']['notes_en']=[s for s in data['C1-E18']['notes_en'] if not s.startswith('Substituted inputs')]
+    data['C1-E18']['notes_zh']=[s for s in data['C1-E18']['notes_zh'] if not s.startswith('代入输入')]
     for s in ('w','g'): move('C1-E08',s)
 
     for eid in ('C2-E01','C2-E14','C2-E17','C2-E24','C2-E33','C2-E34'):
@@ -167,9 +167,7 @@ def review_rows(data,equations):
     put('A-E13','R','Substituted current cavity radius','代入的当前空腔半径','m',r'R=30\times10^{-6}')
     data['A-E13']['notes_en']=['The numbers 5 and 30 in radius ratios both use µm. Powers denote numerical exponents; Pa means pascal, J joule, and the cross denotes multiplication.']
     data['A-E13']['notes_zh']=['半径比值中的数值 5 与 30 均采用 µm。幂表示数值指数；Pa 为帕斯卡，J 为焦耳，叉号表示乘法。']
-    notes('C1-E17',r'$x,q\in[0,1]$ and $q=x^3$ define the substitution domain.',r'$x,q\in[0,1]$ 且 $q=x^3$ 确定换元范围。')
-    put('C1-E12',r'\theta','Polar direction label in the strain-rate components','应变率分量中的极角方向标记','—')
-    put('C1-E12',r'\psi','Azimuthal direction label, distinct from velocity potential','与速度势区别使用的方位角方向标记','—')
+    notes('C1-E16',r'$x,q\in[0,1]$ and $q=x^3$ define the substitution domain.',r'$x,q\in[0,1]$ 且 $q=x^3$ 确定换元范围。')
     put('C2-E29','T_*','Selected final vapor temperature on the constant-pressure path','恒压路径上选定的最终蒸气温度','K')
     put('C4-E07','w','Film displacement along the same positive direction as PVC displacement','与 PVC 位移采用相同正方向的薄膜位移','m')
 

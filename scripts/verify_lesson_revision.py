@@ -23,8 +23,22 @@ def audit(root):
     def check(condition, message):
         if not condition:
             errors.append(message)
-    check({e['id']: e['tex'] for e in equations} == baseline['equations'],
-          'Chapter equation formulas changed.')
+    current_equations = {e['id']: e['tex'] for e in equations}
+    amendment_path = root / 'verification/chapter01-revision-20261019.json'
+    if amendment_path.is_file():
+        amendment = json.loads(amendment_path.read_text(encoding='utf-8'))
+        check(sha(root / 'verification/lesson-revision-baseline.json') in
+              {amendment['original_baseline_sha256'], amendment.get('public_baseline_sha256')},
+              'Original lesson baseline differs from the revision amendment.')
+        check(amendment['owner_instruction'] == 'rewrite chapter 1 and upload to GitHub',
+              'Chapter 1 revision amendment lacks its owner scope.')
+        check({k:v for k,v in current_equations.items() if not k.startswith('C1-')} ==
+              {k:v for k,v in baseline['equations'].items() if not k.startswith('C1-')},
+              'An equation outside Chapter 1 changed.')
+        check({k:v for k,v in current_equations.items() if k.startswith('C1-')} == amendment['chapter01_equations'],
+              'Chapter 1 differs from its separately recorded revision.')
+    else:
+        check(current_equations == baseline['equations'], 'Chapter equation formulas changed.')
     for name, expected in baseline['native_models'].items():
         check(sha(root / name) == expected, 'Native model changed: ' + name)
     if (root / 'learning-records/progress.json').is_file():

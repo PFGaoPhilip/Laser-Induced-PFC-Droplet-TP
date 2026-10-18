@@ -2,10 +2,10 @@
   "scope": "Every authored HTML lesson, chapter, appendix, reference and course entry page.",
   "style": "Different concepts have different colors within each English/Chinese prose pair. Each term keeps the same color throughout the course, with day/night variants.",
   "dictionary_terms": 120,
-  "pages": 10,
-  "highlights": 2766,
-  "color_count": 7,
-  "paired_prose_groups_checked": 2013,
+  "pages": 12,
+  "highlights": 3711,
+  "color_count": 8,
+  "paired_prose_groups_checked": 2669,
   "no_distinct_terms_share_a_color_in_any_paired_prose_group": true,
   "palette": [
     {
@@ -105,6 +105,20 @@
         "dark": 6.55,
         "light": 9.91
       }
+    },
+    {
+      "dark": "#f6f68d",
+      "light": "#6c6c13",
+      "wash": "#fafae5",
+      "rgb": [
+        246,
+        246,
+        141
+      ],
+      "contrast_ratio": {
+        "dark": 10.38,
+        "light": 5.24
+      }
     }
   ],
   "term_color_indices": {
@@ -115,10 +129,10 @@
     "acoustic-crossing-time": 0,
     "acoustic-impedance": 0,
     "acoustic-radiation": 0,
-    "activation-probability": 3,
+    "activation-probability": 2,
     "blake-threshold": 0,
     "blister": 2,
-    "boundary-integral": 4,
+    "boundary-integral": 1,
     "bubble-cloud": 0,
     "bubble-dynamics": 1,
     "bubble-interaction": 0,
@@ -131,39 +145,39 @@
     "coalescence": 0,
     "cohesive-strength": 0,
     "cohesive-traction": 0,
-    "collapse-time": 4,
+    "collapse-time": 6,
     "compliant-boundary": 0,
-    "compressibility": 4,
+    "compressibility": 5,
     "condensation": 0,
-    "confinement": 2,
-    "control-volume": 1,
+    "confinement": 4,
+    "control-volume": 3,
     "critical-radius": 0,
     "damping": 0,
     "deborah-number": 1,
     "delamination": 1,
-    "ejected-jet": 0,
+    "ejected-jet": 3,
     "elastic-boundary": 2,
     "energy-barrier": 0,
-    "energy-budget": 1,
+    "energy-budget": 4,
     "energy-release-rate": 0,
     "equation-of-state": 1,
     "extensional-viscosity": 0,
     "fluence": 2,
     "fracture-energy": 2,
     "fracture-toughness": 0,
-    "free-surface": 1,
-    "gas-cushioning": 0,
+    "free-surface": 2,
+    "gas-cushioning": 1,
     "gas-nuclei": 0,
     "geometric-focusing": 0,
     "gilmore": 0,
     "growth-rate": 1,
     "heat-capacity": 5,
-    "heat-transfer": 2,
+    "heat-transfer": 3,
     "heterogeneous-nucleation": 0,
     "homogeneous-nucleation": 0,
     "hydrogel": 2,
     "incompressibility": 1,
-    "inertia": 5,
+    "inertia": 7,
     "interfacial-adhesion": 0,
     "interfacial-fracture": 1,
     "jet": 0,
@@ -175,16 +189,16 @@
     "laplace-pressure": 0,
     "latent-heat": 1,
     "liquid-bridge": 0,
-    "mach-number": 5,
+    "mach-number": 4,
     "mass-transfer": 0,
     "microbubble": 0,
-    "microjet": 3,
-    "momentum": 3,
+    "microjet": 4,
+    "momentum": 2,
     "nanodroplet": 0,
     "neo-hookean": 0,
-    "noncondensable-gas": 5,
+    "noncondensable-gas": 2,
     "nonspherical-collapse": 0,
-    "nucleation": 3,
+    "nucleation": 2,
     "nucleation-barrier": 0,
     "ohnesorge-number": 1,
     "optical-breakdown": 0,
@@ -192,47 +206,266 @@
     "optoacoustic": 0,
     "peak-pressure": 0,
     "pfc": 1,
-    "phase-change": 3,
+    "phase-change": 2,
     "phase-inventory": 1,
     "poisson-ratio": 0,
     "polytropic-exponent": 0,
     "poroelastic": 0,
-    "potential-flow": 1,
+    "potential-flow": 2,
     "pressure-impulse": 1,
-    "rayleigh-plesset": 2,
+    "rayleigh-plesset": 3,
     "re-entrant-jet": 0,
-    "rebound": 3,
+    "rebound": 4,
     "relaxation-time": 0,
     "resonance": 0,
     "reynolds-number": 1,
     "rigid-boundary": 0,
-    "rigid-wall": 0,
-    "shock-wave": 2,
+    "rigid-wall": 1,
+    "shock-wave": 3,
     "spherical-collapse": 0,
     "stand-off": 1,
-    "stefan-balance": 3,
+    "stefan-balance": 4,
     "stiffened-gas": 0,
     "superheat": 1,
-    "surface-tension": 3,
+    "surface-tension": 5,
     "thermal-diffusion": 0,
     "thermal-diffusivity": 0,
     "thermal-localization": 0,
     "thermocavitation": 0,
     "traction": 6,
     "traction-separation": 0,
-    "vapor-pressure": 3,
+    "vapor-pressure": 0,
     "vaporization": 4,
     "velocity-potential": 0,
     "viscoelasticity": 0,
-    "viscosity": 2,
+    "viscosity": 3,
     "water-hammer": 0,
     "weber-number": 1,
     "young-modulus": 1
   },
   "strict_pair_audit": {
-    "paired_blocks_checked": 3765,
+    "paired_blocks_checked": 4902,
     "one_sided_colored_terms_remaining": 0,
     "pages": [
+      {
+        "file": "appendices/90-hydrogel-versus-liquid.html",
+        "paired_blocks_checked": 493,
+        "contextual_matches": [
+          {
+            "line": 3,
+            "terms": [
+              "confinement"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "confinement"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "jet"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "phase-change"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "kinetic-energy"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "confinement"
+            ]
+          },
+          {
+            "line": 22,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 22,
+            "terms": [
+              "mach-number"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "hydrogel"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "rebound"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "rebound"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "confinement"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "kinetic-energy"
+            ]
+          },
+          {
+            "line": 29,
+            "terms": [
+              "rebound"
+            ]
+          }
+        ],
+        "nonliteral_occurrences_left_plain": [
+          {
+            "line": 3,
+            "English": "Hydrogel can locate PFC droplets, support liquid patterns and conform under small preload. Its network also stores energy, dissipates motion and changes transport. It can tear. Compare absorbed energy , phase source, motion, selective release, intact placement and reset. Smaller cavities or higher pressure leave overall improvement unresolved.",
+            "Chinese": "水凝胶 可定位 PFC 液滴、支撑液体图案，并在小预载下贴合。其网络也储存能量、耗散运动、改变输运，并可能撕裂。应比较 吸收能量 、 相变 源、运动、选择性释放、完整落位及复位。空腔更小或压力更高仍未确定整体改善。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "Use an infinite homogeneous isotropic incompressible neo-Hookean medium. Its network remains continuous and intact. Existing cavity radii are stress-free R r e f > 0 R_{\\mathrm{ref}}>0 R ref ​ > 0 and current R ( t ) > 0 R(t)>0 R ( t ) > 0 . Material lies outside the cavity. Far-field radial stress is − p ∞ ( t ) -p_\\infty(t) − p ∞ ​ ( t ) . Internal pressure p b ( t ) p_b(t) p b ​ ( t ) is spatially uniform. Interface tension σ \\sigma σ is constant. Tensile Cauchy stress is positive. Radius points outward; positive speed means expansion. Omit gravity, nearby boundaries, outlets, drainage, damage, shell stress and phase slip.",
+            "Chinese": "采用无限、均匀、各向同性、 不可压缩 neo-Hookean 介质，网络连续且完整。已有空腔无应力半径为 R r e f > 0 R_{\\mathrm{ref}}>0 R ref ​ > 0 ，当前半径为 R ( t ) > 0 R(t)>0 R ( t ) > 0 。材料位于空腔外。远场径向应力为 − p ∞ ( t ) -p_\\infty(t) − p ∞ ​ ( t ) ，内压 p b ( t ) p_b(t) p b ​ ( t ) 空间均匀， 界面张力 σ \\sigma σ 恒定。拉伸 Cauchy 应力取正。径向向外，正速率表示膨胀。忽略重力、附近边界、出口、排水、损伤、壳层应力及 相变 滑移。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change",
+              "surface-tension"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "Initially t = 0 t=0 t = 0 , R = R r e f R=R_{\\mathrm{ref}} R = R ref ​ , R ˙ = 0 \\dot R=0 R ˙ = 0 , and the network is unstretched. Mechanical equilibrium requires p b ( 0 ) − p ∞ ( 0 ) = 2 σ / R r e f p_b(0)-p_\\infty(0)=2\\sigma/R_{\\mathrm{ref}} p b ​ ( 0 ) − p ∞ ​ ( 0 ) = 2 σ / R ref ​ . Laser and phase dynamics must supply later p b ( t ) p_b(t) p b ​ ( t ) . Polymerization around a loaded inclusion can create a different stress-free shape. Initial liquid-core radius a 0 a_0 a 0 ​ defines PFC inventory. Determine it separately from reference and vapor-cavity radii.",
+            "Chinese": "初始 t = 0 t=0 t = 0 、 R = R r e f R=R_{\\mathrm{ref}} R = R ref ​ 、 R ˙ = 0 \\dot R=0 R ˙ = 0 ，网络未伸长。力学平衡要求 p b ( 0 ) − p ∞ ( 0 ) = 2 σ / R r e f p_b(0)-p_\\infty(0)=2\\sigma/R_{\\mathrm{ref}} p b ​ ( 0 ) − p ∞ ​ ( 0 ) = 2 σ / R ref ​ 。后续 p b ( t ) p_b(t) p b ​ ( t ) 由激光及 相变 动力学提供。围绕受载夹杂聚合可产生不同无应力形状。初始液核半径 a 0 a_0 a 0 ​ 定义 PFC 物质量，应与参考半径及蒸气空腔半径分别确定。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "Cavity-interface tension",
+            "Chinese": "腔体 界面张力",
+            "English_only": [],
+            "Chinese_only": [
+              "surface-tension"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "Integrated energy of the radial exterior motion.",
+            "Chinese": "外部径向运 动能 量的积分。",
+            "English_only": [],
+            "Chinese_only": [
+              "kinetic-energy"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "Integrating the stress derivative gives far-field minus wall stress. Subtract both stress-difference integrals for Eq. (A-E11). Setting G g = 0 G_g=0 G g ​ = 0 recovers the liquid model. Viscosity resists expansion and collapse with opposite pressure signs. If fitted η g \\eta_g η g ​ includes solvent loss, count that dissipation once. Separate solvent/network models need relative-motion closure. Appreciable phase slip changes the wall-kinematic assumption.",
+            "Chinese": "积分应力导数得到远场减壁面应力。减去两种应力差积分，得到式（A-E11）。取 G g = 0 G_g=0 G g ​ = 0 恢复液体模型。 黏性 以相反压力符号阻碍膨胀与塌缩。拟合 η g \\eta_g η g ​ 已包含溶剂损失时，该耗散计入一次。独立溶剂／网络模型需要相对运动闭合。显著 相变 滑移会改变壁面运动假设。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "Prescribe net work pressure 100 kPa over the same volume increase. This gives 11.2574 nJ. Network storage consumes 40.1163%. Residual 6.74133 nJ bounds kinetic , surface and loss increments in this artificial ledger. External jet energy remains unestablished. Use the surface-energy increment so initial energy cancels consistently.",
+            "Chinese": "在相同体积增量上规定净做功压力 100 kPa，得到 11.2574 nJ。网络储存占 40.1163%。剩余 6.74133 nJ 是该人工账目中 动能 、表面能及损失增量的上界。 外部射流 能量尚未确立。采用表面能增量，使初始能量一致相消。",
+            "English_only": [
+              "jet"
+            ],
+            "Chinese_only": [
+              "ejected-jet"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 3,
+            "English": "(A-E17) · Linear constitutive check for the chosen dashpot",
+            "Chinese": "所选 黏性 阻尼 元件的线性本构检验",
+            "English_only": [],
+            "Chinese_only": [
+              "damping",
+              "viscosity"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 29,
+            "English": "Report verified single-event pressure or finite-mass speed separately from repeatable intact transfer. Gel can trade peak speed for peeling control or lower scatter. Improved alignment can coexist with reduced useful impulse. The radial formula leaves these tradeoffs unresolved. Missing: rate laws, inclusion/reference geometry, phase and damage kinetics, outlet evolution, release and landing laws.",
+            "Chinese": "已验证单事件压力或有限质量速率，与可重复完整转印分别报告。凝胶可用峰值速率换取剥离控制或更小离散。更好对准可与更低有用冲量共存。径向公式仍未确定这些权衡。缺失：速率规律、夹杂／参考几何、 相变 和损伤动力学、出口演化、释放与落位规律。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 29,
+            "English": "The 5 G g / 2 5G_g/2 5 G g ​ /2 plateau follows the intact constitutive model. Fracture and jet stability remain unestablished. Work still grows with volume; real networks can stiffen or tear. Recoil may return storage late, sideways or into damage. Viscous dissipation stays nonnegative. Useful conversion requires phase-pressure history, moving geometry and energy partition.",
+            "Chinese": "5 G g / 2 5G_g/2 5 G g ​ /2 平台来自完整本构模型。断裂与 射流 稳定性尚未确立。功仍随体积增长，实际网络可硬化或撕裂。 回弹 可能将储能延迟、侧向或通过损伤返还。 黏性 耗散保持非负。有用转换需要 相变 压力历程、运动几何及能量分配。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 39,
+            "English": "Γ c \\Gamma_c Γ c ​ relevant interface fracture energy (J m⁻²), conditional on mode and rate",
+            "Chinese": "Γ c \\Gamma_c Γ c ​ 为相关 界面断裂 能（J m⁻²），取决于模态与速率",
+            "English_only": [
+              "fracture-energy"
+            ],
+            "Chinese_only": [
+              "interfacial-fracture"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 39,
+            "English": "Synchronize cavity, liquid composition, solid motion, calibrated load and crack images. Compare independent-shot distributions, intact placement, contamination and reset. Stabilization means reduced angle, speed, mass or footprint variability at sufficient load. One smaller bubble leaves that result unestablished. Report single-event maxima separately from repeatable transfer. Missing rate mechanics, permeability, phase kinetics or fracture data remain explicit inputs.",
+            "Chinese": "同步记录空腔、液体组成、固体运动、标定载荷及裂纹图像。比较独立发射分布、完整落位、污染和复位。稳定化意味着载荷足够时角度、速率、质量或面积变异降低。单个更小气泡仍未确立该结果。单事件最大值与可重复转印分别报告。速率力学、渗透率、 相变 动力学或断裂数据仍列为明确缺失输入。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          }
+        ],
+        "one_sided_colored_terms_remaining": 0
+      },
       {
         "file": "appendices/a-hydrogel-versus-liquid.html",
         "paired_blocks_checked": 493,
@@ -454,7 +687,7 @@
       },
       {
         "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-        "paired_blocks_checked": 603,
+        "paired_blocks_checked": 685,
         "contextual_matches": [
           {
             "line": 3,
@@ -463,117 +696,166 @@
             ]
           },
           {
-            "line": 3,
+            "line": 45,
             "terms": [
               "velocity-potential"
             ]
           },
           {
-            "line": 3,
+            "line": 45,
             "terms": [
               "velocity-potential"
             ]
           },
           {
-            "line": 3,
+            "line": 63,
             "terms": [
               "velocity-potential"
             ]
           },
           {
-            "line": 9,
+            "line": 63,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 63,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 136,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 136,
             "terms": [
               "capillary-pressure"
             ]
           },
           {
-            "line": 15,
+            "line": 184,
             "terms": [
               "capillary-pressure"
             ]
           },
           {
-            "line": 15,
+            "line": 217,
             "terms": [
               "kinetic-energy"
             ]
           },
           {
-            "line": 15,
+            "line": 235,
             "terms": [
-              "velocity-potential"
+              "kinetic-energy"
             ]
           },
           {
-            "line": 15,
+            "line": 235,
+            "terms": [
+              "kinetic-energy"
+            ]
+          },
+          {
+            "line": 253,
             "terms": [
               "confinement"
             ]
           },
           {
-            "line": 113,
+            "line": 629,
             "terms": [
               "confinement"
             ]
           },
           {
-            "line": 113,
+            "line": 629,
             "terms": [
               "heat-transfer",
               "mach-number"
             ]
           },
           {
-            "line": 113,
+            "line": 629,
             "terms": [
               "mach-number"
             ]
           },
           {
-            "line": 113,
+            "line": 629,
             "terms": [
               "mach-number"
             ]
           },
           {
-            "line": 113,
+            "line": 653,
+            "terms": [
+              "mach-number"
+            ]
+          },
+          {
+            "line": 674,
             "terms": [
               "pressure-impulse"
             ]
           },
           {
-            "line": 113,
+            "line": 757,
             "terms": [
               "pressure-impulse"
             ]
           },
           {
-            "line": 113,
+            "line": 880,
             "terms": [
               "shock-wave",
               "velocity-potential"
             ]
           },
           {
-            "line": 113,
+            "line": 880,
+            "terms": [
+              "kinetic-energy",
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 880,
             "terms": [
               "velocity-potential"
             ]
           },
           {
-            "line": 113,
+            "line": 934,
             "terms": [
               "velocity-potential"
             ]
           },
           {
-            "line": 113,
+            "line": 934,
             "terms": [
               "velocity-potential"
             ]
           },
           {
-            "line": 113,
+            "line": 934,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 934,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 934,
             "terms": [
               "velocity-potential"
             ]
@@ -603,7 +885,38 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 15,
+            "line": 18,
+            "English": "Check and interpretation. Positive initial pressure excess over capillarity gives outward acceleration. Initial zero speed therefore does not imply equilibrium. The acceleration expression has units Pa/(kg m⁻²) = m s⁻².",
+            "Chinese": "检验与解释。 初始内外压差超过 毛细压 差时产生向外加速度。因此初速为零不代表平衡。加速度表达式单位为 Pa/(kg m⁻²) = m s⁻²。",
+            "English_only": [],
+            "Chinese_only": [
+              "capillary-pressure"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 18,
+            "English": "Derivation. Apply mass conservation to a spherical shell. Constant density reduces it to zero divergence. Integrate in radius at fixed time. The integration function can depend on time. A material cavity wall supplies the final boundary value. Appreciable phase transfer changes that boundary value.",
+            "Chinese": "推导。 对球壳应用质量守恒。密度为常数时，散度为零。在固定时间对半径积分，积分函数仍可随时间变化。物质空腔壁面提供最终边界值。 相变 传质 显著时，该边界值需要修改。",
+            "English_only": [],
+            "Chinese_only": [
+              "mass-transfer",
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 199,
+            "English": "Check and interpretation. Pressure × volume has energy units. A vanishing component amount removes its partial pressure. Missing: component mass-transfer rates, energy balance and appropriate phase equilibrium or kinetics.",
+            "Chinese": "检验与解释。 压力乘体积具有能量单位。某组分物质的量为零时，其分压为零。缺少：组分 传质 率、能量平衡以及适用的相平衡或 相变 动力学。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 253,
             "English": "Confinement can redirect liquid and change its energy budget . It may store elastic energy or increase dissipation. Predicting carrier motion requires the thermodynamic source and mechanical receiver. Incident pulse energy alone leaves that budget unresolved.",
             "Chinese": "约束 可改变液体方向及能量分配，也可能储存弹性能或增加耗散。预测载液运动需同时计算热力学源与力学受载体系。仅知入射脉冲能量，能量分配仍未确定。",
             "English_only": [
@@ -613,7 +926,7 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 15,
+            "line": 253,
             "English": "Step 10 — Specify the ideal collapse problem. Start at maximum radius with zero wall speed. Far-field and vapor pressures are constant with positive collapse difference. Omit tension, viscosity , permanent gas and liquid compressibility . Thermal and phase dynamics are excluded assumptions. Their smallness for PFC remains unestablished. A hot vapor-rich cavity can still expand.",
             "Chinese": "步骤 10——规定理想塌缩问题。 从最大半径及零壁面速度开始。远场压力与 蒸气压 恒定，塌缩压差为正。忽略张力、 黏性 、 非凝结气体 及液体 可压缩性 。热学与 相变 动力学被模型排除。它们对 PFC 是否足够小尚未确立。高温蒸气丰富的空腔仍可膨胀。",
             "English_only": [],
@@ -623,7 +936,17 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 558,
+            "English": "Check and interpretation. Pressure times displaced volume has joule units. Zero initial energy and positive growth during collapse agree with the mechanical power balance. Radial liquid energy does not specify jet energy.",
+            "Chinese": "检验与解释。 压差乘置换体积具有焦耳单位。初始 动能 为零，塌缩时 动能 增加，与机械功率平衡一致。径向液体 动能 不能确定 射流 动能 。",
+            "English_only": [],
+            "Chinese_only": [
+              "kinetic-energy"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 775,
             "English": "Prescribe 0.60 MPa for 0.50 μs across a 100 μm column. Use the earlier density, viscosity 0.001 Pa s, and sound speed 1500 m s⁻¹. The velocity change is 3.0 m s⁻¹. Crossing time is shorter than the pulse. Uniform pressure and final jet speed remain unestablished. The solved column has an end-to-end pressure gradient.",
             "Chinese": "在 100 μm 液柱两端施加 0.60 MPa 压差，持续 0.50 μs。采用前述密度、 黏度 0.001 Pa s 和声速 1500 m s⁻¹。速度变化为 3.0 m s⁻¹。传播时间短于脉冲时长。均匀压力及最终 射流 速率尚未确立。已解液柱具有端到端压力梯度。",
             "English_only": [
@@ -635,7 +958,17 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 775,
+            "English": "Derivation. The rectangular pulse is a stipulated ideal benchmark. Convert its pressure, duration and column length. Compute the impulse, velocity, displacement ratio, viscous ratio and crossing time separately. The total pulse duration does not specify its physical rise time.",
+            "Chinese": "推导。 矩形脉冲是规定的理想基准。换算压力、持续时间和液柱长度。分别计算冲量、速度、位移比、 黏性 比及 声穿越时间 。脉冲总时长不能确定实际上升时间。",
+            "English_only": [],
+            "Chinese_only": [
+              "acoustic-crossing-time"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 799,
             "English": "Pressure impulse and acoustic time have distinct definitions, dimensions and roles.",
             "Chinese": "压力冲量 与 声传播时间 具有不同的定义、量纲与作用。",
             "English_only": [],
@@ -645,7 +978,17 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 820,
+            "English": "Derivation. Start with local mass and Cauchy momentum conservation. Adopt constant-density Newtonian stress. Its divergence reduces to the vector Laplacian because incompressibility removes the divergence-gradient term. The spatial problem has three velocity components, pressure and unknown interface shape, together with initial and boundary data.",
+            "Chinese": "推导。 从局部质量守恒与柯西 动量 守恒出发，采用常密度牛顿应力。 不可压缩 条件消去散度梯度项，使 黏性 应力散度约化为矢量拉普拉斯。空间问题包含三个速度分量、压力及未知界面形状，还需初始和边界数据。",
+            "English_only": [],
+            "Chinese_only": [
+              "viscosity"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 850,
             "English": "Step 19 — Set interface orientation and stress. The normal points from liquid into gas. An inner spherical cavity therefore has negative curvature. An outer liquid droplet has positive curvature. This reproduces Eq. (C1-E06). A clean interface with negligible gas viscosity has zero tangential viscous traction . At zero liquid viscosity , that condition adds no strain-rate constraint. Without phase transfer, interface and liquid normal velocities match.",
             "Chinese": "步骤 19——规定界面方向与应力。 法向由液体指向气体，故内球形空腔曲率为负，外液滴曲率为正。这一约定恢复式（C1-E06）。清洁界面且气相 黏性 可忽略时，切向 黏性 牵引 为零。液体 黏度 为零时，该条件不增加应变率约束。没有 相变 时，界面与液体法向速度相等。",
             "English_only": [],
@@ -655,7 +998,18 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 880,
+            "English": "Check and interpretation. The interface condition matches normal velocity; tangential node motion is a parametrization choice. It imposes no solid-wall no-slip condition on an inviscid free surface . Phase transfer needs a mass-flux condition instead.",
+            "Chinese": "检验与解释。 界面条件匹配法向速度；节点切向运动属于参数化选择。无黏 自由表面 不能施加固壁无滑移条件。发生 相变 传质 时，应采用质量通量条件。",
+            "English_only": [],
+            "Chinese_only": [
+              "mass-transfer",
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 880,
             "English": "Set zero liquid velocity at a stationary viscous wall. Couple liquid velocity and stress to a moving film. Supply external pressure and stress at the outlet or meniscus. Close the contact line with a pinned or moving-angle law. Chapter 4 supplies payload and release mechanics. Appreciable phase transfer replaces equal normal velocities with Chapter 2’s mass-flux balance.",
             "Chinese": "静止 黏性 壁面采用零液体速度。运动薄膜须与液体速度和应力耦合。出口或弯月面给定外部压力与应力。接触线采用固定或动态接触角规律闭合。第四章给出载荷与释放力学。 相变 显著时，用第二章质量通量平衡代替法向速度相等条件。",
             "English_only": [],
@@ -665,7 +1019,7 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 880,
             "English": "Step 20 — Derive the potential-flow reduction. Assume inviscid, initially irrotational flow away from shocks and unresolved wall layers. The potential satisfies Laplace’s equation. Without phase slip, interface nodes follow liquid velocity. Convert the Eulerian Bernoulli derivative to the material derivative. Add velocity dotted with the potential gradient. This closes a spatial pre-impact model under the stated assumptions. Boundary-integral microjet models use this reduction. [R4]",
             "Chinese": "步骤 20——推导 势流 约化。 假设流动无黏且初始无旋，并避开 激波 及未解析壁面层。 速度势 满足拉普拉斯方程。无 相变 滑移时，界面节点随液体速度运动。将欧拉伯努利导数转为物质导数，加入速度与 速度势 梯度的点积。由此在已声明假设下闭合撞击前空间模型。 边界积分 微射流 模型采用此约化。 [R4]",
             "English_only": [],
@@ -675,8 +1029,19 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
-            "English": "(C1-E30) · Exact spherical recovery of the potential closure",
+            "line": 934,
+            "English": "Check and interpretation. Solve-and-advance loop: prescribe initial interface and potential ; evaluate pressure input and curvature; solve the harmonic field with interface potential and impermeable-wall normal data; recover velocity; advance interface positions and interface potential ; repeat. An outlet supplies its pressure or compatible potential condition. Far-field gauge fixes the additive freedom. Material and Eulerian dynamic conditions are alternative forms. Missing: physical PFC pressure history, phase transfer, contact-line law where applicable, and treatment of topology changes.",
+            "Chinese": "检验与解释。 求解推进循环：给定初始界面与 速度势 ；计算输入压力和曲率；用界面 速度势 及不透壁法向条件求解调和场；恢复速度；推进界面位置和界面 速度势 ；重复计算。出口需给定压力或相容 速度势 条件。远场规范固定加法自由度。物质与欧拉动力学条件为等价表述。缺少：实际 PFC 压力历程、 相变 传质 、适用处的接触线规律及拓扑变化处理。",
+            "English_only": [],
+            "Chinese_only": [
+              "mass-transfer",
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 934,
+            "English": "(C1-E29) · Exact spherical recovery of the potential closure",
             "Chinese": "势流 闭合关系对球形模型的精确恢复",
             "English_only": [],
             "Chinese_only": [
@@ -685,7 +1050,7 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 949,
             "English": "The spatial potential formulation returns the spherical model under spherical geometry.",
             "Chinese": "空间 势流 表述在球形几何下恢复球形模型。",
             "English_only": [],
@@ -695,7 +1060,17 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 949,
+            "English": "Check and interpretation. This recovers the inviscid radial balance with the same capillary sign. The viscous term cannot emerge from an inviscid potential boundary condition. At static equilibrium the Laplace overpressure is recovered.",
+            "Chinese": "检验与解释。 该结果恢复相同毛细符号的无黏径向平衡。无黏 势流 边界条件不能产生 黏性 项。静态极限恢复拉普拉斯过压。",
+            "English_only": [],
+            "Chinese_only": [
+              "potential-flow"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 997,
             "English": "The source pressure moves carrier liquid; geometry determines whether that motion is a useful jet .",
             "Chinese": "源压力使载液运动；几何决定这种运 动能 否成为有用 射流 。",
             "English_only": [],
@@ -705,7 +1080,7 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 997,
             "English": "An external jet needs directing geometry, coherent moving liquid and a receiver. Internal collapse jets , sealed inflation and stretched bridges have different event sequences. Track cavity shape, emitted liquid and film motion together. Chapter 2 supplies thermal closure. Chapters 3 and 4 address arrival, fracture and intact placement.",
             "Chinese": "外部射流 需要定向几何、相干运动液体及受载表面。 内部塌缩射流 、密闭膨胀及拉伸 液桥 有不同事件顺序。应同时追踪空腔形状、喷出液体及薄膜运动。第二章给出热学闭合，第三、四章处理到达、断裂与完整落位。",
             "English_only": [
@@ -719,7 +1094,7 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 997,
             "English": "Distinguishes PFC liquid inventory, cavity contents and accelerated carrier, and states that the pressure history needs thermal/phase closure.",
             "Chinese": "区分 PFC 液体库存、空腔内容物与被加速载液，并说明压力历程需要热与 相变 闭合。",
             "English_only": [],
@@ -729,7 +1104,7 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 113,
+            "line": 997,
             "English": "Conventions and conditions. (C1-E17); The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility .",
             "Chinese": "约定与条件。 初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。",
             "English_only": [],
@@ -739,7 +1114,17 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
-            "line": 138,
+            "line": 997,
+            "English": "R ˙ ≤ 0 \\dot R\\le0 R ˙ ≤ 0 is inward wall velocity (m s⁻¹); R ∈ ( 0 , R max ⁡ ] R\\in(0,R_{\\max}] R ∈ ( 0 , R m a x ​ ] and R max ⁡ R_{\\max} R m a x ​ are current and maximum radii (m); Δ p c > 0 \\Delta p_c>0 Δ p c ​ > 0 is constant collapse pressure (Pa); ρ \\rho ρ is carrier density (kg m⁻³); t c t_c t c ​ is ideal collapse time (s); B B B is the dimensionless beta function defined in Eq. (C1-E16); K l K_l K l ​ is carrier kinetic energy (J); π \\pi π is the circle constant. The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility . y y y is squared speed (m² s⁻²); x = R / R max ⁡ x=R/R_{\\max} x = R / R m a x ​ is dimensionless radius; V b = 4 π R 3 / 3 V_b=4\\pi R^3/3 V b ​ = 4 π R 3 /3 and V max ⁡ = 4 π R max ⁡ 3 / 3 V_{\\max}=4\\pi R_{\\max}^3/3 V m a x ​ = 4 π R m a x 3 ​ /3 are volumes (m³); V V V is dummy volume (m³).",
+            "Chinese": "R ˙ ≤ 0 \\dot R\\le0 R ˙ ≤ 0 为向内壁面速度（m s⁻¹）； R ∈ ( 0 , R max ⁡ ] R\\in(0,R_{\\max}] R ∈ ( 0 , R m a x ​ ] 与 R max ⁡ R_{\\max} R m a x ​ 为当前与最大半径（m）； Δ p c > 0 \\Delta p_c>0 Δ p c ​ > 0 为常数塌缩压差（Pa）； ρ \\rho ρ 为载液密度（kg m⁻³）； t c t_c t c ​ 为理想 塌缩时间 （s）； B B B 为式（C1-E16）定义的无量纲贝塔函数； K l K_l K l ​ 为载液 动能 （J）； π \\pi π 为圆周率。初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。 y y y 为速度平方（m² s⁻²）； x = R / R max ⁡ x=R/R_{\\max} x = R / R m a x ​ 为无量纲半径； V b = 4 π R 3 / 3 V_b=4\\pi R^3/3 V b ​ = 4 π R 3 /3 与 V max ⁡ = 4 π R max ⁡ 3 / 3 V_{\\max}=4\\pi R_{\\max}^3/3 V m a x ​ = 4 π R m a x 3 ​ /3 为体积（m³）； V V V 为积分哑体积（m³）。",
+            "English_only": [],
+            "Chinese_only": [
+              "noncondensable-gas"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 1099,
             "English": "Identifies the subsequent moving-interface, pressure, phase-transfer and compressibility information needed for a physical jet .",
             "Chinese": "指出实际 射流 还需要后续运动界面、压力、 相变 传质 与 可压缩性 信息。",
             "English_only": [],
@@ -1837,8 +2222,287 @@
         "one_sided_colored_terms_remaining": 0
       },
       {
+        "file": "chapters/05-jet-on-rigid-wall.html",
+        "paired_blocks_checked": 544,
+        "contextual_matches": [
+          {
+            "line": 3,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 16,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 38,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 48,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 50,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 50,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 50,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 50,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 50,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 60,
+            "terms": [
+              "shock-wave"
+            ]
+          },
+          {
+            "line": 67,
+            "terms": [
+              "mach-number"
+            ]
+          }
+        ],
+        "nonliteral_occurrences_left_plain": [
+          {
+            "line": 3,
+            "English": "State the assumptions. The liquid is the only phase. There is no gas cushion, splash, wall elasticity or cavitation . The wall is flat, rigid and frictionless. The jet side is free, so its pressure is released to the reference pressure p j p_j p j ​ . Only the first arrival is modelled, up to about one sound-crossing time of the jet radius.",
+            "Chinese": "说明假设。液体是唯一的相。不含气垫、飞溅、壁面弹性或 空化 。壁面平坦、刚性且无摩擦。 射流 侧面为 自由面 ，其压力释放到参考压力 p j p_j p j ​ 。仅模拟首次到达，时长约为声波穿过 射流 半径所需时间的一倍。",
+            "English_only": [],
+            "Chinese_only": [
+              "free-surface"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 48,
+            "English": "Because the jet edge is free from first contact, an annulus relaxes while the core holds p_H.",
+            "Chinese": "射流 边缘自首次接触起即为 自由面 ，环带松弛而核心仍保持 p_H。",
+            "English_only": [],
+            "Chinese_only": [
+              "free-surface"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 50,
+            "English": "Conventions and conditions. Domain r from 0 to a and z from 0 to 4a; The release side stands for a free jet surface; Axisymmetric normals are n r n_{r} n r ​ and n z n_{z} n z ​ .",
+            "Chinese": "约定与条件。 计算域 r 从 0 到 a，z 从 0 到 4a；释放侧代表 射流 自由表面 ；轴对称法向分量为 n r n_{r} n r ​ 与 n z n_{z} n z ​ 。",
+            "English_only": [],
+            "Chinese_only": [
+              "free-surface"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 56,
+            "English": "P ˉ k \\bar P_k P ˉ k ​ — Peak full-sensor wall pressure on band size h k h_{k} h k ​ (Pa)",
+            "Chinese": "P ˉ k \\bar P_k P ˉ k ​ — 带宽 h k h_{k} h k ​ 上的全传感区壁面 压力峰值 （Pa）",
+            "English_only": [],
+            "Chinese_only": [
+              "peak-pressure"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 67,
+            "English": "P ˉ max ⁡ \\bar P_{\\max} P ˉ m a x ​ — Peak full-sensor pressure (Pa)",
+            "Chinese": "P ˉ max ⁡ \\bar P_{\\max} P ˉ m a x ​ — 全传感区 压力峰值 （Pa）",
+            "English_only": [],
+            "Chinese_only": [
+              "peak-pressure"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 67,
+            "English": "Evidence against a mesh artifact: the band refinement changes the peak by 1.98%, 0.44% and 0.02%. The factor is the same within 0.12% for five speeds and radii. The centre disk, which the release has not reached, stays within 0.43% of p H p_H p H ​ . A mesh artifact would not be confined to the full-area average and would not collapse with τ \\tau τ .",
+            "Chinese": "反对网格伪影的证据：加密带使峰值依次改变 1.98%、0.44% 和 0.02%；五组速度与半径下该因子的偏差在 0.12% 以内；释放尚未到达的中心圆盘保持在 p H p_H p H ​ 的 0.43% 以内。网格伪影不会只出现在全面积平均上，也不会随 τ \\tau τ 坍缩。",
+            "English_only": [
+              "confinement"
+            ],
+            "Chinese_only": [],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          }
+        ],
+        "one_sided_colored_terms_remaining": 0
+      },
+      {
         "file": "index.html",
-        "paired_blocks_checked": 40,
+        "paired_blocks_checked": 45,
         "contextual_matches": [
           {
             "line": 3,
@@ -1864,7 +2528,7 @@
       },
       {
         "file": "reference/defense.html",
-        "paired_blocks_checked": 27,
+        "paired_blocks_checked": 31,
         "contextual_matches": [
           {
             "line": 3,
@@ -1885,7 +2549,7 @@
       },
       {
         "file": "reference/sources.html",
-        "paired_blocks_checked": 39,
+        "paired_blocks_checked": 48,
         "contextual_matches": [
           {
             "line": 3,
@@ -1897,6 +2561,12 @@
             "line": 3,
             "terms": [
               "phase-change"
+            ]
+          },
+          {
+            "line": 3,
+            "terms": [
+              "shock-wave"
             ]
           }
         ],
@@ -1927,103 +2597,142 @@
     ]
   },
   "highlighter_sha256": "26dedad15f46a139131cb987274f79e55c87b46986cca4dbaa77b1326c970dc6",
-  "color_stylesheet_sha256": "6e97c3072ac2cceeed2dc709c9c25d44bf1396516013e18343e1943e341a6b83",
+  "color_stylesheet_sha256": "3a619be0a645c5b64aebc694e8f946ac12f282e222ba0a547a4f035c4a4dd043",
   "term_totals": {
-    "absorbed-energy": 32,
-    "absorber": 48,
+    "absorbed-energy": 40,
+    "absorber": 52,
     "absorptance": 17,
     "absorption-coefficient": 10,
-    "acoustic-crossing-time": 4,
-    "acoustic-impedance": 4,
+    "acoustic-crossing-time": 6,
+    "acoustic-impedance": 12,
+    "acoustic-radiation": 2,
     "activation-probability": 22,
-    "blister": 48,
-    "boundary-integral": 4,
+    "blister": 54,
+    "boundary-integral": 6,
     "bubble-dynamics": 2,
     "bubble-interaction": 2,
-    "bulk-modulus": 8,
+    "bulk-modulus": 12,
     "capillary-pressure": 14,
     "capillary-time": 4,
-    "cavitation": 22,
+    "cavitation": 32,
     "cohesive-strength": 10,
     "cohesive-traction": 12,
-    "collapse-time": 40,
-    "compressibility": 44,
+    "collapse-time": 52,
+    "compressibility": 64,
     "condensation": 14,
-    "confinement": 36,
-    "control-volume": 4,
+    "confinement": 56,
+    "control-volume": 6,
     "critical-radius": 12,
-    "deborah-number": 20,
+    "deborah-number": 30,
     "delamination": 22,
-    "ejected-jet": 24,
+    "ejected-jet": 28,
     "elastic-boundary": 4,
-    "energy-budget": 16,
+    "energy-budget": 18,
     "energy-release-rate": 20,
-    "equation-of-state": 26,
+    "equation-of-state": 36,
     "fluence": 35,
     "fracture-energy": 44,
-    "free-surface": 4,
+    "free-surface": 8,
     "gas-cushioning": 2,
     "gas-nuclei": 2,
     "growth-rate": 10,
     "heat-capacity": 44,
     "heat-transfer": 14,
     "homogeneous-nucleation": 6,
-    "hydrogel": 48,
-    "incompressibility": 58,
-    "inertia": 104,
+    "hydrogel": 66,
+    "incompressibility": 82,
+    "inertia": 126,
     "interfacial-fracture": 8,
-    "jet": 359,
-    "jet-speed": 4,
+    "jet": 497,
+    "jet-speed": 8,
     "kinematic-condition": 2,
-    "kinetic-energy": 113,
-    "latent-heat": 16,
+    "kinetic-energy": 165,
+    "latent-heat": 18,
     "liquid-bridge": 4,
-    "mach-number": 20,
-    "mass-transfer": 6,
+    "mach-number": 44,
+    "mass-transfer": 8,
     "microjet": 4,
-    "momentum": 152,
+    "momentum": 222,
     "nanodroplet": 6,
-    "neo-hookean": 28,
-    "noncondensable-gas": 22,
+    "neo-hookean": 42,
+    "noncondensable-gas": 30,
     "nucleation": 33,
     "nucleation-barrier": 4,
     "ohnesorge-number": 4,
     "optical-breakdown": 2,
     "optical-uniformity": 2,
-    "peak-pressure": 6,
-    "pfc": 312,
-    "phase-change": 32,
+    "peak-pressure": 8,
+    "pfc": 358,
+    "phase-change": 36,
     "phase-inventory": 6,
     "poisson-ratio": 18,
     "polytropic-exponent": 2,
-    "poroelastic": 4,
+    "poroelastic": 6,
     "potential-flow": 8,
-    "pressure-impulse": 54,
+    "pressure-impulse": 66,
     "rayleigh-plesset": 10,
     "re-entrant-jet": 2,
-    "rebound": 12,
-    "relaxation-time": 16,
+    "rebound": 18,
+    "relaxation-time": 24,
     "reynolds-number": 2,
     "rigid-boundary": 2,
-    "shock-wave": 10,
+    "rigid-wall": 42,
+    "shock-wave": 94,
     "spherical-collapse": 2,
-    "stand-off": 8,
+    "stand-off": 14,
     "stefan-balance": 2,
+    "stiffened-gas": 16,
     "superheat": 2,
-    "surface-tension": 42,
+    "surface-tension": 66,
     "thermal-diffusivity": 4,
-    "traction": 117,
+    "traction": 141,
     "traction-separation": 4,
-    "vapor-pressure": 26,
+    "vapor-pressure": 30,
     "vaporization": 22,
-    "velocity-potential": 82,
+    "velocity-potential": 113,
     "viscoelasticity": 4,
-    "viscosity": 238,
+    "viscosity": 364,
     "water-hammer": 2,
     "weber-number": 4,
     "young-modulus": 6
   },
   "checks": [
+    {
+      "file": "appendices/90-hydrogel-versus-liquid.html",
+      "highlights": 296,
+      "terms": {
+        "absorbed-energy": 8,
+        "absorber": 4,
+        "blister": 6,
+        "bulk-modulus": 4,
+        "cavitation": 2,
+        "collapse-time": 4,
+        "compressibility": 8,
+        "confinement": 8,
+        "deborah-number": 10,
+        "ejected-jet": 2,
+        "hydrogel": 18,
+        "incompressibility": 18,
+        "inertia": 12,
+        "jet": 26,
+        "kinetic-energy": 14,
+        "mach-number": 2,
+        "momentum": 10,
+        "neo-hookean": 14,
+        "pfc": 34,
+        "phase-change": 4,
+        "poroelastic": 2,
+        "rebound": 6,
+        "relaxation-time": 8,
+        "shock-wave": 2,
+        "traction": 10,
+        "viscosity": 60
+      },
+      "text_and_math_unchanged": true,
+      "links_and_anchors_unchanged": true,
+      "idempotent": true,
+      "sha256": "53e9f4650edaacbb3893d087bd119307a6b1ec052ab29dac980db424d5a66e60"
+    },
     {
       "file": "appendices/a-hydrogel-versus-liquid.html",
       "highlights": 296,
@@ -2058,58 +2767,63 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "796581bbbea0a10e1408ed5f32aeb84160d002ba0428ef6cadc6d3ac7c60f6ec"
+      "sha256": "53e9f4650edaacbb3893d087bd119307a6b1ec052ab29dac980db424d5a66e60"
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "highlights": 514,
+      "highlights": 789,
       "terms": {
         "absorber": 2,
-        "acoustic-crossing-time": 4,
+        "acoustic-crossing-time": 6,
+        "acoustic-radiation": 2,
         "boundary-integral": 2,
         "capillary-pressure": 6,
         "cavitation": 6,
-        "collapse-time": 20,
-        "compressibility": 18,
+        "collapse-time": 28,
+        "compressibility": 22,
         "condensation": 2,
         "confinement": 4,
-        "ejected-jet": 4,
+        "control-volume": 2,
+        "ejected-jet": 6,
+        "energy-budget": 2,
+        "equation-of-state": 2,
         "fracture-energy": 2,
+        "free-surface": 2,
         "gas-cushioning": 2,
         "heat-transfer": 4,
-        "incompressibility": 14,
-        "inertia": 30,
-        "jet": 55,
+        "incompressibility": 20,
+        "inertia": 40,
+        "jet": 61,
         "kinematic-condition": 2,
-        "kinetic-energy": 25,
-        "latent-heat": 2,
+        "kinetic-energy": 45,
+        "latent-heat": 4,
         "liquid-bridge": 4,
-        "mach-number": 12,
-        "mass-transfer": 2,
+        "mach-number": 20,
+        "mass-transfer": 4,
         "microjet": 2,
-        "momentum": 20,
-        "noncondensable-gas": 12,
+        "momentum": 48,
+        "noncondensable-gas": 20,
         "nucleation": 2,
-        "peak-pressure": 2,
-        "pfc": 28,
+        "peak-pressure": 4,
+        "pfc": 40,
         "phase-change": 2,
         "potential-flow": 2,
-        "pressure-impulse": 34,
+        "pressure-impulse": 46,
         "rayleigh-plesset": 8,
         "re-entrant-jet": 2,
         "shock-wave": 2,
-        "stand-off": 8,
-        "surface-tension": 22,
-        "traction": 10,
-        "vapor-pressure": 12,
+        "stand-off": 14,
+        "surface-tension": 46,
+        "traction": 24,
+        "vapor-pressure": 16,
         "vaporization": 2,
-        "velocity-potential": 46,
-        "viscosity": 76
+        "velocity-potential": 77,
+        "viscosity": 130
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "9514f7b79f78342513c9799dfe495497a9322834e4f981e723771a024c413053"
+      "sha256": "131ad61a267d6c295c37b04a4db2215fcc166cd3c0da30a47f789be248f1d887"
     },
     {
       "file": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
@@ -2162,7 +2876,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "43db3827531c6b8512ac41671b560eb8b3485b328b4d54974c5ef5813ed1a010"
+      "sha256": "d013f04faa88a666bb84c1861386b0247ae0712b9c3166917cd1cb88ffc27731"
     },
     {
       "file": "chapters/03-arrays-finite-jets-and-impact.html",
@@ -2209,7 +2923,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "b97b7e78650c4d65483bdcf91d553822009091d0f786747d89a6771b0ec80c96"
+      "sha256": "f0ebc568cfce3a1d2555e81291f0ea9fb345482874a88bb5ccc94b81bf575e88"
     },
     {
       "file": "chapters/04-fracture-and-transfer.html",
@@ -2243,7 +2957,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "a0591e006cf4cec2cde44c4bf720a5a69d933389e975459184332b032a30f82c"
+      "sha256": "43813ec710905e88817b9bf1a774cd0932b6bf1378f8eb575a4dae9f5055cb7c"
     },
     {
       "file": "chapters/05-hydrogel-versus-liquid.html",
@@ -2279,11 +2993,37 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "796581bbbea0a10e1408ed5f32aeb84160d002ba0428ef6cadc6d3ac7c60f6ec"
+      "sha256": "53e9f4650edaacbb3893d087bd119307a6b1ec052ab29dac980db424d5a66e60"
+    },
+    {
+      "file": "chapters/05-jet-on-rigid-wall.html",
+      "highlights": 336,
+      "terms": {
+        "acoustic-impedance": 8,
+        "boundary-integral": 2,
+        "cavitation": 8,
+        "compressibility": 8,
+        "confinement": 12,
+        "equation-of-state": 4,
+        "free-surface": 2,
+        "jet": 92,
+        "jet-speed": 2,
+        "kinetic-energy": 18,
+        "mach-number": 14,
+        "momentum": 32,
+        "rigid-wall": 30,
+        "shock-wave": 78,
+        "stiffened-gas": 14,
+        "viscosity": 12
+      },
+      "text_and_math_unchanged": true,
+      "links_and_anchors_unchanged": true,
+      "idempotent": true,
+      "sha256": "1ac0a22630061d5c00ed022d522f650f2c70651756e61449ba4c98fd6894e917"
     },
     {
       "file": "index.html",
-      "highlights": 72,
+      "highlights": 90,
       "terms": {
         "cavitation": 4,
         "collapse-time": 2,
@@ -2291,38 +3031,41 @@
         "heat-transfer": 2,
         "hydrogel": 6,
         "inertia": 4,
-        "jet": 20,
+        "jet": 28,
+        "jet-speed": 2,
         "mass-transfer": 2,
         "momentum": 2,
         "nucleation": 4,
         "pfc": 14,
         "phase-change": 2,
         "phase-inventory": 4,
-        "pressure-impulse": 2
+        "pressure-impulse": 2,
+        "rigid-wall": 8
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "b579922826fdc849080e12348f87affc3e25168c84475436feaf20f5ae4afa33"
+      "sha256": "34a19634f2c11807ffe9752e892d3ba55b2319fe5359c1d76fe9d8bd015cacf1"
     },
     {
       "file": "reference/defense.html",
-      "highlights": 32,
+      "highlights": 38,
       "terms": {
         "activation-probability": 2,
         "blister": 2,
         "confinement": 2,
         "hydrogel": 2,
         "inertia": 2,
-        "jet": 14,
+        "jet": 18,
         "momentum": 2,
         "nanodroplet": 2,
-        "pfc": 4
+        "pfc": 4,
+        "rigid-wall": 2
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "31733b386e0515ae8b67cad1096625b38cf3a4896418c7be3690fd2a51a64c90"
+      "sha256": "bfc56ef07064ef2a8585cbf7cdfe0b167fb072cb2f6588815caaaab860243b98"
     },
     {
       "file": "reference/notation.html",
@@ -2344,11 +3087,11 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "66efe2a170d51d9ca4d6c3ced0a015e4d2a73df091047a4dffaaaafa0c699862"
+      "sha256": "00624969564606fe1dcb1a4a0fd56703bb65236fd530f9376ebca4d22697a69f"
     },
     {
       "file": "reference/sources.html",
-      "highlights": 67,
+      "highlights": 81,
       "terms": {
         "absorber": 2,
         "blister": 2,
@@ -2356,23 +3099,26 @@
         "cavitation": 8,
         "compressibility": 2,
         "elastic-boundary": 4,
+        "equation-of-state": 4,
         "free-surface": 2,
         "heat-capacity": 4,
         "hydrogel": 2,
-        "jet": 11,
+        "jet": 13,
         "microjet": 2,
         "pfc": 8,
         "phase-change": 4,
         "pressure-impulse": 4,
-        "shock-wave": 2,
+        "rigid-wall": 2,
+        "shock-wave": 6,
         "spherical-collapse": 2,
+        "stiffened-gas": 2,
         "vaporization": 2,
         "viscoelasticity": 4
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "d4df8720d27673441bdce5061b2a42e127ccf75682656156d484225e2b3a11ca"
+      "sha256": "c6e682abf65a61e86799d2f5d016bf1e9baeb86c6ec482435fefdbf0a80e8127"
     }
   ],
   "all_text_math_links_and_anchors_preserved": true

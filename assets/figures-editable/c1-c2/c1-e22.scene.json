@@ -1,576 +1,887 @@
-{
- "slide": {
-  "width": 13.333,
-  "height": 7.5
- },
- "background": "#142632",
- "objects": [
-  {
-   "x": 0.3,
-   "y": 0.13,
-   "w": 12.7,
-   "h": 0.3719444444444444,
-   "text": "C1-E22 · Exact fixed-position integrated incompressible momentum",
-   "font": "Arial",
-   "font_size": 19,
-   "color": "#8EDBD4",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o000",
-   "name": "C1-E22 text 0"
-  },
-  {
-   "x": 0.5,
-   "y": 1.0,
-   "w": 7.8,
-   "h": 0.2872222222222222,
-   "text": "Size of each term in the integrated momentum equation (m/s, log scale)",
-   "font": "Arial",
-   "font_size": 14,
-   "color": "#8EDBD4",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o001",
-   "name": "C1-E22 text 1"
-  },
-  {
-   "x1": 3.4,
-   "y1": 1.7,
-   "x2": 3.4,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o002",
-   "name": "C1-E22 line 2"
-  },
-  {
-   "x": 2.9499999999999997,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10⁻⁵",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o003",
-   "name": "C1-E22 text 3"
-  },
-  {
-   "x1": 4.233333333333333,
-   "y1": 1.7,
-   "x2": 4.233333333333333,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o004",
-   "name": "C1-E22 line 4"
-  },
-  {
-   "x": 3.783333333333333,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10⁻⁴",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o005",
-   "name": "C1-E22 text 5"
-  },
-  {
-   "x1": 5.066666666666666,
-   "y1": 1.7,
-   "x2": 5.066666666666666,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o006",
-   "name": "C1-E22 line 6"
-  },
-  {
-   "x": 4.616666666666666,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10⁻³",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o007",
-   "name": "C1-E22 text 7"
-  },
-  {
-   "x1": 5.9,
-   "y1": 1.7,
-   "x2": 5.9,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o008",
-   "name": "C1-E22 line 8"
-  },
-  {
-   "x": 5.45,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10⁻²",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o009",
-   "name": "C1-E22 text 9"
-  },
-  {
-   "x1": 6.7333333333333325,
-   "y1": 1.7,
-   "x2": 6.7333333333333325,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o010",
-   "name": "C1-E22 line 10"
-  },
-  {
-   "x": 6.283333333333332,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10⁻¹",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o011",
-   "name": "C1-E22 text 11"
-  },
-  {
-   "x1": 7.566666666666666,
-   "y1": 1.7,
-   "x2": 7.566666666666666,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o012",
-   "name": "C1-E22 line 12"
-  },
-  {
-   "x": 7.116666666666666,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10⁰",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o013",
-   "name": "C1-E22 text 13"
-  },
-  {
-   "x1": 8.4,
-   "y1": 1.7,
-   "x2": 8.4,
-   "y2": 4.35,
-   "line": "#2E4756",
-   "line_width": 0.8,
-   "type": "line",
-   "id": "o014",
-   "name": "C1-E22 line 14"
-  },
-  {
-   "x": 7.95,
-   "y": 4.4,
-   "w": 0.9,
-   "h": 0.23638888888888887,
-   "text": "10¹",
-   "font": "Arial",
-   "font_size": 11,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "center",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o015",
-   "name": "C1-E22 text 15"
-  },
-  {
-   "x": 0.5,
-   "y": 1.83,
-   "w": 2.8,
-   "h": 0.45666666666666667,
-   "text": "pressure-impulse term\nΠ / (ρL) = Δu",
-   "font": "Arial",
-   "font_size": 12,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o016",
-   "name": "C1-E22 text 16"
-  },
-  {
-   "x": 3.4,
-   "y": 1.9000000000000001,
-   "w": 4.5642677122663855,
-   "h": 0.45,
-   "fill": "#8EDBD4",
-   "line": "#8EDBD4",
-   "line_width": 1,
-   "opacity": 0.85,
-   "type": "rect",
-   "id": "o017",
-   "name": "C1-E22 rect 17"
-  },
-  {
-   "x": 8.044267712266386,
-   "y": 1.9500000000000002,
-   "w": 2.2,
-   "h": 0.26180555555555557,
-   "text": "3 m/s",
-   "font": "Arial",
-   "font_size": 12.5,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o018",
-   "name": "C1-E22 text 18"
-  },
-  {
-   "x": 0.5,
-   "y": 2.68,
-   "w": 2.8,
-   "h": 0.45666666666666667,
-   "text": "convective impulse\n~ U²τ/L",
-   "font": "Arial",
-   "font_size": 12,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o019",
-   "name": "C1-E22 text 19"
-  },
-  {
-   "x": 3.4,
-   "y": 2.75,
-   "w": 3.0443437614794533,
-   "h": 0.45,
-   "fill": "#F2B880",
-   "line": "#F2B880",
-   "line_width": 1,
-   "opacity": 0.85,
-   "type": "rect",
-   "id": "o020",
-   "name": "C1-E22 rect 20"
-  },
-  {
-   "x": 6.524343761479454,
-   "y": 2.8000000000000003,
-   "w": 2.2,
-   "h": 0.26180555555555557,
-   "text": "0.045 m/s",
-   "font": "Arial",
-   "font_size": 12.5,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o021",
-   "name": "C1-E22 text 21"
-  },
-  {
-   "x": 0.5,
-   "y": 3.53,
-   "w": 2.8,
-   "h": 0.45666666666666667,
-   "text": "viscous impulse\n~ ν Δu τ/L²",
-   "font": "Arial",
-   "font_size": 12,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o022",
-   "name": "C1-E22 text 22"
-  },
-  {
-   "x": 3.4,
-   "y": 3.5999999999999996,
-   "w": 0.9800760492130678,
-   "h": 0.45,
-   "fill": "#7FC8F8",
-   "line": "#7FC8F8",
-   "line_width": 1,
-   "opacity": 0.85,
-   "type": "rect",
-   "id": "o023",
-   "name": "C1-E22 rect 23"
-  },
-  {
-   "x": 4.460076049213068,
-   "y": 3.65,
-   "w": 2.2,
-   "h": 0.26180555555555557,
-   "text": "0.00015 m/s",
-   "font": "Arial",
-   "font_size": 12.5,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o024",
-   "name": "C1-E22 text 24"
-  },
-  {
-   "x": 9.0,
-   "y": 1.2,
-   "w": 3.95,
-   "h": 3.6,
-   "fill": "#213E4B",
-   "line": "#8EDBD4",
-   "line_width": 1.6,
-   "type": "round_rect",
-   "id": "o025",
-   "name": "C1-E22 round_rect 25"
-  },
-  {
-   "x": 9.12,
-   "y": 1.26,
-   "w": 3.71,
-   "h": 0.2702777777777778,
-   "text": "Why the short-event model works",
-   "font": "Arial",
-   "font_size": 13,
-   "color": "#8EDBD4",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o026",
-   "name": "C1-E22 text 26"
-  },
-  {
-   "x": 9.15,
-   "y": 1.7,
-   "w": 3.7,
-   "h": 0.26180555555555557,
-   "text": "Δu = −∇Π/ρ − ∫(u·∇)u dt + ν∫∇²u dt",
-   "font": "Arial",
-   "font_size": 12.5,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "bold": true,
-   "type": "text",
-   "id": "o027",
-   "name": "C1-E22 text 27"
-  },
-  {
-   "x": 9.370000000000001,
-   "y": 2.5,
-   "w": 3.48,
-   "h": 0.45666666666666667,
-   "text": "Uτ/L = 0.015: convection moves the\nfluid only 1.5 % of L.",
-   "font": "Arial",
-   "font_size": 12,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o028",
-   "name": "C1-E22 text 28"
-  },
-  {
-   "x": 9.185,
-   "y": 2.5583333333333336,
-   "w": 0.09,
-   "h": 0.09,
-   "fill": "#8EDBD4",
-   "line": "#8EDBD4",
-   "line_width": 1,
-   "type": "ellipse",
-   "id": "o029",
-   "name": "C1-E22 ellipse 29"
-  },
-  {
-   "x": 9.370000000000001,
-   "y": 3.0066666666666664,
-   "w": 3.48,
-   "h": 0.45666666666666667,
-   "text": "ντ/L² = 5×10⁻⁵: viscosity has no time\nto act.",
-   "font": "Arial",
-   "font_size": 12,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o030",
-   "name": "C1-E22 text 30"
-  },
-  {
-   "x": 9.185,
-   "y": 3.065,
-   "w": 0.09,
-   "h": 0.09,
-   "fill": "#8EDBD4",
-   "line": "#8EDBD4",
-   "line_width": 1,
-   "type": "ellipse",
-   "id": "o031",
-   "name": "C1-E22 ellipse 31"
-  },
-  {
-   "x": 9.370000000000001,
-   "y": 3.5133333333333328,
-   "w": 3.48,
-   "h": 0.25333333333333335,
-   "text": "Dropping both leaves Δu ≃ −∇Π/ρ.",
-   "font": "Arial",
-   "font_size": 12,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o032",
-   "name": "C1-E22 text 32"
-  },
-  {
-   "x": 9.185,
-   "y": 3.5716666666666663,
-   "w": 0.09,
-   "h": 0.09,
-   "fill": "#8EDBD4",
-   "line": "#8EDBD4",
-   "line_width": 1,
-   "type": "ellipse",
-   "id": "o033",
-   "name": "C1-E22 ellipse 33"
-  },
-  {
-   "x": 0.5,
-   "y": 4.85,
-   "w": 12.4,
-   "h": 0.5075,
-   "text": "Bars start at 10⁻⁵ m/s. If either small ratio were near 1, the corresponding bar would be as long as the first and the\nreduced model would fail.",
-   "font": "Arial",
-   "font_size": 13.5,
-   "color": "#E7F0F3",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o034",
-   "name": "C1-E22 text 34"
-  },
-  {
-   "x": 0.5,
-   "y": 5.85,
-   "w": 12.4,
-   "h": 0.26180555555555557,
-   "text": "Teaching case: Π₀ = 0.30 Pa·s, ρ = 1000 kg/m³, L = 100 µm, τ = 0.5 µs, ν = 10⁻⁶ m²/s.",
-   "font": "Arial",
-   "font_size": 12.5,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o035",
-   "name": "C1-E22 text 35"
-  },
-  {
-   "x": 0.35,
-   "y": 7.12,
-   "w": 12.6,
-   "h": 0.21944444444444444,
-   "text": "Magnitudes from Eq. C1-E22 using the numbers of Eq. C1-E25.",
-   "font": "Arial",
-   "font_size": 10,
-   "color": "#B4C7D2",
-   "word_wrap": false,
-   "align": "left",
-   "valign": "top",
-   "margin": 0.02,
-   "type": "text",
-   "id": "o036",
-   "name": "C1-E22 text 36"
-  }
- ],
- "_title": "C1-E22",
- "_audit": {
-  "id": "C1-E22",
-  "scientific_status": "drawn from the equation and its stated numbers"
- }
+{
+ "slide": {
+  "width": 13.333,
+  "height": 7.5
+ },
+ "background": "#142632",
+ "objects": [
+  {
+   "x": 0.3,
+   "y": 0.13,
+   "w": 12.7,
+   "h": 0.3719444444444444,
+   "text": "C1-E22 · Short-event reduced pressure-impulse model",
+   "font": "Arial",
+   "font_size": 19,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o000",
+   "name": "C1-E22 text 0"
+  },
+  {
+   "points": [
+    [
+     1.1,
+     6.2
+    ],
+    [
+     6.1,
+     6.2
+    ],
+    [
+     6.0959449908578485,
+     5.998670299452924
+    ],
+    [
+     6.083786540671051,
+     5.797667156416371
+    ],
+    [
+     6.06354437049027,
+     5.597316598723385
+    ],
+    [
+     6.035251313189564,
+     5.397943595711199
+    ],
+    [
+     5.998953260211339,
+     5.199871531119778
+    ],
+    [
+     5.95470908713026,
+     5.003421678562211
+    ],
+    [
+     5.902590558156861,
+     4.808912680417738
+    ],
+    [
+     5.842682209735727,
+     4.616660030992637
+    ],
+    [
+     5.7750812134270735,
+     4.426975564787322
+    ],
+    [
+     5.6998972182941205,
+     4.240166950699625
+    ],
+    [
+     5.617252173051911,
+     4.056537192984729
+    ],
+    [
+     5.5272801282660495,
+     3.8763841397811576
+    ],
+    [
+     5.430127018922194,
+     3.7000000000000006
+    ],
+    [
+     5.325950427718974,
+     3.5276708693609953
+    ],
+    [
+     5.214919329468282,
+     3.3596762663442217
+    ],
+    [
+     5.097213817017506,
+     3.196288678810106
+    ],
+    [
+     4.973024809138273,
+     3.037773122023114
+    ],
+    [
+     4.8425537408555055,
+     2.8843867087960247
+    ],
+    [
+     4.706012236719072,
+     2.736378232452003
+    ],
+    [
+     4.563621767547998,
+     2.593987763280928
+    ],
+    [
+     4.415613291203977,
+     2.4574462591444948
+    ],
+    [
+     4.262226877976886,
+     2.3269751908617273
+    ],
+    [
+     4.103711321189895,
+     2.2027861829824946
+    ],
+    [
+     3.9403237336557795,
+     2.0850806705317186
+    ],
+    [
+     3.7723291306390063,
+     1.974049572281027
+    ],
+    [
+     3.6000000000000005,
+     1.8698729810778074
+    ],
+    [
+     3.423615860218843,
+     1.7727198717339503
+    ],
+    [
+     3.243462807015271,
+     1.6827478269480887
+    ],
+    [
+     3.0598330493003756,
+     1.6001027817058793
+    ],
+    [
+     2.8730244352126793,
+     1.5249187865729263
+    ],
+    [
+     2.6833399690073634,
+     1.4573177902642724
+    ],
+    [
+     2.491087319582264,
+     1.3974094418431386
+    ],
+    [
+     2.2965783214377895,
+     1.3452909128697401
+    ],
+    [
+     2.1001284688802224,
+     1.3010467397886618
+    ],
+    [
+     1.9020564042888024,
+     1.264748686810436
+    ],
+    [
+     1.7026834012766163,
+     1.23645562950973
+    ],
+    [
+     1.50233284358363,
+     1.2162134593289506
+    ],
+    [
+     1.3013297005470763,
+     1.2040550091421522
+    ],
+    [
+     1.1000000000000003,
+     1.2000000000000002
+    ]
+   ],
+   "fill": "#1E4A5A",
+   "line": "#2B6678",
+   "line_width": 1.4,
+   "type": "polygon",
+   "id": "o001",
+   "name": "C1-E22 polygon 1"
+  },
+  {
+   "x1": 1.1,
+   "y1": 6.2,
+   "x2": 5.855282581475768,
+   "y2": 4.654915028125263,
+   "line": "#B4C7D2",
+   "line_width": 1.1,
+   "_dash": true,
+   "type": "line",
+   "id": "o002",
+   "name": "C1-E22 line 2"
+  },
+  {
+   "x": 5.9028354072905245,
+   "y": 4.539464178406516,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "Π = 0.8 Π₀",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o003",
+   "name": "C1-E22 text 3"
+  },
+  {
+   "x1": 1.1,
+   "y1": 6.2,
+   "x2": 5.145084971874738,
+   "y2": 3.2610737385376343,
+   "line": "#B4C7D2",
+   "line_width": 1.1,
+   "_dash": true,
+   "type": "line",
+   "id": "o004",
+   "name": "C1-E22 line 4"
+  },
+  {
+   "x": 5.185535821593485,
+   "y": 3.1316844759230107,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "Π = 0.6 Π₀",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o005",
+   "name": "C1-E22 text 5"
+  },
+  {
+   "x1": 1.1,
+   "y1": 6.2,
+   "x2": 4.038926261462366,
+   "y2": 2.154915028125263,
+   "line": "#B4C7D2",
+   "line_width": 1.1,
+   "_dash": true,
+   "type": "line",
+   "id": "o006",
+   "name": "C1-E22 line 6"
+  },
+  {
+   "x": 4.06831552407699,
+   "y": 2.014464178406516,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "Π = 0.4 Π₀",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o007",
+   "name": "C1-E22 text 7"
+  },
+  {
+   "x1": 1.1,
+   "y1": 6.2,
+   "x2": 2.6450849718747373,
+   "y2": 1.4447174185242329,
+   "line": "#B4C7D2",
+   "line_width": 1.1,
+   "_dash": true,
+   "type": "line",
+   "id": "o008",
+   "name": "C1-E22 line 8"
+  },
+  {
+   "x": 2.6605358215934847,
+   "y": 1.2971645927094753,
+   "w": 1.0,
+   "h": 0.22791666666666666,
+   "text": "Π = 0.2 Π₀",
+   "font": "Arial",
+   "font_size": 10.5,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o009",
+   "name": "C1-E22 text 9"
+  },
+  {
+   "x1": 1.1,
+   "y1": 6.2,
+   "x2": 6.1,
+   "y2": 6.2,
+   "line": "#F2B880",
+   "line_width": 4,
+   "type": "line",
+   "id": "o010",
+   "name": "C1-E22 line 10"
+  },
+  {
+   "x": 2.1,
+   "y": 6.28,
+   "w": 3.2,
+   "h": 0.26180555555555557,
+   "text": "driven boundary: Π = Π₀",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o011",
+   "name": "C1-E22 text 11"
+  },
+  {
+   "x1": 1.1,
+   "y1": 6.2,
+   "x2": 1.1,
+   "y2": 1.2000000000000002,
+   "line": "#8EDBD4",
+   "line_width": 4,
+   "type": "line",
+   "id": "o012",
+   "name": "C1-E22 line 12"
+  },
+  {
+   "x": 1.2000000000000002,
+   "y": 0.8500000000000002,
+   "w": 3.4,
+   "h": 0.26180555555555557,
+   "text": "free boundary: Π = 0",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o013",
+   "name": "C1-E22 text 13"
+  },
+  {
+   "points": [
+    [
+     2.2865252935232507,
+     6.020674241031681
+    ],
+    [
+     2.271887252386047,
+     5.941774773317786
+    ],
+    [
+     2.252008760744158,
+     5.864030038294032
+    ],
+    [
+     2.226978711322838,
+     5.78778769520414
+    ],
+    [
+     2.1969090336057953,
+     5.7133886848890585
+    ],
+    [
+     2.1619341933084364,
+     5.641165705166227
+    ],
+    [
+     2.1222105910734963,
+     5.57144172307003
+    ],
+    [
+     2.077915863077969,
+     5.504528530606416
+    ],
+    [
+     2.0292480866788742,
+     5.440725350480045
+    ],
+    [
+     1.9764248946500769,
+     5.380317498028901
+    ],
+    [
+     1.9196825019710997,
+     5.323575105349923
+    ],
+    [
+     1.8592746495199557,
+     5.270751913321126
+    ],
+    [
+     1.7954714693935845,
+     5.222084136922032
+    ],
+    [
+     1.72855827692997,
+     5.177789408926504
+    ],
+    [
+     1.658834294833774,
+     5.138065806691564
+    ],
+    [
+     1.5866113151109418,
+     5.103090966394205
+    ],
+    [
+     1.51221230479586,
+     5.073021288677162
+    ],
+    [
+     1.4359699617059687,
+     5.047991239255842
+    ],
+    [
+     1.3582252266822143,
+     5.028112747613953
+    ],
+    [
+     1.2793257589683191,
+     5.0134747064767495
+    ]
+   ],
+   "fill": null,
+   "line": "#F2B880",
+   "line_width": 1.2,
+   "_open": true,
+   "opacity": 0.7,
+   "type": "polygon",
+   "id": "o014",
+   "name": "C1-E22 polygon 14"
+  },
+  {
+   "x1": 1.8595775680123499,
+   "y1": 5.270999505827665,
+   "x2": 1.3563689670023347,
+   "y2": 4.859561656487642,
+   "line": "#F2B880",
+   "line_width": 3,
+   "type": "arrow",
+   "id": "o015",
+   "name": "C1-E22 arrow 15"
+  },
+  {
+   "points": [
+    [
+     3.4730505870465014,
+     5.841348482063362
+    ],
+    [
+     3.4437745047720942,
+     5.683549546635572
+    ],
+    [
+     3.4040175214883157,
+     5.528060076588063
+    ],
+    [
+     3.353957422645676,
+     5.37557539040828
+    ],
+    [
+     3.293818067211591,
+     5.226777369778118
+    ],
+    [
+     3.2238683866168723,
+     5.082331410332452
+    ],
+    [
+     3.1444211821469925,
+     4.94288344614006
+    ],
+    [
+     3.0558317261559376,
+     4.809057061212831
+    ],
+    [
+     2.9584961733577484,
+     4.681450700960089
+    ],
+    [
+     2.852849789300153,
+     4.560634996057801
+    ],
+    [
+     2.7393650039421997,
+     4.447150210699847
+    ],
+    [
+     2.618549299039911,
+     4.341503826642252
+    ],
+    [
+     2.4909429387871684,
+     4.244168273844062
+    ],
+    [
+     2.3571165538599406,
+     4.155578817853008
+    ],
+    [
+     2.2176685896675474,
+     4.076131613383128
+    ],
+    [
+     2.073222630221883,
+     4.00618193278841
+    ],
+    [
+     1.92442460959172,
+     3.946042577354324
+    ],
+    [
+     1.7719399234119373,
+     3.895982478511685
+    ],
+    [
+     1.6164504533644286,
+     3.856225495227906
+    ],
+    [
+     1.4586515179366382,
+     3.826949412953499
+    ]
+   ],
+   "fill": null,
+   "line": "#F2B880",
+   "line_width": 1.2,
+   "_open": true,
+   "opacity": 0.7,
+   "type": "polygon",
+   "id": "o016",
+   "name": "C1-E22 polygon 16"
+  },
+  {
+   "x1": 2.6191551360247,
+   "y1": 4.341999011655329,
+   "x2": 2.3675508355196926,
+   "y2": 4.136280086985317,
+   "line": "#F2B880",
+   "line_width": 3,
+   "type": "arrow",
+   "id": "o017",
+   "name": "C1-E22 arrow 17"
+  },
+  {
+   "points": [
+    [
+     4.6595758805697525,
+     5.662022723095043
+    ],
+    [
+     4.615661757158142,
+     5.425324319953358
+    ],
+    [
+     4.556026282232473,
+     5.192090114882095
+    ],
+    [
+     4.480936133968514,
+     4.9633630856124205
+    ],
+    [
+     4.3907271008173865,
+     4.740166054667176
+    ],
+    [
+     4.285802579925308,
+     4.523497115498679
+    ],
+    [
+     4.166631773220489,
+     4.31432516921009
+    ],
+    [
+     4.033747589233907,
+     4.1135855918192465
+    ],
+    [
+     3.887744260036623,
+     3.9221760514401334
+    ],
+    [
+     3.72927468395023,
+     3.740952494086701
+    ],
+    [
+     3.5590475059132993,
+     3.57072531604977
+    ],
+    [
+     3.377823948559867,
+     3.4122557399633773
+    ],
+    [
+     3.1864144081807533,
+     3.2662524107660933
+    ],
+    [
+     2.985674830789911,
+     3.133368226779511
+    ],
+    [
+     2.7765028845013213,
+     3.014197420074692
+    ],
+    [
+     2.5598339453328247,
+     2.909272899182614
+    ],
+    [
+     2.3366369143875803,
+     2.8190638660314855
+    ],
+    [
+     2.107909885117906,
+     2.743973717767527
+    ],
+    [
+     1.8746756800466429,
+     2.6843382428418585
+    ],
+    [
+     1.6379772769049572,
+     2.6404241194302482
+    ]
+   ],
+   "fill": null,
+   "line": "#F2B880",
+   "line_width": 1.2,
+   "_open": true,
+   "opacity": 0.7,
+   "type": "polygon",
+   "id": "o018",
+   "name": "C1-E22 polygon 18"
+  },
+  {
+   "x1": 3.37873270403705,
+   "y1": 3.412998517482993,
+   "x2": 3.210996503700378,
+   "y2": 3.275852567702985,
+   "line": "#F2B880",
+   "line_width": 3,
+   "type": "arrow",
+   "id": "o019",
+   "name": "C1-E22 arrow 19"
+  },
+  {
+   "x": 7.5,
+   "y": 1.1,
+   "w": 5.4,
+   "h": 0.30416666666666664,
+   "text": "Reduced model: ∇²Π = 0",
+   "font": "Arial",
+   "font_size": 15,
+   "color": "#8EDBD4",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o020",
+   "name": "C1-E22 text 20"
+  },
+  {
+   "x": 7.72,
+   "y": 1.65,
+   "w": 5.180000000000001,
+   "h": 0.4736111111111111,
+   "text": "Incompressible short event: ∇·Δu = 0 and Δu ≃ −∇Π/ρ give\nLaplace's equation for Π.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o021",
+   "name": "C1-E22 text 21"
+  },
+  {
+   "x": 7.535,
+   "y": 1.7126388888888888,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o022",
+   "name": "C1-E22 ellipse 22"
+  },
+  {
+   "x": 7.72,
+   "y": 2.1736111111111107,
+   "w": 5.180000000000001,
+   "h": 0.6854166666666667,
+   "text": "Π is fixed on the boundaries (Π₀ on the driven wall, 0\nat the free surface); the interior follows from geometry\nalone.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o023",
+   "name": "C1-E22 text 23"
+  },
+  {
+   "x": 7.535,
+   "y": 2.2362499999999996,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o024",
+   "name": "C1-E22 ellipse 24"
+  },
+  {
+   "x": 7.72,
+   "y": 2.9090277777777773,
+   "w": 5.180000000000001,
+   "h": 0.6854166666666667,
+   "text": "Here Π = Π₀(1 − θ/θ₀) in a right-angle corner is\nharmonic, so Δu points along circular arcs toward the\nfree side.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o025",
+   "name": "C1-E22 text 25"
+  },
+  {
+   "x": 7.535,
+   "y": 2.9716666666666662,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o026",
+   "name": "C1-E22 ellipse 26"
+  },
+  {
+   "x": 7.72,
+   "y": 3.644444444444444,
+   "w": 5.180000000000001,
+   "h": 0.4736111111111111,
+   "text": "Arrow length ∝ 1/r: the impulse gradient is steepest\nnear the corner.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o027",
+   "name": "C1-E22 text 27"
+  },
+  {
+   "x": 7.535,
+   "y": 3.707083333333333,
+   "w": 0.09,
+   "h": 0.09,
+   "fill": "#8EDBD4",
+   "line": "#8EDBD4",
+   "line_width": 1,
+   "type": "ellipse",
+   "id": "o028",
+   "name": "C1-E22 ellipse 28"
+  },
+  {
+   "x": 7.5,
+   "y": 5.0,
+   "w": 5.4,
+   "h": 1.75,
+   "fill": "#213E4B",
+   "line": "#B4C7D2",
+   "line_width": 1.6,
+   "type": "round_rect",
+   "id": "o029",
+   "name": "C1-E22 round_rect 29"
+  },
+  {
+   "x": 7.65,
+   "y": 5.07,
+   "w": 5.1,
+   "h": 0.2702777777777778,
+   "text": "Conditions: Uτ/L ≪ 1 and ντ/L² ≪ 1.",
+   "font": "Arial",
+   "font_size": 13,
+   "color": "#E7F0F3",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "bold": true,
+   "type": "text",
+   "id": "o030",
+   "name": "C1-E22 text 30"
+  },
+  {
+   "x": 7.65,
+   "y": 5.5,
+   "w": 5.1,
+   "h": 0.6854166666666667,
+   "text": "Result: the velocity right after the pulse depends on\nthe shape of the liquid region, not on a detailed\npressure history.",
+   "font": "Arial",
+   "font_size": 12.5,
+   "color": "#F2B880",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o031",
+   "name": "C1-E22 text 31"
+  },
+  {
+   "x": 0.35,
+   "y": 7.12,
+   "w": 12.6,
+   "h": 0.21944444444444444,
+   "text": "Corner example: an exact harmonic solution chosen to show the geometry dependence; not a model of the laser event.",
+   "font": "Arial",
+   "font_size": 10,
+   "color": "#B4C7D2",
+   "word_wrap": false,
+   "align": "left",
+   "valign": "top",
+   "margin": 0.02,
+   "type": "text",
+   "id": "o032",
+   "name": "C1-E22 text 32"
+  }
+ ],
+ "_title": "C1-E22",
+ "_audit": {
+  "id": "C1-E22",
+  "scientific_status": "drawn from the equation and its stated numbers"
+ }
 }
