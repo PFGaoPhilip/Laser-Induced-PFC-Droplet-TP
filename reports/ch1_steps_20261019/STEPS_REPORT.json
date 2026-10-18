@@ -1,0 +1,246 @@
+{
+  "status": "passed",
+  "numbered_steps": 33,
+  "bilingual_objectives_and_purposes": 33,
+  "subchapter_numbering_contiguous": true,
+  "existing_step_explanations_retained_and_renumbered": 20,
+  "equation_registry_records_preserved": 189,
+  "rendered_mathematical_groups_preserved": 33,
+  "compact_symbol_tables_preserved": 33,
+  "steps": [
+    {
+      "equation": "C1-E01",
+      "step": "1.2.1",
+      "objective": "Step 1.2.1 — Specify the cavity problem",
+      "purpose": "Purpose in this chapter. Choose the initial radius, wall speed, and far-field conditions. These inputs make the radial dynamics in Section 1.3 a defined initial-value problem.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E02",
+      "step": "1.3.1",
+      "objective": "Step 1.3.1 — Obtain the liquid velocity from cavity motion",
+      "purpose": "Purpose in this chapter. Use the spherical conditions in Eq. (C1.2-E01). Volume conservation converts wall motion into the exterior velocity field needed for momentum and energy calculations.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E03",
+      "step": "1.3.2",
+      "objective": "Step 1.3.2 — Prepare the velocity field for momentum integration",
+      "purpose": "Purpose in this chapter. Integrate the velocity from Eq. (C1.3-E02) and fix its reference. The resulting potential lets the radial momentum equation become a pressure relation.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E04",
+      "step": "1.3.3",
+      "objective": "Step 1.3.3 — Separate fixed-position and moving-wall time changes",
+      "purpose": "Purpose in this chapter. Differentiate the potential from Eq. (C1.3-E03). Bernoulli requires the fixed-position derivative, so this distinction prevents an incorrect wall- inertia term.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E05",
+      "step": "1.3.4",
+      "objective": "Step 1.3.4 — Connect liquid inertia to wall pressure",
+      "purpose": "Purpose in this chapter. Insert Eqs. (C1.3-E02)–(C1.3-E04) into the integrated momentum law. This expresses liquid-side wall pressure through radius, speed, and acceleration.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E06",
+      "step": "1.3.5",
+      "objective": "Step 1.3.5 — Transfer bubble pressure across the interface",
+      "purpose": "Purpose in this chapter. Apply normal-stress balance at the spherical wall. Surface tension and viscosity connect bubble pressure to the liquid pressure required by Eq. (C1.3-E05).",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E07",
+      "step": "1.3.6",
+      "objective": "Step 1.3.6 — Assemble the radial equation of motion",
+      "purpose": "Purpose in this chapter. Combine Eqs. (C1.3-E05) and (C1.3-E06). The resulting Rayleigh–Plesset equation converts a prescribed pressure history into spherical cavity motion.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E08",
+      "step": "1.3.7",
+      "objective": "Step 1.3.7 — Identify the pressure input still needing closure",
+      "purpose": "Purpose in this chapter. Separate vapor and permanent-gas contributions to the pressure in Eq. (C1.3-E07). Chapter 2 must supply their thermal, phase, and inventory evolution.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E09",
+      "step": "1.4.1",
+      "objective": "Step 1.4.1 — Measure the inertia carried by the exterior liquid",
+      "purpose": "Purpose in this chapter. Integrate the velocity field from Eq. (C1.3-E02). Exterior kinetic energy provides the energy measure for checking the radial pressure-driven motion.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E10",
+      "step": "1.4.2",
+      "objective": "Step 1.4.2 — Convert stored energies into rates",
+      "purpose": "Purpose in this chapter. Differentiate Eq. (C1.4-E09), the surface energy, and cavity volume. Their rates allow the momentum equation to be checked as a power balance.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E11",
+      "step": "1.4.3",
+      "objective": "Step 1.4.3 — Check where pressure work goes",
+      "purpose": "Purpose in this chapter. Combine the motion law in Eq. (C1.3-E07) with Eq. (C1.4-E10). This separates kinetic-energy storage, surface-energy storage, and viscous loss.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E12",
+      "step": "1.5.1",
+      "objective": "Step 1.5.1 — Define a solvable ideal-collapse benchmark",
+      "purpose": "Purpose in this chapter. Reduce Eq. (C1.3-E07) to collapse under a constant positive pressure difference. This restricted control problem supplies the trajectory and time benchmark below.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E13",
+      "step": "1.5.2",
+      "objective": "Step 1.5.2 — Replace time by radius on the collapse branch",
+      "purpose": "Purpose in this chapter. Transform Eq. (C1.5-E12) into a first-order equation for squared speed. Its integrating factor prepares a trajectory satisfying the maximum-radius initial condition.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E14",
+      "step": "1.5.3",
+      "objective": "Step 1.5.3 — Recover inward speed and its integration constant",
+      "purpose": "Purpose in this chapter. Integrate Eq. (C1.5-E13) from the stationary maximum-radius state. Select the inward branch before using its reciprocal to calculate collapse time .",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E15",
+      "step": "1.5.4",
+      "objective": "Step 1.5.4 — Separate collapse time from geometric scale",
+      "purpose": "Purpose in this chapter. Integrate the reciprocal speed from Eq. (C1.5-E14). Nondimensionalizing radius isolates the universal integral from radius, density, and pressure scales.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E16",
+      "step": "1.5.5",
+      "objective": "Step 1.5.5 — Evaluate the Rayleigh time coefficient",
+      "purpose": "Purpose in this chapter. Evaluate the dimensionless integral in Eq. (C1.5-E15). This establishes the coefficient used in the worked collapse-time calculation.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E17",
+      "step": "1.5.6",
+      "objective": "Step 1.5.6 — Cross-check the ideal trajectory with pressure work",
+      "purpose": "Purpose in this chapter. Insert Eq. (C1.5-E14) into the kinetic energy from Eq. (C1.4-E09). Agreement with pressure work checks the collapse branch and integration constant.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E18",
+      "step": "1.5.7",
+      "objective": "Step 1.5.7 — Put the ideal benchmark on a numerical scale",
+      "purpose": "Purpose in this chapter. Apply Eqs. (C1.5-E14)–(C1.5-E17) to the declared teaching inputs. This translates the benchmark into time, energy, and speed before testing its validity.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E19",
+      "step": "1.5.8",
+      "objective": "Step 1.5.8 — Locate where the ideal speed needs further physics",
+      "purpose": "Purpose in this chapter. Compare the ideal wall speed with a chosen Mach threshold. This diagnoses the incompressible trajectory without establishing a physical maximum speed.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E20",
+      "step": "1.6.1",
+      "objective": "Step 1.6.1 — Summarize a pressure history as pressure impulse",
+      "purpose": "Purpose in this chapter. Move from spherical radius dynamics to spatial liquid response. Define a local time-integrated pressure field whose gradient enters the next momentum calculation.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E21",
+      "step": "1.6.2",
+      "objective": "Step 1.6.2 — Convert pressure history into liquid velocity change",
+      "purpose": "Purpose in this chapter. Use the pressure impulse defined in Eq. (C1.6-E20). Integrating momentum separates pressure, convective, and viscous contributions to velocity change. This exact model identity is the starting point for Eq. (C1.6-E22).",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E22",
+      "step": "1.6.3",
+      "objective": "Step 1.6.3 — Decide when pressure impulse dominates the event",
+      "purpose": "Purpose in this chapter. Estimate the convective and viscous terms retained in Eq. (C1.6-E21). Under the stated short-event conditions, the reduced model links incompressibility to a pressure-impulse boundary problem.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E23",
+      "step": "1.6.4",
+      "objective": "Step 1.6.4 — Show how a boundary selects the liquid-motion direction",
+      "purpose": "Purpose in this chapter. Solve the reduced model from Eq. (C1.6-E22) for a straight column. Inlet and outlet impulses select a gradient and therefore an axial velocity increment.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E24",
+      "step": "1.6.5",
+      "objective": "Step 1.6.5 — Check the scale and assumptions of the column result",
+      "purpose": "Purpose in this chapter. Apply Eq. (C1.6-E23) to a declared pressure pulse. Calculate velocity change and compare acoustic, convective, and viscous scales before interpreting that result.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E25",
+      "step": "1.6.6",
+      "objective": "Step 1.6.6 — Explain why a spherical cavity cannot choose a jet direction",
+      "purpose": "Purpose in this chapter. Contrast spherical symmetry with the directed column in Eq. (C1.6-E23). This identifies the geometric information missing from a radius-only model and motivates Section 1.7.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E26",
+      "step": "1.7.1",
+      "objective": "Step 1.7.1 — Replace the radius model with spatial liquid equations",
+      "purpose": "Purpose in this chapter. Retain the mass and momentum laws across the actual liquid domain. These equations provide the spatial dynamics needed when boundaries and interface shape determine the jet .",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E27",
+      "step": "1.7.2",
+      "objective": "Step 1.7.2 — Close the spatial model at its moving interface",
+      "purpose": "Purpose in this chapter. Add interface motion and traction conditions to Eq. (C1.7-E26). Their orientation and stress signs must recover the spherical jump in Eq. (C1.3-E06).",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E28",
+      "step": "1.7.3",
+      "objective": "Step 1.7.3 — Construct a conditional pre-impact interface solver",
+      "purpose": "Purpose in this chapter. Reduce Eqs. (C1.7-E26) and (C1.7-E27) under the stated inviscid potential-flow assumptions. The resulting system evolves interface shape and can resolve directional pre-impact motion.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E29",
+      "step": "1.7.4",
+      "objective": "Step 1.7.4 — Recover the radial model as a consistency check",
+      "purpose": "Purpose in this chapter. Apply Eq. (C1.7-E28) to a sphere. Recovering the inviscid form of Eq. (C1.3-E07) checks the moving-interface signs and derivative convention.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E30",
+      "step": "1.7.5",
+      "objective": "Step 1.7.5 — Check whether incompressibility is adequate for the event",
+      "purpose": "Purpose in this chapter. Compare wall speed and event duration with acoustic scales. These separate diagnostics delimit both the pressure-impulse reduction and the incompressible interface model.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E31",
+      "step": "1.8.1",
+      "objective": "Step 1.8.1 — Connect bubble pressure to the transfer- jet explanation",
+      "purpose": "Purpose in this chapter. Combine the radial balance and pressure composition from Section 1.3. Use them to explain the source of liquid motion, then identify the boundary information required for an external jet.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E32",
+      "step": "1.8.2",
+      "objective": "Step 1.8.2 — Reconstruct the collapse benchmark and its limits",
+      "purpose": "Purpose in this chapter. Combine the trajectory, collapse-time coefficient, and energy check from Section 1.5. Explain their shared assumptions before discussing the ideal speed singularity.",
+      "math_and_compact_symbols_preserved": true
+    },
+    {
+      "equation": "C1-E33",
+      "step": "1.8.3",
+      "objective": "Step 1.8.3 — Connect pressure history, geometry, and response time",
+      "purpose": "Purpose in this chapter. Combine Sections 1.6 and 1.7. Distinguish the exact momentum integral, its reduced column benchmark, and the additional spatial and acoustic inputs needed for a transfer- jet prediction.",
+      "math_and_compact_symbols_preserved": true
+    }
+  ],
+  "scope": "Step coverage, ordering, numbering, original prose retention, and mathematical preservation. Purpose statements received an editorial self-review against the existing chapter.",
+  "base_commit": "2b2628cb1ebf06a014f699e96a016007effb7a5c",
+  "chapter_sha256": "8573a7dbaafb888274ce9e86f216ca86610377fb6c1d62f8e1ba38628ac5834b"
+}

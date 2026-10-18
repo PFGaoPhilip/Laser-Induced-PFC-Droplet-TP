@@ -25,6 +25,10 @@ Mechanism identification requires the cavity boundary and liquid trajectories. A
 
 判断机制需要观测空腔边界和液体轨迹，还需追踪出口、受载表面和事件顺序。明亮空腔与脱离载荷不足以确定机制。所引弯月面与塌缩研究采用不同几何。应用其结果前须匹配边界条件。 [[R3]](../reference/sources.html#r3) [[R4]](../reference/sources.html#r4)
 
+**Chapter route.** Sections 1.2–1.5 establish radial motion, energy, and collapse time. Section 1.6 connects pressure history to directed liquid motion. Section 1.7 supplies the spatial interface model. Section 1.8 connects these results in the reference answers.
+
+**本章路线。** 第1.2至1.5节建立径向运动、能量与塌缩时间。第1.6节将压力历程连接至定向液体运动。第1.7节给出空间界面模型。第1.8节在参考答案中贯通这些结果。
+
 ## 1.2 Spherical model and conventions
 
 ## 1.2 球形模型与约定
@@ -69,7 +73,15 @@ Model one spherical cavity in an infinite incompressible Newtonian carrier. Fix 
 
 Superscripts denote powers unless stated otherwise. Bold symbols denote vectors or tensors. π is the dimensionless circle constant. Gradient, divergence and Laplacian use Cartesian definitions. Partial time derivatives hold position fixed. Each display defines its symbols locally. The positive initial radius permits division by radius. Zero radius is an excluded limit.
 
-除非另行说明，上标表示幂，粗体表示矢量或张量。π 是无量纲圆周率。梯度、散度与拉普拉斯算子采用笛卡尔定义。时间偏导保持位置固定。每个公式前给出局部符号定义。初始半径为正，允许除以半径。零半径属于模型排除的极限。
+除非另行说明，上标表示幂，粗体表示矢量或张量。π 是无量纲圆周率。梯度、散度与拉普拉斯算子采用笛卡尔定义。时间偏导保持位置固定。每个公式组后附局部符号定义。初始半径为正，允许除以半径。零半径属于模型排除的极限。
+
+### Step 1.2.1 — Specify the cavity problem
+
+### 步骤 1.2.1——规定空腔问题
+
+**Purpose in this chapter.** Choose the initial radius, wall speed, and far-field conditions. These inputs make the radial dynamics in Section 1.3 a defined initial-value problem.
+
+**本章作用。** 选定初始半径、壁面速度与远场条件。这些输入使第1.3节的径向动力学成为明确的初值问题。
 
 **Derivation.** Initial data are prescribed, rather than derived. The radial equation is second order, so radius and signed velocity are separate data. Choose time zero before activation, during growth, or at maximum radius. A stationary initial wall can accelerate. Evaluate the later momentum law at time zero to see why.
 
@@ -121,9 +133,17 @@ The evolving spherical boundary and the prescribed far-field state.
 
 ## 1.3 Rayleigh–Plesset 方程推导
 
-**Step 1 — Conserve carrier volume.** Radial incompressibility makes volume flux independent of radius. Integrate its radial derivative. Apply equal normal liquid and interface velocities at the wall. Vapor density does not enter this carrier-flow calculation.
+### Step 1.3.1 — Obtain the liquid velocity from cavity motion
 
-**步骤 1——载液体积守恒。** 径向不可压缩流的体积流量与半径无关。积分径向导数，再令壁面处液体法向速度等于界面速度。这一载液流动计算不需要蒸气密度。
+### 步骤 1.3.1——由空腔运动求载液速度
+
+**Purpose in this chapter.** Use the spherical conditions in Eq. (C1.2-E01). Volume conservation converts wall motion into the exterior velocity field needed for momentum and energy calculations.
+
+**本章作用。** 采用式（C1.2-E01）的球形条件。体积守恒把壁面运动转为外域速度场，为后续动量与能量计算提供输入。
+
+**Conserve carrier volume.** Radial incompressibility makes volume flux independent of radius. Integrate its radial derivative. Apply equal normal liquid and interface velocities at the wall. Vapor density does not enter this carrier-flow calculation.
+
+**载液体积守恒。** 径向不可压缩流的体积流量与半径无关。积分径向导数，再令壁面处液体法向速度等于界面速度。这一载液流动计算不需要蒸气密度。
 
 **Derivation.** Apply mass conservation to a spherical shell. Constant density reduces it to zero divergence. Integrate in radius at fixed time. The integration function can depend on time. A material cavity wall supplies the final boundary value. Appreciable phase transfer changes that boundary value.
 
@@ -173,9 +193,17 @@ Inverse-square velocity decay places the inertia in the surrounding carrier.
 
 **检验与解释。** 通量因子除以半径平方具有速度单位。壁面速度为零时，全部液体静止。
 
-**Step 2 — Fix the potential reference.** Integrate velocity from infinity to the observation point. The potential applies outside the cavity. Zero potential at infinity fixes the time-dependent integration constant.
+### Step 1.3.2 — Prepare the velocity field for momentum integration
 
-**步骤 2——固定速度势参考值。** 从无穷远积分速度至观察点。速度势适用于空腔外域。令无穷远速度势为零，确定随时间变化的积分常数。
+### 步骤 1.3.2——为动量积分建立速度势
+
+**Purpose in this chapter.** Integrate the velocity from Eq. (C1.3-E02) and fix its reference. The resulting potential lets the radial momentum equation become a pressure relation.
+
+**本章作用。** 积分式（C1.3-E02）的速度并固定参考值。所得速度势使径向动量方程能够转化为压力关系。
+
+**Fix the potential reference.** Integrate velocity from infinity to the observation point. The potential applies outside the cavity. Zero potential at infinity fixes the time-dependent integration constant.
+
+**固定速度势参考值。** 从无穷远积分速度至观察点。速度势适用于空腔外域。令无穷远速度势为零，确定随时间变化的积分常数。
 
 **Derivation.** Purely radial, angle-independent flow has zero curl outside the cavity. The exterior of a sphere is simply connected, so a single-valued potential exists. Integrating velocity introduces an arbitrary time function. Fix that gauge at infinity. The potential packages the velocity field for the momentum integration; it supplies no extra physical degree of freedom.
 
@@ -223,9 +251,17 @@ The potential reference is fixed at infinity before differentiation.
 
 **检验与解释。** 空间求导恢复膨胀时向外的正速度。速度势单位为长度乘速度。该构造排除了旋转流动和未解析涡片。
 
-**Step 3 — Differentiate at fixed position.** Hold the denominator fixed while differentiating the potential numerator. Then evaluate the result at the moving wall. Differentiating the wall value instead includes a convective contribution.
+### Step 1.3.3 — Separate fixed-position and moving-wall time changes
 
-**步骤 3——在固定位置求导。** 保持速度势分母不变，对分子求时间导数。随后在运动壁面处取值。直接对壁面取值求导会包含对流贡献。
+### 步骤 1.3.3——区分固定位置与运动壁面的时间变化
+
+**Purpose in this chapter.** Differentiate the potential from Eq. (C1.3-E03). Bernoulli requires the fixed-position derivative, so this distinction prevents an incorrect wall-inertia term.
+
+**本章作用。** 对式（C1.3-E03）的速度势求导。伯努利关系需要固定位置导数，因此这一区分可避免错误的壁面惯性项。
+
+**Differentiate at fixed position.** Hold the denominator fixed while differentiating the potential numerator. Then evaluate the result at the moving wall. Differentiating the wall value instead includes a convective contribution.
+
+**在固定位置求导。** 保持速度势分母不变，对分子求时间导数。随后在运动壁面处取值。直接对壁面取值求导会包含对流贡献。
 
 **Derivation.** Differentiate the product in the numerator before evaluating at the wall. For a moving wall value, add the chain-rule displacement term. These operations differ because the observation points differ.
 
@@ -270,9 +306,17 @@ A fixed liquid observation point and a moving interface point have different tim
 
 **检验与解释。** 运动导数比欧拉导数的壁面取值大一个壁面速度平方。两者均具有单位质量能量的单位。
 
-**Step 4 — Integrate radial momentum.** The exterior field is irrotational with zero vector Laplacian. Bulk viscous force therefore vanishes. Viscous wall stress and dissipation remain. Reference unsteady Bernoulli to infinity. Insert the fixed-position derivative and wall velocity. Subtracting one half from two gives the inertial coefficient.
+### Step 1.3.4 — Connect liquid inertia to wall pressure
 
-**步骤 4——积分径向动量。** 外域流场无旋，矢量拉普拉斯为零，因而体内黏性力为零。壁面黏性应力和耗散仍存在。以无穷远为参考应用非定常伯努利方程。代入固定位置导数与壁面速度。二减去二分之一得到惯性项系数。
+### 步骤 1.3.4——将液体惯性与壁面压力联系起来
+
+**Purpose in this chapter.** Insert Eqs. (C1.3-E02)–(C1.3-E04) into the integrated momentum law. This expresses liquid-side wall pressure through radius, speed, and acceleration.
+
+**本章作用。** 将式（C1.3-E02）至（C1.3-E04）代入积分动量关系。由此用半径、速度与加速度表示壁面液体侧压力。
+
+**Integrate radial momentum.** The exterior field is irrotational with zero vector Laplacian. Bulk viscous force therefore vanishes. Viscous wall stress and dissipation remain. Reference unsteady Bernoulli to infinity. Insert the fixed-position derivative and wall velocity. Subtracting one half from two gives the inertial coefficient.
+
+**积分径向动量。** 外域流场无旋，矢量拉普拉斯为零，因而体内黏性力为零。壁面黏性应力和耗散仍存在。以无穷远为参考应用非定常伯努利方程。代入固定位置导数与壁面速度。二减去二分之一得到惯性项系数。
 
 **Derivation.** Start from exterior Euler momentum. In this radial field the bulk viscous term vanishes, so this momentum form also applies outside the viscous traction boundary. Irrotationality turns convection into a kinetic-energy gradient. Integrate the resulting zero gradient over the connected liquid domain. The spatial integration function depends on time. The gauge and far-field condition determine it. Then evaluate at the wall.
 
@@ -337,9 +381,17 @@ Liquid inertia relates the interface pressure to wall acceleration and squared s
 
 **检验与解释。** 系数为 2 − 1/2 = 3/2。速度势规范已经固定；若使用任意时间规范，积分函数会与速度势导数一同改变。
 
-**Step 5 — Balance normal stress.** Expansion gives a negative radial strain rate at the wall. The capillary jump lowers liquid pressure relative to cavity pressure. Balance normal traction with Newtonian viscous stress included.
+### Step 1.3.5 — Transfer bubble pressure across the interface
 
-**步骤 5——平衡法向应力。** 膨胀时壁面径向应变率为负。毛细压差使液体侧压力低于腔内压力。将牛顿黏性应力计入法向牵引平衡。
+### 步骤 1.3.5——将气泡压力传递至液体界面
+
+**Purpose in this chapter.** Apply normal-stress balance at the spherical wall. Surface tension and viscosity connect bubble pressure to the liquid pressure required by Eq. (C1.3-E05).
+
+**本章作用。** 在球形壁面应用法向应力平衡。表面张力与黏度将气泡压力连接至式（C1.3-E05）所需的液体压力。
+
+**Balance normal stress.** Expansion gives a negative radial strain rate at the wall. The capillary jump lowers liquid pressure relative to cavity pressure. Balance normal traction with Newtonian viscous stress included.
+
+**平衡法向应力。** 膨胀时壁面径向应变率为负。毛细压差使液体侧压力低于腔内压力。将牛顿黏性应力计入法向牵引平衡。
 
 **Derivation.** Use a normal pointing from liquid into gas. At an inner spherical cavity this normal points inward and curvature is negative. The normal stress jump gives the liquid pressure. Differentiate the radial speed to evaluate the normal viscous traction.
 
@@ -390,9 +442,17 @@ Capillary and viscous stresses act at the interface even when the radial bulk vi
 
 **检验与解释。** 静止球面气压比液压高 2σ/R。黏性压力随速度反向。删除独立张量耗散检验后，仍需保留此局部牵引计算。
 
-**Step 6 — Combine inertia and traction.** Insert Eq. (C1.3-E06) into Eq. (C1.3-E05). Multiply by carrier density to obtain radial momentum balance. Internal pressure still requires a source model. Use aqueous carrier density for the exterior inertia. PFC density describes a different material domain.
+### Step 1.3.6 — Assemble the radial equation of motion
 
-**步骤 6——合并惯性与牵引。** 将式（C1.3-E06）代入式（C1.3-E05），再乘以载液密度，得到径向动量平衡。内部压力仍需源模型。外域惯性采用水相载液密度。PFC 密度对应另一材料区域。
+### 步骤 1.3.6——组合得到径向运动方程
+
+**Purpose in this chapter.** Combine Eqs. (C1.3-E05) and (C1.3-E06). The resulting Rayleigh–Plesset equation converts a prescribed pressure history into spherical cavity motion.
+
+**本章作用。** 联立式（C1.3-E05）与（C1.3-E06）。所得 Rayleigh–Plesset 方程将给定压力历程转为球形空腔运动。
+
+**Combine inertia and traction.** Insert Eq. (C1.3-E06) into Eq. (C1.3-E05). Multiply by carrier density to obtain radial momentum balance. Internal pressure still requires a source model. Use aqueous carrier density for the exterior inertia. PFC density describes a different material domain.
+
+**合并惯性与牵引。** 将式（C1.3-E06）代入式（C1.3-E05），再乘以载液密度，得到径向动量平衡。内部压力仍需源模型。外域惯性采用水相载液密度。PFC 密度对应另一材料区域。
 
 **Derivation.** Multiply the inertial-pressure relation by density. Replace liquid wall pressure with the traction balance. Collect all pressures with their signs. Divide by positive density and radius when acceleration is required.
 
@@ -441,6 +501,14 @@ The spherical pressure–inertia balance has a scalar radial state.
 Every term has pressure units: density × length × acceleration, tension/radius, and viscosity × speed/radius. At rest, internal overpressure equals the capillary jump. During collapse, the viscous term resists inward motion. To obtain acceleration, also subtract the squared-speed term. This matches the classical spherical model. [[R1]](../reference/sources.html#r1) [[Brennen, Ch. 2]](https://media.library.caltech.edu/CaltechBOOK%3A1995.001/chap2.htm)
 
 各项均为压力：密度 × 长度 × 加速度、张力／半径，以及黏度 × 速度／半径。静止时，内部过压等于毛细压差。塌缩时，黏性项阻碍向内运动。求加速度时还须减去速度平方项。结果与经典球形模型一致。 [[R1]](../reference/sources.html#r1) [[Brennen，第 2 章]](https://media.library.caltech.edu/CaltechBOOK%3A1995.001/chap2.htm)
+
+### Step 1.3.7 — Identify the pressure input still needing closure
+
+### 步骤 1.3.7——明确仍需闭合的压力输入
+
+**Purpose in this chapter.** Separate vapor and permanent-gas contributions to the pressure in Eq. (C1.3-E07). Chapter 2 must supply their thermal, phase, and inventory evolution.
+
+**本章作用。** 将式（C1.3-E07）的压力分解为蒸气与非凝结气体贡献。第二章须提供其热、相变及物质量演化。
 
 **Derivation.** This is an adopted ideal-mixture closure. For components sharing temperature and volume, each ideal-gas partial pressure is proportional to its amount. Add component amounts to obtain total pressure. These algebraic steps do not determine evaporation, temperature, or saturation. Real mixtures can require a different equation of state.
 
@@ -494,9 +562,17 @@ A fixed-mass polytropic gas control requires its stated thermal assumptions. Eva
 
 ## 1.4 载液能量平衡
 
-**Step 7 — Integrate exterior kinetic energy.** Square the velocity in Eq. (C1.3-E02). Multiply by the spherical volume element and integrate. The inverse-square integral converges over the infinite exterior. Carrier liquid beyond the wall supplies the moving inertia.
+### Step 1.4.1 — Measure the inertia carried by the exterior liquid
 
-**步骤 7——积分外域动能。** 将式（C1.3-E02）的速度平方，乘以球形体积微元并积分。平方反比积分在无限外域收敛。壁面之外的载液构成运动惯性。
+### 步骤 1.4.1——计算外部载液携带的动能
+
+**Purpose in this chapter.** Integrate the velocity field from Eq. (C1.3-E02). Exterior kinetic energy provides the energy measure for checking the radial pressure-driven motion.
+
+**本章作用。** 积分式（C1.3-E02）的速度场。外域动能提供能量尺度，用于检验压力驱动的径向运动。
+
+**Integrate exterior kinetic energy.** Square the velocity in Eq. (C1.3-E02). Multiply by the spherical volume element and integrate. The inverse-square integral converges over the infinite exterior. Carrier liquid beyond the wall supplies the moving inertia.
+
+**积分外域动能。** 将式（C1.3-E02）的速度平方，乘以球形体积微元并积分。平方反比积分在无限外域收敛。壁面之外的载液构成运动惯性。
 
 **Derivation.** At a fixed instant, integrate energy over the whole exterior. Angular integration supplies the shell area. The lower bound is the current interface. Replace speed by the continuity solution, cancel radial powers and evaluate the improper integral before differentiating the result.
 
@@ -544,9 +620,17 @@ Exterior shells contribute finite kinetic energy even in an infinite domain.
 
 **检验与解释。** 密度乘半径三次方乘速度平方得到焦耳。速度衰减足够快，因此无限体积不造成发散。有限外壁会改变速度边值问题。
 
-**Step 8 — Differentiate stored energy.** Apply the product rule to radius and squared speed. Differentiate cavity volume and interface energy separately. The surface-energy derivative assumes constant surface tension.
+### Step 1.4.2 — Convert stored energies into rates
 
-**步骤 8——对储存能量求导。** 对半径与速度平方应用乘积法则。分别对空腔体积和界面能求导。表面能导数假设表面张力恒定。
+### 步骤 1.4.2——将储存能量转为变化率
+
+**Purpose in this chapter.** Differentiate Eq. (C1.4-E09), the surface energy, and cavity volume. Their rates allow the momentum equation to be checked as a power balance.
+
+**本章作用。** 对式（C1.4-E09）、表面能及空腔体积求导。这些变化率使动量方程能够通过功率平衡接受检验。
+
+**Differentiate stored energy.** Apply the product rule to radius and squared speed. Differentiate cavity volume and interface energy separately. The surface-energy derivative assumes constant surface tension.
+
+**对储存能量求导。** 对半径与速度平方应用乘积法则。分别对空腔体积和界面能求导。表面能导数假设表面张力恒定。
 
 **Derivation.** The integrated kinetic energy already contains the moving lower boundary through radius. Apply the product rule to that expression. Differentiating a fixed-limit integral while ignoring the moving boundary would miss part of this rate.
 
@@ -594,9 +678,17 @@ Volume work couples kinetic storage, interface storage and dissipation.
 
 **检验与解释。** 能量变化率单位为瓦。转折点两种能量变化率瞬时为零，即使加速度非零。表面张力随时间变化时，需要增加乘积求导项。
 
-**Step 9 — Convert momentum balance into power balance.** Multiply by cavity volume rate. The inertial term becomes Eq. (C1.4-E10), first row. The capillary term equals minus the surface-energy derivative. Squared speed makes viscous power nonpositive in both motion directions.
+### Step 1.4.3 — Check where pressure work goes
 
-**步骤 9——将动量平衡转为功率平衡。** 乘以空腔体积变化率。惯性项成为式（C1.4-E10）第一行。毛细项等于表面能导数的负值。速度平方使两种运动方向的黏性功率均不为正。
+### 步骤 1.4.3——检验压力功的去向
+
+**Purpose in this chapter.** Combine the motion law in Eq. (C1.3-E07) with Eq. (C1.4-E10). This separates kinetic-energy storage, surface-energy storage, and viscous loss.
+
+**本章作用。** 将式（C1.3-E07）的运动规律与式（C1.4-E10）结合。由此区分动能储存、表面能储存与黏性损耗。
+
+**Convert momentum balance into power balance.** Multiply by cavity volume rate. The inertial term becomes Eq. (C1.4-E10), first row. The capillary term equals minus the surface-energy derivative. Squared speed makes viscous power nonpositive in both motion directions.
+
+**将动量平衡转为功率平衡。** 乘以空腔体积变化率。惯性项成为式（C1.4-E10）第一行。毛细项等于表面能导数的负值。速度平方使两种运动方向的黏性功率均不为正。
 
 **Derivation.** Multiply the radial pressure balance by signed cavity volume rate. Identify the inertial term using the preceding product rule. Expand the capillary and viscous products separately. Move surface-energy storage to the left. This derives mechanical power accounting without restoring the deleted strain-tensor calculation.
 
@@ -651,9 +743,17 @@ Confinement can redirect liquid and change its energy budget. It may store elast
 
 ## 1.5 理想塌缩时间与系数
 
-**Step 10 — Specify the ideal collapse problem.** Start at maximum radius with zero wall speed. Far-field and vapor pressures are constant with positive collapse difference. Omit tension, viscosity, permanent gas and liquid compressibility. Thermal and phase dynamics are excluded assumptions. Their smallness for PFC remains unestablished. A hot vapor-rich cavity can still expand.
+### Step 1.5.1 — Define a solvable ideal-collapse benchmark
 
-**步骤 10——规定理想塌缩问题。** 从最大半径及零壁面速度开始。远场压力与蒸气压恒定，塌缩压差为正。忽略张力、黏性、非凝结气体及液体可压缩性。热学与相变动力学被模型排除。它们对 PFC 是否足够小尚未确立。高温蒸气丰富的空腔仍可膨胀。
+### 步骤 1.5.1——规定可解的理想塌缩基准
+
+**Purpose in this chapter.** Reduce Eq. (C1.3-E07) to collapse under a constant positive pressure difference. This restricted control problem supplies the trajectory and time benchmark below.
+
+**本章作用。** 将式（C1.3-E07）约化为恒定正压差下的塌缩。这一受限对照问题为下文提供轨迹与时间基准。
+
+**Specify the ideal collapse problem.** Start at maximum radius with zero wall speed. Far-field and vapor pressures are constant with positive collapse difference. Omit tension, viscosity, permanent gas and liquid compressibility. Thermal and phase dynamics are excluded assumptions. Their smallness for PFC remains unestablished. A hot vapor-rich cavity can still expand.
+
+**规定理想塌缩问题。** 从最大半径及零壁面速度开始。远场压力与蒸气压恒定，塌缩压差为正。忽略张力、黏性、非凝结气体及液体可压缩性。热学与相变动力学被模型排除。它们对 PFC 是否足够小尚未确立。高温蒸气丰富的空腔仍可膨胀。
 
 **Derivation.** Define an ideal control: constant vapor pressure, constant exterior pressure, zero gas, zero viscosity and zero surface tension. These assumptions reduce the previously derived momentum law. Start at maximum radius with zero speed. Evaluate acceleration there to select the inward trajectory.
 
@@ -694,9 +794,17 @@ The ideal control begins at rest and excludes the mechanisms that arrest real co
 
 **检验与解释。** 压差产生向内加速度。此假想对照省略了实际塌缩终止机制和随时间演化的 PFC 蒸气生成。
 
-**Step 11 — Use radius on the collapse branch.** Negative initial acceleration starts decreasing radius. Define squared speed as a radius function. Away from the turning point, apply the chain rule. Cancel the nonzero speed there. Extend the relation continuously to the initial endpoint. Multiply by radius cubed to form an exact derivative.
+### Step 1.5.2 — Replace time by radius on the collapse branch
 
-**步骤 11——在塌缩分支上以半径为自变量。** 负初始加速度使半径开始减小。将速度平方定义为半径函数。在转折点之外应用链式法则，再约去非零速度。连续延拓关系至初始端点。乘以半径三次方，形成完整导数。
+### 步骤 1.5.2——在塌缩分支以半径替代时间
+
+**Purpose in this chapter.** Transform Eq. (C1.5-E12) into a first-order equation for squared speed. Its integrating factor prepares a trajectory satisfying the maximum-radius initial condition.
+
+**本章作用。** 将式（C1.5-E12）转为速度平方的一阶方程。其积分因子用于构造满足最大半径初始条件的轨迹。
+
+**Use radius on the collapse branch.** Negative initial acceleration starts decreasing radius. Define squared speed as a radius function. Away from the turning point, apply the chain rule. Cancel the nonzero speed there. Extend the relation continuously to the initial endpoint. Multiply by radius cubed to form an exact derivative.
+
+**在塌缩分支上以半径为自变量。** 负初始加速度使半径开始减小。将速度平方定义为半径函数。在转折点之外应用链式法则，再约去非零速度。连续延拓关系至初始端点。乘以半径三次方，形成完整导数。
 
 **Derivation.** On the open inward branch speed is nonzero, so divide the chain rule by speed. Divide the reduced momentum equation by positive radius. Solve the integrating-factor equation explicitly. The initial turning point is handled by continuity rather than division by zero.
 
@@ -748,6 +856,14 @@ The monotonic collapse branch allows radius to replace time in the first integra
 
 **检验与解释。** 乘以常数最大半径三次方，即得到下文使用的等价积分因子。积分前各动量项保持一致量纲。
 
+### Step 1.5.3 — Recover inward speed and its integration constant
+
+### 步骤 1.5.3——求向内速度及积分常数
+
+**Purpose in this chapter.** Integrate Eq. (C1.5-E13) from the stationary maximum-radius state. Select the inward branch before using its reciprocal to calculate collapse time.
+
+**本章作用。** 从最大半径处的静止状态积分式（C1.5-E13）。先选取向内分支，再用速度倒数计算塌缩时间。
+
 **Derivation.** Integrate the exact radial derivative from the initial maximum to the present radius. Apply zero initial squared speed. Evaluate the cubic antiderivative. Divide by positive radius cubed. Taking a square root gives two mathematical signs; inward motion selects the negative one.
 
 **推导。** 从初始最大半径积分完整径向导数至当前半径。代入初始速度平方为零，计算三次方原函数，再除以正半径三次方。开平方得到两个数学符号，向内运动选择负号。
@@ -792,9 +908,17 @@ The initial condition fixes the integration constant and the inward sign fixes t
 
 **检验与解释。** 最大半径处速度为零。半径减小且保持正值时，速度平方为正。速度尺度为压差除以密度的平方根。
 
-**Step 12 — Separate scale from trajectory.** Integrate reciprocal inward speed from maximum radius to zero. Normalize radius by its maximum. Every case in this ideal family shares the resulting dimensionless integral. That common integral establishes the time proportionality.
+### Step 1.5.4 — Separate collapse time from geometric scale
 
-**步骤 12——分离尺度与轨迹。** 从最大半径至零积分向内速度的倒数。用最大半径归一化半径。此理想模型族各情形共有所得无量纲积分。该共同积分确立时间的比例关系。
+### 步骤 1.5.4——分离塌缩时间与几何尺度
+
+**Purpose in this chapter.** Integrate the reciprocal speed from Eq. (C1.5-E14). Nondimensionalizing radius isolates the universal integral from radius, density, and pressure scales.
+
+**本章作用。** 积分式（C1.5-E14）的速度倒数。将半径无量纲化，把通用积分与半径、密度及压力尺度分离。
+
+**Separate scale from trajectory.** Integrate reciprocal inward speed from maximum radius to zero. Normalize radius by its maximum. Every case in this ideal family shares the resulting dimensionless integral. That common integral establishes the time proportionality.
+
+**分离尺度与轨迹。** 从最大半径至零积分向内速度的倒数。用最大半径归一化半径。此理想模型族各情形共有所得无量纲积分。该共同积分确立时间的比例关系。
 
 **Derivation.** For the inward branch, time increases while radius decreases. The negative reciprocal speed reverses the integration bounds. Normalize radius and include its differential. Factor the cubic ratio before taking the positive square root.
 
@@ -843,9 +967,17 @@ The endpoint singularity is integrable, so the model has a finite collapse time.
 
 **检验与解释。** 尺度 Rmax × sqrt(密度/压差) 的单位为秒。积分在端点为广义积分；其有限值是模型到零半径的形式时间。
 
-**Step 13 — Evaluate the coefficient.** Substitute the cube of normalized radius, including its Jacobian. The exponents combine as one half minus two thirds. The result is minus one sixth. Both beta-function arguments are positive, so the integral converges. The coefficient agrees with the published Rayleigh factor. [[R1]](../reference/sources.html#r1) [[R3]](../reference/sources.html#r3)
+### Step 1.5.5 — Evaluate the Rayleigh time coefficient
 
-**步骤 13——计算系数。** 用无量纲半径的三次方换元，并计入雅可比因子。指数由二分之一减去三分之二，得到负六分之一。贝塔函数两个参数均为正，积分收敛。系数与文献瑞利因子一致。 [[R1]](../reference/sources.html#r1) [[R3]](../reference/sources.html#r3)
+### 步骤 1.5.5——计算瑞利塌缩时间系数
+
+**Purpose in this chapter.** Evaluate the dimensionless integral in Eq. (C1.5-E15). This establishes the coefficient used in the worked collapse-time calculation.
+
+**本章作用。** 计算式（C1.5-E15）的无量纲积分。由此确定塌缩时间算例所用的系数。
+
+**Evaluate the coefficient.** Substitute the cube of normalized radius, including its Jacobian. The exponents combine as one half minus two thirds. The result is minus one sixth. Both beta-function arguments are positive, so the integral converges. The coefficient agrees with the published Rayleigh factor. [[R1]](../reference/sources.html#r1) [[R3]](../reference/sources.html#r3)
+
+**计算系数。** 用无量纲半径的三次方换元，并计入雅可比因子。指数由二分之一减去三分之二，得到负六分之一。贝塔函数两个参数均为正，积分收敛。系数与文献瑞利因子一致。 [[R1]](../reference/sources.html#r1) [[R3]](../reference/sources.html#r3)
 
 **Derivation.** Cube the normalized radius. Carry both the numerator exponent and Jacobian into the transformed integral. Match each exponent to the beta-function definition. Inspect both endpoints before evaluating the coefficient.
 
@@ -891,9 +1023,17 @@ The change of variables exposes the beta integral that fixes the numerical coeff
 
 **检验与解释。** 两个端点幂指数均大于 −1，因而可积。此无量纲系数来自轨迹积分，不依赖材料拟合。
 
-**Step 14 — Check pressure work.** Insert Eq. (C1.5-E14) into the kinetic-energy integral. The result equals work from the lost cavity volume. Energy vanishes at maximum radius and becomes positive during collapse. This checks the integration constant and sign.
+### Step 1.5.6 — Cross-check the ideal trajectory with pressure work
 
-**步骤 14——检验压力功。** 将式（C1.5-E14）代入动能积分。结果等于空腔体积减少产生的压力功。最大半径处动能为零，塌缩过程中为正。这检验了积分常数与符号。
+### 步骤 1.5.6——用压力功交叉检验理想轨迹
+
+**Purpose in this chapter.** Insert Eq. (C1.5-E14) into the kinetic energy from Eq. (C1.4-E09). Agreement with pressure work checks the collapse branch and integration constant.
+
+**本章作用。** 将式（C1.5-E14）代入式（C1.4-E09）的动能。与压力功的一致性用于检验塌缩分支及积分常数。
+
+**Check pressure work.** Insert Eq. (C1.5-E14) into the kinetic-energy integral. The result equals work from the lost cavity volume. Energy vanishes at maximum radius and becomes positive during collapse. This checks the integration constant and sign.
+
+**检验压力功。** 将式（C1.5-E14）代入动能积分。结果等于空腔体积减少产生的压力功。最大半径处动能为零，塌缩过程中为正。这检验了积分常数与符号。
 
 **Derivation.** Insert squared speed into the exterior kinetic-energy result. Cancel density, distribute radius cubed and remove its denominator. Independently integrate pressure work over decreasing cavity volume. Differentiate the result to check its power and sign.
 
@@ -944,6 +1084,14 @@ The Rayleigh speed solution and pressure-work balance agree exactly.
 Prescribe maximum radius 30 μm, density 1000 kg m⁻³, and collapse pressure 100 kPa. These teaching inputs are not measured PFC properties. Substitute SI values before converting units. At half radius, the cubic ratio is eight. Subtracting one leaves seven.
 
 规定最大半径 30 μm、密度 1000 kg m⁻³、塌缩压差 100 kPa。这些教学输入并非 PFC 实测物性。先代入 SI 数值，再换算单位。一半半径处的三次方比值为八，减去一得到七。
+
+#### Step 1.5.7 — Put the ideal benchmark on a numerical scale
+
+#### 步骤 1.5.7——给出理想基准的数值尺度
+
+**Purpose in this chapter.** Apply Eqs. (C1.5-E14)–(C1.5-E17) to the declared teaching inputs. This translates the benchmark into time, energy, and speed before testing its validity.
+
+**本章作用。** 将式（C1.5-E14）至（C1.5-E17）用于已声明的教学输入。由此先得到时间、能量与速度尺度，再检验适用性。
 
 **Derivation.** Convert every teaching input to SI units. Compute the common pressure–density factor and cubic radius before inserting them into time, energy and speed formulas. The half-radius energy fraction follows from the cube of one half.
 
@@ -1002,6 +1150,14 @@ The zero-radius limit gives finite energy and divergent wall speed. Physical max
 
 零半径极限给出有限能量与发散壁面速率。实际最大速率尚未确立。缺失：可压缩性、内部压力、传热传质、分子尺度及界面变形。下一式定位理想轨迹上的所选马赫数阈值。它是诊断条件，并非塌缩终止规律。
 
+#### Step 1.5.8 — Locate where the ideal speed needs further physics
+
+#### 步骤 1.5.8——定位理想速度需要补充物理的位置
+
+**Purpose in this chapter.** Compare the ideal wall speed with a chosen Mach threshold. This diagnoses the incompressible trajectory without establishing a physical maximum speed.
+
+**本章作用。** 将理想壁面速度与选定的马赫数阈值比较。这用于诊断不可压缩轨迹，不确立实际最大速度。
+
 **Derivation.** Use the ideal inward speed as a diagnostic trajectory. Square the nonnegative Mach magnitude, set a selected positive threshold, and solve for the positive radius fraction. The threshold marks a chosen modeling cutoff. It does not predict the physical collapse endpoint.
 
 **推导。** 将理想向内速度用作诊断轨迹。对非负马赫数取平方，令其等于选定的正阈值，再解出正半径比例。阈值标记选定的模型截止条件，并不预测实际塌缩终点。
@@ -1054,9 +1210,17 @@ A Mach diagnostic exposes the shrinking validity range of incompressible collaps
 
 ## 1.6 压力冲量与方向
 
-**Step 15 — Define pressure impulse.** Integrate local pressure relative to a spatially uniform reference over time. Pressure impulse has units Pa s. Its spatial gradient drives liquid velocity change. Acoustic crossing time has units s. The cited short-event model motivates the following integration and approximation. [[R2]](../reference/sources.html#r2)
+### Step 1.6.1 — Summarize a pressure history as pressure impulse
 
-**步骤 15——定义压力冲量。** 对局部压力相对于空间均匀参考值作时间积分。压力冲量单位为 Pa s，其空间梯度驱动液体速度变化。声传播时间单位为 s。所引短事件模型提供以下积分与近似的依据。 [[R2]](../reference/sources.html#r2)
+### 步骤 1.6.1——用压力冲量概括压力历程
+
+**Purpose in this chapter.** Move from spherical radius dynamics to spatial liquid response. Define a local time-integrated pressure field whose gradient enters the next momentum calculation.
+
+**本章作用。** 从球形半径动力学转向空间液体响应。定义局部压力时间积分场，其梯度将进入下一步动量计算。
+
+**Define pressure impulse.** Integrate local pressure relative to a spatially uniform reference over time. Pressure impulse has units Pa s. Its spatial gradient drives liquid velocity change. Acoustic crossing time has units s. The cited short-event model motivates the following integration and approximation. [[R2]](../reference/sources.html#r2)
+
+**定义压力冲量。** 对局部压力相对于空间均匀参考值作时间积分。压力冲量单位为 Pa s，其空间梯度驱动液体速度变化。声传播时间单位为 s。所引短事件模型提供以下积分与近似的依据。 [[R2]](../reference/sources.html#r2)
 
 **Derivation.** Place a pressure observer at a fixed liquid point throughout the event. Integrate over time there. Subtract a spatially uniform reference pressure. A separate area integral converts pressure impulse into mechanical impulse when the surface is fixed. For moving surfaces, pressure, normal and area must remain inside the time integral.
 
@@ -1107,6 +1271,14 @@ Impulse combines duration and amplitude at each liquid position.
 **Check and interpretation.** A constant reference shifts the local pressure integral without changing its spatial gradient. Absolute contact loads require the actual exterior pressure and viscous traction. A point crossed by an interface needs a moving-domain formulation.
 
 **检验与解释。** 常数参考压力可改变局部压力积分，但不改变其空间梯度。绝对接触载荷需要实际外部压力和黏性牵引。若界面穿过观察点，则需要运动域表述。
+
+### Step 1.6.2 — Convert pressure history into liquid velocity change
+
+### 步骤 1.6.2——将压力历程转为液体速度变化
+
+**Purpose in this chapter.** Use the pressure impulse defined in Eq. (C1.6-E20). Integrating momentum separates pressure, convective, and viscous contributions to velocity change. This exact model identity is the starting point for Eq. (C1.6-E22).
+
+**本章作用。** 采用式（C1.6-E20）定义的压力冲量。积分动量方程，分离压力、对流与黏性对速度变化的贡献。这一模型内精确恒等式是式（C1.6-E22）的起点。
 
 **Derivation.** Divide constant-density Navier–Stokes by density. Integrate every term between the same fixed times at the same fixed position. The fundamental theorem gives the velocity difference. Smoothness and a common liquid domain permit gradient–integral exchange. The spatially uniform reference has zero gradient.
 
@@ -1165,9 +1337,17 @@ The short-event approximation must justify removing convective and viscous impul
 
 **检验与解释。** 对流和黏性场随时间变化，因此对应项仍为积分。每个积分项均具有速度单位。若时间上下限依赖位置，则梯度运算会产生额外项。
 
-**Step 16 — Bound the omitted scales.** Choose representative liquid speed and variation length. Convective impulse scales as speed × duration/length. Viscous impulse scales as kinematic viscosity × duration/length². Small interface displacement permits fixed boundary geometry. These scale diagnostics provide no guaranteed singular-boundary-layer error bound. Under these conditions, subtract incompressible velocities and take the divergence.
+### Step 1.6.3 — Decide when pressure impulse dominates the event
 
-**步骤 16——估算被忽略项的尺度。** 选取代表性液体速率与变化长度。对流冲量尺度为速率 × 时间／长度。黏性冲量尺度为运动黏度 × 时间／长度²。小界面位移允许固定边界几何。这些尺度诊断不能保证奇异边界层的误差界限。在这些条件下，将不可压缩速度相减并取散度。
+### 步骤 1.6.3——判断事件何时由压力冲量主导
+
+**Purpose in this chapter.** Estimate the convective and viscous terms retained in Eq. (C1.6-E21). Under the stated short-event conditions, the reduced model links incompressibility to a pressure-impulse boundary problem.
+
+**本章作用。** 估计式（C1.6-E21）保留的对流与黏性项。在已声明的短事件条件下，约化模型将不可压缩条件连接至压力冲量边值问题。
+
+**Bound the omitted scales.** Choose representative liquid speed and variation length. Convective impulse scales as speed × duration/length. Viscous impulse scales as kinematic viscosity × duration/length². Small interface displacement permits fixed boundary geometry. These scale diagnostics provide no guaranteed singular-boundary-layer error bound. Under these conditions, subtract incompressible velocities and take the divergence.
+
+**估算被忽略项的尺度。** 选取代表性液体速率与变化长度。对流冲量尺度为速率 × 时间／长度。黏性冲量尺度为运动黏度 × 时间／长度²。小界面位移允许固定边界几何。这些尺度诊断不能保证奇异边界层的误差界限。在这些条件下，将不可压缩速度相减并取散度。
 
 **Derivation.** Scale the omitted acceleration terms over the pulse duration. Compare them with a velocity increment of order the chosen speed. Apply incompressibility to both endpoint fields. Taking divergence of reduced impulse momentum gives a Laplace problem. Boundary data select its solution.
 
@@ -1221,9 +1401,17 @@ A fixed impermeable wall requires zero normal velocity change. Its normal impuls
 
 固定不透壁要求法向速度变化为零，因而法向冲量导数为零。受驱空腔给定冲量或压力历程，连通出口给定压力参考值。空间均匀增加冲量的梯度为零，不改变速度。峰值压力固定时，脉冲时长与边界几何仍可改变响应。
 
-**Step 17 — Solve a straight-column benchmark.** Start with a stationary uniform column along the positive axis. Area is constant and side walls are fixed. Prescribe positive inlet impulse and zero outlet impulse. Integrate the one-dimensional Laplace equation twice. Apply both endpoint values to obtain its gradient.
+### Step 1.6.4 — Show how a boundary selects the liquid-motion direction
 
-**步骤 17——求解直液柱基准。** 初始均匀液柱沿正轴静止，面积恒定，侧壁固定。入口冲量给定为正，出口冲量为零。将一维拉普拉斯方程积分两次，再用两个端点值确定梯度。
+### 步骤 1.6.4——说明边界如何选择液体运动方向
+
+**Purpose in this chapter.** Solve the reduced model from Eq. (C1.6-E22) for a straight column. Inlet and outlet impulses select a gradient and therefore an axial velocity increment.
+
+**本章作用。** 对直液柱求解式（C1.6-E22）的约化模型。入口与出口冲量确定梯度，进而确定轴向速度增量。
+
+**Solve a straight-column benchmark.** Start with a stationary uniform column along the positive axis. Area is constant and side walls are fixed. Prescribe positive inlet impulse and zero outlet impulse. Integrate the one-dimensional Laplace equation twice. Apply both endpoint values to obtain its gradient.
+
+**求解直液柱基准。** 初始均匀液柱沿正轴静止，面积恒定，侧壁固定。入口冲量给定为正，出口冲量为零。将一维拉普拉斯方程积分两次，再用两个端点值确定梯度。
 
 **Derivation.** For the straight column, integrate the zero second derivative once to obtain a constant slope. Integrate again. Apply inlet data to the intercept and outlet data to the slope. The negative pressure-impulse slope accelerates liquid in the positive axial direction.
 
@@ -1273,6 +1461,14 @@ A linear spatial impulse drop accelerates liquid toward the outlet.
 Prescribe 0.60 MPa for 0.50 μs across a 100 μm column. Use the earlier density, viscosity 0.001 Pa s, and sound speed 1500 m s⁻¹. The velocity change is 3.0 m s⁻¹. Crossing time is shorter than the pulse. Uniform pressure and final jet speed remain unestablished. The solved column has an end-to-end pressure gradient.
 
 在 100 μm 液柱两端施加 0.60 MPa 压差，持续 0.50 μs。采用前述密度、黏度 0.001 Pa s 和声速 1500 m s⁻¹。速度变化为 3.0 m s⁻¹。传播时间短于脉冲时长。均匀压力及最终射流速率尚未确立。已解液柱具有端到端压力梯度。
+
+### Step 1.6.5 — Check the scale and assumptions of the column result
+
+### 步骤 1.6.5——检验液柱结果的尺度与假设
+
+**Purpose in this chapter.** Apply Eq. (C1.6-E23) to a declared pressure pulse. Calculate velocity change and compare acoustic, convective, and viscous scales before interpreting that result.
+
+**本章作用。** 将式（C1.6-E23）用于给定压力脉冲。计算速度变化，并比较声学、对流与黏性尺度，再解释该结果。
 
 **Derivation.** The rectangular pulse is a stipulated ideal benchmark. Convert its pressure, duration and column length. Compute the impulse, velocity, displacement ratio, viscous ratio and crossing time separately. The total pulse duration does not specify its physical rise time.
 
@@ -1325,6 +1521,14 @@ Directional motion requires asymmetry. A sphere in uniform infinite liquid has n
 
 定向运动需要非对称性。均匀无限液体中的球形空腔没有优选方向。出口、弯月面、壁面、邻近空腔或不均匀加热可破坏对称性。离壁参数为中心至边界距离除以最大半径。相同离壁参数仍可对应不同曲率和材料响应。刚性平面附近的塌缩射流通常朝向平面。可变形边界可改变或分裂该响应。 [[R3]](../reference/sources.html#r3) [[R12]](../reference/sources.html#r12)
 
+### Step 1.6.6 — Explain why a spherical cavity cannot choose a jet direction
+
+### 步骤 1.6.6——说明球形空腔为何不能选择射流方向
+
+**Purpose in this chapter.** Contrast spherical symmetry with the directed column in Eq. (C1.6-E23). This identifies the geometric information missing from a radius-only model and motivates Section 1.7.
+
+**本章作用。** 对比球形对称性与式（C1.6-E23）的定向液柱。由此明确纯半径模型缺失的几何信息，并引出第1.7节。
+
 **Derivation.** Stand-off compares a center-to-boundary distance with maximum bubble radius. It is a geometric descriptor. To prove directional cancellation for the unbounded sphere, write each radial unit-vector component and integrate over all solid angles. The azimuthal sine and cosine integrate to zero; the axial component cancels between hemispheres.
 
 **推导。** 离壁比将中心到边界距离与最大气泡半径比较，属于几何描述。为证明无界球形情况下方向相互抵消，写出径向单位矢量各分量并对全部立体角积分。方位正弦和余弦积分为零，轴向分量在两半球之间抵消。
@@ -1375,9 +1579,17 @@ Stand-off locates a boundary; perfect spherical symmetry selects no outgoing dir
 
 ## 1.7 运动界面模型
 
-**Step 18 — Specify the spatial jet problem.** Prescribe initial interface shape and carrier velocity. Define solid boundaries, outlet, contact-line behavior and pressure closure. The following equations conserve mass and momentum for constant-property incompressible Newtonian liquid. Gravity is omitted. Solve them with the interface and boundary conditions below. A fitted radius history leaves these spatial conditions unresolved.
+### Step 1.7.1 — Replace the radius model with spatial liquid equations
 
-**步骤 18——规定空间射流问题。** 给定初始界面形状和载液速度，定义固体边界、出口、接触线规律及压力闭合。以下方程描述常物性不可压缩牛顿液体的质量与动量守恒，忽略重力。须结合下述界面和边界条件求解。拟合半径历程仍未确定这些空间条件。
+### 步骤 1.7.1——用空间液体方程替代纯半径模型
+
+**Purpose in this chapter.** Retain the mass and momentum laws across the actual liquid domain. These equations provide the spatial dynamics needed when boundaries and interface shape determine the jet.
+
+**本章作用。** 在实际液体区域保留质量与动量守恒规律。当边界及界面形状决定射流时，这些方程提供所需的空间动力学。
+
+**Specify the spatial jet problem.** Prescribe initial interface shape and carrier velocity. Define solid boundaries, outlet, contact-line behavior and pressure closure. The following equations conserve mass and momentum for constant-property incompressible Newtonian liquid. Gravity is omitted. Solve them with the interface and boundary conditions below. A fitted radius history leaves these spatial conditions unresolved.
+
+**规定空间射流问题。** 给定初始界面形状和载液速度，定义固体边界、出口、接触线规律及压力闭合。以下方程描述常物性不可压缩牛顿液体的质量与动量守恒，忽略重力。须结合下述界面和边界条件求解。拟合半径历程仍未确定这些空间条件。
 
 **Derivation.** Start with local mass and Cauchy momentum conservation. Adopt constant-density Newtonian stress. Its divergence reduces to the vector Laplacian because incompressibility removes the divergence-gradient term. The spatial problem has three velocity components, pressure and unknown interface shape, together with initial and boundary data.
 
@@ -1428,9 +1640,17 @@ Bulk momentum and volume conservation supply the spatial field needed for jet fo
 
 **检验与解释。** 应力散度和惯性项单位均为 N m⁻³。需要给定无散初始速度、相容初始界面、壁面速度、出口数据及接触线规律。半径历程不能代替这些空间场。
 
-**Step 19 — Set interface orientation and stress.** The normal points from liquid into gas. An inner spherical cavity therefore has negative curvature. An outer liquid droplet has positive curvature. This reproduces Eq. (C1.3-E06). A clean interface with negligible gas viscosity has zero tangential viscous traction. At zero liquid viscosity, that condition adds no strain-rate constraint. Without phase transfer, interface and liquid normal velocities match.
+### Step 1.7.2 — Close the spatial model at its moving interface
 
-**步骤 19——规定界面方向与应力。** 法向由液体指向气体，故内球形空腔曲率为负，外液滴曲率为正。这一约定恢复式（C1.3-E06）。清洁界面且气相黏性可忽略时，切向黏性牵引为零。液体黏度为零时，该条件不增加应变率约束。没有相变时，界面与液体法向速度相等。
+### 步骤 1.7.2——在运动界面闭合空间模型
+
+**Purpose in this chapter.** Add interface motion and traction conditions to Eq. (C1.7-E26). Their orientation and stress signs must recover the spherical jump in Eq. (C1.3-E06).
+
+**本章作用。** 为式（C1.7-E26）补充界面运动与牵引条件。其方向与应力符号须恢复式（C1.3-E06）的球形跃变关系。
+
+**Set interface orientation and stress.** The normal points from liquid into gas. An inner spherical cavity therefore has negative curvature. An outer liquid droplet has positive curvature. This reproduces Eq. (C1.3-E06). A clean interface with negligible gas viscosity has zero tangential viscous traction. At zero liquid viscosity, that condition adds no strain-rate constraint. Without phase transfer, interface and liquid normal velocities match.
+
+**规定界面方向与应力。** 法向由液体指向气体，故内球形空腔曲率为负，外液滴曲率为正。这一约定恢复式（C1.3-E06）。清洁界面且气相黏性可忽略时，切向黏性牵引为零。液体黏度为零时，该条件不增加应变率约束。没有相变时，界面与液体法向速度相等。
 
 **Derivation.** Represent a material interface by a level set. Its material derivative vanishes, yielding equal normal speeds. The level-set normal points from liquid to gas. Project the clean-interface stress jump onto its normal and tangent. Constant surface tension and negligible gas viscous stress give the pressure and tangential conditions.
 
@@ -1490,9 +1710,17 @@ Set zero liquid velocity at a stationary viscous wall. Couple liquid velocity an
 
 静止黏性壁面采用零液体速度。运动薄膜须与液体速度和应力耦合。出口或弯月面给定外部压力与应力。接触线采用固定或动态接触角规律闭合。第四章给出载荷与释放力学。相变显著时，用第二章质量通量平衡代替法向速度相等条件。
 
-**Step 20 — Derive the potential-flow reduction.** Assume inviscid, initially irrotational flow away from shocks and unresolved wall layers. The potential satisfies Laplace’s equation. Without phase slip, interface nodes follow liquid velocity. Convert the Eulerian Bernoulli derivative to the material derivative. Add velocity dotted with the potential gradient. This closes a spatial pre-impact model under the stated assumptions. Boundary-integral microjet models use this reduction. [[R4]](../reference/sources.html#r4)
+### Step 1.7.3 — Construct a conditional pre-impact interface solver
 
-**步骤 20——推导势流约化。** 假设流动无黏且初始无旋，并避开激波及未解析壁面层。速度势满足拉普拉斯方程。无相变滑移时，界面节点随液体速度运动。将欧拉伯努利导数转为物质导数，加入速度与速度势梯度的点积。由此在已声明假设下闭合撞击前空间模型。边界积分微射流模型采用此约化。 [[R4]](../reference/sources.html#r4)
+### 步骤 1.7.3——构造有条件的撞击前界面求解模型
+
+**Purpose in this chapter.** Reduce Eqs. (C1.7-E26) and (C1.7-E27) under the stated inviscid potential-flow assumptions. The resulting system evolves interface shape and can resolve directional pre-impact motion.
+
+**本章作用。** 在已声明的无黏势流假设下约化式（C1.7-E26）与（C1.7-E27）。所得系统演化界面形状，可解析撞击前的定向运动。
+
+**Derive the potential-flow reduction.** Assume inviscid, initially irrotational flow away from shocks and unresolved wall layers. The potential satisfies Laplace’s equation. Without phase slip, interface nodes follow liquid velocity. Convert the Eulerian Bernoulli derivative to the material derivative. Add velocity dotted with the potential gradient. This closes a spatial pre-impact model under the stated assumptions. Boundary-integral microjet models use this reduction. [[R4]](../reference/sources.html#r4)
+
+**推导势流约化。** 假设流动无黏且初始无旋，并避开激波及未解析壁面层。速度势满足拉普拉斯方程。无相变滑移时，界面节点随液体速度运动。将欧拉伯努利导数转为物质导数，加入速度与速度势梯度的点积。由此在已声明假设下闭合撞击前空间模型。边界积分微射流模型采用此约化。 [[R4]](../reference/sources.html#r4)
 
 **Derivation.** For inviscid irrotational liquid, choose potential and interface position as unknowns. Incompressibility gives Laplace’s equation. On the interface, combine Bernoulli with the inviscid traction jump. Then convert the fixed-position derivative into the derivative following a liquid marker. This conversion changes the kinetic-term sign.
 
@@ -1558,6 +1786,14 @@ Check the spherical limit of Eq. (C1.7-E28). Wall potential is minus radius × w
 
 检验式（C1.7-E28）的球形极限。壁面速度势为半径 × 壁面速度的负值，曲率为负二／半径。对壁面速度势求导并移项速度平方项，可恢复无黏 Rayleigh–Plesset 方程。界面穿透会改变拓扑，之后的流动需要新区域和压力传播模型。
 
+### Step 1.7.4 — Recover the radial model as a consistency check
+
+### 步骤 1.7.4——恢复径向模型以检验一致性
+
+**Purpose in this chapter.** Apply Eq. (C1.7-E28) to a sphere. Recovering the inviscid form of Eq. (C1.3-E07) checks the moving-interface signs and derivative convention.
+
+**本章作用。** 将式（C1.7-E28）用于球面。恢复无黏形式的式（C1.3-E07），用于检验运动界面的符号与导数约定。
+
 **Derivation.** Test the spatial model against a sphere. Evaluate the potential at its moving wall and differentiate by the product rule. Insert negative cavity curvature into the material dynamic condition. Move squared-speed terms to the same side, reverse signs, then multiply by density.
 
 **推导。** 用球形极限检验空间模型。在运动壁面取速度势，并按乘积法则求导。将负的空腔曲率代入物质动力学条件。把速度平方项移至同侧，变号后再乘密度。
@@ -1602,6 +1838,14 @@ The spatial potential formulation returns the spherical model under spherical ge
 **Check and interpretation.** This recovers the inviscid radial balance with the same capillary sign. The viscous term cannot emerge from an inviscid potential boundary condition. At static equilibrium the Laplace overpressure is recovered.
 
 **检验与解释。** 该结果恢复相同毛细符号的无黏径向平衡。无黏势流边界条件不能产生黏性项。静态极限恢复拉普拉斯过压。
+
+### Step 1.7.5 — Check whether incompressibility is adequate for the event
+
+### 步骤 1.7.5——检验事件是否适用不可压缩近似
+
+**Purpose in this chapter.** Compare wall speed and event duration with acoustic scales. These separate diagnostics delimit both the pressure-impulse reduction and the incompressible interface model.
+
+**本章作用。** 将壁面速度与事件持续时间同声学尺度比较。这两个独立诊断分别限定压力冲量约化及不可压缩界面模型的适用范围。
 
 **Derivation.** Derive the communication time from linear acoustics about uniform resting liquid. Linear mass conservation and momentum combine into a wave equation. A disturbance travels the selected path at sound speed. Choose the path from the driven region to the relevant observer. Use the shortest important pressure-rise or change time, rather than automatically using pulse duration. Separately evaluate the wall-speed history.
 
@@ -1682,6 +1926,14 @@ Explain the mechanism, assumptions, and limits in your own words.
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
 
+#### Step 1.8.1 — Connect bubble pressure to the transfer-jet explanation
+
+#### 步骤 1.8.1——将气泡压力连接至转印射流解释
+
+**Purpose in this chapter.** Combine the radial balance and pressure composition from Section 1.3. Use them to explain the source of liquid motion, then identify the boundary information required for an external jet.
+
+**本章作用。** 结合第1.3节的径向平衡与压力组成。用它们解释液体运动的来源，再指出外部射流还需要的边界信息。
+
 **Derivation.** Reconstruct the causal chain before answering. Subtract far-field pressure from the normal traction law, equate it to radial inertia, then solve for acceleration. The mixture statement identifies the missing source input. Follow the full Euler-to-Bernoulli derivation in C1.3-E05 and energy conversion in C1.4-E11. For a directional outlet, replace the scalar radial solution with C1.7-E26–C1.7-E28 and the actual boundaries.
 
 **推导。** 作答前重建因果链。从法向牵引关系减去远场压力，将其与径向惯性相等，再求加速度。混合物关系指出缺失的源输入。完整欧拉至伯努利推导见 C1.3-E05，能量转换见 C1.4-E11。存在定向出口时，用 C1.7-E26–C1.7-E28 及实际边界替代标量径向解。
@@ -1761,6 +2013,14 @@ Explain the mechanism, assumptions, and limits in your own words.
 用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
+
+#### Step 1.8.2 — Reconstruct the collapse benchmark and its limits
+
+#### 步骤 1.8.2——重建塌缩基准及其限制
+
+**Purpose in this chapter.** Combine the trajectory, collapse-time coefficient, and energy check from Section 1.5. Explain their shared assumptions before discussing the ideal speed singularity.
+
+**本章作用。** 结合第1.5节的轨迹、塌缩时间系数与能量检验。在讨论理想速度奇异性之前，说明这些结果共有的假设。
 
 **Derivation.** Reproduce the collapse chain rather than memorize its coefficient. Use squared speed and the integrating factor from C1.5-E13. Apply the initial condition as in C1.5-E14. Integrate reciprocal inward speed as in C1.5-E15–C1.5-E16. Obtain energy independently from pressure work in C1.5-E17. Check the chosen Mach cutoff using C1.5-E19 before interpreting the singular trajectory.
 
@@ -1843,6 +2103,14 @@ Explain the mechanism, assumptions, and limits in your own words.
 用自己的话解释机制、假设与限制。
 
 \*\*Reference answer and mastery criteria / 参考答案与掌握标准\*\*
+
+#### Step 1.8.3 — Connect pressure history, geometry, and response time
+
+#### 步骤 1.8.3——贯通压力历程、几何与响应时间
+
+**Purpose in this chapter.** Combine Sections 1.6 and 1.7. Distinguish the exact momentum integral, its reduced column benchmark, and the additional spatial and acoustic inputs needed for a transfer-jet prediction.
+
+**本章作用。** 结合第1.6节与第1.7节。区分精确动量积分、其约化液柱基准，以及预测转印射流还需要的空间与声学输入。
 
 **Derivation.** Start with the exact time-integrated momentum in C1.6-E21. Apply C1.6-E22 conditions before discarding residual integrals. Use C1.6-E23 endpoint data to solve the spatial impulse field. C1.7-E30 separately tests communication using rise time. These steps determine an initial velocity increment; subsequent jet shape requires the moving-interface solve.
 

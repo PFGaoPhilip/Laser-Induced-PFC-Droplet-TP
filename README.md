@@ -6,6 +6,7 @@ Use the language and day/night buttons.
 Every reader uses the chapter format and lower-right controls.
 All reading assets work offline.
 Chapter 1 places merged compact symbol tables after each formula group.
+Every Chapter 1 derivation has a numbered objective and chapter context.
 
 All 189 equation diagrams use English labels in both language modes.
 The gallery also preserves 10 study figures.

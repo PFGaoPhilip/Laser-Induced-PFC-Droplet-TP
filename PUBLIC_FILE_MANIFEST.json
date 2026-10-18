@@ -25,7 +25,7 @@
     {
       "path": "assets/bilingual-terms.css",
       "bytes": 38891,
-      "sha256": "9279f5cfd004ebda44aa4a31c7434b9c00bf9901ca05e4e61876e00dfe5d6345"
+      "sha256": "782fe6eb48279bdc11e3ddd9eb3cd5b46d23d09298748d2b63cb1f293698c396"
     },
     {
       "path": "assets/course-language.css",
@@ -6839,8 +6839,8 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 2456395,
-      "sha256": "5dc8365d5faef2730371275f7eefc80b465a654332d2c6facd87f47081cde687"
+      "bytes": 2489853,
+      "sha256": "8573a7dbaafb888274ce9e86f216ca86610377fb6c1d62f8e1ba38628ac5834b"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
@@ -6869,8 +6869,13 @@
     },
     {
       "path": "content/chapter01.py",
-      "bytes": 88560,
-      "sha256": "84b187e7e4e6b44de2239c62785bbc977319b5692ef65d046c5992d60dbf40ec"
+      "bytes": 89377,
+      "sha256": "722406aa2fa56916795527179c857d2903480c20fbbea94f671906c0b2b03cc7"
+    },
+    {
+      "path": "content/chapter01_step_roles.py",
+      "bytes": 14796,
+      "sha256": "01ebec55ca90ef8dc991d6ef7541c8104917d57d706deae997d67ea94b380682"
     },
     {
       "path": "content/chapter01_steps.py",
@@ -6929,8 +6934,8 @@
     },
     {
       "path": "COURSE_SETTINGS.json",
-      "bytes": 9538,
-      "sha256": "38bb3beb968e23e0e59ac60ae457af2c5fbf9350274873209391d2b91b65617e"
+      "bytes": 9588,
+      "sha256": "ff26fe37b2fe5d48bac029d556acdebe64369692fbf27ac5ed7be2e7f1527992"
     },
     {
       "path": "index.html",
@@ -11134,8 +11139,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5345,
-      "sha256": "cf9ec61d2182a93ee9a687773b9cb146c7d053b3d13d311869c916c86ca64035"
+      "bytes": 5419,
+      "sha256": "9be1c540286c57d29832f9541300b2a88fe263ae240dfe6be6d824c9023fe24c"
     },
     {
       "path": "reference/defense.html",
@@ -11188,6 +11193,16 @@
       "sha256": "3ceb68f7cc105981ff54dca42b129c095b47363f492dbc23507a0a0c5b20f867"
     },
     {
+      "path": "reports/ch1_steps_20261019/browser.json",
+      "bytes": 31717,
+      "sha256": "71fa4ee6627fb788e347f3d6e9c30ee4c51334a36f449127e53b227b51be8d58"
+    },
+    {
+      "path": "reports/ch1_steps_20261019/STEPS_REPORT.json",
+      "bytes": 14278,
+      "sha256": "ef6de0a2068c4e65ad709385c16f27901373b67052f04c036a80e8a23afd10e3"
+    },
+    {
       "path": "reports/ch1_symbol_layout_20261019/browser.json",
       "bytes": 31605,
       "sha256": "7799d18095abd97b3bfafa8144e080bd54e0667cadcf9a1325257f3de5472d02"
@@ -11204,13 +11219,13 @@
     },
     {
       "path": "scripts/browser_chapter01_revision.py",
-      "bytes": 5294,
-      "sha256": "f6f75c2dbe87f0bd926e065d4bd22b7f794301403d0c1e03ef9c9ec71ba1a08e"
+      "bytes": 5942,
+      "sha256": "6f6b16ee83495f10e3007e957009c7950cf137e2cade930ef9299d11a8cea33a"
     },
     {
       "path": "scripts/build_course.py",
-      "bytes": 34915,
-      "sha256": "80cf13d07a1d61beded9bd98cebfddf922ef1d78d1994ce4994c2136f2d9ee42"
+      "bytes": 34949,
+      "sha256": "1aaa91cc77cd291339db6a4459bd1fd3286f192e744f61df3b2b633458b8be09"
     },
     {
       "path": "scripts/build_figs.py",
@@ -11363,6 +11378,11 @@
       "sha256": "26dedad15f46a139131cb987274f79e55c87b46986cca4dbaa77b1326c970dc6"
     },
     {
+      "path": "scripts/highlight_chapter01_incremental.py",
+      "bytes": 3045,
+      "sha256": "8f33ddea538dc07bd5d6bde901c07adec0d9a95b2932d73dbac98432b6088c62"
+    },
+    {
       "path": "scripts/integrate_embedded_pfc.py",
       "bytes": 13411,
       "sha256": "715236ead0cd8ce37a07360f94f22abfc1a3cb1cee77884b5bd371e8441f7636"
@@ -11409,8 +11429,8 @@
     },
     {
       "path": "scripts/package_site.py",
-      "bytes": 10538,
-      "sha256": "682e77fa254155ab154a988abcf913623531502c09d6cd29e05cfe9f2ef4127d"
+      "bytes": 10658,
+      "sha256": "5a8bf96b5aa4a592fb517b97bff1c783762f61781698d6811ac29524cd28ed4a"
     },
     {
       "path": "scripts/package_theses.py",
@@ -11436,6 +11456,11 @@
       "path": "scripts/rebuild_chapter01_layout.py",
       "bytes": 2144,
       "sha256": "55844e9f4b7468639b970fbd6d3e77671957598d99ad149b1a7c03ed11e563c9"
+    },
+    {
+      "path": "scripts/rebuild_chapter01_steps.py",
+      "bytes": 2102,
+      "sha256": "61f4334d38418c7cbdc462e52f1ceb6898578ff2283b95da39cebe1811819f3a"
     },
     {
       "path": "scripts/redraw_appendix_studies.py",
@@ -11533,9 +11558,14 @@
       "sha256": "561a0ff0475de9fc9e41143a05d124ff7e07a610aa7d98ffac873a4413bd9815"
     },
     {
+      "path": "scripts/verify_chapter01_steps.py",
+      "bytes": 3926,
+      "sha256": "366f116544df1abbe33c454ddcb684432363faab0dfb09c8e9009641f1e26a59"
+    },
+    {
       "path": "scripts/verify_course.py",
-      "bytes": 15433,
-      "sha256": "b4655512e289b3c6c977bf32849100c714d0c566ff8bfeaad1d5dc2f225de079"
+      "bytes": 15738,
+      "sha256": "c1d8f297571c20753077aab4884ec5f6165b0028db1cb5b958b8a682e8dfac2b"
     },
     {
       "path": "scripts/verify_embedded_publication.py",
@@ -11594,8 +11624,8 @@
     },
     {
       "path": "text/01-cavity-pressure-inertia-and-directional-jets.md",
-      "bytes": 169446,
-      "sha256": "3b6bc26901f88f1a32a4e82fab18ae6e9a2618b13f537bead8ea34768572374f"
+      "bytes": 185269,
+      "sha256": "3c00d0fc97083955926884b95e7852bd68010129656dfbbc3541682033ac6413"
     },
     {
       "path": "text/02-optical-heating-and-finite-pfc-inventory.md",
@@ -11624,8 +11654,8 @@
     },
     {
       "path": "text/course.md",
-      "bytes": 724787,
-      "sha256": "eaee60ab069a32bbb25a9bcf1d2a58ef9d93e708a56efbf645d49bbd6f2f455a"
+      "bytes": 740610,
+      "sha256": "c23a103bf8f223029fb86f5d4b8675385533495344f757a1627dba6138662323"
     },
     {
       "path": "Theses/10.1002_(sici)1096-9101(1997)21_3.md",
@@ -13389,8 +13419,8 @@
     },
     {
       "path": "verification/bilingual-terms.json",
-      "bytes": 154727,
-      "sha256": "94f349eeca7386af1860472a69f9760b5a0b7d52caad6c6f7d8fc29d2873450c"
+      "bytes": 159119,
+      "sha256": "a2a06789f4c4da38e07ebcb2f7d3cdeee545bebcfc9c97be85592cddf9c5059f"
     },
     {
       "path": "verification/browser-audit.json",
@@ -13464,8 +13494,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 1125703,
-      "sha256": "ee5f5dabaea4b36c1e3306a928e9e72e23845867bcffcac97036324a38bf092c"
+      "bytes": 1131347,
+      "sha256": "3d8d801b353bed24ba3fb362cb18d5529b71ea1b538b9a665475619077fc5a67"
     },
     {
       "path": "verification/cross-review-01-02.json",

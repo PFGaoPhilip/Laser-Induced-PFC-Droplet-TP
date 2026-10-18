@@ -181,8 +181,8 @@ html[data-theme="light"] .technical-term[data-term="polytropic-exponent"] { --te
 html[data-theme="light"] .technical-term[data-term="poroelastic"] { --term-ink: #6c4713; --term-wash: #faf1e5; }
 .technical-term[data-term="potential-flow"] { --term-ink: #8df696; --term-wash: rgba(141, 246, 150, .14); }
 html[data-theme="light"] .technical-term[data-term="potential-flow"] { --term-ink: #136c1b; --term-wash: #e5fae7; }
-.technical-term[data-term="pressure-impulse"] { --term-ink: #8ddcf6; --term-wash: rgba(141, 220, 246, .14); }
-html[data-theme="light"] .technical-term[data-term="pressure-impulse"] { --term-ink: #13566c; --term-wash: #e5f5fa; }
+.technical-term[data-term="pressure-impulse"] { --term-ink: #f6f68d; --term-wash: rgba(246, 246, 141, .14); }
+html[data-theme="light"] .technical-term[data-term="pressure-impulse"] { --term-ink: #6c6c13; --term-wash: #fafae5; }
 .technical-term[data-term="rayleigh-plesset"] { --term-ink: #f68df6; --term-wash: rgba(246, 141, 246, .14); }
 html[data-theme="light"] .technical-term[data-term="rayleigh-plesset"] { --term-ink: #6c136c; --term-wash: #fae5fa; }
 .technical-term[data-term="re-entrant-jet"] { --term-ink: #f6cb8d; --term-wash: rgba(246, 203, 141, .14); }
@@ -332,7 +332,7 @@ html[data-theme="light"] .technical-term[data-term="young-modulus"] { --term-ink
   html .technical-term[data-term="polytropic-exponent"] { --term-ink: #6c4713; --term-wash: #faf1e5; }
   html .technical-term[data-term="poroelastic"] { --term-ink: #6c4713; --term-wash: #faf1e5; }
   html .technical-term[data-term="potential-flow"] { --term-ink: #136c1b; --term-wash: #e5fae7; }
-  html .technical-term[data-term="pressure-impulse"] { --term-ink: #13566c; --term-wash: #e5f5fa; }
+  html .technical-term[data-term="pressure-impulse"] { --term-ink: #6c6c13; --term-wash: #fafae5; }
   html .technical-term[data-term="rayleigh-plesset"] { --term-ink: #6c136c; --term-wash: #fae5fa; }
   html .technical-term[data-term="re-entrant-jet"] { --term-ink: #6c4713; --term-wash: #faf1e5; }
   html .technical-term[data-term="rebound"] { --term-ink: #29136c; --term-wash: #eae5fa; }

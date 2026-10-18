@@ -18,6 +18,8 @@
     "default": "before",
     "C01": "after",
     "chapter01_order": [
+      "numbered_step",
+      "chapter_purpose",
       "derivation",
       "equation_title",
       "formulas",

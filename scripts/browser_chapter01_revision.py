@@ -23,11 +23,13 @@ with sync_playwright() as p:
         page.wait_for_function('Array.from(document.images).every(i=>i.complete)')
         state=page.evaluate('''()=>({lang:document.documentElement.dataset.language,theme:document.documentElement.dataset.theme,
           equations:document.querySelectorAll('.equation-unit').length,errors:document.querySelectorAll('.katex-error').length,
+          numberedSteps:document.querySelectorAll('.derivation-step').length,
           brokenImages:Array.from(document.images).filter(i=>!i.naturalWidth).map(i=>i.src),
           overflow:document.documentElement.scrollWidth>innerWidth+2,
           visibleEnglish:Array.from(document.querySelectorAll('.chapter-body > .lang-pair > p[lang="en"]')).some(e=>getComputedStyle(e).display!=='none'),
           visibleChinese:Array.from(document.querySelectorAll('.chapter-body > .lang-pair > p[lang="zh-CN"]')).some(e=>getComputedStyle(e).display!=='none')})''')
         assert state['equations']==33 and state['errors']==0 and not state['brokenImages'] and not state['overflow'],state
+        if state['numberedSteps']:assert state['numberedSteps']==33
         assert state['lang']==lang and state['theme']==theme
         assert state['visibleEnglish']==(lang=='en') and state['visibleChinese']==(lang=='zh')
         layout=page.locator('.equation-unit').evaluate_all('''els=>els.map(e=>({
@@ -48,7 +50,12 @@ with sync_playwright() as p:
         # Freeze smooth scrolling for deterministic capture. Product CSS stays intact.
         page.add_style_tag(content='html{scroll-behavior:auto!important}')
         for ident in ([] if target!=ROOT else ['C1-E21'] if focused else ['C1-E05','C1-E11','C1-E14','C1-E21','C1-E28','C1-E30','C1-E33'] if width>400 else ['C1-E05','C1-E21','C1-E30']):
-            page.locator('#'+ident).screenshot(path=str(out/f'{name}-{ident}.png'))
+            context=page.locator('[data-step-for="'+ident+'"]')
+            if context.count():
+                page.evaluate('''id=>{let h=document.querySelector('[data-step-for="'+id+'"]'),e=document.getElementById(id),box=document.createElement('div');box.id='preview-'+id;h.before(box);for(let n=h;n;){let next=n.nextElementSibling;box.append(n);if(n===e)break;n=next}}''',ident)
+                page.locator('#preview-'+ident).screenshot(path=str(out/f'{name}-{ident}.png'))
+            else:
+                page.locator('#'+ident).screenshot(path=str(out/f'{name}-{ident}.png'))
         if name=='desktop-en-light' and target==ROOT and not focused:
             for box in page.locator('.equation-unit').all():
                 box.screenshot(path=str(out/(box.get_attribute('id')+'.png')))

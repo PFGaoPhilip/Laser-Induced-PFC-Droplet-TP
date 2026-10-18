@@ -331,7 +331,7 @@ def settings(chapters):
         return {'id':unit_id(ch),'kind':ch.get('kind','chapter'),'label':unit_label(ch)[0],'label_zh':unit_label(ch)[1],'file':route(ch),'title':ch['title_en'],'title_zh':ch['title_zh'],'defense_ids':ch['question_ids'],'unit_map_row':UNIT_MAP[ch['number']]}
     return {'title':TITLE,'title_zh':TITLE_ZH,'repository':f'PFGaoPhilip/{SLUG}','url':BASE,'source_sha256':'cb4c40df67841ed1b011150e8e5acff99f2c22866185e198553f1a1c353ee7b0','comparison_sha256':'e5462de2b8ca7e717a4e9f0a26cc5c2a9fc0e1d8c054f48d087cd2a27fc0d87f','prepared':DATE,
       'languages':['en','zh-CN'],'default_theme':'dark','offline_assets':True,'formula_figure_required':True,'local_symbols_before_every_display':False,
-      'local_symbol_placement':{'default':'before','C01':'after','chapter01_order':['derivation','equation_title','formulas','compact_symbol_table','figure','check']},
+      'local_symbol_placement':{'default':'before','C01':'after','chapter01_order':['numbered_step','chapter_purpose','derivation','equation_title','formulas','compact_symbol_table','figure','check']},
       'mastery_policy':{'questions_per_chapter':3,'own_words_sufficient':True,'equation_memorization_required':False,'decision':'teacher_review_all_three','automatic_keyword_grading':False,'publication_is_not_mastery':True},
       'chapters':[record(ch) for ch in chapters if not is_appendix(ch)],
       'appendices':[record(ch) for ch in chapters if is_appendix(ch)],

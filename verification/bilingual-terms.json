@@ -3,9 +3,9 @@
   "style": "Different concepts have different colors within each English/Chinese prose pair. Each term keeps the same color throughout the course, with day/night variants.",
   "dictionary_terms": 120,
   "pages": 12,
-  "highlights": 3608,
-  "color_count": 7,
-  "paired_prose_groups_checked": 2631,
+  "highlights": 3698,
+  "color_count": 8,
+  "paired_prose_groups_checked": 2697,
   "no_distinct_terms_share_a_color_in_any_paired_prose_group": true,
   "palette": [
     {
@@ -105,6 +105,20 @@
         "dark": 6.55,
         "light": 9.91
       }
+    },
+    {
+      "dark": "#f6f68d",
+      "light": "#6c6c13",
+      "wash": "#fafae5",
+      "rgb": [
+        246,
+        246,
+        141
+      ],
+      "contrast_ratio": {
+        "dark": 10.38,
+        "light": 5.24
+      }
     }
   ],
   "term_color_indices": {
@@ -198,7 +212,7 @@
     "polytropic-exponent": 0,
     "poroelastic": 0,
     "potential-flow": 2,
-    "pressure-impulse": 1,
+    "pressure-impulse": 7,
     "rayleigh-plesset": 3,
     "re-entrant-jet": 0,
     "rebound": 4,
@@ -230,7 +244,7 @@
     "young-modulus": 1
   },
   "strict_pair_audit": {
-    "paired_blocks_checked": 5064,
+    "paired_blocks_checked": 5131,
     "one_sided_colored_terms_remaining": 0,
     "pages": [
       {
@@ -673,7 +687,7 @@
       },
       {
         "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-        "paired_blocks_checked": 847,
+        "paired_blocks_checked": 914,
         "contextual_matches": [
           {
             "line": 3,
@@ -689,6 +703,18 @@
           },
           {
             "line": 45,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 45,
+            "terms": [
+              "velocity-potential"
+            ]
+          },
+          {
+            "line": 63,
             "terms": [
               "velocity-potential"
             ]
@@ -751,6 +777,12 @@
             "line": 629,
             "terms": [
               "heat-transfer",
+              "mach-number"
+            ]
+          },
+          {
+            "line": 629,
+            "terms": [
               "mach-number"
             ]
           },
@@ -886,12 +918,44 @@
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
           {
+            "line": 45,
+            "English": "Step 1.3.2 — Prepare the velocity field for momentum integration",
+            "Chinese": "步骤 1.3.2——为 动量 积分建立 速度势",
+            "English_only": [],
+            "Chinese_only": [
+              "velocity-potential"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 184,
+            "English": "Purpose in this chapter. Separate vapor and permanent-gas contributions to the pressure in Eq. (C1.3-E07). Chapter 2 must supply their thermal, phase, and inventory evolution.",
+            "Chinese": "本章作用。 将式（C1.3-E07）的压力分解为蒸气与 非凝结气体 贡献。第二章须提供其热、 相变 及物质量演化。",
+            "English_only": [],
+            "Chinese_only": [
+              "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
             "line": 199,
             "English": "Check and interpretation. Pressure × volume has energy units. A vanishing component amount removes its partial pressure. Missing: component mass-transfer rates, energy balance and appropriate phase equilibrium or kinetics.",
             "Chinese": "检验与解释。 压力乘体积具有能量单位。某组分物质的量为零时，其分压为零。缺少：组分 传质 率、能量平衡以及适用的相平衡或 相变 动力学。",
             "English_only": [],
             "Chinese_only": [
               "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 199,
+            "English": "Step 1.4.1 — Measure the inertia carried by the exterior liquid",
+            "Chinese": "步骤 1.4.1——计算外部载液携带的 动能",
+            "English_only": [
+              "inertia"
+            ],
+            "Chinese_only": [
+              "kinetic-energy"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -907,11 +971,31 @@
           },
           {
             "line": 253,
-            "English": "Step 10 — Specify the ideal collapse problem. Start at maximum radius with zero wall speed. Far-field and vapor pressures are constant with positive collapse difference. Omit tension, viscosity , permanent gas and liquid compressibility . Thermal and phase dynamics are excluded assumptions. Their smallness for PFC remains unestablished. A hot vapor-rich cavity can still expand.",
-            "Chinese": "步骤 10——规定理想塌缩问题。 从最大半径及零壁面速度开始。远场压力与 蒸气压 恒定，塌缩压差为正。忽略张力、 黏性 、 非凝结气体 及液体 可压缩性 。热学与 相变 动力学被模型排除。它们对 PFC 是否足够小尚未确立。高温蒸气丰富的空腔仍可膨胀。",
+            "English": "Purpose in this chapter. Reduce Eq. (C1.3-E07) to collapse under a constant positive pressure difference. This restricted control problem supplies the trajectory and time benchmark below.",
+            "Chinese": "本章作用。 将式（C1.3-E07）约化为恒定正压差下的塌缩。这一 受限 对照问题为下文提供轨迹与时间基准。",
+            "English_only": [],
+            "Chinese_only": [
+              "confinement"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 253,
+            "English": "Specify the ideal collapse problem. Start at maximum radius with zero wall speed. Far-field and vapor pressures are constant with positive collapse difference. Omit tension, viscosity , permanent gas and liquid compressibility . Thermal and phase dynamics are excluded assumptions. Their smallness for PFC remains unestablished. A hot vapor-rich cavity can still expand.",
+            "Chinese": "规定理想塌缩问题。 从最大半径及零壁面速度开始。远场压力与 蒸气压 恒定，塌缩压差为正。忽略张力、 黏性 、 非凝结气体 及液体 可压缩性 。热学与 相变 动力学被模型排除。它们对 PFC 是否足够小尚未确立。高温蒸气丰富的空腔仍可膨胀。",
             "English_only": [],
             "Chinese_only": [
               "phase-change"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 465,
+            "English": "Step 1.5.5 — Evaluate the Rayleigh time coefficient",
+            "Chinese": "步骤 1.5.5——计算瑞利 塌缩时间 系数",
+            "English_only": [],
+            "Chinese_only": [
+              "collapse-time"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -969,8 +1053,8 @@
           },
           {
             "line": 850,
-            "English": "Step 19 — Set interface orientation and stress. The normal points from liquid into gas. An inner spherical cavity therefore has negative curvature. An outer liquid droplet has positive curvature. This reproduces Eq. (C1-E06). A clean interface with negligible gas viscosity has zero tangential viscous traction . At zero liquid viscosity , that condition adds no strain-rate constraint. Without phase transfer, interface and liquid normal velocities match.",
-            "Chinese": "步骤 19——规定界面方向与应力。 法向由液体指向气体，故内球形空腔曲率为负，外液滴曲率为正。这一约定恢复式（C1-E06）。清洁界面且气相 黏性 可忽略时，切向 黏性 牵引 为零。液体 黏度 为零时，该条件不增加应变率约束。没有 相变 时，界面与液体法向速度相等。",
+            "English": "Set interface orientation and stress. The normal points from liquid into gas. An inner spherical cavity therefore has negative curvature. An outer liquid droplet has positive curvature. This reproduces Eq. (C1.3-E06). A clean interface with negligible gas viscosity has zero tangential viscous traction . At zero liquid viscosity , that condition adds no strain-rate constraint. Without phase transfer, interface and liquid normal velocities match.",
+            "Chinese": "规定界面方向与应力。 法向由液体指向气体，故内球形空腔曲率为负，外液滴曲率为正。这一约定恢复式（C1.3-E06）。清洁界面且气相 黏性 可忽略时，切向 黏性 牵引 为零。液体 黏度 为零时，该条件不增加应变率约束。没有 相变 时，界面与液体法向速度相等。",
             "English_only": [],
             "Chinese_only": [
               "phase-change"
@@ -1000,8 +1084,8 @@
           },
           {
             "line": 880,
-            "English": "Step 20 — Derive the potential-flow reduction. Assume inviscid, initially irrotational flow away from shocks and unresolved wall layers. The potential satisfies Laplace’s equation. Without phase slip, interface nodes follow liquid velocity. Convert the Eulerian Bernoulli derivative to the material derivative. Add velocity dotted with the potential gradient. This closes a spatial pre-impact model under the stated assumptions. Boundary-integral microjet models use this reduction. [R4]",
-            "Chinese": "步骤 20——推导 势流 约化。 假设流动无黏且初始无旋，并避开 激波 及未解析壁面层。 速度势 满足拉普拉斯方程。无 相变 滑移时，界面节点随液体速度运动。将欧拉伯努利导数转为物质导数，加入速度与 速度势 梯度的点积。由此在已声明假设下闭合撞击前空间模型。 边界积分 微射流 模型采用此约化。 [R4]",
+            "English": "Derive the potential-flow reduction. Assume inviscid, initially irrotational flow away from shocks and unresolved wall layers. The potential satisfies Laplace’s equation. Without phase slip, interface nodes follow liquid velocity. Convert the Eulerian Bernoulli derivative to the material derivative. Add velocity dotted with the potential gradient. This closes a spatial pre-impact model under the stated assumptions. Boundary-integral microjet models use this reduction. [R4]",
+            "Chinese": "推导 势流 约化。 假设流动无黏且初始无旋，并避开 激波 及未解析壁面层。 速度势 满足拉普拉斯方程。无 相变 滑移时，界面节点随液体速度运动。将欧拉伯努利导数转为物质导数，加入速度与 速度势 梯度的点积。由此在已声明假设下闭合撞击前空间模型。 边界积分 微射流 模型采用此约化。 [R4]",
             "English_only": [],
             "Chinese_only": [
               "phase-change"
@@ -1021,8 +1105,8 @@
           },
           {
             "line": 934,
-            "English": "(C1-E29) · Exact spherical recovery of the potential closure",
-            "Chinese": "势流 闭合关系对球形模型的精确恢复",
+            "English": "(C1.7-E29) · Exact spherical recovery of the potential closure",
+            "Chinese": "(C1.7-E29) · 势流 闭合关系对球形模型的精确恢复",
             "English_only": [],
             "Chinese_only": [
               "potential-flow"
@@ -1046,6 +1130,18 @@
             "English_only": [],
             "Chinese_only": [
               "potential-flow"
+            ],
+            "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
+          },
+          {
+            "line": 982,
+            "English": "Purpose in this chapter. Combine the radial balance and pressure composition from Section 1.3. Use them to explain the source of liquid motion, then identify the boundary information required for an external jet .",
+            "Chinese": "本章作用。 结合第1.3节的径向平衡与压力组成。用它们解释液体运动的来源，再指出 外部射流 还需要的边界信息。",
+            "English_only": [
+              "jet"
+            ],
+            "Chinese_only": [
+              "ejected-jet"
             ],
             "action": "Leave these nonmatched occurrences plain; preserve both source paragraphs and do not invent an equivalent term."
           },
@@ -1085,7 +1181,7 @@
           },
           {
             "line": 1072,
-            "English": "Conventions and conditions. (C1-E17); The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility .",
+            "English": "Conventions and conditions. (C1.5-E17); The initial cavity is at rest, with no gas, viscosity , capillarity or compressibility .",
             "Chinese": "约定与条件。 初始空腔静止，并忽略 非凝结气体 、 黏性 、毛细及 可压缩性 。",
             "English_only": [],
             "Chinese_only": [
@@ -2567,7 +2663,7 @@
     ]
   },
   "highlighter_sha256": "26dedad15f46a139131cb987274f79e55c87b46986cca4dbaa77b1326c970dc6",
-  "color_stylesheet_sha256": "9279f5cfd004ebda44aa4a31c7434b9c00bf9901ca05e4e61876e00dfe5d6345",
+  "color_stylesheet_sha256": "782fe6eb48279bdc11e3ddd9eb3cd5b46d23d09298748d2b63cb1f293698c396",
   "term_totals": {
     "absorbed-energy": 40,
     "absorber": 52,
@@ -2587,7 +2683,7 @@
     "cavitation": 32,
     "cohesive-strength": 10,
     "cohesive-traction": 12,
-    "collapse-time": 44,
+    "collapse-time": 54,
     "compressibility": 62,
     "condensation": 14,
     "confinement": 56,
@@ -2610,22 +2706,22 @@
     "heat-transfer": 14,
     "homogeneous-nucleation": 6,
     "hydrogel": 66,
-    "incompressibility": 82,
-    "inertia": 126,
+    "incompressibility": 90,
+    "inertia": 130,
     "interfacial-fracture": 8,
-    "jet": 495,
+    "jet": 503,
     "jet-speed": 8,
     "kinematic-condition": 2,
-    "kinetic-energy": 153,
+    "kinetic-energy": 159,
     "latent-heat": 18,
     "liquid-bridge": 4,
-    "mach-number": 40,
+    "mach-number": 42,
     "mass-transfer": 8,
     "microjet": 4,
-    "momentum": 218,
+    "momentum": 236,
     "nanodroplet": 6,
     "neo-hookean": 42,
-    "noncondensable-gas": 24,
+    "noncondensable-gas": 26,
     "nucleation": 33,
     "nucleation-barrier": 4,
     "ohnesorge-number": 4,
@@ -2638,9 +2734,9 @@
     "poisson-ratio": 18,
     "polytropic-exponent": 2,
     "poroelastic": 6,
-    "potential-flow": 8,
-    "pressure-impulse": 58,
-    "rayleigh-plesset": 10,
+    "potential-flow": 10,
+    "pressure-impulse": 68,
+    "rayleigh-plesset": 12,
     "re-entrant-jet": 2,
     "rebound": 18,
     "relaxation-time": 24,
@@ -2653,15 +2749,15 @@
     "stefan-balance": 2,
     "stiffened-gas": 16,
     "superheat": 2,
-    "surface-tension": 52,
+    "surface-tension": 54,
     "thermal-diffusivity": 4,
-    "traction": 141,
+    "traction": 143,
     "traction-separation": 4,
     "vapor-pressure": 28,
     "vaporization": 22,
-    "velocity-potential": 102,
+    "velocity-potential": 106,
     "viscoelasticity": 4,
-    "viscosity": 340,
+    "viscosity": 350,
     "water-hammer": 2,
     "weber-number": 4,
     "young-modulus": 6
@@ -2741,7 +2837,7 @@
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "highlights": 686,
+      "highlights": 776,
       "terms": {
         "absorber": 2,
         "acoustic-crossing-time": 6,
@@ -2749,7 +2845,7 @@
         "boundary-integral": 2,
         "capillary-pressure": 6,
         "cavitation": 6,
-        "collapse-time": 20,
+        "collapse-time": 30,
         "compressibility": 20,
         "condensation": 2,
         "confinement": 4,
@@ -2761,39 +2857,39 @@
         "free-surface": 2,
         "gas-cushioning": 2,
         "heat-transfer": 4,
-        "incompressibility": 20,
-        "inertia": 40,
-        "jet": 59,
+        "incompressibility": 28,
+        "inertia": 44,
+        "jet": 67,
         "kinematic-condition": 2,
-        "kinetic-energy": 33,
+        "kinetic-energy": 39,
         "latent-heat": 4,
         "liquid-bridge": 4,
-        "mach-number": 16,
+        "mach-number": 18,
         "mass-transfer": 4,
         "microjet": 2,
-        "momentum": 44,
-        "noncondensable-gas": 14,
+        "momentum": 62,
+        "noncondensable-gas": 16,
         "nucleation": 2,
         "peak-pressure": 4,
         "pfc": 34,
         "phase-change": 2,
-        "potential-flow": 2,
-        "pressure-impulse": 38,
-        "rayleigh-plesset": 8,
+        "potential-flow": 4,
+        "pressure-impulse": 48,
+        "rayleigh-plesset": 10,
         "re-entrant-jet": 2,
         "shock-wave": 2,
         "stand-off": 12,
-        "surface-tension": 32,
-        "traction": 24,
+        "surface-tension": 34,
+        "traction": 26,
         "vapor-pressure": 14,
         "vaporization": 2,
-        "velocity-potential": 66,
-        "viscosity": 106
+        "velocity-potential": 70,
+        "viscosity": 116
       },
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "5dc8365d5faef2730371275f7eefc80b465a654332d2c6facd87f47081cde687",
+      "sha256": "8573a7dbaafb888274ce9e86f216ca86610377fb6c1d62f8e1ba38628ac5834b",
       "post_highlight_display_label_update": {
         "owner_request": "Use corresponding subchapters, such as C1.6 and C1.7",
         "all_33_labels_match_containing_h2": true,
@@ -3096,5 +3192,11 @@
       "sha256": "c6e682abf65a61e86799d2f5d016bf1e9baeb86c6ec482435fefdbf0a80e8127"
     }
   ],
-  "all_text_math_links_and_anchors_preserved": true
+  "all_text_math_links_and_anchors_preserved": true,
+  "incremental_update": {
+    "changed_page": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
+    "unchanged_pages_verified_by_hash": 11,
+    "prior_color_classes_never_merged": true,
+    "changed_page_complete_highlighter_audit": true
+  }
 }

@@ -132,10 +132,14 @@ def main():
             content=[n for n in ans.children if getattr(n,'name',None) and n.name!='summary' and n.get('aria-hidden')!='true'] if ans else []
             if defense['id'] in {'C1-Q1','C1-Q2','C1-Q3'}:
                 expected_id={'C1-Q1':'C1-E31','C1-Q2':'C1-E32','C1-Q3':'C1-E33'}[defense['id']]
-                intro=content[0] if content else None
-                formula=content[1] if len(content)>1 else None
+                step=content[0] if content else None
+                purpose=content[1] if len(content)>1 else None
+                intro=content[2] if len(content)>2 else None
+                formula=content[3] if len(content)>3 else None
                 check(defense['id']+': bilingual derivation followed by its original formula',
-                      intro is not None and 'lang-pair' in intro.get('class',[])
+                      step is not None and step.get('data-step-for')==expected_id
+                      and purpose is not None and 'step-purpose' in purpose.get('class',[])
+                      and intro is not None and 'lang-pair' in intro.get('class',[])
                       and intro.select_one('p[lang="en"] strong') is not None
                       and intro.select_one('p[lang="zh-CN"] strong') is not None
                       and formula is not None and 'equation-unit' in formula.get('class',[])
