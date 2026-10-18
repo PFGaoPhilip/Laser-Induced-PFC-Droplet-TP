@@ -28,7 +28,7 @@ def audit(root):
         assert box.select_one('.math-display .katex-html')
         children=box.find_all(recursive=False)
         assert children[0].select_one('p[lang=en]').get_text().startswith('('+equation_label(e['id'])+')')
-        assert 'math-display' in children[1]['class']
+        assert 'derivation-flow' in children[1]['class']
         assert 'symbols' in children[2]['class']
         assert len(box.select('.symbols'))==1
         assert not box.select(':scope > .symbol-conventions')
@@ -41,14 +41,22 @@ def audit(root):
     text=soup.get_text(' ')
     assert 'C1-E34' not in text
     assert 'D_{rr}' not in str(soup) and 'D_{\\theta\\theta}' not in str(soup)
-    assert '6.66667' in text and '0.0666667' in text
+    # The imported original uses 6.667 and 0.06667. Verify its stated
+    # precision against the teaching inputs rather than rewriting the source
+    # to match the greater precision of the previous presentation.
+    diagnostic=soup.find(id='C1-E30')
+    for index,duration in [(8,10e-9),(9,1000e-9)]:
+        formula=diagnostic.select_one(f'.math-display[data-handoff-formula="{index}"]')['data-tex']
+        reported=float(re.findall(r'=\s*(\d+\.\d+)',formula)[-1])
+        expected_ratio=(100e-6/1500)/duration
+        assert abs(reported-expected_ratio)/expected_ratio<1e-4,(reported,expected_ratio)
     rows=json.loads((root/'assets/figures-editable/manifest.json').read_text(encoding='utf-8'))
     assert {r['id'] for r in rows if r['id'].startswith('c1-')}=={x.lower() for x in expected}
     for r in rows:
         for field in ('svg','pptx','scene'):assert (root/'assets/figures-editable'/r[field]).is_file()
     base=json.loads((root/'verification/lesson-revision-baseline.json').read_text(encoding='utf-8'))
     assert {e['id']:e['tex'] for e in equations if not e['id'].startswith('C1-')}=={k:v for k,v in base['equations'].items() if not k.startswith('C1-')}
-    return {'status':'passed','equation_count':33,'other_equations_preserved':len(equations)-33,'editable_figures':len(rows),'equations':evidence,'scope':'Structure, local math rendering, ID migration, and preservation; scientific review and browser evidence are separate.'}
+    return {'status':'passed','equation_count':33,'other_equations_preserved':len(equations)-33,'editable_figures':len(rows),'compressibility_source_rounding_verified':True,'equations':evidence,'scope':'Structure, local math rendering, ID migration, source example rounding, and preservation; scientific review and browser evidence are separate.'}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=ROOT);args=p.parse_args()

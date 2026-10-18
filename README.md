@@ -7,6 +7,7 @@ Every reader uses the chapter format and lower-right controls.
 All reading assets work offline.
 Chapter 1 places merged compact symbol tables after each formula group.
 Every Chapter 1 derivation has a numbered objective and chapter context.
+Full explanations alternate with short equations throughout Chapter 1.
 
 All 189 equation diagrams use English labels in both language modes.
 The gallery also preserves 10 study figures.
@@ -113,13 +114,21 @@ Publication remains HELD_NOT_PUBLISHED.
 
 ## Chapter 1 revision — 2026-10-19 / 第一章修订
 
-All 33 surviving Chapter 1 equation blocks contain multiline derivations.
+All 33 Chapter 1 equation groups alternate explanations and formulas.
+Twenty-two groups directly include preserved scientific handoff passages.
+The remaining eleven use worked supplements in the same style.
+Source excerpts and hashes are in `content/chapter01_handoff.json`.
+Compact two-column symbol tables follow the formulas.
 The original E12 dissipation check was deleted.
 Later equation IDs were renumbered.
 See reports/ch1_defense_revision/EQUATION_MAP.csv for migration.
 The original defense verdict and learner records remain unchanged.
 
-第一章保留的 33 个公式块均包含多行推导。
+第一章的 33 个公式组均采用说明与公式交替的格式。
+其中 22 组直接引入交接材料中的原始科学推导。
+其余 11 组采用相同风格的完整补充推导。
+原文片段与哈希记录见 `content/chapter01_handoff.json`。
+紧凑双列符号表置于公式之后。
 已删除原 E12 独立耗散检验，并依次重排后续公式编号。
 编号迁移见 reports/ch1_defense_revision/EQUATION_MAP.csv。
 原答辩结论与学习记录保持不变。

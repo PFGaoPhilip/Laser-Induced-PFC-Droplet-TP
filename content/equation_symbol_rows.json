@@ -348,6 +348,48 @@
         "zh": "$g(t)$ — 速度势规范函数（m² s⁻¹）",
         "unit": "m² s⁻¹",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — constant carrier density (kg m⁻³)",
+        "zh": "$\\rho$ — 恒定载液密度（kg m⁻³）",
+        "unit": "kg m⁻³"
+      },
+      {
+        "symbol": "p",
+        "en": "$p$ — local liquid pressure (Pa)",
+        "zh": "$p$ — 局部液体压强（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "p_\\infty",
+        "en": "$p_\\infty$ — far-field pressure (Pa)",
+        "zh": "$p_\\infty$ — 远场压强（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "p_l",
+        "en": "$p_l$ — liquid-side wall pressure (Pa)",
+        "zh": "$p_l$ — 壁面液体侧压强（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "\\ddot R",
+        "en": "$\\ddot R$ — wall acceleration (m s⁻²)",
+        "zh": "$\\ddot R$ — 壁面加速度（m s⁻²）",
+        "unit": "m s⁻²"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度（m⁻¹）",
+        "unit": "m⁻¹"
+      },
+      {
+        "symbol": "\\partial_t",
+        "en": "$\\partial_t$ — time derivative at fixed position (s⁻¹)",
+        "zh": "$\\partial_t$ — 固定位置时间导数（s⁻¹）",
+        "unit": "s⁻¹"
       }
     ],
     "notes_en": [
@@ -647,6 +689,12 @@
         "zh": "$p$ — 局部液体压力（Pa）",
         "unit": "Pa",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "C(t)",
+        "en": "$C(t)$ — Bernoulli integration function; same role as $B_0(t)$ (m² s⁻²)",
+        "zh": "$C(t)$ — 伯努利积分函数；与 $B_0(t)$ 作用相同（m² s⁻²）",
+        "unit": "m² s⁻²"
       }
     ],
     "notes_en": [
@@ -2510,6 +2558,60 @@
         "zh": "$dA$ — 面积元（m²）",
         "unit": "m²",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — constant liquid density (kg m⁻³)",
+        "zh": "$\\rho$ — 恒定液体密度（kg m⁻³）",
+        "unit": "kg m⁻³"
+      },
+      {
+        "symbol": "\\boldsymbol u",
+        "en": "$\\boldsymbol u$ — liquid velocity field (m s⁻¹)",
+        "zh": "$\\boldsymbol u$ — 液体速度场（m s⁻¹）",
+        "unit": "m s⁻¹"
+      },
+      {
+        "symbol": "\\mu",
+        "en": "$\\mu$ — dynamic viscosity (Pa s)",
+        "zh": "$\\mu$ — 动力黏度（Pa s）",
+        "unit": "Pa s"
+      },
+      {
+        "symbol": "\\nu",
+        "en": "$\\nu$ — kinematic viscosity (m² s⁻¹)",
+        "zh": "$\\nu$ — 运动黏度（m² s⁻¹）",
+        "unit": "m² s⁻¹"
+      },
+      {
+        "symbol": "\\Delta\\boldsymbol u",
+        "en": "$\\Delta\\boldsymbol u$ — fixed-position velocity increment (m s⁻¹)",
+        "zh": "$\\Delta\\boldsymbol u$ — 固定位置速度增量（m s⁻¹）",
+        "unit": "m s⁻¹"
+      },
+      {
+        "symbol": "S",
+        "en": "$S$ — fixed receiving surface (m²)",
+        "zh": "$S$ — 固定受载表面（m²）",
+        "unit": "m²"
+      },
+      {
+        "symbol": "A",
+        "en": "$A$ — fixed planar patch area (m²)",
+        "zh": "$A$ — 固定平面面积（m²）",
+        "unit": "m²"
+      },
+      {
+        "symbol": "\\nabla",
+        "en": "$\\nabla$ — spatial gradient (m⁻¹)",
+        "zh": "$\\nabla$ — 空间梯度（m⁻¹）",
+        "unit": "m⁻¹"
+      },
+      {
+        "symbol": "\\nabla^2",
+        "en": "$\\nabla^2$ — vector Laplacian (m⁻²)",
+        "zh": "$\\nabla^2$ — 矢量拉普拉斯算子（m⁻²）",
+        "unit": "m⁻²"
       }
     ],
     "notes_en": [
@@ -2925,6 +3027,24 @@
         "zh": "$s$ — 轴向积分哑坐标（m）",
         "unit": "m",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "f(t)",
+        "en": "$f(t)$ — prescribed pressure-excess waveform (Pa)",
+        "zh": "$f(t)$ — 给定超压波形（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "t_0",
+        "en": "$t_0$ — event start time (s)",
+        "zh": "$t_0$ — 事件开始时间（s）",
+        "unit": "s"
+      },
+      {
+        "symbol": "t_1",
+        "en": "$t_1$ — event end time (s)",
+        "zh": "$t_1$ — 事件结束时间（s）",
+        "unit": "s"
       }
     ],
     "notes_en": [
@@ -3483,6 +3603,18 @@
         "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
         "unit": "s⁻¹",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\boldsymbol X",
+        "en": "$\\boldsymbol X$ — material interface marker position (m)",
+        "zh": "$\\boldsymbol X$ — 界面物质标记点位置（m）",
+        "unit": "m"
+      },
+      {
+        "symbol": "\\phi",
+        "en": "$\\phi$ — velocity potential (m² s⁻¹)",
+        "zh": "$\\phi$ — 速度势（m² s⁻¹）",
+        "unit": "m² s⁻¹"
       }
     ],
     "notes_en": [
@@ -3650,6 +3782,54 @@
         "zh": "$\\partial_t$ — 固定位置的时间导数（s⁻¹）",
         "unit": "s⁻¹",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\Omega(t)",
+        "en": "$\\Omega(t)$ — time-dependent liquid domain (—)",
+        "zh": "$\\Omega(t)$ — 随时间变化的液体区域（—）",
+        "unit": "—"
+      },
+      {
+        "symbol": "\\boldsymbol x",
+        "en": "$\\boldsymbol x$ — fixed spatial position (m)",
+        "zh": "$\\boldsymbol x$ — 固定空间位置（m）",
+        "unit": "m"
+      },
+      {
+        "symbol": "\\alpha",
+        "en": "$\\alpha$ — dimensionless interface marker label (1)",
+        "zh": "$\\alpha$ — 无量纲界面标记参数（1）",
+        "unit": "1"
+      },
+      {
+        "symbol": "\\boldsymbol n",
+        "en": "$\\boldsymbol n$ — unit normal directed from liquid to gas (1)",
+        "zh": "$\\boldsymbol n$ — 液体指向气体的单位法向（1）",
+        "unit": "1"
+      },
+      {
+        "symbol": "\\nabla_s\\cdot",
+        "en": "$\\nabla_s\\cdot$ — surface divergence operator (m⁻¹)",
+        "zh": "$\\nabla_s\\cdot$ — 表面散度算子（m⁻¹）",
+        "unit": "m⁻¹"
+      },
+      {
+        "symbol": "p",
+        "en": "$p$ — local liquid pressure (Pa)",
+        "zh": "$p$ — 局部液体压强（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "C(t)",
+        "en": "$C(t)$ — Bernoulli integration function (m² s⁻²)",
+        "zh": "$C(t)$ — 伯努利积分函数（m² s⁻²）",
+        "unit": "m² s⁻²"
+      },
+      {
+        "symbol": "R",
+        "en": "$R$ — radius in the spherical limit (m)",
+        "zh": "$R$ — 球形极限中的半径（m）",
+        "unit": "m"
       }
     ],
     "notes_en": [
@@ -3947,6 +4127,66 @@
         "zh": "$t_a$ — 单程声传播时间（s）",
         "unit": "s",
         "source": "chapter01 derivation declarations, merged 2026-10-19"
+      },
+      {
+        "symbol": "\\rho",
+        "en": "$\\rho$ — total liquid density (kg m⁻³)",
+        "zh": "$\\rho$ — 总液体密度（kg m⁻³）",
+        "unit": "kg m⁻³"
+      },
+      {
+        "symbol": "p",
+        "en": "$p$ — total liquid pressure (Pa)",
+        "zh": "$p$ — 总液体压强（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "p_0",
+        "en": "$p_0$ — uniform background pressure (Pa)",
+        "zh": "$p_0$ — 均匀背景压强（Pa）",
+        "unit": "Pa"
+      },
+      {
+        "symbol": "M_{w,\\max}",
+        "en": "$M_{w,\\max}$ — maximum wall Mach number in the stated event window (1)",
+        "zh": "$M_{w,\\max}$ — 给定事件区间内的最大壁面马赫数（1）",
+        "unit": "1"
+      },
+      {
+        "symbol": "t_0",
+        "en": "$t_0$ — event-window start (s)",
+        "zh": "$t_0$ — 事件区间起点（s）",
+        "unit": "s"
+      },
+      {
+        "symbol": "t_1",
+        "en": "$t_1$ — event-window end (s)",
+        "zh": "$t_1$ — 事件区间终点（s）",
+        "unit": "s"
+      },
+      {
+        "symbol": "U",
+        "en": "$U$ — characteristic liquid speed; distinct from wall speed (m s⁻¹)",
+        "zh": "$U$ — 特征液体速度；与壁速有区别（m s⁻¹）",
+        "unit": "m s⁻¹"
+      },
+      {
+        "symbol": "L",
+        "en": "$L$ — liquid-column length or chosen flow scale (m)",
+        "zh": "$L$ — 液柱长度或选定流动尺度（m）",
+        "unit": "m"
+      },
+      {
+        "symbol": "\\tau",
+        "en": "$\\tau$ — pressure-impulse integration duration (s)",
+        "zh": "$\\tau$ — 压力冲量积分时长（s）",
+        "unit": "s"
+      },
+      {
+        "symbol": "\\nu",
+        "en": "$\\nu$ — kinematic viscosity (m² s⁻¹)",
+        "zh": "$\\nu$ — 运动黏度（m² s⁻¹）",
+        "unit": "m² s⁻¹"
       }
     ],
     "notes_en": [

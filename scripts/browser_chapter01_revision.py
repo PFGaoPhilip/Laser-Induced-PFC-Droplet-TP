@@ -32,11 +32,23 @@ with sync_playwright() as p:
         if state['numberedSteps']:assert state['numberedSteps']==33
         assert state['lang']==lang and state['theme']==theme
         assert state['visibleEnglish']==(lang=='en') and state['visibleChinese']==(lang=='zh')
+        flow_state=page.evaluate('''()=>{let language=document.documentElement.dataset.language,
+          wanted=language==='en'?'en':'zh-CN',other=language==='en'?'zh-CN':'en',
+          displays=Array.from(document.querySelectorAll('.derivation-flow .math-display'));
+          return {displays:displays.length,
+            missingVisibleExplanations:displays.filter(f=>{let previous=f.previousElementSibling,
+              prose=previous&&previous.querySelector('p[lang="'+wanted+'"]');
+              return !prose||getComputedStyle(prose).display==='none'||!prose.getBoundingClientRect().height||
+                !f.getBoundingClientRect().height||previous.getBoundingClientRect().bottom>f.getBoundingClientRect().top+2
+            }).map(f=>f.closest('.equation-unit').id),
+            wrongLanguageParagraphs:Array.from(document.querySelectorAll('.derivation-flow p[lang="'+other+'"]'))
+              .filter(n=>getComputedStyle(n).display!=='none').length}}''')
+        assert flow_state['displays']==267 and not flow_state['missingVisibleExplanations'] and not flow_state['wrongLanguageParagraphs'],flow_state
         layout=page.locator('.equation-unit').evaluate_all('''els=>els.map(e=>({
-          id:e.id,order:Array.from(e.children).map(x=>x.classList.contains('equation-heading')?'title':x.classList.contains('math-display')?'formulas':x.classList.contains('symbols')?'symbols':x.tagName.toLowerCase()),
+          id:e.id,order:Array.from(e.children).map(x=>x.classList.contains('equation-heading')?'title':x.classList.contains('derivation-flow')?'explanation-equation-flow':x.classList.contains('math-display')?'formulas':x.classList.contains('symbols')?'symbols':x.tagName.toLowerCase()),
           tables:e.querySelectorAll('table.symbol-definitions').length,
           columns:Math.max(...Array.from(e.querySelectorAll('table.symbol-definitions tr')).map(r=>r.cells.length))}))''')
-        assert all(x['order']==['title','formulas','symbols','figure'] and x['tables']==1 and x['columns']==2 for x in layout),layout
+        assert all(x['order']==['title','explanation-equation-flow','symbols','figure'] and x['tables']==1 and x['columns']==2 for x in layout),layout
         # Verify both toggle buttons and persistence after query-free navigation.
         page.locator('#language-toggle').click();page.locator('#theme-toggle').click()
         changed=page.evaluate('({lang:document.documentElement.dataset.language,theme:document.documentElement.dataset.theme})')
@@ -60,7 +72,7 @@ with sync_playwright() as p:
             for box in page.locator('.equation-unit').all():
                 box.screenshot(path=str(out/(box.get_attribute('id')+'.png')))
         assert not errors,errors
-        results.append({'case':name,**state,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
+        results.append({'case':name,**state,'visible_explanation_formula_flow':flow_state,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
         ctx.close()
     browser.close()
 name='relocated-browser.json' if target!=ROOT else 'browser.json'

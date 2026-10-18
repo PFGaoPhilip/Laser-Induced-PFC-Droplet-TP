@@ -18,7 +18,7 @@ def P(en, zh, cls=''):
 def H(en, zh, anchor, level=2):
     return f'<div class="heading-pair"><h{level} id="{escape(anchor)}" lang="en">{safe_inline_math(en)}</h{level}><h{level} lang="zh-CN" class="zh">{safe_inline_math(zh)}</h{level}></div>'
 
-def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, caption_zh, *, symbol_position='before'):
+def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, caption_zh, *, symbol_position='before', reasoning=None, reasoning_html=None):
     """Every display has bilingual local definitions and a variable figure.
 
     diagram: {type: sphere|energy|impulse|laser|phase|nucleation|array|jet|impact|film|cohesive|gel|timescale,
@@ -35,11 +35,23 @@ def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, captio
     displayed_zh=(f'({display_label}) · ' if equation_label(identifier)!=identifier else '')+escape(kind_zh)
     assert symbol_position in ('before', 'after')
     symbols = symbol_panel(identifier, P, symbol_position)
+    if reasoning_html is not None:
+        mathematics=reasoning_html
+    elif reasoning is None:
+        mathematics=f'<div class="math-display" data-tex="{escape(tex, quote=True)}"></div>'
+    else:
+        mathematics='<div class="derivation-flow">'
+        for part in reasoning:
+            mathematics+=P(part['en'],part['zh'],'derivation-reason')
+            mathematics+=(f'<div class="math-display" data-phase="{escape(part["phase"])}" '
+                          f'data-source-tex="{escape(part["source_tex"],quote=True)}" '
+                          f'data-tex="{escape(part["display_tex"],quote=True)}"></div>')
+        mathematics+='</div>'
     return (f'<section class="equation-unit" id="{escape(identifier)}" data-kind="{escape(kind)}">'
             + (symbols if symbol_position == 'before' else '')
             + f'<div class="lang-pair equation-heading inline-pair"><p lang="en">({display_label}) · {escape(kind)}</p>'
             + f' / <p lang="zh-CN" class="zh">{displayed_zh}</p></div>'
-            + f'<div class="math-display" data-tex="{escape(tex, quote=True)}"></div>'
+            + mathematics
             + (symbols if symbol_position == 'after' else '')
             + f'<figure class="formula-figure"><img src="../assets/figures/{label}.svg" alt="{escape(caption_en, quote=True)}" loading="lazy">'
             + '<figcaption>'+P(caption_en, caption_zh)+'</figcaption></figure></section>')

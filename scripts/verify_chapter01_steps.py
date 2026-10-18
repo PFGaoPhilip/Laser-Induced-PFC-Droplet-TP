@@ -5,6 +5,7 @@ import hashlib
 from collections import defaultdict
 from pathlib import Path
 from bs4 import BeautifulSoup
+from verify_chapter01_narrative import verify_source
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -18,6 +19,7 @@ def main():
     assert len({h['data-step-number'] for h in headings})==33
     assert [h['data-step-for'] for h in headings]==[u['id'] for u in units]
     sequences=defaultdict(list)
+    equation_records={r['id']:r for r in json.loads((ROOT/'verification/equations.json').read_text(encoding='utf-8'))}
     records=[]
     for heading,unit in zip(headings,units):
         number=heading['data-step-number']
@@ -34,8 +36,10 @@ def main():
             assert (text.count('.')>=2 if lang=='en' else text.count('。')>=2)
         assert unit.find_previous_sibling().get_text(strip=True).startswith('Derivation.')
         old=before.find(id=unit['id'])
-        assert str(unit.select_one('.math-display'))==str(old.select_one('.math-display'))
-        assert unit.select_one('.symbols').get_text()==old.select_one('.symbols').get_text()
+        verify_source(unit,equation_records[unit['id']])
+        oldrows=old.select('.symbols td.symbol-definition')
+        newrows=unit.select('.symbols td.symbol-definition')
+        assert [n.get_text() for n in newrows[:len(oldrows)]]==[n.get_text() for n in oldrows]
         records.append({'equation':unit['id'],'step':number,'objective':heading.select_one('[lang=en]').get_text(' ',strip=True),'purpose':purpose.select_one('p[lang=en]').get_text(' ',strip=True),'math_and_compact_symbols_preserved':True})
     for indices in sequences.values():assert indices==list(range(1,len(indices)+1))
     text=soup.get_text(' ',strip=True)

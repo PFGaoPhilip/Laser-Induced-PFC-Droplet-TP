@@ -1,5 +1,7 @@
 {
   "status": "passed",
+  "base_commit": "2b2628cb1ebf06a014f699e96a016007effb7a5c",
+  "chapter_sha256": "336c8f0d3dde745189d5481ce28523e877ccf7ef2084c79b9b9d8d3a25e76509",
   "numbered_steps": 33,
   "bilingual_objectives_and_purposes": 33,
   "subchapter_numbering_contiguous": true,
@@ -240,7 +242,5 @@
       "math_and_compact_symbols_preserved": true
     }
   ],
-  "scope": "Step coverage, ordering, numbering, original prose retention, and mathematical preservation. Purpose statements received an editorial self-review against the existing chapter.",
-  "base_commit": "2b2628cb1ebf06a014f699e96a016007effb7a5c",
-  "chapter_sha256": "8573a7dbaafb888274ce9e86f216ca86610377fb6c1d62f8e1ba38628ac5834b"
+  "scope": "Step coverage, ordering, numbering, original prose retention, and mathematical preservation. Purpose statements received an editorial self-review against the existing chapter."
 }

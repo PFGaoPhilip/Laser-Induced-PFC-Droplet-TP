@@ -1,0 +1,250 @@
+{
+  "status": "passed",
+  "groups": 33,
+  "original_handoff_groups": 22,
+  "original_handoff_passages": 23,
+  "matching_style_groups": 11,
+  "explanation_equation_pairs": 267,
+  "large_combined_derivation_displays": 0,
+  "equation_registry_records_preserved": 189,
+  "source_tex_token_coverage": "exact handoff display tokens; exact registry derivation/result tokens for supplements",
+  "source_prose_coverage": "all selected source prose characters retained; exact paragraph content and displayed sequence verified",
+  "bilingual_explanations_before_every_formula": true,
+  "chapter_sha256": "336c8f0d3dde745189d5481ce28523e877ccf7ef2084c79b9b9d8d3a25e76509",
+  "reference": "content/chapter01_handoff.json",
+  "equations": [
+    {
+      "id": "C1-E01",
+      "explanation_equation_pairs": 6,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E02",
+      "explanation_equation_pairs": 10,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E03",
+      "explanation_equation_pairs": 9,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E04",
+      "explanation_equation_pairs": 10,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E05",
+      "explanation_equation_pairs": 15,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E06",
+      "explanation_equation_pairs": 7,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E07",
+      "explanation_equation_pairs": 5,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E08",
+      "explanation_equation_pairs": 4,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E09",
+      "explanation_equation_pairs": 6,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E10",
+      "explanation_equation_pairs": 9,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E11",
+      "explanation_equation_pairs": 5,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E12",
+      "explanation_equation_pairs": 8,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E13",
+      "explanation_equation_pairs": 3,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E14",
+      "explanation_equation_pairs": 4,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E15",
+      "explanation_equation_pairs": 7,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E16",
+      "explanation_equation_pairs": 8,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E17",
+      "explanation_equation_pairs": 6,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E18",
+      "explanation_equation_pairs": 10,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E19",
+      "explanation_equation_pairs": 11,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E20",
+      "explanation_equation_pairs": 5,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E21",
+      "explanation_equation_pairs": 12,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E22",
+      "explanation_equation_pairs": 10,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E23",
+      "explanation_equation_pairs": 12,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E24",
+      "explanation_equation_pairs": 9,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E25",
+      "explanation_equation_pairs": 7,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E26",
+      "explanation_equation_pairs": 9,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E27",
+      "explanation_equation_pairs": 12,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E28",
+      "explanation_equation_pairs": 13,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E29",
+      "explanation_equation_pairs": 3,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E30",
+      "explanation_equation_pairs": 11,
+      "source": "preserved handoff passages",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E31",
+      "explanation_equation_pairs": 6,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E32",
+      "explanation_equation_pairs": 7,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    },
+    {
+      "id": "C1-E33",
+      "explanation_equation_pairs": 8,
+      "source": "matching-style supplement",
+      "all_source_math_retained": true,
+      "symbols_after_complete_derivation": true
+    }
+  ],
+  "scope": "Presentation, bilingual adjacency, exact selected-source prose/math preservation, and rendering. Source chains receive added explanations between unchanged rows. A single equality may wrap; simultaneous boundary data retain necessary rows. This audit does not establish new physical validation.",
+  "all_chapter_displays_covered": true
+}

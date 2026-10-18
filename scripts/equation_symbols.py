@@ -39,7 +39,7 @@ def symbol_panel(identifier,pair,position='before'):
             pair(f'<strong>Symbols {"for" if position == "after" else "before"} Eq. ({label}).</strong>',
                  f'<strong>式（{label}）{"的" if position == "after" else "前的"}符号定义。</strong>','symbol-panel-heading'),
             '<div class="symbol-table-scroll"><table class="symbol-definitions">',
-            '<thead class="visually-hidden"><tr><th scope="col">First individual definition / 第一项单独定义</th><th scope="col">Second individual definition / 第二项单独定义</th></tr></thead><tbody>']
+            '<thead class="visually-hidden"><tr><th scope="col"><span lang="en">First individual definition</span><span lang="zh-CN">第一项单独定义</span></th><th scope="col"><span lang="en">Second individual definition</span><span lang="zh-CN">第二项单独定义</span></th></tr></thead><tbody>']
     for index in range(0,len(rows),2):
         output.append('<tr>')
         for item in rows[index:index+2]:

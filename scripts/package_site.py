@@ -36,6 +36,7 @@ def main():
     selected.update(Path('sources')/name for name in ['Laser_PFC_Cavitation_Jet_Transfer_Course_EN.md','Cavitation_Course_Before_After_Comparison_EN_ZH.md'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'content').glob('*.py'))
     selected.add(Path('content/equation_symbol_rows.json'))
+    selected.add(Path('content/chapter01_handoff.json'))
     selected.add(Path('verification/chapter01-revision-20261019.json'))
     selected.add(Path('verification/GITHUB_PUBLICATION_AUTHORIZATION_20261019.json'))
     selected.update(Path('reports/ch1_defense_revision')/name for name in
@@ -45,6 +46,8 @@ def main():
         ['LAYOUT_REPORT.json','browser.json'])
     selected.update(Path('reports/ch1_steps_20261019')/name for name in
         ['STEPS_REPORT.json','browser.json'])
+    selected.update(Path('reports/ch1_interleaved_20261019')/name for name in
+        ['NARRATIVE_REPORT.json','browser.json','REQUIREMENTS_AND_EVIDENCE.md'])
     selected.update(p.relative_to(ROOT) for p in (ROOT/'scripts').glob('*') if p.is_file() and p.suffix in ['.py','.cjs'])
     if (DEST/'.git').exists():
         previous=json.loads(subprocess.check_output(['git','-C',str(DEST),'show','HEAD:PUBLIC_FILE_MANIFEST.json'],text=True,encoding='utf-8'))

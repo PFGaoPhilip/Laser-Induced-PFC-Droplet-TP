@@ -7,6 +7,8 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from chapter01_steps import STEPS
 from equation_symbols import relabel_chapter01_references
 from chapter01_step_roles import introduction, normalize_existing_steps
+from chapter01_narrative import narrative
+from chapter01_handoff import handoff_flow
 
 
 def eq(identifier, tex, en, zh, kind, typ, labels, notes, cap_en, cap_zh):
@@ -40,16 +42,19 @@ def eq(identifier, tex, en, zh, kind, typ, labels, notes, cap_en, cap_zh):
           &=(p_\infty-p_b-\sigma\kappa)/\rho+\tfrac12|\boldsymbol u|^2
              \quad(\boldsymbol X\in\Gamma).
         \end{aligned}'''
+    reasoning=narrative(identifier,steps['tex'],tex)
+    original_flow=handoff_flow(identifier,reasoning)
     tex = r"\begin{gathered}" + steps["tex"] + r"\\[6pt]" + tex + r"\end{gathered}"
     en += " " + steps["symbols_en"]
     zh += " " + steps["symbols_zh"]
     block = E(identifier, tex, en, zh, kind,
              {"type": typ, "labels": labels, "notes": notes}, cap_en, cap_zh,
-             symbol_position='after')
+             symbol_position='after',reasoning=reasoning,reasoning_html=original_flow)
     # The owner requests the existing compact symbol table after the formulas.
     # Additional derivation definitions are merged into equation_symbol_rows.json.
-    return (introduction(identifier)+P('<strong>Derivation.</strong> '+steps['en'],
-              '<strong>推导。</strong> '+steps['zh']) + block
+    derivation_intro=P('<strong>Derivation.</strong>','<strong>推导。</strong>') if original_flow else P(
+        '<strong>Derivation.</strong> '+steps['en'],'<strong>推导。</strong> '+steps['zh'])
+    return (introduction(identifier)+derivation_intro + block
             + P('<strong>Check and interpretation.</strong> '+steps['check_en'],
                 '<strong>检验与解释。</strong> '+steps['check_zh']))
 

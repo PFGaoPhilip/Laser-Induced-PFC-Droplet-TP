@@ -11,7 +11,7 @@ def main():
     chapter=next(c for c in chapters if c['number']==1)
     raw=BeautifulSoup(chapter['body'],'html.parser')
     units=raw.select('.equation-unit')
-    rendered=BeautifulSoup(render_html(''.join(str(u) for u in units)),'html.parser')
+    rendered=BeautifulSoup(render_html(''.join(str(u.find_previous_sibling())+str(u) for u in units)),'html.parser')
     path=ROOT/'chapters'/filename(chapter)
     soup=BeautifulSoup(path.read_text(encoding='utf-8'),'html.parser')
     for unit in rendered.select('.equation-unit'):
@@ -20,6 +20,11 @@ def main():
             if not getattr(node,'name',None):node.extract()
         oldunit=soup.find(id=unit['id'])
         assert oldunit is not None
+        old_intro=oldunit.find_previous_sibling()
+        new_intro=unit.find_previous_sibling()
+        assert old_intro.get_text(strip=True).startswith('Derivation.')
+        assert new_intro.get_text(strip=True).startswith('Derivation.')
+        old_intro.replace_with(new_intro)
         oldunit.replace_with(unit)
     path.write_bytes(str(soup).encode('utf-8'))
     (ROOT/'text'/filename(chapter).replace('.html','.md')).write_text(markdown_source(chapter),encoding='utf-8')

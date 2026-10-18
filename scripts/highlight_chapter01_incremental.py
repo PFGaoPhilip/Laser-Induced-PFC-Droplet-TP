@@ -7,6 +7,7 @@ constraints receive the same complete text/math/pair/idempotence audit.
 from collections import Counter
 import hashlib
 import json
+import sys
 from pathlib import Path
 from bs4 import BeautifulSoup
 import highlight_bilingual_terms as high
@@ -35,7 +36,7 @@ def main():
         return colors
     high.course_pages=lambda root:[Path(root)/REL]
     high.color_terms=extend_colors
-    oldpage=ROOT/'reports/ch1_steps_20261019/chapter_before.html'
+    oldpage=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else ROOT/'reports/ch1_steps_20261019/chapter_before.html'
     oldgroups=len(high.paragraph_groups(BeautifulSoup(oldpage.read_text(encoding='utf-8'),'html.parser')))
     partial=high.apply_to_course(ROOT)
     records={r['file']:r for r in saved['checks']}
@@ -48,7 +49,11 @@ def main():
     saved['checks']=list(records.values())
     saved['term_totals']=dict(sorted(totals.items()))
     saved['highlights']=sum(totals.values())
-    saved['paired_prose_groups_checked']+=partial['paired_prose_groups_checked']-oldgroups
+    # Recount the current complete inventory. A prior draft's paragraph count
+    # is insufficient evidence after source passages have been imported.
+    saved['paired_prose_groups_checked']=sum(len(high.paragraph_groups(
+        BeautifulSoup((ROOT/r['file']).read_text(encoding='utf-8'),'html.parser')))
+        for r in records.values())
     saved['strict_pair_audit']={'paired_blocks_checked':sum(r['paired_blocks_checked'] for r in pairs.values()),'one_sided_colored_terms_remaining':0,'pages':list(pairs.values())}
     saved['incremental_update']={'changed_page':REL,'unchanged_pages_verified_by_hash':len(records)-1,'prior_color_classes_never_merged':True,'changed_page_complete_highlighter_audit':True}
     path.write_text(json.dumps(saved,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

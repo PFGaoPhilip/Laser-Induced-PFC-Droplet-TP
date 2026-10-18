@@ -83,20 +83,101 @@ Superscripts denote powers unless stated otherwise. Bold symbols denote vectors 
 
 **本章作用。** 选定初始半径、壁面速度与远场条件。这些输入使第1.3节的径向动力学成为明确的初值问题。
 
-**Derivation.** Initial data are prescribed, rather than derived. The radial equation is second order, so radius and signed velocity are separate data. Choose time zero before activation, during growth, or at maximum radius. A stationary initial wall can accelerate. Evaluate the later momentum law at time zero to see why.
+**Derivation.**
 
-**推导。** 初始数据是给定条件，不能作为推导结果。径向方程是二阶方程，半径和带符号速度是独立初值。时间原点可选在激活前、增长中或最大半径处。初始静止的壁面仍能加速。将下文动量方程在零时刻取值即可说明原因。
+**推导。**
 
 (C1.2-E01) · Prescribed initial and boundary conditions / (C1.2-E01) · 给定的初始条件与边界条件
 
+In C1.2-E01, the symbol is **$\dot R(0)$**, not $R(0)$. The equation specifies two initial conditions: $R(0)=R_0>0$ (initial cavity radius) and $\dot R(0)=U_0$ (initial radial wall velocity).
+
+C1.2-E01 写的是 **$\dot R(0)$**，而不是 $R(0)$。它给出两个初始条件：$R(0)=R_0>0$（空腔初始半径），以及 $\dot R(0)=U_0$（空腔壁面的初始径向速度）。
+
+$U_0$ is **a general initial-condition parameter**, not a claim that the cavity must already be moving. The Rayleigh–Plesset equation is second-order in time, so the radius and wall velocity both need to be specified. Setting $U_0=0$ is fully allowed.
+
+$U_0$ **只是通用的初始条件参数**，并不意味着空腔在初始时刻必须运动。Rayleigh–Plesset 方程是关于时间的二阶方程，因此必须同时指定初始半径与初始壁面速度；完全可以令 $U_0=0$。
+
+The choice depends on the initial event. If time zero is **before activation, with the cavity at rest**, choose $U_0=0$; a subsequent pressure imbalance can still give $\ddot R(0)\ne0$. If time zero is **partway through growth or collapse**, $U_0$ may be nonzero (positive for expansion, negative for collapse). At the **maximum radius immediately before an ideal collapse**, $U_0=0$, precisely as specified in Section 1.5.
+
+具体取值取决于时间原点：如果从**空化激活之前的静止状态**开始，取 $U_0=0$，但随后压力不平衡仍可使 $\ddot R(0)\ne0$；如果从**已经发生的增长或塌缩过程中的某一时刻**开始，则 $U_0$ 可以不为零（增长为正、塌缩为负）；如果从**理想塌缩前的最大半径时刻**开始，则 $U_0=0$，这也正是第 1.5 节采用的条件。
+
+**Therefore, C1.2-E01 is the general formulation; zero initial velocity is a physically important special case, not a universal condition.** The value must be consistent with the chosen initial state and pressure history.
+
+**因此，C1.2-E01 给出一般形式，而初始速度为零是重要的物理特例，并不是普遍条件。** 初始值必须与所选时间原点及压力历程相容。
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Define wall speed and acceleration as successive time derivatives of radius.
+
+将壁面速度与加速度定义为半径的一阶和二阶时间导数。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \dot R&=dR/dt,\qquad \ddot R=d\dot R/dt,\\
-    \rho R_0\ddot R(0)&=p_b(0)-p_\infty(0)-2\sigma/R_0-4\mu U_0/R_0-\tfrac32\rho U_0^2,\\
-    U_0=0\quad&\Longrightarrow\quad
-    \ddot R(0)=\frac{p_b(0)-p_\infty(0)-2\sigma/R_0}{\rho R_0}.
-    \end{aligned}\\[6pt]\begin{gathered}R(0)=R_0>0\\ \dot R(0)=U_0\\ u(r,t)\to0,\quad p(r,t)\to p_\infty(t)\quad(r\to\infty)\end{gathered}\end{gathered}
+\begin{aligned}\dot R&=dR/dt,\qquad \ddot R=d\dot R/dt,\end{aligned}
+$$
+
+
+
+Evaluate the radial momentum law at the chosen initial instant. All pressure, capillary, viscous, and squared-speed terms remain present.
+
+在选定初始时刻计算径向动量关系。保留压力、毛细、黏性及速度平方各项。
+
+
+
+$$
+\begin{aligned}\rho R_0\ddot R(0)&=p_b(0)-p_\infty(0)-2\sigma/R_0-4\mu U_0/R_0-\tfrac32\rho U_0^2,\end{aligned}
+$$
+
+
+
+Set the initial wall speed to zero. The viscous and squared-speed terms vanish, but a pressure imbalance can still produce acceleration.
+
+令初始壁面速度为零。黏性项与速度平方项消失，但压力失衡仍可产生加速度。
+
+
+
+$$
+\begin{aligned}U_0=0\quad&\Longrightarrow\quad
+    \ddot R(0)=\frac{p_b(0)-p_\infty(0)-2\sigma/R_0}{\rho R_0}.\end{aligned}
+$$
+
+
+
+Prescribe a positive initial cavity radius.
+
+给定正的空腔初始半径。
+
+
+
+$$
+R(0)=R_0>0
+$$
+
+
+
+Prescribe initial wall speed separately; it may be zero.
+
+独立给定初始壁面速度，其值可以为零。
+
+
+
+$$
+\dot R(0)=U_0
+$$
+
+
+
+Complete the exterior problem with zero far-field velocity and prescribed far-field pressure.
+
+用零远场速度与给定远场压力补全外域问题。
+
+
+
+$$
+u(r,t)\to0,\quad p(r,t)\to p_\infty(t)\quad(r\to\infty)
 $$
 
 
@@ -151,18 +232,123 @@ The evolving spherical boundary and the prescribed far-field state.
 
 (C1.3-E02) · Exact continuity within the spherical model / (C1.3-E02) · 球形模型内的精确连续性关系
 
+A fixed spherical shell has constant liquid mass when density is constant and the shell remains entirely liquid.
+
+密度恒定且固定球壳始终属于液体时，壳内液体质量保持不变。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \frac{d}{dt}\left[\rho\frac{4\pi}{3}((r+\delta r)^3-r^3)\right]&=0,\\
-    4\pi\rho r^2u(r,t)-4\pi\rho(r+\delta r)^2u(r+\delta r,t)&=0,\\
-    \lim_{\delta r\to0}\frac{(r+\delta r)^2u(r+\delta r,t)-r^2u(r,t)}{\delta r}&=\partial_r(r^2u)=0,\\
-    0&=\frac{1}{r^2}\frac{\partial(r^2u)}{\partial r},\\
-    \frac{\partial(r^2u)}{\partial r}&=0
-      \quad\Longrightarrow\quad r^2u=C(t),\\
-    u(R,t)&=\dot R\quad\Longrightarrow\quad C(t)=R^2\dot R,\\
-    \frac{u(2R,t)}{\dot R}&=\frac{R^2}{(2R)^2}=\frac14\quad(\dot R\ne0).
-    \end{aligned}\\[6pt]\begin{gathered}\frac{1}{r^2}\frac{\partial(r^2u)}{\partial r}=0\ \Longrightarrow\ r^2u=C(t)\\ u(R,t)=\dot R\ \Longrightarrow\ C(t)=R^2\dot R\\ u(r,t)=\frac{R^2\dot R}{r^2}\end{gathered}\end{gathered}
+\begin{aligned}\frac{d}{dt}\left[\rho\frac{4\pi}{3}((r+\delta r)^3-r^3)\right]&=0,\end{aligned}
+$$
+
+
+
+Equate mass inflow at the inner surface to mass outflow at the outer surface. Both fluxes use outward radial velocity.
+
+令内球面的质量流入等于外球面的质量流出。两项通量均采用向外径向速度。
+
+
+
+$$
+\begin{aligned}4\pi\rho r^2u(r,t)-4\pi\rho(r+\delta r)^2u(r+\delta r,t)&=0,\end{aligned}
+$$
+
+
+
+Divide the flux difference by shell thickness and take its zero-thickness limit. This gives the radial derivative of the volume-flux factor.
+
+将通量差除以球壳厚度，再取厚度趋零极限。由此得到体积通量因子的径向导数。
+
+
+
+$$
+\begin{aligned}\lim_{\delta r\to0}\frac{(r+\delta r)^2u(r+\delta r,t)-r^2u(r,t)}{\delta r}&=\partial_r(r^2u)=0,\end{aligned}
+$$
+
+
+
+Divide by the positive squared radius to obtain the spherical divergence form of incompressibility.
+
+除以正的半径平方，得到不可压缩条件的球坐标散度形式。
+
+
+
+$$
+\begin{aligned}0&=\frac{1}{r^2}\frac{\partial(r^2u)}{\partial r},\end{aligned}
+$$
+
+
+
+Integrate with respect to radius at fixed time. The integration function may vary with time but cannot vary with radius.
+
+在固定时间对半径积分。积分函数可以随时间变化，但不能随半径变化。
+
+
+
+$$
+\begin{aligned}\frac{\partial(r^2u)}{\partial r}&=0
+      \quad\Longrightarrow\quad r^2u=C(t),\end{aligned}
+$$
+
+
+
+Apply equal liquid and interface normal speeds at the material cavity wall. This determines the integration function.
+
+在物质空腔壁面令液体与界面法向速度相等。由此确定积分函数。
+
+
+
+$$
+\begin{aligned}u(R,t)&=\dot R\quad\Longrightarrow\quad C(t)=R^2\dot R,\end{aligned}
+$$
+
+
+
+Check the inverse-square decay at twice the wall radius. The ratio is defined here for nonzero wall speed.
+
+在两倍壁面半径处检验平方反比衰减。此处速度比要求壁面速度非零。
+
+
+
+$$
+\begin{aligned}\frac{u(2R,t)}{\dot R}&=\frac{R^2}{(2R)^2}=\frac14\quad(\dot R\ne0).\end{aligned}
+$$
+
+
+
+The integrated continuity equation leaves a time-dependent radial flux factor.
+
+积分连续性方程后，留下随时间变化的径向通量因子。
+
+
+
+$$
+\frac{1}{r^2}\frac{\partial(r^2u)}{\partial r}=0\ \Longrightarrow\ r^2u=C(t)
+$$
+
+
+
+The material-wall condition fixes that factor.
+
+物质壁面条件确定该因子。
+
+
+
+$$
+u(R,t)=\dot R\ \Longrightarrow\ C(t)=R^2\dot R
+$$
+
+
+
+Divide by squared radius to recover the exterior velocity used below.
+
+除以半径平方，恢复下文所用外域速度。
+
+
+
+$$
+u(r,t)=\frac{R^2\dot R}{r^2}
 $$
 
 
@@ -205,24 +391,155 @@ Inverse-square velocity decay places the inertia in the surrounding carrier.
 
 **固定速度势参考值。** 从无穷远积分速度至观察点。速度势适用于空腔外域。令无穷远速度势为零，确定随时间变化的积分常数。
 
-**Derivation.** Purely radial, angle-independent flow has zero curl outside the cavity. The exterior of a sphere is simply connected, so a single-valued potential exists. Integrating velocity introduces an arbitrary time function. Fix that gauge at infinity. The potential packages the velocity field for the momentum integration; it supplies no extra physical degree of freedom.
+**Derivation.**
 
-**推导。** 纯径向且与角度无关的流动在空腔外旋度为零。球外域单连通，因此存在单值速度势。积分速度会引入任意时间函数。用无穷远处的参考值固定该规范。速度势便于积分动量方程，并不增加物理自由度。
+**推导。**
 
 (C1.3-E03) · Derived velocity potential / (C1.3-E03) · 推导得到的速度势
 
+#### 1. Why can we introduce a velocity potential?
+
+#### 为什么可以引入速度势？
+
+Under the assumptions of Chapter 1, the exterior liquid flow is spherically symmetric and purely radial. Its vorticity is zero. Therefore, a scalar velocity potential exists such that:
+
+在第一章的假设下，外部液体流动具有球对称性，而且只有径向速度分量，因此旋度为零。于是可以定义标量速度势：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \boldsymbol u&=u(r,t)\boldsymbol e_r,\qquad\nabla\times\boldsymbol u=\boldsymbol0,\\
-    \partial_r\phi&=u=R^2\dot R/r^2,\\
-    \phi(r,t)&=-R^2\dot R/r+g(t),\\
-    \phi(\infty,t)&=0\quad\Longrightarrow\quad g(t)=0,\\
-    \int_\infty^r s^{-2}\,ds&=[-s^{-1}]_\infty^r=-1/r-0.
-    \end{aligned}\\[6pt]\begin{gathered}\phi(r,t)=\int_\infty^r u(s,t)\,ds=R^2\dot R\int_\infty^r s^{-2}\,ds=-\frac{R^2\dot R}{r}\\ \frac{\partial\phi}{\partial r}=u\end{gathered}\end{gathered}
+\boxed{\boldsymbol u=\nabla\phi}
 $$
 
 
+
+From C1.3-E02, incompressibility gives:
+
+根据 C1.3-E02，不可压缩条件给出：
+
+
+
+$$
+u(r,t)=\frac{R^2\dot R}{r^2}
+$$
+
+
+
+Integrating with respect to $r$, and choosing $\phi(\infty,t)=0$, we obtain C1.3-E03:
+
+对 $r$ 积分，并选择 $\phi(\infty,t)=0$，便得到 C1.3-E03：
+
+
+
+$$
+\boxed{\phi(r,t)=-\frac{R^2\dot R}{r}}
+$$
+
+
+
+Thus, the potential is simply another mathematical representation of the velocity field already obtained from mass conservation.
+
+因此，速度势只是对已经通过质量守恒得到的速度场进行另一种数学表示。
+
+#### 2. What does it simplify?
+
+#### 它简化了什么？
+
+The radial Euler momentum equation contains both local acceleration and convective acceleration:
+
+径向欧拉动量方程同时包含局部加速度和对流加速度：
+
+
+
+$$
+\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial r}=-\frac{1}{\rho}\frac{\partial p}{\partial r}
+$$
+
+
+
+Using $\boldsymbol u=\nabla\phi$ for irrotational flow allows us to integrate this equation into the unsteady Bernoulli relation:
+
+对于无旋流动，利用 $\boldsymbol u=\nabla\phi$，可以将其积分为非定常伯努利关系：
+
+
+
+$$
+\boxed{\frac{\partial\phi}{\partial t}+\frac12|\nabla\phi|^2+\frac{p}{\rho}=\frac{p_\infty}{\rho}}
+$$
+
+
+
+Here, the time derivative is taken at a fixed spatial position, and the right-hand side follows from the zero-potential, zero-velocity reference at infinity.
+
+这里的时间偏导数是在固定空间位置计算的，右端则由无穷远处速度势和速度均为零的参考条件确定。
+
+Substituting C1.3-E03 and evaluating at the moving cavity boundary $r=R(t)$, we obtain:
+
+将 C1.3-E03 代入，并在运动空腔边界 $r=R(t)$ 处取值，可得：
+
+
+
+$$
+\begin{aligned}\left.\frac{\partial\phi}{\partial t}\right|_{r=R}&=-(2\dot R^2+R\ddot R),\end{aligned}
+$$
+
+
+
+Use the material-wall condition to identify liquid speed at the interface.
+
+利用物质壁面的运动学条件确定界面处液体速度。
+
+
+
+$$
+\begin{aligned}u(R,t)&=\dot R,\end{aligned}
+$$
+
+
+
+Evaluate Bernoulli at the wall and isolate the pressure difference.
+
+在壁面计算伯努利关系，并解出压力差。
+
+
+
+$$
+\begin{aligned}\frac{p_l-p_\infty}{\rho}&=-\left.\frac{\partial\phi}{\partial t}\right|_{r=R}-\frac12\dot R^2\end{aligned}
+$$
+
+
+
+Insert the fixed-position derivative and combine the squared-speed terms.
+
+代入固定位置导数，并合并速度平方项。
+
+
+
+$$
+\begin{aligned}\frac{p_l-p_\infty}{\rho}&=\boxed{R\ddot R+\frac32\dot R^2}.\end{aligned}
+$$
+
+
+
+This is C1.3-E05, which directly supplies the liquid-inertia term of the Rayleigh–Plesset equation.
+
+这就是 C1.3-E05，它直接给出了 Rayleigh–Plesset 方程中的液体惯性项。
+
+#### 3. Is the velocity potential necessary?
+
+#### 速度势是必需的吗？
+
+**No.** We can substitute C1.3-E02 directly into the radial Euler equation and integrate the pressure gradient from the cavity surface to infinity. The resulting pressure–inertia equation is identical.
+
+**不是必需的。** 我们完全可以将 C1.3-E02 直接代入径向欧拉方程，再从空腔表面积分压力梯度至无穷远，得到完全相同的压力—惯性关系。
+
+The advantage of $\phi$ is mathematical convenience. It also provides a natural formulation for the potential-flow models later used to examine bubble interactions and nonspherical jet formation. Those applications require their own boundary conditions and do not establish that every cavitation flow is irrotational.
+
+速度势的优势在于数学上的便利性。它还为后续研究气泡相互作用以及非球对称射流形成的势流模型提供了自然的数学框架。但这些应用需要各自的边界条件，不能据此认为所有空化流动都满足无旋条件。
+
+**Defense conclusion:** C1.3-E03 is a mathematical bridge from the incompressible velocity field to the pressure–inertia relationship. It simplifies the derivation but is not indispensable, and its validity depends on the irrotational-flow assumption.
+
+**答辩结论：** C1.3-E03 是连接不可压缩速度场与压力—惯性关系的数学桥梁。它能简化推导，但并非不可替代，其适用性依赖于无旋流动假设。
 
 **Symbols for Eq. (C1.3-E03).**
 
@@ -236,6 +553,10 @@ $$
 | $\dot R$ is wall speed (m s⁻¹)<br>$\dot R$ 为壁面速度（m s⁻¹） | $\boldsymbol u$ — liquid velocity vector (m s⁻¹)<br>$\boldsymbol u$ — 液体速度矢量（m s⁻¹） |
 | $\boldsymbol e_r$ — outward radial unit vector (1)<br>$\boldsymbol e_r$ — 向外径向单位矢量（1） | $\nabla\times$ — spatial curl operator (m⁻¹)<br>$\nabla\times$ — 空间旋度算子（m⁻¹） |
 | $\boldsymbol0$ — zero vorticity vector (s⁻¹)<br>$\boldsymbol0$ — 零涡量矢量（s⁻¹） | $g(t)$ — velocity-potential gauge function (m² s⁻¹)<br>$g(t)$ — 速度势规范函数（m² s⁻¹） |
+| $\rho$ — constant carrier density (kg m⁻³)<br>$\rho$ — 恒定载液密度（kg m⁻³） | $p$ — local liquid pressure (Pa)<br>$p$ — 局部液体压强（Pa） |
+| $p_\infty$ — far-field pressure (Pa)<br>$p_\infty$ — 远场压强（Pa） | $p_l$ — liquid-side wall pressure (Pa)<br>$p_l$ — 壁面液体侧压强（Pa） |
+| $\ddot R$ — wall acceleration (m s⁻²)<br>$\ddot R$ — 壁面加速度（m s⁻²） | $\nabla$ — spatial gradient (m⁻¹)<br>$\nabla$ — 空间梯度（m⁻¹） |
+| $\partial_t$ — time derivative at fixed position (s⁻¹)<br>$\partial_t$ — 固定位置时间导数（s⁻¹） |  |
 
 **Conventions and conditions.** the integral is an improper integral convergent for $r\ge R>0$; $\partial/\partial r$ is the fixed-time spatial derivative.
 
@@ -263,21 +584,133 @@ The potential reference is fixed at infinity before differentiation.
 
 **在固定位置求导。** 保持速度势分母不变，对分子求时间导数。随后在运动壁面处取值。直接对壁面取值求导会包含对流贡献。
 
-**Derivation.** Differentiate the product in the numerator before evaluating at the wall. For a moving wall value, add the chain-rule displacement term. These operations differ because the observation points differ.
+**Derivation.**
 
-**推导。** 先对分子乘积求导，再在壁面取值。对运动壁面处的取值求导时，需要加入链式法则的位移项。两种操作的观察点不同。
+**推导。**
 
 (C1.3-E04) · Exact Eulerian and moving-point derivatives / (C1.3-E04) · 精确的欧拉导数与运动点导数
 
+From C1.3-E03,
+
+根据 C1.3-E03：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \frac{d(R^2\dot R)}{dt}&=2R\dot R\dot R+R^2\ddot R,\\
-    \frac{d\phi(R(t),t)}{dt}&=\left.\partial_t\phi\right|_{r=R}
-       +\dot R\left.\partial_r\phi\right|_{r=R},\\
-    &=-(2\dot R^2+R\ddot R)+\dot R\dot R\\
-    &=-\dot R^2-R\ddot R.
-    \end{aligned}\\[6pt]\begin{gathered}\left.\frac{\partial\phi}{\partial t}\right|_r=-\frac{2R\dot R^2+R^2\ddot R}{r}\\ \left.\frac{\partial\phi}{\partial t}\right|_{r=R}=-(2\dot R^2+R\ddot R)\\ \frac{d\phi(R(t),t)}{dt}=-\dot R^2-R\ddot R\end{gathered}\end{gathered}
+\phi(r,t)=-\frac{R^2\dot R}{r}.
+$$
+
+
+
+Differentiating with respect to time **at fixed $r$** gives
+
+在**固定 $r$** 的条件下对时间求偏导：
+
+
+
+$$
+\frac{\partial\phi}{\partial t}=-\frac{2R\dot R^2+R^2\ddot R}{r}.
+$$
+
+
+
+Then evaluating at $r=R(t)$,
+
+随后在 $r=R(t)$ 处取值：
+
+
+
+$$
+\left.\frac{\partial\phi}{\partial t}\right|_{r=R}=-2\dot R^2-R\ddot R. \tag{8}
+$$
+
+
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Apply the product rule to the radius-squared times wall-speed numerator. Both radius factors depend on time.
+
+对半径平方与壁面速度的乘积应用乘积法则。两个半径因子均随时间变化。
+
+
+
+$$
+\begin{aligned}\frac{d(R^2\dot R)}{dt}&=2R\dot R\dot R+R^2\ddot R,\end{aligned}
+$$
+
+
+
+Apply the chain rule along the moving wall. The total derivative includes the fixed-position derivative and the radial transport term.
+
+沿运动壁面应用链式法则。全导数包含固定位置导数与径向输运项。
+
+
+
+$$
+\begin{aligned}\frac{d\phi(R(t),t)}{dt}&=\left.\partial_t\phi\right|_{r=R}
+       +\dot R\left.\partial_r\phi\right|_{r=R},\end{aligned}
+$$
+
+
+
+Insert the fixed-position potential derivative and the wall velocity. The transport contribution is the squared wall speed.
+
+代入固定位置速度势导数及壁面速度。输运项为壁面速度的平方。
+
+
+
+$$
+\begin{aligned}\frac{d\phi(R(t),t)}{dt}&=-(2\dot R^2+R\ddot R)+\dot R\dot R\end{aligned}
+$$
+
+
+
+Combine the two squared-speed contributions. This gives the moving-wall derivative, which differs from the fixed-position derivative.
+
+合并两个速度平方项。由此得到运动壁面导数，它与固定位置导数不同。
+
+
+
+$$
+\begin{aligned}\frac{d\phi(R(t),t)}{dt}&=-\dot R^2-R\ddot R.\end{aligned}
+$$
+
+
+
+Hold the observation radius fixed while differentiating the potential.
+
+对速度势求导时保持观察半径固定。
+
+
+
+$$
+\left.\frac{\partial\phi}{\partial t}\right|_r=-\frac{2R\dot R^2+R^2\ddot R}{r}
+$$
+
+
+
+Evaluate this fixed-position derivative at the instantaneous wall radius.
+
+在瞬时壁面半径处计算该固定位置导数。
+
+
+
+$$
+\left.\frac{\partial\phi}{\partial t}\right|_{r=R}=-(2\dot R^2+R\ddot R)
+$$
+
+
+
+Keep the moving-wall total derivative distinct when it is used later.
+
+后续使用时，须区分沿运动壁面的全导数。
+
+
+
+$$
+\frac{d\phi(R(t),t)}{dt}=-\dot R^2-R\ddot R
 $$
 
 
@@ -318,35 +751,223 @@ A fixed liquid observation point and a moving interface point have different tim
 
 **积分径向动量。** 外域流场无旋，矢量拉普拉斯为零，因而体内黏性力为零。壁面黏性应力和耗散仍存在。以无穷远为参考应用非定常伯努利方程。代入固定位置导数与壁面速度。二减去二分之一得到惯性项系数。
 
-**Derivation.** Start from exterior Euler momentum. In this radial field the bulk viscous term vanishes, so this momentum form also applies outside the viscous traction boundary. Irrotationality turns convection into a kinetic-energy gradient. Integrate the resulting zero gradient over the connected liquid domain. The spatial integration function depends on time. The gauge and far-field condition determine it. Then evaluate at the wall.
+**Derivation.**
 
-**推导。** 从外域欧拉动量方程出发。此径向流场的体黏性项为零，因此在黏性牵引边界之外仍可采用该动量形式。无旋条件将对流项写成动能梯度。在连通液体域中积分零梯度，得到随时间变化的空间积分函数。规范与远场条件确定该函数，随后在壁面取值。
+**推导。**
 
 (C1.3-E05) · Derived inertial pressure / (C1.3-E05) · 推导得到的惯性压力
 
+#### 1. Derive unsteady Bernoulli from momentum conservation
+
+#### 1. 从动量守恒推导非定常伯努利方程
+
+Under the chapter's assumptions of constant liquid density, incompressibility, spherical symmetry, irrotational flow, and no body force, the bulk radial momentum equation is
+
+在本章采用的恒定液体密度、不可压缩、球对称、无旋流动及无体积力假设下，流体内部的径向动量方程为：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \nabla^2\boldsymbol u&=\nabla(\nabla\cdot\boldsymbol u)-\nabla\times(\nabla\times\boldsymbol u)=\boldsymbol0,\\
-    \partial_t\boldsymbol u+(\boldsymbol u\cdot\nabla)\boldsymbol u&=-\nabla p/\rho,\\
-    \sum_{j=1}^3u_j\partial_j u_i&=\sum_{j=1}^3u_j\partial_i u_j
-       =\partial_i\left(\tfrac12\sum_{j=1}^3u_j^2\right)\quad(i=1,2,3),\\
-    \boldsymbol u=\nabla\phi,\quad(\boldsymbol u\cdot\nabla)\boldsymbol u
-      &=\nabla(|\boldsymbol u|^2/2),\\
-    \nabla\left(\partial_t\phi+|\nabla\phi|^2/2+p/\rho\right)&=\boldsymbol0,\\
-    \partial_t\phi+|\nabla\phi|^2/2+p/\rho&=B_0(t),\\
-    \phi_\infty=0,\quad\boldsymbol u_\infty=\boldsymbol0
-      &\quad\Longrightarrow\quad B_0(t)=p_\infty(t)/\rho,\\
-    \partial_t\phi+\tfrac12|\nabla\phi|^2+p/\rho&=p_\infty/\rho,\\
-    (p_l-p_\infty)/\rho&=-\partial_t\phi|_{r=R}-\tfrac12\dot R^2.
-    \end{aligned}\\[6pt]\begin{aligned}
-        (p_l-p_\infty)/\rho&=-\partial_t\phi|_{r=R}-u(R,t)^2/2\\
-          &=2\dot R^2+R\ddot R-\dot R^2/2\\
-          &=R\ddot R+\tfrac32\dot R^2.
-        \end{aligned}\end{gathered}
+\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial r}=-\frac{1}{\rho}\frac{\partial p}{\partial r}. \tag{1}
 $$
 
 
+
+The bulk viscous-force term vanishes for this velocity field, although viscous normal stress remains at the cavity interface. From C1.3-E03, $u=\partial\phi/\partial r$. Therefore,
+
+对于这里的速度场，流体内部的黏性体积力项为零，但空腔界面处仍存在黏性法向应力。根据 C1.3-E03，$u=\partial\phi/\partial r$，因此：
+
+
+
+$$
+\frac{\partial u}{\partial t}=\frac{\partial}{\partial r}\left(\frac{\partial\phi}{\partial t}\right), \tag{2}
+$$
+
+
+
+and
+
+以及：
+
+Apply the spatial chain rule to one half of the squared radial speed.
+
+对径向速度平方的一半应用空间链式法则。
+
+
+
+$$
+u\frac{\partial u}{\partial r}=\frac{\partial}{\partial r}\left(\frac{u^2}{2}\right). \tag{3}
+$$
+
+
+
+Substituting (2) and (3) into (1):
+
+将式 (2)、(3) 代入式 (1)：
+
+
+
+$$
+\frac{\partial}{\partial r}\left(\frac{\partial\phi}{\partial t}+\frac{u^2}{2}+\frac{p}{\rho}\right)=0. \tag{4}
+$$
+
+
+
+Integrating with respect to $r$, we obtain a function that can depend on time:
+
+对 $r$ 积分，得到一个可以随时间变化的积分函数：
+
+
+
+$$
+\boxed{\frac{\partial\phi}{\partial t}+\frac{u^2}{2}+\frac{p}{\rho}=C(t).} \tag{5}
+$$
+
+
+
+This is the unsteady Bernoulli equation for the present potential flow.
+
+这才是本问题所用的非定常伯努利方程。
+
+#### 2. Determine the integration function using the far-field condition
+
+#### 2. 用远场边界条件确定积分函数
+
+C1.2-E01 and C1.3-E03 prescribe
+
+C1.2-E01 和 C1.3-E03 已经规定：
+
+
+
+$$
+\begin{cases}u(\infty,t)=0,\\p(\infty,t)=p_\infty(t),\\\phi(\infty,t)=0.\end{cases}
+$$
+
+
+
+Because the potential at infinity is identically zero at all times, its time derivative there also vanishes. Evaluating (5) at infinity gives
+
+由于无穷远处的速度势在所有时刻均为零，其时间导数也为零。因此在无穷远处对式 (5) 取值：
+
+
+
+$$
+0+0+\frac{p_\infty(t)}{\rho}=C(t).
+$$
+
+
+
+Consequently,
+
+因此：
+
+Insert the far-field value of the integration function and use velocity as the potential gradient.
+
+代入积分函数的远场值，并将速度写成速度势的梯度。
+
+
+
+$$
+\boxed{\frac{\partial\phi}{\partial t}+\frac12|\nabla\phi|^2+\frac{p}{\rho}=\frac{p_\infty(t)}{\rho}.} \tag{6}
+$$
+
+
+
+**This is precisely the equation you identified. It should appear explicitly between C1.3-E03/C1.3-E04 and C1.3-E05.**
+
+**这正是您指出的那个公式。它应当明确出现在 C1.3-E03/C1.3-E04 与 C1.3-E05 之间。**
+
+#### 3. Recover C1.3-E05 at the moving cavity boundary
+
+#### 3. 在运动空腔边界恢复 C1.3-E05
+
+Rearranging equation (6) and evaluating it at $r=R(t)$, where liquid pressure is $p_l$, gives
+
+整理式 (6)，并在 $r=R(t)$ 的运动边界处取值，此处液体压力为 $p_l$，得到：
+
+
+
+$$
+\frac{p_l-p_\infty}{\rho}=-\left.\frac{\partial\phi}{\partial t}\right|_{r=R}-\frac12u(R,t)^2. \tag{7}
+$$
+
+
+
+From C1.3-E03,
+
+根据 C1.3-E03：
+
+
+
+$$
+\phi(r,t)=-\frac{R^2\dot R}{r}.
+$$
+
+
+
+Differentiating with respect to time **at fixed $r$** gives
+
+在**固定 $r$** 的条件下对时间求偏导：
+
+
+
+$$
+\frac{\partial\phi}{\partial t}=-\frac{2R\dot R^2+R^2\ddot R}{r}.
+$$
+
+
+
+Then evaluating at $r=R(t)$,
+
+随后在 $r=R(t)$ 处取值：
+
+
+
+$$
+\left.\frac{\partial\phi}{\partial t}\right|_{r=R}=-2\dot R^2-R\ddot R. \tag{8}
+$$
+
+
+
+The kinematic boundary condition supplies $u(R,t)=\dot R$. Substitution into equation (7) yields
+
+运动学边界条件给出 $u(R,t)=\dot R$。将其与式 (8) 代入式 (7)：
+
+
+
+$$
+\begin{aligned}\frac{p_l-p_\infty}{\rho}&=-(-2\dot R^2-R\ddot R)-\frac12\dot R^2\end{aligned}
+$$
+
+
+
+Remove the outer minus sign while retaining the kinetic contribution.
+
+展开外部负号，同时保留动能项。
+
+
+
+$$
+\begin{aligned}\frac{p_l-p_\infty}{\rho}&=R\ddot R+2\dot R^2-\frac12\dot R^2\end{aligned}
+$$
+
+
+
+Combine two minus one half to obtain three halves.
+
+将二减去二分之一合并为二分之三。
+
+
+
+$$
+\begin{aligned}\frac{p_l-p_\infty}{\rho}&=\boxed{R\ddot R+\frac32\dot R^2}.\end{aligned}
+$$
+
+
+
+This reproduces C1.3-E05 exactly. The coefficient $3/2$ follows from the acceleration and kinetic-energy contributions; it is not an empirical coefficient.
+
+这就完整恢复了 C1.3-E05。系数 $3/2$ 来自加速度项和动能项的合并，并不是经验系数。
 
 **Symbols for Eq. (C1.3-E05).**
 
@@ -366,6 +987,7 @@ $$
 | $j$ — Cartesian component index, 1, 2 or 3 (1)<br>$j$ — 笛卡尔分量指标，取 1、2 或 3（1） | $\partial_i$ — coordinate derivative indexed by $i$ (m⁻¹)<br>$\partial_i$ — 指标 $i$ 对应的坐标导数（m⁻¹） |
 | $\partial_j$ — coordinate derivative indexed by $j$ (m⁻¹)<br>$\partial_j$ — 指标 $j$ 对应的坐标导数（m⁻¹） | $\sum$ — summation over the indicated index (1)<br>$\sum$ — 对指定指标求和（1） |
 | $B_0(t)$ — Bernoulli integration function (m² s⁻²)<br>$B_0(t)$ — 伯努利积分函数（m² s⁻²） | $p$ — local liquid pressure (Pa)<br>$p$ — 局部液体压力（Pa） |
+| $C(t)$ — Bernoulli integration function; same role as $B_0(t)$ (m² s⁻²)<br>$C(t)$ — 伯努利积分函数；与 $B_0(t)$ 作用相同（m² s⁻²） |  |
 
 **Conventions and conditions.** $\partial_t$ is taken at fixed position before wall evaluation; Zero vorticity gives $\partial_j u_i=\partial_i u_j$; smooth fields permit derivative exchange; $|\ |$ denotes Euclidean magnitude; $\infty$ denotes the far-field limit.
 
@@ -399,17 +1021,88 @@ Liquid inertia relates the interface pressure to wall acceleration and squared s
 
 (C1.3-E06) · Newtonian stress and capillary boundary condition / (C1.3-E06) · 牛顿流体应力与毛细边界条件
 
+The liquid-to-gas normal of an inner spherical cavity points inward. Extend it radially without radial variation to evaluate its divergence.
+
+内球形空腔的液体指向气体法向朝内。沿径向作不变延拓，以计算其散度。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \boldsymbol n&=-\boldsymbol e_r,\qquad
+\begin{aligned}\boldsymbol n&=-\boldsymbol e_r,\qquad
     \nabla_s\cdot\boldsymbol n=\nabla\cdot\boldsymbol n
-      =\frac1{r^2}\partial_r(-r^2)=-2/r,\\
-    \kappa&=(\nabla_s\cdot\boldsymbol n)|_{r=R}=-2/R,\\
-    p_l-p_b&=\sigma\kappa+2\mu\partial_r u|_{r=R},\\
-    \partial_r(R^2\dot R r^{-2})&=-2R^2\dot R r^{-3},\\
-    2\mu\partial_r u|_{r=R}&=2\mu(-2\dot R/R)=-4\mu\dot R/R.
-    \end{aligned}\\[6pt]\begin{gathered}\left.\frac{\partial u}{\partial r}\right|_{r=R}=\left.-\frac{2R^2\dot R}{r^3}\right|_{r=R}=-\frac{2\dot R}{R}\\ p_l=p_b-\frac{2\sigma}{R}+2\mu\left.\frac{\partial u}{\partial r}\right|_{r=R}=p_b-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}\end{gathered}\end{gathered}
+      =\frac1{r^2}\partial_r(-r^2)=-2/r,\end{aligned}
+$$
+
+
+
+Evaluate the normal divergence at the wall. The chosen orientation gives negative spherical curvature.
+
+在壁面处计算法向散度。所选方向给出负的球形曲率。
+
+
+
+$$
+\begin{aligned}\kappa&=(\nabla_s\cdot\boldsymbol n)|_{r=R}=-2/R,\end{aligned}
+$$
+
+
+
+Project the normal-stress jump onto the interface normal. Keep capillary pressure and liquid normal viscous stress.
+
+将法向应力跃变投影至界面法向。保留毛细压力与液体法向黏性应力。
+
+
+
+$$
+\begin{aligned}p_l-p_b&=\sigma\kappa+2\mu\partial_r u|_{r=R},\end{aligned}
+$$
+
+
+
+Differentiate the radial velocity while holding the instantaneous wall radius and wall speed fixed.
+
+对径向速度求空间导数，同时保持该时刻的壁面半径与速度不变。
+
+
+
+$$
+\begin{aligned}\partial_r(R^2\dot R r^{-2})&=-2R^2\dot R r^{-3},\end{aligned}
+$$
+
+
+
+Evaluate that derivative at the wall and multiply by twice the viscosity. This supplies the viscous pressure correction.
+
+在壁面处计算该导数，并乘以两倍黏度。由此得到黏性压力修正。
+
+
+
+$$
+\begin{aligned}2\mu\partial_r u|_{r=R}&=2\mu(-2\dot R/R)=-4\mu\dot R/R.\end{aligned}
+$$
+
+
+
+Collect the evaluated wall velocity gradient.
+
+汇总在壁面处计算的速度梯度。
+
+
+
+$$
+\left.\frac{\partial u}{\partial r}\right|_{r=R}=\left.-\frac{2R^2\dot R}{r^3}\right|_{r=R}=-\frac{2\dot R}{R}
+$$
+
+
+
+Insert that gradient and spherical curvature into liquid-side wall pressure.
+
+将该梯度与球形曲率代入壁面液体侧压力。
+
+
+
+$$
+p_l=p_b-\frac{2\sigma}{R}+2\mu\left.\frac{\partial u}{\partial r}\right|_{r=R}=p_b-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}
 $$
 
 
@@ -460,15 +1153,63 @@ Capillary and viscous stresses act at the interface even when the radial bulk vi
 
 (C1.3-E07) · Rayleigh–Plesset under the declared assumptions / (C1.3-E07) · 所述假设下的 Rayleigh–Plesset 方程
 
+Start with the liquid-side pressure–inertia relation obtained from Bernoulli.
+
+从伯努利关系得到的液体侧压力—惯性关系出发。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \rho(R\ddot R+\tfrac32\dot R^2)&=p_l-p_\infty,\\
-    p_l-p_\infty&=(p_b-2\sigma/R-4\mu\dot R/R)-p_\infty,\\
-    \ddot R&=\frac{p_b-p_\infty-2\sigma/R-4\mu\dot R/R}{\rho R}
-       -\frac{3\dot R^2}{2R},\\
-    \dot R=\ddot R=0&\quad\Longrightarrow\quad p_b-p_\infty=2\sigma/R.
-    \end{aligned}\\[6pt]\rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}\end{gathered}
+\begin{aligned}\rho(R\ddot R+\tfrac32\dot R^2)&=p_l-p_\infty,\end{aligned}
+$$
+
+
+
+Replace liquid-side wall pressure with bubble pressure minus the capillary and viscous corrections.
+
+用气泡压力减去毛细与黏性修正，替代壁面液体侧压力。
+
+
+
+$$
+\begin{aligned}p_l-p_\infty&=(p_b-2\sigma/R-4\mu\dot R/R)-p_\infty,\end{aligned}
+$$
+
+
+
+Divide by positive density and radius, then isolate acceleration. The squared-speed term must also be subtracted.
+
+除以正的密度与半径，再解出加速度。还必须减去速度平方项。
+
+
+
+$$
+\begin{aligned}\ddot R&=\frac{p_b-p_\infty-2\sigma/R-4\mu\dot R/R}{\rho R}
+       -\frac{3\dot R^2}{2R},\end{aligned}
+$$
+
+
+
+Set both speed and acceleration to zero. The remaining pressure excess must equal the spherical capillary pressure.
+
+令速度与加速度均为零。剩余内外压差必须等于球形毛细压力。
+
+
+
+$$
+\begin{aligned}\dot R=\ddot R=0&\quad\Longrightarrow\quad p_b-p_\infty=2\sigma/R.\end{aligned}
+$$
+
+
+
+Equating interface pressure with liquid inertia gives the complete constant-property spherical motion law.
+
+令界面压力与液体惯性相等，得到完整的常物性球形运动规律。
+
+
+
+$$
+\rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}
 $$
 
 
@@ -516,14 +1257,51 @@ Every term has pressure units: density × length × acceleration, tension/radius
 
 (C1.3-E08) · Pressure composition requiring thermodynamic closure / (C1.3-E08) · 需要热力学闭合的压力组成关系
 
+Adopt an ideal-mixture component equation of state with common gas temperature and positive bubble volume.
+
+采用具有共同气体温度与正气泡体积的理想混合物组分状态方程。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    p_iV_b&=n_i\mathcal R T_b\quad (i\in\{v,\mathrm{PFC};v,w;g\}),\\
-    p_bV_b&=\left(n_{v,\mathrm{PFC}}+n_{v,w}+n_g\right)\mathcal R T_b,\\
-    p_b&=\frac{n_{v,\mathrm{PFC}}\mathcal R T_b}{V_b}
-      +\frac{n_{v,w}\mathcal R T_b}{V_b}+\frac{n_g\mathcal R T_b}{V_b}.
-    \end{aligned}\\[6pt]p_b=p_{v,\mathrm{PFC}}+p_{v,w}+p_g\end{gathered}
+\begin{aligned}p_iV_b&=n_i\mathcal R T_b\quad (i\in\{v,\mathrm{PFC};v,w;g\}),\end{aligned}
+$$
+
+
+
+Sum the component equations. The total amount is the sum of PFC vapor, water vapor, and permanent-gas amounts.
+
+对各组分状态方程求和。总物质的量为 PFC 蒸气、水蒸气及非凝结气体物质的量之和。
+
+
+
+$$
+\begin{aligned}p_bV_b&=\left(n_{v,\mathrm{PFC}}+n_{v,w}+n_g\right)\mathcal R T_b,\end{aligned}
+$$
+
+
+
+Divide by bubble volume and separate the three terms. Each term is the corresponding partial pressure.
+
+除以气泡体积，并将三项分开。每一项均为相应组分的分压。
+
+
+
+$$
+\begin{aligned}p_b&=\frac{n_{v,\mathrm{PFC}}\mathcal R T_b}{V_b}
+      +\frac{n_{v,w}\mathcal R T_b}{V_b}+\frac{n_g\mathcal R T_b}{V_b}.\end{aligned}
+$$
+
+
+
+Identify each equation-of-state contribution as a partial pressure. Their sum is the bubble pressure used by the radial model.
+
+将每一项状态方程贡献识别为分压。其总和为径向模型所用气泡压力。
+
+
+
+$$
+p_b=p_{v,\mathrm{PFC}}+p_{v,w}+p_g
 $$
 
 
@@ -574,24 +1352,91 @@ A fixed-mass polytropic gas control requires its stated thermal assumptions. Eva
 
 **积分外域动能。** 将式（C1.3-E02）的速度平方，乘以球形体积微元并积分。平方反比积分在无限外域收敛。壁面之外的载液构成运动惯性。
 
-**Derivation.** At a fixed instant, integrate energy over the whole exterior. Angular integration supplies the shell area. The lower bound is the current interface. Replace speed by the continuity solution, cancel radial powers and evaluate the improper integral before differentiating the result.
+**Derivation.**
 
-**推导。** 在固定时刻，对整个外域积分能量。角向积分给出球壳面积。下限为当前界面。用连续性解替换速度，约去径向幂，再计算广义积分，最后才对结果求导。
+**推导。**
 
 (C1.4-E09) · Exact kinetic-energy integral in the spherical model / (C1.4-E09) · 球形模型内的精确动能积分
 
+#### 1. Calculate the kinetic energy of the surrounding liquid
+
+#### 计算周围载液的动能
+
+We begin with the incompressible spherical velocity field from C1.3-E02:
+
+首先利用 C1.3-E02 给出的不可压缩球对称流速场：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    dV&=r^2\sin\theta\,d\theta\,d\psi\,dr,\\
-    \int_0^{2\pi}\!d\psi\int_0^\pi\!\sin\theta\,d\theta&=2\pi[-\cos\theta]_0^\pi=4\pi,\\
-    u^2&=R^4\dot R^2/r^4,\qquad r^2/r^4=r^{-2},\\
-    \int_R^b r^{-2}\,dr&=-1/b+1/R\ \longrightarrow\ 1/R\quad(b\to\infty),\\
-    2\pi\rho R^4\dot R^2/R&=2\pi\rho R^3\dot R^2.
-    \end{aligned}\\[6pt]\begin{aligned}K_l&=\int_R^\infty\frac12\rho u(r,t)^2\,4\pi r^2\,dr\\&=2\pi\rho R^4\dot R^2\int_R^\infty r^{-2}\,dr\\&=2\pi\rho R^4\dot R^2\left[-\frac1r\right]_R^\infty=2\pi\rho R^3\dot R^2.\end{aligned}\end{gathered}
+u(r,t)=\frac{R^2\dot R}{r^2}.
 $$
 
 
+
+An infinitesimal spherical liquid shell has volume $dV=4\pi r^2\,dr$. Integrating the kinetic-energy density $\tfrac12\rho u^2$ over the entire exterior liquid gives:
+
+半径为 $r$ 的球壳体积元为 $dV=4\pi r^2\,dr$。对外域液体的动能密度 $\tfrac12\rho u^2$ 积分：
+
+
+
+$$
+\begin{aligned}K_l&=\int_R^\infty \frac12\rho u(r,t)^2\,4\pi r^2\,dr\end{aligned}
+$$
+
+
+
+Substitute the inverse-square radial velocity into the kinetic-energy density.
+
+将平方反比径向速度代入动能密度。
+
+
+
+$$
+\begin{aligned}K_l&=\int_R^\infty\frac12\rho\frac{R^4\dot R^2}{r^4}\,4\pi r^2\,dr\end{aligned}
+$$
+
+
+
+Collect factors independent of the shell radius outside the integral.
+
+将与球壳径向坐标无关的因子提出积分号。
+
+
+
+$$
+\begin{aligned}K_l&=2\pi\rho R^4\dot R^2\int_R^\infty r^{-2}\,dr\end{aligned}
+$$
+
+
+
+Use the antiderivative of the inverse-square shell-radius factor.
+
+使用球壳半径平方反比项的原函数。
+
+
+
+$$
+\begin{aligned}K_l&=2\pi\rho R^4\dot R^2\left[-\frac1r\right]_R^\infty\end{aligned}
+$$
+
+
+
+Evaluate the infinite and wall endpoints, then cancel one radius factor.
+
+计算无穷远端点与壁面端点，再约去一个半径因子。
+
+
+
+$$
+\begin{aligned}K_l&=\boxed{2\pi\rho R^3\dot R^2}.\end{aligned}
+$$
+
+
+
+This is the kinetic energy of the *surrounding liquid*, not of the vapor inside the cavity.
+
+这是**周围载液**的动能，而不是空腔内蒸气的动能。
 
 **Symbols for Eq. (C1.4-E09).**
 
@@ -632,21 +1477,122 @@ Exterior shells contribute finite kinetic energy even in an infinite domain.
 
 **对储存能量求导。** 对半径与速度平方应用乘积法则。分别对空腔体积和界面能求导。表面能导数假设表面张力恒定。
 
-**Derivation.** The integrated kinetic energy already contains the moving lower boundary through radius. Apply the product rule to that expression. Differentiating a fixed-limit integral while ignoring the moving boundary would miss part of this rate.
+**Derivation.**
 
-**推导。** 积分后的动能已通过半径包含运动下边界。对该表达式应用乘积法则。若将其作为固定积分限求导并忽略运动边界，就会遗漏部分变化率。
+**推导。**
 
 (C1.4-E10) · Exact product-rule derivatives / (C1.4-E10) · 乘积求导法则的精确应用
 
+The left-hand side is exactly the time derivative of exterior-liquid kinetic energy:
+
+左边恰好是外部载液动能的时间导数：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \frac{d(R^3\dot R^2)}{dt}&=\frac{dR^3}{dt}\dot R^2+R^3\frac{d\dot R^2}{dt},\\
-    \frac{dR^3}{dt}&=3R^2\dot R,\qquad\frac{d\dot R^2}{dt}=2\dot R\ddot R,\\
-    2\pi\rho(3R^2\dot R^3+2R^3\dot R\ddot R)
-      &=4\pi\rho R^2\dot R(\tfrac32\dot R^2+R\ddot R),\\
-    \frac{d(4\pi\sigma R^2)}{dt}&=4\pi\sigma(2R\dot R).
-    \end{aligned}\\[6pt]\begin{aligned}\frac{dK_l}{dt}&=2\pi\rho\left(3R^2\dot R^3+2R^3\dot R\ddot R\right)=4\pi R^2\dot R\,\rho\left(R\ddot R+\frac32\dot R^2\right),\\V_b&=\frac{4\pi R^3}{3},\qquad \dot V_b=4\pi R^2\dot R,\\E_\sigma&=4\pi\sigma R^2,\qquad \frac{dE_\sigma}{dt}=8\pi\sigma R\dot R.\end{aligned}\end{gathered}
+\frac{d}{dt}\underbrace{(2\pi\rho R^3\dot R^2)}_{K_l}
+=6\pi\rho R^2\dot R^3+4\pi\rho R^3\dot R\ddot R.
+$$
+
+
+
+The capillary term is exactly the time derivative of surface energy:
+
+毛细项恰好是表面能的时间导数：
+
+
+
+$$
+\frac{d}{dt}\underbrace{(4\pi\sigma R^2)}_{E_\sigma}=8\pi\sigma R\dot R.
+$$
+
+
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Differentiate the kinetic-energy radius and squared-speed factors using the product rule.
+
+用乘积法则对动能中的半径因子与速度平方因子求导。
+
+
+
+$$
+\begin{aligned}\frac{d(R^3\dot R^2)}{dt}&=\frac{dR^3}{dt}\dot R^2+R^3\frac{d\dot R^2}{dt},\end{aligned}
+$$
+
+
+
+Apply the chain rule to each factor separately. Both wall speed and wall acceleration appear.
+
+分别对每个因子应用链式法则。壁面速度与加速度均会出现。
+
+
+
+$$
+\begin{aligned}\frac{dR^3}{dt}&=3R^2\dot R,\qquad\frac{d\dot R^2}{dt}=2\dot R\ddot R,\end{aligned}
+$$
+
+
+
+Insert those derivatives and factor out the cavity volume rate. The remaining bracket matches radial inertia.
+
+代入上述导数，并提取空腔体积变化率。剩余括号与径向惯性项一致。
+
+
+
+$$
+\begin{aligned}2\pi\rho(3R^2\dot R^3+2R^3\dot R\ddot R)
+      &=4\pi\rho R^2\dot R(\tfrac32\dot R^2+R\ddot R),\end{aligned}
+$$
+
+
+
+Differentiate surface energy at constant surface tension. The changing area supplies its time dependence.
+
+在表面张力恒定时对表面能求导。其时间变化来自面积变化。
+
+
+
+$$
+\begin{aligned}\frac{d(4\pi\sigma R^2)}{dt}&=4\pi\sigma(2R\dot R).\end{aligned}
+$$
+
+
+
+Collect the differentiated kinetic energy in a form containing radial inertia.
+
+将动能导数整理为包含径向惯性项的形式。
+
+
+
+$$
+\begin{aligned}\frac{dK_l}{dt}&=2\pi\rho\left(3R^2\dot R^3+2R^3\dot R\ddot R\right)=4\pi R^2\dot R\,\rho\left(R\ddot R+\frac32\dot R^2\right),\end{aligned}
+$$
+
+
+
+Record cavity volume and its rate for the pressure-work calculation.
+
+写出空腔体积及其变化率，用于压力功计算。
+
+
+
+$$
+\begin{aligned}V_b&=\frac{4\pi R^3}{3},\qquad \dot V_b=4\pi R^2\dot R,\end{aligned}
+$$
+
+
+
+Record surface energy and its rate at constant surface tension.
+
+写出常表面张力下的表面能及其变化率。
+
+
+
+$$
+\begin{aligned}E_\sigma&=4\pi\sigma R^2,\qquad \frac{dE_\sigma}{dt}=8\pi\sigma R\dot R.\end{aligned}
 $$
 
 
@@ -690,24 +1636,94 @@ Volume work couples kinetic storage, interface storage and dissipation.
 
 **将动量平衡转为功率平衡。** 乘以空腔体积变化率。惯性项成为式（C1.4-E10）第一行。毛细项等于表面能导数的负值。速度平方使两种运动方向的黏性功率均不为正。
 
-**Derivation.** Multiply the radial pressure balance by signed cavity volume rate. Identify the inertial term using the preceding product rule. Expand the capillary and viscous products separately. Move surface-energy storage to the left. This derives mechanical power accounting without restoring the deleted strain-tensor calculation.
+**Derivation.**
 
-**推导。** 将径向压力平衡乘以带符号空腔体积变化率。用前式乘积法则识别惯性项。分别展开毛细项和黏性项，再将表面能储存移至左侧。由此推导机械功率平衡，无须恢复已删除的应变张量计算。
+**推导。**
 
 (C1.4-E11) · Derived mechanical-energy balance / (C1.4-E11) · 推导得到的机械能平衡
 
+#### 2. Derivation without skipped steps
+
+#### 不跳步推导
+
+Start from the Rayleigh–Plesset equation under the chapter's spherical, incompressible, constant-property, no-slip assumptions:
+
+从本章在球形、不可压缩、物性恒定、界面无滑移等假设下的 Rayleigh–Plesset 方程出发：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \frac{dK_l}{dt}&=(p_b-p_\infty-2\sigma/R-4\mu\dot R/R)(4\pi R^2\dot R),\\
-    (-2\sigma/R)(4\pi R^2\dot R)&=-8\pi\sigma R\dot R=-dE_\sigma/dt,\\
-    (-4\mu\dot R/R)(4\pi R^2\dot R)&=-16\pi\mu R\dot R^2,\\
-    \frac{dK_l}{dt}+\frac{dE_\sigma}{dt}
-      &=(p_b-p_\infty)\dot V_b-16\pi\mu R\dot R^2.
-    \end{aligned}\\[6pt]\begin{gathered}\frac{d}{dt}(K_l+E_\sigma)=(p_b-p_\infty)\dot V_b-16\pi\mu R\dot R^2\\ 16\pi\mu R\dot R^2\ge0\end{gathered}\end{gathered}
+\rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}.
 $$
 
 
+
+Multiply every term by $\dot V_b=4\pi R^2\dot R$:
+
+将每一项乘以 $\dot V_b=4\pi R^2\dot R$：
+
+
+
+$$
+4\pi\rho R^3\dot R\ddot R+6\pi\rho R^2\dot R^3
+=(p_b-p_\infty)\dot V_b-8\pi\sigma R\dot R-16\pi\mu R\dot R^2.
+$$
+
+
+
+The left-hand side is exactly the time derivative of exterior-liquid kinetic energy:
+
+左边恰好是外部载液动能的时间导数：
+
+
+
+$$
+\frac{d}{dt}\underbrace{(2\pi\rho R^3\dot R^2)}_{K_l}
+=6\pi\rho R^2\dot R^3+4\pi\rho R^3\dot R\ddot R.
+$$
+
+
+
+The capillary term is exactly the time derivative of surface energy:
+
+毛细项恰好是表面能的时间导数：
+
+
+
+$$
+\frac{d}{dt}\underbrace{(4\pi\sigma R^2)}_{E_\sigma}=8\pi\sigma R\dot R.
+$$
+
+
+
+Move the capillary term to the left, giving the required balance:
+
+将毛细项移至左边，就得到所要求的收支关系：
+
+
+
+$$
+\boxed{\frac{dK_l}{dt}+\frac{dE_\sigma}{dt}=(p_b-p_\infty)\dot V_b-\mathcal D_\mu},\qquad
+\mathcal D_\mu=16\pi\mu R\dot R^2\ge0.
+$$
+
+
+
+#### 3. Interpretation during expansion and collapse
+
+#### 膨胀和塌缩时如何理解
+
+**Expansion:** If $\dot R>0$ and $p_b>p_\infty$, pressure contributes positive power. This power can increase liquid kinetic energy and surface energy, with some lost to viscosity. **Collapse:** If $\dot R<0$ and $p_b<p_\infty$, their product is again positive: the ambient pressure is doing work that can accelerate the inward flow. The surface area shrinks, so stored interfacial energy can also be released. Viscosity always removes mechanical energy, regardless of whether $\dot R$ is positive or negative.
+
+**膨胀：** 若 $\dot R>0$ 且 $p_b>p_\infty$，压差输入正功率；它可以转化成载液动能与增加的表面能，另有一部分由黏性耗散。**塌缩：** 若 $\dot R<0$ 且 $p_b<p_\infty$，两者乘积依然为正：环境压力对流体做功，可以加速向内流动。同时表面积缩小，界面储能也可释放。无论膨胀还是塌缩，黏性始终耗散机械能。
+
+#### 4. Validity
+
+#### 适用范围
+
+This is the **mechanical** budget of the spherical cavity and exterior carrier. It does **not** already account for PFC internal energy, laser absorption, heat transfer, latent heat, noncondensable gas thermodynamics, acoustic radiation or an emitted directional jet. Those require additional balance equations. The equation also does not say that the pressure-work term is always positive.
+
+该方程是球形空腔及外部载液的**机械能**收支关系，并未把 PFC 内能、激光吸收、热传导、潜热、非凝结气体热力学、声辐射或外部定向射流全部计入。这些过程需要额外的守恒方程。压差功率项也并非始终为正。
 
 **Symbols for Eq. (C1.4-E11).**
 
@@ -755,20 +1771,113 @@ Confinement can redirect liquid and change its energy budget. It may store elast
 
 **规定理想塌缩问题。** 从最大半径及零壁面速度开始。远场压力与蒸气压恒定，塌缩压差为正。忽略张力、黏性、非凝结气体及液体可压缩性。热学与相变动力学被模型排除。它们对 PFC 是否足够小尚未确立。高温蒸气丰富的空腔仍可膨胀。
 
-**Derivation.** Define an ideal control: constant vapor pressure, constant exterior pressure, zero gas, zero viscosity and zero surface tension. These assumptions reduce the previously derived momentum law. Start at maximum radius with zero speed. Evaluate acceleration there to select the inward trajectory.
+**Derivation.**
 
-**推导。** 定义理想对照：蒸气压和外压恒定，忽略气体、黏度及表面张力。用这些假设约化前述动量方程。初始位于最大半径且速度为零。在此处计算加速度，选择向内轨迹。
+**推导。**
 
 (C1.5-E12) · Idealized collapse initial-value problem / (C1.5-E12) · 理想化塌缩的初值问题
 
+#### Complete derivation
+
+#### 完整推导
+
+Begin with the ideal Rayleigh collapse equation, for $\Delta p_c=p_\infty-p_v>0$, constant liquid density $\rho$, and cavity radius $R(t)>0$:
+
+以理想 Rayleigh 塌缩方程为起点，其中 $\Delta p_c=p_\infty-p_v>0$，液体密度 $\rho$ 恒定，空腔半径 $R(t)>0$：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    p_b&=p_v,\quad \mu=\sigma=0,\quad p_v-p_\infty=-\Delta p_c,\\
-    \rho(R\ddot R+\tfrac32\dot R^2)&=-\Delta p_c,\\
-    R_{\max}\ddot R(0)&=-\Delta p_c/\rho,\\
-    \ddot R(0)&=-\frac{\Delta p_c}{\rho R_{\max}}<0.
-    \end{aligned}\\[6pt]\begin{gathered}\Delta p_c=p_\infty-p_v>0\\ R(0)=R_{\max},\quad \dot R(0)=0\\ R\ddot R+\frac32\dot R^2=-\frac{\Delta p_c}{\rho}\end{gathered}\end{gathered}
+R\ddot R+\frac32\dot R^2=-\frac{\Delta p_c}{\rho}.
+\tag{1}
+$$
+
+
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Prescribe constant vapor pressure and omit surface tension and viscosity for this ideal control. Express the pressure difference with the collapse sign.
+
+在这一理想对照中给定恒定蒸气压，并忽略表面张力与黏度。用塌缩符号约定表示压差。
+
+
+
+$$
+\begin{aligned}p_b&=p_v,\quad \mu=\sigma=0,\quad p_v-p_\infty=-\Delta p_c,\end{aligned}
+$$
+
+
+
+Insert these restrictions into Rayleigh–Plesset. The pressure forcing is negative.
+
+将这些限制代入 Rayleigh–Plesset 方程。压力驱动力为负。
+
+
+
+$$
+\begin{aligned}\rho(R\ddot R+\tfrac32\dot R^2)&=-\Delta p_c,\end{aligned}
+$$
+
+
+
+Evaluate the initial state at maximum radius with zero wall speed. The squared-speed term vanishes.
+
+在最大半径、壁面速度为零的初始状态求值。速度平方项消失。
+
+
+
+$$
+\begin{aligned}R_{\max}\ddot R(0)&=-\Delta p_c/\rho,\end{aligned}
+$$
+
+
+
+Divide by the positive maximum radius. Negative initial acceleration starts the inward collapse branch.
+
+除以正的最大半径。负初始加速度使系统进入向内塌缩分支。
+
+
+
+$$
+\begin{aligned}\ddot R(0)&=-\frac{\Delta p_c}{\rho R_{\max}}<0.\end{aligned}
+$$
+
+
+
+Define a positive collapse-pressure difference.
+
+定义正的塌缩压差。
+
+
+
+$$
+\Delta p_c=p_\infty-p_v>0
+$$
+
+
+
+Start from maximum radius with a stationary wall.
+
+从最大半径、壁面静止状态开始。
+
+
+
+$$
+R(0)=R_{\max},\quad \dot R(0)=0
+$$
+
+
+
+The resulting ideal radial equation drives inward collapse.
+
+所得理想径向方程驱动向内塌缩。
+
+
+
+$$
+R\ddot R+\frac32\dot R^2=-\frac{\Delta p_c}{\rho}
 $$
 
 
@@ -806,24 +1915,53 @@ The ideal control begins at rest and excludes the mechanisms that arrest real co
 
 **在塌缩分支上以半径为自变量。** 负初始加速度使半径开始减小。将速度平方定义为半径函数。在转折点之外应用链式法则，再约去非零速度。连续延拓关系至初始端点。乘以半径三次方，形成完整导数。
 
-**Derivation.** On the open inward branch speed is nonzero, so divide the chain rule by speed. Divide the reduced momentum equation by positive radius. Solve the integrating-factor equation explicitly. The initial turning point is handled by continuity rather than division by zero.
+**Derivation.**
 
-**推导。** 向内分支内部速度非零，因此链式法则可除以速度。将约化动量方程除以正半径。显式求解积分因子方程。初始转折点通过连续延拓处理，不能除以零。
+**推导。**
 
 (C1.5-E13) · Exact chain rule and integrating factor / (C1.5-E13) · 精确的链式法则与积分因子
 
+Define the squared wall velocity as a function of radius: $y(R)=\dot R^2$. By the chain rule, at times when $\dot R\ne0$,
+
+将壁面速度的平方定义为半径的函数：$y(R)=\dot R^2$。在 $\dot R\ne0$ 的时刻，根据链式法则：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    R(\tfrac12 y')+\tfrac32 y&=-\Delta p_c/\rho,\\
-    y'+3y/R&=-2\Delta p_c/(\rho R),\\
-    I'/I&=3/R,\quad I(R_{\max})=1,\\
-    \ln I(R)-\ln I(R_{\max})&=\int_{R_{\max}}^R\frac{3}{s}\,ds
-       =3[\ln(s/R_{\max})]_{R_{\max}}^R=3\ln(R/R_{\max}),\\
-    \ln I(R)&=3\ln(R/R_{\max}),\quad
-       I(R)=\exp(3\ln(R/R_{\max}))=(R/R_{\max})^3,\\
-    (R^3y)'&=R^3y'+3R^2y.
-    \end{aligned}\\[6pt]\begin{aligned}y(R)&=\dot R^2,\qquad \frac{dy}{dt}=\frac{dy}{dR}\dot R=2\dot R\ddot R\quad\Longrightarrow\quad\ddot R=\frac12\frac{dy}{dR},\\\frac{dy}{dR}+\frac{3y}{R}&=-\frac{2\Delta p_c}{\rho R},\\\frac{d(R^3y)}{dR}&=R^3\frac{dy}{dR}+3R^2y=-\frac{2\Delta p_c}{\rho}R^2.\end{aligned}\end{gathered}
+\frac{dy}{dt}=2\dot R\ddot R,\qquad
+\frac{dy}{dR}=\frac{dy/dt}{dR/dt}=2\ddot R,
+\qquad\therefore\quad \ddot R=\frac12\frac{dy}{dR}.
+\tag{2}
+$$
+
+
+
+The formula extends to the starting turning point by continuity. Substituting $y$ and $dy/dR$ into (1) yields
+
+该关系可以通过连续性延拓到初始的速度零点。将 $y$ 和 $dy/dR$ 代入式 (1) 得到：
+
+
+
+$$
+\frac R2\frac{dy}{dR}+\frac32y=-\frac{\Delta p_c}{\rho},
+\qquad\Longrightarrow\qquad
+R\frac{dy}{dR}+3y=-\frac{2\Delta p_c}{\rho}.
+\tag{3}
+$$
+
+
+
+Multiply by $R^2$ and recognize a product derivative:
+
+两侧乘以 $R^2$，利用乘积求导公式：
+
+
+
+$$
+R^3\frac{dy}{dR}+3R^2y
+=\frac{d}{dR}(R^3y)
+=-\frac{2\Delta p_c}{\rho}R^2.
+\tag{4}
 $$
 
 
@@ -864,24 +2002,71 @@ The monotonic collapse branch allows radius to replace time in the first integra
 
 **本章作用。** 从最大半径处的静止状态积分式（C1.5-E13）。先选取向内分支，再用速度倒数计算塌缩时间。
 
-**Derivation.** Integrate the exact radial derivative from the initial maximum to the present radius. Apply zero initial squared speed. Evaluate the cubic antiderivative. Divide by positive radius cubed. Taking a square root gives two mathematical signs; inward motion selects the negative one.
+**Derivation.**
 
-**推导。** 从初始最大半径积分完整径向导数至当前半径。代入初始速度平方为零，计算三次方原函数，再除以正半径三次方。开平方得到两个数学符号，向内运动选择负号。
+**推导。**
 
 (C1.5-E14) · Integrated speed with initial constant and branch / (C1.5-E14) · 含初始积分常数与分支选择的速度积分解
 
+Integrate from $R_{\max}$ (the initial maximum radius) to the current $R<R_{\max}$:
+
+从初始最大半径 $R_{\max}$ 积分至当前半径 $R<R_{\max}$：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \int_{R_{\max}}^R\frac{d(s^3y)}{ds}\,ds
-      &=-\frac{2\Delta p_c}{\rho}\left[\frac{s^3}{3}\right]_{R_{\max}}^R,\\
-    R^3y(R)&=\frac{2\Delta p_c}{3\rho}(R_{\max}^3-R^3),\\
-    y(R)&=\frac{2\Delta p_c}{3\rho}\left(\frac{R_{\max}^3}{R^3}-1\right)\ge0,\\
-    \dot R&=\pm\sqrt{y(R)},\qquad\dot R<0\ \text{during collapse}.
-    \end{aligned}\\[6pt]\begin{aligned}R^3y(R)-R_{\max}^3y(R_{\max})&=-\frac{2\Delta p_c}{\rho}\int_{R_{\max}}^R s^2\,ds=-\frac{2\Delta p_c}{3\rho}(R^3-R_{\max}^3),\\y(R_{\max})&=0,\qquad \dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}{R}\right)^3-1\right]}.\end{aligned}\end{gathered}
+R^3y(R)-R_{\max}^3 y(R_{\max})
+=-\frac{2\Delta p_c}{\rho}\int_{R_{\max}}^R s^2\,ds
+=-\frac{2\Delta p_c}{3\rho}(R^3-R_{\max}^3).
+\tag{5}
 $$
 
 
+
+The cavity begins to collapse **from rest at its maximum radius**. Thus $\dot R=0$ and $y(R_{\max})=0$. Rearranging (5) and dividing by $R^3$ gives
+
+空腔**从最大半径处静止开始塌缩**，所以 $\dot R=0$、$y(R_{\max})=0$。将式 (5) 整理并除以 $R^3$，得到：
+
+
+
+$$
+R^3y(R)=\frac{2\Delta p_c}{3\rho}(R_{\max}^3-R^3),
+\qquad
+\boxed{y(R)=\dot R^2=\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]}.
+\tag{6}
+$$
+
+
+
+Taking the square root produces **two mathematical branches**:
+
+开平方后存在**两个数学分支**：
+
+
+
+$$
+\dot R=\pm\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]}.
+\tag{7}
+$$
+
+
+
+For collapse the radius decreases, so $\dot R=dR/dt<0$; choose the **negative** branch:
+
+对于塌缩，半径随时间减小，因此 $\dot R=dR/dt<0$，应选取**负号**：
+
+
+
+$$
+\boxed{\dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]}}.
+\tag{8}
+$$
+
+
+
+At the initial instant $\dot R=0$, but (1) gives $\ddot R(0)=-\Delta p_c/(\rho R_{\max})<0$, so the wall accelerates inward immediately. The expression is an **ideal-model** wall speed, not an experimentally established jet velocity; its divergence as $R\to0$ signals breakdown of the simplified model.
+
+初始时刻虽然 $\dot R=0$，但根据式 (1)，$\ddot R(0)=-\Delta p_c/(\rho R_{\max})<0$，所以壁面立即向内加速。该表达式描述的是**理想模型**下的壁面速度，并不是经实验确立的射流速度；当 $R\to0$ 时发散，意味着简化模型在这一极限失效。
 
 **Symbols for Eq. (C1.5-E14).**
 
@@ -926,17 +2111,89 @@ The initial condition fixes the integration constant and the inward sign fixes t
 
 (C1.5-E15) · Exact separation and nondimensionalization / (C1.5-E15) · 精确的变量分离与无量纲化
 
+Separate time from radius along the inward trajectory. The reciprocal speed retains the negative collapse sign.
+
+沿向内轨迹分离时间与半径。速度倒数保留塌缩负号。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    dt&=dR/\dot R,\qquad
-    \frac1{\dot R}=-\sqrt{\frac{3\rho}{2\Delta p_c}}\frac1{\sqrt{(R_{\max}/R)^3-1}},\\
-    (R_{\max}/R)^3-1&=x^{-3}-1=(1-x^3)/x^3,\\
-    \frac{dR}{\sqrt{(R_{\max}/R)^3-1}}
-      &=R_{\max}\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx,\\
-    -\int_1^0\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx
-      &=\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx.
-    \end{aligned}\\[6pt]\begin{aligned}t_c&=\int_{R_{\max}}^0\frac{dR}{\dot R}=\sqrt{\frac{3\rho}{2\Delta p_c}}\int_0^{R_{\max}}\frac{dR}{\sqrt{(R_{\max}/R)^3-1}},\\x&=\frac{R}{R_{\max}},\qquad dR=R_{\max}dx,\\t_c&=R_{\max}\sqrt{\frac{\rho}{\Delta p_c}}\ C_t,\qquad C_t=\sqrt{\frac32}\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx.\end{aligned}\end{gathered}
+\begin{aligned}dt&=dR/\dot R,\qquad
+    \frac1{\dot R}=-\sqrt{\frac{3\rho}{2\Delta p_c}}\frac1{\sqrt{(R_{\max}/R)^3-1}},\end{aligned}
+$$
+
+
+
+Introduce radius normalized by maximum radius. Rewrite the denominator using its cubed ratio.
+
+引入以最大半径归一化的半径。用其三次方比值改写分母。
+
+
+
+$$
+\begin{aligned}(R_{\max}/R)^3-1&=x^{-3}-1=(1-x^3)/x^3,\end{aligned}
+$$
+
+
+
+Transform both the radius differential and denominator. The Jacobian contributes one maximum-radius factor.
+
+同时变换半径微分与分母。雅可比因子提供一个最大半径因子。
+
+
+
+$$
+\begin{aligned}\frac{dR}{\sqrt{(R_{\max}/R)^3-1}}
+      &=R_{\max}\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx,\end{aligned}
+$$
+
+
+
+Reverse the integration limits to cancel the collapse minus sign. The resulting time integral is positive.
+
+反转积分上下限，消去塌缩负号。所得时间积分为正。
+
+
+
+$$
+\begin{aligned}-\int_1^0\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx
+      &=\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx.\end{aligned}
+$$
+
+
+
+Integrate reciprocal inward speed and reverse the bounds to obtain positive elapsed time.
+
+积分向内速度的倒数，并反转上下限以得到正的经过时间。
+
+
+
+$$
+\begin{aligned}t_c&=\int_{R_{\max}}^0\frac{dR}{\dot R}=\sqrt{\frac{3\rho}{2\Delta p_c}}\int_0^{R_{\max}}\frac{dR}{\sqrt{(R_{\max}/R)^3-1}},\end{aligned}
+$$
+
+
+
+Introduce the normalized radius and transform its differential.
+
+引入无量纲半径，并变换其微分。
+
+
+
+$$
+\begin{aligned}x&=\frac{R}{R_{\max}},\qquad dR=R_{\max}dx,\end{aligned}
+$$
+
+
+
+Separate the dimensional time scale from its dimensionless coefficient.
+
+将有量纲时间尺度与无量纲系数分离。
+
+
+
+$$
+\begin{aligned}t_c&=R_{\max}\sqrt{\frac{\rho}{\Delta p_c}}\ C_t,\qquad C_t=\sqrt{\frac32}\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx.\end{aligned}
 $$
 
 
@@ -985,15 +2242,98 @@ The endpoint singularity is integrable, so the model has a finite collapse time.
 
 (C1.5-E16) · Evaluated beta-function coefficient / (C1.5-E16) · 通过贝塔函数计算的系数
 
+Use the cube substitution to rewrite the numerator power.
+
+采用三次方换元，改写分子的幂次。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    x^{3/2}&=(q^{1/3})^{3/2}=q^{1/2},\\
-    x^{3/2}\,dx&=q^{1/2}\tfrac13q^{-2/3}\,dq=\tfrac13q^{-1/6}\,dq,\\
-    \sqrt{3/2}/3&=1/\sqrt6,\quad a-1=-1/6\Rightarrow a=5/6,\\
-    b-1&=-1/2\Rightarrow b=1/2,\\
-    C_t&=B(5/6,1/2)/\sqrt6=0.9146813565\ldots .
-    \end{aligned}\\[6pt]\begin{aligned}q&=x^3,\quad x=q^{1/3},\quad dx=\frac13q^{-2/3}\,dq,\\C_t&=\frac{1}{\sqrt6}\int_0^1q^{-1/6}(1-q)^{-1/2}\,dq=\frac{1}{\sqrt6}B\left(\frac56,\frac12\right)=0.9146813565\ldots,\\B(a,b)&=\int_0^1q^{a-1}(1-q)^{b-1}\,dq\quad(a>0,b>0).\end{aligned}\end{gathered}
+\begin{aligned}x^{3/2}&=(q^{1/3})^{3/2}=q^{1/2},\end{aligned}
+$$
+
+
+
+Multiply by the substitution Jacobian. The exponents combine to negative one sixth.
+
+乘以换元的雅可比因子。幂次合并为负六分之一。
+
+
+
+$$
+\begin{aligned}x^{3/2}\,dx&=q^{1/2}\tfrac13q^{-2/3}\,dq=\tfrac13q^{-1/6}\,dq,\end{aligned}
+$$
+
+
+
+Combine the numerical prefactors and identify the first beta-function exponent.
+
+合并数值前因子，并识别贝塔函数的第一个指数参数。
+
+
+
+$$
+\begin{aligned}\sqrt{3/2}/3&=1/\sqrt6,\quad a-1=-1/6\Rightarrow a=5/6,\end{aligned}
+$$
+
+
+
+Identify the second beta-function exponent from the square-root denominator.
+
+由平方根分母识别贝塔函数的第二个指数参数。
+
+
+
+$$
+\begin{aligned}b-1&=-1/2\Rightarrow b=1/2,\end{aligned}
+$$
+
+
+
+Both beta-function parameters are positive. Evaluate the convergent integral to obtain the Rayleigh coefficient.
+
+贝塔函数的两个参数均为正。计算收敛积分，得到瑞利系数。
+
+
+
+$$
+\begin{aligned}C_t&=B(5/6,1/2)/\sqrt6=0.9146813565\ldots .\end{aligned}
+$$
+
+
+
+State the cube substitution and its Jacobian together.
+
+一并写出三次方换元及其雅可比因子。
+
+
+
+$$
+\begin{aligned}q&=x^3,\quad x=q^{1/3},\quad dx=\frac13q^{-2/3}\,dq,\end{aligned}
+$$
+
+
+
+Identify the transformed integral with the beta function and evaluate its coefficient.
+
+将变换后的积分识别为贝塔函数，并计算其系数。
+
+
+
+$$
+\begin{aligned}C_t&=\frac{1}{\sqrt6}\int_0^1q^{-1/6}(1-q)^{-1/2}\,dq=\frac{1}{\sqrt6}B\left(\frac56,\frac12\right)=0.9146813565\ldots,\end{aligned}
+$$
+
+
+
+Use the integral definition with positive beta-function arguments.
+
+采用贝塔函数参数为正时的积分定义。
+
+
+
+$$
+\begin{aligned}B(a,b)&=\int_0^1q^{a-1}(1-q)^{b-1}\,dq\quad(a>0,b>0).\end{aligned}
 $$
 
 
@@ -1035,25 +2375,107 @@ The change of variables exposes the beta integral that fixes the numerical coeff
 
 **检验压力功。** 将式（C1.5-E14）代入动能积分。结果等于空腔体积减少产生的压力功。最大半径处动能为零，塌缩过程中为正。这检验了积分常数与符号。
 
-**Derivation.** Insert squared speed into the exterior kinetic-energy result. Cancel density, distribute radius cubed and remove its denominator. Independently integrate pressure work over decreasing cavity volume. Differentiate the result to check its power and sign.
+**Derivation.**
 
-**推导。** 将速度平方代入外域动能结果。约去密度，将半径三次方分配至括号内并约去分母。独立对减小的空腔体积积分压力功。再对结果求导，检验功率和符号。
+**推导。**
 
 (C1.5-E17) · Independent pressure-work conservation check / (C1.5-E17) · 独立的压力功守恒检验
 
+#### 2. Substitute the ideal-collapse wall velocity
+
+#### 代入理想塌缩壁面速度
+
+From the previous Rayleigh-collapse integration, with constant positive $\Delta p_c=p_\infty-p_v$ and a cavity starting from rest at $R_{\max}$:
+
+前面已经由 Rayleigh 理想塌缩方程积分得到，假设 $\Delta p_c=p_\infty-p_v>0$ 为常数，空腔从 $R_{\max}$ 处静止开始塌缩：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    (2\pi\rho)\frac{2\Delta p_c}{3\rho}&=4\pi\Delta p_c/3,\\
-    R^3\left(\frac{R_{\max}^3}{R^3}-1\right)&=R_{\max}^3-R^3,\\
-    K_l&=\int_{V_{\max}}^{V_b}(-\Delta p_c)\,dV
-      =\Delta p_c(V_{\max}-V_b),\\
-    \frac{dK_l}{dt}&=-\Delta p_c\,4\pi R^2\dot R>0\quad(\dot R<0),\\
-    K_l/E_B&=(R_{\max}^3-R^3)/R_{\max}^3=1-(R/R_{\max})^3.
-    \end{aligned}\\[6pt]\begin{aligned}K_l(R)&=2\pi\rho R^3\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]=\frac{4\pi}{3}\Delta p_c(R_{\max}^3-R^3),\\E_B&=\Delta p_cV_{\max}=\frac{4\pi}{3}\Delta p_cR_{\max}^3,\qquad \frac{K_l}{E_B}=1-\left(\frac R{R_{\max}}\right)^3.\end{aligned}\end{gathered}
+\dot R^2=\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right].
 $$
 
 
+
+Insert this into $K_l=2\pi\rho R^3\dot R^2$:
+
+将它代入 $K_l=2\pi\rho R^3\dot R^2$：
+
+
+
+$$
+\begin{aligned}K_l(R)
+&=2\pi\rho R^3\,\frac{2\Delta p_c}{3\rho}
+\left[\left(\frac{R_{\max}}R\right)^3-1\right]\end{aligned}
+$$
+
+
+
+Cancel density and expand the cube of the radius ratio.
+
+约去密度，并展开半径比例的三次方。
+
+
+
+$$
+\begin{aligned}K_l(R)&=\frac{4\pi\Delta p_c}{3}R^3
+\left[\frac{R_{\max}^3}{R^3}-1\right]\end{aligned}
+$$
+
+
+
+Distribute the radius cubed to obtain the difference of cavity volumes.
+
+将半径三次方乘入括号，得到空腔体积之差对应的表达式。
+
+
+
+$$
+\begin{aligned}K_l(R)&=\frac{4\pi\Delta p_c}{3}\left(R_{\max}^3-R^3\right).\end{aligned}
+$$
+
+
+
+Thus,
+
+因此：
+
+Identify each spherical volume as four thirds pi times its radius cubed.
+
+将每个球体积识别为其半径三次方乘以三分之四圆周率。
+
+
+
+$$
+\boxed{K_l(R)=\frac{4\pi}{3}\Delta p_c\left(R_{\max}^3-R^3\right)}.
+$$
+
+
+
+The cancellation of $\rho$ is algebraic: liquid density still affects the wall velocity, even though the energy expression at a specified radius no longer explicitly contains it.
+
+$\rho$ 的消去只是代数结果：液体密度仍然影响壁面速度，只是在给定半径下的动能表达式中不再显式出现。
+
+#### 3. Independent check using pressure work
+
+#### 利用压力功独立检验
+
+During collapse, the far-field pressure exceeds cavity pressure by $\Delta p_c$. The decrease in cavity volume is $V_{\max}-V(R)$, so the net pressure work released equals
+
+塌缩时远场压力比腔内压力大 $\Delta p_c$。空腔体积减小 $V_{\max}-V(R)$，净压力功为：
+
+
+
+$$
+W=\int_R^{R_{\max}}\Delta p_c\,4\pi s^2\,ds
+=\Delta p_c\frac{4\pi}{3}\left(R_{\max}^3-R^3\right).
+$$
+
+
+
+Because the ideal Rayleigh-collapse model begins at rest and neglects viscosity, surface tension, compressibility, and other energy reservoirs, all of this net pressure work becomes surrounding-liquid kinetic energy: $W=K_l$.
+
+由于理想 Rayleigh 塌缩模型从静止开始，并忽略黏性、表面张力、可压缩性以及其他能量储存途径，所以净压力功全部转化为周围载液动能，即 $W=K_l$。
 
 **Symbols for Eq. (C1.5-E17).**
 
@@ -1099,19 +2521,125 @@ Prescribe maximum radius 30 μm, density 1000 kg m⁻³, and collapse pressure 1
 
 (C1.5-E18) · Declared teaching calculation / (C1.5-E18) · 采用明确给定参数的教学计算
 
+Convert the declared teaching radius and pressure difference to SI units before substitution.
+
+代入之前，先将给定教学半径与压差换算为 SI 单位。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    R_{\max}&=30\ \mu\mathrm m=30\times10^{-6}\ \mathrm m,\quad
-      \Delta p_c=100\ \mathrm{kPa}=10^5\ \mathrm{Pa},\\
-    \sqrt{\rho/\Delta p_c}&=\sqrt{1000/10^5}=0.1\ \mathrm{s\,m^{-1}},\\
-    R_{\max}^3&=27\times10^{-15}\ \mathrm{m^3},\\
-    t_c&=0.9146813565(30\times10^{-6})(0.1)\ \mathrm s
-      =2.7440440695\times10^{-6}\ \mathrm s,\\
-    E_B&=(4\pi/3)(10^5)(27\times10^{-15})\ \mathrm J
-      =1.1309733553\times10^{-8}\ \mathrm J,\\
-    (R_{\max}/R)^3-1&=2^3-1=7,\quad K_l/E_B=1-(1/2)^3=7/8.
-    \end{aligned}\\[6pt]\begin{aligned}t_c&=0.9146813565(30\times10^{-6})\sqrt{\frac{1000}{100\times10^3}}\ \mathrm s=2.74404\ \mu\mathrm s,\\E_B&=\frac{4\pi}{3}(100\times10^3)(30\times10^{-6})^3\ \mathrm J=11.3097\ \mathrm{nJ},\\\dot R\big|_{R=R_{\max}/2}&=-\sqrt{\frac{2(100\times10^3)}{3(1000)}(8-1)}\ \mathrm{m\,s^{-1}}=-21.6025\ \mathrm{m\,s^{-1}},\\K_l\big|_{R=R_{\max}/2}&=\frac78E_B=9.89602\ \mathrm{nJ}.\end{aligned}\end{gathered}
+\begin{aligned}R_{\max}&=30\ \mu\mathrm m=30\times10^{-6}\ \mathrm m,\quad
+      \Delta p_c=100\ \mathrm{kPa}=10^5\ \mathrm{Pa},\end{aligned}
+$$
+
+
+
+Evaluate the density-to-pressure square root. Its units convert a radius into a time scale.
+
+计算密度与压力比的平方根。其单位使半径能够转换为时间尺度。
+
+
+
+$$
+\begin{aligned}\sqrt{\rho/\Delta p_c}&=\sqrt{1000/10^5}=0.1\ \mathrm{s\,m^{-1}},\end{aligned}
+$$
+
+
+
+Cube the maximum radius with its SI conversion included.
+
+将已换算为 SI 单位的最大半径取三次方。
+
+
+
+$$
+\begin{aligned}R_{\max}^3&=27\times10^{-15}\ \mathrm{m^3},\end{aligned}
+$$
+
+
+
+Multiply the radius scale, density-pressure factor, and Rayleigh coefficient to obtain collapse time.
+
+将半径尺度、密度—压力因子与瑞利系数相乘，得到塌缩时间。
+
+
+
+$$
+\begin{aligned}t_c&=0.9146813565(30\times10^{-6})(0.1)\ \mathrm s
+      =2.7440440695\times10^{-6}\ \mathrm s,\end{aligned}
+$$
+
+
+
+Multiply maximum cavity volume by collapse pressure. This is the available ideal pressure work.
+
+将最大空腔体积乘以塌缩压力。所得为可用理想压力功。
+
+
+
+$$
+\begin{aligned}E_B&=(4\pi/3)(10^5)(27\times10^{-15})\ \mathrm J
+      =1.1309733553\times10^{-8}\ \mathrm J,\end{aligned}
+$$
+
+
+
+At half radius, evaluate the cubic ratio and remaining energy fraction explicitly.
+
+在一半半径处，显式计算三次方比值及剩余能量比例。
+
+
+
+$$
+\begin{aligned}(R_{\max}/R)^3-1&=2^3-1=7,\quad K_l/E_B=1-(1/2)^3=7/8.\end{aligned}
+$$
+
+
+
+Convert the calculated collapse time to microseconds.
+
+将算得塌缩时间换算为微秒。
+
+
+
+$$
+\begin{aligned}t_c&=0.9146813565(30\times10^{-6})\sqrt{\frac{1000}{100\times10^3}}\ \mathrm s=2.74404\ \mu\mathrm s,\end{aligned}
+$$
+
+
+
+Convert the available ideal pressure work to nanojoules.
+
+将可用理想压力功换算为纳焦耳。
+
+
+
+$$
+\begin{aligned}E_B&=\frac{4\pi}{3}(100\times10^3)(30\times10^{-6})^3\ \mathrm J=11.3097\ \mathrm{nJ},\end{aligned}
+$$
+
+
+
+Evaluate the negative wall speed at half maximum radius.
+
+计算最大半径一半处的负壁面速度。
+
+
+
+$$
+\begin{aligned}\dot R\big|_{R=R_{\max}/2}&=-\sqrt{\frac{2(100\times10^3)}{3(1000)}(8-1)}\ \mathrm{m\,s^{-1}}=-21.6025\ \mathrm{m\,s^{-1}},\end{aligned}
+$$
+
+
+
+Multiply available work by the half-radius energy fraction.
+
+将可用功乘以一半半径处的能量比例。
+
+
+
+$$
+\begin{aligned}K_l\big|_{R=R_{\max}/2}&=\frac78E_B=9.89602\ \mathrm{nJ}.\end{aligned}
 $$
 
 
@@ -1158,26 +2686,198 @@ The zero-radius limit gives finite energy and divergent wall speed. Physical max
 
 **本章作用。** 将理想壁面速度与选定的马赫数阈值比较。这用于诊断不可压缩轨迹，不确立实际最大速度。
 
-**Derivation.** Use the ideal inward speed as a diagnostic trajectory. Square the nonnegative Mach magnitude, set a selected positive threshold, and solve for the positive radius fraction. The threshold marks a chosen modeling cutoff. It does not predict the physical collapse endpoint.
+**Derivation.**
 
-**推导。** 将理想向内速度用作诊断轨迹。对非负马赫数取平方，令其等于选定的正阈值，再解出正半径比例。阈值标记选定的模型截止条件，并不预测实际塌缩终点。
+**推导。**
 
 (C1.5-E19) · Ideal-trajectory diagnostic, not a physical limit / (C1.5-E19) · 理想轨迹的诊断指标，而非物理极限
 
+#### 1. Start from the Rayleigh collapse velocity
+
+#### 从 Rayleigh 塌缩速度出发
+
+We previously derived the bubble-wall velocity for ideal spherical collapse:
+
+前面已经推导出理想球形塌缩的壁面速度：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    x&=R/R_{\max},\qquad M_w^2=\frac{2\Delta p_c}{3\rho c^2}(x^{-3}-1),\\
-    M_w=M_*&\quad\Longrightarrow\quad
-      \frac{3\rho c^2M_*^2}{2\Delta p_c}=x_M^{-3}-1,\\
-    x_M^{-3}&=1+\frac{3\rho c^2M_*^2}{2\Delta p_c},\\
-    x_M&=\left[1+\frac{3(1000)(1500)^2(0.1)^2}{2(10^5)}\right]^{-1/3}\\
-       &=338.5^{-1/3}=0.1434874,\\
-    R_M&=(30\ \mu\mathrm m)(0.1434874)=4.30462\ \mu\mathrm m.
-    \end{aligned}\\[6pt]\begin{gathered}M_w=\frac{|\dot R|}{c}\\ x_M=\left[1+\frac{3\rho c^2M_*^2}{2\Delta p_c}\right]^{-1/3}\\ M_*=0.1,\ c=1500\ \mathrm{m\,s^{-1}}\ \Longrightarrow\ x_M=0.143487\end{gathered}\end{gathered}
+\dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}{R}\right)^3-1\right]}.
+\tag{1}
 $$
 
 
+
+Here, $\Delta p_c=p_\infty-p_v>0$ is the constant collapse-driving pressure difference, $\rho$ is the surrounding liquid density, and $R_{\max}$ is the initial maximum bubble radius.
+
+其中，$\Delta p_c=p_\infty-p_v>0$ 是恒定的塌缩驱动压差，$\rho$ 为周围液体密度，$R_{\max}$ 为初始最大气泡半径。
+
+Define the dimensionless radius ratio:
+
+定义无量纲半径比例：
+
+
+
+$$
+x=\frac{R}{R_{\max}}.
+$$
+
+
+
+Therefore,
+
+因此：
+
+Substitute the normalized radius into the collapse speed and take its magnitude.
+
+将归一化半径代入塌缩速度，并取速度大小。
+
+
+
+$$
+|\dot R|=\sqrt{\frac{2\Delta p_c}{3\rho}(x^{-3}-1)}.
+\tag{2}
+$$
+
+
+
+#### 2. Introduce the wall Mach number
+
+#### 引入壁面马赫数
+
+The wall Mach number is defined as the magnitude of wall velocity divided by the liquid sound speed $c$:
+
+壁面马赫数定义为壁面速度大小与液体声速 $c$ 之比：
+
+
+
+$$
+M_w=\frac{|\dot R|}{c}.
+$$
+
+
+
+Substituting equation (2) gives
+
+将式 (2) 代入，得到：
+
+
+
+$$
+M_w=\frac{1}{c}\sqrt{\frac{2\Delta p_c}{3\rho}(x^{-3}-1)}.
+$$
+
+
+
+Squaring both sides:
+
+两侧平方：
+
+
+
+$$
+M_w^2=\frac{2\Delta p_c}{3\rho c^2}(x^{-3}-1).
+$$
+
+
+
+Rearranging step by step:
+
+逐步整理：
+
+Divide by the positive pressure coefficient to isolate the radius-dependent factor.
+
+除以正的压力系数，分离出随半径变化的因子。
+
+
+
+$$
+\frac{3\rho c^2M_w^2}{2\Delta p_c}=x^{-3}-1,
+$$
+
+
+
+Add one to both sides to isolate the inverse cube of the radius ratio.
+
+两侧加一，分离出半径比例的负三次方。
+
+
+
+$$
+x^{-3}=1+\frac{3\rho c^2M_w^2}{2\Delta p_c},
+$$
+
+
+
+The radius ratio is positive; take the negative one-third power of both sides.
+
+半径比例为正；对两侧取负三分之一次幂。
+
+
+
+$$
+\boxed{x=\left[1+\frac{3\rho c^2M_w^2}{2\Delta p_c}\right]^{-1/3}}.
+\tag{3}
+$$
+
+
+
+Now choose a diagnostic Mach threshold $M_*$, and define $x_M$ as the radius ratio where the ideal trajectory first reaches that threshold:
+
+现在选择一个诊断用马赫数阈值 $M_*$，并将 $x_M$ 定义为理想塌缩轨迹首次达到该阈值时的半径比例：
+
+
+
+$$
+\boxed{x_M=\frac{R_M}{R_{\max}}=\left[1+\frac{3\rho c^2M_*^2}{2\Delta p_c}\right]^{-1/3}}.
+$$
+
+
+
+This is exactly the formula in the screenshot.
+
+这就是截图中公式的完整来源。
+
+#### 3. What does the radius ratio mean?
+
+#### 这个半径比例代表什么？
+
+For example, the course uses $M_*=0.1$, $c=1500\ \mathrm{m/s}$, $\rho=1000\ \mathrm{kg/m^3}$, and $\Delta p_c=100\ \mathrm{kPa}$.
+
+例如，课程采用 $M_*=0.1$、$c=1500\ \mathrm{m/s}$、$\rho=1000\ \mathrm{kg/m^3}$、$\Delta p_c=100\ \mathrm{kPa}$。
+
+Substitution gives:
+
+代入：
+
+
+
+$$
+x_M=\left[1+\frac{3(1000)(1500)^2(0.1)^2}{2(100000)}\right]^{-1/3}\approx\boxed{0.1435}.
+$$
+
+
+
+This means that **within the ideal Rayleigh model**, the wall speed reaches $0.1c=150\ \mathrm{m/s}$ when the bubble radius decreases to about 14.35% of its initial maximum value. The threshold radius is $R_M=0.1435R_{\max}$.
+
+这意味着，**在理想 Rayleigh 模型内**，当气泡半径减小至初始最大半径的约 14.35% 时，壁面速度达到 $0.1c=150\ \mathrm{m/s}$。此时阈值半径为 $R_M=0.1435R_{\max}$。
+
+#### 4. Why is this only a diagnostic?
+
+#### 为什么它只是诊断指标？
+
+The ideal Rayleigh model assumes incompressible liquid. As $R\to0$, equation (1) predicts $|\dot R|\to\infty$. This divergence is a mathematical consequence of the idealizations, not a physically attainable speed.
+
+理想 Rayleigh 模型假设液体不可压缩。当 $R\to0$ 时，式 (1) 预测 $|\dot R|\to\infty$。这一发散是理想化假设的数学结果，并非物理上能够实现的速度。
+
+Choosing $M_*=0.1$ is a conservative diagnostic convention for identifying when liquid compressibility may warrant closer examination. It is **not a universal threshold** at which incompressible theory suddenly becomes invalid.
+
+选择 $M_*=0.1$，是一种保守的诊断约定，用于识别何时需要更加仔细地考虑液体可压缩性。它**不是不可压缩理论突然失效的普适临界值**。
+
+Within the ideal trajectory, $R<R_M$ corresponds to $M_w>M_*$. However, a real cavity may be affected by vapor condensation, permanent gas, acoustic radiation, shocks, and other phenomena before reaching this radius.
+
+在理想轨迹中，$R<R_M$ 对应 $M_w>M_*$。但真实空腔可能在达到该半径之前，就已经受到蒸气凝结、非凝结气体、声辐射、冲击波等因素的影响。
 
 **Symbols for Eq. (C1.5-E19).**
 
@@ -1222,25 +2922,123 @@ A Mach diagnostic exposes the shrinking validity range of incompressible collaps
 
 **定义压力冲量。** 对局部压力相对于空间均匀参考值作时间积分。压力冲量单位为 Pa s，其空间梯度驱动液体速度变化。声传播时间单位为 s。所引短事件模型提供以下积分与近似的依据。 [[R2]](../reference/sources.html#r2)
 
-**Derivation.** Place a pressure observer at a fixed liquid point throughout the event. Integrate over time there. Subtract a spatially uniform reference pressure. A separate area integral converts pressure impulse into mechanical impulse when the surface is fixed. For moving surfaces, pressure, normal and area must remain inside the time integral.
+**Derivation.**
 
-**推导。** 在整个事件中始终属于液体的固定点放置压力观察者。在该处对时间积分，并减去空间均匀的参考压力。表面固定时，另作面积积分可将压力冲量转为机械冲量。表面运动时，压力、法向和面积均须保留在时间积分内。
+**推导。**
 
 (C1.6-E20) · Definition of local pressure impulse / (C1.6-E20) · 局部压力冲量的定义
 
+#### 1. What does C1.6-E20 integrate?
+
+#### C1.6-E20 对什么积分？
+
+At one fixed liquid position, integrate pressure excess over the stated event interval. This defines pressure impulse.
+
+在固定液体位置，对给定事件区间内的超压作时间积分。由此定义压力冲量。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    q(\boldsymbol x,t)&=p(\boldsymbol x,t)-p_{\mathrm{ref}}(t),\\
-    \Pi(\boldsymbol x)&=\lim_{N\to\infty}\sum_{k=1}^Nq(\boldsymbol x,t_k)\Delta t,
-       \quad\Delta t=(t_1-t_0)/N,\\
-    \boldsymbol J_p&=-\int_{t_0}^{t_1}\int_{S(t)}q\boldsymbol n\,dA\,dt,\\
-    S(t)=S\quad&\Longrightarrow\quad\boldsymbol J_p=-\int_S\Pi\boldsymbol n\,dA,\\
-    [\boldsymbol J_p]&=\mathrm{Pa\,s\,m^2}=\mathrm{N\,s},\qquad[\Pi]=\mathrm{Pa\,s}.
-    \end{aligned}\\[6pt]\begin{gathered}\Pi(\boldsymbol x)=\int_{t_0}^{t_1}\left[p(\boldsymbol x,t)-p_{\mathrm{ref}}(t)\right]dt\\ \tau=t_1-t_0>0\\ [\Pi]=\mathrm{Pa\,s}\end{gathered}\end{gathered}
+\boxed{\Pi(\boldsymbol x)=\int_{t_0}^{t_1}[p(\boldsymbol x,t)-p_{\mathrm{ref}}(t)]\,dt}
 $$
 
 
+
+Here, $\boldsymbol x$ is a fixed Eulerian observation point, $t$ is the integration variable, and $[t_0,t_1]$ is the chosen pressure-event interval. $p_{\mathrm{ref}}$ is a spatially uniform reference pressure, possibly varying with time. The result $\Pi(\boldsymbol x)$ is a field over the liquid domain and has units Pa·s.
+
+其中，$\boldsymbol x$ 是固定的欧拉空间观察点，$t$ 是积分变量，$[t_0,t_1]$ 是选定压力事件的持续时间。$p_{\mathrm{ref}}$ 是空间均匀、但可以随时间变化的参考压力。$\Pi(\boldsymbol x)$ 是定义在液体区域上的场，单位为 Pa·s。
+
+Choose a fixed point A in the liquid. Plot the local excess-pressure history against time; the **signed area** under the curve over the selected interval is $\Pi(\boldsymbol x_A)$. Repeat at other points to reconstruct the spatial field. There is **no volume integral or surface integral in C1.6-E20**.
+
+选择液体中的一个固定点 A，将该点的超压随时间绘图，曲线在指定时间区间内的**带符号面积**即为 $\Pi(\boldsymbol x_A)$。对其他位置重复即可重建空间冲量场。**C1.6-E20 不涉及体积分或面积分。**
+
+A fixed Eulerian location is not an individual fluid parcel. The formula assumes that this location belongs to the liquid domain throughout the selected time interval. If the moving phase boundary crosses it, the integration domain or formulation must be reconsidered.
+
+固定欧拉观察点并不是随液体质点运动的位置。该式要求该点在整个选定时间区间内属于液体域。如果运动界面穿过该点，则须重新界定积分区间或采用适合运动界面的形式。
+
+#### 2. Why is the time integral useful?
+
+#### 为什么时间积分重要？
+
+For rectangular excess-pressure pulses, $\Pi=\Delta p\,\tau$. An illustrative 2 MPa pulse lasting 1 μs and a 1 MPa pulse lasting 2 μs both give 2 Pa·s. They have different peak pressures but equal time-integrated pressure at that location.
+
+对于矩形超压脉冲，$\Pi=\Delta p\,\tau$。例如，2 MPa、持续 1 μs 的脉冲与 1 MPa、持续 2 μs 的脉冲，其压力冲量均为 2 Pa·s。两者峰值压力不同，但该位置的压力时间积分相等。
+
+Equal impulse at a **single point** does not ensure equal velocity fields; the spatial impulse distribution, boundaries, compressibility, and the event regime also matter.
+
+但在**单个点**具有相同压力冲量，并不保证获得相同的速度场；空间冲量分布、边界条件、可压缩性以及过程所处的物理机制同样重要。
+
+#### 3. Derivation from momentum conservation
+
+#### 从动量守恒推导
+
+For an incompressible Newtonian liquid of constant density,
+
+对于密度恒定的不可压缩牛顿流体：
+
+
+
+$$
+\rho\left[\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u\right]=-\nabla p+\mu\nabla^2\boldsymbol u.
+$$
+
+
+
+Time integration at a fixed position, with $\nu=\mu/\rho$, yields the equation appearing in C1.6-E21:
+
+在固定空间位置对时间积分，并令 $\nu=\mu/\rho$，得到 C1.6-E21：
+
+
+
+$$
+\Delta\boldsymbol u=-\frac{\nabla\Pi}{\rho}-\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt+\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt.
+$$
+
+
+
+The spatially uniform reference pressure drops out when taking the gradient. If the integrated convective and viscous terms are negligible relative to pressure forcing, the reduced equation is
+
+由于参考压力在空间中均匀，其梯度为零。如果积分后的对流项和黏性项相对于压力驱动可忽略，得到：
+
+
+
+$$
+\boxed{\Delta\boldsymbol u\simeq-\frac{1}{\rho}\nabla\Pi}.
+$$
+
+
+
+**Thus the spatial gradient of pressure impulse—not merely the local impulse magnitude—determines the leading-order velocity increment and direction.**
+
+**因此，在该近似下，决定速度增量及其方向的是压力冲量的空间梯度，而非某一点的冲量大小本身。**
+
+For the incompressible, fixed-domain reduced problem, taking the divergence of this relation yields $\nabla^2\Pi=0$. This Laplace equation needs boundary conditions on the cavity, walls, and outlets. A spatially uniform addition to $\Pi$ changes no velocity because its gradient is zero.
+
+对于不可压缩、固定区域内的简化模型，对该式取散度得到 $\nabla^2\Pi=0$。这一拉普拉斯方程还需要空腔、壁面和出口的边界条件。对 $\Pi$ 增加空间均匀常数不会改变速度，因为其梯度为零。
+
+#### 4. Pressure impulse versus force impulse
+
+#### 压力冲量与力学冲量的区别
+
+The local pressure impulse $\Pi(\boldsymbol x)$ has units **Pa·s = N·s/m²**. It is a time-integrated pressure *at a point*. To obtain a resultant **force impulse** on a fixed surface $S$, one must also integrate pressure traction over that surface:
+
+局部压力冲量 $\Pi(\boldsymbol x)$ 的单位为 **Pa·s = N·s/m²**，表示某一点的压力时间积分。要得到固定表面 $S$ 上的合**力学冲量**，还需要对该表面上的压力牵引做面积分：
+
+
+
+$$
+\boxed{\boldsymbol J_p=-\int_{t_0}^{t_1}\int_S[p(\boldsymbol x,t)-p_{\rm ref}(t)]\boldsymbol n\,dA\,dt}
+$$
+
+
+
+where $\boldsymbol n$ is the chosen outward normal of the receiving fluid/control surface; the sign depends on the traction convention. For a fixed surface this can be written $\boldsymbol J_p=-\int_S\Pi(\boldsymbol x)\boldsymbol n\,dA$. Its units are N·s (kg·m/s). For a moving or deforming wall, the instantaneous area and normal change; viscous traction and momentum flux may also be needed.
+
+其中 $\boldsymbol n$ 是按约定选取的表面外法向，符号取决于牵引方向约定。对于固定表面，可写为 $\boldsymbol J_p=-\int_S\Pi(\boldsymbol x)\boldsymbol n\,dA$。其单位为 N·s（kg·m/s）。若壁面运动或变形，瞬时表面积和法向会发生变化；还可能需要计入黏性牵引和动量通量。
+
+In the special case of a planar fixed patch of area $A$ with uniform normal pressure impulse, $|\boldsymbol J_p|=A\Pi$ when $\Pi\ge0$. This special case must not be applied directly to a changing spherical cavity interface.
+
+只有对于面积为 $A$ 的固定平面、且法向压力冲量均匀时，若 $\Pi\ge0$，才可写成 $|\boldsymbol J_p|=A\Pi$。不能将这一特例直接用于不断变化的球形空腔界面。
 
 **Symbols for Eq. (C1.6-E20).**
 
@@ -1256,7 +3054,11 @@ $$
 | $k$ — time-sample index (1)<br>$k$ — 时间采样指标（1） | $t_k$ — sample time (s)<br>$t_k$ — 采样时刻（s） |
 | $\Delta t$ — time-step width (s)<br>$\Delta t$ — 时间段宽度（s） | $\boldsymbol J_p$ — gauge-pressure mechanical impulse on the liquid control volume (N s)<br>$\boldsymbol J_p$ — 作用于液体控制体的表压机械冲量（N s） |
 | $S(t)$ — liquid control-volume surface (m²)<br>$S(t)$ — 液体控制体表面（m²） | $\boldsymbol n$ — outward unit normal to the control surface (1)<br>$\boldsymbol n$ — 控制表面向外单位法向（1） |
-| $dA$ — area element (m²)<br>$dA$ — 面积元（m²） |  |
+| $dA$ — area element (m²)<br>$dA$ — 面积元（m²） | $\rho$ — constant liquid density (kg m⁻³)<br>$\rho$ — 恒定液体密度（kg m⁻³） |
+| $\boldsymbol u$ — liquid velocity field (m s⁻¹)<br>$\boldsymbol u$ — 液体速度场（m s⁻¹） | $\mu$ — dynamic viscosity (Pa s)<br>$\mu$ — 动力黏度（Pa s） |
+| $\nu$ — kinematic viscosity (m² s⁻¹)<br>$\nu$ — 运动黏度（m² s⁻¹） | $\Delta\boldsymbol u$ — fixed-position velocity increment (m s⁻¹)<br>$\Delta\boldsymbol u$ — 固定位置速度增量（m s⁻¹） |
+| $S$ — fixed receiving surface (m²)<br>$S$ — 固定受载表面（m²） | $A$ — fixed planar patch area (m²)<br>$A$ — 固定平面面积（m²） |
+| $\nabla$ — spatial gradient (m⁻¹)<br>$\nabla$ — 空间梯度（m⁻¹） | $\nabla^2$ — vector Laplacian (m⁻²)<br>$\nabla^2$ — 矢量拉普拉斯算子（m⁻²） |
 
 **Conventions and conditions.** Square brackets on $\Pi$ denote units, not endpoint evaluation; The integral is at fixed position in a liquid domain whose displacement will be assessed below; Brackets denote units; fixed-surface reduction requires fixed orientation and all sampled points remaining liquid.
 
@@ -1280,33 +3082,226 @@ Impulse combines duration and amplitude at each liquid position.
 
 **本章作用。** 采用式（C1.6-E20）定义的压力冲量。积分动量方程，分离压力、对流与黏性对速度变化的贡献。这一模型内精确恒等式是式（C1.6-E22）的起点。
 
-**Derivation.** Divide constant-density Navier–Stokes by density. Integrate every term between the same fixed times at the same fixed position. The fundamental theorem gives the velocity difference. Smoothness and a common liquid domain permit gradient–integral exchange. The spatially uniform reference has zero gradient.
+**Derivation.**
 
-**推导。** 将常密度 Navier–Stokes 方程除以密度。在相同固定位置、相同时间上下限内逐项积分。微积分基本定理给出速度差。场足够光滑且积分期间均属于液体域时，允许交换梯度与积分。空间均匀的参考压力梯度为零。
+**推导。**
 
 (C1.6-E21) · Exact fixed-position integrated incompressible momentum / (C1.6-E21) · 固定位置处不可压缩动量方程的精确时间积分
 
+#### 1. Start from the Navier–Stokes equation
+
+#### 从 Navier–Stokes 方程出发
+
+For an incompressible Newtonian liquid with constant density $\rho$, dynamic viscosity $\mu$, and no body forces, the momentum equation is
+
+对于密度 $\rho$、动力黏度 $\mu$ 均为常数、且忽略体积力的不可压缩牛顿流体，动量方程为：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \partial_t\boldsymbol u&=-\nabla p/\rho-(\boldsymbol u\cdot\nabla)\boldsymbol u+\nu\nabla^2\boldsymbol u,\\
-    \int_{t_0}^{t_1}\partial_t\boldsymbol u\,dt
-       &=\boldsymbol u(\boldsymbol x,t_1)-\boldsymbol u(\boldsymbol x,t_0)=\Delta\boldsymbol u,\\
-    \int_{t_0}^{t_1}\nabla p\,dt
-       &=\nabla\int_{t_0}^{t_1}(p-p_{\mathrm{ref}})\,dt
-         +\int_{t_0}^{t_1}\underbrace{\nabla p_{\mathrm{ref}}}_{=0}\,dt=\nabla\Pi,\\
-    \int_{t_0}^{t_1}\nu\nabla^2\boldsymbol u\,dt
-       &=\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt.
-    \end{aligned}\\[6pt]\begin{aligned}
-        \Delta\boldsymbol u&=-\nabla\Pi/\rho
-          -\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt\\
-          &\quad+\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt,\\
-        \Delta\boldsymbol u&=\boldsymbol u(\boldsymbol x,t_1)-\boldsymbol u(\boldsymbol x,t_0),\\
-        \nu&=\mu/\rho.
-        \end{aligned}\end{gathered}
+\boxed{\rho\left[\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u\right]=-\nabla p+\mu\nabla^2\boldsymbol u}\tag{1}
 $$
 
 
+
+Here, $\boldsymbol u(\boldsymbol x,t)$ is the velocity field, $p(\boldsymbol x,t)$ is pressure, $\nabla p$ is the pressure gradient, and $\nabla^2\boldsymbol u$ is the vector Laplacian of velocity. The notation $(\boldsymbol u\cdot\nabla)\boldsymbol u$ denotes convective acceleration.
+
+其中，$\boldsymbol u(\boldsymbol x,t)$ 是速度场，$p(\boldsymbol x,t)$ 是压力场，$\nabla p$ 是压力梯度，$\nabla^2\boldsymbol u$ 是速度的矢量拉普拉斯算子。$(\boldsymbol u\cdot\nabla)\boldsymbol u$ 表示对流加速度。
+
+Divide both sides by $\rho$, and define the kinematic viscosity $\nu=\mu/\rho$:
+
+两侧除以 $\rho$，并定义运动黏度 $\nu=\mu/\rho$：
+
+
+
+$$
+\boxed{\frac{\partial\boldsymbol u}{\partial t}=-\frac{\nabla p}{\rho}-(\boldsymbol u\cdot\nabla)\boldsymbol u+\nu\nabla^2\boldsymbol u}\tag{2}
+$$
+
+
+
+This equation states that the local velocity changes because of pressure gradients, convective transport, and viscous effects.
+
+这个方程表示：局部速度的变化由压力梯度、对流输运以及黏性作用共同决定。
+
+#### 2. Integrate every term over time
+
+#### 对每一项分别进行时间积分
+
+Fix a spatial point $\boldsymbol x$, and integrate equation (2) from $t_0$ to $t_1$:
+
+固定空间位置 $\boldsymbol x$，对式 (2) 从 $t_0$ 到 $t_1$ 积分：
+
+
+
+$$
+\begin{aligned}
+\int_{t_0}^{t_1}\frac{\partial\boldsymbol u}{\partial t}\,dt
+={}&-\frac1\rho\int_{t_0}^{t_1}\nabla p\,dt\\
+&-\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt\\
+&+\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt.
+\end{aligned}\tag{3}
+$$
+
+
+
+Notice that there are **four terms**. We have not discarded any of them.
+
+注意，这里一共有**四项**，我们没有忽略其中任何一项。
+
+#### Term 1: Local acceleration
+
+#### 第一项：局部加速度
+
+Because $\boldsymbol x$ is fixed, the fundamental theorem of calculus gives
+
+因为 $\boldsymbol x$ 保持固定，根据微积分基本定理：
+
+
+
+$$
+\begin{aligned}\int_{t_0}^{t_1}\frac{\partial\boldsymbol u(\boldsymbol x,t)}{\partial t}\,dt
+&=\boldsymbol u(\boldsymbol x,t_1)-\boldsymbol u(\boldsymbol x,t_0)\end{aligned}
+$$
+
+
+
+Define this endpoint difference as the fixed-position velocity increment.
+
+将该端点差定义为固定位置的速度增量。
+
+
+
+$$
+\begin{aligned}\int_{t_0}^{t_1}\frac{\partial\boldsymbol u(\boldsymbol x,t)}{\partial t}\,dt&=\boxed{\Delta\boldsymbol u}.\end{aligned}\tag{4}
+$$
+
+
+
+This is the **velocity change at the same spatial location**, not the displacement of a liquid particle.
+
+这是**同一空间位置上的速度变化**，而不是液体质点的位移。
+
+#### Term 2: Pressure gradient
+
+#### 第二项：压力梯度
+
+For a sufficiently smooth pressure field, spatial differentiation and time integration commute:
+
+对于足够光滑的压力场，空间求导与时间积分可以交换次序：
+
+
+
+$$
+\int_{t_0}^{t_1}\nabla p(\boldsymbol x,t)\,dt
+=\nabla\left[\int_{t_0}^{t_1}p(\boldsymbol x,t)\,dt\right].\tag{5}
+$$
+
+
+
+Recall the definition of pressure impulse:
+
+回忆压力冲量的定义：
+
+
+
+$$
+\Pi(\boldsymbol x)=\int_{t_0}^{t_1}[p(\boldsymbol x,t)-p_{\mathrm{ref}}(t)]\,dt.
+$$
+
+
+
+Because $p_{\mathrm{ref}}(t)$ is spatially uniform, its spatial gradient is zero. Therefore,
+
+由于 $p_{\mathrm{ref}}(t)$ 在空间中均匀，其空间梯度为零，因此：
+
+
+
+$$
+\begin{aligned}\nabla\Pi&=\nabla\int_{t_0}^{t_1}p(\boldsymbol x,t)\,dt
+-\underbrace{\nabla\int_{t_0}^{t_1}p_{\mathrm{ref}}(t)\,dt}_{=0}\end{aligned}
+$$
+
+
+
+The spatially uniform reference contributes zero gradient; commute the remaining gradient and integral.
+
+空间均匀参考压强的梯度为零；交换剩余梯度与积分的次序。
+
+
+
+$$
+\begin{aligned}\nabla\Pi&=\int_{t_0}^{t_1}\nabla p\,dt.\end{aligned}\tag{6}
+$$
+
+
+
+Consequently, the pressure term in equation (3) becomes
+
+因此，式 (3) 中的压力项就变成：
+
+
+
+$$
+\boxed{-\frac1\rho\int_{t_0}^{t_1}\nabla p\,dt=-\frac{\nabla\Pi}{\rho}}\tag{7}
+$$
+
+
+
+**This is the crucial mathematical step connecting pressure impulse to the momentum equation.**
+
+**这就是将压力冲量与动量方程联系起来的关键数学步骤。**
+
+#### Terms 3 and 4: Convection and viscosity
+
+#### 第三、四项：对流与黏性
+
+The remaining integrals are retained in their original forms:
+
+剩余两项的积分保留原来的形式：
+
+
+
+$$
+-\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt
+\qquad\text{and}\qquad
+\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt.
+$$
+
+
+
+Unlike the local time derivative, these terms generally cannot be reduced to simple differences between their values at $t_0$ and $t_1$. Evaluating them requires the velocity field throughout the integration interval.
+
+与局部时间导数不同，这两项通常不能直接化为在 $t_0$ 和 $t_1$ 时刻的函数值之差。计算它们需要知道整个积分时间段内的速度场。
+
+#### 3. Assemble the equation
+
+#### 合并各项
+
+Substituting equations (4) and (7) into equation (3) yields
+
+将式 (4)、(7) 代回式 (3)，就得到：
+
+
+
+$$
+\boxed{\begin{aligned}
+\Delta\boldsymbol u
+={}&-\frac{\nabla\Pi}{\rho}\\
+&-\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt\\
+&+\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt.
+\end{aligned}}\tag{C1.6-E21}
+$$
+
+
+
+**This is exactly C1.6-E21. It is simply the time-integrated Navier–Stokes equation, with the pressure integral rewritten using the definition of pressure impulse.**
+
+**这就是 C1.6-E21。它本质上只是对 Navier–Stokes 方程进行时间积分，并利用压力冲量的定义改写压力积分项。**
+
+It is exact within the stated incompressible, constant-property model, provided the fixed observation point remains in the liquid domain over the integration interval. We have not yet made the short-event approximation.
+
+在所述不可压缩、常物性模型内，只要固定观察点在整个积分时间段均属于液体区域，这个关系就是精确的。到目前为止，我们还没有使用短时事件近似。
 
 **Symbols for Eq. (C1.6-E21).**
 
@@ -1349,22 +3344,142 @@ The short-event approximation must justify removing convective and viscous impul
 
 **估算被忽略项的尺度。** 选取代表性液体速率与变化长度。对流冲量尺度为速率 × 时间／长度。黏性冲量尺度为运动黏度 × 时间／长度²。小界面位移允许固定边界几何。这些尺度诊断不能保证奇异边界层的误差界限。在这些条件下，将不可压缩速度相减并取散度。
 
-**Derivation.** Scale the omitted acceleration terms over the pulse duration. Compare them with a velocity increment of order the chosen speed. Apply incompressibility to both endpoint fields. Taking divergence of reduced impulse momentum gives a Laplace problem. Boundary data select its solution.
+**Derivation.**
 
-**推导。** 用脉冲持续时间估算被忽略加速度项。将其与所选速度同阶的速度增量比较。对两个端点速度场分别应用不可压缩条件。对约化冲量动量关系取散度，得到拉普拉斯问题。边界数据决定其解。
+**推导。**
 
 (C1.6-E22) · Short-event reduced pressure-impulse model / (C1.6-E22) · 短时事件的简化压力冲量模型
 
+#### 4. Where does the next approximation come from?
+
+#### 下一步的近似从哪里来？
+
+C1.6-E22 is a separate approximation. If the event lasts $\tau=t_1-t_0$, the flow varies over a spatial scale $L$, and characteristic speed is $U$, then the convective and viscous terms are small relative to a characteristic velocity change when the corresponding ratios are small:
+
+C1.6-E22 是另外一步近似。若事件持续 $\tau=t_1-t_0$，流场变化的特征长度为 $L$，特征速度为 $U$，那么当相应比值足够小时，对流和黏性项相对于特征速度变化较小：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \left|\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt\right|
-       &\sim U^2\tau/L,\qquad (U^2\tau/L)/U=U\tau/L,\\
-    \left|\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt\right|
-       &\sim\nu U\tau/L^2,\qquad(\nu U\tau/L^2)/U=\nu\tau/L^2,\\
-    \nabla\cdot\Delta\boldsymbol u&=\nabla\cdot\boldsymbol u(t_1)-\nabla\cdot\boldsymbol u(t_0)=0-0=0,\\
-    0&=-\nabla\cdot\nabla\Pi/\rho=-\nabla^2\Pi/\rho.
-    \end{aligned}\\[6pt]\begin{gathered}\frac{U\tau}{L}\ll1\\ \frac{\nu\tau}{L^2}\ll1\\ \Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho}\\ 0=\nabla\cdot\Delta\boldsymbol u\simeq-\frac{\nabla^2\Pi}{\rho}\ \Longrightarrow\ \nabla^2\Pi=0\end{gathered}\end{gathered}
+\frac{U\tau}{L}\ll1,\qquad\frac{\nu\tau}{L^2}\ll1.
+$$
+
+
+
+Provided the relevant velocity-change scaling and boundary conditions support these omissions, C1.6-E21 reduces to
+
+在速度变化的尺度估计与边界条件也支持忽略这两项时，C1.6-E21 才简化为：
+
+
+
+$$
+\boxed{\Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho}}\tag{C1.6-E22}
+$$
+
+
+
+The two equations must not be conflated: C1.6-E21 retains all three acceleration mechanisms and is exact under the stated model; C1.6-E22 neglects two of them and requires additional assumptions.
+
+不能将这两个方程混为一谈：C1.6-E21 保留全部三个加速机制，在所述模型内是精确的；C1.6-E22 则忽略其中两项，需要额外的近似条件。
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Estimate convective acceleration by squared characteristic speed divided by variation length. Integrating over event duration gives its velocity-change scale.
+
+用特征速度平方除以变化长度估计对流加速度。再乘以事件持续时间，得到其速度变化尺度。
+
+
+
+$$
+\begin{aligned}\left|\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt\right|
+       &\sim U^2\tau/L,\qquad (U^2\tau/L)/U=U\tau/L,\end{aligned}
+$$
+
+
+
+Estimate the viscous Laplacian using inverse squared variation length. Compare the resulting viscous impulse with characteristic speed.
+
+用变化长度平方的倒数估计黏性拉普拉斯项。将所得黏性冲量与特征速度比较。
+
+
+
+$$
+\begin{aligned}\left|\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt\right|
+       &\sim\nu U\tau/L^2,\qquad(\nu U\tau/L^2)/U=\nu\tau/L^2,\end{aligned}
+$$
+
+
+
+Subtract the divergence-free velocities at the two fixed event endpoints. Their velocity increment remains divergence-free.
+
+将两个固定事件端点的无散速度相减。所得速度增量仍无散。
+
+
+
+$$
+\begin{aligned}\nabla\cdot\Delta\boldsymbol u&=\nabla\cdot\boldsymbol u(t_1)-\nabla\cdot\boldsymbol u(t_0)=0-0=0,\end{aligned}
+$$
+
+
+
+Take the divergence of the reduced pressure-impulse relation. With constant density, incompressibility gives Laplace's equation.
+
+对约化压力冲量关系取散度。密度恒定时，不可压缩条件给出拉普拉斯方程。
+
+
+
+$$
+\begin{aligned}0&=-\nabla\cdot\nabla\Pi/\rho=-\nabla^2\Pi/\rho.\end{aligned}
+$$
+
+
+
+Require small convective impulse on the chosen velocity scale.
+
+要求在所选速度尺度下，对流冲量足够小。
+
+
+
+$$
+\frac{U\tau}{L}\ll1
+$$
+
+
+
+Require small viscous impulse on that same scale.
+
+要求在同一尺度下，黏性冲量足够小。
+
+
+
+$$
+\frac{\nu\tau}{L^2}\ll1
+$$
+
+
+
+Under the stated additional assumptions, retain the pressure contribution as the leading velocity change.
+
+在已声明的附加假设下，保留压力贡献作为主导速度变化。
+
+
+
+$$
+\Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho}
+$$
+
+
+
+Apply incompressibility to this reduced relation to obtain the pressure-impulse boundary equation.
+
+对该约化关系应用不可压缩条件，得到压力冲量边值方程。
+
+
+
+$$
+0=\nabla\cdot\Delta\boldsymbol u\simeq-\frac{\nabla^2\Pi}{\rho}\ \Longrightarrow\ \nabla^2\Pi=0
 $$
 
 
@@ -1413,21 +3528,171 @@ A fixed impermeable wall requires zero normal velocity change. Its normal impuls
 
 **求解直液柱基准。** 初始均匀液柱沿正轴静止，面积恒定，侧壁固定。入口冲量给定为正，出口冲量为零。将一维拉普拉斯方程积分两次，再用两个端点值确定梯度。
 
-**Derivation.** For the straight column, integrate the zero second derivative once to obtain a constant slope. Integrate again. Apply inlet data to the intercept and outlet data to the slope. The negative pressure-impulse slope accelerates liquid in the positive axial direction.
+**Derivation.**
 
-**推导。** 对直液柱，将二阶导数为零积分一次，得到常斜率，再积分一次。入口条件确定截距，出口条件确定斜率。负压力冲量斜率使液体沿正轴向加速。
+**推导。**
 
 (C1.6-E23) · Exact straight-column solution of the reduced model / (C1.6-E23) · 简化模型中直液柱的精确解
 
+#### 5. Apply C1.6-E23 to a straight liquid column
+
+#### 将 C1.6-E23 应用于直液柱
+
+Let $z\in[0,L]$, with a driven inlet at $z=0$ and an outlet at $z=L$. Define $\Pi(0)=\Pi_0$ and $\Pi(L)=0$. The one-dimensional Laplace equation in the short-event reduced model is
+
+令 $z\in[0,L]$，驱动端位于 $z=0$，出口位于 $z=L$。设 $\Pi(0)=\Pi_0$，$\Pi(L)=0$。在短时事件的简化模型中，一维拉普拉斯方程为：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    d^2\Pi/dz^2=0&\Rightarrow d\Pi/dz=A_1,\\
-    \Pi(z)-\Pi(0)&=\int_0^z A_1\,ds=A_1z,\\
-    \Pi(0)=\Pi_0&\Rightarrow A_0=\Pi_0,\\
-    0=\Pi(L)&=A_1L+\Pi_0\Rightarrow A_1=-\Pi_0/L,\\
-    \Delta u_z&=-(-\Pi_0/L)/\rho=\Pi_0/(\rho L).
-    \end{aligned}\\[6pt]\begin{aligned}\frac{d^2\Pi}{dz^2}&=0\quad\Longrightarrow\quad\Pi=A_1z+A_0,\\\Pi(0)&=\Pi_0,\quad\Pi(L)=0\quad\Longrightarrow\quad A_0=\Pi_0,\quad A_1=-\frac{\Pi_0}{L},\\\Pi(z)&=\Pi_0\left(1-\frac zL\right),\qquad \Delta u_z=-\frac1\rho\frac{d\Pi}{dz}=\frac{\Pi_0}{\rho L}.\end{aligned}\end{gathered}
+\frac{d^2\Pi}{dz^2}=0\quad\Longrightarrow\quad\Pi(z)=\Pi_0\left(1-\frac zL\right).
+$$
+
+
+
+Differentiating **in space** after the **time integration** gives
+
+**先对时间积分，再对空间求导**，得到：
+
+
+
+$$
+\boxed{\Delta u_z=-\frac1\rho\frac{d\Pi}{dz}=\frac{\Pi_0}{\rho L}}.
+$$
+
+
+
+#### 5. Simple one-dimensional illustration
+
+#### 简单的一维示例
+
+If $z$ runs from the driven end $0$ to an outlet $L$, and the pressure excess has the spatial form $p(z,t)-p_{\mathrm{ref}}(t)=f(t)(1-z/L)$, then
+
+如果 $z$ 从受驱端 $0$ 指向出口 $L$，并且超压具有如下空间形式 $p(z,t)-p_{\mathrm{ref}}(t)=f(t)(1-z/L)$，那么：
+
+
+
+$$
+\Pi(z)=\left(1-\frac zL\right)\int_{t_0}^{t_1}f(t)\,dt,
+\qquad
+\frac{d\Pi}{dz}=-\frac1L\int_{t_0}^{t_1}f(t)\,dt.
+$$
+
+
+
+When the short-event approximation applies, the resulting axial velocity increment is
+
+当短时事件近似成立时，得到的轴向速度增量为：
+
+
+
+$$
+\boxed{\Delta u_z\simeq-\frac1\rho\frac{d\Pi}{dz}
+=\frac1{\rho L}\int_{t_0}^{t_1}f(t)\,dt}.
+$$
+
+
+
+This makes the operations distinct: **integrate pressure over time to obtain $\Pi$; differentiate $\Pi$ in space to obtain the leading-order velocity change.**
+
+这使两个操作的作用清晰区分：**先对压力进行时间积分得到 $\Pi$，再对 $\Pi$ 作空间求导得到一阶速度变化。**
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Integrate the one-dimensional Laplace equation once. Its pressure-impulse gradient is constant.
+
+对一维拉普拉斯方程积分一次。压力冲量梯度为常数。
+
+
+
+$$
+\begin{aligned}d^2\Pi/dz^2=0&\Rightarrow d\Pi/dz=A_1,\end{aligned}
+$$
+
+
+
+Integrate that constant gradient from the inlet to an arbitrary column position.
+
+从入口至任意液柱位置积分该常梯度。
+
+
+
+$$
+\begin{aligned}\Pi(z)-\Pi(0)&=\int_0^z A_1\,ds=A_1z,\end{aligned}
+$$
+
+
+
+Apply the prescribed inlet pressure impulse to determine the additive constant.
+
+应用给定入口压力冲量，确定加法积分常数。
+
+
+
+$$
+\begin{aligned}\Pi(0)=\Pi_0&\Rightarrow A_0=\Pi_0,\end{aligned}
+$$
+
+
+
+Apply zero outlet impulse. This determines the gradient and its negative sign.
+
+应用出口冲量为零的条件。由此确定梯度及其负号。
+
+
+
+$$
+\begin{aligned}0=\Pi(L)&=A_1L+\Pi_0\Rightarrow A_1=-\Pi_0/L,\end{aligned}
+$$
+
+
+
+Insert the gradient into the reduced momentum relation. The resulting axial velocity increment is positive toward the outlet.
+
+将该梯度代入约化动量关系。所得轴向速度增量为正，指向出口。
+
+
+
+$$
+\begin{aligned}\Delta u_z&=-(-\Pi_0/L)/\rho=\Pi_0/(\rho L).\end{aligned}
+$$
+
+
+
+The first integration makes pressure impulse linear in column position.
+
+第一次积分使压力冲量成为液柱位置的线性函数。
+
+
+
+$$
+\begin{aligned}\frac{d^2\Pi}{dz^2}&=0\quad\Longrightarrow\quad\Pi=A_1z+A_0,\end{aligned}
+$$
+
+
+
+The two endpoint values determine its two integration constants.
+
+两个端点值确定两个积分常数。
+
+
+
+$$
+\begin{aligned}\Pi(0)&=\Pi_0,\quad\Pi(L)=0\quad\Longrightarrow\quad A_0=\Pi_0,\quad A_1=-\frac{\Pi_0}{L},\end{aligned}
+$$
+
+
+
+Insert the resulting gradient into the axial velocity increment.
+
+将所得梯度代入轴向速度增量。
+
+
+
+$$
+\begin{aligned}\Pi(z)&=\Pi_0\left(1-\frac zL\right),\qquad \Delta u_z=-\frac1\rho\frac{d\Pi}{dz}=\frac{\Pi_0}{\rho L}.\end{aligned}
 $$
 
 
@@ -1442,7 +3707,8 @@ $$
 | $\Pi(z)$ — Local column pressure impulse (Pa s)<br>$\Pi(z)$ — 液柱局部压力冲量（Pa s） | $\Pi_0>0$ — Driven-end pressure impulse (Pa s)<br>$\Pi_0>0$ — 驱动端压力冲量（Pa s） |
 | $A_0$ is an integration constant (Pa s)<br>$A_0$ 为积分常数（Pa s） | $A_1$ a gradient constant (Pa s m⁻¹)<br>$A_1$ 为梯度常数（Pa s m⁻¹） |
 | $\rho>0$ is carrier density (kg m⁻³)<br>$\rho>0$ 为载液密度（kg m⁻³） | $\Delta u_z$ is positive axial speed change (m s⁻¹)<br>$\Delta u_z$ 为正轴向速度变化（m s⁻¹） |
-| $s$ — dummy axial integration coordinate (m)<br>$s$ — 轴向积分哑坐标（m） |  |
+| $s$ — dummy axial integration coordinate (m)<br>$s$ — 轴向积分哑坐标（m） | $f(t)$ — prescribed pressure-excess waveform (Pa)<br>$f(t)$ — 给定超压波形（Pa） |
+| $t_0$ — event start time (s)<br>$t_0$ — 事件开始时间（s） | $t_1$ — event end time (s)<br>$t_1$ — 事件结束时间（s） |
 
 **Conventions and conditions.** $d/dz$ is an axial derivative; Subscript $z$ labels the component and 0 the driven endpoint; The uniform-speed column is an inviscid core benchmark; no-slip wall layers are omitted.
 
@@ -1470,23 +3736,137 @@ Prescribe 0.60 MPa for 0.50 μs across a 100 μm column. Use the earlier density
 
 **本章作用。** 将式（C1.6-E23）用于给定压力脉冲。计算速度变化，并比较声学、对流与黏性尺度，再解释该结果。
 
-**Derivation.** The rectangular pulse is a stipulated ideal benchmark. Convert its pressure, duration and column length. Compute the impulse, velocity, displacement ratio, viscous ratio and crossing time separately. The total pulse duration does not specify its physical rise time.
+**Derivation.**
 
-**推导。** 矩形脉冲是规定的理想基准。换算压力、持续时间和液柱长度。分别计算冲量、速度、位移比、黏性比及声穿越时间。脉冲总时长不能确定实际上升时间。
+**推导。**
 
 (C1.6-E24) · Declared impulse calculation and applicability diagnostics / (C1.6-E24) · 采用给定参数的冲量计算与适用性诊断
 
+For the course's illustrative pressure difference $\Delta p=0.60\,\mathrm{MPa}$ lasting $\tau=0.50\,\mu\mathrm s$, $\Pi_0=\Delta p\tau=0.30\,\mathrm{Pa\,s}$. With $\rho=1000\,\mathrm{kg/m^3}$ and $L=100\,\mu\mathrm m$, the velocity increment is $\Delta u_z=3.0\,\mathrm{m/s}$.
+
+课程示例中，压差 $\Delta p=0.60\,\mathrm{MPa}$，持续时间 $\tau=0.50\,\mu\mathrm s$，因此 $\Pi_0=\Delta p\tau=0.30\,\mathrm{Pa\,s}$。取 $\rho=1000\,\mathrm{kg/m^3}$、$L=100\,\mu\mathrm m$，可得速度增量 $\Delta u_z=3.0\,\mathrm{m/s}$。
+
+This example distinguishes the two operations: the integral $\int dt$ produces $\Pi(z)$, while the spatial derivative $d\Pi/dz$ determines the direction and strength of acceleration. It is a straight-column benchmark, not a prediction of the ultimate cavitation jet velocity.
+
+这个例子明确区分了两个操作：$\int dt$ 的时间积分给出 $\Pi(z)$，空间导数 $d\Pi/dz$ 则决定加速方向与强度。它只是直液柱基准模型，并不直接预测空化射流的最终速度。
+
+#### 6. Validity and agreed revision
+
+#### 适用范围与待修改事项
+
+This reduced pressure-impulse model assumes small integrated convection and viscosity relative to the pressure forcing, sufficiently small interface displacement for fixed-geometry approximations, and a compatible incompressible pressure field. It does not automatically describe fast compressible shocks, strongly moving interfaces, or an actual jet without a spatially resolved geometry and boundary conditions. In the course example the acoustic crossing time $L/c$ is about 0.0667 μs, shorter than the 0.50 μs pulse; “short-event” here concerns the neglected inertial-advection and viscous effects, not a claim that the pulse is shorter than the acoustic time.
+
+这一简化压力冲量模型要求积分后的对流和黏性效应相对于压力驱动较小、界面位移足够小以允许固定几何近似，并满足相应的不可压缩压力场假设。它不能自动描述高速可压缩冲击波、强烈运动的界面，或缺少空间几何与边界条件的真实射流。在课程例子中，声传播时间 $L/c$ 约为 0.0667 μs，小于 0.50 μs 的脉冲时长；这里“短时事件”指的是对流和黏性积分效应可以忽略，而不是声传播时间比脉冲更长。
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Convert the teaching pressure, pulse duration, and column length to SI units.
+
+将教学压力、脉冲持续时间及液柱长度换算为 SI 单位。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \Delta p&=6.0\times10^5\ \mathrm{Pa},\quad\tau=5.0\times10^{-7}\ \mathrm s,
-      \quad L=10^{-4}\ \mathrm m,\\
-    \Pi_0&=(6.0\times10^5)(5.0\times10^{-7})=0.30\ \mathrm{Pa\,s},\\
-    \rho L&=1000(10^{-4})=0.1\ \mathrm{kg\,m^{-2}},\quad U=0.30/0.1=3.0\ \mathrm{m\,s^{-1}},\\
-    U\tau/L&=3(5\times10^{-7})/10^{-4}=0.015,\\
-    \nu\tau/L^2&=(10^{-6})(5\times10^{-7})/10^{-8}=5\times10^{-5},\\
-    t_a&=10^{-4}/1500=6.66667\times10^{-8}\ \mathrm s,\quad \tau/t_a=7.5.
-    \end{aligned}\\[6pt]\begin{aligned}\Pi_0&=\Delta p\tau=(0.60\times10^6)(0.50\times10^{-6})\ \mathrm{Pa\,s}=0.30\ \mathrm{Pa\,s},\\U&=\frac{\Pi_0}{\rho L}=3.0\ \mathrm{m\,s^{-1}},\qquad t_a=\frac Lc=0.066667\ \mu\mathrm s,\\\frac{U\tau}{L}&=0.015,\qquad\frac{\nu\tau}{L^2}=5.0\times10^{-5},\qquad\frac{\tau}{t_a}=7.5.\end{aligned}\end{gathered}
+\begin{aligned}\Delta p&=6.0\times10^5\ \mathrm{Pa},\quad\tau=5.0\times10^{-7}\ \mathrm s,
+      \quad L=10^{-4}\ \mathrm m,\end{aligned}
+$$
+
+
+
+Integrate the constant pressure pulse by multiplying its amplitude and duration.
+
+将恒压脉冲的幅值与持续时间相乘，得到其时间积分。
+
+
+
+$$
+\begin{aligned}\Pi_0&=(6.0\times10^5)(5.0\times10^{-7})=0.30\ \mathrm{Pa\,s},\end{aligned}
+$$
+
+
+
+Calculate density times column length, then divide pressure impulse by this factor to obtain velocity change.
+
+计算密度与液柱长度的乘积，再用压力冲量除以该因子，得到速度变化。
+
+
+
+$$
+\begin{aligned}\rho L&=1000(10^{-4})=0.1\ \mathrm{kg\,m^{-2}},\quad U=0.30/0.1=3.0\ \mathrm{m\,s^{-1}},\end{aligned}
+$$
+
+
+
+Evaluate displacement relative to variation length using characteristic speed and event duration.
+
+利用特征速度与事件持续时间，计算位移相对于变化长度的比例。
+
+
+
+$$
+\begin{aligned}U\tau/L&=3(5\times10^{-7})/10^{-4}=0.015,\end{aligned}
+$$
+
+
+
+Evaluate the viscous impulse ratio using kinematic viscosity and squared variation length.
+
+利用运动黏度与变化长度平方，计算黏性冲量比值。
+
+
+
+$$
+\begin{aligned}\nu\tau/L^2&=(10^{-6})(5\times10^{-7})/10^{-8}=5\times10^{-5},\end{aligned}
+$$
+
+
+
+Calculate one-way acoustic travel time and compare it with the pressure-pulse duration.
+
+计算单程声传播时间，并将其与压力脉冲持续时间比较。
+
+
+
+$$
+\begin{aligned}t_a&=10^{-4}/1500=6.66667\times10^{-8}\ \mathrm s,\quad \tau/t_a=7.5.\end{aligned}
+$$
+
+
+
+Collect the pressure-pulse time integral.
+
+汇总压力脉冲的时间积分。
+
+
+
+$$
+\begin{aligned}\Pi_0&=\Delta p\tau=(0.60\times10^6)(0.50\times10^{-6})\ \mathrm{Pa\,s}=0.30\ \mathrm{Pa\,s},\end{aligned}
+$$
+
+
+
+Record the predicted column velocity change and acoustic travel time.
+
+写出所预测的液柱速度变化与声传播时间。
+
+
+
+$$
+\begin{aligned}U&=\frac{\Pi_0}{\rho L}=3.0\ \mathrm{m\,s^{-1}},\qquad t_a=\frac Lc=0.066667\ \mu\mathrm s,\end{aligned}
+$$
+
+
+
+Compare the convective, viscous, and acoustic ratios before using the reduced model.
+
+使用约化模型之前，比较对流、黏性与声学比值。
+
+
+
+$$
+\begin{aligned}\frac{U\tau}{L}&=0.015,\qquad\frac{\nu\tau}{L^2}=5.0\times10^{-5},\qquad\frac{\tau}{t_a}=7.5.\end{aligned}
 $$
 
 
@@ -1535,16 +3915,87 @@ Directional motion requires asymmetry. A sphere in uniform infinite liquid has n
 
 (C1.6-E25) · Geometry definition and exact symmetry identity / (C1.6-E25) · 几何定义与精确的对称性恒等式
 
+Write the radial unit vector in Cartesian components and the solid-angle integration measure.
+
+用笛卡尔分量表示径向单位矢量，并写出立体角积分测度。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \boldsymbol e_r&=(\sin\theta\cos\psi,\sin\theta\sin\psi,\cos\theta),\quad
-      d\Omega=\sin\theta\,d\theta\,d\psi,\\
-    \int_0^{2\pi}\cos\psi\,d\psi&=[\sin\psi]_0^{2\pi}=0,\\
-    \int_0^{2\pi}\sin\psi\,d\psi&=[-\cos\psi]_0^{2\pi}=0,\\
-    \int_0^\pi\cos\theta\sin\theta\,d\theta&=[\tfrac12\sin^2\theta]_0^\pi=0,\\
-    \int_{S^2}\boldsymbol e_r\,d\Omega&=(0,0,0).
-    \end{aligned}\\[6pt]\begin{gathered}\gamma=\frac h{R_{\max}}\\ \int_{S^2}\boldsymbol e_r\,d\Omega=\boldsymbol0\end{gathered}\end{gathered}
+\begin{aligned}\boldsymbol e_r&=(\sin\theta\cos\psi,\sin\theta\sin\psi,\cos\theta),\quad
+      d\Omega=\sin\theta\,d\theta\,d\psi,\end{aligned}
+$$
+
+
+
+Integrate the azimuthal cosine factor. This cancels the first Cartesian component over a complete revolution.
+
+积分方位角余弦因子。第一笛卡尔分量在完整一周内相互抵消。
+
+
+
+$$
+\begin{aligned}\int_0^{2\pi}\cos\psi\,d\psi&=[\sin\psi]_0^{2\pi}=0,\end{aligned}
+$$
+
+
+
+Integrate the azimuthal sine factor. This cancels the second Cartesian component.
+
+积分方位角正弦因子。第二笛卡尔分量因此抵消。
+
+
+
+$$
+\begin{aligned}\int_0^{2\pi}\sin\psi\,d\psi&=[-\cos\psi]_0^{2\pi}=0,\end{aligned}
+$$
+
+
+
+Integrate the polar factor for the third component. Its two endpoint contributions are equal.
+
+积分第三分量的极角因子。其两个端点的贡献相等。
+
+
+
+$$
+\begin{aligned}\int_0^\pi\cos\theta\sin\theta\,d\theta&=[\tfrac12\sin^2\theta]_0^\pi=0,\end{aligned}
+$$
+
+
+
+Collect the three zero components. An exactly spherical configuration has no preferred vector direction.
+
+合并三个零分量。严格球形构型没有优先的矢量方向。
+
+
+
+$$
+\begin{aligned}\int_{S^2}\boldsymbol e_r\,d\Omega&=(0,0,0).\end{aligned}
+$$
+
+
+
+Define stand-off using center-to-boundary distance divided by maximum radius.
+
+用中心至边界距离除以最大半径，定义相对壁距。
+
+
+
+$$
+\gamma=\frac h{R_{\max}}
+$$
+
+
+
+The zero angular vector integral records the absence of a preferred direction under exact spherical symmetry.
+
+角向矢量积分为零，表明严格球对称时没有优先方向。
+
+
+
+$$
+\int_{S^2}\boldsymbol e_r\,d\Omega=\boldsymbol0
 $$
 
 
@@ -1591,23 +4042,134 @@ Stand-off locates a boundary; perfect spherical symmetry selects no outgoing dir
 
 **规定空间射流问题。** 给定初始界面形状和载液速度，定义固体边界、出口、接触线规律及压力闭合。以下方程描述常物性不可压缩牛顿液体的质量与动量守恒，忽略重力。须结合下述界面和边界条件求解。拟合半径历程仍未确定这些空间条件。
 
-**Derivation.** Start with local mass and Cauchy momentum conservation. Adopt constant-density Newtonian stress. Its divergence reduces to the vector Laplacian because incompressibility removes the divergence-gradient term. The spatial problem has three velocity components, pressure and unknown interface shape, together with initial and boundary data.
+**Derivation.**
 
-**推导。** 从局部质量守恒与柯西动量守恒出发，采用常密度牛顿应力。不可压缩条件消去散度梯度项，使黏性应力散度约化为矢量拉普拉斯。空间问题包含三个速度分量、压力及未知界面形状，还需初始和边界数据。
+**推导。**
 
 (C1.7-E26) · Bulk conservation and Newtonian constitutive assumption / (C1.7-E26) · 体相守恒律与牛顿流体本构假设
 
+#### 1. Start from the Navier–Stokes equation
+
+#### 从 Navier–Stokes 方程出发
+
+For an incompressible Newtonian liquid with constant density $\rho$, dynamic viscosity $\mu$, and no body forces, the momentum equation is
+
+对于密度 $\rho$、动力黏度 $\mu$ 均为常数、且忽略体积力的不可压缩牛顿流体，动量方程为：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \partial_t\rho+\nabla\cdot(\rho\boldsymbol u)&=0
-       \quad\xrightarrow{\rho\ \mathrm{constant}}\quad\nabla\cdot\boldsymbol u=0,\\
-    \boldsymbol T&=-p\boldsymbol I+\mu[\nabla\boldsymbol u+(\nabla\boldsymbol u)^{\mathsf T}],\\
-    \rho D\boldsymbol u/Dt&=\nabla\cdot\boldsymbol T,\\
-    \nabla\cdot\boldsymbol T&=-\nabla p+\mu[\nabla^2\boldsymbol u+\nabla(\nabla\cdot\boldsymbol u)]
-      =-\nabla p+\mu\nabla^2\boldsymbol u,\\
-    D\boldsymbol u/Dt&=\partial_t\boldsymbol u+(\boldsymbol u\cdot\nabla)\boldsymbol u.
-    \end{aligned}\\[6pt]\begin{gathered}\nabla\cdot\boldsymbol u=0\\ \rho\left(\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u\right)=-\nabla p+\mu\nabla^2\boldsymbol u\end{gathered}\end{gathered}
+\boxed{\rho\left[\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u\right]=-\nabla p+\mu\nabla^2\boldsymbol u}\tag{1}
+$$
+
+
+
+Here, $\boldsymbol u(\boldsymbol x,t)$ is the velocity field, $p(\boldsymbol x,t)$ is pressure, $\nabla p$ is the pressure gradient, and $\nabla^2\boldsymbol u$ is the vector Laplacian of velocity. The notation $(\boldsymbol u\cdot\nabla)\boldsymbol u$ denotes convective acceleration.
+
+其中，$\boldsymbol u(\boldsymbol x,t)$ 是速度场，$p(\boldsymbol x,t)$ 是压力场，$\nabla p$ 是压力梯度，$\nabla^2\boldsymbol u$ 是速度的矢量拉普拉斯算子。$(\boldsymbol u\cdot\nabla)\boldsymbol u$ 表示对流加速度。
+
+Divide both sides by $\rho$, and define the kinematic viscosity $\nu=\mu/\rho$:
+
+两侧除以 $\rho$，并定义运动黏度 $\nu=\mu/\rho$：
+
+
+
+$$
+\boxed{\frac{\partial\boldsymbol u}{\partial t}=-\frac{\nabla p}{\rho}-(\boldsymbol u\cdot\nabla)\boldsymbol u+\nu\nabla^2\boldsymbol u}\tag{2}
+$$
+
+
+
+This equation states that the local velocity changes because of pressure gradients, convective transport, and viscous effects.
+
+这个方程表示：局部速度的变化由压力梯度、对流输运以及黏性作用共同决定。
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Begin with mass conservation before imposing constant density. Constant density reduces it to zero velocity divergence.
+
+先写质量守恒，再施加常密度条件。常密度使其约化为速度散度为零。
+
+
+
+$$
+\begin{aligned}\partial_t\rho+\nabla\cdot(\rho\boldsymbol u)&=0
+       \quad\xrightarrow{\rho\ \mathrm{constant}}\quad\nabla\cdot\boldsymbol u=0,\end{aligned}
+$$
+
+
+
+Adopt the Newtonian stress law with constant viscosity. It separates pressure and symmetric velocity-gradient stresses.
+
+采用常黏度牛顿应力定律。该定律区分压力应力与对称速度梯度应力。
+
+
+
+$$
+\begin{aligned}\boldsymbol T&=-p\boldsymbol I+\mu[\nabla\boldsymbol u+(\nabla\boldsymbol u)^{\mathsf T}],\end{aligned}
+$$
+
+
+
+Apply momentum conservation without body force. Stress divergence produces material acceleration.
+
+在无体积力时应用动量守恒。应力散度产生物质加速度。
+
+
+
+$$
+\begin{aligned}\rho D\boldsymbol u/Dt&=\nabla\cdot\boldsymbol T,\end{aligned}
+$$
+
+
+
+Take the divergence of Newtonian stress. Constant viscosity and incompressibility remove the gradient-of-divergence contribution.
+
+对牛顿应力取散度。常黏度与不可压缩条件消去散度梯度项。
+
+
+
+$$
+\begin{aligned}\nabla\cdot\boldsymbol T&=-\nabla p+\mu[\nabla^2\boldsymbol u+\nabla(\nabla\cdot\boldsymbol u)]
+      =-\nabla p+\mu\nabla^2\boldsymbol u,\end{aligned}
+$$
+
+
+
+Expand material acceleration into the local time derivative and convective acceleration.
+
+将物质加速度展开为局部时间导数与对流加速度。
+
+
+
+$$
+\begin{aligned}D\boldsymbol u/Dt&=\partial_t\boldsymbol u+(\boldsymbol u\cdot\nabla)\boldsymbol u.\end{aligned}
+$$
+
+
+
+State the constant-density mass-conservation condition.
+
+写出常密度质量守恒条件。
+
+
+
+$$
+\nabla\cdot\boldsymbol u=0
+$$
+
+
+
+Combine material acceleration and Newtonian stress divergence to obtain the spatial liquid momentum equation.
+
+结合物质加速度与牛顿应力散度，得到空间液体动量方程。
+
+
+
+$$
+\rho\left(\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u\right)=-\nabla p+\mu\nabla^2\boldsymbol u
 $$
 
 
@@ -1652,25 +4214,166 @@ Bulk momentum and volume conservation supply the spatial field needed for jet fo
 
 **规定界面方向与应力。** 法向由液体指向气体，故内球形空腔曲率为负，外液滴曲率为正。这一约定恢复式（C1.3-E06）。清洁界面且气相黏性可忽略时，切向黏性牵引为零。液体黏度为零时，该条件不增加应变率约束。没有相变时，界面与液体法向速度相等。
 
-**Derivation.** Represent a material interface by a level set. Its material derivative vanishes, yielding equal normal speeds. The level-set normal points from liquid to gas. Project the clean-interface stress jump onto its normal and tangent. Constant surface tension and negligible gas viscous stress give the pressure and tangential conditions.
+**Derivation.**
 
-**推导。** 用水平集表示物质界面。其物质导数为零，从而得到法向速度相等。水平集法向从液体指向气体。将清洁界面应力跳跃分别投影至法向和切向。表面张力恒定且气体黏性应力可忽略时，得到压力和切向条件。
+**推导。**
 
 (C1.7-E27) · Kinematic condition and clean-interface traction / (C1.7-E27) · 运动学条件与洁净界面牵引
 
+#### 3. Kinematic condition: advance interface position
+
+#### 运动学条件：推进界面位置
+
+With zero mass transfer across the interface, the physically required statement is equality of normal velocities,
+
+如果界面没有相变质量通量，物理上必须满足法向速度相等：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    F(\boldsymbol x,t)=0,\quad\boldsymbol n&=\nabla F/|\nabla F|,\quad
-      V_n=-\partial_tF/|\nabla F|,\\
-    \partial_tF+\boldsymbol u\cdot\nabla F=0&\Rightarrow V_n=\boldsymbol u\cdot\boldsymbol n,\\
-    (\boldsymbol T_g-\boldsymbol T_l)\boldsymbol n&=\sigma\kappa\boldsymbol n,\\
-    (\boldsymbol T_g-\boldsymbol T_l)\boldsymbol n
-       &=[(p_l-p_b)\boldsymbol I-2\mu\boldsymbol D]\boldsymbol n,\\
-    \boldsymbol n\cdot\boldsymbol n&=1,\qquad\boldsymbol s\cdot\boldsymbol n=0,\\
-    p_l-p_b-2\mu\boldsymbol n\cdot\boldsymbol D\boldsymbol n&=\sigma\kappa,\\
-    -2\mu\boldsymbol s\cdot\boldsymbol D\boldsymbol n&=0.
-    \end{aligned}\\[6pt]\begin{aligned}\boldsymbol D&=\frac12\left(\nabla\boldsymbol u+(\nabla\boldsymbol u)^\mathsf T\right),\qquad \kappa=\nabla_s\cdot\boldsymbol n,\\V_n&=\boldsymbol u\cdot\boldsymbol n,\qquad p_l=p_b+\sigma\kappa+2\mu\boldsymbol n\cdot\boldsymbol D\boldsymbol n,\\2\mu\boldsymbol s\cdot\boldsymbol D\boldsymbol n&=0,\qquad \kappa_{\mathrm{sphere}}=-\frac2R.\end{aligned}\end{gathered}
+\left(\frac{d\boldsymbol X}{dt}-\boldsymbol u\right)\cdot\boldsymbol n=0.
+$$
+
+
+
+If we deliberately follow material interface markers, we can choose the stronger parametrization used in C1.7-E28:
+
+如果选择追踪界面上的物质标记点，就可以采用 C1.7-E28 的较强参数化形式：
+
+
+
+$$
+\boxed{\frac{d\boldsymbol X}{dt}=\boldsymbol u(\boldsymbol X,t)=\nabla\phi(\boldsymbol X,t).}
+$$
+
+
+
+The normal component determines the physical interface shape; tangential marker motion depends on parametrization. This equation tells us **where** the interface moves, not how its velocity potential evolves.
+
+法向分量决定实际界面形状；切向标记点运动依赖参数化方式。这一方程告诉我们界面**移动到哪里**，但没有告诉我们界面速度势如何演化。
+
+**Additional worked steps.** The following steps supply details beyond the preserved handoff passage.
+
+**补充的完整步骤。** 以下步骤补充所保留交接材料之外的细节。
+
+Represent the interface by a smooth level set increasing into gas. Its gradient defines the normal, and its time change defines normal interface speed.
+
+用向气体侧增大的光滑水平集表示界面。其梯度确定法向，其时间变化确定界面法向速度。
+
+
+
+$$
+\begin{aligned}F(\boldsymbol x,t)=0,\quad\boldsymbol n&=\nabla F/|\nabla F|,\quad
+      V_n=-\partial_tF/|\nabla F|,\end{aligned}
+$$
+
+
+
+For an interface transported by liquid without phase slip, impose zero material change of the level set.
+
+对于由液体输运且没有相变滑移的界面，令水平集的物质变化为零。
+
+
+
+$$
+\begin{aligned}\partial_tF+\boldsymbol u\cdot\nabla F=0&\Rightarrow V_n=\boldsymbol u\cdot\boldsymbol n,\end{aligned}
+$$
+
+
+
+Apply the clean-interface traction jump using the liquid-to-gas normal and signed curvature.
+
+采用液体指向气体的法向与带符号曲率，应用清洁界面牵引跃变关系。
+
+
+
+$$
+\begin{aligned}(\boldsymbol T_g-\boldsymbol T_l)\boldsymbol n&=\sigma\kappa\boldsymbol n,\end{aligned}
+$$
+
+
+
+Insert gas pressure stress and liquid Newtonian stress into the traction jump.
+
+将气体压力应力与液体牛顿应力代入牵引跃变关系。
+
+
+
+$$
+\begin{aligned}(\boldsymbol T_g-\boldsymbol T_l)\boldsymbol n
+       &=[(p_l-p_b)\boldsymbol I-2\mu\boldsymbol D]\boldsymbol n,\end{aligned}
+$$
+
+
+
+Use unit normal magnitude and orthogonality of normal and tangent before taking projections.
+
+在作投影之前，使用单位法向的模长条件及法向与切向的正交性。
+
+
+
+$$
+\begin{aligned}\boldsymbol n\cdot\boldsymbol n&=1,\qquad\boldsymbol s\cdot\boldsymbol n=0,\end{aligned}
+$$
+
+
+
+Project the traction jump onto the normal. This gives the normal pressure and viscous-stress balance.
+
+将牵引跃变投影至法向。由此得到法向压力与黏性应力平衡。
+
+
+
+$$
+\begin{aligned}p_l-p_b-2\mu\boldsymbol n\cdot\boldsymbol D\boldsymbol n&=\sigma\kappa,\end{aligned}
+$$
+
+
+
+Project onto a tangent. Constant surface tension and negligible gas viscous stress give zero tangential liquid traction.
+
+投影至切向。常表面张力及可忽略的气相黏性应力给出零液体切向牵引。
+
+
+
+$$
+\begin{aligned}-2\mu\boldsymbol s\cdot\boldsymbol D\boldsymbol n&=0.\end{aligned}
+$$
+
+
+
+Define symmetric strain rate and signed curvature using the adopted normal orientation.
+
+根据所采用的法向方向，定义对称应变率与带符号曲率。
+
+
+
+$$
+\begin{aligned}\boldsymbol D&=\frac12\left(\nabla\boldsymbol u+(\nabla\boldsymbol u)^\mathsf T\right),\qquad \kappa=\nabla_s\cdot\boldsymbol n,\end{aligned}
+$$
+
+
+
+Collect interface kinematics and normal pressure balance.
+
+汇总界面运动学与法向压力平衡。
+
+
+
+$$
+\begin{aligned}V_n&=\boldsymbol u\cdot\boldsymbol n,\qquad p_l=p_b+\sigma\kappa+2\mu\boldsymbol n\cdot\boldsymbol D\boldsymbol n,\end{aligned}
+$$
+
+
+
+Collect tangential traction and the inner-sphere curvature sign.
+
+汇总切向牵引条件及内球面曲率符号。
+
+
+
+$$
+\begin{aligned}2\mu\boldsymbol s\cdot\boldsymbol D\boldsymbol n&=0,\qquad \kappa_{\mathrm{sphere}}=-\frac2R.\end{aligned}
 $$
 
 
@@ -1691,6 +4394,7 @@ $$
 | $\boldsymbol T_g$ — gas stress, $-p_b\boldsymbol I$ (Pa)<br>$\boldsymbol T_g$ — 气体应力，$-p_b\boldsymbol I$（Pa） | $\boldsymbol T_l$ — liquid stress, $-p_l\boldsymbol I+2\mu\boldsymbol D$ (Pa)<br>$\boldsymbol T_l$ — 液体应力，$-p_l\boldsymbol I+2\mu\boldsymbol D$（Pa） |
 | $\boldsymbol I$ — identity tensor (1)<br>$\boldsymbol I$ — 单位张量（1） | $\nabla$ — spatial gradient operator (m⁻¹)<br>$\nabla$ — 空间梯度算子（m⁻¹） |
 | $\nabla_s\cdot$ — surface divergence operator (m⁻¹)<br>$\nabla_s\cdot$ — 表面散度算子（m⁻¹） | $\partial_t$ — time derivative at fixed position (s⁻¹)<br>$\partial_t$ — 固定位置的时间导数（s⁻¹） |
+| $\boldsymbol X$ — material interface marker position (m)<br>$\boldsymbol X$ — 界面物质标记点位置（m） | $\phi$ — velocity potential (m² s⁻¹)<br>$\phi$ — 速度势（m² s⁻¹） |
 
 **Conventions and conditions.** $\nabla\boldsymbol u$ is its spatial gradient, with superscript $\mathsf T$ denoting transpose; $\nabla_s\cdot$ is surface divergence; Dots denote tensor/vector contractions; The level-set gradient is nonzero on the interface.
 
@@ -1722,36 +4426,249 @@ Set zero liquid velocity at a stationary viscous wall. Couple liquid velocity an
 
 **推导势流约化。** 假设流动无黏且初始无旋，并避开激波及未解析壁面层。速度势满足拉普拉斯方程。无相变滑移时，界面节点随液体速度运动。将欧拉伯努利导数转为物质导数，加入速度与速度势梯度的点积。由此在已声明假设下闭合撞击前空间模型。边界积分微射流模型采用此约化。 [[R4]](../reference/sources.html#r4)
 
-**Derivation.** For inviscid irrotational liquid, choose potential and interface position as unknowns. Incompressibility gives Laplace’s equation. On the interface, combine Bernoulli with the inviscid traction jump. Then convert the fixed-position derivative into the derivative following a liquid marker. This conversion changes the kinetic-term sign.
+**Derivation.**
 
-**推导。** 对无黏无旋液体，选取速度势和界面位置为未知量。不可压缩条件给出拉普拉斯方程。在界面结合伯努利方程与无黏牵引跳跃，再将固定位置导数转为随液体标记点运动的导数。该转换改变动能项符号。
+**推导。**
 
 (C1.7-E28) · Inviscid pre-impact moving-interface closure / (C1.7-E28) · 冲击前无黏运动界面的闭合关系
 
+**Core answer (English).** C1.7-E28 is a *conditional potential-flow closure* for a moving gas–liquid interface, not a complete laser-to-PFC-jet model. The bulk Laplace equation supplies the velocity field; the kinematic condition updates interface geometry; the dynamic condition updates interface potential. The material-derivative expression is a rewrite, not another independent equation. All initial data, non-interface boundary conditions and the bubble-pressure history must still be given or modeled.
+
+**核心回答（中文）。** C1.7-E28 是运动气液界面的**条件性势流闭合**，不是完整的激光—PFC—射流模型。流体内部的 Laplace 方程给出速度场；运动学条件更新界面几何；动力学条件更新界面速度势。物质导数形式只是改写，不是额外独立方程。仍然需要初值、其他边界条件以及已知或另行计算的腔内压力历程。
+
+#### 1. Identify the unknowns
+
+#### 确认未知量
+
+In the spherical Rayleigh–Plesset model, the unknown shape is only the radius `R(t)`. In the nonspherical jet problem, let `Ω(t)` be the liquid domain, `Γ(t)` its moving gas–liquid interface and `X(α,t)` the position of an interface marker (the parameter `α` labels that marker). We seek `φ(x,t)` in the liquid and `Γ(t)` over time. The velocity is then `u=∇φ`. Pressure at the interface is obtained from stress balance. Bubble pressure `p_b(t)` is an additional required source input or thermodynamic unknown.
+
+球对称 Rayleigh–Plesset 模型的几何未知量只有半径 `R(t)`。在非球对称射流问题中，令 `Ω(t)` 为液体区域，`Γ(t)` 为运动气液界面，`X(α,t)` 为界面上某个标记点的位置（`α` 为标记参数）。我们需要求解液体中的 `φ(x,t)` 及随时间演化的 `Γ(t)`，速度再由 `u=∇φ` 得到。界面压力来自应力平衡。腔内压力 `p_b(t)` 则是另外必须给定或通过热力学求解的量。
+
+#### 2. Bulk equation
+
+#### 流体内部方程
+
+Assume the carrier is incompressible, inviscid and irrotational, away from shocks and boundary layers. Irrotationality permits `u=∇φ`. Incompressibility requires `∇·u=0`. Substitution yields
+
+假设载液不可压缩、无黏且无旋，并且不考虑冲击波及边界层。无旋条件允许写成 `u=∇φ`，不可压缩条件要求 `∇·u=0`。代入后：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \nabla\cdot\boldsymbol u=0,\quad\boldsymbol u=\nabla\phi
-       &\Rightarrow\nabla\cdot\nabla\phi=\nabla^2\phi=0,\\
-    p_l&=p_b+\sigma\kappa,\\
-    \partial_t\phi&=p_\infty/\rho-p_l/\rho-|\boldsymbol u|^2/2\\
-       &=(p_\infty-p_b-\sigma\kappa)/\rho-|\boldsymbol u|^2/2,\\
-    \frac{d\phi(\boldsymbol X(t),t)}{dt}
-       &=\partial_t\phi+\frac{d\boldsymbol X}{dt}\cdot\nabla\phi,\\
-    \frac{d\boldsymbol X}{dt}=\boldsymbol u&\Rightarrow
-       \boldsymbol u\cdot\nabla\phi=|\boldsymbol u|^2,\\
-    -|\boldsymbol u|^2/2+|\boldsymbol u|^2&=+|\boldsymbol u|^2/2.
-    \end{aligned}\\[6pt]\begin{aligned}
-        \boldsymbol u&=\nabla\phi,\qquad\nabla^2\phi=0,\\
-        \frac{d\boldsymbol X}{dt}&=\boldsymbol u(\boldsymbol X,t),\\
-        \partial_t\phi&=(p_\infty-p_b-\sigma\kappa)/\rho-\tfrac12|\boldsymbol u|^2,\\
-        \frac{D\phi}{Dt}&=\partial_t\phi+\boldsymbol u\cdot\nabla\phi\\
-          &=(p_\infty-p_b-\sigma\kappa)/\rho+\tfrac12|\boldsymbol u|^2
-             \quad(\boldsymbol X\in\Gamma).
-        \end{aligned}\end{gathered}
+\boxed{\boldsymbol u=\nabla\phi,\qquad \nabla^2\phi=\nabla\cdot\nabla\phi=0\quad\text{in }\Omega(t).}
 $$
 
 
+
+At any fixed time, Laplace's equation determines the potential only after the domain and appropriate boundary data are specified. It cannot advance the interface by itself.
+
+在任一固定时刻，只有给定区域和适当的边界条件，Laplace 方程才能确定速度势。它本身不能推进界面。
+
+#### 3. Kinematic condition: advance interface position
+
+#### 运动学条件：推进界面位置
+
+With zero mass transfer across the interface, the physically required statement is equality of normal velocities,
+
+如果界面没有相变质量通量，物理上必须满足法向速度相等：
+
+
+
+$$
+\left(\frac{d\boldsymbol X}{dt}-\boldsymbol u\right)\cdot\boldsymbol n=0.
+$$
+
+
+
+If we deliberately follow material interface markers, we can choose the stronger parametrization used in C1.7-E28:
+
+如果选择追踪界面上的物质标记点，就可以采用 C1.7-E28 的较强参数化形式：
+
+
+
+$$
+\boxed{\frac{d\boldsymbol X}{dt}=\boldsymbol u(\boldsymbol X,t)=\nabla\phi(\boldsymbol X,t).}
+$$
+
+
+
+The normal component determines the physical interface shape; tangential marker motion depends on parametrization. This equation tells us **where** the interface moves, not how its velocity potential evolves.
+
+法向分量决定实际界面形状；切向标记点运动依赖参数化方式。这一方程告诉我们界面**移动到哪里**，但没有告诉我们界面速度势如何演化。
+
+#### 4. Dynamic condition: derive it instead of assuming it
+
+#### 动力学条件：从基本方程推导
+
+Begin with the inviscid Euler momentum equation with constant density and no body forces:
+
+从密度恒定、无体积力的无黏 Euler 动量方程出发：
+
+
+
+$$
+\frac{\partial\boldsymbol u}{\partial t}+(\boldsymbol u\cdot\nabla)\boldsymbol u=-\frac{\nabla p}{\rho}.
+$$
+
+
+
+For `u=∇φ`, the flow is irrotational. Consequently
+
+对于 `u=∇φ` 的无旋流动，有：
+
+
+
+$$
+\frac{\partial\boldsymbol u}{\partial t}=\nabla\!\left(\frac{\partial\phi}{\partial t}\right),\qquad
+(\boldsymbol u\cdot\nabla)\boldsymbol u=\nabla\!\left(\frac12|\boldsymbol u|^2\right).
+$$
+
+
+
+Substitute and factor the gradient:
+
+将其代入并提取梯度：
+
+
+
+$$
+\nabla\left(\frac{\partial\phi}{\partial t}+\frac12|\boldsymbol u|^2+\frac{p}{\rho}\right)=\boldsymbol 0.
+$$
+
+
+
+The quantity in parentheses is constant in *space* but may depend on time, say `C(t)`. With the reference gauge `φ→0`, `u→0`, and `p→p∞(t)` at infinity, `C(t)=p∞(t)/ρ`. Thus unsteady Bernoulli is
+
+括号内的量在**空间中**为常数，但可以随时间变化，记为 `C(t)`。若采用无穷远参考条件 `φ→0`、`u→0`、`p→p∞(t)`，则 `C(t)=p∞(t)/ρ`。于是非定常伯努利方程为：
+
+
+
+$$
+\boxed{\frac{\partial\phi}{\partial t}+\frac12|\boldsymbol u|^2+\frac{p}{\rho}=\frac{p_\infty}{\rho}.}
+$$
+
+
+
+At a clean inviscid gas–liquid interface, the normal-stress jump reduces to the signed Young–Laplace relation
+
+在洁净、无黏的气液界面处，法向应力跳跃关系简化为带符号的 Young–Laplace 关系：
+
+
+
+$$
+\boxed{p_l=p_b+\sigma\kappa,\qquad \kappa=\nabla_s\cdot\boldsymbol n.}
+$$
+
+
+
+The course defines `n` from liquid to gas. For an *interior spherical cavity* this makes `κ=-2/R`, so `p_l=p_b-2σ/R`, consistent with the earlier spherical model. Evaluate Bernoulli on the liquid side of `Γ` and substitute `p=p_l`:
+
+课程定义 `n` 从液体指向气体。对于**液体内部的球形空腔**，这使得 `κ=-2/R`，因此 `p_l=p_b-2σ/R`，与前面的球对称模型一致。在 `Γ` 的液体侧使用 Bernoulli 方程，再代入 `p=p_l`：
+
+
+
+$$
+\frac{\partial\phi}{\partial t}+\frac12|\boldsymbol u|^2+\frac{p_b+\sigma\kappa}{\rho}=\frac{p_\infty}{\rho}.
+$$
+
+
+
+Rearranging gives the displayed Eulerian dynamic boundary condition:
+
+整理后就得到截图里的欧拉形式动力学边界条件：
+
+
+
+$$
+\boxed{\left.\frac{\partial\phi}{\partial t}\right|_{\Gamma}=\frac{p_\infty-p_b-\sigma\kappa}{\rho}-\frac12|\boldsymbol u|^2.}
+$$
+
+
+
+This is the missing derivation: **Euler momentum → unsteady Bernoulli → interface normal-stress balance → dynamic interface condition**.
+
+这就是被省略的推导链：**Euler 动量方程 → 非定常伯努利方程 → 界面法向应力平衡 → 动力学界面条件**。
+
+#### 5. Why does the last equation have plus one half?
+
+#### 为什么最后一个方程变成正的二分之一？
+
+The preceding `∂φ/∂t` is an Eulerian derivative at fixed spatial position, evaluated on the interface. The last line instead differentiates `φ(X(t),t)` **while following the moving material marker**. Apply the multivariable chain rule:
+
+前面的 `∂φ/∂t` 是在固定空间位置取时间偏导，再在界面处取值。最后一行却是**沿运动界面物质点**对 `φ(X(t),t)` 求全导数，因此需要多变量链式法则：
+
+
+
+$$
+\frac{D\phi}{Dt}=\frac{d}{dt}\phi(\boldsymbol X(t),t)=\frac{\partial\phi}{\partial t}+\frac{d\boldsymbol X}{dt}\cdot\nabla\phi.
+$$
+
+
+
+For material interface markers, `dX/dt=u`, and since `∇φ=u`, their dot product is `|u|²`:
+
+由于界面物质点满足 `dX/dt=u`，且 `∇φ=u`，点积等于 `|u|²`：
+
+
+
+$$
+\frac{D\phi}{Dt}=\frac{\partial\phi}{\partial t}+|\boldsymbol u|^2
+=\frac{p_\infty-p_b-\sigma\kappa}{\rho}-\frac12|\boldsymbol u|^2+|\boldsymbol u|^2.
+$$
+
+
+
+Therefore,
+
+因此：
+
+Combine the negative half and positive whole squared-speed contributions.
+
+合并负二分之一与正一倍的速度平方项。
+
+
+
+$$
+\boxed{\frac{D\phi}{Dt}=\frac{p_\infty-p_b-\sigma\kappa}{\rho}+\frac12|\boldsymbol u|^2\quad(\boldsymbol X\in\Gamma).}
+$$
+
+
+
+The sign changes only because of the additional advection term. **This is not an independent fifth physical law; it is the same dynamic boundary condition expressed on a moving marker.**
+
+正负号变化只来自额外的对流项。**这并不是第五条独立物理定律，而是同一动力学界面条件在运动标记点上的表达。**
+
+#### 6. In what sense is the model closed?
+
+#### 模型究竟在哪个意义上闭合？
+
+For *prescribed* `p_b(t)`, material parameters, complete initial interface shape and surface potential, and consistent boundary conditions at walls, outlets, far field and contact lines, the mathematical potential-flow problem can be advanced through a coupled loop:
+
+在**给定** `p_b(t)`、物性参数、完整初始界面形状及表面速度势，并设置壁面、出口、远场和接触线等一致边界条件后，可以通过以下耦合步骤推进势流问题：
+
+1. Given the current `Γ(t)` and surface potential `φ|Γ`, solve `∇²φ=0` in the current liquid geometry with all remaining boundary conditions.
+
+   已知当前 `Γ(t)` 和界面速度势 `φ|Γ`，结合其余边界条件，在当前液体几何内求解 `∇²φ=0`。
+2. Compute `u=∇φ` at the interface and curvature `κ` from its geometry.
+
+   求得界面速度 `u=∇φ`，并从界面几何计算曲率 `κ`。
+3. Use the kinematic condition to advance `X`.
+
+   用运动学条件更新界面位置 `X`。
+4. Use the material dynamic condition to advance the interface potential `φ|Γ`.
+
+   用物质形式的动力学条件更新界面速度势 `φ|Γ`。
+5. Update the geometry and repeat until the model's assumptions cease to apply.
+
+   更新几何并重复，直到模型假设不再适用。
+
+In this sense, there is one bulk elliptic problem and two evolving surface quantities (`X` and `φ|Γ`), with one kinematic and one dynamic evolution equation. The interior pressure can be reconstructed from Bernoulli; it is not an additional independent bulk evolution variable in this reduction.
+
+从这个意义上说，模型包含一个流体内部的椭圆方程，以及界面上两个需要演化的量（`X` 与 `φ|Γ`），分别由运动学和动力学演化方程推进。流体内部压力可以由 Bernoulli 关系恢复，不再是此约化模型中的独立演化未知量。
+
+**Not yet closed for a real PFC jet:** If `p_b(t)` is unknown, Chapter 2 must supply thermodynamics, heat transfer and finite phase inventory. If there is substantial evaporation/condensation, `dX/dt=u` is no longer the appropriate full interfacial kinematic law; a mass-flux jump condition is needed. If the geometry lacks outlet/contact-line conditions, the spatial problem is underdetermined. Strong compressibility, shocks, interface penetration and topology change also exceed the present potential-flow assumptions.
+
+**对于真实 PFC 射流仍未完全闭合：** 若 `p_b(t)` 未知，则必须依靠第二章的热力学、热传递及有限相变物质量模型求解。若蒸发或凝结明显，`dX/dt=u` 不再是适用的完整运动学规律，而需要界面质量通量跳跃条件。若出口或接触线边界条件未给出，则空间问题仍欠定。强可压缩性、激波、界面穿透与拓扑变化也超出当前势流模型的适用范围。
 
 **Symbols for Eq. (C1.7-E28).**
 
@@ -1766,7 +4683,11 @@ $$
 | $\kappa$ is curvature for the liquid-to-gas normal (m⁻¹)<br>$\kappa$ 为液体指向气体法向下的曲率（m⁻¹） | $\rho$ is density (kg m⁻³)<br>$\rho$ 为密度（kg m⁻³） |
 | $p_l$ — liquid-side interface pressure (Pa)<br>$p_l$ — 界面液体侧压力（Pa） | $\nabla$ — spatial gradient operator (m⁻¹)<br>$\nabla$ — 空间梯度算子（m⁻¹） |
 | $\nabla^2$ — spatial Laplacian operator (m⁻²)<br>$\nabla^2$ — 空间拉普拉斯算子（m⁻²） | $D/Dt$ — material time derivative (s⁻¹)<br>$D/Dt$ — 物质时间导数（s⁻¹） |
-| $\partial_t$ — time derivative at fixed position (s⁻¹)<br>$\partial_t$ — 固定位置的时间导数（s⁻¹） |  |
+| $\partial_t$ — time derivative at fixed position (s⁻¹)<br>$\partial_t$ — 固定位置的时间导数（s⁻¹） | $\Omega(t)$ — time-dependent liquid domain (—)<br>$\Omega(t)$ — 随时间变化的液体区域（—） |
+| $\boldsymbol x$ — fixed spatial position (m)<br>$\boldsymbol x$ — 固定空间位置（m） | $\alpha$ — dimensionless interface marker label (1)<br>$\alpha$ — 无量纲界面标记参数（1） |
+| $\boldsymbol n$ — unit normal directed from liquid to gas (1)<br>$\boldsymbol n$ — 液体指向气体的单位法向（1） | $\nabla_s\cdot$ — surface divergence operator (m⁻¹)<br>$\nabla_s\cdot$ — 表面散度算子（m⁻¹） |
+| $p$ — local liquid pressure (Pa)<br>$p$ — 局部液体压强（Pa） | $C(t)$ — Bernoulli integration function (m² s⁻²)<br>$C(t)$ — 伯努利积分函数（m² s⁻²） |
+| $R$ — radius in the spherical limit (m)<br>$R$ — 球形极限中的半径（m） |  |
 
 **Conventions and conditions.** $\nabla$ and $\nabla^2$ are spatial gradient and Laplacian; $D/Dt$ is the material derivative; $|\boldsymbol u|$ is speed and the dot a vector contraction; The potential gauge is fixed at infinity; Interface markers $\boldsymbol X(t)$ follow liquid particles; $D\phi/Dt$ has units m² s⁻²; assume single-valued potential and a smooth pre-impact interface.
 
@@ -1794,23 +4715,55 @@ Check the spherical limit of Eq. (C1.7-E28). Wall potential is minus radius × w
 
 **本章作用。** 将式（C1.7-E28）用于球面。恢复无黏形式的式（C1.3-E07），用于检验运动界面的符号与导数约定。
 
-**Derivation.** Test the spatial model against a sphere. Evaluate the potential at its moving wall and differentiate by the product rule. Insert negative cavity curvature into the material dynamic condition. Move squared-speed terms to the same side, reverse signs, then multiply by density.
+**Derivation.**
 
-**推导。** 用球形极限检验空间模型。在运动壁面取速度势，并按乘积法则求导。将负的空腔曲率代入物质动力学条件。把速度平方项移至同侧，变号后再乘密度。
+**推导。**
 
 (C1.7-E29) · Exact spherical recovery of the potential closure / (C1.7-E29) · 势流闭合关系对球形模型的精确恢复
 
+#### 7. Spherical consistency check
+
+#### 球对称极限校验
+
+The interface potential from C1.3-E03 is `φΓ=-RṘ`. Along the moving boundary,
+
+根据 C1.3-E03，球形界面速度势为 `φΓ=-RṘ`。沿运动界面求导：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \phi_\Gamma&=-R^2\dot R/R=-R\dot R,\\
-    d\phi_\Gamma/dt&=-(\dot R\dot R+R\ddot R),\\
-    -R\ddot R-\tfrac32\dot R^2&=(p_\infty-p_b+2\sigma/R)/\rho,\\
-    R\ddot R+\tfrac32\dot R^2&=(p_b-p_\infty-2\sigma/R)/\rho.
-    \end{aligned}\\[6pt]\begin{aligned}\phi_\Gamma&=-R\dot R,\qquad\kappa=-\frac2R,\\-\dot R^2-R\ddot R&=\frac{p_\infty-p_b+2\sigma/R}{\rho}+\frac12\dot R^2,\\\rho\left(R\ddot R+\frac32\dot R^2\right)&=p_b-p_\infty-\frac{2\sigma}{R}.\end{aligned}\end{gathered}
+\frac{D\phi_\Gamma}{Dt}=\frac{d}{dt}(-R\dot R)=-\dot R^2-R\ddot R.
 $$
 
 
+
+Insert `κ=-2/R`, `|u|²=Ṙ²` into the dynamic condition:
+
+代入 `κ=-2/R`、`|u|²=Ṙ²`：
+
+
+
+$$
+-\dot R^2-R\ddot R=\frac{p_\infty-p_b+2\sigma/R}{\rho}+\frac12\dot R^2.
+$$
+
+
+
+Rearranging gives the inviscid Rayleigh–Plesset equation:
+
+整理后得到无黏 Rayleigh–Plesset 方程：
+
+
+
+$$
+\boxed{\rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}.}
+$$
+
+
+
+This shows the mathematical compatibility of C1.7-E28 with the earlier spherical equations, **not experimental validation of nonspherical PFC jetting**.
+
+这表明 C1.7-E28 与前面的球对称方程在数学上相容，**并不构成非球对称 PFC 射流的实验验证**。
 
 **Symbols for Eq. (C1.7-E29).**
 
@@ -1847,29 +4800,218 @@ The spatial potential formulation returns the spherical model under spherical ge
 
 **本章作用。** 将壁面速度与事件持续时间同声学尺度比较。这两个独立诊断分别限定压力冲量约化及不可压缩界面模型的适用范围。
 
-**Derivation.** Derive the communication time from linear acoustics about uniform resting liquid. Linear mass conservation and momentum combine into a wave equation. A disturbance travels the selected path at sound speed. Choose the path from the driven region to the relevant observer. Use the shortest important pressure-rise or change time, rather than automatically using pulse duration. Separately evaluate the wall-speed history.
+**Derivation.**
 
-**推导。** 从均匀静止液体附近的线性声学推导通信时间。将线性质量守恒和动量方程结合，得到波动方程。扰动以声速沿所选路径传播。路径应从驱动区通向相关观察位置。采用最短的重要压力上升或变化时间，不能自动用脉冲总时长代替。另行检验壁面速度历程。
+**推导。**
 
 (C1.7-E30) · Compressibility applicability diagnostics / (C1.7-E30) · 可压缩性适用性诊断
 
+#### 1. Start with two physically different questions
+
+#### 两个物理上不同的问题
+
+**Question A — motion magnitude:** Is the cavity wall moving slowly compared with the speed of sound in the surrounding liquid? We define the wall Mach number from a measured or computed wall-speed history, not from the laser pulse intensity:
+
+**问题 A——运动速度的大小：** 空腔壁面运动速度相对周围液体声速是否足够慢？壁面马赫数来自实测或计算的壁面速度历程，而不是来自激光脉冲强度：
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \partial_t\rho'+\rho_0\nabla\cdot\boldsymbol u'&=0,\quad
-      \rho_0\partial_t\boldsymbol u'=-\nabla p',\quad p'=c^2\rho',\\
-    \partial_t^2\rho'+\rho_0\nabla\cdot\partial_t\boldsymbol u'&=0,\quad
-      \rho_0\nabla\cdot\partial_t\boldsymbol u'=-\nabla^2p',\\
-    \partial_t^2\rho'-\nabla^2p'&=0\Rightarrow\partial_t^2p'=c^2\nabla^2p',\\
-    L_e=ct_a&\Rightarrow t_a=L_e/c,\quad\mathcal C_e=t_a/\tau_e,\\
-    t_a&=\frac{100\times10^{-6}}{1500}\ \mathrm s=66.6667\ \mathrm{ns},\\
-    \tau_e=10\ \mathrm{ns}&\Rightarrow\mathcal C_e=66.6667/10=6.66667,\\
-    \tau_e=1\ \mu\mathrm s=1000\ \mathrm{ns}&\Rightarrow\mathcal C_e=66.6667/1000=0.0666667,\\
-    |\dot R|=15\ \mathrm{m\,s^{-1}}&\Rightarrow M_w=15/1500=0.01\quad\text{in both cases}.
-    \end{aligned}\\[6pt]\begin{gathered}M_w=\frac{|\dot R|}{c}\\ \mathcal C_e=\frac{L_e}{c\tau_e}\end{gathered}\end{gathered}
+M_w(t)=\frac{|\dot R(t)|}{c},\qquad M_{w,\max}=\max_{t\in[t_0,t_1]}M_w(t).
 $$
 
 
+
+**Question B — pressure communication:** Can a change in pressure propagate across the relevant liquid region before the imposed loading changes appreciably? This comparison involves an acoustic travel time and a *load variation time*; it does not follow from the wall Mach number.
+
+**问题 B——压力传播：** 压力扰动能否在外部载荷发生显著变化之前传播至相关液体区域的另一端？该问题需要比较声传播时间与*载荷变化时间*，不能仅从壁面马赫数推出。
+
+#### 2. Derive the propagation time from compressible conservation
+
+#### 从可压缩守恒方程解释传播时间
+
+For a small acoustic disturbance in an initially resting, homogeneous, inviscid, barotropic liquid, write density $\rho=\rho_0+\rho'$, pressure $p=p_0+p'$, and velocity $\boldsymbol u'$. Linearized mass conservation is
+
+对初始静止、均匀、无黏、压强仅与密度相关的液体，考虑小幅声学扰动：密度 $\rho=\rho_0+\rho'$、压力 $p=p_0+p'$、速度 $\boldsymbol u'$。线性化质量守恒为：
+
+
+
+$$
+\frac{\partial\rho'}{\partial t}+\rho_0\nabla\cdot\boldsymbol u'=0.\tag{1}
+$$
+
+
+
+Linearized momentum conservation gives
+
+线性化动量守恒给出：
+
+
+
+$$
+\rho_0\frac{\partial\boldsymbol u'}{\partial t}=-\nabla p'.\tag{2}
+$$
+
+
+
+Define the small-disturbance sound speed by the barotropic relation $p'=c^2\rho'$. Differentiate equation (1) in time and take the divergence of equation (2):
+
+用小扰动声速对应的本构关系 $p'=c^2\rho'$。对式 (1) 求时间导数，并对式 (2) 求散度：
+
+
+
+$$
+\frac{\partial^2\rho'}{\partial t^2}+\rho_0\nabla\cdot\frac{\partial\boldsymbol u'}{\partial t}=0,\qquad
+\rho_0\nabla\cdot\frac{\partial\boldsymbol u'}{\partial t}=-\nabla^2p'.\tag{3}
+$$
+
+
+
+Substitution produces $\partial_t^2\rho'-\nabla^2p'=0$. For constant $c$, using $\rho'=p'/c^2$ gives the acoustic wave equation:
+
+代入得到 $\partial_t^2\rho'-\nabla^2p'=0$。声速为常数时，使用 $\rho'=p'/c^2$，得到声波方程：
+
+
+
+$$
+\boxed{\frac{\partial^2p'}{\partial t^2}=c^2\nabla^2p'.}\tag{4}
+$$
+
+
+
+The disturbance propagates at speed $c$ under these assumptions. Over an appropriately selected communication distance $L_e$, the one-way acoustic crossing time is
+
+在上述假设下，扰动以声速 $c$ 传播。对于选定的压力通信距离 $L_e$，单程声穿越时间为：
+
+
+
+$$
+\boxed{t_a=\frac{L_e}{c}.}\tag{5}
+$$
+
+
+
+This is a propagation *scale*, not a precise delay for every reflected or multidimensional wave pattern. Boundaries, geometry and variable sound speed may change the relevant communication path.
+
+它是传播*时间尺度*，不是每个反射或多维波形的精确延迟。边界、几何与变声速可能改变真实的通信路径。
+
+#### 3. Define the communication ratio and derive its meaning
+
+#### 定义通信比并说明物理意义
+
+Let $\tau_e$ be the characteristic time over which the **relevant load changes**, such as its rise time, pressure-reversal time or a specified high-gradient transient. Then
+
+令 $\tau_e$ 为**相关载荷发生显著变化的特征时间**，例如压力上升时间、反向时间或指定的急剧变化瞬态，则：
+
+
+
+$$
+\boxed{\mathcal C_e=\frac{t_a}{\tau_e}=\frac{L_e}{c\tau_e}.}\tag{6}
+$$
+
+
+
+If $\mathcal C_e\ll1$, acoustic communication is fast compared with the imposed change, so the instantaneous-pressure-equilibration idea is more plausible. If $\mathcal C_e\gtrsim1$, the pressure changes before information can cross the region: propagation delay, wave reflection and compressibility may be essential. There is no universal sharp threshold or guaranteed numerical error bound at a particular value of $\mathcal C_e$.
+
+若 $\mathcal C_e\ll1$，声学通信相对载荷变化很快，瞬时压力平衡近似更有可能成立。若 $\mathcal C_e\gtrsim1$，压力在信息传遍区域之前已经显著改变，传播延迟、波反射和可压缩性可能不可忽略。对于 $\mathcal C_e$ 不存在普适的突变阈值，也不能在某个指定比值上直接给出有保证的数值误差界限。
+
+**Crucial distinction:** $M_w$ uses velocity; $\mathcal C_e$ uses geometry and forcing time. A small $M_w$ says nothing on its own about how suddenly pressure changes.
+
+**关键区别：** $M_w$ 使用速度；$\mathcal C_e$ 使用几何尺度和载荷变化时间。$M_w$ 小，并不能单独说明压力变化是否很突然。
+
+#### 4. Numerical test: same wall speed, different pressure rise
+
+#### 数值检验：相同壁面速度，不同压力上升时间
+
+Choose an **illustrative**, not experimentally calibrated, communication distance $L_e=100\ \mu\mathrm m=10^{-4}\ \mathrm m$, carrier sound speed $c=1500\ \mathrm{m/s}$, and a wall velocity magnitude $|\dot R|=15\ \mathrm{m/s}$. The speed criterion is
+
+选择一组**教学示例**而非实验标定的参数：通信距离 $L_e=100\ \mu\mathrm m=10^{-4}\ \mathrm m$，载液声速 $c=1500\ \mathrm{m/s}$，壁面速度大小 $|\dot R|=15\ \mathrm{m/s}$。速度准则为：
+
+
+
+$$
+M_w=\frac{15}{1500}=0.010,\qquad
+t_a=\frac{10^{-4}}{1500}=6.6667\times10^{-8}\ \mathrm s=66.667\ \mathrm{ns}.\tag{7}
+$$
+
+
+
+For a fast pressure rise $\tau_e=10\ \mathrm{ns}$:
+
+对于快速上升的压力载荷 $\tau_e=10\ \mathrm{ns}$：
+
+
+
+$$
+\mathcal C_{e,\mathrm{fast}}=\frac{66.667\ \mathrm{ns}}{10\ \mathrm{ns}}=6.667.\tag{8}
+$$
+
+
+
+For a *different* slowly rising load $\tau_e=1\ \mu\mathrm s=1000\ \mathrm{ns}$:
+
+对于**另一种**缓慢上升的载荷 $\tau_e=1\ \mu\mathrm s=1000\ \mathrm{ns}$：
+
+
+
+$$
+\mathcal C_{e,\mathrm{slow}}=\frac{66.667}{1000}=0.06667.\tag{9}
+$$
+
+
+
+Both scenarios have the same assumed $M_w=0.01$, but the first does **not** support an instantaneous-pressure-field approximation during the rise, whereas the second is more favorable. Neither number independently proves a quantitative solution-error bound.
+
+两种情形都具有相同的假定 $M_w=0.01$，但第一种载荷在上升阶段**不支持**瞬时压力场近似；第二种则更有利于该近似。二者的指标都不能单独证明定量求解误差上界。
+
+#### 5. Distinguish impulse duration from rise time
+
+#### 区分冲量持续时间与载荷上升时间
+
+Section 1.6 uses a nominal $0.50\ \mu\mathrm s$ pressure-impulse interval over a $100\ \mu\mathrm m$ column. Using that duration gives $t_a/\tau=66.667/500=0.1333$. **But this ratio is not necessarily the relevant $\mathcal C_e$:** if the actual pressure rise takes only $10\ \mathrm{ns}$, its communication ratio remains 6.667 during that rise. The lesson must state or measure the loading waveform before claiming a pressure-communication screen has passed.
+
+第 1.6 节以 $100\ \mu\mathrm m$ 液柱和 $0.50\ \mu\mathrm s$ 压力冲量区间为例。若直接用脉宽计算，则 $t_a/\tau=66.667/500=0.1333$。**但这不一定是真正相关的 $\mathcal C_e$：** 如果真实压力上升仅用 $10\ \mathrm{ns}$，则上升期间的通信比仍为 6.667。因此，课程必须给定或测量载荷波形，才能宣称压力通信筛选是否通过。
+
+The section's $U=3\ \mathrm{m/s}$ is a **liquid-column speed increment**, not necessarily the bubble-wall speed. It gives a different liquid-speed Mach scale $U/c=0.002$; it cannot silently be substituted for $M_w$ unless that velocity is genuinely the wall velocity.
+
+该节的 $U=3\ \mathrm{m/s}$ 是**液柱速度增量**，不一定是气泡壁面速度。它对应另一个液体流速马赫数尺度 $U/c=0.002$；只有确实代表壁面速度时，才能代入 $M_w$。
+
+#### 6. Can the short-impulse approximation and rapid communication coexist?
+
+#### 短时冲量近似与快速通信能否同时满足？
+
+The reduced impulse model neglects convection when $U\tau/L\ll1$, and needs fast pressure communication when $L/(c\tau_e)\ll1$. If the relevant event variation time is on the order of the pulse duration $\tau_e\sim\tau$, both can hold when the time hierarchy is
+
+简化冲量模型在 $U\tau/L\ll1$ 时忽略对流，而快速压力通信要求 $L/(c\tau_e)\ll1$。如果载荷变化时间与脉宽同阶 $\tau_e\sim\tau$，则两者可以在如下尺度层级中同时成立：
+
+
+
+$$
+\boxed{\frac{L}{c}\ll\tau\ll\frac{L}{U}}.\tag{10}
+$$
+
+
+
+This requires $U\ll c$, but the latter alone does not guarantee that a particular selected $\tau$ lies between the two times. A separate viscous-diffusion check $\nu\tau/L^2\ll1$ is needed for the reduced bulk description, and does not substitute for wall-boundary-layer analysis.
+
+这要求 $U\ll c$，但仅有后者并不能保证实际选定的 $\tau$ 位于两个时间尺度之间。对简化体相描述还须独立检验黏性扩散尺度 $\nu\tau/L^2\ll1$，且这不能代替壁面边界层的分析。
+
+#### 7. Mandatory output table when applying C1.7-E30
+
+#### 应用 C1.7-E30 时必须报告的结果表
+
+| Required entry<br>必填项 | What to state<br>应报告内容 |
+| --- | --- |
+| Geometry<br>几何 | Actual liquid region and pressure-communication path $L_e$<br>真实液体区域与通信路径 $L_e$ |
+| Material state<br>材料状态 | $c$, how obtained, pressure/temperature dependence<br>声速 $c$、其来源和压力/温度依赖 |
+| Motion<br>运动 | $\dot R(t)$ and event-window $M_{w,\max}$<br>速度历程与事件内最大壁面马赫数 |
+| Loading<br>载荷 | Actual rise/change time $\tau_e$, not merely pulse width<br>实际上升/变化时间，非仅脉宽 |
+| Communication<br>通信 | $t_a=L_e/c$, $\mathcal C_e=t_a/\tau_e$<br>声穿越时间及通信比 |
+| Conclusion<br>结论 | Supported approximation, uncertainties, missing geometry or waveform, compressible comparison if needed<br>支持的近似、不确定性、缺失波形及必要时的可压缩求解对照 |
+
+**Defensible claim:** These are practical applicability diagnostics, not physical hard limits, proof of incompressibility, or independent validation of a cavitation jet.
+
+**可辩护的结论：** 它们是实用的适用性诊断，不是物理硬极限，不构成不可压缩性的数学证明，也不是空化射流的独立验证。
 
 **Symbols for Eq. (C1.7-E30).**
 
@@ -1884,7 +5026,12 @@ $$
 | $p'$ — small acoustic pressure perturbation (Pa)<br>$p'$ — 小幅声学压力扰动（Pa） | $\boldsymbol u'$ — small acoustic velocity perturbation (m s⁻¹)<br>$\boldsymbol u'$ — 小幅声学速度扰动（m s⁻¹） |
 | $\nabla\cdot$ — spatial divergence operator (m⁻¹)<br>$\nabla\cdot$ — 空间散度算子（m⁻¹） | $\nabla^2$ — spatial Laplacian operator (m⁻²)<br>$\nabla^2$ — 空间拉普拉斯算子（m⁻²） |
 | $\partial_t$ — time derivative at fixed position (s⁻¹)<br>$\partial_t$ — 固定位置的时间导数（s⁻¹） | $t$ — time (s)<br>$t$ — 时间（s） |
-| $t_a$ — one-way acoustic travel time (s)<br>$t_a$ — 单程声传播时间（s） |  |
+| $t_a$ — one-way acoustic travel time (s)<br>$t_a$ — 单程声传播时间（s） | $\rho$ — total liquid density (kg m⁻³)<br>$\rho$ — 总液体密度（kg m⁻³） |
+| $p$ — total liquid pressure (Pa)<br>$p$ — 总液体压强（Pa） | $p_0$ — uniform background pressure (Pa)<br>$p_0$ — 均匀背景压强（Pa） |
+| $M_{w,\max}$ — maximum wall Mach number in the stated event window (1)<br>$M_{w,\max}$ — 给定事件区间内的最大壁面马赫数（1） | $t_0$ — event-window start (s)<br>$t_0$ — 事件区间起点（s） |
+| $t_1$ — event-window end (s)<br>$t_1$ — 事件区间终点（s） | $U$ — characteristic liquid speed; distinct from wall speed (m s⁻¹)<br>$U$ — 特征液体速度；与壁速有区别（m s⁻¹） |
+| $L$ — liquid-column length or chosen flow scale (m)<br>$L$ — 液柱长度或选定流动尺度（m） | $\tau$ — pressure-impulse integration duration (s)<br>$\tau$ — 压力冲量积分时长（s） |
+| $\nu$ — kinematic viscosity (m² s⁻¹)<br>$\nu$ — 运动黏度（m² s⁻¹） |  |
 
 **Conventions and conditions.** $|\ |$ denotes magnitude; subscript $e$ labels the selected event scale; Primes denote small acoustic perturbations; ns is 10⁻⁹ s; linearization assumes inviscid barotropic liquid and constant $c$.
 
@@ -1940,14 +5087,74 @@ Explain the mechanism, assumptions, and limits in your own words.
 
 (C1.8-E31) · Original formulas quoted for defense 1 / (C1.8-E31) · 答辩问题 1 引用的原始公式
 
+Use the spherical interface stress balance to express liquid-side pressure in terms of bubble pressure.
+
+利用球形界面应力平衡，以气泡压力表示液体侧压力。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    p_l-p_\infty&=p_b-p_\infty-2\sigma/R-4\mu\dot R/R,\\
-    p_l-p_\infty&=\rho R\ddot R+\tfrac32\rho\dot R^2,\\
-    \rho R\ddot R&=p_b-p_\infty-2\sigma/R-4\mu\dot R/R-\tfrac32\rho\dot R^2,\\
-    \ddot R&=\frac{p_b-p_\infty-2\sigma/R-4\mu\dot R/R-\tfrac32\rho\dot R^2}{\rho R}.
-    \end{aligned}\\[6pt]\begin{gathered}\rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}\\ p_b=p_{v,\mathrm{PFC}}+p_{v,w}+p_g\end{gathered}\end{gathered}
+\begin{aligned}p_l-p_\infty&=p_b-p_\infty-2\sigma/R-4\mu\dot R/R,\end{aligned}
+$$
+
+
+
+Use Bernoulli to express that same liquid pressure through wall inertia.
+
+利用伯努利关系，通过壁面惯性表示同一液体压力。
+
+
+
+$$
+\begin{aligned}p_l-p_\infty&=\rho R\ddot R+\tfrac32\rho\dot R^2,\end{aligned}
+$$
+
+
+
+Equate these two pressure expressions and isolate the acceleration contribution.
+
+令这两个压力表达式相等，并分离加速度贡献。
+
+
+
+$$
+\begin{aligned}\rho R\ddot R&=p_b-p_\infty-2\sigma/R-4\mu\dot R/R-\tfrac32\rho\dot R^2,\end{aligned}
+$$
+
+
+
+Divide by positive liquid density and cavity radius. This gives acceleration for the stated pressure input.
+
+除以正的液体密度与空腔半径。由此得到给定压力输入下的加速度。
+
+
+
+$$
+\begin{aligned}\ddot R&=\frac{p_b-p_\infty-2\sigma/R-4\mu\dot R/R-\tfrac32\rho\dot R^2}{\rho R}.\end{aligned}
+$$
+
+
+
+Collect the radial motion law for the pressure-to-liquid-motion explanation.
+
+为压力驱动液体运动的解释汇总径向运动规律。
+
+
+
+$$
+\rho\left(R\ddot R+\frac32\dot R^2\right)=p_b-p_\infty-\frac{2\sigma}{R}-\frac{4\mu\dot R}{R}
+$$
+
+
+
+Identify the vapor and permanent-gas inputs still needed to prescribe bubble pressure.
+
+明确给定气泡压力仍需的蒸气与非凝结气体输入。
+
+
+
+$$
+p_b=p_{v,\mathrm{PFC}}+p_{v,w}+p_g
 $$
 
 
@@ -2028,15 +5235,87 @@ Explain the mechanism, assumptions, and limits in your own words.
 
 (C1.8-E32) · Original formulas quoted for defense 2 / (C1.8-E32) · 答辩问题 2 引用的原始公式
 
+Introduce squared speed and multiply the ideal radial equation by its integrating factor.
+
+引入速度平方，并将理想径向方程乘以积分因子。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    y&=\dot R^2,\quad\frac{d(R^3y)}{dR}=-2\Delta p_cR^2/\rho,\\
-    R^3y-0&=-\frac{2\Delta p_c}{3\rho}(R^3-R_{\max}^3),\\
-    \dot R&=-\sqrt{y},\quad
-    t_c=R_{\max}\sqrt{\frac{3\rho}{2\Delta p_c}}\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx,\\
-    K_l&=\int_{V_{\max}}^{V_b}-\Delta p_c\,dV=\Delta p_c(V_{\max}-V_b).
-    \end{aligned}\\[6pt]\begin{gathered}\dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]}\\ t_c=\frac{B(5/6,1/2)}{\sqrt6}R_{\max}\sqrt{\frac\rho{\Delta p_c}}\\ K_l=\frac{4\pi}{3}\Delta p_c(R_{\max}^3-R^3)\end{gathered}\end{gathered}
+\begin{aligned}y&=\dot R^2,\quad\frac{d(R^3y)}{dR}=-2\Delta p_cR^2/\rho,\end{aligned}
+$$
+
+
+
+Integrate from the stationary maximum-radius state. Its initial squared speed is zero.
+
+从最大半径处的静止状态开始积分。其初始速度平方为零。
+
+
+
+$$
+\begin{aligned}R^3y-0&=-\frac{2\Delta p_c}{3\rho}(R^3-R_{\max}^3),\end{aligned}
+$$
+
+
+
+Choose inward speed, separate time and radius, and normalize the collapse-time integral.
+
+选择向内速度，分离时间与半径，并将塌缩时间积分无量纲化。
+
+
+
+$$
+\begin{aligned}\dot R&=-\sqrt{y},\quad
+    t_c=R_{\max}\sqrt{\frac{3\rho}{2\Delta p_c}}\int_0^1\frac{x^{3/2}}{\sqrt{1-x^3}}\,dx,\end{aligned}
+$$
+
+
+
+Independently integrate pressure work over cavity volume. This checks the trajectory's energy and integration constant.
+
+独立地对空腔体积积分压力功。这检验轨迹的能量与积分常数。
+
+
+
+$$
+\begin{aligned}K_l&=\int_{V_{\max}}^{V_b}-\Delta p_c\,dV=\Delta p_c(V_{\max}-V_b).\end{aligned}
+$$
+
+
+
+State the inward branch of the ideal collapse trajectory.
+
+写出理想塌缩轨迹的向内分支。
+
+
+
+$$
+\dot R=-\sqrt{\frac{2\Delta p_c}{3\rho}\left[\left(\frac{R_{\max}}R\right)^3-1\right]}
+$$
+
+
+
+State its collapse time with the evaluated beta-function coefficient.
+
+用已求得的贝塔函数系数写出其塌缩时间。
+
+
+
+$$
+t_c=\frac{B(5/6,1/2)}{\sqrt6}R_{\max}\sqrt{\frac\rho{\Delta p_c}}
+$$
+
+
+
+State the independently checked exterior kinetic energy.
+
+写出经独立压力功方法检验的外域动能。
+
+
+
+$$
+K_l=\frac{4\pi}{3}\Delta p_c(R_{\max}^3-R^3)
 $$
 
 
@@ -2118,18 +5397,101 @@ Explain the mechanism, assumptions, and limits in your own words.
 
 (C1.8-E33) · Original formulas quoted for defense 3 / (C1.8-E33) · 答辩问题 3 引用的原始公式
 
+Begin with the exact fixed-position integrated momentum relation. Retain convective and viscous impulses.
+
+从精确的固定位置积分动量关系出发。保留对流与黏性冲量。
+
+
 
 $$
-\begin{gathered}\begin{aligned}
-    \Delta\boldsymbol u&=-\nabla\Pi/\rho
+\begin{aligned}\Delta\boldsymbol u&=-\nabla\Pi/\rho
        -\int_{t_0}^{t_1}(\boldsymbol u\cdot\nabla)\boldsymbol u\,dt
-       +\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt,\\
-    U\tau/L\ll1,\quad\nu\tau/L^2\ll1
-       &\Rightarrow\Delta\boldsymbol u\simeq-\nabla\Pi/\rho,\\
-    \nabla\cdot\Delta\boldsymbol u=0&\Rightarrow\nabla^2\Pi=0,\\
-    \Pi(0)=\Pi_0,\quad\Pi(L)=0&\Rightarrow\Pi(z)=\Pi_0(1-z/L),\\
-    \Delta u_z&=-\frac1\rho\frac{d\Pi}{dz}=\frac{\Pi_0}{\rho L}.
-    \end{aligned}\\[6pt]\begin{gathered}\Pi(\boldsymbol x)=\int_{t_0}^{t_1}(p-p_{\mathrm{ref}})dt\\\Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho},\quad\nabla^2\Pi=0\\ U_{\mathrm{column}}=\frac{\Pi_0}{\rho L},\quad t_a=\frac Lc\end{gathered}\end{gathered}
+       +\nu\int_{t_0}^{t_1}\nabla^2\boldsymbol u\,dt,\end{aligned}
+$$
+
+
+
+Under the stated scale and geometry conditions, neglect those two contributions relative to the leading velocity change.
+
+在已声明的尺度与几何条件下，相对于主导速度变化忽略这两项贡献。
+
+
+
+$$
+\begin{aligned}U\tau/L\ll1,\quad\nu\tau/L^2\ll1
+       &\Rightarrow\Delta\boldsymbol u\simeq-\nabla\Pi/\rho,\end{aligned}
+$$
+
+
+
+Apply incompressibility to the reduced velocity increment. Pressure impulse then satisfies Laplace's equation.
+
+对约化速度增量应用不可压缩条件。压力冲量因此满足拉普拉斯方程。
+
+
+
+$$
+\begin{aligned}\nabla\cdot\Delta\boldsymbol u=0&\Rightarrow\nabla^2\Pi=0,\end{aligned}
+$$
+
+
+
+Apply the inlet and outlet impulse values to the straight-column solution.
+
+将入口与出口冲量值应用于直液柱解。
+
+
+
+$$
+\begin{aligned}\Pi(0)=\Pi_0,\quad\Pi(L)=0&\Rightarrow\Pi(z)=\Pi_0(1-z/L),\end{aligned}
+$$
+
+
+
+Differentiate the resulting pressure-impulse profile and divide its negative gradient by density.
+
+对所得压力冲量分布求导，再将其负梯度除以密度。
+
+
+
+$$
+\begin{aligned}\Delta u_z&=-\frac1\rho\frac{d\Pi}{dz}=\frac{\Pi_0}{\rho L}.\end{aligned}
+$$
+
+
+
+Begin with the fixed-position pressure-impulse definition.
+
+从固定位置的压力冲量定义出发。
+
+
+
+$$
+\Pi(\boldsymbol x)=\int_{t_0}^{t_1}(p-p_{\mathrm{ref}})dt
+$$
+
+
+
+State the leading velocity-change relation and its incompressible boundary equation under the required approximations.
+
+在所需近似下，写出主导速度变化关系及其不可压缩边值方程。
+
+
+
+$$
+\Delta\boldsymbol u\simeq-\frac{\nabla\Pi}{\rho},\quad\nabla^2\Pi=0
+$$
+
+
+
+Connect the column velocity scale to the pressure-impulse boundary values, and check the acoustic response time.
+
+将液柱速度尺度连接至压力冲量边界值，并检验声学响应时间。
+
+
+
+$$
+U_{\mathrm{column}}=\frac{\Pi_0}{\rho L},\quad t_a=\frac Lc
 $$
 
 

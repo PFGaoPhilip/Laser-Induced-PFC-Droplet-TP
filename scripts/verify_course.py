@@ -76,9 +76,14 @@ def main():
             formula=unit.select_one('.math-display')
             ordered=[n for n in unit.children if getattr(n,'name',None)]
             if re.fullmatch(r'C1-E(?:0[1-9]|[12][0-9]|3[0-3])',unit['id']):
-                check(unit['id']+': owner-requested title, math, compact symbols, figure order',
-                      [n.get('class',[])[0] for n in ordered]==['lang-pair','math-display','symbols','formula-figure']
-                      and ordered[0]==heading and ordered[1]==formula and ordered[2]==symbols)
+                flow=unit.select_one('.derivation-flow')
+                check(unit['id']+': title, explanation-equation flow, compact symbols, figure order',
+                      [n.get('class',[])[0] for n in ordered]==['lang-pair','derivation-flow','symbols','formula-figure']
+                      and ordered[0]==heading and ordered[1]==flow and ordered[2]==symbols)
+                parts=flow.select('.math-display') if flow else []
+                check(unit['id']+': explanation immediately before every short formula',
+                      bool(parts) and all(n.find_previous_sibling() is not None and
+                          'derivation-reason' in n.find_previous_sibling().get('class',[]) for n in parts))
             else:
                 check(unit['id']+': local bilingual symbols before math',symbols is not None and formula is not None and ordered.index(symbols)<ordered.index(formula))
                 check(unit['id']+': immediate physical-variable figure',formula is not None and formula.find_next_sibling().name=='figure' and 'formula-figure' in formula.find_next_sibling().get('class',[]))
