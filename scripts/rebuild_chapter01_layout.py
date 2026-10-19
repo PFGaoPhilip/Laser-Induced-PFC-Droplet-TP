@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from bs4 import BeautifulSoup
-from build_course import ROOT, load_chapters, render_html, markdown_source, filename, EQUATIONS
+from build_course import ROOT, load_chapters, render_html, markdown_source, filename, EQUATIONS, chapter01_stylesheet
 
 def main():
     old=json.loads((ROOT/'verification/equations.json').read_text(encoding='utf-8'))
@@ -14,8 +14,10 @@ def main():
     rendered=BeautifulSoup(render_html(''.join(str(u.find_previous_sibling())+str(u) for u in units)),'html.parser')
     path=ROOT/'chapters'/filename(chapter)
     soup=BeautifulSoup(path.read_text(encoding='utf-8'),'html.parser')
-    if not soup.select_one('link[href$="chapter01-derivations.css"]'):
-        soup.head.append(soup.new_tag('link',rel='stylesheet',href='../assets/chapter01-derivations.css'))
+    stylesheet=soup.select_one('link[href*="chapter01-derivations.css"]')
+    if stylesheet is None:
+        stylesheet=soup.new_tag('link',rel='stylesheet');soup.head.append(stylesheet)
+    stylesheet['href']='../assets/'+chapter01_stylesheet()
     for unit in rendered.select('.equation-unit'):
         heading=unit.select_one('.equation-heading')
         for node in list(heading.children):

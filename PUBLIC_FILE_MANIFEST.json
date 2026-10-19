@@ -29,8 +29,8 @@
     },
     {
       "path": "assets/chapter01-derivations.css",
-      "bytes": 963,
-      "sha256": "08b604789eb527b0e32c47371fdd1b28166930966cf02fc2915eb16b0857c057"
+      "bytes": 1253,
+      "sha256": "fcb3d06d13a7a9d66d360849e88d6c80c3b523c6373c324269bbd6d7b47dbc2c"
     },
     {
       "path": "assets/course-language.css",
@@ -6844,8 +6844,8 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 3493520,
-      "sha256": "967adeccbcc303b6e7717521acac423a7f81b96758b4340f4a5ea317863aaf08"
+      "bytes": 3493535,
+      "sha256": "94396a5f8d5684c841179255efef546464fdc5a77073ea5043b055f32bfd6c9c"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
@@ -11214,18 +11214,18 @@
     },
     {
       "path": "reports/ch1_interleaved_20261019/browser.json",
-      "bytes": 55979,
-      "sha256": "51fbafd4bf5e57f27c49b074e3555edda00159cfc2be1556600cf69177f9a13d"
+      "bytes": 160803,
+      "sha256": "512b8cf5ca7e456c939e0c87c343a42cc9a0d82c495a56d0457200438065bf5b"
     },
     {
       "path": "reports/ch1_interleaved_20261019/NARRATIVE_REPORT.json",
       "bytes": 8195,
-      "sha256": "3e1daf8942009c0db3872d92a71abccc328a81eb64c652d2b11a3813e96791d1"
+      "sha256": "0880c33307ed16267a488b5325ac0383b5d5dc3e2ec0c4556faf2b0ea8de3f3b"
     },
     {
       "path": "reports/ch1_interleaved_20261019/REQUIREMENTS_AND_EVIDENCE.md",
-      "bytes": 3530,
-      "sha256": "d0496f515a659513f31a16b3874ba79f38270d06e195b37daf994f10cdbacffe"
+      "bytes": 3691,
+      "sha256": "ceb8bfe96acf99c57c0e103871a5cc903e66581546b834c3b1eea43ab2297e15"
     },
     {
       "path": "reports/ch1_steps_20261019/browser.json",
@@ -11235,7 +11235,7 @@
     {
       "path": "reports/ch1_steps_20261019/STEPS_REPORT.json",
       "bytes": 14278,
-      "sha256": "4c3c14236111c42da7296ecca059b93e5ce38298a5dbb735140835a38484b3ed"
+      "sha256": "c439753e92f55e0bdcb473b581f2e841684fe27fe11a8c38161ba19c7a0e96e4"
     },
     {
       "path": "reports/ch1_symbol_layout_20261019/browser.json",
@@ -11254,13 +11254,13 @@
     },
     {
       "path": "scripts/browser_chapter01_revision.py",
-      "bytes": 8267,
-      "sha256": "d71afb8a58e6681f758b5d86ad9aebf0f9436bc132f36d2c813df050593dbf74"
+      "bytes": 9032,
+      "sha256": "01f184c3a7415a15fd60488ada13f17a410ca56a17251acfd0786a42e008dbe0"
     },
     {
       "path": "scripts/build_course.py",
-      "bytes": 35184,
-      "sha256": "c496c438ccbc05f6ef4d2ea359164e92bb69faa6e7dec33a5ca6c49a15b80c52"
+      "bytes": 35359,
+      "sha256": "0d83a345ae0a375f1a04994c91fe9c776de480c22281b5736d6ce229fbe05a1b"
     },
     {
       "path": "scripts/build_figs.py",
@@ -11494,8 +11494,8 @@
     },
     {
       "path": "scripts/rebuild_chapter01_layout.py",
-      "bytes": 2636,
-      "sha256": "a9fb23331fd901c35e6bbcd47a5800d6fef428ef8eba2f0b9990beb324cc297e"
+      "bytes": 2726,
+      "sha256": "997e4db0cc2d4ab0d724729d64cc59162157c3de7893252f31e33f8b09126ef3"
     },
     {
       "path": "scripts/rebuild_chapter01_steps.py",
@@ -13464,8 +13464,8 @@
     },
     {
       "path": "verification/bilingual-terms.json",
-      "bytes": 178809,
-      "sha256": "8821c5a8e1cea9913ae1f665ab8f30c2bddc440b8811347601428beaa9b2a8f2"
+      "bytes": 178973,
+      "sha256": "f8838cc6d2296c02a0baa942301559997fb3e3491088d8198b0685c8ab5aa8a2"
     },
     {
       "path": "verification/browser-audit.json",
@@ -13539,8 +13539,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 1204453,
-      "sha256": "a815e6620655642245969b7d9742ee0d2c9f4565614080bdbdcc97da628b1536"
+      "bytes": 1204468,
+      "sha256": "866cbcae8bad3fcac2c6ce66423ace2e1e0851f7cf8e7492dc336c73a4394d6f"
     },
     {
       "path": "verification/cross-review-01-02.json",

@@ -15,8 +15,20 @@
 .derivation-flow > .handoff-passage:last-child > :last-child {
   margin-bottom: 0;
 }
+.derivation-flow .derivation-reason,
+.derivation-flow .derivation-reason > p {
+  margin: 0;
+}
+.derivation-flow .derivation-reason + .derivation-reason {
+  margin-top: .7rem;
+}
 .derivation-flow .math-display {
   max-width: 100%;
+  margin: .35rem 0 1.5rem;
+  padding: .1rem .4rem;
+}
+.derivation-flow .math-display .katex-display {
+  margin: 0;
 }
 @media (max-width: 760px) {
   .equation-unit > .derivation-flow {

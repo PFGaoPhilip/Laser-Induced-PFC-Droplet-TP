@@ -3344,7 +3344,7 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "967adeccbcc303b6e7717521acac423a7f81b96758b4340f4a5ea317863aaf08",
+      "sha256": "94396a5f8d5684c841179255efef546464fdc5a77073ea5043b055f32bfd6c9c",
       "post_highlight_ui_localization": {
         "hidden_headers": 66,
         "exact_prelocalization_hash_reconstructed": true,
@@ -3353,6 +3353,10 @@
       "shaded_derivation_groups": {
         "change": "one chapter-specific stylesheet link",
         "scientific_prose_math_and_term_marks_unchanged": true
+      },
+      "spacing_stylesheet_cache_version": {
+        "scientific_prose_math_and_term_marks_unchanged": true,
+        "one_href_attribute_updated": true
       }
     },
     {

@@ -48,6 +48,14 @@ with sync_playwright() as p:
           background:getComputedStyle(e).backgroundColor,paper:getComputedStyle(document.querySelector('.chapter-body')).backgroundColor,
           padding:parseFloat(getComputedStyle(e).paddingLeft),radius:parseFloat(getComputedStyle(e).borderRadius)}))''')
         assert len(backgrounds)==33 and all(x['background'] not in ['transparent','rgba(0, 0, 0, 0)',x['paper']] and x['padding']>=7 and x['radius']>0 for x in backgrounds),backgrounds
+        association_gaps=page.locator('.derivation-flow .math-display').evaluate_all('''els=>els.flatMap(f=>{
+          let next=f.nextElementSibling,previous=f.previousElementSibling,formula=f.querySelector('.katex-display');
+          if(!next||!next.classList.contains('derivation-reason'))return [];
+          return [{id:f.closest('.equation-unit').id,
+            before:formula.getBoundingClientRect().top-previous.getBoundingClientRect().bottom,
+            after:next.getBoundingClientRect().top-formula.getBoundingClientRect().bottom}]
+        })''')
+        assert association_gaps and all(g['after']>=g['before']+8 for g in association_gaps),[g for g in association_gaps if g['after']<g['before']+8]
         if width<=760:
             overlaps=page.locator('.derivation-flow .katex-tag').evaluate_all('''tags=>tags.filter(t=>{
               let content=Array.from(t.parentElement.children).filter(n=>n!==t&&n.getBoundingClientRect().height>0);
@@ -71,7 +79,7 @@ with sync_playwright() as p:
         page.evaluate('document.fonts.ready')
         # Freeze smooth scrolling for deterministic capture. Product CSS stays intact.
         page.add_style_tag(content='html{scroll-behavior:auto!important}')
-        for ident in ([] if target!=ROOT else ['C1-E21'] if focused else ['C1-E05','C1-E11','C1-E14','C1-E21','C1-E28','C1-E30','C1-E33'] if width>400 else ['C1-E05','C1-E21','C1-E30']):
+        for ident in ([] if target!=ROOT else ['C1-E01','C1-E21'] if focused else ['C1-E05','C1-E11','C1-E14','C1-E21','C1-E28','C1-E30','C1-E33'] if width>400 else ['C1-E05','C1-E21','C1-E30']):
             context=page.locator('[data-step-for="'+ident+'"]')
             if context.count():
                 page.evaluate('''id=>{let h=document.querySelector('[data-step-for="'+id+'"]'),e=document.getElementById(id),box=document.createElement('div');box.id='preview-'+id;h.before(box);for(let n=h;n;){let next=n.nextElementSibling;box.append(n);if(n===e)break;n=next}}''',ident)
@@ -82,7 +90,7 @@ with sync_playwright() as p:
             for box in page.locator('.equation-unit').all():
                 box.screenshot(path=str(out/(box.get_attribute('id')+'.png')))
         assert not errors,errors
-        results.append({'case':name,**state,'visible_explanation_formula_flow':flow_state,'shaded_derivation_groups':backgrounds,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
+        results.append({'case':name,**state,'visible_explanation_formula_flow':flow_state,'shaded_derivation_groups':backgrounds,'formula_association_gaps':association_gaps,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
         ctx.close()
     browser.close()
 name='relocated-browser.json' if target!=ROOT else 'browser.json'

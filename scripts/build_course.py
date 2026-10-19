@@ -109,6 +109,11 @@ def render_html(source):
             if display:node['class']=['math-display','equation'];node['aria-label']=tex
     return str(soup)
 
+def chapter01_stylesheet():
+    name='chapter01-derivations.css'
+    version=hashlib.sha256((ROOT/'assets'/name).read_bytes()).hexdigest()[:12]
+    return name+'?v='+version
+
 def head(title,relative='',extra_styles=()):
     return ('<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -175,7 +180,7 @@ def chapter_page(ch,chapters,progress):
     else:links.append('<a href="../index.html">← Course home / 课程首页</a>')
     if idx+1<len(chapters):links.append('<a href="../'+route(chapters[idx+1])+'">'+unit_label(chapters[idx+1])[0]+' / '+unit_label(chapters[idx+1])[1]+' →</a>')
     else:links.append('<a href="../reference/defense.html">Final synthesis / 最终综合 →</a>')
-    out=head(en_label+': '+ch['title_en'],'../',extra_styles=['chapter01-derivations.css'] if ch['number']==1 else [])+topbar('../')+'<div class="page-layout"><aside class="sidebar"><h2>Course / 课程</h2>'+nav+'<h2>In this unit / 本单元内容</h2>'+toc+'</aside>'
+    out=head(en_label+': '+ch['title_en'],'../',extra_styles=[chapter01_stylesheet()] if ch['number']==1 else [])+topbar('../')+'<div class="page-layout"><aside class="sidebar"><h2>Course / 课程</h2>'+nav+'<h2>In this unit / 本单元内容</h2>'+toc+'</aside>'
     out+=f'<div class="reading" data-unit="{unit_id(ch)}" data-unit-kind="{ch.get("kind","chapter")}" data-chapter="{unit_id(ch)}">'+header+'<main class="chapter-body">'+raw+panel(ch)+'</main><nav class="chapter-navigation">'+''.join(links)+'</nav></div></div>'+footer()
     if is_appendix(ch):
         out=out.replace('</head>',f'<link rel="canonical" href="{BASE}{route(ch)}"></head>')
