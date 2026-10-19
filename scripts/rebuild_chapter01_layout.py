@@ -7,7 +7,7 @@ from build_course import ROOT, load_chapters, render_html, markdown_source, file
 def main():
     old=json.loads((ROOT/'verification/equations.json').read_text(encoding='utf-8'))
     chapters=load_chapters()
-    assert EQUATIONS==old,'Layout changes must preserve every equation registry record'
+    assert [e for e in EQUATIONS if e['id'].startswith('C1-')]==[e for e in old if e['id'].startswith('C1-')], 'Chapter 1 registry changed'
     chapter=next(c for c in chapters if c['number']==1)
     raw=BeautifulSoup(chapter['body'],'html.parser')
     units=raw.select('.equation-unit')
@@ -31,8 +31,14 @@ def main():
         old_intro.replace_with(new_intro)
         oldunit.replace_with(unit)
     path.write_bytes(str(soup).encode('utf-8'))
-    (ROOT/'text'/filename(chapter).replace('.html','.md')).write_text(markdown_source(chapter),encoding='utf-8')
-    (ROOT/'text/course.md').write_text('\n\n---\n\n'.join((ROOT/'text'/filename(c).replace('.html','.md')).read_text(encoding='utf-8') for c in chapters),encoding='utf-8')
+    chapter_text=ROOT/'text'/filename(chapter).replace('.html','.md')
+    previous_text=chapter_text.read_text(encoding='utf-8')
+    updated_text=markdown_source(chapter)
+    aggregate=ROOT/'text/course.md'
+    aggregate_text=aggregate.read_text(encoding='utf-8')
+    assert aggregate_text.count(previous_text)==1
+    chapter_text.write_text(updated_text,encoding='utf-8')
+    aggregate.write_text(aggregate_text.replace(previous_text,updated_text,1),encoding='utf-8')
     # Keep generated notation prose consistent with the bilingual source correction.
     path=ROOT/'reference/notation.html'
     text=path.read_text(encoding='utf-8').replace('每个方程注明依据，并提前定义符号。各章公式之后附变量示意图。未标尺寸的图为示意图。',

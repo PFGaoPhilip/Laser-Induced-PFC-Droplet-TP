@@ -186,7 +186,7 @@ $$
 
 **式（C1.2-E01）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $R$ is the cavity radius (m)<br>$R$ 为空腔半径（m） | $t$ is time (s), with 0 the chosen initial instant<br>$t$ 为时间（s），0 为选定的初始时刻 |
 | $R_0$ is its prescribed positive initial value (m)<br>$R_0$ 为给定的正初始半径（m） | $\dot R$ is wall speed (m s⁻¹)<br>$\dot R$ 为壁面速度（m s⁻¹） |
@@ -357,7 +357,7 @@ $$
 
 **式（C1.3-E02）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $r\ge R(t)>0$ is radial position (m)<br>$r\ge R(t)>0$ 为径向位置（m） | $R$ is cavity radius (m)<br>$R$ 为空腔半径（m） |
 | $t$ is time (s)<br>$t$ 为时间（s） | $u$ is radial carrier velocity (m s⁻¹)<br>$u$ 为载液径向速度（m s⁻¹） |
@@ -545,7 +545,7 @@ The advantage of $\phi$ is mathematical convenience. It also provides a natural 
 
 **式（C1.3-E03）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\phi$ is velocity potential (m² s⁻¹)<br>$\phi$ 为速度势（m² s⁻¹） | $r$ is liquid radial position (m)<br>$r$ 为液体径向位置（m） |
 | $R$ cavity radius (m)<br>$R$ 为空腔半径（m） | $t$ is time (s)<br>$t$ 为时间（s） |
@@ -719,7 +719,7 @@ $$
 
 **式（C1.3-E04）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\phi$ is velocity potential (m² s⁻¹)<br>$\phi$ 为速度势（m² s⁻¹） | $t$ is time (s)<br>$t$ 为时间（s） |
 | $r$ is fixed radial position (m)<br>$r$ 为固定径向位置（m） | $R(t)>0$ is moving cavity radius (m)<br>$R(t)>0$ 为运动空腔半径（m） |
@@ -973,7 +973,7 @@ This reproduces C1.3-E05 exactly. The coefficient $3/2$ follows from the acceler
 
 **式（C1.3-E05）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $p_l$ is liquid pressure at the wall (Pa)<br>$p_l$ 为壁面液体压力（Pa） | $p_\infty$ far-field pressure (Pa)<br>$p_\infty$ 为远场压力（Pa） |
 | $\rho>0$ is carrier density (kg m⁻³)<br>$\rho>0$ 为载液密度（kg m⁻³） | $\phi$ is velocity potential (m² s⁻¹)<br>$\phi$ 为速度势（m² s⁻¹） |
@@ -1111,7 +1111,7 @@ $$
 
 **式（C1.3-E06）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $u$ — Radial liquid velocity (m s⁻¹)<br>$u$ — 液体径向速度（m s⁻¹） | $\dot R$ — Bubble-wall radial velocity (m s⁻¹)<br>$\dot R$ — 气泡壁面径向速度（m s⁻¹） |
 | $r$ — Radial liquid position (m)<br>$r$ — 液体径向位置（m） | $R>0$ — Positive cavity radius (m)<br>$R>0$ — 正的空腔半径（m） |
@@ -1218,7 +1218,7 @@ $$
 
 **式（C1.3-E07）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\rho>0$ is carrier density (kg m⁻³)<br>$\rho>0$ 为载液密度（kg m⁻³） | $R>0$ is cavity radius (m)<br>$R>0$ 为空腔半径（m） |
 | $\dot R$ — Wall radial velocity (m s⁻¹)<br>$\dot R$ — 壁面径向速度（m s⁻¹） | $\ddot R$ — Wall radial acceleration (m s⁻²)<br>$\ddot R$ — 壁面径向加速度（m s⁻²） |
@@ -1310,7 +1310,7 @@ $$
 
 **式（C1.3-E08）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $p_b$ is uniform total bubble pressure (Pa)<br>$p_b$ 为空间均匀的气泡总压力（Pa） | $p_{v,\mathrm{PFC}}$ is the PFC-vapor partial pressure (Pa)<br>$p_{v,\mathrm{PFC}}$ 为 PFC 蒸气分压（Pa） |
 | $p_{v,w}$ water-vapor partial pressure (Pa)<br>$p_{v,w}$ 为水蒸气分压（Pa） | $p_g$ permanent-gas partial pressure (all Pa)<br>$p_g$ 为非凝结气体分压（均为 Pa） |
@@ -1442,7 +1442,7 @@ This is the kinetic energy of the *surrounding liquid*, not of the vapor inside 
 
 **式（C1.4-E09）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $K_l$ is exterior liquid kinetic energy (J)<br>$K_l$ 为外部液体动能（J） | $\rho$ is carrier density (kg m⁻³)<br>$\rho$ 为载液密度（kg m⁻³） |
 | $u$ is radial liquid speed (m s⁻¹)<br>$u$ 为径向液体速度（m s⁻¹） | $\dot R$ wall speed (m s⁻¹)<br>$\dot R$ 为壁面速度（m s⁻¹） |
@@ -1601,7 +1601,7 @@ $$
 
 **式（C1.4-E10）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $K_l$ — Carrier kinetic energy (J)<br>$K_l$ — 载液动能（J） | $E_\sigma$ — Interfacial energy (J)<br>$E_\sigma$ — 界面能（J） |
 | $t$ is time (s)<br>$t$ 为时间（s） | $\rho$ is carrier density (kg m⁻³)<br>$\rho$ 为载液密度（kg m⁻³） |
@@ -1729,7 +1729,7 @@ This is the **mechanical** budget of the spherical cavity and exterior carrier. 
 
 **式（C1.4-E11）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $t$ is time (s)<br>$t$ 为时间（s） | $K_l$ — Carrier kinetic energy (J)<br>$K_l$ — 载液动能（J） |
 | $E_\sigma$ — Interfacial energy (J)<br>$E_\sigma$ — 界面能（J） | $p_b$ — Uniform bubble absolute pressure (Pa)<br>$p_b$ — 均匀气泡绝对压力（Pa） |
@@ -1886,7 +1886,7 @@ $$
 
 **式（C1.5-E12）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\Delta p_c>0$ is constant collapse-driving pressure (Pa)<br>$\Delta p_c>0$ 为常数塌缩驱动压差（Pa） | $p_\infty$ — Constant Far-field absolute pressure (Pa)<br>$p_\infty$ — 恒定的远场绝对压力（Pa） |
 | $p_v$ — Stipulated constant vapor pressure (Pa)<br>$p_v$ — 假定恒定蒸气压（Pa） | $t=0$ is maximum-radius time (s)<br>$t=0$ 为最大半径时刻（s） |
@@ -1970,7 +1970,7 @@ $$
 
 **式（C1.5-E13）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $y(R)$ is squared wall speed (m² s⁻²)<br>$y(R)$ 为壁面速度平方（m² s⁻²） | $R\in(0,R_{\max})$ is decreasing radius (m)<br>$R\in(0,R_{\max})$ 为递减半径（m） |
 | $t$ is time (s)<br>$t$ 为时间（s） | $\dot R\ne0$ — Wall radial velocity (m s⁻¹)<br>$\dot R\ne0$ — 壁面径向速度（m s⁻¹） |
@@ -2072,7 +2072,7 @@ At the initial instant $\dot R=0$, but (1) gives $\ddot R(0)=-\Delta p_c/(\rho R
 
 **式（C1.5-E14）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $R\in(0,R_{\max}]$ — Instantaneous cavity radius (m)<br>$R\in(0,R_{\max}]$ — 瞬时空腔半径（m） | $R_{\max}$ — Radius at the start of ideal collapse (m)<br>$R_{\max}$ — 理想塌缩开始时的半径（m） |
 | $y$ is squared speed (m² s⁻²)<br>$y$ 为速度平方（m² s⁻²） | $s$ is dummy radius (m)<br>$s$ 为积分哑半径（m） |
@@ -2202,7 +2202,7 @@ $$
 
 **式（C1.5-E15）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $t_c$ is ideal collapse time (s)<br>$t_c$ 为理想塌缩时间（s） | $R$ is radius (m)<br>$R$ 为半径（m） |
 | $R_{\max}$ its maximum (m)<br>$R_{\max}$ 为其最大值（m） | $\dot R<0$ is inward velocity (m s⁻¹)<br>$\dot R<0$ 为向内速度（m s⁻¹） |
@@ -2342,7 +2342,7 @@ $$
 
 **式（C1.5-E16）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $x$ — Dimensionless radius divided by the maximum radius (dimensionless)<br>$x$ — 半径除以最大半径所得无量纲量（无量纲） | $q=x^3$ — Dimensionless substitution variable equal to the cube of the radius fraction (dimensionless)<br>$q=x^3$ — 等于半径比例立方的无量纲换元变量（无量纲） |
 | $C_t$ is the dimensionless collapse-time coefficient<br>$C_t$ 为无量纲塌缩时间系数 | $B(a,b)$ is the beta function, defined by the displayed convergent integral (dimensionless)<br>$B(a,b)$ 为贝塔函数，由公式中的收敛积分定义（无量纲） |
@@ -2481,7 +2481,7 @@ Because the ideal Rayleigh-collapse model begins at rest and neglects viscosity,
 
 **式（C1.5-E17）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $K_l$ is carrier kinetic energy (J)<br>$K_l$ 为载液动能（J） | $E_B$ the maximum-volume pressure-work scale (J)<br>$E_B$ 为最大体积的压力功尺度（J） |
 | $R\in(0,R_{\max}]$ — Instantaneous cavity radius (m)<br>$R\in(0,R_{\max}]$ — 瞬时空腔半径（m） | $R_{\max}$ — Radius at the start of ideal collapse (m)<br>$R_{\max}$ — 理想塌缩开始时的半径（m） |
@@ -2648,7 +2648,7 @@ $$
 
 **式（C1.5-E18）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $t_c$ is collapse time (s)<br>$t_c$ 为塌缩时间（s） | $E_B$ pressure-work scale (J)<br>$E_B$ 为压力功尺度（J） |
 | $K_l$ carrier kinetic energy (J)<br>$K_l$ 为载液动能（J） | $R$ current radius (m)<br>$R$ 为当前半径（m） |
@@ -2883,7 +2883,7 @@ Within the ideal trajectory, $R<R_M$ corresponds to $M_w>M_*$. However, a real c
 
 **式（C1.5-E19）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $M_w$ is wall Mach number (dimensionless)<br>$M_w$ 为壁面马赫数（无量纲） | $\dot R$ is wall speed (m s⁻¹)<br>$\dot R$ 为壁面速度（m s⁻¹） |
 | $c>0$ is stipulated carrier sound speed (m s⁻¹)<br>$c>0$ 为给定载液声速（m s⁻¹） | $M_*>0$ is a selected diagnostic Mach value (dimensionless)<br>$M_*>0$ 为选择的诊断马赫值（无量纲） |
@@ -3044,7 +3044,7 @@ In the special case of a planar fixed patch of area $A$ with uniform normal pres
 
 **式（C1.6-E20）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\boldsymbol x$ is fixed liquid position (m)<br>$\boldsymbol x$ 为固定液体位置（m） | $\Pi$ is pressure impulse (Pa s)<br>$\Pi$ 为压力冲量（Pa s） |
 | $p$ is local pressure (Pa)<br>$p$ 为局部压力（Pa） | $p_{\mathrm{ref}}$ a spatially uniform reference (Pa)<br>$p_{\mathrm{ref}}$ 为空间均匀参考压力（Pa） |
@@ -3307,7 +3307,7 @@ It is exact within the stated incompressible, constant-property model, provided 
 
 **式（C1.6-E21）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\Delta\boldsymbol u$ is fixed-position velocity change (m s⁻¹)<br>$\Delta\boldsymbol u$ 为固定位置速度变化（m s⁻¹） | $\boldsymbol u$ velocity (m s⁻¹)<br>$\boldsymbol u$ 为速度（m s⁻¹） |
 | $\Pi$ is pressure impulse (Pa s)<br>$\Pi$ 为压力冲量（Pa s） | $\rho$ is constant density (kg m⁻³)<br>$\rho$ 为常数密度（kg m⁻³） |
@@ -3488,7 +3488,7 @@ $$
 
 **式（C1.6-E22）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $U>0$ is a characteristic liquid speed (m s⁻¹)<br>$U>0$ 为特征液体速度（m s⁻¹） | $\tau$ is impulse duration (s)<br>$\tau$ 为冲量持续时间（s） |
 | $L>0$ is liquid variation length (m)<br>$L>0$ 为液体变化长度（m） | $\nu$ is kinematic viscosity (m² s⁻¹)<br>$\nu$ 为运动黏度（m² s⁻¹） |
@@ -3701,7 +3701,7 @@ $$
 
 **式（C1.6-E23）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $z\in[0,L]$ is axial position (m)<br>$z\in[0,L]$ 为轴向位置（m） | $L>0$ column length (m)<br>$L>0$ 为液柱长度（m） |
 | $\Pi(z)$ — Local column pressure impulse (Pa s)<br>$\Pi(z)$ — 液柱局部压力冲量（Pa s） | $\Pi_0>0$ — Driven-end pressure impulse (Pa s)<br>$\Pi_0>0$ — 驱动端压力冲量（Pa s） |
@@ -3875,7 +3875,7 @@ $$
 
 **式（C1.6-E24）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\Pi_0$ is driven-end impulse (Pa s)<br>$\Pi_0$ 为受驱动端冲量（Pa s） | $\Delta p$ is constant applied column pressure difference (Pa)<br>$\Delta p$ 为施加的常数液柱压差（Pa） |
 | $\tau$ is pulse duration (s)<br>$\tau$ 为脉冲持续时间（s） | $U$ is column speed increment (m s⁻¹)<br>$U$ 为液柱速度增量（m s⁻¹） |
@@ -4004,7 +4004,7 @@ $$
 
 **式（C1.6-E25）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\gamma$ is dimensionless stand-off<br>$\gamma$ 为无量纲离壁比 | $h$ is bubble-center-to-boundary distance (m)<br>$h$ 为气泡中心到边界的距离（m） |
 | $R_{\max}$ is maximum radius (m)<br>$R_{\max}$ 为最大半径（m） | $S^2$ denotes all directions on the unit sphere (—)<br>$S^2$ 表示单位球面上的全部方向（—） |
@@ -4178,7 +4178,7 @@ $$
 
 **式（C1.7-E26）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\boldsymbol u(\boldsymbol x,t)$ is liquid velocity (m s⁻¹)<br>$\boldsymbol u(\boldsymbol x,t)$ 为液体速度（m s⁻¹） | $\boldsymbol x$ is spatial position (m)<br>$\boldsymbol x$ 为空间位置（m） |
 | $t$ is time (s)<br>$t$ 为时间（s） | $\rho$ is constant carrier density (kg m⁻³)<br>$\rho$ 为常数载液密度（kg m⁻³） |
@@ -4382,7 +4382,7 @@ $$
 
 **式（C1.7-E27）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\boldsymbol D$ is symmetric liquid strain-rate tensor (s⁻¹)<br>$\boldsymbol D$ 为液体对称应变率张量（s⁻¹） | $\boldsymbol u$ is velocity (m s⁻¹)<br>$\boldsymbol u$ 为速度（m s⁻¹） |
 | $\boldsymbol n$ is the unit normal from liquid into gas (dimensionless)<br>$\boldsymbol n$ 为从液体指向气体的单位法向（无量纲） | $\kappa$ is signed curvature (m⁻¹)<br>$\kappa$ 为带符号曲率（m⁻¹） |
@@ -4674,7 +4674,7 @@ In this sense, there is one bulk elliptic problem and two evolving surface quant
 
 **式（C1.7-E28）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\boldsymbol u$ is liquid velocity (m s⁻¹)<br>$\boldsymbol u$ 为液体速度（m s⁻¹） | $\phi$ is velocity potential (m² s⁻¹)<br>$\phi$ 为速度势（m² s⁻¹） |
 | $\boldsymbol X$ is a material interface position (m)<br>$\boldsymbol X$ 为物质界面点位置（m） | $t$ is time (s)<br>$t$ 为时间（s） |
@@ -4769,7 +4769,7 @@ This shows the mathematical compatibility of C1.7-E28 with the earlier spherical
 
 **式（C1.7-E29）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\phi_\Gamma$ is the velocity potential evaluated on the spherical interface (m² s⁻¹), with subscript $\Gamma$ the interface label<br>$\phi_\Gamma$ 为球形界面处速度势（m² s⁻¹），下标 $\Gamma$ 标识界面 | $R>0$ is radius (m)<br>$R>0$ 为半径（m） |
 | $\dot R$ — Wall radial velocity (m s⁻¹)<br>$\dot R$ — 壁面径向速度（m s⁻¹） | $\ddot R$ — Wall radial acceleration (m s⁻²)<br>$\ddot R$ — 壁面径向加速度（m s⁻²） |
@@ -5017,7 +5017,7 @@ This requires $U\ll c$, but the latter alone does not guarantee that a particula
 
 **式（C1.7-E30）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $M_w$ is wall Mach number (dimensionless)<br>$M_w$ 为壁面马赫数（无量纲） | $\mathcal C_e$ a pressure-communication ratio (both dimensionless)<br>$\mathcal C_e$ 为压力通信比（两者均无量纲） |
 | $\dot R$ is wall speed (m s⁻¹)<br>$\dot R$ 为壁面速度（m s⁻¹） | $c>0$ is carrier sound speed (m s⁻¹)<br>$c>0$ 为载液声速（m s⁻¹） |
@@ -5163,7 +5163,7 @@ $$
 
 **式（C1.8-E31）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\rho$ is carrier density (kg m⁻³)<br>$\rho$ 为载液密度（kg m⁻³） | $R>0$ is cavity radius (m)<br>$R>0$ 为空腔半径（m） |
 | $\dot R$ — Wall radial velocity (m s⁻¹)<br>$\dot R$ — 壁面径向速度（m s⁻¹） | $\ddot R$ — Wall radial acceleration (m s⁻²)<br>$\ddot R$ — 壁面径向加速度（m s⁻²） |
@@ -5324,7 +5324,7 @@ $$
 
 **式（C1.8-E32）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\dot R\le0$ is inward wall velocity (m s⁻¹)<br>$\dot R\le0$ 为向内壁面速度（m s⁻¹） | $R\in(0,R_{\max}]$ — Instantaneous cavity radius (m)<br>$R\in(0,R_{\max}]$ — 瞬时空腔半径（m） |
 | $R_{\max}$ — Radius at the start of ideal collapse (m)<br>$R_{\max}$ — 理想塌缩开始时的半径（m） | $\Delta p_c>0$ is constant collapse pressure (Pa)<br>$\Delta p_c>0$ 为常数塌缩压差（Pa） |
@@ -5500,7 +5500,7 @@ $$
 
 **式（C1.8-E33）的符号定义。**
 
-| First individual definition / 第一项单独定义 | Second individual definition / 第二项单独定义 |
+| First individual definition第一项单独定义 | Second individual definition第二项单独定义 |
 | --- | --- |
 | $\Pi$ is local pressure impulse (Pa s)<br>$\Pi$ 为局部压力冲量（Pa s） | $\boldsymbol x$ is fixed position (m)<br>$\boldsymbol x$ 为固定位置（m） |
 | $t$ — Elapsed time (s)<br>$t$ — 经过时间（s） | $t_0$ — Event start time (s)<br>$t_0$ — 事件开始时刻（s） |

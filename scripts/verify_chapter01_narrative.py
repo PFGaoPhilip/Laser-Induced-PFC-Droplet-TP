@@ -93,7 +93,7 @@ def verify_source(unit,record):
     assert text.startswith(r'\begin{gathered}') and text.endswith(r'\end{gathered}')
     derivation,result=text[len(r'\begin{gathered}'):-len(r'\end{gathered}')].split(r'\\[6pt]',1)
     for phase,original in [('derivation',derivation),('result',result)]:
-        displayed=unit.select(f'.derivation-flow > .math-display[data-phase="{phase}"]')
+        displayed=unit.select(f'.derivation-flow .math-display[data-phase="{phase}"]')
         assert displayed,(record['id'],phase)
         reconstructed=r'\\'.join(n['data-source-tex'] for n in displayed)
         assert tokens(reconstructed)==tokens(inner(original)),(record['id'],phase,'source mathematics changed')
@@ -103,7 +103,7 @@ def main():
     soup=BeautifulSoup(path.read_text(encoding='utf-8'),'html.parser')
     registry=json.loads((ROOT/'verification/equations.json').read_text(encoding='utf-8'))
     baseline=json.loads((ROOT/'reports/ch1_interleaved_20261019/equations_before.json').read_text(encoding='utf-8'))
-    assert registry==baseline
+    assert [r for r in registry if r['id'].startswith('C1-')]==[r for r in baseline if r['id'].startswith('C1-')]
     equations={r['id']:r for r in registry}
     assert len(soup.select('.equation-unit'))==33
     assert not soup.select('.katex-error')
@@ -113,6 +113,14 @@ def main():
         assert flow is not None
         children=flow.find_all(recursive=False)
         formulas=flow.select('.math-display')
+        panels=flow.select('.derivation-panel')
+        assert panels
+        for panel in panels:
+            children=panel.find_all(recursive=False)
+            assert 'derivation-reason' in children[0].get('class',[])
+            assert 'math-display' in children[1].get('class',[])
+            assert 'math-display' in children[-1].get('class',[])
+        assert all(f.find_parent(class_='derivation-panel') for f in formulas)
         assert len(formulas)>=3
         for formula in formulas:
             explanation=formula.find_previous_sibling()

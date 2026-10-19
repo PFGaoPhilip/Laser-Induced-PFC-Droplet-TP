@@ -1,5 +1,5 @@
 /* Keep each complete explanation–formula sequence visually separate. */
-.equation-unit > .derivation-flow {
+.equation-unit .derivation-panel {
   min-width: 0;
   padding: .85rem 1rem;
   margin: .75rem 0 .9rem;
@@ -7,12 +7,10 @@
   border: 1px solid var(--rule);
   border-radius: .45rem;
 }
-.derivation-flow > :first-child,
-.derivation-flow > .handoff-passage:first-child > :first-child {
+.derivation-panel > :first-child {
   margin-top: 0;
 }
-.derivation-flow > :last-child,
-.derivation-flow > .handoff-passage:last-child > :last-child {
+.derivation-panel > :last-child {
   margin-bottom: 0;
 }
 .derivation-flow .derivation-reason,
@@ -31,7 +29,7 @@
   margin: 0;
 }
 @media (max-width: 760px) {
-  .equation-unit > .derivation-flow {
+  .equation-unit .derivation-panel {
     padding: .65rem .45rem;
   }
   /* Put source equation numbers below wide formulas on narrow screens. */

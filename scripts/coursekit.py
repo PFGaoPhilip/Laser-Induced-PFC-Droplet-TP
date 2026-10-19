@@ -7,6 +7,28 @@ from equation_titles import equation_title_zh
 
 EQUATIONS = []
 
+def formula_panels(markup):
+    """Shade worked formulas and their immediate explanations, excluding context."""
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(markup, 'html.parser')
+    for container in soup.select('.handoff-passage, .derivation-flow'):
+        formulas = container.select(':scope > .math-display')
+        if not formulas:
+            continue
+        first = formulas[0].find_previous_sibling()
+        assert first and 'derivation-reason' in first.get('class', [])
+        last = formulas[-1]
+        panel = soup.new_tag('div', attrs={'class': 'derivation-panel'})
+        first.insert_before(panel)
+        node = first
+        while node is not None:
+            following = node.next_sibling
+            panel.append(node.extract())
+            if node is last:
+                break
+            node = following
+    return str(soup)
+
 def safe_inline_math(text):
     """Preserve mathematical inequalities before parsing intentional prose HTML."""
     return re.sub(r'(?<!\\)\$([^$\n]+?)(?<!\\)\$',
@@ -47,6 +69,8 @@ def E(identifier, tex, symbols_en, symbols_zh, kind, diagram, caption_en, captio
                           f'data-source-tex="{escape(part["source_tex"],quote=True)}" '
                           f'data-tex="{escape(part["display_tex"],quote=True)}"></div>')
         mathematics+='</div>'
+    if reasoning is not None or reasoning_html is not None:
+        mathematics=formula_panels(mathematics)
     return (f'<section class="equation-unit" id="{escape(identifier)}" data-kind="{escape(kind)}">'
             + (symbols if symbol_position == 'before' else '')
             + f'<div class="lang-pair equation-heading inline-pair"><p lang="en">({display_label}) · {escape(kind)}</p>'

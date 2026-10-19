@@ -44,10 +44,14 @@ with sync_playwright() as p:
             wrongLanguageParagraphs:Array.from(document.querySelectorAll('.derivation-flow p[lang="'+other+'"]'))
               .filter(n=>getComputedStyle(n).display!=='none').length}}''')
         assert flow_state['displays']==267 and not flow_state['missingVisibleExplanations'] and not flow_state['wrongLanguageParagraphs'],flow_state
-        backgrounds=page.locator('.equation-unit > .derivation-flow').evaluate_all('''els=>els.map(e=>({
+        backgrounds=page.locator('.equation-unit .derivation-panel').evaluate_all('''els=>els.map(e=>({
           background:getComputedStyle(e).backgroundColor,paper:getComputedStyle(document.querySelector('.chapter-body')).backgroundColor,
           padding:parseFloat(getComputedStyle(e).paddingLeft),radius:parseFloat(getComputedStyle(e).borderRadius)}))''')
-        assert len(backgrounds)==33 and all(x['background'] not in ['transparent','rgba(0, 0, 0, 0)',x['paper']] and x['padding']>=7 and x['radius']>0 for x in backgrounds),backgrounds
+        assert len(backgrounds)>=33 and all(x['background'] not in ['transparent','rgba(0, 0, 0, 0)',x['paper']] and x['padding']>=7 and x['radius']>0 for x in backgrounds),backgrounds
+        assert page.locator('.derivation-panel').evaluate_all('''els=>els.every(e=>
+          e.firstElementChild.classList.contains('derivation-reason') &&
+          e.firstElementChild.nextElementSibling.classList.contains('math-display') &&
+          e.lastElementChild.classList.contains('math-display'))''')
         association_gaps=page.locator('.derivation-flow .math-display').evaluate_all('''els=>els.flatMap(f=>{
           let next=f.nextElementSibling,previous=f.previousElementSibling,formula=f.querySelector('.katex-display');
           if(!next||!next.classList.contains('derivation-reason'))return [];
