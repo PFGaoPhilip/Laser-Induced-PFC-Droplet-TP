@@ -28,6 +28,11 @@
       "sha256": "92cc301f2af0410a2a9126ba791ecacd33664da0ef4864aac163c4e09f95b3e4"
     },
     {
+      "path": "assets/chapter01-derivations.css",
+      "bytes": 963,
+      "sha256": "08b604789eb527b0e32c47371fdd1b28166930966cf02fc2915eb16b0857c057"
+    },
+    {
       "path": "assets/course-language.css",
       "bytes": 272,
       "sha256": "a7e2d32950f58c35ed61c03bcc45b278ca1283f4f626b7c2b9097e02b628d8c8"
@@ -6839,8 +6844,8 @@
     },
     {
       "path": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 3493453,
-      "sha256": "336c8f0d3dde745189d5481ce28523e877ccf7ef2084c79b9b9d8d3a25e76509"
+      "bytes": 3493520,
+      "sha256": "967adeccbcc303b6e7717521acac423a7f81b96758b4340f4a5ea317863aaf08"
     },
     {
       "path": "chapters/02-optical-heating-and-finite-pfc-inventory.html",
@@ -11154,8 +11159,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5997,
-      "sha256": "ffea55b65254a982305e53ba9075d62f3bda89b7da872753dc17c814c668f102"
+      "bytes": 6129,
+      "sha256": "19d14bab84ff8ca80156e3aa5dec27e3a10dc3fbb94eca1a2c7c15ce618c414e"
     },
     {
       "path": "reference/defense.html",
@@ -11209,18 +11214,18 @@
     },
     {
       "path": "reports/ch1_interleaved_20261019/browser.json",
-      "bytes": 34609,
-      "sha256": "d9358e744b9325e9ae201a17059797428ab7bbc07ad4c5504ea7a2e4a1afc2c2"
+      "bytes": 55979,
+      "sha256": "51fbafd4bf5e57f27c49b074e3555edda00159cfc2be1556600cf69177f9a13d"
     },
     {
       "path": "reports/ch1_interleaved_20261019/NARRATIVE_REPORT.json",
       "bytes": 8195,
-      "sha256": "78770d086d092b5d9a5a18cf5721d41d7448c0c88e5081f9431eed7efe7e74f6"
+      "sha256": "3e1daf8942009c0db3872d92a71abccc328a81eb64c652d2b11a3813e96791d1"
     },
     {
       "path": "reports/ch1_interleaved_20261019/REQUIREMENTS_AND_EVIDENCE.md",
-      "bytes": 3390,
-      "sha256": "76770b3b4dcc321e8433a8b9318029f7be782d4182a947f0e3053d0cf5d36b59"
+      "bytes": 3530,
+      "sha256": "d0496f515a659513f31a16b3874ba79f38270d06e195b37daf994f10cdbacffe"
     },
     {
       "path": "reports/ch1_steps_20261019/browser.json",
@@ -11230,7 +11235,7 @@
     {
       "path": "reports/ch1_steps_20261019/STEPS_REPORT.json",
       "bytes": 14278,
-      "sha256": "1e5f3849dc8a4ee320b4b781b8840ab7286bf11030288707405044857b0793a8"
+      "sha256": "4c3c14236111c42da7296ecca059b93e5ce38298a5dbb735140835a38484b3ed"
     },
     {
       "path": "reports/ch1_symbol_layout_20261019/browser.json",
@@ -11249,13 +11254,13 @@
     },
     {
       "path": "scripts/browser_chapter01_revision.py",
-      "bytes": 7192,
-      "sha256": "a475f4cb9646edcacda222cbd9862453badc9d26faef00eac87b854a11ccdebb"
+      "bytes": 8267,
+      "sha256": "d71afb8a58e6681f758b5d86ad9aebf0f9436bc132f36d2c813df050593dbf74"
     },
     {
       "path": "scripts/build_course.py",
-      "bytes": 34967,
-      "sha256": "dcff441ed71c05b8e50ce4026f7b790dc8c2ba1749f78fd9ebaa1d253f2c4943"
+      "bytes": 35184,
+      "sha256": "c496c438ccbc05f6ef4d2ea359164e92bb69faa6e7dec33a5ca6c49a15b80c52"
     },
     {
       "path": "scripts/build_figs.py",
@@ -11489,8 +11494,8 @@
     },
     {
       "path": "scripts/rebuild_chapter01_layout.py",
-      "bytes": 2458,
-      "sha256": "b21225618fbcc71d0aa3f502b6fac9a5ec5dd5567da93b869ebc8f01ad3829dd"
+      "bytes": 2636,
+      "sha256": "a9fb23331fd901c35e6bbcd47a5800d6fef428ef8eba2f0b9990beb324cc297e"
     },
     {
       "path": "scripts/rebuild_chapter01_steps.py",
@@ -13459,8 +13464,8 @@
     },
     {
       "path": "verification/bilingual-terms.json",
-      "bytes": 178639,
-      "sha256": "8e94e4b7e0c7627ec17a8b3e58d8c6d4e917d06bcbb48e4f8297d4929b652950"
+      "bytes": 178809,
+      "sha256": "8821c5a8e1cea9913ae1f665ab8f30c2bddc440b8811347601428beaa9b2a8f2"
     },
     {
       "path": "verification/browser-audit.json",
@@ -13534,8 +13539,8 @@
     },
     {
       "path": "verification/course-audit.json",
-      "bytes": 1204259,
-      "sha256": "1a87090171ce7e5b720a75e0c6b203a2f5c6f6fc068ae9aa4fa40909973ba8b2"
+      "bytes": 1204453,
+      "sha256": "a815e6620655642245969b7d9742ee0d2c9f4565614080bdbdcc97da628b1536"
     },
     {
       "path": "verification/cross-review-01-02.json",

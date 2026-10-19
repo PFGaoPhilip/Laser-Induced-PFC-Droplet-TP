@@ -44,6 +44,16 @@ with sync_playwright() as p:
             wrongLanguageParagraphs:Array.from(document.querySelectorAll('.derivation-flow p[lang="'+other+'"]'))
               .filter(n=>getComputedStyle(n).display!=='none').length}}''')
         assert flow_state['displays']==267 and not flow_state['missingVisibleExplanations'] and not flow_state['wrongLanguageParagraphs'],flow_state
+        backgrounds=page.locator('.equation-unit > .derivation-flow').evaluate_all('''els=>els.map(e=>({
+          background:getComputedStyle(e).backgroundColor,paper:getComputedStyle(document.querySelector('.chapter-body')).backgroundColor,
+          padding:parseFloat(getComputedStyle(e).paddingLeft),radius:parseFloat(getComputedStyle(e).borderRadius)}))''')
+        assert len(backgrounds)==33 and all(x['background'] not in ['transparent','rgba(0, 0, 0, 0)',x['paper']] and x['padding']>=7 and x['radius']>0 for x in backgrounds),backgrounds
+        if width<=760:
+            overlaps=page.locator('.derivation-flow .katex-tag').evaluate_all('''tags=>tags.filter(t=>{
+              let content=Array.from(t.parentElement.children).filter(n=>n!==t&&n.getBoundingClientRect().height>0);
+              return getComputedStyle(t).position!=='static'||content.some(n=>n.getBoundingClientRect().bottom>t.getBoundingClientRect().top+2)
+            }).map(t=>t.closest('.equation-unit').id)''')
+            assert not overlaps,overlaps
         layout=page.locator('.equation-unit').evaluate_all('''els=>els.map(e=>({
           id:e.id,order:Array.from(e.children).map(x=>x.classList.contains('equation-heading')?'title':x.classList.contains('derivation-flow')?'explanation-equation-flow':x.classList.contains('math-display')?'formulas':x.classList.contains('symbols')?'symbols':x.tagName.toLowerCase()),
           tables:e.querySelectorAll('table.symbol-definitions').length,
@@ -72,7 +82,7 @@ with sync_playwright() as p:
             for box in page.locator('.equation-unit').all():
                 box.screenshot(path=str(out/(box.get_attribute('id')+'.png')))
         assert not errors,errors
-        results.append({'case':name,**state,'visible_explanation_formula_flow':flow_state,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
+        results.append({'case':name,**state,'visible_explanation_formula_flow':flow_state,'shaded_derivation_groups':backgrounds,'compact_two_column_tables_after_formulas':layout,'toggle_and_persistence':'passed','javascript_errors':errors})
         ctx.close()
     browser.close()
 name='relocated-browser.json' if target!=ROOT else 'browser.json'

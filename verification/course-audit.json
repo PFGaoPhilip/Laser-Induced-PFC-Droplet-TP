@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "check_count": 8294,
+  "check_count": 8295,
   "failures": [],
   "checks": [
     {
@@ -8070,6 +8070,11 @@
     },
     {
       "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/bilingual-terms.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chapters/01-cavity-pressure-inertia-and-directional-jets.html: local dependency ../assets/chapter01-derivations.css",
       "passed": true,
       "detail": null
     },
@@ -41806,7 +41811,7 @@
   "chapter_questions": 18,
   "displayed_equations": 189,
   "bilingual_paragraph_pairs": 4326,
-  "local_dependencies": 578,
+  "local_dependencies": 579,
   "local_math_fonts": 60,
   "pages": [
     {
@@ -41817,7 +41822,7 @@
     },
     {
       "file": "chapters/01-cavity-pressure-inertia-and-directional-jets.html",
-      "bytes": 3493453,
+      "bytes": 3493520,
       "equations": 33,
       "defenses": 3
     },

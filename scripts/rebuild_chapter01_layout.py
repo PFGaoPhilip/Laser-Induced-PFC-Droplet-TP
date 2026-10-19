@@ -14,6 +14,8 @@ def main():
     rendered=BeautifulSoup(render_html(''.join(str(u.find_previous_sibling())+str(u) for u in units)),'html.parser')
     path=ROOT/'chapters'/filename(chapter)
     soup=BeautifulSoup(path.read_text(encoding='utf-8'),'html.parser')
+    if not soup.select_one('link[href$="chapter01-derivations.css"]'):
+        soup.head.append(soup.new_tag('link',rel='stylesheet',href='../assets/chapter01-derivations.css'))
     for unit in rendered.select('.equation-unit'):
         heading=unit.select_one('.equation-heading')
         for node in list(heading.children):

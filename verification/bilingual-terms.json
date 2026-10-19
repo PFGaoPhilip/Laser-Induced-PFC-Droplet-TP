@@ -3344,10 +3344,14 @@
       "text_and_math_unchanged": true,
       "links_and_anchors_unchanged": true,
       "idempotent": true,
-      "sha256": "336c8f0d3dde745189d5481ce28523e877ccf7ef2084c79b9b9d8d3a25e76509",
+      "sha256": "967adeccbcc303b6e7717521acac423a7f81b96758b4340f4a5ea317863aaf08",
       "post_highlight_ui_localization": {
         "hidden_headers": 66,
         "exact_prelocalization_hash_reconstructed": true,
+        "scientific_prose_math_and_term_marks_unchanged": true
+      },
+      "shaded_derivation_groups": {
+        "change": "one chapter-specific stylesheet link",
         "scientific_prose_math_and_term_marks_unchanged": true
       }
     },

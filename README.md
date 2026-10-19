@@ -115,6 +115,7 @@ Publication remains HELD_NOT_PUBLISHED.
 ## Chapter 1 revision — 2026-10-19 / 第一章修订
 
 All 33 Chapter 1 equation groups alternate explanations and formulas.
+Each complete group has a shaded background in both themes.
 Twenty-two groups directly include preserved scientific handoff passages.
 The remaining eleven use worked supplements in the same style.
 Source excerpts and hashes are in `content/chapter01_handoff.json`.
@@ -125,6 +126,7 @@ See reports/ch1_defense_revision/EQUATION_MAP.csv for migration.
 The original defense verdict and learner records remain unchanged.
 
 第一章的 33 个公式组均采用说明与公式交替的格式。
+每个完整推导组在日夜两种主题下均带有独立背景。
 其中 22 组直接引入交接材料中的原始科学推导。
 其余 11 组采用相同风格的完整补充推导。
 原文片段与哈希记录见 `content/chapter01_handoff.json`。

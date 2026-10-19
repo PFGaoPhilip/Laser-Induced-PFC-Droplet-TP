@@ -1,0 +1,35 @@
+/* Keep each complete explanation–formula sequence visually separate. */
+.equation-unit > .derivation-flow {
+  min-width: 0;
+  padding: .85rem 1rem;
+  margin: .75rem 0 .9rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: .45rem;
+}
+.derivation-flow > :first-child,
+.derivation-flow > .handoff-passage:first-child > :first-child {
+  margin-top: 0;
+}
+.derivation-flow > :last-child,
+.derivation-flow > .handoff-passage:last-child > :last-child {
+  margin-bottom: 0;
+}
+.derivation-flow .math-display {
+  max-width: 100%;
+}
+@media (max-width: 760px) {
+  .equation-unit > .derivation-flow {
+    padding: .65rem .45rem;
+  }
+  /* Put source equation numbers below wide formulas on narrow screens. */
+  .derivation-flow .katex-display > .katex > .katex-html > .katex-tag {
+    position: static;
+    display: block;
+    padding-top: .35em;
+    text-align: right;
+  }
+  .derivation-flow .katex-tag > .katex-strut {
+    display: none;
+  }
+}

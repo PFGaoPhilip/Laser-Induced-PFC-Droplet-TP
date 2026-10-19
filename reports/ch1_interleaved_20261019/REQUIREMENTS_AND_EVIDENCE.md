@@ -9,6 +9,7 @@ Missing derivations use worked explanations in the same style.
 | Every derivation belongs to a numbered chapter step | STEPS_REPORT.json; 33 contiguous bilingual steps |
 | Titles use the correct subsection | VERIFICATION_REPORT.json; stable canonical anchors |
 | Complete explanations alternate with short formulas | NARRATIVE_REPORT.json; every displayed formula has adjacent EN/ZH prose |
+| A background separates each explanation–formula group | browser.json; 33 visibly shaded derivation groups in each theme and viewport |
 | Preserve supplied scientific derivations | chapter01_handoff.json; 23 exact excerpts, source hashes and line provenance |
 | Preserve source prose and mathematical order | Exact paragraph and display comparisons; independent prose-character and TeX-token coverage |
 | Supplement missing derivations in the handoff style | Eleven additional groups; existing expanded source mathematics retained |
